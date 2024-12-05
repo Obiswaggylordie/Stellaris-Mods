@@ -6,7 +6,7 @@ ship_section_template = {
 	key = "obi_city_key"
 	ship_size = obi_city
 	fits_on_slot = mid
-	entity = "asuran_01_starbase_citadel_section_entity"
+	entity = "asuran_01_titan_entity"
 	icon = "GFX_ship_part_core_mid"
 	
 	component_slot = {

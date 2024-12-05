@@ -1,0 +1,250 @@
+@cost0 = 0
+
+###########
+### BOW ###
+###########
+ship_section_template = {
+	key = "EFG_ORBITAL_DEFENSE_SYSTEM_BOW"
+	ship_size = efg_orbital_defense_system
+	fits_on_slot = bow
+	entity = "asuran_01_ion_cannon_section_entity"
+	icon = "GFX_ship_part_core_bow"
+
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "uncf_defense_platform_turret_01_slot"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "uncf_defense_platform_turret_01_slot"
+		locatorname = "xl_gun_02"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "uncf_defense_platform_turret_01_slot"
+		locatorname = "gun_1"
+	}
+	#component_slot = {
+	#	name = "EXTRA_LARGE_04"
+	#	template = "uncf_defense_platform_turret_01_slot"
+	#	locatorname = "gun_2"
+	#}
+	#component_slot = {
+	#	name = "EXTRA_LARGE_05"
+	#	template = "uncf_defense_platform_turret_01_slot"
+	#	locatorname = "gun_3"
+	#}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "uncf_defense_platform_turret_01_slot"
+		locatorname = "gun_4"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "uncf_defense_platform_turret_01_slot"
+		locatorname = "gun_5"
+	}
+	
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "uncf_defense_platform_turret_01_slot"
+		locatorname = "turret_gun_1"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_09"
+		template = "uncf_defense_platform_turret_01_slot"
+		locatorname = "turret_gun_2"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_10"
+		template = "uncf_defense_platform_turret_01_slot"
+		locatorname = "turret_gun_3"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_11"
+		template = "uncf_defense_platform_turret_01_slot"
+		locatorname = "turret_gun_4"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_12"
+		template = "uncf_defense_platform_turret_01_slot"
+		locatorname = "turret_gun_5"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_13"
+		template = "uncf_defense_platform_turret_01_slot"
+		locatorname = "turret_gun_6"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_14"
+		template = "uncf_defense_platform_turret_01_slot"
+		locatorname = "turret_gun_7"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_15"
+		template = "uncf_defense_platform_turret_01_slot"
+		locatorname = "turret_gun_8"
+	}
+
+	large_utility_slots = 20
+	aux_utility_slots = 5
+	
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+###########
+### MID ###
+###########
+ship_section_template = {
+	key = "EFG_ORBITAL_DEFENSE_SYSTEM_MID"
+	ship_size = efg_orbital_defense_system
+	fits_on_slot = mid
+	entity = "asuran_01_ion_cannon_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	
+	large_utility_slots = 25
+	
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+###########
+### STERN ###
+###########
+ship_section_template = {
+	key = "EFG_ORBITAL_DEFENSE_SYSTEM_STERN"
+	ship_size = efg_orbital_defense_system
+	fits_on_slot = stern
+	entity = "asuran_01_ion_cannon_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "LARGE_GUN_11"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "LARGE_GUN_12"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "LARGE_GUN_13"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "LARGE_GUN_14"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "LARGE_GUN_15"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "LARGE_GUN_16"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+
+	large_utility_slots = 25
+	
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
