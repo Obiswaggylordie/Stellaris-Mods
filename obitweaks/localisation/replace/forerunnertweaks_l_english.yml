@@ -595,7 +595,7 @@
  building_forerunner_nourishment_center_desc: "If it exists as a flavor, it can be replicated here."
  
  building_forerunner_dimensional_fabricator: "Forerunner Supply Elevator"
- building_forerunner_dimensional_fabricator_desc: "This structure sends and receives resources via Slipspace Relays to and from various resource-gathering facilities."
+ building_forerunner_dimensional_fabricator_desc: "This structure sends and receives resources via Void Relays to and from various resource-gathering facilities."
  
  building_forerunner_nano_forge: "Forerunner Minoris Assembler Vat"
  building_forerunner_nano_forge_desc: "Colossal assembler vats that convert raw materials into advanced alloys using nanofabrication technology with miraculous efficiency."
@@ -893,7 +893,7 @@
  d_ark_agriculture_desc: "Originally designed to index and preserve biological diversity in the event of a Halo activation, the facilities also possess an array of biological preserves to various habitats on the installation."
  
  d_ark_grid: "Ark Relay Network Control"
- d_ark_grid_desc: "The Ark is connected to the Slipspace Relay Master Control Network, allowing it command over all existing Relays." 
+ d_ark_grid_desc: "The Ark is connected to the Void Relay Master Control Network, allowing it command over all existing Relays." 
  
  
 ########################
@@ -1366,7 +1366,7 @@
  decision_build_ark_installation_effects: "Randomly spawns a system outside of the known galaxy containing an Ark megastructure."
  
  shield_world.99.name: "Ark Installation Complete"
- shield_world.99.desc: "Construction of the Ark Installation was a massive undertaking, but our builders have managed to finish the project. Travel to the Ark Installation can only be accessed by Slipspace Relay due to its extragalactic location."
+ shield_world.99.desc: "Construction of the Ark Installation was a massive undertaking, but our builders have managed to finish the project. Travel to the Ark Installation can only be accessed by Void Relay due to its extragalactic location."
 
  ark_installation_completed: "Ark Installation Cooldown"
  ark_installation_completed_desc: "The construction and placement of the megastructure has drained our resources."
@@ -1396,9 +1396,9 @@
  
  
  #MEGASTRUCTURE TEXT
- #Slipspace Relay 
- shield_world_event.11: "Slipspace Relay Complete"
- shield_world_event.11_desc: "Construction on the Slipspace Relay is complete."
+ #Slipspace / Void Relay 
+ shield_world_event.11: "Void Relay Complete"
+ shield_world_event.11_desc: "Construction on the Void Relay is complete."
  
  #SHIELD WORLD MEGASTRUCTURE
  shield_world_event.1: "Forerunner Orbital Reformer Construction Complete"
