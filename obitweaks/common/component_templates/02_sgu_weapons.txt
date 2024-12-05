@@ -1,0 +1,221 @@
+
+
+#############
+### CLOUD ###
+#############
+
+weapon_component_template = {
+	key = "ASCENDED_CLOUD_LIGHTNING"
+
+	size = large
+	entity = "large_space_cloud_weapon_entity"
+	type = instant
+
+	damage = { min = 10000 max = 10000 }
+	windup = { min = 1 max = 1 }
+	total_fire_time = 1
+	range = 300.0
+
+	#hull_damage = 
+	#shield_damage = 
+	#armor_damage = 
+	armor_penetration = 1.0
+	shield_penetration = 1.0
+
+	accuracy = 1.0
+	tracking = 1.0
+	power = -17
+
+	resources = {
+		category = ship_components
+		cost = {
+			psi_energy = 5000000
+		}
+		upkeep = {
+			energy = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+
+	icon = "GFX_ship_part_space_cloud_weapon_1"
+	icon_frame = 1
+	projectile_gfx = "arc_emitter"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+
+	component_set = "ASCENDED_CLOUD_LIGHTNING_SET"
+	prerequisites = { "tech_ascended_cloud_form" }
+}
+
+
+#############
+# ExploWrai #
+#############
+
+weapon_component_template = {
+	key = "SMALL_EXPLOSIVE_WRATH_MISSILE"
+	size = small
+	entity = "turret_missile_small_entity"
+
+	hidden = yes
+
+	damage = { min = 50.0 max = 50.0 }
+	windup = { min = 0.1 max = 49.7 }
+	missile_speed = 17
+	missile_retarget_range = 100
+	tracking = 0.75
+	missile_evasion = 0.7
+	missile_health = 7.5
+	missile_armor = 0.25
+	missile_shield = 2.50
+	total_fire_time = 0.1
+	range = 75.0
+	icon = "GFX_explosive_wrath_missile"
+	icon_frame = 1
+	static_rotation = yes
+	type = missile
+	shield_damage = 1.1
+	power = -10
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}	
+		upkeep = {
+			energy = 0.1
+			alloys = 0.01
+		}
+	}
+
+	#component_set = "EXPLOSIVE_WRATH_MISSILE"
+	projectile_gfx = "tauri_horizon_nuke_m"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_armor weapon_role_long_range }
+}
+
+weapon_component_template = {
+	key = "SMALL_TRAVELER_CANNON_5"
+	size = small
+	entity = "small_laser_gun_entity"
+	type = instant
+
+	#hidden = yes
+	
+	damage = { min = 28 max = 28.0 }
+	windup = { min = 1 max = 19 }
+	total_fire_time = 20
+	range = 30.0
+
+	hull_damage = 1.25
+	shield_damage = 0.8
+	#armor_damage = 
+	#armor_penetration =
+	#shield_penetration =
+
+	accuracy = 0.8
+	tracking = 0.60
+	power = -17
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 34
+		}	
+		upkeep = {
+			energy = 0.34
+			alloys = 0.034
+		}
+	}
+
+	icon = "GFX_traveler_cannon"
+	icon_frame = 1
+	component_set = "TRAVELER_CANNON_5"
+	prerequisites = { "tech_traveler_cannon_5" }
+	projectile_gfx = "traveler_particle_cannon_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor weapon_role_long_range }
+}
+
+weapon_component_template = {
+	key = "MEDIUM_TRAVELER_CANNON_5"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = instant
+
+	#hidden = yes
+	
+	damage = { min = 70.0 max = 70.0 }
+	windup = { min = 1 max = 19 }
+	total_fire_time = 20
+	range = 60.0
+
+	hull_damage = 1.25
+	shield_damage = 0.8
+	#armor_damage = 
+	#armor_penetration =
+	#shield_penetration =
+
+	accuracy = 0.80
+	tracking = 0.30
+	power = -34
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 68
+		}	
+		upkeep = {
+			energy = 0.68
+			alloys = 0.068
+		}
+	}
+
+	icon = "GFX_traveler_cannon"
+	icon_frame = 1
+	component_set = "TRAVELER_CANNON_5"
+	prerequisites = { "tech_traveler_cannon_5" }
+	projectile_gfx = "traveler_particle_cannon_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor weapon_role_long_range }
+
+}
+
+weapon_component_template = {
+	key = "LARGE_TRAVELER_CANNON_5"
+	size = large
+	entity = "large_laser_gun_entity"
+	type = instant
+
+	#hidden = yes
+	
+	damage = { min = 175.0 max = 175.0 }
+	windup = { min = 1 max = 19 }
+	total_fire_time = 20
+	range = 90.0
+
+	hull_damage = 1.25
+	shield_damage = 0.8
+	#armor_damage = 
+	#armor_penetration =
+	#shield_penetration =
+
+	accuracy = 0.8
+	tracking = 0.05
+	power = -68
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 136
+		}	
+		upkeep = {
+			energy = 1.36
+			alloys = 0.136
+		}
+	}
+
+	icon = "GFX_traveler_cannon"
+	icon_frame = 1
+	component_set = "TRAVELER_CANNON_5"
+	prerequisites = { "tech_traveler_cannon_5" }
+	projectile_gfx = "traveler_particle_cannon_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor weapon_role_long_range }
+}

@@ -1,0 +1,22 @@
+tech_Wave_motion_gun_Fleet = {
+	area = engineering
+	start_tech = no
+	tier = @horizontechtier
+	cost = 100
+	category = { voidcraft }
+	ai_update_type = military
+	weight = 0
+	potential = {
+		has_origin = origin_earth_2200
+	}
+
+	weight_modifier = {
+		factor = 1
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+}

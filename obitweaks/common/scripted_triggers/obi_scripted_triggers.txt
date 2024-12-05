@@ -1,0 +1,5 @@
+can_destroy_planet_with_obi_planet_killer_cosmoreverse = {
+	NOT = {
+		is_star = yes
+	}
+}

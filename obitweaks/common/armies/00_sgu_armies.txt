@@ -1,0 +1,546 @@
+#Defensive armies can't transport of the planet
+#Garrison armies are created by pops
+#maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
+
+# Ancient armies
+ancient_army = {
+	damage = 1.75
+	health = 1.5
+	morale = 1.25
+	collateral_damage = 0.75
+	war_exhaustion = 1.00
+	time = 120
+	icon = GFX_army_type_assault
+	has_species = no
+
+	#prerequisites = { "tech_assault_armies" }
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 150
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	allow = {
+		owner = {
+			OR = {
+				has_trait = "trait_ancient"
+			}
+		}
+	}
+
+	potential = {
+		owner = {
+			OR = {
+				has_trait = "trait_ancient"
+			}
+		}
+	}
+}
+
+# ascended armies
+ascended_army = {
+	damage = 75.00
+	morale_damage = 75.00
+	health = 75.00
+	morale = 75.00
+	collateral_damage = 1.50
+	war_exhaustion = 10.00
+	time = 30
+	icon = GFX_army_type_psionic
+	has_species = yes
+
+	prerequisites = { "tech_ascension_3" }
+
+	resources = {
+		category = armies
+		cost = {
+			psi_energy = 10
+			minerals = 500
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	potential = {
+		from = {
+			OR = {
+				has_trait = "trait_ascension_3"
+				has_trait = "trait_ascension_4"
+			}
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+# ori armies
+ori_army = {
+	damage = 1.3
+	health = 1.2
+	morale = 1.75
+	collateral_damage = 1.00
+	war_exhaustion = 1.00
+	time = 60
+	icon = GFX_army_type_assault
+	has_species = no
+
+	#prerequisites = { "tech_assault_armies" }
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 100
+		}
+
+		upkeep = {
+			energy = 0.75
+		}
+	}
+
+	allow = {
+		owner = {
+			OR = {
+				has_trait = "trait_ori"
+			}
+		}
+	}
+
+	potential = {
+		owner = {
+			OR = {
+				has_trait = "trait_ori"
+			}
+		}
+	}
+}
+
+# asgard armies
+asgard_army = {
+	damage = 1.5
+	health = 1.1
+	morale = 1.2
+	collateral_damage = 0.50
+	war_exhaustion = 1.00
+	time = 90
+	icon = GFX_army_type_clone
+	has_species = no
+
+	#prerequisites = { "tech_assault_armies" }
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 125
+		}
+
+		upkeep = {
+			energy = 0.75
+		}
+	}
+
+	allow = {
+		owner = {
+			OR = {
+				has_trait = "trait_asgard"
+			}
+		}
+	}
+
+	potential = {
+		owner = {
+			OR = {
+				has_trait = "trait_asgard"
+			}
+		}
+	}
+}
+
+# vanir armies
+vanir_exoskeleton_army = {
+	damage = 2.5
+	health = 5
+	morale = 5
+	collateral_damage = 1.00
+	war_exhaustion = 1.00
+	time = 240
+	icon = GFX_army_type_machine_assault
+	has_species = no
+
+	#prerequisites = { "tech_vanir_start_1" }
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250
+			energy = 250
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	allow = {
+		owner = {
+			OR = {
+				has_trait = "trait_vanir"
+			}
+		}
+	}
+
+	potential = {
+		owner = {
+			OR = {
+				has_trait = "trait_vanir"
+			}
+		}
+	}
+}
+
+# tauri armies
+tauri_army = {
+	damage = 1.25
+	health = 1.1
+	morale = 1.25
+	collateral_damage = 1.00
+	war_exhaustion = 1.00
+	time = 80
+	icon = GFX_army_type_assault
+	has_species = no
+
+	#prerequisites = { "tech_assault_armies" }
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 100
+		}
+
+		upkeep = {
+			energy = 0.75
+		}
+	}
+
+	allow = {
+		owner = {
+			OR = {
+				has_trait = "trait_tauri"
+			}
+		}
+	}
+
+	potential = {
+		owner = {
+			OR = {
+				has_trait = "trait_tauri"
+			}
+		}
+	}
+}
+
+# wraith armies
+wraith_army = {
+	damage = 1.2
+	health = 1.7
+	morale = 1.2
+	collateral_damage = 1.00
+	war_exhaustion = 1.00
+	time = 70
+	icon = GFX_army_type_undead
+	has_species = no
+
+	#prerequisites = { "tech_assault_armies" }
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 50
+		}
+
+		upkeep = {
+			energy = 0.5
+		}
+	}
+
+	allow = {
+		owner = {
+			OR = {
+				has_trait = "trait_wraith"
+			}
+		}
+	}
+
+	potential = {
+		owner = {
+			OR = {
+				has_trait = "trait_wraith"
+			}
+		}
+	}
+}
+
+# goauld armies
+goauld_army = {
+	damage = 1.4
+	health = 1.0
+	morale = 1.0
+	collateral_damage = 1.25
+	war_exhaustion = 1.00
+	time = 60
+	icon = GFX_army_type_slave
+	has_species = no
+
+	#prerequisites = { "tech_assault_armies" }
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 50
+		}
+
+		upkeep = {
+			energy = 0.5
+		}
+	}
+
+	allow = {
+		owner = {
+			OR = {
+				has_trait = "trait_goauld"
+				has_trait = "trait_jaffa"
+			}
+		}
+	}
+
+	potential = {
+		owner = {
+			OR = {
+				has_trait = "trait_goauld"
+				has_trait = "trait_jaffa"
+			}
+		}
+	}
+}
+
+# kull armies
+kull_army = {
+	damage = 3
+	health = 6
+	morale = 3
+	collateral_damage = 1.00
+	war_exhaustion = 1.00
+	time = 240
+	icon = GFX_army_type_gene_warrior
+	has_species = no
+
+	prerequisites = { "tech_kull_warriors" }
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250
+			energy = 50
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	allow = {
+		owner = {
+			OR = {
+				has_trait = "trait_goauld"
+			}
+		}
+	}
+
+	potential = {
+		owner = {
+			OR = {
+				has_trait = "trait_goauld"
+			}
+		}
+	}
+}
+
+
+# replicator armies
+replicator_army = {
+	has_morale = no
+	damage = 2.5
+	health = 1.5
+	collateral_damage = 2.00
+	war_exhaustion = 1.00
+	time = 100
+	icon = GFX_army_type_machine_assault
+	has_species = no
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 100
+			energy = 50
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	allow = {
+		owner = {
+			OR = {
+				has_trait = "trait_replicator"
+			}
+		}
+	}
+
+	potential = {
+		owner = {
+			OR = {
+				has_trait = "trait_replicator"
+			}
+		}
+	}
+}
+
+# asuran armies
+asuran_army = {
+	has_morale = no
+	damage = 2.0
+	health = 3.0
+	collateral_damage = 1.00
+	war_exhaustion = 1.00
+	time = 150
+	icon = GFX_army_type_machine_assault
+	has_species = no
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 150
+			energy = 75
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+	
+
+	allow = {
+		owner = {
+			OR = {
+				has_trait = "trait_asuran"
+			}
+		}
+	}
+
+	potential = {
+		owner = {
+			OR = {
+				has_trait = "trait_asuran"
+			}
+		}
+	}
+}
+
+# NOX armies
+nox_army = {
+	damage = 1.1
+	morale_damage = 3
+	health = 1.5
+	morale = 3
+	collateral_damage = 0.25
+	war_exhaustion = 1.00
+	time = 120
+	icon = GFX_army_type_assault
+	has_species = no
+
+	#prerequisites = { "tech_assault_armies" }
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 100
+		}
+
+		upkeep = {
+			energy = 0.75
+		}
+	}
+
+	allow = {
+		owner = {
+			OR = {
+				has_trait = "trait_nox"
+			}
+		}
+	}
+
+	potential = {
+		owner = {
+			OR = {
+				has_trait = "trait_nox"
+			}
+		}
+	}
+}
+
+# Traveler armies
+traveler_army = {
+	damage = 1.5
+	health = 1.5
+	morale = 1.25
+	collateral_damage = 0.50
+	war_exhaustion = 1.00
+	time = 120
+	icon = GFX_army_type_assault
+	has_species = no
+
+	#prerequisites = { "tech_assault_armies" }
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 50
+		}
+
+		upkeep = {
+			energy = 0.5
+		}
+	}
+
+	allow = {
+		owner = {
+			OR = {
+				has_trait = "trait_traveler"
+			}
+		}
+	}
+
+	potential = {
+		owner = {
+			OR = {
+				has_trait = "trait_traveler"
+			}
+		}
+	}
+}
+

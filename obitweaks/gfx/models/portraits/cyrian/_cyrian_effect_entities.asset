@@ -1,0 +1,107 @@
+##############
+# ORANGE
+##############
+entity = {
+	name = "portrait_cyrian_background_01_entity"
+	pdxmesh = "cyrian_background_01_mesh"
+	get_state_from_parent = no
+	default_state = "idle"
+	state = {
+		name = "idle"
+		animation = "idle"
+		animation_blend_time = 0
+	}
+	scale = 1
+	game_data = {
+		uv_animation_speed = 0.12
+		uv_animation_direction = {
+			0
+			0.5
+		}
+	}
+}
+
+entity = {
+	name = "portrait_cyrian_background_02_entity"
+	pdxmesh = "cyrian_background_02_mesh"
+	get_state_from_parent = no
+	default_state = "idle"
+	state = {
+		name = "idle"
+		animation = "idle"
+		animation_blend_time = 0
+	}
+	scale = 1
+	game_data = {
+		uv_animation_speed = 0.35
+		uv_animation_direction = {
+			0
+			0.5
+		}
+	}
+}
+
+entity = {
+	name = "portrait_cyrian_background_03_entity"
+	pdxmesh = "cyrian_background_03_mesh"
+	get_state_from_parent = no
+	default_state = "idle"
+	state = {
+		name = "idle"
+		animation = "idle"
+		animation_blend_time = 0
+	}
+	scale = 1
+	game_data = {
+		uv_animation_speed = 0.1
+		uv_animation_direction = {
+			0
+			-0.5
+		}
+	}
+}
+
+entity = {
+	name = "portrait_cyrian_background_04_entity"
+	pdxmesh = "cyrian_background_04_mesh"
+	get_state_from_parent = no
+	default_state = "idle"
+	state = {
+		name = "idle"
+		animation = "idle"
+		animation_blend_time = 0
+	}
+	scale = 1
+	game_data = {
+		uv_animation_speed = 0.1
+		uv_animation_direction = {
+			0
+			0.5
+		}
+	}
+}
+
+entity = {
+	name = "portrait_cyrian_background_details_entity"
+	pdxmesh = "cyrian_room_details_mesh"
+	default_state = "idle"
+	state = {
+		name = "idle"
+		animation = "idle"
+		animation_blend_time = 0
+	}
+	scale = 1
+	game_data = {
+		uv_animation_speed = 0.1
+		uv_animation_direction = {
+			0
+			0.5
+		}
+	}
+}
+
+entity = {
+	name = "portrait_cyrian_background_details_test_entity"
+	pdxmesh = "cyrian_room_test_details_mesh"
+	scale = 1
+}

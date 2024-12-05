@@ -1,0 +1,111 @@
+
+
+@dtf_head_researcher_produces_research = 120
+
+@dtf_pop_produces_physics_research_base  = 60
+@dtf_pop_produces_physics_research_add_1 = 10
+@dtf_pop_produces_physics_research_add_2 = 20
+@dtf_pop_produces_physics_research_add_3 = 30
+@dtf_pop_produces_physics_research_add_4 = 40
+@dtf_pop_produces_physics_research_add_5 = 50
+
+@dtf_pop_produces_engineering_research_base  = 60
+@dtf_pop_produces_engineering_research_add_1 = 10
+@dtf_pop_produces_engineering_research_add_2 = 20
+@dtf_pop_produces_engineering_research_add_3 = 30
+@dtf_pop_produces_engineering_research_add_4 = 40
+@dtf_pop_produces_engineering_research_add_5 = 50
+
+@dtf_pop_produces_society_research_base  = 60
+@dtf_pop_produces_society_research_add_1 = 10
+@dtf_pop_produces_society_research_add_2 = 20
+@dtf_pop_produces_society_research_add_3 = 30
+@dtf_pop_produces_society_research_add_4 = 40
+@dtf_pop_produces_society_research_add_5 = 50
+
+
+
+
+
+
+
+
+@dtf_pop_produces_alloys_base  = 600
+@dtf_pop_produces_alloys_add_1 = 100
+@dtf_pop_produces_alloys_add_2 = 200
+@dtf_pop_produces_alloys_add_3 = 300
+@dtf_pop_produces_alloys_add_4 = 400
+@dtf_pop_produces_alloys_add_5 = 600
+
+@dtf_pop_produces_nanites_base  = 50
+@dtf_pop_produces_nanites_add_1 = 50
+@dtf_pop_produces_nanites_add_2 = 50
+@dtf_pop_produces_nanites_add_3 = 50
+@dtf_pop_produces_nanites_add_4 = 50
+@dtf_pop_produces_nanites_add_5 = 50
+
+@dtf_pop_cost_minerals_base  = 12
+@dtf_pop_cost_minerals_add_1 = 2
+@dtf_pop_cost_minerals_add_2 = 4
+@dtf_pop_cost_minerals_add_3 = 6
+@dtf_pop_cost_minerals_add_4 = 8
+@dtf_pop_cost_minerals_add_5 = 10
+
+
+
+
+
+
+
+@dtf_pop_produces_energy_base  = 100
+@dtf_pop_produces_energy_add_1 = 200
+@dtf_pop_produces_energy_add_2 = 400
+@dtf_pop_produces_energy_add_3 = 600
+@dtf_pop_produces_energy_add_4 = 800
+@dtf_pop_produces_energy_add_5 = 1000
+
+
+
+
+
+@dtf_pop_produces_minerals_base  = 100
+@dtf_pop_produces_minerals_add_1 = 200
+@dtf_pop_produces_minerals_add_2 = 400
+@dtf_pop_produces_minerals_add_3 = 600
+@dtf_pop_produces_minerals_add_4 = 800
+@dtf_pop_produces_minerals_add_5 = 1000
+
+@dtf_pop_produces_rare_crystals_base  = 50
+@dtf_pop_produces_rare_crystals_add_1 = 50
+@dtf_pop_produces_rare_crystals_add_2 = 50
+@dtf_pop_produces_rare_crystals_add_3 = 50
+@dtf_pop_produces_rare_crystals_add_4 = 50
+@dtf_pop_produces_rare_crystals_add_5 = 50
+
+@dtf_pop_produces_exotic_gases_base  = 50
+@dtf_pop_produces_exotic_gases_add_1 = 50
+@dtf_pop_produces_exotic_gases_add_2 = 50
+@dtf_pop_produces_exotic_gases_add_3 = 50
+@dtf_pop_produces_exotic_gases_add_4 = 50
+@dtf_pop_produces_exotic_gases_add_5 = 50
+
+@dtf_pop_produces_volatile_motes_base  = 50
+@dtf_pop_produces_volatile_motes_add_1 = 50
+@dtf_pop_produces_volatile_motes_add_2 = 50
+@dtf_pop_produces_volatile_motes_add_3 = 50
+@dtf_pop_produces_volatile_motes_add_4 = 50
+@dtf_pop_produces_volatile_motes_add_5 = 50
+
+@dtf_pop_produces_sr_zro_base  = 50
+@dtf_pop_produces_sr_zro_add_1 = 50
+@dtf_pop_produces_sr_zro_add_2 = 50
+@dtf_pop_produces_sr_zro_add_3 = 50
+@dtf_pop_produces_sr_zro_add_4 = 50
+@dtf_pop_produces_sr_zro_add_5 = 50
+
+@dtf_pop_produces_sr_dark_matter_base  = 50
+@dtf_pop_produces_sr_dark_matter_add_1 = 50
+@dtf_pop_produces_sr_dark_matter_add_2 = 50
+@dtf_pop_produces_sr_dark_matter_add_3 = 50
+@dtf_pop_produces_sr_dark_matter_add_4 = 50
+@dtf_pop_produces_sr_dark_matter_add_5 = 50

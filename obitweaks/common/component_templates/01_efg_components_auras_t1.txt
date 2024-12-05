@@ -1,0 +1,132 @@
+
+#####################
+# Titan Auras
+#####################
+
+utility_component_template = {
+	key = "EFG_SHIP_AURA_WAVE_MOTION_RESONANCE"
+	size = medium
+	icon = "GFX_ship_part_science_lab_1"
+	icon_frame = 1
+	power = 0
+	
+	#size_restriction = { Flagship titan }
+	component_set = "ship_aura_components"
+
+
+	modifier = {
+		ship_shield_mult = 0.50
+	}
+
+	size_restriction = {
+		cr_titan
+	}
+	
+	friendly_aura = {
+		name = "efg_ship_aura_wave_motion_resonance"
+		system_wide = yes
+		apply_on = ships
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = friendly_wave_motion_resonance
+			priority = 1
+		}
+
+		limit = {
+			has_component = obi_planet_killer_cosmoreverse
+		}
+		
+		modifier = {
+			ship_shield_mult = 0.50
+			ship_shield_regen_add_perc = 0.25
+			ship_shield_reduction = -0.50
+			weapon_type_energy_weapon_damage_mult = 0.50
+			weapon_type_energy_weapon_fire_rate_mult = 0.50
+			t_slot_weapon_damage_mult = 0.50
+			t_slot_weapon_fire_rate_mult = 0.50
+			ship_shield_penetration_add = 0.50
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+	prerequisites = { "tech_efg_wave_motion_gun_2" }
+	
+	ai_weight = {
+		weight = @efg_ai_weight_1
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+}
+
+#####################
+# Yamato Auras
+#####################
+
+utility_component_template = {
+	key = "EFG_SHIP_AURA_YAMATO"
+	size = medium
+	icon = "GFX_ship_part_science_lab_1"
+	icon_frame = 1
+	power = 0
+	
+	size_restriction = { cr_titan }
+	component_set = "ship_aura_components"
+
+	modifier = {
+		#ship_shield_mult = 0.50
+	}
+	
+	friendly_aura = {
+		name = "efg_ship_aura_yamato"
+		system_wide = yes
+		apply_on = ships
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = friendly_yamato_aura
+			priority = 1
+		}
+		
+		modifier = {
+			weapon_type_energy_weapon_damage_mult = 0.25
+			weapon_type_energy_weapon_fire_rate_mult = 0.25
+			ship_armor_hardening_add = 0.25
+			ship_shield_hardening_add = 0.25
+			ship_evasion_add = 5
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+	prerequisites = { "tech_efg_reactor_1" }
+	
+	ai_weight = {
+		weight = @efg_ai_weight_1
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+}
+
+

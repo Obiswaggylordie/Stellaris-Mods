@@ -1,0 +1,71 @@
+#reloadable with 'reload stats'
+# This file is where you start when you want to configure something new, then go to sections
+
+@corvette_collision_radius = 2.0
+
+@destroyer_collision_radius = 2.5
+
+@cruiser_collision_radius = 3
+
+@battleship_collision_radius = 3
+
+@titan_collision_radius = 15
+
+@build_block_radius_none = 0
+@build_block_radius_civilian = 20
+@build_block_radius_military = 200
+
+@speed_very_slow = 80
+@speed_slow = 100
+@speed_default = 120
+@speed_fast = 140
+@speed_very_fast = 160
+
+####################
+# Guardian Custode #
+####################
+
+# Special Event Guardian Summoning
+guardian_custode = {
+	formation_priority = 6
+	graphical_culture = { "forerunner_01" }
+	max_speed = 200
+	acceleration = 1.0
+	rotation_speed = 1.0
+	collision_radius = 25
+	modifier = {
+		ship_evasion_add = 10
+	}
+	max_hitpoints = 10000
+	size_multiplier = 8
+	fleet_slot_size = 4
+	base_buildtime = 360
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	is_space_station = no
+	can_have_federation_design = no
+	enable_3dview_in_ship_browser = yes
+	icon = ship_size_military_8
+	
+	combat_disengage_chance = 1.0
+
+	prerequisites = { "tech_forerunner_peacemaker_constructs" }
+	
+	resources = {
+		category = ships
+		cost = {
+			alloys = 2000
+		}
+	}
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "FORERUNNER_ATTENUATION_PULSE_EMITTER"
+
+}

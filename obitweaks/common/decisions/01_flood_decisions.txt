@@ -1,0 +1,620 @@
+##########################################################################
+# Flood Decisions
+##########################################################################
+
+###The Flood###
+
+### Grow Keymind Fleet
+decision_grow_flood_keymind_fleet = {
+	owned_planets_only = yes
+	icon = decision_grow_flood_keymind_fleet
+	
+	enactment_time = 180
+	
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 30000
+			influence = 250
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = { has_origin = origin_the_flood }
+	}
+	
+	allow = {
+		planet = {
+			has_active_building = building_keymind_nest
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_grow_flood_keymind_fleet_effects
+		owner = {
+			create_fleet = {
+				name = "Flood Keymind"		
+				effect = {
+					set_owner = PREV
+					while = {
+						count = 1
+						create_ship = {
+							name = random
+							design = "NAME_Flood_Keymind"
+							graphical_culture = flood_01
+							prefix = no
+							upgradable = no
+						}
+					}
+					set_location = FROM
+					set_fleet_stance = passive
+					save_event_target_as = flood_keymind_fleet
+				}
+			}
+		}
+		hidden_effect = {
+			remove_building = building_keymind_nest
+			planet_event = { id = flood_origin.10 }
+		}
+	}
+}
+
+### Grow Keymind Fleet AI
+decision_grow_flood_keymind_fleet_ai = {
+	owned_planets_only = yes
+	icon = decision_grow_flood_keymind_fleet
+	
+	enactment_time = 180
+	
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 5000
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			is_ai = yes 
+			has_origin = origin_the_flood
+		}
+	}
+	
+	allow = {
+		planet = {
+			has_active_building = building_keymind_nest
+		}
+	}
+	
+	effect = {
+		owner = {
+			create_fleet = {
+				name = "Flood Keymind"		
+				effect = {
+					set_owner = PREV
+					while = {
+						count = 1
+						create_ship = {
+							name = random
+							design = "NAME_Flood_Keymind"
+							graphical_culture = flood_01
+							prefix = no
+							upgradable = no
+						}
+					}
+					set_location = FROM
+					set_fleet_stance = passive
+					save_event_target_as = flood_keymind_fleet
+				}
+			}
+		}
+		hidden_effect = {
+			remove_building = building_keymind_nest
+			planet_event = { id = flood_origin.10 }
+		}
+	}
+	
+	ai_weight = {
+		weight = 100
+		modifier = {
+			factor = 10
+			owner = {
+				OR = {
+					has_valid_civic = civic_flood_hivemind
+					has_origin = origin_the_flood 
+				}
+			}
+		}
+		modifier = {
+			factor = 50
+			is_capital = yes
+		}
+	}
+}
+
+#TURN WORLD INTO A FLOOD HIVE
+decision_flood_hive = {
+	owned_planets_only = yes
+	icon = decision_build_flood_hive
+	sound = decision_animal_wildlife
+	
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 7500
+		}
+	}
+	prerequisites = {
+	}
+	potential = {	
+		NOR = {
+			is_artificial = yes 
+			is_planet_class = pc_forerunner_shield
+			is_planet_class = pc_flood_hive
+			is_planet_class = pc_flood_shield
+			is_planet_class = pc_city
+			is_planet_class = pc_relic
+			is_planet_class = pc_habitat
+			is_planet_class = pc_ringworld_habitable
+		}
+		habitable_structure = no
+		owner = {
+			has_origin = origin_the_flood
+		}
+	}
+	
+	allow = {
+		owner = {
+			has_origin = origin_the_flood
+		}
+	}
+	
+	effect = {
+		change_pc = pc_flood_hive
+		add_modifier = {
+			modifier = flood_infestation_stage_3
+			days = -1
+		}
+		remove_modifier = flood_outbreak
+		remove_modifier = large_flood_outbreak
+		add_deposit = d_flood_hive
+		add_deposit = d_flood_infestation
+		add_building = building_keymind_nest
+	}
+	ai_weight = 10000
+}
+
+
+#TURN SHIELD WORLD INTO A FLOOD HIVE
+decision_flood_shield_world = {
+	owned_planets_only = yes
+	icon = decision_build_flood_hive
+	sound = decision_animal_wildlife
+	
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 7500
+		}
+	}
+
+	potential = {	
+		is_planet_class = pc_forerunner_shield
+		NOT = {
+			is_planet_class = pc_flood_shield
+		}
+		owner = {
+			has_origin = origin_the_flood
+		}
+	}
+	
+	allow = {
+		owner = {
+			has_origin = origin_the_flood
+		}
+	}
+	
+	effect = {
+		change_pc = pc_flood_shield
+		add_modifier = {
+			modifier = flood_infestation_stage_3
+			days = -1
+		}
+		add_deposit = d_flood_hive
+		add_deposit = d_flood_infestation
+		remove_deposit = d_sw_access_tunnels
+		add_deposit = d_sw_flood_vents
+	}
+	ai_weight = 100000
+}
+
+
+
+#Grow new Flood Gravemind
+decision_grow_gravemind = {
+	owned_planets_only = yes
+	icon = decision_grow_gravemind
+
+	enactment_time = 365
+
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 20000
+		}
+	}
+
+	potential = {
+		has_deposit = d_flood_gravemind_lair_empty
+		exists = owner
+		owner = { has_origin = origin_the_flood }
+	}
+
+	effect = {
+		remove_deposit = d_flood_gravemind_lair_empty
+		add_deposit = d_flood_gravemind_lair
+		hidden_effect = {
+			owner = {
+				if = {
+					limit = { has_modifier = missing_flood_gravemind_modifier }
+					remove_modifier = missing_flood_gravemind_modifier
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+# CREATE PURE FLOOD FORMS 
+decision_grow_pure_flood = {
+	owned_planets_only = yes 
+	icon = decision_grow_pure_flood
+	
+	enactment_time = 30
+	resources = {
+		category = decisions 
+		cost = {
+			alloys = 3500
+		}
+	}
+	potential = {
+		owner = {
+			has_origin = origin_the_flood
+		}
+		any_deposit = {
+			has_deposit_category = deposit_cat_alloys
+		}
+	}
+	effect = {
+		custom_tooltip = decision_grow_pure_flood_tooltip
+		hidden_effect = {
+			random_deposit = {
+				limit = { has_deposit_category = deposit_cat_alloys }
+				remove_deposit = yes
+			}
+		}
+		while = {
+			count = 5
+			create_pop = {
+				species = owner_main_species
+			}
+		}
+	}
+}
+
+#FLOOD DISPERSAL PODS
+decision_flood_dispersal_pods = {
+	enactment_time = 120
+	icon = decision_grow_pure_flood
+	
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 250
+		}
+	}
+	
+	potential = {
+		exists = space_owner
+		space_owner = { is_same_value = from }
+		from = {
+			OR = {
+				has_origin = origin_the_flood
+				has_civic = civic_flood_hivemind
+			}
+		}
+		is_colonizable = yes
+		NOR = {
+			is_artificial = yes 
+			is_planet_class = pc_ringworld_habitable
+			is_planet_class = pc_city
+			is_planet_class = pc_machine
+			is_planet_class = pc_relic
+			is_planet_class = pc_flood_hive
+			is_planet_class = pc_flood_shield
+			is_planet_class = pc_ringworld_habitable
+			is_planet_class = pc_habitat
+			has_modifier = flood_infestation
+			has_deposit = d_flood_infestation
+		}
+	}
+	
+	allow = {
+		is_under_colonization = no
+	}
+	
+	effect = {
+		add_modifier = {
+			modifier = "flood_infestation"
+			days = -1
+		}
+		add_deposit = d_flood_infestation
+	}
+}
+
+
+### Remove Flood Infestation on Uncolonized Planet #
+decision_remove_flood_infection = {
+	owned_planets_only = yes
+	icon = decision_remove_flood_infection
+	
+	enactment_time = 120
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1000
+		}
+	}
+	
+	potential = {
+		exists = owner 
+		owner = {
+			NOR = {
+				has_origin = origin_the_flood
+				has_civic = civic_flood_hivemind
+			}
+		}
+		has_modifier = flood_infestation
+	}
+	
+	
+	effect = {
+		custom_tooltip = decision_remove_flood_infection_effects
+		remove_modifier = flood_infestation
+		remove_deposit = d_flood_infestation
+		remove_deposit = d_flood_hive
+		owner = {
+			add_resource = {
+				unity = 250
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_origin = origin_the_flood
+					has_civic = civic_flood_hivemind
+				}
+			}
+		}
+	}
+}
+
+# ERADICATE FLOOD INFECTION FROM WORLD 
+decision_remove_planetary_flood_infection = {
+	owned_planets_only = yes
+	icon = decision_remove_flood_infection
+	
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			energy = 3000
+		}
+	}
+	
+	potential = {
+		is_planet_class = pc_flood_hive
+		exists = space_owner 
+		exists = from
+		space_owner = { is_same_value = from }
+		from = {
+			NOR = {
+				has_origin = origin_the_flood
+				has_civic = civic_flood_hivemind
+			}
+		}
+	}
+	
+	
+	effect = {
+		custom_tooltip = decision_remove_planetary_flood_infection_effects
+		change_pc = pc_barren
+		add_modifier = {
+			modifier = "terraforming_candidate"
+			days = -1
+		}
+		remove_modifier = flood_infestation
+		clear_deposits = yes 
+		clear_blockers = yes 
+		
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+		modifier = {
+			factor = 0
+			space_owner = {
+				OR = {
+					has_origin = origin_the_flood
+					has_civic = civic_flood_hivemind
+				}
+			}
+		}
+	}
+}
+
+
+### Infect a Habitat
+
+decision_flood_habitat_infection = {
+	owned_planets_only = yes 
+	icon = decision_flood_colonization
+	
+	enactment_time = 360
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_habitat
+			is_planet_class = pc_dm_habitat
+			is_planet_class = pc_ae_habitat
+			is_planet_class = pc_phanon_habitat
+			is_planet_class = pc_sigma_habitat
+			is_planet_class = pc_sigma_deepspace_habitat
+		}
+		exists = owner 
+		owner = {
+			OR = {
+				has_origin = origin_the_flood
+				has_civic = civic_flood_hivemind
+			}
+		}
+		NOT = {
+			has_modifier = flood_infected_habitat
+		}
+	}
+	
+	resources = {
+		category = decisions 
+		cost = {
+			influence = 150
+			alloys = 2000
+		}
+	}
+	
+	effect = {
+		add_building = building_keymind_nest
+		add_building = building_flood_hatchery
+		hidden_effect = {
+			add_modifier = { 
+				modifier = flood_infected_habitat
+				days = -1
+			}
+			add_deposit = d_flood_infestation
+		}
+	}
+	
+	ai_weight = {
+		weight = 100
+		modifier = {
+			factor = 2
+			has_planet_flag = advanced_habitat
+		}
+		modifier = {
+			factor = 3
+			has_planet_flag = advanced_habitat_2
+		}
+	}
+}
+
+decision_remove_flood_habitat_infection = {
+	owned_planets_only = yes 
+	icon = decision_remove_flood_infection
+	
+	enactment_time = 360
+	
+	potential = {
+		has_modifier = flood_infected_habitat
+		exists = owner 
+		owner = {
+			NOR = {
+				has_origin = origin_the_flood
+				has_civic = civic_flood_hivemind
+			}
+		}
+	}
+	
+	resources = {
+		category = decisions 
+		cost = {
+			unity = 2500
+		}
+	}
+	
+	effect = {
+		hidden_effect = {
+			remove_modifier = flood_infected_habitat
+			remove_modifier = flood_outbreak
+			remove_modifier = large_flood_outbreak
+			remove_deposit = d_flood_infestation
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+
+
+### Colonize a planet from Flood Dispersal Pods
+decision_flood_colonization = {
+	enactment_time = 120
+	icon = decision_flood_colonization
+	
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			alloys = 250
+		}
+	}
+	
+	potential = {
+		exists = space_owner
+		space_owner = { is_same_value = from }
+		from = {
+			OR = {
+				has_origin = origin_the_flood
+				has_civic = civic_flood_hivemind
+			}
+		}
+		is_colonizable = yes
+		has_modifier = flood_infestation
+	}
+	
+	allow = {
+		is_under_colonization = no
+	}
+	
+	effect = {
+		remove_modifier = flood_infestation 
+		add_deposit = d_flood_hive
+		add_building = building_flood_hatchery
+		custom_tooltip = decision_flood_colonization_effects
+		create_colony = {
+			owner = from
+			species = owner
+			ethos = random
+		}
+	}
+}

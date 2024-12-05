@@ -1,0 +1,472 @@
+
+
+
+
+
+############################################
+### Gamilas Super Cannon
+############################################
+
+weapon_component_template = {
+	key = "GGE_SUPER_CANNON_1"
+	size = extra_large
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	#icon = "GFX_gge_ship_part_superweapon_1"
+	icon = "GFX_gge_ship_part_xl_cannon_1"
+	icon_frame = 1
+	prerequisites = { "tech_gge_weapons_3" }
+	component_set = "GGE_SUPER_CANNON_1_CS"
+	#projectile_gfx = "gge_wave_motion_gun"
+	projectile_gfx = "gge_pinkred_laser_cannon_xl"
+	tags = { weapon_type_energy x_slot }
+	upgrades_to = "GGE_SUPER_CANNON_2"
+	ai_tags = { weapon_role_artillery }
+
+	##size_restriction = { Flagship battleship Battlecruiser titan Carrier Dreadnought giga_planet_behemoth giga_planet_behemoth_fe giga_massive_planet giga_war_moon_fe giga_systemcraft }
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_gge_t4_cost
+		}		
+		upkeep = {
+			energy = @l_gge_t4_uk_energy
+			alloys = @l_gge_t4_uk_alloys
+		}
+
+		
+	}
+
+	power = @sby_weapon_power_cost_2_xl
+	damage = { min = 234.30 max = 699.60 }
+	shield_damage = 0.75
+	#armor_penetration = 0.10
+	armor_damage = 1.50
+	hull_damage = 1.50
+	windup = { min = 40.0 max = 55.0 }
+	total_fire_time = 10.0
+	range = @gge_weapon_range_120
+	accuracy = 0.90
+	tracking = 0.05
+	
+	ai_weight = {
+		weight = @gge_ai_weight_5
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+	}
+
+	
+}
+
+
+weapon_component_template = {
+	key = "GGE_SUPER_CANNON_2"
+	size = extra_large
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	#icon = "GFX_gge_ship_part_superweapon_2"
+	icon = "GFX_gge_ship_part_xl_cannon_2"
+	icon_frame = 1
+	prerequisites = { "tech_gge_weapons_5" }
+	component_set = "GGE_SUPER_CANNON_2_CS"
+	#projectile_gfx = "gge_wave_motion_gun"
+	projectile_gfx = "gge_pinkred_laser_cannon_xl"
+	tags = { weapon_type_energy x_slot }
+	upgrades_to = "GGE_SUPER_CANNON_3"
+	ai_tags = { weapon_role_artillery }
+
+	##size_restriction = { Flagship battleship Battlecruiser titan Carrier Dreadnought giga_planet_behemoth giga_planet_behemoth_fe giga_massive_planet giga_war_moon_fe giga_systemcraft }
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_gge_t5_cost
+		}		
+		upkeep = {
+			energy = @l_gge_t5_uk_energy
+			alloys = @l_gge_t5_uk_alloys
+		}
+	}
+
+	
+	power = @sby_weapon_power_cost_3_xl
+	damage = { min = 478.50 max = 1155.00 }
+	shield_damage = 0.75
+	#armor_penetration = 0.10
+	armor_damage = 1.50
+	hull_damage = 1.50
+	windup = { min = 40.0 max = 55.0 }
+	total_fire_time = 10.0
+	range = @gge_weapon_range_120
+	accuracy = 0.90
+	tracking = 0.05
+	
+	ai_weight = {
+		weight = @gge_ai_weight_6
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+	}
+
+	
+}
+
+############################################
+### Wave Motion Gun
+############################################
+
+weapon_component_template = {
+	key = "GGE_DESSLER_GUN_1"
+	size = titanic
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_gge_ship_part_superweapon_1"
+	icon_frame = 1
+	prerequisites = { "tech_gge_wave_motion_gun_1" }
+	component_set = "GGE_DESSLER_GUN_1_CS"
+	projectile_gfx = "gge_wave_motion_gun"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy x_slot }
+	upgrades_to = "GGE_DESSLER_GUN_2"
+	ai_tags = { weapon_role_artillery }
+
+	##size_restriction = { battleship Battlecruiser juggernaut asteroid_artillery }
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_gge_t2_cost
+		}		
+		upkeep = {
+			energy = @xl_gge_t2_uk_energy
+			alloys = @xl_gge_t2_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_4_xl
+	#damage = { min = 8200.00 max = 16400.00 }
+	damage = { min = 3280.00 max = 6560.00 }
+	#shield_damage = 1.00
+	shield_penetration = 0.25
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 320.0 max = 320.0 }
+	#total_fire_time = 600
+	windup = { min = 160.0 max = 160.0 }
+	total_fire_time = 300
+	range = @gge_weapon_range_200
+	accuracy = 0.90
+	tracking = 0.10
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = @gge_ai_weight_5
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+		modifier = {
+			factor = 0
+			from = { 
+				OR = {
+					is_ship_size = Dreadnought
+					is_ship_size = titan
+					is_ship_size = Flagship
+				}
+			}
+		}
+	}
+
+	
+}
+weapon_component_template = {
+	key = "GGE_DESSLER_GUN_2"
+	size = titanic
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_gge_ship_part_superweapon_2"
+	icon_frame = 1
+	prerequisites = { "tech_gge_wave_motion_gun_2" }
+	component_set = "GGE_DESSLER_GUN_2_CS"
+	projectile_gfx = "gge_wave_motion_gun"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy x_slot }
+	upgrades_to = "GGE_DESSLER_GUN_3"
+	ai_tags = { weapon_role_artillery }
+
+	#size_restriction = { battleship Battlecruiser juggernaut asteroid_artillery }
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_gge_t3_cost
+		}		
+		upkeep = {
+			energy = @xl_gge_t3_uk_energy
+			alloys = @xl_gge_t3_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_5_xl
+	#damage = { min = 8200.00 max = 16400.00 }
+	damage = { min = 4100.00 max = 8200.00 }
+	#shield_damage = 1.00
+	shield_penetration = 0.25
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 320.0 max = 320.0 }
+	#total_fire_time = 600
+	windup = { min = 160.0 max = 160.0 }
+	total_fire_time = 300
+	range = @gge_weapon_range_200
+	accuracy = 0.90
+	tracking = 0.10
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = @gge_ai_weight_6
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+		modifier = {
+			factor = 0
+			from = { 
+				OR = {
+					is_ship_size = Dreadnought
+					is_ship_size = titan
+					is_ship_size = Flagship
+				}
+			}
+		}
+	}
+
+	
+}
+
+
+
+############################################
+###EXPANDED WAVE MOTION GUN
+############################################
+
+weapon_component_template = {
+	key = "GGE_DESSLER_GUN_1_T"
+	size = titanic
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_gge_ship_part_superweapon_1"
+	icon_frame = 1
+	prerequisites = { "tech_gge_wave_motion_gun_1" }
+	component_set = "GGE_DESSLER_GUN_1_T_CS"
+	#projectile_gfx = "gge_expanded_wave_motion_gun"
+	projectile_gfx = "gge_wave_motion_gun"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy t_slot }
+	ai_tags = { weapon_role_artillery }
+	upgrades_to = "GGE_DESSLER_GUN_2_T"
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @t_gge_t2_cost
+		}		
+		upkeep = {
+			energy = @t_gge_t2_uk_energy
+			alloys = @t_gge_t2_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_1_t
+	#damage = { min = 24600.00 max = 49200.00 }
+	damage = { min = 9840.00 max = 19680.00 }
+	shield_penetration = 0.25
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 360.0 max = 360.0 }
+	#total_fire_time = 720
+	windup = { min = 180.0 max = 180.0 }
+	total_fire_time = 360
+	range = @gge_weapon_range_250
+	accuracy = 0.90
+	tracking = 0.10
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = @gge_ai_weight_6
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+		modifier = {
+			factor = 0
+			from = { 
+				is_ship_size = titan
+			}
+			has_global_flag = has_nsc_active
+		}
+	}
+
+	
+}
+
+weapon_component_template = {
+	key = "GGE_DESSLER_GUN_2_T"
+	size = titanic
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_gge_ship_part_superweapon_2"
+	icon_frame = 1
+	prerequisites = { "tech_gge_wave_motion_gun_2" }
+	component_set = "GGE_DESSLER_GUN_2_T_CS"
+	#projectile_gfx = "gge_expanded_wave_motion_gun"
+	projectile_gfx = "gge_wave_motion_gun"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy t_slot }
+	ai_tags = { weapon_role_artillery }
+	upgrades_to = "GGE_DESSLER_GUN_3_T"
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @t_gge_t3_cost
+		}		
+		upkeep = {
+			energy = @t_gge_t3_uk_energy
+			alloys = @t_gge_t3_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_2_t
+	#damage = { min = 24600.00 max = 49200.00 }
+	damage = { min = 12300.00 max = 24600.00 }
+	shield_penetration = 0.25
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 360.0 max = 360.0 }
+	#total_fire_time = 720
+	windup = { min = 180.0 max = 180.0 }
+	total_fire_time = 360
+	range = @gge_weapon_range_250
+	accuracy = 0.90
+	tracking = 0.10
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = @gge_ai_weight_8
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+		modifier = {
+			factor = 0
+			from = { 
+				is_ship_size = titan
+			}
+			has_global_flag = has_nsc_active
+		}
+	}
+
+	
+}
+
+
+############################################
+###SUPER NOVA WAVE MOTION GUN
+############################################
+weapon_component_template = {
+	key = "GGE_DESSLER_GUN_1_FS"
+	size = titanic
+	#entity = "large_laser_gun_entity"
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_gge_ship_part_superweapon_1"
+	icon_frame = 1
+	prerequisites = { "tech_gge_wave_motion_gun_2" }
+	component_set = "GGE_DESSLER_GUN_1_FS_CS"
+	#projectile_gfx = "gge_super_nova_wave_motion_gun"
+	projectile_gfx = "gge_wave_motion_gun"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy t_slot }
+
+	ai_tags = { weapon_role_artillery }
+	upgrades_to = "GGE_DESSLER_GUN_2_FS"
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @t_gge_t3_cost
+		}		
+		upkeep = {
+			energy = @t_gge_t3_uk_energy
+			alloys = @t_gge_t3_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_1_f
+	#damage = { min = 270000.00 max = 400000.00 }
+	damage = { min = 135000.00 max = 200000.00 }
+	shield_penetration = 0.50
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 400.0 max = 400.0 }
+	#total_fire_time = 720
+	windup = { min = 200.0 max = 200.0 }
+	total_fire_time = 360
+	range = @gge_weapon_range_250
+	accuracy = 0.90
+	tracking = 0.10
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		factor = 0.0
+		#weight = @gge_ai_weight_8
+		#modifier = {
+		#	factor = 0.0
+		#	NOT = { has_origin = origin_garmillas }
+		#}
+	}
+
+	
+}

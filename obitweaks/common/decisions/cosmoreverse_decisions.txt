@@ -1,0 +1,704 @@
+## Remove Enigmatic Pillar
+remove_primordial_pillar = {
+	owned_planets_only = no
+	sound = event_administrative_work
+	icon = decision_resources
+
+	prerequisites = {
+		"tech_ehof_phase_04"
+	}
+
+	potential = {
+		AND = {
+			is_star = yes
+			space_owner = {
+				any_owned_megastructure = {
+					is_megastructure_type = ehof_pgate_gateway
+				}	
+			}
+		}
+	}
+
+	effect = {
+		every_megastructure = {
+			limit = {
+				OR = {
+					is_megastructure_type = ehof_pgate_gateway
+				}
+			}
+			remove_megastructure = this
+		}
+	}
+}
+
+## Repair broken Ringworlds
+decision_obi_restore_ring_world = {
+	owned_planets_only = no
+	sound = event_administrative_work
+	icon = decision_resources
+
+	prerequisites = {
+		"tech_ring_world"
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 10000
+		}
+	}
+
+	potential = {
+		OR = {
+			is_planet_class = pc_ringworld_seam_damaged # Actual Megastructure
+			is_planet_class = pc_ringworld_tech_damaged # Barren / Uninhabitable Ringworld Segment
+			is_planet_class = pc_ringworld_habitable_damaged # Finished and fully habitable Ringworld Segment
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				is_planet_class = pc_ringworld_habitable_damaged
+			}
+			change_pc = pc_ringworld_habitable
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_ringworld_tech_damaged
+			}
+			change_pc = pc_ringworld_tech
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_ringworld_seam_damaged
+			}
+			change_pc = pc_ringworld_seam
+		}
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+## Expand Ringworlds
+decision_obi_expand_ring_world = {
+	owned_planets_only = no
+	sound = event_administrative_work
+	icon = decision_resources
+
+	prerequisites = {
+		"tech_ring_world"
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 10000
+		}
+	}
+
+	potential = {
+		is_star = yes
+		solar_system = {
+			any_system_planet = {
+				is_planet_class = pc_ringworld_seam
+			}
+		}
+	}
+
+	effect = {
+		solar_system = {
+			every_system_planet = {
+				limit = {
+					is_planet_class = pc_ringworld_seam
+				}
+				change_pc = pc_ringworld_tech
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+## Make Magical Pocket
+decision_make_magic_pocket = {
+	owned_planets_only = yes
+	icon = decision_make_magic_pocket
+
+	prerequisites = {
+		"tech_obi_wormhole"
+	}
+
+	enactment_time = 30
+
+	potential = {
+		NOT = {
+			has_deposit = d_magic_pocket
+		}
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1000
+		}
+	}
+
+	effect = {
+		add_deposit = d_magic_pocket
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+## Build Chair Outpost
+decision_build_chair_outpost = {
+	owned_planets_only = yes
+	icon = decision_build_chair_outpost
+
+	prerequisites = {
+		"tech_ancient_chair"
+	}
+
+	enactment_time = 30
+
+	potential = {
+		NOR = {
+			has_deposit = d_chair_outpost
+			has_deposit = d_chair_outpost_active
+		}
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 1000
+		}
+	}
+
+	effect = {
+		add_deposit = d_chair_outpost
+	}
+}
+
+## Activate Chair Outpost
+decision_activate_chair_outpost = {
+	owned_planets_only = yes
+	icon = decision_build_chair_outpost
+
+	potential = {
+		has_deposit = d_chair_outpost_active
+	}
+
+	allow = {
+		any_fleet_in_orbit = {
+			exists = this
+		}
+	}
+	
+	effect = {
+		random_list = {
+			95 = { # Chance where chair deals 1 million hull damage to every hostile ship in orbit of the planet.
+				every_fleet_in_orbit = {
+					every_owned_ship = {
+						reduce_hp = 1000000
+					}
+				}
+			}
+			5 = { # Chance where chair ZPM runs out of power
+				remove_deposit = d_chair_outpost_active
+				add_deposit = d_chair_outpost
+			}
+		}
+	}
+}
+
+# Unplug ZPM from the Control Chair
+decision_deactivate_chair_outpost = {
+	owned_planets_only = yes
+	icon = decision_build_chair_outpost
+
+	potential = {
+		has_deposit = d_chair_outpost_active
+	}
+
+	resources = {
+		category = decisions
+		produces = {
+			sr_ancient_zpm = 1
+		}
+	}
+
+	effect = {
+		remove_deposit = d_chair_outpost_active
+		add_deposit = d_chair_outpost
+	}
+}
+
+## Build Attero
+decision_build_attero = {
+	owned_planets_only = yes
+	icon = decision_attero
+
+	prerequisites = {
+		"tech_shield_worlds"
+	}
+
+	enactment_time = 30
+
+	potential = {
+		NOR = {
+			has_deposit = d_attero_device
+			has_deposit = d_attero_device_inactive
+		}
+		OR = {
+			is_planet_class = pc_forerunner_shield
+			is_planet_class = pc_forerunner_sharpened_shield
+			is_planet_class = pc_genesis
+			is_planet_class = pc_requiem
+		}
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			sr_living_metal = 1000
+		}
+	}
+
+	effect = {
+		add_deposit = d_attero_device_inactive
+	}
+}
+
+# Deactivate Attero
+decision_deactivate_attero = {
+	owned_planets_only = yes
+	icon = decision_attero
+
+	potential = {
+		has_deposit = d_attero_device
+	}
+
+	effect = {
+		remove_deposit = d_attero_device
+		add_deposit = d_attero_device_inactive
+	}
+}
+
+# Dismantle Attero
+decision_dismantle_attero = {
+	owned_planets_only = yes
+	icon = decision_attero
+
+	potential = {
+		has_deposit = d_attero_device_inactive
+	}
+
+	effect = {
+		remove_deposit = d_chair_outpost_active
+		add_deposit = d_chair_outpost
+	}
+}
+
+# Convert Black Hole into Brown Dwarf
+decision_hole_to_dwarf = {
+	icon = decision_resources
+
+	potential = {
+		this = {
+			is_star = yes
+			is_star_class = sc_black_hole
+		}
+	}
+
+	effect = {
+		solar_system = {
+			set_star_class = sc_t
+			star = {
+				remove_planet_flag = has_megastructure
+			}
+		}
+	}
+
+
+	ai_weight = {
+		weight = 0
+	}
+
+	prerequisites = {
+		"tech_gigas_stellar_manip_1"
+	}
+}
+
+# Seal Citadel
+decision_seal_obicitadel = {
+	owned_planets_only = yes
+	icon = decision_seal_citadel
+	
+	enactment_time = 180
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 5000
+			alloys = 5000
+			energy = 5000
+		}
+	}
+	
+	potential = {
+		AND = {
+			is_planet_class = pc_obicitadel
+			NOT = {
+				has_modifier = obt_citadel_sealed
+			}
+		}
+	}
+	
+	effect = {
+		add_modifier = {
+			modifier = obt_citadel_sealed
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Unseal Citadel
+decision_unseal_obicitadel = {
+	owned_planets_only = yes
+	icon = decision_seal_citadel
+	
+	enactment_time = 180
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 5000
+			alloys = 5000
+			energy = 5000
+		}
+	}
+	
+	potential = {
+		AND = {
+			is_planet_class = pc_obicitadel
+			has_modifier = obt_citadel_sealed
+		}
+	}
+	
+	effect = {
+		remove_modifier = obt_citadel_sealed
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Activate Energy Controllers
+cr_activate_crs = {
+	owned_planets_only = no
+	sound = event_administrative_work
+	icon = decision_energy_controller
+
+	potential = {
+		OR = {
+			has_deposit = d_energy_controller
+			AND = {
+				planet = {
+					has_deposit = d_space_bridge
+				}
+				space_owner = {
+					is_same_empire = solar_system.space_owner
+					any_owned_planet = {
+						has_deposit = d_space_bridge
+						has_deposit = d_energy_controller
+					}
+				}
+			}
+		}
+	}
+
+	allow = {
+		this = {
+			NOT = {
+				is_star = yes
+			}
+		}
+	}
+
+	effect = {
+		save_global_event_target_as = cr_planet
+		from = {
+			country_event = { id = cosmoreverse_events.1 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Build Energy Controller
+decision_build_energy_controller = {
+	owned_planets_only = yes
+	icon = decision_energy_controller
+
+	prerequisites = {
+		"tech_cr_cosmoreverse"
+	}
+
+	enactment_time = 30
+
+	potential = {
+		NOT = {
+			has_deposit = d_energy_controller
+		}
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			sr_living_metal = 350
+			energon = 200
+		}
+	}
+
+	effect = {
+		add_deposit = d_energy_controller
+	}
+}
+
+# Collapse Time Fault
+cr_destroy_dtf = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_resources
+
+	resources = {
+		category = decisions
+		produces = {
+			energy = 100000
+		}
+	}
+
+	prerequisites = {
+ 		"tech_cr_access"
+ 	}
+
+	potential = {
+		has_deposit = d_cr_dtf
+		owner = {
+			NOT = {
+				has_technology = tech_dtf_cosmoreverse
+			}
+		}
+	}
+
+	effect = {
+		remove_deposit = d_cr_dtf
+	}
+}
+
+# Remove Zei'a stuff
+decision_cr_cleanup_stuff = {
+	owned_planets_only = no
+	sound = event_administrative_work
+	icon = decision_resources
+
+	potential = {
+		AND = {
+			space_owner = {
+				OR = {
+					has_technology = tech_forerunner_start
+					has_technology = tech_efg_pretech
+					has_trait = trait_ancient
+				}	
+			}
+			planet = {
+				OR = {
+					has_deposit = d_cybertronian_city
+					has_deposit = d_cybertron_ruins
+					has_deposit = d_ground_bridge
+					has_modifier = halo_ring_monitor
+				}
+			}
+		}
+	}
+	
+	effect = {
+		remove_deposit = d_cybertronian_city
+		remove_deposit = d_cybertron_ruins
+		remove_deposit = d_ground_bridge
+		remove_modifier = halo_ring_monitor
+		remove_modifier = halo_ring_submonitor
+	}
+}
+
+## Build City-Ship
+decision_build_city_ship = {
+	owned_planets_only = yes
+	icon = decision_city_ship
+
+	prerequisites = {
+		"tech_ancient_chair"
+	}
+
+	enactment_time = 365
+
+	potential = {
+		NOT = {
+			has_deposit = d_city_ship
+		}
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			sr_living_metal = 10000
+			energon = 10000
+		}
+	}
+
+	effect = {
+		add_deposit = d_city_ship
+	}
+}
+
+## City-Ship Drones
+decision_drones_city_ship = {
+	owned_planets_only = yes
+	icon = decision_city_ship
+
+	potential = {
+		has_deposit = d_city_ship
+	}
+
+	allow = {
+		any_fleet_in_orbit = {
+			exists = this
+		}
+	}
+	
+	effect = {
+		every_fleet_in_orbit = {
+			every_owned_ship = {
+				reduce_hp = 5000000
+			}
+		}
+	}
+}
+
+## City-Ship Launch
+decision_launch_city_ship = {
+	owned_planets_only = yes
+	icon = decision_city_ship
+
+	resources = {
+		category = decisions
+		cost = {
+			sr_ancient_zpm = 3
+		}
+	}
+
+	potential = {
+		has_deposit = d_city_ship
+	}
+	
+	effect = {
+		remove_deposit = d_city_ship
+		create_fleet = {
+			name = "Zei'a City-Ship"
+			effect = {
+				set_owner = PREV
+				while = {
+					count = 1
+					create_ship = {
+						design = "City-Ship"
+						graphical_culture = asuran_01
+						prefix = no
+						upgradable = no
+					}
+				}
+				set_location = prev
+			}
+		}
+	}
+}
+
+## City-Ship Land
+decision_land_city_ship = {
+	owned_planets_only = yes
+	icon = decision_city_ship
+
+	potential = {
+		NOT = {
+			has_deposit = d_city_ship
+		}
+		any_fleet_in_orbit = {
+			is_ship_size = obi_city
+		}
+	}
+	
+	effect = {
+		every_fleet_in_orbit = {
+			limit = {
+				is_ship_size = obi_city
+			}
+			every_owned_ship = {
+				limit = {
+					is_ship_size = obi_city
+				}
+				unassign_leader = this
+				delete_ship = this
+			}
+		}
+		add_deposit = d_city_ship
+	}
+}
+
+## City-Ship Colonize
+decision_colonize_city_ship = {
+	owned_planets_only = no
+	icon = decision_city_ship
+
+	potential = {
+		is_colonizable = yes
+		is_colony = no
+		NOT = {
+			has_deposit = d_city_ship
+		}
+		any_fleet_in_orbit = {
+			is_ship_size = obi_city
+		}
+	}
+	
+	effect = {
+		every_fleet_in_orbit = {
+			limit = {
+				is_ship_size = obi_city
+			}
+			every_owned_ship = {
+				limit = {
+					is_ship_size = obi_city
+				}
+				unassign_leader = this
+				delete_ship = this
+			}
+		}
+		add_deposit = d_city_ship
+		start_colony = {
+			owner = space_owner
+			species = space_owenr
+			ethos = random
+		}
+	}
+}

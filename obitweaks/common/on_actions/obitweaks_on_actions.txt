@@ -1,0 +1,60 @@
+on_game_start_country = {
+	events = {
+		zeiastart.01
+	}
+}
+
+on_planet_bombarded = {
+	events = {
+		omega_lock.100 # Makes cybertronian city states into ruins during bombardment while planetary devestation is at or above 50%
+	}
+}
+
+on_colony_destroyed = {
+	events = {
+		flood_hive_planet.2 # Failsafe to ensure that scourge planets are turned into barren ones after the colony is destroyed
+	}
+}
+
+
+on_colony_monthly_pulse = {
+	events = {
+		omega_lock.135 # Triggers the Well of All Sparks spawning event, 1 pop per is_cybertronian species.
+	}
+}
+
+on_colony_yearly_pulse = {
+	events = {
+		omega_lock.400 # Triggers the Omega Lock depletion master event (50% they drain)
+	}
+}
+
+on_colony_10_year_pulse = {
+	events = {
+		omega_lock.200 # Triggers the Energon Mine Depletion master event (50% chance they deplete)
+		omega_lock.300 # Triggers the Cybertronian World Depletion master event (50% Chance that they deplete)
+	}
+}
+
+on_leader_level_up = {
+	events = {
+		forerunner_start.699 # Refires add kvil'sha leader trait on leaders that level up
+		promethean_start.6999 # Refires add uviik leader trait on leaders that level up
+	}
+}
+
+# A fleet has entered a system | See also: on_fleet_auto_move_arrival
+# Scope = Fleet
+# From = System
+on_entering_system_fleet = {
+	events = {
+		attero.1
+	}
+}
+
+on_destroy_planet_with_obi_planet_killer_cosmoreverse = {
+	events = {
+		cosmoreverse_events.69
+		#cosmoreverse_events.699
+	}
+}

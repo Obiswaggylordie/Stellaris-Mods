@@ -1,0 +1,603 @@
+#########################
+# Forerunner Weapon Tech
+# By Force728
+#########################
+
+
+#FORERUNNER SENTINEL BEAM 
+
+tech_forerunner_sentinel_beam = {
+	area = physics 
+	cost = @tier2cost1
+	tier = 2
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_forerunner_start" "tech_forerunner_sentinels" }
+	weight = @tier2weight1
+	is_reverse_engineerable = yes 
+	is_rare = yes 
+	
+	potential = {
+	}
+	
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_forerunner_start
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 1.25 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+#FORERUNNER LIGHT MASS FUSILLADE CANNONS
+
+tech_forerunner_lmf_cannon = {
+	area = physics 
+	cost = @tier3cost1
+	tier = 3
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_forerunner_start" "tech_forerunner_sentinel_beam" "tech_dtf_weapons_5" }
+	weight = @tier3weight1
+	is_reverse_engineerable = yes 
+	is_rare = yes 
+	
+	potential = {
+	}
+	
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_forerunner_start
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 1.25 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+#PULSE MISSILE LAUNCHER 
+tech_forerunner_pulse_missile_launcher = {
+	area = physics 
+	cost = @tier3cost3
+	tier = 3
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_forerunner_start" "tech_forerunner_lmf_cannon" }
+	weight = @tier3weight3
+	is_reverse_engineerable = yes 
+	is_rare = yes 
+	
+	potential = {
+	}
+	
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_forerunner_start
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 1.25 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+#CONVERGING BEAM
+tech_forerunner_converging_beam = {
+	area = physics 
+	cost = @tier4cost1
+	tier = 4
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_forerunner_start" "tech_forerunner_lmf_cannon" }
+	weight = @tier4weight1
+	is_reverse_engineerable = yes 
+	is_rare = yes 
+	
+	potential = {
+	}
+	
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_forerunner_start
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+
+#DESTRUCTOR BEAM
+tech_forerunner_destructor_beam = {
+	area = physics 
+	cost = @tier4cost2
+	tier = 4
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_forerunner_start" "tech_forerunner_lmf_cannon" }
+	weight = @tier4weight2
+	is_reverse_engineerable = yes 
+	is_rare = yes 
+	
+	potential = {
+	}
+	
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_forerunner_start
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+#DISRUPTION GENERATOR
+tech_forerunner_disruption_generator = {
+	area = physics
+	cost = @tier4cost3
+	tier = 4
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_forerunner_start" "tech_forerunner_destructor_beam" "tech_battleships" }
+	weight = @tier4weight3
+	is_rare = yes 
+	is_reverse_engineerable = yes 
+
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_forerunner_start
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+#PARTICLE CANNON
+tech_forerunner_particle_cannon = {
+	area = physics 
+	cost = @tier4cost2
+	tier = 4
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_forerunner_start" "tech_battleships" "tech_forerunner_converging_beam" }
+	weight = @tier4weight2
+	is_reverse_engineerable = yes 
+	is_rare = yes 
+	
+	potential = {
+	}
+	
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_forerunner_start
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+#TORSION DRIVER
+tech_forerunner_torsion_driver = {
+	area = physics 
+	cost = @tier4cost1
+	tier = 4
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_forerunner_start" "tech_battleships" "tech_forerunner_particle_cannon" }
+	weight = @tier4weight1
+	is_reverse_engineerable = yes 
+	is_rare = yes 
+	
+	potential = {
+	}
+	
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_forerunner_start
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+#FORERUNNER ION BOMBARDMENT STANCE 
+tech_forerunner_ion_bombardment = {
+	area = physics 
+	cost = @tier4cost3
+	tier = 4
+	is_rare = yes 
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_forerunner_start" "tech_forerunner_torsion_driver" }
+	weight = @tier4weight3
+	is_reverse_engineerable = no
+	is_dangerous = yes 
+	
+	
+	potential = {
+	}
+	
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_forerunner_start
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_forerunner_ion_bombardment }
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+#HEAVY ION WEAPON SYSTEM 
+tech_forerunner_heavy_ion_launcher = {
+	area = physics 
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes 
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_forerunner_start" "tech_titans" "tech_forerunner_ion_bombardment" }
+	weight = @tier5weight3
+	is_reverse_engineerable = no
+	
+	
+	potential = {
+	}
+	
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_forerunner_start
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_forerunner_heavy_ion_launcher }
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}

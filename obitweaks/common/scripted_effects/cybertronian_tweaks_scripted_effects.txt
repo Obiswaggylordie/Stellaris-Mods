@@ -1,0 +1,32 @@
+harvest_star = {
+	solar_system = {
+
+		set_star_class = sc_black_hole
+	
+		every_system_planet = {
+			limit = {
+				AND = {
+					has_deposit = d_depleted_all_spark
+					has_deposit = d_star_harvester
+				}
+			}
+			clear_deposits = yes
+			clear_blockers = yes
+			remove_planet_flag = has_depleted_all_spark
+			add_deposit = d_all_spark
+			set_planet_flag = has_all_spark
+			add_deposit = d_space_bridge
+		}
+
+		every_system_planet = {
+			limit = {
+				NOR = {
+					is_star = yes
+					is_artificial = yes
+					is_asteroid = yes
+				}
+			}
+			change_pc = pc_broken
+		}
+	}
+}

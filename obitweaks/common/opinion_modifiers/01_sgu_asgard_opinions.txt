@@ -1,0 +1,140 @@
+triggered_opinion_asgard_ancient = {
+	trigger = {
+		NOT = { is_country_type = fallen_empire }
+		has_trait = trait_asgard
+		FROM = {
+			has_trait = trait_ancient
+		}
+	}
+
+	opinion = {
+		base = 250
+	}
+}
+
+triggered_opinion_asgard_asgard = {
+	trigger = {
+		NOT = { is_country_type = fallen_empire }
+		has_trait = trait_asgard
+		FROM = {
+			has_trait = trait_asgard
+		}
+	}
+
+	opinion = {
+		base = 500
+	}
+}
+
+triggered_opinion_asgard_ori = {
+	trigger = {
+		NOT = { is_country_type = fallen_empire }
+		has_trait = trait_asgard
+		FROM = {
+			has_trait = trait_ori
+		}
+	}
+
+	opinion = {
+		base = -100
+	}
+}
+
+triggered_opinion_asgard_tauri = {
+	trigger = {
+		NOT = { is_country_type = fallen_empire }
+		has_trait = trait_asgard
+		FROM = {
+			has_trait = trait_tauri
+		}
+	}
+
+	opinion = {
+		base = 100
+	}
+}
+
+triggered_opinion_asgard_wraith = {
+	trigger = {
+		NOT = { is_country_type = fallen_empire }
+		has_trait = trait_asgard
+		FROM = {
+			has_trait = trait_wraith
+		}
+	}
+
+	opinion = {
+		base = -100
+	}
+}
+
+triggered_opinion_asgard_goauld = {
+	trigger = {
+		NOT = { is_country_type = fallen_empire }
+		has_trait = trait_asgard
+		FROM = {
+			has_trait = trait_goauld
+		}
+	}
+
+	opinion = {
+		base = -100
+	}
+}
+
+triggered_opinion_asgard_jaffa = {
+	trigger = {
+		NOT = { is_country_type = fallen_empire }
+		has_trait = trait_asgard
+		FROM = {
+			has_trait = trait_jaffa
+		}
+	}
+
+	opinion = {
+		base = 50
+	}
+}
+
+triggered_opinion_asgard_replicator = {
+	trigger = {
+		NOT = { is_country_type = fallen_empire }
+		has_trait = trait_asgard
+		FROM = {
+			has_trait = trait_replicator
+		}
+	}
+
+	opinion = {
+		base = -1000
+	}
+}
+
+triggered_opinion_asgard_asuran = {
+	trigger = {
+		NOT = { is_country_type = fallen_empire }
+		has_trait = trait_asgard
+		FROM = {
+			has_trait = trait_asuran
+		}
+	}
+
+	opinion = {
+		base = -1000
+	}
+}
+
+triggered_opinion_asgard_nox = {
+	trigger = {
+		NOT = { is_country_type = fallen_empire }
+		has_trait = trait_asgard
+		FROM = {
+			has_trait = trait_nox
+		}
+	}
+
+	opinion = {
+		base = 250
+	}
+}
+

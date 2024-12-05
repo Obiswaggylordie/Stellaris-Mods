@@ -1,0 +1,32 @@
+get_forerunner_tech_zeia = {
+	icon = "GFX_edict_type_policy"
+	length = 1
+	resources = {
+		category = edicts
+	}
+
+	potential = {
+		has_technology = "tech_magic_and_science"
+		has_technology = "tech_ascension_4"
+		any_owned_species = {
+			OR = {
+				has_trait = "trait_forerunner_species"
+				has_trait = "trait_robot_sentinel_ai"
+				has_trait = "trait_robot_promethean_ai"
+			}
+		}
+		NOT = {
+			has_technology = tech_forerunner_start
+		}
+	}
+
+	effect = {
+		give_technology = {
+			tech = tech_forerunner_start
+		}
+	}
+
+	ai_weight = {
+		weight = 1000
+	}	
+}

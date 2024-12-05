@@ -1,0 +1,122 @@
+#FORERUNNER GUARDIAN CUSTODE
+ship_design = {
+	name = "NAME_Guardian_Custode"
+	ship_size = guardian_custode
+	is_event_design = yes
+	
+	section = {
+		template = "guardian_custode_key"
+		slot = "mid"
+		
+		component = {
+			slot = "STRIKE_CRAFT_01"
+			template = "FORERUNNER_SENTINEL_STRIKE_CRAFT"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_02"
+			template = "FORERUNNER_SENTINEL_STRIKE_CRAFT"
+		}
+		component = {
+			slot = "PLANET_KILLER_GUN_01"
+			template = "PLANET_KILLER_COMPOSER"
+		}
+		component = {
+			slot = "EXTRA_LARGE_01"
+			template = "FORERUNNER_DISRUPTION_GENERATOR"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_CONVERGING_BEAM_CANNON"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_CONVERGING_BEAM_CANNON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_CONVERGING_BEAM_CANNON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_CONVERGING_BEAM_CANNON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_CONVERGING_BEAM_CANNON"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_CONVERGING_BEAM_CANNON"
+		}
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "SMALL_SENTINEL_BEAM_1"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "SMALL_SENTINEL_BEAM_1"
+		}
+		component = {
+			slot = "PD_01"
+			template = "FORERUNNER_SENTINEL_BEAM_PD"
+		}
+		component = {
+			slot = "PD_02"
+			template = "FORERUNNER_SENTINEL_BEAM_PD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_FORERUNNER_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_FORERUNNER_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_FORERUNNER_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_FORERUNNER_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_FORERUNNER_HARDLIGHT_ARMOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_FORERUNNER_HARDLIGHT_ARMOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_FORERUNNER_HARDLIGHT_ARMOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_FORERUNNER_HARDLIGHT_ARMOR"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR_2"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "ENIGMATIC_ENCODER"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "ENIGMATIC_DECODER"
+		}
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "FORERUNNER_ATTENUATION_PULSE_EMITTER"
+		}
+	}
+	required_component="FORERUNNER_SENSORS"
+	required_component="FORERUNNER_SLIPSPACE_DRIVE"
+	required_component="COMBAT_COMPUTER_ARTILLERY_SAPIENT"
+	required_component="BATTLESHIP_FORERUNNER_REACTOR"
+	required_component="FORERUNNER_THRUSTERS1"
+	
+}

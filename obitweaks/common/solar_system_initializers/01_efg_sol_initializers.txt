@@ -1,0 +1,252 @@
+dtf_sol_system_initializer = {
+    name = "Dasha"
+	class = "sc_k"
+	flags = { empire_home_system }
+	usage = origin
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 120
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 285
+	}
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+		if = {
+			limit = {
+				is_inside_nebula = no
+			}
+			create_nebula = {
+				radius = 25
+				effect = { nebula_cloaking_effect = yes }
+			}
+		}
+	}
+
+	# Star
+	planet = {
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+		size = 28
+		has_ring = no
+	}
+
+	planet = {
+		name = "Norion"
+		class = "pc_molten"
+		orbit_distance = 32
+		orbit_angle = 50
+		size = 15
+		has_ring = no
+	}
+
+	planet = {
+		name = "Zebes"
+		class = "pc_toxic"
+		orbit_distance = 20
+		orbit_angle = 220
+		size = 16
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Bryyo"
+		class = "pc_arid"
+		orbit_distance = 20
+		orbit_angle = 240
+		size = 25
+		has_ring = no
+	}
+
+	# Homeworld
+	change_orbit = 20 
+	planet = {
+		class = "pc_cybertronian_world"
+		orbit_angle = 195
+		orbit_distance = 0
+		size = 30
+		has_ring = no
+		modifiers = none
+		starting_planet = yes
+		flags = { planet_earth_2200 }
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		moon = {
+			name = "Keiinleiih'n"
+			class = "pc_primordial_cybertronian_world"
+			size = 15
+			orbit_distance = 16
+			orbit_angle = 90
+			has_ring = no
+			flags = { planet_moon_2200 }
+		}
+
+		moon = {
+			name = "Vaslein"
+			class = "pc_primordial_cybertronian_world"
+			size = 15
+			orbit_distance = 0
+			orbit_angle = 180
+			has_ring = no
+			flags = { planet_moon_2200 }
+		}
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 0
+		size = 5
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 45
+		size = 5
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 135
+		size = 5
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 180
+		size = 5
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 225
+		size = 5
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 270
+		size = 5
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 315
+		size = 5
+	}
+	
+	planet = {
+		name = "Elysia"
+		class = "pc_gas_giant"
+		orbit_distance = 60
+		orbit_angle = 125
+		size = 30
+		has_ring = yes
+		entity = "gas_giant_05_entity"
+		change_orbit = 4
+		
+		moon = {
+			name = "K-2L"
+			class = "pc_frozen"
+			size = 5
+			orbit_distance = 15
+			orbit_angle = 1
+			has_ring = no
+			entity = "cold_barren_planet_luna_entity"
+		}	
+	}	
+	
+	planet = {
+		name = "Tallon A"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 215
+		size = 30
+		has_ring = no
+		change_orbit = 4
+
+		moon = {
+			name = "Tallon B"
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 10
+			orbit_angle = 1
+			has_ring = no
+			entity = "cold_barren_planet_luna_entity"
+		}
+	}
+		
+	planet = {
+		name = "Alinos"
+		class = "pc_frozen"
+		orbit_distance = 25
+		orbit_angle = 285
+		size = 15
+		has_ring = no
+		change_orbit = 4
+	}
+		
+	planet = {
+		name = "Arcturus"
+		class = "pc_frozen"
+		orbit_distance = 25
+		orbit_angle = 315
+		size = 16
+		has_ring = no
+		change_orbit = 4
+	}
+		
+	planet = {
+		name = "Tivus"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 310
+		size = 30
+		has_ring = no
+		entity = "gas_giant_jupiter_entity"
+		change_orbit = 4
+		
+		moon = {
+			name = "Daiban"
+			class = "pc_frozen"
+			size = 5
+			orbit_distance = 10
+			orbit_angle = 1
+			has_ring = no
+			entity = "cold_barren_planet_luna_entity"
+		}
+	}
+		
+	planet = {
+		name = "Urtraghus"
+		class = "pc_frozen"
+		orbit_distance = 20
+		orbit_angle = 200
+		size = 15
+		has_ring = no
+		change_orbit = 4
+	}
+}

@@ -1,0 +1,260 @@
+portraits = {
+	# Old Portraits
+	lum1 = { texturefile = "gfx/models/portraits/lum/lum1.dds" } 
+	lum2 = { texturefile = "gfx/models/portraits/lum/lum2.dds" } 
+	lum3 = { texturefile = "gfx/models/portraits/lum/lum3.dds" } 
+	lum4 = { texturefile = "gfx/models/portraits/lum/lum4.dds" }
+
+	# New Kvil'sha
+	naos_praetor = { texturefile = "gfx/models/portraits/lum/lum_naos_1.dds" }
+	naos_legatus = { texturefile = "gfx/models/portraits/lum/lum_naos_2.dds" }
+	agon_aedifex = { texturefile = "gfx/models/portraits/lum/lum_agon_2.dds" }
+	agon_bellator = { texturefile = "gfx/models/portraits/lum/lum_agon_1.dds" }
+	torvus_partus = { texturefile = "gfx/models/portraits/lum/lum_torvus_1.dds" }
+	torvus_figulus = { texturefile = "gfx/models/portraits/lum/lum_torvus_2.dds" }
+	fanum_repertor = { texturefile = "gfx/models/portraits/lum/lum_fanum_1.dds" }
+	fanum_indigator = { texturefile = "gfx/models/portraits/lum/lum_fanum_2.dds" }
+
+	# Sob'sha
+	sobsha_drone = { texturefile = "gfx/models/portraits/lum/lum_sobsha_1.dds" }
+	sobsha_warrior = { texturefile = "gfx/models/portraits/lum/lum_sobsha_2.dds" }
+	sobsha_guard = { texturefile = "gfx/models/portraits/lum/lum_sobsha_3.dds" }
+	sobsha_brood = { texturefile = "gfx/models/portraits/lum/lum_sobsha_4.dds" }
+	sobsha_major = { texturefile = "gfx/models/portraits/lum/lum_sobsha_5.dds" }
+	sobsha_lieutenant = { texturefile = "gfx/models/portraits/lum/lum_sobsha_6.dds" }
+	sobsha_leader = { texturefile = "gfx/models/portraits/lum/lum_sobsha_7.dds" }
+}
+
+portrait_groups = {
+	sobsha = {
+		default = sobsha_drone
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					sobsha_drone
+					sobsha_warrior
+					sobsha_guard
+					sobsha_brood
+					sobsha_major
+					sobsha_lieutenant
+					sobsha_leader
+				}
+			}
+		}
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					sobsha_drone
+					sobsha_warrior
+					sobsha_guard
+					sobsha_brood
+					sobsha_major
+					sobsha_lieutenant
+					sobsha_leader
+				}
+			}
+		}
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					is_pop_category = worker
+				}
+				portraits = {
+					sobsha_drone
+				}
+			}
+			add = {
+				trigger = {
+					is_pop_category = specialist
+				}
+				portraits = {
+					sobsha_warrior
+					sobsha_guard
+					sobsha_brood
+				}
+			}
+			add = {
+				trigger = {
+					is_pop_category = ruler
+				}
+				portraits = {
+					sobsha_major
+					sobsha_lieutenant
+					sobsha_leader
+				}
+			}
+		}
+		leader = {
+			add = {
+				trigger = {
+					leader_class = official
+				}
+				portraits = {				
+					sobsha_leader
+				}
+			}
+			add = {
+				trigger = {
+					leader_class = commander
+				}
+				portraits = {				
+					sobsha_leader
+				}
+			}
+			add = {
+				trigger = {
+					leader_class = scientist
+				}
+				portraits = {				
+					sobsha_leader
+				}
+			}
+		}
+		ruler = {
+			add = {
+				portraits = {
+					sobsha_drone
+					sobsha_warrior
+					sobsha_guard
+					sobsha_brood
+					sobsha_major
+					sobsha_lieutenant
+					sobsha_leader
+				}
+			}
+		}
+	}
+}
+
+portrait_groups = {
+	kvilsha = {
+		default = naos_praetor
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					#lum1
+					#lum2
+					#lum3
+					#lum4
+					naos_praetor
+					naos_legatus
+					agon_aedifex
+					agon_bellator
+					torvus_partus
+					torvus_figulus
+					fanum_repertor
+					fanum_indigator
+				}
+			}
+		}
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					#lum1
+					#lum2
+					#lum3
+					#lum4
+					naos_praetor
+					naos_legatus
+					agon_aedifex
+					agon_bellator
+					torvus_partus
+					torvus_figulus
+					fanum_repertor
+					fanum_indigator
+				}
+			}
+		}
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					is_pop_category = worker
+				}
+				portraits = {
+					#lum2
+					agon_aedifex
+				}
+			}
+			add = {
+				trigger = {
+					is_pop_category = specialist
+				}
+				portraits = {
+					#lum3
+					#lum4
+					torvus_partus
+					torvus_figulus
+					fanum_repertor
+					agon_aedifex
+
+				}
+			}
+			add = {
+				trigger = {
+					is_pop_category = ruler
+				}
+				portraits = {
+					#lum1
+					naos_praetor
+				}
+			}
+		}
+		leader = {
+			add = {
+				trigger = {
+					leader_class = official
+				}
+				portraits = {				
+					#lum1
+					naos_praetor
+					naos_legatus
+				}
+			}
+			add = {
+				trigger = {
+					leader_class = commander
+				}
+				portraits = {				
+					#lum2
+					agon_aedifex
+					agon_bellator
+				}
+			}
+			add = {
+				trigger = {
+					leader_class = scientist
+				}
+				portraits = {				
+					#lum3
+					#lum4
+					torvus_partus
+					torvus_figulus
+					fanum_repertor
+					fanum_indigator
+				}
+			}
+		}
+		ruler = {
+			add = {
+				portraits = {
+					#lum1
+					#lum2
+					#lum3
+					#lum4
+					naos_praetor
+					naos_legatus
+					agon_aedifex
+					agon_bellator
+					torvus_partus
+					torvus_figulus
+					fanum_repertor
+					fanum_indigator
+				}
+			}
+		}
+	}
+}

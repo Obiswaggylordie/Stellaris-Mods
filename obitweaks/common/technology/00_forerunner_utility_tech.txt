@@ -1,0 +1,359 @@
+#########################
+# Forerunner Utility Tech
+# By Force728
+#########################
+
+tech_forerunner_start = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	is_reverse_engineerable = yes
+	category = { statecraft }
+	ai_update_type = all
+	weight = 0
+	is_rare = yes
+	
+	weight_modifier = {
+		factor = 0
+	}
+
+	modifier = {
+		diplo_weight_technology_mult = 0.20
+	}
+}
+
+#FORERUNNER AUSPEX ARRAY (SENSORS)
+
+tech_forerunner_sensors = {
+	area = physics 
+	cost = @tier5cost1
+	tier = 5
+	category = { computing }
+	ai_update_type = all
+	prerequisites = { "tech_sensors_3" "tech_forerunner_start" "tech_efg_reactor_3" }
+	weight = @tier5weight1
+	
+	potential = {
+		has_technology = tech_forerunner_start
+	}
+	
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_forerunner_start
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 1.25 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+
+	#prereqfor_desc = {
+	#	component = {
+	#		title = "TECH_UNLOCK_FORERUNNER_SENSORS_TITLE"
+	#		desc = "TECH_UNLOCK_FORERUNNER_SENSORS_DESC"
+	#	}
+	#}
+}
+
+#FORERUNNER REACTION DRIVE (THRUSTERS)
+
+tech_forerunner_thrusters = {
+	area = engineering
+	cost = @tier5cost1
+	tier = 5
+	category = { propulsion }
+	ai_update_type = all
+	prerequisites = { "tech_forerunner_start" "tech_efg_reactor_3" }
+	weight = @tier5weight1
+	
+	potential = {
+		has_technology = "tech_forerunner_start"
+	}
+	
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_forerunner_start
+			}
+		}
+		modifier = {
+			factor = 2
+			has_technology = tech_battleships
+		}
+	}
+	
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_FORERUNNER_THRUSTERS_TITLE"
+			desc = "TECH_UNLOCK_FORERUNNER_THRUSTERS_DESC"
+		}
+	}
+
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_forerunner_start
+			}
+		}
+	}
+}
+
+
+#FORERUNNER SLIPSPACE DRIVE (FTL DRIVE)
+
+tech_forerunner_slipspace_drive = {
+	cost = @tier5cost3
+	area = physics 
+	tier = 5
+	category = { particles }
+	ai_update_type = all
+	is_rare = yes
+	is_dangerous = yes
+	weight = @tier5weight1
+	prerequisites = { "tech_efg_reactor_3" "tech_forerunner_start" }
+	
+	potential = {
+		has_technology = tech_forerunner_start
+	}
+	
+	feature_flags = {
+		jump_method
+	}
+	
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_forerunner_start
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_forerunner_start
+			}
+		}
+	}
+	
+	#prereqfor_desc = {
+	#	component = {
+	#		title = "TECH_UNLOCK_FORERUNNER_SLIPSPACE_DRIVE_TITLE"
+	#		desc = "TECH_UNLOCK_FORERUNNER_SLIPSPACE_DRIVE_DESC"
+	#	}
+	#}
+}
+	
+
+
+#FORERUNNER VACUUM ENERGY (POWER GENERATION)
+
+tech_forerunner_reactor = {
+	cost = @tier5cost2
+	area = physics
+	tier = 5
+	is_rare = yes
+	category  = { particles }
+	ai_update_type = all
+	prerequisites = { "tech_efg_reactor_3" "tech_forerunner_start" }
+	weight = @tier5weight2
+	
+	gateway = power_generation
+	
+	potential = {
+		has_technology = "tech_forerunner_start"
+	}
+	
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_FORERUNNER_REACTOR_TITLE"
+			desc = "TECH_UNLOCK_FORERUNNER_REACTOR_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 2
+			has_technology = tech_battleships
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 3 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+#FORERUNNER ENERGY SHIELD (SHIP SHIELDING)
+
+tech_forerunner_shield = {
+	cost = @tier5cost2
+	area = physics
+	tier = 5
+	is_rare = yes
+	category  = { particles }
+	ai_update_type = all
+	prerequisites = { "tech_efg_shield_5" "tech_forerunner_start" }
+	weight = @tier5weight2
+	
+	potential = {
+		has_technology = "tech_forerunner_start"
+	}
+	
+	modifier = {
+		ship_shield_mult = 0.20
+	}
+	
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_forerunner_start
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_forerunner_start
+			}
+		}
+	}
+}
+
+#FORERUNNER HARDLIGHT ARMOR (SHIP ARMOR)
+
+tech_forerunner_hardlight_armor = {
+	cost = @tier5cost2
+	area = physics
+	tier = 5
+	is_rare = yes
+	category  = { particles }
+	ai_update_type = all
+	prerequisites = { "tech_ship_armor_5" "tech_forerunner_start" }
+	weight = @tier5weight2
+	
+	potential = {
+		has_technology = "tech_forerunner_start"
+	}
+	
+	modifier = {
+		ship_armor_mult = 0.20
+		ship_armor_regen_add_perc = 0.20
+	}
+	
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_forerunner_start
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = tech_forerunner_start
+			}
+		}
+	}
+}
+
+
+
+#FORERUNNER PROGRAMMABLE MATTER (SHIP HULL)
+#
+#tech_forerunner_hull = {
+#	cost = @tier5cost2
+#	area = engineering
+#	tier = 5
+#	is_rare = yes
+#	is_reverse_engineerable = yes
+#	category  = { materials }
+#	ai_update_type = all
+#	prerequisites = { "tech_forerunner_start" }
+#	weight = @tier5weight2
+#	
+#	potential = {
+#		has_technology = "tech_forerunner_start"
+#	}
+#	
+#	modifier = {
+#		ship_hull_mult = 0.20
+#		ship_hull_regen_add_perc = 0.20
+#	}
+#	
+#	weight_modifier = {
+#		factor = 5
+#		modifier = {
+#			factor = 0
+#			NOR = {
+#				has_technology = tech_forerunner_start
+#			}
+#		}
+#	}
+#
+#	ai_weight = {
+#		factor = 5
+#		modifier = {
+#			factor = 0
+#			NOR = {
+#				has_technology = tech_forerunner_start
+#			}
+#		}
+#	}
+#}

@@ -1,0 +1,114 @@
+
+# ascended cloud form
+ship_design = {
+	name = "Ascended Cloud Form"
+	ship_size = space_cloud
+	hide_size = yes
+
+	section = {
+		template = "space_cloud_section"
+		slot = "mid"
+		
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "ASCENDED_CLOUD_LIGHTNING"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "ASCENDED_CLOUD_LIGHTNING"
+		}
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "ASCENDED_CLOUD_LIGHTNING"
+		}
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "ASCENDED_CLOUD_LIGHTNING"
+		}
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "ASCENDED_CLOUD_LIGHTNING"
+		}
+		component = {
+			slot = "LARGE_GUN_06"
+			template = "ASCENDED_CLOUD_LIGHTNING"
+		}
+		component = {
+			slot = "LARGE_GUN_07"
+			template = "ASCENDED_CLOUD_LIGHTNING"
+		}
+		component = {
+			slot = "LARGE_GUN_08"
+			template = "ASCENDED_CLOUD_LIGHTNING"
+		}
+
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "WEED_CLOAK"
+		}
+	}
+	
+	required_component="VOID_JUMP_DRIVE"
+	required_component="VOID_CORVETTE_COMPUTER_1"
+}
+
+############ Explosive wrath corvette ###########
+ship_design = {
+	name = "ExplosiveWrath"
+	ship_size = corvette
+	is_event_design = yes
+
+	section = {
+		template = "SGT_ANCIENT_CORVETTE_HEAVY_MID"
+		slot = "mid"
+		
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "SMALL_EXPLOSIVE_WRATH_MISSILE"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "SMALL_EXPLOSIVE_WRATH_MISSILE"
+		}
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "SMALL_EXPLOSIVE_WRATH_MISSILE"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "SMALL_EXPLOSIVE_WRATH_MISSILE"
+		}
+
+
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "ANCIENT_NANITES"
+		}
+
+		component = {
+			slot = "SMALL_UTILITY_1"
+			template = "SMALL_TRINIUM_ARMOR_PLATING"
+		}
+		component = {
+			slot = "SMALL_UTILITY_2"
+			template = "SMALL_TRINIUM_ARMOR_PLATING"
+		}
+		component = {
+			slot = "SMALL_UTILITY_3"
+			template = "SMALL_ANCIENT_SHIELD_2"
+		}
+		component = {
+			slot = "MEDIUM_UTILITY_1"
+			template = "MEDIUM_ANCIENT_SHIELD_2"
+		}
+	}
+
+	required_component="COMBAT_COMPUTER_SWARM_ADVANCED"
+	required_component="JUMP_DRIVE_1"
+	required_component="SHIP_THRUSTER_5"
+	required_component="SENSOR_4"
+	required_component = "CORVETTE_ANCIENT_REACTOR_5"
+	required_component = "ANCIENT_CORVETTE_COMPUTER_1"
+	required_component = "PSIONIC_CORVETTE_CREW_1"
+}
+

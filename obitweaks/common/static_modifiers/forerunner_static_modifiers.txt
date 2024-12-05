@@ -1,0 +1,201 @@
+
+#MAETHRILLIAN CAPITAL
+forerunner_capital = {
+	planet_immigration_pull_mult = 0.15
+	trade_value_mult = 0.10
+	planet_amenities_mult = 0.10
+	
+	icon = "gfx/interface/icons/planet_modifiers/forerunner_capital.dds"
+	icon_frame = 1
+
+}
+
+#THE ARK 
+forerunner_ark_capital = {
+	planet_building_build_speed_mult = 0.10
+	planet_jobs_produces_mult = 0.05
+	
+	icon = "gfx/interface/icons/planet_modifiers/forerunner_ark_capital.dds"
+	icon_frame = 1
+
+}
+
+halo_array_primed = {
+	icon = "gfx/interface/icons/planet_modifiers/halo_array_primed.dds"
+	icon_frame = 2
+}
+
+halo_array_activation_cooldown = {
+	icon = "gfx/interface/icons/planet_modifiers/halo_array_activation_cooldown.dds"
+	icon_frame = 2
+}
+
+#HALO RINGS
+halo_ring_monitor = {
+	planet_jobs_produces_mult = 0.5
+	planet_pop_assembly_add = 5.0
+	planet_army_build_speed_mult = 0.5
+	armies_upkeep_mult = -0.50
+	planet_building_build_speed_mult = 0.5
+	planet_decision_enact_speed_mult = 0.5
+	planet_stability_add = 5
+	planet_crime_mult = -0.5
+	pop_demotion_time_mult -0.5
+	planet_amenities_mult = 0.5
+	
+	icon = "gfx/interface/icons/planet_modifiers/halo_ring_monitor.dds"
+	icon_frame = 1
+}
+
+halo_ring_submonitor = {
+	planet_jobs_produces_mult = 0.3
+	planet_pop_assembly_add = 3.0
+	planet_army_build_speed_mult = 0.3
+	armies_upkeep_mult = -0.30
+	planet_building_build_speed_mult = 0.3
+	planet_decision_enact_speed_mult = 0.3
+	planet_stability_add = 3
+	planet_crime_mult = -0.3
+	pop_demotion_time_mult -0.3
+	planet_amenities_mult = 0.3
+	
+	icon = "gfx/interface/icons/planet_modifiers/halo_ring_submonitor.dds"
+	icon_frame = 1
+}
+
+halo_effect = {
+	pop_environment_tolerance = -0.10
+	biological_pop_happiness = -0.10
+	
+	icon = "gfx/interface/icons/planet_modifiers/halo_effect.dds"
+	icon_frame = 3
+}
+
+halo_activation_cooldown = {
+	icon = "gfx/interface/icons/planet_modifiers/halo_activation_cooldown.dds"
+	icon_frame = 2
+}
+
+damaged_halo_ring = {
+	planet_jobs_produces_mult = -0.10
+	pop_environment_tolerance = -0.10
+	
+	icon = "gfx/interface/icons/planet_modifiers/damaged_halo_ring.dds"
+	icon_frame = 3
+}
+
+#SHIELD WORLDS
+
+forerunner_shield_world = {
+	icon = "gfx/interface/icons/planet_modifiers/forerunner_ark_capital.dds"
+	icon_frame = 1
+}
+
+forerunner_artificial_star = {
+	planet_jobs_energy_produces_mult = 0.10
+	
+	icon = "gfx/interface/icons/planet_modifiers/forerunner_artificial_star.dds"
+	icon_frame = 1
+}
+
+forerunner_requiem_artificial_star = {
+	planet_jobs_energy_produces_mult = 0.10
+	
+	icon = "gfx/interface/icons/planet_modifiers/forerunner_artificial_star.dds"
+	icon_frame = 1
+}
+
+sharpened_shield_world_completed = {
+}
+
+ark_installation_completed = {
+}
+
+#REQUIEM
+
+requiem_war_room = {
+	ship_home_territory_fire_rate_mult = 0.10
+	country_war_exhaustion_mult = -0.10
+	planet_army_build_speed_mult = 0.30
+	armies_upkeep_mult = -0.10
+
+	icon = "gfx/interface/icons/planet_modifiers/requiem_war_room.dds"
+	icon_frame = 1
+}
+
+combat_cryptum = {
+	all_technology_research_speed = 0.05
+	army_defense_health_mult = 0.10
+	
+	icon = "gfx/interface/icons/planet_modifiers/combat_cryptum.dds"
+	icon_frame = 1
+}
+
+#GENESIS
+
+forerunner_domain_gateway = {
+	planet_jobs_produces_mult = 0.10
+	
+	icon = "gfx/interface/icons/planet_modifiers/domain_gateway.dds"
+	icon_frame = 1
+}
+
+genesis_moons = {
+	planet_jobs_minerals_produces_mult = 0.15
+	
+	icon = "gfx/interface/icons/planet_modifiers/genesis_moons.dds"
+	icon_frame = 1
+}
+
+forerunner_seed_worlds = {
+	terraform_speed_mult = 10.0
+	terraforming_cost_mult = -10.0
+	planet_colony_development_speed_mult = 10.0
+	planet_clear_blocker_time_mult = -10.0
+}
+
+seed_world_activation_cooldown = {
+	icon = "gfx/interface/icons/planet_modifiers/seed_world_activation_cooldown.dds"
+	icon_frame = 2
+}
+
+#CREATED
+
+forerunner_ancilla_ai = {
+	empire_size_colonies_mult = -0.20
+	empire_size_pops_mult = -0.20
+	intel_decryption_add = 2
+	intel_encryption_add = 2
+}
+
+recently_composed = {
+	biological_pop_happiness = -0.10
+	planet_stability_add = -10
+	
+	icon = "gfx/interface/icons/planet_modifiers/combat_cryptum.dds"
+	icon_frame = 3
+}
+
+
+#FORERUNENR DOMAIN RELIC
+relic_forerunner_domain_wisdom = {
+	all_technology_research_speed = 0.10
+	planet_jobs_produces_mult = 0.10
+}
+
+relic_forerunner_domain_martial = {
+	ship_fire_rate_mult = 0.10	
+	ship_weapon_damage = 0.10
+	ship_speed_mult = 0.10
+	army_experience_gain_mult = 0.10
+	army_damage_mult = 0.10
+}
+
+relic_forerunner_domain_state = {
+	pop_government_ethic_attraction = 0.20
+	edicts_cost_mult = -0.10
+	edict_length_mult = 0.10
+	pop_happiness = 0.05
+	planet_stability_add = 5
+	
+}

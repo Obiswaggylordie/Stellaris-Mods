@@ -1,0 +1,1179 @@
+
+###############
+### ANCIENT ###
+###############
+
+#### Tier 1 #####
+utility_component_template = {
+	key = "CORVETTE_ANCIENT_REACTOR_1"
+	size = small
+	icon = "GFX_ancient_reactor_1"
+	icon_frame = 1
+	power = 125
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 15
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_1" }
+	component_set = "power_core"
+size_restriction = { corvette colonizer lithoid_colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
+	upgrades_to = "CORVETTE_ANCIENT_REACTOR_2"
+	
+	ai_weight = {
+		weight = 110
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_ANCIENT_REACTOR_1"
+	size = small
+	icon = "GFX_ancient_reactor_1"
+	icon_frame = 1
+	power = 250
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 31
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_1" }
+	component_set = "power_core"
+	size_restriction = { destroyer crisis_destroyer }
+	upgrades_to = "DESTROYER_ANCIENT_REACTOR_2"
+	
+	ai_weight = {
+		weight = 110
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_ANCIENT_REACTOR_1"
+	size = small
+	icon = "GFX_ancient_reactor_1"
+	icon_frame = 1
+	power = 500
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 62.5
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_1" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser }
+	upgrades_to = "CRUISER_ANCIENT_REACTOR_2"
+	
+	ai_weight = {
+		weight = 110
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_ANCIENT_REACTOR_1"
+	size = small
+	icon = "GFX_ancient_reactor_1"
+	icon_frame = 1
+	power = 1000
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 125
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_1" }
+	component_set = "power_core"
+	size_restriction = { battleship }
+	upgrades_to = "BATTLESHIP_ANCIENT_REACTOR_2"
+	
+	ai_weight = {
+		weight = 110
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_ANCIENT_REACTOR_1"
+	size = small
+	icon = "GFX_ancient_reactor_1"
+	icon_frame = 1
+	power = 2000
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 250
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_1" }
+	component_set = "power_core"
+	size_restriction = { titan }
+	upgrades_to = "TITAN_ANCIENT_REACTOR_2"
+	
+	ai_weight = {
+		weight = 110
+	}
+}
+
+utility_component_template = {
+	key = "COLOSSUS_ANCIENT_REACTOR_1"
+	size = small
+	icon = "GFX_ancient_reactor_1"
+	icon_frame = 1
+	power = 11000
+
+	prerequisites = { "tech_ancient_reactor_1" }
+	component_set = "power_core"
+	size_restriction = { colossus star_eater }
+	upgrades_to = "COLOSSUS_ANCIENT_REACTOR_2"
+
+	ai_weight = {
+		weight = 110
+	}
+}
+
+utility_component_template = {
+	key = "PLATFORM_ANCIENT_REACTOR_1"
+	size = large
+	icon = "GFX_ancient_reactor_1"
+	icon_frame = 1
+	power = 500
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 0
+		}
+	}
+
+	prerequisites = { "tech_ancient_reactor_1" }
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+	component_set = "power_core"
+	upgrades_to = "PLATFORM_ANCIENT_REACTOR_2"
+
+	ai_weight = {
+		weight = 110
+	}
+}
+
+utility_component_template = {
+	key = "ION_CANNON_ANCIENT_REACTOR_1"
+	size = small
+	icon = "GFX_ancient_reactor_1"
+	icon_frame = 1
+	power = 1000
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 125
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_1" }
+	component_set = "power_core"
+	size_restriction = { ion_cannon }
+	upgrades_to = "ION_CANNON_ANCIENT_REACTOR_2"
+	
+	ai_weight = {
+		weight = 110
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_ANCIENT_REACTOR_1"
+	size = large
+	icon = "GFX_ancient_reactor_1"
+	icon_frame = 1
+	power = 5000
+
+	prerequisites = { "tech_ancient_reactor_1" }
+	class_restriction = { shipclass_starbase }
+	component_set = "power_core"
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+		orbital_ring_tier_1
+		orbital_ring_tier_2
+		orbital_ring_tier_3
+	}
+	upgrades_to = "STARBASE_ANCIENT_REACTOR_2"
+
+	ai_weight = {
+		weight = 110
+	}
+}
+
+#### Tier 2 ####
+utility_component_template = {
+	key = "CORVETTE_ANCIENT_REACTOR_2"
+	size = small
+	icon = "GFX_ancient_reactor_2"
+	icon_frame = 1
+	power = 220
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 27
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_2" }
+	component_set = "power_core"
+size_restriction = { corvette colonizer lithoid_colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
+	upgrades_to = "CORVETTE_ANCIENT_REACTOR_3"
+	
+	ai_weight = {
+		weight = 120
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_ANCIENT_REACTOR_2"
+	size = small
+	icon = "GFX_ancient_reactor_2"
+	icon_frame = 1
+	power = 440
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 55
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_2" }
+	component_set = "power_core"
+	size_restriction = { destroyer crisis_destroyer }
+	upgrades_to = "DESTROYER_ANCIENT_REACTOR_3"
+	
+	ai_weight = {
+		weight = 120
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_ANCIENT_REACTOR_2"
+	size = small
+	icon = "GFX_ancient_reactor_2"
+	icon_frame = 1
+	power = 875
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 110
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_2" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser }
+	upgrades_to = "CRUISER_ANCIENT_REACTOR_3"
+	
+	ai_weight = {
+		weight = 120
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_ANCIENT_REACTOR_2"
+	size = small
+	icon = "GFX_ancient_reactor_2"
+	icon_frame = 1
+	power = 1750
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 220
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_2" }
+	component_set = "power_core"
+	size_restriction = { battleship }
+	upgrades_to = "BATTLESHIP_ANCIENT_REACTOR_3"
+	
+	ai_weight = {
+		weight = 120
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_ANCIENT_REACTOR_2"
+	size = small
+	icon = "GFX_ancient_reactor_2"
+	icon_frame = 1
+	power = 3500
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 440
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_2" }
+	component_set = "power_core"
+	size_restriction = { titan }
+	upgrades_to = "TITAN_ANCIENT_REACTOR_3"
+	
+	ai_weight = {
+		weight = 120
+	}
+}
+
+utility_component_template = {
+	key = "COLOSSUS_ANCIENT_REACTOR_2"
+	size = small
+	icon = "GFX_ancient_reactor_2"
+	icon_frame = 1
+	power = 12000
+
+	prerequisites = { "tech_ancient_reactor_2" }
+	component_set = "power_core"
+	size_restriction = { colossus star_eater }
+	upgrades_to = "COLOSSUS_ANCIENT_REACTOR_3"
+
+	ai_weight = {
+		weight = 120
+	}
+}
+
+utility_component_template = {
+	key = "PLATFORM_ANCIENT_REACTOR_2"
+	size = large
+	icon = "GFX_ancient_reactor_2"
+	icon_frame = 1
+	power = 875
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 0
+		}
+	}
+
+	prerequisites = { "tech_ancient_reactor_2" }
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+	component_set = "power_core"
+	upgrades_to = "PLATFORM_ANCIENT_REACTOR_3"
+
+	ai_weight = {
+		weight = 120
+	}
+}
+
+utility_component_template = {
+	key = "ION_CANNON_ANCIENT_REACTOR_2"
+	size = small
+	icon = "GFX_ancient_reactor_2"
+	icon_frame = 1
+	power = 1750
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 220
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_2" }
+	component_set = "power_core"
+	size_restriction = { ion_cannon }
+	upgrades_to = "ION_CANNON_ANCIENT_REACTOR_3"
+	
+	ai_weight = {
+		weight = 120
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_ANCIENT_REACTOR_2"
+	size = large
+	icon = "GFX_ancient_reactor_2"
+	icon_frame = 1
+	power = 8750
+
+	prerequisites = { "tech_ancient_reactor_2" }
+	class_restriction = { shipclass_starbase }
+	component_set = "power_core"
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+		orbital_ring_tier_1
+		orbital_ring_tier_2
+		orbital_ring_tier_3
+	}
+	upgrades_to = "STARBASE_ANCIENT_REACTOR_3"
+
+	ai_weight = {
+		weight = 120
+	}
+}
+
+#### Tier 3 ####
+utility_component_template = {
+	key = "CORVETTE_ANCIENT_REACTOR_3"
+	size = small
+	icon = "GFX_ancient_reactor_3"
+	icon_frame = 1
+	power = 390
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 48
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_3" }
+	component_set = "power_core"
+size_restriction = { corvette colonizer lithoid_colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
+	upgrades_to = "CORVETTE_ANCIENT_REACTOR_4"
+	
+	ai_weight = {
+		weight = 130
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_ANCIENT_REACTOR_3"
+	size = small
+	icon = "GFX_ancient_reactor_3"
+	icon_frame = 1
+	power = 775
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 95
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_3" }
+	component_set = "power_core"
+	size_restriction = { destroyer crisis_destroyer }
+	upgrades_to = "DESTROYER_ANCIENT_REACTOR_4"
+	
+	ai_weight = {
+		weight = 130
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_ANCIENT_REACTOR_3"
+	size = small
+	icon = "GFX_ancient_reactor_3"
+	icon_frame = 1
+	power = 1550
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 190
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_3" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser }
+	upgrades_to = "CRUISER_ANCIENT_REACTOR_4"
+	
+	ai_weight = {
+		weight = 130
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_ANCIENT_REACTOR_3"
+	size = small
+	icon = "GFX_ancient_reactor_3"
+	icon_frame = 1
+	power = 3100
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 380
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_3" }
+	component_set = "power_core"
+	size_restriction = { battleship }
+	upgrades_to = "BATTLESHIP_ANCIENT_REACTOR_4"
+	
+	ai_weight = {
+		weight = 130
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_ANCIENT_REACTOR_3"
+	size = small
+	icon = "GFX_ancient_reactor_3"
+	icon_frame = 1
+	power = 6200
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 760
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_3" }
+	component_set = "power_core"
+	size_restriction = { titan }
+	upgrades_to = "TITAN_ANCIENT_REACTOR_4"
+	
+	ai_weight = {
+		weight = 130
+	}
+}
+
+utility_component_template = {
+	key = "COLOSSUS_ANCIENT_REACTOR_3"
+	size = small
+	icon = "GFX_ancient_reactor_3"
+	icon_frame = 1
+	power = 13000
+
+	prerequisites = { "tech_ancient_reactor_3" }
+	component_set = "power_core"
+	size_restriction = { colossus star_eater }
+	upgrades_to = "COLOSSUS_ANCIENT_REACTOR_4"
+
+	ai_weight = {
+		weight = 130
+	}
+}
+
+utility_component_template = {
+	key = "PLATFORM_ANCIENT_REACTOR_3"
+	size = large
+	icon = "GFX_ancient_reactor_3"
+	icon_frame = 1
+	power = 1550
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 0
+		}
+	}
+
+	prerequisites = { "tech_ancient_reactor_3" }
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+	component_set = "power_core"
+	upgrades_to = "PLATFORM_ANCIENT_REACTOR_4"
+
+	ai_weight = {
+		weight = 130
+	}
+}
+
+utility_component_template = {
+	key = "ION_CANNON_ANCIENT_REACTOR_3"
+	size = small
+	icon = "GFX_ancient_reactor_3"
+	icon_frame = 1
+	power = 3100
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 380
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_3" }
+	component_set = "power_core"
+	size_restriction = { ion_cannon }
+	upgrades_to = "ION_CANNON_ANCIENT_REACTOR_4"
+	
+	ai_weight = {
+		weight = 130
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_ANCIENT_REACTOR_3"
+	size = large
+	icon = "GFX_ancient_reactor_3"
+	icon_frame = 1
+	power = 15500
+
+	prerequisites = { "tech_ancient_reactor_3" }
+	class_restriction = { shipclass_starbase }
+	component_set = "power_core"
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+		orbital_ring_tier_1
+		orbital_ring_tier_2
+		orbital_ring_tier_3
+	}
+	upgrades_to = "STARBASE_ANCIENT_REACTOR_4"
+
+	ai_weight = {
+		weight = 130
+	}
+}
+
+#### Tier 4 #####
+utility_component_template = {
+	key = "CORVETTE_ANCIENT_REACTOR_4"
+	size = small
+	icon = "GFX_ancient_reactor_4"
+	icon_frame = 1
+	power = 675
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 84
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_4" }
+	component_set = "power_core"
+size_restriction = { corvette colonizer lithoid_colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
+	upgrades_to = "CORVETTE_ANCIENT_REACTOR_5"
+	
+	ai_weight = {
+		weight = 140
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_ANCIENT_REACTOR_4"
+	size = small
+	icon = "GFX_ancient_reactor_4"
+	icon_frame = 1
+	power = 1350
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 168
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_4" }
+	component_set = "power_core"
+	size_restriction = { destroyer crisis_destroyer }
+	upgrades_to = "DESTROYER_ANCIENT_REACTOR_5"
+	
+	ai_weight = {
+		weight = 140
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_ANCIENT_REACTOR_4"
+	size = small
+	icon = "GFX_ancient_reactor_4"
+	icon_frame = 1
+	power = 2700
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 335
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_4" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser }
+	upgrades_to = "CRUISER_ANCIENT_REACTOR_5"
+	
+	ai_weight = {
+		weight = 140
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_ANCIENT_REACTOR_4"
+	size = small
+	icon = "GFX_ancient_reactor_4"
+	icon_frame = 1
+	power = 5400
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 675
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_4" }
+	component_set = "power_core"
+	size_restriction = { battleship }
+	upgrades_to = "BATTLESHIP_ANCIENT_REACTOR_5"
+	
+	ai_weight = {
+		weight = 140
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_ANCIENT_REACTOR_4"
+	size = small
+	icon = "GFX_ancient_reactor_4"
+	icon_frame = 1
+	power = 10800
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 1350
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_4" }
+	component_set = "power_core"
+	size_restriction = { titan }
+	upgrades_to = "TITAN_ANCIENT_REACTOR_5"
+	
+	ai_weight = {
+		weight = 140
+	}
+}
+
+utility_component_template = {
+	key = "COLOSSUS_ANCIENT_REACTOR_4"
+	size = small
+	icon = "GFX_ancient_reactor_4"
+	icon_frame = 1
+	power = 14000
+
+	prerequisites = { "tech_ancient_reactor_4" }
+	component_set = "power_core"
+	size_restriction = { colossus star_eater }
+	upgrades_to = "COLOSSUS_ANCIENT_REACTOR_5"
+
+	ai_weight = {
+		weight = 140
+	}
+}
+
+utility_component_template = {
+	key = "PLATFORM_ANCIENT_REACTOR_4"
+	size = large
+	icon = "GFX_ancient_reactor_4"
+	icon_frame = 1
+	power = 2700
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 0
+		}
+	}
+
+	prerequisites = { "tech_ancient_reactor_4" }
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+	component_set = "power_core"
+	upgrades_to = "PLATFORM_ANCIENT_REACTOR_5"
+
+	ai_weight = {
+		weight = 140
+	}
+}
+
+utility_component_template = {
+	key = "ION_CANNON_ANCIENT_REACTOR_4"
+	size = small
+	icon = "GFX_ancient_reactor_4"
+	icon_frame = 1
+	power = 5400
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 675
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_4" }
+	component_set = "power_core"
+	size_restriction = { ion_cannon }
+	upgrades_to = "ION_CANNON_ANCIENT_REACTOR_5"
+	
+	ai_weight = {
+		weight = 140
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_ANCIENT_REACTOR_4"
+	size = large
+	icon = "GFX_ancient_reactor_4"
+	icon_frame = 1
+	power = 27000
+
+	prerequisites = { "tech_ancient_reactor_4" }
+	class_restriction = { shipclass_starbase }
+	component_set = "power_core"
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+		orbital_ring_tier_1
+		orbital_ring_tier_2
+		orbital_ring_tier_3
+	}
+	upgrades_to = "STARBASE_ANCIENT_REACTOR_5"
+
+	ai_weight = {
+		weight = 140
+	}
+}
+
+#### Tier 5 ####
+utility_component_template = {
+	key = "CORVETTE_ANCIENT_REACTOR_5"
+	size = small
+	icon = "GFX_ancient_reactor_5"
+	icon_frame = 1
+	power = 1250
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 155
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_5" }
+	component_set = "power_core"
+size_restriction = { corvette colonizer lithoid_colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
+	
+	ai_weight = {
+		weight = 150
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_ANCIENT_REACTOR_5"
+	size = small
+	icon = "GFX_ancient_reactor_5"
+	icon_frame = 1
+	power = 2500
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 310
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_5" }
+	component_set = "power_core"
+	size_restriction = { destroyer crisis_destroyer }
+	
+	ai_weight = {
+		weight = 150
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_ANCIENT_REACTOR_5"
+	size = small
+	icon = "GFX_ancient_reactor_5"
+	icon_frame = 1
+	power = 5000
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 625
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_5" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser }
+	
+	ai_weight = {
+		weight = 150
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_ANCIENT_REACTOR_5"
+	size = small
+	icon = "GFX_ancient_reactor_5"
+	icon_frame = 1
+	power = 10000
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 1250
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_5" }
+	component_set = "power_core"
+	size_restriction = { battleship }
+	upgrades_to = "BATTLESHIP_ZPM"
+	
+	ai_weight = {
+		weight = 150
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_ANCIENT_REACTOR_5"
+	size = small
+	icon = "GFX_ancient_reactor_5"
+	icon_frame = 1
+	power = 20000
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 2500
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_5" }
+	component_set = "power_core"
+	size_restriction = { titan }
+	upgrades_to = "TITAN_ZPM"
+	
+	ai_weight = {
+		weight = 150
+	}
+}
+
+utility_component_template = {
+	key = "COLOSSUS_ANCIENT_REACTOR_5"
+	size = small
+	icon = "GFX_ancient_reactor_5"
+	icon_frame = 1
+	power = 15000
+
+	prerequisites = { "tech_ancient_reactor_5" }
+	component_set = "power_core"
+	size_restriction = { colossus star_eater }
+
+	ai_weight = {
+		weight = 150
+	}
+}
+
+utility_component_template = {
+	key = "PLATFORM_ANCIENT_REACTOR_5"
+	size = large
+	icon = "GFX_ancient_reactor_5"
+	icon_frame = 1
+	power = 5000
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 0
+		}
+	}
+
+	prerequisites = { "tech_ancient_reactor_5" }
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+	component_set = "power_core"
+
+	ai_weight = {
+		weight = 150
+	}
+}
+
+utility_component_template = {
+	key = "ION_CANNON_ANCIENT_REACTOR_5"
+	size = small
+	icon = "GFX_ancient_reactor_5"
+	icon_frame = 1
+	power = 10000
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 1250
+		}
+	}
+	
+	prerequisites = { "tech_ancient_reactor_5" }
+	component_set = "power_core"
+	size_restriction = { ion_cannon }
+	
+	ai_weight = {
+		weight = 150
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_ANCIENT_REACTOR_5"
+	size = large
+	icon = "GFX_ancient_reactor_5"
+	icon_frame = 1
+	power = 50000
+
+	prerequisites = { "tech_ancient_reactor_5" }
+	class_restriction = { shipclass_starbase }
+	component_set = "power_core"
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+		orbital_ring_tier_1
+		orbital_ring_tier_2
+		orbital_ring_tier_3
+	}
+
+	ai_weight = {
+		weight = 150
+	}
+}
+
+#### ZPM #####
+
+utility_component_template = {
+	key = "BATTLESHIP_WRAITH_ZPM"
+	size = small
+	icon = "GFX_zpm"
+	icon_frame = 1
+	power = 25000
+	resources = {
+		category = ship_components
+
+		cost = {
+			sr_ancient_zpm = 1
+		}
+	}
+
+	ship_modifier = {
+		ship_weapon_damage = 0.50
+		ship_fire_rate_mult = 0.50
+	}
+	modifier = {
+		ship_hull_mult = 0.50
+		ship_armor_mult = 0.50
+		ship_armor_regen_add_static = 200
+		ship_hull_regen_add_static = 200
+	}
+	
+	prerequisites = { "tech_wraith_zpm" }
+	component_set = "power_core"
+	size_restriction = { battleship }
+	
+	ai_weight = {
+		weight = 1000
+		modifier = {
+			factor = 0
+			resource_stockpile_compare = {
+				resource = sr_ancient_zpm
+				value < 5 
+				
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_WRAITH_ZPM"
+	size = small
+	icon = "GFX_zpm"
+	icon_frame = 1
+	power = 75000
+	resources = {
+		category = ship_components
+
+		cost = {
+			sr_ancient_zpm = 3
+		}
+	}
+
+	ship_modifier = {
+		ship_weapon_damage = 0.50
+		ship_fire_rate_mult = 0.50
+	}
+	modifier = {
+		ship_hull_mult = 0.50
+		ship_armor_mult = 0.50
+		ship_armor_regen_add_static = 500
+		ship_hull_regen_add_static = 500
+	}
+	
+	prerequisites = { "tech_wraith_zpm" }
+	component_set = "power_core"
+	size_restriction = { titan }
+	
+	ai_weight = {
+		weight = 1000
+		modifier = {
+			factor = 0
+			resource_stockpile_compare = {
+				resource = sr_ancient_zpm
+				value < 5 
+				
+			}
+		}
+	}
+}
+

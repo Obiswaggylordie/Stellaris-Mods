@@ -1,0 +1,629 @@
+o## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# planet_modifier - applied to planet only when deposit blocker has been cleared
+# constant_modifier - applied to planet always
+# blocker = <key/any/none> - default any
+# station = station class in orbit to gather
+
+@high = 16
+@med = 8
+@low = 4
+
+@high_rare = 2
+@med_rare = 1
+@low_rare = 0.5
+
+# Energon Caverns
+
+d_energon_crystals = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	
+	icon = d_energon_crystals
+	
+	planet_modifier = {
+		building_energon_mine_max = 1
+		pop_environment_tolerance = -0.05
+		biological_pop_happiness = -0.05
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_dark_energon_crystals = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker
+	can_be_cleared = { always = no }
+	
+	icon = d_dark_energon_crystals
+	
+	planet_modifier = {
+		building_dark_energon_mine_max = 1
+		pop_environment_tolerance = -0.10
+		biological_pop_happiness = -0.10
+		pop_growth_speed = -0.10
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# All Spark & Harvester
+
+d_all_spark = {
+	is_for_colonizable = yes
+	icon = d_all_spark
+	
+	category = deposit_cat_rare
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_pop_assembly_mult = 10.0
+		planet_pop_assembly_organic_mult = 10.0
+		planet_army_build_speed_mult = 10.0
+	}
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			energon = 2000
+			sr_living_metal = 2000
+		}
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_depleted_all_spark = {
+	is_for_colonizable = yes
+	icon = d_depleted_all_spark
+	
+	category = deposit_cat_rare
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_stability_add = -50
+		pop_happiness = -0.50
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_star_harvester = {
+	is_for_colonizable = yes
+	icon = d_star_harvester
+	
+	category = deposit_cat_rare
+	
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_stability_add = -10
+		pop_happiness = -0.10
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+
+# Cybertron Deposits
+
+d_cybertronian_world_core = {
+	is_for_colonizable = yes
+	icon = d_restored_cybertron_core
+	
+	category = deposit_cat_rare
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_jobs_upkeep_mult = -0.10
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_dark_energon_core = {
+	is_for_colonizable = yes
+	icon = d_damaged_cybertron_core
+	
+	category = deposit_cat_rare
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_jobs_upkeep_mult = -0.20
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_active_well_of_all_sparks = {
+	is_for_colonizable = yes
+	icon = d_active_well_of_all_sparks
+	
+	category = deposit_cat_rare
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_pop_assembly_add = 100.0
+		planet_army_build_speed_mult = 1.0
+		pop_happiness = 0.05
+	}
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			sr_living_metal = 250
+		}
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_corrupted_well_of_all_sparks = {
+	is_for_colonizable = yes
+	icon = d_corrupted_well_of_all_sparks
+	
+	category = deposit_cat_rare
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_army_build_speed_mult = 1.0
+		army_defense_damage_mult = 1.0
+		planet_pop_assembly_add = 100
+		pop_happiness = -0.05
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_well_of_all_sparks_duplicate = {
+	is_for_colonizable = yes
+	icon = d_active_well_of_all_sparks
+	
+	category = deposit_cat_rare
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_pop_assembly_add = 50.0
+		planet_pop_assembly_organic_add = 50.0
+		pop_growth_speed = 0.50
+		planet_army_build_speed_mult = 0.5
+		pop_happiness = 0.05
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_corrupted_well_of_all_sparks_duplicate = {
+	is_for_colonizable = yes
+	icon = d_corrupted_well_of_all_sparks
+	
+	category = deposit_cat_rare
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_pop_assembly_add = 50.0
+		planet_pop_assembly_organic_add = 50.0
+		pop_growth_speed = 0.50
+		planet_army_build_speed_mult = 0.5
+		army_defense_damage_mult = 0.5
+		pop_happiness = -0.05
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_energon_bridge = {
+	is_for_colonizable = yes
+	icon = d_energon_bridge
+	
+	category = deposit_cat_rare
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_jobs_energon_produces_mult = 0.15
+		planet_jobs_dark_energon_produces_mult = 0.15
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_space_bridge = {
+	is_for_colonizable = yes
+	icon = d_space_bridge
+	
+	category = deposit_cat_rare
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_colony_development_speed_mult = 100.0
+		pop_resettlement_cost_mult = -100.0
+		planet_hyperlane_range_add = 10
+		planet_sensor_range_add = 10
+		colony_start_num_pops_add = 10
+		pop_growth_from_immigration = 1.0
+		trade_value_mult = 1.0
+		pop_environment_tolerance = 0.10
+		planet_stability_add = 10
+		pop_purge_mult = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			NOT = {
+				is_cybertronian_world = yes
+			}
+			owner = {
+				any_owned_planet = {
+					AND = {
+						has_deposit = d_space_bridge
+						is_cybertronian_world = yes
+					}
+				}
+				is_gestalt = no
+			}
+		}
+		modifier = {
+			job_energon_miner_add = 10
+			job_energon_refiner_add = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				any_owned_planet = {
+					AND = {
+						has_deposit = d_space_bridge
+						is_cybertronian_world = yes
+					}
+				}
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_energon_miner_add = 10
+			job_energon_refiner_drone_add = 10
+		}
+	}
+
+	country_modifier = {
+		empire_size_colonies_mult = -0.05
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_ground_bridge = {
+	is_for_colonizable = yes
+	icon = d_ground_bridge
+	
+	category = deposit_cat_rare
+	potential = { 
+		always = no
+	}
+	planet_modifier = {
+		pop_growth_from_immigration = 0.50
+		pop_resettlement_cost_mult = -0.50
+		trade_value_mult = 0.5
+		planet_jobs_produces_mult = 0.5
+		planet_pops_upkeep_mult = -0.5
+		planet_stability_add = 5
+	}
+
+	country_modifier = {
+		empire_size_pops_mult = -0.05
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_active_omega_lock = {
+	is_for_colonizable = yes
+	icon = d_active_omega_lock
+	
+	category = deposit_cat_rare
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_buildings_cost_mult = -0.95
+		planet_districts_cost_mult = -0.95
+		building_time_mult = -10.0
+		planet_clear_blocker_time_mult = -10.0
+		planet_clear_blocker_speed_mult = 10.0
+		planet_decision_enact_speed_mult = 100.0
+	}
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			sr_living_metal = 1000
+		}
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_teletraan_one = {
+	is_for_colonizable = yes
+	icon = d_teletraan_one
+	
+	category = deposit_cat_rare
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_jobs_upkeep_mult = -0.50
+	}
+
+	country_modifier = {
+		country_admin_cap_mult = 0.50
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_crystal_city = {
+	is_for_colonizable = yes
+	icon = d_crystal_city
+	
+	category = deposit_cat_rare
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_amenities_add = 10
+		planet_housing_add = 20
+		pop_growth_speed = 0.10
+	}
+
+	country_modifier = {
+		terraforming_speed_mult = 0.10
+		terraforming_cost_mult = -0.10
+	} 
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_iacon_city = {
+	is_for_colonizable = yes
+	icon = d_iacon_city
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	planet_modifier = {
+		district_generator_max = 5
+		planet_crime_mult = -0.50
+		planet_stability_add = 10
+		planet_amenities_add = 10
+		planet_housing_add = 20
+	}
+
+	country_modifier = {
+		country_base_influence_produces_add = 5
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_kaon_city = {
+	is_for_colonizable = yes
+	icon = d_kaon_city
+	category = deposit_cat_rare
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		district_mining_max = 5
+		planet_housing_add = 20
+		planet_amenities_add = 10
+		planet_metallurgists_produces_mult = 0.50
+		planet_miners_produces_mult = 0.50
+		army_defense_health_mult = 0.50
+		army_defense_damage_mult = 0.50
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_mining_drone_add = 2
+			job_warrior_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_miner_add = 5
+			job_duelist_add = 5
+		}
+	}
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_sanctuary_fortress = {
+	is_for_colonizable = yes
+	icon = d_sanctuary_fortress
+	
+	category = deposit_cat_rare
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_housing_add = 20
+		planet_amenities_add = 10
+		planet_orbital_bombardment_damage = -0.50
+		planet_researchers_produces_mult = 0.50
+		job_researcher_add = 10
+	}
+
+	country_modifier = {
+		all_technology_research_speed = 0.50
+	}
+
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_cybertronian_city = {
+	is_for_colonizable = yes
+	icon = d_cybertron_city
+	
+	category = deposit_cat_rare
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_jobs_energon_produces_mult = 0.05
+		planet_housing_add = 10
+		planet_amenities_add = 5
+		pop_growth_from_immigration = 0.05
+		trade_value_mult = 0.05
+		planet_max_districts_add = 18
+	}
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_dark_energon_city = {
+	is_for_colonizable = yes
+	icon = d_dark_energon_city
+	
+	category = deposit_cat_rare
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_jobs_dark_energon_produces_mult = 0.05
+		planet_housing_add = 10
+		planet_amenities_add = 5
+		planet_max_districts_add = 15
+		pop_growth_from_immigration = -0.05
+	}
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_active_trypticon = {
+	is_for_colonizable = yes
+	icon = d_active_trypticon
+	
+	category = deposit_cat_rare
+	
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			dark_energon_crystals = 250
+
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_cybertronian = yes
+			}
+		}
+		modifier = {
+			planet_jobs_dark_energon_produces_mult = 0.50
+			building_cybertronian_dark_energon_refinery_max = 5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_cybertronian = yes
+			}
+		}
+		modifier = {
+			planet_jobs_dark_energon_produces_mult = 0.50
+			building_cybertronian_dark_energon_refinery_max = 5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				NOT = { 
+					is_cybertronian = yes
+				}
+			}
+		}
+		modifier = {
+			planet_jobs_dark_energon_produces_mult = 0.50
+			building_cybertronian_dark_energon_refinery_max = 5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				NOT = { 
+					is_cybertronian = yes
+				}
+			}
+		}
+	}
+
+	drop_weight = {
+		weight = -1
+	}
+}

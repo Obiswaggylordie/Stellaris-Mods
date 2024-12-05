@@ -1,0 +1,58 @@
+namespace = attero
+
+fleet_event = {
+	id = attero.1
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		this = {
+			NOR = {
+				is_civilian = yes
+				is_ship_size = transport
+				is_ship_size = guardian_custode
+				has_modifier = ascended_cloud_form_buff
+			}
+		}
+		from = {
+			exists = space_owner
+			any_system_planet = {
+				is_colony = yes
+				has_deposit = d_attero_device
+			}
+		}
+		OR = {
+			OR = {
+				this = {
+					is_ship_size = giga_katzen_submarine_submerged
+				}
+			}
+			owner = {
+				is_at_war_with = from.space_owner
+			}
+			owner = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = extradimensional
+					is_country_type = extradimensional_2
+					is_country_type = extradimensional_3
+					is_coutnry_type = marauder_raiders
+					is_country_type = no_contact_neutral_faction
+					is_country_Type = crystal
+					is_country_type = gray_goo
+					is_country_type = cloud
+					is_country_type = amoeba
+					is_country_type = tiyanki
+					is_country_type = drone
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_owned_ship = {
+			reduce_hp = 10000000
+		}
+	}
+}

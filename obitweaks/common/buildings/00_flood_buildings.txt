@@ -1,0 +1,258 @@
+# Flood Buildings
+
+building_keymind_nest = {
+	base_buildtime = @b1_time
+	base_cap_amount = 1
+
+	category = pop_assembly
+
+	potential = {
+		owner = { has_origin = origin_the_flood }
+		or = {
+			num_buildings = { type = any value < 15 }
+			owner = { is_ai = no }
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_origin = origin_the_flood } }
+	}
+
+	#ruined_trigger = {
+	#	has_planet_flag = keymind_defeated
+	#}
+
+	planet_modifier = {
+		job_keymind_drone_add = 1
+	}
+	convert_to = {
+		building_spawning_pool
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			food = 1000
+		}
+		upkeep = {
+			food = 2
+		}
+		produces = {	
+			alloys = 1000
+			food = 1000
+			energy = 1000
+			minerals = 1000
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { has_origin = origin_the_flood }
+			exists = growing_species
+			growing_species = {
+				has_trait = trait_flood_species
+			}
+		}
+		text = job_keymind_drone_effect_desc
+	}
+	triggered_desc = {
+		text = keymind_nest_tooltip
+	}
+}
+
+building_flood_hatchery = {
+	base_buildtime = @b1_time 
+	base_cap_amount = 1
+	
+	category = army
+	
+	potential = {
+		exists = owner
+		owner = {
+			OR = {
+				has_origin = origin_the_flood
+				has_civic = civic_flood_hivemind
+			}
+		}
+	}
+	destroy_trigger = { # destroys and/or triggers conversion if true
+		exists = owner
+		owner = {
+			is_hive_empire = no
+			NOR = {
+				has_origin = origin_the_flood
+				has_civic = civic_flood_hivemind
+			}
+		}
+	}
+	allow = {
+	}
+	army_modifier = {
+		army_defense_health_mult = 0.10
+		planet_army_build_speed_mult = 0.10
+	}
+	planet_modifier = {
+		planet_building_build_speed_mult = 0.10
+		planet_structures_upkeep_mult = -0.10
+		pop_growth_speed = 0.05
+		job_spawning_drone_add = 1
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			food = 400
+		}			
+		upkeep = {
+			food = 2
+		}
+		produces = {	
+			alloys = 5000
+			food = 5000
+			energy = 5000
+			minerals = 5000
+		}
+	}
+	prerequisites = {
+	}
+	
+	upgrades = {
+		"building_flood_lair"
+	}
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+building_flood_lair = {
+	base_buildtime = @b2_time 
+	can_build = no
+	
+	category = army
+	
+	potential = {
+		exists = owner
+		owner = {
+			OR = {
+				has_origin = origin_the_flood
+				has_civic = civic_flood_hivemind
+			}
+		}
+	}
+	destroy_trigger = { # destroys and/or triggers conversion if true
+		exists = owner
+		owner = {
+			is_hive_empire = no
+			NOR = {
+				has_origin = origin_the_flood
+				has_civic = civic_flood_hivemind
+			}
+		}
+	}
+	allow = {
+		num_pops >= 10
+	}
+	army_modifier = {
+		army_defense_health_mult = 0.15
+		planet_army_build_speed_mult = 0.15
+	}
+	planet_modifier = {
+		planet_building_build_speed_mult = 0.10
+		planet_structures_upkeep_mult = -0.10
+		pop_growth_speed = 0.10
+		job_spawning_drone_add = 2
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			food = 600
+		}			
+		upkeep = {
+			food = 3
+		}
+		produces = {	
+			alloys = 10000
+			food = 10000
+			energy = 10000
+			minerals = 10000
+		}
+	}
+	prerequisites = {
+	}
+	
+	upgrades = {
+		"building_flood_hive"
+	}
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+building_flood_hive = {
+	base_buildtime = @b3_time 
+	can_build = no
+	
+	category = army
+	
+	potential = {
+		exists = owner
+		owner = {
+			OR = {
+				has_origin = origin_the_flood
+				has_civic = civic_flood_hivemind
+			}
+		}
+	}
+	destroy_trigger = { # destroys and/or triggers conversion if true
+		exists = owner
+		owner = {
+			is_hive_empire = no
+			NOR = {
+				has_origin = origin_the_flood
+				has_civic = civic_flood_hivemind
+			}
+		}
+	}
+	allow = {
+		num_pops >= 20
+	}
+	army_modifier = {
+		army_defense_health_mult = 0.20
+		planet_army_build_speed_mult = 0.20
+	}
+	planet_modifier = {
+		planet_building_build_speed_mult = 0.10
+		planet_structures_upkeep_mult = -0.10
+		pop_growth_speed = 0.15
+		job_spawning_drone_add = 3
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			food = 800
+		}			
+		upkeep = {
+			food = 4
+		}
+		produces = {	
+			alloys = 50000
+			food = 50000
+			energy = 50000
+			minerals = 50000
+		}
+	}
+	prerequisites = {
+	}
+	
+	upgrades = {
+	}
+	
+	ai_weight = {
+		weight = 1
+	}
+}

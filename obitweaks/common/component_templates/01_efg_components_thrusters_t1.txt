@@ -1,0 +1,118 @@
+
+@efg_shipspeed_base_mult_1 = 0.00
+@efg_shipspeed_base_mult_2 = 0.60
+@efg_shipspeed_base_mult_3 = 1.25
+@efg_shipspeed_base_mult_4 = 1.50
+@efg_shipspeed_base_mult_5 = 2.00
+
+@efg_ship_evasion_add_1 = 0
+@efg_ship_evasion_add_2 = 4
+@efg_ship_evasion_add_3 = 6
+@efg_ship_evasion_add_4 = 8
+@efg_ship_evasion_add_5 = 10
+
+##############################################
+### Thruster 1
+##############################################
+utility_component_template = {
+	key = "EFG_THRUSTER_1_LARGESHIP"
+	size = small
+	icon = "GFX_efg_ship_part_thruster_1"
+	icon_frame = 1
+	power = @sby_thruster_power_cost_1_largeship
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_efg_t1_com_cost
+		}
+	}
+
+	modifier = {
+		ship_base_speed_mult = @efg_shipspeed_base_mult_1
+		ship_evasion_add = @efg_ship_evasion_add_1
+	}
+
+	prerequisites = { "tech_efg_reactor_1" }
+	component_set = "thruster_components"
+
+	upgrades_to = "EFG_THRUSTER_2_LARGESHIP"
+
+	ai_weight = {
+		weight = @efg_ai_weight_1
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+}
+
+##############################################
+### Thruster 2
+##############################################
+utility_component_template = {
+	key = "EFG_THRUSTER_2_LARGESHIP"
+	size = small
+	icon = "GFX_efg_ship_part_thruster_2"
+	icon_frame = 1
+	power = @sby_thruster_power_cost_2_largeship
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_efg_t3_com_cost
+		}
+	}
+
+	modifier = {
+		ship_base_speed_mult = @efg_shipspeed_base_mult_2
+		ship_evasion_add = @efg_ship_evasion_add_2
+	}
+
+	prerequisites = { "tech_efg_reactor_3" }
+	component_set = "thruster_components"
+
+	upgrades_to = "EFG_THRUSTER_3_LARGESHIP"
+
+	ai_weight = {
+		weight = @efg_ai_weight_3
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+}
+
+
+##############################################
+### Thruster 3
+##############################################
+utility_component_template = {
+	key = "EFG_THRUSTER_3_LARGESHIP"
+	size = small
+	icon = "GFX_efg_ship_part_thruster_3"
+	icon_frame = 1
+	power = @sby_thruster_power_cost_3_largeship
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_efg_t5_com_cost
+		}
+	}
+
+	modifier = {
+		ship_base_speed_mult = @efg_shipspeed_base_mult_3
+		ship_evasion_add = @efg_ship_evasion_add_3
+	}
+
+	prerequisites = { "tech_efg_reactor_4" }
+	component_set = "thruster_components"
+	
+	upgrades_to = "EFG_THRUSTER_4_LARGESHIP"
+
+	ai_weight = {
+		weight = @efg_ai_weight_5
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+}

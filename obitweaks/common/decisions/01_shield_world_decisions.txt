@@ -1,0 +1,241 @@
+##########################################################################
+# Shield World Decisions
+##########################################################################
+
+# Create Slipspace Bubble
+decision_shield_world_slipspace_bubble = {
+	owned_planets_only = yes
+	icon = decision_shield_world_slipspace_bubble
+	
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			energy = 5000
+			minerals = 5000
+		}
+	}
+	
+	potential = {
+		NOT = {
+			has_deposit = d_slipspace_bubble
+		}
+		owner = { has_technology = tech_slipspace_field }
+		exists = owner
+	}
+	
+	effect = {
+		custom_tooltip = decision_shield_world_slipspace_bubble_effects
+		add_deposit = d_slipspace_bubble
+		owner = {
+			country_event = { id = shield_world.1 }
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+
+decision_remove_shield_world_slipspace_bubble = {
+	owned_planets_only = yes
+	icon = decision_shield_world_slipspace_bubble
+	
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			energy = 5000
+			minerals = 5000
+		}
+	}
+	
+	potential = {
+		has_deposit = d_slipspace_bubble
+		owner = { has_technology = tech_slipspace_field }
+		exists = owner
+	}
+	
+	effect = {
+		remove_deposit = d_slipspace_bubble
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Collapse Perdition Shield
+
+
+#BUILDER WORLD 
+
+decision_builder_world_create_huragok = {
+	owned_planets_only = yes
+	icon = decision_builder_world_create_huragok
+	
+	enactment_time = 5
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 300
+			energy = 150
+		}
+	}
+	
+	potential = {
+		is_planet_class = pc_genesis
+		exists = owner
+		owner = {
+			NOT = { 
+				is_gestalt = yes 
+			}
+		}
+	}
+	
+	allow = {
+	}
+	
+	effect = {
+		custom_tooltip = decision_builder_world_create_huragok_effects
+		hidden_effect = {
+			create_species = {
+				name = "Huragok"
+				plural = "Huragok"
+				class = "huragok"
+				portrait = "huragok"
+				name_list = "sentinel"
+				traits = {
+					trait="trait_pc_habitat_preference"
+					trait="trait_huragok_species"
+				}
+			}
+			while = {
+				count = 4
+				create_pop = {
+					species = "Huragok"
+				}
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_builder_world_deploy_seed_worlds = {
+	owned_planets_only = yes
+	icon = decision_builder_world_deploy_seed_worlds
+	
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 5000
+			minerals = 5000
+		}
+	}
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_genesis
+		}
+		exists = owner
+	}
+	
+	allow = {
+		NOT = {
+			has_modifier = seed_world_activation_cooldown
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_builder_world_deploy_seed_worlds_effects
+		add_modifier = {
+			modifier = "seed_world_activation_cooldown"
+			days = 1800
+		}
+		owner = {
+			country_event = { id = shield_world.3 }
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# CREATE SHIELD WORLD DYSON SHELL
+decision_build_sharpened_shield_world = {
+	owned_planets_only = yes
+	icon = decision_build_sharpened_shield_world
+	
+	enactment_time = 900
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 50000
+			unity = 7500
+		}
+	}
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_genesis
+		}
+		exists = owner
+		#owner = {
+		#	NOT = {
+		#		has_modifier = "sharpened_shield_world_completed"
+		#	}
+		#}
+	}
+	
+	allow = {
+		owner = { has_technology = tech_advanced_slipspace_field }
+	}
+	
+	effect = {
+		custom_tooltip = decision_build_sharpened_shield_world_effects
+		owner = {
+			country_event = { id = shield_world.98 }
+		}
+	}
+}
+
+
+# CREATE ARK INSTALLATION
+decision_build_ark_installation = {
+	owned_planets_only = yes
+	icon = decision_build_ark_installation
+	
+	enactment_time = 1800
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 40000
+			unity = 5000
+		}
+	}
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_genesis
+		}
+		exists = owner
+		owner = {
+			NOT = {
+				has_modifier = "ark_installation_completed"
+			}
+		}
+	}
+	
+	allow = {
+		owner = { has_technology = tech_shield_worlds }
+		owner = { has_technology = tech_advanced_slipspace_field }
+	}
+	
+	effect = {
+		custom_tooltip = decision_build_ark_installation_effects
+		owner = {
+			country_event = { id = shield_world.99 }
+		}
+	}
+}

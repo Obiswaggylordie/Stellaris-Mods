@@ -1,0 +1,37 @@
+
+origin_gatlantis = {
+
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/wce_origin_gatlantis_icon.dds"
+	picture = GFX_wce_origin_gatlantis_portrait
+
+	starting_colony = pc_ocean				# スタート時の首都惑星のタイプ
+	#preferred_planet_class_neighbor = no
+
+	#initializers = { wce_gatlantis_system_initializer }
+	#initializers = { sol_system_initializer }
+
+	#playable = {
+	#	host_has_dlc = "Utopia"
+	#}
+
+	possible = {
+		is_ai = no
+	}
+
+	description = "origin_tooltip_wce_gatlantis"
+
+	modifier = {
+		all_technology_research_speed = 1.00
+		ship_weapon_damage = 1.00
+		ship_shield_hardening_add = 1.00
+		owned_ship_fire_rate_mult = 1.00
+	}
+
+	Advanced_start = no
+
+	ai_weight = {
+		weight = 0
+	}
+}
+

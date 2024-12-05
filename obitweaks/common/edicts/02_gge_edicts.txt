@@ -1,0 +1,126 @@
+
+@EdictPerpetual = -1
+
+
+for_garmillas = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 0
+
+	prerequisites = {
+		"tech_gge_pretech"
+	}
+
+	resources = {
+		category = edicts
+		cost = {
+			influence = 300
+			energy = 10000
+		}
+	}
+
+	modifier = {
+		num_tech_alternatives_add = 3
+		
+		starbase_upgrade_speed_mult = 0.50
+		starbase_module_build_speed_mult = 0.50
+		starbase_building_build_speed_mult = 0.50
+
+		planet_building_build_speed_mult = 0.50
+		megastructure_build_speed_mult = 0.50
+
+		country_unity_produces_mult = 0.20
+		influence_produces_add = 1.5
+		terraform_speed_mult = 0.25
+
+		country_naval_cap_add = 1000.0
+		command_limit_add = 50
+		ships_upkeep_mult = -0.15
+
+
+		
+		country_energy_produces_mult = 0.2
+		country_minerals_produces_mult = 0.2
+		country_alloys_produces_mult = 0.2
+
+		pop_happiness = -0.25
+
+
+
+		### DEBUG
+		#country_energy_produces_mult = 80.00
+		#country_minerals_produces_mult = 80.00
+		#country_alloys_produces_mult = 80.00
+		#ships_upkeep_mult = -1.00
+		###
+
+	}
+
+	potential = {  
+		has_origin = origin_garmillas
+	} 
+
+	ai_weight = {
+        weight = 10000
+    }
+}
+
+
+for_garmillas_ai = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 0
+
+	prerequisites = {
+		"tech_gge_pretech"
+	}
+
+	resources = {
+		category = edicts
+		cost = {
+			energy = 10
+		}
+	}
+
+	modifier = {
+		num_tech_alternatives_add = 3
+		
+		starbase_upgrade_speed_mult = 0.25
+		starbase_module_build_speed_mult = 0.25
+		starbase_building_build_speed_mult = 0.25
+
+		planet_building_build_speed_mult = 0.25
+		megastructure_build_speed_mult = 0.25
+
+		country_unity_produces_mult = 0.10
+		influence_produces_add = 1.0
+		terraform_speed_mult = 0.25
+
+		country_naval_cap_add = 1000.0
+		command_limit_add = 50
+		ships_upkeep_mult = -0.10
+
+
+		
+		country_energy_produces_mult = 0.2
+		country_minerals_produces_mult = 0.2
+		country_alloys_produces_mult = 0.2
+
+		all_technology_research_speed = 10.00
+
+		physics_research_produces_add = 250
+		engineering_research_produces_add = 250
+
+		country_physics_research_produces_mult = 0.15
+		country_engineering_research_produces_mult = 0.15
+	}
+
+	potential = {  
+		has_origin = origin_garmillas
+		is_ai = yes
+	} 
+
+	ai_weight = {
+        weight = 10000
+    }
+}

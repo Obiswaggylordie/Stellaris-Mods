@@ -1,0 +1,60 @@
+﻿l_english:
+
+
+
+
+DTF_SHIP_AURA_JD_DEFENSE_PROTOCOL:0 "Defense Protocol"
+DTF_SHIP_AURA_JD_DEFENSE_PROTOCOL_DESC:0 "Efficiently operate shipboard aircraft and anti-aircraft guns according to AI predictions"
+
+dtf_ship_aura_jd_defense:0 "Defense Protocol"
+friendly_defense_protocol:0 "Defense Protocol"
+
+
+
+
+
+
+
+DTF_SHIP_AURA_WAVE_MOTION_RESONANCE:0 "Wave Resonance"
+DTF_SHIP_AURA_WAVE_MOTION_RESONANCE_DESC:0 "Cosmo reverse system resonates the wave energy of surrounding ships to improve energy efficiency"
+
+DTF_SHIP_AURA_ADVANCED_WAVE_MOTION_RESONANCE:0 "Super Wave Resonance"
+DTF_SHIP_AURA_ADVANCED_WAVE_MOTION_RESONANCE_DESC:0 "Resonate wave energy even more efficiently"
+
+####################
+### NSC
+
+DTF_SHIP_AURA_WAVE_MOTION_RESONANCE_NSC:0 "Wave Resonance"
+DTF_SHIP_AURA_WAVE_MOTION_RESONANCE_NSC_DESC:0 "Cosmo reverse system resonates the wave energy of surrounding ships to improve energy efficiency"
+
+DTF_SHIP_AURA_ADVANCED_WAVE_MOTION_RESONANCE_NSC:0 "Super Wave Resonance"
+DTF_SHIP_AURA_ADVANCED_WAVE_MOTION_RESONANCE_NSC_DESC:0 "Resonate wave energy even more efficiently"
+
+nsc_titan_aura:0 "Titan Aura"
+nsc_titan_aura_DESC:0 "Titan Aura"
+
+
+
+
+dtf_ship_aura_wave_motion_resonance:0 "Wave Resonance"
+dtf_ship_aura_advanced_wave_motion_resonance:0 "Super Wave Resonance"
+
+friendly_wave_motion_resonance:0 "Wave Resonance"
+
+
+
+
+
+####################
+### STARBASE
+
+DTF_STARBASE_AURA_ABSOLUTE_DEFENSE_ZONE:0 "Absolute Defense Zone"
+DTF_STARBASE_AURA_ABSOLUTE_DEFENSE_ZONE_DESC:0 "Total war by absolute defense zone"
+
+dtf_aura_starbase_absolute_defense_zone:0 "Absolute Defense Zone"
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+
+####################################################################################################################################
+### Graviton Spread 3
+####################################################################################################################################
+weapon_component_template = {
+	key = "EFG_GRAVITON_SPREAD_3"
+	size = torpedo
+	type = instant
+	icon = "GFX_efg_ship_part_graviton_spread_3"
+	icon_frame = 1
+	prerequisites = { "tech_efg_wave_motion_gun_4" }
+	component_set = "EFG_GRAVITON_SPREAD_3_CS"
+	projectile_gfx = "efg_pj_graviton_spread"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy g_slot }
+	ai_tags = { weapon_role_artillery }
+	#upgrades_to = "EFG_GRAVITON_SPREAD_4"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_efg_t10_cost
+		}		
+		upkeep = {
+			energy = @l_efg_t10_uk_energy
+			alloys = @l_efg_t10_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_10_l
+	damage = { min = 1200.00 max = 2000.00 }
+
+	shield_penetration = 0.25
+	#shield_damage = 1.00
+	#armor_penetration = 0.00
+	#armor_damage = 1.00
+	#hull_damage = 1.00
+
+	windup = { min = 20.0 max = 20.0 }
+	total_fire_time = 90.0
+	range = @efg_weapon_range_80
+	accuracy = 0.90
+	tracking = 0.10
+
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 50000
+			from = { 
+				OR = {
+					is_ship_size = battleship_andromeda
+					is_ship_size = battleship_andromeda_kai
+					is_ship_size = carrier_andromeda
+				}
+			}
+		}
+	}
+
+	
+	
+}
+

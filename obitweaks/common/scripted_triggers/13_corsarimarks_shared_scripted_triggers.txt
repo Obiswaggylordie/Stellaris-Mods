@@ -1,0 +1,339 @@
+# this file contains scripted triggers I find commonly reused across many of my mods
+# instead of requiring a submod, this file is added to each relevant mod with the same name - which will result in the game loading only a single copy
+
+# this = species
+cm_shared_is_smart_enough_for_leadership = {
+	optimize_memory
+	is_sapient = yes
+	NOT = { has_trait = trait_syncretic_proles }
+	can_think = yes
+}
+
+# this = something with a species
+cm_shared_is_psionic_species = {
+	optimize_memory
+	species = { has_trait = trait_psionic }
+}
+
+# this = something with a species
+cm_shared_is_cyborg_species = {
+	optimize_memory
+	species = { has_trait = trait_cybernetic }
+}
+
+# this = something with a species
+cm_shared_is_machine_species = {
+	optimize_memory
+	species = {
+		OR = {
+			has_trait = trait_machine_unit
+			is_archetype = MACHINE
+		}
+	}
+}
+
+# this = something with a species
+cm_shared_is_mechanical_species = {
+	optimize_memory
+	species = {
+		OR = {
+			has_trait = trait_mechanical
+			is_archetype = ROBOT
+		}
+	}
+}
+
+# this = something with a species
+cm_shared_is_aquatic_species = {
+	optimize_memory
+	species = { has_trait = trait_aquatic }
+}
+
+# this = country
+cm_shared_is_necrophage_empire = {
+	optimize_memory
+	has_origin = origin_necrophage
+	has_trait = trait_necrophage
+}
+
+# this = country
+cm_shared_is_devouring_hive_empire = {
+	optimize_memory
+	is_hive_empire = yes
+	has_valid_civic = civic_hive_devouring_swarm
+}
+
+# this = country
+cm_shared_is_regular_hive_empire = {
+	optimize_memory
+	is_hive_empire = yes
+	NOT = { has_valid_civic = civic_hive_devouring_swarm }
+}
+
+# this = species
+cm_shared_has_species_trait_with_leader_trait = {
+	optimize_memory
+	OR = {
+		has_trait = trait_cybernetic
+		has_trait = trait_erudite
+		has_trait = trait_psionic
+		has_trait = trait_latent_psionic
+		has_trait = trait_brainslug
+		has_trait = trait_clone_soldier_fertile
+		# intentionally excludes trait_clone_soldier_infertile and trait_clone_soldier_infertile_full_potential:
+		# those species will die off rapidly in other empires and generally not produce many leaders
+	}
+}
+
+# this follows the game's default rules - does not account for Gender Nonbinary Leaders
+# this = leader, after species change
+cm_shared_leader_species_allows_current_gender = {
+	optimize_memory
+	switch = {
+		trigger = gender
+		indeterminable = {
+			species = {
+				OR = {
+					species_gender = indeterminable
+					AND = {
+						species_gender = not_set
+						cm_shared_species_class_uses_gender = no
+					}
+				}
+			}
+		}
+		female = {
+			species = {
+				OR = {
+					AND = {
+						species_gender = not_set
+						cm_shared_species_class_uses_gender = yes
+					}
+					species_gender = female
+				}
+			}
+		}
+		male = {
+			species = {
+				OR = {
+					AND = {
+						species_gender = not_set
+						cm_shared_species_class_uses_gender = yes
+					}
+					species_gender = male
+				}
+			}
+		}
+	}
+}
+
+# this = species
+cm_shared_species_class_uses_gender = {
+	optimize_memory
+	# NOTE: this assumes custom species classes use gender (the default)
+	NOR = {
+		is_species_class = MACHINE
+		is_species_class = ROBOT
+		is_species_class = AI # contingency
+		is_species_class = SWARM # praethoryn
+		is_species_class = EXD # extradimensionals: unbidden/aberrant/vehement
+		is_species_class = SALVAGER # salvager enclave species
+		is_species_class = SHROUDWALKER # shroudwalker enclave species
+		is_species_class = PARAGON # legendary galactic paragons
+	}
+}
+
+# this = pop
+cm_shared_pop_is_ruler_type = {
+	optimize_memory
+	OR = {
+		has_job_category = ruler
+		has_job = fe_overseer
+		has_job = fe_sky_cardinal
+		# these jobs produce unity, but are "ruler"-type as direct representatives of the gestalt consciousness
+		has_job = synapse_drone
+		has_job = primitive_hive_synapse_drone
+		has_job = primitive_hive_synapse_drone_2
+		has_job = coordinator
+	}
+	cm_shared_pop_is_military_type = no
+	cm_shared_pop_is_science_type = no
+	cm_shared_pop_is_unity_type = no
+}
+
+# this = pop
+cm_shared_pop_is_unity_type = {
+	optimize_memory
+	OR = {
+		# does not include ruler jobs - they use ruler clothes
+		has_job = fe_xeno_keeper
+		has_job = fe_augur
+		has_job = fe_hedonist
+		has_job = bureaucrat
+		has_job = manager
+		has_job = priest
+		has_job = death_priest
+		has_job = mortal_initiate
+		has_job = preacher
+		has_job = telepath
+		has_job = culture_worker
+		has_job = necro_apprentice
+		has_job = evaluator
+		has_job = primitive_bureaucrat
+		has_job = primitive_priest
+		has_job = primitive_priest_2
+		has_job = overlord_manager
+		has_job = overlord_mortal_initiate
+		has_job = overlord_mortal_initiate_drone
+		has_job = unifier
+		has_job = low_tech_bureaucrat
+		has_job = low_tech_manager
+		has_job = low_tech_priest
+	}
+}
+
+# this = pop
+cm_shared_pop_is_military_type = {
+	optimize_memory
+	OR = {
+		has_job = fe_protector
+		has_job = fe_guardian_bot
+		has_job = duelist
+		has_job = enforcer
+		has_job = soldier
+		has_job = titan_hunter
+		has_job = patrol_drone
+		has_job = warrior_drone
+		has_job = primitive_warrior
+		has_job = primitive_warrior_2
+		has_job = overlord_recruiter
+		has_job = overlord_recruiter_drone
+		has_job = knight_commander
+		has_job = knight
+		has_job = overlord_knight
+		has_job = overlord_knight_drone
+		has_job = squire
+		has_job = fotd_protectors
+		has_job = primitive_hive_warrior
+		has_job = primitive_hive_warrior_2
+		has_job = low_tech_warrior
+	}
+}
+
+# this = pop
+cm_shared_pop_is_science_type = {
+	optimize_memory
+	OR = {
+		has_job = fe_archivist
+		has_job = head_researcher
+		has_job = researcher
+		has_job = brain_drone
+		has_job = calculator
+		has_job = dimensional_portal_researcher
+		has_job = dimensional_portal_researcher_gestalt
+		has_job = space_time_anomaly_researcher
+		has_job = space_time_anomaly_researcher_gestalt
+		has_job = death_chronicler
+		has_job = chronicle_drone
+		has_job = healthcare
+		has_job = necromancer
+		has_job = primitive_researcher
+		has_job = primitive_researcher_2
+		has_job = overlord_academic
+		has_job = overlord_academic_drone
+		has_job = mind_thrall
+		has_job = mind_thrall_drone
+		has_job = overlord_necromancer
+		has_job = overlord_necromancer_drone
+		has_job = xeno_zoo_keeper
+		has_job = archaeoengineers
+		has_job = archaeo_drone
+		has_job = archaeo_unit
+		has_job = primitive_hive_cerebellum_drone
+		has_job = primitive_hive_brain_drone
+		has_job = low_tech_researcher
+		has_job = archivist
+	}
+}
+
+# this = pop
+cm_shared_pop_is_assembly_type = {
+	optimize_memory
+	OR = {
+		has_job = roboticist
+		has_job = spawning_drone
+		has_job = replicator
+		has_job = reassigner
+		has_job = overlord_breeder
+		has_job = overlord_breeder_drone
+		has_job = overlord_reassigner
+		has_job = overlord_reassigner_drone
+		has_job = cyber_drone
+		has_job = offspring_drone
+		has_job = overlord_offspring_drone_feeder
+		has_job = overlord_offspring_drone_feeder_drone
+		has_job = bath_attendant
+		has_job = bath_attendant_hive
+		has_job = bath_attendant_machine
+		has_job = overlord_bath_attendant
+		has_job = overlord_bath_attendant_hive
+		has_job = overlord_bath_attendant_machine
+		has_job = primitive_hive_spawning_drone
+	}
+}
+
+# this = pop
+cm_shared_pop_is_skilled_type = {
+	optimize_memory
+	OR = {
+		has_job_category = specialist
+		has_job_category = complex_drone
+		has_job_category = bio_trophy
+		has_job = overlord_bio_trophy
+		has_job = overlord_bio_trophy_drone
+		has_job = primitive_hive_factory_drone
+	}
+}
+
+# this = pop
+cm_shared_pop_is_menial_type = {
+	optimize_memory
+	OR = {
+		has_job_category = corrupt_drone
+		has_job_category = criminal
+		has_job_category = deviant_drone
+		has_job_category = simple_drone
+		has_job_category = assimilation
+		has_job_category = worker
+		has_job_category = slave
+		has_job_category = robot_servant
+		has_job_category = xeno_ward
+		has_job_category = purge
+		has_job_category = pre_sapients
+		has_job = livestock_zoo_animal
+		has_job = livestock_zoo_beast
+		has_job = fe_xeno_ward
+		has_job = fe_acolyte_artisan
+		has_job = fe_acolyte_farm
+		has_job = fe_acolyte_mine
+		has_job = fe_acolyte_generator
+		has_job = fe_maintenance_bot
+	}
+	cm_shared_pop_is_military_type = no
+	cm_shared_pop_is_science_type = no
+	cm_shared_pop_is_unity_type = no
+}
+
+# this = pop
+cm_shared_pop_is_naked_type = {
+	optimize_memory
+	OR = {
+		is_pop_category = pre_sapients
+		is_pop_category = xeno_ward
+		has_job = livestock_zoo_animal
+		has_job = livestock_zoo_beast
+		has_job = fe_xeno_ward
+		has_job = livestock
+		has_job = organic_battery
+	}
+}

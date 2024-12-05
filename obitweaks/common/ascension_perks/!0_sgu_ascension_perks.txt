@@ -1,0 +1,412 @@
+# See traditions/README.txt for format
+
+ap_ascension_final_stage = {
+	on_enabled = {
+		custom_tooltip = "ascension_final_stage_tooltip"
+		add_research_option = tech_ascension_4
+	}
+
+	possible = {	
+		num_ascension_perks > 20
+		custom_tooltip = {
+			fail_text = "requires_enlightenment_finish"
+			has_active_tradition = tr_sgu_enlightenment_finish
+		}
+		custom_tooltip = {
+			fail_text = "requires_technology_ascension_3"
+			has_technology = tech_ascension_3
+		}
+		custom_tooltip = {
+			fail_text = "requires_technology_heightened_intellect"
+			has_technology = tech_heightened_intellect
+		}
+	}
+	
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_ascension_final_stage
+			has_authority = "auth_machine_intelligence"
+		}
+		is_mechanical_empire = no
+		is_cyborg_empire = no
+	}
+	
+	ai_weight = {
+		factor = 50000
+		modifier = {
+			factor = 10
+			has_technology = tech_ascension_3
+		}		
+	}
+}
+
+ap_asgard_technological_supremacy = {
+	on_enabled = {
+		custom_tooltip = "asgard_technological_supremacy_tooltip"
+		give_technology  = { message = no tech = tech_asgard_technological_supremacy }
+		give_technology  = { message = no tech = tech_asgard_reactor_x }
+	}
+
+	modifier = {
+		x_slot_weapon_damage_mult = 0.25
+	}
+
+	possible = {	
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+		custom_tooltip = {
+			fail_text = "requires_asgard_reactor"
+			has_technology = tech_asgard_reactor_5
+		}
+		custom_tooltip = {
+			fail_text = "requires_asgard_shield"
+			has_technology = tech_asgard_shield_3
+		}
+		custom_tooltip = {
+			fail_text = "requires_asgard_beam"
+			has_technology = tech_asgard_beam_3
+		}
+		custom_tooltip = {
+			fail_text = "requires_asgard_cannon"
+			has_technology = tech_asgard_cannon_5
+		}
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_asgard_technological_supremacy
+			has_authority = "auth_machine_intelligence"
+		}
+		is_mechanical_empire = no
+		is_cyborg_empire = no
+		has_technology = tech_asgard_start_1
+	}
+
+	ai_weight = {
+		factor = 50000
+	}
+}
+
+ap_vanir_rebirth = {
+	on_enabled = {
+		custom_tooltip = "vanir_rebirth_tooltip"
+	}
+
+	possible = {	
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
+		}
+		custom_tooltip = {
+			fail_text = "requires_vanir_breakthrough_3"
+			has_technology = tech_vanir_breakthrough_3
+		}
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_vanir_rebirth
+			has_authority = "auth_machine_intelligence"
+		}
+		is_mechanical_empire = no
+		is_cyborg_empire = no
+		has_technology = tech_vanir_start_1
+	}
+
+	ai_weight = {
+		factor = 50000
+	}
+}
+
+ap_vanir_resurgence = {
+	on_enabled = {
+		custom_tooltip = "vanir_resurgence_tooltip"
+		give_technology  = { message = no tech = tech_vanir_forbidden_research_x }
+		give_technology  = { message = no tech = tech_vanir_reactor_x }
+	}
+
+	modifier = {
+		l_slot_weapon_damage_mult = 0.25
+	}
+
+	possible = {	
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+		custom_tooltip = {
+			fail_text = "requires_vanir_reactor"
+			has_technology = tech_vanir_reactor_5
+		}
+		custom_tooltip = {
+			fail_text = "requires_vanir_shield"
+			has_technology = tech_vanir_shield_3
+		}
+		custom_tooltip = {
+			fail_text = "requires_vanir_cannon"
+			has_technology = tech_vanir_cannon_5
+		}
+		custom_tooltip = {
+			fail_text = "requires_vanir_lightning_gun"
+			has_technology = tech_vanir_lightning_gun_5
+		}
+		custom_tooltip = {
+			fail_text = "requires_vanir_dm_cannon"
+			has_technology = tech_vanir_dm_cannon_5
+		}
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_vanir_resurgence
+			has_authority = "auth_machine_intelligence"
+		}
+		is_mechanical_empire = no
+		is_cyborg_empire = no
+		has_technology = tech_vanir_start_1
+	}
+
+	ai_weight = {
+		factor = 50000
+	}
+}
+
+ap_the_fifth_race = {
+	on_enabled = {
+		custom_tooltip = "the_fifth_race_tooltip"
+		add_research_option = tech_asgard_reactor_1
+		add_research_option = tech_asgard_shield_1
+		add_research_option = tech_asgard_beam_1
+		add_research_option = tech_asgard_cannon_1
+		add_research_option = tech_vanir_cannon_1
+		add_research_option = tech_asgard_annihilator_1
+		add_research_option = tech_battleship_annihilator
+
+		owner = {
+			add_resource = { alloys = -10000 sr_ancient_zpm = -1 }
+			save_event_target_as = odyssey_owner
+			create_fleet = {
+				name = "Odyssey"		
+				effect = {
+					set_owner = PREV
+					create_ship = {
+						name = "Odyssey"
+						design = "Odyssey"
+						graphical_culture = "tauri_01"
+						prefix = no
+						upgradable = no
+					}
+					set_location = prev.capital_star
+				}
+			}
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_fifth_race_finish"
+			has_active_tradition = tr_sgu_fifth_race_finish
+		}	
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+		custom_tooltip = {
+			fail_text = "requires_asgard_engine_refit"
+			has_technology = tech_tauri_asgard_engine_refit
+		}
+		custom_tooltip = {
+			fail_text = "requires_asgard_shield_refit"
+			has_technology = tech_tauri_asgard_shield_refit
+		}
+		custom_tooltip = {
+			fail_text = "requires_asgard_weapon_refit"
+			has_technology = tech_tauri_asgard_weapon_refit
+		}
+		custom_tooltip = {
+			fail_text = "requires_odyssey_resources"
+			owner = { resource_stockpile_compare = { resource = alloys value > 14999 }}
+			owner = { resource_stockpile_compare = { resource = sr_ancient_zpm value > 0.99 }}
+		}
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_the_fifth_race
+			has_authority = "auth_machine_intelligence"
+		}
+		is_mechanical_empire = no
+		is_cyborg_empire = no
+		has_technology = tech_tauri_start_1
+	}
+
+	ai_weight = {
+		factor = 50000
+	}
+}
+
+ap_wraith_apex_predator = {
+	on_enabled = {
+		custom_tooltip = "wraith_apex_predator_tooltip"
+		add_relic = r_zpm_hive
+		add_research_option = tech_wraith_zpm_breeding_pods
+	}
+
+	possible = {	
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+		custom_tooltip = {
+			fail_text = "requires_wraith_superhive_cannon_3"
+			has_technology = tech_wraith_superhive_cannon_3
+		}
+		custom_tooltip = {
+			fail_text = "requires_wraith_heavy_cannon_3"
+			has_technology = tech_wraith_heavy_cannon_3
+		}
+		custom_tooltip = {
+			fail_text = "requires_wraith_plasma_cannon_5"
+			has_technology = tech_wraith_plasma_cannon_5
+		}
+		custom_tooltip = {
+			fail_text = "requires_trinium_armor_plating"
+			has_technology = tech_trinium_armor_plating
+		}
+		custom_tooltip = {
+			fail_text = "requires_ship_reinforced_hull_5"
+			has_technology = tech_ship_reinforced_hull_5
+		}
+	}
+
+	potential = {
+		NOR = {
+			has_ascension_perk = ap_wraith_apex_predator
+			has_authority = "auth_machine_intelligence"
+		}
+		is_mechanical_empire = no
+		is_cyborg_empire = no
+		has_technology = tech_wraith_start_1
+	}
+
+	ai_weight = {
+		factor = 50000
+	}
+}
+
+ap_rise_of_anubis = {
+	on_enabled = {
+		custom_tooltip = "rise_of_anubis_tooltip"
+		give_technology  = { message = no tech = tech_anubis_flagship }
+		give_technology  = { message = no tech = tech_anubis_superweapon_1 }
+		give_technology  = { message = no tech = tech_goauld_shield_x }
+		give_technology  = { message = no tech = tech_goauld_reactor_x }
+	}
+
+	possible = {	
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+		custom_tooltip = {
+			fail_text = "requires_colossus_ascension_perk"
+			has_ascension_perk = ap_colossus
+		}
+		custom_tooltip = {
+			fail_text = "requires_goauld_large_cannon_3"
+			has_technology = tech_goauld_large_cannon_3
+		}
+		custom_tooltip = {
+			fail_text = "requires_goauld_shield_3"
+			has_technology = tech_goauld_shield_3
+		}
+		custom_tooltip = {
+			fail_text = "requires_goauld_reactor_5"
+			has_technology = tech_goauld_reactor_5
+		}
+	}
+
+	potential = {
+		NOR = {
+			has_ascension_perk = ap_rise_of_anubis
+			has_authority = "auth_machine_intelligence"
+		}
+		is_mechanical_empire = no
+		is_cyborg_empire = no
+		has_technology = tech_goauld_start_1
+	}
+
+	ai_weight = {
+		factor = 50000
+	}
+}
+
+ap_machine_ascension = {
+	on_enabled = {
+		custom_tooltip = "machine_ascension_tooltip"
+	}
+
+	modifier = {
+		intel_decryption_add = 5
+		intel_encryption_add = 5
+		espionage_operation_skill_add = 2
+		spy_network_daily_value_mult = 2
+	}
+
+	possible = {	
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+		custom_tooltip = {
+			fail_text = "requires_asuran_finish"
+			has_tradition = tr_sgu_asuran_finish
+		}
+	}
+
+	potential = {
+		NOT = { has_ascension_perk = ap_machine_ascension }
+		has_authority = "auth_machine_intelligence"
+		has_technology = tech_asuran_start_1
+	}
+
+	ai_weight = {
+		factor = 50000
+	}
+}
+
+ap_world_devourer = {
+	on_enabled = {
+		custom_tooltip = "world_devourer_tooltip"
+	}
+
+	modifier = {
+		damage_vs_superior_empires_mult = 0.2
+		planet_metallurgists_produces_mult = 0.2
+	}
+
+	possible = {	
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+		custom_tooltip = {
+			fail_text = "requires_replicator_finish"
+			has_tradition = tr_sgu_replicator_finish
+		}
+	}
+
+	potential = {
+		NOT = { has_ascension_perk = ap_world_devourer }
+		has_authority = "auth_machine_intelligence"
+		has_technology = tech_replicator_start_1
+	}
+
+	ai_weight = {
+		factor = 50000
+	}
+}
+
+

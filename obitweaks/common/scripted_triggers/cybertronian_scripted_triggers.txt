@@ -1,0 +1,138 @@
+cybertronian_synth_empire_trigger = {
+	host_has_dlc = "Utopia"
+	NOT = { has_ethic = ethic_gestalt_consciousness }
+	OR = {
+		owner.species = {
+			OR = {
+				has_trait = trait_cybertronian
+				has_trait = trait_bw_cybertronian
+				has_trait = trait_transtech_cybertronian
+			}
+			has_trait = trait_mechanical
+		}
+		has_country_flag = cybertronian_synth_empire
+	}
+}
+
+is_cybertronian_world = {
+	AND = {
+		exists = planet
+		planet = {
+			OR = {
+				is_planet_class = pc_damaged_cybertron
+				is_planet_class = pc_dead_cybertron
+				is_planet_class = pc_restored_cybertron
+				is_planet_class = pc_corrupted_cybertron
+				is_planet_class = pc_cybertronian_world
+				is_planet_class = pc_corrupted_cybertronian_world
+				is_planet_class = pc_depleted_cybertron
+				is_planet_class = pc_insecticon_hive
+			}
+		}
+	}
+}
+
+is_insecticon_swarm_consumption_world = { # planet scope
+	exists = owner
+	NOR = {
+		is_ideal_planet_class = {
+			who = owner
+			status = yes
+		}
+		AND = {
+			planet_size > 13
+			owner = {
+				any_owned_pop = {
+					is_being_purged = no
+					prevprev = { habitability = { who = prev value >= 0.9 } }
+				}
+			}
+		}
+	}
+}
+
+can_destroy_planet_with_PLANET_KILLER_CYBERTRONIAN_CONVERSION_BEAM = {
+	custom_tooltip = {
+		fail_text = is_shielded
+		NOR = {
+			is_planet_class = pc_shielded
+			is_planet_class = pc_ringworld_shielded
+			is_planet_class = pc_habitat_shielded
+			is_star = yes
+			is_asteroid = yes
+			is_planet_class = pc_gas_giant
+		}
+	}
+	custom_tooltip = {
+		fail_text = is_cybertronian_world
+		is_cybertronian_world = no
+	}
+	if = {
+		limit = {
+			exists = owner
+			owner = { is_country_type = primitive }
+		}
+		custom_tooltip = {
+			fail_text = primitives_not_in_borders
+			exists = space_owner
+			space_owner = { is_same_value = from.owner }
+		}
+	}
+	custom_tooltip = {
+		fail_text = is_machine_world
+		NOR = {
+			is_planet_class = pc_ai
+			is_planet_class = pc_machine
+		}
+	}
+	custom_tooltip = {
+		fail_text = has_perdition_shield
+		NOR = {
+			has_deposit = d_slipspace_bubble
+		}
+	}
+}
+
+is_cybertronian = {
+	OR = {
+		has_trait = trait_cybertronian
+		has_trait = trait_bw_cybertronian
+		has_trait = trait_transtech_cybertronian
+		has_trait = trait_robot_vehicon
+		has_trait = trait_robot_sentinel_ai
+		has_trait = trait_energon_dependence
+		has_trait = trait_dark_energon_dependence
+	}
+}
+
+is_cybertronian_empire = {
+	has_country_flag = cybertronian_synth_empire
+}
+
+is_doomsday_cybertron_planet = {
+	OR = {
+		has_modifier = core_shutdown_0
+		has_modifier = core_shutdown_1
+		has_modifier = core_shutdown_2
+		has_modifier = core_shutdown_3
+		has_modifier = core_shutdown_4
+	}
+}
+
+is_decepticon_empire = {
+	OR = {
+		has_civic = civic_decepticons
+		has_civic = civic_machine_decepticons
+		has_civic = civic_predacons
+		has_civic = civic_machine_predacons
+	}
+}
+
+is_autobot_empire = {
+	OR = {
+		has_civic = civic_autobots
+		has_civic = civic_machine_autobots
+		has_civic = civic_maximals
+		has_civic = civic_machine_maximals
+	}
+}

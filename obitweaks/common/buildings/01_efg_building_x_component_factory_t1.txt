@@ -1,0 +1,148 @@
+@dtf_component_factory_build_time_1 = 120
+@dtf_component_factory_build_time_2 = 160
+
+@dtf_component_factory_alloys_cost_1 = 400
+@dtf_component_factory_alloys_cost_2 = 2400
+
+
+@dtf_component_factory_energy_upkeep_1 = 20
+@dtf_component_factory_energy_upkeep_2 = 40
+
+@dtf_component_factory_minerals_upkeep_1 = 20
+@dtf_component_factory_minerals_upkeep_2 = 40
+
+
+
+building_dtf_component_factory_1 = {
+	base_buildtime = @dtf_component_factory_build_time_1
+	base_cap_amount = 2
+	category = manufacturing
+
+	icon = building_dtf_component_factory
+
+	#can_demolish = no
+	
+
+	potential = {
+		always = no
+	}
+
+	allow = { 
+		exists = owner
+		planet = { is_planet_class = pc_cosmoreverse }
+	}
+
+
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @dtf_component_factory_alloys_cost_1
+		}
+		upkeep = {
+			energy = @dtf_component_factory_energy_upkeep_1
+			minerals = @dtf_component_factory_minerals_upkeep_1
+		}
+
+		produces = {	
+			
+
+		}
+	}
+
+	planet_modifier = {
+		
+
+	}
+
+	country_modifier = {
+		ship_hull_mult = 0.06
+		ship_armor_mult = 0.03
+		ship_base_speed_mult = 0.02
+		ship_evasion_add = 1
+	}
+
+	on_built = {
+		set_planet_flag = dtf_component_factory_built_1
+	}
+	#on_destroy = {
+	#	remove_planet_flag = dtf_component_factory_built_1
+	#}
+	#on_queued = {
+	#	set_planet_flag = dtf_component_factory_built_1
+	#}
+	on_unqueued = {
+		remove_planet_flag = dtf_component_factory_built_1
+	}
+
+	upgrades = {
+		"building_dtf_component_factory_2"
+	}
+
+	prerequisites = { "tech_dtf_technology_3" }
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+building_dtf_component_factory_2 = {
+	base_buildtime = @dtf_component_factory_build_time_2
+	category = manufacturing
+	can_build = no
+
+	icon = building_dtf_component_factory
+
+	
+
+
+
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @dtf_component_factory_alloys_cost_2
+		}
+		upkeep = {
+			energy = @dtf_component_factory_energy_upkeep_2
+			minerals = @dtf_component_factory_minerals_upkeep_2
+		}
+
+		produces = {	
+			
+
+		}
+	}
+
+
+	planet_modifier = {
+		
+
+	}
+
+	country_modifier = {
+		ship_hull_mult = 0.10
+		ship_armor_mult = 0.05
+		ship_base_speed_mult = 0.03
+		ship_evasion_add = 2
+	}
+
+	on_built = {
+		set_planet_flag = dtf_component_factory_built_2
+	}
+	on_unqueued = {
+		remove_planet_flag = dtf_component_factory_built_2
+	}
+
+	upgrades = {
+		"building_dtf_component_factory_3"
+	}
+
+	prerequisites = { "tech_dtf_technology_3" }
+
+	ai_weight = {
+		weight = 0
+	}
+}

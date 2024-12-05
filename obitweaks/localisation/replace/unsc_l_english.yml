@@ -1,0 +1,1049 @@
+﻿l_english:
+
+ pc_ueg_luna: "Habitable Moon"
+ pc_ueg_luna_desc: "Although atmospherically devoid and barren, artificial habitats and canopy settlements cover the surface to allow sufficient habitation for the indigenous population."
+
+ ueg_luna_city: "Mare Nubium"
+ ueg_luna_city_desc: "A geographic region on Luna under the jurisdiction of the Luna Confederated States and the location of the Luna OCS Academy, an officer candidate school. The area itself is crossed by tunnels and surface tubes connecting areas of human habitation across the region."
+ 
+ START_SCREEN_PART_ONE_HALO_UEG_ORIGIN: "Captain's log, January 1st, 2200.\n\nOver the past century, the Unified Earth Government has solidified its authority as the central civilian government over Earth and her colonies. As far back as I can remember, the UEG was initially conceived as a supranational entity on Earth around 2075 and has since gained full autonomy over the Sol system with vested interests into expanding the human sphere to new star systems. Which means that our jobs have just became that much more interesting. As of today, the Senate has passed several legislation bills calling for the expansion of the United Nations Space Command to act as the primary overseer of military, scientific, and exploratory operations as we venture into the unknown.\n\nAs an enlisted officer of the UNSC, our mission is to uphold and advance the policies of the UEG and ensure the safety and security of the UEG territories, possessions, and areas vital to its interests.\n\nIt goes without saying that we stand ready to protect humanity and ensure its survival by any means necessary whether from insurrectionists or God-forbid extraterrestrial encounters.\n\nThe UEG has also recently announced the first line of colony ships equipped with the new Shaw-Fujikawa Translight Engines.\n\nThese new FTL drives will soon be refitted onto all UNSC vessels becoming the forefront in interstellar colonization, warfare, and space travel beyond the Sol system.\n\nIt won't be long before we receive the green light to begin expeditions into our neighboring star systems.\n\nI hope everything goes as planned...\n\n - Per Mare, Per Terras, Per Constellatum."
+ 
+ START_SCREEN_PART_ONE_HALO_ANCESTOR_ORIGIN: "We Are Humanity!\n\nEvolved on a long forgotten verdant world, our predecessors created the first foundations for our mighty civilization, expanding our ancient interstellar empire across the stars under the philosophy of Daowa-maad.\n\nWhile our people have underwent a series of technological dark ages, suffering the wrath of warlords, and countless civil wars, we now stand as one unified empire!\n\nWe now pass on this legacy as the Ancestors, the true inheritors of the Precursors' Mantle of Responsibility as the sole protectors of this galaxy.\n\nEven now, our civilization thrives on Charum Hakkor, our mighty capital and precursor stronghold and with the assistance of our San'Shyuum allies in unlocking the secrets of precursor technology, our alliance remains united in power and concerted in our goals.\n\nIn time, our empire will create new prosperous souls across the galaxy and we will become the greatest human civilization in galactic history!"
+
+ #UNSC WEAPON TECHNOLOGY CHOICE 
+ unsc_start.1.name: "UNSC Technology Start"
+ unsc_start.1.desc: "Start the game with all available Pre/Mid-Covenant War UNSC utility and weapons technology unlocked, utility technology only, or starting UNSC weaponry? These technology components are intended for use in the late game which will give your empire a substantial advantage early on. If not, then you can still research this technology later."
+ unsc_start.1.a: "§BOorah! Start the game with all UNSC-themed weapons and army technology§!"
+ unsc_start.1.b: "§GHooah! Start the game with starting UNSC weapons only§!"
+ unsc_start.1.c: "§YHooah! Start the game with UNSC ship utility tech and armies only§!"
+ unsc_start.1.d: "§RNone§!"
+
+ #COUNCILORS 
+ councilor_ueg_government: "Minister for the Colonies"
+ councilor_ueg_government_female: "Ministress for the Colonies"
+ councilor_ueg_government_desc: "The $TITLE$ is charged with governing the Colonial Administration Authority of the Unified Earth Government."
+ 
+ councilor_unsc_fleet_admiral: "CINCFLEET"
+ councilor_unsc_fleet_admiral_female: "CINCFLEET"
+ councilor_unsc_fleet_admiral_desc: "The $TITLE$ or Commander-in-Chief of Naval Operations is the senior naval flag officer of the UNSC Navy."
+ 
+ councilor_unsc_oni_commander: "CINCONI"
+ councilor_unsc_oni_commander_female: "CINCONI"
+ councilor_unsc_oni_commander_desc: "The $TITLE$ or Commander-in-Chief of the Office of Naval Intelligence serving as the command's administrative and operational director."
+
+ #ANCIENT HUMANITY 
+
+ councilor_ancestor_lord_of_admirals: "Lord of Admirals"
+ councilor_ancestor_lord_of_admirals_female: "Lord of Admirals"
+ councilor_ancestor_lord_of_admirals_desc: "The $TITLE$ is the supreme commander of the navy and responsible for leading the armies and planning battle tactics."
+ 
+ councilor_ancestor_political_morale_commander: "Political and Morale Commander"
+ councilor_ancestor_political_morale_commander_female: "Political and Morale Commander"
+ councilor_ancestor_political_morale_commander_desc: "The $TITLE$ is a unique position held within the military that is responsible for not only keeping up army morale, but also scientific endeavors in military research and technology."
+
+ #UNSC ODP MEGASTRUCTURE 
+ 
+ #starbase_unsc_odp_command: "ODP Command Station"
+ #starbase_unsc_odp_command_plural: "ODP Command Stations"
+ #starbase_unsc_odp_command_desc: "A command center for the Orbital Defense Platform Network in orbit of this plant."
+ 
+ #unsc_megastructure.1.name: "ODP Command Station Complete"
+ #unsc_megastructure.1.desc: "Our engineers have finished construction of the orbital defense platform command station. With this orbital station, we can now build additional Defense Platforms in orbit of this planet."
+ 
+ 
+ #unsc_odp_command_MEGASTRUCTURE_DETAILS:0 "An §Y$unsc_odp_command$§! is a Starbase variant that forms a defense perimeter around the planet, providing a network of strong orbital defenses."
+ #unsc_odp_command_CONSTRUCTION_INFO_DELAYED:1 "ODPs can provide defensive benefits to the planet including more defense platforms that can be afforded on larger system citadels over a planetary body."
+ #unsc_odp_command:0 "Orbital Defense Platform Network"
+ #unsc_odp_command_DESC:1 "This Starbase variant forms a command center for additional Defense Platforms."
+ #unsc_odp_command_plural:0 "Orbital Rings"
+ #allow_unsc_odps:0 "§HUnlocks Megastructure:§! $unsc_odp_command$"
+ #STARBASE_STATION_NAME_FORMAT_NON_PRIMARY:0 "$PLANET$ ODP Network"
+
+ #tech_unsc_odp_command:0 "Orbital Defense Platform Command Center"
+ #tech_unsc_odp_command_desc:0 "Allows the construction of a special starbase in geosynchronous orbit around colonized planets, allowing the construction of Defense Stations around the planet. These stations also provide coordinated targeting and fire for all Defense Stations within the network grid. These stations serve as a defensive line against a potential invading enemy force."
+
+ #requires_technology_unsc_odp_command:0 "$TRIGGER_FAIL$Requires the £engineering£ §Y$tech_unsc_odp_command$§! technology."
+ 
+ FLAG_CATEGORY_unsc: "UNSC"
+ 
+ EMPIRE_DESIGN_UNSC: "United Nations Space Command"
+ EMPIRE_DESIGN_UNSC_desc: "The United Nations Space Command, or UNSC for short, served as the military, exploratory, and scientific agency of the Unified Earth Government. Originally commissioned as a military force the UNSC was once responsible for the overseeing of space battles and the suppression of insurrections.\n\nAs humanity spread through space it was inevitable that other species would be encountered. Now, faced with the potential for extinction, the UNSC has become humanity's primary government and its best hope for survival."
+ 
+ EMPIRE_DESIGN_ANCIENT_HUMANITY: "Ancient Humanity"
+ EMPIRE_DESIGN_ANCIENT_HUMANITY_desc: "Ancient Humanity were once the powerful ancestors to modern humanity over 200,000 years ago. Their empire spanned across the Milky Way Galaxy and nearly rivaled that of the enigmatic Forerunners, a hyper-advanced civilization that ruled the majority of the galaxy under the Mantle of Responsibility. Their civilization was eventually wiped out by the Forerunners and the survivors were forcibly regressed into a primitive state as punishment for their aggression. After the conclusion of the Flood-Forerunner War, humanity was then cataloged and preserved by the Librarian after the firing of the Halos to eventually become what is known as modern humanity."
+ 
+ name_list_UNSC_human: "United Earth Space Command"
+ 
+ civic_unsc_technology: "UNSC Titanium-A"
+ civic_unsc_technology_desc: "Although UNSC vessels are typically unshielded, their armor and hull are greatly enhanced by Titanium-A to survive against most ship-based weaponry without severe structural damage to the ship."
+
+ civic_ueg_government: "Unified Earth Government"
+ civic_ueg_government_desc: "The central civilian government that administers Earth and its colonies throughout known UEG space. This government functions as a representative democracy and parliamentary system of governing. However, due to the special privileges given to Earth, many of its outer colonies feel underrepresented within the government, creating tension between the colonies and the UEG. §HUnlocks special UNSC technology research, buildings, and armies.§!"
+ 
+ civic_unsc_government: "UNSC High Command"
+ civic_unsc_government_desc: "The highest governing office of the United Nations Space Command comprised of several high-ranking admirals and commanders from all branches of the UNSC. §HUnlocks special UNSC army types, weapon components, and research technologies.§!"
+ 
+ civic_unsc_oni: "Office of Naval Intelligence (ONI)"
+ civic_unsc_oni_desc: "An intelligence branch within the United Nations Space Command Navy, ONI is known for intelligence gathering, counter-espionage, and top-secret research projects such as the SPARTAN programs and project: MJOLNIR. However, due to ONI's numerous contraventions to complete their objectives, many within the UEG distrust the organization."
+
+ civic_ancient_humanity: "Ancient Humanity"
+ civic_ancient_humanity_desc: "The enigmatic and technologically advanced ancestors of modern humanity over 200,000 years ago. Their empire spanned across the Milky Way Galaxy and nearly rivaled that of the Forerunners, a hyper-advanced civilization that ruled the majority of the galaxy under the Mantle of Responsibility."
+ 
+ leader_trait_general_spartan: "Spartan Commander"
+ leader_trait_general_spartan_desc: "Genetically-engineered supersoldier from the Spartan Branch. Although Spartans typically lack any formal rank structure and are all considered equal, this title is more administrative usually given to fireteam leaders for specific missions."
+ 
+ trait_ancient_human: "Ancient Human"
+ trait_ancient_human_desc: "A highly evolved prehistoric human with heightened abilities. These humans are stronger, faster, and more intelligent than modern Homo-Sapiens." 
+ 
+ leader_trait_ancient_human: "Ancestor Human"
+ leader_trait_ancient_human_desc: "Highly evolved prehistoric humans with heightened abilities."
+ 
+ leader_trait_general_ancient_human: "Lord of Generals"
+ leader_trait_general_ancient_human_desc: "Augmented human general possessing centuries of battlefield knowledge and experience."
+ 
+ leader_trait_admiral_ancient_human: "Lord of Admirals"
+ leader_trait_admiral_ancient_human_desc: "Augmented human admiral possessing centuries of space combat experience."
+ 
+ leader_trait_scientist_ancient_human: "Hakkor Researcher"
+ leader_trait_scientist_ancient_human_desc: "Augmented human scientist with knowledge of Precursor neural physics."
+ 
+ leader_trait_governor_ancient_human: "Lord of Governors"
+ leader_trait_governor_ancient_human_desc: "Augmented human administrator possessing an erudite mind capable of administrating several sectors at once." 
+ 
+ leader_trait_ruler_ancient_human: "Lord of Hakkor"
+ leader_trait_ruler_ancient_human_desc: "Augmented human and ruler of Ancient Humanity."
+ 
+ ###INITIALIZERS###
+ halo_ueg_sol_system_initializer_NAME: "Human Sphere (Origin)"
+ halo_ueg_sol_system_initializer_DESC: "Start in the Sol System; the homeworld of humanity and capital of the UEG. Includes the neighbor systems Epsilon Eridani (Reach), Epsilon Indi (Harvest), and Zeta Doradus (Onyx)."
+ 
+ halo_ueg_sol_system_custom_initializer_NAME: "Human Sphere (Custom)"
+ halo_ueg_sol_system_custom_initializer_DESC: "Start in the Sol System; the homeworld of humanity and capital of the UEG. Includes the neighbor systems Epsilon Eridani (Reach), Epsilon Indi (Harvest), and Zeta Doradus (Onyx)."
+ 
+ halo_charum_hakkor_init_NAME: "Charum Hakkor System"
+ halo_charum_hakkor_init_DESC: "Start in the Charum Hakkor system; the capital city-world of Ancient Humanity."
+ 
+ epsilon_eridani_init_NAME: "Epsilon Eridani System"
+ epsilon_eridani_init_DESC: "Start in the Epsilon Eridani system on the colony world of Reach; a fortress world and the military nexus of the UNSC."
+ 
+ ancient_human_capital: "Ancient Human Capital"
+ ancient_human_capital_desc: "Charum Hakkor is the political center of ancient humanity and one of the last remaining site for working precursor artifacts."
+ 
+ precursor_artifacts: "Precursor Artifacts"
+ precursor_artifacts_desc: "Left behind by a hyper-advanced alien race called the Precursors, these ancient structures are entangled with neural physics and indestructible to most forms of weaponry. The humans of Harum Chakkor have designated this world as their capital solely for the abundance of precursor artifacts present on the planet."
+ 
+ orbital_defense_platforms: "Orbital Defense Platforms (ODP)"
+ orbital_defense_platforms_desc: "This planet is defended by an array of ODPs in geosynchronous orbit armed with a massive Magnetic Accelerator Cannon (MAC), reducing the damage taken during orbital bombardment."  
+ 
+ unsc_military_command: "Fortress World"
+ unsc_military_command_desc: "Reach is considered a fortress world and nexus site for many military-industrial facilities and shipyards." 
+ 
+ ###DEPOSITS###
+ #CHARUM HAKKOR
+ d_charum_precursor_city: "Precursor Architecture"
+ d_charum_precursor_city_desc: "As a former Precursor world, this planet possesses a large number of neural-physical structures that have been integrated seamlessly into the city's infrastructure providing near-limitless power."
+ 
+ d_citadel_charum: "Citadel Charum"
+ d_citadel_charum_desc: "One of the largest Precursor structures on the planet, this fortress holds great knowledge and power within."
+ 
+ d_precursor_orbital_arch: "Precursor Orbital Arch"
+ d_precursor_orbital_arch_desc: "One of the last creations left behind by the enigmatic Precursors on this world, these massive megastructures are a series of orbital arches that use neural physics within its construction. Cities and habitats have been built upon these massive structures due to their near-indestructible composition."
+ 
+ d_ancient_human_city: "Ancient Human City"
+ d_ancient_human_city_desc: "A technologically advanced city built by ancient humanity during the apex of their empire."
+ 
+ d_ancestor_railway_network: "Ancestor Railway Network"
+ d_ancestor_railway_network_desc: "A massive series of advanced railway systems allow for swift traversal across the planet of Charum Hakkor."
+ 
+ #Earth
+ d_new_mombasa: "New Mombasa"
+ d_new_mombasa_desc: "A major port city and industrial center on Mombasa Island in south Kenya, in the East African Protectorate on Earth."
+ 
+ d_voi_city: "Voi Industrial City"
+ d_voi_city_desc: "An industrial city in Kenya, East African Protectorate in Africa."
+ 
+ d_ueg_sydney: "Sydney Headquarters"
+ d_ueg_sydney_desc: "A city in the country of Australia on planet Earth. The city serves as the primary headquarters of the Unified Earth Government."
+ 
+ d_space_tether: "Earth Space Elevators"
+ d_space_tether_desc: "Immense structures located across major cities on Earth used to ferry large loads of materials into space. Generally consisting of large structures of carbon nanofiber which span span straight up from the ground, thousands of kilometers high, ending at stations in space." 
+ 
+ d_mount_kilimanjaro: "Mount Kilimanjaro"
+ d_mount_kilimanjaro_desc: "The largest stratovolcano located in Tanzania, near the border of Kenya in the East African Protectorate. Its name translates roughly from Swahili into 'White Hill'."
+ 
+ d_oni_alpha_site: "ONI Alpha Site"
+ d_oni_alpha_site_desc: "A UNSC Office of Naval Intelligence facility within New Mombasa, Kenya. The facility stored aggregate data on Forerunner artifacts below the complex."
+ 
+ #LUNA 
+ 
+ d_luna_mare_nubium: "Mare Nubium"
+ d_luna_mare_nubium_desc: "A geographic region on Luna under the jurisdiction of the Luna Confederated States and the location of the Luna OCS Academy, an officer candidate school. The area itself is crossed by tunnels and surface tubes connecting areas of human habitation across the region."
+ 
+ #MARS 
+ d_mars_unsc_shipyards: "Misriah Armory Facility"
+ d_mars_unsc_shipyards_desc: "A major weapons, armor, and vehicle manufacturer based on the planet Mars that supplies a significant portion of the weapons and matériel used by the UNSC."
+ 
+ d_mars_kenosha: "Kenosha"
+ d_mars_kenosha_desc: "One of several human colonies on Mars and home to the primary headquarters of the UNSC Marine Corps' Orbital Drop Shock Troopers."
+ 
+ #Onyx
+ d_sarcophagus: "Sarcophagus"
+ d_sarcophagus_desc: "Designated as Shield World 006, is a massive Forerunner shield world located within a slipspace bubble inside of the artificial planet of Onyx. The shield world contains several Forerunner cities and installations across its massive surface."
+ 
+ forerunner_structures: "Forerunner Technology"
+ forerunner_structures_desc: "Scattered technology left behind by the enigmatic Forerunners, a hyper-advanced civilization that existed over 100,000 cycles. Many sentients worship them as gods, forming religions around their technological marvels while others seek to unlock their true potential."
+ 
+ onyx_shield_world: "Shield World Onyx"
+ onyx_shield_world_desc: "The external component to the larger part of Shield World 006. While the outer surface of Onyx is habitable, its interior is composed of trillions of Onyx Sentinels that guard the entrance to the larger shield world within the artificial planet."
+ 
+ #Reach
+ d_reach_military_complex: "FLEETCOM Military Complex"
+ d_reach_military_complex_desc: "A UNSC military compound located on the surface of Reach. The facility is home to a number of research and military complexes including training facilities and underground bunkers." 
+ 
+ d_reach_new_alexandria: "New Alexandria"
+ d_reach_new_alexandria_desc: "A metropolitan city located on the supercontinent Eposz on Reach providing a source of trade and commerce for the planet."
+ 
+ d_reach_sword_base: "SWORD Base"
+ d_reach_sword_base_desc: "A large ONI research facility located near the Badb Catha Ice Shelf on Reach. Beneath the complex lies an entombed Forerunner ship that has been partially excavated from the ice shelf. The facility established several research bases to study the vessel." 
+ 
+ d_reach_titanium_mine: "BXR Titanium Mines"
+ d_reach_titanium_mine_desc: "One of many mining facilities operated by the BXR Mining Corporation on Reach that harvest titanium on the planet."
+ ####################################
+ # Halo Humans
+ ####################################
+ halo_human: "Human"
+ halo_human_desc:1 "Species Class has no effect on your Empire, but the halo human class species may consider other humans to be less alien than other species classes."
+ halo_human_plural: "Humans"
+ halo_human_insult_01: "primate"
+ halo_human_insult_plural_01: "primates"
+ halo_human_compliment_01: "noble"
+ halo_human_compliment_plural_01: "nobles"
+ halo_human_spawn: "child"
+ halo_human_spawn_plural: "children"
+ halo_human_sound_01: "growling"
+ halo_human_sound_02: "grunting"
+ halo_human_sound_03: "yapping"
+ halo_human_sound_04: "yowling"
+ halo_human_sound_05: "mewling"
+ halo_human_organ: "stomach"
+ halo_human_mouth: "mouth"
+ halo_human_ear: "ear"
+ halo_human_ear_plural: "ears"
+ halo_human_hand: "hand"
+ halo_human_hand_plural: "hands"
+ halo_human_tooth: "tooth"
+ halo_human_tooth_plural: "teeth"
+ 
+ ###################################
+ # Ancient Sanshyuum
+ ###################################
+ ancient_sanshyuum: "San'Shyuum"
+ ancient_sanshyuum_desc: "Prehistoric San'Shyuum"
+ ancient_sanshyuum_plural: "San'Shyuum"
+ ancient_sanshyuum_insult_01: "long neck"
+ ancient_sanshyuum_plural_01: "long necks"
+ ancient_sanshyuum_compliment_01: "sphinx"
+ ancient_sanshyuum_compliment_plural_01: "sphinxes"
+ ancient_sanshyuum_spawn: "youngling"
+ ancient_sanshyuum_spawn_plural: "younglings"
+ ancient_sanshyuum_sound_01: "growling"
+ ancient_sanshyuum_sound_02: "grunting"
+ ancient_sanshyuum_sound_03: "yapping"
+ ancient_sanshyuum_sound_04: "yowling"
+ ancient_sanshyuum_sound_05: "mewling"
+ ancient_sanshyuum_organ: "stomach"
+ ancient_sanshyuum_mouth: "mouth"
+ ancient_sanshyuum_hand: "hand"
+ 
+ FLAG_CATEGORY_san_shyuum: "San'Shyuum"
+ 
+ name_list_ancient_sanshyuum: "Ancient San'Shyuum"
+ 
+ civic_ancient_sanshyuum: "Ancient San'Shyuum"
+ civic_ancient_sanshyuum_desc: "The enigmatic and technologically advanced ancestors of the modern San'Shyuum species over 200,000 years ago. Their empire spanned across the Milky Way Galaxy and nearly rivaled that of the Forerunners, a hyper-advanced civilization that ruled the majority of the galaxy under the Mantle of Responsibility.""
+ 
+ #COUNCILORS 
+ councilor_ancient_sanshyuum_elder: "High Council Minister"
+ councilor_ancient_sanshyuum_elder_female: "High Council Ministress"
+ councilor_ancient_sanshyuum_elder_desc: "The $TITLE$ is given to the most esteemed and wise leaders of the San'Shyuum council. These San'Shyuum lead their people as honored elders and visionaries."
+ 
+ trait_ancient_sanshyuum: "Ancient San'Shyuum"
+ trait_ancient_sanshyuum_desc: "A highly intelligent and sophisticated race known for their hedonistic lifestyles and extraordinary science and technology."
+ 
+ leader_trait_ancient_sanshyuum: "Ancient San'Shyuum"
+ leader_trait_ancient_sanshyuum_desc: "Augmented San'Shyuum possessing incredible intelligence and sophistication."
+ 
+ leader_trait_general_ancient_sanshyuum: "San'Shyuum Prelate"
+ leader_trait_general_ancient_sanshyuum_desc: "Augmented San'Shyuum general possessing centuries of battlefield knowledge and experience."
+ 
+ leader_trait_admiral_ancient_sanshyuum: "San'Shyuum Fleetmaster"
+ leader_trait_admiral_ancient_sanshyuum_desc: "Augmented San'Shyuum admiral possessing centuries of aerospace combat experience."
+ 
+ leader_trait_scientist_ancient_sanshyuum: "San'Shyuum Researcher"
+ leader_trait_scientist_ancient_sanshyuum_desc: "San'Shyuum scientist with knowledge of Precursor neural physics."
+ 
+ leader_trait_governor_ancient_sanshyuum: "San'Shyuum Minister"
+ leader_trait_governor_ancient_sanshyuum_desc: "San'Shyuum administrator possessing an erudite mind capable of administrating several sectors at once." 
+ 
+ leader_trait_ruler_ancient_sanshyuum: "San'Shyuum High Lord"
+ leader_trait_ruler_ancient_sanshyuum_desc: "Prehistoric San'Shyuum nobility."
+ 
+ 
+ ####ORIGINS####
+ 
+ origin_ueg: "Unified Earth Government"
+ origin_ueg_desc: "The central civilian government that administrates over Earth and its colonies throughout the galaxy. Start in UEG space on Earth, the cradle of humanity and her colonies Reach and Onyx." 
+ origin_tooltip_ueg_effects: "UNSC vessels prioritize armor and hull over shields. Your ships will have reduced shielding, but increased hull and armor to compensate." 
+ 
+ origin_charum_hakkor: "Charum Hakkor"
+ origin_charum_hakkor_desc: "A enigmatic planet once a central hub to the Precursors and capital of Ancient Humanity and the San'Shyuum during the reign of the Forerunners. This planet is covered with many ancient Precursor artifacts and architecture based on neural physical techniques that make the planet near indestructible by conventional means, granting the owner of this world with immeasurable knowledge and power." 
+ origin_tooltip_charum_hakkor_effects: "Start on Charum Hakkor; the capital of Ancient Humanity.\n\nThis empire has also formed a §GMilitary Federation§! alliance with the §YAncient San'Shyuum§! and will appear nearby as a federation member."
+ 
+ ####UNSC BUILDINGS####
+ building_unsc_firebase: "UNSC Firebase"
+ building_unsc_firebase_desc: "UNSC base structure and command center used for planetary operations. Allows the construction of UNSC production structures."
+ 
+ building_unsc_barracks: "UNSC Barracks"
+ building_unsc_barracks_desc: "A military building where the UNSC recruits and stations infantry. Unlocks UNSC armies." 
+ 
+ building_unsc_garage: "UNSC Vehicle Depot"
+ building_unsc_garage_desc: "A military building containing heavy equipment and crew to assemble vehicle kits to manufacture on-site. Unlocks UNSC vehicles." 
+
+ building_unsc_airpad: "UNSC Airpad"
+ building_unsc_airpad_desc: "A military building designed to construct aircraft on-site. Unlocks UNSC air vehicles."
+ 
+ ####UNSC AMRIES####
+ #TECH 
+ tech_unsc_infantry: "UNSC Armed Forces"
+ tech_unsc_infantry_desc: "The military arm of the UNSC. Unlocks UNSC infantry armies." 
+ 
+ #UNLOCKS ODST INFANTRY AND HELLJUMPER SOEIV PODS 
+ tech_unsc_odst_infantry: "Orbital Drop Shock Troopers"
+ tech_unsc_odst_infantry_desc: "Serving as a rapid reaction force of the UNSC Marine Corps, Orbital Drop Shock Troopers (ODST) are nicknamed 'Helljumpers' for their role as transorbital interdiction shock infantry under the authority of Naval Special Warfare Command. These soldiers are highly specialized for small-scale, high-risk operations using an unconventional method of being deployed via exoatmospheric insertion vehicles or SOEIV pods directly into combat zones or behind enemy lines."
+ 
+ #ARMIES 
+ unsc_marine_company: "UNSC Marine Corps"
+ unsc_marine_company_desc: "A branch of the UNSC Armed Forces responsible for conducting land-based expeditionary combat operations and the defense of Navy vessels and installations from hostile forces."
+ 
+ unsc_odst_company: "Orbital Drop Shock Troopers"
+ unsc_odst_company_desc: "An elite special operations unit and rapid reaction force in transorbital support interdiction tactics. Helljumpers are highly capable soldiers. Feet First into Hell." 
+ 
+ ###UNSC SOEIV PODS###
+ ORBITAL_ODST_SOEIV_DROP_POD: "ODST Helljumper SOEIV Bay"
+ ORBITAL_ODST_SOEIV_DROP_POD_DESC: "§HArmy Type: $unsc_odst_company_soeiv_pod$§!\n\nDrop pods used to send ODST Helljumpers directly to planetary surfaces at high velocity."
+ 
+ ORBITAL_SPARTAN_SOEIV_DROP_POD: "SPARTAN-IV Helljumper SOEIV Bay"
+ ORBITAL_SPARTAN_SOEIV_DROP_POD_DESC: "§HArmy Type: $unsc_spartan_team_soeiv_pod$§!\n\nDrop pods used to send SPARTAN-IV supersoldiers directly to planetary surfaces at high velocity."
+ 
+ #SOEIV POD ARMIES 
+ unsc_odst_company_soeiv_pod: "ODST Helljumpers"
+ unsc_odst_company_soeiv_pod_desc: "An elite special operations unit and rapid reaction force in transorbital support interdiction tactics. Feet First into Hell!" 
+ 
+ unsc_spartan_team_soeiv_pod: "SPARTAN-IV Helljumpers"
+ unsc_spartan_team_soeiv_pod_desc: "A SPARTAN-IV Fireteam deployed via SOEIV pods for direct transorbital insertion."
+ 
+ #SOEIV MODIFIERS 
+ mod_unsc_odst_orbital_drop_pod_count: "$unsc_odst_company_soeiv_pod$"
+ mod_unsc_spartan_orbital_drop_pod_count: "$unsc_spartan_team_soeiv_pod$"
+ 
+ TECH_UNLOCK_ODST_ARMY_DROP_POD_TITLE: "§HUnlocks Component:§! $unsc_odst_company_soeiv_pod$"
+ TECH_UNLOCK_ODST_ARMY_DROP_POD_DESC: "§H$unsc_odst_company_soeiv_pod$§!\n$unsc_odst_company_soeiv_pod_desc$"
+ 
+ ###SPARTANS###
+ tech_spartan_program: "The SPARTAN Program"
+ tech_spartan_program_desc: "A series of subsequent programs used to create augmented supersoldiers known as Spartans as special operations and commando units. Unlocks Spartan armies." 
+ 
+ unsc_spartan_IV_company: "SPARTAN-IV Fireteam"
+ unsc_spartan_IV_company_desc: "The fourth iteration of the Spartan Programs, these supersolders were given significantly less extensive physical augmentations, but more technologically advanced armor to compensate for the drawback. These Spartans are geared towards mass production and standardization than the other two Spartan programs."
+ 
+ unsc_spartan_III_company: "SPARTAN-III Fireteam"
+ unsc_spartan_III_company_desc: "The third iteration of the Spartan Programs, these supersolders were the successor and supplement to the SPARTAN-II Program. They were cheaper to arm, train, and produce. These units heavily relied on teamwork and sheer numbers than advanced technology to achieve effectiveness."
+ 
+ unsc_spartan_II_company: "SPARTAN-II Fireteam"
+ unsc_spartan_II_company_desc: "The second iteration of the Spartan Programs, these Spartans were considered the strongest and most capable supersoldiers out of all of the Spartan programs. Spartan-IIs experienced the most extensive and invasive physical augmentations out of all the Spartan generations, starting augmentation at a young age. They are smaller in numbers, but highly effective." 
+ 
+ unsc_spartan_II_blue_team: "Blue Team"
+ unsc_spartan_II_blue_team_desc: "A decorated SPARTAN-II Fireteam composed of four exceptional supersoldiers led by MCPO John-117 as Blue One Team Leader/Assault/Rifleman, LTJG Frederic-104 as Blue Two Sub-leader/CQC/Assault, PO1 Kelly-087 as Blue Three Scout, and PO1 Linda-058 Blue Four Marksman."
+ 
+ unsc_spartan_II_red_team: "Red Team"
+ unsc_spartan_II_red_team_desc: "A decorated SPARTAN-II Fireteam. This iteration of Red Team consists of rehabilitated augmentation 'washouts' led by CDR Jerome-092 as Team Leader, SCPO Douglas-042, and Alice-130 attached to the support vessel UNSC Spirit of Fire."
+ 
+ unsc_spartan_II_omega_team: "Omega Team"
+ unsc_spartan_II_omega_team_desc: "A fast reaction unit of SPARTAN-II supersoldiers typically deployed to defend UNSC colonies and reinforce local defenses. This fireteam contained six members led by August-099 as Team Leader, Leon-011, Robert-025, Vannak-134, Riz-028, and Kai-125. This unit was equipped with a variety of heavy and experimental weaponry including M6 Spartan Lasers, Railguns, rocket launchers, and AIE-486H machine guns."
+ 
+ unsc_spartan_III_noble_team: "NOBLE Team"
+ unsc_spartan_III_noble_team_desc: "A fireteam-sized unit composed mostly of Cat-2 Spartan-III supersoldiers and one Spartan-II commando serving as a special operations force led by CDR Carter-A259 as Noble One, LCDR Catherine-B320 as Noble Two, WO Jun-A266 as Noble Three, WO Emile-A239 as Noble Four, WO-2 Jorge-052 as Noble Five, and LT SPARTAN-B312 as Noble Six."
+ 
+ ####UNSC VEHICLES###
+ tech_unsc_light_vehicles: "UNSC Light Vehicle Armory"
+ tech_unsc_light_vehicles_desc: "Allows the production and authorization of light vehicles. Unlocks UNSC light vehicles."
+ 
+ tech_unsc_medium_vehicles: "UNSC Medium Vehicle Armory"
+ tech_unsc_medium_vehicles_desc: "Allows the production and authorization of medium-sized vehicles. Unlocks UNSC medium vehicles."
+ 
+ tech_unsc_heavy_vehicles: "UNSC Heavy Vehicle Armory"
+ tech_unsc_heavy_vehicles_desc: "Allows the production and authorization of heavy vehicles. Unlocks UNSC heavy vehicles."
+ 
+ tech_unsc_air_vehicles: "UNSC Air Vehicle Armory"
+ tech_unsc_air_vehicles_desc: "Allows teh production and authorization of air vehicles. Unlocks UNSC air vehicles."
+ 
+ unsc_jackrabbit_company: "M121 Jackrabbits"
+ unsc_jackrabbit_company_desc: "A UNSC three-wheeled vehicle used for reconnaissance and scouting duties. The vehicle is armed with a Mini-frag launcher and M68 Gauss cannon."
+ 
+ unsc_warthog_company: "M12 Warthogs"
+ unsc_warthog_company_desc: "A Force Application Vehicle armed with a M343A2 Chaingun used to eliminate lightly armored personnel and low-flying aircraft."
+ 
+ unsc_cobra_company: "Special Purpose-42 Cobra Tanks"
+ unsc_cobra_company_desc: "A hybrid anti-materiel and anti-fortification artillery tank used by the UNSC to eliminate enemy structures and vehicles. The Cobra is armed with two M66 30mm light railguns and one larger M98 105mm light railgun when deployed."
+ 
+ unsc_mantis_company: "HRUNTING/YGGDRASIL Mark IX Mantis"
+ unsc_mantis_company_desc: "A powered exoskeleton/armored walker used by the UNSC Marine Corps as a maneuverable weapons platform equipped with M655 Machine guns, M5920 Missile Launchers, and energy shields."
+ 
+ unsc_colossus: "HRUNTING/YGGDRASIL Mark II [J] Colossus"
+ unsc_colossus_desc: "Successor to the Mark IX Mantis, this walker is one of the largest and most powerful combat exoskeleton currently in UNSC service. Manufactured by Hannibal Weapon Systems, it is fitted with a devastating arsenal of M193LP 20mm autocannons and one Mark 2555/20cm heavy railgun." 
+ 
+ unsc_scorpion_tank: "M808 Scorpion Tanks"
+ unsc_scorpion_tank_desc: "The mainline armored mobile weapons platform for the UNSC. Armored with thick ceramic-titanium and armed with a 90mm cannon that can deliver a devastating blow to all targets-infantry or armor."
+
+ unsc_grizly_tank: "M850 Grizzly Tanks"
+ unsc_grizly_tank_desc: "An upgraded heavy variant of the M808 Scorpion, this battle tank is armed with two M310 120mm smooth-bore high-velocity cannons, machine guns, missile launchers, and smoke grenade launchers used for heavy combat engagements."
+ 
+ unsc_hornet_squadron: "AV-14 VTOL Hornet Squadron"
+ unsc_hornet_squadron_desc: "A versatile mainline combat aircraft used by the UNSC to assist in close air support."
+ 
+ unsc_sparrowhawk_squadron: "AV-22 Sparrowhawk Squadron"
+ unsc_sparrowhawk_squadron_desc: "A large formidable air-to-ground anti-tank aerodyne used to hunt tanks and support ground advances."
+ 
+ unsc_pelican_gunship: "Gunship-79 Pelican"
+ unsc_pelican_gunship_desc: "A heavily armed variant of the traditional D79-TC Pelican used by the UNSC to ferry troops. This gunship is equipped with an array of heavy 70mm autocannons, turrets, machine guns and a M8C Grindell/Gailean Nonlinear Laser Cannon for armored targets."
+ 
+ unsc_vulture_gunship: "AC-220 Vulture Heavy Gunship"
+ unsc_vulture_gunship_desc: "A large combat aerodyne craft fielded by the UNSC as a massive heavy weapons and missile platform. Heavily armed and armored but slower than most UNSC aircraft." 
+ 
+ unsc_condor_gunship: "G81 Condor Heavy Gunship"
+ unsc_condor_gunship_desc: "A massive combat aerodyne craft fielded by the UNSC as a flying fortress armed with five twin pulse laser turrets and one ballista mini-MAC to destroy heavy targets or structures."
+ 
+ unsc_shortsword_bomber: "B-65 Suborbital Long-Range Bomber"
+ unsc_shortsword_bomber_desc: "An atmospheric strategic bomber fielded by the UNSC Air Force to perform bombing runs on hard targets. They are armed with an array of conventional bombs for performing carpet bombing runs."
+ 
+ unsc_longsword_fighter: "GA-TL1 Longsword Interceptor"
+ unsc_longsword_fighter_desc: "An atmospheric and exoatmospheric fighter used for a variety of roles and operations within the fleet. They are armed primarily with the M9109 50mm cannon and an array of modular missiles and warheads for strike operations."
+ 
+ unsc_broadsword_fighter_squadron: "F-41 Broadsword Fighter Squadron"
+ unsc_broadsword_fighter_squadron_desc: "Exoatmospheric multirole VTOL strike fighters used to intercept enemy fighter craft at low to zero-gravity conditions. They are energy shielded and armed with two M1075 ASW/AC 35mm MLA auto-cannons and 2 M6088 ST/MMP missile delivery systems."
+ 
+ 
+ #ANCIENT HUMANITY TECHNOLOGY & ARMIES
+ tech_ancient_human_combat_suits: "Advanced Combat Skins"
+ tech_ancient_human_combat_suits_desc: "Advanced adaptive battle armor that provides both offensive and defensive systems to the user that help supplement their already near-superhuman reaction times. the armor also attunes itself to counter different forms of attack, providing maximum protection in active warzones." 
+ 
+ tech_ancient_human_vehicles: "Ancestor Combat Vehicles"
+ tech_ancient_human_vehicles_desc: "Ancient Humanity specialized in offensive warfare which is embodied by an array of powerful war machines equipped with sophisticated armor-piercing fibril-weaponry. Armies unlocked by this research require an active §YAncestor Industrial Assembler Vat§! building to build."
+ 
+ ancient_human_fibril_tanks: "Ancestor Fibril Tanks"
+ ancient_human_fibril_tanks_desc: "Mainline hovertanks deployed by Ancestor armies equipped with a deadly shield and armor-piercing Fibril Cutter main cannon."
+ 
+ ancient_human_fibril_artillery: "Ancestor Fibril Accelerator Tanks"
+ ancient_human_fibril_artillery_desc: "Artillery hovertank platforms equipped with a massive Fibril particle accelerator deployed for long-range engagements and anti-air defense."
+ 
+ ancient_human_combat_suit: "Ancestor Imperator Combat Suits"
+ ancient_human_combat_suit_desc: "Advanced attack-craft based on the designs of the Forerunner War-Sphinx, these aerial fighting suits are heavily armed with an array of ancestor particle beams and fibril cutters capable of unleashing untold devastation across planetary surfaces."
+ 
+ #SAN'SHYUUM ARMIES 
+ ancient_human_warriors: "Ancestor Warrior Legion"
+ ancient_human_warriors_desc: "The mainline supersoldier infantry of ancient humanity. Equipped with advanced combat skins, genetic augmentations, and hardlight weaponry, these warriors serve as the pinnacle of human technological superiority and dominance."  
+ 
+ ancient_human_defense_army: "Ancestor Warrior Garrison"
+ ancient_human_defense_army_desc: "Hardened ancient human supersoldiers equipped with advanced combat skins assigned to defend ancestor territories."
+ 
+ ancient_human_sanshyuum_tuned_siege_platform: "Second-Rate Tuned Siege Platform"
+ ancient_human_sanshyuum_tuned_siege_platform_desc: "A powerful, but scaled down variant of the first-rate tuned platform capital ships dedicated for ground warfare and developed jointly using San'Shyuum advanced gravitic and hyper-dimensional technology. This mobile fortress is exceptionally armed with an array of deadly fibril and partile beam accelerators and equipped with powerful San'Shyuum dimensional shielding which is nearly impervious to most forms of conventional weaponry."
+ 
+ tech_ancestor_sanshyuum_alliance: "Human-San'Shyuum Alliance"
+ tech_ancestor_sanshyuum_alliance_desc: "Calls upon the military alliance between ancient humanity and the San'Shyuum species to further our technological progress and dominion. Unlocks San'Shyuum Prelate Warriors."
+ 
+ ancient_sanshyuum_warriors: "Prelates of Charum Hakkor"
+ ancient_sanshyuum_warriors_desc: "Highly trained San'Shyuum warriors equipped with personal Fighting skins alongside Ancient Human soldiers. Each warrior is fully equipped in combat power armor and genetically enhanced as supersoldiers for special operations. Equipped with Hard light shields and weaponry."
+ 
+ tech_ancestor_start_1: "Ancestor Technology"
+ tech_ancestor_start_1_desc: "Technology wielded by Ancient Humanity."
+ 
+ tech_ancestor_precursor_technology: "Reverse-Engineered Precursor Technology"
+ tech_ancestor_precursor_technology_desc: "While mostly misunderstood, Ancient Humanity's access to several major Precursor sites has allowed Humanity to rapidly advance their technology. Some Precursor artifacts have been heavily studied and partly reverse-engineered for human use. Unlocks several Ancient Human buildings that use integrated Precursor technology."
+ 
+ tech_ancestor_servitors: "Ancestor Servitors"
+ tech_ancestor_servitors_desc: "Artificial intelligence similar in complexity to Forerunner Ancilla employed by Ancient Humanity to serve as administrative or combat support roles." 
+ 
+ #ANCIENT HUMAN BUILDINGS
+ building_ancestor_citadel_charum: "Citadel Charum"
+ building_ancestor_citadel_charum_desc: "A massive towering Precursor ruin and fortress complex for Ancient Humanity on Charum Hakkor."
+ 
+ building_ancestor_energy_tower: "Ancestor Energy Tower"
+ building_ancestor_energy_tower_desc: "A facility used to generate near limitless neurophysical energy using limited knowledge of Precursor neural-physics removing the need for upkeep."
+ 
+ building_ancestor_nourishment_center: "Ancestor Synthesizers"
+ building_ancestor_nourishment_center_desc: "If it exists as a flavor, it can be replicated here."
+ 
+ building_ancestor_dimensional_fabricator: "Ancestor Neurophysical Fabricator"
+ building_ancestor_dimensional_fabricator_desc: "This building uses little-understood Precursor neural-physics technology to gather valuable resources permeating the cosmos."
+ 
+ building_ancestor_nano_forge: "Ancestor Industrial Assembler Vat"
+ building_ancestor_nano_forge_desc: "Colossal assembler vats that convert raw materials into advanced alloys using nanofabrication technology with miraculous efficiency."
+ 
+ building_ancestor_affluence_center: "Ancestor Affluence Assembler Vat"
+ building_ancestor_affluence_center_desc: "Ancestor assembler vats for civilian use. Any material desire can be met here."
+ 
+ building_ancestor_master_archive: "Ancestor Precursor Archive"
+ building_ancestor_master_archive_desc: "A research facility and suppository of collected Ancestor knowledge. Each facility also contains access to the enigmatic Precursor Knowledge Engine."
+ 
+ building_ancestor_domicile: "Ancestor Domicile Complex"
+ building_ancestor_domicile_desc: "Living quarters and public residences within a massive city-complex composed entirely of hard light that merges seamlessly with nature preserves and cultural architecture found within."
+ 
+ building_ancestor_stronghold: "Ancestor Warrior Keep"
+ building_ancestor_stronghold_desc: "A massive planetary defense complex housing a multitude of barracks and armories equipped with advanced ancient human weaponry and a local Fibril Cutter defense network."
+
+ 
+ #UNSC SHIP WEAPONS 
+ #WEAPON TECHNOLOGY 
+ 
+ tech_unsc_battle_net: "UNSC Battle Network"
+ tech_unsc_battle_net_desc: "Known as the UNSC distributed battle management and communication network, this form of communications allows for battlefield management and tactical support."
+ 
+ tech_unsc_dumb_ai: "Dumb AI"
+ tech_unsc_dumb_ai_desc: "Artificial intelligence created by the UNSC that functions as administrative, infrastructure, or logistical AIs. These AIs are programmed with unique personalities and characteristics but lack strong decision-making capabilities."
+ 
+ tech_unsc_smart_ai: "Smart AI"
+ tech_unsc_smart_ai_desc: "Advanced artificial intelligence created by the UNSC through cognitive impression modeling of neural pathways of an organic brain. These AIs have no limitations in their dynamic memory-processor matrix allowing them to learn and comprehend their surroundings. Smart AIs typically function within a variety of roles including shipboard AIs, logistics, and research."
+ 
+ tech_unsc_start_1: "UNSC Technology"
+ tech_unsc_start_1_desc: "Starting UNSC technology base."
+ 
+ tech_unsc_post_war: "Post-War UNSC Technology"
+ tech_unsc_post_war_desc: "After the end of the Human-Covenant War, the UNSC has taken upon itself to improve its technology base by integrating reverse-engineered Covenant and Forerunner technology. Some notable feats of engineering include improved slipspace travel, shielding, and directed-energy weapons."
+ 
+ tech_unsc_armor: "Titanium-A Armor"
+ tech_unsc_armor_desc: "The most common form of battle plating used on UNSC warships composed of high-grade Titanium-50 that is specially strengthened at the molecular level and embedded with thermal superconducting radiators to more efficiently transfer the heat generated by the ship."
+ 
+ tech_unsc_shielded_armor: "Titanium-A3 Armor"
+ tech_unsc_shielded_armor_desc: "A variant of Titanium-A battle plate developed by ONI's Material Group that is chemically altered on the molecular level to produce stronger armor. It is also reinforced by energy shielding."
+ 
+ UNSC_TITANIUM_A_ARMOR: "Titanium-A Armor"
+ UNSC_TITANIUM_A_ARMOR_DESC: "High-grade Titanium-50 armor that is strengthened on a molecular level."
+ 
+ SMALL_UNSC_TITANIUM_A_ARMOR: "Small Titanium-A Armor"
+ MEDIUM_UNSC_TITANIUM_A_ARMOR: "Medium Titanium-A Armor"
+ LARGE_UNSC_TITANIUM_A_ARMOR: "Large Titanium-A Armor"
+ 
+ UNSC_TITANIUM_A3_ARMOR: "Titanium-A3 Armor"
+ UNSC_TITANIUM_A3_ARMOR_DESC: "ONI enhanced Titanium-50 armor with the integration of reinforced shielding."
+ 
+ SMALL_UNSC_TITANIUM_A3_ARMOR: "Small Titanium-A3 Armor"
+ MEDIUM_UNSC_TITANIUM_A3_ARMOR: "Medium Titanium-A3 Armor"
+ LARGE_UNSC_TITANIUM_A3_ARMOR: "Large Titanium-A3 Armor"
+ 
+ tech_unsc_slipspace_drive: "Shaw-Fujikawa Translight Engine"
+ tech_unsc_slipspace_drive_desc: "A slipspace drive developed in secret by a group of engineers and theoretical physicists within the Human sphere that became one of the most important technological innovations of humanity. Although it is crude and not without limitations, this drive is capable of creating ruptures between normal space and an alternate plane known as slipspace to travel vast distances necessary for early human colonization and exploration. However, this early drive suffers from severe limitations requiring more time to calculate jumps and had a limited range."
+ 
+ tech_unsc_advanced_slipspace_drive: "Mark X Macedon Translight Engine"
+ tech_unsc_advanced_slipspace_drive_desc: "Using the UNSC Infinity's Mark X Macedon/Z-PROTOTYPE 78720HDS Revision 2.1 slipspace drive as the test bed for the next generation of human slipspace engines, the Macedon line is the first in its own class of highly advanced slipspace drives capable of dropping out of slipspace with pinpoint accuracy and speed. The advanced drive also makes use of reverse-engineered Forerunner technology that draws upon foaming vacuum energy as an independent power source."
+ 
+ UNSC_SLIPSPACE_DRIVE: "Shaw-Fujikawa Translight Engine"
+ UNSC_SLIPSPACE_DRIVE_DESC: "A crude, but effective mode of early interstellar slipspace travel used on human ships."
+ 
+ UNSC_ADVANCED_SLIPSPACE_DRIVE: "Mark X Macedon Translight Engine"
+ UNSC_ADVANCED_SLIPSPACE_DRIVE_DESC: "An advanced post-war slipspace drive developed by human engineers using reverse-engineered Forerunner technology."
+ 
+ tech_unsc_rampart_point_defense: "Rampart Point Defense"
+ tech_unsc_rampart_point_defense_desc: "Kinetic point defense weapon systems employed by the UNSC Navy."
+ 
+ tech_unsc_strike_craft: "GA-TL1 Strike Craft"
+ tech_unsc_strike_craft_desc: "Interceptor/Strike Fighters used as multi-mission platforms for the UNSC Air Force and UNSC Navy capable of atmospheric and exoatmospheric (A/X) operations."
+ 
+ tech_unsc_sentry_autocannons: "Sentry Autocannons"
+ tech_unsc_sentry_autocannons_desc: "Kinetic weapon systems used for engaging smaller craft and gunships."
+ 
+ tech_unsc_spitfire_coilguns: "Spitfire Coilguns"
+ tech_unsc_spitfire_coilguns_desc: "Kinetic naval coilguns that fire guided shells against long-range targets and inert kinetic kill rounds at short-range."
+ 
+ tech_unsc_light_coil: "Light Coil MACs"
+ tech_unsc_light_coil_desc: "Mark II mass accelerator cannons that fire a sizable ferric-tungsten round at supersonic velocities."
+ 
+ tech_unsc_artillery_coil: "Artillery Coil MACs"
+ tech_unsc_artillery_coil_desc: "Larger mass accelerator cannons equipped on larger vessels that fire a large ferric-tungsten round at higher velocities than typical Light-Coil MACs. These accelerators fire the slug at a longer range suitable for alpha strikes."
+ 
+ tech_unsc_heavy_coil: "Heavy Coil MACs"
+ tech_unsc_heavy_coil_desc: "Mark IV mass accelerator cannons that fire a sizable ferric-tungsten round at supersonic velocities."
+ 
+ tech_unsc_super_macs: "Superheavy Coil MACs"
+ tech_unsc_super_macs_desc: "A larger series of mass accelerator cannons that fire a sizable ferric-tungsten round at a fraction of lightspeed. Typically used on the most powerful warships or orbital weapon platforms due to the high energy requirements to operate."
+ 
+ tech_unsc_archer_missiles: "Archer Missiles"
+ tech_unsc_archer_missiles_desc: "Cheap anti-ship missiles that are highly-adaptable and long-ranged."
+ 
+ tech_unsc_fusion_rockets: "Fusion Rockets"
+ tech_unsc_fusion_rockets_desc: "Unguided missiles that use an advanced fusion-drive for propulsion. Although these missiles are ineffective against shielding, they are typically used against stationary targets such as orbital defense stations."
+ 
+ tech_unsc_hyperion_missiles: "Hyperion Nuclear Missile Delivery System"
+ tech_unsc_hyperion_missiles_desc: "Computer-guided thermonuclear weapons developed for use in naval warfare typically used on heavy frigates and cruisers. Although ineffective against shielded targets, this weapon system is highly effective against unshielded hull and armor."
+  
+ tech_unsc_shiva_missiles: "Shiva Thermonuclear Warheads"
+ tech_unsc_shiva_missiles_desc: "Powerful thermonuclear missiles that use fission-fusion reaction upon detonation. It is preferred for use against shielded targets due to its large EMP effect."
+ 
+ tech_unsc_magna_pulse_lasers: "Magna-320 Pulse Lasers"
+ tech_unsc_magna_pulse_lasers_desc: "Capital-scale laser-based directed energy weaponry developed for the UNSC Navy to serve in roles typically fulfilled by naval autocannons and coilguns."
+ 
+ tech_unsc_brightlance_reflex_lasers: "Brightlance Reflex Lasers"
+ tech_unsc_brightlance_reflex_lasers_desc: "Capital-scale laser-based directed energy weaponry employed as a primary armament in place of MAC systems. Although not as destructive as a Magnetic Accelerator Cannon, this weapon is highly effective at disrupting shields."
+ 
+ tech_unsc_helios_high_energy_lasers: "Helios High-Energy Lasers"
+ tech_unsc_helios_high_energy_lasers_desc: "Capital-scale laser-based directed energy weaponry employed by the UNSC Navy as a primary armament in the form of a turreted mount instead of being integrated as a fixed spinal weapon."
+ 
+ #UNSC MAC BOMBARDMENT
+ 
+ tech_unsc_mac_bombardment: "MAC Orbital Bombardment"
+ tech_unsc_mac_bombardment_desc: "Vessels equipped with a Magnetic Accelerator Cannon are capable of firing a round to impact a planetary surface which can deal devastating kinetic damage within a localized radius. This form of bombardment is specialized in targeting military assets than other forms of bombardment."
+ 
+ unsc_mac_bombardment: "MAC Orbital Bombardment"
+ unsc_mac_bombardment_desc: "Used against targets on a planetary surface by firing a precise salvo of MAC rounds causing devastating damage from the impact and release of kinetic energy."
+ 
+ bombardment_unsc_mac_bombardment: "MAC Orbital Bombardment"
+ bombardment_unsc_mac_bombardment_desc: "$bombardment_unsc_mac_bombardment$ fires a Magnetic Accelerator round at a targeted location on a planetary surface, releasing kinetic energy upon impact dealing devastating damage within a localized radius. \n- §RMassive§! damage to §YArmies§!\n- §RModerate§! damage to §YPlanet§!\n- §RModerate§! damage to §YPops§!."
+ 
+ #UNSC SOEIV BOMBARDMENT 
+ 
+ #unsc_soeiv_bombardment: "SOEIV Orbital Deployment"
+ #unsc_soeiv_bombardment_desc: "$bombardment_unsc_soeiv_bombardment$ launches SOEIV pods containing specialized UNSC infantry to the targeted planet surface as a means of tactical transorbital insertion behind enemy lines."
+ 
+ #bombardment_unsc_soeiv_bombardment: "SOEIV Orbital Deployment"
+ #bombardment_unsc_soeiv_bombardment_desc: "Deploys SOEIV pods typically containing UNSC Special Forces units to the planet surface behind enemy lines to disrupt planetary defenses. \n- Requires at least one friendly controlled ship possessing an §YSOEIV Bay§! component§! \n- §YVariable§! damage to §YArmies§!\n- §YVariable§! damage to §YPlanet§!\n- §YLight§! damage to §YPops§!.""
+ 
+
+ #unsc_mac_bombardment.82.name: "Kinetic Bombardment"
+ #unsc_mac_bombardment.82.desc: "Our world has been annihilated by the orbiting enemy fleet above, killing the population and sterilizing the surface of the planet."
+ #unsc_mac_bombardment.82.a: "Unfortunate"
+ 
+ #unsc_mac_bombardment.83.name: "MAC Bombardment Complete"
+ #unsc_mac_bombardment.83.desc: "As per your orders, this world has been rendered uninhabitable from our kinetic bombardment of the entire world."
+ #unsc_mac_bombardment.83.a: "Well Done."
+ 
+ #SHIP COMPONENTS 
+ 
+ UNSC_LONGSWORD_FIGHTER_STRIKE_CRAFT: "C712 Longsword Interceptor"
+ UNSC_LONGSWORD_FIGHTER_STRIKE_CRAFT_DESC: "The mainstay fighter variant of the GA-TL1 Longsword line. Armed with M9109 ASW/AC 50mm coilguns specifically for interception duties."
+ 
+ UNSC_LONGSWORD_BOMBER_STRIKE_CRAFT: "C709 Longsword Bomber"
+ UNSC_LONGSWORD_BOMBER_STRIKE_CRAFT_DESC: "The bomber variant of the GA-TL1 Longsword line. Armed with ASGM-10 delivery systems for anti-ship duties."
+ 
+ UNSC_RAMPART_POINT_DEFENSE: "M870 Rampart Point Defense"
+ UNSC_RAMPART_POINT_DEFENSE_DESC: "Kinetic point-defense weapon system that fires 50mm sub-caliber armor-piercing sabots."
+ 
+ UNSC_SENTRY_AUTOCANNONS: "Sentry Naval Autocannons"
+ UNSC_SENTRY_AUTOCANNONS_DESC: "Naval coilguns employed by the UNSC Navy for ship-to-ship combat."
+ 
+ SMALL_UNSC_SENTRY_AUTOCANNONS: "M60 Sentry Autocannons"
+ MEDIUM_UNSC_SENTRY_AUTOCANNONS: "M66 Sentry Autocannons"
+ 
+ UNSC_SPITFIRE_COILGUN: "Spitfire Naval Coilgun Battery"
+ UNSC_SPITFIRE_COILGUN_DESC: "Large naval coilguns used for ship-to-ship combat."
+ 
+ MEDIUM_UNSC_SPITFIRE_COILGUN: "Mark 33 Spitfire Coilgun"
+ LARGE_UNSC_SPITFIRE_COILGUN: "Mark 40 Spitfire Coilgun"
+ 
+ UNSC_MARK_II_LIGHT_COIL: "Mark II Light MAC"
+ UNSC_MARK_II_LIGHT_COIL_DESC: "Light coil system that fires magnetic accelerated rounds at high speeds."
+ 
+ SMALL_UNSC_MARK_II_LIGHT_COIL: "Mark II, Light Coil 65P8V1/MAC"
+ MEDIUM_UNSC_MARK_II_LIGHT_COIL: "Mark II, Light Coil 14B11R2/MAC"
+ LARGE_UNSC_MARK_II_LIGHT_COIL: "Mark II, Light Coil 56A2FG/MAC"
+ 
+ UNSC_MARK_IV_HEAVY_COIL: "Mark IV Heavy MAC"
+ UNSC_MARK_IV_HEAVY_COIL_DESC: "Heavy coil system that fires magnetic accelerated rounds at high speeds."
+ 
+ LARGE_UNSC_MARK_IV_HEAVY_COIL: "Mark IV, Heavy Coil 94B1E6/MAC"
+ 
+ UNSC_SERIES_6_MAC: "CR-01D Series-6 MAC"
+ UNSC_SERIES_6_MAC_DESC: "Down-scaled superheavy coil system based on the Mark V used on MAC platforms that fires a 3,000 ton projectile at high-velocities."
+ 
+ UNSC_MARK_V_HEAVY_COIL: "Mark V Superheavy MAC"
+ UNSC_MARK_V_HEAVY_COIL_DESC: "Superheavy weapon coil Super Mac system that fires a 3,000 ton projectile to point four-tenths of lightspeed."
+ 
+ UNSC_ARCHER_MISSILE: "Archer/Howler Missile System"
+ UNSC_ARCHER_MISSILE_DESC: "Anti-ship missiles that are highly adaptable and long-ranged. Used in large numbers to offset their limited destructive potential."
+ 
+ SMALL_UNSC_ARCHER_MISSILE: "M42 Archer Missile Silos"
+ MEDIUM_UNSC_ARCHER_MISSILE: "M58 Archer Missile Silos"
+ LARGE_UNSC_ARCHER_MISSILE: "M96 Howler Missile Silos"
+ 
+ UNSC_HYPERION_NUCLEAR_MISSILE: "M4093 Hyperion Nuclear Delivery System"
+ UNSC_HYPERION_NUCLEAR_MISSILE_DESC: "Guided thermonuclear weapons developed by Acheron Security used to carry explosive payloads for use against unshielded targets."
+ 
+ UNSC_SHIVA_NUCLEAR_MISSILE: "VE-3 Shiva-class Nuclear Missiles"
+ UNSC_SHIVA_NUCLEAR_MISSILE_DESC: "Guided thermonuclear weapons used to carry large explosive payloads, creating a fission-fusion reaction upon detonation."
+ 
+ #POST-WAR 
+ UNSC_MAGNA_PULSE_LASER_POINT_DEFENSE: "Magna-320 Pulse Laser Point Defense"
+ UNSC_MAGNA_PULSE_LASER_POINT_DEFENSE_DESC: "Instead of traditional coilguns and autocannons, this point-defense system uses pin-point lasers reverse-engineered from pulse laser turrets found on Covenant ships."
+ 
+ UNSC_MAGNA_PULSE_LASER: "Magna-320 Pulse Laser"
+ UNSC_MAGNA_PULSE_LASER_DESC: "Offensive laser system used in the same manner as sentry autocannons and coilguns found on UNSC vessels."
+ 
+ SMALL_UNSC_MAGNA_PULSE_LASER: "Magna-320 Pulse Laser"
+ MEDIUM_UNSC_MAGNA_PULSE_LASER: "Magna-320 Pulse Laser"
+ LARGE_UNSC_MAGNA_PULSE_LASER: "Magna-320 Pulse Laser"
+ 
+ UNSC_BRIGHTLANCE_REFLEX_LASER: "Brightlance Compound Reflex Laser"
+ UNSC_BRIGHTLANCE_REFLEX_LASER_DESC: "A larger directed-energy system in place of a MAC that fires a powerful burst of plasma energy that rapidly depletes shields."
+ 
+ SMALL_UNSC_BRIGHTLANCE_REFLEX_LASER: "Brightlance Compound Reflex Laser"
+ MEDIUM_UNSC_BRIGHTLANCE_REFLEX_LASER: "Brightlance Compound Reflex Laser"
+ LARGE_UNSC_BRIGHTLANCE_REFLEX_LASER: "Brightlance Compound Reflex Laser"
+ 
+ UNSC_HELIOS_HIGH_ENERGY_LASER: "Helios High Energy Laser"
+ UNSC_HELIOS_HIGH_ENERGY_LASER_DESC: "An advanced high-intensity laser system that delivers concentrated directed-energy at a target. While used on larger vessels, this advanced weapon system is small enough to be mounted on smaller ships which allows them to punch above their typical weight class." 
+ 
+ UNSC_HELIOS_CAPITAL_HIGH_ENERGY_LASER: "Helios Capital-Scale High Energy Laser"
+ UNSC_HELIOS_CAPITAL_HIGH_ENERGY_LASER_DESC: "An up-scaled advanced capital-scale high-intensity laser system that delivers an intense beam of directed-energy at a target." 
+ 
+ UNSC_MARK_IX_HEAVY_COIL: "Mark IX Heavy Coil MAC"
+ UNSC_MARK_IX_HEAVY_COIL_DESC: "Upgraded heavy coil system that fires magnetic accelerated rounds at high speeds."
+ 
+ UNSC_MARK_X_SUPER_MAC: "Mark X 76G3V5 Super-MAC"
+ UNSC_MARK_X_SUPER_MAC_DESC: "Upgraded superheavy weapon coil system from the Mark IX designed as a ship-killer."
+ 
+ TITAN_UNSC_SERIES_8_MAC: "CR-03 Series-8 MAC"
+ TITAN_UNSC_SERIES_8_MAC_DESC: "Superheavy weapon coil system capable of firing various payloads at extraordinary speeds."
+ 
+
+ #UNSC NAMELISTS
+ 
+ UNSC_FLEET_ORD: "$ORD$ UNSC Battle Group"
+ 
+ UNSC_ARMY_DEFENSE_ORD: "$ORD$ UNSC Garrison Regiment"
+ UNSC_ARMY_ASSAULT_ORD: "$ORD$ UNSC Infantry Division"
+ UNSC_ARMY_SLAVE_ORD: "$ORD$ Colonial Militia"
+ UNSC_ARMY_CLONE_SEQ: "Flash Clone Regiment $C$"
+ UNSC_ARMY_ROBOTIC_SEQ: "UNSC Unmanned Battlegroup $C$"
+ UNSC_ARMY_ROBOTIC_DEFENSE_SEQ: "Unmanned Garrison $C$"
+ UNSC_ARMY_PSIONIC_ORD: "$ORD$ Psi Corps Fireteam"
+ UNSC_ARMY_UNDEAD_ORD: "$ORD$ Dread Regiment"
+ UNSC_ARMY_XENOMORPH_ORD: "$ORD$ UNSC Bio-Warfare Division"
+ UNSC_ARMY_GENEWARRIOR_ORD: "$ORD$ Spartan Fireteam"
+ UNSC_ARMY_OCCUPATION_ORD: "$ORD$ UNSC Garrison"
+ UNSC_ARMY_ROBOTIC_OCCUPATION_ORD: "$ORD$ UNSC Mechanized Garrison"
+ UNSC_ARMY_PRIMITIVE_ORD: "$ORD$ Primitive Army"
+ UNSC_ARMY_INDUSTRIAL_ORD: "$ORD$ Industrial Army"
+ UNSC_ARMY_POSTATOMIC_ORD: "$ORD$ Post-Atomic Army"
+ 
+ #UNSC ARMIES
+ UNSC_MARINE_COMPANY_ORD: "$ORD$ Marine Expeditionary Force"
+ UNSC_ODST_COMPANY_ORD: "$ORD$ Shock Troopers Division"
+ UNSC_ODST_COMPANY_POD_ORD: "$ORD$ ODST Helljumpers"
+ UNSC_SPARTAN_II_ORD: "$ORD$ SPARTAN-II Fireteam"
+ UNSC_SPARTAN_III_ORD: "$ORD$ SPARTAN-III Fireteam"
+ UNSC_SPARTAN_IV_ORD: "$ORD$ SPARTAN-IV Fireteam"
+ UNSC_JACKRABBITS_ORD: "$ORD$ M121 Jackrabbit Armored Calvary"
+ UNSC_WARTHOGS_ORD: "$ORD$ M12 Warthog Armored Calvary"
+ UNSC_COBRA_ORD: "$ORD$ SP-42 Cobra Armored Division"
+ UNSC_MANTIS_ORD: "$ORD$ MARK IX Mantis Armored Walkers"
+ UNSC_COLOSSUS_ORD: "$ORD$ MARK II [J] Colossus"
+ UNSC_SCORPION_TANKS_ORD: "$ORD$ M808 Scorpion Armored Division"
+ UNSC_GRIZLY_TANK_ORD: "$ORD$ M850 Grizly Armored Division"
+ UNSC_HORNET_SQUADRON_ORD: "$ORD$ AV-14 Hornet Squadron"
+ UNSC_SPARROWHAWK_SQUADRON_ORD: "$ORD$ AV-22 Sparrowhawk Squadron"
+ UNSC_PELICAN_GUNSHIP_ORD: "$ORD$ Gunship-79 Pelican"
+ UNSC_VULTURE_GUNSHIP_ORD: "$ORD$ AC-220 Vulture Gunship"
+ UNSC_CONDOR_GUNSHIP_ORD: "$ORD$ G81 Condor"
+ UNSC_SHORTSWORD_BOMBER_SQUADRON_ORD: "$ORD$ B-65 Shortsword Bomber Squadron"
+ UNSC_BROADSWORD_SQUADRON_ORD: "$ORD$ F-41 Broadsword Squadron"
+ UNSC_LONGSWORD_BOMBER_SQUADRON_ORD: "$ORD$ GA-TL1 Interceptor/Strike Fighter Squadron"
+ 
+ UNSC_SPARTAN_II_BLUE_TEAM_ORD: "$ORD$ Blue Team"
+ UNSC_SPARTAN_II_RED_TEAM_ORD: "$ORD$ Red Team" 
+ UNSC_SPARTAN_II_OMEGA_TEAM_ORD: "$ORD$ Omega Team"
+ UNSC_SPARTAN_III_NOBLE_TEAM_ORD: "$ORD$ Noble Team"
+
+ #ANCESTOR ARMIES 
+ 
+ ANCESTOR_FLEET_ORD: "$ORD$ Ancestor Dominion Fleet"
+ ANCESTOR_GENERIC_ORD: "$ORD$ Ancestor Charum Hakkor Legion"
+ ANCESTOR_ARMY_DEFENSE_ORD: "$ORD$ Ancestor Warrior Garrison"
+ ANCESTOR_ARMY_ASSAULT_ORD: "$ORD$ Ancestor Warrior Legion"
+ ANCESTOR_ARMY_SLAVE_ORD: "$ORD$ Ancestor Conscripts"
+ ANCESTOR_ARMY_CLONE_SEQ: "Ancestor Clone Warrior Legion $C$"
+ ANCESTOR_ARMY_ROBOTIC_SEQ: "Ancestor Servitor Battlegroup $C$"
+ ANCESTOR_ARMY_ROBOTIC_DEFENSE_SEQ: "Ancestor Servitor Defense Grid $C$"
+ ANCESTOR_ARMY_PSIONIC_ORD: "$ORD$ Ancestor Psionic Warrior Legion"
+ ANCESTOR_ARMY_UNDEAD_ORD: "$ORD$ Ancestor Draugr Horde"
+ ANCESTOR_ARMY_XENOMORPH_ORD: "$ORD$ Ancestor Bio-Warfare Legion"
+ ANCESTOR_ARMY_GENEWARRIOR_ORD: "$ORD$ Charum Hakkor Knights"
+ ANCESTOR_ARMY_OCCUPATION_ORD: "$ORD$ Ancestor Warrior Occupation Force"
+ ANCESTOR_ARMY_ROBOTIC_OCCUPATION_ORD: "$ORD$ Servitor Occupation Grid"
+ ANCESTOR_ARMY_PRIMITIVE_ORD: "$ORD$ Primitive Erde-Tyrene Tribes"
+ ANCESTOR_ARMY_INDUSTRIAL_ORD: "$ORD$ Industrial Erde-Tyrene Army"
+ ANCESTOR_ARMY_POSTATOMIC_ORD: "$ORD$ Post-Atomic Hominid Army"
+ ANCESTOR_MACHINE_ASSAULT_1_ORD: "$ORD$ Ancestor Servitor Sentinels"
+ ANCESTOR_MACHINE_ASSAULT_2_ORD: "$ORD$ Ancestor Servitor Combat Suits"
+ ANCESTOR_MACHINE_ASSAULT_3_ORD: "$ORD$ Ancestor Servitor Strato-Sentinel" 
+ 
+ ANCESTOR_WARRIORS_ORD: "$ORD$ Ancestor Warrior Legion" 
+ ANCESTOR_WARRIORS_DEFENSE_ORD: "$ORD$ Ancestor Warrior Garrison"
+ ANCESTOR_FIBRIL_TANKS_ORD: "$ORD$ Ancestor Fibril Tank Division"
+ ANCESTOR_FIBRIL_ARTILLERY_ORD: "$ORD$ Ancestor Fibril Accelerator Artillery"
+ ANCESTOR_COMBAT_SUIT_ORD: "$ORD$ Ancestor Imperator Combat Suits"
+ ANCESTOR_SANSHYUUM_TUNED_PLATFORM: "$ORD$ Second-Rate Tuned Siege Platform"
+ 
+ 
+ ANCIENT_SANSHYUUM_FLEET_ORD: "$ORD$ San'Shyuum Fleet"
+ 
+ ANCIENT_SANSHYUUM_DEFENSE_ORD: "$ORD$ San'Shyuum Garrison"
+ ANCIENT_SANSHYUUM_ASSAULT_ORD: "$ORD$ San'Shyuum Warriors"
+ ANCIENT_SANSHYUUM_SLAVE_ORD: "$ORD$ Thralls"
+ ANCIENT_SANSHYUUM_CLONE_ORD: "$ORD$ Prelate Clone Army"
+ ANCIENT_SANSHYUUM_ROBOTIC_ORD: "$ORD$ San'Shyuum Drones"
+ ANCIENT_SANSHYUUM_ROBOTIC_DEFENSE_ORD: "$ORD$ San'Shyuum Drone Defense Network"
+ ANCIENT_SANSHYUUM_PSIONIC_ORD: "$ORD$ Enlightened San'Shyuum Prelates"
+ ANCIENT_SANSHYUUM_XENOMORPH_ORD: "$ORD$ Beasts of Janjur Qom"
+ ANCIENT_SANSHYUUM_GENEWARRIOR_ORD: "$ORD$ Augmented San'Shyuum Prelates"
+ ANCIENT_SANSHYUUM_UNDEAD_ORD: "$ORD$ Ghosts of Qom" 
+ ANCIENT_SANSHYUUM_OCCUPATION_ORD: "$ORD$ San'Shyuum Occupiers"
+ ANCIENT_SANSHYUUM_ROBOTIC_OCCUPATION_ORD: "$ORD$ San'Shyuum Drone Occupiers" 
+ ANCIENT_SANSHYUUM_PRIMITIVE_SEQ: "San'Shyuum Tribes $C$"
+ ANCIENT_SANSHYUUM_INDUSTRIAL_SEQ: "San'Shyuum Stoics $C$"
+ ANCIENT_SANSHYUUM_POSTATOMIC_SEQ: "San'Shyuum Army $C$"
+ 
+ ANCIENT_SANSHYUUM_WARRIORS_ORD: "$ORD$ San'Shyuum Prelate Army"
+ 
+ name_list_ancient_human: "Ancient Human"
+
+ #ANCIENT HUMANITY COMPONENT TECH & WEAPONS 
+ tech_ancestor_fibril_cutter: "Fibril Cutters"
+ tech_ancestor_fibril_cutter_desc: "A particle beam accelerator weapon system that fires a concentrated beam of particle energy capable of melting the armor and hull of enemy vessels."
+ 
+ tech_ancestor_fibril_cutter_lance: "Fibril Particle Lance"
+ tech_ancestor_fibril_cutter_lance_desc: "Up-scaled Fibril Cutters that form a more tightly focused beam of particle energy further accelerated to pierce through heavy armor and hull."
+ 
+ tech_ancestor_fibril_cutter_beam: "Fibril Particle Projector"
+ tech_ancestor_fibril_cutter_beam_desc: "The largest and most destructive of the Fibril Cutters, this heavy weapon system serves as a powerful artillery piece capable of destroying enemy vessels instantly by emitting high-intensity streams of particle energy. However, the system must be fully charged to unleash its destructive potential."
+ 
+ tech_ancestor_tractor_pressor: "Tractor Pressor"
+ tech_ancestor_tractor_pressor_desc: "An Ancestor weapon system that fires a gravitic beam capable of shearing ship hulls bypassing the target's defenses. While not as powerful as the Torsion Driver employed by their ancient rivals, this weapon system is far more compact and can be used on other smaller cruisers and destroyers."
+ 
+ tech_ancestor_fibril_energy_torpedoes: "Fibril-Laced Energy Torpedoes"
+ tech_ancestor_fibril_energy_torpedoes_desc: "A energy-based weapon that uses a solid-core projectile infused with Fibril energy that surrounds the core, creating a guided energy missile. Upon contact with the target, the released Fibril energy will shred through armor and boil hull with ease."
+ 
+ tech_ancestor_strike_craft: "Ancestor Dominus Strike Craft"
+ tech_ancestor_strike_craft_desc: "Elite strike craft developed using Ancestor and Precursor technology armed with miniaturized fibril weapon technology found on larger vessels. These high-powered space-superiority fighters excel at carving through heavily-fortified armor and hulls."
+ 
+ ANCESTOR_FIBRIL_CUTTER_POINT_DEFENSE: "Fibril Cutter Point Defense"
+ ANCESTOR_FIBRIL_CUTTER_POINT_DEFENSE_DESC: "A energy point-defense system that uses pin-point intensified particle beams that can easily cut through dense layered armor."
+ 
+ ANCESTOR_FIBRIL_CUTTER: "Fibril Cutter"
+ ANCESTOR_FIBRIL_CUTTER_DESC: "Offensive particle energy weapons employed by ancient humanity that fire intensified particle beams capable of cutting through armor with relative ease with near perfect accuracy."
+ 
+ SMALL_ANCESTOR_FIBRIL_CUTTER: "Fibril Cutter"
+ MEDIUM_ANCESTOR_FIBRIL_CUTTER: "Fibril Cutter"
+ LARGE_ANCESTOR_FIBRIL_CUTTER: "Fibril Cutter"
+ 
+ ANCESTOR_FIBRIL_ENERGY_TORPEDO: "Fibril-Laced Energy Torpedo"
+ ANCESTOR_FIBIRL_ENERGY_TORPEDO_DESC: "An energy weapon that uses a solid core torpedo infused with Fibril energy capable of shredding through armor and boiling hull on contact."
+ 
+ ANCESTOR_FIBRIL_CUTTER_LANCE: "Fibril Particle Lance"
+ ANCESTOR_FIBRIL_CUTTER_LANCE_DESC: "An up-scaled Fibril weapon system that fires a tightly-focused beam of particle energy capable of slicing through armor and hull."
+ 
+ ANCESTOR_FIBRIL_CUTTER_BEAM: "Fibril Particle Projector"
+ ANCESTOR_FIBRIL_CUTTER_BEAM_DESC: "Ancient Humanity's most powerful weapon capable of razing entire worlds or disintegrating enemy targets in a single blast once fully charged. The weapon fires a concentrated stream of dense particle energy that destabilizes the target's molecular structure structure when hit through the use of lost Precursor neural physical energy, bypassing any form of defense."
+ 
+ ANCESTOR_TRACTOR_PRESSOR: "Tractor Pressor"
+ ANCESTOR_TRACTOR_PRESSOR_DESC: "Ancestor weapon system that fires a gravitic beam capable of shearing ship hulls bypassing the target's defenses."
+ 
+ ANCESTOR_INTERCEPTOR_STRIKE_CRAFT: "Ancestor Dominus Interceptor Strike Craft"
+ ANCESTOR_INTERCEPTOR_STRIKE_CRAFT_DESC: "Elite interceptors armed with small-scale fibril cutters capable of carving through armor and hull."
+ 
+ ANCESTOR_BOMBER_STRIKE_CRAFT: "Ancestor Dominus Bomber Strike Craft"
+ ANCESTOR_BOMBER_STRIKE_CRAFT_DESC: "Elite bombers armed with miniaturized fibril energy torpedoes used to devastate capital ships."
+ 
+ #ANCESTOR BOMBARDMENT STANCE 
+ tech_ancestor_fibril_bombardment: "Fibril Energy Bombardment"
+ tech_ancestor_fibril_bombardment_desc: "A devastating form of bombardment that fires intense beams of Fibril energy that annihilate anything on the planet's surface, turning vibrant worlds into cold barren wastelands. This bombardment is used as a desperate last resort either for containment or to eliminate entrenched enemy positions deemed too costly to invade."
+ 
+ ancestor_fibril_bombardment: "Fibril Energy Bombardment"
+ ancestor_fibril_bombardment_desc: "Used to sterilize the surface of a world using enhanced Fibril cutters, quickly rendering worlds barren and lifeless."
+ 
+ bombardment_ancestor_fibril_bombardment: "Fibril Energy Bombardment"
+ bombardment_ancestor_fibril_bombardment_desc: "$bombardment_ancestor_fibril_energy_bombardment$ fires intensified beams of energy using enhanced Fibril cutters to annihilate entire planetary bodies. \n- §RMassive§! damage to §YArmies§!\n- §RMassive§! damage to §YPlanet§!\n- §RMassive§! damage to §YPops§!\n- Will bombard undefended planets\n- Can reduce planets to lifeless Barren Worlds."
+ 
+ ancestor_fibril_bombardment.82.name: "Fibril Energy Bombardment"
+ ancestor_fibril_bombardment.82.desc: "Our world has been annihilated by the orbiting enemy fleet above, killing the population and sterilizing the surface of the planet."
+ ancestor_fibril_bombardment.82.a: "Unfortunate"
+ 
+ ancestor_fibril_bombardment.83.name: "Fibril Energy Bombardment Complete"
+ ancestor_fibril_bombardment.83.desc: "As per your orders, this world has been rendered uninhabitable, sterilizing the entire world."
+ ancestor_fibril_bombardment.83.a: "This world has been cleansed."
+ 
+ bombed_to_barren_world:0 "§Y[From.GetName] is now a depopulated Barren World.§!"
+ 
+ #ANCIENT HUMANITY COMPONENT TECH
+ 
+ tech_ancestor_fibril_armor: "Fibril Reactive Armor"
+ tech_ancestor_fibril_armor_desc: "Using the techniques of Fibril Cutters, this armor is bonded at the molecular level and integrated with Hard Light properties to be adaptive against enemy fire."
+ 
+ tech_ancestor_fibril_shield: "Fibril Reactive Shield"
+ tech_ancestor_fibril_shield_desc: "A dense shield layer system that quickly adapts to enemy fire attenuating streams of Fibril energy and neural physics."
+ 
+ tech_ancestor_slipspace_drive: "Ancestor Slipspace Drive"
+ tech_ancestor_slipspace_drive_desc: "Advanced Slipspace drives employed by Ancient Humanity. Although inferior to Forerunner Slipspace Drives, this ftl drive is highly advanced and more than capable of traversing the galaxy across vast interstellar distances through slipspace."
+ 
+ ANCESTOR_SLIPSPACE_DRIVE: "Ancestor Slipspace Drive"
+ ANCESTOR_SLIPSPACE_DRIVE_DESC: "Advanced Slipspace drive employed by Ancient Humanity."
+ 
+ tech_ancestor_sensors: "Ancestor Superluminal Communications"
+ tech_ancestor_sensors_desc: "Ancestor-based communications utilizing quantum entanglement to secure instant data transfer over vast distances through the use of wormholes."
+ 
+ ancestor_sensors: "Augur Array"
+ ancestor_sensors_desc: "Ancestor starship sensors capable of instantaneous scanning and detection across vast interstellar distances." 
+ 
+ tech_ancestor_reactor: "Neurophysical Energy"
+ tech_ancestor_reactor_desc: "Although Precursor technology is enigmatic and hardly understood, their techniques for harnessing neurophysical energy can be revere-engineered to a limited extent to generate a constant supply of cosmic energy to power our own technology."
+ 
+ TECH_UNLOCK_ANCESTOR_REACTOR_TITLE: "§HUnlocks Component:§! Ancestor Neurophysical Reactor"
+ TECH_UNLOCK_ANCESTOR_REACTOR_DESC: "§HNeurophysical Reactor§!\nA Ancestor power source using Precursor techniques to generate an enormous amount of energy permeating the cosmos."
+ 
+ ancestor_reactor: "Neurophysical Reactor"
+ ancestor_reactor_desc: "An Ancestor reactor capable of gathering energy permeating the cosmos using Precursor techniques."
+ 
+ tech_ancestor_thrusters: "Ancestor Reaction Propulsion"
+ tech_ancestor_thrusters_desc: "Using neurophysical energy as a power source, these sub-light drives briefly expel virtual neutrons from the ship, giving it propulsion."
+ 
+ TECH_UNLOCK_ANCESTOR_THRUSTERS_TITLE: "§HUnlocks Component:§! Ancestor Reaction Drive"
+ TECH_UNLOCK_ANCESTOR_THRUSTERS_DESC: "§HAncestor Reaction Drive§!\nAncestor sub-light drive that uses vacuum energy to expel virtual neutrons to propel the ship towards a sizable fraction of lightspeed."
+ 
+ ancestor_thrusters: "Ancestor Reaction Drive"
+ ancestor_thrusters_desc: "Ancestor sub-light drive that uses neurophysical energy to expel virtual neutrons to propel the ship towards a sizable fraction of lightspeed."
+ 
+ 
+ #STARTING TECH EVENT CHOICE
+ unsc_start.2.name: "Advanced Ancestor Technology"
+ unsc_start.2.desc: "Do you wish to start the game with all §YTier II Technology Research§! and or special §YAncestor Ship Utility Technology?§! If not, the Ancestor utility components will still be available to research later on."
+
+ unsc_start.2.a: "§BYes, start with both§!"
+ unsc_start.2.b: "§GYes, start with Ancestor utility tech only§!"
+ unsc_start.2.c: "§YYes, start with Tier II tech only§!"
+ 
+ 
+ #ANCESTOR UTILITY COMPONENTS
+ 
+ #ARMOR 
+ ANCESTOR_FIBRIL_ARMOR: "Fibril Reactive Armor"
+ ANCESTOR_FIBRIL_ARMOR_DESC: "Reinforced reactive armor employed by the ancestors. Has the innate capability of adaptive armor hardening."
+ 
+ SMALL_ANCESTOR_FIBRIL_ARMOR: "Small Fibril Reactive Armor"
+ MEDIUM_ANCESTOR_FIBRIL_ARMOR: "Medium Fibril Reactive Armor"
+ LARGE_ANCESTOR_FIBRIL_ARMOR: "Large Fibril Reactive Armor"
+ 
+ #SHIELD 
+ ANCESTOR_FIBRIL_SHIELD: "Fibril Reactive Shield"
+ ANCESTOR_FIBRIL_SHIELD_DESC: "Reactive energy shields employed by the ancestors. Has the innate capability of adaptive shield hardening against enemy fire."
+ 
+ SMALL_ANCESTOR_FIBRIL_SHIELD: "Small Fibril Reactive Shield"
+ MEDIUM_ANCESTOR_FIBRIL_SHIELD: "Medium Fibril Reactive Shield"
+ LARGE_ANCESTOR_FIBRIL_SHIELD: "Large Fibril Reactive Shield"
+ 
+ #SENSORS
+ ANCESTOR_SENSORS: "Augur Array"
+ ANCESTOR_SENSORS_DESC: "Ancestor Sensors"
+ TECH_UNLOCK_ANCESTOR_SENSORS_TITLE: "§HUnlocks Component:§! $ANCESTOR_SENSORS$"
+ TECH_UNLOCK_ANCESTOR_SENSORS_DESC: "Powerful ancestor starship sensors capable of probing vast interstellar distances and map local planetary systems instantaneously." 
+ 
+ #FTL
+ ANCESTOR_SLIPSPACE_DRIVE: "Ancestor Crystal Resonance Chamber"
+ ANCESTOR_SLIPSPACE_DRIVE_DESC: "Slipspace technology developed by the Ancestors."
+ TECH_UNLOCK_ANCESTOR_SLIPSPACE_DRIVE_TITLE: "§HUnlocks Component:§! $ANCESTOR_SLIPSPACE_DRIVE$"
+ TECH_UNLOCK_ANCESTOR_SLIPSPACE_DRIVE_DESC: "§HAdvanced Jumpdrive§!\n$tech_ancestor_slipspace_drive_desc$"
+ 
+ #REACTORS
+ ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ CORVETTE_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ CORVETTE_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ DESTROYER_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ DESTROYER_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ CRUISER_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ CRUISER_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ BATTLESHIP_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ BATTLESHIP_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ TITAN_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ TITAN_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ COLOSSUS_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ COLOSSUS_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ PLATFORM_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ PLATFORM_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ ION_CANNON_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ ION_CANNON_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ STARBASE_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ STARBASE_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ TECH_UNLOCK_ANCESTOR_REACTOR_TITLE: "§HUnlocks Component:§! $ANCESTOR_REACTOR$"
+ TECH_UNLOCK_ANCESTOR_REACTOR_DESC: "Harnessing neurophysical energies of of the cosmos to produce a near-infinite supply of energy."
+ 
+ 
+ #NSC REACTORS
+ STRIKECRUISER_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ STRIKECRUISER_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ BATTLECRUISER_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ BATTLECRUISER_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ CARRIER_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ CARRIER_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ DREADNOUGHT_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ DREADNOUGHT_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ FLAGSHIP_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ FLAGSHIP_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ FORTRESS_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ FORTRESS_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ CITADEL_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ CITADEL_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ XL_CANNON_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ XL_CANNON_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ STATION_ANCESTOR_REACTOR: "Ancestor Neurophysical Reactor"
+ STATION_ANCESTOR_REACTOR_DESC: "Advanced ancestor reactors that pull vast amounts of limitless neurophysical energy, an underlying energy source that permeates the cosmos."
+ 
+ 
+ 
+ #THRUSTERS
+ ANCESTOR_THRUSTERS: "Ancestor Reaction Drive"
+ ANCESTOR_THRUSTERS_DESC:1 "Highly efficient ancestor propulsion drives that allow for fast acceleration and evasive maneuvers."
+ CORVETTE_ANCESTOR_THRUSTERS: "Ancestor Reaction Drive"
+ CORVETTE_ANCESTOR_THRUSTERS_DESC:1 "Highly efficient ancestor propulsion drives that allow for fast acceleration and evasive maneuvers."
+ DESTROYER_ANCESTOR_THRUSTERS: "Ancestor Reaction Drive"
+ DESTROYER_ANCESTOR_THRUSTERS_DESC: "Highly efficient ancestor propulsion drives that allow for fast acceleration and evasive maneuvers."
+ CRUISER_ANCESTOR_THRUSTERS: "Ancestor Reaction Drive"
+ CRUISER_ANCESTOR_THRUSTERS_DESC: "Highly efficient ancestor propulsion drives that allow for fast acceleration and evasive maneuvers."
+ BATTLESHIP_ANCESTOR_THRUSTERS: "Ancestor Reaction Drive"
+ BATTLESHIP_ANCESTOR_THRUSTERS_DESC: "Highly efficient ancestor propulsion drives that allow for fast acceleration and evasive maneuvers."
+ TITAN_ANCESTOR_THRUSTERS: "Ancestor Reaction Drive"
+ TITAN_ANCESTOR_THRUSTERS_DESC: "Highly efficient ancestor propulsion drives that allow for fast acceleration and evasive maneuvers."
+ COLOSSUS_ANCESTOR_THRUSTERS: "Ancestor Reaction Drive"
+ COLOSSUS_ANCESTOR_THRUSTERS_DESC: "Highly efficient ancestor propulsion drives that allow for fast acceleration and evasive maneuvers."
+ TECH_UNLOCK_ANCESTOR_THRUSTERS_TITLE: "§HUnlocks Component:§! $ANCESTOR_THRUSTERS$"
+ TECH_UNLOCK_ANCESTOR_THRUSTERS_DESC: "Using neurophysical energy, these sub-light drives briefly expel virtual neutrons from the ship, giving it propulsion."
+ 
+ #NSC THRUSTERS
+ STRIKECRUISER_ANCESTOR_THRUSTERS: "Ancestor Reaction Drive"
+ STRIKECRUISER_ANCESTOR_THRUSTERS_DESC: "Highly efficient ancestor propulsion drives that allow for fast acceleration and evasive maneuvers."
+ BATTLECRUISER_ANCESTOR_THRUSTERS: "Ancestor Reaction Drive"
+ BATTLECRUISER_ANCESTOR_THRUSTERS_DESC: "Highly efficient ancestor propulsion drives that allow for fast acceleration and evasive maneuvers."
+ CARRIER_ANCESTOR_THRUSTERS: "Ancestor Reaction Drive"
+ CARRIER_ANCESTOR_THRUSTERS_DESC: "Highly efficient ancestor propulsion drives that allow for fast acceleration and evasive maneuvers."
+ DREADNOUGHT_ANCESTOR_THRUSTERS: "Ancestor Reaction Drive"
+ DREADNOUGHT_ANCESTOR_THRUSTERS_DESC: "Highly efficient ancestor propulsion drives that allow for fast acceleration and evasive maneuvers."
+ FLAGSHIP_ANCESTOR_THRUSTERS: "Ancestor Reaction Drive"
+ FLAGSHIP_ANCESTOR_THRUSTERS_DESC: "Highly efficient ancestor propulsion drives that allow for fast acceleration and evasive maneuvers."
+ 
+ 
+ 
+ #UNSC SOL SYSTEM 
+ 
+ NAME_Charon: "134340 Charon"
+ NAME_Titania: "Titania"
+ NAME_Eris: "136199 Eris"
+ 
+ 
+ 

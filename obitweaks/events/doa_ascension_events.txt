@@ -1,0 +1,3803 @@
+namespace = doa_ascension_event
+
+country_event = {
+    id = doa_ascension_event.0
+	title = doa_ascension_event.0.name
+	desc = doa_ascension_event.0.desc
+	picture = GFX_evt_board_meeting
+	show_sound = event_administrative_work
+	location = from
+	is_triggered_only = yes
+	
+	option = {
+	   name = doa_ascension_event.0.a
+	   hidden_effect = {
+	   country_event = { id = doa_ascension_event.1 }
+	   }
+	   ai_chance = {
+	   factor = 1000
+	   }
+	}
+	
+	option = {
+	   name = doa_ascension_event.0.b
+	   hidden_effect = {
+	   set_country_flag = ascension_project_rejected
+	   }
+	   ai_chance = {
+	      factor = 0
+	   }
+	}
+}
+	
+
+######################################
+### becoming a galactic ascendancy ###
+######################################
+
+country_event = {
+    id = doa_ascension_event.1
+	title = doa_ascension_event.1.name
+	picture = GFX_evt_titan_city
+	show_sound = event_celebration
+	location = from
+	is_triggered_only = yes
+
+	
+	desc = {
+	  trigger = {
+	       NOR = {
+		      has_authority = auth_hive_mind
+		      has_authority = auth_machine_intelligence
+			  }
+		}
+        text = doa_ascension_event.1.desc
+	}
+	desc = {
+	  trigger = {
+	    has_authority = auth_hive_mind
+		}
+		text = doa_ascension_event.1.desc.1
+	}	
+	desc = {
+	  trigger = {
+	    has_authority = auth_machine_intelligence
+		}
+		text = doa_ascension_event.1.desc.2
+	}
+	
+	immediate = {
+	    set_country_flag = galactic_ascendancy
+		set_country_flag = ascension_started
+		remove_country_flag = ascension_project_rejected
+	}
+	
+	option = {
+	     name = doa_ascension_event.1.a
+		 trigger = {
+	       NOR = {
+		      has_authority = auth_hive_mind
+		      has_authority = auth_machine_intelligence
+			  }
+		}
+		force_add_civic = civic_galactic_ascendancy
+		set_government_cooldown = no
+		start_situation = {
+			type = situation_galactic_ascendancy
+			target = root.owner	
+		}
+		if = {
+		   limit = {
+		   is_ai = yes
+		   }
+		   start_situation = {
+			type = situation_ai_resource
+			target = root.owner	
+		   }
+		}
+		hidden_effect = {
+		   every_country = {  ### notifies the galaxy
+				limit = {
+					NOT = { is_same_value = root }
+					has_communications = root                          #####not sure if this works
+					is_ai = no			
+				}
+				country_event = { id = doa_ascension_event.30 }
+			}
+		}
+	}
+	
+	option = {
+	     name = doa_ascension_event.1.b
+		 trigger = {
+	          has_authority = auth_hive_mind
+		}
+		force_add_civic = civic_galactic_ascendancy
+		set_government_cooldown = no
+		start_situation = {
+			type = situation_galactic_ascendancy
+			target = root.owner	
+		}
+		if = {
+		   limit = {
+		   is_ai = yes
+		   }
+		   start_situation = {
+			type = situation_ai_resource
+			target = root.owner	
+		   }
+		}
+		hidden_effect = {
+		   every_country = {  ### notifies the galaxy
+				limit = {
+					NOT = { is_same_value = root }
+					has_communications = root                          #####not sure if this works
+					is_ai = no			
+				}
+				country_event = { id = doa_ascension_event.30 }
+			}
+		}
+	}
+	
+	option = {
+	     name = doa_ascension_event.1.c
+		 trigger = {
+	          has_authority = auth_machine_intelligence
+		}
+		force_add_civic = civic_galactic_ascendancy
+		set_government_cooldown = no
+		start_situation = {
+			type = situation_galactic_ascendancy
+			target = root.owner	
+		}
+		if = {
+		   limit = {
+		   is_ai = yes
+		   }
+		   start_situation = {
+			type = situation_ai_resource
+			target = root.owner	
+		   }
+		}
+		hidden_effect = {
+		   every_country = {  ### notifies the galaxy
+				limit = {
+					NOT = { is_same_value = root }
+					has_communications = root                          #####not sure if this works
+					is_ai = no			
+				}
+				country_event = { id = doa_ascension_event.30 }
+			}
+		}
+	}
+}	
+		
+
+##################################
+### national focus civic event ###
+##################################
+
+situation_event = {
+	id = doa_ascension_event.2
+	title = doa_ascension_event.2.name
+	desc = doa_ascension_event.2.desc
+	picture = GFX_evt_fallen_empire_awakes
+	show_sound = event_administrative_work
+	location = target
+	is_triggered_only = yes
+	situation = this
+	
+	option = {
+	     name = doa_ascension_event.2.a
+		 trigger = {
+		      owner = {
+			     NOT = {
+		         has_ethic = ethic_fanatic_pacifist
+			     has_ethic = ethic_pacifist
+				 }
+		      }
+		 }
+		 custom_tooltip = galactic_hegemony
+		 hidden_effect = {
+		 owner = {
+		 set_country_flag = doa_national_focus
+		 force_add_civic = civic_galactic_hegemony
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+	
+	option = {
+	     name = doa_ascension_event.2.b
+		 trigger = {
+		      owner = {
+			     NOT = {
+		          has_authority = auth_hive_mind
+		          has_authority = auth_machine_intelligence
+				 }
+		      }
+		 }
+		 custom_tooltip = architects_of_gaia
+		 hidden_effect = {
+		 owner = {
+		 set_country_flag = doa_national_focus
+		 force_add_civic = civic_architects_of_gaia
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+	
+	option = {
+	     name = doa_ascension_event.2.c
+		 custom_tooltip = wonders_in_the_void
+		 hidden_effect = {
+		 owner = {
+		 set_country_flag = doa_national_focus
+		 force_add_civic = civic_wonders_in_the_void
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+	
+	option = {
+	     name = doa_ascension_event.2.d
+		 custom_tooltip = industrial_behemoth
+		 hidden_effect = {
+		 owner = {
+		 set_country_flag = doa_national_focus
+		 force_add_civic = civic_industrial_behemoth
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+	
+	option = {
+	     name = doa_ascension_event.2.e
+		 trigger = {
+		      owner = {
+			     NOT = {
+		          has_authority = auth_hive_mind
+		          has_authority = auth_machine_intelligence
+				 }
+		      }
+		 }
+		 custom_tooltip = galactic_intelligence_agency
+		 hidden_effect = {
+		 owner = {
+		 set_country_flag = doa_national_focus
+		 force_add_civic = civic_galactic_intelligence_agency
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+	
+	option = {
+	     name = doa_ascension_event.2.f
+		 trigger = {
+		      owner = {
+			     NOT = {
+		          has_authority = auth_hive_mind
+		          has_authority = auth_machine_intelligence
+				 }
+		      }
+		 }
+		 custom_tooltip = economic_powerhouse
+		 hidden_effect = {
+		 owner = {
+		 set_country_flag = doa_national_focus
+		 force_add_civic = civic_economic_powerhouse
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+	
+	option = {
+	     name = doa_ascension_event.2.g
+		 trigger = {
+		      owner = {
+			    has_authority = auth_hive_mind
+				}
+		 }
+		 custom_tooltip = all_seeing_eye
+		 hidden_effect = {
+		 owner = {
+		 set_country_flag = doa_national_focus
+		 force_add_civic = civic_all_seeing_eye
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+	
+	option = {
+	     name = doa_ascension_event.2.h
+		 trigger = {
+		      owner = {
+			    has_authority = auth_machine_intelligence
+				}
+		 }
+		 custom_tooltip = infused_node
+		 owner = {
+		 set_country_flag = doa_national_focus
+		 force_add_civic = civic_infused_node
+		 set_government_cooldown = no
+	     }
+	}
+}
+
+##################################
+### dark matter research event ###
+##################################
+
+situation_event = {
+	id = doa_ascension_event.3
+	title = doa_ascension_event.3.name
+	desc = doa_ascension_event.3.desc
+	picture = GFX_evt_physics_research
+	show_sound = event_solar_fusion
+	location = target
+	is_triggered_only = yes
+	situation = this
+	
+	option = {
+		name = doa_ascension_event.3.a
+		owner = {
+		set_country_flag = doa_tech_1
+		if = {
+			limit = { 
+				NOR = {
+					has_technology = tech_dark_matter_propulsion
+					has_tech_option = tech_dark_matter_propulsion
+				}
+			}
+			give_technology = { tech = tech_dark_matter_propulsion message = yes }
+		}	
+		if = {
+			limit = { 
+				NOR = {
+					has_technology = tech_dark_matter_deflector
+					has_tech_option = tech_dark_matter_deflector
+				}
+			}
+			give_technology = { tech = tech_dark_matter_deflector message = yes }
+		}
+		if = {
+             limit = {
+			   OR = {
+			       has_technology = tech_dark_matter_deflector
+				   has_technology = tech_dark_matter_propulsion
+				}
+			}
+			give_technology = { tech = tech_doa_mastered_dark_matter message = yes }
+		}
+		}
+	}
+}
+
+##################################
+### espionage / cloaking event ###
+##################################
+
+situation_event = {
+	id = doa_ascension_event.4
+	title = doa_ascension_event.4.name
+	desc = doa_ascension_event.4.desc
+	picture = GFX_evt_espionage
+	show_sound = event_conversation
+	location = target
+	is_triggered_only = yes
+	situation = this
+	
+	option = {
+		name = doa_ascension_event.4.a
+		owner = {
+		if = {
+		  limit = {
+		     NOT = {
+			 has_technology = tech_cloaking_dark_matter
+			 }
+		   }
+		   give_technology = { tech = tech_cloaking_dark_matter message = yes }
+		}
+		set_country_flag = doa_tech_2
+		give_technology = { tech = tech_doa_ascended_espionage message = yes }
+		}
+	}
+}
+
+############################
+### automated industries ###
+############################
+
+situation_event = {
+	id = doa_ascension_event.5
+	title = doa_ascension_event.5.name
+	desc = doa_ascension_event.5.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_cityscape
+	location = target
+	is_triggered_only = yes
+	situation = this
+	
+	option = {
+		name = doa_ascension_event.5.a
+		owner = {
+		set_country_flag = doa_tech_3
+		give_technology = { tech = tech_doa_ascended_industries message = yes }
+		}
+	}		
+}
+
+
+######################
+### A new material ###
+######################
+
+situation_event = {
+	id = doa_ascension_event.6
+	title = doa_ascension_event.6.name
+	desc = doa_ascension_event.6.desc
+	picture = GFX_evt_ancient_artifact
+	show_sound = event_mystic_reveal
+	location = target
+	is_triggered_only = yes
+	situation = this
+	
+	option = {
+		name = doa_ascension_event.6.a
+		owner = {
+		set_country_flag = doa_tech_4
+		give_technology = { tech = tech_doa_ascended_materials message = yes }
+		}
+	}
+}
+
+###########################
+### wonders in the void ###
+###########################
+
+situation_event = {
+	id = doa_ascension_event.7
+	title = doa_ascension_event.7.name
+	desc = doa_ascension_event.7.desc
+	picture = GFX_evt_ringworld
+	show_sound = event_ship_bridge
+	location = target
+	is_triggered_only = yes
+	situation = this
+	
+	option = {
+		name = doa_ascension_event.7.a
+		owner = {
+		set_country_flag = doa_tech_5
+		give_technology = { tech = tech_doa_ascended_megaengineering message = yes }
+		}
+	}
+}
+
+##################################
+### Ambitions of an ascendancy ### #### to do once edicts are done
+##################################
+
+situation_event = {
+	id = doa_ascension_event.8
+	title = doa_ascension_event.8.name
+	desc = doa_ascension_event.8.desc
+	picture = GFX_evt_vassals
+	show_sound = event_conversation
+	location = target
+	is_triggered_only = yes
+	situation = this
+	
+	option = {
+		name = doa_ascension_event.8.a
+		owner = {
+		set_country_flag = doa_unlock_ambitions
+		}
+	}
+}
+
+#############################################
+### stabilized dark matter reactor part 1 ###
+#############################################
+
+situation_event = {
+	id = doa_ascension_event.9
+	title = doa_ascension_event.9.name
+	desc = doa_ascension_event.9.desc
+	picture = GFX_evt_analyzing_artifacts
+	show_sound = event_laboratory_sound
+	location = target
+	is_triggered_only = yes
+	situation = this
+	
+	option = {
+		name = doa_ascension_event.9.a
+	}
+}
+
+###############################################
+### stabilized dark matter reactor finished ###
+###############################################
+
+country_event = {
+	id = doa_ascension_event.10
+	title = doa_ascension_event.10.name
+	desc = doa_ascension_event.10.desc
+	picture = GFX_evt_analyzing_artifacts
+	show_sound = event_laboratory_sound
+	location = from
+	is_triggered_only = yes
+	
+	option = {
+		name = doa_ascension_event.10.a
+		owner = {
+		set_country_flag = doa_tech_6
+		give_technology = { tech = tech_doa_stabilized_power_reactor message = yes }
+		hidden_effect = {
+		   start_situation = {
+			 type = situation_dawn_of_an_ascended_empire
+			 target = root.owner	
+		   }
+		   country_event = { id = doa_ascension_event.40 days = 60 random = 30 }
+		   }
+		}  
+	}
+}
+
+
+
+######################
+### Shipset change ###
+######################
+
+situation_event = {
+	id = doa_ascension_event.11
+	title = doa_ascension_event.11.name
+	desc = doa_ascension_event.11.desc
+	picture = GFX_evt_fallen_empire
+	show_sound = event_alien_signal
+	location = target
+	is_triggered_only = yes
+	situation = this
+	
+	option = {
+		name = doa_ascension_event.11.a
+		owner = {
+		set_country_flag = doa_accepted_ships
+		set_country_flag = doa_tech_7
+		set_country_flag = doa_starbase_project_possible
+		add_resource = { influence = 100 }
+		give_technology = { tech = tech_doa_ascended_ship_designs message = yes }
+		give_technology = { tech = tech_doa_dark_alloy_hull message = yes }
+		hidden_effect = {
+			set_graphical_culture = fe_national
+			country_event = {
+				id = doa_ascension_event.22
+				days = 30
+				random = 90
+			}
+		}
+		}
+		ai_chance = { factor = 0 }
+	}  
+	
+	option = {
+		name = doa_ascension_event.11.b
+		owner = {
+		set_country_flag = doa_tech_7
+		give_technology = { tech = tech_doa_ascended_base_ships message = yes }
+		give_technology = { tech = tech_doa_dark_alloy_hull message = yes }
+	  }
+	  ai_chance = { factor = 1000 }
+   }
+} 
+
+######################################
+### theory of dark matter weaponry ###
+######################################
+
+situation_event = {
+	id = doa_ascension_event.12
+	title = doa_ascension_event.12.name
+	desc = doa_ascension_event.12.desc
+	picture = GFX_evt_death_from_above
+	show_sound = event_ground_battle
+	location = target
+	is_triggered_only = yes
+	situation = this
+	
+	option = {
+		name = doa_ascension_event.12.a
+		owner = {
+		set_country_flag = doa_tech_8
+		give_technology = { tech = tech_doa_dark_matter_weaponry message = yes }
+		}
+	}
+}
+
+###########################
+### cities in the skies ###
+###########################
+
+situation_event = {
+    id = doa_ascension_event.13
+	title = doa_ascension_event.13.name
+	desc = doa_ascension_event.13.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_celebration
+	location = target
+	is_triggered_only = yes
+	
+	option = {
+	     name = doa_ascension_event.13.a
+		 trigger = {
+		      owner = {
+		         has_country_flag = doa_accepted_ships
+		      }
+		 }
+		 allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 5000
+				}
+			}
+		 }
+		 owner = {
+		 add_resource = { alloys = -5000}
+		 give_technology = { tech = tech_doa_cities_in_the_skies message = yes }
+		 hidden_effect = {
+			 set_graphical_culture = doa_1
+			 set_city_graphical_culture = doa_1
+		     }
+	     }
+	}
+	option = {
+	     name = doa_ascension_event.13.b
+		 trigger = {
+		      owner = {
+		         has_country_flag = doa_accepted_ships
+		      }
+		 }
+		 allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 5000
+				}
+			}
+		 }
+		 owner = {
+		 add_resource = { alloys = -5000}
+		 give_technology = { tech = tech_doa_cities_in_the_skies message = yes }
+		 hidden_effect = {
+			 set_graphical_culture = doa_2
+			 set_city_graphical_culture = doa_2
+		     }
+	     }
+	}
+	option = {
+	     name = doa_ascension_event.13.c
+		 trigger = {
+		      owner = {
+		         has_country_flag = doa_accepted_ships
+		      }
+		 }
+		 allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 5000
+				}
+			}
+		 }
+		 owner = {
+		 add_resource = { alloys = -5000}
+		 give_technology = { tech = tech_doa_cities_in_the_skies message = yes }
+		 hidden_effect = {
+			 set_graphical_culture = doa_3
+			 set_city_graphical_culture = doa_3
+		     }
+	     }
+	}
+	option = {
+	     name = doa_ascension_event.13.d
+		 trigger = {
+		      owner = {
+		         has_country_flag = doa_accepted_ships
+		      }
+		 }
+		 allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 5000
+				}
+			}
+		 }
+		 owner = {
+		 add_resource = { alloys = -5000}
+		 give_technology = { tech = tech_doa_cities_in_the_skies message = yes }
+		 hidden_effect = {
+			 set_graphical_culture = doa_4
+			 set_city_graphical_culture = doa_4
+		     }
+	     }
+	}
+	option = {
+	     name = doa_ascension_event.13.e
+		 trigger = {
+		      owner = {
+		         has_country_flag = doa_accepted_ships
+		      }
+		 }
+		 allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 5000
+				}
+			}
+		 }
+		 owner = {
+		 add_resource = { alloys = -5000}
+		 give_technology = { tech = tech_doa_cities_in_the_skies message = yes }
+		 hidden_effect = {
+			 set_graphical_culture = doa_5
+			 set_city_graphical_culture = doa_5
+		     }
+	     }
+	}
+	option = {
+	     name = doa_ascension_event.13.f
+		 trigger = {
+		      owner = {
+		         has_country_flag = doa_accepted_ships
+		      }
+		 }
+		 allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 5000
+				}
+			}
+		 }
+		 owner = {
+		 add_resource = { alloys = -5000}
+		 give_technology = { tech = tech_doa_cities_in_the_skies message = yes }
+		 hidden_effect = {
+			 set_graphical_culture = doa_6
+			 set_city_graphical_culture = doa_6
+		     }
+	     }
+	}
+	option = {
+	     name = doa_ascension_event.13.g
+	}
+}
+	
+
+
+#############################
+### Mastery of the cosmos ###
+#############################
+
+situation_event = {
+	id = doa_ascension_event.14
+	title = doa_ascension_event.14.name
+	picture = GFX_evt_fallen_empire_awakes
+	show_sound = event_ship_bridge
+	location = target
+	is_triggered_only = yes
+	situation = this
+	
+	desc = {
+	   trigger = {
+	      owner = {
+		  has_country_flag = doa_accepted_ships
+		  }
+	   }
+	   text = doa_ascension_event.14.desc
+	}
+	desc = {
+	   trigger = {
+	      owner = {
+		     NOT = {
+		     has_country_flag = doa_accepted_ships
+			 }
+		  }
+	   }
+	   text = doa_ascension_event.14.desc.1
+	} 
+	
+	option = {
+		name = doa_ascension_event.14.a
+		owner = {
+		set_country_flag = doa_tech_9
+		}
+	}
+}
+
+###################################
+### Creation of dark energy 1/3 ###
+###################################
+
+situation_event = {
+	id = doa_ascension_event.15
+	title = doa_ascension_event.15.name
+	desc = doa_ascension_event.15.desc
+	picture = GFX_evt_rare_tech_cache
+	show_sound = event_solar_fusion
+	location = target
+	is_triggered_only = yes
+	situation = this
+	
+	option = {
+		name = doa_ascension_event.15.a
+	}
+}
+
+###################################
+### Creation of dark energy 2/3 ###
+###################################
+
+situation_event = {
+	id = doa_ascension_event.16
+	title = doa_ascension_event.16.name
+	desc = doa_ascension_event.16.desc
+	picture = GFX_evt_rare_tech_cache
+	show_sound = event_solar_fusion
+	location = target
+	is_triggered_only = yes
+	situation = this
+	
+	option = {
+		name = doa_ascension_event.16.a
+	}
+}
+
+######################################
+### Creation of dark energy finish ###
+######################################
+
+situation_event = {
+	id = doa_ascension_event.17
+	title = doa_ascension_event.17.name
+	desc = doa_ascension_event.17.desc
+	picture = GFX_evt_rare_tech_cache
+	show_sound = event_solar_fusion
+	location = target
+	is_triggered_only = yes
+	situation = this
+	
+	option = {
+		name = doa_ascension_event.17.a
+		owner = {
+		set_country_flag = doa_tech_10
+		give_technology = { tech = tech_doa_dark_energy_reactor message = yes }
+		}
+	}
+}
+
+###########################
+### Dark energy weapons ###
+###########################
+
+situation_event = {
+	id = doa_ascension_event.18
+	title = doa_ascension_event.18.name
+	desc = doa_ascension_event.18.desc
+	picture = GFX_evt_dark_energy
+	show_sound = event_solar_fusion
+	location = target
+	is_triggered_only = yes
+	situation = this
+	
+	option = {
+		name = doa_ascension_event.18.a
+		owner = {
+		set_country_flag = doa_tech_11
+		give_technology = { tech = tech_doa_dark_energy_weaponry message = yes }
+		}
+	}
+}
+
+###########################
+### Ascension completed ###
+###########################
+
+country_event = {
+	id = doa_ascension_event.19
+	title = doa_ascension_event.19.name
+	picture = GFX_evt_coronation
+	show_sound = event_celebration
+	location = from
+	is_triggered_only = yes
+	
+	desc = {
+	  trigger = {
+	       NOR = {
+		      has_authority = auth_hive_mind
+		      has_authority = auth_machine_intelligence
+			  }
+		}
+        text = doa_ascension_event.19.desc
+	}
+	desc = {
+	  trigger = {
+	    has_authority = auth_hive_mind
+		}
+		text = doa_ascension_event.19.desc.1
+	}	
+	desc = {
+	  trigger = {
+	    has_authority = auth_machine_intelligence
+		}
+		text = doa_ascension_event.19.desc.2
+	}
+	
+	option = {
+		name = doa_ascension_event.19.a
+		if = {
+		  limit = {
+		    NOT = {
+			has_global_flag = bug_branch_active
+			}
+		   }
+		   force_add_civic = civic_ascended_empire
+		}
+		if = {
+		  limit = {
+		  has_global_flag = bug_branch_active
+		  }
+		  force_add_civic = civic_ascended_empire_bugged
+		}  
+			hidden_effect = {
+			    remove_modifier = doa_accepted_materialist_demands
+				remove_modifier = doa_accepted_spiritualist_demands
+				remove_modifier = doa_accepted_spiritualist_demands_gestalt
+				remove_modifier = doa_accepted_xenophile_demands
+				remove_modifier = doa_accepted_xenophobe_demands
+			    force_remove_civic = civic_galactic_ascendancy
+				every_country = {  ### notifies the galaxy
+				limit = {
+					NOT = { is_same_value = root }
+					has_communications = root                          #####not sure if this works
+					is_ai = no			
+				}
+				country_event = {
+				        id = doa_ascension_event.31
+						}
+			    }
+				owner = {
+				      if = {
+					    limit = {
+						   has_country_flag = doa_refused_materialist_demands
+						 }
+						 country_event = { id = doa_ascension_event.76 days = 20 random = 15 }
+					   } 
+					   if = {
+					    limit = {
+						   has_country_flag = doa_refused_spiritualist_demands
+						 }
+						 country_event = { id = doa_ascension_event.77 days = 20 random = 15 }
+					   }
+					   if = {
+					    limit = {
+						   has_country_flag = doa_refused_xenophile_demands
+						 }
+						 country_event = { id = doa_ascension_event.78 days = 20 random = 15 }
+					   }
+					   if = {
+					    limit = {
+						   has_country_flag = doa_refused_xenophobe_demands
+						 }
+						 country_event = { id = doa_ascension_event.79 days = 20 random = 15 }
+					   }
+					   if = {
+					    limit = {
+						   has_country_flag = doa_refused_randomized_demands
+						 }
+						 country_event = { id = doa_ascension_event.80 days = 20 random = 15 }
+					   }
+					   country_event = { id = doa_ascension_event.90 }
+				}	
+		   }
+	}
+}
+
+####################################
+### on action event for event 21 ###
+####################################
+
+
+country_event = {
+	id = doa_ascension_event.20
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	   random_list = {
+	       10 = {
+		       owner = { 
+			      country_event { id = doa_ascension_event.21 }
+			   }
+		   }
+		   90 = {
+		   }
+	   }
+    }
+}
+		 
+			  
+	
+
+
+########################################
+### Ai starting ascension without AP ###
+########################################
+
+
+country_event = {
+	id = doa_ascension_event.21
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	    is_ai = yes
+		is_subject = no
+		num_owned_planets > 10
+		num_ascension_perks > 7
+		fleet_power > 200000
+		has_technology = tech_mega_engineering
+		has_technology = tech_dark_matter_power_core
+		has_technology = tech_ascension_theory
+		NOT = {
+		has_country_flag = ascension_started
+		}
+		NOT = {
+		has_global_flag = doa_acot_ascension
+		}
+	}
+	
+	immediate = {
+	        set_country_flag = ascension_started
+	        country_event = {
+				id = doa_ascension_event.1
+				days = 1200
+				random = 4800
+			}
+	}
+}
+
+#############################################
+### starbase redesign if you accept ships ###
+#############################################
+
+country_event = {
+	id = doa_ascension_event.22
+	title = doa_ascension_event.22.name
+	desc = doa_ascension_event.22.desc
+	picture = GFX_evt_fallen_empire
+	location = from
+	is_triggered_only = yes
+	
+	trigger = {
+    has_country_flag = doa_starbase_project_possible
+	is_at_war = no
+	}
+	
+	immediate = {
+	       owner = {
+	          remove_country_flag = doa_starbase_project_possible
+	       }
+	}
+	
+	option = {
+	     name = doa_ascension_event.22.a
+		 trigger = {
+		 is_ai = no
+		 }
+		      owner = {
+			      every_owned_fleet = {
+				       limit = {
+				            is_ship_size = starbase_outpost
+					   }
+					   destroy_fleet = this
+				  }
+				  every_system_within_border = {   
+				       limit = {
+							NOT = {
+								exists = starbase
+							}
+				       }
+					   create_starbase = {
+							size = "starbase_outpost"
+							owner = root
+					   }
+				 }
+				 every_owned_fleet = {
+				       limit = {
+				            is_ship_size = starbase_starport
+					   }
+					   destroy_fleet = this
+				  }
+				  every_system_within_border = {   
+				       limit = {
+							NOT = {
+								exists = starbase
+							}
+				       }
+					   create_starbase = {
+							size = "starbase_starport"
+							owner = root
+					   }
+				 }
+				 every_owned_fleet = {
+				       limit = {
+				            is_ship_size = starbase_starhold
+					   }
+					   destroy_fleet = this
+				  }
+				  every_system_within_border = {   
+				       limit = {
+							NOT = {
+								exists = starbase
+							}
+				       }
+					   create_starbase = {
+							size = "starbase_starhold"
+							owner = root
+					   }
+				 }
+				 every_owned_fleet = {
+				       limit = {
+				            is_ship_size = starbase_starfortress
+					   }
+					   destroy_fleet = this
+				  }
+				  every_system_within_border = {   
+				       limit = {
+							NOT = {
+								exists = starbase
+							}
+				       }
+					   create_starbase = {
+							size = "starbase_starfortress"
+							owner = root
+					   }
+				 }
+				 every_owned_fleet = {
+				       limit = {
+				            is_ship_size = starbase_citadel
+					   }
+					   destroy_fleet = this
+				  }
+				  every_system_within_border = {   
+				       limit = {
+							NOT = {
+								exists = starbase
+							}
+				       }
+					   create_starbase = {
+							size = "starbase_citadel"
+							owner = root
+					   }
+				 }
+			     add_modifier = {
+				      modifier = starbase_redesign_project_finished
+				      days = 720
+			    }
+				give_technology = { tech = tech_doa_ascended_starbase_design message = yes }
+		    }
+	  }
+	  
+	  option = {
+	     name = doa_ascension_event.22.b
+	  }
+}
+
+##############################
+### rechose national focus ###
+##############################
+
+country_event = {
+	id = doa_ascension_event.23
+	title = doa_ascension_event.23.name
+	desc = doa_ascension_event.23.desc
+	picture = GFX_evt_fallen_empire_awakes
+	show_sound = event_administrative_work
+	location = from
+	is_triggered_only = yes	 
+	
+	option = {
+	     name = doa_ascension_event.23.a
+		 trigger = {
+		      owner = {
+			     NOT = {
+		         has_ethic = ethic_fanatic_pacifist
+			     has_ethic = ethic_pacifist
+				 }
+		      }
+		 }
+		 custom_tooltip = galactic_hegemony
+		 hidden_effect = {
+		 owner = {
+		 force_remove_civic = civic_galactic_hegemony
+		 force_remove_civic = civic_architects_of_gaia
+		 force_remove_civic = civic_automated_society
+		 force_remove_civic = civic_wonders_in_the_void
+		 force_remove_civic = civic_industrial_behemoth
+		 force_remove_civic = civic_galactic_intelligence_agency
+		 force_remove_civic = civic_economic_powerhouse
+		 force_remove_civic = civic_fanatical_mechanists
+		 force_remove_civic = civic_chosen_of_the_shroud
+		 force_remove_civic = civic_all_seeing_eye
+		 force_remove_civic = civic_infused_node
+		 force_add_civic = civic_galactic_hegemony
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+	
+	option = {
+	     name = doa_ascension_event.23.b
+		 trigger = {
+		      owner = {
+			     NOT = {
+		          has_authority = auth_hive_mind
+		          has_authority = auth_machine_intelligence
+				 }
+		      }
+		 }
+		 custom_tooltip = architects_of_gaia
+		 hidden_effect = {
+		 owner = {
+		 force_remove_civic = civic_galactic_hegemony
+		 force_remove_civic = civic_architects_of_gaia
+		 force_remove_civic = civic_automated_society
+		 force_remove_civic = civic_wonders_in_the_void
+		 force_remove_civic = civic_industrial_behemoth
+		 force_remove_civic = civic_galactic_intelligence_agency
+		 force_remove_civic = civic_economic_powerhouse
+		 force_remove_civic = civic_fanatical_mechanists
+		 force_remove_civic = civic_chosen_of_the_shroud
+		 force_remove_civic = civic_all_seeing_eye
+		 force_remove_civic = civic_infused_node
+		 force_add_civic = civic_architects_of_gaia
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+	
+	option = {
+	     name = doa_ascension_event.23.c
+		 custom_tooltip = automated_society
+		 hidden_effect = {
+		 owner = {
+		 force_remove_civic = civic_galactic_hegemony
+		 force_remove_civic = civic_architects_of_gaia
+		 force_remove_civic = civic_automated_society
+		 force_remove_civic = civic_wonders_in_the_void
+		 force_remove_civic = civic_industrial_behemoth
+		 force_remove_civic = civic_galactic_intelligence_agency
+		 force_remove_civic = civic_economic_powerhouse
+		 force_remove_civic = civic_fanatical_mechanists
+		 force_remove_civic = civic_chosen_of_the_shroud
+		 force_remove_civic = civic_all_seeing_eye
+		 force_remove_civic = civic_infused_node
+		 force_add_civic = civic_automated_society
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+	
+	option = {
+	     name = doa_ascension_event.23.d
+		 custom_tooltip = wonders_in_the_void
+		 hidden_effect = {
+		 owner = {
+		 force_remove_civic = civic_galactic_hegemony
+		 force_remove_civic = civic_architects_of_gaia
+		 force_remove_civic = civic_automated_society
+		 force_remove_civic = civic_wonders_in_the_void
+		 force_remove_civic = civic_industrial_behemoth
+		 force_remove_civic = civic_galactic_intelligence_agency
+		 force_remove_civic = civic_economic_powerhouse
+		 force_remove_civic = civic_fanatical_mechanists
+		 force_remove_civic = civic_chosen_of_the_shroud
+		 force_remove_civic = civic_all_seeing_eye
+		 force_remove_civic = civic_infused_node
+		 force_add_civic = civic_wonders_in_the_void
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+	
+	option = {
+	     name = doa_ascension_event.23.e
+		 custom_tooltip = industrial_behemoth
+		 hidden_effect = {
+		 owner = {
+		 force_remove_civic = civic_galactic_hegemony
+		 force_remove_civic = civic_architects_of_gaia
+		 force_remove_civic = civic_automated_society
+		 force_remove_civic = civic_wonders_in_the_void
+		 force_remove_civic = civic_industrial_behemoth
+		 force_remove_civic = civic_galactic_intelligence_agency
+		 force_remove_civic = civic_economic_powerhouse
+		 force_remove_civic = civic_fanatical_mechanists
+		 force_remove_civic = civic_chosen_of_the_shroud
+		 force_remove_civic = civic_all_seeing_eye
+		 force_remove_civic = civic_infused_node
+		 force_add_civic = civic_industrial_behemoth
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+	
+	option = {
+	     name = doa_ascension_event.23.f
+		 trigger = {
+		      owner = {
+			     NOT = {
+		          has_authority = auth_hive_mind
+		          has_authority = auth_machine_intelligence
+				 }
+		      }
+		 }
+		 custom_tooltip = galactic_intelligence_agency
+		 hidden_effect = {
+		 owner = {
+		 force_remove_civic = civic_galactic_hegemony
+		 force_remove_civic = civic_architects_of_gaia
+		 force_remove_civic = civic_automated_society
+		 force_remove_civic = civic_wonders_in_the_void
+		 force_remove_civic = civic_industrial_behemoth
+		 force_remove_civic = civic_galactic_intelligence_agency
+		 force_remove_civic = civic_economic_powerhouse
+		 force_remove_civic = civic_fanatical_mechanists
+		 force_remove_civic = civic_chosen_of_the_shroud
+		 force_remove_civic = civic_all_seeing_eye
+		 force_remove_civic = civic_infused_node
+		 force_add_civic = civic_galactic_intelligence_agency
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+	
+	option = {
+	     name = doa_ascension_event.23.g
+		 trigger = {
+		      owner = {
+			     NOT = {
+		          has_authority = auth_hive_mind
+		          has_authority = auth_machine_intelligence
+				 }
+		      }
+		 }
+		 custom_tooltip = economic_powerhouse
+		 hidden_effect = {
+		 owner = {
+		 force_remove_civic = civic_galactic_hegemony
+		 force_remove_civic = civic_architects_of_gaia
+		 force_remove_civic = civic_automated_society
+		 force_remove_civic = civic_wonders_in_the_void
+		 force_remove_civic = civic_industrial_behemoth
+		 force_remove_civic = civic_galactic_intelligence_agency
+		 force_remove_civic = civic_economic_powerhouse
+		 force_remove_civic = civic_fanatical_mechanists
+		 force_remove_civic = civic_chosen_of_the_shroud
+		 force_remove_civic = civic_all_seeing_eye
+		 force_remove_civic = civic_infused_node
+		 force_add_civic = civic_economic_powerhouse
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+	
+	option = {
+	     name = doa_ascension_event.23.h
+		 trigger = {
+		      owner = {
+			    has_authority = auth_hive_mind
+				}
+		 }
+		 custom_tooltip = all_seeing_eye
+		 hidden_effect = {
+		 owner = {
+		 force_remove_civic = civic_galactic_hegemony
+		 force_remove_civic = civic_architects_of_gaia
+		 force_remove_civic = civic_automated_society
+		 force_remove_civic = civic_wonders_in_the_void
+		 force_remove_civic = civic_industrial_behemoth
+		 force_remove_civic = civic_galactic_intelligence_agency
+		 force_remove_civic = civic_economic_powerhouse
+		 force_remove_civic = civic_fanatical_mechanists
+		 force_remove_civic = civic_chosen_of_the_shroud
+		 force_remove_civic = civic_all_seeing_eye
+		 force_remove_civic = civic_infused_node
+		 force_add_civic = civic_all_seeing_eye
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+	
+	option = {
+	     name = doa_ascension_event.23.i
+		 trigger = {
+		      owner = {
+			    has_authority = auth_machine_intelligence
+				}
+		 }
+		 custom_tooltip = infused_node
+		 hidden_effect = {
+		 owner = {
+		 force_remove_civic = civic_galactic_hegemony
+		 force_remove_civic = civic_architects_of_gaia
+		 force_remove_civic = civic_automated_society
+		 force_remove_civic = civic_wonders_in_the_void
+		 force_remove_civic = civic_industrial_behemoth
+		 force_remove_civic = civic_galactic_intelligence_agency
+		 force_remove_civic = civic_economic_powerhouse
+		 force_remove_civic = civic_fanatical_mechanists
+		 force_remove_civic = civic_chosen_of_the_shroud
+		 force_remove_civic = civic_all_seeing_eye
+		 force_remove_civic = civic_infused_node
+		 force_add_civic = civic_infused_node
+		 set_government_cooldown = no
+	     }
+		 }
+	}
+}
+
+################################################
+### Notification for new galactic ascendancy ###
+################################################
+
+country_event = {
+	id = doa_ascension_event.30
+	title = doa_ascension_event.30.name
+	desc = doa_ascension_event.30.desc
+	picture = GFX_evt_fallen_empire
+	show_sound = event_alien_signal
+	location = from
+	is_triggered_only = yes
+
+	option = {
+		name = doa_ascension_event.30.a			
+	}
+}
+
+############################################
+### Notification for new ascended empire ###
+############################################
+
+country_event = {
+	id = doa_ascension_event.31
+	title = doa_ascension_event.31.name
+	desc = doa_ascension_event.31.desc
+	picture = GFX_evt_fallen_empire
+	show_sound = event_alien_signal
+	location = from
+	is_triggered_only = yes
+
+	option = {
+		name = doa_ascension_event.31.a			
+	}
+}
+
+##########################################################################
+##### Fallen empire warn and awakening events for ascension progress #####
+##########################################################################
+
+country_event = {
+	id = doa_ascension_event.40
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	   if = {
+	     limit = {
+		    any_country = {
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+			has_country_flag = fallen_empire_1
+			has_communications = root
+		}
+		owner = {
+		   has_technology = tech_combat_computers_3
+		   has_technology = tech_jump_drive_1
+		   NOT = { has_country_flag = doa_fallen_empire_warning }
+		}
+		}
+		country_event = { id = doa_ascension_event.41 days = 20 random = 15 }
+		set_country_flag = doa_fallen_empire_warning
+	  }
+	  
+	  if = {
+	     limit = {
+		    any_country = {
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+			has_country_flag = fallen_empire_2
+			has_communications = root
+		}
+		owner = {
+		OR = {
+		   has_authority = auth_machine_intelligence
+		   has_active_tradition = tr_synthetics_finish
+		   }
+		   NOT = { has_relic = r_severed_head }
+		   NOT = { has_country_flag = doa_fallen_empire_warning }
+		}
+		}
+		country_event = { id = doa_ascension_event.48 days = 20 random = 15 }
+		set_country_flag = doa_fallen_empire_warning
+	  }
+	  
+	  if = {
+	     limit = {
+		    any_country = {
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+			has_country_flag = fallen_empire_3
+			has_communications = root
+		}
+		owner = {
+		OR = {
+		   has_policy_flag = purge_allowed
+		   has_policy_flag = slavery_allowed
+		   has_valid_civic = civic_fanatic_purifiers
+		   has_valid_civic  = civic_machine_terminator
+		   has_valid_civic  = civic_hive_devouring_swarm
+		   has_ascension_perk = ap_become_the_crisis
+		   }
+		   NOT = { has_ethic = ethic_fanatic_xenophile }
+		   NOT = { has_country_flag = doa_fallen_empire_warning }
+		}
+		}
+		country_event = { id = doa_ascension_event.55 days = 20 random = 15 }
+		set_country_flag = doa_fallen_empire_warning
+	  }
+	  
+	  if = {
+	     limit = {
+		    any_country = {
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+			has_country_flag = fallen_empire_4
+			has_communications = root
+		}
+		owner = {
+		   NOT = { has_country_flag = doa_fallen_empire_warning }
+		}
+		}
+		country_event = { id = doa_ascension_event.62 days = 20 random = 15 }
+		set_country_flag = doa_fallen_empire_warning
+	  }
+	  
+	  if = {
+	     limit = {
+		    owner = {
+		      NOT = { has_country_flag = doa_fallen_empire_warning }
+		    }
+		 }
+		country_event = { id = doa_ascension_event.69 days = 20 random = 15 }
+	  }
+   }
+}
+
+###################################################################################
+###                                 materialist                                ####
+###################################################################################
+
+################################
+### materialist hidden event ###
+################################
+
+country_event = {
+	id = doa_ascension_event.41
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	  if = {
+	    limit = {
+		   NOT = {
+		     has_valid_civic = civic_pompous_purists
+		   }
+		}
+	     random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_1
+				has_communications = root
+			}
+			save_event_target_as = doa_materialist_warner
+		}
+		country_event = { id = doa_ascension_event.42 }
+	  }
+	  if = {
+	    limit = {
+		     has_valid_civic = civic_pompous_purists
+		}
+	    set_country_flag = doa_refused_materialist_demands
+		set_country_flag = doa_refused_materialist_call
+	  }
+    }
+}
+		
+	
+	
+##############################
+### materialist warn event ###
+##############################
+
+
+country_event = {
+	id = doa_ascension_event.42
+	title = doa_ascension_event.42.name
+	desc = doa_ascension_event.42.desc
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+
+	picture_event_data = {
+		portrait = event_target:doa_materialist_warner
+		room = event_target:doa_materialist_warner
+		planet_background = event_target:doa_materialist_warner
+		city_level = event_target:doa_materialist_warner
+		graphical_culture = event_target:doa_materialist_warner
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = doa_ascension_event.42.a
+		owner = {
+		   set_country_flag = doa_refused_materialist_demands
+		}
+		ai_chance = {
+		factor = 10
+		   modifier = {
+		   factor = 1
+		   fleet_power > 200000
+		   }
+		}   
+	}
+	
+	option = {
+		name = doa_ascension_event.42.b
+		trigger = {
+		   NOR = {
+		   has_valid_civic = civic_fanatic_purifiers
+		   has_valid_civic = civic_hive_devouring_swarm
+		   has_valid_civic = civic_machine_terminator
+		   }
+		}   
+		tooltip = {
+			event_target:doa_materialist_warner = {
+				add_opinion_modifier = {
+					who = root
+					modifier = opinion_accepted_fallen_empire_request
+				}
+			}
+		}
+		hidden_effect = {
+		owner = {
+		    country_event = { id = doa_ascension_event.43 }
+		}	
+	    event_target:doa_materialist_warner = {
+			 country_event = { id = doa_ascension_event.47 }
+	    }
+		}
+		ai_chance = {
+		factor = 5
+		   modifier = {
+		   factor = 20
+		   fleet_power < 200000
+		   }
+		}
+	}
+}
+
+##############################################
+### signing treaty with materialist empire ###
+##############################################
+
+country_event = {
+	id = doa_ascension_event.43
+	title = doa_ascension_event.43.name
+	desc = doa_ascension_event.43.desc
+	picture = GFX_evt_signing
+	show_sound = event_hand_shake
+	location = from
+	is_triggered_only = yes
+	
+	immediate = {
+	  set_country_flag = doa_complied_to_materialist_demands
+	}  
+
+	option = {
+		name = doa_ascension_event.43.a
+		add_modifier = {
+		     modifier = doa_accepted_materialist_demands
+	    }	
+	}
+}
+
+###############################################
+### materialist awakens because you refused ###
+###############################################
+
+country_event = {
+	id = doa_ascension_event.44
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	    owner = {
+		remove_country_flag = doa_refused_materialist_demands
+		}
+		if = {
+		  limit = {
+		    exists = event_target:doa_materialist_warner
+		  }	
+		event_target:doa_materialist_warner = {
+			 country_event = { id = fallen_empires_awakening.3 } 
+	    }
+		
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			country_event = { id = doa_ascension_event.45 }
+		}
+		observer_event = { id = observer.73 }
+		owner = {
+		country_event = { id = doa_ascension_event.46 days = 30 random = 15 }
+		}
+		}
+	}
+}
+
+##############################################
+### notification for materialist awakening ###
+##############################################
+
+country_event = {
+	id = doa_ascension_event.45
+	title = doa_ascension_event.45.name
+	desc = doa_ascension_event.45.desc
+	picture = GFX_evt_fallen_empire
+	show_sound = event_alien_signal
+	location = from
+
+	is_triggered_only = yes
+
+	option = {
+		name = doa_ascension_event.45.a
+	}
+	option = {
+		name = doa_ascension_event.45.b
+	}
+}
+
+#################################################
+### awakened materialists declares war on you ###
+#################################################
+
+country_event = {
+	id = doa_ascension_event.46
+	title = doa_ascension_event.46.name
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	
+	desc = {
+	  trigger = {
+	     NOR = {
+		 has_country_flag = doa_refused_materialist_call
+		 has_country_flag = doa_broke_treaty
+		 }
+	  }
+	  text = doa_ascension_event.46.desc
+	}
+	desc = {
+	  trigger = {
+		 has_country_flag = doa_refused_materialist_call
+	  }
+	  text = doa_ascension_event.46.desc.1
+	}
+	desc = {
+	  trigger = {
+		 has_country_flag = doa_broke_treaty
+	  }
+	  text = doa_ascension_event.46.desc.2
+	}
+	
+
+	picture_event_data = {
+		portrait = event_target:doa_materialist_warner
+		room = event_target:doa_materialist_warner
+		planet_background = event_target:doa_materialist_warner
+		city_level = event_target:doa_materialist_warner
+		graphical_culture = event_target:doa_materialist_warner
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = doa_ascension_event.46.a
+		event_target:doa_materialist_warner = {
+			declare_war = {
+				target = From
+				attacker_war_goal = "wg_ae_domination"
+			}
+		}
+	}
+}
+
+
+######################################################
+### fallen materialists gains fleet from accepting ###
+######################################################
+
+country_event = {
+	id = doa_ascension_event.47
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		capital_scope = {
+			create_doa_stabilized_fleet = yes
+		}
+	}
+}
+
+####################################################################################
+###                                 spiritualist                                ####
+####################################################################################
+	
+#################################
+### spiritualist hidden event ###
+#################################
+
+country_event = {
+	id = doa_ascension_event.48
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	  if = {
+	    limit = {
+		   NOT = {
+		     has_valid_civic = civic_pompous_purists
+		   }
+		}
+	     random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_2
+				has_communications = root
+			}
+			save_event_target_as = doa_spiritualist_warner
+		}
+		country_event = { id = doa_ascension_event.49 }
+	  }
+	  if = {
+	    limit = {
+		     has_valid_civic = civic_pompous_purists
+		}
+	    set_country_flag = doa_refused_spiritualist_demands
+		set_country_flag = doa_refused_spiritualist_call
+	  }
+    }
+}
+
+###############################
+### spiritualist warn event ###
+###############################
+
+
+country_event = {
+	id = doa_ascension_event.49
+	title = doa_ascension_event.49.name
+	desc = doa_ascension_event.49.desc
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+
+	picture_event_data = {
+		portrait = event_target:doa_spiritualist_warner
+		room = event_target:doa_spiritualist_warner
+		planet_background = event_target:doa_spiritualist_warner
+		city_level = event_target:doa_spiritualist_warner
+		graphical_culture = event_target:doa_spiritualist_warner
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = doa_ascension_event.49.a
+		owner = {
+		   set_country_flag = doa_refused_spiritualist_demands
+		}
+		ai_chance = {
+		factor = 10
+		   modifier = {
+		   factor = 1
+		   fleet_power > 200000
+		   }
+		}	
+	}
+	
+	option = {
+		name = doa_ascension_event.49.b
+		trigger = {
+		   NOR = {
+		   has_valid_civic = civic_fanatic_purifiers
+		   has_valid_civic = civic_hive_devouring_swarm
+		   has_valid_civic = civic_machine_terminator
+		   }
+		}
+		tooltip = {
+			event_target:doa_spiritualist_warner = {
+				add_opinion_modifier = {
+					who = root
+					modifier = opinion_accepted_fallen_empire_request
+				}
+			}
+		}
+		hidden_effect = {
+		owner = {
+		    country_event = { id = doa_ascension_event.50 }
+		}	
+	    event_target:doa_spiritualist_warner = {
+			 country_event = { id = doa_ascension_event.54 } ### to do
+	    }
+		}
+		ai_chance = {
+		factor = 5
+		   modifier = {
+		   factor = 20
+		   fleet_power < 200000
+		   }
+		}
+	}
+}
+
+###############################################
+### signing treaty with spiritualist empire ###
+###############################################
+
+country_event = {
+	id = doa_ascension_event.50
+	title = doa_ascension_event.50.name
+	desc = doa_ascension_event.50.desc
+	picture = GFX_evt_signing
+	show_sound = event_hand_shake
+	location = from
+	is_triggered_only = yes
+	
+	immediate = {
+	  set_country_flag = doa_complied_to_spiritualist_demands
+	}  
+
+	option = {
+		name = doa_ascension_event.50.a
+		trigger = {
+		   NOT = {
+		   has_ethic = ethic_gestalt_consciousness
+		   }
+		}   
+		add_modifier = {
+		     modifier = doa_accepted_spiritualist_demands
+	    }	
+	}
+	option = {
+		name = doa_ascension_event.50.b
+		trigger = {
+		   has_ethic = ethic_gestalt_consciousness
+		}   
+		add_modifier = {
+		     modifier = doa_accepted_spiritualist_demands_gestalt
+	    }	
+	}
+}
+
+################################################
+### spiritualist awakens because you refused ###
+################################################
+
+country_event = {
+	id = doa_ascension_event.51
+	hide_window = yes
+	is_triggered_only = yes
+	
+	
+	immediate = {
+	    owner = {
+		remove_country_flag = doa_refused_spiritualist_demands
+		}
+		if = {
+		  limit = {
+		    exists = event_target:doa_spiritualist_warner
+		  }	
+		event_target:doa_spiritualist_warner = {
+			 country_event = { id = fallen_empires_awakening.3 } 
+	    }
+		
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			country_event = { id = doa_ascension_event.52 } ###make new LOC event
+		}
+		observer_event = { id = observer.73 }
+		owner = {
+		country_event = { id = doa_ascension_event.53 days = 30 random = 15 }
+		}
+		}
+	}
+}
+
+###############################################
+### notification for spiritualist awakening ###
+###############################################
+
+country_event = {
+	id = doa_ascension_event.52
+	title = doa_ascension_event.52.name
+	desc = doa_ascension_event.52.desc
+	picture = GFX_evt_fallen_empire
+	show_sound = event_alien_signal
+	location = from
+
+	is_triggered_only = yes
+
+	option = {
+		name = doa_ascension_event.52.a
+	}
+	option = {
+		name = doa_ascension_event.52.b
+	}
+}
+
+#################################################
+### awakened spiritualist declares war on you ###
+#################################################
+
+country_event = {
+	id = doa_ascension_event.53
+	title = doa_ascension_event.53.name
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	
+	desc = {
+	  trigger = {
+	     NOR = {
+		 has_country_flag = doa_refused_spiritualist_call
+		 has_country_flag = doa_broke_treaty
+		 }
+	  }
+	  text = doa_ascension_event.53.desc
+	}
+	desc = {
+	  trigger = {
+		 has_country_flag = doa_refused_spiritualist_call
+	  }
+	  text = doa_ascension_event.53.desc.1
+	}
+	desc = {
+	  trigger = {
+		 has_country_flag = doa_broke_treaty
+	  }
+	  text = doa_ascension_event.53.desc.2
+	}
+
+	picture_event_data = {
+		portrait = event_target:doa_spiritualist_warner
+		room = event_target:doa_spiritualist_warner
+		planet_background = event_target:doa_spiritualist_warner
+		city_level = event_target:doa_spiritualist_warner
+		graphical_culture = event_target:doa_spiritualist_warner
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = doa_ascension_event.53.a
+		event_target:doa_spiritualist_warner = {
+			declare_war = {
+				target = From
+				attacker_war_goal = "wg_ae_domination"
+			}
+		}
+	}
+}
+
+######################################################
+### fallen spiritualist gains fleet from accepting ###
+######################################################
+
+country_event = {
+	id = doa_ascension_event.54
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		capital_scope = {
+			create_doa_stabilized_fleet = yes
+		}
+	}
+}
+
+#################################################################################
+###                                 xenophile                                ####
+#################################################################################
+
+##############################
+### xenophile hidden event ###
+##############################
+
+country_event = {
+	id = doa_ascension_event.55
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	  if = {
+	    limit = {
+		   NOT = {
+		     has_valid_civic = civic_pompous_purists
+		   }
+		}
+	     random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_3
+				has_communications = root
+			}
+			save_event_target_as = doa_xenophile_warner
+		}
+		country_event = { id = doa_ascension_event.56 }
+	  }
+	  if = {
+	    limit = {
+		     has_valid_civic = civic_pompous_purists
+		}
+	    set_country_flag = doa_refused_xenophile_demands
+		set_country_flag = doa_refused_xenophile_call
+	  }
+    }
+}
+
+############################
+### xenophile warn event ###
+############################
+
+
+country_event = {
+	id = doa_ascension_event.56
+	title = doa_ascension_event.56.name
+	desc = doa_ascension_event.56.desc
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+
+	picture_event_data = {
+		portrait = event_target:doa_xenophile_warner
+		room = event_target:doa_xenophile_warner
+		planet_background = event_target:doa_xenophile_warner
+		city_level = event_target:doa_xenophile_warner
+		graphical_culture = event_target:doa_xenophile_warner
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = doa_ascension_event.56.a
+		owner = {
+		   set_country_flag = doa_refused_xenophile_demands
+		}
+		ai_chance = {
+		factor = 10
+		   modifier = {
+		   factor = 1
+		   fleet_power > 200000
+		   }
+		}
+	}
+	
+	option = {
+		name = doa_ascension_event.56.b
+		trigger = {
+		   NOR = {
+		   has_valid_civic = civic_fanatic_purifiers
+		   has_valid_civic = civic_hive_devouring_swarm
+		   has_valid_civic = civic_machine_terminator
+		   }
+		}
+		tooltip = {
+			event_target:doa_xenophile_warner = {
+				add_opinion_modifier = {
+					who = root
+					modifier = opinion_accepted_fallen_empire_request
+				}
+			}
+		}
+		hidden_effect = {
+		owner = {
+		    country_event = { id = doa_ascension_event.57 }
+		}	
+	    event_target:doa_xenophile_warner = {
+			 country_event = { id = doa_ascension_event.61 } ### to do
+	    }
+		}
+		ai_chance = {
+		factor = 5
+		   modifier = {
+		   factor = 20
+		   fleet_power < 200000
+		   }
+		}
+	}
+}
+
+
+############################################
+### signing treaty with xenophile empire ###
+############################################
+
+country_event = {
+	id = doa_ascension_event.57
+	title = doa_ascension_event.57.name
+	desc = doa_ascension_event.57.desc
+	picture = GFX_evt_signing
+	show_sound = event_hand_shake
+	location = from
+	is_triggered_only = yes
+	
+	immediate = {
+	  set_country_flag = doa_complied_to_xenophile_demands
+	}  
+
+	option = {
+		name = doa_ascension_event.57.a
+		add_modifier = {
+		     modifier = doa_accepted_xenophile_demands
+	    }
+		fallen_empire_stop_atrocities_effect = yes
+	}
+}
+
+#############################################
+### xenophile awakens because you refused ###
+#############################################
+
+country_event = {
+	id = doa_ascension_event.58
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	    owner = {
+		remove_country_flag = doa_refused_xenophile_demands
+		}
+		if = {
+		  limit = {
+		    exists = event_target:doa_xenophile_warner
+		  }
+		event_target:doa_xenophile_warner = {
+			 country_event = { id = fallen_empires_awakening.3 } 
+	    }
+		
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			country_event = { id = doa_ascension_event.59 } ###make new LOC event
+		}
+		observer_event = { id = observer.73 }
+		owner = {
+		country_event = { id = doa_ascension_event.60 days = 30 random = 15 }
+		}
+		}
+	}
+}
+
+############################################
+### notification for xenophile awakening ###
+############################################
+
+country_event = {
+	id = doa_ascension_event.59
+	title = doa_ascension_event.59.name
+	desc = doa_ascension_event.59.desc
+	picture = GFX_evt_fallen_empire
+	show_sound = event_alien_signal
+	location = from
+
+	is_triggered_only = yes
+
+	option = {
+		name = doa_ascension_event.59.a
+	}
+	option = {
+		name = doa_ascension_event.59.b
+	}
+}
+
+##############################################
+### awakened xenophile declares war on you ###
+##############################################
+
+country_event = {
+	id = doa_ascension_event.60
+	title = doa_ascension_event.60.name
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	
+	desc = {
+	  trigger = {
+	     NOR = {
+		 has_country_flag = doa_refused_xenophile_call
+		 has_country_flag = doa_broke_treaty
+		 }
+	  }
+	  text = doa_ascension_event.60.desc
+	}
+	desc = {
+	  trigger = {
+		 has_country_flag = doa_refused_xenophile_call
+	  }
+	  text = doa_ascension_event.60.desc.1
+	}
+	desc = {
+	  trigger = {
+		 has_country_flag = doa_broke_treaty
+	  }
+	  text = doa_ascension_event.60.desc.2
+	}
+
+	picture_event_data = {
+		portrait = event_target:doa_xenophile_warner
+		room = event_target:doa_xenophile_warner
+		planet_background = event_target:doa_xenophile_warner
+		city_level = event_target:doa_xenophile_warner
+		graphical_culture = event_target:doa_xenophile_warner
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = doa_ascension_event.60.a
+		event_target:doa_xenophile_warner = {
+			declare_war = {
+				target = From
+				attacker_war_goal = "wg_ae_domination"
+			}
+		}
+	}
+}
+
+###################################################
+### fallen xenophile gains fleet from accepting ###
+###################################################
+
+country_event = {
+	id = doa_ascension_event.61
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		capital_scope = {
+			create_doa_stabilized_fleet = yes
+		}
+	}
+}
+
+#################################################################################
+###                                 xenophobe                                ####
+#################################################################################
+
+##############################
+### xenophobe hidden event ###
+##############################
+
+country_event = {
+	id = doa_ascension_event.62
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	  if = {
+	    limit = {
+		   NOT = {
+		     has_valid_civic = civic_pompous_purists
+		   }
+		}
+	     random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_4
+				has_communications = root
+			}
+			save_event_target_as = doa_xenophobe_warner
+		}
+		country_event = { id = doa_ascension_event.63 }
+	  }
+	  if = {
+	    limit = {
+		     has_valid_civic = civic_pompous_purists
+		}
+	    set_country_flag = doa_refused_xenophobe_demands
+		set_country_flag = doa_refused_xenophobe_call
+	  }
+    }
+}
+
+############################
+### xenophobe warn event ###
+############################
+
+
+country_event = {
+	id = doa_ascension_event.63
+	title = doa_ascension_event.63.name
+	desc = doa_ascension_event.63.desc
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+
+	picture_event_data = {
+		portrait = event_target:doa_xenophobe_warner
+		room = event_target:doa_xenophobe_warner
+		planet_background = event_target:doa_xenophobe_warner
+		city_level = event_target:doa_xenophobe_warner
+		graphical_culture = event_target:doa_xenophobe_warner
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = doa_ascension_event.63.a
+		owner = {
+		   set_country_flag = doa_refused_xenophobe_demands
+		}
+		ai_chance = {
+		factor = 10
+		   modifier = {
+		   factor = 1
+		   fleet_power > 200000
+		   }
+		}
+	}
+	
+	option = {
+		name = doa_ascension_event.63.b
+		trigger = {
+		   NOR = {
+		   has_valid_civic = civic_fanatic_purifiers
+		   has_valid_civic = civic_hive_devouring_swarm
+		   has_valid_civic = civic_machine_terminator
+		   }
+		}
+		hidden_effect = {
+		owner = {
+		    country_event = { id = doa_ascension_event.64 }
+		}	
+	    event_target:doa_xenophobe_warner = {
+			 country_event = { id = doa_ascension_event.68 } ### to do
+	    }
+		}
+		ai_chance = {
+		factor = 5
+		   modifier = {
+		   factor = 20
+		   fleet_power < 200000
+		   }
+		}
+	}
+}
+
+############################################
+### signing treaty with xenophobe empire ###
+############################################
+
+country_event = {
+	id = doa_ascension_event.64
+	title = doa_ascension_event.64.name
+	desc = doa_ascension_event.64.desc
+	picture = GFX_evt_signing
+	show_sound = event_hand_shake
+	location = from
+	is_triggered_only = yes
+	
+	immediate = {
+	  set_country_flag = doa_complied_to_xenophobe_demands
+	}  
+
+	option = {
+		name = doa_ascension_event.64.a
+		add_modifier = {
+		     modifier = doa_accepted_xenophobe_demands
+	    }
+	}
+}
+
+#############################################
+### xenophobe awakens because you refused ###
+#############################################
+
+country_event = {
+	id = doa_ascension_event.65
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	    owner = {
+		remove_country_flag = doa_refused_xenophobe_demands
+		}
+		if = {
+		  limit = {
+		    exists = event_target:doa_xenophobe_warner
+		  }
+		event_target:doa_xenophobe_warner = {
+			 country_event = { id = fallen_empires_awakening.3 } 
+	    }
+		
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			country_event = { id = doa_ascension_event.66 } ###make new LOC event
+		}
+		observer_event = { id = observer.73 }
+		owner = {
+		country_event = { id = doa_ascension_event.67 days = 30 random = 15 }
+		}
+	    }
+    }
+}	
+
+############################################
+### notification for xenophobe awakening ###
+############################################
+
+country_event = {
+	id = doa_ascension_event.66
+	title = doa_ascension_event.66.name
+	desc = doa_ascension_event.66.desc
+	picture = GFX_evt_fallen_empire
+	show_sound = event_alien_signal
+	location = from
+
+	is_triggered_only = yes
+
+	option = {
+		name = doa_ascension_event.66.a
+	}
+	option = {
+		name = doa_ascension_event.66.b
+	}
+}
+
+##############################################
+### awakened xenophobe declares war on you ###
+##############################################
+
+country_event = {
+	id = doa_ascension_event.67
+	title = doa_ascension_event.67.name
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	
+	desc = {
+	  trigger = {
+	     NOR = {
+		 has_country_flag = doa_refused_xenophobe_call
+		 has_country_flag = doa_broke_treaty
+		 }
+	  }
+	  text = doa_ascension_event.67.desc
+	}
+	desc = {
+	  trigger = {
+		 has_country_flag = doa_refused_xenophobe_call
+	  }
+	  text = doa_ascension_event.67.desc.1
+	}
+	desc = {
+	  trigger = {
+		 has_country_flag = doa_broke_treaty
+	  }
+	  text = doa_ascension_event.67.desc.2
+	}
+
+	picture_event_data = {
+		portrait = event_target:doa_xenophobe_warner
+		room = event_target:doa_xenophobe_warner
+		planet_background = event_target:doa_xenophobe_warner
+		city_level = event_target:doa_xenophobe_warner
+		graphical_culture = event_target:doa_xenophobe_warner
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = doa_ascension_event.67.a
+		event_target:doa_xenophobe_warner = {
+			declare_war = {
+				target = From
+				attacker_war_goal = "wg_ae_domination"
+			}
+		}
+	}
+}
+
+###################################################
+### fallen xenophobe gains fleet from accepting ###
+###################################################
+
+country_event = {
+	id = doa_ascension_event.68
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		capital_scope = {
+			create_doa_stabilized_fleet = yes
+		}
+	}
+}
+
+##################################################################################
+###                                 randomized                                ####
+##################################################################################
+
+###############################
+### randomized hidden event ###
+###############################
+
+country_event = {
+	id = doa_ascension_event.69
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	  if = {
+	    limit = {
+		   NOT = {
+		     has_valid_civic = civic_pompous_purists
+		   }
+		}
+	     random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				NOT = { has_ethic = ethic_gestalt_consciousness }
+				NOT = { is_at_war_with = root }
+				has_communications = root
+			}
+			save_event_target_as = doa_randomized_warner
+		}
+		country_event = { id = doa_ascension_event.70 }
+	  }
+	  if = {
+	    limit = {
+		     has_valid_civic = civic_pompous_purists
+		}
+		random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				NOT = { has_ethic = ethic_gestalt_consciousness }
+				NOT = { is_at_war_with = root }
+				has_communications = root
+			}
+			save_event_target_as = doa_randomized_warner
+		}
+	    country_event = { id = doa_ascension_event.87 }
+	  }
+    }
+}
+
+#############################
+### randomized warn event ###
+#############################
+
+
+country_event = {
+	id = doa_ascension_event.70
+	title = doa_ascension_event.70.name
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	
+	desc = {
+	   trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_1
+		 }
+	   }
+	   text = doa_ascension_event.70.desc   ### materialist warner
+	}
+	desc = {
+	   trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_2
+		 }
+		 NOR = {
+		 has_authority = auth_machine_intelligence
+		 has_active_tradition = tr_synthetics_finish
+		 }
+	   }
+	   text = doa_ascension_event.70.desc.1   ### spiritualist non-machine
+	}
+	desc = {
+	   trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_2
+		 }
+		 OR = {
+		 has_authority = auth_machine_intelligence
+		 has_active_tradition = tr_synthetics_finish
+		 }
+	   }
+	   text = doa_ascension_event.70.desc.2   ### spiritualist machine
+	}
+	desc = {
+	   trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_3
+		 }
+		 NOT = {
+		 allows_purge = yes
+		 }
+	   }
+	   text = doa_ascension_event.70.desc.3   ### xenophile no-purge
+	}
+	desc = {
+	   trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_3
+		 }
+		 allows_purge = yes
+	   }
+	   text = doa_ascension_event.70.desc.4   ### xenophile purge
+	}
+	desc = {
+	   trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_4
+		 }
+	   }
+	   text = doa_ascension_event.70.desc.5   ### xenophobe
+	}
+	
+	immediate = {
+	  if = {
+	   limit = {
+	    event_target:doa_randomized_warner = {
+		has_country_flag = fallen_empire_1
+		}
+		}
+		owner = {
+		set_country_flag = materialist_warn_saving
+		}
+	  }
+	  if = {
+	  limit = {
+	    event_target:doa_randomized_warner = {
+		has_country_flag = fallen_empire_2
+		}
+		}
+		owner = {
+		set_country_flag = spiritualist_warn_saving
+		}
+	  }
+	  if = {
+	  limit = {
+	    event_target:doa_randomized_warner = {
+		has_country_flag = fallen_empire_3
+		}
+		}
+		owner = {
+		set_country_flag = xenophile_warn_saving
+		}
+	  }
+	  if = {
+	  limit = {
+	    event_target:doa_randomized_warner = {
+		has_country_flag = fallen_empire_4
+		}
+		}
+		owner = {
+		set_country_flag = xenophobe_warn_saving
+		}
+	  }
+	}
+
+	picture_event_data = {
+		portrait = event_target:doa_randomized_warner
+		room = event_target:doa_randomized_warner
+		planet_background = event_target:doa_randomized_warner
+		city_level = event_target:doa_randomized_warner
+		graphical_culture = event_target:doa_randomized_warner
+	}
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = doa_ascension_event.70.a
+		hidden_effect = {
+		owner = {
+		   set_country_flag = doa_refused_randomized_demands
+		}
+		}
+		ai_chance = {
+		factor = 10
+		   modifier = {
+		   factor = 1
+		   fleet_power > 200000
+		   }
+		}
+	}
+	
+	option = {
+		name = doa_ascension_event.70.b
+		trigger = {
+		   NOT = {
+		      event_target:doa_randomized_warner = {
+		      has_country_flag = fallen_empire_4
+		      }
+		   }
+		   NOR = {
+		     has_valid_civic = civic_fanatic_purifiers
+			 has_valid_civic = civic_hive_devouring_swarm
+			 has_valid_civic = civic_machine_terminator
+		   } 
+		}
+		tooltip = {
+			event_target:doa_randomized_warner = {
+				add_opinion_modifier = {
+					who = root
+					modifier = opinion_accepted_fallen_empire_request
+				}
+			}
+		}
+		hidden_effect = {
+		owner = {
+		    country_event = { id = doa_ascension_event.71 }
+		}	
+	    event_target:doa_randomized_warner = {
+			 country_event = { id = doa_ascension_event.75 }
+	    }
+		}
+		ai_chance = {
+		factor = 5
+		   modifier = {
+		   factor = 20
+		   fleet_power < 200000
+		   }
+		}
+	}
+	option = {
+		name = doa_ascension_event.70.c
+		trigger = {
+		      event_target:doa_randomized_warner = {
+		      has_country_flag = fallen_empire_4
+		      }
+			 NOR = {
+		     has_valid_civic = civic_fanatic_purifiers
+			 has_valid_civic = civic_hive_devouring_swarm
+			 has_valid_civic = civic_machine_terminator
+		     }
+		}
+		hidden_effect = {
+		owner = {
+		    country_event = { id = doa_ascension_event.71 }
+		}	
+	    event_target:doa_randomized_warner = {
+			 country_event = { id = doa_ascension_event.75 }
+	    }
+		}
+		ai_chance = {
+		factor = 5
+		   modifier = {
+		   factor = 20
+		   fleet_power < 200000
+		   }
+		}
+	}
+}
+
+#############################################
+### signing treaty with randomized empire ###
+#############################################
+
+country_event = {
+	id = doa_ascension_event.71
+	title = doa_ascension_event.71.name
+	picture = GFX_evt_signing
+	show_sound = event_hand_shake
+	location = from
+	is_triggered_only = yes
+	
+	desc = {
+	   trigger = {
+	      event_target:doa_randomized_warner = {
+		  has_country_flag = fallen_empire_1
+		  }
+	    }
+		text = doa_ascension_event.71.desc
+	}
+	desc = {
+	   trigger = {
+	      event_target:doa_randomized_warner = {
+		  has_country_flag = fallen_empire_2
+		  }
+	    }
+		text = doa_ascension_event.71.desc.1
+	}
+	desc = {
+	   trigger = {
+	      event_target:doa_randomized_warner = {
+		  has_country_flag = fallen_empire_3
+		  }
+	    }
+		text = doa_ascension_event.71.desc.2
+	}
+	desc = {
+	   trigger = {
+	      event_target:doa_randomized_warner = {
+		  has_country_flag = fallen_empire_4
+		  }
+	    }
+		text = doa_ascension_event.71.desc.3
+	}
+	   
+	
+	immediate = {
+	  if = {
+	   limit = {
+	    event_target:doa_randomized_warner = {
+		has_country_flag = fallen_empire_1
+		}
+		}
+		owner = {
+		set_country_flag = doa_complied_to_materialist_demands
+		}
+	  }
+	  if = {
+	  limit = {
+	    event_target:doa_randomized_warner = {
+		has_country_flag = fallen_empire_2
+		}
+		}
+		owner = {
+		set_country_flag = doa_complied_to_spiritualist_demands
+		}
+	  }
+	  if = {
+	  limit = {
+	    event_target:doa_randomized_warner = {
+		has_country_flag = fallen_empire_3
+		}
+		}
+		owner = {
+		set_country_flag = doa_complied_to_xenophile_demands
+		}
+	  }
+	  if = {
+	  limit = {
+	    event_target:doa_randomized_warner = {
+		has_country_flag = fallen_empire_4
+		}
+		}
+		owner = {
+		set_country_flag = doa_complied_to_xenophobe_demands
+		}
+	  }
+	}  
+
+	option = {
+		name = doa_ascension_event.71.a
+		trigger = {
+		has_country_flag = doa_complied_to_materialist_demands
+		}
+		add_modifier = {
+		     modifier = doa_accepted_materialist_demands
+	    }
+	}
+	option = {
+		name = doa_ascension_event.71.b
+		trigger = {
+		   has_country_flag = doa_complied_to_spiritualist_demands
+		   NOT = {
+		   has_ethic = ethic_gestalt_consciousness
+		   }
+		}   
+		add_modifier = {
+		     modifier = doa_accepted_spiritualist_demands
+	    }
+	}
+	option = {
+		name = doa_ascension_event.71.c
+		trigger = {
+		has_country_flag = doa_complied_to_spiritualist_demands
+		has_ethic = ethic_gestalt_consciousness
+		}
+		add_modifier = {
+		     modifier = doa_accepted_spiritualist_demands_gestalt
+	    }
+	}
+	option = {
+		name = doa_ascension_event.71.d
+		trigger = {
+		has_country_flag = doa_complied_to_xenophile_demands
+		   NOT = {
+		   allows_purge = yes
+		   }
+		}
+		add_modifier = {
+		     modifier = doa_accepted_xenophile_demands
+	    }
+	}
+	option = {
+		name = doa_ascension_event.71.e
+		trigger = {
+		has_country_flag = doa_complied_to_xenophile_demands
+		allows_purge = yes
+		}
+		add_modifier = {
+		     modifier = doa_accepted_xenophile_demands
+	    }
+		fallen_empire_stop_atrocities_effect = yes
+	}
+	option = {
+		name = doa_ascension_event.71.f
+		trigger = {
+		has_country_flag = doa_complied_to_xenophobe_demands
+		}
+		add_modifier = {
+		     modifier = doa_accepted_xenophobe_demands
+	    }
+	}
+}
+
+##############################################
+### randomized awakens because you refused ###
+##############################################
+
+country_event = {
+	id = doa_ascension_event.72
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	    owner = {
+		remove_country_flag = doa_refused_randomized_demands
+		}
+		if = {
+		  limit = {
+		    exists = event_target:doa_randomized_warner
+		  }
+		event_target:doa_randomized_warner = {
+			 country_event = { id = fallen_empires_awakening.3 } 
+	    }
+		
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			country_event = { id = doa_ascension_event.73 } ###make new LOC event
+		}
+		observer_event = { id = observer.73 }
+		owner = {
+		country_event = { id = doa_ascension_event.74 days = 30 random = 15 }
+		}
+	    }
+    }
+}	
+
+#############################################
+### notification for randomized awakening ###
+#############################################
+
+country_event = {
+	id = doa_ascension_event.73
+	title = doa_ascension_event.73.name
+	desc = doa_ascension_event.73.desc
+	picture = GFX_evt_fallen_empire
+	show_sound = event_alien_signal
+	location = from
+
+	is_triggered_only = yes
+
+	option = {
+		name = doa_ascension_event.73.a
+	}
+	option = {
+		name = doa_ascension_event.73.b
+	}
+}
+
+###############################################
+### awakened randomized declares war on you ###
+###############################################
+
+country_event = {
+	id = doa_ascension_event.74
+	title = "TRANSMISSION"
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	
+	desc = {
+	  trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_1
+		 }
+	     NOR = {
+		 has_country_flag = doa_refused_randomized_call
+		 has_country_flag = doa_broke_treaty
+		 }
+	  }
+	  text = doa_ascension_event.74.desc
+	}
+	desc = {
+	  trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_1
+		 }
+		 has_country_flag = doa_refused_randomized_call
+	  }
+	  text = doa_ascension_event.74.desc.1
+	}
+	desc = {
+	  trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_1
+		 }
+		 has_country_flag = doa_broke_treaty
+	  }
+	  text = doa_ascension_event.74.desc.2
+	}
+	desc = {
+	  trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_2
+		 }
+	     NOR = {
+		 has_country_flag = doa_refused_randomized_call
+		 has_country_flag = doa_broke_treaty
+		 }
+	  }
+	  text = doa_ascension_event.74.desc.3
+	}
+	desc = {
+	  trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_2
+		 }
+		 has_country_flag = doa_refused_randomized_call
+	  }
+	  text = doa_ascension_event.74.desc.4
+	}
+	desc = {
+	  trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_2
+		 }
+		 has_country_flag = doa_broke_treaty
+	  }
+	  text = doa_ascension_event.74.desc.5
+	}
+	desc = {
+	  trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_3
+		 }
+	     NOR = {
+		 has_country_flag = doa_refused_randomized_call
+		 has_country_flag = doa_broke_treaty
+		 }
+	  }
+	  text = doa_ascension_event.74.desc.6
+	}
+	desc = {
+	  trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_3
+		 }
+		 has_country_flag = doa_refused_randomized_call
+	  }
+	  text = doa_ascension_event.74.desc.7
+	}
+	desc = {
+	  trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_3
+		 }
+		 has_country_flag = doa_broke_treaty
+	  }
+	  text = doa_ascension_event.74.desc.8
+	}
+	desc = {
+	  trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_4
+		 }
+	     NOR = {
+		 has_country_flag = doa_refused_randomized_call
+		 has_country_flag = doa_broke_treaty
+		 }
+	  }
+	  text = doa_ascension_event.74.desc.9
+	}
+	desc = {
+	  trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_4
+		 }
+		 has_country_flag = doa_refused_randomized_call
+	  }
+	  text = doa_ascension_event.74.desc.10
+	}
+	desc = {
+	  trigger = {
+	     event_target:doa_randomized_warner = {
+		 has_country_flag = fallen_empire_4
+		 }
+		 has_country_flag = doa_broke_treaty
+	  }
+	  text = doa_ascension_event.74.desc.11
+	}
+
+	picture_event_data = {
+		portrait = event_target:doa_randomized_warner
+		room = event_target:doa_randomized_warner
+		planet_background = event_target:doa_randomized_warner
+		city_level = event_target:doa_randomized_warner
+		graphical_culture = event_target:doa_randomized_warner
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = doa_ascension_event.74.a
+		event_target:doa_randomized_warner = {
+			declare_war = {
+				target = From
+				attacker_war_goal = "wg_ae_domination"
+			}
+		}
+	}
+}
+
+####################################################
+### fallen randomized gains fleet from accepting ###
+####################################################
+
+country_event = {
+	id = doa_ascension_event.75
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		capital_scope = {
+			create_doa_stabilized_fleet = yes
+		}
+	}
+}
+
+########################################################################################
+###                                 rescoping events                                ####
+########################################################################################
+
+###########################
+### materialist rescope ###
+###########################
+
+country_event = {
+	id = doa_ascension_event.76
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	     random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_1
+				has_communications = root
+			}
+			save_event_target_as = doa_materialist_warner
+		}
+		country_event = { id = doa_ascension_event.44 }
+	}
+}
+
+############################
+### spiritualist rescope ###
+############################
+
+country_event = {
+	id = doa_ascension_event.77
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	     random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_2
+				has_communications = root
+			}
+			save_event_target_as = doa_spiritualist_warner
+		}
+		country_event = { id = doa_ascension_event.51 }
+	}
+}
+
+#########################
+### xenophile rescope ###
+#########################
+
+country_event = {
+	id = doa_ascension_event.78
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	     random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_3
+				has_communications = root
+			}
+			save_event_target_as = doa_xenophile_warner
+		}
+		country_event = { id = doa_ascension_event.58 }
+	}
+}
+
+#########################
+### xenophobe rescope ###
+#########################
+
+country_event = {
+	id = doa_ascension_event.79
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	     random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_4
+				has_communications = root
+			}
+			save_event_target_as = doa_xenophobe_warner
+		}
+		country_event = { id = doa_ascension_event.65 }
+	}
+}
+
+##########################
+### randomized rescope ###
+##########################
+
+country_event = {
+	id = doa_ascension_event.80
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	   if = {
+	      limit = {
+		    owner = {
+			has_country_flag = materialist_warn_saving
+			}
+		   }
+	     random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_1
+				has_communications = root
+			}
+			save_event_target_as = doa_randomized_warner
+		}
+		country_event = { id = doa_ascension_event.72 }
+	}
+	if = {
+	      limit = {
+		    owner = {
+			has_country_flag = spiritualist_warn_saving
+			}
+		   }
+	     random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_2
+				has_communications = root
+			}
+			save_event_target_as = doa_randomized_warner
+		}
+		country_event = { id = doa_ascension_event.72 }
+	}
+	if = {
+	      limit = {
+		    owner = {
+			has_country_flag = xenophile_warn_saving
+			}
+		   }
+	     random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_3
+				has_communications = root
+			}
+			save_event_target_as = doa_randomized_warner
+		}
+		country_event = { id = doa_ascension_event.72 }
+	}
+	if = {
+	      limit = {
+		    owner = {
+			has_country_flag = xenophobe_warn_saving
+			}
+		   }
+	     random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_4
+				has_communications = root
+			}
+			save_event_target_as = doa_randomized_warner
+		}
+		country_event = { id = doa_ascension_event.72 }
+	}
+	}
+}
+
+country_event = {
+	id = doa_ascension_event.81
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	country_event = { id = doa_ascension_event.23 }
+	}
+}
+
+##################################
+### treaty materialist expired ###
+##################################
+
+country_event = {
+	id = doa_ascension_event.82
+	title = doa_ascension_event.82.name
+	desc = doa_ascension_event.82.desc
+	picture = GFX_evt_grand_speech
+	location = from
+	is_triggered_only = yes
+	
+	trigger = {
+	  owner = {
+	  has_country_flag = doa_complied_to_materialist_demands
+	  }
+	  NOT = {
+	    any_country = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_1
+				has_communications = root
+			}
+	  }
+	}
+	immediate = {
+	  remove_country_flag = doa_complied_to_materialist_demands
+	}  
+	
+	option = {
+		name = doa_ascension_event.82.a
+		remove_modifier = doa_accepted_materialist_demands
+	}
+}
+
+###################################
+### treaty spiritualist expired ###
+###################################
+
+country_event = {
+	id = doa_ascension_event.83
+	title = doa_ascension_event.83.name
+	desc = doa_ascension_event.83.desc
+	picture = GFX_evt_grand_speech
+	location = from
+	is_triggered_only = yes
+	
+	trigger = {
+	  owner = {
+	  has_country_flag = doa_complied_to_spiritualist_demands
+	  }
+	  NOT = {
+	    any_country = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_2
+				has_communications = root
+			}
+	  }
+	}
+	immediate = {
+	  remove_country_flag = doa_complied_to_spiritualist_demands
+	}  
+	
+	option = {
+		name = doa_ascension_event.83.a
+		trigger = {
+		has_modifier = doa_accepted_spiritualist_demands
+		}
+		remove_modifier = doa_accepted_spiritualist_demands
+	}
+	option = {
+		name = doa_ascension_event.83.b
+		trigger = {
+		has_modifier = doa_accepted_spiritualist_demands_gestalt
+		}
+		remove_modifier = doa_accepted_spiritualist_demands_gestalt
+	}
+}
+
+################################
+### treaty xenophile expired ###
+################################
+
+country_event = {
+	id = doa_ascension_event.84
+	title = doa_ascension_event.84.name
+	desc = doa_ascension_event.84.desc
+	picture = GFX_evt_grand_speech
+	location = from
+	is_triggered_only = yes
+	
+	trigger = {
+	  owner = {
+	  has_country_flag = doa_complied_to_xenophile_demands
+	  }
+	  NOT = {
+	    any_country = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_3
+				has_communications = root
+			}
+	  }
+	}
+	immediate = {
+	  remove_country_flag = doa_complied_to_xenophile_demands
+	}  
+	
+	option = {
+		name = doa_ascension_event.84.a
+		remove_modifier = doa_accepted_xenophile_demands
+	}
+}
+
+################################
+### treaty xenophobe expired ###
+################################
+
+country_event = {
+	id = doa_ascension_event.85
+	title = doa_ascension_event.85.name
+	desc = doa_ascension_event.85.desc
+	picture = GFX_evt_grand_speech
+	location = from
+	is_triggered_only = yes
+	
+	trigger = {
+	  owner = {
+	  has_country_flag = doa_complied_to_xenophobe_demands
+	  }
+	  NOT = {
+	    any_country = {
+				is_country_type = fallen_empire
+				has_country_flag = fallen_empire_4
+				has_communications = root
+			}
+	  }
+	}
+	immediate = {
+	  remove_country_flag = doa_complied_to_xenophobe_demands
+	}  
+	
+	option = {
+		name = doa_ascension_event.85.a
+		remove_modifier = doa_accepted_xenophobe_demands
+	}
+}
+
+########################################
+### on action even for treaty expire ###
+########################################
+
+country_event = {
+	id = doa_ascension_event.86
+	title = OK
+	desc = OK
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+			every_country = {
+				country_event = { id = doa_ascension_event.82 days = 5 random = 5 }
+				country_event = { id = doa_ascension_event.83 days = 5 random = 5 }
+				country_event = { id = doa_ascension_event.84 days = 5 random = 5 }
+				country_event = { id = doa_ascension_event.85 days = 5 random = 5 }
+			}
+	}
+}
+
+#####################################
+### purist refusal for randomizer ###
+#####################################
+
+country_event = {
+	id = doa_ascension_event.87
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	  if = {
+	   limit = {
+	    event_target:doa_randomized_warner = {
+		has_country_flag = fallen_empire_1
+		}
+		}
+		owner = {
+		set_country_flag = materialist_warn_saving
+		set_country_flag = doa_refused_randomized_demands
+		set_country_flag = doa_refused_randomized_call
+		}
+	  }
+	  if = {
+	  limit = {
+	    event_target:doa_randomized_warner = {
+		has_country_flag = fallen_empire_2
+		}
+		}
+		owner = {
+		set_country_flag = spiritualist_warn_saving
+		set_country_flag = doa_refused_randomized_demands
+		set_country_flag = doa_refused_randomized_call
+		}
+	  }
+	  if = {
+	  limit = {
+	    event_target:doa_randomized_warner = {
+		has_country_flag = fallen_empire_3
+		}
+		}
+		owner = {
+		set_country_flag = xenophile_warn_saving
+		set_country_flag = doa_refused_randomized_demands
+		set_country_flag = doa_refused_randomized_call
+		}
+	  }
+	  if = {
+	  limit = {
+	    event_target:doa_randomized_warner = {
+		has_country_flag = fallen_empire_4
+		}
+		}
+		owner = {
+		set_country_flag = xenophobe_warn_saving
+		set_country_flag = doa_refused_randomized_demands
+		set_country_flag = doa_refused_randomized_call
+		}
+	  }
+	}
+}
+
+###########################################
+### council agenda for firing ascension ###
+###########################################
+
+country_event = {
+    id = doa_ascension_event.88
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		country_event = { id = doa_ascension_event.1 }
+	}
+}
+
+#####################
+### room redesign ###
+#####################
+
+country_event = {
+	id = doa_ascension_event.90
+	title = doa_ascension_event.90.name
+	desc = doa_ascension_event.90.desc
+	picture = GFX_evt_announcement
+	show_sound = event_cityscape
+	location = from
+	is_triggered_only = yes
+	
+	option = {
+	     name = doa_ascension_event.90.a
+		 owner = {
+		 hidden_effect = {
+			 room_name_override = "personality_fallen_empire_cyan_room"
+		     }
+	     }
+	}
+	option = {
+	     name = doa_ascension_event.90.b
+		 owner = {
+		 hidden_effect = {
+			 room_name_override = "personality_fallen_empire_machine_room"
+		     }
+	     }
+	}
+	option = {
+	     name = doa_ascension_event.90.c
+		 owner = {
+		 hidden_effect = {
+			 room_name_override = "personality_fallen_empire_red_room"
+		     }
+	     }
+	}
+	option = {
+	     name = doa_ascension_event.90.d
+		 owner = {
+		 hidden_effect = {
+			 room_name_override = "personality_fallen_empire_teal_room"
+		     }
+	     }
+	}
+	option = {
+	     name = doa_ascension_event.90.e
+		 owner = {
+		 hidden_effect = {
+			 room_name_override = "personality_fallen_empire_yellow_room"
+		     }
+	     }
+	}
+	option = {
+	     name = doa_ascension_event.90.f
+		 owner = {
+		 hidden_effect = {
+			 room_name_override = "personality_fallen_empire_blue_room"
+		     }
+	     }
+	}
+	option = {
+	     name = doa_ascension_event.90.g
+		 owner = {
+		 hidden_effect = {
+			 room_name_override = "gilded_room"
+		     }
+	     }
+	}
+	option = {
+	     name = doa_ascension_event.90.h
+	}
+}

@@ -1,0 +1,215 @@
+﻿l_english:
+
+tech_dtf_pretech:0 "DTF PreTech"
+tech_dtf_pretech_desc:0 "Preparation for DTF."
+"
+
+tech_dtf_technology_1:0 "DTF Technology Progress - 10%"
+tech_dtf_technology_1_desc:0 "Construction Plan for the Institute within the Time Fault"
+
+tech_dtf_technology_2:0 "DTF Technology Progress - 20%"
+tech_dtf_technology_2_desc:0 "Time Fault In-plant Plan"
+
+tech_dtf_technology_3:0 "DTF Technology Progress - 30%"
+tech_dtf_technology_3_desc:0 "Further research for effective utilization..."
+
+tech_dtf_technology_4:0 "DTF Technology Progress - 40%"
+tech_dtf_technology_4_desc:0 "Further research for effective utilization..."
+
+tech_dtf_technology_5:0 "DTF Technology Progress - 50%"
+tech_dtf_technology_5_desc:0 "Further research for effective utilization..."
+
+
+tech_dtf_mass_production_1:0 "DTF Mass Production Plan"
+tech_dtf_mass_production_1_desc:0 "Low-cost research on next-generation ship equipment under development"
+
+tech_dtf_next_generation_1:0 "DTF Next Generation Plan 
+tech_dtf_next_generation_1_desc:0 "Dawn of a New Era"
+
+
+
+tech_dtf_mobile_dtf_1:0 "DTF Research on Mobile Dimensional Time Fault - 10%"
+tech_dtf_mobile_dtf_1_desc:0 " - Access Denied - "
+
+tech_dtf_mobile_dtf_2:0 "DTF Research on Mobile Dimensional Time Fault - 20%"
+tech_dtf_mobile_dtf_2_desc:0 " - Access Denied - "
+
+tech_dtf_mobile_dtf_3:0 "DTF Research on Mobile Dimensional Time Fault - 30%"
+tech_dtf_mobile_dtf_3_desc:0 " - Access Denied - "
+
+tech_dtf_mobile_dtf_4:0 "DTF Research on Mobile Dimensional Time Fault - 40%"
+tech_dtf_mobile_dtf_4_desc:0 " - Access Denied - "
+
+
+
+
+tech_dtf_reactor_1:0 "DTF Reactor 1"
+tech_dtf_reactor_1_desc:0 "1st Generation Reactor"
+
+tech_dtf_reactor_2:0 "DTF Reactor 2"
+tech_dtf_reactor_2_desc:0 "2nd Generation Reactor"
+
+tech_dtf_reactor_3:0 "DTF Wave Motion Engine 1"
+tech_dtf_reactor_3_desc:0 "Wave Engine Development Plan"
+
+tech_dtf_reactor_4:0 "DTF Wave Motion Engine 2"
+tech_dtf_reactor_4_desc:0 "Wave engine improvement plan"
+"
+
+tech_dtf_reactor_5:0 "DTF Wave Motion Engine 3"
+tech_dtf_reactor_5_desc:0 "Wave engine improvement plan"
+
+tech_dtf_reactor_6:0 "DTF Wave Motion Engine 4"
+tech_dtf_reactor_6_desc:0 "Wave engine improvement plan
+"
+
+
+
+tech_dtf_weapons_1:0 "DTF Weapons - Tier 1"
+tech_dtf_weapons_1_desc:0 "1st Generation Weapons Group"
+
+tech_dtf_weapons_2:0 "DTF Weapons - Tier 2"
+tech_dtf_weapons_2_desc:0 "2nd Generation Weapons Group"
+
+tech_dtf_weapons_3:0 "DTF Weapons - Tier 3"
+tech_dtf_weapons_3_desc:0 "3rd Generation Weapons Group"
+
+tech_dtf_weapons_4:0 "DTF Weapons - Tier 4"
+tech_dtf_weapons_4_desc:0 "4rd Generation Weapons Group"
+
+tech_dtf_weapons_5:0 "DTF Weapons - Tier 5"
+tech_dtf_weapons_5_desc:0 "5th Generation Weapon Group"
+
+tech_dtf_weapons_6:0 "DTF Weapons - Tier 6"
+tech_dtf_weapons_6_desc:0 "6th Generation Weapon Group"
+
+tech_dtf_weapons_7:0 "DTF Weapons - Tier 7"
+tech_dtf_weapons_7_desc:0 "7th Generation Weapon Group"
+
+tech_dtf_weapons_8:0 "DTF Weapons - Tier 8"
+tech_dtf_weapons_8_desc:0 "8th Generation Weapon Group"
+
+tech_dtf_weapons_9:0 "DTF Weapons - Tier 9"
+tech_dtf_weapons_9_desc:0 "9th Generation Weapon Group"
+
+tech_dtf_weapons_10:0 "DTF Weapons - Tier 10"
+tech_dtf_weapons_10_desc:0 "10th Generation Weapon Group"
+
+tech_dtf_wave_motion_gun_1:0 "DTF Wave Motion Gun - Tier 1"
+tech_dtf_wave_motion_gun_1_desc:0 "Development plan for wave cannon"
+
+tech_dtf_wave_motion_gun_2:0 "DTF Wave Motion Gun - Tier 2"
+tech_dtf_wave_motion_gun_2_desc:0 "Mass Production Plan for Wave Motion Cannon"
+
+tech_dtf_wave_motion_gun_3:0 "DTF Wave Motion Gun - Tier 3"
+tech_dtf_wave_motion_gun_3_desc:0 "Development plan for new wave cannon"
+
+tech_dtf_cosmoreverse:0 "The Cosmoreverse System"
+tech_dtf_cosmoreverse_desc:0 "Grants its user the power to convert continental planets into time faults worlds."
+
+
+
+tech_dtf_armor_1:0 "DTF 1st generation armor design"
+tech_dtf_armor_1_desc:0 "Development Plan for Special Alloy Armor Plates"
+
+tech_dtf_armor_2:0 "DTF 2nd generation armor design"
+tech_dtf_armor_2_desc:0 "Special Alloy Armor Plate Improvement Plan"
+
+tech_dtf_armor_3:0 "DTF 3rd generation armor design"
+tech_dtf_armor_3_desc:0 "Special Alloy Armor Plate Improvement Plan"
+
+tech_dtf_armor_4:0 "DTF 4th generation armor design"
+tech_dtf_armor_4_desc:0 "Special Alloy Armor Plate Improvement Plan"
+
+tech_dtf_armor_5:0 "DTF 5th generation armor design"
+tech_dtf_armor_5_desc:0 "Special Alloy Armor Plate Improvement Plan"
+
+tech_dtf_armor_6:0 "DTF 1st generation fluctuating alloy armor design"
+tech_dtf_armor_6_desc:0 "Development plan for wave alloy armor plate"
+
+tech_dtf_armor_7:0 "DTF 2nd generation fluctuating alloy armor design"
+tech_dtf_armor_7_desc:0 ""
+
+tech_dtf_armor_8:0 "DTF 3rd generation fluctuating alloy armor design"
+tech_dtf_armor_8_desc:0 "Improvement plan for wave alloy armor plate"
+
+tech_dtf_armor_9:0 "DTF 4th generation fluctuating alloy armor design"
+tech_dtf_armor_9_desc:0 "Improvement plan for wave alloy armor plate"
+
+tech_dtf_armor_10:0 "DTF 5th generation fluctuating alloy armor design"
+tech_dtf_armor_10_desc:0 "Improvement plan for wave alloy armor plate"
+
+
+tech_dtf_shield_1:0 "DTF 1st generation defensive device design"
+tech_dtf_shield_1_desc:0 "Development plan for deflection barrier"
+
+tech_dtf_shield_2:0 "DTF 2nd generation defensive device design"
+tech_dtf_shield_2_desc:0 "Deflection barrier improvement plan"
+
+tech_dtf_shield_3:0 "DTF 3rd generation defensive device design"
+tech_dtf_shield_3_desc:0 "Deflection barrier improvement plan"
+
+tech_dtf_shield_4:0 "DTF 4th generation defensive device design"
+tech_dtf_shield_4_desc:0 "Deflection barrier improvement plan"
+
+tech_dtf_shield_5:0 "DTF 5th generation defensive device design"
+tech_dtf_shield_5_desc:0 "Deflection barrier improvement plan"
+
+tech_dtf_shield_6:0 "DTF 1st generation Wave Barrier Design"
+tech_dtf_shield_6_desc:0 "Development plan for wave barrier"
+
+tech_dtf_shield_7:0 "DTF 2nd generation Wave Barrier Design"
+tech_dtf_shield_7_desc:0 "Improvement plan for wave barrier"
+
+tech_dtf_shield_8:0 "DTF 3rd generation Wave Barrier Design"
+tech_dtf_shield_8_desc:0 "Improvement plan for wave barrier"
+
+tech_dtf_shield_9:0 "DTF 4th generation Wave Barrier Design"
+tech_dtf_shield_9_desc:0 "Improvement plan for wave barrier"
+
+tech_dtf_shield_10:0 "DTF 5th generation Wave Barrier Design"
+tech_dtf_shield_10_desc:0 "Improvement plan for wave barrier"
+
+
+
+
+tech_dtf_industry_1:0 "DTF Industrial Improvement Phase 1"
+tech_dtf_industry_1_desc:0 "reconstruction project"
+
+tech_dtf_industry_2:0 "DTF Industrial Improvement Phase 2"
+tech_dtf_industry_2_desc:0 "reconstruction project"
+
+tech_dtf_industry_3:0 "DTF Industrial Improvement Phase 3"
+tech_dtf_industry_3_desc:0 "reconstruction project"
+
+tech_dtf_industry_4:0 "DTF Industrial Improvement Phase 4"
+tech_dtf_industry_4_desc:0 "reconstruction project"
+
+tech_dtf_industry_5:0 "DTF Industrial Improvement Phase 5"
+tech_dtf_industry_5_desc:0 "reconstruction project"
+
+tech_dtf_industry_6:0 "DTF Industrial Improvement Phase 6"
+tech_dtf_industry_6_desc:0 "reconstruction project"
+
+tech_dtf_industry_7:0 "DTF Industrial Improvement Phase 7"
+tech_dtf_industry_7_desc:0 "reconstruction project"
+
+tech_dtf_industry_8:0 "DTF Industrial Improvement Phase 8"
+tech_dtf_industry_8_desc:0 "reconstruction project"
+
+tech_dtf_industry_9:0 "DTF Industrial Improvement Phase 9"
+tech_dtf_industry_9_desc:0 "reconstruction project"
+
+tech_dtf_industry_10:0 "DTF Industrial Improvement Final Phase"
+tech_dtf_industry_10_desc:0 "reconstruction project"
+
+
+tech_dtf_repeatable_components_physics:0 "DTF Physics"
+tech_dtf_repeatable_components_physics_desc:0 "(Repeatable technology)"
+tech_dtf_repeatable_station_engineer:0 "DTF Stations"
+tech_dtf_repeatable_station_engineer_desc:0 "(Repeatable technology)"
+tech_dtf_repeatable_ship_engineer:0 "DTF Spaceships"
+tech_dtf_repeatable_ship_engineer_desc:0 "(Repeatable technology)"
+tech_dtf_repeatable_components_engineer:0 "DTF Materials"
+tech_dtf_repeatable_components_engineer_desc:0 "(Repeatable technology)"
+

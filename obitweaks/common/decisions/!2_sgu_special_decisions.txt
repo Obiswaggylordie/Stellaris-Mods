@@ -1,0 +1,107 @@
+##########################################################################
+# Decisions
+##########################################################################
+
+# Planet Increase
+decision_planet_size_increase = {
+	owned_planets_only = yes
+
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 5000
+		}
+	}
+	
+	potential = {
+		planet_size < 20
+		habitable_structure = no
+	}
+	
+	allow = {
+		owner = {
+			has_ascension_perk = ap_mastery_of_nature
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_planet_size_increase_effects
+		hidden_effect = { change_planet_size = 1 }
+	}
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+
+decision_zpm_installation = {
+	owned_planets_only = yes
+
+	enactment_time = 1
+	resources = {
+		category = decisions
+		cost = {
+			sr_ancient_zpm = 1
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = { 
+			OR = { 
+				has_technology = tech_zpm
+				has_technology = tech_wraith_zpm
+			}
+		}
+		NOT = { has_modifier = Zpm_Installed_On_Planet }
+	}
+
+	allow = {
+		has_fully_upgraded_capital = yes
+	}
+
+	effect = {
+		custom_tooltip = decision_zpm_installation_effects
+		add_modifier = {
+			modifier = Zpm_Installed_On_Planet
+			days = 10950
+		}
+	}
+
+	ai_weight = {
+		weight = 10000
+	}
+}
+
+
+# create primitives #
+decision_genesis = {
+	resources = {
+		category = decisions
+	}
+	
+	potential = {
+		exists = space_owner
+		space_owner = { is_same_value = from }
+		from = {
+			has_technology = tech_epigenetic_triggers
+		}
+		is_colonizable = yes
+	}
+	
+	allow = {
+		is_under_colonization = no
+	}
+	
+	effect = {
+		custom_tooltip = decision_genesis_effects
+		#exists = space_owner
+		space_owner = { country_event = { id = sgu_primitive_event.1 } }
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}

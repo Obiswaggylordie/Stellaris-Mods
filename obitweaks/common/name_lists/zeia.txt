@@ -1,0 +1,111 @@
+﻿### Kas Zei'a
+### funni :)
+
+zeia = {
+
+	ship_names = {
+
+		generic = {
+		"Keishma" "Eymaka" "Godiey" "Iadita" "Reizeey" "Grharo" "Keinogr" "Dadiha" "Dinlaem" "Emgaih" "Laeinu" "Ru'nkol" "Neshgo" "Ruiale" "Tahokol" "Hadiga" "Hoemdin" "Nedinho" "Emroze" "Lamarin" "Theseus" "Arcadia" "Shangri-La"
+		}
+	}
+
+	ship_class_names = {
+		generic = {
+			"Stiklestad" "Selvik" "Nidaros" "Jupiter" "Oscarborg" "Biter" "Harald" "Týr" "Solanae" "Narvik" "Ellisiv" "Zei'a" "Spoy'a"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = ZEIA_FLEET_ORD
+	}
+
+	army_names = {
+		defense_army = {
+			sequential_name = ZEIA_ARMY_DEFENSE_ORD
+		}
+
+		assault_army = {
+			sequential_name = ZEIA_ARMY_ASSAULT_ORD
+		}
+
+		slave_army = {
+			sequential_name = ZEIA_ARMY_SLAVE_ORD
+		}
+
+		clone_army = {
+			sequential_name = ZEIA_ARMY_CLONE_ORD
+		}
+
+		robotic_army = {
+			sequential_name = ZEIA_ARMY_ROBOTIC_ORD
+		}
+
+		robotic_defense_army = {
+			sequential_name = ZEIA_ARMY_ROBOTIC_DEFENSE_ORD
+		}
+
+		android_army = {
+			sequential_name = ZEIA_ARMY_ANDROID_ORD
+		}
+
+		android_defense_army = {
+			sequential_name = ZEIA_ARMY_ANDROID_DEFENSE_ORD
+		}
+
+		undead_army = {
+			sequential_name = ZEIA_ARMY_UNDEAD_ORD
+		}
+
+		psionic_army = {
+			sequential_name = ZEIA_ARMY_PSIONIC_ORD
+		}
+
+		xenomorph_army = {
+			sequential_name = ZEIA_ARMY_XENOMORPH_ORD
+		}
+
+		gene_warrior_army = {
+			sequential_name = ZEIA_ARMY_GENEWARRIOR_ORD
+		}
+
+		occupation_army = {
+			sequential_name = ZEIA_ARMY_OCCUPATION_ORD
+		}
+
+		robotic_occupation_army = {
+			sequential_name = ZEIA_ARMY_ROBOTIC_OCCUPATION_ORD
+		}
+	}	
+
+	planet_names = {
+		generic = {
+			names = {
+				"Aether" "Bryyo" "Norion" "Tallon" "Aeon" "Athosia" "Azure" "Entra" "Zebes" "Talvania" "Langara" "Laeitareimaga" "Nalareieyroma" "Pananemagrah" "Zereirukeiahno" "Grlananeharo" "Nareimagrlaah" "Nagaemem" "Rinkalaho" "Emshlaze" "Daarkaah'rha" "Grei'rinshne" "Ihshahzeroru" "Pakanueinokei" "'Nhokoldirinem"
+			}
+		}
+	}
+
+	character_names = {
+		default = {
+
+			weight = 1
+
+			first_names = {
+				"A -" "B -" "C -" "D -" "E -" "F -" "G -" "H -" "I -" "J -" "K -" "L -" "M -" "N -" "O -" "P -" "Q -" "R -" "S -" "T -" "U -" "V -" "W -" "X -" "Y -" "Z -" 
+			}
+
+			second_names = {
+				"Kul" "Voq" "Stl" "Stz" "Pul" "Rch" "Chr" "Isl" "Btr" "Sch" "Sha" "Fme" "Gnk" "Tch" "Dhe" "Lir" "Lum" "Cis" "Dly" "Jrs" "Mos" "Qar" "Tan" "Sel" "Zen" "Psh" "Osl" "Sha" "Uux" "Urp" "Vak" "Obg" "Cil" "Lis" "Ret" "Ket" "Nah" "Kin" "Shi" "Tau" "Mru" "Ril" "Jor" "Nil" "Aar" "Jel" "Tin" "Efy" "Vel" "Uro"
+			}
+
+			regnal_first_names = {
+				"A -" "B -" "C -" "D -" "E -" "F -" "G -" "H -" "I -" "J -" "K -" "L -" "M -" "N -" "O -" "P -" "Q -" "R -" "S -" "T -" "U -" "V -" "W -" "X -" "Y -" "Z -" 
+			}
+
+			regnal_second_names = {
+				"Kul" "Voq" "Stl" "Stz" "Pul" "Rch" "Chr" "Isl" "Btr" "Sch" "Sha" "Fme" "Gnk" "Tch" "Dhe" "Lir" "Lum" "Cis" "Dly" "Jrs" "Mos" "Qar" "Tan" "Sel" "Zen" "Psh" "Osl" "Sha" "Uux" "Urp" "Vak" "Obg" "Cil" "Lis" "Ret" "Ket" "Nah" "Kin" "Shi" "Tau" "Mru" "Ril" "Jor" "Nil" "Aar" "Jel" "Tin" "Efy" "Vel" "Uro"
+			}
+		}
+	}
+}

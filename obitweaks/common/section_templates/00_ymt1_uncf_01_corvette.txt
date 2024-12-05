@@ -1,0 +1,236 @@
+################
+### corvette ###
+################
+
+ship_section_template = {
+	key = "CORVETTE_MID_ISOKAZE_1"
+	ship_size = cr_corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_corvette1_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_Wave_motion_gun_Fleet" }
+
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "uncf_01_corvette1_turret_01_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "uncf_01_corvette1_turret_02_slot"
+		locatorname = "turret_gun_02"
+	}	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_01"
+	}
+	
+	small_utility_slots = 3
+	aux_utility_slots = 1
+
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = 30 }
+	}
+
+	ai_tags = { gunship artillery brawler brawler_stealth screen }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 300
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "CORVETTE_MID_ISOKAZE_2"
+	ship_size = cr_corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_corvette2_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_uncf_ship2" }
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "uncf_01_corvette2_turret_01_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "uncf_01_corvette2_turret_02_slot"
+		locatorname = "turret_gun_02"
+	}	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_01"
+	}
+
+	small_utility_slots = 3
+	aux_utility_slots = 1
+
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = 30 }
+	}
+
+	ai_tags = { gunship artillery brawler brawler_stealth screen }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 300
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "CORVETTE_MID_ISOKAZE_3"
+	ship_size = cr_corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_corvette3_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_Wave_motion_gun_Fleet" }
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "uncf_01_corvette3_turret_01_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "uncf_01_corvette3_turret_02_slot"
+		locatorname = "turret_gun_02"
+	}	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_01"
+	}
+
+	small_utility_slots = 3
+	aux_utility_slots = 1
+
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = 30 }
+	}
+
+	ai_tags = { gunship artillery brawler brawler_stealth screen }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 300
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "CORVETTE_MID_ISOKAZE_KAI"
+	ship_size = cr_corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_corvette4_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_Wave_motion_gun_Fleet" }
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "uncf_01_corvette4_turret_01_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "uncf_01_corvette4_turret_02_slot"
+		locatorname = "turret_gun_02"
+	}	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_01"
+	}
+
+	small_utility_slots = 3
+	aux_utility_slots = 1
+
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = 30 }
+	}
+
+	ai_tags = { gunship artillery brawler brawler_stealth screen }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 400
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}

@@ -1,0 +1,27 @@
+tradition_sgu_enlightenment = {
+	tree_template = "tree_11_111"
+	adoption_bonus = "tr_sgu_enlightenment_adopt"
+	finish_bonus = "tr_sgu_enlightenment_finish"
+	traditions = {
+		"tr_sgu_enlightenment_1"
+		"tr_sgu_enlightenment_2"
+		"tr_sgu_enlightenment_3"
+		"tr_sgu_enlightenment_4"
+		"tr_sgu_enlightenment_5"
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			OR = {
+				has_trait = trait_psionic
+				has_trait = trait_erudite
+				has_modifier = flood_interstellar_stage
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

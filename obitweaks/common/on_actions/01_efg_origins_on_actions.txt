@@ -1,0 +1,54 @@
+
+
+on_game_start_country = {
+
+	events = { efg_earth_origin.001 }
+	events = { efg_earth_origin.011 }
+
+	#events = { efg_earth_origin.201 }
+	#events = { efg_earth_origin.202 }
+	#events = { efg_earth_origin.203 }
+	#events = { efg_earth_origin.301 }
+	#events = { sbymod_flag.301 }
+
+
+} # Event that finishes system setup
+
+on_press_begin = {
+	events = { efg_earth_origin.201 }
+	events = { efg_earth_origin.202 }
+	events = { efg_earth_origin.203 }
+} 
+
+# Planet has reached 0 pops from orbital bombardment
+# This = Planet
+# From = Bombarder
+
+on_planet_bombarded = {
+	events = {
+		efg_action.81
+	}
+}
+
+
+
+
+
+# This = owner of ship 1 (destroyed)
+# From = owner of ship 2 (combatant)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+on_ship_destroyed_victim = {
+	events = {
+		efg_action.70
+	}
+}
+
+# This = owner of fleet
+# From = disbanded fleet
+on_fleet_disbanded = {
+	events = {
+		efg_action.73
+	}
+}
+

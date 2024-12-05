@@ -1,0 +1,109 @@
+cr_ships = {
+	use_for_ai_budget = yes
+	generate_mult_modifiers = {
+		upkeep
+	}
+
+	ai_use_parent_for_resources_upkeep = {
+		energy
+	}
+
+	parent = country
+	modifier_category = ship
+
+	triggered_cost_modifier = {
+		key = ship_cr_corvette
+		use_parent_icon = yes
+		modifier_types = {
+			cost
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			OR = {
+				is_ship_size = cr_corvette
+			}
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_cr_destroyer
+		use_parent_icon = yes
+		modifier_types = {
+			cost
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			OR = {
+				is_ship_size = cr_destroyer
+			}
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_cr_cruiser
+		use_parent_icon = yes
+		modifier_types = {
+			cost
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			OR = {
+				is_ship_size = cr_cruiser
+			}
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_cr_dreadnought
+		use_parent_icon = yes
+		modifier_types = {
+			cost
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			OR = {
+				is_ship_size = cr_dreadnought
+			}
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_cr_battleship
+		use_parent_icon = yes
+		modifier_types = {
+			cost
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			OR = {
+				is_ship_size = cr_battleship
+			}
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_cr_titan
+		use_parent_icon = yes
+		modifier_types = {
+			cost
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			OR = {
+				is_ship_size = cr_titan
+			}
+		}
+	}
+}

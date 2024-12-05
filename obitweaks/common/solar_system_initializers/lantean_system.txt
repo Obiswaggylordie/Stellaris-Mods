@@ -1,0 +1,221 @@
+# Stargate Atlantis - Lantean System
+
+lantean_system = {
+    name = "Lantea"
+	class = "sc_f"
+	flags = { empire_home_system }
+	usage = custom_empire
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 120
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 285
+	}
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+		if = {
+			limit = {
+				is_inside_nebula = no
+			}
+			create_nebula = {
+				radius = 25
+				effect = { nebula_cloaking_effect = yes }
+			}
+			set_star_flag = ocean_paradise_nebula
+		}
+	}
+
+	# Star
+	planet = {
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+		size = 28
+		has_ring = no
+	}
+
+	planet = {
+		name = "Thessara"
+		class = "pc_molten"
+		orbit_distance = 32
+		orbit_angle = 50
+		size = 15
+		has_ring = no
+		init_effect = {
+			set_planet_entity = {
+				entity = molten_planet_mercury_entity
+				atmosphere_color = hsv { 0.8 0.1 0.2 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
+	}
+
+	planet = {
+		name = "Videum"
+		class = "pc_toxic"
+		orbit_distance = 20
+		orbit_angle = 220
+		size = 16
+		has_ring = no
+		init_effect = {
+			set_planet_entity = {
+				entity = toxic_planet_venus_entity
+				atmosphere_color = hsv { 0.854 0.072 0.7 }
+				atmosphere_intensity = 0.2
+				atmosphere_width = 1.0
+			}
+		}
+	}
+	
+	planet = {
+		name = "Deserdi"
+		class = "pc_arid"
+		orbit_distance = 20
+		orbit_angle = 240
+		size = 25
+		has_ring = no
+	}
+
+	# Homeworld
+	change_orbit = 20 
+	planet = {
+		class = "pc_ocean"
+		orbit_angle = 195
+		orbit_distance = 0
+		size = 30
+		entity = "ocean_paradise_planet_01_entity"
+		has_ring = no
+		modifiers = none
+		starting_planet = yes
+		flags = { ignore_startup_effect }
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		init_effect = {
+			add_modifier = {
+				modifier = "ocean_paradise"
+				days = -1
+			}
+		}
+
+		moon = {
+			name = "Lume"
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 16
+			orbit_angle = 1
+			has_ring = no
+			entity = "cold_barren_planet_luna_entity"
+		}
+	}
+	
+	planet = {
+		name = "Sanctus"
+		class = "pc_gas_giant"
+		orbit_distance = 60
+		orbit_angle = 125
+		size = 30
+		has_ring = yes
+		entity = "gas_giant_05_entity"
+		change_orbit = 4
+		
+		moon = {
+			name = "Renin"
+			class = "pc_frozen"
+			size = 5
+			orbit_distance = 15
+			orbit_angle = 1
+			has_ring = no
+			entity = "cold_barren_planet_luna_entity"
+		}	
+	}	
+	
+	planet = {
+		name = "Ventio"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 215
+		size = 30
+		has_ring = no
+		change_orbit = 4
+
+		init_effect = {
+			set_planet_entity = {
+				entity = gas_giant_neptune_entity
+				atmosphere_color = hsv { 0.626 0.782 0.9 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
+
+		moon = {
+			name = "Eteri"
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 10
+			orbit_angle = 1
+			has_ring = no
+			entity = "cold_barren_planet_luna_entity"
+		}
+	}
+		
+	planet = {
+		name = "Glacius"
+		class = "pc_frozen"
+		orbit_distance = 25
+		orbit_angle = 285
+		size = 15
+		has_ring = no
+		change_orbit = 4
+	}
+		
+	planet = {
+		name = "Lacun"
+		class = "pc_frozen"
+		orbit_distance = 25
+		orbit_angle = 315
+		size = 16
+		has_ring = no
+		change_orbit = 4
+	}
+		
+	planet = {
+		name = "Aveo"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 310
+		size = 30
+		has_ring = no
+		entity = "gas_giant_jupiter_entity"
+		change_orbit = 4
+		
+		moon = {
+			name = "Dormata"
+			class = "pc_frozen"
+			size = 5
+			orbit_distance = 10
+			orbit_angle = 1
+			has_ring = no
+			entity = "cold_barren_planet_luna_entity"
+		}
+	}
+		
+	planet = {
+		name = "Eetium"
+		class = "pc_frozen"
+		orbit_distance = 20
+		orbit_angle = 200
+		size = 15
+		has_ring = no
+		change_orbit = 4
+	}
+}

@@ -1,0 +1,50 @@
+
+@efg_shipspeed_base_mult_1 = 0.00
+@efg_shipspeed_base_mult_2 = 0.75
+@efg_shipspeed_base_mult_3 = 1.25
+@efg_shipspeed_base_mult_4 = 1.50
+@efg_shipspeed_base_mult_5 = 2.00
+
+@efg_ship_evasion_add_1 = 2
+@efg_ship_evasion_add_2 = 4
+@efg_ship_evasion_add_3 = 6
+@efg_ship_evasion_add_4 = 8
+@efg_ship_evasion_add_5 = 10
+
+##############################################
+### Thruster 5
+##############################################
+utility_component_template = {
+	key = "EFG_THRUSTER_5_LARGESHIP"
+	size = small
+	icon = "GFX_efg_ship_part_thruster_5"
+	icon_frame = 1
+	power = @sby_thruster_power_cost_5_largeship
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_efg_t10_com_cost
+		}
+	}
+
+	modifier = {
+		ship_base_speed_mult = @efg_shipspeed_base_mult_5
+		ship_evasion_add = @efg_ship_evasion_add_5
+	}
+
+	prerequisites = { "tech_efg_reactor_7" }
+	component_set = "thruster_components"
+	
+	ai_weight = {
+		weight = @efg_ai_weight_10
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+	upgrades_to = "EFG_THRUSTER_6_LARGESHIP"
+}
+
+
+
+

@@ -1,0 +1,21 @@
+
+#Depleted CYBERTRONIAN WORLD
+entity = {
+	name = "depleted_cybertron_planet_01_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "depleted_cybertron_01_diffuse.dds"
+		texture_normal = "city_planet_mammalian_01_normal.dds"
+		texture_specular = "city_planet_mammalian_01_specular.dds"
+		shader = "PdxMeshPlanetEmissive"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+		start_event = { node = "planet" particle = "gray_goo_planet_effect" keep_particle = yes trigger_once = yes }
+	}
+}

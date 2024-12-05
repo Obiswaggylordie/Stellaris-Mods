@@ -1,0 +1,475 @@
+namespace = promethean_start
+
+### Promethean init - add technologies
+country_event = {
+	id = promethean_start.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_civic = civic_machine_promethean
+	}
+	
+	immediate = {
+		random_owned_leader = {
+			limit = { is_ruler = yes }
+			add_trait = leader_trait_ruler_forerunner_didact
+			set_age = 110225
+			set_skill = 5
+		}
+		give_technology = { message = no tech = tech_composer }
+		capital_scope = {
+			add_building = building_promethean_factory
+		}
+	}
+}
+country_event = {
+	id = promethean_start.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	
+	trigger = {
+		OR = {
+			has_civic = civic_machine_the_created
+			has_civic = civic_machine_promethean
+			has_civic = civic_ecumene_protocols
+		}
+	}
+	
+	immediate = {
+		give_technology = { message = no tech = tech_powered_exoskeletons }
+		give_technology = { message = no tech = tech_administrative_ai }
+		give_technology = { message = no tech = tech_forerunner_start }
+		give_technology = { message = no tech = tech_forerunner_start_1 }
+		give_technology = { message = no tech = tech_forerunner_sentinels }
+		give_technology = { message = no tech = tech_advanced_forerunner_sentinels }
+		give_technology = { message = no tech = tech_slipspace_field }
+		give_technology = { message = no tech = tech_slipspace_portal_activation }
+		give_technology = { message = no tech = tech_halo_array_activation }
+		give_technology = { message = no tech = tech_mega_engineering }
+		give_technology = { message = no tech = tech_shield_worlds }
+		give_technology = { message = no tech = tech_forerunner_sentinel_beam }
+		
+		if = {
+			limit = {
+				OR = {
+					has_civic = civic_machine_promethean
+					has_civic = civic_machine_the_created
+				}
+			}
+			give_technology = { message = no tech = tech_promethean_weapon_craft }
+			give_technology = { message = yes tech = tech_forerunner_peacemaker_constructs } 
+		}
+	}
+}
+
+
+
+country_event = {
+	id = promethean_start.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	
+	trigger = {
+		if = {
+			species = { has_trait = trait_robot_created_ai }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				every_owned_leader = {
+					limit = {
+						is_same_species = root
+						NOR = {
+							has_trait = leader_trait_created_ai
+						}
+					}
+					if = {
+						limit = { leader_class = admiral }
+						add_trait = leader_trait_created_ai
+					}
+					if = {
+						limit = { leader_class = general }
+						add_trait = leader_trait_created_ai
+					}
+					if = {
+						limit = { leader_class = governor }
+						add_trait = leader_trait_created_ai
+					}
+					if = {
+						limit = { leader_class = scientist }
+						add_trait = leader_trait_created_ai
+					}
+					if = {
+						limit = { is_ruler = yes }
+						add_trait = leader_trait_created_ai
+					}
+				}
+				every_pool_leader = {
+					limit = {
+						is_same_species = root 
+						NOR = {
+							has_trait = leader_trait_created_ai
+						}
+					}
+					if = {
+						limit = { leader_class = admiral }
+						add_trait = leader_trait_created_ai
+					}
+					if = {
+						limit = { leader_class = general }
+						add_trait = leader_trait_created_ai
+					}
+					if = {
+						limit = { leader_class = governor }
+						add_trait = leader_trait_created_ai
+					}
+					if = {
+						limit = { leader_class = scientist }
+						add_trait = leader_trait_created_ai
+					}
+				}
+			}
+		}
+	}	
+}
+
+#New Leaders Get Created Traits
+country_event = {
+	id = promethean_start.11
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		from = {
+			species = { has_trait = trait_robot_created_ai }
+		}
+	}
+	
+	immediate = {
+		from = {
+			add_trait_no_notify = leader_trait_created_ai
+		}
+	}
+}
+
+
+country_event = {
+	id = promethean_start.9
+	hide_window = yes
+	is_triggered_only = yes
+
+	
+	trigger = {
+		has_origin = origin_requiem
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				is_synthetic_empire = yes
+			}
+			capital_scope = {
+				clear_blockers = yes
+				add_building = building_foundry_1
+			}
+		}
+		else = {
+			capital_scope = {
+				clear_blockers = yes
+				add_building = building_factory_1
+				add_building = building_foundry_1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = promethean_start.10
+	hide_window = yes
+	is_triggered_only = yes
+
+	
+	trigger = {
+		has_origin = origin_created_genesis
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				is_synthetic_empire = yes 
+			}
+			capital_scope = {
+				clear_blockers = yes
+				clear_deposits = yes
+				add_district = district_sw_city
+				add_district = district_sw_city
+				add_district = district_sw_sentinel_foundry
+				add_district = district_sw_solar_power
+				add_district = district_sw_mining
+				add_building = building_sentinel_factory
+				add_deposit = d_genesis_domain_gateway
+				add_deposit = d_genesis_coral_highlands
+				add_deposit = d_genesis_builder_research_facilities
+				add_deposit = d_genesis_builder_factories
+				add_deposit = d_genesis_builder_generator_facilities
+				add_deposit = d_automated_sentinel_factory
+				add_deposit = d_dust_caverns
+				add_deposit = d_bubbling_swamp
+				add_deposit = d_crystalline_caverns
+				add_deposit = d_searing_desert
+				add_deposit = d_frozen_gas_lake
+				add_deposit = d_prosperous_mesa
+				add_deposit = d_ore_rich_caverns
+				add_deposit = d_submerged_ore_veins
+				add_deposit = d_lush_jungle
+				add_deposit = d_black_soil
+				add_deposit = d_teeming_reef
+			}
+		}
+		else = {
+			capital_scope = {
+				clear_blockers = yes
+				clear_deposits = yes
+				add_district = district_sw_city
+				add_district = district_sw_city
+				add_district = district_sw_sentinel_foundry
+				add_district = district_sw_solar_power
+				add_district = district_sw_farming
+				add_district = district_sw_mining
+				add_building = building_sentinel_factory
+				add_deposit = d_genesis_domain_gateway
+				add_deposit = d_genesis_coral_highlands
+				add_deposit = d_genesis_builder_research_facilities
+				add_deposit = d_genesis_builder_factories
+				add_deposit = d_genesis_builder_generator_facilities
+				add_deposit = d_automated_sentinel_factory
+				add_deposit = d_dust_caverns
+				add_deposit = d_bubbling_swamp
+				add_deposit = d_crystalline_caverns
+				add_deposit = d_searing_desert
+				add_deposit = d_frozen_gas_lake
+				add_deposit = d_prosperous_mesa
+				add_deposit = d_ore_rich_caverns
+				add_deposit = d_submerged_ore_veins
+				add_deposit = d_lush_jungle
+				add_deposit = d_black_soil
+				add_deposit = d_teeming_reef
+			}
+		}
+	}
+}
+
+#SENTINELS
+
+country_event = {
+	id = promethean_start.12
+	hide_window = yes
+	is_triggered_only = yes
+
+	
+	trigger = {
+		if = {
+			species = { has_trait = trait_robot_sentinel_ai }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				every_owned_leader = {
+					limit = {
+						is_same_species = root
+						NOR = {
+							has_trait = leader_trait_sentinel_ai
+						}
+					}
+					if = {
+						limit = { leader_class = admiral }
+						add_trait_no_notify = leader_trait_sentinel_ai
+					}
+					if = {
+						limit = { leader_class = general }
+						add_trait_no_notify = leader_trait_sentinel_ai
+					}
+					if = {
+						limit = { leader_class = governor }
+						add_trait_no_notify = leader_trait_sentinel_ai
+					}
+					if = {
+						limit = { leader_class = scientist }
+						add_trait_no_notify = leader_trait_sentinel_ai
+					}
+					if = {
+						limit = { is_ruler = yes }
+						add_trait_no_notify = leader_trait_sentinel_ai
+					}
+				}
+				every_pool_leader = {
+					limit = {
+						is_same_species = root 
+						NOR = {
+							has_trait = leader_trait_sentinel_ai
+						}
+					}
+					if = {
+						limit = { leader_class = admiral }
+						add_trait = leader_trait_sentinel_ai
+					}
+					if = {
+						limit = { leader_class = general }
+						add_trait = leader_trait_sentinel_ai
+					}
+					if = {
+						limit = { leader_class = governor }
+						add_trait = leader_trait_sentinel_ai
+					}
+					if = {
+						limit = { leader_class = scientist }
+						add_trait = leader_trait_sentinel_ai
+					}
+				}
+			}
+		}
+	}	
+}
+
+#New Leaders Get Sentinel Traits
+country_event = {
+	id = promethean_start.13
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		from = {
+			species = { has_trait = trait_robot_sentinel_ai }
+		}
+	}
+	
+	immediate = {
+		from = {
+			add_trait_no_notify = leader_trait_sentinel_ai
+		}
+	}
+}
+
+country_event = {
+	id = promethean_start.3
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		owner = {
+			is_forerunner_ai = yes
+			has_authority = auth_machine_intelligence
+		}
+	}
+	immediate = {
+		add_modifier = {
+			modifier = "forerunner_ancilla_ai"
+			days = -1
+		}
+	}
+}
+
+
+# Admiral backed up
+# This = owner of fleet 1 (destroyed)
+# From = owner of fleet 2 (combatant)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+country_event = {
+	id = promethean_start.30
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		fromfrom = {
+			exists = leader
+			fleet = { num_ships = 0 }
+			leader = {
+				leader_class = admiral
+				has_trait = leader_trait_contender_ai
+			}
+		}
+	}
+
+	immediate = {
+		random_list = {
+			0 = { } # null
+			100 = {
+				fromfrom = {
+					leader = {
+						exile_leader_as = contender_backup_leader
+					}
+				}
+				country_event = { id = promethean_start.31 days = 30 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = promethean_start.31
+	title = syndaw.31.name
+	desc = syndaw.31.desc
+	picture = GFX_evt_synth_sabotage
+	show_sound = event_ship_bridge
+	location = event_target:restored_contender_leader.fleet
+
+	is_triggered_only = yes
+
+	trigger = {
+		any_controlled_fleet = {
+			NOT = { exists = leader }
+			any_controlled_ship = {
+				is_ship_class = shipclass_military
+			}
+		}
+	}
+
+	immediate = {
+		random_controlled_fleet = {
+			limit = {
+				NOT = { exists = leader }
+				any_controlled_ship = {
+					is_ship_class = shipclass_military
+				}
+			}
+			set_leader = contender_backup_leader
+			leader = {
+				save_event_target_as = restored_contender_leader
+			}
+		}
+	}
+
+	option = {
+		name = OK
+		trigger = {
+			event_target:restored_contender_leader = {
+				has_trait = leader_trait_contender_ai
+			}
+		}
+	}
+}
+
+
+# Summoning Guardians
+planet_event = {
+	id = promethean_start.5
+	title = "promethean_start.5.name"
+	desc = "promethean_start.5.desc"
+	picture = GFX_evt_guardian_custodes
+	show_sound = event_guardian_custode
+	location = root
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EXCELLENT
+	}
+}

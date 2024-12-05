@@ -1,0 +1,564 @@
+# Curb Stomp the flesh bags
+perdition_organic_effect = {
+	solar_system = {
+
+		# Trigger Scourge Cleanup
+		kill_scourge_effect = yes
+
+		# Kill Organics
+		every_system_planet = {
+			limit = {
+				is_star = no
+				is_asteroid = no
+				NOT = {
+					has_deposit = d_slipspace_bubble
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_ringworld_habitable
+						is_planet_class = pc_ringworld_seam
+						is_planet_class = pc_ringworld_tech
+						is_planet_class = pc_flood_ringworld_habitable
+					}
+				}
+				spawn_ringworld_neutron_effect = yes
+			}
+			else = {
+				spawn_habitat_neutron_effect = yes 
+			}
+			if = {
+				limit = {
+					is_colony = yes
+				}
+				every_owned_pop = {
+					limit = {
+						NOR = {
+							has_trait = trait_mechanical #Beep Boopbs
+							has_trait = trait_machine_unit #Beep Boop redundancy
+							has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
+							has_trait = trait_ascension_4 #Fully Ascended Pops
+						}
+					}
+					kill_pop = yes 
+				}
+			}
+		}
+
+		# Clean Planets
+		every_system_planet = {
+			limit = {
+				OR = {
+					AND = {
+						AND = {
+							is_asteroid = no
+							is_star = no
+							is_artificial = no
+							is_cybertronian_world = no
+						}
+						OR = {
+							is_colonizable = yes
+							is_under_colonization = yes
+							is_colony = yes
+						}
+					}
+				}
+			}
+			random_list = {
+				33 = { change_pc = pc_ll_temperate }
+				33 = { change_pc = pc_ll_foggy }
+				33 = { change_pc = pc_ll_torrid }
+			}
+			clear_planet_modifiers = yes
+		}
+
+		# Stop colonisations
+		every_system_planet = {
+			limit = {
+				is_under_colonization = yes
+				space_owner = {
+					owner_main_species = {
+						is_robotic = no
+						NOR = {
+							has_trait = trait_mechanical #Beep Boopbs
+							has_trait = trait_machine_unit #Beep Boop redundancy
+							has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
+							has_trait = trait_ascension_4 #Fully Ascended Pops
+						}
+					}
+				}
+			}
+			destroy_colony = yes
+		}
+
+		# Kills organic owned ships
+		every_ship_in_system = {
+			if = {
+				limit = {
+					owner_main_species = {
+						is_robotic = no
+						NOR = {
+							has_trait = trait_mechanical #Beep Boopbs
+							has_trait = trait_machine_unit #Beep Boop redundancy
+							has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
+							has_trait = trait_ascension_4 #Fully Ascended Pops
+						}
+					}
+				}
+				destroy_ship = this
+			}
+		}
+	}
+}
+
+# Throw the toasters in the bath
+perdition_mechanical_effect = {
+	solar_system = {
+		# Kill Mechanicals
+		every_system_planet = {
+			limit = {
+				is_star = no
+				is_asteroid = no
+				NOT = {
+					has_deposit = d_slipspace_bubble
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_ringworld_habitable
+						is_planet_class = pc_ringworld_seam
+						is_planet_class = pc_ringworld_tech
+						is_planet_class = pc_flood_ringworld_habitable
+					}
+				}
+				spawn_ringworld_neutron_effect = yes
+			}
+			else = {
+				spawn_habitat_neutron_effect = yes 
+			}
+			if = {
+				limit = {
+					is_colony = yes
+				}
+				every_owned_pop = {
+					limit = {
+						OR = {
+							has_trait = trait_mechanical #Beep Boopbs
+							has_trait = trait_machine_unit #Beep Boop redundancy
+							has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
+						}
+					}
+					kill_pop = yes 
+				}
+			}
+		}
+
+		# Stop colonisations
+		every_system_planet = {
+			limit = {
+				is_under_colonization = yes
+				space_owner = {
+					owner_main_species = {
+						is_robotic = yes
+						NOT = {
+							has_trait = trait_ascension_4 #Fully Ascended Pops
+						}
+					}
+				}
+			}
+			destroy_colony = yes
+		}
+
+		# Kills mechanical owned ships
+		every_ship_in_system = {
+			if = {
+				limit = {
+					owner_main_species = {
+						is_robotic = yes
+						NOT = {
+							has_trait = trait_ascension_4 #Fully Ascended Pops
+						}
+					}
+				}
+				destroy_ship = this
+			}
+		}
+	}
+}
+
+# Sayonara unenlightened plebians, we won't miss any of you.
+perdition_unascended_effect = {
+	solar_system = {
+
+		# Trigger Scourge Cleanup
+		kill_scourge_effect = yes
+
+		# Kill Unascended
+		every_system_planet = {
+			limit = {
+				is_star = no
+				is_asteroid = no
+				NOT = {
+					has_deposit = d_slipspace_bubble
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_ringworld_habitable
+						is_planet_class = pc_ringworld_seam
+						is_planet_class = pc_ringworld_tech
+						is_planet_class = pc_flood_ringworld_habitable
+					}
+				}
+				spawn_ringworld_neutron_effect = yes
+			}
+			else = {
+				spawn_habitat_neutron_effect = yes 
+			}
+			if = {
+				limit = {
+					is_colony = yes
+				}
+				every_owned_pop = {
+					limit = {
+						NOT = {
+							has_trait = trait_ascension_4 #Fully Ascended Pops
+						}
+					}
+					kill_pop = yes 
+				}
+			}
+		}
+
+		# Stop colonisations
+		every_system_planet = {
+			limit = {
+				is_under_colonization = yes
+				space_owner = {
+					owner_main_species = {
+						NOT = {
+							has_trait = trait_ascension_4 #Fully Ascended Pops
+						}
+					}
+				}
+			}
+			destroy_colony = yes
+		}
+
+		# Kills unascended owned ships
+		every_ship_in_system = {
+			if = {
+				limit = {
+					owner_main_species = {
+						NOT = {
+							has_trait = trait_ascension_4 #Fully Ascended Pops
+						}
+					}
+				}
+				destroy_ship = this
+			}
+		}
+	}
+}
+
+# "Just because they're a group of higher beings, doesn't mean that there's not an order of being higher than them." - Cameron Mitchell
+perdition_sangraal_effect = {
+	solar_system = {
+
+		# Kill Ascended
+		every_system_planet = {
+			limit = {
+				is_star = no
+				is_asteroid = no
+				NOT = {
+					has_deposit = d_slipspace_bubble
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_ringworld_habitable
+						is_planet_class = pc_ringworld_seam
+						is_planet_class = pc_ringworld_tech
+						is_planet_class = pc_flood_ringworld_habitable
+					}
+				}
+				spawn_ringworld_neutron_effect = yes
+			}
+			else = {
+				spawn_habitat_neutron_effect = yes 
+			}
+			if = {
+				limit = {
+					is_colony = yes
+				}
+				every_owned_pop = {
+					limit = {
+						has_trait = trait_ascension_4 #Fully Ascended Pops
+					}
+					kill_pop = yes 
+				}
+			}
+		}
+
+		# Stop colonisations
+		every_system_planet = {
+			limit = {
+				is_under_colonization = yes
+				space_owner = {
+					owner_main_species = {
+						has_trait = ascension_4 #Fully Ascended Pops
+					}
+				}
+			}
+			destroy_colony = yes
+		}
+
+		# Kills Ascended owned ships
+		every_ship_in_system = {
+			if = {
+				limit = {
+					owner_main_species = {
+						has_trait = trait_ascension_4
+					}
+				}
+				destroy_ship = this
+			}
+		}
+	}
+}
+
+# Instantly kill anything you don't like :)
+perdition_dakara_effect = {
+	solar_system = {
+
+		# Kill Non-Citizens / Residents
+		every_system_planet = {
+			limit = {
+				is_star = no
+				is_asteroid = no
+				NOT = {
+					has_deposit = d_slipspace_bubble
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_ringworld_habitable
+						is_planet_class = pc_ringworld_seam
+						is_planet_class = pc_ringworld_tech
+						is_planet_class = pc_flood_ringworld_habitable
+					}
+				}
+				spawn_ringworld_neutron_effect = yes
+			}
+			else = {
+				spawn_habitat_neutron_effect = yes 
+			}
+			if = {
+				limit = {
+					is_colony = yes
+				}
+				every_owned_pop = {
+					limit = {
+						NOR = {
+							has_citizenship_type = { country = event_target:masterchief type = citizenship_full }
+							has_citizenship_type = { country = event_target:masterchief type = citizenship_full_machine }
+							has_citizenship_type = { country = event_target:masterchief type = citizenship_limited }
+						}
+					}
+					kill_pop = yes 
+				}
+			}
+		}
+
+		# Stop colonisations
+		every_system_planet = {
+			limit = {
+				is_under_colonization = yes
+				space_owner = {
+					owner_main_species = {
+						NOR = {
+							has_citizenship_type = { country = event_target:masterchief type = citizenship_full }
+							has_citizenship_type = { country = event_target:masterchief type = citizenship_full_machine }
+							has_citizenship_type = { country = event_target:masterchief type = citizenship_limited }
+						}
+					}
+				}
+			}
+			destroy_colony = yes
+		}
+
+		# Destroys non-citizen / Residents owned ships and stations
+		solar_system = {
+			every_ship_in_system = {
+				if = {
+					limit = {
+						owner_main_species = {
+							NOR = {
+								has_citizenship_type = { country = event_target:masterchief type = citizenship_full }
+								has_citizenship_type = { country = event_target:masterchief type = citizenship_full_machine }
+								has_citizenship_type = { country = event_target:masterchief type = citizenship_limited }
+							}
+						}
+					}
+					destroy_ship = this
+				}
+			}
+		}
+	}
+}
+
+# Life, ever lasting..
+genesis_effect = {
+	solar_system = {
+		every_system_planet = {
+			limit = {
+				OR = {
+					is_planet_class = pc_ll_temperate
+					is_planet_class = pc_ll_foggy
+					is_planet_class = pc_ll_torrid
+					is_star = no
+					is_asteroid = no
+					NOT = {
+						has_deposit = d_slipspace_bubble
+					}
+				}
+			}
+			random_list = {
+				10 = { change_pc = pc_arctic }
+				10 = { change_pc = pc_tundra }
+				10 = { change_pc = pc_alpine }
+				10 = { change_pc = pc_continental }
+				10 = { change_pc = pc_tropical }
+				10 = { change_pc = pc_savannah }
+				10 = { change_pc = pc_desert }
+				10 = { change_pc = pc_ocean }
+				10 = { change_pc = pc_arid }
+				10 = { change_pc = pc_gaia }
+			}
+		}
+	}
+}
+
+# Fuck off gay baby
+kill_scourge_effect = {
+	# Clean Scourgy Hives
+	every_system_planet = {
+		limit = {
+			OR = {
+				is_planet_class = pc_flood_hive
+				is_planet_class = pc_infested
+				is_star = no
+				is_asteroid = no
+				NOT = {
+					has_deposit = d_slipspace_bubble
+				}
+			}
+		}
+		random_list = {
+			33 = { change_pc = pc_ll_temperate }
+			33 = { change_pc = pc_ll_foggy }
+			33 = { change_pc = pc_ll_torrid }
+		}
+		spawn_habitat_neutron_effect = yes 
+		clear_planet_modifiers = yes
+		while = {
+			limit = {
+				count_deposits = {
+					count >= 1
+					type = d_flood_infestation
+				}
+			}
+			remove_deposit = d_flood_infestation
+		}
+		remove_deposit = d_flood_hive
+		remove_modifier = flood_outbreak
+		remove_modifier = large_flood_outbreak
+		remove_modifier = flood_infestation
+		remove_modifier = flood_infestation_stage_3
+	}
+
+	# Make sure scourge modifiers are gone
+	every_system_planet = {
+		limit = {
+			is_planet = yes
+			is_star = no
+			is_asteroid = no
+			NOT = {
+				has_deposit = d_slipspace_bubble
+			}
+		}
+		remove_deposit = d_flood_hive
+		remove_modifier = flood_outbreak
+		remove_modifier = large_flood_outbreak
+		remove_modifier = flood_infestation
+		remove_modifier = flood_infestation_stage_3
+	}
+
+	# Clean Scourgy shield worlds
+	every_system_planet = {
+		limit = {
+			is_planet_class = pc_flood_shield
+		}
+		change_pc = pc_forerunner_shield
+		spawn_habitat_neutron_effect = yes 
+		clear_deposits = yes
+		clear_planet_modifiers = yes
+		add_modifier = {
+			modifier = halo_ring_monitor
+		}
+		add_modifier = {
+			modifier = halo_ring_submonitor
+		}
+		remove_modifier = flood_outbreak
+		remove_modifier = large_flood_outbreak
+		remove_modifier = flood_infestation
+		remove_modifier = flood_infestation_stage_3
+		add_deposit = d_sw_apex_site
+		add_deposit = d_sw_access_tunnels
+		add_deposit = d_sw_surface
+		add_deposit = d_automated_sentinel_factory
+	}
+
+	# Clean Scourgy Ringworlds
+	every_system_planet = {
+		limit = {
+			AND = {
+				is_artificial = yes
+				is_planet_class = pc_flood_ringworld_habitable
+				is_star = no
+				is_asteroid = no
+				NOT = {
+					has_deposit = d_slipspace_bubble
+				}
+			}	
+		}
+		change_pc = pc_ringworld_habitable
+		spawn_ringworld_neutron_effect = yes
+		clear_planet_modifiers = yes
+		every_deposit = {
+			limit = {
+				is_deposit_type = d_flood_infestation
+			}
+			remove_deposit = d_flood_infestation
+		}
+		remove_deposit = d_flood_hive
+		remove_modifier = flood_outbreak
+		remove_modifier = large_flood_outbreak
+		remove_modifier = flood_infestation
+		remove_modifier = flood_infestation_stage_3
+	}
+
+	# Fuck Scourgy Habitats
+	every_system_planet = {
+		limit = {
+			has_modifier = flood_infected_habitat
+		}
+		spawn_habitat_neutron_effect = yes 
+		remove_planet = this
+	}
+}

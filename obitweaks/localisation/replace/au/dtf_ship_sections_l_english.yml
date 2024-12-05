@@ -1,0 +1,39 @@
+﻿l_english:
+
+
+DESTROYER_BOW_DTF_X1:0 "For Fixed Shock Cannon"
+CRUISER_BOW_DTF_X1:0 "For Fixed Shock Cannon"
+ESCORTCARRIER_BOW_DTF_X1M2:0 "For Small Wave Motion Gun"
+STRIKECRUISER_BOW_DTF_X1:0 "For Small Wave Motion Gun"
+BATTLECRUISER_BOW_DTF_X1L2:0 "For Small Wave Motion Gun"
+BATTLESHIP_BOW_DTF_X1L2:0 "For Small Wave Motion Gun"
+CARRIER_BOW_DTF_X1L2:0 "For Small Wave Motion Gun"
+
+
+CRUISER_MID_DTF_L3:0 "Battleship Class"
+CRUISER_STERN_DTF_PD:0 "Missile & PD"
+
+
+
+
+
+
+
+
+
+
+CORE_JUGGERNAUT_DTFF_SECTION_BOW:0 "For Wave Motion Gun"
+CORE_JUGGERNAUT_DTFF_SECTION:0 "Ship Hull"
+
+DTF_ORBITAL_DEFENSE_SYSTEM_BOW:0 "Central Control System"
+DTF_ORBITAL_DEFENSE_SYSTEM_MID:0 "Defense System"
+DTF_ORBITAL_DEFENSE_SYSTEM_STERN:0 "Auxiliary system"
+
+
+SHIP_COLOSSUS_DTF_MAIN_SECTION:0 "Defense Mechanism"
+
+
+
+
+
+STARBASE_DTF_DEFENSE_SECTION:0 "Defense Mechanism"

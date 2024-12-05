@@ -1,0 +1,418 @@
+namespace = cosmoreverse_events
+
+# Cosmoreverse Activation
+country_event = {
+	id = cosmoreverse_events.1
+	title = "cosmoreverse_events.1.title"
+	desc = "cosmoreverse_events.1.desc"
+	picture = GFX_efg_origin_earth_portrait
+	show_sound = event_default
+	location = event_target:cr_planet
+	
+	hide_window = no
+	is_triggered_only = yes
+	
+    option = { # Make Time Fault
+        name = "cosmoreverse_events.1.a"
+		
+		allow = {
+			event_target:cr_planet = {
+				count_deposits = {
+					count < 10
+					type = d_cr_dtf
+				}
+			}
+		}
+
+        hidden_effect = {
+            event_target:cr_planet = {
+				add_deposit = d_cr_dtf
+            }
+        }
+    }
+	
+	option = { # Open Planet Class Selection
+		name = "cosmoreverse_events.1.b"
+		hidden_effect = {
+			country_event = { id = cosmoreverse_events.10 }
+		}
+	}
+
+	option = { # Remove Time Fault
+		name = "cosmoreverse_events.1.c"
+
+		allow = {
+			event_target:cr_planet = {
+				count_deposits = {
+					count >= 1
+					type = d_cr_dtf
+				}
+			}
+		}
+
+		hidden_effect = {
+			event_target:cr_planet = {
+				remove_deposit = d_cr_dtf
+			}
+		}
+	}
+
+    option = { # Make 10 Time Fault
+        name = "cosmoreverse_events.1.d"
+		
+		allow = {
+			event_target:cr_planet = {
+				count_deposits = {
+					count = 0
+					type = d_cr_dtf
+				}
+			}
+		}
+
+        hidden_effect = {
+            event_target:cr_planet = {
+				while = {
+					limit = {
+						count_deposits = {
+							count < 10
+							type = d_cr_dtf
+						}
+					}
+					add_deposit = d_cr_dtf
+				}
+
+            }
+        }
+    }
+
+    option = { # Remove All Time Fault
+        name = "cosmoreverse_events.1.e"
+		
+		allow = {
+			event_target:cr_planet = {
+				count_deposits = {
+					count >= 1
+					type = d_cr_dtf
+				}
+			}
+		}
+
+        hidden_effect = {
+            event_target:cr_planet = {
+				while = {
+					limit = {
+						count_deposits = {
+							count >= 1
+							type = d_cr_dtf
+						}
+					}
+					remove_deposit = d_cr_dtf
+				}
+            }
+        }
+    }
+
+    option = { # Deplete Energy Controllers
+        name = "cosmoreverse_events.1.y"
+		
+		allow = {
+			event_target:cr_planet = {
+				count_deposits = {
+					count >= 1
+					type = d_energy_controller
+				}
+			}
+		}
+
+        hidden_effect = {
+            event_target:cr_planet = {
+				while = {
+					limit = {
+						count_deposits = {
+							count >= 1
+							type = d_energy_controller
+						}
+					}
+					remove_deposit = d_energy_controller
+					add_deposit = d_energy_controller_empty
+				}
+            }
+        }
+    }
+
+	option = { # Cancel
+		name = "cosmoreverse_events.1.z"
+	}
+}
+
+# Cosmoreverse Planet Menu
+country_event = {
+	id = cosmoreverse_events.10
+	title = "cosmoreverse_events.10.title"
+	desc = "cosmoreverse_events.10.desc"
+	picture = GFX_efg_origin_earth_portrait
+	show_sound = event_default
+	location = event_target:cr_planet
+	
+	hide_window = no
+	is_triggered_only = yes
+	
+	option = { # Cosmoreverse to Gaia
+		name = "cosmoreverse_events.10.a"
+		allow = {
+			owner = {
+				has_ascension_perk = ap_world_shaper
+			}
+		}
+		hidden_effect = {
+
+			event_target:cr_planet = {
+				change_pc = pc_gaia
+			}
+		}
+	}
+	
+	option = { # Cosmoreverse to Continental
+		name = "cosmoreverse_events.10.b"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_continental
+			}
+		}
+	}
+
+		option = { # Cosmoreverse to Tropical
+		name = "cosmoreverse_events.10.c"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_tropical
+			}
+		}
+	}
+
+		option = { # Cosmoreverse to Alpine
+		name = "cosmoreverse_events.10.d"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_alpine
+			}
+		}
+	}
+
+		option = { # Cosmoreverse to Tundra
+		name = "cosmoreverse_events.10.e"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_tundra
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Ocean
+		name = "cosmoreverse_events.10.f"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_ocean
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Arctic
+		name = "cosmoreverse_events.10.g"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_arctic
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Desert
+		name = "cosmoreverse_events.10.h"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_desert
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Savannah
+		name = "cosmoreverse_events.10.i"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_savannah
+			}
+		}
+	}
+	
+	option = { # Cosmoreverse to Barren
+		name = "cosmoreverse_events.10.j"
+		hidden_effect = {
+			event_target:cr_planet = {
+				random_list = {
+					50 = { change_pc = pc_barren_cold }
+					50 = { change_pc = pc_barren }
+				}
+				destroy_colony = yes
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Fractured
+		name = "cosmoreverse_events.10.k"
+		allow = {
+			owner = {
+				has_technology = tech_dark_matter_power_core
+			}
+		}
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_dark_fractured
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Void Sphere
+		name = "cosmoreverse_events.10.l"
+		allow = {
+			owner = {
+				has_technology = tech_acot_create_enigmatic_world
+			}
+		}
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_acot_enigmopolis
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Soul Sphere
+		name = "cosmoreverse_events.10.m"
+		allow = {
+			owner = {
+				has_technology = tech_precursor_theia_design
+			}
+		}
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_acot_soulsphere
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Asteroid
+		name = "cosmoreverse_events.10.n"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_asteroid
+				set_planet_size = 1
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Gas Giant
+		name = "cosmoreverse_events.10.o"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_gas_giant
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Tomb
+		name = "cosmoreverse_events.10.p"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_nuked
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Shattered
+		name = "cosmoreverse_events.10.y"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_shattered
+				destroy_colony = yes
+			}
+		}
+	}
+
+	option = { # Cancel
+		name = "cosmoreverse_events.10.z"
+		hidden_effect = {
+			country_event = { id = cosmoreverse_events.1 }
+		}
+	}
+}
+
+country_event = {
+	id = cosmoreverse_events.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		create_country = {
+			name = "The Scourge"
+			adjective = "Scourge"
+			contact_rule = does_first_contact_sites
+			type = default
+			name_list = the_flood
+			ship_prefix = "DWS"
+			authority = auth_hive_mind
+			civics={
+				civic_hive_devouring_swarm
+				civic_flood_hivemind
+			}
+			species = {
+				class = "halo_flood"
+				portrait = "halo_flood"
+				species_name={
+					key="Scourge Entity"
+					literal=yes
+				}
+				species_plural={
+					key="Scourge Entities"
+					literal=yes
+				}
+				species_adjective={
+					key="Scourge"
+					literal=yes
+				}
+				name_list="the_flood"
+				gender=not_set
+				trait="trait_hive_mind"
+				trait="trait_flood_species"
+				trait="trait_repugnant"
+			}
+			flag = random
+		}
+	}
+}
+
+# Cosmoreverse System Planet Designation (Planet_Killer)
+planet_event = {
+	id = cosmoreverse_events.69
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		save_global_event_target_as = cr_planet
+		from.owner = {
+			country_event = { id = cosmoreverse_events.1 }
+		}
+		
+		#event_target:crs_ship.owner = {
+		#	country_event = { id = cosmoreverse_events.1 }
+		#}
+	}
+}
+
+ship_event = {
+	id = cosmoreverse_events.699
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		save_global_event_target_as = crs_ship
+	}
+}

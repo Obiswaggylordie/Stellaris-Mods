@@ -1,0 +1,213 @@
+#
+# These define the type of bypasses that exist in game. This is only the logical connection between systems.
+# These can be added to megastructures.
+#
+# bypass_type = {
+#	name = GATEWAY_GALACTIC		# the localization key used in triggers and effects for the type
+#	is_pathfind = yes			# whether this type can be automatically used by the pathfinding (otherwise you'll have to right click the object containing it)
+#	requires_exploration = no	# whether this bypass type needs to be 'seen' before it can be used
+#	uses_action = no			# whether this type needs an action or can be used automagically
+#	always_active = no			# whether bypasses of these types are automatically active on creation, or if they need to be researched/upgraded to be activated
+#	windup_time = 0.0			# days preparing before travel, translated into ticks on load.
+#	winddown_time = 0.0			# days preparing after travel, translated into ticks on load.
+#	ftl_multiplier = 0			# 0 is supposed to mean instant, WARNING: not implemented correctly.
+#	extends_sensors = yes		# whether you can "see through" the bypass and extends your sensor range to the other side
+#	icon_frame = 25
+#	remember_instances = no	# whether countries remember meeting a specific instance of that type, or if they just remember seeing the type in general
+#	galactic_map_tooltip_header=GATEWAY_GALACTIC
+#	galactic_map_tooltip_desc=GATEWAY_GALACTIC_DESC
+#	connection_type = any_other
+#	ftl_ship_effect	= "gateway_ftl_ship_effect_entity"		# what effect to spawn on the ship when they jump through the bypass
+#	ftl_bypass_effect	= "gateway_ftl_bypass_effect_entity"	# what effect to spawn on the bypass when a ship jumps through
+#	bypass_effect		= ""
+#	animation_time = 3				# number of days to wait for the jump animation to be played
+#	prerequisites = {
+#		tech_gateway_activation
+#	}
+#	on_pre_explore = {					# an effect that is called just before the jump of a right click "explore" action of a fleet
+#
+#	}
+#	country_can_use = {					# trigger to evaluate if a country can use bypasses of this type. this: country, from: (optional) system owner; default: { always = yes }
+#	}
+#	on_action = "on_entering_bypass"	# The name of the on-action event that will be fired upon entering FTL (if set)
+#										# THIS = Fleet
+#										# FROM = System jumping to
+#										# FROMFROM = System jumped from
+# }
+
+slipspace = {
+	name = SLIPSPACE_GALACTIC
+	is_pathfind = yes
+	uses_action = no
+	requires_exploration = no
+	always_active = no
+	windup_time = 0
+	winddown_time = 0
+	ftl_multiplier = 0			# 0 means instant
+	icon_frame = 25
+	remember_instances = no	# whether countries remember meeting a specific instance of that type, or if they just remember seeing the type in general
+	galactic_map_tooltip_header=SLIPSPACE_GALACTIC
+	galactic_map_tooltip_desc=SLIPSPACE_GALACTIC_DESC
+	connection_type = any_other
+	animation_time = 1
+	ftl_ship_effect = "gateway_ftl_ship_effect_entity"
+	ftl_bypass_effect = "gateway_ftl_bypass_effect_entity"
+	prerequisites = {
+		tech_slipspace_field
+	}
+	country_can_use = {
+		always = yes
+	}
+	respect_closed_borders = no
+	on_action = "on_entering_slipspace"
+}
+
+slipspace_alpha = {
+	name = SLIPSPACE_GALACTIC_ALPHA
+	is_pathfind = yes
+	uses_action = no
+	requires_exploration = no
+	always_active = no
+	windup_time = 0
+	winddown_time = 0
+	ftl_multiplier = 0			# 0 means instant
+	icon_frame = 25
+	remember_instances = no	# whether countries remember meeting a specific instance of that type, or if they just remember seeing the type in general
+	galactic_map_tooltip_header=SLIPSPACE_GALACTIC_ALPHA
+	galactic_map_tooltip_desc=SLIPSPACE_GALACTIC_ALPHA_DESC
+	connection_type = any_other
+	animation_time = 1
+	ftl_ship_effect = "gateway_ftl_ship_effect_entity"
+	ftl_bypass_effect = "gateway_ftl_bypass_effect_entity"
+	prerequisites = {
+		tech_slipspace_portal_activation
+	}
+	respect_closed_borders = no
+	
+	on_action = "on_entering_slipspace_alpha"
+}
+
+slipspace_beta = {
+	name = SLIPSPACE_GALACTIC_BETA
+	is_pathfind = yes
+	uses_action = no
+	requires_exploration = no
+	always_active = no
+	windup_time = 0
+	winddown_time = 0
+	ftl_multiplier = 0			# 0 means instant
+	icon_frame = 25
+	remember_instances = no	# whether countries remember meeting a specific instance of that type, or if they just remember seeing the type in general
+	galactic_map_tooltip_header=SLIPSPACE_GALACTIC_BETA
+	galactic_map_tooltip_desc=SLIPSPACE_GALACTIC_BETA_DESC
+	connection_type = any_other
+	animation_time = 1
+	ftl_ship_effect = "gateway_ftl_ship_effect_entity"
+	ftl_bypass_effect = "gateway_ftl_bypass_effect_entity"
+	prerequisites = {
+		tech_slipspace_portal_activation
+	}
+	respect_closed_borders = no
+
+	on_action = "on_entering_slipspace_beta"
+}
+
+slipspace_delta = {
+	name = SLIPSPACE_GALACTIC_DELTA
+	is_pathfind = yes
+	uses_action = no
+	requires_exploration = no
+	always_active = no
+	windup_time = 0
+	winddown_time = 0
+	ftl_multiplier = 0			# 0 means instant
+	icon_frame = 25
+	remember_instances = no	# whether countries remember meeting a specific instance of that type, or if they just remember seeing the type in general
+	galactic_map_tooltip_header=SLIPSPACE_GALACTIC_DELTA
+	galactic_map_tooltip_desc=SLIPSPACE_GALACTIC_DELTA_DESC
+	connection_type = any_other
+	animation_time = 1
+	ftl_ship_effect = "gateway_ftl_ship_effect_entity"
+	ftl_bypass_effect = "gateway_ftl_bypass_effect_entity"
+	prerequisites = {
+		tech_slipspace_portal_activation
+	}
+	respect_closed_borders = no
+	
+	on_action = "on_entering_slipspace_delta"
+}
+
+slipspace_gamma = {
+	name = SLIPSPACE_GALACTIC_GAMMA
+	is_pathfind = yes
+	uses_action = no
+	requires_exploration = no
+	always_active = no
+	windup_time = 0
+	winddown_time = 0
+	ftl_multiplier = 0			# 0 means instant
+	icon_frame = 25
+	remember_instances = no	# whether countries remember meeting a specific instance of that type, or if they just remember seeing the type in general
+	galactic_map_tooltip_header=SLIPSPACE_GALACTIC_GAMMA
+	galactic_map_tooltip_desc=SLIPSPACE_GALACTIC_GAMMA_DESC
+	connection_type = any_other
+	animation_time = 1
+	ftl_ship_effect = "gateway_ftl_ship_effect_entity"
+	ftl_bypass_effect = "gateway_ftl_bypass_effect_entity"
+	prerequisites = {
+		tech_slipspace_portal_activation
+	}
+	respect_closed_borders = no
+	
+	on_action = "on_entering_slipspace_gamma"
+}
+
+slipspace_lambda = {
+	name = SLIPSPACE_GALACTIC_LAMBDA
+	is_pathfind = yes
+	uses_action = no
+	requires_exploration = no
+	always_active = no
+	windup_time = 0
+	winddown_time = 0
+	ftl_multiplier = 0			# 0 means instant
+	icon_frame = 25
+	remember_instances = no	# whether countries remember meeting a specific instance of that type, or if they just remember seeing the type in general
+	galactic_map_tooltip_header=SLIPSPACE_GALACTIC_LAMBDA
+	galactic_map_tooltip_desc=SLIPSPACE_GALACTIC_LAMBDA_DESC
+	connection_type = any_other
+	animation_time = 1
+	ftl_ship_effect = "gateway_ftl_ship_effect_entity"
+	ftl_bypass_effect = "gateway_ftl_bypass_effect_entity"
+	prerequisites = {
+		tech_slipspace_portal_activation
+	}
+	respect_closed_borders = no
+	
+	on_action = "on_entering_slipspace_lambda"
+}
+
+slipspace_epsilon = {
+	name = SLIPSPACE_GALACTIC_EPSILON
+	is_pathfind = yes
+	uses_action = no
+	requires_exploration = no
+	always_active = no
+	windup_time = 0
+	winddown_time = 0
+	ftl_multiplier = 0			# 0 means instant
+	icon_frame = 25
+	remember_instances = no	# whether countries remember meeting a specific instance of that type, or if they just remember seeing the type in general
+	galactic_map_tooltip_header=SLIPSPACE_GALACTIC_EPSILON
+	galactic_map_tooltip_desc=SLIPSPACE_GALACTIC_EPSILON_DESC
+	connection_type = any_other
+	animation_time = 1
+	ftl_ship_effect = "gateway_ftl_ship_effect_entity"
+	ftl_bypass_effect = "gateway_ftl_bypass_effect_entity"
+	prerequisites = {
+		tech_slipspace_portal_activation
+	}
+	respect_closed_borders = no
+	
+	on_action = "on_entering_slipspace_epsilon"
+}

@@ -1,0 +1,30 @@
+
+
+
+utility_component_template = {
+	key = "FORERUNNER_SENSORS"
+	size = medium
+	icon = "GFX_forerunner_sensors"
+	icon_frame = 1
+	power = -3000
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 15
+			energon = 50
+		}
+	}
+	sensor_range = 10
+	hyperlane_range = 10
+	
+	ship_modifier = {
+		ship_tracking_add = 30
+	}
+	
+	prerequisites = { "tech_forerunner_sensors" }
+	component_set = "sensor_components"
+	
+	ai_weight = {
+		weight = 1100
+	}
+}

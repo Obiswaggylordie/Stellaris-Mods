@@ -1,0 +1,39 @@
+﻿l_english:
+
+DTF_EDF_MISSILE_CS_1:0 "Type-1 High-Speed Missile"
+DTF_EDF_MISSILE_CS_1_DESC:0 "Guided weapons that track the target and explode upon impact"
+
+DTF_EDF_MISSILE_CS_2:0 "Type-2 High-Speed Missile"
+DTF_EDF_MISSILE_CS_2_DESC:0 "Improved high-speed missile"
+
+DTF_EDF_MISSILE_CS_3:0 "Type-1 Nuclear Missile"
+DTF_EDF_MISSILE_CS_3_DESC:0 "Improved high-speed missile"
+
+DTF_EDF_MISSILE_CS_4:0 "Type-2 Nuclear Missile"
+DTF_EDF_MISSILE_CS_4_DESC:0 "Improved high-speed missile"
+
+DTF_EDF_MISSILE_CS_5:0 "Wave Motion Missile"
+DTF_EDF_MISSILE_CS_5_DESC:0 "Guided weapons with wave compression warheads filled with wave motion energy"
+
+
+
+DTF_WAVE_MOTION_MISSILE_CS_1:0 "Wave Motion Missile"
+DTF_WAVE_MOTION_MISSILE_CS_1_DESC:0 "Guided weapons with wave compression warheads filled with wave motion energy"
+
+DTF_WAVE_MOTION_MISSILE_CS_2:0 "Wave Motion Missile"
+DTF_WAVE_MOTION_MISSILE_CS_2_DESC:0 "Improved wave missile"
+
+
+
+
+
+DTF_EDF_MISSILE_1:0 "Type-1 High-Speed Missile"
+DTF_EDF_MISSILE_2:0 "Type-2 High-Speed Missile"
+DTF_EDF_MISSILE_3:0 "Type-1 Nuclear Missile"
+DTF_EDF_MISSILE_4:0 "Type-2 Nuclear Missile"
+DTF_EDF_MISSILE_5:0 "Wave Motion Missile"
+
+
+
+DTF_WAVE_MOTION_MISSILE_1:0 "Wave Motion Missile"
+DTF_WAVE_MOTION_MISSILE_2:0 "Wave Motion Missile"

@@ -1,0 +1,581 @@
+## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# planet_modifier - applied to planet only when deposit blocker has been cleared
+# constant_modifier - applied to planet always
+# station = station class in orbit to gather
+
+@blocker_high = 10
+@blocker_low = 5
+
+# Cybertron Deposit Blockers
+
+d_damaged_cybertron_core = {
+	icon = d_damaged_cybertron_core
+	
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker
+	
+	potential = { always = no }
+	can_be_cleared = { always = no }
+	
+	planet_modifier = {
+		planet_jobs_upkeep_mult = 1.0
+		habitability_ceil_add = -100.0
+		pop_environment_tolerance = -1.0
+	}
+	
+	use_weights_for_blocker_swap_types = no
+	blocker_swap_types = {
+		d_restored_cybertron_core
+	}
+
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_inactive_well_of_all_sparks = {
+	icon = d_inactive_well_of_all_sparks
+	
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker
+	
+	potential = { always = no }
+	can_be_cleared = { always = no }
+	
+	use_weights_for_blocker_swap_types = no
+	blocker_swap_types = {
+		d_active_well_of_all_sparks
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_damaged_cybertronian_world_core = {
+	icon = d_damaged_cybertronian_world_core
+	
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker
+	
+	potential = { always = no }
+	can_be_cleared = { always = no }
+	
+	planet_modifier = {
+		planet_jobs_upkeep_mult = 1.0
+		habitability_ceil_add = -100.0
+		pop_environment_tolerance = -1.0
+	}
+	
+	use_weights_for_blocker_swap_types = no
+	blocker_swap_types = {
+		d_cybertronian_world_core
+	}
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_damaged_well_of_all_sparks_duplicate = {
+	icon = d_inactive_well_of_all_sparks
+	
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker
+	
+	potential = { always = no }
+	can_be_cleared = { always = no }
+	
+	use_weights_for_blocker_swap_types = no
+	blocker_swap_types = {
+		d_well_of_all_sparks_duplicate
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+# Omega Locks
+
+d_inactive_omega_lock = {
+	is_for_colonizable = yes
+	icon = d_inactive_omega_lock
+	
+	category = deposit_cat_rare_blocker
+	can_be_cleared = {
+		owner = { has_technology = tech_energon_mining_2 }
+	}
+
+	time = 1
+
+	can_be_cleared = {
+		NOR = {
+			is_planet_class = pc_depleted_cybertron
+			is_planet_class = pc_dead_cybertron
+		}
+	}
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_buildings_cost_mult = 0.1
+		planet_districts_cost_mult = 0.1
+	}
+	blocker_swap_types = {
+		d_active_omega_lock
+	}
+
+	on_cleared = {
+		remove_planet_flag = omega_lock_0
+		remove_planet_flag = omega_lock_1
+		remove_planet_flag = omega_lock_2
+		remove_planet_flag = omega_lock_3
+		remove_planet_flag = omega_lock_4
+		set_planet_flag = omega_lock_5
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energon = 10000
+			sr_living_metal = 10000
+		}
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_damaged_omega_lock = {
+	is_for_colonizable = yes
+	icon = d_damaged_omega_lock
+	
+	category = deposit_cat_rare_blocker
+	
+	potential = { always = no }
+	can_be_cleared = {
+		OR = {
+			owner = { has_technology = tech_magic_and_science }
+			owner = { has_technology = tech_omegalock_restoration }
+		}
+
+	}
+
+	time = 365
+	
+	planet_modifier = {
+		planet_buildings_cost_mult = 0.5
+		planet_districts_cost_mult = 0.5
+		pop_happiness = -0.5
+	}
+	blocker_swap_types = {
+		d_inactive_omega_lock
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			sr_living_metal = 5000
+		}
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_shielded_omega_lock = {
+	is_for_colonizable = yes
+	icon = d_shielded_omega_lock
+	
+	category = deposit_cat_rare_blocker
+	
+	potential = { always = no }
+	can_be_cleared = {
+		owner = { has_technology = tech_omegakey }
+	}
+
+	blocker_swap_types = {
+		d_active_omega_lock
+	}
+
+	on_cleared = {
+		remove_planet_flag = omega_lock_0
+		remove_planet_flag = omega_lock_1
+		remove_planet_flag = omega_lock_2
+		remove_planet_flag = omega_lock_3
+		remove_planet_flag = omega_lock_4
+		set_planet_flag = omega_lock_5
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_sea_of_rust = {
+	icon = d_sea_of_rust
+	time = 1095
+	
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker
+	
+	potential = { always = no }
+	
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 4000
+		}
+	}
+	
+	planet_modifier = {
+		pop_environment_tolerance = -0.5
+		planet_max_districts_add = -100
+	}
+	
+	use_weights_for_blocker_swap_types = no
+	blocker_swap_types = {
+		d_damaged_omega_lock
+	}
+
+	drop_weight = {
+		weight = -1
+	}
+}
+
+# Star Harvester
+d_hidden_star_harvester = {
+	is_for_colonizable = yes
+	icon = d_hidden_star_harvester
+	
+	category = deposit_cat_rare_blocker
+
+	time = 365
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_jobs_unity_produces_mult = 1.00
+		pop_happiness = 1.00
+	}
+	blocker_swap_types = {
+		d_star_harvester
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 10000
+			minerals = 2000
+		}
+	}
+	
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_dead_sanctuary_fortress = {
+	is_for_colonizable = yes
+	icon = d_dead_sanctuary_fortress
+	time = 365
+	
+	category = deposit_cat_rare_blocker
+	
+	potential = { always = no }
+
+	blocker_swap_types = {
+		d_sanctuary_fortress
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			sr_living_metal = 1000
+			energon = 500
+		}
+	}
+}
+
+d_cybertron_ruins = {
+	icon = d_cybertron_ruins
+	time = 365
+	
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+	use_weights_for_blocker_swap_types = no
+	blocker_swap_types = {
+		d_cybertronian_city
+	}
+	
+	resources = {
+		category = deposit_blockers
+		cost = {
+			sr_living_metal = 500
+			energon = 250
+			
+		}
+	}
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_dead_iacon_city = {
+	is_for_colonizable = yes
+	icon = d_dead_iacon_city
+	category = deposit_cat_rare_blocker
+
+	potential = { always = no }
+
+	planet_modifier = {
+		district_generator_max = -2
+	}
+	use_weights_for_blocker_swap_types = no
+	blocker_swap_types = {
+		d_iacon_city
+	}
+	
+	resources = {
+		category = deposit_blockers
+		cost = {
+			sr_living_metal = 1000
+			energon = 500
+		}
+	}	
+}
+
+d_dead_kaon_city = {
+	is_for_colonizable = yes
+	icon = d_dead_kaon_city
+	
+	category = deposit_cat_rare_blocker
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		district_mining_max = -2
+	}
+	use_weights_for_blocker_swap_types = no
+	blocker_swap_types = {
+		d_kaon_city
+	}
+	
+	resources = {
+		category = deposit_blockers
+		cost = {
+			sr_living_metal = 1000
+			energon = 500
+		}
+	}
+}
+
+d_crystal_city_ruins = {
+	icon = d_crystal_city_ruins
+	time = 365
+	
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+	use_weights_for_blocker_swap_types = no
+	blocker_swap_types = {
+		d_crystal_city
+	}
+	
+	resources = {
+		category = deposit_blockers
+		cost = {
+			sr_living_metal = 1000
+			energon = 500
+		}
+	}
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_dead_teletraan_one = {
+	is_for_colonizable = yes
+	icon = d_dead_teletraan_one
+	
+	category = deposit_cat_rare_blocker
+	potential = { always = no }
+
+	can_be_cleared = {
+		NOR = {
+			is_planet_class = pc_depleted_cybertron
+			is_planet_class = pc_dead_cybertron
+		}
+	}
+	
+	use_weights_for_blocker_swap_types = no
+	blocker_swap_types = {
+		d_teletraan_one
+	}
+	
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energon = 1000
+		}
+	}
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_damaged_energon_bridge = {
+	icon = d_damaged_energon_bridge
+	time = 365
+	
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker
+	
+	potential = { always = no }
+
+	can_be_cleared = {
+		NOR = {
+			is_planet_class = pc_depleted_cybertron
+			is_planet_class = pc_dead_cybertron
+		}
+	}
+	
+	planet_modifier = {
+		planet_generator_districts_add = -1
+	}
+	use_weights_for_blocker_swap_types = no
+	blocker_swap_types = {
+		d_energon_bridge
+	}
+	
+	resources = {
+		category = deposit_blockers
+		cost = {
+			sr_living_metal = 1000
+			energon = 500
+		}
+	}
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_deactivated_space_bridge = {
+	icon = d_deactivated_space_bridge
+	
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker
+
+	can_be_cleared = {
+		NOR = {
+			is_planet_class = pc_depleted_cybertron
+			is_planet_class = pc_dead_cybertron
+		}
+	}
+	
+	resources = {
+		category = deposit_blockers 
+		cost = { 
+			sr_living_metal = 1000
+			energon = 1000
+		}
+	}
+	
+	use_weights_for_blocker_swap_types = no
+	blocker_swap_types = {
+		d_space_bridge
+	}
+	on_cleared = {
+		if = {
+			limit = {
+				exists = owner
+				owner = {
+					has_origin = origin_cybertron
+				}
+			}
+			owner = { add_resource = { energy = 500 } }
+		}
+	}
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_inactive_trypticon = {
+	icon = d_inactive_trypticon
+	time = 180
+	
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker
+
+	can_be_cleared = {
+		NOR = {
+			is_planet_class = pc_depleted_cybertron
+			is_planet_class = pc_dead_cybertron
+		}
+		owner = { has_technology = tech_dark_energon_mining }
+	}
+	
+	resources = {
+		category = deposit_blockers 
+		cost = { 
+			energon = 500
+		}
+	}
+	
+	use_weights_for_blocker_swap_types = no
+	blocker_swap_types = {
+		d_active_trypticon
+	}
+
+	drop_weight = {
+		weight = -1
+	}
+}
+
+d_insecticon_infestation = {
+	icon = d_insecticon_infestation
+	time = 360
+	
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+	
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 1200
+		}
+	}
+	
+	planet_modifier = {
+		planet_max_districts_add = -2
+		planet_building_build_speed_mult = -0.10
+		planet_jobs_energy_produces_mult = -0.05
+	}
+	on_cleared = {
+		if = {
+			limit = {
+				exists = owner
+			}
+			owner = { add_resource = { energon = 400 minerals = 400 } }
+		}
+	}
+	drop_weight = {
+		weight = -1
+	}
+}

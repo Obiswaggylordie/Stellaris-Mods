@@ -1,0 +1,68 @@
+
+leader_trait_uncf = {
+	starting_ruler_trait = yes
+	cost = 0
+	ICON = "gfx/interface/icons/traits/trait_uncf.dds"
+	councilor_modifier = {
+		planet_stability_add = 1
+	}
+
+	leader_potential_add = {
+		always = no
+	}
+	
+	leader_class = { commander scientist official }
+	initial = no
+    randomized = no
+}
+
+leader_trait_garmillas = {
+	starting_ruler_trait = yes
+	cost = 0
+	ICON = "gfx/interface/icons/traits/trait_garmillas.dds"
+	councilor_modifier = {
+		planet_stability_add = 1
+	}
+
+	leader_potential_add = {
+		always = no
+	}
+
+	leader_class = { commander scientist official }
+	initial = no
+    randomized = no
+}
+
+leader_trait_gatlantis = {
+	starting_ruler_trait = yes
+	cost = 0
+	ICON = "gfx/interface/icons/traits/trait_gatlantis.dds"
+	councilor_modifier = {
+		planet_stability_add = 1
+	}
+
+	leader_potential_add = {
+		always = no
+	}
+
+	leader_class = { commander scientist official }
+	initial = no
+    randomized = no
+}
+
+leader_trait_dezarium = {
+	starting_ruler_trait = yes
+	cost = 0
+	ICON = "gfx/interface/icons/traits/trait_dezarium.dds"
+	councilor_modifier = {
+		planet_stability_add = 1
+	}
+	leader_class = { commander scientist official }
+	initial = no
+    randomized = no
+
+	leader_potential_add = {
+		always = no
+	}
+}
+

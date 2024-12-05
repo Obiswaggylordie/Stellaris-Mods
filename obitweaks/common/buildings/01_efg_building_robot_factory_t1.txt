@@ -1,0 +1,92 @@
+
+@dtf_robot_factory_build_time_1 = 160
+
+
+
+
+@dtf_robot_factory_alloys_cost_1 = 1200
+
+
+
+@dtf_robot_factory_energy_upkeep_1 = 8
+
+
+@dtf_robot_factory_minerals_upkeep_1 = 4
+
+
+
+@dtf_robot_factory_job_1 = 2
+
+
+building_dtf_robot_factory_1 = {
+	base_buildtime = @dtf_robot_factory_build_time_1
+	base_cap_amount = 1
+	category = pop_assembly
+
+	icon = building_robot_assembly_plant
+
+	potential = {
+		always = no
+	}
+
+	allow = { 
+		exists = owner
+		AND = {
+			planet = { is_planet_class = pc_cosmoreverse }
+			owner = { is_hive_empire = no }
+			has_planet_flag = dtf_factory_built_1
+		}
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_roboticist_add = @dtf_robot_factory_job_1
+		}
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_dtf_replicator_add = @dtf_robot_factory_job_1
+		}
+
+	}
+
+
+	planet_modifier = {
+		planet_pop_assembly_mult = 5.0
+	}
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @dtf_robot_factory_alloys_cost_1
+		}
+		upkeep = {
+			energy = @dtf_robot_factory_energy_upkeep_1
+			minerals = @dtf_robot_factory_minerals_upkeep_1
+		}
+	}
+
+
+
+	upgrades = {
+		"building_dtf_robot_factory_2"
+	}
+
+	prerequisites = { "tech_dtf_robot_1" }
+
+	ai_weight = {
+		weight = 0
+	}
+}

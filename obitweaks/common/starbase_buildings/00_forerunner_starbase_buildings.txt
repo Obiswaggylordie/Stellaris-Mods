@@ -1,0 +1,53 @@
+#FORERUNNER STARBASE BUILDINGS
+
+forerunner_slipspace_field_generator = {
+	icon = "GFX_forerunner_slipspace_field"
+	construction_days = 360
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = "tech_slipspace_field" }
+	}
+	
+	resources = {
+		category = starbase_buildings
+		cost = {
+			energy = 2000
+			alloys = 2000
+		}
+		
+		produces = {
+			physics_research = 15
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_galactic_community_member = yes
+				}
+				OR = {
+					is_active_resolution = "resolution_galacticstudies_astral_studies_network"
+					is_active_resolution = "resolution_galacticstudies_advanced_xenostudies"
+					is_active_resolution = "resolution_galacticstudies_ethical_guideline_refactoring"
+					is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
+				}
+			}
+			physics_research = 15
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	
+	station_modifier = {
+		ship_evasion_mult = 10.00
+		ship_shield_hardening_add = 10.0
+		ship_armor_hardening_add = 10.0
+	}
+	
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = no
+	ai_weight = {
+		weight = 10
+	}
+}

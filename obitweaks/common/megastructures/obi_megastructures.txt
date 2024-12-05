@@ -1,0 +1,85 @@
+# Main Wormhole
+obi_magic_wormhole = {
+	entity = "strange_wormhole_entity"
+	construction_entity = "strange_wormhole_entity"
+	portrait = "GFX_gateway"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+
+	prerequisites = {
+		"tech_obi_wormhole"
+	}
+
+	construction_blocks_and_blocked_by = self_type
+	
+	country_modifier = {
+		country_base_influence_produces_add = 2
+	}
+
+	bypass_type = magic_wormhole
+	
+	placement_rules = {
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {}
+}
+
+# Main Wormhole Remove
+obi_magic_wormhole_remove = {
+	entity = "strange_wormhole_entity"
+	construction_entity = "strange_wormhole_entity"
+	portrait = "GFX_gateway"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+
+	prerequisites = {
+		"tech_obi_wormhole"
+	}
+
+	potential = {
+		is_ai = no
+	}
+
+	construction_blocks_and_blocked_by = self_type
+	
+	country_modifier = {
+		country_base_influence_produces_add = 2
+	}
+
+	upgrade_from = {
+		obi_magic_wormhole
+	}
+	
+	placement_rules = {
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {
+		remove_megastructure = fromfrom
+	}
+	on_build_cancel = {}
+	on_build_complete = {}
+}

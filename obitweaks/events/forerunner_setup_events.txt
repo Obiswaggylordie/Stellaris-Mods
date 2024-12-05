@@ -1,0 +1,1431 @@
+namespace = forerunner_start
+
+### Forerunner init - add technologies
+country_event = {
+	id = forerunner_start.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_valid_civic = civic_forerunner_didact
+			}
+			random_owned_leader = {
+				limit = { is_ruler = yes }
+				add_trait = leader_trait_ruler_forerunner_didact
+				set_skill = 5
+				set_age = 12500
+			}
+			capital_scope = {
+				add_building = building_forerunner_stronghold
+				add_building = building_promethean_factory
+				create_species = {
+					name = "Mechanical Promethean"
+					plural = "Mechanical Prometheans"
+					adjective = "Mechanical Promethean"
+					name_list = "promethean"
+					class = ROBOT
+					portrait = "promethean"
+					traits = {
+						trait = trait_mechanical
+						trait = trait_robot_promethean_ai
+					}
+				}
+				create_species = {
+					name = "Sentinel"
+					plural = "Sentinels"
+					adjective = "Sentinel"
+					name_list = "sentinels"
+					class = ROBOT
+					portrait = "sentinels"
+					traits = {
+						trait = trait_mechanical
+						trait = trait_robot_sentinel_ai
+					}
+				}
+				create_species = {
+					name = "Huragok"
+					plural = "Huragok"
+					class = "huragok"
+					portrait = "huragok"
+					name_list = "sentinel"
+					traits = {
+						trait="trait_pc_habitat_preference"
+						trait="trait_huragok_species"
+						trait="trait_weak"
+					}
+				}
+			}
+			capital_scope = {
+				while = {
+					count = 5
+					create_pop = {
+						species = "Mechanical Promethean"
+					}
+				}
+				while = {
+					count = 2
+					create_pop = {
+						species = Sentinel
+					}
+				}
+				while = {
+					count = 1
+					create_pop = {
+						species = Huragok
+					}
+				}
+				while = {
+					random_owned_pop = {
+						limit = {
+							is_same_species = owner_species
+						}
+						kill_pop = yes
+					}
+					count = 8
+				}
+			}
+			every_owned_pop = {
+				limit = { has_trait = "trait_robot_promethean_ai" }
+				set_population_controls = {
+					type = population_control_no
+					country = root.owner
+				}
+				set_migration_controls = {
+					type = migration_control_no
+					country = root.owner
+				}
+				set_colonization_controls = {
+					type = colonization_control_no
+					country = root.owner
+				}
+				set_military_service_type = {
+					type = military_service_limited
+					cooldown = no
+				}
+			}
+			every_owned_pop = {
+				limit = { has_trait = "trait_huragok_species" } 
+				set_citizenship_type = {
+					type = citizenship_limited
+					cooldown = no
+				}
+				set_military_service_type = {
+					type = military_service_none
+					cooldown = no
+				}
+				set_population_controls = {
+					type = population_control_yes
+					country = root.owner
+				}
+				set_migration_controls = {
+					type = migration_control_yes
+					country = root.owner
+				}
+				set_colonization_controls = {
+					type = colonization_control_yes
+					country = root.owner
+				}
+			}
+		}
+	}
+}
+
+#FORERUNNER UTILITY & TIER 2 TECHNOLOGY CHOICE
+country_event = {
+	id = forerunner_start.2
+	title = "forerunner_start.2.name"
+	desc = "forerunner_start.2.desc"
+	picture = GFX_evt_forerunner_technology
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes 
+	
+	trigger = {
+		is_ai = no
+		OR = {
+			has_civic = civic_forerunner_ecumene
+			has_civic = civic_forerunner_didact
+			has_civic = civic_machine_the_created
+			has_civic = civic_machine_promethean
+			has_civic = civic_ecumene_protocols
+		}
+	}
+	
+	option = {
+		name = forerunner_start.2.a
+		hidden_effect = {
+			owner = {
+				give_technology = { message = no tech = tech_forerunner_start }
+				give_technology = { message = no tech = tech_forerunner_start_1 }
+				give_technology = { message = yes tech = tech_forerunner_sensors }
+				give_technology = { message = yes tech = tech_forerunner_thrusters }
+				give_technology = { message = yes tech = tech_forerunner_slipspace_drive }
+				give_technology = { message = yes tech = tech_forerunner_reactor }
+				give_technology = { message = yes tech = tech_forerunner_shield }
+				give_technology = { message = yes tech = tech_forerunner_hardlight_armor }
+				give_technology = { message = no tech = tech_forerunner_sentinel_beam }
+				give_technology = { message = no tech = tech_forerunner_affluence_center }
+				give_technology = { message = no tech = tech_forerunner_nano_forge }
+				give_technology = { message = no tech = tech_forerunner_xeno_zoo }
+				give_technology = { message = no tech = tech_forerunner_master_archive }
+				give_technology = { message = no tech = tech_forerunner_nourishment_center }
+				give_technology = { message = no tech = tech_forerunner_dimensional_fabricator }
+				give_technology = { message = no tech = tech_forerunner_vacuum_generator }
+				give_technology = { message = no tech = tech_lasers_2 }
+				give_technology = { message = no tech = tech_pd_tracking_2 }
+				give_technology = { message = no tech = tech_sapient_ai }
+				give_technology = { message = no tech = tech_synthetic_workers }
+				give_technology = { message = no tech = tech_synthetic_leaders }
+				give_technology = { message = no tech = tech_gene_tailoring }
+				give_technology = { message = no tech = tech_gene_seed_purification }
+				give_technology = { message = no tech = tech_mega_engineering }
+				give_technology = { message = no tech = tech_ecological_adaptation }
+				give_technology = { message = no tech = tech_wormhole_stabilization }
+				give_technology = { message = no tech = tech_gateway_activation }
+				give_technology = { message = no tech = tech_combat_computers_2 }
+				give_technology = { message = no tech = tech_mine_rare_crystals }
+				give_technology = { message = no tech = tech_mine_volatile_motes }
+				give_technology = { message = no tech = tech_mine_exotic_gases }
+				give_technology = { message = no tech = tech_rare_crystals }
+				give_technology = { message = no tech = tech_volatile_motes }
+				give_technology = { message = no tech = tech_exotic_gases }
+				give_physics_tech_tier_1_effect = yes 
+				give_society_tech_tier_1_effect = yes 
+				give_engineering_tech_tier_1_effect = yes 
+				give_physics_tech_tier_2_effect = yes 
+				give_society_tech_tier_2_effect = yes 
+				give_engineering_tech_tier_2_effect = yes 
+			}
+		}
+	}
+	option = {
+		name = forerunner_start.2.b
+		hidden_effect = {
+			owner = {
+				give_technology = { message = no tech = tech_forerunner_start }
+				give_technology = { message = no tech = tech_forerunner_start_1 }
+				give_technology = { message = yes tech = tech_forerunner_sensors }
+				give_technology = { message = yes tech = tech_forerunner_thrusters }
+				give_technology = { message = yes tech = tech_forerunner_slipspace_drive }
+				give_technology = { message = yes tech = tech_forerunner_reactor }
+				give_technology = { message = yes tech = tech_forerunner_shield }
+				give_technology = { message = yes tech = tech_forerunner_hardlight_armor }
+				give_technology = { message = no tech = tech_forerunner_sentinel_beam }
+			}
+		}
+	}
+	option = {
+		name = forerunner_start.2.c
+		hidden_effect = {
+			owner = {
+				give_physics_tech_tier_1_effect = yes 
+				give_society_tech_tier_1_effect = yes 
+				give_engineering_tech_tier_1_effect = yes 
+				give_physics_tech_tier_2_effect = yes 
+				give_society_tech_tier_2_effect = yes 
+				give_engineering_tech_tier_2_effect = yes 
+				give_technology = { message = no tech = tech_forerunner_start }
+				give_technology = { message = no tech = tech_forerunner_start_1 }
+				give_technology = { message = no tech = tech_lasers_2 }
+				give_technology = { message = no tech = tech_pd_tracking_2 }
+				give_technology = { message = no tech = tech_sapient_ai }
+				give_technology = { message = no tech = tech_synthetic_workers }
+				give_technology = { message = no tech = tech_synthetic_leaders }
+				give_technology = { message = no tech = tech_gene_tailoring }
+				give_technology = { message = no tech = tech_gene_seed_purification }
+				give_technology = { message = no tech = tech_mega_engineering }
+				give_technology = { message = no tech = tech_ecological_adaptation }
+				give_technology = { message = no tech = tech_wormhole_stabilization }
+				give_technology = { message = no tech = tech_gateway_activation }
+				give_technology = { message = no tech = tech_combat_computers_2 }
+				give_technology = { message = no tech = tech_mine_rare_crystals }
+				give_technology = { message = no tech = tech_mine_volatile_motes }
+				give_technology = { message = no tech = tech_mine_exotic_gases }
+				give_technology = { message = no tech = tech_rare_crystals }
+				give_technology = { message = no tech = tech_volatile_motes }
+				give_technology = { message = no tech = tech_exotic_gases }
+			}
+		}
+	}
+	option = {
+		name = forerunner_start.2.d
+	}
+}
+	
+
+country_event = {
+	id = forerunner_start.15
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_civic = civic_forerunner_didact
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				has_civic = civic_forerunner_didact
+			}
+			give_technology = { message = no tech = tech_forerunner_start }
+			give_technology = { message = no tech = tech_forerunner_start_1 }
+			give_technology = { message = no tech = tech_advanced_forerunner_sentinels }
+			give_technology = { message = no tech = tech_composer }
+			give_technology = { message = no tech = tech_forerunner_combat_suits }
+			give_technology = { message = no tech = tech_promethean_combat_suits }
+			give_technology = { message = no tech = tech_promethean_weapon_craft }
+			give_technology = { message = no tech = tech_forerunner_sentinels }
+			give_technology = { message = no tech = tech_forerunner_sentinel_beam }
+		}
+	}
+}
+
+country_event = {
+	id = forerunner_start.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	
+	trigger = {
+		has_civic = civic_forerunner_ecumene
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_civic = civic_forerunner_ecumene
+				is_ai = yes
+			}
+			give_technology = { message = no tech = tech_forerunner_start }
+			give_technology = { message = no tech = tech_forerunner_start_1 }
+			give_technology = { message = no tech = tech_forerunner_sentinels }
+			give_technology = { message = no tech = tech_forerunner_combat_suits }
+		}
+	}
+}
+
+country_event = {
+	id = forerunner_start.4
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_origin = origin_forerunner_ark
+	}
+	
+	immediate = {
+		capital_scope = {
+			clear_blockers = yes
+			clear_deposits = yes
+			add_deposit = d_ark_cartographer
+			add_deposit = d_ark_citadel
+			add_deposit = d_ark_foundry
+			add_deposit = d_ark_grid
+			add_deposit = d_ark_agriculture
+			add_deposit = d_automated_sentinel_factory
+		}
+	}
+}
+
+country_event = {
+	id = forerunner_start.45
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_origin = origin_forerunner_ark
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_origin = origin_forerunner_ark
+			}
+			give_technology = { message = no tech = tech_powered_exoskeletons }
+			give_technology = { message = no tech = tech_robotic_workers }
+			give_technology = { message = no tech = tech_robomodding }
+			give_technology = { message = no tech = tech_droid_workers }
+			give_technology = { message = no tech = tech_forerunner_start }
+			give_technology = { message = no tech = tech_forerunner_sentinels }
+			give_technology = { message = no tech = tech_shield_worlds }
+			give_technology = { message = no tech = tech_halo_array_activation }
+			give_technology = { message = no tech = tech_mega_engineering }
+			give_technology = { message = no tech = tech_gateway_activation }
+			give_technology = { message = no tech = tech_slipspace_portal_activation }
+			give_technology = { message = no tech = tech_forerunner_sentinel_beam }
+		}
+	}
+}
+
+country_event = {
+	id = forerunner_start.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	
+	trigger = {
+		has_origin = origin_forerunner_maethrillian
+	}
+	
+	immediate = {
+		capital_scope = {
+			clear_blockers = yes
+			clear_deposits = yes
+			add_deposit = d_maethrillian_council_amphitheater
+			add_deposit = d_maethrillian_crown
+			add_deposit = d_design_seed
+			add_deposit = d_maethrillian_grid
+			add_deposit = d_maethrillian_metarchy
+			add_deposit = d_maethrillian_mysterium
+			add_deposit = d_automated_sentinel_factory
+		}
+	}
+}
+country_event = {
+	id = forerunner_start.51
+	hide_window = yes
+	is_triggered_only = yes
+
+	
+	trigger = {
+		owner = {
+			is_gestalt = no
+		}
+		OR = {
+			has_origin = origin_forerunner_maethrillian
+			has_origin = origin_forerunner_ark
+			has_origin = origin_halo_installation
+			has_origin = origin_created_genesis
+			has_origin = origin_requiem
+		}
+		NOT = {
+			has_civic = civic_forerunner_didact
+		}
+	}
+	
+	immediate = {
+		capital_scope = {
+			add_building = building_sentinel_factory
+			create_species = {
+				name = "Sentinel"
+				plural = "Sentinels"
+				adjective = "Sentinel"
+				name_list = "sentinels"
+				class = ROBOT
+				portrait = "sentinels"
+				traits = {
+					trait = trait_mechanical
+					trait = trait_robot_sentinel_ai
+				}
+			}
+			create_species = {
+				name = "Mechanical Promethean"
+				plural = "Mechanical Prometheans"
+				adjective = "Mechanical Promethean"
+				name_list = "promethean"
+				class = ROBOT
+				portrait = "promethean"
+				traits = {
+					trait = trait_mechanical
+					trait = trait_robot_promethean_ai
+				}
+			}
+			create_species = {
+				name = "Huragok"
+				plural = "Huragok"
+				class = "huragok"
+				portrait = "huragok"
+				name_list = "sentinels"
+				traits = {
+					trait="trait_pc_habitat_preference"
+					trait="trait_huragok_species"
+					trait="trait_weak"
+				}
+			}
+		}
+		capital_scope = {
+			while = {
+				count = 5
+				create_pop = {
+					species = "Sentinel"
+				}
+			}
+			while = {
+				count = 2
+				create_pop = {
+					species = "Mechanical Promethean"
+				}
+			}
+			while = {
+				count = 1
+				create_pop = {
+					species = "Huragok"
+				}
+			}
+			while = {
+				random_owned_pop = {
+					limit = {
+						is_same_species = owner_species
+					}
+					kill_pop = yes
+				}
+				count = 8
+			}
+		}
+		every_owned_pop = {
+			limit = { has_trait = "trait_robot_sentinel_ai" }
+			set_population_controls = {
+				type = population_control_no
+				country = root.owner
+			}
+			set_migration_controls = {
+				type = migration_control_no
+				country = root.owner
+			}
+			set_colonization_controls = {
+				type = colonization_control_no
+				country = root.owner
+			}
+			set_military_service_type = {
+				type = military_service_limited
+				cooldown = no
+			}
+		}
+		every_owned_pop = {
+			limit = { has_trait = "trait_huragok_species" } 
+			set_citizenship_type = {
+				type = citizenship_limited
+				cooldown = no
+			}
+			set_military_service_type = {
+				type = military_service_none
+				cooldown = no
+			}
+			set_population_controls = {
+				type = population_control_yes
+				country = root.owner
+			}
+			set_migration_controls = {
+				type = migration_control_yes
+				country = root.owner
+			}
+			set_colonization_controls = {
+				type = colonization_control_yes
+				country = root.owner
+			}
+		}
+	}			
+}
+country_event = {
+	id = forerunner_start.55
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			has_origin = origin_forerunner_maethrillian
+			has_origin = origin_forerunner_ark
+			has_origin = origin_halo_installation
+			has_origin = origin_created_genesis
+			has_origin = origin_requiem
+		}
+	}
+	immediate = {
+		give_technology = { message = no tech = tech_powered_exoskeletons }
+		give_technology = { message = no tech = tech_robotic_workers }
+		give_technology = { message = no tech = tech_robomodding }
+		give_technology = { message = no tech = tech_droid_workers }
+		give_technology = { message = no tech = tech_forerunner_start }
+		give_technology = { message = no tech = tech_forerunner_start_1 }
+		give_technology = { message = no tech = tech_forerunner_sentinels }
+	}
+}
+country_event = {
+	id = forerunner_start.6
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			if = {
+				limit = { has_modifier = forerunner_artificial_star }
+				clear_deposits = yes 
+				clear_blockers = yes
+				add_deposit = d_sw_apex_site
+				add_deposit = d_sw_access_tunnels
+				add_deposit = d_sw_surface
+				add_deposit = d_automated_sentinel_factory
+				add_building = building_factory_1
+				add_building = building_sentinel_factory
+				add_district = district_sw_city
+				add_district = district_sw_city
+				add_district = district_sw_solar_power
+				add_district = district_sw_farming
+			}
+		}
+	}
+}
+country_event = {
+	id = forerunner_start.7
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		FROMFROM = {
+			if = {
+				limit = { has_modifier = forerunner_requiem_artificial_star }
+				clear_deposits = yes 
+				clear_blockers = yes
+				add_deposit = d_requiem_war_room
+				add_deposit = d_requiem_apex
+				add_deposit = d_requiem_lockup
+				add_deposit = d_requiem_ravine
+				add_deposit = d_requiem_cauldron
+				add_deposit = d_sw_access_tunnels
+				add_deposit = d_automated_sentinel_factory
+				add_building = building_factory_1
+				add_district = district_requiem_mining
+			}
+		}
+	}
+}
+
+country_event = {
+	id = forerunner_start.8
+	hide_window = yes
+	is_triggered_only = yes
+
+	
+	trigger = {
+		has_modifier = halo_ring_monitor
+	}
+	
+	immediate = {
+		capital_scope = {
+			clear_blockers = yes
+			add_deposit = d_hr_control_room
+			add_deposit = d_hr_cartographer
+			add_deposit = d_hr_library
+			add_deposit = d_hr_beam_emitter
+			add_deposit = d_automated_sentinel_factory
+		}
+	}
+}
+
+country_event = {
+	id = forerunner_start.9
+	hide_window = yes
+	is_triggered_only = yes
+
+	
+	trigger = {
+		has_origin = origin_halo_installation
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				any_system_within_border = {
+					any_system_planet = {
+						has_planet_flag = zeta_halo
+					}
+				}
+			}
+			capital_scope = {
+				add_building = building_factory_1
+				add_building = building_foundry_1
+				clear_blockers = yes
+				clear_deposits = yes
+				add_deposit = d_hr_control_room
+				add_deposit = d_hr_cartographer
+				add_deposit = d_hr_library
+				add_deposit = d_hr_beam_emitter
+				add_deposit = d_hr_conservatory
+				add_deposit = d_hr_silent_auditorium
+			}
+		}
+		else = {
+			capital_scope = {
+				add_building = building_factory_1
+				add_building = building_foundry_1
+				clear_blockers = yes
+				clear_deposits = yes
+				add_deposit = d_hr_control_room
+				add_deposit = d_hr_cartographer
+				add_deposit = d_hr_library
+				add_deposit = d_hr_beam_emitter
+				add_deposit = d_automated_sentinel_factory
+			}
+		
+		}
+	}
+}
+#country_event = {
+#	id = forerunner_start.91
+#	hide_window = yes
+#	is_triggered_only = yes
+#
+#	
+#	trigger = {
+#		has_origin = origin_halo_installation
+#	}
+#
+#	immediate = {
+#		every_planet_within_border = {
+#			if = {
+#				limit = {
+#					is_capital = yes
+#				}
+#				generate_sentinel_pops = yes
+#			}
+#		}
+#	}
+#}
+country_event = {
+	id = forerunner_start.95
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_origin = origin_halo_installation
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_origin = origin_halo_installation
+			}
+			give_technology = { message = no tech = tech_powered_exoskeletons }
+			give_technology = { message = no tech = tech_robotic_workers }
+			give_technology = { message = no tech = tech_robomodding }
+			give_technology = { message = no tech = tech_droid_workers }
+			give_technology = { message = no tech = tech_forerunner_start }
+			give_technology = { message = no tech = tech_forerunner_sentinels }
+			give_technology = { message = no tech = tech_halo_array_activation }
+			give_technology = { message = no tech = tech_forerunner_sentinel_beam }
+		}
+	}
+}
+
+country_event = {
+	id = forerunner_start.10
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		if = {
+			species = { has_trait = trait_forerunner_species }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				every_owned_leader = {
+					limit = {
+						is_same_species = root
+						NOR = {
+							has_trait =	leader_trait_forerunner
+						}
+					}
+					if = {
+						limit = { leader_class = commander }
+						add_trait = leader_trait_forerunner
+					}
+					if = {
+						limit = { leader_class = official }
+						add_trait = leader_trait_forerunner
+					}
+					if = {
+						limit = { leader_class = scientist }
+						add_trait = leader_trait_forerunner
+					}
+					if = {
+						limit = { is_ruler = yes }
+						add_trait = leader_trait_forerunner
+					}
+				}
+				every_pool_leader = {
+					limit = {
+						is_same_species = root
+						#species = { 
+						#	has_trait = trait_cybernetic
+						#	is_same_value = event_target:cybernetic_species
+						#}
+						NOR = {
+							has_trait = leader_trait_forerunner
+						}
+					}
+					if = {
+						limit = { leader_class = commander }
+						add_trait = leader_trait_forerunner
+					}
+					if = {
+						limit = { leader_class = official }
+						add_trait = leader_trait_forerunner
+					}
+					if = {
+						limit = { leader_class = scientist }
+						add_trait = leader_trait_forerunner
+					}
+					if = {
+						limit = { is_ruler = yes }
+						add_trait = leader_trait_forerunner
+					}
+				}
+			}
+		}
+	}
+}
+
+#New Leaders Get Forerunner Traits
+country_event = {
+	id = forerunner_start.11
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		from = {
+			species = { has_trait = trait_forerunner_species }
+		}
+	}
+	
+	immediate = {
+		from = {
+			add_trait_no_notify = leader_trait_forerunner
+		}
+	}
+}
+
+# Level 10+ leader becomes Didact / Arch automagically
+country_event = {
+	id = forerunner_start.69
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		from = {
+			has_level >= 10
+			has_trait = leader_trait_forerunner
+		}
+	}
+
+	immediate = {
+		from = {
+			add_trait = leader_trait_ruler_forerunner_didact
+		}
+	}
+}
+
+#Existing Leaders Get Forerunner Traits
+country_event = {
+	id = forerunner_start.699
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		from = {
+			species = { has_trait = trait_forerunner_species }
+			NOT = {
+				has_trait = leader_trait_forerunner
+			}
+		}
+	}
+	
+	immediate = {
+		from = {
+			add_trait_no_notify = leader_trait_forerunner
+		}
+	}
+}
+
+#Existing Leaders Get Sentinel Traits
+country_event = {
+	id = promethean_start.6999
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		from = {
+			species = { has_trait = trait_robot_sentinel_ai }
+			NOT = {
+				has_trait = leader_trait_sentinel_ai
+			}
+		}
+	}
+	
+	immediate = {
+		from = {
+			add_trait_no_notify = leader_trait_sentinel_ai
+		}
+	}
+}
+
+#THE DOMAIN RELIC
+country_event = {
+	id = forerunner_start.12
+	hide_window = yes
+	is_triggered_only = yes
+
+	
+	trigger = {
+		OR = {
+			has_origin = origin_forerunner_maethrillian
+			has_origin = origin_created_genesis
+			has_civic = civic_forerunner_ecumene
+			has_civic = civic_ecumene_protocols
+			has_civic = civic_forerunner_didact
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					has_origin = origin_forerunner_maethrillian
+					has_origin = origin_created_genesis
+					has_civic = civic_forerunner_ecumene
+					has_civic = civic_ecumene_protocols
+					has_civic = civic_forerunner_didact
+				} 
+			}
+			add_relic = r_forerunner_domain
+		}
+	}
+}
+
+# Activating the Domain
+country_event = {
+	id = forerunner_start.13
+	title = "forerunner_start.13.name"
+	desc = "forerunner_start.13.desc"
+	diplomatic_title = BLANK_STRING
+	show_sound = event_psionic
+	trackable = yes
+
+	desc = {
+		text = forerunner_start.13.2.desc
+	}
+
+	is_triggered_only = yes
+	diplomatic = yes
+	force_open = yes
+
+	picture_event_data = {
+		portrait = warden_eternal_01
+		room = promethean_8_room
+	}
+
+	option = {
+		name = "forerunner_start.13.a"
+		custom_tooltip = relic_forerunner_domain_knowledge
+		hidden_effect = {
+			ruler = { add_experience = 1000 }
+		}
+	}
+
+	option = {
+		name = "forerunner_start.13.b"
+		add_modifier = {
+			modifier = "relic_forerunner_domain_martial"
+			days = 1800
+		}
+	}
+
+	option = {
+		name = "forerunner_start.13.c"
+		add_modifier = {
+			modifier = "relic_forerunner_domain_state"
+			days = 1800
+		}
+	}
+	
+	option = {
+		name = "forerunner_start.13.d"
+		country_event = { id = forerunner_start.14 }
+	}
+}
+
+country_event = {
+	id = forerunner_start.14
+	title = "forerunner_start.14.name"
+	desc = "forerunner_start.14.desc"
+	picture = GFX_evt_surreal_visions
+	
+	is_triggered_only = yes
+	
+	diplomatic = yes
+	force_open = yes
+
+	picture_event_data = {
+		room = shroud_room
+	}
+	
+	option = {
+		name = "FASCINATING"
+		add_modifier = {
+			modifier = "relic_forerunner_domain_wisdom"
+			days = 1800
+		}
+		locked_random_list = {
+			10 = {
+				add_random_research_option = {
+					add_progress = 1.0
+					area = engineering
+					ignore_prereqs = no
+					fail_effects = {
+						add_monthly_resource_mult = {
+							resource = engineering_research
+							value = @tier5researchreward
+							min = @tier5researchmin
+							max = @tier5researchmax
+						}
+					}
+				}
+			}
+			10 = {
+				add_random_research_option = {
+					add_progress = 1.0
+					area = physics
+					ignore_prereqs = no
+					fail_effects = {
+						add_monthly_resource_mult = {
+							resource = physics_research
+							value = @tier5researchreward
+							min = @tier5researchmin
+							max = @tier5researchmax
+						}
+					}
+				}
+			}
+			10 = {
+				add_random_research_option = {
+					add_progress = 1.0
+					area = society
+					ignore_prereqs = no
+					fail_effects = {
+						add_monthly_resource_mult = {
+							resource = society_research
+							value = @tier5researchreward
+							min = @tier5researchmin
+							max = @tier5researchmax
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+#planet_event = {
+#	id = forerunner_start.27
+#	hide_window = yes
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		if = {
+#			limit = {
+#				owner = {
+#					has_origin = origin_halo_installation
+#				}
+#			}
+#			generate_start_forerunner_halo_districts = yes
+#		}
+#		if = {
+#			limit = {
+#				owner = {
+#					has_origin = origin_forerunner_ark
+#				}
+#			}
+#			generate_start_forerunner_ark_districts = yes
+#		}
+#	}
+#}
+
+
+#SPAWNING THE ARK FOR THE HALO INSTALLATION ORIGIN
+country_event = {
+	id = forerunner_start.16
+	hide_window = yes 
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+		has_origin = origin_halo_installation
+		NOT = {
+			any_country = {
+				has_origin = origin_forerunner_ark
+			}
+		}
+	}
+	
+	fire_only_once = yes 
+	
+	immediate = {
+		set_spawn_system_batch = begin
+		# batch-processes the spawn_system effects between "begin" and "end",
+		# so caches are recalculated only once rather than for every system spawned
+		# can also be used when removing and adding hyperlanes
+		no_scope = {
+			# makes system positions originate from galactic core
+			spawn_system = {
+				min_distance >= 530
+				max_distance <= 550
+				min_orientation_angle = 74
+				max_orientation_angle = 76
+				initializer = forerunner_ark_system_init
+				hyperlane = no
+				effect = {
+					save_global_event_target_as = ark_installation_00
+				}
+			}
+		}
+		set_spawn_system_batch = end 
+	}
+}
+
+#ARK ORIGIN SPAWN LOCATION 
+country_event = {
+	id = forerunner_start.17
+	hide_window = yes 
+	
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	
+	trigger = {
+		AND = {
+			has_origin = origin_forerunner_ark
+			NOT = { has_global_flag = forerunner_ark_origin }
+		}
+	}
+	
+	immediate = {
+		set_global_flag = forerunner_ark_origin
+		set_spawn_system_batch = begin 
+		# batch-processes the spawn_system effects between "begin" and "end",
+		# so caches are recalculated only once rather than for every system spawned
+		# can also be used when removing and adding hyperlanes
+		no_scope = {
+			# makes system positions originate from galactic core
+			spawn_system = {
+				min_distance >= 530
+				max_distance <= 550
+				min_orientation_angle = 330
+				max_orientation_angle = 331
+				initializer = forerunner_ark
+				hyperlane = no
+				effect = {
+					save_global_event_target_as = ark_installation_00
+				}
+			}
+			spawn_system = {
+				min_distance >= 245
+				max_distance <= 250
+				min_orientation_angle = 350
+				max_orientation_angle = 351
+				initializer = halo_installation_01_init
+				hyperlane = yes
+			}
+			spawn_system = {
+				min_distance >= 245
+				max_distance <= 250
+				min_orientation_angle = 300
+				max_orientation_angle = 301
+				initializer = halo_installation_02_init
+				hyperlane = yes
+			}
+			spawn_system = {
+				min_distance >= 245
+				max_distance <= 250
+				min_orientation_angle = 250
+				max_orientation_angle = 251
+				initializer = halo_installation_03_init
+				hyperlane = yes
+			}
+			spawn_system = {
+				min_distance >= 245
+				max_distance <= 250
+				min_orientation_angle = 200
+				max_orientation_angle = 201
+				initializer = halo_installation_04_init
+				hyperlane = yes
+			}
+			spawn_system = {
+				min_distance >= 245
+				max_distance <= 250
+				min_orientation_angle = 150
+				max_orientation_angle = 151
+				initializer = halo_installation_05_init
+				hyperlane = yes
+			}
+			spawn_system = {
+				min_distance >= 245
+				max_distance <= 250
+				min_orientation_angle = 100
+				max_orientation_angle = 101
+				initializer = halo_installation_06_init
+				hyperlane = yes
+			}
+			spawn_system = {
+				min_distance >= 245
+				max_distance <= 250
+				min_orientation_angle = 50
+				max_orientation_angle = 51
+				initializer = halo_installation_07_init
+				hyperlane = yes
+			}
+		}
+		set_spawn_system_batch = end 
+		country_event = { id = forerunner_start.18 days = -1 }
+	}
+}
+
+#Moving home system to the Ark (Credit to Klarac's mod L-Cluster Plus)
+country_event = {
+	id = forerunner_start.18
+	hide_window = yes 
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	
+	immediate = {
+		random_system = {
+			limit = {
+				has_star_flag = ark_installation_00
+			}
+			save_event_target_as = forerunner_ark_home_system
+			
+			random_system_planet = {
+				limit = {
+					has_planet_flag = start_forerunner_ark
+				}
+				save_event_target_as = forerunner_ark_home_planet
+			}
+		}
+		capital_scope = {
+			save_event_target_as = forerunner_ark_origin_previous_home_planet
+			solar_system = {
+				save_event_target_as = forerunner_ark_origin_previous_home_system
+			}
+			if = {
+				limit = { exists = sector }
+				sector = {
+					leader = {
+						unassign_leader = this
+						save_event_target_as = forerunner_ark_sector_gov
+					}
+				}
+			}
+			else = {
+				root = {
+					random_owned_leader = {
+						limit = { leader_class = governor }
+						save_event_target_as = forerunner_ark_sector_gov
+					}
+				}
+			}
+		}
+		# Spaceport setup
+		if = {
+			limit = {
+				is_gestalt = yes
+			}
+			event_target:forerunner_ark_home_system = {
+				create_starbase = {
+					size = "starbase_starport"
+					module = "shipyard"
+					module = "solar_panel_network"
+					building = "crew_quarters"
+					owner = root
+				}
+			}
+		}
+		else = {
+			event_target:forerunner_ark_home_system = {
+				create_starbase = {
+					size = "starbase_starport"
+					module = "shipyard"
+					module = "trading_hub"
+					building = "crew_quarters"
+					owner = root
+				}
+			}
+		}
+		event_target:forerunner_ark_home_planet = {
+			set_owner = root
+			set_controller = root
+			set_capital = yes 
+			set_sector_capital = yes 
+			sector = { assign_leader = event_target:forerunner_ark_sector_gov }
+			if = {
+				limit = { has_planet_flag = start_forerunner_ark }
+				add_deposit = d_ark_cartographer
+				add_deposit = d_ark_citadel
+				add_deposit = d_ark_foundry
+				add_deposit = d_ark_grid
+				add_deposit = d_ark_agriculture
+				add_deposit = d_automated_sentinel_factory
+				if = {
+					limit = {
+						owner = {
+							is_lithoid_empire = yes 
+							NOT = { has_civic = civic_hive_devouring_swarm }
+						}
+					}
+					while = {
+						count = 4
+						add_deposit = d_hibernating_lithoids
+					}
+				}
+				if = {
+					limit = {
+						owner = {
+							is_lithoid_empire = yes 
+							has_civic = civic_hive_devouring_swarm
+						}
+					}
+					while = {
+						count = 2
+						add_deposit = d_hibernating_lithoids
+					}
+				}
+				if = {
+					limit = { owner = { is_regular_empire = yes } }
+
+					add_building = building_capital
+					add_building = building_bureaucratic_1
+					add_building = building_research_lab_1
+					add_building = building_commercial_zone
+				}
+				if = {
+					limit = { owner = { is_hive_empire = yes } }
+
+					add_building = building_hive_capital
+					add_building = building_hive_node
+					add_building = building_research_lab_1
+					add_building = building_spawning_pool
+					add_building = building_hive_warren
+				}
+				# Replace capital building for machine empires
+				if = {
+					limit = { owner = { is_machine_empire = yes } }
+
+					add_building = building_machine_capital
+					add_building = building_machine_assembly_plant
+					add_building = building_uplink_node
+					add_building = building_research_lab_1
+
+					# Servitors
+					if = {
+						limit = { owner = { has_civic = civic_machine_servitor } }
+
+						add_building = building_organic_sanctuary
+					}
+				}
+				
+				owner = {
+					add_resource = { energy = 500 }
+					add_resource = { minerals = 500 }
+					add_resource = { alloys = 500 }
+					if = {
+						limit = { is_machine_empire = no }
+						add_resource = { food = 500 }
+					}
+					if = {
+						limit = { is_gestalt = no }
+						add_resource = { consumer_goods = 500 }
+					}
+					give_technology = { tech = "tech_mine_volatile_motes" message = no }
+					give_technology = { tech = "tech_mine_exotic_gases" message = no }
+					give_technology = { tech = "tech_mine_rare_crystals" message = no }
+				}
+			}
+		}
+		event_target:forerunner_ark_home_system = {
+			set_star_flag = empire_cluster
+			set_star_flag = empire_home_system
+			
+			random_system_planet = {	
+				limit = {
+					is_star = yes 
+				}
+				save_event_target_as = forerunner_ark_home_system_loc
+			}
+		}
+			
+		every_owned_fleet = {
+			limit = {
+				any_owned_ship = {
+					OR = {
+						is_ship_size = corvette
+						is_ship_size = constructor
+						is_ship_size = science
+					}
+				}
+			}
+			set_location = event_target:forerunner_ark_home_system_loc
+		}
+		
+		event_target:forerunner_ark_origin_previous_home_planet = {
+			# move pops
+			every_owned_pop = {
+				resettle_pop = {
+					pop = this
+					planet = event_target:forerunner_ark_home_planet
+				}
+				unemploy_pop = yes
+			}
+			remove_planet = yes
+		}
+		event_target:forerunner_ark_home_planet = {
+			every_owned_pop = {
+				unemploy_pop = yes
+				clear_pop_category = yes
+			}
+			check_planet_employment = yes
+		}
+		event_target:forerunner_ark_origin_previous_home_system = {
+			every_fleet_in_system = {
+				delete_fleet = this
+			}
+			set_name = random
+			random_system_planet = {
+				limit = {
+					is_star = yes
+				}
+				set_name = solar_system
+			}
+			spawn_megastructure = {
+				name = "Omega Relay"
+				type = "forerunner_slipspace_portal"
+				orbit_distance = 320
+			}
+			remove_star_flag = sol
+			remove_star_flag = deneb_system
+			remove_star_flag = empire_home_system
+			remove_star_flag = empire_cluster
+		
+			every_neighbor_system = {
+				remove_star_flag = empire_cluster
+				every_neighbor_system = { remove_star_flag = empire_cluster }
+			}
+		}
+		owner_species = {
+			set_species_homeworld = event_target:forerunner_ark_home_planet
+		}
+		every_owned_pop_species = {
+			set_species_homeworld = event_target:forerunner_ark_home_planet
+		}
+	}
+}
+
+event = {
+	id = "forerunner_start.19"
+	hide_window = yes 
+	is_triggered_only = yes 
+	fire_only_once = yes 
+	
+	immediate = {
+		# Setting Forerunner mod global flag
+		set_global_flag = forerunner_mod_active
+	}
+}

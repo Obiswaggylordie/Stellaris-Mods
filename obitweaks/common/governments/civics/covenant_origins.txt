@@ -1,0 +1,49 @@
+origin_halo_covenant = {
+	is_origin = yes
+	modification = no	
+	icon = "gfx/interface/icons/origins/origin_halo_covenant.dds"
+	picture = GFX_origin_halo_covenant
+	description = "origin_tooltip_halo_covenant_effects"
+	starting_colony = pc_high_charity
+	initializers = { high_charity_init }
+	max_once_global = yes
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		civics = { 
+			value = civic_covenant_hegemony
+		}
+	}
+	
+	advanced_start = yes
+	flags = { custom_start_screen }
+	random_weight = { base = -1 }
+}
+
+origin_halo_covenant_remnants = {
+	is_origin = yes
+	modification = no	
+	icon = "gfx/interface/icons/origins/origin_halo_covenant.dds"
+	picture = GFX_origin_halo_covenant_remnants
+	description = "origin_tooltip_halo_covenant_remnants_effects"
+	initializers = { }
+	max_once_global = yes
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		civics = {
+			NOT = {
+				value = civic_covenant_hegemony
+			}
+		}
+	}
+	modifier = {
+		empire_size_penalty_mult = 0.25
+	}
+	
+	advanced_start = yes
+	flags = { custom_start_screen }
+	random_weight = { base = -1 }
+}

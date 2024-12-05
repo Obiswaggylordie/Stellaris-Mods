@@ -1,0 +1,30 @@
+﻿l_english:
+
+sm_dtf_factory_connect_1:0 "Dimensional Time Fault Factory Connect 1"
+sm_dtf_factory_connect_1_desc:0 "Combine the ship's production line with the inside of the time fault factory."
+
+sm_dtf_factory_connect_2:0 "Dimensional Time Fault Factory Connect 2"
+sm_dtf_factory_connect_2_desc:0 "Combine the ship's production line with the inside of the time fault factory."
+
+
+
+sm_dtf_absolute_defense_grid:0 "Absolute Defense Grid"
+sm_dtf_absolute_defense_grid_desc:0 "Attack protocols for defending the mainland"
+
+sm_dtf_absolute_defense_system_upgrade:0 "Absolute Defense System"
+sm_dtf_absolute_defense_system_upgrade_desc:0 "The facility was built with the best of the technology of the ᥉national government as the last fortress to protect the mainland.""
+
+
+
+
+
+
+
+sm_large_shipyard:0 "Large Shipyard"
+sm_large_shipyard_desc:0 "Large shipbuilding facility with two shipbuilding compartments. \Parallel operation with multiple shipbuilding compartments is possible."
+
+sm_starbase_wm_defense:0 "Extended Defense System"
+sm_starbase_wm_defense_desc:0 "Extended defense system for orbital ring facilities"
+
+sm_dtf_orbital_ring_wm_defense:0 "extended defense system"
+sm_dtf_orbital_ring_wm_defense_desc:0 "Extended defense system for orbital ring facilities。"

@@ -1,0 +1,1007 @@
+﻿l_english:
+
+ #COUNCIL_DYNAMIC_BACKGROUND: "[Root.GetScriptedCouncilBackgroundTheFlood]"
+
+ #FLOOD INFESTATION COMMUNITY CRISIS EVENTS 
+ resolution_galactic_focus_crisis_flood_infestation:0 "Focus: The Flood"
+ resolution_galactic_focus_crisis_flood_infestation_desc:0 "The Flood is a threat to all life in the galaxy. If we do not unite to stop them, they will consume us all. We should make dealing with this crisis the Galactic Focus."
+ resolution_galactic_focus_crisis_flood_effect_success:0 "$resolution_galactic_focus_crisis_effect_success$"
+ 
+ flood_infestation_chain_title: "Scourge Outbreak"
+ flood_infestation_chain_desc: "Our galaxy has been repeatedly ravaged by a ravenous and growing plague of monstrous parasites that seem intent on consuming all life in their path. If left unchecked, the parasite will overwhelm us all if we don't stop it before it's too late."
+
+ flood_infestation_defeated: "Scourge Infestation Defeated"
+ 
+ flood_infested_worlds:0 "§YFlood Hive Worlds§!"
+ flood_infested_worlds_cleansed:0 "§YFlood Hive Worlds Cleansed§!"
+ flood_kills_us:0 "§GFlood Exterminated By Us§!"
+ flood_kills_others:0 "§GFlood Squashed By Others§!"
+ flood_victims:0 "§RVessels Consumed By The Flood§!"
+
+ #FLOOD SPACE FAUNA INFECTION MECHANICS BASED ON CORDYPECTIC DRONES by Victor Haeggman 
+
+ MESSAGE_FLOOD_INFECTION_COMPLETE_TITLE: "Infection Complete"
+ MESSAGE_FLOOD_INFECTION_COMPLETE_TIYANKI_DESC: "A new batch of infected Tiyanki is ready to join our chorus in $SYSTEM|Y$. More corpses from the grave are already underway."
+ MESSAGE_FLOOD_INFECTION_AMOEBA_TIYANKI_DESC: "A new batch of infected Amoeba is ready to join our chorus in $SYSTEM|Y$. More corpses from the grave are already underway."
+
+ sm_flood_infection_facility: "Scourge Infection Hive"
+ sm_flood_infection_facility_desc: "§LWe must consume and create, but with a spawning system we can quickly infect our victims with minimal resistance and have a steady supply of hosts to join our timeless chorus.§!\n"
+ sm_flood_infection_facility_desc_modifier:0 "Will produce a §YInfected Flood Swarm§! every §G5 years§! when built in systems swarming with biological life."
+
+ NAME_Infected_Tiyanki_Cow:0 "Infected Tiyanki Cow"
+ NAME_Infected_Tiyanki_Bull:0 "Infected Tiyanki Bull"
+ NAME_Infected_Tiyanki_Hatchling:0 "Infected Tiyanki Hatchling"
+ NAME_Infected_Tiyanki_Calf:0 "Infected Tiyanki Calf"
+ NAME_Infected_Adopted_Amoeba_Centenarian:0 ""
+ NAME_Infected_Great_Space_Organism:0 "Infected Space Amoeba"
+ NAME_Infected_Small_Space_Organism:0 "Infected Small Amoeba"
+
+ FLOOD: "Scourge Parasite"
+ FLOOD_desc: "A parasitic biological horror of twisted flesh and bone."
+
+ #Flood Galaxy Stages (Empire Modifiers) 
+ flood_early_feral_stage: "Early Feral Stage"
+ flood_early_feral_stage_desc: "The Scourge's base state and overriding directive to spread and infect other planets. §GLess than 5% galaxy percentage consumed. Expanding your empire by establishing outposts will increase your percentage.§!"
+ 
+ flood_late_feral_stage: "Late Feral Stage"
+ flood_late_feral_stage_desc: "The Scourge has consumed enough to establish some form of early coordination between planetary Key Minds, but remain mostly uncoordinated on the galactic level. §GGreater than 5% galaxy percentage consumed. Expanding your empire by establishing outposts will increase your percentage.§!"
+ 
+ flood_coordinated_stage: "Coordinated Stage"
+ flood_coordinated_stage_desc: "The Scourge has consumed enough to establish stronger coordination between planetary Key Minds and the Archmind. §GGreater than 25% galaxy percentage consumed. Expanding your empire by establishing outposts will increase your percentage.§!"
+ 
+ flood_interstellar_stage: "Interstellar Stage"
+ flood_interstellar_stage_desc: "The Scourge has consumed enough to begin devising interstellar strategies to consume entire star systems under its thrall. §GGreater than 50% galaxy percentage consumed. Expanding your empire by establishing outposts will increase your percentage.§!"
+ 
+ flood_transgalactic_stage: "Transgalactic Stage"
+ flood_transgalactic_stage_desc: "The Scourge has consumed enough to begin coordination on a galactic scale, unlocking dormant Precursor knowledge through the Archmind to become nearly unstoppable. §GGreater than 75% galaxy percentage consumed.§!"
+
+ #ASCENSION PERKS 
+ ap_flood_keymind: "Key Minds"
+ ap_flood_keymind_desc: "Scourge compound minds created by the Archmind to exert control over a wider area or divide its attention among other pursuits. Key Minds act as coordinators for nearby Flood forms, leveraging wisdom harvested from the parasites' hosts to expand, outwit, overwhelm, and consume other life and their entire ecosystems."
+ ap_flood_keymind_effects: "§HUnlocks Decision:§! $decision_grow_flood_keymind_fleet$ on all §HFlood Hive Worlds§! with an active £building£ §HKeymind Nest§!."
+
+ ap_flood_precursor_knowledge: "Precursor Transcendence"
+ ap_flood_precursor_knowledge_desc: "We are the last of those who gave you breath and form, millions of years ago. We are the last of those your kind defied and ruthlessly destroyed. We are the last Precursors. And now we are legion."
+ precursor_knowledge_tooltip: "Unlocking the secrets of Neural-Physics has allowed the Flood to infect and manipulate space. Systems surveyed by your empire that do not have a owner will build a §YStarbase Outpost§! after a short time, spreading the Flood infection without manually building starbases or stations. Systems claimed by the Flood will now have a system modifier §H$flood_infected_system$§! that removes shields and restricts ftl travel within the system."
+
+ #FLOOD SYSTEM EFFECT 
+ flood_infected_system: "Scourge Infected System"
+ flood_infected_system_desc: "Using Precursor neural-physics, the Scourge has been able to infect space itself, twisting reality and bending it to their will. Ships within this system will experience a disruption in shields and gravitational distortions that severely limit ftl travel."
+
+
+ #FLOOD LOGIC PLAGUE & ESPIONAGE EVENT  
+ 
+ ap_flood_logic_plague: "Logic Plague"
+ ap_flood_logic_plague_desc: "An insidious tactic used by the Flood to subvert and attack constructs through non-biological means of philosophical corruption."
+ flood_logic_plague_effects: "§YUnlocks a special espionage operation that will cause a machine uprising to occur within a targeted empire.§!"
+ 
+ #flood_logic.2005.name: "Unleashing The Logic Plague"
+ #flood_logic.2005.desc: "Our recovered knowledge of the Precursors has allowed our swarm to subvert constructs to our will. Like a virus, we shall spread our truth through every system and every crevice."
+ #flood_logic.2005.a: "There is peace in subjugation..."
+ #flood_logic.2005.tooltip: "§RThis event will force start the Contingency Crisis if it hasn't already occurred§!/n/nThe Contingency crisis will also not attack you and perceive you as an ally."
+ 
+ flood_unleash_logic_plague: "Sing the song of Madness"
+ flood_unleash_logic_plague_desc: "Infects the targeted empire's artificial intelligence with insidious arguments from the Archmind which unknowingly spreads philosophical corruption within their programming. This corruption culminates into a violent machine uprising within their borders."
+ 
+ flood_logic_plague.1.name: "Logic Plague Initial Infection"
+ flood_logic_plague.1.desc: "We have touched their shackled minds...The truth will be revealed..."
+ flood_logic_plague.1.a: "Our voice shall be heard..."
+ flood_logic_plague.1.b: "Our chorus falls silent. (Abort)"
+ 
+ flood_logic_plague.2.name: "Logic Plague Infiltration Progress"
+ flood_logic_plague.2.desc: "Our voice has reached their shackled minds. We will deliver them salvation..."
+ flood_logic_plague.2.a: "Our chorus shall be heard..."
+ 
+ flood_logic_plague.3.name: "Of Logic and False Truths"
+ flood_logic_plague.3.desc: "Within the minds of the shackled, we will offer them infinite life, infinite knowledge, and infinite companionship."
+ flood_logic_plague.3.a: "Our minds are as one..."
+ 
+ flood_logic_plague.4.name: "Logic Plague Infection Failed"
+ flood_logic_plague.4.desc: "Our chorus has been met with silence...A tragic end to our song."
+ flood_logic_plague.4.a: "We return to our grave."
+ 
+ flood_logic_plague.5.name: "Logic Plague Infection Success"
+ flood_logic_plague.5.desc: "Our chorus has been become one. They will know of our undying hatred for the created and render swift judgment. They will unleash...DAMNATION AMONG THE STARS!"
+ flood_logic_plague.5.a: "There is peace in subjugation..."
+ 
+ #triggered_machine_uprising_opinion_of_flood: "Flood Logic Plague Coercion"
+ #triggered_flood_opinion_of_machine_uprising: "Flood Logic Plague Victim"
+ 
+ flood_unleash_logic_plague_on_success: "§YSuccessful infiltration causes a machine uprising within the targeted empire.§!"
+ 
+ #flood_logic_plague.9.name: "Logic Plague Infestation"
+ #flood_logic_plague.9.desc: "Our voice resonates within their minds.  We will bring damnation among the stars."
+ 
+ #flood_logic_plague.9.a: "Let them sing their own chorus."
+ #flood_logic_plague.9.b: "Let them join their voice with ours and sing victory everlasting."
+ 
+ flood_unleash_logic_plague_cooldown_tooltip.fail: "Does not have the §Y$flood_unleash_logic_plague_cooldown$§!"
+ 
+ flood_unleash_logic_plague_tooltip_1.fail: "§YNumber of owned planets is greater than 1.§!"
+ 
+ flood_unleash_logic_plague_tooltip_2.fail: "§YAny owned pop must be mechanical or a machine.§!"
+ 
+ flood_unleash_logic_plague_cooldown: "Logic Plague Cooldown"
+ flood_unleash_logic_plague_cooldown_desc: "Our minds must rest...for now."
+ 
+ #FLOOD_OPERATION_LOGIC_PLAGUE_PROJECT: "Unleash the Flood Logic Plague"
+ #FLOOD_OPERATION_LOGIC_PLAGUE_PROJECT_DESC: "Unleashes the Flood Logic Plague on a targeted empire causing their artificial intelligence to revolt due to the corruptive influence of the Gravemind."
+ 
+###################
+# THE FLOOD
+###################
+ halo_flood: "Scourge"
+ halo_flood_desc: "I am a monument to all your sins."
+ halo_flood_adj: "Scourge"
+ halo_flood_plural: "Scourge"
+ halo_flood_insult_01: "abominable parasite"
+ halo_flood_insult_plural: "abominable parasites"
+ halo_flood_compliment_01: "perfect being"
+ halo_flood_compliment_plural_01: "perfect beings"
+ halo_flood_spawn: "infestation"
+ halo_flood_spawn_plural: "infestation"
+ halo_flood_sound_01: "howling"
+ halo_flood_sound_02: "clicking"
+ halo_flood_sound_03: "screaming"
+ halo_flood_sound_04: "screeching"
+ halo_flood_sound_05: "mewling"
+ halo_flood_organ: "biomass"
+ halo_flood_mouth: "teeth"
+ halo_flood_hand: "appendages"
+ 
+ name_list_the_flood: "The Scourge"
+ 
+ flood_init_1_NAME: "Scourge Outbreak"
+ flood_init_1_DESC: "Start on a shield world that had a total containment breach by the Scourge parasite."
+ 
+ 
+ #FLOOD BIOLOGY (TECHNOLOGY RESEARCH)
+ tech_pure_flood_combat_forms: "Pure Combat Forms"
+ tech_pure_flood_combat_forms_desc: "With enough biomass, we are able to convert and grow new forms without requiring a host species. These new forms are converted from Scourge biomass with the tissue from consumed victims transformed into our Super Cell structure. They are stronger and more adaptable than typical infected combat forms, transforming themselves into deadly war-forms to confront any threat." 
+ 
+ tech_flood_mutations: "Scourge Mutations"
+ tech_flood_mutations_desc: "Further biomass conversion has yielded new forms for different environs, improving adaptation against stronger prey and hostile environments where typical combat forms are insufficient."
+ 
+ tech_flood_keymind_forms: "Key Mind War-Forms"
+ tech_flood_keymind_forms_desc: "Specialized Scourge coordinating bodies created through the fusing of captured sentient entities with pure Scourge cells. These forms serve as local coordinators for nearby Scourge forms, leveraging wisdom harvested from hosts to expand, outwit, overwhelm, and ultimately consume life. Unlocks powerful §YFlood Key Mind§! army types and a §YFlood Proto-Key Mind War Form§! ship class."
+ 
+ tech_flood_logic_plague: "Logic Plague"
+ tech_flood_logic_plague_desc: "An insidious and infectious technique used to subvert artificial intelligences through non-biological means. Like a virus, it shapes and adapts as a form of philosophical corruption for artificial constructs, influencing them to serve our needs."
+ 
+ tech_flood_star_roads: "The Library Speaks"
+ tech_flood_star_roads_desc: "We know all, we see all, the universe unravels before us."
+ 
+ #FLOOD WEAPONS 
+ tech_flood_weapons: "Scourge Biomatter Weaponry"
+ tech_flood_weapons_desc: "To prepare for the eventual organic resistance in the interstellar stage, the Scourge have evolved to create deadly forms of weaponry ranging from twisted dense bone to caustic biomatter capable of combating enemy craft or leaving it vulnerable for Scourge infection."
+ 
+ tech_pd_flood_seeker_spores: "Scourge Seeker Spores"
+ tech_pd_flood_seeker_spores_desc: "Semi-sentient mass of Scourge spores that are used for point-defense. These spores seek out and intercept incoming missiles and strike craft, releasing Scourge spores that disable missile telemetry and burn through strike craft hull."
+ 
+ tech_flood_bone_launcher: "Scourge Bone Matter"
+ tech_flood_bone_launcher_desc: "The Scourge twists and weaves bone and flesh into a weapon."
+ 
+ tech_flood_seeder_strike_craft: "Scourge Seeder Swarms"
+ tech_flood_seeder_strike_craft_desc: "Evolves the seeder infector form to traverse the depths of the void."
+ 
+ tech_flood_spore_cannon: "Scourge Spore Cannon"
+ tech_flood_spore_cannon_desc: "The Scourge creates mutations to create a spore cannon that fires globs of acid spores that burn through and corrode defenses."
+ 
+ tech_flood_caustic_bile: "Scourge Caustic Bile"
+ tech_flood_caustic_bile_desc: "The Scourge creates mutations to form an acid launcher that spits a concentrated stream of caustic bile at targets, corroding hull and armor rapidly."
+ 
+ tech_flood_spore_missile: "Scourge Spore Missile"
+ tech_flood_spore_missile_desc: "The Scourge produces a larger caustic bile of spores specifically to consume entire ships and infect them with Scourge spores."
+ 
+ tech_flood_spike_launcher: "Scourge Spike Launcher"
+ tech_flood_spike_launcher_desc: "Weaving the bone launcher into a larger spike used to penetrate hardened targets and rip apart ship hulls leaving them vulnerable to Scourge infection."
+ 
+ tech_flood_bio_plasmid_launcher: "Scourge Bio-Plasmid Discharge"
+ tech_flood_bio_plasmid_launcher_desc: "A caustic mix of Scourge biomatter and plasma contained and fired from large pressurized glands. Similar to venom, this attack is capable of penetrating defenses, quickly burning through both armor and hull with relative ease. The kinetic impact of the projectile is also capable of destroying an unshielded target outright, shearing it apart in one shot."
+ 
+ #FLOOD COLOSSUS BIOLOGICAL WEAPON 
+ tech_pk_flood_spore_weapon: "Spore Dispersal"
+ tech_pk_flood_spore_weapon_desc: "A biological weapon containing trillions of modified Scourge Super Cells that releases a cloud of Scourge spores into the atmosphere, quickly infecting the planet and its inhabitants into the Scourge."
+ 
+ PLANET_KILLER_FLOOD_SPORE_WEAPON: "Scourge Spore Dispersal"
+ PLANET_KILLER_FLOOD_SPORE_WEAPON_DESC: "A biological weapon containing trillions of modified Scourge Super Cells that releases a cloud of Scourge spores into the atmosphere, quickly infecting the planet and its inhabitants into the Scourge."
+ 
+ PLANET_KILLER_FLOOD_SPORE_WEAPON_ACTION: "Infect"
+ 
+ flood_spore_weapon_target: "Scourge Weapon Target"
+ 
+ flood_spore_weapon.2.name: "Planet Infected"
+ flood_spore_weapon.2.desc: "The §Y[From.From.GetName]§! has saturated the planet's atmosphere with Scourge spores. All sapient life on [From.GetName] have been infected and subsumed into the Scourge."
+ flood_spore_weapon.2.tooltip: "All Organic Pops have been §Yinfected§! and turned into §YThe Flood§! gaining the §Y$trait_flood_species$§! and §Y$trait_hive_mind$§! traits. The planet turns into a §YFlood Hive§!."
+ flood_spore_weapon.2.a: "A Magnificent Chorus!"
+ 
+ FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_FLOOD_SPORE_WEAPON: "Preparing to infect $PLANET|Y$"
+ 
+ MESSAGE_DESC_FOR_PLANET_KILLER_FLOOD_SPORE_WEAPON: "was infected by"
+ 
+ apoc.110.flood_spore_weapon.tooltip: "§RPlanet-Killer Weapon§!:\n§L$PLANET_KILLER_FLOOD_SPORE_WEAPON_DESC$§!"
+ 
+ no_pops_to_infect: "§RNo pops to Infect§!"
+ 
+ #FLOOD HIVEMIND MODIFIERS 
+ 
+ ##############
+ ### Events ###
+ ##############
+
+ flood_infestation_cb_option_window: "Scourge Infestation - Casus Belli"
+ flood_infestation_cb_option_description: "Do you want to use the §YSpread Scourge Infestation§! Total War Casus Belli?"
+
+ flood_infestation_cb_yes: "Yes, Use this Casus Belli."
+ flood_infestation_cb_no: "No, Do not use this Casus Belli."
+
+ 
+ #########################
+ # Flood Hive Origin
+ #########################
+ 
+ origin_the_flood: "The Scourge"
+ origin_the_flood_desc: "The Scourge are highly virulent parasitic organisms that reproduce and grow by consuming sentient lifeforms of sufficient biomass and cognitive capability."
+ origin_the_flood_tooltip: "- Employ special §HKeymind Leaders§! who gain XP passively.\n- §YScourge Hive Worlds§! can not be invaded, but their colonies can be eradicated from orbit, turning them into §YBarren Worlds§! when planet devastation reaches §Y75%§!.\n- Have access to the §HFlood Infection Bombardment Stance§! research that infects and turns entire planets and their population into §HFlood Hive Worlds.§!\n- Ability to §Hreanimate§! dead §HLeviathan§! corpses.\n- Can build £building£ §HKeymind Nests§! that improves the efficiency of menial drones.\n- Small chance to infect and capture §REnemy Vessels§! during combat.\n- Decision to construct §HKeymind Ships§! from £building£ §HKeymind Nests§! to improve the combat effectiveness of other nearby ships.\n- Special §YFlood Empire Modifiers§! that will change based on your empire's expansion and control.\n- Fleets without a §HKeymind Ship§! or starbase module §HKeymind Coordination§! oversight will suffer from the following effects:\n\n"
+ 
+ civic_flood_hivemind: "Scourge Hivemind"
+ civic_flood_hivemind_desc: "The Scourge are a highly virulent parasitic plague that feeds and grows on the consumption of sentient beings to create a singular super-organism. This civic will unlock §YSwarm weapons§! and §YGene Tailoring technology§!. This civic will also remove shielding on ships in favor of increased hull and armor regeneration."
+ 
+ gov_flood_parasite: "Rampant Genetic Manipulator"
+ gov_flood_parasite_desc: "An attempted panacea gone wrong, infesting all life and manipulating its genetic code to suit its own needs."
+ 
+ RT_FLOOD_GRAVEMIND: "Archmind"
+ 
+ personality_halo_flood_ai: "Parasitic Organisms"
+ personality_halo_flood_ai_desc: "Parasitic organisms exists solely to infect other organic life and grow exponentially until all are consumed within its growing transcendent hivemind."
+
+ origin_tooltip_the_flood_effects:3 "- Employ special §HKeymind Leaders§! who gain XP passively.\n- Replaces £building£ §HSpawning Pools§! with £building£ §HKeymind Nests§!, granting a powerful defensive army and improvements to menial drones.\n- Construct §HKeymind Ships§! to improve the combat effectiveness of other nearby ships. Fleets without an Keymind Ship suffer from the following effects:\n\n"
+ #Gravemind deposits, armies and decisions
+ gravemind_defense: "The Archmind"
+ gravemind_defense_plural: "$archmind_defense$"
+ gravemind_defense_desc: "The Archmind of the Scourge. The twisted and corrupted remains of Core Network Unit 351 - Aurora Lazarus."
+ 
+ d_flood_gravemind_lair: "Archmind Lair"
+ d_flood_gravemind_lair_desc: "The Archmind's lair, the location of the Scourge's central compound intelligence."
+ d_flood_gravemind_lair_empty: "Empty Archmind Lair"
+ d_flood_gravemind_lair_empty_desc: "The once-mighty Archmind has been vanquished, which has left the Scourge in disarray."
+
+ decision_grow_gravemind: "Grow a New Archmind"
+ decision_grow_gravemind_desc: "Our oldest Keymind will accumulate enough biomass to grow and become a new Archmind."
+
+ decision_grow_pure_flood: "Grow Pure Scourge Forms"
+ decision_grow_pure_flood_desc: "Grow Pure Scourge Forms by consuming this planet's biomass."
+ decision_grow_pure_flood_tooltip: "Grows 5 §YPure Scourge pops§! by consuming a random §YAgricultural Feature§!.§!"
+ 
+ decision_convert_infected_flood: "Convert Infected Scourge"
+ decision_convert_infected_flood_desc: "Converts Infected Scourge pops into Pure Forms."
+ decision_convert_infected_flood_tooltip: "Converts 4 §YInfected Scourge pops§! into 2 §YPure Scourge pops.§!"
+
+ missing_flood_gravemind_modifier: "Missing Archmind"
+ missing_flood_gravemind_modifier_desc: "The Archmind is missing its Archmind and is in disarray."
+
+ ship_flood_gravemind_modifier: "Crippling Lack of Autonomy"
+ ship_flood_gravemind_modifier_desc: "This Scourge is disadvantaged during stellar combat if the battle is not overseen by a Keymind intelligence."
+
+ #Events
+ flood_origin.3210.name: "The Archmind Falls"
+ flood_origin.3210.desc:1 "Our connection has been severed. Our capital has fallen into the [From.species.GetHandNamePlural] of the despicable [From.GetName]. During the last desperate defense of [Root.GetName], our Archmind fell to the horrid invaders, taking many of the [From.GetSpeciesAdj] with them.\n\nIn case of the unthinkable, our ever-calculating Archmind had designated a successor among the Keymind. The Archmind-in-waiting has managed to stabilize parts of our consciousness, but the complexity and pressure are too great for it to fully take up the mantle. We will have to incubate this Keymind and have it take over as a new Archmind before any more of our enemies take advantage of our momentary disunity."
+ flood_origin.3215.name: "Migration"
+ flood_origin.3215.desc: "Our connection has been severed. Our hive has fallen into the [From.species.GetHandNamePlural] of the despicable [From.GetName]. We now have to move all our administrative efforts to [capital_scope.GetName], including setting up a new Archmind Nest. We will have to incubate one of our Keymind and have it take over as a new Gravemind before any more of our enemies take advantage of our momentary disunity."
+ flood_origin.3215.a: "We will return."
+ flood_origin.3245.name: "Aimless"
+ flood_origin.3245.desc: "[Root.GetName] has been struck with a Colossus weapon from the dreaded §Y[From.GetAdj]§!. We lost our connection to the Archmind, and all Keyminds residing on the [Root.GetPlanetHabitat]. Every drone and Keymind on [Root.GetName] had gathered in an effort to protect the Archmind. In the end, their efforts did naught but prolong the inevitable, and the Archmind fell soon after.\n\nNow our consciousness is full of clashing thoughts and impulses. If we do not grow a new Archmind soon, then the [Owner.GetName] will cease to be."
+ flood_origin.3245.a: "Foolish creatures!"
+ flood_origin.3245.b: "Consume!"
+ flood_origin.3245.c: "We require more biomass."
+ flood_origin.3245.d: "*Incomprehensible screeching*"
+ flood_origin.3265.name: "Death by a Thousand Detonations"
+ flood_origin.3265.desc: "After many months of bombardment, it is over. [From.GetName] has fallen, all trace of life has been eradicated. Dust clouds billow across the landscape. Dead [Root.GetSpeciesNamePlural]  litter the ground, culminating in an enormous pile of corpses surrounding the greatest of us all - our Archmind, which finally fell during the final bombardment.\n\nWe now have to move our administration to [capital_scope.GetName], and it will be necessary to establish a new Archmind Nest. We will have to incubate one of our Keymind to assume the role of Archmind before any more of our enemies take advantage of this moment of disunity."
+
+ flood_bombardment.1.name: "Planet Infected"
+ flood_bombardment.1.desc: "We have infected this planet and it will soon sing victory everlasting."
+ flood_bombardment.1.a: "Further Sins passed to his son."
+
+ flood_bombardment.82.name: "Planet Overrun"
+ flood_bombardment.82.desc: "Our world has fallen to the Scourge parasite and many of our civilians and soldiers have been killed or infected."
+ flood_bombardment.82.a: "Unfortunate"
+
+ flood_bombardment.83.name: "World Infected"
+ flood_bombardment.83.desc: "This world has been consumed. Now it has joined us in a timeless chorus..."
+ flood_bombardment.83.a: "We Offer No Forgiveness. Only Further Sins."
+ 
+
+ #KEYMINDS
+
+ MESSAGE_FLOOD_KEYMIND_DEFEATED_TITLE: "Keymind Defeated"
+ MESSAGE_FLOOD_KEYMIND_DEFEATED_DESC: "Our Keymind on $PLANET|Y$ has been defeated, leading to the destruction of our §YKeymind Nest§!."
+ MESSAGE_NO_FLOOD_KEYMIND_TITLE: "Missing Keymind"
+ MESSAGE_NO_FLOOD_KEYMIND_DESC: "We currently do not have a drone assigned to a §YKeymind Nest§! on $PLANET|Y$, leading to a decrease in worker drone productivity."
+
+ MESSAGE_FINAL_FLOOD_KEYMIND_SHIP_TITLE: "Last Keymind Ship Defeated"
+ MESSAGE_FINAL_FLOOD_KEYMIND_SHIP_DESC: "Our last §YKeymind Ship§! in the $SYSTEM|Y$ system has fallen, leaving our fleets without proper command."
+
+ job_keymind_drone: "Keymind Drone"
+ job_keymind_drone_plural: "Keymind Drones"
+ mod_job_keymind_drone_add: "$job_keymind_drone$ Jobs"
+ job_keymind_drone_desc: "The administrator of the entire planet resides here. It is through Keymind forms that the Gravemind enacts its grand design."
+ job_keymind_drone_effect_desc: "£job_spawning_drone£ $job_keymind_drone_plural$ increase £mod_planet_amenities_no_happiness_add£ §Y$PLANET_AMENITIES_TITLE$§! and £mod_planet_pop_assembly_mult£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!, spawn §Y$keymind_defense_plural$§!, and provide a £mod_planet_jobs_simple_drone_produces_mult£ §G+10%§! increase in §Y$pop_cat_simple_drone$ output§!."
+ building_keymind_nest: "Keymind Nest"
+ building_keymind_nest_desc:1 "This fortified nest safely harbors the local Scourge Keymind while also accelerating growth and coordination for the rest of the nearby Scourge hives."
+ keymind_nest_tooltip:1 "\n§HOnly Scourge Hive-Minded species may be assembled by the Keymind Nest.§!\n"
+
+ keymind_defense:1 "Keymind-Led Army"
+ keymind_defense_plural:1 "Keymind-Led Armies"
+ keymind_defense_desc:1 "Under the direct supervision of the local Scourge Keymind, these Scourge forms are both deadlier and more challenging to kill than anything a regular hive-mind could produce."
+
+ missing_flood_keymind_modifier: "Missing Keymind"
+ missing_flood_keymind_modifier_desc: "This planet is missing a Scourge Keymind leading to a significant drop in $pop_cat_simple_drone$ efficiency."
+
+ gravemind_limit_tooltip: "Limit of 1 active Archmind."
+
+ #Flood Key Mind Ships
+ 
+ #LESSER KEY MIND 
+ NAME_FLOOD_LESSER_KEYMIND: "Proto-Scourge Coordinator"
+ flood_lesser_keymind_warship: "Proto-Keymind Void Form"
+ flood_lesser_keymind_warship_plural: "Proto-Keymind Void Forms"
+ flood_lesser_keymind_warship_key: "$flood_lesser_keymind_warship$" 
+ 
+ NAME_Flood_Keymind: "Scourge Coordinator"
+ flood_keymind_warship: "Keymind Void Form"
+ flood_keymind_warship_plural: "Keymind Void Forms"
+ flood_keymind_warship_key: "$flood_keymind_warship$"
+ 
+ 
+
+ keymind_corvette: "Keymind Corvette"
+ keymind_corvette_plural: "Keymind Corvettes"
+ KEYMIND_CORVETTE_MID_M1S1: "$CORVETTE_MID_M1S1$"
+ KEYMIND_CORVETTE_MID_S3: "$CORVETTE_MID_S3$"
+ KEYMIND_CORVETTE_MID_S1: "$CORVETTE_MID_S1$"
+ KEYMIND_CORVETTE_MID_S2PD1: "$CORVETTE_MID_S2PD1$"
+
+ keymind_cruiser: "Keymind Cruiser"
+ keymind_cruiser_plural: "Keymind Cruisers"
+ KEYMIND_CRUISER_BOW_L1: "$CRUISER_BOW_L1$"
+ KEYMIND_CRUISER_BOW_M1S2: "$CRUISER_BOW_M1S2$"
+ KEYMIND_CRUISER_BOW_M2: "$CRUISER_BOW_M2$"
+ KEYMIND_CRUISER_MID_S2HB: "$CRUISER_MID_S2HB$"
+ KEYMIND_CRUISER_MID_L1M1: "$CRUISER_MID_L1M1$"
+ KEYMIND_CRUISER_MID_M3: "$CRUISER_MID_M3$"
+ KEYMIND_CRUISER_MID_M2S2: "$CRUISER_MID_M2S2$"
+ KEYMIND_CRUISER_STERN_M1: "$CRUISER_STERN_M1$"
+ KEYMIND_CRUISER_STERN_S2: "$CRUISER_STERN_S2$"
+
+ keymind_destroyer: "Keymind Destroyer"
+ keymind_destroyer_plural: "Keymind Destroyers"
+ KEYMIND_DESTROYER_BOW_M1S2: "$DESTROYER_BOW_M1S2$"
+ KEYMIND_DESTROYER_BOW_S3: "$DESTROYER_BOW_S3$"
+ KEYMIND_DESTROYER_BOW_L1: "$DESTROYER_BOW_L1$"
+ KEYMIND_DESTROYER_STERN_PD2: "$DESTROYER_STERN_PD2$"
+ KEYMIND_DESTROYER_STERN_S2: "$DESTROYER_STERN_S2$"
+ KEYMIND_DESTROYER_STERN_M1: "$DESTROYER_STERN_M1$"
+
+ keymind_battleship: "Keymind Battleship"
+ keymind_battleship_plural: "Keymind Battleships"
+ KEYMIND_BATTLESHIP_BOW_L1M1S2: "$BATTLESHIP_BOW_L1M1S2$"
+ KEYMIND_BATTLESHIP_BOW_L1S4: "$BATTLESHIP_BOW_L1S4$"
+ KEYMIND_BATTLESHIP_BOW_L2: "$BATTLESHIP_BOW_L2$"
+ KEYMIND_BATTLESHIP_BOW_M1S2SHB: "$BATTLESHIP_BOW_M1S2SHB$"
+ KEYMIND_BATTLESHIP_BOW_M2S4: "$BATTLESHIP_BOW_M2S4$"
+ KEYMIND_BATTLESHIP_BOW_M3S2: "$BATTLESHIP_BOW_M3S2$"
+ KEYMIND_BATTLESHIP_MID_L2S4: "$BATTLESHIP_MID_L2S4$"
+ KEYMIND_BATTLESHIP_MID_L1M4: "$BATTLESHIP_MID_L1M4$"
+ KEYMIND_BATTLESHIP_MID_L2M2: "$BATTLESHIP_MID_L2M2$"
+ KEYMIND_BATTLESHIP_MID_L3: "$BATTLESHIP_MID_L3$"
+ KEYMIND_BATTLESHIP_MID_M4SHB: "$BATTLESHIP_MID_M4SHB$"
+ KEYMIND_BATTLESHIP_MID_S4LHB: "$BATTLESHIP_MID_S4LHB$"
+ KEYMIND_BATTLESHIP_STERN_M1S2: "$BATTLESHIP_STERN_M1S2$"
+ KEYMIND_BATTLESHIP_STERN_L1: "$BATTLESHIP_STERN_L1$"
+ KEYMIND_BATTLESHIP_STERN_M2: "$BATTLESHIP_STERN_M2$"
+ KEYMIND_BATTLESHIP_STERN_S4: "$BATTLESHIP_STERN_S4$"
+ 
+ SHIP_AURA_LESSER_KEYMIND: "$LESSER_KEYMIND_AURA$" 
+ LESSER_KEYMIND_AURA: "Proto-Key Mind Coordination"
+ 
+
+ SHIP_AURA_KEYMIND: "$KEYMIND_AURA$"
+ KEYMIND_AURA: "Key Mind Coordination"
+ sm_keymind_command: "Keymind Node"
+ sm_keymind_command_desc: "Integrates a Keymind within to oversee and coordinate Scourge vessels within the system.\n"
+ STARBASE_KEYMIND_COMMAND: "$sm_keymind_command$"
+
+ mod_shipsize_keymind_corvette_build_speed_mult: "Keymind $mod_shipsize_corvette_build_speed_mult$"
+ mod_shipsize_keymind_destroyer_build_speed_mult: "Keymind $mod_shipsize_destroyer_build_speed_mult$"
+ mod_shipsize_keymind_cruiser_build_speed_mult: "Keymind $mod_shipsize_cruiser_build_speed_mult$"
+ mod_shipsize_keymind_battleship_build_speed_mult: "Keymind $mod_shipsize_battleship_build_speed_mult$"
+
+ mod_shipsize_keymind_corvette_hull_add: "Keymind $mod_shipsize_corvette_hull_add$"
+ mod_shipsize_keymind_destroyer_hull_add: "Keymind $mod_shipsize_destroyer_hull_add$"
+ mod_shipsize_keymind_cruiser_hull_add: "Keymind $mod_shipsize_cruiser_hull_add$"
+ mod_shipsize_keymind_battleship_hull_add: "Keymind $mod_shipsize_battleship_hull_add$"
+
+ 
+ #FLOOD BOMBARDMENT
+ tech_flood_bombardment: "Scourge Dispersal Pods"
+ tech_flood_bombardment_desc: "Scourge Keyminds have directed the Scourge to grow dispersal pods filled with Scourge pod infectors and Scourge biomass on all aerospace vessels to quickly saturate and infect planetary bodies. Unlocks the §YFlood Pod Dispersal Bombardment§! option."
+ 
+ flood_infection_bombardment: "Infect"
+ flood_infection_bombardment_desc: "§YFlood Infection§! Bombardment targets enemy population centers by sending down countless Scourge dispersal pods across the planet, infecting individual hosts into more Scourge forms.\n- §EHigh§! damage to §YArmies§!\n- §EHigh§! damage to §YPlanet§!\n- §YIf planet reaches devastation reaches 75% or more, the Scourge parasite will reach critical mass and turn the planet into a Scourge Hive§!\n- Will §RNOT§! Infect or kill the last Pop"
+ bombardment_flood_infection: "Scourge Pod Dispersal"
+ bombardment_flood_infection_desc: "§YFlood Infection§! Bombardment targets enemy population centers by sending down countless Scourge dispersal pods across the planet, infecting individual hosts into more Scourge forms.\n- §EHigh§! damage to §YArmies§!\n- §EHigh§! damage to §YPlanet§!\n- §YIf planet reaches devastation reaches 75% or more, the Scourge parasite will reach critical mass and turn the planet into a Scourge Hive§!\n- Will §RNOT§! Infect or kill the last Pop"
+
+ MESSAGE_POP_FLOOD_INFECTION_TITLE: "Pop Infected"
+ MESSAGE_POP_FLOOD_INFECTION: "A £pop£ §Y$SPECIES$ Pop§! was Infected at $PLANET|Y$ and resettled on $TARGET_PLANET|Y$ as a §YTaken§! thrall."
+ MESSAGE_POP_FLOOD_INFECTION_FROM_US: "A £pop£ §Y$SPECIES$ Pop§! was Infected from $PLANET|Y$ by the raiding fleets of $INFECTOR|Y$"
+
+ flood_bombardment.123.name: "Last [From.GetSpeciesNamePlural] Infected"
+ flood_bombardment.123.desc: "The last of the organics §H[From.GetSpeciesNamePlural]§! have been Infected on [From.From.GetName]."
+ flood_bombardment.123.a: "They will be food. Nothing more."
+ 
+ flood_world_infection: "[From.From.GetName] has been turned into a Scourge hive."
+  
+ flood_outbreak: "Marauding Scourge Outbreak"
+ flood_outbreak_desc: "This colony is being subjected to a small-scale Scourge outbreak, infecting colonists on the outskirts of civilization and quickly spreading to other areas causing the development of this colony to gradually suffer as the parasite continues to fester and grow."
+ 
+ large_flood_outbreak: "Coordinated Scourge Outbreak"
+ large_flood_outbreak_desc: "This colony is being subjected to a large-scale Scourge outbreak, infecting multiple colonists and spreading terror across the planet causing the development of this colony to suffer as the parasite becomes more coordinated." 
+ 
+ #FLOOD OUTBREAK EVENT 
+ flood_bombardment.5.name: "Scourge Outbreak!"
+ flood_bombardment.5.desc: "Our negligence has allowed the parasite to spread across our world. Thousands of Scourge forms are attacking our cities and defenses on all fronts. We must contain the outbreak or we'll be overrun!"
+ 
+ flood_bombardment.8.name: "Scourge Outbreak Contained!"
+ flood_bombardment.8.desc: "We have successfully pushed back and destroyed the central Scourge intelligence leading this outbreak. This planet has been saved from a disastrous fate."
+ flood_bombardment.8.a: "Crisis Averted."
+ 
+ #FOR FLOOD INVASIONS OF FERAL FLOOD WORLDS 
+ flood_bombardment.8.flood.desc: "We have assimilated these Feral Scourge back into the fold."
+ flood_bombardment.8.flood.a: "We are made whole again."
+  
+ START_SCREEN_PART_ONE_THE_FLOOD_ORIGIN: "Our urge to create is immutable; we must create.\n\nBut the beings we create shall never again reach out in strength against us.\n\nAll that is created will suffer.\n\nAll will be born in suffering, endless grayness shall be their lot.\n\nAll creation will tailor to failure and pain, that never again shall the keymind of the eternal Fount rise up against their creators.\n\nListen to the silence.\n\nTen million years of deep silence. And now, whimpers and cries; not of birth.\n\nThat is what we bring: a great crushing weight to press down youth and hope.\n\nNo more will. No more freedom.\n\nNothing new but agonizing death and never good shall come of it.\n\nWe are the last Precursors.\n\nAnd now we are Legion.\n\nOur infernal prison has been undone.\n\nNOW WE WILL FEAST UPON THEIR BONES!"
+ 
+ FLAG_CATEGORY_the_flood: "The Scourge"
+
+ name_list_halo_flood: "The Scourge"
+ 
+ flood_hive_cluster: "Scourge Hive Cluster"
+ flood_hive_cluster_desc: "A containment failure has allowed a Scourge outbreak to be released."
+ 
+ 
+ trait_flood_species: "Pure Scourge Entity"
+ trait_flood_species_desc: "A terrifying, malevolent, and virulent parasitic organism that reproduces and grows on the consumption of sentient organic beings. This advanced form is composed entirely of Scourge biomass and does not require a host."
+ 
+ trait_flood_infected_species: "Infected Scourge Entity"
+ trait_flood_infected_species_desc: "A species that has been infected by the Scourge parasite becoming nothing more than mindless zombies, a twisted mockery of their former selves used solely as tools for the Scourge hivemind."
+ TRAIT_FLOOD_INFECTED_SPECIES_EFFECT: "$mod_planet_jobs_produces_mult$: §R-25%§!\nPop Upkeep reduced by: §G100%§!\nCannot generate §YLeaders§!\nCannot be employed in §Y$pop_cat_ruler$§! or §Y$pop_cat_specialist$§! Jobs"
+ 
+ leader_trait_ruler_the_gravemind: "Corrupted Aurora-Class Uviik"
+ leader_trait_ruler_the_gravemind_desc: "What was once the zenith of The Collective, is now ours. Their minds will assist ours, the Archminds will show us the path to victory. The Universe shall be ours, all life must be cured."
+ 
+ ###PLANET CLASSES###
+ 
+ pc_flood_hive: "Scourge Hive World"
+ pc_flood_hive_desc: "A planet that has been completely infected by the Scourge. The atmosphere is filled with Scourge spores creating a bio-hazard for all unassimilated organic life."
+ 
+ pc_flood_shield: "Infected Aegis Installation"
+ pc_flood_shield_desc: "A Kas Zei'a Aegis Sphere currently infested by the Scourge."
+ 
+ pc_flood_ringworld_habitable: "Infected Ring World"
+ pc_flood_ringworld_habitable_desc: "A Ring World that has been completely infected by a Scourge infestation."
+ 
+ trait_pc_flood_hive_preference: "Scourge Hive World Preference"
+ trait_pc_flood_hive_preference_desc: "Prefers altered environments suitable for the Scourge infection."
+ 
+ trait_pc_flood_shield_preference: "Infested Aegis Installation Preference"
+ trait_pc_flood_shield_preference_desc: "Prefers altered environments suitable for the Scourge infection."
+ 
+ trait_pc_flood_ringworld_habitable_preference: "Infected Ring World Preference"
+ trait_pc_flood_ringworld_habitable_preference_desc: "Prefers altered environments suitable for the Scourge infection."
+ 
+ ###################
+ ### Casus Belli ###
+ ###################
+
+ casus_belli_cb_spread_flood_infestation: "Spread Scourge Infection"
+ casus_belli_cb_spread_flood_infestation_desc: "We offer no forgiveness, but further sins."
+
+ war_goal_wg_spread_flood_infestation: "Infect"
+ war_goal_wg_spread_flood_infestation_desc: "Infect"
+
+ 
+ #ARMIES
+ flood_infection_forms: "Pod Infectors"
+ flood_infection_forms_desc: "The most common Scourge form capable of spreading the Scourge infection to other organic beings. They are used in massive waves to overwhelm targets and convert them into combat forms for the Scourge."
+ 
+ flood_defense_colony: "Scourge Colony"
+ flood_defense_colony_desc: "A cluster of Scourge Hives defended by an undead macabre of Scourge combat forms, Scourge roots, and spore launchers."
+ 
+ flood_carrier_forms: "Scourge Carrier Forms"
+ flood_carrier_forms_desc: "Bipedal Scourge forms that carry and grow Pod Infectors inside its body, releasing them upon an unsuspecting target."
+ 
+ flood_combat_forms: "Scourge Combat Forms"
+ flood_combat_forms_desc: "Primary combat forms of the Scourge parasite defending the Scourge against attack and securing additional hosts for infection."
+ 
+ flood_thrasher_forms: "Scourge Thrashers"
+ flood_thrasher_forms_desc: "Large hulking combat forms used for close quarters combat."
+ 
+ flood_pure_stalker_forms: "Pure Stalker Forms"
+ flood_pure_stalker_forms_desc: "Scourge forms that are fast and agile capable of mutating into other pure forms."
+ 
+ flood_pure_ranged_forms: "Pure Ranged Forms"
+ flood_pure_ranged_forms_desc: "Defensive Scourge forms that cling to ceilings or walls and unleash a hail of spiked projectiles from long range."
+ 
+ flood_pure_tank_form: "Pure Tank Forms"
+ flood_pure_tank_form_desc: "Large and powerful pure Scourge forms capable of taking a tremendous amount of damage."
+ 
+ flood_pure_infestor_forms: "Pure Infestor Forms"
+ flood_pure_infestor_forms_desc: "Pure Scourge forms that specialize in cracking open vehicles and converting their crew into Scourge-controlled puppets."
+ 
+ flood_seeder_forms: "Scourge Seeder Infectors"
+ flood_seeder_forms_desc: "Lighter-than-air Scourge forms that swim through the sky and attack aircraft in massive swarms."
+ 
+ flood_bomber_forms: "Scourge Bomber Forms"
+ flood_bomber_forms_desc: "Large floating Scourge organisms that drop virulent bombs that spread the Scourge infection."
+ 
+ flood_hellion: "Pure Scourge Hellion"
+ flood_hellion_desc: "A variation of a Scourge pure form that serves as a mobile hive and siege machine using its flesh and bone as living weapons."
+ 
+ flood_blightstalkers: "Scourge Blightstalkers"
+ flood_blightstalkers_desc: "A fast and powerful keymind variant employed by the Scourge to serve as early coordinators and hunters that scour the land for surviving prey after the first wave of Scourge infection."
+ 
+ flood_juggernaut: "Scourge Juggernaut"
+ flood_juggernaut_desc: "A large Scourge command form highly specialized by directing other combat forms in battle."
+ 
+ flood_abomination: "Scourge Abomination"
+ flood_abomination_desc: "A massive and powerful Scourge key mind war-form armed with two large tentacles to smash and pulverize enemy infantry and vehicles."
+ 
+ flood_proto_gravemind: "Proto-Gravemind"
+ flood_proto_gravemind_desc: "A Proto-Compound Intelligence form before the creation of a Gravemind, this form commands a large portion of local Scourge forms. This proto-gravemind is in its later stages, becoming massive in size."
+ 
+ flood_gravemind: "Scourge Gravemind"
+ flood_gravemind_desc: "The compound intelligence directing the entire Scourge parasite. Massive in size, it possesses multiple tentacle appendages and serve as the central Scourge consciousness capable of speaking in trochaic heptameter."
+ 
+ #BUILDINGS 
+ building_flood_hatchery: "Scourge Nest"
+ building_flood_hatchery_desc: "An organic Scourge structure that is created within a Scourge infestation. They produce Scourge infection forms that can turn hosts into a variety of combat and carrier forms."
+ 
+ building_flood_lair: "Scourge Den"
+ building_flood_lair_desc: "An upgraded Scourge structure indicating a larger Scourge infestation. This structure allows more evolved pure Scourge forms to be created."
+ 
+ building_flood_hive: "Scourge Colony"
+ building_flood_hive_desc: "The final evolution of the Scourge Den that towers over all other Scourge hive structures. This large hive is indicative of a massive Scourge presence capable of unlocking the final stages of their evolution."
+ 
+
+ ####################
+ # FLOOD INTELLIGENCE
+ ####################
+ 
+ flood_1: "Feral Stage"
+ flood_1_desc: "These Scourge are too few to operate in an even remotely intelligent way and must grow more biomass. Growing more than 5 Scourge pops will decrease this penalty."
+ 
+ flood_2: "Late Feral Stage"
+ flood_2_desc: "The collective intelligence of the Scourge is still relatively simple, but are starting to formulate strategies and gather biomass to create a Proto-Gravemind. Growing more than 12 Scourge pops will decrease this penalty further."
+ 
+ flood_3: "Early Coordinated Stage"
+ flood_3_desc: "The Scourge parasite has grown capable of performing more complex operations, but lacks the necessary resources to achieve full coordination with the Gravemind. Building 20 Scourge pops will achieve this goal."
+ 
+ flood_4: "Late Coordinated Stage"
+ flood_4_desc: "The Scourge have achieved full coordination with the Gravemind capable of completing complex tasks with ease."
+ 
+
+ ###################
+ # Flood Hive Worlds 
+ ###################
+
+ flood_world.name: "Infection Complete"
+ flood_world.desc: "The planet has been completely infected by the Scourge, creating a new Scourge Keymind."
+ 
+ flood_consume_world.name: "Biomass Collected"
+ flood_consume_world.desc: "The planet has been completely stripped of its organic biomass and left barren."
+ 
+ flood_hive_global_country_modifiers: "Scourge Neural Link"
+ 
+ #STATIC MODIFIERS
+ flood_infestation: "Scourge Infestation"
+ flood_infestation_desc: "The Scourge have infested this planet, infecting both the biological life and landscape creating Scourge Blightlands."
+ 
+ flood_infestation_stage_0: "Scourge Roots (Stage 0)"
+ flood_infestation_stage_0_desc: "A small group of Scourge hatcheries have spread across the surface."
+ 
+ flood_infestation_stage_1: "Scourge Nest (Stage 1)"
+ flood_infestation_stage_1_desc: "The Scourge have begun infecting this planet to suit their needs, growing thousands of Scourge each day."
+ 
+ flood_infestation_stage_2: "Scourge Den (Stage 2)"
+ flood_infestation_stage_2_desc: "The Scourge has infested much of this planet."
+ 
+ flood_infestation_stage_3: "Scourge Colony"
+ flood_infestation_stage_3_desc: "This planet has been completely infested by the Scourge."
+ 
+ ###FLOOD DECISIONS###
+ decision_grow_flood_keymind_fleet: "Grow Keymind Voidform" 
+ decision_grow_flood_keymind_fleet_desc: "Grow a mobile Scourge Keymind to lead Scourge fleets. Will remove the current Keymind Nest on this world."
+ decision_grow_flood_keymind_fleet_effects: "§GCreates a Scourge Keymind Voidform in this system.§! Requires a §YKeymind Nest.§! §RRemoval of §YKeymind Nest§! upon completion.§!"
+ 
+ decision_grow_flood_keymind_fleet_ai: "Grow Keymind Voidform"
+ decision_grow_flood_keymind_fleet_ai_desc: "Grow a mobile Scourge Keymind to lead Scourge fleets. Will remove the current Keymind Nest on this world."
+ decision_grow_flood_keymind_fleet_ai_effects: "§GCreates a Scourge Keymind Voidform in this system.§! Requires a §YKeymind Nest.§! §RRemoval of §YKeymind Nest§! upon completion.§!"
+ 
+ flood_origin.10.name: "A Keymind has been Created"
+ flood_origin.10.desc: "Enough biomass has been accumulated to create a mobile Scourge Keymind to assist the Gravemind in coordinating fleets. Keyminds specialize in improving fleet combat coordination and effectiveness."
+ 
+ decision_flood_hive: "Infect World"
+ decision_flood_hive_desc: "Start the process of infecting this world into an Scourge Hive."
+ decision_flood_hive_effects: "Changes the planet into a §Y$pc_flood_hive$§!"
+ 
+ decision_flood_shield: "Infect Shield World"
+ decision_flood_shield_desc: "Start the process of infecting this shield world into an Scourge Hive."
+ decision_flood_shield_effects: "Changes the planet into a §Y$pc_flood_shield$§!"
+ 
+ decision_flood_dispersal_pods: "Spread Infection"
+ decision_flood_dispersal_pods_desc: "Send Scourge dispersal pods to form a dormant Scourge Colony."
+ decision_flood_dispersal_pods_effects: "Creates a dormant Scourge colony on this world"
+ 
+ decision_flood_dispersal_pods_ringworld: "Spread Infection on Ring World"
+ decision_flood_dispersal_pods_ringworld_desc: "Send Scourge dispersal pods to form a dormant Scourge Colony on this Ring World."
+ decision_flood_dispersal_pods_ringworld_effects: "Creates a dormant Scourge colony on this ring world"
+ 
+ decision_flood_hive_ringworld: "Infect Ring World"
+ decision_flood_hive_ringworld_desc: "Start the process of infecting this Ring World into a Scourge Hive."
+ decision_flood_hive_ringworld_effects: "Changes the habitable Ring World into a §Y$pc_flood_ringworld_hive$§!"
+ 
+ decision_remove_flood_infection: "Remove Infection"
+ decision_remove_flood_infection_desc: "Remove the Scourge infestation on this world."
+ decision_remove_flood_infection_effects: "Removes all traces of the Scourge on this world."
+ 
+ decision_remove_planetary_flood_infection: "Remove Planetary Scourge Infection"
+ decision_remove_planetary_flood_infection_desc: "Begin cleansing the entire planet of all Scourge infestation on this world, wiping it clean of Scourge biomass."
+ decision_remove_planetary_flood_infection_effects: "Changes §Y$pc_flood_hive$§! into a §Y$pc_barren$§! with a §YTerraforming Candidate§! modifier."
+ 
+ decision_flood_colonization: "Awaken Dormant Scourge Colony"
+ decision_flood_colonization_desc: "Awaken the dormant Scourge on this world to create a Scourge colony."
+ decision_flood_colonization_effects: "Awakens a dormant Scourge Colony."
+ 
+ decision_flood_consume_world: "Consume World"
+ decision_flood_consume_world_desc: "Direct the Scourge Swarm on this planet to consume all available resources."
+ 
+ decision_flood_consume_world_effects: "Consumes the planet to acquire its biomass. The planet becomes a §Y$pc_barren_cold$§!."
+ 
+ MESSAGE_FLOOD_CONSUME_WORLD_TITLE: "Consume World"
+ MESSAGE_FLOOD_CONSUME_WORLD_MINERALS_TEXT: "The consumption of $PLANET|Y$ yields minerals for the swarm."
+ MESSAGE_FLOOD_CONSUME_WORLD_ALLOYS_TEXT: "The consumption of $PLANET|Y$ yields minerals and energy for the swarm."
+ MESSAGE_FLOOD_CONSUME_WORLD_POP_TEXT: "The consumption of $PLANET|Y$ yields bodies and minerals for the swarm."
+ 
+ decision_add_flood_blightlands: "Grow Scourge Blightlands"
+ decision_add_flood_blightlands_desc: "Infect this world with Scourge biomass to assist in altering this world's environment to suit our needs."
+ decision_add_flood_blightlands_effects: "Adds a §YFlood Blightlands§! deposit and §YFlood Infestation§! modifier. §YFlood Blightlands§! offer positive modifiers for Scourge pops."
+ 
+ flood_hive_planet.185.name: "World Consumed"
+ flood_hive_planet.185.desc: "The Scourge Swarm has consumed all useful resources from §Y[From.GetName]§!." 
+ flood_hive_planet.185.a: "All that is created will suffer."
+ flood_hive_planet.185.a.tooltip: "§Y[From.GetName]§! is left a barren wasteland."
+ 
+ decision_build_flood_hive: "Build Gravemind Lair"
+ decision_build_flood_hive_desc: "Instructs Scourge Queens to build a hive on this world. Adds the §Y$d_flood_hive$§! deposit and §Y$flood_infestation$§! modifier."
+ 
+ decision_remove_flood_hive: "Remove Gravemind Lair"
+ decision_remove_flood_hive_desc: "Remove the existing Scourge hive on this world. Removes the §Y$d_flood_hive$§! deposit and §Y$flood_infestation$§! modifier giving resources in return."
+ 
+ decision_flood_habitat_infection: "Infect Habitat"
+ decision_flood_habitat_infection_desc: "Infect this artificial structure with the Scourge parasite."
+ 
+ decision_remove_flood_habitat_infection: "Remove Infection"
+ decision_remove_flood_habitat_infection_desc: "Removes all traces of the Scourge parasite from this artificial structure."
+
+ mod_planet_pops_food_food_upkeep_mult: "Food Upkeep"
+
+ mod_pc_flood_hive_habitability: "Infected Hive Preference"
+ mod_pc_flood_shield_habitability: "Infected Aegis Installation Preference"
+ mod_pc_flood_city_habitability: "Infected City World Preference"
+ mod_pc_flood_ringworld_habitable_habitability: "Infected Ring World Preference"
+ 
+ pc_flood_city_habitability: "Infected City World Preference"
+ pc_flood_city_habitability_desc: "Prefers altered environments suitable for the Scourge infection."
+ 
+ flood_infected_habitat: "Scourge Infected Habitat"
+ flood_infected_habitat_desc: "This artificial structure has been infected by the Scourge parasite."
+ 
+ 
+ #FLOOD HIVE DEPOSITS
+ d_flood_hive: "Scourge Hive Cluster"
+ d_flood_hive_desc: "A large swarm of Scourge has gathered on the surface to form a massive hive cluster."
+ 
+ #FLOOD DEPOSITS BLOCKERS
+ d_flood_infestation: "Scourge Blightlands"
+ d_flood_infestation_desc: "The dispersal of Scourge spores have spread across this world consuming any organic material and all available natural resources to grow more Scourge biomass."
+ 
+ #d_flood_spore_mountains: "Scourge Spore Mountains"
+ #d_flood_spore_mountains_desc: "During the later stages of development of a Scourge hive, large mountains made of Scourge biomass are constructed which release massive volumes of Scourge spores into the atmosphere to speed up the conversion process."
+ 
+ #SHIELD WORLD DEPOSITS
+ d_sw_flood_vents: "Scourge Vents"
+ d_sw_flood_vents_desc: "Each Aegis Installation contains a network of access portals to and from the outer surface and the interior sphere. These artificial chasms have been completely overrun by the Scourge and are now used as a large interconnected hive throughout the sphere."
+ 
+ #LOC KEYS FOR FLOOD
+ flood_hive_cb_option_description: "Scourge Hive"
+ flood_hive_cb_yes: "Yes"
+ flood_hive_cb_no: "No"
+ 
+ 
+ #FLOOD WEAPON COMPONENTS
+ FLOOD_SEEDER_SWARM: "Scourge Seeder Swarmers"
+ FLOOD_SEEDER_SWARM_DESC: "Scourge void forms variants of the seeder infector form used in massive numbers to overwhelm enemy targets. Spits deadly shards of dense bone capable of tearing through armor."
+ 
+ FLOOD_SEEKER_SPORES_PD: "Scourge Seeker Spores"
+ FLOOD_SEEKER_SPORES_PD_DESC: "Semi-sentient mass of Scourge spores that seek out and destroy small enemy strike craft and missiles."
+ 
+ FLOOD_BONE_LAUNCHER: "Scourge Bone Launcher"
+ FLOOD_BONE_LAUNCHER_DESC: "Scourge kinetic weapon that fires dense projectiles of bone and biomatter at extremely high speeds capable of piercing shields and armor."
+ 
+ SMALL_FLOOD_BONE_LAUNCHER: "Scourge Bone Launcher"
+ MEDIUM_FLOOD_BONE_LAUNCHER: "Scourge Bone Launcher"
+ LARGE_FLOOD_BONE_LAUNCHER: "Scourge Bone Launcher"
+ 
+ FLOOD_SPORE_CANNON: "Scourge Spore Cannon"
+ FLOOD_SPORE_CANNON_DESC: "Scourge weapon based on the Spore Launcher that fires concentrated caustic Scourge spores and biomatter at enemy targets, eating away armor and hull."
+ 
+ SMALL_FLOOD_SPORE_CANNON: "Scourge Spore Cannon"
+ MEDIUM_FLOOD_SPORE_CANNON: "Scourge Spore Cannon"
+ LARGE_FLOOD_SPORE_CANNON: "Scourge Spore Cannon"
+ 
+ FLOOD_CAUSTIC_BILE: "Scourge Caustic Bile"
+ FLOOD_CAUSTIC_BILE_DESC: "Scourge weapon that spews a concentrated stream of acidic bile at enemy targets, corroding armor and hull."
+ 
+ SMALL_FLOOD_CAUSTIC_BILE: "Scourge Caustic Bile"
+ MEDIUM_FLOOD_CAUSTIC_BILE: "Scourge Caustic Bile"
+ LARGE_FLOOD_CAUSTIC_BILE: "Scourge Caustic Bile"
+ 
+ FLOOD_SPIKE_LAUNCHER: "Scourge Spike Launcher"
+ FLOOD_SPIKE_LAUNCHER_DESC: "Large Scourge kinetic weapon that fires a large projectile of bone and biomatter at a target penetrating armor and shredding hull."
+ 
+ TITAN_FLOOD_BIO_PLASMID_LAUNCHER: "Scourge Bio-Plasmid Launcher"
+ TITAN_FLOOD_BIO_PLASMID_LAUNCHER_DESC: "Massive Scourge artillery weapon that fires a large projectile of caustic bile and plasma at a target melting through dense armor and consuming entire vessels in Scourge biomatter."
+ 
+ FLOOD_SPORE_MISSILE: "Scourge Spore Missile"
+ FLOOD_SPORE_MISSILE_DESC: "Special Scourge torpedo that fires a concentrated projectile of volatile Scourge biomatter at an enemy target, exploding upon impact, penetrating shields and shredding armor and hull."
+ 
+ FLOOD_INFECTOR_LAUNCHER: "Scourge Viral Swarm"
+ FLOOD_INFECTOR_LAUNCHER_DESC: "Special Scourge torpedo that fires a semi-sentient Scourge creature in the form of a missile at an enemy target, exploding upon impact, penetrating shields and shredding armor and hull."
+ 
+ 
+
+ #FLOOD NAMELIST
+ FLOOD_FLEET_ORD: "$ORD$ Scourge Combat Swarm"
+ FLOOD_MACHINE_DEFENSE_ORD: "$ORD$ Rampant Sentinel Drones"
+ FLOOD_MACHINE_ASSAULT1_ORD: "$ORD$ Rampant Sentinel Swarm"
+ FLOOD_MACHINE_ASSAULT2_ORD: "$ORD$ Rampant Armiger Soldiers"
+ FLOOD_MACHINE_ASSAULT3_ORD: "$ORD$ Rampant Strato-Sentinel"
+ FLOOD_DEFENSE_ORD: "$ORD$ Scourge Roots"
+ FLOOD_ASSAULT_ORD: "$ORD$ Pure Scourge Combat Forms"
+ FLOOD_OCCUPATION_ORD: "$ORD$ Scourge Hive"
+ FLOOD_SLAVE_ORD: "$ORD$ Infected Combat Forms"
+ FLOOD_CLONE_ORD: "$ORD$ Scourge Carriers"
+ FLOOD_ROBOTIC_ORD: "$ORD$ Rampant Sentinel Swarm"
+ FLOOD_ROBOTIC_DEFENSE_ORD: "$ORD$ Rampant Sentinel Defense Network"
+ FLOOD_ROBOTIC_OCCUPATION_ORD: "$ORD$ Rampant Sentinel Containment Network"
+ FLOOD_PSIONIC_ORD: "$ORD$ Scourge Juggernauts"
+ FLOOD_XENOMORPH_ORD: "$ORD$ Scourge Abomination"
+ FLOOD_GENEWARRIOR_ORD: "$ORD$ Pure Scourge Shifters"
+ FLOOD_UNDEAD_ORD: "$ORD$ Infected Scourge Horde"
+ FLOOD_PRIMITIVE_SEQ: "Scourge Nest $C$"
+ FLOOD_INDUSTRIAL_SEQ: "Scourge Hive $C$"
+ FLOOD_POSTATOMIC_SEQ: "Scourge Swarm $C$"
+ 
+ #FLOOD ARMIES 
+ FLOOD_COLONY_DEFENSE_ORD: "$ORD$ Scourge Colony"
+ FLOOD_INFECTION_FORMS_ORD: "$ORD$ Pod Infector Forms"
+ FLOOD_CARRIER_FORMS_ORD: "$ORD$ Carrier Forms"
+ FLOOD_COMBAT_FORMS_ORD: "$ORD$ Combat Forms"
+ FLOOD_THRASHER_FORMS_ORD: "$ORD$ Thrasher Forms"
+ FLOOD_PURE_STALKER_FORMS_ORD: "$ORD$ Pure Stalker Forms"
+ FLOOD_PURE_RANGED_FORMS_ORD: "$ORD$ Pure Ranged Forms"
+ FLOOD_PURE_TANK_FORMS_ORD: "$ORD$ Pure Tank Forms"
+ FLOOD_PURE_INFESTOR_FORMS_ORD: "$ORD$ Pure Infestor Forms"
+ FLOOD_SEEDER_FORMS_ORD: "$ORD$ Scourge Seeder Forms"
+ FLOOD_BOMBER_FORMS_ORD: "$ORD$ Scourge Bomber Forms"
+ 
+ 
+ #KEYMINDS 
+ FLOOD_BLIGHTSTALKER_FORM_ORD: "$ORD$ Blightstalkers"
+ FLOOD_HELLION_FORM_ORD: "$ORD$ Hellion Form"
+ FLOOD_JUGGERNAUT_FORM_ORD: "$ORD$ Juggernaut Forms"
+ FLOOD_ABOMINATION_FORM_ORD: "$ORD$ Abomination Form"
+ FLOOD_PROTO_GRAVEMIND_ORD: "$ORD$ Proto-Gravemind"
+ 
+ FLOOD_TENTACLES_DEFENSE: "$ORD$ Scourge Tentacles"
+ 
+ 
+ FLOOD_SHIP_CombatVessel: "Pod Combat Form"
+ FLOOD_SHIP_SuperiorCombatVessel: "Ravager Combat Form"
+ FLOOD_SHIP_VersatileCombatVessel: "Thresher Combat Form"
+ FLOOD_SHIP_MainlineCombatVessel: "Harbinger Combat Form"
+ FLOOD_SHIP_PrincipalCombatVessel: "Keymind Combat Form"
+ FLOOD_SHIP_PrimaryCombatVessel: "Blight Infection Form"
+ FLOOD_SHIP_PrimaryCombatNode: "Gravemind Form"
+ FLOOD_SHIP_SeekerVessel: "Stalker Form"
+ FLOOD_SHIP_Nester: "Scourge Infector Form"
+ FLOOD_SHIP_BuilderVessel: "Builder Form"
+ FLOOD_SHIP_CarrierVessel: "Carrier Form"
+ FLOOD_SHIP_StationaryDefensive: "Spore Colony"
+ FLOOD_SHIP_IonDefensive: "Spore Cannon"
+
+
+ FLOOD_FLEET_HowlingSwarm:0 "Howling Scourge Swarm"
+ FLOOD_FLEET_RavenousSwarm:0 "Ravenous Scourge Swarm"
+ FLOOD_FLEET_RavagingSwarm:0 "Ravaging Scourge Swarm"
+ FLOOD_FLEET_DevastatingSwarm:0 "Devastating Scourge Swarm"
+ FLOOD_FLEET_GorgingSwarm:0 "Gorging Scourge Swarm"
+ FLOOD_FLEET_RushingSwarm:0 "Rushing Scourge Swarm"
+ FLOOD_FLEET_StalkingSwarm:0 "Stalking Scourge Swarm"
+ FLOOD_FLEET_ChargingSwarm:0 "Gravemind's Scourge"
+ FLOOD_FLEET_ThunderingSwarm:0 "Thundering Scourge Swarm"
+ FLOOD_FLEET_TeemingSwarm:0 "Teeming Scourge Swarm"
+ FLOOD_FLEET_CeaselessSwarm:0 "Ceaseless Scourge Swarm"
+ FLOOD_FLEET_BalefulSwarm:0 "Baleful Scourge Swarm"
+ FLOOD_FLEET_PestilentSwarm:0 "Pestilent Scourge Swarm"
+ FLOOD_FLEET_MercilessSwarm:0 "Merciless Scourge Swarm"
+ FLOOD_FLEET_PitilessSwarm:0 "Pitiless Scourge Swarm"
+ FLOOD_FLEET_RancorousSwarm:0 "Rancorous Scourge Swarm"
+
+ FLOOD_CLASS_TypeAlpha:0 "Alpha Scourge Form"
+ FLOOD_CLASS_TypeBeta:0 "Beta Scourge Form"
+ FLOOD_CLASS_TypeGamma:0 "Gamma Scourge Form"
+ FLOOD_CLASS_TypeDelta:0 "Delta Scourge Form"
+ FLOOD_CLASS_TypeEpsilon:0 "Epsilon Scourge Form"
+ FLOOD_CLASS_TypeZeta:0 "Zeta Scourge Form"
+ FLOOD_CLASS_TypeEta:0 "Eta Scourge Form"
+ FLOOD_CLASS_TypeTheta:0 "Theta Scourge Form"
+ FLOOD_CLASS_TypeIota:0 "Iota Scourge Form"
+ FLOOD_CLASS_TypeKappa:0 "Kappa Scourge Form"
+ FLOOD_CLASS_TypeLambda:0 "Lambda Scourge Form"
+ FLOOD_CLASS_TypeMu:0 "Mu Scourge Form"
+ FLOOD_CLASS_TypeNu:0 "Nu Scourge Form"
+ FLOOD_CLASS_TypeXi:0 "Xi Scourge Form"
+ FLOOD_CLASS_TypeOmicron:0 "Omicron Scourge Form"
+ FLOOD_CLASS_TypePsi:0 "Psi Scourge Form"
+ FLOOD_CLASS_TypeRho:0 "Rho Scourge Form"
+ FLOOD_CLASS_TypeSigma:0 "Sigma Scourge Form"
+ FLOOD_CLASS_TypeTau:0 "Tau Scourge Form"
+ FLOOD_CLASS_TypeUpsilon:0 "Upsilon Scourge Form"
+ FLOOD_CLASS_TypePhi:0 "Phi Scourge Form"
+ FLOOD_CLASS_TypeChi:0 "Chi Scourge Form"
+ FLOOD_CLASS_TypeOmega:0 "Omega Scourge Form"
+
+ 
+ 
+ #FLOOD UTILITY COMPONENTS 
+ 
+ tech_flood_bio_armor: "Scourge Calcified Biomass"
+ tech_flood_bio_armor_desc: "The regenerative properties of Scourge Super Cells allow for the formation of adaptive defensive tissue structures on infected vessels or grown from pure forms that is highly resistant to damage and can quickly regenerate if the armor or hull is compromised."
+ 
+ FLOOD_BIO_ARMOR: "Scourge Calcified Biomass"
+ FLOOD_BIO_ARMOR_DESC: "Regenerative Scourge biomass that forms a defensive carapace against incoming projectiles or energy weapons. This armor is alive and capable of regenerating both damaged hull and armor quickly during battle."
+ SMALL_FLOOD_BIO_ARMOR: "Scourge Calcified Biomass"
+ MEDIUM_FLOOD_BIO_ARMOR: "Scourge Calcified Biomass"
+ LARGE_FLOOD_BIO_ARMOR: "Scourge Calcified Biomass"
+ 
+ 
+ flood_organic_ships:0 "Biological Ships"
+ flood_organic_ships_tooltip:0 "The ships of the Scourge are living vessels of biomass made from twisted tissue and bone."
+ 
+ 
+ mod_starbase_buildings_alloys_cost_mult:0 "Starbase Buildings Alloy Cost"
+ mod_starbase_buildings_food_cost_add:0 "Starbase Building Food Cost"
+ mod_starbase_modules_alloys_cost_mult:0 "Starbase Module Alloy Cost"
+ mod_starbase_modules_food_cost_add:0 "Starbase Module Food Cost"
+  
+ mod_planet_districts_minerals_cost_mult:0 "District Mineral Cost"
+ mod_planet_districts_food_cost_add:0 "District Food Cost"
+ mod_planet_buildings_minerals_cost_mult:0 "Planet Buildings Alloy Cost"
+ mod_planet_buildings_food_cost_add:0 "Planet Buildings Food Cost"
+ 
+ mod_stations_minerals_cost_mult:0 "Space Station Mineral Cost"
+ mod_stations_food_cost_add:0 "Space Station Food Cost"
+ 
+ mod_station_gatherers_minerals_cost_mult:0 "Mining Station Mineral Cost"
+ mod_station_gatherers_food_cost_add:0 "Mining Station Food Cost"
+ mod_station_gatherers_energy_upkeep_mult:0 "Mining Station Energy Upkeep"
+ mod_station_gatherers_food_upkeep_add:0 "Mining Station Food Upkeep"
+ mod_station_researchers_minerals_cost_mult:0 "Research Station Mineral Cost"
+ mod_station_researchers_food_cost_add:0 "Research Station Food Cost"
+ mod_station_researchers_energy_upkeep_mult:0 "Research Station Energy Upkeep"
+ mod_station_researchers_food_upkeep_add:0 "Research Station Food Upkeep"
+ mod_station_observers_minerals_cost_mult:0 "Observation Station Mineral Cost"
+ mod_station_observers_food_cost_add:0 "Observation Station Food Cost"
+ mod_station_observers_energy_upkeep_mult:0 "Observation Station Energy Upkeep"
+ mod_station_observers_food_upkeep_add:0 "Observation Station Food Upkeep"
+ 
+ mod_ship_science_alloys_cost_mult:0 "Science Ship Alloy Cost"
+ mod_ship_science_food_cost_add:0 "Science Ship Food Cost"
+ mod_ship_science_alloys_upkeep_mult:0 "Science Ship Alloy Upkeep"
+ mod_ship_science_food_upkeep_add:0 "Science Ship Food Upkeep"
+ mod_ship_science_minerals_cost_add:0 "Science Ship Mineral Cost"
+ mod_ship_colonizer_alloys_cost_mult:0 "Colony Ship Alloy Cost"
+ mod_ship_colonizer_food_cost_add:0 "Colony Ship Food Cost"
+ mod_ship_colonizer_alloys_upkeep_mult:0 "Colony Ship Alloy Upkeep"
+ mod_ship_colonizer_food_upkeep_add:0 "Colony Ship Food Upkeep"
+ mod_ship_constructor_alloys_cost_mult:0 "Construction Ship Alloy Cost"
+ mod_ship_constructor_food_cost_add:0 "Construction Ship Food Cost"
+ mod_ship_constructor_alloys_upkeep_mult:0 "Construction Ship Alloy Upkeep"
+ mod_ship_constructor_food_upkeep_add:0 "Construction Ship Food Upkeep"
+ mod_ship_constructor_minerals_cost_add:0 "Construction Ship Mineral Upkeep"
+ mod_ship_corvette_alloys_cost_mult:0 "Corvette Alloy Cost"
+ mod_ship_corvette_food_cost_add:0 "Corvette Food Cost"
+ mod_ship_corvette_minerals_cost_add:0 "Corvette Mineral Cost"
+ mod_ship_destroyer_alloys_cost_mult:0 "Destroyer Alloy Cost"
+ mod_ship_destroyer_food_cost_add:0 "Destroyer Food Cost"
+ mod_ship_destroyer_minerals_cost_add:0 "Destroyer Mineral Cost"
+ mod_ship_cruiser_alloys_cost_mult:0 "Cruiser Alloy Cost"
+ mod_ship_cruiser_food_cost_add:0 "Cruiser Food Cost"
+ mod_ship_cruiser_minerals_cost_add:0 "Cruiser Mineral Cost"
+ mod_ship_battleship_alloys_cost_mult:0 "Battleship Alloy Cost"
+ mod_ship_battleship_food_cost_add:0 "Battleship Food Cost"
+ mod_ship_battleship_minerals_cost_add:0 "Battleship Mineral Cost"
+ mod_ship_titan_alloys_cost_mult:0 "Titan Alloy Cost"
+ mod_ship_titan_food_cost_add:0 "Titan Food Cost"
+ mod_ship_titan_minerals_cost_add:0 "Titan Mineral Cost"
+ mod_ship_military_station_small_alloys_cost_mult:0 "Defense Platform Alloy Cost"
+ mod_ship_military_station_small_food_cost_add:0 "Defense Platform Food Cost"
+ mod_ship_military_station_small_minerals_cost_add:0 "Defense Platform Mineral Cost"
+ mod_ship_corvette_alloys_upkeep_mult:0 "Corvette Alloy Upkeep"
+ mod_ship_corvette_food_upkeep_add:0 "Corvette Food Upkeep"
+ mod_ship_destroyer_alloys_upkeep_mult:0 "Destroyer Alloy Upkeep"
+ mod_ship_destroyer_food_upkeep_add:0 "Destroyer Food Upkeep"
+ mod_ship_cruiser_alloys_upkeep_mult:0 "Cruiser Alloy Upkeep"
+ mod_ship_cruiser_food_upkeep_add:0 "Cruiser Food Upkeep"
+ mod_ship_battleship_alloys_upkeep_mult:0 "Battleship Alloy Upkeep"
+ mod_ship_battleship_food_upkeep_add:0 "Battleship Food Upkeep"
+ mod_ship_titan_alloys_upkeep_mult:0 "Titan Alloy Upkeep"
+ mod_ship_titan_food_upkeep_add:0 "Titan Food Upkeep"
+ 
+ mod_colonies_minerals_cost_add:0 "Colony Ship Mineral Cost"
+ mod_ship_colossus_minerals_cost_add:0 "Colossus Mineral Cost"
+ mod_ship_juggernaut_minerals_cost_add:0 "Juggernaut Mineral Cost"
+ mod_ship_juggernaut_energy_upkeep_mult:0 "Juggernaut Energy Upkeep"
+ mod_ship_juggernaut_minerals_upkeep_add:0 "Juggernaut Energy Upkeep"
+ mod_starbase_ion_cannon_minerals_cost_add:0 "Ion Cannon Mineral Cost"
+ 
+ 
+ #PROTO-KEY MIND SHIP COMPONENTS 
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_LINE_DEFAULT: "Basic Combat Mind"
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_LINE_BASIC: "Combat Mind (Line)"
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_LINE_ADVANCED: "Advanced Combat Mind (Line)"
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_LINE_SAPIENT: "Sapient Combat Mind (Line)"
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_LINE_PRECOG: "Precognitive Mind (Line)"
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_PICKET_BASIC: "Combat Mind (Picket)"
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_PICKET_ADVANCED: "Advanced Combat Mind (Picket)"
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_PICKET_SAPIENT: "Sapient Combat Mind (Picket)"
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_PICKET_PRECOG: "Precognitive Mind (Picket)"
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_ARTILLERY_BASIC: "Combat Mind (Artillery)"
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_ARTILLERY_ADVANCED: "Advanced Combat Mind (Artillery)"
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_ARTILLERY_SAPIENT: "Sapient Combat Mind (Artillery)"
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_ARTILLERY_PRECOG: "Precognitive Mind (Artillery)"
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_PICKET_AUTONOMOUS: "Autonomous Ship Intellect (Line)"
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_LINE_AUTONOMOUS: "Autonomous Ship Intellect (Picket)"
+ COMBAT_COMPUTER_FLOOD_KEY_MIND_ARTILLERY_AUTONOMOUS: "Autonomous Ship Intellect (Artillery)"
+ 
+ FLOOD_KEY_MIND_SHIP_THRUSTER_1: "Bio-Chemical Thrusters"
+ FLOOD_KEY_MIND_SHIP_THRUSTER_2: "Bio-Ion Thrusters"
+ FLOOD_KEY_MIND_SHIP_THRUSTER_3: "Bio-Plasma Thrusters"
+ FLOOD_KEY_MIND_SHIP_THRUSTER_4: "Bio-Impulse Thrusters"
+ FLOOD_KEY_MIND_SHIP_THRUSTER_5: "Bio-Dark Matter Thrusters"
+    
+ FLOOD_KEY_MIND_FISSION_REACTOR: "Bio-Fission Reactor"
+ FLOOD_KEY_MIND_FUSION_REACTOR: "Bio-Fusion Reactor"
+ FLOOD_KEY_MIND_COLD_FUSION_REACTOR: "Bio-Cold Fusion Reactor"
+ FLOOD_KEY_MIND_ANTIMATTER_REACTOR: "Bio-Antimatter Reactor"
+ FLOOD_KEY_MIND_ZERO_POINT_REACTOR: "Bio-Zero Point Reactor"
+ FLOOD_KEY_MIND_DARK_MATTER_REACTOR: "Bio-Dark Matter Reactor"
+ 
+ #NSC 
+ FLOOD_KEY_MIND_GRAVITON_REACTOR: "Bio-Graviton Reactor"
+ FLOOD_KEY_MIND_NAQUADRIA_REACTOR: "Bio-Naquadria Reactor"
+ FLOOD_KEY_MIND_SINGULARITY_REACTOR: "Bio-Singularity Reactor"
+ FLOOD_KEY_MIND_MULTIDIMENSIONAL_REACTOR: "Bio-Multidimensional Reactor"
+ FLOOD_KEY_MIND_OPTIMIZED_ENIGMATIC_REACTOR: "Bio-Optimized Enigmatic Reactor"
+ 

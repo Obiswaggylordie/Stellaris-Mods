@@ -1,0 +1,142 @@
+##########################################################################
+# Icon Frames
+##########################################################################
+# 1 = Good (green)
+# 2 = Mixed (yellow)
+# 3 = Bad (red)
+# 4 = Neutral/flavor (White)
+# 5 = Precursor (Blue special)
+# 6 = Event (Purple)
+
+##########################################################################
+# Planet Modifiers
+##########################################################################
+
+stargate_trade_on_cooldown = {}
+
+Flames_Of_Enlightenment = {
+	planet_jobs_unity_produces_mult = 0.25
+	icon = "gfx/interface/icons/planet_modifiers/pm_flames_of_enlightenment.dds"
+	icon_frame = 2
+}
+
+Asuran_Capital_Planet = {
+	planet_jobs_produces_mult = 0.5
+	planet_jobs_upkeep_mult = 0.5
+	icon = "gfx/interface/icons/planet_modifiers/pm_atlantis_on_planet.dds"
+	icon_frame = 1
+	custom_tooltip = asuran_capital_planet_effects
+	show_only_custom_tooltip = no
+	apply_modifier_to_other_planets = Asuran_Other_Planet
+}
+
+Asuran_Other_Planet = {
+	planet_jobs_produces_mult = -0.25
+	planet_jobs_upkeep_mult = -0.25
+	icon = "gfx/interface/icons/planet_modifiers/pm_atlantis_on_planet.dds"
+	icon_frame = 2
+}
+
+Nanite_Assembly_Focus = {
+	planet_pop_assembly_mult = 0.5
+}
+
+Nanite_Production_Focus = {
+	planet_jobs_produces_mult = 0.5
+	planet_jobs_upkeep_mult = 0.5
+	planet_researchers_produces_mult = -0.5
+	planet_researchers_upkeep_mult = -0.5
+}
+
+Nanite_Research_Focus = {
+	planet_researchers_produces_mult = 0.5
+	planet_researchers_upkeep_mult = 0.5
+}
+
+Zpm_Installed_On_Planet = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_zpm_installed_on_planet.dds"
+	icon_frame = 6
+
+	planet_jobs_produces_mult = 1
+	planet_jobs_robotic_produces_mult = 10
+	planet_pop_assembly_mult = 1
+	planet_pop_assembly_organic_mult = 1
+}
+
+Ancient_Outpost_On_Planet = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_ancient_outpost_on_planet.dds"
+	icon_frame = 6
+}
+
+Submerged_Atlantis_On_Planet = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_submerged_atlantis_on_planet.dds"
+	icon_frame = 6
+}
+
+Atlantis_On_Planet = {
+	planet_researchers_produces_mult = 0.2
+	icon = "gfx/interface/icons/planet_modifiers/pm_atlantis_on_planet.dds"
+	icon_frame = 6
+}
+
+Atlantis_Took_Off = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_atlantis_took_off.dds"
+	icon_frame = 6
+}
+	
+Tauri_Planet_Earth = {
+	planet_jobs_food_produces_mult = 0.3
+	pop_growth_speed = 0.20
+	icon = "gfx/interface/icons/planet_modifiers/pm_tauri_planet_earth.dds"
+	icon_frame = 6
+}
+
+Void_Creation_On_Planet = {
+	planet_pop_assembly_organic_add = 5
+	icon = "gfx/interface/icons/planet_modifiers/pm_cloning_project.dds"
+	icon_frame = 3
+}
+
+Cloning_Project_On_Planet = {
+	planet_pop_assembly_organic_add = 4
+	icon = "gfx/interface/icons/planet_modifiers/pm_cloning_project.dds"
+	icon_frame = 3
+}
+
+Shroud_World_Bonus = {
+	planet_jobs_produces_mult = 0.5
+	planet_jobs_upkeep_mult = 0.5
+	icon = "gfx/interface/icons/planet_modifiers/pm_shroud_world_bonus.dds"
+	icon_frame = 6
+}
+
+Dakara_Superweapon = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_dakara_superweapon.dds"
+	icon_frame = 6
+}
+
+Inactive_Stargate_On_Planet = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_inactive_stargate_on_planet.dds"
+	icon_frame = 6
+}
+
+Active_Stargate_On_Planet = {
+	pop_growth_from_immigration = 5.00
+	pop_resettlement_cost_mult = -5.00
+	trade_value_mult = 5.00
+	colony_start_num_pops_add = 5
+	planet_colony_development_speed_mult = 5.00
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_active_stargate_on_planet.dds"
+	icon_frame = 6
+}
+
+Protected_Stargate_On_Planet = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_protected_stargate_on_planet.dds"
+	icon_frame = 6
+}
+
+Destroyed_Stargate_On_Planet = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_destroyed_stargate_on_planet.dds"
+	icon_frame = 2
+}

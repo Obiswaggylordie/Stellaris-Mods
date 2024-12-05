@@ -1,0 +1,15 @@
+﻿l_english:
+
+policy_orbital_bombardment_additions:0 "Orbital Bombardment (Special)"
+policy_orbital_bombardment_additions_desc:0 "I don't know if I would call this an act of defense..."
+
+
+
+orbital_bombardment_additions_no:0 "None"
+orbital_bombardment_additions_no_desc:0 "It's not an emergency."
+
+orbital_bombardment_additions_wave_motion_excavation_shell_ob:0 "Permission to use the wave motion excavation shells"
+orbital_bombardment_additions_wave_motion_excavation_shell_ob_desc:0 "Permission is given to use a special warhead filled with one-thirtieth the wave energy of a wave motion cannon. Originally developed to destroy sealed rock formations on one planet, it is expected to be effective on enemy planets as well. \This is a defensive action against a major threat."
+
+bombardment_wave_motion_excavation_shell_ob:0 "Wave Motion Excavation Shell Bombardment"
+bombardment_wave_motion_excavation_shell_ob_desc:0 "A special warhead filled with 1/30th the wave energy of the wave motion gun is used. \n- §RCatastrophic§! damage to §YArmies§!\n- §RCatastrophic§! damage to §YPlanet§!\n- §RCatastrophic§! damage to §YPops§!\n- Even planets without defense forces will be thoroughly bombarded\n- It will be done until all Pops are wiped out\n"

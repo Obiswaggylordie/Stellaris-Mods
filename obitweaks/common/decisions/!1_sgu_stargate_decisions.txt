@@ -1,0 +1,285 @@
+##########################################################################
+# Decisions
+##########################################################################
+
+
+### construct stargate unowned planet #
+decision_stargate_construction = {
+	owned_planets_only = no
+	resources = {
+		category = decisions
+		cost = {
+			energy = 5000
+			alloys = 5000
+		}
+	}
+	
+	potential = {
+		exists = space_owner
+		space_owner = { is_same_value = from }
+		from = {
+			has_technology = tech_stargate_construction
+		}
+		NOR = {
+			has_modifier = Active_Stargate_On_Planet
+			has_modifier = Inactive_Stargate_On_Planet
+			has_modifier = Protected_Stargate_On_Planet
+			is_star = yes
+			this = {
+				is_planet_class = pc_gas_giant
+			}
+			this = {
+				is_planet_class = pc_asteroid
+			}
+
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_stargate_construction_effects
+		add_modifier = {
+			modifier = Active_Stargate_On_Planet
+			days = -1
+		}
+	}
+	
+	ai_weight = {
+		weight = 10000
+	}
+}
+
+### activate stargate to enable projects #
+decision_activate_stargate = {
+	owned_planets_only = yes
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 250
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_stargate_activation
+		}
+		has_modifier = Inactive_Stargate_On_Planet
+	}
+	
+	allow = {
+		exists = owner
+		owner = {
+			has_technology = tech_stargate_activation
+		}
+		has_modifier = Inactive_Stargate_On_Planet
+	}
+	
+	effect = {
+		custom_tooltip = decision_activate_stargate_effects
+		add_modifier = {
+			modifier = Active_Stargate_On_Planet
+			days = -1
+		}
+		remove_modifier = Inactive_Stargate_On_Planet
+	}
+	
+	ai_weight = {
+		weight = 10000
+	}
+}
+
+### activate stargate on uncolonized planet #
+decision_activate_stargate_2 = {
+	owned_planets_only = no
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+		}
+	}
+	
+	potential = {
+		exists = space_owner
+		space_owner = { is_same_value = from }
+		from = {
+			has_technology = tech_stargate_activation
+		}
+		is_colonizable = yes
+		has_modifier = Inactive_Stargate_On_Planet
+	}
+	
+	allow = {
+		has_modifier = Inactive_Stargate_On_Planet
+		is_under_colonization = no
+	}
+	
+	effect = {
+		custom_tooltip = decision_activate_stargate_2_effects
+		add_modifier = {
+			modifier = Active_Stargate_On_Planet
+			days = -1
+		}
+		remove_modifier = Inactive_Stargate_On_Planet
+	}
+	
+	ai_weight = {
+		weight = 10000
+	}
+}
+
+#Remove stargate
+decision_remove_stargate = {
+	owned_planets_only = yes
+	resources = {
+		category = decisions
+		cost = {
+			energy = 250
+		}
+	}
+	
+	potential = {
+		exists = space_owner
+		space_owner = { is_same_value = from }
+		from = {
+			has_technology = tech_stargate_construction
+		}
+		has_modifier = Inactive_Stargate_On_Planet
+		owner = {
+			is_ai = no	
+		}
+	}
+	
+	allow = {
+		has_modifier = Inactive_Stargate_On_Planet
+	}
+	
+	effect = {
+		remove_modifier = Inactive_Stargate_On_Planet
+		remove_modifier = Protected_Stargate_On_Planet
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+### shut down stargate #
+decision_deactivate_stargate = {
+	owned_planets_only = yes
+	
+	potential = {
+		planet = {
+			has_modifier = Active_Stargate_On_Planet
+		}
+	}
+	
+	effect = {
+		planet = {
+			custom_tooltip = decision_deactivate_stargate_effects
+			add_modifier = {
+				modifier = Inactive_Stargate_On_Planet
+				days = -1
+			}
+			remove_modifier = Active_Stargate_On_Planet
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+### install iris to protect stargate ##
+decision_protect_stargate = {
+	owned_planets_only = yes
+
+	enactment_time = 30
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 500
+			energy = 100
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_stargate_iris
+		}
+		OR = {
+			has_modifier = Active_Stargate_On_Planet
+			has_modifier = Inactive_Stargate_On_Planet
+		}
+		NOT = { has_modifier = Protected_Stargate_On_Planet }
+		
+	}
+	
+	allow = {
+		exists = owner
+		owner = {
+			has_technology = tech_stargate_activation
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_protect_stargate_effects
+		add_modifier = {
+			modifier = Protected_Stargate_On_Planet
+			days = -1
+		}
+	}
+	
+	ai_weight = {
+		weight = 10000
+	}
+}
+
+### colonize planet with active stargate #
+decision_stargate_colonize = {
+	owned_planets_only = no
+
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 250
+			energy = 500
+		}
+	}
+	
+	potential = {
+		planet = {
+			has_modifier = Active_Stargate_On_Planet
+			is_colonizable = yes
+			is_under_colonization = no
+		}
+		space_owner = {
+			is_same_empire = solar_system.space_owner
+			has_technology = tech_stargate_activation
+			any_owned_planet = {
+				has_modifier = Active_Stargate_On_Planet
+			}
+		}
+	}
+	
+	effect = {
+		planet = {
+			custom_tooltip = decision_stargate_colonize_effects
+			start_colony = {
+				owner = space_owner
+				species = space_owenr
+				ethos = random
+			}
+		}
+	}
+	
+	ai_weight = {
+		base = 100
+	}
+}
+
+
+
+
+

@@ -1,0 +1,22 @@
+namespace = zeiastart
+
+# Game Startup choice to use tech or not
+country_event = {
+	id = zeiastart.01
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+        OR = {
+            has_origin = origin_earth_2200
+            has_trait = trait_ancient
+            has_trait = trait_forerunner_species            
+        }
+	}
+
+	immediate = {
+        set_country_flag = can_use_dtf_tech
+        give_technology = { tech = tech_dtf_pretech message = no }
+        give_technology = { tech = tech_forerunner_start message = no }
+    }
+}

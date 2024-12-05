@@ -1,0 +1,489 @@
+##############################################################
+###	PORTRAITS SETTINGS
+###
+### Which portraits are used is set in 
+### common\species_classes\00_cspecies_classes.txt
+###
+###	This file configures how portraits and planet backgrounds are built.
+###	Default position orientation is lower left.
+##############################################################
+
+portraits = {
+	
+	#THE FLOOD
+	
+	
+	#FLOOD INFECTION FORMS
+	flood_infection_form_01 = { entity = "portrait_halo_flood_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "halo_flood_greetings"
+		character_textures = {
+			"gfx/models/portraits/halo_flood/flood_infection_form_01.dds"
+		}
+	}
+	
+	flood_carrier_form_01 = { entity = "portrait_halo_flood_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "halo_flood_greetings"
+		character_textures = {
+			"gfx/models/portraits/halo_flood/flood_carrier_form_01.dds"
+		}
+	}
+	
+	#FLOOD COMBAT FORMS 
+	flood_human_combat_form_01 = { entity = "portrait_halo_flood_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "halo_flood_greetings"
+		character_textures = {
+			"gfx/models/portraits/halo_flood/flood_human_combat_form_01.dds"
+		}
+	}
+	flood_spartan_combat_form_01 = { entity = "portrait_halo_flood_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "halo_flood_greetings"
+		character_textures = {
+			"gfx/models/portraits/halo_flood/flood_spartan_combat_form_01.dds"
+		}
+	}
+	flood_brute_combat_form_01 = { entity = "portrait_halo_flood_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "halo_flood_greetings"
+		character_textures = {
+			"gfx/models/portraits/halo_flood/flood_brute_combat_form_01.dds"
+		}
+	}
+	flood_elite_combat_form_01 = { entity = "portrait_halo_flood_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "halo_flood_greetings"
+		character_textures = {
+			"gfx/models/portraits/halo_flood/flood_ce_elite_combat_form_01.dds"
+			"gfx/models/portraits/halo_flood/flood_elite_combat_form_01.dds"
+			"gfx/models/portraits/halo_flood/flood_elite_combat_form_02.dds"
+			"gfx/models/portraits/halo_flood/flood_elite_combat_form_03.dds"
+		}
+	}
+	
+	#PURE FORMS 
+	flood_bomber_form_01 = { entity = "portrait_halo_flood_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "halo_flood_greetings"
+		character_textures = {
+			"gfx/models/portraits/halo_flood/flood_bomber_01.dds"
+		}
+	}
+	flood_stalker_form_01 = { entity = "portrait_halo_flood_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "halo_flood_greetings"
+		character_textures = {
+			"gfx/models/portraits/halo_flood/flood_stalker_pure_form_01.dds"
+		}
+	}
+	flood_ranged_form_01 = { entity = "portrait_halo_flood_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "halo_flood_greetings"
+		character_textures = {
+			"gfx/models/portraits/halo_flood/flood_ranged_pure_form_01.dds"
+		}
+	}
+	flood_tank_form_01 = { entity = "portrait_halo_flood_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "halo_flood_greetings"
+		character_textures = {
+			"gfx/models/portraits/halo_flood/flood_tank_pure_form_01.dds"
+		}
+	}
+	
+	#KEYMINDS 
+	flood_blightstalker_01 = { entity = "portrait_halo_flood_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "halo_flood_greetings"
+		character_textures = {
+			"gfx/models/portraits/halo_flood/flood_blightstalker_form_01.dds"
+		}
+	}
+	
+	flood_juggernaut_01 = { entity = "portrait_halo_flood_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "flood_gravemind_greetings"
+		character_textures = {
+			"gfx/models/portraits/halo_flood/flood_juggernaut_01.dds"
+		}
+	}
+	flood_abomination_01 = { entity = "portrait_halo_flood_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "flood_gravemind_greetings"
+		character_textures = {
+			"gfx/models/portraits/halo_flood/flood_abomination_01.dds"
+		}
+	}
+	flood_proto_gravemind_01 = {	entity = "portrait_flood_gravemind_01_entity"  clothes_selector = "no_texture"  attachment_selector = "no_texture" greeting_sound = "flood_gravemind_greetings"
+		character_textures = {
+			"gfx/models/portraits/halo_flood/proto_gravemind.dds"
+		}
+	}
+	flood_ce_proto_gravemind_01 = {	entity = "portrait_halo_flood_03_entity"  clothes_selector = "no_texture"  attachment_selector = "no_texture" greeting_sound = "flood_gravemind_greetings"
+		character_textures = {
+			"gfx/models/portraits/halo_flood/flood_proto_gravemind_01.dds"
+		}
+	}
+
+	flood_infected_aurora = {
+		greeting_sound = "flood_gravemind_greetings"
+		texturefile = "gfx/models/portraits/halo_flood/flood_infected_aurora.dds"
+	}
+	
+	# Shroud (Flood Gravemind Room)
+	
+	#gravemind1 = { entity = "shroud_01_portrait_entity"	clothes_selector = "no_texture"  attachment_selector = "no_texture" greeting_sound = "flood_gravemind_greetings" 
+	#	character_textures = {
+	#		"gfx/models/portraits/halo_flood/flood_gravemind_room_background.dds"
+	#	}
+	#}
+}
+
+portrait_groups = {
+	halo_flood = {
+		default = flood_tank_form_01
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					flood_infection_form_01
+					flood_bomber_form_01
+					flood_stalker_form_01
+					flood_ranged_form_01
+					flood_tank_form_01
+					flood_blightstalker_01
+					flood_juggernaut_01
+					flood_abomination_01
+					flood_ce_proto_gravemind_01
+					flood_proto_gravemind_01
+					flood_infected_aurora
+				}
+			}	
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+		}
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					flood_tank_form_01
+				}
+			}
+		}
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					OR = {
+						is_pop_category = worker
+						is_pop_category = slave
+						is_pop_category = simple_drone 
+					}
+				}
+				portraits = {
+					flood_bomber_form_01
+					flood_carrier_form_01
+					flood_infection_form_01
+					flood_stalker_form_01
+				}
+			
+			}
+			add = {
+				trigger = {
+					OR = {
+						is_pop_category = specialist
+						is_pop_category = complex_drone
+					}
+				}
+				portraits = {
+					flood_ranged_form_01
+					flood_tank_form_01
+					flood_blightstalker_01
+					flood_juggernaut_01
+					flood_proto_gravemind_01
+					flood_abomination_01
+				}
+			}
+			add = {
+				trigger = {
+					is_pop_category = ruler
+				}
+				portraits = {
+					flood_juggernaut_01
+					flood_proto_gravemind_01
+					flood_abomination_01
+					flood_ce_proto_gravemind_01
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					leader_class = scientist
+				}
+				portraits = {
+					flood_proto_gravemind_01
+					flood_ce_proto_gravemind_01
+				}
+			}
+
+			add = {
+				trigger = {
+					leader_class = commander 
+					has_trait = subclass_commander_general
+				}
+				portraits = {
+					flood_bomber_form_01
+					flood_blightstalker_01
+					flood_tank_form_01
+					flood_juggernaut_01
+					flood_abomination_01
+				}
+			}
+		
+			add = {
+				trigger = {
+					leader_class = commander 
+					NOT = { has_trait = subclass_commander_general }
+				}
+				portraits = {
+					flood_juggernaut_01
+					flood_abomination_01
+					flood_proto_gravemind_01
+					flood_ce_proto_gravemind_01
+				}
+			}
+			
+			add = {
+				trigger = {
+					leader_class = official
+				}
+				portraits = {
+					flood_proto_gravemind_01
+					flood_blightstalker_01
+					flood_abomination_01
+					flood_juggernaut_01
+					flood_ce_proto_gravemind_01
+				}
+			}
+
+			# Archmind traits
+
+			add = {
+				trigger = {
+					leader_class = official
+					has_trait = leader_trait_ruler_the_gravemind
+				}
+				portraits = {
+					flood_infected_aurora
+				}
+			}
+
+			add = {
+				trigger = {
+					leader_class = commander
+					has_trait = leader_trait_ruler_the_gravemind
+				}
+				portraits = {
+					flood_infected_aurora
+				}
+			}
+
+			add = {
+				trigger = {
+					leader_class = scientist
+					has_trait = leader_trait_ruler_the_gravemind
+				}
+				portraits = {
+					flood_infected_aurora
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					is_ruler = yes
+					NOT = { has_trait = leader_trait_ruler_the_gravemind }
+				}
+				portraits = {
+					flood_proto_gravemind_01
+					flood_ce_proto_gravemind_01
+				}
+			}
+
+			add = {
+				trigger = {
+					is_ruler = yes
+					has_trait = leader_trait_ruler_the_gravemind
+				}
+				portraits = {
+					flood_infected_aurora
+				}
+			}
+		}
+	}
+}
+
+
+portrait_groups = {
+	infected_flood = {
+		default = flood_human_combat_form_01
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					flood_human_combat_form_01
+					flood_brute_combat_form_01
+					flood_elite_combat_form_01
+					flood_spartan_combat_form_01
+					flood_carrier_form_01
+					flood_ce_proto_gravemind_01
+					flood_proto_gravemind_01
+					flood_infected_aurora
+				}
+			}	
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+		}
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					flood_human_combat_form_01
+				}
+			}
+		}
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					OR = {
+						is_pop_category = worker
+						is_pop_category = slave
+						is_pop_category = simple_drone 
+					}
+				}
+				portraits = {
+					flood_human_combat_form_01
+					flood_brute_combat_form_01
+					flood_elite_combat_form_01
+					flood_carrier_form_01
+				}
+			
+			}
+			add = {
+				trigger = {
+					OR = {
+						is_pop_category = specialist
+						is_pop_category = complex_drone
+					}
+				}
+				portraits = {
+					flood_proto_gravemind_01
+				}
+			}
+			add = {
+				trigger = {
+					is_pop_category = ruler
+				}
+				portraits = {
+					flood_proto_gravemind_01
+					flood_ce_proto_gravemind_01
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					leader_class = scientist
+				}
+				portraits = {
+					flood_proto_gravemind_01
+					flood_ce_proto_gravemind_01
+				}
+			}
+
+			add = {
+				trigger = {
+					leader_class = commander 
+					has_trait = subclass_commander_general 
+				}
+				portraits = {
+					flood_human_combat_form_01
+					flood_brute_combat_form_01
+					flood_elite_combat_form_01
+					flood_spartan_combat_form_01
+				}
+			}
+		
+			add = {
+				trigger = {
+					leader_class = commander 
+					NOT = { has_trait = subclass_commander_general }
+				}
+				portraits = {
+					flood_human_combat_form_01
+					flood_brute_combat_form_01
+					flood_elite_combat_form_01
+					flood_spartan_combat_form_01
+					flood_proto_gravemind_01
+					flood_ce_proto_gravemind_01
+				}
+			}
+			
+			add = {
+				trigger = {
+					leader_class = official
+				}
+				portraits = {
+					flood_proto_gravemind_01
+					flood_ce_proto_gravemind_01
+				}
+			}
+
+			# Archmind traits
+
+			add = {
+				trigger = {
+					leader_class = official
+					has_trait = leader_trait_ruler_the_gravemind
+				}
+				portraits = {
+					flood_infected_aurora
+				}
+			}
+
+			add = {
+				trigger = {
+					leader_class = commander
+					has_trait = leader_trait_ruler_the_gravemind
+				}
+				portraits = {
+					flood_infected_aurora
+				}
+			}
+
+			add = {
+				trigger = {
+					leader_class = scientist
+					has_trait = leader_trait_ruler_the_gravemind
+				}
+				portraits = {
+					flood_infected_aurora
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				trigger = {
+					is_ruler = yes
+					NOT = { has_trait = leader_trait_ruler_the_gravemind }
+				}
+				portraits = {
+					flood_proto_gravemind_01
+					flood_ce_proto_gravemind_01
+				}
+			}
+
+			add = {
+				trigger = {
+					is_ruler = yes
+					has_trait = leader_trait_ruler_the_gravemind
+				}
+				portraits = {
+					flood_infected_aurora
+				}
+			}
+		}
+	}
+}

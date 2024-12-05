@@ -1,0 +1,212 @@
+namespace = flood_hive_planet
+
+#Bombardment turns Flood Planet into a Barren World
+planet_event = {
+	id = flood_hive_planet.1
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		planet_devastation >= 75
+		OR = {
+			is_planet_class = pc_flood_hive
+			is_planet_class = pc_flood_shield
+			is_planet_class = pc_flood_ringworld_habitable
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				is_planet_class = pc_flood_hive
+			}
+			remove_modifier = flood_infestation_stage_3
+			remove_planet_flag = flood_hive_stage_3
+			destroy_colony = yes
+			random_list = {
+				50 = { change_pc = pc_barren }
+				50 = { change_pc = pc_barren_cold }
+			}
+			reset_planet = yes
+			add_modifier = { modifier = "terraforming_candidate" days = -1 }
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_flood_shield
+			}
+			destroy_colony = yes 
+			change_pc = pc_forerunner_shield
+		}
+		if = {
+			limit = {
+				is_planet_class = pc_flood_ringworld_habitable
+			}
+			destroy_colony = yes 
+			change_pc = pc_ringworld_habitable_damaged
+		}
+	}
+}
+
+# Scourge world turned barren failsafe
+planet_event = {
+	id = flood_hive_planet.2
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_planet_class = pc_flood_hive
+	}
+
+	immediate = {
+		random_list = {
+			50 = { change_pc = pc_barren }
+			50 = { change_pc = pc_barren_cold }
+		}
+		clear_planet_modifiers = yes
+		while = {
+			limit = {
+				count_deposits = {
+					count >= 1
+					type = d_flood_infestation
+				}
+			}
+			remove_deposit = d_flood_infestation
+		}
+		remove_deposit = d_flood_hive
+		remove_modifier = flood_outbreak
+		remove_modifier = large_flood_outbreak
+		remove_modifier = flood_infestation
+		remove_modifier = flood_infestation_stage_3
+	}
+}
+
+#AI ONLY COLONIZED WORLD BECOMES FLOOD HIVE
+planet_event = {
+	id = flood_hive_planet.5
+	hide_window = yes
+	is_triggered_only = yes 
+	
+	trigger = {
+		owner = {
+			is_ai = yes
+			has_origin = origin_the_flood
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				is_artificial = no 
+			}
+			change_pc = pc_flood_hive 
+			clear_deposits = yes 
+			clear_blockers = yes 
+			add_building = building_keymind_nest
+			add_building = building_flood_hatchery
+			add_deposit = d_flood_hive
+			add_deposit = d_flood_infestation
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_forerunner_shield
+			}
+			change_pc = pc_flood_shield
+			clear_blockers = yes 
+			clear_deposits = yes
+			add_building = building_keymind_nest
+			add_building = building_flood_hatchery
+			add_deposit = d_flood_hive
+			add_deposit = d_flood_infestation
+			add_deposit = d_sw_outer_surface
+			add_deposit = d_sw_flood_vents
+			add_deposit = d_sw_apex_site
+		}
+		else_if = {
+			limit = {
+				OR = {
+					is_planet_class = pc_forerunner_halo
+					is_planet_class = pc_forerunner_halo_activated
+				}
+			}
+			set_planet_entity = {
+				picture = pc_flood_halo_ring
+			}
+			clear_blockers = yes 
+			add_building = building_keymind_nest
+			add_building = building_flood_hatchery
+			add_deposit = d_flood_hive
+			add_deposit = d_flood_infestation
+		}
+		else_if = {
+			limit  ={
+				is_planet_class = pc_city 
+			}
+			change_pc = pc_flood_city 
+			set_planet_entity = {
+				entity = "flood_city_planet_01_entity"
+				picture = pc_flood_city
+			}
+			clear_deposits = yes 
+			clear_blockers = yes 
+			add_building = building_keymind_nest
+			add_building = building_flood_hatchery
+			add_deposit = d_flood_hive
+			add_deposit = d_flood_infestation
+		}
+		else_if = {
+			# Habitable Ring Worlds can't be infested...
+			# they are destroyed instead
+			limit = {
+				is_ringworld = yes
+			}
+			change_pc = pc_flood_ringworld_habitable
+			clear_deposits = yes 
+			clear_blockers = yes 
+			add_building = building_keymind_nest
+			add_building = building_flood_hatchery
+			add_deposit = d_flood_hive
+			add_deposit = d_flood_infestation
+		}
+	}
+}
+
+#ADDS FLOOD DEPOSITS AND APPEARANCE TO HABITATS
+planet_event = {
+	id = flood_hive_planet.7
+	hide_window = yes 
+	
+	is_triggered_only = yes 
+	
+	trigger = {
+		owner = {
+			OR = {
+				has_origin = origin_the_flood
+				has_civic = civic_flood_hivemind
+			}
+		}
+		OR = {
+			is_planet_class = pc_habitat
+			is_planet_class = pc_dm_habitat
+			is_planet_class = pc_ae_habitat
+			is_planet_class = pc_phanon_habitat
+			is_planet_class = pc_sigma_habitat
+			is_planet_class = pc_sigma_deepspace_habitat
+		}
+	}
+	
+	immediate = {
+		set_planet_entity = {
+			entity = "flood_01_habitat_phase_01_entity"
+			picture = pc_flood_habitat
+		}
+		add_modifier = { 
+			modifier = flood_infected_habitat
+			days = -1
+		}
+		add_deposit = d_flood_hive
+		add_deposit = d_flood_infestation
+		add_building = building_keymind_nest
+	}
+}

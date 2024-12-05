@@ -1,0 +1,100 @@
+﻿l_english:
+css_federation
+
+css_federation:0 "Star Trek: Federation"
+ css_federation_desc:1 "The ships and stations of the Federation from Star Trek."
+ 
+css_federation_colours:0 "[Colours] Star Trek: Federation"
+ css_federation_colours_desc:1 "Star Trek Federation ships and stations with dynamic colours."
+
+
+######## Ship Section Localisations
+
+CORVETTE_TREK_01_PEREGRINE:1 "Peregrine-Class (DS9)"
+CORVETTE_TREK_01_OLYMPIC:1 "Olympic-Class (TNG)"
+CORVETTE_TREK_01_STEAMRUNNER:1 "Steamrunner- Class (ST:VIII)"
+CORVETTE_TREK_01_ENT_INTREPID:1 "Delta-class (ENT)"
+CORVETTE_TREK_01_SABER:1 "Saber-Class (ST:VIII)"
+CORVETTE_TREK_01_DAEDELUS:1 "Daedelus- Class (TOS)"
+CORVETTE_TREK_01_BONAVENTURE:1 "Bonaventure- Class (TAS)"
+
+FRIGATE_MID_FARRAGUT:1 "Farragut-Class (SNW)"
+FRIGATE_MID_DEFIANT:1 "Defiant-Class (DS9)"
+FRIGATE_MID_CENTAUR:1 "Centaur-Class (DS9)"
+
+DESTROYER_TREK_BOW_CALIFORNIA:1 "California Saucer (LD)"
+DESTROYER_TREK_BOW_RADIANT:1 "Radiant Saucer (PIC)"
+DESTROYER_TREK_BOW_MIRANDA:1 "Miranda Saucer (TMP)"
+DESTROYER_TREK_BOW_INTREPID:1 "Intrepid Saucer (VOY)"
+DESTROYER_TREK_BOW_NOVA:1 "Nova Saucer (VOY)"
+DESTROYER_TREK_BOW_FREEDOM:1 "Hermes Saucer (TMP)"
+DESTROYER_TREK_BOW_CONSTELLATION:1 "Constellation Saucer (TNG)"
+DESTROYER_TREK_STERN_CONSTELLATION:1 "Constellation Nacelles (TNG)"
+DESTROYER_TREK_STERN_RADIANT:1 "Radiant Nacelles (PIC)"
+DESTROYER_TREK_STERN_NOVA:1 "Nova Nacelles (VOY)"
+DESTROYER_TREK_STERN_INTREPID:1 "Intrepid Nacelles (VOY)"
+DESTROYER_TREK_STERN_CALIFORNIA:1 "California Nacelles (LOW)"
+DESTROYER_TREK_STERN_FREEDOM:1 "Freedom Nacelle (TNG)"
+DESTROYER_TREK_STERN_HERMES:1 "Hermes Nacelle (TMP)"
+DESTROYER_TREK_STERN_ARCHER:1 "Archer Nacelle (SNW)"
+DESTROYER_TREK_STERN_MIRANDA:1 "Miranda Nacelles (TMP)"
+DESTROYER_TREK_STERN_HELIOS:1 "Helios Nacelles (DIS)"
+
+BATTLECRUISER_STERN_A_TREK:1 "Auxillary Stern"
+
+CRUISER_BOW_EXCELSIOR:1 "Excelsior Saucer (TMP)"
+CRUISER_BOW_ENVOY:1 "Envoy Saucer (TNG)"
+CRUISER_BOW_AMBASSADOR:1 "Ambassador Saucer (TNG)"
+CRUISER_STERN_AMBASSADOR:1 "Ambassador Nacelles (TNG)"
+CRUISER_MID_ENVOY:1 "Envoy Secondary Hull (TNG)"
+CRUISER_MID_EXCELSIOR:1 "Excelsior Secondary Hull (TMP)"
+CRUISER_MID_AMBASSADOR:1 "Ambassdor Secondary Hull (TNG)"
+CRUISER_MID_NX_REFIT:1 "NX-01 Refit Secondary Hull (ENT)"
+CRUISER_STERN_TOS:1 "Constitution Nacelles (TOS)"
+CRUISER_STERN_CONREFIT:1 "Constitution Nacelles (TMP)"
+CRUISER_STERN_EXCELSIOR:1 "Excelsior Nacelles (TMP)"
+CRUISER_STERN_INTREPID:1 "Long Range Stern"
+
+BATTLESHIP_BOW_X_GALAXY:1 "Spinal Mount Bow (Galaxy)"
+BATTLESHIP_BOW_X_AKIRA:1 "Spinal Mount Bow (Akira)"
+BATTLESHIP_BOW_X_LAKOTA:1 "Spinal Mount Bow (Lakota)"
+BATTLESHIP_BOW_X_PROMETHEUS:1 "Spinal Mount Bow (Prometheus)"
+
+BATTLESHIP_BOW_GALAXY:1 "Galaxy Saucer (TNG)"
+BATTLESHIP_MID_LAKOTA:1 "Lakota Hull (DS9)"
+BATTLESHIP_STERN_LAKOTA:1 "Lakota Nacelles (DS9)"
+BATTLESHIP_STERN_PROMETHEUS:1 "Prometheus Nacelles (VOY)"
+BATTLESHIP_STERN_CROSSFIELD:1 "Crossfield Nacelles (DIS)"
+
+TITAN_VENGEANCE_BOW:1 "Vengeance Saucer (ST:ID)"
+TITAN_VENGEANCE_MID:1 "Vengeance Secondary Hull (ST:ID)"
+TITAN_VENGEANCE_STERN:1 "Vengeance Nacelles (ST:ID)"
+
+###### Event Localisations
+
+csstrek.00100.name: "Cheek's Custom Shipset: Star Trek, The Federation -  Options"
+csstrek.00100.desc: "By default, all extra shipsections are available to use in the ship designer. However, you may also choose to unlock them over time. If you do:\n\n- Ships from §BENT§! are unlocked at the start of the game. \n- Ships from §BTOS§!, §BDIS§! & §BSNW§! unlock after researching £engineering£§Y$tech_destroyers$§!.\n- Ships from §BTMP§! & §BTNG§! unlock after researching £engineering£§Y$tech_cruisers$§!.\n- Ships from §BDS9§!, §BVOY§!, §BLOW§! & §BPIC§! unlock after researching £engineering£§Y$tech_battleships$§!.\n\nSome models will also unlock after researching specific techs. For a precise tech- tree, check out the workshop page."
+csstrek.00100.a: "All Ship Sections available. §Y(Default)§!"
+csstrek.00100.b: "Unlock with technologies."
+csstrek.00100.c: "No extra ship sections."
+
+###### Tech Localisations
+tech_css_trek_24th_a_cen: "Late/Post 24th Century Ship Designs"
+tech_css_trek_24th_b_cen: "Early 24th Century Ship Designs"
+tech_css_trek_23rd_cen: "23rd Century Ship Designs"
+tech_css_trek_22nd_cen: "22nd Century Ship Designs"
+tech_css_trek_01: "Extra Federation Ship Sections"
+TECH_CSS_FEDERATION_24_A_CEN: "Ship models from TMP and TNG."
+TECH_CSS_FEDERATION_24_B_CEN: "Ship models from DS9, VOY, LOW, PIC, and more."
+TECH_CSS_FEDERATION_23_CEN: "Ship models from TOS, DIS, and SNW."
+TECH_CSS_FEDERATION_22_CEN: "Ship models from ENT."
+TECH_CSS_FEDERATION_24_A_CEN_DESC: "Ship models from TMP."
+TECH_CSS_FEDERATION_24_B_CEN_DESC: "Ship models from DS9, VOY, LOW, PIC, and more."
+TECH_CSS_FEDERATION_23_CEN_DESC: "Ship models from TOS, DIS, and SNW."
+TECH_CSS_FEDERATION_22_CEN_DESC: "Ship models from ENT."
+TECH_CSS_FEDERATION: "More ship models from the Federation."
+tech_css_trek_24th_a_cen_desc: "Ship models from the early 24th century: TMP and TNG"
+tech_css_trek_24th_b_cen_desc: "Ship models from the late 24th and early 25th centuries: DS9, VOY, LOW, PIC, and more."
+tech_css_trek_23rd_cen_desc: "Ship models from the 23rd century: TOS, DIS, and SNW."
+tech_css_trek_22nd_cen_desc: "Ship models from the 22nd century: ENT."
+tech_css_trek_01_desc: "More ship models from the Federation."

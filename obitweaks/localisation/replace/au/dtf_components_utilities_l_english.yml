@@ -1,0 +1,50 @@
+﻿l_english:
+
+SPECIAL_SLOT_DTF_FLEET_CONTROL_T1_CS:0 "Tactical Data Link Type-1"
+SPECIAL_SLOT_DTF_FLEET_CONTROL_T1:0 "Tactical Data Link Type-1"
+SPECIAL_SLOT_DTF_FLEET_CONTROL_T1_DESC:0 "(EFFECTS DO NOT OVERLAP)"
+
+SPECIAL_SLOT_DTF_FLEET_CONTROL_T2_CS:0 "Tactical Data Link Type-2"
+SPECIAL_SLOT_DTF_FLEET_CONTROL_T2:0 "Tactical Data Link Type-2"
+SPECIAL_SLOT_DTF_FLEET_CONTROL_T2_DESC:0 "(EFFECTS DO NOT OVERLAP)"
+
+SPECIAL_SLOT_DTF_FLEET_CONTROL_T3_CS:0 "Tactical Data Link Type-3"
+SPECIAL_SLOT_DTF_FLEET_CONTROL_T3:0 "Tactical Data Link Type-3"
+SPECIAL_SLOT_DTF_FLEET_CONTROL_T3_DESC:0 "(EFFECTS DO NOT OVERLAP)"
+
+
+dtf_ship_aura_fleet_control_t1:0 "Tactical Data Link"
+dtf_ship_aura_fleet_control_t2:0 "Tactical Data Link"
+dtf_ship_aura_fleet_control_t3:0 "Tactical Data Link"
+
+friendly_dtf_fleet_control:0 "Tactical Data Link"
+
+
+
+
+DTF_AFTERBURNER_1:0 "Subthruster T1"
+DTF_AFTERBURNER_1_DESC:0 "secondary propulsion unit"
+DTF_AFTERBURNER_2:0 "Subthruster T2"
+DTF_AFTERBURNER_2_DESC:0 "secondary propulsion unit"
+
+DTF_REACTOR_BOOSTER_1:0 "Subreactor T1"
+DTF_REACTOR_BOOSTER_1_DESC:0 " First Gen Subreactor"
+DTF_REACTOR_BOOSTER_2:0 "Subreactor T2"
+DTF_REACTOR_BOOSTER_2_DESC:0 "Secound Gen Subreactor"
+DTF_REACTOR_BOOSTER_3:0 "Subreactor T3"
+DTF_REACTOR_BOOSTER_3_DESC:0 "third Gen Subreactor"
+
+
+DTF_AFTERBURNER_1:0 "Auxiliary thruster T1"
+DTF_AFTERBURNER_2:0 "Auxiliary thruster T2"
+
+DTF_REACTOR_BOOSTER_1:0 "Auxiliary Reactor T1"
+DTF_REACTOR_BOOSTER_2:0 "Auxiliary Reactor T2"
+DTF_REACTOR_BOOSTER_3:0 "Auxiliary Reactor T3"
+
+
+
+
+
+
+

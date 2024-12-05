@@ -1,0 +1,233 @@
+##################
+# Forerunner Traits #
+##################
+
+
+trait_forerunner_species = {
+	cost = 4
+	potential_crossbreeding_chance = 0
+	opposites = {
+		trait_intelligent
+		trait_enduring
+		trait_venerable
+		trait_conservational
+	}
+	#species_class = { forerunner }
+	initial = yes
+	randomized = no
+	species_potential_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		from = {
+			has_technology = tech_magic_and_science
+		}
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	
+	leader_age_min = 20
+	leader_age_max = 300
+	
+	allowed_archetypes = { BIOLOGICAL }
+
+	prerequisites = {
+		tech_magic_and_science
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+	
+	icon = "gfx/interface/icons/traits/trait_forerunner_species.dds"
+	
+	modifier = {
+		modify_species_cost_mult = -0.75
+		planet_jobs_physics_research_produces_mult = 0.75
+		planet_jobs_society_research_produces_mult = 0.75
+		planet_jobs_engineering_research_produces_mult = 0.75
+		planet_jobs_specialist_produces_mult = 0.75
+		leaders_cost_mult = 1.75
+		leader_lifespan_add = 200
+	}
+	
+	slave_cost = {
+		energy = 5000
+	}
+}
+
+
+#FORERUNNER CONSTRUCTS
+
+trait_robot_promethean_ai = {
+	cost = 2
+	opposites = {
+		trait_robot_sentinel_ai trait_robot_created_ai
+	}
+	allowed_archetypes = { ROBOT MACHINE }
+	
+	modifier = {
+		army_starting_experience_add = 1000
+		army_morale_damage_mult = 1.00
+		army_damage_mult = 1.00
+		army_health = 1.00
+		armies_upkeep_mult = -0.50
+		planet_pop_assembly_mult = -100.0
+		pop_housing_usage_mult = -1.0
+		pop_amenities_usage_mult = -1.0
+		pop_happiness = 100
+	}
+	
+	icon = "gfx/interface/icons/traits/trait_robot_promethean_ai.dds"
+	
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	improves_leaders = yes
+	forced_happiness = yes
+	infertile = yes
+	
+	
+	ai_weight = {
+		weight = 0
+	}
+	
+}
+
+trait_robot_sentinel_ai = {
+	cost = 2
+	opposites = {
+		trait_robot_promethean_ai trait_robot_created_ai
+	}
+	allowed_archetypes = { ROBOT MACHINE }
+	
+	modifier = {
+		planet_pop_assemblers_upkeep_mult = -0.5
+		planet_structures_cost_mult = -0.5
+		planet_structures_upkeep_mult = -0.50
+		planet_pop_assembly_mult = 0.5
+		planet_jobs_produces_mult = 0.5
+		pop_happiness = 100
+	}
+	
+	icon = "gfx/interface/icons/traits/trait_robot_sentinel_ai.dds"
+	
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	improves_leaders = yes
+	forced_happiness = yes
+	
+	
+	ai_weight = {
+		weight = 0
+	}
+	
+}	
+
+
+trait_robot_created_ai = {
+	cost = 2
+	opposites = {
+		trait_robot_sentinel_ai trait_robot_promethean_ai
+	}
+	allowed_archetypes = { ROBOT MACHINE }
+	
+	
+	modifier = {
+		species_leader_exp_gain = 0.25
+		army_starting_experience_add = 100
+		planet_jobs_produces_mult = 0.10
+		planet_jobs_upkeep_mult = -0.10
+	}
+	
+	icon = "gfx/interface/icons/traits/trait_robot_created_ai.dds"
+	
+	initial = yes
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	improves_leaders = yes
+	
+	
+	ai_weight = {
+		weight = 0
+	}
+	
+}
+
+trait_huragok_species = {
+	cost = 3
+	potential_crossbreeding_chance = 0
+	opposites = { 
+		trait_intelligent
+		trait_enduring
+		trait_venerable
+	}
+	species_class = { covenant_empire banished huragok }
+	initial = no
+	randomized = no
+
+	forced_happiness = yes
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	
+	immortal_leaders = yes
+
+	leader_age_min = 100
+	leader_age_max = 1000
+	
+	allowed_archetypes = { BIOLOGICAL }
+	
+	ai_weight = {
+		weight = 0
+	}
+	
+	icon = "gfx/interface/icons/traits/trait_huragok_species.dds"
+	
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.50
+		planet_jobs_society_research_produces_mult = 0.50
+		planet_jobs_physics_research_produces_mult = 0.50
+		planet_jobs_upkeep_mult = -0.50
+		pop_happiness = 100
+		pop_growth_speed = 0.50
+		army_damage_mult = -10.00
+		army_health = -10.00
+		army_morale = -10.00
+	}
+	
+	slave_cost = {
+		energy = 3000
+	}
+}

@@ -1,0 +1,40 @@
+﻿l_english:
+
+DTF_FIGHTER_HANGAR_CS_1:0 "Cosmo Falcon"
+DTF_FIGHTER_HANGAR_CS_1_DESC:0 "This aircraft was developed as a local fighter for garrison units."
+DTF_FIGHTER_HANGAR_CS_1_AS:0 "Cosmo Falcon/AS"
+DTF_FIGHTER_HANGAR_CS_1_AS_DESC:0 "Cosmo Falcon equipped for anti-ship."
+
+DTF_FIGHTER_HANGAR_CS_2:0 "Cosmo Falcon MK.II"
+DTF_FIGHTER_HANGAR_CS_2_DESC:0 "An improved version of Cosmo Falcon."
+DTF_FIGHTER_HANGAR_CS_2_AS:0 "Cosmo Falcon MK.II/AS"
+DTF_FIGHTER_HANGAR_CS_2_AS_DESC:0 "Cosmo Falcon MK.II equipped for anti-ship."
+
+DTF_FIGHTER_HANGAR_CS_3:0 "Cosmo Tiger II"
+DTF_FIGHTER_HANGAR_CS_3_DESC:0 "A new carrier-based fighter operated by Earth Defense Fleet."
+DTF_FIGHTER_HANGAR_CS_3_AS:0 "Cosmo Tiger II/AS"
+DTF_FIGHTER_HANGAR_CS_3_AS_DESC:0 "Cosmo Tiger II equipped for anti-ship."
+
+DTF_FIGHTER_HANGAR_CS_4:0 "Cosmo Python"
+DTF_FIGHTER_HANGAR_CS_4_DESC:0 "The next-gen carrier-based multirole fighter."
+DTF_FIGHTER_HANGAR_CS_4_AS:0 "Cosmo Python/AS"
+DTF_FIGHTER_HANGAR_CS_4_AS_DESC:0 "Cosmo Python equipped for anti-ship."
+
+DTF_FIGHTER_HANGAR_CS_5:0 "Cosmo Pulsar"
+DTF_FIGHTER_HANGAR_CS_5_DESC:0 "A new type of shipboard aircraft and successor to Cosmo Python series."
+DTF_FIGHTER_HANGAR_CS_5_AS:0 "Cosmo Pulsar/AS"
+DTF_FIGHTER_HANGAR_CS_5_AS_DESC:0 "Cosmo Pulsar equipped for anti-ship."
+
+
+
+DTF_FIGHTER_HANGAR_1:0 "Cosmo Falcon"
+DTF_FIGHTER_HANGAR_2:0 "Cosmo Falcon MK.II"
+DTF_FIGHTER_HANGAR_3:0 "Cosmo Tiger II"
+DTF_FIGHTER_HANGAR_4:0 "Cosmo Python"
+DTF_FIGHTER_HANGAR_5:0 "Cosmo Pulsar"
+
+DTF_FIGHTER_HANGAR_1_AS:0 "Cosmo Falcon/AS"
+DTF_FIGHTER_HANGAR_2_AS:0 "Cosmo Falcon M2/AS"
+DTF_FIGHTER_HANGAR_3_AS:0 "Cosmo Tiger II/AS"
+DTF_FIGHTER_HANGAR_4_AS:0 "Cosmo Python/AS"
+DTF_FIGHTER_HANGAR_5_AS:0 "Cosmo Pulsar/AS"

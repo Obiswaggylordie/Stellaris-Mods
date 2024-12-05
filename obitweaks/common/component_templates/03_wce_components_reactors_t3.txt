@@ -1,0 +1,41 @@
+
+
+##############################################
+### Advanced Wave Motion Engine
+##############################################
+utility_component_template = {
+	key = "WCE_REACTOR_7_LARGESHIP"
+	size = small
+	icon = "GFX_wce_ship_part_reactor_7"
+	icon_frame = 1
+	power = @wce_largeship_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_wce_t7_reactor_cost
+		}
+		upkeep = {
+			energy = @l_wce_t7_reactor_uk_energy
+			alloys = @l_wce_t7_reactor_uk_alloys
+		}
+	}
+
+	modifier = {
+		ship_weapon_damage = 0.10
+		ship_weapon_range_mult = 0.10
+		#ship_shield_regen_add_perc = 0.20
+		ship_speed_mult = 0.25
+		weapon_type_energy_weapon_fire_rate_mult = 0.20
+	}
+
+	prerequisites = { "tech_wce_reactor_7" }
+	component_set = "power_core"
+
+	ai_weight = {
+		weight = @wce_ai_weight_7
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_gatlantis }
+		}
+	}
+}

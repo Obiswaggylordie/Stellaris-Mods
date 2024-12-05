@@ -1,0 +1,164 @@
+
+@EdictPerpetual = -1
+
+
+for_gatlantis = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 0
+
+	prerequisites = {
+		"tech_wce_pretech"
+	}
+
+	modifier = {
+		num_tech_alternatives_add = 3
+		
+		starbase_upgrade_speed_mult = 5.0
+		starbase_module_build_speed_mult = 5.0
+		starbase_building_build_speed_mult = 5.0
+		starbase_shipyard_build_speed_mult = 5.0
+		starbase_shipyard_build_time_mult = -5.0
+
+		planet_building_build_speed_mult = 5.0
+		megastructure_build_speed_mult = 5.0
+
+		country_influence_produces_add = 5.0
+		terraform_speed_mult = 0.50
+
+		country_naval_cap_add = 1000.0
+		command_limit_add = 100
+		ships_upkeep_mult = -0.50
+
+		ship_shield_mult = 5.0
+		ship_armor_mult = 5.0
+		ship_hull_mult = 5.0
+		ship_weapon_damage = 5.0
+
+		country_energy_produces_add = 5000.0
+		country_minerals_produces_add = 5000.0
+		country_alloys_produces_add = 5000.0
+
+		country_energy_produces_mult = 5.0
+		country_minerals_produces_mult = 5.0
+		country_alloys_produces_mult = 5.0
+
+		country_physics_research_produces_mult = 5.0
+		country_society_research_produces_mult = 5.0
+		country_engineering_research_produces_mult = 5.0
+	}
+
+	potential = {  
+		has_origin = origin_gatlantis
+	} 
+
+	ai_weight = {
+        weight = 10000
+    }
+}
+
+for_gatlantis_ai = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 0
+
+	prerequisites = {
+		"tech_wce_pretech"
+	}
+
+	modifier = {
+		num_tech_alternatives_add = 3
+		
+		starbase_upgrade_speed_mult = 5.0
+		starbase_module_build_speed_mult = 5.0
+		starbase_building_build_speed_mult = 5.0
+		starbase_shipyard_build_speed_mult = 5.0
+		starbase_shipyard_build_time_mult = -5.0
+
+		planet_building_build_speed_mult = 5.0
+		megastructure_build_speed_mult = 5.0
+
+		country_influence_produces_add = 5.0
+		terraform_speed_mult = 0.50
+
+		country_naval_cap_add = 1000.0
+		command_limit_add = 100
+		ships_upkeep_mult = -0.50
+
+		ship_shield_mult = 5.0
+		ship_armor_mult = 5.0
+		ship_hull_mult = 5.0
+		ship_weapon_damage = 5.0
+
+		all_technology_research_speed = 10.00
+
+		country_energy_produces_add = 5000.0
+		country_minerals_produces_add = 5000.0
+		country_alloys_produces_add = 5000.0
+
+		country_energy_produces_mult = 5.0
+		country_minerals_produces_mult = 5.0
+		country_alloys_produces_mult = 5.0
+
+		country_physics_research_produces_mult = 5.0
+		country_society_research_produces_mult = 5.0
+		country_engineering_research_produces_mult = 5.0
+	}
+
+	potential = {  
+		has_origin = origin_gatlantis
+		is_ai = yes
+	} 
+
+	ai_weight = {
+        weight = 10000
+    }
+}
+
+Ark_Of_Destruction = {
+	length = -1
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 0
+
+	modifier = {
+		num_tech_alternatives_add = 3
+
+		all_technology_research_speed = 10.0
+
+		country_influence_produces_add = 10.0
+
+		country_naval_cap_add = 1000.0
+		command_limit_add = 100
+		ships_upkeep_mult = -0.95
+
+		ship_shield_mult = 1.0
+		ship_armor_mult = 1.0
+		ship_hull_mult = 1.0
+		ship_weapon_damage = 1.0
+
+
+		country_energy_produces_add = 100000.0
+		country_minerals_produces_add = 100000.0
+		country_alloys_produces_add = 100000.0
+
+		country_energy_produces_mult = 10.0
+		country_minerals_produces_mult = 10.0
+		country_alloys_produces_mult = 10.0
+
+		country_physics_research_produces_mult = 10.0
+		country_society_research_produces_mult = 10.0
+		country_engineering_research_produces_mult = 10.0
+	}
+
+	potential = {
+		owner = {
+			any_owned_ship = {
+				is_ship_size = wce_white_comet
+			}
+		}
+	}
+
+	ai_weight = {
+        weight = 10000
+    }
+}

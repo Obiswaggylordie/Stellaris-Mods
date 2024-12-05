@@ -1,0 +1,247 @@
+﻿l_english:
+
+#DTF_HIGH_PRESSURE_BEAM_CANNON_CS_1:0 "High Pressure Beam Cannon"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_CS_1_DESC:0 "Weapons designed to match the power output of the power reactor"
+#
+#DTF_HIGH_PRESSURE_BEAM_CANNON_CS_2:0 "High Pressure Beam Cannon MK.II"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_CS_2_DESC:0 "Improved high-pressure amplified ray cannon"
+#
+#DTF_HIGH_PRESSURE_BEAM_CANNON_CS_3:0 "Super High Pressure Beam Cannon"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_CS_3_DESC:0 "Improved version of the high-pressure amplified ray cannon with even higher output"
+#
+DTF_HIGH_PRESSURE_BEAM_CANNON_CS_4:0 "Theta Compression Beam Turret"
+DTF_HIGH_PRESSURE_BEAM_CANNON_CS_4_DESC:0 "Energy is compressed and focused before being released in a destructive beam."
+#
+DTF_HIGH_PRESSURE_BEAM_CANNON_CS_5:0 "Lambda Compression Shock Cannon"
+DTF_HIGH_PRESSURE_BEAM_CANNON_CS_5_DESC:0 "The Compression Beam Turret design adapted to utilise Anti-Electron Shock technology."
+#
+#
+#DTF_HIGH_PRESSURE_BEAM_CANNON_CS_CONV_1:0 "High Pressure Beam Cannon"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_CS_CONV_1_DESC:0 "Weapons designed to match the power output of the power reactor"
+#
+#DTF_HIGH_PRESSURE_BEAM_CANNON_CS_CONV_2:0 "High Pressure Beam Cannon MK.II"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_CS_CONV_2_DESC:0 "Improved high-pressure amplified ray cannon"
+#
+#DTF_HIGH_PRESSURE_BEAM_CANNON_CS_CONV_3:0 "Super High Pressure Beam Cannon"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_CS_CONV_3_DESC:0 "Improved version of the high-pressure amplified ray cannon with even higher output"
+
+DTF_HIGH_PRESSURE_BEAM_CANNON_CS_CONV_4:0 "Theta Compression Beam Turret"
+DTF_HIGH_PRESSURE_BEAM_CANNON_CS_CONV_4_DESC:0 "Energy is compressed and focused before being released in a destructive beam."
+
+DTF_HIGH_PRESSURE_BEAM_CANNON_CS_CONV_5:0 "Lambda Compression Shock Cannon"
+DTF_HIGH_PRESSURE_BEAM_CANNON_CS_CONV_5_DESC:0 "The Compression Beam Turret design adapted to utilise Anti-Electron Shock technology."
+
+
+DTF_SHOCK_CANNON_CS_1:0 "Shock Cannon"
+DTF_SHOCK_CANNON_CS_1_DESC:0 "A high-power weapon designed in conjunction with the development of the dimensional wave engine. Capable of continuous firing."
+
+DTF_SHOCK_CANNON_CS_2:0 "Shock Cannon MK.II"
+DTF_SHOCK_CANNON_CS_2_DESC:0 "Improved Convergent Compression Shock Wave Cannon"
+
+DTF_SHOCK_CANNON_CS_3:0 "Super Shock Cannon"
+DTF_SHOCK_CANNON_CS_3_DESC:0 "An improved version of the Convergent Compression Shock Wave Cannon. The improved performance of the convergence unit has enabled it to deliver higher firepower."
+"
+
+DTF_SHOCK_CANNON_CS_4:0 "Super Shock Cannon MK.II"
+DTF_SHOCK_CANNON_CS_4_DESC:0 "Improved Convergent Compression High Particle Shock Wave Cannon"
+"
+
+DTF_SHOCK_CANNON_CS_5:0 "Hyper Shock Cannon"
+DTF_SHOCK_CANNON_CS_5_DESC:0 "An ultra-high power weapon. Its details are classified information of the Earth Federation Forces."
+
+"
+
+
+DTF_POSITRON_SHOCK_CANNON_CS_1:0 "Psi Anti-Electron Shock Cannon"
+DTF_POSITRON_SHOCK_CANNON_CS_1_DESC:0 "The first iteration of Anti-Electron Shock Weaponry."
+
+"
+
+DTF_POSITRON_SHOCK_CANNON_CS_2:0 "Omega Anti-Electron Shock Cannon"
+DTF_POSITRON_SHOCK_CANNON_CS_2_DESC:0 "Improved positron shock cannon"
+
+DTF_POSITRON_SHOCK_CANNON_CS_3:0 "Super Positron Shock Cannon"
+DTF_POSITRON_SHOCK_CANNON_CS_3_DESC:0 "An improved version of the positron shock cannon. The positron convergence device has made it possible to produce more stable firepower."
+
+"
+
+DTF_POSITRON_SHOCK_CANNON_CS_4:0 "Super Positron Shock Cannon MK.II"
+DTF_POSITRON_SHOCK_CANNON_CS_4_DESC:0 "An improved version of the positron shock cannon. The positron convergence device has made it possible to produce more stable firepower."
+"
+
+DTF_POSITRON_SHOCK_CANNON_CS_5:0 "Positron Implosion Shock Cannon"
+DTF_POSITRON_SHOCK_CANNON_CS_5_DESC:0 "Ultra high-power weapons. Its details are classified by the Earth Federation Forces."
+"
+
+
+
+
+DTF_SPINAL_MOUNTED_SHOCK_CANNON_CS_1:0 "Spinal Mounted Shock Cannon"
+DTF_SPINAL_MOUNTED_SHOCK_CANNON_CS_1_DESC:0 "A decisive battle weapon. A weapon powerful enough to pierce armor. Takes time to charge."
+"
+
+DTF_SPINAL_MOUNTED_SHOCK_CANNON_CS_2:0 "Spinal Mounted Shock Cannon MK.II"
+DTF_SPINAL_MOUNTED_SHOCK_CANNON_CS_2_DESC:0 "Improved bow positron shock wave cannon"
+
+DTF_SPINAL_MOUNTED_SHOCK_CANNON_CS_3:0 "Spinal Mounted Super Shock Cannon"
+DTF_SPINAL_MOUNTED_SHOCK_CANNON_CS_3_DESC:0 "An improved version of the bow positron shock wave cannon. Powerful enough to penetrate and shatter armor."
+
+DTF_SPINAL_MOUNTED_SHOCK_CANNON_CS_4:0 "Spinal Mounted Super Shock Cannon MK.II"
+DTF_SPINAL_MOUNTED_SHOCK_CANNON_CS_4_DESC:0 "Improved bow positron convergence shock wave cannon"
+
+DTF_SPINAL_MOUNTED_SHOCK_CANNON_CS_5:0 "Spinal Mounted Implosion Shock Cannon"
+DTF_SPINAL_MOUNTED_SHOCK_CANNON_CS_5_DESC:0 "Next-generation bow positron shock wave cannon"
+
+
+
+DTF_WAVE_MOTION_GUN_CS_1:0 "Psi Wave Motion Gun"
+DTF_WAVE_MOTION_GUN_CS_1_DESC:0 "A super weapon that maximizes the output of the dimensional wave engine. Its firepower can shatter even satellites."
+"
+
+DTF_WAVE_MOTION_GUN_CS_2:0 "Omega Wave Motion Gun"
+DTF_WAVE_MOTION_GUN_CS_2_DESC:0 "Mass-produced super-weapon improved and designed in line with the wave gun fleet concept"
+"
+
+DTF_WAVE_MOTION_GUN_CS_3:0 "Dispersion Wave Motion Gun"
+DTF_WAVE_MOTION_GUN_CS_3_DESC:0 "Improved dual dimensional waveform explosive emitter"
+
+DTF_SMALL_WAVE_MOTION_GUN_CS_1:0 "Wave Motion Gun"
+DTF_SMALL_WAVE_MOTION_GUN_CS_1_DESC:0 "Wave cannon for small naval vessels based on the wave cannon fleet concept"
+
+DTF_SMALL_WAVE_MOTION_GUN_CS_2:0 "Small Twin Barrel Wave Motion Gun"
+DTF_SMALL_WAVE_MOTION_GUN_CS_2_DESC:0 "Improved dimensional wave explosive sprayer"
+
+
+
+DTF_EXPANDED_WAVE_MOTION_GUN_CS_1:0 "Expanded Wave Motion Gun"
+DTF_EXPANDED_WAVE_MOTION_GUN_CS_1_DESC:0 "A super-weapon that is a larger version of the dimensional wave blast radiator."
+
+DTF_EXPANDED_WAVE_MOTION_GUN_CS_2:0 "Super Expanded Wave Motion Gun"
+DTF_EXPANDED_WAVE_MOTION_GUN_CS_2_DESC:0 "Improved extended dimensional wave implosion radiator"
+
+
+DTF_SUPER_NOVA_WAVE_MOTION_GUN_CS_1:0 "Super Nova Wave Motion Gun"
+DTF_SUPER_NOVA_WAVE_MOTION_GUN_CS_1_DESC:0 "A superweapon built on a celestial scale with a dimensional wave implosion radiator."
+"
+
+DTF_SUPER_NOVA_WAVE_MOTION_GUN_CS_2:0 "Ultra Nova Wave Motion Gun"
+DTF_SUPER_NOVA_WAVE_MOTION_GUN_CS_2_DESC:0 "Improved dimensional wave blast radiant satellite cannon"
+
+"
+
+
+DTF_ION_BEAM_CS_1:0 "ION Wave Motion Gun"
+DTF_ION_BEAM_CS_1_DESC:0 "Ion Wave Motion gun"
+
+DTF_ION_BEAM_CS_2:0 "Super ION Wave Motion Gun"
+DTF_ION_BEAM_CS_2_DESC:0 "More powerful version of the Ion Wave Motion gun"
+
+
+
+
+
+#DTF_HIGH_PRESSURE_BEAM_CANNON_SMALL_1:0 "High Pressure Beam Cannon"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_MEDIUM_1:0 "High Pressure Beam Cannon"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_LARGE_1:0 "High Pressure Beam Cannon"
+#
+#DTF_HIGH_PRESSURE_BEAM_CANNON_SMALL_2:0 "High Pressure Beam Cannon MK.II"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_MEDIUM_2:0 "High Pressure Beam Cannon MK.II"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_LARGE_2:0 "High Pressure Beam Cannon MK.II"
+#
+#DTF_HIGH_PRESSURE_BEAM_CANNON_SMALL_3:0 "Super High Pressure Beam Cannon"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_MEDIUM_3:0 "Super High Pressure Beam Cannon"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_LARGE_3:0 "Super High Pressure Beam Cannon"
+
+DTF_HIGH_PRESSURE_BEAM_CANNON_SMALL_4:0 "127mm Compression Beam Turret"
+DTF_HIGH_PRESSURE_BEAM_CANNON_MEDIUM_4:0 "200mm Compression Beam Turret""
+DTF_HIGH_PRESSURE_BEAM_CANNON_LARGE_4:0 "360mm Compression Beam Turret"
+
+DTF_HIGH_PRESSURE_BEAM_CANNON_SMALL_5:0 "127mm Compression Shock Cannon"
+DTF_HIGH_PRESSURE_BEAM_CANNON_MEDIUM_5:0 "200mm Compression Shock Cannon"
+DTF_HIGH_PRESSURE_BEAM_CANNON_LARGE_5:0 "360mm Compression Shock Cannon"
+
+#
+#DTF_HIGH_PRESSURE_BEAM_CANNON_SMALL_CONV_1:0 "High Pressure Beam Cannon"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_MEDIUM_CONV_1:0 "High Pressure Beam Cannon"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_LARGE_CONV_1:0 "High Pressure Beam Cannon"
+#
+#DTF_HIGH_PRESSURE_BEAM_CANNON_SMALL_CONV_2:0 "High Pressure Beam Cannon MK.II"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_MEDIUM_CONV_2:0 "High Pressure Beam Cannon MK.II"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_LARGE_CONV_2:0 "High Pressure Beam Cannon MK.II"
+#
+#DTF_HIGH_PRESSURE_BEAM_CANNON_SMALL_CONV_3:0 "Super High Pressure Beam Cannon"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_MEDIUM_CONV_3:0 "Super High Pressure Beam Cannon"
+#DTF_HIGH_PRESSURE_BEAM_CANNON_LARGE_CONV_3:0 "Super High Pressure Beam Cannon"
+
+DTF_HIGH_PRESSURE_BEAM_CANNON_SMALL_4:0 "127mm Compression Beam Turret"
+DTF_HIGH_PRESSURE_BEAM_CANNON_MEDIUM_4:0 "200mm Compression Beam Turret"
+DTF_HIGH_PRESSURE_BEAM_CANNON_LARGE_4:0 "360mm Compression Beam Turret"
+
+DTF_HIGH_PRESSURE_BEAM_CANNON_SMALL_CONV_5:0 "127mm Compression Shock Cannon"
+DTF_HIGH_PRESSURE_BEAM_CANNON_MEDIUM_CONV_5:0 "200mm Compression Shock Cannon"
+DTF_HIGH_PRESSURE_BEAM_CANNON_LARGE_CONV_5:0 "360mm Compression Shock Cannon"
+
+
+
+DTF_SHOCK_CANNON_SMALL_1:0 "Shock Cannon"
+DTF_SHOCK_CANNON_MEDIUM_1:0 "Shock Cannon"
+DTF_SHOCK_CANNON_LARGE_1:0 "Shock Cannon"
+
+DTF_SHOCK_CANNON_SMALL_2:0 "Shock Cannon MK.II"
+DTF_SHOCK_CANNON_MEDIUM_2:0 "Shock Cannon MK.II"
+DTF_SHOCK_CANNON_LARGE_2:0 "Shock Cannon MK.II"
+
+DTF_SHOCK_CANNON_SMALL_3:0 "Super Shock Cannon"
+DTF_SHOCK_CANNON_MEDIUM_3:0 "Super Shock Cannon"
+DTF_SHOCK_CANNON_LARGE_3:0 "Super Shock Cannon"
+
+DTF_SHOCK_CANNON_SMALL_4:0 "Super Shock Cannon MK.II"
+DTF_SHOCK_CANNON_MEDIUM_4:0 "Super Shock Cannon MK.II"
+DTF_SHOCK_CANNON_LARGE_4:0 "Super Shock Cannon MK.II"
+
+DTF_SHOCK_CANNON_SMALL_5:0 "Hyper Shock Cannon"
+DTF_SHOCK_CANNON_MEDIUM_5:0 "Hyper Shock Cannon"
+DTF_SHOCK_CANNON_LARGE_5:0 "Hyper Shock Cannon"
+
+DTF_POSITRON_SHOCK_CANNON_SMALL_1:0 "200mm Anti-Electron Shock Cannon"
+DTF_POSITRON_SHOCK_CANNON_MEDIUM_1:0 "480mm Anti-Electron Shock Cannon"
+DTF_POSITRON_SHOCK_CANNON_LARGE_1:0 "480mm AMP Anti-Electron Shock Cannon"
+
+DTF_POSITRON_SHOCK_CANNON_SMALL_2:0 "127mm Anti-Electron Shock Cannon"
+DTF_POSITRON_SHOCK_CANNON_MEDIUM_2:0 "305mm Anti-Electron Shock Cannon"
+DTF_POSITRON_SHOCK_CANNON_LARGE_2:0 "406mm Anti-Electron Shock Cannon"
+
+#DTF_POSITRON_SHOCK_CANNON_SMALL_3:0 "Super Positron Shock Cannon"
+#DTF_POSITRON_SHOCK_CANNON_MEDIUM_3:0 "Super Positron Shock Cannon"
+#DTF_POSITRON_SHOCK_CANNON_LARGE_3:0 "Super Positron Shock Cannon"
+#
+#DTF_POSITRON_SHOCK_CANNON_SMALL_4:0 "Super Positron Shock Cannon MK.II"
+#DTF_POSITRON_SHOCK_CANNON_MEDIUM_4:0 "Super Positron Shock Cannon MK.II"
+#DTF_POSITRON_SHOCK_CANNON_LARGE_4:0 "Super Positron Shock Cannon MK.II"
+#
+#DTF_POSITRON_SHOCK_CANNON_SMALL_5:0 "Positron Implosion Shock Cannon"
+#DTF_POSITRON_SHOCK_CANNON_MEDIUM_5:0 "Positron Implosion Shock Cannon"
+#DTF_POSITRON_SHOCK_CANNON_LARGE_5:0 "Positron Implosion Shock Cannon"
+
+
+DTF_SPINAL_MOUNTED_SHOCK_CANNON_1:0 "280mm Bow Shock Cannon"
+DTF_SPINAL_MOUNTED_SHOCK_CANNON_2:0 "460mm Bow Shock Cannon"
+DTF_SPINAL_MOUNTED_SHOCK_CANNON_3:0 "510mm Bow Shock Cannon"
+#DTF_SPINAL_MOUNTED_SHOCK_CANNON_4:0 "Spinal Mounted Super Positron Shock Cannon MK.II"
+#DTF_SPINAL_MOUNTED_SHOCK_CANNON_5:0 "Spinal Mounted Positron Implosion Shock Cannon"
+
+DTF_WAVE_MOTION_GUN_1:0 "Psi Wave Motion Gun"
+DTF_WAVE_MOTION_GUN_2:0 "Omega Wave Motion Gun"
+DTF_WAVE_MOTION_GUN_3:0 "Dispersion Wave Motion Gun"
+DTF_SMALL_WAVE_MOTION_GUN_1:0 "Small Psi Wave Motion Gun"
+DTF_SMALL_WAVE_MOTION_GUN_2:0 "Small Omega Wave Motion Gun"
+
+DTF_EXPANDED_WAVE_MOTION_GUN_1:0 "Expanded Wave Motion Gun"
+DTF_EXPANDED_WAVE_MOTION_GUN_2:0 "Super Expanded Wave Motion Gun"
+
+DTF_SUPER_NOVA_WAVE_MOTION_GUN_1:0 "Super Nova Wave Motion Gun"
+DTF_SUPER_NOVA_WAVE_MOTION_GUN_2:0 "Ultra Nova Wave Motion Gun"
+
+
+DTF_ION_BEAM_1: "ION Wave Motion Gun"
+DTF_ION_BEAM_2: "Super ION Wave Motion Gun"

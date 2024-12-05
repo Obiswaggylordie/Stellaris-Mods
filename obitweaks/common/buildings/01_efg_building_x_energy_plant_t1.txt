@@ -1,0 +1,276 @@
+@dtf_energy_plant_build_time_1 = 120
+@dtf_energy_plant_build_time_2 = 160
+@dtf_energy_plant_build_time_3 = 200
+
+@dtf_energy_plant_job_1 = 2
+@dtf_energy_plant_job_2 = 4
+@dtf_energy_plant_job_3 = 6
+
+
+@dtf_energy_plant_minerals_cost_1 = 750
+
+@dtf_energy_plant_alloys_cost_1 = 100
+@dtf_energy_plant_alloys_cost_2 = 200
+@dtf_energy_plant_alloys_cost_3 = 400
+
+
+@dtf_energy_plant_energy_upkeep_1 = 2
+@dtf_energy_plant_energy_upkeep_2 = 4
+@dtf_energy_plant_energy_upkeep_3 = 8
+
+@dtf_energy_plant_minerals_upkeep_1 = 0
+@dtf_energy_plant_minerals_upkeep_2 = 0
+@dtf_energy_plant_minerals_upkeep_3 = 0
+
+
+
+building_dtf_energy_plant_1 = {
+	base_buildtime = @dtf_energy_plant_build_time_1
+	base_cap_amount = 1
+	category = resource
+
+	icon = building_dtf_energy_plant
+
+	#can_demolish = no
+	#add_to_first_building_slot = yes
+
+	potential = {
+		always = no
+	}
+
+	allow = { 
+		exists = owner
+		planet = { is_planet_class = pc_cosmoreverse }
+	}
+
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_dtf_technician_add = @dtf_energy_plant_job_1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_dtf_technician_drone_add = @dtf_energy_plant_job_1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_dtf_technician_drone_add = @dtf_energy_plant_job_1
+		}
+
+	}
+
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @dtf_energy_plant_minerals_cost_1
+			#alloys = @dtf_energy_plant_alloys_cost_1
+		}
+		upkeep = {
+			energy = @dtf_energy_plant_energy_upkeep_1
+			minerals = @dtf_energy_plant_minerals_upkeep_1
+		}
+
+		produces = {	
+			
+
+		}
+	}
+
+	on_built = {
+		set_planet_flag = dtf_energy_plant_built_1
+	}
+	#on_destroy = {
+	#	remove_planet_flag = dtf_energy_plant_built_1
+	#}
+	#on_queued = {
+	#	set_planet_flag = dtf_energy_plant_built_1
+	#}
+	on_unqueued = {
+		remove_planet_flag = dtf_energy_plant_built_1
+	}
+
+	upgrades = {
+		"building_dtf_energy_plant_2"
+	}
+
+	prerequisites = { "tech_dtf_technology_1" }
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+building_dtf_energy_plant_2 = {
+	base_buildtime = @dtf_energy_plant_build_time_2
+	category = resource
+	can_build = no
+
+	icon = building_dtf_energy_plant
+
+	#add_to_first_building_slot = yes
+
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_dtf_technician_add = @dtf_energy_plant_job_2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_dtf_technician_drone_add = @dtf_energy_plant_job_2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_dtf_technician_drone_add = @dtf_energy_plant_job_2
+		}
+
+	}
+
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @dtf_energy_plant_alloys_cost_2
+		}
+		upkeep = {
+			energy = @dtf_energy_plant_energy_upkeep_2
+			minerals = @dtf_energy_plant_minerals_upkeep_2
+		}
+
+		produces = {	
+			
+
+		}
+	}
+
+	on_built = {
+		set_planet_flag = dtf_energy_plant_built_2
+	}
+	on_unqueued = {
+		remove_planet_flag = dtf_energy_plant_built_2
+	}
+
+	upgrades = {
+		"building_dtf_energy_plant_3"
+	}
+
+	prerequisites = { "tech_dtf_technology_2" }
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+building_dtf_energy_plant_3 = {
+	base_buildtime = @dtf_energy_plant_build_time_3
+	category = resource
+	can_build = no
+
+	icon = building_dtf_energy_plant
+
+	#add_to_first_building_slot = yes
+
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_dtf_technician_add = @dtf_energy_plant_job_3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_dtf_technician_drone_add = @dtf_energy_plant_job_3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_dtf_technician_drone_add = @dtf_energy_plant_job_3
+		}
+
+	}
+
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @dtf_energy_plant_alloys_cost_3
+		}
+		upkeep = {
+			energy = @dtf_energy_plant_energy_upkeep_3
+			minerals = @dtf_energy_plant_minerals_upkeep_3
+		}
+
+		produces = {
+			
+
+		}
+	}
+
+	on_built = {
+		set_planet_flag = dtf_energy_plant_built_3
+	}
+	on_unqueued = {
+		remove_planet_flag = dtf_energy_plant_built_3
+	}
+
+	upgrades = {
+		"building_dtf_energy_plant_4"
+	}
+
+	prerequisites = { "tech_dtf_technology_3" }
+
+	ai_weight = {
+		weight = 0
+	}
+}

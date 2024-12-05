@@ -1,0 +1,209 @@
+## Forerunner Rates ##
+
+forerunner_rates = {
+	potential = {
+        is_country_type = default
+        is_ai = no
+		has_valid_civic = "civic_forerunner_ecumene"
+    }
+    
+	allow = {
+		always = yes
+	}
+
+    option = {
+        name = "no_action"
+
+        policy_flags = {
+			no_action
+        }
+
+        modifier = { }
+    }
+
+	option = {
+		name = "juridical_rate" #Praetor
+		
+		policy_flags = {
+			juridical_rate
+		}
+		modifier = {
+			planet_crime_add = -25
+			planet_crime_no_happiness_add = -25
+			planet_stability_add = 25
+			pop_happiness = 0.25
+			pop_government_ethic_attraction = 0.25
+			pop_ethics_shift_speed_mult = 0.25
+			faction_approval = 0.25
+			edict_length_mult = 0.25
+			country_edict_fund_mult = 0.25
+			edicts_cost_mult = -0.25
+			empire_size_mult = -0.25
+			leader_cost_empire_size_mult = -0.25
+			leader_upkeep_empire_size_mult = -0.25
+		}
+		
+		AI_weight = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "diplomat_rate" #Legatus
+		
+		policy_flags = {
+			diplomat_rate
+		}
+		modifier = {
+			diplo_weight_mult = 0.25
+			diplo_action_acceptance_add = 25
+			envoy_improve_relations_mult = 0.25
+			envoy_harm_relations_mult = 0.25
+			veto_cooldown_mult = -0.25
+			emergency_measures_cooldown_mult = -0.25
+			first_contact_speed_mult = 0.25
+			first_contact_clues_add = 2.5
+			first_contact_defense_add = 2.5
+			monthly_loyalty_from_subjects = 2.5
+			country_counter_espionage_mult = 0.25
+			espionage_operation_cost_mult = -0.25
+			spy_network_daily_value_mult = 0.25
+			spy_network_decay_mult = -0.25
+			intel_encryption_mult = 0.25
+			intel_decryption_mult = 0.25
+		}
+		
+		AI_weight = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "builder_rate" #Aedifex
+		
+		policy_flags = {
+            builder_rate
+        }	
+
+		modifier = {
+			planet_building_build_speed_mult = 0.25
+			planet_buildings_cost_mult = -0.25
+			colonies_upkeep_mult = -0.25
+			planet_pop_assembly_mult = 0.25
+			planet_jobs_produces_mult = 0.25
+			megastructure_build_speed_mult = 0.25
+		}
+		
+		AI_weight = {
+			factor = 1
+		}		
+    }
+
+	option = {
+		name = "warrior_servant_rate" #Bellator
+		
+		policy_flags = {
+			warrior_servant_rate
+		}
+		modifier = {
+			country_war_exhaustion_mult = -0.25
+			country_claim_influence_cost_mult = -0.25
+			ship_weapon_damage = 0.25
+			ship_fire_rate_mult = 0.25
+			ship_speed_mult = 0.25
+			planet_army_build_speed_mult = 0.25
+			army_damage_mult = 0.25
+			army_health = 0.25
+			armies_cost_mult = -0.25
+			armies_upkeep_mult = -0.25
+			
+		}
+		
+		AI_weight = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "lifeworker_rate" #Partus
+		
+		policy_flags = {
+			lifeworker_rate
+		}
+		modifier = {
+			category_biology_research_speed_mult = 0.25
+			planet_jobs_society_research_produces_mult = 0.25
+			pop_growth_speed = 0.25
+			biological_pop_happiness = 0.25
+			modify_species_cost_mult = -0.25
+			
+			BIOLOGICAL_species_trait_points_add = 2
+			BIOLOGICAL_species_trait_picks_add = 2
+		}
+		
+		AI_weight = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "miner_rate" #Figulus
+		
+		policy_flags = {
+			miner_rate
+		}
+		modifier = {
+			terraform_speed_mult = 0.25
+			pop_environment_tolerance = 0.25
+			terraforming_cost_mult = -0.25
+			deposit_blockers_cost_mult = -0.25
+		}
+		
+		AI_weight = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "engineer_rate" #Repertor
+		
+		policy_flags = {
+			engineer_rate
+		}
+		modifier = {
+			research_sharing_mult = 0.25
+			planet_researchers_produces_mult = 0.25
+			planet_researchers_upkeep_mult = -0.25
+			all_technology_research_speed = 0.25
+			tech_cost_empire_size_mult = -0.25
+			num_tech_alternatives_add = 2.5
+		}
+		
+		AI_weight = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "traveller_rate" #Indigator
+		
+		policy_flags = {
+			traveller_rate
+		}
+		modifier = {
+			science_ship_survey_speed = 0.25
+			ship_anomaly_fail_risk = -0.25
+			ship_anomaly_research_speed_mult = 0.25
+			ship_anomaly_generation_chance_mult = 0.25
+			ship_archaeological_site_excavation_speed_mult = 0.25
+			ship_archaeological_site_clues_add = 2.5
+			shipclass_science_ship_build_speed_mult = 0.25
+			ship_sensor_range_add = 2.5
+			planet_sensor_range_add = 2.5
+		}
+		
+		AI_weight = {
+			factor = 1
+		}
+	}
+}

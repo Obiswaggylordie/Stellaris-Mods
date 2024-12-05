@@ -1,0 +1,154 @@
+## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# planet_modifier - applied to planet only when deposit blocker has been cleared
+# constant_modifier - applied to planet always
+# blocker = <key/any/none> - default any
+# station = station class in orbit to gather
+
+@high = 16
+@med = 8
+@low = 4
+
+@high_rare = 2
+@med_rare = 1
+@low_rare = 0.5
+
+#BUILDER SHIELD WORLD DEPOSITS
+
+d_genesis_coral_highlands = {
+	is_for_colonizable = yes
+	icon = d_genesis_coral_highlands
+	
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	planet_modifier = {
+		district_farming_max = 5
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_genesis_builder_research_facilities = {
+	is_for_colonizable = yes
+	icon = d_genesis_builder_research_facilities
+	
+	category = deposit_cat_rare 
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_jobs_society_research_produces_mult = 1.00
+		planet_jobs_engineering_research_produces_mult = 1.00
+		planet_jobs_physics_research_produces_mult = 1.00
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_researcher_add = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_brain_drone_add = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_calculator_add = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_genesis_builder_factories = {
+	is_for_colonizable = yes
+	icon = d_genesis_builder_factories
+	
+	category = deposit_cat_rare 
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_building_build_speed_mult = 0.90
+		planet_buildings_cost_mult = -0.90
+		planet_pop_assembly_mult = 0.90
+	}
+	resources = {
+		category = planet_deposits
+		produces = {
+			volatile_motes = 100
+			rare_crystals = 100
+			exotic_gases = 100
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_genesis_builder_generator_facilities = {
+	is_for_colonizable = yes
+	icon = d_genesis_builder_generator_facilities
+	
+	category = deposit_cat_rare 
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		district_generator_max = 10
+		planet_amenities_add = 10
+		planet_jobs_energy_produces_mult = 0.90
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+#GENESIS ONLY
+
+d_genesis_domain_gateway = {
+	is_for_colonizable = yes
+	icon = d_genesis_domain_gateway
+	
+	category = deposit_cat_rare
+	
+	planet_modifier = {
+		planet_jobs_produces_mult = 1.00
+		
+	}
+	country_modifier = {
+		planet_jobs_upkeep_mult = -0.50
+		all_technology_research_speed = 1.00
+		official_exp_gain = 1.00
+		commander_exp_gain = 1.00
+		scientist_exp_gain = 1.00
+		envoy_exp_gain = 1.00
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}

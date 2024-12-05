@@ -1,0 +1,478 @@
+@dtf_memorial_monument_build_time_1 = 120
+
+
+@dtf_memorial_monument_minerals_cost_1 = 300
+@dtf_memorial_monument_alloys_cost_1 = 100
+
+
+@dtf_memorial_monument_energy_upkeep_1 = 2
+
+@dtf_memorial_monument_minerals_upkeep_1 = 4
+
+
+
+
+
+
+@dtf_heroes_hill_build_time_1 = 120
+
+
+@dtf_heroes_hill_minerals_cost_1 = 300
+@dtf_heroes_hill_alloys_cost_1 = 100
+
+
+@dtf_heroes_hill_energy_upkeep_1 = 2
+
+@dtf_heroes_hill_minerals_upkeep_1 = 4
+
+
+
+
+
+@dtf_industrial_waste_disposal_facility_build_time_1 = 120
+
+
+@dtf_industrial_waste_disposal_facility_alloys_cost_1 = 100
+
+
+@dtf_industrial_waste_disposal_facility_energy_upkeep_1 = 10
+
+@dtf_industrial_waste_disposal_facility_minerals_upkeep_1 = 10
+
+
+
+
+
+
+@dtf_secret_laboratory_build_time_1 = 360
+@dtf_secret_laboratory_build_time_2 = 360
+
+
+@dtf_secret_laboratory_alloys_cost_1 = 1000
+@dtf_secret_laboratory_alloys_cost_2 = 10000
+
+
+@dtf_secret_laboratory_job_1 = 2
+@dtf_secret_laboratory_job_2 = 4
+
+
+@dtf_secret_laboratory_energy_upkeep_1 = 30
+@dtf_secret_laboratory_energy_upkeep_2 = 60
+
+@dtf_secret_laboratory_minerals_upkeep_1 = 0
+@dtf_secret_laboratory_minerals_upkeep_2 = 0
+
+
+
+
+
+@dtf_biomineral_farm_build_time_1 = 1800
+
+
+@dtf_biomineral_farm_alloys_cost_1 = 3600
+
+
+@dtf_biomineral_farm_energy_upkeep_1 = 20
+
+@dtf_biomineral_farm_minerals_upkeep_1 = 0
+
+@dtf_biomineral_farm_food_upkeep_1 = 250
+
+@dtf_biomineral_farm_minerals_produces_1 = 500
+
+
+
+
+
+
+
+
+@dtf_biomineral_casting_facility_build_time_1 = 3600
+
+
+@dtf_biomineral_casting_facility_alloys_cost_1 = 3600
+
+
+@dtf_biomineral_casting_facility_energy_upkeep_1 = 40
+
+@dtf_biomineral_casting_facility_minerals_upkeep_1 = 500
+
+@dtf_biomineral_casting_facility_alloys_produces_1 = 300
+
+
+
+
+
+
+
+
+
+
+
+##############################################################################
+##############################################################################
+##############################################################################
+
+
+
+building_dtf_memorial_monument_1 = {
+	base_buildtime = @dtf_memorial_monument_build_time_1
+	base_cap_amount = 1
+	category = unity
+
+	icon = building_dtf_memorial_monument
+
+	#can_demolish = no
+	#add_to_first_building_slot = yes
+
+	potential = {
+		exists = owner
+		planet = { is_planet_class = pc_cosmoreverse }
+	}
+
+	allow = { 
+		exists = owner
+		planet = { is_planet_class = pc_cosmoreverse }
+	}
+
+
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @dtf_memorial_monument_minerals_cost_1
+			#alloys = @dtf_memorial_monument_alloys_cost_1
+		}
+		upkeep = {
+			energy = @dtf_memorial_monument_energy_upkeep_1
+			minerals = @dtf_memorial_monument_minerals_upkeep_1
+		}
+	}
+
+	planet_modifier = {
+		planet_jobs_unity_produces_mult = 0.50
+	}
+
+	on_built = {
+		planet = {
+			set_planet_flag = dtf_memorial_monument_built_1
+		}
+	}
+	on_destroy = {
+		planet = {
+			remove_planet_flag = dtf_memorial_monument_built_1
+		}
+	}
+
+
+	upgrades = {
+		"building_dtf_memorial_monument_2"
+	}
+
+	prerequisites = { "tech_dtf_cosmoreverse_technology_1" }
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+
+##############################################################################
+##############################################################################
+##############################################################################
+
+
+building_dtf_heroes_hill_1 = {
+	base_buildtime = @dtf_heroes_hill_build_time_1
+	base_cap_amount = 1
+	category = unity
+
+	icon = building_dtf_heroes_hill
+
+	#can_demolish = no
+	#add_to_first_building_slot = yes
+
+	potential = {
+		exists = owner
+		planet = { is_planet_class = pc_cosmoreverse }
+	}
+
+	allow = { 
+		exists = owner
+		planet = { is_planet_class = pc_cosmoreverse }
+	}
+
+
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @dtf_heroes_hill_minerals_cost_1
+			#alloys = @dtf_heroes_hill_alloys_cost_1
+		}
+		upkeep = {
+			energy = @dtf_heroes_hill_energy_upkeep_1
+			minerals = @dtf_heroes_hill_minerals_upkeep_1
+		}
+	}
+
+	planet_modifier = {
+		planet_jobs_unity_produces_mult = 0.50
+	}
+
+	on_built = {
+		planet = {
+			set_planet_flag = dtf_heroes_hill_built_1
+		}
+	}
+	on_destroy = {
+		planet = {
+			remove_planet_flag = dtf_heroes_hill_built_1
+		}
+	}
+
+	upgrades = {
+		"building_dtf_heroes_hill_2"
+	}
+
+	prerequisites = { "tech_dtf_cosmoreverse_technology_1" }
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+
+##############################################################################
+##############################################################################
+##############################################################################
+
+
+building_dtf_industrial_waste_disposal_facility_1 = {
+	base_buildtime = @dtf_industrial_waste_disposal_facility_build_time_1
+	base_cap_amount = 1
+	category = resource
+
+	icon = building_dtf_industrial_waste_disposal_facility
+
+	can_demolish = no
+	#add_to_first_building_slot = yes
+
+	potential = {
+		exists = owner
+		planet = { is_planet_class = pc_cosmoreverse }
+	}
+
+	allow = { 
+		exists = owner
+		planet = { is_planet_class = pc_cosmoreverse }
+	}
+
+
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @dtf_industrial_waste_disposal_facility_alloys_cost_1
+		}
+		upkeep = {
+			energy = @dtf_industrial_waste_disposal_facility_energy_upkeep_1
+			minerals = @dtf_industrial_waste_disposal_facility_minerals_upkeep_1
+		}
+	}
+
+	planet_modifier = {
+		
+	}
+
+	on_built = {
+		planet = {
+			set_planet_flag = dtf_industrial_waste_disposal_facility_built_1
+		}
+	}
+	on_destroy = {
+		planet = {
+			remove_planet_flag = dtf_industrial_waste_disposal_facility_built_1
+		}
+	}
+
+	upgrades = {
+		"building_dtf_industrial_waste_disposal_facility_2"
+	}
+
+	prerequisites = { "tech_dtf_cosmoreverse_technology_1" }
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+
+##############################################################################
+##############################################################################
+##############################################################################
+
+
+
+
+##############################################################################
+##############################################################################
+##############################################################################
+
+
+building_dtf_biomineral_farm_1 = {
+	base_buildtime = @dtf_biomineral_farm_build_time_1
+	base_cap_amount = 1
+	category = manufacturing
+
+	icon = building_dtf_biomineral_farm
+
+	#can_demolish = no
+	#add_to_first_building_slot = yes
+
+	potential = {
+		exists = owner
+		planet = {
+			is_planet_class = pc_cosmoreverse
+			has_planet_flag = dtf_industrial_waste_disposal_facility_built_1
+		}
+	}
+
+	allow = { 
+		exists = owner
+		planet = {
+			is_planet_class = pc_cosmoreverse
+			has_planet_flag = dtf_industrial_waste_disposal_facility_built_1
+		}
+	}
+
+
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @dtf_biomineral_farm_alloys_cost_1
+		}
+		upkeep = {
+			energy = @dtf_biomineral_farm_energy_upkeep_1
+			minerals = @dtf_biomineral_farm_minerals_upkeep_1
+			food = @dtf_biomineral_farm_food_upkeep_1
+		}
+		
+		produces = {	
+			minerals = @dtf_biomineral_farm_minerals_produces_1
+		}
+	}
+
+	planet_modifier = {
+		#planet_jobs_minerals_produces_mult = 3.0
+	}
+
+	on_built = {
+		planet = {
+			set_planet_flag = dtf_biomineral_farm_built_1
+		}
+	}
+	on_destroy = {
+		planet = {
+			remove_planet_flag = dtf_biomineral_farm_built_1
+		}
+	}
+
+	upgrades = {
+		"building_dtf_biomineral_farm_2"
+	}
+
+	prerequisites = { "tech_dtf_cosmoreverse_technology_3" }
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+
+##############################################################################
+##############################################################################
+##############################################################################
+
+
+building_dtf_biomineral_casting_facility_1 = {
+	base_buildtime = @dtf_biomineral_casting_facility_build_time_1
+	base_cap_amount = 1
+	category = manufacturing
+
+	icon = building_dtf_biomineral_casting_facility
+
+	#can_demolish = no
+	#add_to_first_building_slot = yes
+
+	potential = {
+		exists = owner
+		planet = {
+			is_planet_class = pc_cosmoreverse
+			has_planet_flag = dtf_biomineral_farm_built_1
+		}
+	}
+
+	allow = { 
+		exists = owner
+		planet = {
+			is_planet_class = pc_cosmoreverse
+			has_planet_flag = dtf_biomineral_farm_built_1
+		}
+	}
+
+
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @dtf_biomineral_casting_facility_alloys_cost_1
+		}
+		upkeep = {
+			energy = @dtf_biomineral_casting_facility_energy_upkeep_1
+			minerals = @dtf_biomineral_casting_facility_minerals_upkeep_1
+		}
+		
+		produces = {	
+			alloys = @dtf_biomineral_casting_facility_alloys_produces_1
+		}
+	}
+
+	planet_modifier = {
+		#planet_jobs_alloys_produces_mult = 1.0
+	}
+
+	on_built = {
+		planet = {
+			set_planet_flag = dtf_biomineral_casting_facility_built_1
+		}
+	}
+	on_destroy = {
+		planet = {
+			remove_planet_flag = dtf_biomineral_casting_facility_built_1
+		}
+	}
+
+	upgrades = {
+		"building_dtf_biomineral_casting_facility_2"
+	}
+
+	prerequisites = { "tech_dtf_cosmoreverse_technology_3" }
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+
+
+

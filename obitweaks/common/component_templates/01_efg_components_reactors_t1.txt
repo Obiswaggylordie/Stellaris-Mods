@@ -1,0 +1,196 @@
+
+
+
+##############################################
+### Reactor 1
+##############################################
+utility_component_template = {
+	key = "EFG_REACTOR_1_LARGESHIP"
+	size = small
+	icon = "GFX_efg_ship_part_reactor_1"
+	icon_frame = 1
+	power = @efg_largeship_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_efg_t1_reactor_cost
+		}
+		upkeep = {
+			energy = @l_efg_t1_reactor_uk_energy
+			alloys = @l_efg_t1_reactor_uk_alloys
+		}
+	}
+
+	prerequisites = { "tech_efg_reactor_1" }
+	component_set = "power_core"
+
+	upgrades_to = "EFG_REACTOR_2_LARGESHIP"
+
+	ai_weight = {
+		weight = @efg_ai_weight_1
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+}
+
+##############################################
+### Reactor 2
+##############################################
+utility_component_template = {
+	key = "EFG_REACTOR_2_LARGESHIP"
+	size = small
+	icon = "GFX_efg_ship_part_reactor_2"
+	icon_frame = 1
+	power = @efg_largeship_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_efg_t2_reactor_cost
+		}
+		upkeep = {
+			energy = @l_efg_t2_reactor_uk_energy
+			alloys = @l_efg_t2_reactor_uk_alloys
+		}
+	}
+
+	prerequisites = { "tech_efg_reactor_2" }
+	component_set = "power_core"
+
+	upgrades_to = "EFG_REACTOR_3_LARGESHIP"
+
+	ai_weight = {
+		weight = @efg_ai_weight_3
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+}
+
+##############################################
+### Reactor 3
+##############################################
+utility_component_template = {
+	key = "EFG_REACTOR_3_LARGESHIP"
+	size = small
+	icon = "GFX_efg_ship_part_reactor_3"
+	icon_frame = 1
+	power = @efg_largeship_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_efg_t3_reactor_cost
+		}
+		upkeep = {
+			energy = @l_efg_t3_reactor_uk_energy
+			alloys = @l_efg_t3_reactor_uk_alloys
+		}
+	}
+
+	modifier = {
+		#ship_weapon_damage = 0.20
+		#ship_weapon_range_mult = 0.20
+		#ship_shield_mult = 0.20
+		#ship_shield_regen_add_perc = 0.15
+		#ship_speed_mult = 0.05
+	}
+
+	prerequisites = { "tech_efg_reactor_3" }
+	component_set = "power_core"
+
+	upgrades_to = "EFG_REACTOR_4_LARGESHIP"
+
+	ai_weight = {
+		weight = @efg_ai_weight_5
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+}
+
+##############################################
+### Reactor 4
+##############################################
+utility_component_template = {
+	key = "EFG_REACTOR_4_LARGESHIP"
+	size = small
+	icon = "GFX_efg_ship_part_reactor_4"
+	icon_frame = 1
+	power = @efg_largeship_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_efg_t4_reactor_cost
+		}
+		upkeep = {
+			energy = @l_efg_t4_reactor_uk_energy
+			alloys = @l_efg_t4_reactor_uk_alloys
+		}
+	}
+
+	modifier = {
+		#ship_weapon_damage = 0.20
+		#ship_weapon_range_mult = 0.20
+		#ship_shield_mult = 0.20
+		ship_shield_regen_add_perc = 0.10
+		ship_speed_mult = 0.05
+	}
+
+	prerequisites = { "tech_efg_reactor_4" }
+	component_set = "power_core"
+	
+	upgrades_to = "EFG_REACTOR_5_LARGESHIP"
+
+	ai_weight = {
+		weight = @efg_ai_weight_5
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+}
+
+##############################################
+### Reactor 5
+##############################################
+utility_component_template = {
+	key = "EFG_REACTOR_5_LARGESHIP"
+	size = small
+	icon = "GFX_efg_ship_part_reactor_5"
+	icon_frame = 1
+	power = @efg_largeship_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_efg_t5_reactor_cost
+		}
+		upkeep = {
+			energy = @l_efg_t5_reactor_uk_energy
+			alloys = @l_efg_t5_reactor_uk_alloys
+		}
+	}
+
+	modifier = {
+		#ship_weapon_damage = 0.20
+		#ship_weapon_range_mult = 0.20
+		ship_shield_mult = 0.05
+		ship_shield_regen_add_perc = 0.15
+		ship_speed_mult = 0.05
+	}
+
+	prerequisites = { "tech_efg_reactor_5" }
+	component_set = "power_core"
+
+	upgrades_to = "EFG_REACTOR_6_LARGESHIP"
+
+	ai_weight = {
+		weight = @efg_ai_weight_6
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+}

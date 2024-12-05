@@ -1,0 +1,642 @@
+namespace = gge_garmillas_origin
+
+country_event = {
+	id = gge_garmillas_origin.001
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_origin = origin_garmillas
+	}
+
+	immediate = {
+		capital_scope = {
+			
+			#clear_blockers = yes
+			#clear_deposits = yes
+			#remove_all_districts = yes
+
+			sby_generate_start_buildings_and_districts = yes
+
+			if = {
+				limit = { root = { is_machine_empire = yes } }
+
+				root = {
+					set_country_flag = can_use_gge_tech
+					give_technology = { tech = tech_sbymod message = no }
+					give_technology = { tech = tech_gge_pretech message = no }
+					give_technology = { tech = tech_gge_weapons_1 message = no }
+					give_technology = { tech = tech_gge_armor_1 message = no }
+					give_technology = { tech = tech_gge_shield_1 message = no }
+					give_technology = { tech = tech_gge_reactor_1 message = no }
+					give_technology = { tech = tech_robotic_workers message = no }
+				}
+			}
+			else_if = {
+				limit = { root = { is_hive_empire = yes } }
+
+				root = {
+					set_country_flag = can_use_gge_tech
+					give_technology = { tech = tech_sbymod message = no }
+					give_technology = { tech = tech_gge_pretech message = no }
+					give_technology = { tech = tech_gge_weapons_1 message = no }
+					give_technology = { tech = tech_gge_armor_1 message = no }
+					give_technology = { tech = tech_gge_shield_1 message = no }
+					give_technology = { tech = tech_gge_reactor_1 message = no }
+					give_technology = { tech = tech_robotic_workers message = no }
+				}
+			}
+			else = {
+
+				root = {
+					set_country_flag = can_use_gge_tech
+					give_technology = { tech = tech_sbymod message = no }
+					give_technology = { tech = tech_gge_pretech message = no }
+					give_technology = { tech = tech_gge_weapons_1 message = no }
+					give_technology = { tech = tech_gge_armor_1 message = no }
+					give_technology = { tech = tech_gge_shield_1 message = no }
+					give_technology = { tech = tech_gge_reactor_1 message = no }
+					give_technology = { tech = tech_robotic_workers message = no }
+				}
+			}
+
+
+		
+
+			###############################################################################
+
+
+
+	
+			solar_system = {
+				sby_garmillas_the_second_barelas_setup = yes
+			}
+
+			root = { set_country_flag = garmillas_1 }
+			
+			# Garman System Spawn
+			#spawn_system = { initializer = "sby_garman_system" }
+			sby_create_new_system = {
+				sby_init_min_angle = 0
+				sby_init_max_angle = 360
+				hyperlane = yes
+				initializer = "sby_garman_nopop_system"
+			}
+		}
+		
+		if = {
+			limit = { is_ai = yes }
+			add_modifier = { modifier = gge_cm_ai_modifier }
+		}
+	}
+}
+
+
+
+#############################################
+# Country Events
+#############################################
+
+# Event Set Up
+country_event = {
+	id = gge_garmillas_origin.010
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_origin = origin_garmillas
+		always = no
+	}
+
+	immediate = {
+		save_event_target_as = garmillas_doomsday_owner
+		capital_scope = {
+			set_planet_flag = garmillas_doomed_planet_origin
+			add_modifier = {
+				modifier = doomsday_1
+			}
+			planet_event = { id = gge_garmillas_origin.030 days = 6840 random = 720 }
+		}
+	}
+
+	#option = {
+	#	name = "EXCELLENT"
+	#}
+}
+
+
+
+
+
+# Doomsday 1 Start
+country_event = {
+	id = gge_garmillas_origin.020
+	title = "gge_garmillas_origin.020.name"
+	desc = "gge_garmillas_origin.020.desc"
+	picture = GFX_evt_tomb_world
+	show_sound = event_wind_ruins
+	is_triggered_only = yes
+	
+	trigger = {
+		has_origin = origin_garmillas
+		always = no
+	}
+
+	option = {
+		name = gge_garmillas_origin_020.a
+	}
+
+	option = {
+		name = gge_garmillas_origin_020.b
+		owner = { 
+			add_resource = {
+				energy		= 2000
+				minerals	= 1200
+				alloys		= 500
+				consumer_goods	= 500
+			}
+		}
+	}
+
+	###############################################################################
+	### Super Gamilas
+	###############################################################################
+	option = {
+		name = gge_garmillas_origin_020.c
+
+		capital_scope = {
+			save_event_target_as = target_planet_garmillas
+			while = {
+				count = 51
+				create_pop = {
+					species = owner_main_species
+				}
+			}
+
+			add_building = building_gge_general_headquarters_1
+
+			if = {
+				limit = { root = { is_machine_empire = yes } }
+
+				add_district = district_gge_garmillas_housing
+				add_district = district_gge_garmillas_science
+				add_district = district_gge_garmillas_science
+				add_district = district_gge_garmillas_foundry_industry
+				add_district = district_gge_garmillas_energy
+				add_district = district_gge_garmillas_energy
+				add_district = district_gge_garmillas_energy
+				add_district = district_gge_garmillas_energy
+				add_district = district_gge_garmillas_energy
+				add_district = district_gge_garmillas_energy
+				add_district = district_gge_garmillas_mining
+				add_district = district_gge_garmillas_mining
+				add_district = district_gge_garmillas_mining
+				add_district = district_gge_garmillas_mining
+
+				add_building = building_sentinel_posts
+				add_building = building_simulation_1
+				add_building = building_simulation_1
+				add_building = building_drone_storage
+			}
+			else_if = {
+				limit = { root = { is_hive_empire = yes } }
+
+				add_district = district_gge_garmillas_housing
+				add_district = district_gge_garmillas_science
+				add_district = district_gge_garmillas_science
+				add_district = district_gge_garmillas_foundry_industry
+				add_district = district_gge_garmillas_energy
+				add_district = district_gge_garmillas_energy
+				add_district = district_gge_garmillas_energy
+				add_district = district_gge_garmillas_mining
+				add_district = district_gge_garmillas_mining
+				add_district = district_gge_garmillas_mining
+				add_district = district_gge_garmillas_mining
+				add_district = district_gge_garmillas_farming
+				add_district = district_gge_garmillas_farming
+				add_district = district_gge_garmillas_farming
+
+				add_building = building_sentinel_posts
+				add_building = building_sensorium_1
+				add_building = building_sensorium_1
+				add_building = building_hive_warren
+			}
+			else = {
+
+				add_district = district_gge_garmillas_housing
+				add_district = district_gge_garmillas_science
+				add_district = district_gge_garmillas_foundry_industry
+				add_district = district_gge_garmillas_civilian_industry
+				add_district = district_gge_garmillas_civilian_industry
+				add_district = district_gge_garmillas_energy
+				add_district = district_gge_garmillas_energy
+				add_district = district_gge_garmillas_mining
+				add_district = district_gge_garmillas_mining
+				add_district = district_gge_garmillas_mining
+				add_district = district_gge_garmillas_farming
+				add_district = district_gge_garmillas_farming
+				add_district = district_gge_garmillas_farming
+
+				add_building = building_precinct_house
+				add_building = building_commercial_zone
+				add_building = building_commercial_zone
+				add_building = building_commercial_zone
+				add_building = building_holo_theatres
+			}	
+		}
+
+		ai_chance = {
+ 			factor = 100
+		}
+	}
+}
+
+
+# Doomsday 2 - 20 year
+planet_event = {
+	id = gge_garmillas_origin.030
+	title = "gge_garmillas_origin.030.name"
+	desc = "gge_garmillas_origin.030.desc"
+	picture = GFX_evt_tomb_world
+	show_sound = event_wind_ruins
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = { has_country_flag = has_garmillas_happyend }
+		}
+		always = no
+	}
+
+	immediate = {
+		remove_modifier = doomsday_1
+		add_modifier = {
+			modifier = doomsday_2
+		}
+		add_planet_devastation = 5
+		planet_event = { id = gge_garmillas_origin.040 days = 10080 random = 720 }
+	}
+
+	option = {
+		name = gge_garmillas_origin_030.a
+		tooltip = {
+			add_planet_devastation = 5
+			add_modifier = {
+				modifier = doomsday_2
+			}
+		}
+	}
+}
+
+
+# Doomsday 3 - 50 year
+planet_event = {
+	id = gge_garmillas_origin.040
+	title = "gge_garmillas_origin.040.name"
+	desc = "gge_garmillas_origin.040.desc"
+	picture = GFX_evt_tomb_world
+	show_sound = event_wind_ruins
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = { has_country_flag = has_garmillas_happyend }
+		}
+		always = no
+	}
+
+	immediate = {
+		remove_modifier = doomsday_2
+		add_modifier = {
+			modifier = doomsday_3
+		}
+		add_planet_devastation = 5
+		planet_event = { id = gge_garmillas_origin.050 days = 10080 random = 720 }
+	}
+
+	option = {
+		name = gge_garmillas_origin_040.a
+		tooltip = {
+			add_planet_devastation = 5
+			add_modifier = {
+				modifier = doomsday_3
+			}
+		}
+	}
+}
+
+
+# Doomsday 4 - 80 year
+planet_event = {
+	id = gge_garmillas_origin.050
+	title = "gge_garmillas_origin.050.name"
+	desc = "gge_garmillas_origin.050.desc"
+	picture = GFX_evt_colony_settlement
+	show_sound = event_wind_ruins
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = { has_country_flag = has_garmillas_happyend }
+		}
+		always = no
+	}
+
+	immediate = {
+		remove_modifier = doomsday_3
+		add_modifier = {
+			modifier = doomsday_4
+		}
+		add_planet_devastation = 5
+		planet_event = { id = gge_garmillas_origin.060 days = 4680 random = 720 }
+	}
+
+	option = {
+		name = gge_garmillas_origin_050.a
+		tooltip = {
+			add_planet_devastation = 5
+			add_modifier = {
+				modifier = doomsday_4
+			}
+		}
+	}
+}
+
+
+# Doomsday 5 - 95 year
+planet_event = {
+	id = gge_garmillas_origin.060
+	title = "gge_garmillas_origin.060.name"
+	desc = "gge_garmillas_origin.060.desc"
+	picture = GFX_evt_tomb_world
+	show_sound = event_wind_ruins
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = { has_country_flag = has_garmillas_happyend }
+		}
+		always = no
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				num_pops <= 5
+			}
+			set_planet_flag = garmillas_doomsday_evacuation_everything
+		}
+		else = {
+			set_planet_flag = garmillas_doomsday_not_evacuation_many_pops
+		}
+
+		remove_modifier = doomsday_4
+		add_modifier = {
+			modifier = doomsday_5
+		}
+		add_planet_devastation = 5
+		planet_event = { id = gge_garmillas_origin.070 days = 1620 random = 360 }
+	}
+
+	option = {
+		name = gge_garmillas_origin_060.a
+		trigger = {
+			has_planet_flag = garmillas_doomsday_evacuation_everything
+		}
+		tooltip = {
+			add_planet_devastation = 5
+			add_modifier = {
+				modifier = doomsday_5
+			}
+		}
+	}
+
+	option = {
+		name = gge_garmillas_origin_060.b
+		trigger = {
+			has_planet_flag = garmillas_doomsday_not_evacuation_many_pops
+		}
+		tooltip = {
+			add_planet_devastation = 5
+			add_modifier = {
+				modifier = doomsday_5
+			}
+		}
+	}
+}
+
+
+# Doomsday END
+planet_event = {
+	id = gge_garmillas_origin.070
+	title = "gge_garmillas_origin.070.name"
+	desc = "gge_garmillas_origin.070.desc"
+	picture = GFX_evt_exploding_planet
+	show_sound = event_super_explosion
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = { has_country_flag = has_garmillas_happyend }
+		}
+		always = no
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_owner = yes
+				owner = { is_same_value = event_target:garmillas_doomsday_owner }
+			}
+			set_planet_flag = garmillas_doomsday_still_original_owner
+			if = {
+				limit = {
+					owner = { num_owned_planets = 1 }
+				}
+				set_planet_flag = garmillas_doomsday_lost_everything
+				owner = { set_country_flag = garmillas_silence_destroy_event }
+			}
+			else_if = {
+				limit = {
+					owner = { num_owned_planets > 1 }
+					num_pops >= 20
+				}
+				set_planet_flag = garmillas_doomsday_lost_many_pops
+			}
+			else_if = {
+				limit = {
+					owner = { num_owned_planets > 1 }
+					num_pops <= 19
+					num_pops > 0
+				}
+				set_planet_flag = garmillas_doomsday_lost_some_pops
+			}
+			else_if = {
+				limit = {
+					owner = { num_owned_planets > 1 }
+					num_pops = 0
+				}
+				set_planet_flag = garmillas_doomsday_not_dead_pops
+			}
+		}
+		else = {
+			event_target:garmillas_doomsday_owner = {
+				#country_event = { id = gge_garmillas_origin.031 }
+			}
+		}
+		every_owned_pop = { kill_pop = yes }
+		remove_modifier = doomsday_5
+		destroy_colony = yes
+		change_pc = pc_shattered
+		clear_deposits = yes
+		random_list = {
+			1 = {
+				add_deposit = d_minerals_10
+				add_deposit = d_minerals_6
+			}
+			1 = {
+				add_deposit = d_minerals_10
+				add_deposit = d_minerals_2
+			}
+			1 = {
+				add_deposit = d_minerals_8
+			}
+			1 = {
+				add_deposit = d_minerals_4
+			}
+		}
+
+		from = { set_country_flag = has_garmillas_badend }
+	}
+
+	option = {
+		name = gge_garmillas_origin_070.a
+		trigger = {
+			has_planet_flag = garmillas_doomsday_lost_everything
+		}
+	}
+	option = {
+		name = gge_garmillas_origin_070.b
+		trigger = {
+			has_planet_flag = garmillas_doomsday_lost_many_pops
+		}
+	}
+	option = {
+		name = gge_garmillas_origin_070.c
+		trigger = {
+			has_planet_flag = garmillas_doomsday_lost_some_pops
+		}
+	}
+	option = {
+		name = gge_garmillas_origin_070.d
+		trigger = {
+			has_planet_flag = garmillas_doomsday_not_dead_pops
+		}
+	}
+	option = {
+		name = UNFORTUNATE
+		trigger = {
+			NOR = {
+				has_planet_flag = garmillas_doomsday_lost_everything
+				has_planet_flag = garmillas_doomsday_lost_some_pops
+				has_planet_flag = garmillas_doomsday_lost_many_pops
+				has_planet_flag = garmillas_doomsday_lost_some_pops
+				has_planet_flag = garmillas_doomsday_not_dead_pops
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gge_garmillas_origin.019
+	title = "gge_garmillas_origin.019.name"
+	desc = "gge_garmillas_origin.019.desc"
+	picture = GFX_evt_news_room
+	show_sound = event_wind_ruins
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_technology = tech_gge_doomsday_3
+		NOT = { has_country_flag = has_garmillas_happyend }
+		NOT = { has_country_flag = has_garmillas_badend }
+	}
+
+	immediate = {
+		set_country_flag = has_garmillas_happyend
+	}
+
+	option = {
+		name = gge_garmillas_origin_019.a
+	}
+}
+
+
+
+#############################################
+# Country Events - Garman
+#############################################
+
+ship_event = {
+	id = gge_garmillas_origin.110
+	title = "gge_garmillas_origin.110.name"
+
+	desc = "gge_garmillas_origin.110.desc"
+	
+	desc = {
+		trigger = {
+			fromfrom = { 
+				NOT = { 
+					has_country_flag = has_garmillas_badend
+					has_country_flag = has_garmillas_happyend
+				} 
+			}
+		}
+		text = gge_garmillas_origin.110.a.desc
+	}
+	desc = {
+		trigger = {
+			fromfrom = { has_country_flag = has_garmillas_badend }
+		}
+		text = gge_garmillas_origin.110.b.desc
+	}
+	desc = {
+		trigger = {
+			fromfrom = { has_country_flag = has_garmillas_happyend }
+		}
+		text = gge_garmillas_origin.110.c.desc
+	}
+
+	picture = GFX_evt_news_room
+	show_sound = event_wind_ruins
+	location = from
+
+	#fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = { has_star_flag = garman_system }
+		fromfrom = { has_country_flag = garmillas_1 }
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = gge_garmillas_origin_110.a
+	}
+}

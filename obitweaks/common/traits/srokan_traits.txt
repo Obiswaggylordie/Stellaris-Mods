@@ -1,0 +1,34 @@
+##################
+# Species Traits #
+##################
+
+trait_srokan = {
+	cost = 0
+	potential_crossbreeding_chance = 0.1
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	advanced_trait = yes
+	species_possible_remove = {
+		from = {
+			has_technology = tech_ascended_gene_editing
+		}
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_add = {
+		from = {
+			has_technology = tech_ascended_gene_editing
+		}
+	}
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.50
+		category_biology_research_speed_mult = 1.0
+		pop_environment_tolerance = -1.0
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

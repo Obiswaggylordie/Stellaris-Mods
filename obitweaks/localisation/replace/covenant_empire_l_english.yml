@@ -1,0 +1,1111 @@
+﻿l_english:
+ 
+ #COVENANT EMPIRE/COVENANT SPLINTER FACTIONS 
+ 
+ COVENANT_EMPIRE: "Covenant"
+ PROMETHEAN_KNIGHT: "Promethean Knight"
+
+
+ #COUNCIL_DYNAMIC_BACKGROUND: "[Root.GetScriptedCouncilBackgroundCovenant]"
+ 
+ #COVENANT DROP PODS 
+ 
+ tech_covenant_drop_pods: "Covenant Intrusion Carapace"
+ tech_covenant_drop_pods_desc: "High-altitude troop deployment vehicles developed from Tertiary Assembly Forges to send shock troops to a planet's surface more efficiently than typical transports. These pods can hold single-occupants or an entire squad of warriors at a time."
+ 
+ tech_covenant_heavy_drop_pods: "Covenant Assault Carapace"
+ tech_covenant_heavy_drop_pods_desc: "Larger high-altitude troop deployment vehicles developed from the Assembly Forges to send a larger concentration of shock troopers to a planet's surface more efficiently than typical transports. These pods can hold a larger number of warriors within and are typically equipped with impulse drives that can be sent back into orbit after deployment to be reused again."
+
+ ORBITAL_COVENANT_DROP_POD: "Covenant Yado-pattern Intrusion Carapace"
+ ORBITAL_COVENANT_DROP_POD_DESC: "Single-occupant drop pods used to deploy shock troopers from orbit during a ground battle."
+ 
+ ORBITAL_COVENANT_HEAVY_DROP_POD: "Covenant Yado'kef-pattern Assault Carapace"
+ ORBITAL_COVENANT_HEAVY_DROP_POD_DESC: "Multi-occupant drop pods used to deploy a larger force from orbit during a ground battle."
+ 
+ #COVENANT DROP POD ARMIES 
+ 
+ cov_army_drop_pod: "Covenant Shock Trooper Lance"
+ cov_army_drop_pod_desc: "An army of Covenant warriors and shock troopers deployed from single-occupant drop pods."
+ 
+ #COVENANT DROP POD MODIFIERS 
+ 
+ mod_covenant_orbital_drop_pod_count: "$cov_army_drop_pod$"
+ mod_covenant_orbital_heavy_drop_pod_count: "$cov_army_drop_pod$"
+ 
+ TECH_UNLOCK_COVENANT_ARMY_DROP_POD_TITLE: "§HUnlocks Component:§! $cov_army_drop_pod$"
+ TECH_UNLOCK_COVENANT_ARMY_DROP_POD_DESC: "§H$cov_army_drop_pod$§!\n$cov_army_drop_pod_desc$"
+ 
+ 
+ #COVENANT LEADERS
+ councilor_covenant_hegemony: "High Councilor"
+ councilor_covenant_hegemony_female: "High Councilor"
+ councilor_covenant_hegemony_desc: "A High Councilor appointed as the leading representative of the High Council."
+ 
+ councilor_covenant_imperial_admiral: "Imperial Admiral"
+ councilor_covenant_imperial_admiral_female: "Imperial Admiral"
+ councilor_covenant_imperial_admiral_desc: "The highest military rank in the armed forces of the Covenant and held authority over the Shipmasters, Fleetmasters, and Supreme Commanders."
+ 
+ councilor_storm_zealot: "Zealot Commander"
+ councilor_storm_zealot_female: "Zealot Commander"
+ councilor_storm_zealot_desc: "Also known as a Field Marshall within the Ministry of Fervent Intercession under the Covenant Empire, this position holds supreme authority over Covenant land forces and tasked with leading the Zealot Order or serving as second-in-command to Covenant faction leaders."
+
+ #DIDACT 
+ 
+ covenant_start.2.name: "Promethean Awakening"
+ covenant_start.2.desc: "Accessing the Cryptum found on the holy Forerunner planet of Requiem, we have awakened our god! He is known as the §YUr-Didact§!, a great warrior of his people. He now leads us to purify our foes and to usher in a new age!"
+ covenant_start.2.a: "Didact!"
+
+ councilor_didact_hand: "Hand of the Didact"
+ councilor_didact_hand_female: "Hand of the Didact"
+ councilor_didact_hand_desc: "The Supreme Commander of the Covenant religious cult and anointed ally of the ancient Promethean Supreme Commander."
+
+ #SOS LEADERS 
+ councilor_kaidon: "Kaidon Councilor"
+ councilor_kaidon_female: "Kaidon Councilor"
+ councilor_kaidon_desc: "Rulers and generals of the Sangheili elected from their clan's elders to represent their city-states."
+
+ #COVENANT PLASMA BOMBARDMENT 
+ 
+ plasma_glassing: "Glassing"
+ plasma_glassing_desc: "This planet is being glassed from orbit, burning all life on the surface."
+ 
+ tech_covenant_plasma_bombardment: "Plasma Bombardment"
+ tech_covenant_plasma_bombardment_desc: "Known as glassing, this form of orbital bombardment uses heavy plasma weaponry to bombard a planet from orbit turning a planet into a glassed world."
+ 
+ bombardment_covenant_glassing: "Plasma Mortar Bombardment"
+ bombardment_covenant_glassing_desc: "$bombardment_covenant_glassing$ discharges several plasma rounds at the surface. The magnetic bubble is destabilized upon impact, releasing a tremendous amount of heat and energy, obliterating anything within range of the impact zone. Continuous plasma bombardment will render a planet uninhabitable."
+  
+ covenant_glassing: "Plasma Bombardment"
+ covenant_glassing_desc: "$bombardment_covenant_glassing$ discharges several plasma rounds at the surface. The magnetic bubble is destabilized upon impact, releasing a tremendous amount of heat and energy, obliterating anything within range of the impact zone. Continuous plasma bombardment will render a planet uninhabitable."
+ 
+ covenant_bombardment.82.name: "Plasma Bombardment"
+ covenant_bombardment.82.desc: "Our world has been glassed by the orbiting enemy fleet above, killing the population and burning the land into molten soil and glass."
+ covenant_bombardment.82.a: "Unfortunate"
+ 
+ covenant_bombardment.83.name: "Plasma Bombardment Complete"
+ covenant_bombardment.83.desc: "As per your orders, this world has been glassed, purifying it of heathens."
+ covenant_bombardment.83.a: "No enemy can stand against our might."
+ 
+ bombed_to_glassed_world:0 "§Y[From.GetName] is now a depopulated Glassed World.§!"
+ 
+
+ pc_glassed: "Glassed World"
+ pc_glassed_desc: "This world has been glassed by plasma bombardment, rendering it uninhabitable to organic life. With some effort, this world can be terraformed to be made habitable again."
+
+ #COVENANT COLOSSUS GLASSING 
+ 
+ tech_pk_covenant_superheavy_excavation_beam: "Excavation Beams"
+ tech_pk_covenant_superheavy_excavation_beam_desc: "This form of glassing uses the most powerful energy projectors linked directly to a ship's main reactor to excavate planetary sites for ancient artifacts or to glass entire planets at full power."
+ 
+ PLANET_KILLER_COVENANT_EXCAVATION_BEAM: "Lux-pattern Superheavy Excavation Beam Array"
+ PLANET_KILLER_COVENANT_EXCAVATION_BEAM_DESC: "A massive energy projector that is linked directly to the main reactor of a warship capable of glassing the surface of an entire planet."
+ 
+ PLANET_KILLER_COVENANT_EXCAVATION_BEAM_ACTION: "Glass"
+ 
+ covenant_excavation_weapon_target: "Excavation Beam Target"
+ 
+ covenant_excavation_weapon.301.name: "Planet Cleansed"
+ covenant_excavation_weapon.301.desc: "The [From.From.GetName] has completed glassing operations. The entire world has been cleansed of heretics. Purified by holy fire..."
+ covenant_excavation_weapon.301.tooltip: "Planet has turned into a §YGlassed Planet§! killing all life and rendering this world into a molten hellscape."
+ covenant_excavation_weapon.301.a.purifexter: "Cleansed in Holy Fire."
+ 
+ FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_COVENANT_EXCAVATION_BEAM: "Preparing to glass $PLANET|Y$"
+ 
+ MESSAGE_DESC_FOR_PLANET_KILLER_COVENANT_EXCAVATION_BEAM: "was glassed by"
+ 
+ apoc.110.covenant_excavation_beam.tooltip: "§RPlanet-Killer Weapon§!:\n§L$PLANET_KILLER_COVENANT_EXCAVATION_BEAM_DESC$§!"
+ 
+
+
+ #COVENANT WEAPONS 
+ 
+ covenant_start.6.name: "Covenant Technology Start"
+ covenant_start.6.desc: "Start the game with all Covenant utility and weapons technology unlocked, utility technology only, or starting covenant weaponry? These technology components are intended for use in the late game which will give your empire a substantial advantage early on. If not, then you can still research this technology later."
+ covenant_start.6.a: "§BYes, start the game with all Covenant-themed weapons and technology§!"
+ covenant_start.6.b: "§GYes, start the game with starting Covenant weapons only§!"
+ covenant_start.6.c: "§YYes, start the game with Covenant ship utility tech and armies only§!"
+ covenant_start.6.d: "§RNone§!"
+ 
+ #SHIP TECHNOLOGY 
+ 
+ tech_covenant_ai: "Covenant AI"
+ tech_covenant_ai_desc: "Due to their religious stigma against artificial intelligence, most Covenant AI are heavily restricted functioning as 'dumb' AIs designed to perform mundane tasks within the fleet or logistical networks."
+ 
+ tech_covenant_battle_net: "Covenant Battle Network"
+ tech_covenant_battle_net_desc: "Known as the proselytization network, this form of communication is used to allow instantaneous contact between units, vessels, and planets. The network can be used for domestic, religious, and military functions."
+ 
+ tech_covenant_strike_craft: "Covenant Strike Craft"
+ tech_covenant_strike_craft_desc: "An array of Covenant-designed space fighter strike craft useful for interception and bombing. These shielded strikecraft are armed with an array of plasma weaponry."
+ 
+ tech_covenant_pulse_lasers: "Covenant Pulse Laser Emitters"
+ tech_covenant_pulse_lasers_desc: "Covenant directed-energy point-defense weapons that fire rapid beams of lasers to intercept enemy strike craft and inbound projectile weapons."
+ 
+ tech_covenant_plasma_cannons: "Covenant Plasma Cannons"
+ tech_covenant_plasma_cannons_desc: "Covenant plasma weapons that fire magnetically-contained superheated plasma bolts at enemy targets. Effective against shields and armor."
+ 
+ tech_covenant_plasma_torpedoes: "Covenant Plasma Torpedoes"
+ tech_covenant_plasma_torpedoes_desc: "Covenant plasma weapon that fires a plasma bolt guided by shaped magnetic fields. Highly effective at boiling armor or overloading shields."
+ 
+ tech_covenant_plasma_beams: "Covenant Plasma Beams"
+ tech_covenant_plasma_beams_desc: "Directed-energy weapons that employ the use of gravitic impellers and magnetic lensing to accelerate, focus and direct beams of high-intensity plasma generated by a ship's reactor."
+ 
+ tech_covenant_energy_projectors: "Covenant Energy Projectors"
+ tech_covenant_energy_projectors_desc: "Large directed-energy weapons that employ the use of gravitic impellers and magnetic lensing to accelerate, focus and direct beams of high-intensity plasma generated by a ship's reactor creating a more powerful beam of energy that can easily pierce through armor and hull."
+ 
+ tech_covenant_heavy_energy_projectors: "Covenant Heavy Energy Projectors"
+ tech_covenant_heavy_energy_projectors_desc: "Large directed-energy weapon that fires tightly-focused streams of plasma at an enemy target."
+ 
+ tech_covenant_superheavy_energy_projectors: "Covenant Superheavy Energy Projectors"
+ tech_covenant_superheavy_energy_projectors_desc: "Massive long-range energy projector that fires a more tightly-focused stream of plasma to slice through enemy targets."
+ 
+ #STRIKE CRAFT 
+ COVENANT_BANSHEE_STRIKE_CRAFT: "Elsedda-pattern Banshee Strike Craft"
+ COVENANT_BANSHEE_STRIKE_CRAFT_DESC: "Exoatmospheric variant of the Type-26 Banshee, this nimble fighter serves as the standard interceptor support craft of the Covenant fleet. Armed with two rapid-fire heavy plasma cannons. Although unshielded and fragile, they form larger squadrons to compensate."
+ 
+ COVENANT_SERAPH_STRIKE_CRAFT: "Morsarn-pattern Seraph Strike Craft"
+ COVENANT_SERAPH_STRIKE_CRAFT_DESC: "Heavy strike fighters armed with an array of plasma weaponry and cannons. They serve as space-superiority fighters and bombers for the Covenant fleet."
+ 
+ #LARGE ENERGY PROJECTOR
+
+ COVENANT_ENERGY_PROJECTOR: "Covenant Energy Projector"
+ COVENANT_ENERGY_PROJECTOR_DESC: "Directed-energy weapon that fires tightly-focused streams of plasma at an enemy target."
+ 
+ LARGE_COVENANT_ENERGY_PROJECTOR: "Ignis-pattern Plasma Lance"
+ 
+ #EXTRA LARGE ENERGY PROJECTOR 
+ COVENANT_XL_ENERGY_PROJECTOR: "Covenant Heavy Energy Projector"
+ COVENANT_XL_ENERGY_PROJECTOR_DESC: "Large directed-energy weapon that fires tightly-focused streams of plasma at an enemy target."
+ 
+ EXTRA_LARGE_COVENANT_ENERGY_PROJECTOR: "Ventrax-pattern Heavy Plasma Lance"
+ 
+ #TITAN ENERGY PROJECTOR 
+ 
+ COVENANT_TITAN_ENERGY_PROJECTOR: "Covenant Superheavy Energy Projector"
+ COVENANT_TITAN_ENERGY_PROJECTOR_DESC: "Massive long-range energy projector that fires a more tightly-focused stream of plasma to slice through enemy targets."
+ 
+ TITANIC_COVENANT_ENERGY_PROJECTOR: "Urpeon-pattern Superheavy Plasma Lance"
+ 
+ #PLASMA TORPEDOS
+ 
+ COVENANT_PLASMA_TORPEDO: "Covenant Plasma Torpedo"
+ COVENANT_PLASMA_TORPEDO_DESC: "Covenant plasma weapon that fires a plasma bolt guided by shaped magnetic fields. Highly effective at boiling armor or overloading shields."
+ 
+ SMALL_COVENANT_PLASMA_TORPEDO: "Jaet-pattern Plasma Torpedo"
+ MEDIUM_COVENANT_PLASMA_TORPEDO: "Serpens-pattern Plasma Torpedo"
+ LARGE_COVENANT_PLASMA_TORPEDO: "Qur-pattern Plasma Torpedo"
+ 
+ COVENANT_HEAVY_PLASMA_TORPEDO: "Covenant Heavy Plasma Torpedo"
+ COVENANT_HEAVY_PLASMA_TORPEDO_DESC: "Covenant heavy plasma weapon that fires a massive plasma bolt guided by shaped magnetic fields. Slow, but highly destructive against any target."
+ 
+ HEAVY_COVENANT_PLASMA_TORPEDO: "Mictix-pattern Heavy Plasma Torpedo"
+ 
+ #PLASMA CANNONS
+ 
+ COVENANT_PLASMA_CANNON: "Covenant Plasma Cannon"
+ COVENANT_PLASMA_CANNON_DESC: "Covenant plasma weapons that fire magnetically-contained superheated plasma bolts at enemy targets. Effective against shields and armor."
+ 
+ SMALL_COVENANT_PLASMA_CANNON: "Gaff Naran-pattern Plasma Cannon"
+ MEDIUM_COVENANT_PLASMA_CANNON: "Sono-pattern Plasma Cannon"
+ LARGE_COVENANT_PLASMA_CANNON: "Melusean-pattern Heavy Plasma Cannon"
+ 
+ #PLASMA BEAMS 
+ 
+ COVENANT_PLASMA_BEAM: "Covenant Plasma Beam"
+ COVENANT_PLASMA_BEAM_DESC: "Covenant directed-energy weapons that fire a stream of plasma at a directed target."
+ 
+ SMALL_COVENANT_PLASMA_BEAM: "Enteros-pattern Plasma Beam"
+ MEDIUM_COVENANT_PLASMA_BEAM: "Aljordan-pattern Plasma Beam"
+ 
+ #PULSE LASER TURRETS 
+ COVENANT_PULSE_LASER_TURRET: "Covenant Pulse Laser Turret"
+ COVENANT_PULSE_LASER_TURRET_DESC: "Covenant directed-energy point-defense weapons that fire rapid beams of lasers to intercept enemy strike craft and inbound projectile weapons."
+ 
+ COVENANT_PULSE_LASER_TURRET_PD: "Gon-pattern Pulse Laser Turret"
+ COVENANT_PULSE_LASER_TURRET_PD_2: "R'aka-pattern Rapid Pulse Laser Turret"
+ 
+ #COVENANT UTILITIES 
+ 
+ #TECHNOLOGY 
+ tech_covenant_start_1: "Covenant Technology"
+ tech_covenant_start_1_desc: "Technology used by the Covenant and its Remnant factions."
+ 
+ tech_covenant_armor: "Nanolaminate Armor"
+ tech_covenant_armor_desc: "Starship-grade opalescent armor that is resilient to physical damage and extremely heat resistant."
+ 
+ tech_covenant_shields: "Dispersal Field Generators"
+ tech_covenant_shields_desc: "Advanced defensive technology that use energized particles to envelop objects within a protective field."
+ 
+ tech_covenant_slipspace_drive: "Borer Slipspace Technology"
+ tech_covenant_slipspace_drive_desc: "Slipspace technology capable of making transitions to and from slipstream space."
+
+ tech_covenant_reactor: "Pinch Fusion"
+ tech_covenant_reactor_desc: "Nuclear fusion reactors that use deuterium and tritium as fuel, replicating the conditions inside the core of a star to generate enormous amounts of plasma and power."
+ 
+ tech_covenant_thrusters: "Repulsor Drives"
+ tech_covenant_thrusters_desc: "Diametric drive for sublight navigation. Repulsor engines use stacked tidal gravity generators that create asymmetrical gravity fields that push and pull a ship through space in a desired vector, all without the need for reaction mass or conventional exhaust."
+ 
+ tech_covenant_sensors: "Augur Array"
+ tech_covenant_sensors_desc: "Covenant sensor-based technology to assist in both weapon systems targeting and system scanning typically used for divining and artifact reclamation."
+ 
+ #ARMOR
+ 
+ COVENANT_NANOLAMINATE_ARMOR: "Nanolaminate Armor"
+ COVENANT_NANOLAMINATE_ARMOR_DESC: "Starship-grade opalescent armor that is resilient to physical damage and extremely heat resistant."
+ 
+ SMALL_COVENANT_NANOLAMINATE_ARMOR: "Small Nanolaminate Armor"
+ MEDIUM_COVENANT_NANOLAMINATE_ARMOR: "Medium Nanolaminate Armor"
+ LARGE_COVENANT_NANOLAMINATE_ARMOR: "Large Nanolaminate Armor"
+ 
+ #ENERGY SHIELDS 
+ 
+ COVENANT_ENERGY_SHIELD: "Covenant Energy Shield"
+ COVENANT_ENERGY_SHIELD_DESC: "Highly resilient energy shield capable of absorbing a large amount of fire and can recharge quickly."
+ 
+ SMALL_COVENANT_ENERGY_SHIELD: "Small Covenant Energy Shield"
+ MEDIUM_COVENANT_ENERGY_SHIELD: "Medium Covenant Energy Shield"
+ LARGE_COVENANT_ENERGY_SHIELD: "Large Covenant Energy Shield"
+ 
+ #SENSORS 
+ 
+ COVENANT_SENSOR_VANES: "Sensor Vanes"
+ COVENANT_SENSOR_VANES_DESC: "Sensor technology employed by the Covenant both capable of system scanning and improving weapon targeting arrays."
+ 
+ TECH_UNLOCK_COVENANT_SENSOR_VANES_TITLE: "§HUnlocks Component:§! $COVENANT_SENSOR_VANES$"
+ TECH_UNLOCK_COVENANT_SENSOR_VANES_DESC: "§H$COVENANT_SENSOR_VANES$§!\n$COVENANT_SENSOR_VANES_DESC$"
+ 
+ #PINCH FUSION REACTORS 
+ 
+ COVENANT_PINCH_FUSION_REACTOR: "Pinch Fusion Reactor"
+ COVENANT_PINCH_FUSION_REACTOR_DESC: "Nuclear fusion reactors that use deuterium and tritium as fuel, replicating the conditions inside the core of a star to generate enormous amounts of plasma and power."
+
+ CORVETTE_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ DESTROYER_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ CRUISER_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ BATTLESHIP_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ TITAN_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ PLATFORM_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ STARBASE_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ ION_CANNON_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ 
+ TECH_UNLOCK_COVENANT_REACTOR_TITLE: "§HUnlocks Component:§! $COVENANT_PINCH_FUSION_REACTOR$"
+ TECH_UNLOCK_COVENANT_REACTOR_DESC: "§H$COVENANT_PINCH_FUSION_REACTOR$§!\n$COVENANT_PINCH_FUSION_REACTOR_DESC$"
+ 
+ #NSC REACTORS
+ STRIKECRUISER_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ BATTLECRUISER_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ CARRIER_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ DREADNOUGHT_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ FLAGSHIP_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ FORTRESS_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ CITADEL_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ XL_CANNON_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ STATION_COVENANT_REACTOR: "Pinch Fusion Reactor"
+ 
+ 
+ 
+ 
+ #FTL DRIVE 
+ 
+ COVENANT_SLIPSPACE_DRIVE: "Ophon-pattern Borer"
+ COVENANT_SLIPSPACE_DRIVE_DESC: "Slipspace technology capable of making transitions to and from slipstream space."
+
+ #THRUSTERS 
+ 
+ COVENANT_REPULSOR_ENGINE: "Repulsor Engine"
+ COVENANT_REPULSOR_ENGINE_DESC: "Diametric drive used for sublight navigation and configured for swift and agile localized transit."
+
+ CORVETTE_COVENANT_THRUSTERS: "Repulsor Engine"
+ DESTROYER_COVENANT_THRUSTERS: "Repulsor Engine"
+ CRUISER_COVENANT_THRUSTERS: "Repulsor Engine"
+ BATTLESHIP_COVENANT_THRUSTERS: "Repulsor Engine"
+ TITAN_COVENANT_THRUSTERS: "Repulsor Engine"
+ COLOSSUS_COVENANT_THRUSTERS: "Repulsor Engine"
+ 
+ TECH_UNLOCK_COVENANT_THRUSTERS_TITLE: "§HUnlocks Component:§! $COVENANT_REPULSOR_ENGINE$"
+ TECH_UNLOCK_COVENANT_THRUSTERS_DESC: "§H$COVENANT_REPULSOR_ENGINE$§!\n$COVENANT_REPULSOR_ENGINE_DESC$"
+ 
+ 
+ #NSC THRUSTERS
+ STRIKECRUISER_COVENANT_THRUSTERS: "Repulsor Engine"
+ BATTLECRUISER_COVENANT_THRUSTERS: "Repulsor Engine"
+ CARRIER_COVENANT_THRUSTERS: "Repulsor Engine"
+ DREADNOUGHT_COVENANT_THRUSTERS: "Repulsor Engine"
+ FLAGSHIP_COVENANT_THRUSTERS: "Repulsor Engine"
+ FORTRESS_COVENANT_THRUSTERS: "Repulsor Engine"
+ CITADEL_COVENANT_THRUSTERS: "Repulsor Engine"
+ XL_CANNON_COVENANT_THRUSTERS: "Repulsor Engine"
+ STATION_COVENANT_THRUSTERS: "Repulsor Engine"
+ 
+
+ #COVENANT GOVERNMENTS 
+
+ gov_covenant_hegemony: "Covenant Hegemony"
+ gov_covenant_hegemony_desc: "A massive religious hegemony of multiple alien species formed from a mutual alliance between the first two founding species. This government is ruled by the Hierarchs, also known as the High Prophets, influential theocratic leaders in the High Council." 
+ 
+ RT_HIERARCH: "Hierarch"
+ RT_HIERARCH_FEMALE: "Hierarch"
+ 
+ gov_covenant_remnant: "Covenant Remnant"
+ gov_covenant_remnant_desc: "A splinter faction from the former Covenant body. Although these factions vary greatly in ethos and motives, they still consider themselves upholding the legacy of the Covenant Empire."
+ 
+ RT_SUPREME_LEADER: "Supreme Leader"
+ RT_SUPREME_LEADER_FEMALE: "Supreme Leader"
+ 
+ gov_kaidon_council: "Council of Kaidons"
+ gov_kaidon_council_desc: "An advisory body of Sangheili Kaidons that advise the Arbiter, their greatest warrior and Head of State. Each Kaidon is a powerful meritocratic lord that rules over a Sangheili city-state chosen by a council of elders from their state."
+ 
+ RT_ARBITER: "Arbiter"
+ RT_ARBITER_FEMALE: "Arbiter"
+ 
+ personality_covenant_ai: "Imperialist Zealots"
+ personality_covenant_ai_desc: "Like evangelizing zealots, a imperialist zealots seek to spread their faith across all corners of the galaxy. Although they are eager integrate other species within their ranks, they will also attempt to subjugate or force other empires into submission should they resist."
+ 
+ personality_storm_covenant_ai: "Religious Fanatics"
+ personality_storm_covenant_ai_desc: "Religious Fanatics are empires that are fanatically devoted to spread their faith to all species by force if necessary. They are less likely to make agreements with other empires and seek to dominate them and force their religion upon them."
+ 
+ personality_swords_of_sanghelios_ai: "Former Zealots"
+ personality_swords_of_sanghelios_ai_desc: "Former Zealots are honorbound warriors that have just recently discarded their religion after experiencing a crisis of faith in favor of creating a more honorable society. They remain an aggressive warrior culture but are more willing to seek out friendly relations with other empires should the need arise." 
+ 
+ covenant_empire: "Covenant"
+ covenant_empire_desc: "Creatures of the Covenant"
+ covenant_empire_plural: "Covenant"
+ covenant_empire_insult_01: "vile beast"
+ covenant_empire_plural_01: "vile beasts"
+ covenant_empire_compliment_01: "holy Covenant"
+ covenant_empire_compliment_plural_01: "holy Covenant"
+ covenant_empire_spawn: "youngling"
+ covenant_empire_spawn_plural: "younglings"
+ covenant_empire_sound_01: "growling"
+ covenant_empire_sound_02: "grunting"
+ covenant_empire_sound_03: "yapping"
+ covenant_empire_sound_04: "yowling"
+ covenant_empire_sound_05: "mewling"
+ covenant_empire_organ: "stomach"
+ covenant_empire_mouth: "mouth"
+ covenant_empire_hand: "claw"
+ 
+ promethean_knight: "Promethean"
+ promethean_knight_desc: "AI Constructs built by the Forerunners"
+ promethean_knight_adj: "Prometheans"
+ promethean_knight_plural: "Promethean"
+ promethean_knight_insult_01: "soulless machine"
+ promethean_knight_insult_plural_01: "soulless machines" 
+ promethean_knight_compliment_01: "guardian of the Mantle"
+ promethean_knight_compliment_plural_01: "guardians of the Mantle"
+ promethean_knight_spawn: "construct"
+ promethean_knight_spawn_plural: "constructs"
+ promethean_knight_sound_01: "whirring"
+ promethean_knight_sound_02: "clanging"
+ promethean_knight_sound_03: "scraping"
+ promethean_knight_sound_04: "beeping"
+ promethean_knight_sound_05: "chattering"
+ promethean_knight_organ: "personality construct array"
+ promethean_knight_mouth: "vocal processor"
+ promethean_knight_hand: "blades"
+ 
+ huragok: "Huragok"
+ huragok_desc: "A bio-mechanical lifeform created by the Forerunners."
+ huragok_plural: "Huragok"
+ huragok_adj: "Huragok"
+ huragok_insult_01: "gas bag"
+ huragok_insult_plural_01: "gas bags" 
+ huragok_compliment_01: "artificial genius"
+ huragok_compliment_plural_01: "artificial geniuses"
+ huragok_spawn: "replica"
+ huragok_spawn_plural: "replicas"
+ huragok_sound_01: "whirring"
+ huragok_sound_02: "yelping"
+ huragok_sound_03: "squeaking"
+ huragok_sound_04: "whistling"
+ huragok_sound_05: "chattering"
+ huragok_organ: "gas-bladders"
+ huragok_mouth: "vocal cords"
+ huragok_hand: "tentacle"
+ 
+ 
+ name_list_cov_sanshyuum: "San'Shyuum"
+ name_list_cov_sangheili: "Sangheili"
+ name_list_cov_jiralhanae: "Jiralhanae"
+ name_list_cov_mgalekgolo: "Mgalekgolo"
+ name_list_cov_unggoy: "Unggoy"
+ name_list_cov_kigyar: "Kig-Yar"
+ name_list_cov_storm: "Sangheili Storm"
+ name_list_promethean: "Promethean"
+ name_list_huragok: "Huragok"
+ 
+ covenant_space_init_NAME: "Covenant Space"
+ covenant_space_init_DESC: "Start on Janjur; the homeworld of the San'Shyuum and center of the Covenant Empire. This initializer includes Covenant pops on Sanghelios (Elites), Te (Hunters), Balaho (Grunts), Eayn (Jackals), Doisac (Brutes), and Palamok (Drones)."
+ 
+ post_war_covenant_space_init_NAME: "Post-War Covenant Space"
+ post_war_covenant_space_init_DESC: "Start on Sanghelios; the homeworld of the Sangheili after the dissolution of the Covenant Empire and the formation of the Swords of Sanghelios."
+ 
+ post_war_covenant_space_nopop_init_NAME: "Post-War Covenant Space (No pops)"
+ post_war_covenant_space_nopop_init_DESC: "Start on Sanghelios; the homeworld of the Sangheili after the dissolution of the Covenant Empire and the formation of the Swords of Sanghelios."
+ 
+ covenant_space_nopop_init_NAME: "Covenant Space (No pops)"
+ covenant_space_nopop_init_DESC: "Start on Janjur; the homeworld of the San'Shyuum species and center-point of the Covenant. This initializer has no Covenant pops on neighboring planets."
+ 
+ high_charity_init_NAME: "High Charity (Origin)"
+ high_charity_init_DESC: "Start on High Charity, the holy capital city of the Covenant. This initializer includes Covenant pops on neighboring worlds."
+ 
+ high_charity_nopop_init_NAME: "High Charity (No Pops)"
+ high_charity_nopop_init_DESC: "Start on High Charity, the holy capital city of the Covenant. This initializer has no Covenant pops on neighboring worlds."
+ 
+ high_charity_standalone_init_NAME: "High Charity Station"
+ high_charity_standalone_init_DESC: "Start on High Charity, the holy capital city of the Covenant."
+ 
+ 
+ trait_pc_high_charity_preference_NAME: "Continental Preference"
+ trait_pc_high_charity_preference_DESC: "Covenant thralls on this artificial station prefer a temperate preference."
+ 
+ FLAG_CATEGORY_covenant: "Covenant"
+ 
+ #ORIGINS
+ 
+ origin_halo_covenant: "Covenant Hegemony"
+ origin_halo_covenant_desc: "The founding members of the Covenant. Start the game with each representative species in the Covenant Empire. This includes the Sangheili, Mgalekgolo, Kig-Yar, Unggoy, Jiralhanae, Yanme'e, and Huragok. Recommend taking San'shyuum as your main species."
+ origin_tooltip_halo_covenant_effects: "- Homeworld is on §Y$pc_high_charity$§! (size: £planetsize£ §Y20§!).\n\n- Start with a §YLuminary Relic§! that can be used to uncover §YForerunner Deposits§! on habitable worlds within your empire."
+ 
+ START_SCREEN_PART_ONE_HALO_COVENANT_ORIGIN: "Regarding the history of the Covenant and its glorious founding species the San'Shyuum and Sangheili.\n\nLong before the Covenant, the Sangheili ruled their world with pride and vigilance.\n\nWhen we arrived on one of their frontier worlds, the cost of life was severe.\n\nThe Sangheili resisted our entreatment with ruthless force, leading to decades of ruthless war.\n\nWe would eventually triumph of course and when we did, we did not ignore their potential.\n\nIn time, the Sangheili have become the very will of the prophets.\n\nFrom this holy arrangement, we appointed ourselves over matters of religion and technology while the Sangheili led our military forces to convert new species and uncover other holy relics that will lead us along the path of the Great Journey\n\nEvery member of the Covenant shall walk the Path.\n\nNone will be left behind when our Great Journey begins!\n\nThat is the Prophets' age-old promise, and it shall be fulfilled!"
+ 
+ origin_halo_covenant_remnants: "Covenant Remnants"
+ origin_halo_covenant_remnants_desc: "Splinter factions originating from the former Covenant Empire that still believe in upholding the legacy of the Covenant and their version of the Great Journey."
+ origin_tooltip_halo_covenant_remnants_effects: "Start with several Covenant member species on your starting homeworld.\n\n-Due to their fractured state, this origin will have a moderate penalty towards empire sprawl.\n\n-Recommend taking Sangheili as your main species."
+ 
+ START_SCREEN_PART_ONE_COVENANT_REMNANTS_ORIGIN: "We are what remains of the Covenant\n\nFor too long we faithful have served under the will of the Prophets.\n\nNo more...\n\nWe are the true believers of the Great Journey.\n\nThe chosen few that will burn away the hypocrisy and heretical filth that plagues this galaxy as we transcend into the divine beyond!"
+ 
+ START_SCREEN_PART_ONE_SANGHEILI_ORIGIN: "One the blood of our fathers, on the blood of our sons.\n\nSince the founding of the Covenant, our warriors served under the will of the Prophets. We have thrown away our traditions, history, and honor all for the Great Journey.\n\nWe were wrong...\n\nThe Great Journey is a lie and the Prophets will pay for their betrayal in blood!\n\nWe are the Swords of Sanghelios, an ancient title of honor expressing the nobility of our cause: the unification of the Sangheili people.\n\nOther members of the Covenant have asked to join us in rebuilding this new government free of the influence of the Prophets. We agreed.\n\nOur mighty Arbiter, a title that once was a mark of shame has now been restored among our people as a title of honor and distinction. Now the Arbiter leads our efforts in uniting the fractured Keeps to become whole once more!"
+ 
+ 
+ #############
+ #High Charity
+ #############
+ 
+ civic_covenant_hegemony: "Writ of Union"
+ civic_covenant_hegemony_desc: "The founding charter of, and the oath of service to, the Covenant between the Reformist San'Shyuum and the Sangheili. All must walk the path of the Great Journey."
+ civic_covenant_hegemony_tooltip_effects: "Pop Growth from Immigration: §G+15%§!\nUnity Production from Jobs: §R+10%§!\nEdict Cost: §R-15%§!\nLeader Pool Size: §G+4§!\n."
+ 
+ civic_storm_covenant: "Didact's Hand"
+ civic_storm_covenant_desc: "A splinter faction of zealots that continue to worship the forerunners even after the fall of the Covenant. Mostly regarded more as a terrorist organization or religious cult than an empire."
+ 
+ civic_swords_of_sanghelios: "Swords of Sanghelios"
+ civic_swords_of_sanghelios_desc: "Another splinter faction from the Covenant led by the Arbiter on Sanghelios. This Sangheili faction is a secular and meritocratic warrior society."
+ 
+ forerunner_dreadnought: "Anodyne Spirit"
+ forerunner_dreadnought_desc: "An ancient Forerunner keyship originally discovered by the San'Shyuum on their homeworld and moved to High Charity to serve as its main power source for the mobile capital. The ship has now become a centerpiece of not only this station, but to Covenant religion as a whole and represents a unifying symbol for all Covenant members across their empire."
+ 
+ covenant_holy_capital: "Holy Capital City"
+ covenant_holy_capital_desc: "High Charity is home to a number of client races and species across the empire. Many members venture to the holy city at least once during their pilgrimages."
+ 
+ pc_high_charity_tile: "Covenant City"
+ pc_high_charity_tile_desc: "Urban Sprawl of High Charity."
+ pc_high_charity: "High Charity"
+ pc_high_charity_desc: "A massive artificial station and mobile holy city capital of the Covenant Empire."
+ high_charity: "High Charity"
+ high_charity_desc: "A massive artificial station and mobile holy city capital of the Covenant Empire."
+ 
+ pc_invisible_star: "Deep Space"
+ pc_invisible_star_desc: "In-between stellar bodies lies the void of space."
+ 
+ trait_pc_high_charity_preference: "Sterile Preference"
+ trait_pc_high_charity_preference_desc: "Climate preference for controlled environments such as space stations or installations."
+ 
+ building_cov_province: "High Charity Grand Estates"
+ building_cov_province_desc: "The vast regions of High Charity's urban landscape contain thousands of habitats and districts for all Covenant races."
+ 
+ building_cov_sanctum: "High Council Chamber"
+ building_cov_sanctum_desc: "A massive hall within the holy city of High Charity where only high-ranking members of the Covenant are ever allowed inside. The building contains massive chambers where the Covenant High Council meet to discuss matters of policy and discipline among the Covenant." 
+ 
+ ###################
+ #PLANETARY FEATURES
+ ###################
+ 
+ d_mausoleum_of_the_arbiter: "Mausoleum of the Arbiter"
+ d_mausoleum_of_the_arbiter_desc: "A massive chamber within High Charity that houses the remains of the previous Arbiters, a title once held by the greatest of Sangheili leaders. Recently, the title of Arbiter has became a mark of shame for disgraced Sangheili to reclaim their honor in the service of the Hierarchs until their untimely demise."
+ 
+ d_inner_sanctum: "Sanctum of the Hierarchs"
+ d_inner_sanctum_desc: "The private quarters of the High Prophets on High Charity restricted only to the Sanshyuum and high-ranking Sangheili Councilors or officers."
+ 
+ d_shard_chamber: "Shard Chamber"
+ d_shard_chamber_desc: "A massive chamber within the sanctum ornamented with shards of smooth glass from all the worlds glassed by the Covenant."
+ 
+ d_garden_of_reverent_contemplation: "Garden of Reverent Contemplation"
+ d_garden_of_reverent_contemplation_desc: "A chamber dedicated to the High Prophet of Truth and a place of thought and worship for the devout."
+ 
+ d_valley_of_tears: "Valley of Tears"
+ d_valley_of_tears_desc: "A large natural environment module located between the towers near the edge of the city's main dome." 
+ 
+ d_hanging_gardens: "Hanging Gardens"
+ d_hanging_gardens_desc: "Several natural environment modules within High Charity that were suspended in mid-air and consisting of natural features such as a flowing artificial river, soil and plant life, and a series of ramps and walkways."
+ 
+ d_assembly_forges: "Assembly Forges"
+ d_assembly_forges_desc: "A large manufacturing facility that uses clouds of programmable nanomachines to create war materiel and other alloys or goods."
+ 
+ d_trial_court_for_tools_of_conquest: "Trial Court for Tools of Conquest"
+ d_trial_court_for_tools_of_conquest_desc: "An advanced weapons testing facility on High Charity including the chamber of Gravitational Refinement used for gravity manipulation."
+ 
+ d_holding_chambers: "Holding Chambers"
+ d_holding_chambers_desc: "A series of holding cells or pens within High Charity that keep thousands of convicts, traitors, and prisoners of war." 
+ 
+ d_forerunner_dreadnought: "Forerunner Dreadnought"
+ d_forerunner_dreadnought_desc: "The power core within the Forerunner Keyship provides power for every district, system, and province on High Charity."
+ 
+ forerunner_dreadnought_upkeep_desc: "The §Y$d_forerunner_dreadnought$§! will apply power to supply the upkeep for this segment."
+ 
+ d_sanghelios_ruins: "Ruins of Nuusra"
+ d_sanghelios_ruins_desc: "Located on the continent of Qivro on Sanghelios, these structures were built thousands of years ago detailing the ancient heritage of the Sangheili."
+ 
+ d_sanghelios_sunaion: "Sunaion City"
+ d_sanghelios_sunaion_desc: "A Sangheili city located on the continent of Qivro on Sanghelios. After a Forerunner Guardian was discovered in the Csurdon Sea off the Nuusra coastlines, the ancient Sangheili later built this city over the water near the it to serve as a temple to worship the Forerunner machine."
+ 
+ d_suban_sangheili_city: "Uka'Pala"
+ d_suban_sangheili_city_desc: "A region on Suban which contains several Sangheili population centers, major industrial sites, and many significant armories on the moon."
+ 
+ d_suban_spire_of_miatistina: "Spire of Miatistina"
+ d_suban_spire_of_miatistina_desc: "A prominent Sangheili cultural site that has long-served as a clandestine reminder of Sangheili faith and a confluence point between the wills of the ancient gods and the celestial namesakes Urs, Fied, and Joori."
+ 
+ d_te_lekgolo_colony: "Lekgolo Colony"
+ d_te_lekgolo_colony_desc: "A large colony of Lekgolo worms inhabit the underground caverns of this moon."
+ 
+ ##############
+ #Janjur System
+ ##############
+ janjur_qom_init_NAME: "Qom Yaekesh System"
+ janjur_qom_init_DESC: "Start on Janjur Qom; the secretly-coveted homeworld of the San'Shyuum."
+ 
+ ###########
+ #Urs System
+ ###########
+ urs_init_NAME: "Urs System"
+ urs_init_DESC: "Start on Sanghelios; the homeworld of the Sangheili warrior race."
+ 
+ subanese_crystal: "Subanese Crystals"
+ subanese_crystal_desc: "Also known as Blamite is a unique resource found exclusively on Suban. These crystals have special explosive properties that makes them highly valuable for military use."
+ 
+ merchants_of_qikost: "Merchants of Qikost"
+ merchants_of_qikost_desc: "Located in many of the large industrial and population centers on Qikost, the Merchants of Qikost are a group of Sangheili merchants that forge war materiel for the Sangheili and later the Covenant."
+ 
+ forerunner_structures: "Forerunner Technology"
+ forerunner_structures_desc: "Scattered technology left behind by the enigmatic Forerunners, a hyper-advanced civilization that existed over 100,000 cycles. Many sentient species worship them as gods, forming religions around their technological marvels while others seek to unlock their true potential."
+ 
+ pc_suban: "Molten Moon"
+ pc_suban_desc: "A large natural satellite that contains rich ore and minerals."
+ 
+ 
+ ############
+ #Svir System
+ ############
+ te_init_NAME: "Svir System"
+ te_init_DESC: "Start on the moon of Te; the inhospitable homeworld of the Lekgolo."
+ 
+ ##############
+ #Y'Deio System
+ ##############
+ eayn_init_NAME: "Y'Deio System"
+ eayn_init_DESC: "Start on Eayn; the seedy homeworld of the Kig-Yar."
+ 
+ ############
+ #Tala System
+ ############
+ balaho_init_NAME: "Tala System"
+ balaho_init_DESC: "Start on Balaho; the desolate homeworld of the Unggoy."
+ 
+ #################
+ #Oth Sonin System
+ #################
+ doisac_init_NAME: "Oth Sonin System"
+ doisac_init_DESC: "Start on Doisac; the savage homeworld of the Jiralhanae."
+ 
+ ##############
+ #Napret System
+ ##############
+ palamok_init_NAME: "Napret System"
+ palamok_init_DESC: "Start on Palamok; the homeworld of the Yanme'e hive."
+ 
+ 
+ ##############
+ #Aspero System
+ ##############
+ 
+ hesduros_init_NAME: "Aspero System"
+ hesduros_init_DESC: "Start on Hesduros; an old Sangheili colony and birthplace of Jul'Mdama's Covenant."
+ 
+ ############
+ #Te System
+ ############
+ pc_te: "Habitable Moon"
+ pc_te_desc: "A moon that is capable of sustaining life."
+ 
+ trait_pc_te_preference: "Te Preference"
+ trait_pc_te_preference_desc: "Habitable moon preference."
+ 
+ te_forerunner_structures: "Abandoned Forerunner Structures"
+ te_forerunner_structures_desc: "Although the moons of Te appear inhospitable on the surface, beneath the barren rock lie vast caverns and interconnected tunnels that the Lekgolo created to house their species. Forerunner structures are also present on the moon including the destroyed remnants of a forerunner installation which created the artificial ring around gas giant."
+ 
+ ###########
+ # TEMP
+ ###########
+ trait_sanshyuum_species: "San'Shyuum"
+ trait_sanshyuum_species_desc: "An intelligent and manipulative species from the planet Janjur Qom that have exerted control and influence within the Covenant for a millennia as one of its oldest founders. They revere Forerunner technology as sacred and divine." 
+ 
+ trait_jiralhanae_species: "Jiralhanae"
+ trait_jiralhanae_species_desc: "A large carnivorous and savage species from the planet Doisac. Jiralhanae are highly aggressive and prone to be hostile and territorial around other species. However, they often form strong bonds with other Jiralhanae in their pack."
+ 
+ trait_mgalekgolo_species: "Lekgolo/Mgalekgolo"
+ trait_mgalekgolo_species_desc: "A gestalt race of worm-like creatures that combine to form large and more powerful assemblages called Mgalekgolo."
+
+ trait_kigyar_species: "Kig-Yar"
+ trait_kigyar_species_desc: "A race of saurians known for their heightened senses and marksmanship as well as their constant tendency for piracy and mercenary work." 
+ 
+ trait_unggoy_species: "Unggoy"
+ trait_unggoy_species_desc: "A race of bipedal xeno-anthropodal vertebroids, Unggoy are sapient but inept, poor soldiers, and are often cowardly. However, they make up for their deficiencies in sheer tenacity and large numbers. Used as fodder for the Covenant."
+ 
+ trait_yanmee_species: "Yanme'e"
+ trait_yanmee_species_desc: "An insectoid flight-capable hive-minded race from the planet Palamok that serve as worker drones within the Covenant hierarchy. They are also used as aerial support."
+ 
+ trait_sangheili_species: "Sangheili"
+ trait_sangheili_species_desc: "A saurian warrior race from Sanghelios known for their martial culture and becoming one of founding members of the Covenant. In the Covenant, they revered Forerunner technology with religious zeal alongside the San'Shyuum."
+ 
+ #HIGH CHARITY DISTRICTS
+ district_hcarcology_city: "Province"
+ district_hcarcology_city_plural: "Provinces"
+ district_hcarcology_city_desc: "Areas of High Charity known as 'cloisters', houses billions of menials within the Holy City."
+ 
+ district_hcarcology_nexus: "Nexus Province"
+ district_hcarcology_nexus_plural: "Nexus Provinces"
+ district_hcarcology_nexus_desc: "Areas of High Charity known as 'cloisters' have been converted into storage sites for drones."
+ 
+ district_hcarcology_hive: "Infested Province"
+ district_hcarcology_hive_plural: "Infested Provinces"
+ district_hcarcology_hive_desc: "Areas of High Charity known as 'cloisters' have been infested with organic creep and hive chambers."
+ 
+ district_hcarcology_arms_industry: "Assembly Forge District"
+ district_hcarcology_arms_industry_plural: "Assembly Forge Districts"
+ district_hcarcology_arms_industry_desc: "High Charity houses multiple assembly forges within the city for the creation of war materiel and consumer goods."
+ 
+ district_hcarcology_commercial: "Gifting Spire District"
+ district_hcarcology_commercial_plural: "Gifting Spire Districts"
+ district_hcarcology_commercial_desc: "Below the city lies the Unbreakable Spine of the Gods that contains hundreds of docking platforms for merchants and tithe-fleets."
+ 
+ district_hcarcology_leisure: "Lower District"
+ district_hcarcology_leisure_plural: "Lower Districts"
+ district_hcarcology_leisure_desc: "The lower districts houses several entertainment hubs for the city's lower menials."
+ 
+ 
+ #COVENANT ARMIES
+ #GENERAL 
+ cov_sangheili_legion: "Covenant Legion (Sangheili)"
+ cov_sangheili_legion_desc: "A multi-species legion led by Sangheili warriors comprised of low-ranking Unggoy, Kig-Yar marksmen, and Hunter pairs." 
+ 
+ cov_jiralhanae_legion: "Covenant Legion (Jiralhanae)"
+ cov_jiralhanae_legion_desc: "A multi-species legion led by Jiralhanae pack brothers comprised of low-ranking Unggoy, Kig-Yar marksmen, and Hunter pairs." 
+ 
+ cov_honor_guard: "Covenant Honor Guards"
+ cov_honor_guard_desc: "A special unit of elite Covenant warriors tasked with protection of the Hierarchs and the High Council."
+ 
+ #ELITES
+ cov_warrior_creche: "Warrior Crèche"
+ cov_warrior_creche_desc: "A legion of Sangheili warriors led by a Sangheili General eager to find honor, distinction, and glory on the battlefield." 
+ 
+ cov_arbiter: "The Arbiter"
+ cov_arbiter_desc: "A Sangheili warrior that has been given the highest possible honor, or at times, the greatest mark of shame. It is also a title of great religious, military, and political importance for the Sangheili. Part king, part judge. Warrior-rulers unlike any of which would follow."
+ 
+ #SAN'SHYUUM
+ cov_prelate: "Prelate Order"
+ cov_prelate_desc: "An order of San'Shyuum supersoldiers enhanced by Forerunner technology and biological augmentations."
+ 
+ #BRUTES
+ cov_brute_skein: "Jiralhanae Skein"
+ cov_brute_skein_desc: "A master-pack of several tribal Jiralhanae Packs led by a Chieftain." 
+ 
+ #JACKALS
+ cov_kigyar_mercenaries: "Kig-Yar Mercenaries"
+ cov_kigyar_mercenaries_desc: "A group of hired Kig-Yar pirates, marksmen, and scouts armed with a variety of beam rifles, plasma pistols, needlers, and carbines."
+ 
+ cov_tvaoan_skirmishers: "T'vaoan Skirmishers"
+ cov_tvaoan_skirmishers_desc: "A specialized group of Kig-Yar from the asteroid colony of T'vao that are biologically stronger and faster than their normal brethren. They serve well as shock troops for close-quarters combat and flanking tactics."
+ 
+ #HUNTERS
+ cov_hunter_warform: "Hunter Warform"
+ cov_hunter_warform_desc: "A massive specialized Lekgolo titan form housing a larger colony within one armored body shell. This form is extremely dangerous and powerful."
+ 
+ #DRONES
+ cov_drone_swarm: "Yanme'e Drone Swarm"
+ cov_drone_swarm_desc: "A large hive of combat capable Yanme'e drones that are typically used for surprise aerial ambushes and assaults offering support to other Covenant infantry. Their impressive flight capabilities make them one of the most threatening infantry units in the entire Covenant military."
+ 
+ #COVENANT VEHICLES
+ cov_ghost_company: "Karo-etba-pattern Ghosts"
+ cov_ghost_company_desc: "Iruiru Armory's standard reconnaissance and rapid attack vehicle. Lightly armed and armored hovercraft."
+ 
+ cov_locust_company: "Shua'ee-pattern Locusts"
+ cov_locust_company_desc: "A quadrupedal walker used for mining and combat operations. Equipped with Energy Shields and a Focus Cannon that can be used to fire concentrated superheated plasma at enemy targets or structures."
+ 
+ cov_spectre_company: "Wuzum-pattern Spectres"
+ cov_spectre_company_desc: "A anti-infantry and transportation vehicle used to offer fire support to other vehicles."
+ 
+ cov_revenant_company: "Rizvum-pattern Revenants"
+ cov_revenant_company_desc: "A lightly armored vehicle used to provide artillery support for infantry forces. It uses a downscaled version of the heavy plasma mortar used by the Type-26 Wraith."
+ 
+ cov_wraith_tank: "Zurdo-pattern Wraiths"
+ cov_wraith_tank_desc: "A large heavily armored artillery vehicle armed with a large Type-26 Directed-Energy Mortar that fires a magnetically encapsulated blob of superheated plasma at long distances."
+ 
+ cov_banshee_squadron: "Is'belox-pattern Banshee Attack Wing"
+ cov_banshee_squadron_desc: "A versatile and maneuverable ground assault aircraft armed with rapid fire plasma cannons and a powerful fuel rod cannon to penetrate hardened ground targets."
+ 
+ cov_phantom_gunship: "Ru'swum-pattern Phantom"
+ cov_phantom_gunship_desc: "A dropship and gunship used to deploy infantry into combat zones while providing suppressive fire. Armed with a heavy plasma cannon and side mounted plasma cannons."
+ 
+ cov_lich_gunship: "Kmiro'sish-pattern Lich"
+ cov_lich_gunship_desc: "A large heavy dropship capable of housing dozens of troops and armed with a powerful primary plasma autocannon and side-mounted plasma cannons capable of decimating enemy forces."
+ 
+ cov_scarab: "Deutoros-pattern Scarab"
+ cov_scarab_desc: "Large, heavily armored, all-terrain, quadrupedal walker used for deep excavation, now re-purposed for combat. Armed with a large Focus Cannon and heavy plasma cannons, the Scarab is known for striking fear into its opponents and demolishing enemy fortifications with ease."
+ 
+ cov_kraken: "Shull'se-pattern Kraken"
+ cov_kraken_desc: "Massive Siege tower tripod walker and mobile fortress containing an array of air vehicles and infantry."
+ 
+ cov_draugr: "Zashk-pattern Draugr"
+ cov_draugr_desc: "Gargantuan mobile fortress used as the centerpiece in large ground campaigns. Equipped with heavy-duty energy shielding and five heavy focus cannons, it is considered one of the largest and most powerful land vehicles employed by the Covenant."
+ 
+ #Swords of Sanghelios Armies
+ 
+ sos_sangheili_legion: "Swords of Sanghelios Legion"
+ sos_sangheili_legion_desc: "A multi-species legion led by Sangheili warriors comprised of Storm Unggoy and Kig-Yar marksmen." 
+ 
+ 
+ 
+ #BRUTE VEHICLES
+ brute_chopper_company: "Type-25 Choppers"
+ brute_chopper_company_desc: "A rapid attack and scout vehicle used by the Jiralhanae armed with an array of autocannons and spikers used to skewer infantry and vehicles. Another feature is its bladed chassis used for ramming targets." 
+ 
+ brute_prowler_company: "Type-52 Prowlers"
+ brute_prowler_company_desc: "A support vehicle used by the Jiralhanae to offer fire support alongside other vehicles. This vehicle is also capable of ramming."
+ 
+ 
+ #COVENANT BUILDINGS
+ building_cov_citadel: "Covenant Citadel"
+ building_cov_citadel_desc: "A base structure and command center used for planetary operations. Allows the construction of Covenant production structures."
+ 
+ building_cov_hall: "Covenant Hall"
+ building_cov_hall_desc: "A barracks used for training the myriad species of the Covenant."
+ 
+ building_cov_factory: "Covenant Vehicle Factory"
+ building_cov_factory_desc: "A facility used to produce Covenant vehicles on-site using similar technology used in the Assembly Forges on High Charity. Allows the production of Covenant vehicles."
+ 
+ building_cov_assembly_forge: "Assembly Forge"
+ building_cov_assembly_forge_desc: "A replica of High Charity's Assembly Forge that uses clouds of programmable nanomachines to mass produce war materiel on a large-scale. Allows the production of the §YScarab§! and §YKraken§!."
+ 
+ building_cov_summit: "Covenant Summit"
+ building_cov_summit_desc: "A facility used to construct Covenant aircraft on-site. Allows the production of Covenant aerial armies." 
+ 
+ #COVENANT ARMY TECH
+ tech_covenant_infantry: "Covenant Warriors"
+ tech_covenant_infantry_desc: "Many members of the Covenant and its Remnant elements are species conquered and converted during the Age of Conversion. Unlocks Covenant infantry armies."
+ 
+ tech_covenant_light_vehicles: "Light Vehicle Patterns"
+ tech_covenant_light_vehicles_desc: "Instruct the Assembly Forges to construct design patterns for an array of support craft to help augment our standing ground forces."
+ 
+ tech_covenant_excavators: "Excavator Patterns"
+ tech_covenant_excavators_desc: "These platforms are primarily used for deep excavation of artifacts and holy relics. However, they can also be re-purposed for combat if deemed necessary."
+ 
+ tech_covenant_heavy_vehicles: "Heavy Vehicle Patterns"
+ tech_covenant_heavy_vehicles_desc: "Instruct the Assembly Forges to construct several design patterns for larger and heavily-armed vehicles."
+ 
+ tech_covenant_air_vehicles: "Air Vehicle Patterns"
+ tech_covenant_air_vehicles_desc: "Instruct the Assembly Forges to create several design patterns for aerial support on the battlefield."
+ 
+ 
+ #DIDACT'S ARMY  
+ civic_didact: "Promethean Warlord"
+ civic_didact_desc: "Your empire is led by an ancient and powerful warrior leading a contingent of Promethean War-Constructs. This civic grants the trait §YReawakened Promethean§!, granting immortality with powerful empire modifiers. Unlocks §YPromethean Construct§! armies and adds §Y4 Mechanical Promethean§! pops.\n\n§RWARNING: This civic will replace your starting ruler with the Forerunner Promethean Ur-Didact.§!" 
+ 
+ leader_trait_ruler_didact: "Reawakened Promethean"
+ leader_trait_ruler_didact_desc: "One of the last surviving Forerunners and Supreme Commander of the Promethean Warrior-Servants has been released from his Cryptum to lead his forces once again to assume the Mantle of Responsibility."
+ 
+ trait_robot_requiem_promethean: "Mechanical Promethean"
+ trait_robot_requiem_promethean: "A robotic construct named after the Promethean Warrior-Servants that served the Ur-Didact in the Flood-Forerunner War. Promethean Knights were created after the Ur-Didact became increasingly desperate in his fight against the Flood, eventually converting many of his Warrior-Servants and unsuspecting humans into monstrous AI war machines using the 'Composer' to transfer their life essence into mechanical bodies that rendered them immune to infection. Promethean Knights are dangerous combatants on any battlefield."
+ 
+ tech_prometheans_of_requiem: "Promethean Knights"
+ tech_prometheans_of_requiem_desc: "Mechanical constructs from Requiem created using the Composer that translated an organic being's mental content into machine data creating combat-capable soldiers immune to biological disease or infection."
+ 
+ didact_promethean_crawler_army: "Promethean Crawlers"
+ didact_promethean_crawler_army_desc: "Aggressive autonomous Forerunner defense constructs in the form of small, quadrupedal machines capable of both ranged and close-quarters combat. They are used to overwhelm enemy positions."
+ 
+ didact_promethean_watchers: "Promethean Watchers"
+ didact_promethean_watchers_desc: "Promethean constructs that serve as a supporting role, assisting other Promethean ground units with aerial combat screening."
+ 
+ didact_promethean_focus_turrets: "Z-510 Focus Turrets"
+ didact_promethean_focus_turrets_desc: "A Promethean defense system that fires a deadly beam of Ionized particles at long ranges."
+ 
+ didact_promethean_soldier_army: "Promethean Soldiers"
+ didact_promethean_soldier_army_desc: "Promethean Armigers armed with a variety of weaponry. Their bipedal forms and agility allows them to raid and assault enemy targets with impunity."
+ 
+ didact_promethean_knight_army: "Promethean Knights"
+ didact_promethean_knight_army_desc: "A class of mechanized Forerunner Promethean warriors that are bipedal, fully weaponized and designed to operate and eliminate threats in a wide variety of environments. Unlike regular constructs, their AI is a result of organic minds transformed into software format via the Composer to help augment their fighting capabilities."
+ 
+ didact_promethean_phaetons: "Z-1800 Phaetons"
+ didact_promethean_phaetons_desc: "A class of Forerunner weapon-ship deployed as gunships to attack enemy positions or engage in air-assaults in massive coordinated swarms by Forerunner operators." 
+ 
+ 
+ 
+ #COVENANT RELICS
+ 
+ r_forerunner_luminary: "Luminary"
+ r_forerunner_luminary_desc: "A device of Forerunner origin designed to scan for and identify Forerunner relics."
+ 
+ relic_forerunner_luminary_active: "The §YLuminary Relic§! enhances our capabilities to scan planetary anomalies. There is also a possibility of discovering §YForerunner Deposits§! on a random world within our borders.\n\n§RWarning: The Luminary will not identify a §YForerunner Deposit§! if there are no available habitable planets within your empire's borders or if there is already a similar forerunner deposit on the planet.§!"
+ 
+ relic_forerunner_luminary: "Luminary Array"
+ relic_forerunner_luminary_desc: "The active primary Luminary is coordinating with other minor Luminaries across the empire, enhancing our ability to scan and locate other ancient relics. Increases the chance of uncovering an additional §YForerunner Deposits§! after activation."
+ 
+ luminary_relic.335.name: "Luminary Activated"
+ luminary_relic.335.desc: "It was not easy. The luminary was not forthcoming with the holy words, but our hope proved true. We have swept our space and a previously unknown §YForerunner Relic§! has been identified on §H[chosen_planet.GetName]§!!"
+ luminary_relic.335.a: "A Luminary does not lie."
+ 
+ luminary_relic.336.name: "Forerunner Artifacts Retrieved"
+ luminary_relic.336.desc: "Although the Luminary did not find a major forerunner installation, it did uncover a few minor artifacts for study."
+ luminary_relic.336.a: "A Luminary does not lie."
+ 
+ luminary_relic.337.name: "Forerunner Shield World Found!"
+ luminary_relic.337.desc: "The Luminary has found a glorious discovery. The planet §H[chosen_planet.GetName]§! has been uncovered by the holy relic to be a §YShield World§!!"
+ luminary_relic.337.a: "See how our faith has been rewarded."
+ 
+ #FORERUNNER ARTIFACT DEPOSITS
+ d_forerunner_research_facility: "Forerunner Research Facility"
+ d_forerunner_research_facility_desc: "An underground forerunner facility containing a vast amount of archived knowledge and research data."
+ 
+ d_forerunner_generator: "Forerunner Power Station"
+ d_forerunner_generator_desc: "A forerunner energy installation located beneath this planet's surface creating vast amounts of power."
+ 
+ d_forerunner_design_seed: "Forerunner Design Seed"
+ d_forerunner_design_seed_desc: "A special forerunner installation used to encode data that would be used to quickly assemble machinery and material."
+ 
+ d_slipspace_bubble: "Slipspace Rift"
+ d_slipspace_bubble_desc: "A Micro Dyson sphere enveloped within a small slipspace bubble located within this world's planetary core, expanding the surface area exponentially inside this pocket dimension."
+ 
+ d_forerunner_gas_mine: "Forerunner Gas Mine"
+ d_forerunner_gas_mine_desc: "An abandoned forerunner gas collection and refinement structure suspended in the atmosphere of a gas giant or toxic world."
+ 
+ d_forerunner_mine: "Forerunner Mining Facility"
+ d_forerunner_mine_desc: "An advanced mining facility developed by the Forerunners to harvest resources on this world."
+ 
+ d_forerunner_ruins: "Forerunner Ruins"
+ d_forerunner_ruins_desc: "The remnants of a prosperous forerunner city. Much of its advanced technology remains surprisingly intact."
+ 
+ #COVENANT EMPIRE
+ 
+ COV_EMPIRE_FLEET_ORD: "$ORD$ Covenant Battle Group"
+ 
+ COV_ARMY_DEFENSE_ORD: "$ORD$ Covenant Garrison"
+ COV_ARMY_ASSAULT_ORD: "$ORD$ Covenant Legion"
+ COV_ARMY_SLAVE_ORD: "$ORD$ Covenant Thralls"
+ COV_ARMY_CLONE_ORD: "$ORD$ Holographic Legion"
+ COV_ARMY_ROBOTIC_ORD: "$ORD$ Lekgolo-infested Locusts"
+ COV_ARMY_ROBOTIC_DEFENSE_ORD: "$ORD$ Lekgolo-infested Skitterers"
+ COV_ARMY_PSIONIC_ORD: "$ORD$ Blessed Prelate"
+ COV_ARMY_XENOMORPH_ORD: "$ORD$ Mgalekgolo Warform"
+ COV_ARMY_GENEWARRIOR_ORD: "$ORD$ Covenant Prelate"
+ COV_ARMY_UNDEAD_ORD: "$ORD$ Parasite Horde"
+ COV_ARMY_OCCUPATION_ORD: "$ORD$ Covenant Occupation Force"
+ COV_ARMY_ROBOTIC_OCCUPATION_ORD: "$ORD$ Lekgolo-infested Locust Occupation Force"
+ COV_ARMY_PRIMITIVE_SEQ: "Primitive Army $C$"
+ COV_ARMY_INDUSTRIAL_SEQ: "Industrial Army $C$"
+ COV_ARMY_POSTATOMIC_SEQ: "Post-Atomic Army $C$"
+ 
+ #SANGHEILI 
+ SANGHEILI_FLEET_ORD: "$ORD$ Sangheili Battle Group"
+ 
+ SANGHEILI_ARMY_DEFENSE_ORD: "$ORD$ Sangheili Garrison"
+ SANGHEILI_ARMY_ASSAULT_ORD: "$ORD$ Sangheili Warriors"
+ SANGHEILI_ARMY_SLAVE_ORD: "$ORD$ Sangheili Thralls"
+ SANGHEILI_ARMY_CLONE_ORD: "$ORD$ Replica Legion"
+ SANGHEILI_ARMY_ROBOTIC_ORD: "$ORD$ Sangheili Sentinels"
+ SANGHEILI_ARMY_ROBOTIC_DEFENSE_ORD: "$ORD$ Defense Sentinels"
+ SANGHEILI_ARMY_PSIONIC_ORD: "$ORD$ Silent Shadow"
+ SANGHEILI_ARMY_XENOMORPH_ORD: "$ORD$ Mgalekgolo"
+ SANGHEILI_ARMY_GENEWARRIOR_ORD: "$ORD$ Lights of Sanghelios"
+ SANGHEILI_ARMY_UNDEAD_ORD: "$ORD$ Fallen Crèche"
+ SANGHEILI_ARMY_OCCUPATION_ORD: "$ORD$ Sangheili Occupation Guard"
+ SANGHEILI_ARMY_ROBOTIC_OCCUPATION_ORD: "$ORD$ Sentinel Occupation Force"
+ SANGHEILI_ARMY_PRIMITIVE_SEQ: "Sangheili Tribes $C$"
+ SANGHEILI_ARMY_INDUSTRIAL_SEQ: "Sangheili Warriors $C$"
+ SANGHEILI_ARMY_POSTATOMIC_SEQ: "Sangheili Army $C$"
+ 
+ #JIRALHANAE 
+ JIRALHANAE_FLEET_ORD: "$ORD$ Jiralhanae Battle Group"
+ 
+ JIRALHANAE_ARMY_DEFENSE_ORD: "$ORD$ Jiralhanae Garrison"
+ JIRALHANAE_ARMY_ASSAULT_ORD: "$ORD$ Jiralhanae Pack"
+ JIRALHANAE_ARMY_SLAVE_ORD: "$ORD$ Jiralhanae Thralls"
+ JIRALHANAE_ARMY_CLONE_ORD: "$ORD$ Replica Legion"
+ JIRALHANAE_ARMY_ROBOTIC_ORD: "$ORD$ Jiralhanae Sentinels"
+ JIRALHANAE_ARMY_ROBOTIC_DEFENSE_ORD: "$ORD$ Defense Sentinels"
+ JIRALHANAE_ARMY_PSIONIC_ORD: "$ORD$ Dokab Legionmasters"
+ JIRALHANAE_ARMY_XENOMORPH_ORD: "$ORD$ Doisac Predators"
+ JIRALHANAE_ARMY_GENEWARRIOR_ORD: "$ORD$ Jiralhanae Chieftain"
+ JIRALHANAE_ARMY_UNDEAD_ORD: "$ORD$ Ghosts of Doisac"
+ JIRALHANAE_ARMY_OCCUPATION_ORD: "$ORD$ Jiralhanae Occupation Pack"
+ JIRALHANAE_ARMY_ROBOTIC_OCCUPATION_ORD: "$ORD$ Sentinel Occupation Force"
+ JIRALHANAE_ARMY_PRIMITIVE_SEQ: "Jiralhanae Predators $C$"
+ JIRALHANAE_ARMY_INDUSTRIAL_SEQ: "Jiralhanae Clans $C$"
+ JIRALHANAE_ARMY_POSTATOMIC_SEQ: "Jiralhanae Skein $C$"
+ 
+ #KIGYAR
+ KIGYAR_FLEET_ORD: "$ORD$ Kig-Yar Raiders"
+ 
+ KIGYAR_DEFENSE_ORD: "$ORD$ Kig-Yar Garrison"
+ KIGYAR_ASSAULT_ORD: "$ORD$ Kig-Yar Mercenaries"
+ KIGYAR_SLAVE_ORD: "$ORD$ Captured Unggoy Thralls"
+ KIGYAR_CLONE_ORD: "$ORD$ Kig-Yar Clone Mercenaries"
+ KIGYAR_UNDEAD_ORD: "$ORD$ Kig-Yar Phantoms"
+ KIGYAR_ROBOTIC_ORD: "$ORD$ Reprogrammed Sentinels"
+ KIGYAR_ROBOTIC_DEFENSE_ORD: "$ORD$ Reprogrammed Defense Sentinels"
+ KIGYAR_PSIONIC_ORD: "$ORD$ Kig-Yar Shamans"
+ KIGYAR_XENOMORPH_ORD: "$ORD$ T'vaoan Marauders"
+ KIGYAR_GENE_WARRIOR_ORD: "$ORD$ T'voan Skirmishers"
+ KIGYAR_OCCUPATION_ORD: "$ORD$ Kig-Yar Raiders"
+ KIGYAR_OCCUPATION_ROBOTIC_ORD: "$ORD$ Reprogrammed Sentinel Network"
+ KIGYAR_PRIMITIVE_SEQ: "Kig-Yar Ravagers $C$"
+ KIGYAR_INDUSTRIAL_SEQ: "Kig-Yar Pirates $C$" 
+ KIGYAR_POSTATOMIC_SEQ: "Kig-Yar Raiders $C$" 
+ 
+ #MGALEKGOLO
+ LEKGOLO_FLEET_ORD: "$ORD$ Lekgolo Swarm Host"
+ LEKGOLO_DEFENSE_ORD: "$ORD$ Lekgolo Colony"
+ LEKGOLO_ASSAULT_ORD: "$ORD$ Mgalekgolo Gestalts"
+ LEKGOLO_SLAVE_ORD: "$ORD$ Dipholekgolo Swarm"
+ LEKGOLO_CLONE_ORD: "$ORD$ Lekgolo Replicants"
+ LEKGOLO_UNDEAD_ORD: "$ORD$ Undead Thanolekgolo Swarm"
+ LEKGOLO_ROBOTIC_ORD: "$ORD$ Rhulolekgolo Locusts"
+ LEKGOLO_ROBOTIC_DEFENSE_ORD: "$ORD$ Rhulolekgolo Skitterers"
+ LEKGOLO_PSIONIC_ORD: "$ORD$ Thanolekgolo Swarm"
+ LEKGOLO_XENOMORPH_ORD: "$ORD$ Mgalekgolo Goliaths"
+ LEKGOLO_GENE_WARRIOR_ORD: "$ORD$ Mgalekgolo Warform"
+ LEKGOLO_OCCUPATION_ORD: "$ORD$ Lekgolo Colony Swarm"
+ LEKGOLO_OCCUPATION_ROBOTIC_ORD: "$ORD$ Rhulolekgolo Colony"
+ LEKGOLO_PRIMITIVE_SEQ: "Khantolekgolo Colony $C$" 
+ LEKGOLO_INDUSTRIAL_SEQ: "Dipholekgolo Colony $C$"
+ LEKGOLO_POSTATOMIC_SEQ: "Sbaolekgolo Colony $C$" 
+ 
+ #UNGGOY
+ UNGGOY_FLEET_ORD: "$ORD$ Unggoy Imperial Fleet" 
+ UNGGOY_DEFENSE_ORD: "$ORD$ Unggoy Garrison"
+ UNGGOY_ASSAULT_ORD: "$ORD$ Unggoy Cannon Fodder" 
+ UNGGOY_SLAVE_ORD: "$ORD$ Suicide Unggoy"
+ UNGGOY_CLONE_ORD: "$ORD$ Unggoy Clone Infantry"
+ UNGGOY_UNDEAD_ORD: "$ORD$ Spooky Unggoy"
+ UNGGOY_ROBOTIC_ORD: "$ORD$ Reprogrammed Sentinels"
+ UNGGOY_ROBOTIC_DEFENSE_ORD: "$ORD$ Reprogrammed Defense Sentinels"
+ UNGGOY_PSIONIC_ORD: "$ORD$ Unggoy Deacons"
+ UNGGOY_XENOMORPH_ORD: "$ORD$ Unggoy Riders"
+ UNGGOY_GENE_WARRIOR_ORD: "$ORD$ Pnap-pattern Goblins"
+ UNGGOY_OCCUPATION_ORD: "$ORD$ Unggoy Occupation Force"
+ UNGGOY_OCCUPATION_ROBOTIC_ORD: "$ORD$ Reprogrammed Sentinel Network"
+ UNGGOY_PRIMITIVE_SEQ: "Unggoy Hunters $C$"
+ UNGGOY_INDUSTRIAL_SEQ: "Unggoy Tribes $C$"
+ UNGGOY_POSTATOMIC_SEQ: "Unggoy Army $C$"
+ 
+ #HURAGOK 
+ HURAGOK_GENERIC_ORD: "$ORD$ Huragok Engineers" 
+ HURAGOK_FLEET_ORD: "$ORD$ Huragok Abyssal Flotilla" 
+ HURAGOK_DEFENSE_ORD: "$ORD$ Armored Engineer Garrison"
+ HURAGOK_ASSAULT_ORD: "$ORD$ Armored Engineers"
+ HURAGOK_SLAVE_ORD: "$ORD$ Terminus Engineers"
+ HURAGOK_CLONE_ORD: "$ORD$ Replica Engineers"
+ HURAGOK_UNDEAD_ORD: "$ORD$ Infused Engineers"
+ HURAGOK_ROBOTIC_ORD: "$ORD$ Reprogrammed Sentinels"
+ HURAGOK_ROBOTIC_DEFENSE_ORD: "$ORD$ Reprogrammed Defense Sentinels"
+ HURAGOK_PSIONIC_ORD: "$ORD$ Enlightened Engineers"
+ HURAGOK_XENOMORPH_ORD: "$ORD$ Mutated Engineers" 
+ HURAGOK_GENE_WARRIOR_ORD: "$ORD$ Enhanced Engineers"
+ HURAGOK_OCCUPATION_ORD: "$ORD$ Engineer Task Force"
+ HURAGOK_OCCUPATION_ROBOTIC_ORD: "$ORD$ Reprogrammed Sentinel Network"
+ HURAGOK_PRIMITIVE_SEQ: "Huragok Floaters $C$" 
+ HURAGOK_INDUSTRIAL_SEQ: "Huragok Lifters $C$" 
+ HURAGOK_POSTATOMIC_SEQ: "Huragok Ascenders $C$" 
+ 
+ 
+ #COVENANT ARMIES
+ COV_BRUTE_SKEIN_ARMY_ORD: "$ORD$ Jiralhanae Skein"
+ COV_BRUTE_LEGION_ORD: "$ORD$ Jiralhanae Covenant Legion"
+ COV_SANGHEILI_LEGION_ORD: "$ORD$ Sangheili Covenant Legion"
+ COV_HONOR_GUARD_ORD: "$ORD$ Covenant Honor Guard"
+ COV_WARRIOR_CRECHE_ORD: "$ORD$ Warrior Crèche"
+ COV_PRELATE_ARMY_ORD: "$ORD$ Covenant Prelate"
+ COV_ARBITER_ARMY: "Arbiter"
+ COV_DRONE_ARMY_ORD: "$ORD$ Yanme'e Hive Swarm"
+ COV_KIGYAR_MERCENARIES_ORD: "$ORD$ Kig-Yar Mercenaries"
+ COV_KIGYAR_SKIRMISHERS_ORD: "$ORD$ T'vaoan Skirmishers"
+ COV_HUNTER_WARFORM_ORD: "$ORD$ Mgalekgolo Warform"
+ 
+ 
+ #COVENANT VEHICLES
+ 
+ COV_GHOST_ORD: "$ORD$ Type-32 Ghost Squadron"
+ BRUTE_CHOPPER_ORD: "$ORD$ Type-25 Chopper Squadron"
+ BRUTE_PROWLER_ORD: "$ORD$ Type-52 Prowler Squadron"
+ COV_LOCUST_ORD: "$ORD$ Type-32 Locust Siege Host"
+ COV_SPECTRE_ORD: "$ORD$ Type-46 Spectre Squadron"
+ COV_REVENANT_ORD: "$ORD$ Type-48 Revenant Squadron"
+ COV_WRAITH_TANK_ORD: "$ORD$ Type-26 Wraith Tank Siege Host"
+ COV_BANSHEE_ORD: "$ORD$ Type-26 Banshee Attack Wing"
+ COV_PHANTOM_GUNSHIP_ORD: "$ORD$ Type-52 Phantom Gunship"
+ COV_LICH_GUNSHIP_ORD: "$ORD$ Type-56 Lich Gunship"
+ COV_SCARAB_ORD: "$ORD$ Type-47B Scarab"
+ COV_KRAKEN_ORD: "$ORD$ Type-55 Kraken Siege Tower"
+ 
+ 
+ #FORERUNNER ECUMENE REMNANT ARMIES 
+ 
+ H_FORERUNNER_FLEET_SEQ: "Forerunner Fleet $C$"
+ H_FORERUNNER_PROMETHEAN_FLEET_SEQ: "Promethean Fleet $C$"
+ H_FORERUNNER_SENTINEL_FLEET_SEQ: "Sentinel Fleet $C$" 
+ H_FORERUNNER_CREATED_FLEET_SEQ: "Created Fleet $C$"
+ 
+ H_FORERUNNER_ARMY_DEFENSE_ORD: "$ORD$ Warrior-Servant Garrison"
+ H_FORERUNNER_ARMY_ASSAULT_ORD: "$ORD$ Warrior-Servant Legion"
+ H_FORERUNNER_ARMY_SLAVE_ORD: "$ORD$ Exile Legion"
+ H_FORERUNNER_ARMY_CLONE_ORD: "$ORD$ Warrior-Servant Clone Legion"
+ H_FORERUNNER_ARMY_ROBOTIC_ORD: "$ORD$ Aggressor Sentinel Swarm"
+ H_FORERUNNER_ARMY_ROBOTIC_DEFENSE_ORD: "$ORD$ Sentinel Defense Network"
+ H_FORERUNNER_ARMY_ANDROID_ORD: "$ORD$ Promethean Knight Legion"
+ H_FORERUNNER_ARMY_PSIONIC_ORD: "$ORD$ Tier II Preceptors"
+ H_FORERUNNER_ARMY_UNDEAD_ORD: "$ORD$ Warrior-Servant Echo Legion"
+ H_FORERUNNER_ARMY_XENOMORPH_ORD: "$ORD$ Forerunner Bio-genetic Legion"
+ H_FORERUNNER_ARMY_GENEWARRIOR_ORD: "$ORD$ Promethean Warrior-Servant Legion"
+ H_FORERUNNER_ARMY_OCCUPATION_ORD: "$ORD$ Warrior-Servant Custodes"
+ H_FORERUNNER_ARMY_ROBOTIC_OCCUPATION_ORD: "$ORD$ Sentinel Custodes"
+ 
+ H_FORERUNNER_ARMY_PRIMITIVE_SEQ: "Forerunner Warriors $C$"
+ H_FORERUNNER_ARMY_INDUSTRIAL_SEQ: "Forerunner Army $C$"
+ H_FORERUNNER_ARMY_POSTATOMIC_SEQ: "Forerunner Post-Atomic Army $C$"
+ 
+ 
+ #FORERUNNER/PROMETHEAN/SENTINEL ARMIES
+ H_FORERUNNER_AGRESSOR_SENTINELS_ORD: "$ORD$ Aggressor Sentinel Swarm"
+ H_FORERUNNER_ONYX_SENTINELS_ORD: "$ORD$ Onyx Sentinel Swarm"
+ H_FORERUNNER_ENFORCER_SENTINELS_ORD: "$ORD$ Enforcer Sentinels"
+ H_FORERUNNER_CONTROLLER_SENTINELS_ORD: "$ORD$ Controller Sentinels"
+ H_FORERUNNER_SUPER_SENTINELS_ORD: "$ORD$ Super Sentinels"
+ H_FORERUNNER_ARMIGER_ARMY_ORD: "$ORD$ Soldier-class Armiger Legion"
+ H_FORERUNNER_WARRIOR_SERVANT_ARMY_ORD: "$ORD$ Warrior-Servant Legion"
+ H_FORERUNNER_WARRIOR_SERVANT_DEFENSE_ARMY_ORD: "$ORD$ Warrior-Servant Garrison"
+ H_FORERUNNER_DESPAIR_FIGHTERS_ORD: "$ORD$ Despair-class Hunter-Killer Squadron"
+ H_FORERUNNER_WAR_SPHINX_ORD: "$ORD$ War Sphinx Squadron"
+ H_FORERUNNER_PROMETHEAN_WS_ARMY_ORD: "$ORD$ Promethean Warrior-Servant Legion"
+ H_FORERUNNER_PROMETHEAN_WS_DEFENSE_ARMY_ORD: "$ORD$ Promethean Warrior-Servant Garrison"
+ H_FORERUNNER_PROMETHEAN_SEEKERS_ORD: "$ORD$ Promethean Seeker Squadron"
+ H_FORERUNNER_PROMETHEAN_CRAWLERS_ORD: "$ORD$ Promethean Crawler Pack"
+ H_FORERUNNER_PROMETHEAN_WATCHERS_ORD: "$ORD$ Promethean Watchers"
+ H_FORERUNNER_PROMETHEAN_SOLDIERS_ORD: "$ORD$ Promethean Soldier Legion"
+ H_FORERUNNER_PROMETHEAN_KNIGHTS_ORD: "$ORD$ Promethean Knight Company"
+ H_FORERUNNER_PROMETHEAN_LANCERS_ORD: "$ORD$ Promethean Knight Lancer Company"
+ H_FORERUNNER_PROMETHEAN_BATTLEWAGONS_ORD: "$ORD$ Promethean Knight Battlewagons"
+ H_FORERUNNER_PROMETHEAN_PHAETON_ORD: "$ORD$ Z-1800 Phaeton Squadron"
+
+ H_FORERUNNER_SENTINEL_ARMY_PRIMITIVE_SEQ: "Constructor Sentinels $C$"
+ H_FORERUNNER_SENTINEL_ARMY_INDUSTRIAL_SEQ: "Gatherer Sentinels $C$"
+ H_FORERUNNER_SENTINEL_ARMY_POSTATOMIC_SEQ: "Protector Sentinels $C$"
+ 
+ H_FORERUNNER_PROMETHEAN_FLEET_ORD: "$ORD$ Promethean Fleet"
+ 

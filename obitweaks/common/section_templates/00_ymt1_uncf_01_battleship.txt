@@ -1,0 +1,550 @@
+############
+### COST ###
+############
+@cost0 = 300
+@cost1 = 300
+@cost2 = 325
+@cost3 = 350
+@cost4 = 400
+@cost5 = 450
+
+
+###########
+### MID ###
+###########
+
+ship_section_template = {
+	key = "BATTLESHIP_MID_DREAD1"
+	ship_size = cr_dreadnought
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_battleship1_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_Wave_motion_gun_Fleet" }
+	
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "uncf_01_battleship1_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "uncf_01_battleship1_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "uncf_01_battleship1_turret_01_back_slot"
+		locatorname = "turret_gun_03"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_fixed"
+		locatorname = "large_gun_01"
+	}	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_03"
+	}
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_04"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}
+	
+	large_utility_slots = 4
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 
+		}
+	}
+	
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 300
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_MID_DREAD3"
+	ship_size = cr_dreadnought
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_battleship3_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_Wave_motion_gun_Fleet" }
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "uncf_01_battleship3_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "uncf_01_battleship3_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "uncf_01_battleship3_turret_01_back_slot"
+		locatorname = "turret_gun_03"
+	}		
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_fixed"
+		locatorname = "large_gun_01"
+	}	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_03"
+	}
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_04"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}	
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}
+	
+	large_utility_slots =3
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 
+		}
+	}
+	
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 300
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_MID_DREAD4"
+	ship_size = cr_dreadnought
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_battleship4_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_Wave_motion_gun_Fleet" }
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "uncf_01_battleship4_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "uncf_01_battleship4_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "uncf_01_battleship4_turret_01_back_slot"
+		locatorname = "turret_gun_03"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_fixed"
+		locatorname = "large_gun_01"
+	}	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_03"
+	}
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_04"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}	
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}
+	
+	large_utility_slots =3
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 
+		}
+	}
+	
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 300
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_MID_KBATTLE"
+	ship_size = cr_dreadnought
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_battleship14_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_Wave_motion_gun_Fleet" }
+	
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "uncf_01_battleship14_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "uncf_01_battleship14_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "uncf_01_battleship14_turret_01_back_slot"
+		locatorname = "turret_gun_03"
+	}			
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}	
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}	
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}	
+	component_slot = {
+		name = "PD_05"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_05"
+	}	
+	component_slot = {
+		name = "PD_06"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_06"
+	}	
+	component_slot = {
+		name = "PD_07"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_07"
+	}	
+	component_slot = {
+		name = "PD_08"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_08"
+	}
+	component_slot = {
+		name = "PD_09"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_09"
+	}	
+	component_slot = {
+		name = "PD_10"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_10"
+	}	
+	component_slot = {
+		name = "PD_11"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_11"
+	}	
+	component_slot = {
+		name = "PD_12"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_12"
+	}	
+	component_slot = {
+		name = "PD_13"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_13"
+	}	
+	component_slot = {
+		name = "PD_14"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_14"
+	}	
+	component_slot = {
+		name = "PD_15"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_15"
+	}	
+	component_slot = {
+		name = "PD_16"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_16"
+	}
+	
+	large_utility_slots =3
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 
+		}
+	}
+	
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 300
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_MID_SDREAD"
+	ship_size = cr_dreadnought
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_battleship15_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_Wave_motion_gun_Fleet" }
+	
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "uncf_01_battleship15_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "uncf_01_battleship15_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "uncf_01_battleship15_turret_01_back_slot"
+		locatorname = "turret_gun_03"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}	
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}	
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}	
+	component_slot = {
+		name = "PD_05"
+		template = "invisible_point_defence_turret"
+		locatorname = "medium_gun_01"
+	}	
+	component_slot = {
+		name = "PD_06"
+		template = "invisible_point_defence_turret"
+		locatorname = "medium_gun_02"
+	}	
+	component_slot = {
+		name = "PD_07"
+		template = "invisible_point_defence_turret"
+		locatorname = "medium_gun_03"
+	}	
+	component_slot = {
+		name = "PD_08"
+		template = "invisible_point_defence_turret"
+		locatorname = "medium_gun_04"
+	}	
+
+	
+	large_utility_slots =3
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 
+		}
+	}
+	
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 500
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}

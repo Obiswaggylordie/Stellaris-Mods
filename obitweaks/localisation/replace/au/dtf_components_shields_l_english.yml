@@ -1,0 +1,77 @@
+﻿l_english:
+
+
+DTF_SHIELD_CS_1:0 "EDF Deflection Barrier"
+DTF_SHIELD_CS_1_DESC:0 "Deploying a barrier that can repel energy-based attacks"
+
+DTF_SHIELD_CS_2:0 "EDF Great Deflection Barrier"
+DTF_SHIELD_CS_2_DESC:0 "Improved deflection barrier"
+
+DTF_SHIELD_CS_3:0 "EDF Super Deflection Barrier"
+DTF_SHIELD_CS_3_DESC:0 "Improved deflection barrier"
+
+DTF_SHIELD_CS_4:0 "EDF Hyper Deflection Barrier"
+DTF_SHIELD_CS_4_DESC:0 "Improved deflection barrier"
+
+DTF_SHIELD_CS_5:0 "EDF Ultra Deflection Barrier"
+DTF_SHIELD_CS_5_DESC:0 "New type of deflection barrier"
+
+
+DTF_SHIELD_CS_6:0 "Wave Motion Shield"
+DTF_SHIELD_CS_6_DESC:0 "Deploys a powerful deflector barrier using wave energy"
+
+DTF_SHIELD_CS_7:0 "Great Wave Motion Shield"
+DTF_SHIELD_CS_7_DESC:0 "Improved wave barrier"
+
+DTF_SHIELD_CS_8:0 "Super Wave Motion Shield"
+DTF_SHIELD_CS_8_DESC:0 "Improved wave barrier"
+
+DTF_SHIELD_CS_9:0 "Hyper Wave Motion Shield"
+DTF_SHIELD_CS_9_DESC:0 "Improved wave barrier"
+
+DTF_SHIELD_CS_10:0 "Ultra Wave Motion Shield"
+DTF_SHIELD_CS_10_DESC:0 "Next-generation wave barrier"
+
+
+
+
+DTF_SHIELD_1_SMALL:0 "EDF Deflection Barrier"
+DTF_SHIELD_1_MEDIUM:0 "EDF Deflection Barrier"
+DTF_SHIELD_1_LARGE:0 "EDF Deflection Barrier"
+
+DTF_SHIELD_2_SMALL:0 "EDF Great Deflection Barrier"
+DTF_SHIELD_2_MEDIUM:0 "EDF Great Deflection Barrier"
+DTF_SHIELD_2_LARGE:0 "EDF Great Deflection Barrier"
+
+DTF_SHIELD_3_SMALL:0 "EDF Super Deflection Barrier"
+DTF_SHIELD_3_MEDIUM:0 "EDF Super Deflection Barrier"
+DTF_SHIELD_3_LARGE:0 "EDF Super Deflection Barrier"
+
+DTF_SHIELD_4_SMALL:0 "EDF Hyper Deflection Barrier"
+DTF_SHIELD_4_MEDIUM:0 "EDF Hyper Deflection Barrier"
+DTF_SHIELD_4_LARGE:0 "EDF Hyper Deflection Barrier"
+
+DTF_SHIELD_5_SMALL:0 "EDF Ultra Deflection Barrier"
+DTF_SHIELD_5_MEDIUM:0 "EDF Ultra Deflection Barrier"
+DTF_SHIELD_5_LARGE:0 "EDF Ultra Deflection Barrier"
+
+
+DTF_SHIELD_6_SMALL:0 "Wave Motion Shield"
+DTF_SHIELD_6_MEDIUM:0 "Wave Motion Shield"
+DTF_SHIELD_6_LARGE:0 "Wave Motion Shield"
+
+DTF_SHIELD_7_SMALL:0 "Great Wave Motion Shield"
+DTF_SHIELD_7_MEDIUM:0 "Great Wave Motion Shield"
+DTF_SHIELD_7_LARGE:0 "Great Wave Motion Shield"
+
+DTF_SHIELD_8_SMALL:0 "Super Wave Motion Shield"
+DTF_SHIELD_8_MEDIUM:0 "Super Wave Motion Shield"
+DTF_SHIELD_8_LARGE:0 "Super Wave Motion Shield"
+
+DTF_SHIELD_9_SMALL:0 "Hyper Wave Motion Shield"
+DTF_SHIELD_9_MEDIUM:0 "Hyper Wave Motion Shield"
+DTF_SHIELD_9_LARGE:0 "Hyper Wave Motion Shield"
+
+DTF_SHIELD_10_SMALL:0 "Ultra Wave Motion Shield"
+DTF_SHIELD_10_MEDIUM:0 "Ultra Wave Motion Shield"
+DTF_SHIELD_10_LARGE:0 "Ultra Wave Motion Shield"

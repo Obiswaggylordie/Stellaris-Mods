@@ -1,0 +1,235 @@
+namespace = halo_activation
+
+####HALO RING FULL ACTIVATION####
+country_event = {
+	id = halo_activation.1
+	title = "halo_activation.1.name"
+	desc = "halo_activation.1.desc"
+	picture = GFX_evt_halo_activation
+	show_sound = event_yellow_alert
+	location = event_target:halo_installation
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			limit = {
+				any_owned_planet = {
+					distance = {
+						source = event_target:halo_installation
+						max_distance <= 300
+					}
+				}
+				NOT = { is_same_value = root }
+			}
+			country_event = { id = halo_activation.5 }
+		}
+	}
+	option = {
+		name = EXCELLENT
+	}
+}
+
+#WARNING OF IMMINENT HALO FIRE
+country_event = {
+	id = halo_activation.5
+	title = "halo_activation.5.name"
+	desc = "halo_activation.5.desc"
+	picture = GFX_evt_halo_activation
+	show_sound = event_red_alert
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DISCONCERTING
+	} 
+}
+
+#FINAL WARNING TO FIRE HALO ARRAY
+country_event = {
+	id = halo_activation.10
+	title = "halo_activation.10.name"
+	desc = "halo_activation.10.desc"
+	picture = GFX_evt_halo_aftermath_1
+	show_sound = event_red_alert
+	location = event_target:halo_installation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "halo_activation.10.a"
+		country_event = { id = halo_activation.2 days = 5 }
+	}
+	option = {
+		name = "halo_activation.10.b"
+		event_target:halo_installation = {
+			planet_event = { id = halo_activation.4 days = 5 }
+		}
+	}
+}
+
+#HALO FIRING AND EFFECT
+country_event = {
+	id = halo_activation.2
+	title = "halo_activation.2.name"
+	desc = "halo_activation.2.desc"
+	picture = GFX_evt_halo_aftermath
+	show_sound = event_screams
+	location = event_target:halo_installation
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		event_target:halo_installation = {
+			halo_ring_in_system_tactical_pulse_effect = yes
+		}
+		every_system = {
+			if = {
+				limit = {
+					distance = {
+						source = event_target:halo_installation
+						min_distance >= 1
+						max_distance <= 300
+					}
+				}
+				halo_ring_effect = yes
+			}
+		}
+		every_galaxy_planet = {
+			if = {
+				limit = {
+					distance = {
+						source = event_target:halo_installation
+						min_distance >= 1
+						max_distance <= 300
+					}
+					NOR = {
+						is_star = yes
+						is_planet_class = pc_forerunner_sharpened_shield
+						is_planet_class = pc_forerunner_shield
+						is_planet_class = pc_forerunner_ark
+						has_deposit = d_slipspace_bubble
+						has_deposit = d_capital_slipspace_bubble
+					}
+				}
+				add_modifier = {
+					modifier = "halo_effect"
+					days = 10
+				}
+			}
+		}
+	}
+	option = {
+		name = UNFORTUNATE
+		hidden_effect = {
+			event_target:halo_installation = {
+				planet_event = { id = halo_activation.3 days = 5 }
+			}
+		}
+	}
+}
+
+#AFTERMATH							
+planet_event = {
+	id = halo_activation.3
+	title = "halo_activation.3.name"
+	desc = "halo_activation.3.desc"
+	picture = GFX_evt_halo_deactivation
+	show_sound = event_default
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+####HALO RING TACTICAL PULSE####
+
+#FINAL WARNING TO FIRE HALO TACTICAL PULSE
+country_event = {
+	id = halo_activation.11
+	title = "halo_activation.11.name"
+	desc = "halo_activation.11.desc"
+	picture = GFX_evt_halo_aftermath_1
+	show_sound = event_red_alert
+	location = event_target:halo_installation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "halo_activation.11.a"
+		country_event = { id = halo_activation.6 days = 5 }
+	}
+	option = {
+		name = "halo_activation.11.b"
+		planet_event = { id = halo_activation.4 days = 5 }
+	}
+}
+
+#HALO FIRING TACTICAL PULSE
+country_event = {
+	id = halo_activation.6
+	title = "halo_activation.6.name"
+	desc = "halo_activation.6.desc"
+	picture = GFX_evt_halo_aftermath
+	show_sound = event_screams
+	location = event_target:halo_installation
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		event_target:halo_installation = {
+			halo_ring_in_system_tactical_pulse_effect = yes
+		}	
+	}
+
+	option = {
+		name = EXCELLENT
+		hidden_effect = {
+			planet_event = { id = halo_activation.7 days = 5 }
+		}
+	}
+}
+
+#TACTICAL PULSE AFTERMATH							
+planet_event = {
+	id = halo_activation.7
+	title = "halo_activation.7.name"
+	desc = "halo_activation.7.desc"
+	picture = GFX_evt_halo_deactivation
+	show_sound = event_default
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+
+
+#DEACTIVATING THE HALO RING
+planet_event = {
+	id = halo_activation.4
+	title = "halo_activation.4.name"
+	desc = "halo_activation.4.desc"
+	picture = GFX_evt_halo_deactivation
+	show_sound = event_default
+	location = event_target:halo_installation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		hidden_effect = {
+			change_pc = pc_forerunner_halo
+			set_planet_entity = {
+				entity = "halo_ring_01_entity"
+			}
+		}
+	}
+}
+
+
+	

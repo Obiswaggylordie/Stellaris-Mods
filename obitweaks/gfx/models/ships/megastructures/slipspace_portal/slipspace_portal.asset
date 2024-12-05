@@ -1,0 +1,42 @@
+#####################################################
+#####											#####
+#####					Forerunner				#####
+#####											#####
+#####################################################
+
+
+entity = {
+	name = "forerunner_01_slipspace_portal_entity"
+	#pdxmesh = "MEC_mass_relay_gateway_01"
+	
+	locator = { name = "relay_pos"	position = { 0 0 0 } rotation = { 0 0 0 } }
+		
+	attach = { relay_pos = "MEC_mass_relay_gateway_01_entity" }
+}
+
+entity = {
+	name = "forerunner_02_slipspace_portal_entity"
+	#pdxmesh = "MEC_mass_relay_gateway_01"
+	
+	locator = { name = "relay_pos"	position = { 0 0 0 } rotation = { 0 0 0 } }
+		
+	attach = { relay_pos = "MEC_mass_relay_gateway_deactivated_01_entity" }
+}
+
+entity = {
+	name = "forerunner_03_slipspace_portal_entity"
+	#pdxmesh = "MEC_mass_relay_gateway_01"
+	
+	locator = { name = "relay_pos"	position = { 0 0 0 } rotation = { 0 0 0 } }
+		
+	attach = { relay_pos = "portal_entity" }
+}
+
+entity = {
+	name = "forerunner_04_slipspace_portal_entity"
+	#pdxmesh = "MEC_mass_relay_gateway_01"
+	
+	locator = { name = "relay_pos"	position = { 0 0 0 } rotation = { 0 0 0 } }
+
+	attach = { relay_pos = "empty_section_entity" }
+}

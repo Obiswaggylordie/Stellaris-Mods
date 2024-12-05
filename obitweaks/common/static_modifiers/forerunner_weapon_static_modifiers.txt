@@ -1,0 +1,22 @@
+composer_target = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_planet_beam.dds"
+	icon_frame = 2
+}
+
+attenuation_target = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_planet_beam.dds"
+	icon_frame = 2
+}
+
+
+attenuation_field_emp = {
+	planet_building_build_speed_mult = -10
+	planet_pop_assembly_add = -10
+	planet_jobs_produces_mult = -10
+   	planet_jobs_upkeep_mult = 10
+	biological_pop_happiness = -0.10
+	planet_stability_add = -100
+	
+	icon = "gfx/interface/icons/planet_modifiers/attenuation_field_emp.dds"
+	icon_frame = 3
+}

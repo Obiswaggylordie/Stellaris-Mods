@@ -1,0 +1,129 @@
+namespace = efg_earth_origin
+
+#############################################
+# Technology - Start
+#############################################
+
+country_event = {
+	id = efg_earth_origin.001
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_origin = origin_earth_2200
+	}
+
+	immediate = {
+		set_country_flag = all_spark_0
+		capital_scope = {
+			
+			clear_blockers = yes
+			clear_deposits = yes
+			add_deposit = d_well_of_all_sparks_duplicate
+			add_deposit = d_cybertronian_world_core
+			add_deposit = d_cybertronian_city
+			add_deposit = d_cybertronian_city
+			add_deposit = d_space_bridge
+			add_deposit = d_energon_bridge
+			add_deposit = d_active_omega_lock
+			add_deposit = d_crystal_city
+			add_deposit = d_teletraan_one
+			add_deposit = d_iacon_city
+			add_deposit = d_kaon_city
+			add_deposit = d_sanctuary_fortress
+			add_deposit = d_inactive_trypticon
+			add_deposit = d_depleted_all_spark
+			set_planet_flag = omega_lock_5
+			set_planet_flag = has_depleted_all_spark
+			remove_building = building_research_lab_1
+			remove_building = building_commercial_zone
+
+			if = {
+				limit = { root = { is_machine_empire = yes } }
+
+				root = {
+					set_country_flag = can_use_efg_tech
+					give_technology = { tech = tech_efg_pretech message = no }
+					give_technology = { tech = tech_efg_weapons_1 message = no }
+					give_technology = { tech = tech_efg_armor_1 message = no }
+					give_technology = { tech = tech_efg_shield_1 message = no }
+					give_technology = { tech = tech_efg_reactor_1 message = no }
+					give_technology = { tech = tech_robotic_workers message = no }
+					give_technology = { tech = tech_Wave_motion_gun_Fleet message = no }
+					give_technology = { tech = tech_slipspace_portal_activation message = no }
+					give_technology = { tech = tech_energon_mining message = no }
+					give_technology = { tech = tech_mine_living_metal message = no }
+					give_technology = { tech = tech_cybertronian_technology message = no }
+					give_technology = { tech = tech_psionic_theory message = no }
+					give_technology = { tech = tech_sbymod_check_esc_acot message = no }
+					give_technology = { tech = tech_sbymod_check_avm message = no }
+					
+				}
+			}
+			else_if = {
+				limit = { root = { is_hive_empire = yes } }
+
+				root = {
+					set_country_flag = can_use_efg_tech
+					give_technology = { tech = tech_efg_pretech message = no }
+					give_technology = { tech = tech_efg_weapons_1 message = no }
+					give_technology = { tech = tech_efg_armor_1 message = no }
+					give_technology = { tech = tech_efg_shield_1 message = no }
+					give_technology = { tech = tech_efg_reactor_1 message = no }
+					give_technology = { tech = tech_robotic_workers message = no }
+					give_technology = { tech = tech_Wave_motion_gun_Fleet message = no }
+					give_technology = { tech = tech_slipspace_portal_activation message = no }
+					give_technology = { tech = tech_energon_mining message = no }
+					give_technology = { tech = tech_mine_living_metal message = no }
+					give_technology = { tech = tech_cybertronian_technology message = no }
+					give_technology = { tech = tech_psionic_theory message = no }
+					give_technology = { tech = tech_sbymod_check_esc_acot message = no }
+					give_technology = { tech = tech_sbymod_check_avm message = no }
+				}
+			}
+			else = {
+				#limit = { root = { is_regular_empire = yes } }
+				
+				root = {
+					set_country_flag = can_use_efg_tech
+					give_technology = { tech = tech_efg_pretech message = no }
+					give_technology = { tech = tech_efg_weapons_1 message = no }
+					give_technology = { tech = tech_efg_armor_1 message = no }
+					give_technology = { tech = tech_efg_shield_1 message = no }
+					give_technology = { tech = tech_efg_reactor_1 message = no }
+					give_technology = { tech = tech_robotic_workers message = no }
+					give_technology = { tech = tech_Wave_motion_gun_Fleet message = no }
+					give_technology = { tech = tech_slipspace_portal_activation message = no }
+					give_technology = { tech = tech_energon_mining message = no }
+					give_technology = { tech = tech_mine_living_metal message = no }
+					give_technology = { tech = tech_cybertronian_technology message = no }
+					give_technology = { tech = tech_psionic_theory message = no }
+					give_technology = { tech = tech_sbymod_check_esc_acot message = no }
+					give_technology = { tech = tech_sbymod_check_avm message = no }
+				}
+			}
+		}
+	}
+}
+
+
+#############################################
+# Country Events
+#############################################
+
+country_event = {
+	id = efg_earth_origin.011
+	title = "eu_origin.11.name"
+	desc = "eu_origin.11.desc"
+	picture = GFX_evt_ship_travel
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+	
+	trigger = {
+		has_origin = origin_earth_2200
+	}
+
+	option = {
+		name = "EXCELLENT"
+	}
+}

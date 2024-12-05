@@ -1,0 +1,148 @@
+
+#RAW ENERGON
+energon_crystals = {
+	tradable = yes
+	category = strategic
+	market_amount = -1
+	market_price = 100
+	max = 15000
+	
+	prerequisites = { "tech_energon_mining" }
+	
+	deficit_modifier = energon_crystals_deficit
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 10
+			is_cybertronian = yes 
+		}
+	}
+	
+	ai_wants = {
+		base = 5
+		modifier = {
+			factor = 10
+			is_cybertronian = yes 
+		}
+	}
+}
+
+dark_energon_crystals = {
+	tradable = yes
+	category = rare
+	market_amount = -1
+	market_price = 100
+	max = 15000
+	prerequisites = { "tech_dark_energon_mining" }
+	
+	deficit_modifier = dark_energon_crystals_deficit
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 5
+			is_cybertronian = yes 
+		}
+		modifier = {
+			factor = 10
+			is_decepticon_empire = yes 
+		}
+		modifier = {
+			factor = 0
+			is_autobot_empire = yes 
+		}
+	}
+	
+	ai_wants = {
+		base = 5
+		modifier = {
+			factor = 5
+			is_cybertronian = yes 
+		}
+		modifier = {
+			factor = 10
+			is_decepticon_empire = yes 
+		}
+		modifier = {
+			factor = 0
+			is_autobot_empire = yes 
+		}
+	}
+}
+
+
+
+#REFINED ENERGON
+energon = {
+	tradable = yes
+	category = rare
+	market_amount = -1
+	market_price = 100
+	max = 15000
+	prerequisites = { "tech_energon_mining" }
+
+	deficit_modifier = energon_deficit #found in static modifiers
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 15
+			is_cybertronian = yes 
+		}
+	}
+	
+	ai_wants = {
+		base = 5
+		modifier = {
+			factor = 15
+			is_cybertronian = yes 
+		}
+	}
+}
+
+dark_energon = {
+	tradable = yes
+	category = rare
+	market_amount = -1
+	market_price = 100
+	max = 15000
+	
+	prerequisites = { "tech_dark_energon_mining" }
+	visibility_prerequisite = { always = yes }
+
+	deficit_modifier = dark_energon_deficit #found in static modifiers
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 5
+			is_cybertronian = yes 
+		}
+		modifier = {
+			factor = 10
+			is_decepticon_empire = yes 
+		}
+		modifier = {
+			factor = 0
+			is_autobot_empire = yes 
+		}
+	}
+	ai_wants = {
+		base = 5
+		modifier = {
+			factor = 5
+			is_cybertronian = yes 
+		}
+		modifier = {
+			factor = 10
+			is_decepticon_empire = yes 
+		}
+		modifier = {
+			factor = 0
+			is_autobot_empire = yes 
+		}
+	}
+}
+
+

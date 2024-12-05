@@ -1,0 +1,12 @@
+﻿l_english:
+
+dtf_sol_system_initializer_NAME:0 "Dasha"
+dtf_sol_system_initializer_DESC:0 "The home system of Kas Zei'a."
+
+
+
+pc_dtf_pluto:0 "Ice planet"
+pc_dtf_pluto_desc:0 ""
+
+pc_dtf_pluto_tera:0 "Pluto(Artificial sun)"
+pc_dtf_pluto_tera_desc:0 "Planet with a habitable environment established by an artificial sun."

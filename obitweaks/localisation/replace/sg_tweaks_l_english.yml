@@ -1,0 +1,43 @@
+﻿l_english:
+####################################
+
+ ZPM_AUX: "Super Dimension Core"
+ AUX_ZPM: "Super Dimension Core"
+ 
+ CONTROL_CHAIR_AUX: "Zei'a Control Chair"
+ AUX_CONTROL_CHAIR: "Zei'a Control Chair"
+ AUX_CONTROL_CHAIR_desc: "A highly sophisticated piece of Zei'a technology, utilising telepathic interfaces to connect with compatible and authorized users, allowing them total command over all systems linked to the chair."
+ 
+ sr_ancient_zpm: "Super Dimension Core"
+ sr_ancient_zpm_desc: "The most advanced energy source in the galaxy."
+ 
+ decision_remove_stargate: "Remove Stargate"
+ 
+ WEED_CLOAK: "Ascended Cloaking"
+ WEEd_CLOAK_SET: "Ascended Cloaking"
+
+ Zpm_Installed_On_Planet: "Super Dimension Core Installed"
+ Zpm_Installed_On_Planet_desc: "Our planet's powergrid has been massively augmented through the installation of a Zei'a Super Dimension Core."
+
+# Traits
+ trait_ancient: "§BPrecursor§!"
+
+ trait_ori: "§FAltmeri§!"
+ trait_ori_desc: "A higly religious and warlike species. Average Enjoyers of Ori Fried Chicken."
+
+ trait_tauri: "§URinneworldian§!"
+ trait_tauri_desc: "Humans of Earth. Although primitive in comparison to other races they excel at building relations and scavanging technology."
+
+ trait_jaffa: "§DDominonian§!"
+ trait_jaffa_desc: "Jaffa warriors broke free from Goa'uld enslavement and establised their own faction."
+ trait_jaffa_trait_tooltip: "Has an innate growth penalty until Tretonin serum is researched."
+
+ trait_asuran: "§HUviik Replicator§!"
+ trait_asuran_desc: "A special kind of replicators who decided to take on a human form. They possess all knowledge of their creators, the Ancients."
+ asuran_trait_tooltip:1 "Robot resource production on §YMachine§! worlds increased by §G2%§! once §EMachine Ascension§! is unlocked."
+
+ trait_nox: "§GDunmeri§!"
+ trait_nox_desc: "The Nox are one of the oldest races in the galaxy. They have near-ascension powers and live on the planet Gaia"
+
+ Inactive_Stargate_On_Planet: "Buried Stargate"
+ Inactive_Stargate_On_Planet_desc: "In its current state, this Stargate cannot initiate or receive wormhole connections." 

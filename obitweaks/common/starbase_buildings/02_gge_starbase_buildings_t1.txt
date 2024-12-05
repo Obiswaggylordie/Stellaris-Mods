@@ -1,0 +1,58 @@
+
+gge_expanded_factory_1 = {
+	icon = "GFX_starbase_shipyard"
+	construction_days = 180
+
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = "tech_gge_technology_1"
+		}
+		owner = { has_origin = origin_garmillas }
+	}
+
+	ship_modifier = { 
+		#ship_starting_experience_add = 15
+	}
+
+	station_modifier = {
+		starbase_shipyard_capacity_add = 20
+		starbase_shipyard_build_speed_mult = 0.5
+
+		ship_corvette_cost_mult = -0.50
+		ship_frigate_cost_mult = -0.50
+		ship_destroyer_cost_mult = -0.50
+		ship_cruiser_cost_mult = -0.50
+		ship_battleship_cost_mult = -0.50
+		ship_battlecruiser_cost_mult = -0.50
+		ship_carrier_cost_mult = -0.50
+		ship_dreadnought_cost_mult = -0.50
+		ship_titan_cost_mult = -0.50
+
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 1800
+		}
+
+		upkeep = {
+			energy = 30
+			alloys = 20
+		}
+	}
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 0.0
+			exists = owner
+			NOT = { owner = { has_origin = origin_garmillas } }
+		}
+	}
+
+}

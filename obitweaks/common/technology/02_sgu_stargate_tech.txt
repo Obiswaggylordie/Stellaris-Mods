@@ -1,0 +1,138 @@
+##################
+### TECH COSTS ###
+##################
+#If you change any of these, use replace in files so the values are the same across all files
+
+@tier1cost1 = 500
+@tier1cost2 = 640
+@tier1cost3 = 780
+
+@tier2cost1 = 1000
+@tier2cost2 = 1500
+@tier2cost3 = 2000
+
+@tier3cost1 = 3000
+@tier3cost2 = 4000
+@tier3cost3 = 5000
+
+@tier4cost1 = 6000
+@tier4cost2 = 8000
+@tier4cost3 = 10000
+
+@tier5cost1 = 14000
+@tier5cost2 = 17000
+@tier5cost3 = 20000
+
+####################
+### TECH WEIGHTS ###
+####################
+
+@tier1weight1 = 100
+@tier1weight2 = 95
+@tier1weight3 = 90
+
+@tier2weight1 = 85
+@tier2weight2 = 75
+@tier2weight3 = 70
+
+@tier3weight1 = 65
+@tier3weight2 = 60
+@tier3weight3 = 50
+
+@tier4weight1 = 45
+@tier4weight2 = 40
+@tier4weight3 = 35
+
+@tier5weight1 = 30
+@tier5weight2 = 25
+@tier5weight3 = 20
+
+tech_stargate_activation = {
+	cost = 5000
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	ai_update_type = all
+	#prerequisites = { "tech_" }
+	weight = @tier1weight2
+	is_rare = yes
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_STARGATE_ACTIVATION_TITLE"
+			desc = "TECH_UNLOCK_STARGATE_ACTIVATION_DESC"
+		}
+	}
+	
+	modifier = {
+	}
+
+	weight_modifier = {
+		factor = 2
+	}
+	
+	ai_weight = {
+		factor = 2
+	}
+}
+
+tech_stargate_iris = {
+	cost = 7500
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	ai_update_type = all
+	prerequisites = { "tech_stargate_activation" }
+	weight = @tier1weight2
+	is_rare = yes
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_STARGATE_IRIS_TITLE"
+			desc = "TECH_UNLOCK_STARGATE_IRIS_DESC"
+		}
+	}
+	
+	modifier = {
+	}
+
+	weight_modifier = {
+		factor = 2
+	}
+	
+	ai_weight = {
+		factor = 2
+	}
+}
+
+tech_stargate_construction = {
+	cost = 15000
+	area = physics
+	tier = 4
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_stargate_activation" "tech_hyper_drive_3" }
+	weight = @tier1weight2
+	is_rare = yes
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_STARGATE_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_STARGATE_CONSTRUCTION_DESC"
+		}
+	}
+	
+	modifier = {
+	}
+
+	weight_modifier = {
+		factor = 2
+	}
+	
+	ai_weight = {
+		factor = 2
+	}
+}
+
+
+

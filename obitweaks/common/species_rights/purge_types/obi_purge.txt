@@ -1,0 +1,47 @@
+# from = country
+# this = species
+
+purge_library = {
+	pop_escape_chance = 0
+	pop_decline_rate = 10000 # 1 pops per month, overrides BASE_POP_DECLINE, will only work on purge types
+
+	pop_modifier = {
+		pop_happiness = -10
+	}
+
+	free_pop_modifier = {
+		planet_jobs_engineering_research_produces_mult = 100.0
+		planet_jobs_physics_research_produces_mult = 100.0
+		planet_jobs_society_research_produces_mult = 100.0
+	}
+
+	potential = {
+		exists = from
+		from = {
+			OR = {
+				has_civic = civic_ecumene_protocols
+				has_civic = civic_forerunner_ecumene
+			}
+		}
+	}
+
+	allow = {
+		from = {
+			any_owned_planet = {
+				has_deposit = d_genesis_domain_gateway
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			factor = 0
+			from = {
+				has_valid_ai_personality = yes
+				NOT = {
+					has_ai_personality_behaviour = purger
+				}
+			}
+		}
+	}
+}

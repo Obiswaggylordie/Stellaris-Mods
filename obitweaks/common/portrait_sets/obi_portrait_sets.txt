@@ -1,0 +1,78 @@
+# Portrait sets associated with species classes.
+# Portrait sets are grouped into portrait categories to be shown on empire editor. Check out portrait_categories database.
+# portraits = {}									List of portraits which are available for the species class without any conditions
+# conditional_portraits = {}
+#	randomizable = yes/no/trigger (default: yes)	Condition that specifies if the portraits in the list below can be used with species which design is randomly generated
+#	playable = yes/no/trigger (default: yes)		Condition that specifies if the portraits in the list below are available in empire design view
+#	portraits = {}									List of portraits which can be used by species of corresponding class depending on the
+# non_randomized_portraits							List of portraits which are not available for empires whose design was randomly generated
+# non_pre_ftl_portraits								List of portraits which are not available for pre-ftl empires
+# uplifted_portraits = {}							List of portraits which will be used by species of corresponding class after uplifting
+#													(the number of uplifted portraits must be the same as the number of portraits in 'portraits' list).
+
+zeia_portraits = {
+	species_class = zeia
+
+	portraits = {
+		"kvilsha"
+		"sobsha"
+	}
+
+	# These should not be used for randomly generated species
+	non_randomized_portraits = {
+		"kvilsha"
+		"sobsha"
+	}
+}
+
+#kvilsha_portraits = {
+#	species_class = kvilsha
+#
+#	portraits = {
+#		"kvilsha"
+#	}
+#
+#	# These should not be used for randomly generated species
+#	non_randomized_portraits = {
+#		"kvilsha"
+#	}
+#}
+#
+#sobsha_portraits = {
+#	species_class = sobsha
+#
+#	portraits = {
+#		"sobsha"
+#	}
+#
+#	# These should not be used for randomly generated species
+#	non_randomized_portraits = {
+#		"sobsha"
+#	}
+#}
+
+orokin_portraits = {
+	species_class = orokin
+
+	portraits = {
+		"lyrian"
+	}
+
+	# These should not be used for randomly generated species
+	non_randomized_portraits = {
+		"lyrian"
+	}
+}
+
+srokan_portraits = {
+	species_class = srokan
+
+	portraits = {
+		"quarian"
+	}
+
+	# These should not be used for randomly generated species
+	non_randomized_portraits = {
+		"quarian"
+	}
+}

@@ -1,0 +1,157 @@
+﻿l_english:
+
+ origin_earth_2200: "The First Race "
+ origin_earth_2200_desc: "Kas Zei'a, the First Race, the Precursors, the Relay Builders. They have been known throughout history as the most advanced civilisation to ever roam the stars. You spawn on a Cybertronian World."
+ origin_tooltip_efg_2200: ""
+
+ origin_garmillas: "The Second Race"
+ origin_garmillas_desc: "The Second Race, original creators of the Scourge, the Srokans. Originally thought to have gone exctinct in the initial outbreak of the Scourge, have instead bolstered and regained their footing in the galaxy. Meticulously  preparing to fight their vicious mistake."
+ origin_tooltip_mce_garmillas: ""
+
+ origin_gatlantis: "The Third Race"
+ origin_gatlantis_desc: "The Nononians have been widely recognized as the Third Race, being one of the most powerful civilisations in the universe."
+ origin_tooltip_wce_gatlantis: ""
+
+ efg_orbital_defense_system: "Lagrangian Point Satellite"
+ efg_orbital_defense_system_plural: "Lagrangian Point Satellites"
+
+ efg_ms_orbital_defense_system_1:0 "Lagrangian Point Sattelite Construction Site"
+ efg_ms_orbital_defense_system_1_DESC:0 ""
+ efg_ms_orbital_defense_system_1_MEGASTRUCTURE_DETAILS:0 "
+
+ efg_ms_orbital_defense_system_2:0 "Lagrangian Point Satellite"
+ efg_ms_orbital_defense_system_2_DESC:0 ""
+ efg_ms_orbital_defense_system_2_MEGASTRUCTURE_DETAILS:0 ""
+
+ efg_pm_dimensional_time_fault: "Dimensional Time Fault"
+ efg_pm_dimensional_time_fault_desc: "Subspace created by the side effects of Cosmo Reverse System."
+ 
+ efg_pm_factory_full_operation: "Dimensional Time Fault Facility limiter removal"
+ efg_pm_factory_full_operation_desc: "The Time Fault Facilities operates at maximum output for one year."
+ 
+ sm_efg_factory_connect_1: "Dimensional Time Fault Shipyard Control Uplink"
+ sm_efg_factory_connect_1_desc: "Access a Dimensional Time Fault Shipyard's automated systems and direct the produced vessels to this starbase."
+ 
+ sm_large_shipyard: "Large Shipyard"
+ sm_large_shipyard_desc: "Large shipbuilding facility with two shipbuilding compartments. \Parallel operation with multiple shipbuilding compartments is possible."
+ 
+ job_efg_head_researcher: "Time Fault Research Director"
+ job_efg_head_researcher_plural: "Time Fault Science Directors"
+ job_efg_head_researcher_desc: "Director of all research and development within a Time Fault"
+ mod_job_efg_head_researcher_add: "Occupational quota for science president within DTF"
+ 
+ job_efg_researcher: "Time Fault Scientist"
+ job_efg_researcher_plural: "Time Fault Scientist"
+ job_efg_researcher_desc: "Employees of the Institute within Time Faults"
+ mod_job_efg_researcher_add: "Occupational quota for researcher within DTF"
+ 
+ job_efg_brain_drone: "Brain Drone within DTF"
+ job_efg_brain_drone_plural: "Brain Drone within DTF"
+ job_efg_brain_drone_desc: "Drones belonging to the DTF factory."
+ mod_job_efg_brain_drone_add: "Occupational quota for brain drone within DTF"
+ 
+ job_efg_calculator: "Computational Drone within DTF"
+ job_efg_calculator_plural: "Computational Drone within DTF"
+ job_efg_calculator_desc: "Computational equipment of the Institute within Time Faults"
+ mod_job_efg_calculator_add: "Occupational quota for computational drone within DTF"
+ 
+ job_efg_foundry: "Casting Operator within DTF"
+ job_efg_foundry_plural: "Casting Operator within DTF"
+ job_efg_foundry_desc: "Time Fault Inner Plant Employees"
+ mod_job_efg_foundry_add: "Occupational quota for casting workers within DTF"
+ 
+ job_efg_alloy_drone: "DTF Casting Operation Drone within DTF"
+ job_efg_alloy_drone_plural: "DTF Casting Operation Drone within DTF"
+ job_efg_alloy_drone_desc: "Drones belonging to the Time Fault Factory"
+ mod_job_efg_alloy_drone_add: "Occupational quota for casting operation drones within DTF"
+ 
+ job_efg_fabricator: "Casting Operation Drone within DTF"
+ job_efg_fabricator_plural: "Casting Operation Drone within DTF"
+ job_efg_fabricator_desc: "Time Fault Plant Calculation Equipment"
+ mod_job_efg_fabricator_add: "Occupational quota for casting operation drones within DTF"
+ 
+ NAME_mce_garmillas: "Sroka"
+
+ pc_garmillas: "Hyper-Sterilized Continental World"
+ pc_garmillas_desc: "The ancestral home of the Srokans, rid of the scourge by Kas Zei'a and returned to its rightful owners.."
+ pc_second_barelas: "2nd Barelas"
+ pc_second_barelas_desc: "A space mobile fortress city."
+
+ pc_iscandar: "Planet Iscandar"
+ pc_iscandar_desc: "A twin planet with Sroka."
+
+ edict_dimensional_time_fault: "Edict on Dimensional Time Fault"
+ edict_dimensional_time_fault_desc: "Utilising the power of the Dimensional Time Fault, we possess all the time in the world to improve. Our ascendancy is at hand!"
+ 
+ edict_efg_defensive_war: "Absolute Time Fault Militarisation"
+ edict_efg_defensive_war_desc: "We will survive, we will prevail! No matter what we lose, no matter what we do! Victory, victory above all else! We will not go gentle into that good night."
+
+ edict_efg_no_growth: "Stopping population growth"
+ edict_efg_no_growth_desc: "Stop population growth"
+
+ building_efg_underground_city_1: "EFG Underground City (S)"
+ building_efg_underground_city_1_desc: "City renovated from a shelter built during the Inner Planet War."
+ 
+ building_efg_underground_city_2: "EFG Underground City (M)"
+ building_efg_underground_city_2_desc: "Underground city expanded to accommodate population growth"
+ 
+ building_efg_underground_city_3: "EFG Underground City (L)"
+ building_efg_underground_city_3_desc: "Large underground city that can be used as a shelter in case of emergency"
+ 
+ building_efg_underground_city_4: "EFG Underground City (XL)"
+ building_efg_underground_city_4_desc: "Very large underground city that can be used as a shelter in case of emergency"
+ 
+ edict_Ark_Of_Destruction: "Unleash the power of the Ark of Destruction"
+ edict_Ark_Of_Destruction_desc: "The Ark of Destruction is the ultimate weapon, the final evolution of military technology. It's power is to be used for ultimate annihilation, its purpose is to exist as an absolute and undeniable force - those who wield it may not be stopped."
+
+# Tier 1
+ WCE_ARMOR_PLATING_WHITECOMET_CS_1: "Ark of Destruction Armor Plating I"
+ WCE_ARMOR_PLATING_WHITECOMET_CS_1_DESC: "Ark of Destruction Armor Plating I"
+ WCE_ARMOR_PLATING_1_WHITECOMET: "Ark of Destruction Armor Plating I"
+ WCE_SHIELD_WHITECOMET_CS_1: "Ark of Destruction Shield I"
+ WCE_SHIELD_WHITECOMET_CS_1_DESC: "Ark of Destruction Shield I"
+ WCE_SHIELD_1_WHITECOMET: "Ark of Destruction Shield I"
+ WCE_REACTOR_WHITECOMET_1:	"Ark of Destruction Reactor I"
+ WCE_THRUSTER_WHITECOMET_1: "Ark of Destruction Thruster I"
+ WCE_COMBAT_COMPUTER_WHITECOMET_1: "Ark of Destruction Computer I"
+ WCE_SHIP_AURA_WHITECOMET_1: "Ark of Destruction Shroud I"
+ wce_ship_aura_whitecomet: "Ark of Destruction Shroud I"
+ 
+# Tier 2 
+
+ WCE_ARMOR_PLATING_WHITECOMET_CS_2: "Ark of Destruction Armor Plating II"
+ WCE_ARMOR_PLATING_WHITECOMET_CS_2_DESC: "Ark of Destruction Armor Plating II"
+ WCE_ARMOR_PLATING_2_WHITECOMET: "Ark of Destruction Armor Plating II"
+ WCE_SHIELD_WHITECOMET_CS_2: "Ark of Destruction Shield II"
+ WCE_SHIELD_WHITECOMET_CS_2_DESC: "Ark of Destruction Shield II"
+ WCE_SHIELD_2_WHITECOMET: "Ark of Destruction Shield II"
+ WCE_REACTOR_WHITECOMET_2: "Ark of Destruction Reactor II"
+ WCE_THRUSTER_WHITECOMET_2: "Ark of Destruction Thruster II"
+ WCE_COMBAT_COMPUTER_WHITECOMET_2: "Ark of Destruction Computer II"
+ WCE_SHIP_AURA_WHITECOMET_2: "Ark of Destruction Shroud II"
+ wce_ship_aura_whitecomet: "Ark of Destruction Shroud II"
+
+# Tier 1
+ WCE_WHITECOMET_ENERGY_CANNON_CS_1:0 		"Ark of Destruction Beam I"
+ WCE_WHITECOMET_ENERGY_CANNON_CS_1_DESC:0 	""
+ WCE_WHITECOMET_ENERGY_CANNON_1:0 			"Ark of Destruction Beam I"
+ WCE_WHITECOMET_MISSILE_CS_1:0 		"Ark of Destruction Missile I"
+ WCE_WHITECOMET_MISSILE_CS_1_DESC:0 	""
+ WCE_WHITECOMET_MISSILE_1:0 			"Ark of Destruction Missile I"
+ 
+# Tier 2
+ WCE_WHITECOMET_ENERGY_CANNON_CS_2:0 		"Ark of Destruction Beam II"
+ WCE_WHITECOMET_ENERGY_CANNON_CS_2_DESC:0 	""
+ WCE_WHITECOMET_ENERGY_CANNON_2:0 			"Ark of Destruction Beam II"
+ WCE_WHITECOMET_MISSILE_CS_2:0 		"Ark of Destruction Missile II"
+ WCE_WHITECOMET_MISSILE_CS_2_DESC:0 	""
+ WCE_WHITECOMET_MISSILE_2:0 			"Ark of Destruction Missile II"
+ 
+l_english:
+
+ wce_white_comet:0 			 "Ark of Destruction"
+ wce_white_comet_plural:0 		 ""
+ WCE_WHITECOMET_BOW_SECTION:0	 "Core Section"
+ WCE_WHITECOMET_MID_SECTION:0	 "Attack Section"
+ WCE_WHITECOMET_STERN_SECTION:0	 "Defense Section"
+ WCE_WHITECOMET_BOW_NSC_SECTION:0 "Core Section"

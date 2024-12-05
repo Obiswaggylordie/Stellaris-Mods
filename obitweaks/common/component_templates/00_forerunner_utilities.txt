@@ -1,0 +1,159 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes.
+
+#############
+#	COST	#
+#############
+
+@cost_6S = 30
+@cost_6M = 60
+@cost_6L = 120
+
+#############
+#	 FTL	#
+#############
+
+@ftl1 = 5
+@ftl2 = 10
+@ftl3 = 15
+@ftl4 = 30
+
+@power1 = -5
+@power2 = -7.5
+@power3 = -10
+@power4 = -10
+
+##################################################
+# Forerunner Guardian Attenuation Pulse Emitter ##
+##################################################
+
+utility_component_template = {
+	key = "FORERUNNER_ATTENUATION_PULSE_EMITTER"
+	size = medium
+	icon = "GFX_ship_part_forerunner_attenuation_pulse_emitter"
+	icon_frame = 1
+	power = 0
+	#hidden = yes
+	
+	size_restriction = { guardian_custode }
+	component_set = "FORERUNNER_ATTENUATION_PULSE_EMITTER"
+
+	hostile_aura = {
+		name = "aura_shield_dampener"
+		radius = 250
+		apply_on = ships
+
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = hostile_inhibitor_aura
+			priority = 1
+		}
+
+		modifier = {
+			ship_emergency_ftl_min_days_mult = 100.0
+			ship_disengage_chance_mult = -100.0
+			ship_shield_reduction = 100.0
+			ship_speed_reduction = 100.0
+			ship_evasion_mult = -100.0
+			ship_windup_mult = 100.0
+			ship_fire_rate_mult = -100.0
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "FORERUNNER_EMPTY_EMITTER"
+	size = small
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	
+	size_restriction = { guardian_custode }
+	component_set = "FORERUNNER_ATTENUATION_PULSE_EMITTER"
+
+	ai_weight = {
+		weight = 10000
+	}
+}
+
+utility_component_template = {
+	key = "FORERUNNER_CLOAKING"
+	size = aux
+	icon = "GFX_ship_part_cloak_1"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 50
+			energon = 500
+		}
+		upkeep = {
+			energy = 0.1
+			sr_living_metal = 0.1
+		}
+	}
+
+
+	modifier = {
+		ship_cloaking_strength_add = 5000
+	}
+
+
+	ship_limit = 1
+	component_set = "FORERUNNER_CLOAKING_SET"
+	prerequisites = { "tech_forerunner_start" "tech_forerunner_shield" }
+
+
+	ai_weight = {
+		weight = 10000
+	}
+}
+
+utility_component_template = {
+	key = "FORERUNNER_SCIENCE_CLOAKING"
+	size = aux
+	icon = "GFX_ship_part_cloak_1"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 50
+			energon = 500
+		}
+		upkeep = {
+			energy = 0.1
+			sr_living_metal = 0.1
+		}
+	}
+
+	size_restriction = {science explorer_vessel observation_station }
+
+	modifier = {
+		ship_cloaking_strength_add = 5000
+	}
+
+
+	ship_limit = 1
+	component_set = "science_cloaking_components"
+	prerequisites = { "tech_forerunner_start" "tech_forerunner_shield" }
+
+
+	ai_weight = {
+		weight = 10000
+	}
+}

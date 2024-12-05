@@ -1,0 +1,294 @@
+@efg_underground_city_build_time_1 = 120
+@efg_underground_city_build_time_2 = 160
+
+
+
+
+@efg_underground_city_housing_1 = 30
+@efg_underground_city_housing_2 = 45
+
+@efg_underground_city_amenities_1 = 30
+@efg_underground_city_amenities_2 = 45
+
+
+@efg_underground_city_alloys_cost_1 = 150
+@efg_underground_city_alloys_cost_2 = 1000
+
+
+@efg_underground_city_energy_upkeep_1 = 1
+@efg_underground_city_energy_upkeep_2 = 1
+
+@efg_underground_city_minerals_upkeep_1 = 1
+@efg_underground_city_minerals_upkeep_2 = 1
+
+
+@efg_underground_city_build_time_3 = 200
+@efg_underground_city_build_time_4 = 240
+
+
+
+
+@efg_underground_city_housing_3 = 60
+@efg_underground_city_housing_4 = 40
+
+@efg_underground_city_amenities_3 = 60
+@efg_underground_city_amenities_4 = 24
+
+
+@efg_underground_city_alloys_cost_3 = 3000
+@efg_underground_city_alloys_cost_4 = 9000
+
+
+@efg_underground_city_energy_upkeep_3 = 1
+@efg_underground_city_energy_upkeep_4 = 1
+
+@efg_underground_city_minerals_upkeep_3 = 1
+@efg_underground_city_minerals_upkeep_4 = 1
+
+building_efg_underground_city_1 = {
+	base_buildtime = @efg_underground_city_build_time_1
+	category = government
+
+	icon = building_efg_underground_city
+
+	potential = { 
+		owner = {
+			is_ai = no  
+			has_origin = origin_earth_2200
+		}
+	} 
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @efg_underground_city_alloys_cost_1
+		}
+		upkeep = {
+			energy = @efg_underground_city_energy_upkeep_1
+			minerals = @efg_underground_city_minerals_upkeep_1
+		}
+
+		produces = {
+			#food = 50	
+		}
+	}
+
+	triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+        modifier = {
+			job_farmer_add = 6
+			job_miner_add = 6
+			job_technician_add = 6
+			job_foundry_add = 6
+			job_artisan_add = 6
+			habitability_floor_add = 0.06
+        }
+    }
+
+	planet_modifier = {
+		planet_housing_add = @efg_underground_city_housing_1
+		planet_amenities_add = @efg_underground_city_amenities_1
+		planet_orbital_bombardment_damage = -0.10
+	}
+
+
+	upgrades = {
+		"building_efg_underground_city_2"
+	}
+
+	prerequisites = { "tech_efg_pretech" }
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+building_efg_underground_city_2 = {
+	base_buildtime = @efg_underground_city_build_time_2
+	category = government
+	can_build = no
+
+	icon = building_efg_underground_city
+
+	potential = { 
+		owner = {
+			is_ai = no  
+			has_origin = origin_earth_2200
+		}
+	}  
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @efg_underground_city_alloys_cost_2
+		}
+		upkeep = {
+			energy = @efg_underground_city_energy_upkeep_2
+			minerals = @efg_underground_city_minerals_upkeep_2
+		}
+
+		produces = {
+			#food = 100	
+		}
+	}
+
+	triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+        modifier = {
+			job_farmer_add = 9
+			job_miner_add = 9
+			job_technician_add = 9
+			job_foundry_add = 9
+			job_artisan_add = 9
+			habitability_floor_add = 0.09
+        }
+    }
+
+	planet_modifier = {
+		planet_housing_add = @efg_underground_city_housing_2
+		planet_amenities_add = @efg_underground_city_amenities_2
+		planet_orbital_bombardment_damage = -0.20
+	}
+
+
+	upgrades = {
+		"building_efg_underground_city_3"
+	}
+
+	prerequisites = { "tech_efg_technology_2" }
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+building_efg_underground_city_3 = {
+	base_buildtime = @efg_underground_city_build_time_3
+	category = government
+	can_build = no
+
+	icon = building_efg_underground_city
+
+	potential = { 
+		owner = {
+			is_ai = no  
+			has_origin = origin_earth_2200
+		}
+	} 
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @efg_underground_city_alloys_cost_3
+		}
+		upkeep = {
+			energy = @efg_underground_city_energy_upkeep_3
+			minerals = @efg_underground_city_minerals_upkeep_3
+		}
+
+		produces = {
+			#food = 150	
+		}
+	}
+
+	triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+        modifier = {
+			job_farmer_add = 12
+			job_miner_add = 12
+			job_technician_add = 12
+			job_foundry_add = 12
+			job_artisan_add = 12
+			habitability_floor_add = 0.12
+        }
+    }
+
+	planet_modifier = {
+		planet_housing_add = @efg_underground_city_housing_3
+		planet_amenities_add = @efg_underground_city_amenities_3
+		planet_orbital_bombardment_damage = -0.30
+	}
+
+
+	upgrades = {
+		"building_efg_underground_city_4"
+	}
+
+
+	prerequisites = { "tech_efg_technology_4" }
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+building_efg_underground_city_4= {
+	base_buildtime = @efg_underground_city_build_time_3
+	category = government
+	can_build = no
+
+	icon = building_efg_underground_city
+
+	potential = { 
+		owner = {
+			is_ai = no  
+			has_origin = origin_earth_2200
+		}
+	} 
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @efg_underground_city_alloys_cost_3
+		}
+		upkeep = {
+			energy = @efg_underground_city_energy_upkeep_3
+			minerals = @efg_underground_city_minerals_upkeep_3
+		}
+
+		produces = {
+			#food = 150	
+		}
+	}
+
+	triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+        modifier = {
+			job_farmer_add = 20
+			job_miner_add = 20
+			job_technician_add = 20
+			job_foundry_add = 20
+			job_artisan_add = 20
+			habitability_floor_add = 0.20
+        }
+    }
+
+	planet_modifier = {
+		planet_housing_add = @efg_underground_city_housing_3
+		planet_amenities_add = @efg_underground_city_amenities_3
+		planet_orbital_bombardment_damage = -0.30
+	}
+
+
+
+	prerequisites = { "tech_efg_technology_5" }
+
+	ai_weight = {
+		weight = 0
+	}
+}

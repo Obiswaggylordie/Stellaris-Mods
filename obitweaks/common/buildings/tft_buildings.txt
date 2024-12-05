@@ -1,0 +1,160 @@
+###CYBERTRONIAN BUILDINGS###
+
+# Synthetic Energon Refinery
+building_cybertronian_synthenergon_refinery = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+	exempt_from_ai_planet_specialization = no
+	category = manufacturing
+	
+	potential = {
+		exists = owner
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+		owner = {
+			is_cybertronian = yes
+			NOT = { has_trait = "trait_robot_insecticon" }
+		}
+	}	
+	destroy_trigger = {
+		free_building_slots = 0
+		exists = owner
+		owner = {
+			NOT = {
+				is_cybertronian = yes
+			}
+		}
+	}
+	allow = {
+		has_upgraded_capital = yes
+	}
+	planet_modifier = {
+	}
+	country_modifier = {
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				NOT = { 
+					is_cybertronian = yes
+				}
+			}
+		}
+		modifier = {
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				NOT = { 
+					is_cybertronian = yes
+				}
+			}
+		}
+		modifier = {
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_cybertronian = yes
+			}
+		}
+		modifier = {
+			job_cybertronian_synthenergon_refiner_add = 2
+			planet_amenities_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_cybertronian = yes
+			}
+		}
+		modifier = {
+			job_cybertronian_synthenergon_refiner_drone_add = 2
+			planet_amenities_add = 5
+		}
+	}
+	
+	
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	
+	prerequisites = {
+		"tech_energon_mining_3"
+	}
+	
+	show_tech_unlock_if = {
+		is_cybertronian_empire = yes
+	}
+	
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_cybertronian = yes
+			}
+		}
+		text = job_cybertronian_synthenergon_refiner_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_cybertronian = yes
+			}
+		}
+		text = job_cybertronian_synthenergon_refiner_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				NOT = { 
+					is_cybertronian = yes
+				}
+			}
+		}
+		text = job_cybertronian_synthenergon_refiner_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				NOT = { 
+					is_cybertronian = yes
+				}
+			}
+		}
+		text = job_cybertronian_synthenergon_refiner_drone_effect_desc
+	}
+	
+	ai_resource_production = {
+		trigger = { always = yes }
+		energon = 10
+	}
+}

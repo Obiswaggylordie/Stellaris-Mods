@@ -1,0 +1,312 @@
+namespace = perdition_sangraal
+
+# Sangraal Perdition Wave Menu
+country_event = {
+	id = perdition_sangraal.1
+	title = "perdition_sangraal.1.name"
+	desc = "perdition_sangraal.1.desc"
+	#picture = GFX_evt_halo_aftermath
+	show_sound = event_yellow_alert
+	
+	is_triggered_only = yes
+	
+	option = { # Total Network Perdition
+		name = "perdition_sangraal.1.a"
+
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					OR = {
+						is_megastructure_type = forerunner_slipspace_portal
+						is_megastructure_type = forerunner_slipspace_portal_alpha
+						is_megastructure_type = forerunner_slipspace_portal_beta
+						is_megastructure_type = forerunner_slipspace_portal_delta
+						is_megastructure_type = forerunner_slipspace_portal_gamma
+						is_megastructure_type = forerunner_slipspace_portal_lambda
+						is_megastructure_type = forerunner_slipspace_portal_epsilon
+					}
+				}
+				save_global_event_target_as = perdition_relay
+				every_system = {
+					if = {
+						limit = {
+							distance = {
+								source = event_target:perdition_relay
+								min_jumps = 1
+								max_jumps = 10
+								#min_distance >= 1
+								#max_distance <= 150
+							}
+						}
+						perdition_sangraal_effect = yes
+					}
+				}
+				event_target:perdition_relay = {
+					perdition_sangraal_effect = yes
+				}
+				clear_global_event_target = perdition_relay
+			}
+		}
+	}
+
+
+	option = { # Omega Network Perdition
+	name = "perdition_sangraal.1.b"
+
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal
+				}
+				save_global_event_target_as = perdition_relay
+				every_system = {
+					if = {
+						limit = {
+							distance = {
+								source = event_target:perdition_relay
+								min_jumps = 1
+								max_jumps = 10
+								#min_distance >= 1
+								#max_distance <= 150
+							}
+						}
+						perdition_sangraal_effect = yes
+					}
+				}
+				event_target:perdition_relay = {
+					perdition_sangraal_effect = yes
+				}
+				clear_global_event_target = perdition_relay
+			}
+		}
+	}
+
+	option = { # Alpha Network Perdition
+	name = "perdition_sangraal.1.c"
+
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_alpha
+				}
+				save_global_event_target_as = perdition_relay
+				every_system = {
+					if = {
+						limit = {
+							distance = {
+								source = event_target:perdition_relay
+								min_jumps = 1
+								max_jumps = 10
+								#min_distance >= 1
+								#max_distance <= 150
+							}
+						}
+						perdition_sangraal_effect = yes
+					}
+				}
+				event_target:perdition_relay = {
+					perdition_sangraal_effect = yes
+				}
+				clear_global_event_target = perdition_relay
+			}
+		}
+	}
+
+	option = { # Beta Network Perdition
+	name = "perdition_sangraal.1.d"
+
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_beta
+				}
+				save_global_event_target_as = perdition_relay
+				every_system = {
+					if = {
+						limit = {
+							distance = {
+								source = event_target:perdition_relay
+								min_jumps = 1
+								max_jumps = 10
+								#min_distance >= 1
+								#max_distance <= 150
+							}
+						}
+						perdition_sangraal_effect = yes
+					}
+				}
+				event_target:perdition_relay = {
+					perdition_sangraal_effect = yes
+				}
+				clear_global_event_target = perdition_relay
+			}
+		}
+	}
+
+	option = { # Delta Network Perdition
+	name = "perdition_sangraal.1.e"
+
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_delta
+				}
+				save_global_event_target_as = perdition_relay
+				every_system = {
+					if = {
+						limit = {
+							distance = {
+								source = event_target:perdition_relay
+								min_jumps = 1
+								max_jumps = 10
+								#min_distance >= 1
+								#max_distance <= 150
+							}
+						}
+						perdition_sangraal_effect = yes
+					}
+				}
+				event_target:perdition_relay = {
+					perdition_sangraal_effect = yes
+				}
+				clear_global_event_target = perdition_relay
+			}
+		}
+	}
+
+	option = { # Gamma Network Perdition
+	name = "perdition_sangraal.1.f"
+
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_gamma
+				}
+				save_global_event_target_as = perdition_relay
+				every_system = {
+					if = {
+						limit = {
+							distance = {
+								source = event_target:perdition_relay
+								min_jumps = 1
+								max_jumps = 10
+								#min_distance >= 1
+								#max_distance <= 150
+							}
+						}
+						perdition_sangraal_effect = yes
+					}
+				}
+				event_target:perdition_relay = {
+					perdition_sangraal_effect = yes
+				}
+				clear_global_event_target = perdition_relay
+			}
+		}
+	}
+
+	option = { # Lambda Network Perdition
+	name = "perdition_sangraal.1.g"
+
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_lambda
+				}
+				save_global_event_target_as = perdition_relay
+				every_system = {
+					if = {
+						limit = {
+							distance = {
+								source = event_target:perdition_relay
+								min_jumps = 1
+								max_jumps = 10
+								#min_distance >= 1
+								#max_distance <= 150
+							}
+						}
+						perdition_sangraal_effect = yes
+					}
+				}
+				event_target:perdition_relay = {
+					perdition_sangraal_effect = yes
+				}
+				clear_global_event_target = perdition_relay
+			}
+		}
+	}
+
+	option = { # Epsilon Network Perdition
+	name = "perdition_sangraal.1.h"
+
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_epsilon
+				}
+				save_global_event_target_as = perdition_relay
+				every_system = {
+					if = {
+						limit = {
+							distance = {
+								source = event_target:perdition_relay
+								min_jumps = 1
+								max_jumps = 10
+								#min_distance >= 1
+								#max_distance <= 150
+							}
+						}
+						perdition_sangraal_effect = yes
+					}
+				}
+				event_target:perdition_relay = {
+					perdition_sangraal_effect = yes
+				}
+				clear_global_event_target = perdition_relay
+			}
+		}
+	}
+
+	option = { # Local Wave Perdition
+	name = "perdition_sangraal.1.i"
+
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_perdition
+				}
+				save_global_event_target_as = perdition_relay
+				every_system = {
+					if = {
+						limit = {
+							distance = {
+								source = event_target:perdition_relay
+								min_jumps = 1
+								max_jumps = 10
+								#min_distance >= 1
+								#max_distance <= 150
+							}
+						}
+						perdition_sangraal_effect = yes
+					}
+				}
+				event_target:perdition_relay = {
+					perdition_sangraal_effect = yes
+				}
+				clear_global_event_target = perdition_relay
+			}
+		}
+	}
+
+	option = { # Cancel
+	name = "perdition_sangraal.1.j"
+
+		hidden_effect = {
+			country_event = {
+				id = perdition_genesis.1
+			}
+		}
+	}
+
+
+}

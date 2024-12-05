@@ -1,0 +1,125 @@
+namespace = all_spark
+
+# Omega Lock Main events
+country_event = {
+	id = all_spark.1
+	title = "all_spark.1.name"
+	desc = "all_spark.1.desc"
+	picture = GFX_evt_omega_lock
+	show_sound = event_yellow_alert
+
+	hide_window = no
+	is_triggered_only = yes
+
+	
+	option = { # Create Life
+		name = "all_spark.1.a"
+
+		allow = {
+			event_target:all_spark_planet = {
+				has_deposit = d_all_spark
+			}
+		}
+
+		hidden_effect = {
+			event_target:all_spark_planet = {
+				this = {
+					every_owned_species = {
+						limit = {
+							prev = {
+								is_majority_species = prev
+							}
+						}
+						prev = {
+							while = {
+								count = 100
+								create_pop = {
+									species = this
+								}
+							}	
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = { # UNLIMITED POWER
+		name = "all_spark.1.b"
+
+		allow = {
+			event_target:all_spark_planet = {
+				OR = {
+					has_deposit = d_damaged_well_of_all_sparks_duplicate
+					is_planet_class = pc_depleted_cybertron
+				}
+			}
+		}
+
+		hidden_effect = { # Recharge Depleted
+			event_target:all_spark_planet = {
+				if = {
+					limit = {
+						is_planet_class = pc_depleted_cybertron
+					}
+					change_pc = pc_cybertronian_world
+					remove_deposit = d_damaged_well_of_all_sparks_duplicate
+					remove_deposit = d_damaged_cybertronian_world_core
+					add_deposit = d_well_of_all_sparks_duplicate
+					add_deposit = d_cybertronian_world_core
+					if = {
+						limit = {
+							OR = {
+								has_deposit = d_dead_teletraan_one
+								has_deposit = d_deactivated_space_bridge
+								has_deposit = d_damaged_energon_bridge
+							}
+						}
+						remove_deposit = d_dead_teletraan_one
+						remove_deposit = d_deactivated_space_bridge
+						remove_deposit = d_damaged_energon_bridge
+						add_deposit = d_teletraan_one
+						add_deposit = d_space_bridge
+						add_deposit = d_energon_bridge
+						if = {
+							limit = {
+								has_deposit = d_inactive_omega_lock
+							}
+							remove_deposit = d_inactive_omega_lock
+							add_deposit = d_active_omega_lock
+						}
+					}
+				}
+				else_if = { # Recharge Normal
+					limit = {
+						AND = {
+							has_deposit = d_damaged_well_of_all_sparks_duplicate
+							NOR = {
+								is_planet_class = pc_dead_cybertron
+								is_planet_class = pc_depleted_cybertron
+								is_planet_class = pc_damaged_cybertron
+								is_planet_class = pc_corrupted_cybertron
+							}
+						}
+					}
+					remove_deposit = d_damaged_well_of_all_sparks_duplicate
+					add_deposit = d_well_of_all_sparks_duplicate
+					if = {
+						limit = {
+							has_deposit = d_damaged_cybertronian_world_core
+						}
+						remove_deposit = d_damaged_cybertronian_world_core
+						add_deposit = d_cybertronian_world_core
+					}
+
+				}
+			}
+		}
+	}
+
+
+	option = { # Exit Menu
+		name = "all_spark.1.z"
+
+	}
+}

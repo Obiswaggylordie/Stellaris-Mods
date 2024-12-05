@@ -1,0 +1,334 @@
+### Sharpened Shield World System
+forerunner_sharpened_shield_init = {
+	name = "Slipspace Bubble"		#Name of the system.
+	class = sc_forerunner			#system's star class. [random] picks a random class from all available system classes. ["name_of_class"] picks a specific class. ["name_of_random_list"] picks a random class from the specified random_list ( random_list are found in the same files as the star classes )
+	
+	
+	init_effect = {
+		spawn_megastructure = {
+			type = "forerunner_slipspace_portal"
+			orbit_distance = 250
+			orbit_angle = 315
+		}
+		create_starbase = {
+			size = "starbase_outpost"
+			owner = from
+		}
+		set_star_flag = sharpened_shield_world
+	}
+	
+	planet = {
+		name = "System Sphere Star"
+		class = pc_g_star
+		orbit_distance = 0
+		orbit_angle = 0
+		size = 40
+	}
+	
+	change_orbit = 45
+	
+	planet = {
+		name = "Shield Installation"
+		class = pc_forerunner_sharpened_shield
+		orbit_distance = 120
+		orbit_angle = 0
+		size = 50
+		deposit_blockers = none
+		modifiers = none
+		flags = { shield_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				picture = pc_forerunner_shield
+			}
+			set_name = "System Sphere Section 01"
+			set_planet_flag = megastructure
+			trigger_megastructure_icon = yes
+			add_deposit = d_sw_apex_site
+			add_deposit = d_sw_surface
+			add_deposit = d_sw_access_tunnels
+			add_deposit = d_automated_sentinel_factory
+		}
+		init_effect = {
+			add_modifier = {
+				modifier = "forerunner_artificial_star"
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_monitor
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_submonitor
+				days = -1
+			}
+		}
+	}
+	planet = {
+		name = "Shield Installation"
+		class = pc_forerunner_sharpened_shield
+		orbit_distance = 1
+		orbit_angle = 45
+		size = 50
+		deposit_blockers = none
+		modifiers = none
+		flags = { shield_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				picture = pc_forerunner_shield
+			}
+			set_name = "System Sphere Section 02"
+			set_planet_flag = megastructure
+			trigger_megastructure_icon = yes
+			add_deposit = d_sw_apex_site
+			add_deposit = d_sw_surface
+			add_deposit = d_sw_access_tunnels
+			add_deposit = d_automated_sentinel_factory
+		}
+		init_effect = {
+			add_modifier = {
+				modifier = "forerunner_artificial_star"
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_monitor
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_submonitor
+				days = -1
+			}
+		}
+	}
+	planet = {
+		name = "Shield Installation"
+		class = pc_forerunner_sharpened_shield
+		orbit_distance = 1
+		orbit_angle = 90
+		size = 50
+		deposit_blockers = none
+		modifiers = none
+		flags = { shield_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				picture = pc_forerunner_shield
+			}
+			set_name = "System Sphere Section 04"
+			set_planet_flag = megastructure
+			trigger_megastructure_icon = yes
+			add_deposit = d_sw_apex_site
+			add_deposit = d_sw_surface
+			add_deposit = d_sw_access_tunnels
+			add_deposit = d_automated_sentinel_factory
+		}
+		init_effect = {
+			add_modifier = {
+				modifier = "forerunner_artificial_star"
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_monitor
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_submonitor
+				days = -1
+			}
+		}
+	}
+	planet = {
+		name = "Shield Installation"
+		class = pc_forerunner_sharpened_shield
+		orbit_distance = 1
+		orbit_angle = 135
+		size = 50
+		deposit_blockers = none
+		modifiers = none
+		flags = { shield_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				picture = pc_forerunner_shield
+			}
+			set_name = "System Sphere Section 07"
+			set_planet_flag = megastructure
+			trigger_megastructure_icon = yes
+			add_deposit = d_sw_apex_site
+			add_deposit = d_sw_surface
+			add_deposit = d_sw_access_tunnels
+			add_deposit = d_automated_sentinel_factory
+		}
+		init_effect = {
+			add_modifier = {
+				modifier = "forerunner_artificial_star"
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_monitor
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_submonitor
+				days = -1
+			}
+		}
+	}
+	planet = {
+		name = "Shield Installation"
+		class = pc_forerunner_sharpened_shield
+		orbit_distance = 1
+		orbit_angle = 180
+		size = 50
+		deposit_blockers = none
+		modifiers = none
+		flags = { shield_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				picture = pc_forerunner_shield
+			}
+			set_name = "System Sphere Section 03"
+			set_planet_flag = megastructure
+			trigger_megastructure_icon = yes
+			add_deposit = d_sw_apex_site
+			add_deposit = d_sw_surface
+			add_deposit = d_sw_access_tunnels
+			add_deposit = d_automated_sentinel_factory
+		}
+		init_effect = {
+			add_modifier = {
+				modifier = "forerunner_artificial_star"
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_monitor
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_submonitor
+				days = -1
+			}
+		}
+	}
+	planet = {
+		name = "Shield Installation"
+		class = pc_forerunner_sharpened_shield
+		orbit_distance = 1
+		orbit_angle = 225
+		size = 50
+		deposit_blockers = none
+		modifiers = none
+		flags = { shield_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				picture = pc_forerunner_shield
+			}
+			set_name = "System Sphere Section 08"
+			set_planet_flag = megastructure
+			trigger_megastructure_icon = yes
+			add_deposit = d_sw_apex_site
+			add_deposit = d_sw_surface
+			add_deposit = d_sw_access_tunnels
+			add_deposit = d_automated_sentinel_factory
+		}
+		init_effect = {
+			add_modifier = {
+				modifier = "forerunner_artificial_star"
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_monitor
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_submonitor
+				days = -1
+			}
+		}
+	}
+	planet = {
+		name = "Shield Installation"
+		class = pc_forerunner_sharpened_shield
+		orbit_distance = 1
+		orbit_angle = 270
+		size = 50
+		deposit_blockers = none
+		modifiers = none
+		flags = { shield_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				picture = pc_forerunner_shield
+			}
+			set_name = "System Sphere Section 06"
+			set_planet_flag = megastructure
+			trigger_megastructure_icon = yes
+			add_deposit = d_sw_apex_site
+			add_deposit = d_sw_surface
+			add_deposit = d_sw_access_tunnels
+			add_deposit = d_automated_sentinel_factory
+		}
+		init_effect = {
+			add_modifier = {
+				modifier = "forerunner_artificial_star"
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_monitor
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_submonitor
+				days = -1
+			}
+		}
+	}
+	planet = {
+		name = "Shield Installation"
+		class = pc_forerunner_sharpened_shield
+		orbit_distance = 1
+		orbit_angle = 315
+		size = 50
+		deposit_blockers = none
+		modifiers = none
+		flags = { shield_world }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				picture = pc_forerunner_shield
+			}
+			set_name = "System Sphere Section 05"
+			set_planet_flag = megastructure
+			trigger_megastructure_icon = yes
+			add_deposit = d_sw_apex_site
+			add_deposit = d_sw_surface
+			add_deposit = d_sw_access_tunnels
+			add_deposit = d_automated_sentinel_factory
+		}
+		init_effect = {
+			add_modifier = {
+				modifier = "forerunner_artificial_star"
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_monitor
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_submonitor
+				days = -1
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+dtf_factory_full_operation = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_resources
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 200
+			energy = 50000
+		}
+	}
+
+	prerequisites = {
+ 		"tech_cr_access"
+ 	}
+
+	potential = {
+		exists = owner
+		planet = { has_active_building = building_cr_dtf_factory }
+	}
+
+	allow = {
+		NOT = { has_modifier = dtf_pm_factory_full_operation }
+	}
+
+	effect = {
+		add_modifier = { modifier = "dtf_pm_factory_full_operation" days = 360 }
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+gge_create_sroka = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_resources
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+		}
+	}
+
+	potential = {
+		is_colony = yes
+		is_artificial = no
+		from = {
+			has_origin = origin_garmillas
+		}
+		NOT = {
+			is_planet_class = pc_garmillas
+		}
+	}
+
+	effect = {
+		change_pc = pc_garmillas
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}

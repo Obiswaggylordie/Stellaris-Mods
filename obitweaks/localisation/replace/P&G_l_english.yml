@@ -1,0 +1,110 @@
+﻿l_english:
+
+# Perdition & Genesis Main Menu
+
+ perdition_genesis.1.name: "Perdition & Genesis Main Menu"
+ perdition_genesis.1.desc: "This menu provides access to the control systems of the Perdition and Genesis devices."
+ 
+ perdition_genesis.1.a: "Access Genesis"
+ perdition_genesis.1.b: "Access Organic Perdition"
+ perdition_genesis.1.c: "Access Mechanical Perdition"
+ perdition_genesis.1.d: "Access Unascended Perdition"
+ perdition_genesis.1.e: "Access Sangraal Perdition"
+ perdition_genesis.1.f: "Access Dakara Perdition"
+ perdition_genesis.1.g: "Cancel"
+
+# Genesis Device
+
+ genesis_device.1.name: "The Genesis Device"
+ genesis_device.1.desc: "This menu allows you to use the Genesis Device, the Relay based mass-terraformer."
+
+ genesis_device.1.a: "Total network Genesis"
+ genesis_device.1.b: "Omega Network Genesis"
+ genesis_device.1.c: "Alpha Network Genesis"
+ genesis_device.1.d: "Beta Network Genesis"
+ genesis_device.1.e: "Delta Network Genesis"
+ genesis_device.1.f: "Gamma Network Genesis"
+ genesis_device.1.g: "Lambda Network Genesis"
+ genesis_device.1.h: "Epsilon Network Genesis"
+ genesis_device.1.i: "Local Wave Genesis"
+ genesis_device.1.j: "Cancel"
+
+# Organic Perdition Device
+
+ perdition_organic.1.name: "The Organic Perdition Device"
+ perdition_organic.1.desc: "This menu allows you to use the Organic Perdition Device, the Relay based organic destroyer."
+
+ perdition_organic.1.a: "Total Network Organic Perdition"
+ perdition_organic.1.b: "Omega Network Organic Perdition"
+ perdition_organic.1.c: "Alpha Network Organic Perdition"
+ perdition_organic.1.d: "Beta Network Organic Perdition"
+ perdition_organic.1.e: "Delta Network Organic Perdition"
+ perdition_organic.1.f: "Gamma Network Organic Perdition"
+ perdition_organic.1.g: "Lambda Network Organic Perdition"
+ perdition_organic.1.h: "Epsilon Network Organic Perdition"
+ perdition_organic.1.i: "Local Wave Organic Perdition"
+ perdition_organic.1.j: "Cancel"
+
+# Mechanical Perdition Device
+
+ perdition_mechanical.1.name: "The Mechanical Perdition Device"
+ perdition_mechanical.1.desc: "This menu allows you to use the Mechanical Perdition Device, the Relay based synthetic destroyer."
+
+ perdition_mechanical.1.a: "Total Network Mechanical Perdition"
+ perdition_mechanical.1.b: "Omega Network Mechanical Perdition"
+ perdition_mechanical.1.c: "Alpha Network Mechanical Perdition"
+ perdition_mechanical.1.d: "Beta Network Mechanical Perdition"
+ perdition_mechanical.1.e: "Delta Network Mechanical Perdition"
+ perdition_mechanical.1.f: "Gamma Network Mechanical Perdition"
+ perdition_mechanical.1.g: "Lambda Network Mechanical Perdition"
+ perdition_mechanical.1.h: "Epsilon Network Mechanical Perdition"
+ perdition_mechanical.1.i: "Local Wave Mechanical Perdition"
+ perdition_mechanical.1.j: "Cancel"
+
+# Unascended Perdition Device
+
+ perdition_unascended.1.name: "The Unascended Perdition Device"
+ perdition_unascended.1.desc: "This menu allows you to use the Unascended Perdition Device, the Relay based Non-Ascended destroyer."
+
+ perdition_unascended.1.a: "Total Network Unascended Perdition"
+ perdition_unascended.1.b: "Omega Network Unascended Perdition"
+ perdition_unascended.1.c: "Alpha Network Unascended Perdition"
+ perdition_unascended.1.d: "Beta Network Unascended Perdition"
+ perdition_unascended.1.e: "Delta Network Unascended Perdition"
+ perdition_unascended.1.f: "Gamma Network Unascended Perdition"
+ perdition_unascended.1.g: "Lambda Network Unascended Perdition"
+ perdition_unascended.1.h: "Epsilon Network Unascended Perdition"
+ perdition_unascended.1.i: "Local Wave Unascended Perdition"
+ perdition_unascended.1.j: "Cancel"
+
+# Sangraal Perdition Device
+
+ perdition_sangraal.1.name: "The Sangraal Perdition Device"
+ perdition_sangraal.1.desc: "This menu allows you to use the Sangraal Perdition Device, the Relay based Ascension destroyer."
+
+ perdition_sangraal.1.a: "Total Network Sangraal Perdition"
+ perdition_sangraal.1.b: "Omega Network Sangraal Perdition"
+ perdition_sangraal.1.c: "Alpha Network Sangraal Perdition"
+ perdition_sangraal.1.d: "Beta Network Sangraal Perdition"
+ perdition_sangraal.1.e: "Delta Network Sangraal Perdition"
+ perdition_sangraal.1.f: "Gamma Network Sangraal Perdition"
+ perdition_sangraal.1.g: "Lambda Network Sangraal Perdition"
+ perdition_sangraal.1.h: "Epsilon Network Sangraal Perdition"
+ perdition_sangraal.1.i: "Local Wave Sangraal Perdition"
+ perdition_sangraal.1.j: "Cancel"
+
+# Dakara Perdition Device
+
+ perdition_dakara.1.name: "The Dakara Perdition Device"
+ perdition_dakara.1.desc: "This menu allows you to use the Dakara Perdition Device, the Relay based selective destroyer."
+
+ perdition_dakara.1.a: "Total Network Dakara Perdition"
+ perdition_dakara.1.b: "Omega Network Dakara Perdition"
+ perdition_dakara.1.c: "Alpha Network Dakara Perdition"
+ perdition_dakara.1.d: "Beta Network Dakara Perdition"
+ perdition_dakara.1.e: "Delta Network Dakara Perdition"
+ perdition_dakara.1.f: "Gamma Network Dakara Perdition"
+ perdition_dakara.1.g: "Lambda Network Dakara Perdition"
+ perdition_dakara.1.h: "Epsilon Network Dakara Perdition"
+ perdition_dakara.1.i: "Local Wave Dakara Perdition"
+ perdition_dakara.1.j: "Cancel"

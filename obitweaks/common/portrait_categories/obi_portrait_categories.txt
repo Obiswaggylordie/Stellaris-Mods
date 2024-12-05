@@ -1,0 +1,28 @@
+# Categories of portrait sets used in empire design view.
+# Portrait sets are listed in portrait_sets database.
+
+zeia = {
+	name = zeia
+
+	sets = {
+		#kvilsha_portraits
+		#sobsha_portraits
+		zeia_portraits
+	}
+}
+
+orokin = {
+	name = orokin
+
+	sets = {
+		orokin_portraits
+	}
+}
+
+srokan = {
+	name = srokan
+
+	sets = {
+		srokan_portraits
+	}
+}

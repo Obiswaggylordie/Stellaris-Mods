@@ -1,0 +1,112 @@
+objectTypes = {
+	######		SAUCERS		######
+
+	pdxmesh = {
+		name = "trek_01_akira_bow_mesh"
+        file = "gfx/models/ships/trek_battleship/akira_saucer.mesh"
+        scale = 1.3
+    }
+	
+	pdxmesh = {
+		name = "trek_01_crossfield_bow_mesh"
+        file = "gfx/models/ships/trek_battleship/crossfield_saucer.mesh"
+        scale = 1.0
+		
+   }
+   
+	pdxmesh = {
+		name = "trek_01_battleship_lakota_bow_mesh"
+        file = "gfx/models/ships/trek_battleship/lakota_saucer.mesh"
+        scale = 1.3
+    }
+	pdxmesh = {
+		name = "trek_01_prometheus_bow_mesh"
+        file = "gfx/models/ships/trek_battleship/prometheus_saucer.mesh"
+        scale = 1.3
+    }
+	
+	pdxmesh = {
+		name = "trek_01_galaxy_bow_mesh"	
+        file = "gfx/models/ships/trek_battleship/galaxy_saucer.mesh"
+        scale = 1.3	
+    }
+	
+	######		HULL		######
+	
+	pdxmesh = {
+		name = "trek_01_prometheus_hull_mesh"
+        file = "gfx/models/ships/trek_battleship/prometheus_hull.mesh"
+        scale = 1.3	
+    }	
+	
+	pdxmesh = {
+		name = "trek_01_crossfield_hull_mesh"
+        file = "gfx/models/ships/trek_battleship/crossfield_hull.mesh"
+        scale = 1.0
+    }	
+
+	pdxmesh = {
+		name = "trek_01_galaxy_x_hull_mesh"
+        file = "gfx/models/ships/trek_nsc_compatibility/nsc_trek_dreadnought/nsc_dreadnought_galaxy_x_hull.mesh"
+        scale = 1.3	
+    }
+	
+	pdxmesh = {
+		name = "trek_01_galaxy_hull_mesh"
+        file = "gfx/models/ships/trek_battleship/galaxy_hull.mesh"
+        scale = 1.3	
+    }
+
+	
+	pdxmesh = {
+		name = "trek_01_battleship_lakota_hull_mesh"
+        file = "gfx/models/ships/trek_battleship/lakota_hull.mesh"
+        scale = 1.3
+    }
+	
+	pdxmesh = {
+		name = "trek_01_akira_hull_mesh"
+        file = "gfx/models/ships/trek_battleship/akira_hull.mesh"
+        scale = 1.3
+    }	
+
+	
+	######		NACELLES		######	
+
+	
+	pdxmesh = {
+		name = "trek_01_battleship_lakota_nacelles_mesh"
+        file = "gfx/models/ships/trek_battleship/lakota_nacelles.mesh"
+        scale = 1.3
+    }
+
+	pdxmesh = {
+		name = "trek_01_crossfield_nacelles_mesh"
+        file = "gfx/models/ships/trek_battleship/crossfield_nacelles.mesh"
+        scale = 1.0
+    }
+
+	pdxmesh = {
+		name = "trek_01_prometheus_nacelles_mesh"
+        file = "gfx/models/ships/trek_battleship/prometheus_nacelles.mesh"
+        scale = 1.3	
+    }
+
+	pdxmesh = {
+		name = "trek_01_armoured_intrepid_nacelles_mesh"
+        file = "gfx/models/ships/trek_battleship/nsc_battleship_intrepid_nacelles.mesh"
+        scale = 1.3
+    }			
+	
+	pdxmesh = {
+		name = "trek_01_galaxy_nacelles_mesh"
+        file = "gfx/models/ships/trek_battleship/galaxy_nacelles.mesh"
+        scale = 1.3		
+    }		
+
+	pdxmesh = {
+		name = "trek_01_akira_nacelles_mesh"
+        file = "gfx/models/ships/trek_battleship/akira_nacelle.mesh"
+        scale = 1.3
+    }		
+}

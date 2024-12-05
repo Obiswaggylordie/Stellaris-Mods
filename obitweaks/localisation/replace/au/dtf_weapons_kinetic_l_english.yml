@@ -1,0 +1,66 @@
+﻿l_english:
+
+
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_CS_1:0 "High-density Energy Neutralization Cannon"
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_CS_1_DESC:0 "Weapons that fire special warheads that act to neutralize deflection barriers"
+
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_CS_2:0 "High-density Energy Neutralization Cannon MK.II"
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_CS_2_DESC:0 "Improved high-density electron neutralization gun"
+
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_CS_3:0 "Super High-density Energy Neutralization Cannon"
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_CS_3_DESC:0 "A powerful special weapon for a new type of anti-deflective barrier"
+
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_CS_4:0 "Super High-density Energy Neutralization Cannon MK.II"
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_CS_4_DESC:0 "Improved high-density electron convergence neutralization gun"
+
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_CS_5:0 "Hyper High-density Energy Neutralization Cannon"
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_CS_5_DESC:0 "Weapons that fire special warheads that can neutralize wave barriers"
+
+
+
+
+DTF_Type_3_SHELL_CS_1:0 "Type-3 Fusion Shell"
+DTF_Type_3_SHELL_CS_1_DESC:0 "Armor-piercing grenade that penetrates the armor of the target and detonates with a time delay on a timer"
+
+DTF_Type_3_SHELL_CS_2:0 "Type-3 Z Fusion Shell"
+DTF_Type_3_SHELL_CS_2_DESC:0 "Improved Type 3 Fusion Munition"
+
+DTF_WAVE_MOTION_CARTRIDGE_SHELL_CS_1:0 "Wave Motion Cartridge Shell"
+DTF_WAVE_MOTION_CARTRIDGE_SHELL_CS_1_DESC:0 "Special armor-piercing shell with a warhead filled with 1/100th of the wave energy of a wave motion cannon"
+
+DTF_WAVE_MOTION_CARTRIDGE_SHELL_CS_2:0 "Super Wave Motion Cartridge Shell"
+DTF_WAVE_MOTION_CARTRIDGE_SHELL_CS_2_DESC:0 "New type armor-piercing bullet filled with about twice as much wave energy as conventional wave cartridge bullets"
+
+DTF_WAVE_MOTION_CARTRIDGE_SHELL_CS_3:0 "Hyper Wave Motion Cartridge Shell"
+DTF_WAVE_MOTION_CARTRIDGE_SHELL_CS_3_DESC:0 "New type of wave cartridge bullet that flies at high speed"
+
+
+
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_SMALL_1:0 "HDE Neutralization Cannon"
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_MEDIUM_1:0 "HDE Neutralization Cannon"
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_LARGE_1:0 "HDE Neutralization Cannon"
+
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_SMALL_2:0 "HDE Neutralization Cannon MK.II"
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_MEDIUM_2:0 "HDE Neutralization Cannon MK.II"
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_LARGE_2:0 "HDE Neutralization Cannon MK.II"
+
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_SMALL_3:0 "Super HDE Neutralization Cannon"
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_MEDIUM_3:0 "Super HDE Neutralization Cannon"
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_LARGE_3:0 "Super HDE Neutralization Cannon"
+
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_SMALL_4:0 "Super HDE Neutralization Cannon MK.II"
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_MEDIUM_4:0 "Super HDE Neutralization Cannon MK.II"
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_LARGE_4:0 "Super HDE Neutralization Cannon MK.II"
+
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_SMALL_5:0 "Hyper HDE Neutralization Cannon"
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_MEDIUM_5:0 "Hyper HDE Neutralization Cannon"
+DTF_HIGH_DENSITY_ENERGY_NEUTRALIZATION_CANNON_LARGE_5:0 "Hyper HDE Neutralization Cannon"
+
+
+DTF_Type_3_SHELL_1:0 "Type-3 Fusion Shell"
+DTF_Type_3_SHELL_2:0 "Type-3 Z Fusion Shell"
+
+DTF_WAVE_MOTION_CARTRIDGE_SHELL_1:0 "Wave Motion Cartridge Shell"
+DTF_WAVE_MOTION_CARTRIDGE_SHELL_2:0 "Super Wave Motion Cartridge Shell"
+DTF_WAVE_MOTION_CARTRIDGE_SHELL_3:0 "Hyper Wave Motion Cartridge Shell"
+

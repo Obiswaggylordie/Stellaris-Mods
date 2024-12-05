@@ -1,0 +1,186 @@
+
+
+
+##############################################
+### Reactor 1
+##############################################
+
+utility_component_template = {
+	key = "GGE_REACTOR_1_LARGESHIP"
+	size = small
+	icon = "GFX_gge_ship_part_reactor_1"
+	icon_frame = 1
+	power = @gge_largeship_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_gge_t1_reactor_cost
+		}
+		upkeep = {
+			energy = @l_gge_t1_reactor_uk_energy
+			alloys = @l_gge_t1_reactor_uk_alloys
+		}
+	}
+
+	prerequisites = { "tech_gge_reactor_1" }
+	component_set = "power_core"
+
+	upgrades_to = "GGE_REACTOR_2_LARGESHIP"
+
+	ai_weight = {
+		weight = @gge_ai_weight_1
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+	}
+}
+
+##############################################
+### Reactor 2
+##############################################
+utility_component_template = {
+	key = "GGE_REACTOR_2_LARGESHIP"
+	size = small
+	icon = "GFX_gge_ship_part_reactor_2"
+	icon_frame = 1
+	power = @gge_largeship_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_gge_t2_reactor_cost
+		}
+		upkeep = {
+			energy = @l_gge_t2_reactor_uk_energy
+			alloys = @l_gge_t2_reactor_uk_alloys
+		}
+	}
+
+	prerequisites = { "tech_gge_reactor_2" }
+	component_set = "power_core"
+
+	upgrades_to = "GGE_REACTOR_3_LARGESHIP"
+
+	ai_weight = {
+		weight = @gge_ai_weight_2
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+	}
+}
+
+##############################################
+### Reactor 3
+##############################################
+utility_component_template = {
+	key = "GGE_REACTOR_3_LARGESHIP"
+	size = small
+	icon = "GFX_gge_ship_part_reactor_3"
+	icon_frame = 1
+	power = @gge_largeship_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_gge_t3_reactor_cost
+		}
+		upkeep = {
+			energy = @l_gge_t3_reactor_uk_energy
+			alloys = @l_gge_t3_reactor_uk_alloys
+		}
+	}
+
+	modifier = {
+		#ship_shield_regen_add_perc = 0.15
+		#ship_speed_mult = 0.10
+	}
+
+	prerequisites = { "tech_gge_reactor_3" }
+	component_set = "power_core"
+
+	upgrades_to = "GGE_REACTOR_4_LARGESHIP"
+
+	ai_weight = {
+		weight = @gge_ai_weight_3
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+	}
+}
+##############################################
+### Reactor 4
+##############################################
+utility_component_template = {
+	key = "GGE_REACTOR_4_LARGESHIP"
+	size = small
+	icon = "GFX_gge_ship_part_reactor_4"
+	icon_frame = 1
+	power = @gge_largeship_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_gge_t4_reactor_cost
+		}
+		upkeep = {
+			energy = @l_gge_t4_reactor_uk_energy
+			alloys = @l_gge_t4_reactor_uk_alloys
+		}
+	}
+
+	modifier = {
+		ship_shield_regen_add_perc = 0.10
+		ship_speed_mult = 0.05
+	}
+
+	prerequisites = { "tech_gge_reactor_4" }
+	component_set = "power_core"
+
+	upgrades_to = "GGE_REACTOR_5_LARGESHIP"
+
+	ai_weight = {
+		weight = @gge_ai_weight_4
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+	}
+}
+##############################################
+### Reactor 5
+##############################################
+utility_component_template = {
+	key = "GGE_REACTOR_5_LARGESHIP"
+	size = small
+	icon = "GFX_gge_ship_part_reactor_5"
+	icon_frame = 1
+	power = @gge_largeship_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_gge_t5_reactor_cost
+		}
+		upkeep = {
+			energy = @l_gge_t5_reactor_uk_energy
+			alloys = @l_gge_t5_reactor_uk_alloys
+		}
+	}
+
+	modifier = {
+		ship_shield_regen_add_perc = 0.15
+		ship_speed_mult = 0.10
+	}
+
+	prerequisites = { "tech_gge_reactor_5" }
+	component_set = "power_core"
+
+	upgrades_to = "GGE_REACTOR_6_LARGESHIP"
+
+	ai_weight = {
+		weight = @gge_ai_weight_5
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+	}
+}

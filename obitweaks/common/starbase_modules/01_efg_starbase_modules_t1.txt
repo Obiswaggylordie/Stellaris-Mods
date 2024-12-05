@@ -1,0 +1,41 @@
+
+efg_starbase_wm_defense = {
+	icon = "GFX_starbase_defense_grid_supercomputer"
+	section = "STARBASE_EFG_DEFENSE_SECTION"
+	construction_days = 180
+
+
+	potential = {
+		exists = owner
+		
+		owner = { has_technology = tech_efg_technology_3 }
+		is_orbital_ring = no
+	}
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 3000
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	station_modifier = {
+		ship_shield_add = 20000
+		ship_shield_mult = 0.05
+		ship_armor_add = 20000
+		ship_armor_mult = 0.05
+		starbase_defense_platform_capacity_add = 10
+	}
+
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+
+

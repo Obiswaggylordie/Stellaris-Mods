@@ -1,0 +1,43 @@
+
+
+##############################################
+### Advanced Wave Motion Engine
+##############################################
+utility_component_template = {
+	key = "GGE_REACTOR_7_LARGESHIP"
+	size = small
+	icon = "GFX_gge_ship_part_reactor_7"
+	icon_frame = 1
+	power = @gge_largeship_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_gge_t7_reactor_cost
+		}
+		upkeep = {
+			energy = @l_gge_t7_reactor_uk_energy
+			alloys = @l_gge_t7_reactor_uk_alloys
+		}
+	}
+
+	modifier = {
+		ship_weapon_damage = 0.10
+		ship_weapon_range_mult = 0.10
+		ship_shield_regen_add_perc = 0.20
+		ship_speed_mult = 0.20
+	}
+
+	prerequisites = { "tech_gge_reactor_7" }
+	component_set = "power_core"
+
+	size_restriction = { battleship asteroid_artillery 
+				battleship_gaiderol battleship_haizerad carrier_gaiperon carrier_gelvades }
+
+	ai_weight = {
+		weight = @gge_ai_weight_7
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+	}
+}

@@ -1,0 +1,33 @@
+
+###################
+### FORERUNNER ####
+###################
+
+#### Tier 5 ####
+utility_component_template = {
+	key = "CORVETTE_FORERUNNER_REACTOR"
+	size = small
+	icon = "GFX_forerunner_reactor"
+	icon_frame = 1
+	power = 250000
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 48
+		}
+	}
+
+	ship_modifier = {
+		ship_shield_hardening_add = 1
+		ship_weapon_damage = 0.50
+		ship_fire_rate_mult = 0.50
+	}
+	
+	prerequisites = { "tech_forerunner_reactor" }
+	component_set = "power_core"
+	
+	ai_weight = {
+		weight = 50000
+	}
+}

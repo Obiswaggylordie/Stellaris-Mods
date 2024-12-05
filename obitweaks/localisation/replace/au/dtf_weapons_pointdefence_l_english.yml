@@ -1,0 +1,25 @@
+﻿l_english:
+
+DTF_EDF_POINT_DEFENCE_CS_1:0 "Anti-Aircraft Rapid-Fire Turret"
+DTF_EDF_POINT_DEFENCE_CS_1_DESC:0 "Small turret for anti-aircraft"
+
+DTF_EDF_POINT_DEFENCE_CS_2:0 "Super Anti-Aircraft Rapid-Fire Turret"
+DTF_EDF_POINT_DEFENCE_CS_2_DESC:0 "Improved anti-aircraft guns"
+
+DTF_EDF_POINT_DEFENCE_CS_3:0 "Pulse Laser Turret"
+DTF_EDF_POINT_DEFENCE_CS_3_DESC:0 "Powerful anti-aircraft guns developed with increased reactor output"
+
+DTF_EDF_POINT_DEFENCE_CS_4:0 "Super Pulse Laser Turret"
+DTF_EDF_POINT_DEFENCE_CS_4_DESC:0 "Improved pulse laser cannon"
+
+DTF_EDF_POINT_DEFENCE_CS_5:0 "Hyper Pulse Laser Turret"
+DTF_EDF_POINT_DEFENCE_CS_5_DESC:0 "Improved pulse laser cannon"
+
+
+
+
+DTF_EDF_POINT_DEFENCE_1:0 "AARF Turret"
+DTF_EDF_POINT_DEFENCE_2:0 "Super AARF Turret"
+DTF_EDF_POINT_DEFENCE_3:0 "Pulse Laser Turret"
+DTF_EDF_POINT_DEFENCE_4:0 "Super Pulse Laser Turret"
+DTF_EDF_POINT_DEFENCE_5:0 "Hyper Pulse Laser Turret"

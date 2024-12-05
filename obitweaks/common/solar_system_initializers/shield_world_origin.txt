@@ -1,0 +1,84 @@
+### Uni System
+uni_origin_init = {
+	name = "Uni"								#Name of the system.
+	class = "sc_f"								#system's star class. [random] picks a random class from all available system classes. ["name_of_class"] picks a specific class. ["name_of_random_list"] picks a random class from the specified random_list ( random_list are found in the same files as the star classes )
+	usage = origin
+	
+	max_instances = 1
+	
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+	
+	flags = { empire_home_system }
+	
+	
+	planet = {
+		name = "Uni"
+		class = "pc_f_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 20
+		has_ring = no
+	}
+
+	planet = {
+		name = "Zareirukeiahno"
+		class = "pc_molten"
+		orbit_distance = 25
+		orbit_angle = random
+		size = 15
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Pananemagrah"
+		class = "pc_desert"
+		orbit_distance = 30
+		orbit_angle = random
+		size = 15
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Laeitareimaga"
+		class = pc_forerunner_shield
+		orbit_distance = 0
+		orbit_angle = random
+		starting_planet = yes
+		home_planet = yes
+		size = 30
+		modifiers = none
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		init_effect = {
+			add_modifier = {
+				modifier = forerunner_artificial_star
+				days = -1
+			}
+		}
+
+		init_effect = {
+			add_modifier = {
+				modifier = halo_ring_monitor
+				days = -1
+			}
+		}
+
+		init_effect = {
+			add_modifier = {
+				modifier = halo_ring_submonitor
+				days = -1
+			}
+		}
+	}
+}

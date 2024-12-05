@@ -1,0 +1,39 @@
+#civic_example = {
+#	playable = {}								# AND trigger, no scope; use this to prevent the civic from being selectable by the player (UI)
+#	potential = {}								# requirements list, see ../readme_requirements.txt
+#	possible = {}								# requirements list, see ../readme_requirements.txt
+#	pickable_at_start = yes / no				# default: yes
+#	modification = yes / no						# default: yes, set to no to prevent adding or removing this after creation of the empire
+#
+#	random_weight = { base = 1 }				# scriptable weight for randomizing a civic; required, else the civic will not get assigned randomly
+#
+#	modifier = {}								# modifier added to the country if the civic is selected and valid
+#	can_build_ruler_military_station = yes / no	# default: no
+#	can_build_ruler_ship = yes / no				# default: no
+#}
+
+	
+civic_flood_hivemind = {
+	modification = no 
+	potential = { authority = { value = auth_hive_mind } }
+	random_weight = { base = -1 }
+	possible = {
+		origin = {
+			NOR = {
+				value = origin_common_ground
+				value = origin_hegemon
+				value = origin_tree_of_life
+			}
+		}
+	}
+	modifier = {
+		empire_size_pops_mult = -0.75
+		country_unity_produces_mult = 10
+		category_biology_research_speed_mult = 0.30
+		species_leader_exp_gain = 1.00
+		army_experience_gain_mult = 1.00
+		army_damage_mult = 1.00
+		ship_disengage_chance_mult = -100
+		country_base_influence_produces_add = 10000
+	}
+}

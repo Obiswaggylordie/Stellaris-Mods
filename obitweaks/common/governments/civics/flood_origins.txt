@@ -1,0 +1,45 @@
+#civic_example = {
+#	playable = {}								# AND trigger, no scope; use this to prevent the civic from being selectable by the player (UI)
+#	potential = {}								# requirements list, see ../readme_requirements.txt
+#	possible = {}								# requirements list, see ../readme_requirements.txt
+#	pickable_at_start = yes / no				# default: yes
+#	modification = yes / no						# default: yes, set to no to prevent adding or removing this after creation of the empire
+#
+#	random_weight = { base = 1 }				# scriptable weight for randomizing a civic; required, else the civic will not get assigned randomly
+#
+#	modifier = {}								# modifier added to the country if the civic is selected and valid
+#	can_build_ruler_military_station = yes / no	# default: no
+#	can_build_ruler_ship = yes / no				# default: no
+#}
+
+
+origin_the_flood = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_the_flood.dds"
+	picture = GFX_origin_the_flood
+	max_once_global = yes
+	starting_colony = pc_flood_hive
+	habitability_preference = pc_flood_hive
+	preferred_planet_class_neighbor = no
+	
+	initializers = { flood_init_1 }
+	
+	possible = {
+		authority = { value = auth_hive_mind }
+		civics = {
+			value = civic_hive_devouring_swarm
+		}
+	}
+	description = "origin_the_flood_tooltip"
+	modifier = {
+		owned_ship_evasion_mult = -0.40
+		owned_ship_fire_rate_mult = -0.40
+		owned_ship_accuracy_mult = -0.40
+	}
+	traits = {
+		trait = trait_flood_species
+	}
+	advanced_start = yes
+	random_weight = { base = -1 }
+	
+}

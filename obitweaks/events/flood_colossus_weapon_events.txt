@@ -1,0 +1,358 @@
+namespace = flood_spore_weapon
+
+# FlOOD PLANET WEAPON
+planet_event = {
+	id = flood_spore_weapon.1
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+		from.owner = { country_event = { id = flood_spore_weapon.2 } }
+
+		# Swarm Situation Log counter
+		if = {
+			limit = {
+				exists = owner
+				owner = { is_country_type = swarm }
+			}
+			every_country = {
+				limit = { has_event_chain = "prethoryn_scourge_chain" }
+				add_event_chain_counter = {
+					event_chain = "prethoryn_scourge_chain"
+					counter = "infested_worlds"
+					amount = -1
+				}
+				add_event_chain_counter = {
+					event_chain = "prethoryn_scourge_chain"
+					counter = "infested_worlds_cleansed"
+					amount = 1
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				OR = {
+					is_active_resolution = "resolution_rulesofwar_independent_tribunals"
+					is_active_resolution = "resolution_rulesofwar_last_resort_doctrine"
+					is_active_resolution = "resolution_rulesofwar_demobilization_initiative"
+				}
+			}
+			from.owner = {
+				set_timed_country_flag = { flag = resolution_breached_fired_assimilator days = 3600 }
+			}
+		}
+
+		if = {
+			limit = {
+				exists = owner
+				owner = {
+					NOT = { is_same_value = from.owner }
+					OR = {
+						is_country_type = default
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire
+					}
+				}
+			}
+			# Generate threat
+			add_threat = { who = from.owner amount = 3 }
+			# modifier for allies + those upset by robots
+			every_country = {
+				limit = {
+					NOR = {
+						is_same_value = from.owner
+						is_same_value = root.owner
+						AND = {
+							has_federation = yes
+							is_in_federation_with = from.owner
+						}
+					}
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					OR = {
+						AND = {
+							has_federation = yes
+							is_in_federation_with = root.owner
+						}
+						has_ai_personality = awakened_fallen_empire_spiritualist
+						AND = {
+							is_country_type = default
+							OR = {
+								is_egalitarian = yes
+								is_spiritualist = yes
+							}
+						}
+					}
+				}
+				add_opinion_modifier = {
+					modifier = opinion_assimilated_a_world
+					who = from.owner
+				}
+			}
+			# modifiers for victim
+			owner = {
+				add_opinion_modifier = {
+					modifier = opinion_assimilated_my_world
+					who = from.owner
+				}
+				if = {
+					limit = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+					add_modifier = {
+						modifier = colossus_victim
+						days = 10800 # 30 years
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = owner
+				owner = { is_country_type = primitive }
+			}
+			# modifier for allies + those upset by genocide
+			every_country = {
+				limit = {
+					NOR = { is_same_value = from.owner }
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					is_country_type = default
+					NOR = {
+						is_xenophobe = yes
+						is_homicidal = yes
+						is_xenophile = yes
+					}
+				}
+				add_opinion_modifier = {
+					modifier = opinion_assimilated_a_primitive_world
+					who = from.owner
+				}
+			}
+			every_country = {
+				limit = {
+					NOR = { is_same_value = from.owner }
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					OR = {
+						has_ai_personality = awakened_fallen_empire_xenophile
+						AND = {
+							is_country_type = default
+							is_xenophile = yes
+						}
+					}
+				}
+				add_opinion_modifier = {
+					modifier = opinion_assimilated_a_primitive_world_phile
+					who = from.owner
+				}
+			}
+		}
+		# Add war exhaustion to planet owner
+		owner = {
+			if = {
+				limit = { #isn't the case when the crisis bombards planets, for instance
+					is_at_war_with = from.fleet.owner
+				}
+				add_static_war_exhaustion = {
+					attacker = from.fleet.owner
+					location = root
+					value_for_planet_destruction = 1.0
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = owner
+				owner = { is_same_value = from.owner }
+			}
+			# already owned
+		}
+		else = {
+			set_owner = from.owner
+		}
+		every_owned_pop = {
+			limit = {
+				is_valid_pop_for_PLANET_KILLER_FLOOD_SPORE_WEAPON = yes
+			}
+			create_species = {
+				name = "Infected Flood Form"
+				plural = "Infected Flood Forms"
+				adjective = "Infected Flood Form"
+				namelist = "the_flood"
+				class = "halo_flood"
+				portrait = "infected_flood"
+				traits = {
+					trait = "trait_hive_mind"
+					trait = "trait_pc_flood_hive_preference"
+					trait = "trait_flood_infected_species"
+				}
+			}
+			change_species = last_created_species
+		}
+		every_owned_pop = {
+			limit = {
+				has_modifier = pop_recently_conquered
+			}
+			remove_modifier = pop_recently_conquered
+		}
+		every_owned_pop = {
+			set_citizenship_type = {
+				type = citizenship_full
+				cooldown = yes
+			}
+			set_military_service_type = {
+				type = military_service_full
+				cooldown = no
+			}
+		}
+		# Special graphics for Habitats and Ring Worlds ###CHANGE THIS TO TOXOIDS COLOSSUS EFFECTS###
+		if = {
+			limit = {
+				is_planet_class = pc_habitat
+			}
+			spawn_habitat_nanobot_effect = yes
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_ringworld_habitable
+			}
+			spawn_ringworld_nanobot_effect = yes
+		}
+		if = {
+			limit = {
+				OR = {
+					is_planet_class = pc_habitat
+					is_planet_class = pc_dm_habitat
+					is_planet_class = pc_ae_habitat
+					is_planet_class = pc_phanon_habitat
+					is_planet_class = pc_sigma_habitat
+					is_planet_class = pc_sigma_deepspace_habitat
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_shattered_ring_habitable
+					is_planet_class = pc_forerunner_halo
+					is_planet_class = pc_forerunner_halo_activated
+
+				}
+			}
+			# No appearance change but add Flood modifiers
+			add_modifier = {
+				modifier = flood_infected_habitat
+				days = -1
+			}
+			add_deposit = d_flood_hive
+			add_deposit = d_flood_infestation
+		}
+		else_if = {
+			limit = {
+				OR = {
+					is_planet_class = pc_forerunner_shield 
+					is_planet_class = pc_requiem
+					is_planet_class = pc_genesis
+				}
+			}
+			change_pc = pc_flood_shield
+			set_planet_entity = {
+				entity = "flood_shield_world_planet_01_entity"
+				picture = pc_flood_shield 
+			}
+			add_building = building_keymind_nest
+			add_deposit = d_flood_hive 
+			add_deposit = d_flood_infestation
+			remove_deposit = d_sw_access_tunnels
+			add_deposit = d_sw_flood_vents
+		}
+		if = {
+			limit = {
+				is_planet_class = pc_relic
+				is_planet_class = pc_city
+			}
+			change_pc = pc_flood_city
+			set_planet_entity = {
+				entity = "flood_01_city_planet_entity"
+				picture = pc_flood_hive
+			}
+			add_deposit = d_flood_hive
+			add_deposit = d_flood_infestation
+		}
+		else = {
+			change_pc = pc_flood_hive
+			set_planet_entity = {
+				entity = "flood_infected_planet_01_entity"
+				picture = pc_flood_hive
+			}
+			add_building = building_keymind_nest
+			add_deposit = d_flood_hive
+			add_deposit = d_flood_infestation
+		}
+	}
+}
+
+country_event = {
+	id = flood_spore_weapon.2
+	title = flood_spore_weapon.2.name
+	desc = flood_spore_weapon.2.desc
+	picture = GFX_evt_flood_outbreak
+	show_sound = event_flood_outbreak
+	location = from
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = fired_flood_spore_weapon }
+		FROM = {
+			NOR = {
+				is_planet_class = pc_habitat
+				is_planet_class = pc_ringworld_habitable
+			}
+		}
+	}
+
+	immediate = {
+		set_country_flag = fired_flood_spore_weapon
+	}
+
+	option = {
+		name = flood_spore_weapon.2.a
+		from = {
+			custom_tooltip = flood_spore_weapon.2.tooltip
+		}
+		add_monthly_resource_mult = {
+			resource = physics_research
+			value = @tier3researchreward
+			min = @tier3researchmin
+			max = @tier3researchmax
+		}
+		add_monthly_resource_mult = {
+			resource = society_research
+			value = @tier3researchreward
+			min = @tier3researchmin
+			max = @tier3researchmax
+		}
+		add_monthly_resource_mult = {
+			resource = engineering_research
+			value = @tier3researchreward
+			min = @tier3researchmin
+			max = @tier3researchmax
+		}
+		add_monthly_resource_mult = {
+			resource = unity
+			value = @tier3researchreward
+			min = @tier3researchmin
+			max = @tier3researchmax
+		}
+		add_monthly_resource_mult = {
+			resource = food
+			value = @tier3researchreward
+			min = @tier3researchmin
+			max = @tier3researchmax
+		}
+	}
+}

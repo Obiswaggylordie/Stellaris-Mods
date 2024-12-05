@@ -1,0 +1,544 @@
+
+
+
+#############################################################################################################################################################################
+### Wave Motion Gun
+#############################################################################################################################################################################
+
+weapon_component_template = {
+	key = "EFG_WAVE_MOTION_GUN_1_XL"
+	size = extra_large
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_efg_ship_part_wm_gun_1"
+	icon_frame = 1
+	prerequisites = { "tech_efg_wave_motion_gun_1" }
+	component_set = "EFG_WAVE_MOTION_GUN_1_XL_CS"
+	projectile_gfx = "efg_wave_motion_gun"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy x_slot }
+	upgrades_to = "EFG_WAVE_MOTION_GUN_2_XL"
+	ai_tags = { weapon_role_artillery }
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_efg_t2_cost
+		}		
+		upkeep = {
+			energy = @xl_efg_t2_uk_energy
+			alloys = @xl_efg_t2_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_4_xl
+	#damage = { min = 8200.00 max = 16400.00 }
+	damage = { min = 3280.00 max = 6560.00 }
+	#shield_damage = 1.00
+	shield_penetration = 0.25
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 320.0 max = 320.0 }
+	#total_fire_time = 600
+	windup = { min = 160.0 max = 160.0 }
+	total_fire_time = 300
+	range = @efg_weapon_range_200
+	accuracy = 0.90
+	tracking = 0.10
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = @efg_ai_weight_5
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+
+	
+}
+weapon_component_template = {
+	key = "EFG_WAVE_MOTION_GUN_2_XL"
+	size = extra_large
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_efg_ship_part_wm_gun_2"
+	icon_frame = 1
+	prerequisites = { "tech_efg_wave_motion_gun_2" }
+	component_set = "EFG_WAVE_MOTION_GUN_2_XL_CS"
+	projectile_gfx = "efg_wave_motion_gun"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy x_slot }
+	upgrades_to = "EFG_WAVE_MOTION_GUN_3_XL"
+	ai_tags = { weapon_role_artillery }
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_efg_t3_cost
+		}		
+		upkeep = {
+			energy = @xl_efg_t3_uk_energy
+			alloys = @xl_efg_t3_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_5_xl
+	#damage = { min = 8200.00 max = 16400.00 }
+	damage = { min = 4100.00 max = 8200.00 }
+	#shield_damage = 1.00
+	shield_penetration = 0.25
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 320.0 max = 320.0 }
+	#total_fire_time = 600
+	windup = { min = 160.0 max = 160.0 }
+	total_fire_time = 300
+	range = @efg_weapon_range_200
+	accuracy = 0.90
+	tracking = 0.10
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = @efg_ai_weight_6
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+
+	
+}
+weapon_component_template = {
+	key = "EFG_WAVE_MOTION_GUN_3_XL"
+	size = extra_large
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_efg_ship_part_wm_gun_3"
+	icon_frame = 1
+	prerequisites = { "tech_efg_wave_motion_gun_3" }
+	component_set = "EFG_WAVE_MOTION_GUN_3_XL_CS"
+	projectile_gfx = "efg_wave_motion_gun"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy x_slot }
+	upgrades_to = "EFG_WAVE_MOTION_GUN_4_XL"
+	ai_tags = { weapon_role_artillery }
+
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_efg_t4_cost
+		}		
+		upkeep = {
+			energy = @xl_efg_t4_uk_energy
+			alloys = @xl_efg_t4_uk_alloys
+		}
+
+		
+	}
+
+	power = @sby_weapon_power_cost_6_xl
+	#damage = { min = 15000.00 max = 30000.00 }
+	damage = { min = 7500.00 max = 15000.00 }
+	#shield_damage = 1.00
+	shield_penetration = 0.25
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 320.0 max = 320.0 }
+	#total_fire_time = 600
+	windup = { min = 160.0 max = 160.0 }
+	total_fire_time = 300
+	range = @efg_weapon_range_200
+	accuracy = 0.90
+	tracking = 0.10
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = @efg_ai_weight_8
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+}
+weapon_component_template = {
+	key = "EFG_WAVE_MOTION_GUN_4_XL"
+	size = extra_large
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_efg_ship_part_wm_gun_4"
+	icon_frame = 1
+	prerequisites = { "tech_efg_wave_motion_gun_4" }
+	component_set = "EFG_WAVE_MOTION_GUN_4_XL_CS"
+	projectile_gfx = "efg_wave_motion_gun"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy x_slot }
+	ai_tags = { weapon_role_artillery }
+
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_efg_t5_cost
+		}		
+		upkeep = {
+			energy = @xl_efg_t5_uk_energy
+			alloys = @xl_efg_t5_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_7_xl
+	#damage = { min = 24000.00 max = 48000.00 }
+	damage = { min = 12000.00 max = 24000.00 }
+	#shield_damage = 1.20
+	shield_penetration = 0.25
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 320.0 max = 320.0 }
+	#total_fire_time = 600
+	windup = { min = 160.0 max = 160.0 }
+	total_fire_time = 300
+	range = @efg_weapon_range_200
+	accuracy = 0.90
+	tracking = 0.10
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = @efg_ai_weight_10
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+
+	
+}
+
+
+
+
+
+
+#############################################################################################################################################################################
+### Dessler Gun
+#############################################################################################################################################################################
+
+
+
+weapon_component_template = {
+	key = "GGE_DESSLER_GUN_1_XL"
+	size = extra_large
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_gge_ship_part_superweapon_1"
+	icon_frame = 1
+	prerequisites = { "tech_gge_wave_motion_gun_1" }
+	component_set = "GGE_DESSLER_GUN_1_XL_CS"
+	projectile_gfx = "gge_wave_motion_gun"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy x_slot }
+	upgrades_to = "GGE_DESSLER_GUN_2_XL"
+	ai_tags = { weapon_role_artillery }
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_gge_t2_cost
+		}		
+		upkeep = {
+			energy = @xl_gge_t2_uk_energy
+			alloys = @xl_gge_t2_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_4_xl
+	#damage = { min = 8200.00 max = 16400.00 }
+	damage = { min = 3280.00 max = 6560.00 }
+	#shield_damage = 1.00
+	shield_penetration = 0.25
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 320.0 max = 320.0 }
+	#total_fire_time = 600
+	windup = { min = 160.0 max = 160.0 }
+	total_fire_time = 300
+	range = @gge_weapon_range_200
+	accuracy = 0.90
+	tracking = 0.10
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = @gge_ai_weight_5
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+		modifier = {
+			factor = 0
+			from = { 
+				OR = {
+					is_ship_size = Dreadnought
+					is_ship_size = titan
+					is_ship_size = Flagship
+				}
+			}
+		}
+	}
+
+	
+}
+weapon_component_template = {
+	key = "GGE_DESSLER_GUN_2_XL"
+	size = extra_large
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_gge_ship_part_superweapon_2"
+	icon_frame = 1
+	prerequisites = { "tech_gge_wave_motion_gun_2" }
+	component_set = "GGE_DESSLER_GUN_2_XL_CS"
+	projectile_gfx = "gge_wave_motion_gun"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy x_slot }
+	upgrades_to = "GGE_DESSLER_GUN_3_XL"
+	ai_tags = { weapon_role_artillery }
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_gge_t3_cost
+		}		
+		upkeep = {
+			energy = @xl_gge_t3_uk_energy
+			alloys = @xl_gge_t3_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_5_xl
+	#damage = { min = 8200.00 max = 16400.00 }
+	damage = { min = 4100.00 max = 8200.00 }
+	#shield_damage = 1.00
+	shield_penetration = 0.25
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 320.0 max = 320.0 }
+	#total_fire_time = 600
+	windup = { min = 160.0 max = 160.0 }
+	total_fire_time = 300
+	range = @gge_weapon_range_200
+	accuracy = 0.90
+	tracking = 0.10
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = @gge_ai_weight_6
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+		modifier = {
+			factor = 0
+			from = { 
+				OR = {
+					is_ship_size = Dreadnought
+					is_ship_size = titan
+					is_ship_size = Flagship
+				}
+			}
+		}
+	}
+
+	
+}
+weapon_component_template = {
+	key = "GGE_DESSLER_GUN_3_XL"
+	size = extra_large
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_gge_ship_part_superweapon_3"
+	icon_frame = 1
+	prerequisites = { "tech_gge_wave_motion_gun_3" }
+	component_set = "GGE_DESSLER_GUN_3_XL_CS"
+	projectile_gfx = "gge_wave_motion_gun"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy x_slot }
+	upgrades_to = "GGE_DESSLER_GUN_4_XL"
+	ai_tags = { weapon_role_artillery }
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_gge_t4_cost
+		}		
+		upkeep = {
+			energy = @xl_gge_t4_uk_energy
+			alloys = @xl_gge_t4_uk_alloys
+		}
+
+		
+	}
+
+	power = @sby_weapon_power_cost_6_xl
+	#damage = { min = 15000.00 max = 30000.00 }
+	damage = { min = 7500.00 max = 15000.00 }
+	#shield_damage = 1.00
+	shield_penetration = 0.25
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 320.0 max = 320.0 }
+	#total_fire_time = 600
+	windup = { min = 160.0 max = 160.0 }
+	total_fire_time = 300
+	range = @gge_weapon_range_200
+	accuracy = 0.90
+	tracking = 0.10
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = @gge_ai_weight_8
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+		modifier = {
+			factor = 0
+			from = { 
+				OR = {
+					is_ship_size = Dreadnought
+					is_ship_size = titan
+					is_ship_size = Flagship
+				}
+			}
+		}
+	}
+}
+weapon_component_template = {
+	key = "GGE_DESSLER_GUN_4_XL"
+	size = extra_large
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_gge_ship_part_superweapon_4"
+	icon_frame = 1
+	prerequisites = { "tech_gge_wave_motion_gun_4" }
+	component_set = "GGE_DESSLER_GUN_4_XL_CS"
+	projectile_gfx = "gge_wave_motion_gun"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy x_slot }
+	ai_tags = { weapon_role_artillery }
+
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_gge_t5_cost
+		}		
+		upkeep = {
+			energy = @xl_gge_t5_uk_energy
+			alloys = @xl_gge_t5_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_7_xl
+	#damage = { min = 24000.00 max = 48000.00 }
+	damage = { min = 12000.00 max = 24000.00 }
+	#shield_damage = 1.20
+	shield_penetration = 0.25
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 320.0 max = 320.0 }
+	#total_fire_time = 600
+	windup = { min = 160.0 max = 160.0 }
+	total_fire_time = 300
+	range = @efg_weapon_range_200
+	accuracy = 0.90
+	tracking = 0.10
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = @gge_ai_weight_10
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_garmillas }
+		}
+		modifier = {
+			factor = 0
+			from = { 
+				OR = {
+					is_ship_size = Dreadnought
+					is_ship_size = titan
+					is_ship_size = Flagship
+				}
+			}
+		}
+	}
+
+	
+}
+
+
+
+
+
+#############################################################################################################################################################################
+### Infinite Beta Gun
+#############################################################################################################################################################################
+
+
+
+
+
+#############################################################################################################################################################################
+### Bolar Gun
+#############################################################################################################################################################################
+
+
+
+
+
+
+

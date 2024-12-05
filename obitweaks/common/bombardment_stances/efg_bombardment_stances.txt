@@ -1,0 +1,41 @@
+wave_motion_excavation_shell_ob = {
+	trigger = { owner = { has_policy_flag = orbital_bombardment_additions_wave_motion_excavation_shell_ob } }
+	#icon_frame = 3
+	#icon = GFX_planet_modifier_ground_support_KEY
+	icon = GFX_planet_modifier_ground_support_wave_motion_excavation_shell_ob
+	default = yes
+
+	stop_when_armies_dead = no
+	abduct_pops = no
+	planet_damage = 2.0
+	army_damage = 3.0
+	kill_pop_chance = { base = 5.0 }
+	min_pops_to_kill_pop = 0
+
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 0
+	}
+}
+
+wave_motion_excavation_shell_2_ob = {
+	trigger = { owner = { has_policy_flag = orbital_bombardment_additions_wave_motion_excavation_shell_2_ob } }
+	#icon_frame = 3
+	#icon = GFX_planet_modifier_ground_support_KEY
+	icon = GFX_planet_modifier_ground_support_wave_motion_excavation_shell_ob
+	default = yes
+
+	stop_when_armies_dead = no
+	abduct_pops = no
+	planet_damage = 7.5
+	army_damage = 7.5
+	kill_pop_chance = { base = 10.0 }
+	min_pops_to_kill_pop = 0
+
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 0
+	}
+}

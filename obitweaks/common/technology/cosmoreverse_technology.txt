@@ -1,0 +1,69 @@
+tech_cr_cosmoreverse = {
+	cost = 100000
+	area = physics
+	tier = 4
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_efg_wave_motion_gun_1" }
+	weight = @tier4weight3
+
+	potential = {  
+		is_ai = no
+		has_technology = tech_slipspace_field
+	} 
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_cr_access = {
+	cost = 10000
+	area = engineering
+	tier = 4
+	is_rare = yes
+	category = { materials }
+	weight = @tier4weight3
+
+	potential = {  
+		any_owned_planet = {
+			has_deposit = d_cr_dtf
+		}
+	} 
+	
+	ai_weight = {
+  	    factor = 0
+		modifier = {
+			factor = 0.0
+			NOT = {
+				any_owned_planet = {
+					has_deposit = d_cr_dtf
+				}
+			}
+		}
+		modifier = {
+			factor = 100.0
+			any_owned_planet = {
+				has_deposit = d_cr_dtf
+			}
+		}
+  	}
+}
+
+tech_obi_wormhole = {
+	cost = 10000
+	area = physics
+	tier = 2
+	is_rare = yes
+	category = { magic }
+	weight = @tier2weight3
+	prerequisites = { "tech_magic_application" "tech_megaspell_power" }
+	
+	ai_weight = {
+		weight = 100
+	}
+}

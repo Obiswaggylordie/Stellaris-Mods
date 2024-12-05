@@ -1,0 +1,513 @@
+namespace = flood_bombardment
+
+
+country_event = {
+	id = flood_bombardment.1
+	title = "flood_bombardment.1.name"
+	desc = "flood_bombardment.1.desc"
+	picture = GFX_evt_flood_outbreak
+	show_sound = event_flood_outbreak
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flood_bombardment.1.a
+		owner = { add_resource = { unity = 100 } }
+	}
+}
+
+planet_event = {
+	id = flood_bombardment.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_orbital_bombardment_stance = flood_infection
+		planet_devastation >= 75
+		NOR = {
+			is_artificial = yes 
+			is_planet_class = pc_city
+			is_planet_class = pc_machine
+			is_planet_class = pc_flood_hive
+			is_planet_class = pc_flood_shield
+			is_planet_class = pc_ringworld_habitable
+			is_planet_class = pc_habitat
+		}
+	}
+	
+	immediate = {
+		owner = {
+			if = {
+				limit = {
+					owner = {
+						is_at_war_with = from 
+					}
+				}
+				add_static_war_exhaustion = {
+					attacker = from
+					location = root
+					value_for_planet_destruction = 0.5
+				}
+				country_event = { id = flood_bombardment.82 }
+			}
+		}
+		from = { country_event = { id = flood_bombardment.83 } }
+		change_pc = pc_flood_hive
+		remove_modifier = flood_outbreak
+		remove_modifier = large_flood_outbreak
+		clear_deposits = yes 
+		remove_modifier = "natural_beauty"
+		remove_modifier = "atmospheric_aphrodisiac"
+		remove_modifier = "atmospheric_hallucinogen"
+		remove_modifier = "lush_planet"
+		remove_modifier = "dangerous_wildlife"
+		add_modifier = {
+			modifier = "flood_infestation_stage_3"
+			days = -1
+		}
+		add_deposit = d_flood_hive
+		add_deposit = d_flood_infestation
+		add_building = building_flood_hatchery
+		if = {
+			limit = {
+				exists = owner
+				owner = { is_same_value = from.owner }
+			}
+			# already owned
+		}
+		else = {
+			set_owner = from.owner
+		}
+		every_owned_pop = {
+			limit = {
+				is_valid_pop_for_FLOOD_CONVERSION = yes 
+			}
+			create_species = {
+				name = "Infected Flood Form"
+				plural = "Infected Flood Forms"
+				adjective = "Infected Flood Form"
+				namelist = the_flood
+				class = halo_flood
+				portrait = infected_flood
+				traits = {
+					trait = "trait_hive_mind"
+					trait = "trait_pc_flood_hive_preference"
+					trait = "trait_flood_infected_species"
+				}
+			}
+			change_species = last_created_species
+		}
+		every_owned_pop = {
+			limit = {
+				has_modifier = pop_recently_conquered
+			}
+			remove_modifier = pop_recently_conquered
+		}
+		every_owned_pop = {
+			set_citizenship_type = {
+				type = citizenship_full
+				cooldown = yes
+			}
+			set_military_service_type = {
+				type = military_service_full
+				cooldown = no
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = flood_bombardment.3
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_orbital_bombardment_stance = flood_infection
+		planet_devastation >= 25
+		NOR = {
+			is_planet_class = pc_city 
+			is_planet_class = pc_relic
+			is_planet_class = pc_machine
+			is_planet_class = pc_flood_hive
+			is_planet_class = pc_flood_shield
+			is_planet_class = pc_forerunner_ark
+			is_planet_class = pc_forerunner_shield
+			is_planet_class = pc_requiem
+			is_planet_class = pc_genesis
+			is_planet_class = pc_sharpened_shield
+			has_modifier = flood_outbreak
+		}
+	}
+	
+	immediate = {
+		add_modifier = {
+			modifier = flood_outbreak
+			days = 360
+		}
+		add_deposit = d_flood_infestation
+		hidden_effect = {
+			planet_event = {
+				id = flood_bombardment.4 days = 365
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = flood_bombardment.4
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_deposit = d_flood_infestation
+		owner = {
+			NOT = {
+				has_origin = origin_the_flood
+			}
+		}
+		NOT = {
+			has_orbital_bombardment_stance = flood_infection
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_deposit = d_flood_infestation
+				NOT = {
+					has_modifier = large_flood_outbreak
+				}
+			}
+			remove_modifier = flood_outbreak
+			add_modifier = {
+				modifier = large_flood_outbreak
+				days = -1
+			}
+			hidden_effect = {
+				planet_event = {
+					id = flood_bombardment.5 days = 30 random = 15
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_deposit = d_flood_infestation
+				}
+			}
+			remove_modifier = flood_outbreak
+			remove_modifier = large_flood_outbreak
+		}
+	}
+}
+
+#Flood Outbreak 
+planet_event = {
+	id = flood_bombardment.5
+	title = "flood_bombardment.5.name"
+	desc = "flood_bombardment.5.desc"
+	picture = GFX_evt_flood_infection
+	show_sound = event_flood_outbreak
+	location = ROOT
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_modifier = large_flood_outbreak
+		has_deposit = d_flood_infestation
+		NOT = { has_orbital_bombardment_stance = flood_infection }
+		owner = {
+			NOT = {
+				has_origin = origin_the_flood
+			}
+		}
+	}
+	option = {
+		name = BATTLESTATIONS
+		#Spawn Flood Army
+		hidden_effect = {
+			root = {
+				save_global_event_target_as = flood_outbreak_planet
+			}
+			create_country = {
+				name = "Feral Flood"
+				type = faction
+				flag = {
+					icon = {
+						category = "the_flood"
+						file = "the_flood.dds"
+					}
+					background = {
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors = {
+						"dark_green"
+						"green"
+						"null"
+						"null"
+					}
+				}
+				effect = {
+					establish_communications_no_message = root.owner
+					save_global_event_target_as = active_flood_outbreak
+				}
+			}
+		}
+		create_army = {
+			name = "Feral Flood Infestation"
+			owner = event_target:active_flood_outbreak
+			type = "flood_proto_gravemind"
+		}
+		create_army = {
+			name = "Feral Flood Infection Forms"
+			owner = event_target:active_flood_outbreak
+			type = "flood_combat_forms"
+		}
+		create_army = {
+			name = "Feral Flood Carrier Forms"
+			owner = event_target:active_flood_outbreak
+			type = "flood_combat_forms"
+		}
+		create_army = {
+			name = "Feral Flood Combat Forms"
+			owner = event_target:active_flood_outbreak
+			type = "flood_combat_forms"
+		}
+	}
+}
+
+#Flood Outbreak Overruns Colony (DEFEAT)
+planet_event = {
+	id = flood_bombardment.6
+	location = ROOT
+
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:active_flood_outbreak
+		FromFrom = { is_same_empire = event_target:active_flood_outbreak }
+	}
+
+	immediate = {
+		if = { #FOR PRIMITIVE CIVS
+			limit = {
+				owner = { is_primitive = yes }
+			}
+			change_pc = pc_flood_hive 
+			remove_modifier = "natural_beauty"
+			remove_modifier = "atmospheric_aphrodisiac"
+			remove_modifier = "atmospheric_hallucinogen"
+			remove_modifier = "lush_planet"
+			remove_modifier = "dangerous_wildlife"
+			fromfrom = { destroy_country = yes }
+			set_owner = space_owner
+			set_planet_entity = {
+				entity = "flood_infected_planet_01_entity"
+				picture = pc_flood_hive 
+			}
+			remove_modifier = large_flood_outbreak
+			remove_modifier = flood_outbreak
+		}
+		else_if = { #FOR ARTIFICIAL HABITABLE MEGASTRUCTURES THAT ARE NOT SHIELD WORLDS
+			limit = {
+				OR = {
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_shattered_ring_habitable
+					is_planet_class = pc_forerunner_halo
+					is_planet_class = pc_forerunner_halo_activated
+					is_planet_class = pc_habitat
+				}
+			}
+			fromfrom = { destroy_country = yes }
+			destroy_colony = yes
+			show_flood_infection = yes 
+			remove_modifier = large_flood_outbreak
+			remove_modifier = flood_outbreak
+			add_modifier = {
+				modifier = flood_infected_habitat
+				days = -1
+			}
+		}
+		else = {
+			change_pc = pc_flood_hive
+			fromfrom = { destroy_country = yes }
+			set_planet_entity = {
+				entity = "flood_infected_planet_01_entity"
+				picture = pc_flood_hive 
+			}
+			destroy_colony = yes 
+			remove_modifier = large_flood_outbreak
+			remove_modifier = flood_outbreak
+			remove_modifier = "natural_beauty"
+			remove_modifier = "atmospheric_aphrodisiac"
+			remove_modifier = "atmospheric_hallucinogen"
+			remove_modifier = "lush_planet"
+			remove_modifier = "dangerous_wildlife"
+			add_modifier = {
+				modifier = "flood_infestation_stage_3"
+				days = -1
+			}
+		}
+	}
+}
+
+#Flood Outbreak Defeat trigger
+country_event = {
+	id = flood_bombardment.7
+	location = ROOT
+
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		From = { army_type = flood_proto_gravemind }
+	}
+
+	immediate = {
+		fromfrom = {
+			country_event = {
+				id = flood_bombardment.8 days = 1
+			}
+		}
+	}
+}
+
+#Flood Outbreak Defeated
+country_event = {
+	id = flood_bombardment.8
+	title = "flood_bombardment.8.name"
+	desc = "flood_bombardment.8.desc"
+	picture = GFX_evt_victorious_army
+	show_sound = event_celebration
+	location = ROOT
+
+	is_triggered_only = yes
+
+	#Opt: Victory!
+	option = {
+		name = flood_bombardment.8.a
+		event_target:active_flood_outbreak = {
+			remove_deposit = d_flood_infestation
+			hidden_effect = {
+				remove_modifier = "flood_outbreak"
+				every_owned_pop = {
+					remove_pop_flag = event_purge
+					unemploy_pop = yes 
+				}
+				
+				every_owned_pop = {
+					remove_modifier = "pop_recently_conquered"
+					add_modifier = {
+						modifier = "pop_liberation_fever"
+						days = 3600
+					}
+				}
+			}
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = 120
+				min = 240
+				max = 99999
+			}
+		}
+	}
+}
+
+# This = country
+# From = army
+#Flood Outbreak destroyed by other means
+country_event = {
+	id = flood_bombardment.9
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = { army_type = flood_proto_gravemind }
+	}
+
+	immediate = {
+		from.planet = {
+			remove_deposit = d_flood_infestation
+			hidden_effect = {
+				remove_modifier = "flood_outbreak"
+				every_owned_pop = {
+					remove_pop_flag = event_purge
+				}
+			}
+		}
+	}
+}
+
+# Planet is turned into Flood Hive by Flood bombing stance - former owner
+country_event = {
+	id = flood_bombardment.82
+	title = "flood_bombardment.82.name"
+	desc = "flood_bombardment.82.desc"
+	picture = GFX_evt_flood_infection
+	show_sound = event_flood_outbreak
+	location = from
+
+	is_triggered_only = yes
+
+	option = {
+		name = flood_bombardment.82.a
+		custom_tooltip = flood_world_infection
+	}
+}
+
+# Planet is turned into Flood Hive by Flood bombing stance - bombarder
+country_event = {
+	id = flood_bombardment.83
+	title = "flood_bombardment.82.name"
+	desc = "flood_bombardment.83.desc"
+	picture = GFX_evt_flood_infection
+	show_sound = event_flood_outbreak
+	location = from
+
+	is_triggered_only = yes
+
+	option = {
+		name = flood_bombardment.83.a
+		custom_tooltip = flood_world_infection
+	}
+}
+
+#FLOOD TRANSFORMATION
+pop_event = {
+	id = flood_bombardment.124
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		owner = {
+			has_origin = origin_the_flood
+		}
+	}
+
+	immediate = {
+		THIS = {
+			if = {
+				limit = {
+					owner = {
+						has_ethic = ethic_gestalt_consciousness
+					}
+				}
+				modify_species = {
+					portrait = "halo_flood"
+					add_trait = trait_hive_mind
+					add_trait = trait_flood_infected_species
+				}
+			}
+			else = {
+				change_species = last_created_species
+			}
+		}
+		
+	}
+}

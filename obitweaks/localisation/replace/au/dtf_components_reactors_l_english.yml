@@ -1,0 +1,49 @@
+﻿l_english:
+
+DTF_REACTOR_SMALLSHIP_1:0 "DTF Reactor"
+DTF_REACTOR_MEDIUMSHIP_1:0 "DTF Reactor"
+DTF_REACTOR_LARGESHIP_1:0 "DTF Reactor"
+DTF_REACTOR_FLAGSHIP_1:0 "DTF Reactor"
+DTF_REACTOR_PLATFORM_1:0 "DTF Reactor"
+
+DTF_REACTOR_SMALLSHIP_2:0 "DTF Advanced Reactor"
+DTF_REACTOR_MEDIUMSHIP_2:0 "DTF Advanced Reactor"
+DTF_REACTOR_LARGESHIP_2:0 "DTF Advanced Reactor"
+DTF_REACTOR_FLAGSHIP_2:0 "DTF Advanced Reactor"
+DTF_REACTOR_PLATFORM_2:0 "DTF Advanced Reactor"
+
+DTF_REACTOR_SMALLSHIP_3:0 "DTF Wave Motion Engine"
+DTF_REACTOR_MEDIUMSHIP_3:0 "DTF Wave Motion Engine"
+DTF_REACTOR_LARGESHIP_3:0 "DTF Wave Motion Engine"
+DTF_REACTOR_FLAGSHIP_3:0 "DTF Wave Motion Engine"
+DTF_REACTOR_PLATFORM_3:0 "DTF Wave Motion Engine"
+
+DTF_REACTOR_SMALLSHIP_4:0 "DTF Super Wave Motion Engine"
+DTF_REACTOR_MEDIUMSHIP_4:0 "DTF Super Wave Motion Engine"
+DTF_REACTOR_LARGESHIP_4:0 "DTF Super Wave Motion Engine"
+DTF_REACTOR_FLAGSHIP_4:0 "DTF Super Wave Motion Engine"
+DTF_REACTOR_PLATFORM_4:0 "DTF Super Wave Motion Engine"
+
+DTF_REACTOR_SMALLSHIP_5:0 "DTF Hyper Wave Motion Engine"
+DTF_REACTOR_MEDIUMSHIP_5:0 "DTF Hyper Wave Motion Engine"
+DTF_REACTOR_LARGESHIP_5:0 "DTF Hyper Wave Motion Engine"
+DTF_REACTOR_FLAGSHIP_5:0 "DTF Hyper Wave Motion Engine"
+DTF_REACTOR_PLATFORM_5:0 "DTF Hyper Wave Motion Engine"
+
+DTF_REACTOR_SMALLSHIP_6:0 "DTF Ultra Wave Motion Engine"
+DTF_REACTOR_MEDIUMSHIP_6:0 "DTF Ultra Wave Motion Engine"
+DTF_REACTOR_LARGESHIP_6:0 "DTF Ultra Wave Motion Engine"
+DTF_REACTOR_FLAGSHIP_6:0 "DTF Ultra Wave Motion Engine"
+DTF_REACTOR_PLATFORM_6:0 "DTF Ultra Wave Motion Engine"
+
+
+DTF_REACTOR_STARBASE_1:0 "DTF Reactor"
+DTF_REACTOR_STARBASE_2:0 "DTF Advanced Reactor"
+DTF_REACTOR_STARBASE_3:0 "DTF Wave Motion Engine"
+DTF_REACTOR_STARBASE_4:0 "DTF Super Wave Motion Engine"
+DTF_REACTOR_STARBASE_5:0 "DTF Hyper Wave Motion Engine"
+DTF_REACTOR_STARBASE_6:0 "DTF Ultra Wave Motion Engine"
+
+
+DTF_REACTOR_ION_GUN:0 "DTF Wave Motion Engine"
+

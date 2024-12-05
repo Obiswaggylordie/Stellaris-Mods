@@ -1,0 +1,44 @@
+namespace = flood_army
+
+# FLOOD INFECTION ARMY REANIMATION EVENTS
+#Reanimated Armies: Reanimating the enemy's army as your own
+#An army has been killed in ground combat
+# This = owner
+# From = army
+# FromFrom = opponent
+# FromFromFrom = planet
+country_event = {
+	id = flood_army.15
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = fromfrom
+		fromfrom = {
+			has_origin = origin_the_flood
+		}
+		from = {
+			exists = species
+			species = {
+				NOR = {
+					has_trait = trait_ascension_3
+					has_trait = trait_ascension_4
+					has_trait = trait_robot_promethean_ai
+				}
+			}
+			NOT = {
+				army_type = warden_eternal
+			}
+		}
+	}
+
+	immediate = {
+		fromfromfrom = {
+			create_army = {
+				owner = root.fromfrom
+				type = flood_combat_forms
+				species = root.from.species
+			}
+		}
+	}
+}

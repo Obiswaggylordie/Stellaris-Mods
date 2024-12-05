@@ -1,0 +1,16 @@
+﻿l_english:
+
+ civic_alicorn_ascension_effect:0 "The ruler at the beginning of the game will receive the ['concept_leader_trait_alicorn'] trait.\nThere is a probability of being ascended and gain ['concept_leader_trait_alicorn'] trait when the leaders level up.\nOr, under the guidance of Qualification Accreditation Officer, spend some resources to accredit the leader you want (activate this function in the edict).\n\n§Y-Note: When you using the species portrait of non ['concept_pmt_pony_species'], this civic will be ['concept_pmt_replaced_civic'] at the beginning of the game.\nOnly §HPony§! can get ascension.§!\n"
+
+ concept_leader_trait_alicorn:0 "$leader_trait_alicorn$"
+ concept_leader_trait_alicorn_desc:0 "$THIS_LEADER_TXT$: $TABBED_NEW_LINE$- $MOD_LEADER_TRAIT_SELECTION_OPTIONS_ADD$: §G+1§!$TABBED_NEW_LINE$- $mod_negative_traits_leader$: §G-1§!$TABBED_NEW_LINE$- $TRAIT_IMMORTAL_LEADERS$\n\n§L$leader_trait_alicorn_desc$§!"
+
+ leader_trait_alicorn:0 "Alicorn"
+ leader_trait_alicorn_desc:0 "A rare race with near eternal lifespan. For an ordinary pony, this is the highest recognition of ability."
+
+ # Megastructures
+ obi_magic_wormhole: "Magical Wormhole"
+ obi_magic_wormhole_DESC: "This wormhole doesn't make any sense scientifically, it links to multiple exit apertures at the same time, our sensors can't identify any logical causes for this phenomena, it's like magic."
+ obi_magic_wormhole_MEGASTRUCTURE_DETAILS: "Harness the true arcane power of magic to bend space and time, creating infinite wormholes leading to each other."
+
+ obi_magic_wormhole_remove: "Collapse Wormhole"

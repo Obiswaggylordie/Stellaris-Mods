@@ -1,0 +1,129 @@
+@dtf_defense_command_build_time_1 = 120
+@dtf_defense_command_build_time_2 = 160
+@dtf_defense_command_build_time_3 = 240
+@dtf_defense_command_build_time_4 = 360
+
+
+
+@dtf_defense_command_alloys_cost_1 = 300
+@dtf_defense_command_alloys_cost_2 = 2400
+@dtf_defense_command_alloys_cost_3 = 8000
+@dtf_defense_command_alloys_cost_4 = 20000
+
+
+@dtf_defense_command_energy_upkeep_1 = 10
+@dtf_defense_command_energy_upkeep_2 = 30
+@dtf_defense_command_energy_upkeep_3 = 80
+@dtf_defense_command_energy_upkeep_4 = 160
+
+@dtf_defense_command_minerals_upkeep_1 = 0
+@dtf_defense_command_minerals_upkeep_2 = 0
+@dtf_defense_command_minerals_upkeep_3 = 0
+@dtf_defense_command_minerals_upkeep_4 = 0
+
+
+
+
+
+building_dtf_defense_command_1 = {
+	base_buildtime = @dtf_defense_command_build_time_1
+	base_cap_amount = 1
+	category = government
+	planetary_ftl_inhibitor = yes
+
+	icon = building_dtf_defense_command
+
+	potential = {  
+		#owner = {
+		#	has_origin = origin_earth_2200
+		#}
+		always = no
+	} 
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @dtf_defense_command_alloys_cost_1
+		}
+		upkeep = {
+			energy = @dtf_defense_command_energy_upkeep_1
+			minerals = @dtf_defense_command_minerals_upkeep_1
+		}
+
+		produces = {	
+			influence = 1.0
+		}
+	}
+
+	planet_modifier = {
+
+	}
+
+	country_modifier = {
+		country_naval_cap_add = 300
+		command_limit_add = 24
+		species_leader_exp_gain = 0.2
+	}
+
+	upgrades = {
+		"building_dtf_defense_command_2"
+	}
+
+	prerequisites = { "tech_dtf_pretech" }
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+building_dtf_defense_command_2 = {
+	base_buildtime = @dtf_defense_command_build_time_2
+	category = government
+	can_build = no
+	planetary_ftl_inhibitor = yes
+
+	icon = building_dtf_defense_command
+
+	potential = {  
+		owner = {
+			has_origin = origin_earth_2200
+		}
+	} 
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @dtf_defense_command_alloys_cost_2
+		}
+		upkeep = {
+			energy = @dtf_defense_command_energy_upkeep_2
+			minerals = @dtf_defense_command_minerals_upkeep_2
+		}
+
+		produces = {	
+			influence = 2.0
+		}
+	}
+
+	planet_modifier = {
+
+	}
+
+	country_modifier = {
+		country_naval_cap_add = 1200
+		command_limit_add = 64
+		species_leader_exp_gain = 0.3
+	}
+
+
+	upgrades = {
+		"building_dtf_defense_command_3"
+	}
+
+	prerequisites = { "tech_dtf_technology_3" }
+
+	ai_weight = {
+		weight = 0
+	}
+}

@@ -1,0 +1,577 @@
+##################
+### TECH COSTS ###
+##################
+#If you change any of these, use replace in files so the values are the same across all files
+
+@tier1cost1 = 500
+@tier1cost2 = 640
+@tier1cost3 = 780
+
+@tier2cost1 = 1000
+@tier2cost2 = 1500
+@tier2cost3 = 2000
+
+@tier3cost1 = 3000
+@tier3cost2 = 4000
+@tier3cost3 = 5000
+
+@tier4cost1 = 6000
+@tier4cost2 = 8000
+@tier4cost3 = 10000
+
+@tier5cost1 = 14000
+@tier5cost2 = 17000
+@tier5cost3 = 20000
+
+####################
+### TECH WEIGHTS ###
+####################
+
+@tier1weight1 = 100
+@tier1weight2 = 95
+@tier1weight3 = 90
+
+@tier2weight1 = 85
+@tier2weight2 = 75
+@tier2weight3 = 70
+
+@tier3weight1 = 65
+@tier3weight2 = 60
+@tier3weight3 = 50
+
+@tier4weight1 = 45
+@tier4weight2 = 40
+@tier4weight3 = 35
+
+@tier5weight1 = 30
+@tier5weight2 = 25
+@tier5weight3 = 20
+
+
+tech_eidetic_memory = {
+	cost = 500000
+	area = society
+	tier = 1
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	category = { biology }
+	ai_update_type = all
+	#prerequisites = { "tech_" }
+	weight = 1000
+
+	potential = {
+		has_active_tradition = tr_sgu_enlightenment_adopt
+		OR = {
+			has_trait = trait_psionic
+			has_trait = trait_erudite
+		}
+	}
+
+	modifier = {
+		species_leader_exp_gain = 0.25 
+	}
+
+	weight_modifier = {
+		factor = 2
+	}
+	
+	ai_weight = {
+		factor = 2
+	}
+}
+
+tech_bio_electrical_tuning = {
+	cost = 500000
+	area = physics
+	tier = 2
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	category = { psionics }
+	ai_update_type = all
+	prerequisites = { "tech_ascension_1" }
+	weight = 1000
+
+	potential = {
+		OR = {
+			has_trait = trait_psionic
+			has_trait = trait_erudite
+		}
+	}
+
+	modifier = {
+		country_unity_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		factor = 2
+	}
+	
+	ai_weight = {
+		factor = 2
+	}
+}
+
+tech_advanced_perception = {
+	cost = 1000000
+	area = society
+	tier = 3
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	category = { biology }
+	ai_update_type = all
+	prerequisites = { "tech_ascension_2" }
+	weight = 1000
+
+	potential = {
+		OR = {
+			has_trait = trait_psionic
+			has_trait = trait_erudite
+		}
+	}
+
+	modifier = {
+		species_leader_exp_gain = 0.25 
+		all_technology_research_speed = 0.05
+	}
+
+	weight_modifier = {
+		factor = 2
+	}
+	
+	ai_weight = {
+		factor = 2
+	}
+}
+
+tech_heightened_intellect = {
+	cost = 2500000
+	area = society
+	tier = 4
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	category = { biology }
+	ai_update_type = all
+	prerequisites = { "tech_ascension_3" }
+	weight = 1000
+
+	potential = {
+		OR = {
+			has_trait = trait_psionic
+			has_trait = trait_erudite
+		}
+	}
+
+	modifier = {
+		all_technology_research_speed = 0.1
+	}
+
+	weight_modifier = {
+		factor = 2
+	}
+	
+	ai_weight = {
+		factor = 2
+	}
+}
+
+tech_ascension_1 = {
+	cost = 500000
+	area = society
+	tier = 2
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	category = { psionics }
+	ai_update_type = all
+	prerequisites = { "tech_eidetic_memory" }
+	weight = @tier2weight1
+
+	potential = {
+		has_active_tradition = tr_sgu_enlightenment_3
+		OR = {
+			has_trait = trait_psionic
+			has_trait = trait_erudite
+		}
+	}
+
+	modifier = {
+		country_base_psi_energy_produces_add = 0.25
+	}
+
+	weight_modifier = {
+		factor = 100
+	}
+	
+	ai_weight = {
+		factor = 100
+	}
+}
+
+tech_ascension_2 = {
+	cost = 2000000
+	area = society
+	tier = 3
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	category = { psionics }
+	ai_update_type = all
+	prerequisites = { "tech_bio_electrical_tuning" "tech_ascension_1" }
+	weight = @tier2weight1
+
+	potential = {
+		has_active_tradition = tr_sgu_enlightenment_4
+		OR = {
+			has_trait = trait_psionic
+			has_trait = trait_erudite
+		}	
+	}
+
+	modifier = {
+		country_base_psi_energy_produces_add = 0.25
+	}
+
+	feature_flags = {
+		advanced_gene_modding
+	}
+
+	weight_modifier = {
+		factor = 100
+	}
+	
+	ai_weight = {
+		factor = 100
+	}
+}
+
+tech_ascension_3 = {
+	cost = 5000000
+	area = society
+	tier = 4
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	category = { psionics }
+	ai_update_type = all
+	prerequisites = { "tech_ascension_2" "tech_advanced_perception" }
+	weight = @tier2weight1
+
+	potential = {
+		has_active_tradition = tr_sgu_enlightenment_5
+		OR = {
+			has_trait = trait_psionic
+			has_trait = trait_erudite
+		}
+	}
+
+	modifier = {
+		country_base_psi_energy_produces_add = 0.5
+	}
+
+	feature_flags = {
+		add_advanced_traits
+	}
+
+	weight_modifier = {
+		factor = 100
+	}
+	
+	ai_weight = {
+		factor = 100
+	}
+}
+
+tech_ascension_4 = {
+	cost = 10000000
+	area = society
+	tier = 4
+	is_rare = yes
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	category = { psionics }
+	ai_update_type = all
+	prerequisites = { "tech_ascension_3" "tech_heightened_intellect" }
+	weight = @tier2weight1
+
+	potential = {
+		has_active_tradition = tr_sgu_enlightenment_finish
+		OR = {
+			has_trait = trait_psionic
+			has_trait = trait_erudite
+		}	
+	}
+
+	modifier = {
+		country_base_psi_energy_produces_add = 1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			owner = {NOT = { has_ascension_perk = ap_ascension_final_stage }}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 100
+		}
+	}
+}
+
+tech_ascension_psionic_mastery = {
+	cost = 5000000
+	area = society
+	tier = 5
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	category = { psionics }
+	ai_update_type = all
+	prerequisites = { "tech_ascension_4"}
+	weight = @tier2weight1
+
+	modifier = {
+		planet_psi_masters_produces_mult = 0.25
+		planet_psi_masters_upkeep_mult = 0.25
+	}
+
+	weight_modifier = {
+		factor = 2
+	}
+	
+	ai_weight = {
+		factor = 2
+	}
+}
+
+tech_ascended_state_of_mind = {
+	cost = 300000
+	area = society
+	tier = 1
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	category = { psionics }
+	ai_update_type = all
+	weight = @tier2weight1
+
+	modifier = {
+		planet_amenities_mult = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			owner = {NOT = { has_country_flag = used_tech_ascended_state_of_mind }}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 100
+		}
+	}
+}
+
+tech_ascended_psionic_link = {
+	cost = 1000000
+	area = society
+	tier = 2
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	category = { psionics }
+	ai_update_type = all
+	weight = @tier2weight1
+
+	modifier = {
+		country_unity_produces_mult = 0.05
+		all_technology_research_speed = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			owner = {NOT = { has_country_flag = used_tech_ascended_psionic_link }}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 100
+		}
+	}
+}
+
+tech_ascended_gene_editing = {
+	cost = 1500000
+	area = society
+	tier = 3
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	category = { biology }
+	ai_update_type = all
+	weight = @tier2weight1
+
+	modifier = {
+		BIOLOGICAL_species_trait_points_add = 3 
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			owner = {NOT = { has_country_flag = used_tech_ascended_gene_editing }}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 100
+		}
+	}
+}
+
+tech_ascended_understanding = {
+	cost = 10000000
+	area = society
+	tier = 4
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	category = { psionics }
+	ai_update_type = all
+	weight = @tier2weight1
+
+	modifier = {
+		country_base_influence_produces_mult = 100
+		terraform_speed_mult = 100
+		all_technology_research_speed = 100
+		planet_decision_enact_speed_mult = 100
+		planet_building_build_speed_mult = 100
+		planet_colony_development_speed_mult = 100
+		megastructure_build_speed_mult = 100
+		intel_encryption_add = 1000
+		intel_decryption_add = 1000
+		intel_gain_speed = 1000
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			owner = {NOT = { has_country_flag = used_tech_ascended_understanding }}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 100
+		}
+	}
+}
+
+tech_ascended_cloud_form = {
+	cost = 5000000
+	area = society
+	tier = 4
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	category = { psionics }
+	ai_update_type = all
+	weight = @tier2weight1
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_ASCENDED_CLOUD_FORM_TITLE"
+			desc = "TECH_UNLOCK_ASCENDED_CLOUD_FORM_DESC"
+		}
+	}
+
+	modifier = {
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			owner = {NOT = { has_country_flag = used_tech_ascended_cloud_form }}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 100
+		}
+	}
+}
+
+tech_sangraal = {
+	cost = 10000000
+	area = society
+	tier = 4
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	category = { psionics }
+	ai_update_type = all
+	weight = @tier2weight1
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_SANGRAAL_TITLE"
+			desc = "TECH_UNLOCK_SANGRAAL_DESC"
+		}
+	}
+
+	modifier = {
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			owner = {NOT = { has_country_flag = used_tech_sangraal }}
+		}
+	}
+	
+	ai_weight = {
+		factor = 100
+	}
+}
+
+tech_ancient_ark_of_truth = {
+	cost = 2500000
+	area = society
+	tier = 3
+	is_rare = yes
+	is_dangerous = no
+	is_reverse_engineerable = no
+	category = { psionics }
+	ai_update_type = all
+	#prerequisites = { "tech_" }
+	weight = @tier2weight1
+
+	potential = {
+		OR = {
+			has_trait = "trait_ancient"
+		}
+	}
+
+	modifier = {
+		pop_government_ethic_attraction = 2.5
+	}
+
+	weight_modifier = {
+		factor = 1
+	}
+	
+	ai_weight = {
+		factor = 1
+	}
+}
+
+

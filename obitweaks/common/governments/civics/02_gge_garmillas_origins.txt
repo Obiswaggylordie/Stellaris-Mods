@@ -1,0 +1,39 @@
+
+
+
+
+origin_garmillas = {
+
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/gge_origin_garmillas_icon.dds"
+	picture = GFX_gge_origin_garmillas_portrait
+
+	starting_colony = pc_garmillas				# スタート時の首都惑星のタイプ
+	#habitability_preference = pc_garmillas			# 気候選考特性の変更
+	#preferred_planet_class_neighbor = no
+
+	initializers = { gge_garmillas_system_initializer }
+
+	playable = {
+		#host_has_dlc = "Utopia"
+	}
+
+	possible = {
+		is_ai = no
+	}
+
+	modifier = {
+		all_technology_research_speed = 1.00
+		ship_weapon_damage = 1.00
+		ship_shield_hardening_add = 1.00
+		owned_ship_fire_rate_mult = 1.00
+	}
+
+	description = "origin_tooltip_gge_garmillas"
+
+	Advanced_start = no
+
+	ai_weight = {
+		weight = 0
+	}
+}

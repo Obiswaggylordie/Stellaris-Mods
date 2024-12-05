@@ -1,0 +1,264 @@
+﻿l_english:
+####################################
+
+# Purge
+ purge_library: "Library Sublimation"
+ purge_library_desc: "This species will be systematically taken to the Library Transference Gate, to then be permanently assimilated into the grand repository of knowledge."
+
+# Edicts
+ edict_get_forerunner_tech_zeia: "Zei'a Scientific Revolution"
+ edict_get_forerunner_tech_zeia_desc: "After much work, we have found methods of completely revolutionizing our technology!"
+
+# Planet Classes
+ pc_obicitadel: "Citadel Station"
+ pc_obicitadel_desc: "This megastructure of a station acts as a capital in of itself, allowing empires to settle the heart of their vast civilisations within it. The station's primary purpose is to facilitate the control of the galactic relay network, to this end the station also functions as a nigh-impenetrable fortress and bastion against anyone who would attempt to seize control over the relays."
+
+# Technology
+ tech_cr_cosmoreverse: "Energy Controllers"
+ tech_cr_cosmoreverse_desc: "Energy Controllers are powerful Zei'a devices capable of asserting control over all energy in any state, from siphoning thermal energy and heat from one object and transferring it to another, all the way to manipulating Celestial Energy itself."
+
+ #tech_cr_cosmoreverse: "The Cosmoreverse System"
+ #tech_cr_cosmoreverse_desc: "A supremely powerful celestial energy manipulation device, capable of creating abberations in time and space through the Void, or transforming entire planets into any number of alternatives."
+
+ tech_cr_access: "Time Fault Facilities"
+ tech_cr_access_desc: "After lengthy study of these 'Time Faults', we have found the method of entering them safely and even utilising their esoteric properties for our own benefit."
+
+ tech_obi_wormhole: "Spatial Magic Theory"
+ tech_obi_wormhole_desc: "Through our understanding of the Arcane, we've come to realise that we have the potential to fold subspace in any way we see fit, granting us many potential benefits."
+
+# Ships
+ cr_corvette: "CR Corvette"
+ cr_corvette_plural: "CR Corvettes"
+ 
+ cr_destroyer: "CR Destroyer"
+ cr_destroyer_plural: "CR Destroyers"
+ 
+ cr_cruiser: "CR Cruiser"
+ cr_cruiser_plural: "CR Cruisers"
+ 
+ cr_dreadnought: "CR Vanguard"
+ cr_dreadnought_plural: "CR Vanguards"
+ 
+ cr_battleship: "CR Advanced Armament Assault Battleship"
+ cr_battleship_plural: "AAA Battleships"
+ 
+ cr_titan: "CR Space Battleship"
+ cr_titan_plural: "CR Space Battleships"
+
+ obi_city: "Zei'a City-Ship"
+ obi_city_plural: "Zei'a City-Ships"
+
+# Starbase Stuff
+ sm_dtf_large_shipyard: "Large Shipyard"
+ sm_dtf_large_shipyard_desc: "This shipyard can support the construction of 10 ships."
+ 
+ sm_dtf_hyper_shipyard: "Time Fault Shipyard"
+ sm_dtf_hyper_shipyard_desc: "This shipyard was constructed with Tetradimensional Engineering, making it extremely large."
+
+# Combat Computers
+ cr_combat_computer: "Standard Crew"
+ cr_combat_computer_desc: "The normal crew compliment for this vessel."
+
+# Edict funcs
+ mod_shipsize_cr_corvette_build_speed_mult: "CR Corvette Build Speed"
+ mod_shipsize_cr_destroyer_build_speed_mult: "CR Destroyer Build Speed"
+ mod_shipsize_cr_cruiser_build_speed_mult: "CR Cruiser Build Speed"
+ mod_shipsize_cr_dreadnought_build_speed_mult: "CR Vanguard Build Speed"
+ mod_shipsize_cr_battleship_build_speed_mult: "CR AAA Battleship Build Speed"
+ mod_shipsize_cr_titan_build_speed_mult: "CR Space Battleship Build Speed"
+ mod_starbase_shipyard_build_alloys_cost_mult: "Shipyard alloy usage"
+ mod_country_command_limit_mult: "Fleet Command Limit"
+ mod_leaders_unity_cost_mult: "Leader recruitment cost"
+
+# Deposits
+
+ # Time Faults
+ d_cr_dtf: "Dimensional Time Fault"
+ d_cr_dtf_desc: "An esoteric void-based spatial pocket, its interior dimensions are far larger than what should logically be fit in the small area which the anomaly resides in. Time seems to be flowing drastically differently within it in comparison to the rest of the universe aswell, what could possibly make something like this?"
+
+ # The Citadel
+ d_citadel_wards: "Citadel Wards"
+ d_citadel_wards_desc: "The 'arms' of the Citadel, known as the Wards, constitute the residential and commercial sectors of the station. They are densely populated, housing millions of residents in the numerous skyscrapers which rise from the superstructure."
+ d_citadel_presidium: "Naós Presidium"
+ d_citadel_presidium_desc: "Located in the 10km wide central ring of the station, the Presidium is a massive, park-like complex containing the offices of the various branches of government. The Presidium also hosts the Pan-Galactic Assembly, a convention floor for all races in diplomatic contact to meet and engage diplomatically with eachother."
+ d_citadel_tower: "Citadel Tower"
+ d_citadel_tower_desc: "The Citadel Tower is at the epicentre of the massive Citadel. Rising parallel to the station's Wards, it houses the Council Chambers, the main traffic control for the station, and the galactic Relay network control center."
+ d_citadel_csec: "Agon Security Branch"
+ d_citadel_csec_desc: "The Citadel is policed by the Citadel Agon Security Branch (C-Sec), whose offices and custody suites are located in the Lower Wards."
+ d_citadel_keeper_workshops: "Huragok Workshops"
+ d_citadel_keeper_workshops_desc: "The Citadel Station is maintained by the bio-engineered Huragok, a mindless servant race that roams the station in search of problems to solve."
+ d_citadel_huerta_memorial_hospital: "Torvus Medical Sector"
+ d_citadel_huerta_memorial_hospital_desc: "Touted as a leader in premium medical care, The Torvus Medical Sector's staff and facilities can accommodate any known race. It has hundreds of full time menders and thousands of support staff, and many of its experts also specialize in xenobiology, xenomedicine, and genetics. Virtually any medicinal need or service can be found and met within the medical sector."
+ d_citadel_joint_research_division: "Citadel Fanum Research Division"
+ d_citadel_joint_research_division_desc: "The Citadel is home to a vast Fanum science and knowledge division, it employs scientist and researchers to carry out their work in order to provide independent scientific advice and support to the Citadel and its allies. Their responsibilities are to create, manage and make sense of any knowledge that may support the Citadel, anticipate emerging issues that need to be addressed at Council level, and to share know-how with Citadel allies, the scientific community, and newcomers to the Galactic Community."
+ d_citadel_relay_control: "Relay Network Control Center"
+ d_citadel_relay_control_desc: "This control center allows whoever holds the station to gain access to the knowledge and technology of the galactic relay network, aswell as allowing them to instantaneously assume control of and reconfigure any existing relay."
+ d_citadel_inactive_relay_control: "Inactive Control center"
+ d_citadel_ianctive_relay_control_desc: "This control center is inactive, no matter what our scientists and engineers try nothing will function, nor do we know what this place is supposed to do."
+
+ # Chair Outpost
+ d_chair_outpost: "Chair Outpost"
+ d_chair_outpost_desc: "An odd Outpost of some sort, there's a weird chair in the centre of the facility. It seems to be inactive."
+ d_chair_outpost_active: "Drone Weapons Chair Outpost"
+ d_chair_outpost_active_desc: "The weapons chair outpost is fully operational, ready to intercept and destroy any potential attackers."
+
+ # Attero
+ d_attero_device: "Attero Device"
+ d_attero_device_desc: "The Attero Device is a specialised disruptive field emitter that pollutes hyperspace and subspace with various destructive energies, specifically targeted at the frequencies of hostile FTL engines, the result is the instantaneous obliteration of enemy ships entering their range."
+ d_attero_device_inactive: "Inactive Attero Device"
+ d_attero_device_inactive_desc: "A slumbering defensive mechanism of unimaginable power and devastation."
+
+ # City-Ship
+ d_city_ship: "Zei'a City-Ship"
+ d_city_ship_desc: "City-Ships are colossal testaments of engineering produced by Kas Zei'a, they can comfortably host several million Kvil'sha and are entirely automated by Uviik. City-Ships were typically deployed to worlds to become colony capitals and strategic coordination centres for nearby battlegroups fighting against the Scourge."
+
+ # Energy Controller
+ d_energy_controller: "Zei'a Energy Controller Network"
+ d_energy_controller_desc: "Energy Controllers are powerful Zei'a devices capable of asserting control over all energy in any state, from siphoning thermal energy and heat from one object and transferring it to another, all the way to manipulating Celestial Energy itself."
+
+ d_energy_controller_empty: "Depleted Zei'a Energy Controller Network"
+ d_energy_controller_empty_desc: "Energy Controllers are powerful Zei'a devices capable of asserting control over all energy in any state, from siphoning thermal energy and heat from one object and transferring it to another, all the way to manipulating Celestial Energy itself."
+
+ # Magic Deposits
+ d_magic_pocket: "Magical Pocket"
+ d_magic_pocket_desc: "An esoteric bubble of space formed through what can only be described as magical means."
+
+# Decisions
+ gge_create_sroka: "Sterilize Planet"
+ gge_create_sroka_desc: "Transform this planet into a Hyper-Sterilized planet, a mirror of our beloved homeworld."
+ decision_cr_cleanup_stuff: "Cleanup zei'a stuff"
+ remove_primordial_pillar: "Remove Primordial Pillar"
+ cr_destroy_dtf: "Collapse Time Fault"
+ cr_destroy_dtf_desc: "Collapse one of this planet's Dimensional Time Faults, rendering any benefits from its existence void." 
+
+ ## Citadel
+ decision_convert_obicitadel: "Create the Citadel Station"
+ decision_convert_obicitadel_desc: "The project will be a lengthy one, however once it has been completed. It will allow us to inabit one of the greatest habitats in the galaxy, furthermore it will allow us to construct and manage the galactic Relay Network."
+ decision_seal_obicitadel: "Citadel - Seal"
+ decision_seal_obicitadel_desc: "By closing the Citadel Wards, the entire megastructure becomes an enclosed capsule resistant to most forms of attack. Even allowing it to protect its inhabitants from the Halo Array."
+ decision_unseal_obicitadel: "Citadel - Unseal"
+ decision_unseal_obicitadel_desc: "Reopen the Wards of the Citadel, allowing pops to migrate and resettle, however also opening the station to attack."
+
+ ## Chair Outpost
+ decision_build_chair_outpost: "Chair Outpost - Build"
+ decision_build_chair_outpost_desc: "Build a Drone Weapons Chair Outpost."
+ decision_activate_chair_outpost: "Chair Outpost - Fire Drones"
+ decision_activate_chair_outpost_desc: "Activate the Chair and destroy any attacking fleets in orbit."
+ decision_deactivate_chair_outpost: "Chair Outpost - Deactivate"
+ decision_deactivate_chair_outpost_desc: "By unplugging the Zero Point Module from the Chair platform, we disable the entire system."
+
+ ## Attero
+ decision_build_attero: "Attero - Build"
+ decision_build_attero_desc: "Build an Attero Device, a powerful defensive system that will obliterate nearly anything entering this system."
+ decision_deactivate_attero: "Attero - Disable"
+ decision_deactivate_attero_desc: "Deactive this planet's Attero Device."
+ decision_dismantle_attero: "Attero - Dismantle"
+ decision_dismantle_attero_desc: "Dismantle this planet's Attero Device, have it destroyed, it's too dangerous."
+
+ ## Stellar Manipulation 
+ decision_hole_to_dwarf: "Convert to Brown Dwarf"
+ decision_hole_to_dwarf_desc: "Convert this Black Hole into a Brown Dwarf through our mastery of stellar manipulation."
+
+ ## City-Ship
+ decision_build_city_ship: "City-Ship - Build"
+ decision_build_city_ship_desc: "Construct a City-Ship, a monumental testament to our talent and technology."
+
+ decision_drones_city_ship: "City-Ship - Fire Drones"
+ decision_drones_city_ship_desc: "Blanket the skies and orbit of this planet with drone weapons, wiping out essentially anything."
+
+ decision_launch_city_ship: "City-Ship - Launch"
+ decision_launch_city_ship_desc: "Send this planet's City-Ship to the stars."
+
+ decision_land_city_ship: "City-Ship - Land"
+ decision_land_city_ship_desc: "Land a City-Ship currently in orbit of this planet."
+
+ decision_colonize_city_ship: "City-Ship - Colonize"
+ decision_colonize_city_ship_desc: "Land a City-Ship currently in orbit of this planet, and colonize it with it."
+
+ ## Energy Controller
+ decision_build_energy_controller: "Energy Controller - Build"
+ decision_build_energy_controller_desc: "Construct an Energy Controller, an incredibly advanced device capable of manipulation all forms of energy."
+
+ ## Ring Worlds
+ decision_obi_restore_ring_world: "Repair Ringworld Segment"
+ decision_obi_restore_ring_world_desc: "Repair this broken Ringworld Segment, allowing us to colonize it once more."
+ 
+ decision_obi_expand_ring_world: "Expand Ringworld (ONLY VANILLA RINGWORLD)"
+ decision_obi_expand_ring_world_desc: "Transforms all Ringworld Seams in this system, into blank Ringworld Sections, ready for further expansion. (NOT COMPATIBLE WITH ANYTHING OTHER THAN THE VANILLA RINGWORLD, IT WILL BREAK ANYTHING BIGGER) [I  don't know how to fix it yet :)]"
+
+ ## Magic Stuff
+ decision_make_magic_pocket: "Create Magical Pocket"
+ decision_make_magic_pocket_desc: "Through our understanding of spatial magic, we can create a form of dimensional pocket similiar to our own, just of a much smaller scale."
+
+ ## Cosmo Reverse System
+ cr_activate_crs: "Activate the Energy Controllers"
+
+ cosmoreverse_events.1.title: "Activating the Energy Controllers"
+ cosmoreverse_events.1.desc: "The Energy Controllers have been activated and are operating at full efficiency, the system is ready to affect great change upon the targeted world."
+
+ cosmoreverse_events.1.a: "Create a Dimensional Time Fault"
+ cosmoreverse_events.1.b: "Initialize Cosmo-Reverse Subsystem"
+ cosmoreverse_events.1.c: "Remove a Dimensional Time Fault."
+ cosmoreverse_events.1.d: "Create 10 Dimensional Time Faults."
+ cosmoreverse_events.1.e: "Remove all Dimensional Time Faults."
+ cosmoreverse_events.1.y: "Deplete Energy Controllers"
+ cosmoreverse_events.1.z: "Abort, shut down the controllers."
+
+ cosmoreverse_events.10.title: "Cosmo Reverse Planet Class Selection"
+ cosmoreverse_events.10.desc: "The Comso Reverse Subsystem is capable of transforming any world into whatever class we may desire."
+ 
+ cosmoreverse_events.10.a: "Cosmo Reverse to Gaia"
+ cosmoreverse_events.10.b: "Cosmo Reverse to Continental"
+ cosmoreverse_events.10.c: "Cosmo Reverse to Tropical"
+ cosmoreverse_events.10.d: "Cosmo Reverse to Alpine"
+ cosmoreverse_events.10.e: "Cosmo Reverse to Tundra"
+ cosmoreverse_events.10.f: "Cosmo Reverse to Ocean"
+ cosmoreverse_events.10.g: "Cosmo Reverse to Arctic"
+ cosmoreverse_events.10.h: "Cosmo Reverse to Desert"
+ cosmoreverse_events.10.i: "Cosmo Reverse to Savannah"
+ cosmoreverse_events.10.j: "Cosmo Reverse to Barren"
+ cosmoreverse_events.10.k: "Cosmo Reverse to Fractured"
+ cosmoreverse_events.10.l: "Cosmo Reverse to Void Sphere"
+ cosmoreverse_events.10.m: "Cosmo Reverse to Soul Sphere"
+ cosmoreverse_events.10.n: "Cosmo Reverse to Asteroid"
+ cosmoreverse_events.10.o: "Cosmo Reverse to Gas Giant"
+ cosmoreverse_events.10.p: "Cosmo Reverse to Tomb"
+ cosmoreverse_events.10.y: "Cosmo Reverse to Shattered"
+ cosmoreverse_events.10.z: "Abort, shut down the CRS."
+
+ obi_planet_killer_cosmoreverse: "Portable Zei'a Energy Controller"
+ obi_planet_killer_cosmoreverse_desc: "The mythical Zei'a Energy Controller, capable of instantly transforming entire worlds, and creating Dimensional Time Faults."
+ obi_planet_killer_cosmoreverse_ACTION: "Cosmoreverse"
+ obi_planet_killer_cosmoreverse_cs: "Portable Zei'a Energy Controller"
+ obi_planet_killer_cosmoreverse_cs_DESC: "The mythical Zei'a Energy Controller, capable of instantly transforming entire worlds, and creating Dimensional Time Faults."
+ 
+ FLEETORDER_DESTROY_PLANET_WITH_obi_planet_killer_cosmoreverse: "Attempting to cosmoreverse $PLANET|Y$"
+ MESSAGE_DESC_FOR_obi_planet_killer_cosmoreverse: "Activation Successful:"
+ 
+# Buildings
+ 
+ building_cr_dtf_factory: "Dimensional Time Fault Factory"
+ building_cr_dtf_factory_desc: "A vast industrial complex housed within a Dimensional Time Fault, the factory allows for the uninterrupted and constant mass production of various resources."
+ building_cr_dtf_laboratory: "Dimensional Time Fault Laboratory"
+ building_cr_dtf_laboratory_desc: "An incredibly advanced research facility built within a Dimensional Time Fault, the laboratories housing hundreds of scientists who can make dozens of breakthroughs that would take decades in mere months for the outside universe."
+ building_cr_dtf_breeder: "Dimensional Time Fault Population Centre"
+ building_cr_dtf_breeder_desc: "An intricate complex of cloning facilities, living areas, and mechanical construction yards for robotic or synthetic units, kept within a Dimensional Time Fault. The Population Centre being ideal for growing and maintaining an enormous population, with time moving far quicker for those in the Centre."
+ building_cr_dtf_shipyard: "Dimensional Time Fault Shipyard"
+ building_cr_dtf_shipyard_desc: "An enormous shipyard facility held within the Dimensional Time Fault, operating entirely unmanned and controlled using the Time Fault Control Uplinks on Orbital Rings and Starbases."
+ building_cr_dtf_bunker: "Dimensional Time Fault Bunker"
+ building_cr_dtf_bunker_desc: "A bastion beyond bastions, a citadel greater than any before it, this enormous fortress is housed within a Dimensional Time Fault, allowing it to not only train and build armies far quicker than normal, but also making it incredibly difficult to assault or destroy."
+
+# Modifiers
+ mod_building_cr_dtf_factory_max: "Max Dimensional Time Fault Factories"
+ mod_building_cr_dtf_laboratory_max: "Max Dimensional Time Fault Laboratories"
+ mod_building_cr_dtf_breeder_max: "Max Dimensional Time Fault Population Centres"
+ mod_building_cr_dtf_shipyard_max: "Max Dimensional Time Fault Shipyards"
+ mod_building_cr_dtf_bunker_max: "Max Dimensional Time Fault Bunkers"
+
+ # Bypasses
+ BYPASS_MAGIC_WORMHOLE: "Magical Wormhole"
+
+ BYPASS_DESC_INACTIVE_MAGIC_WORMHOLE: "This wormhole holds no grounds in scientific logic, we can't navigate this."
+
+ MAGIC_WORMHOLE_GALACTIC: "Magical Wormhole"
+ MAGIC_WORMHOLE_GALACTIC_DESC: "This system contains a §YMagical Wormhole§!"

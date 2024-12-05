@@ -1,0 +1,39 @@
+# Icons set here are the ones show in the actual slot.
+
+@cost1 = 3
+@cost2 = 6
+@cost3 = 9
+@cost4 = 12
+@cost5 = 15
+
+@power_1 = -10
+@power_2 = -15
+@power_3 = -20
+@power_4 = -25
+@power_5 = -30
+
+#FORERUNNER ENGINES 
+
+utility_component_template = {
+	key = "FORERUNNER_THRUSTERS1"
+	size = small
+	icon = "GFX_forerunner_thrusters"
+	icon_frame = 1
+	power = -3000
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 90
+			energon = 200
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 3.0
+		ship_evasion_add = 50
+	}
+
+	prerequisites = { "tech_forerunner_thrusters" }
+	component_set = "thruster_components"
+	
+	ai_weight = 50000
+}

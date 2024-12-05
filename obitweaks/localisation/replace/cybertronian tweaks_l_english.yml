@@ -1,0 +1,255 @@
+﻿l_english:
+
+# Edicts
+
+ edict_energon_alloy_boost: "Energon-Powered Alloy Production"
+ edict_energon_alloy_boost_desc: "Use energon to temporarily power our metallurgical facilities, providing a boost to our alloy output."
+
+# Armies
+
+ cybertronian_guardian: "Cybertronian Guardian"
+ cybertronian_guardian_desc: "A massive Cybertronian equipped with various heavy weaponry, a living war machine."
+ 
+ cybertronian_titan: "Cybertronian Titan"
+ cybertronian_titan_desc: "An unfathomably colossal cybertronian, capable of transforming into an entire city or even starships."
+
+# Starbase Modules
+ sm_obi_omega_lock_starbase:0 "Omega Lock Bridge"
+ sm_obi_omega_lock_starbase_desc:0 "A nearby planet's Omega Lock is connected to the starbase through a Space Bridge portal, allowing it to assist the starbase in the construction of vessels."
+
+# Decisions
+ decision_omega_lock_project_funny: "Activate the Omega Lock"
+ decision_omega_lock_project_funny_desc: "Activate the Omega Lock to restore this Cybertronian world to its former glory."
+
+ decision_strip_cybermatter_world: "Strip Cybermatter World"
+ decision_strip_cybermatter_world_desc: "Strip this Cybermatter world for all its resources and reduce it to a shattered husk."
+
+ decision_expand_cybertronian_world_desc: "Expand this cybertronian world, making it larger with more district slots and constructing additional cybertronian cities on its surface."
+
+ decision_install_groundbridge: "Install Ground Bridge"
+ decision_install_groundbridge_desc: "Install a Ground Bridge on this world allowing for instantaneous transportation to any location on the planet."
+ 
+ decision_omega_lock_target: "Target for Cyberforming"
+ decision_omega_lock_target_desc: "Target a Cybertronian world's Space Bridge for this planet's co-ordinates so that it may fire a stream of pure cybermatter and energon from its Omega Lock and cyberform the entire planet in moments."
+
+ decision_install_omegalock: "Construct an Omega Lock"
+ decision_install_omegalock_desc: "By harnessing our understanding of Energon and Cybermatter, we can construct a brand new Omega Lock."
+
+ decision_core_infusion: "Cybertronian Core Infusion"
+ decision_core_infusion_desc: "By infusing vast amounts of Cybermatter and Energon into the core, we can revive its otherwise debilitated functions and even restore the planet to its former glory."
+
+ decision_cyber_capital_development: "Cyber-Capital Development"
+ decision_cyber_capital_development_desc: "Develop our great capital and construct the phenotype city-states."
+
+ decision_corrupt_cybertronian_world: "Corrupt this Cybertronian World"
+ decision_corrupt_cybertronian_world_desc: "Use dark energon to corrupt the very core of this world, but be warned that if it fails then the planet will simply die." 
+
+ decision_transfer_cube: "Allspark - Transfer"
+ decision_activate_cube: "Allspark - Activate"
+ decision_build_harvester: "Star Harvester - Construct"
+ decision_activate_harvester: "Star Harvester - Activate"
+ decision_hide_harvester: "Star Harvester - Hide"
+ decision_hide_harvester_desc: "The Star Harvester is too dangerous to be left exposed like this, whoever built it may one day return to have it serve its purpose. For the safety of the sun, we can not allow them to find the machine again."
+
+ decision_install_spacebridge: "Space Bridge - Construct"
+ decision_install_spacebridge_desc: "Build a Space Bridge, a magnificent piece of Cybertronian engineering. Capable of generating vast portals to anywhere in the universe."
+ decision_disable_spacebridge: "Space Bridge - Disable"
+ decision_disable_spacebridge_desc: "The Space Bridge must be disabled, we cannot allow it to remain active."
+ decision_remove_spacebridge: "Space Bridge - Dismantle"
+ decision_remove_spacebridge_desc: "The Space Bridge must be removed, it cannot remain intact for others to abuse."
+ decision_colonize_spacebridge: "Space Bridge - Colonize"
+ decision_colonize_spacebridge_desc: "Connect to the Space Bridge on the planet and colonize it using one of your own."
+
+# Deposits
+ d_ground_bridge: "Ground Bridge"
+
+ d_active_omega_lock: "Omega Lock"
+ d_active_omega_lock_desc: "The Omega Lock is an infinite source of cybermatter. Its primary purpose is to assist in the consturction, expansion, and repair of cybertronian worlds."
+ d_inactive_omega_lock: "Depleted Omega Lock"
+ d_inactive_omega_lock_desc: "This Omega Lock has been depleted of all its Energon or Cybermatter, rendering it useless."
+ d_damaged_omega_lock: "Destroyed Omega Lock"
+ d_damaged_omega_lock_desc: "This Omega Lock has been rendered inoperable from extensive damage, it can no longer be utilised."
+ d_shielded_omega_lock: "Shielded Omega Lock"
+ d_shielded_omega_lock_desc: "This Omega Lock has been retracted into its densely shielded foundation, leaving only its controls exposed."
+
+ d_all_spark: "The Allspark"
+ d_all_spark_desc: "Before time began, there was the cube. The Allspark is a source of limitless creation, capable of forging whole worlds and races. Though beware, for its power is not infinite."
+ d_depleted_all_spark: "Depleted Allspark"
+ d_depleted_all_spark_desc: "The primordial force of creation rendered inert, the cube no longer shines with the light of energon. It's now incapable of performing its functions, it requires the power of stars to re-awaken."
+ d_star_harvester: "Star Harvester"
+ d_star_harvester_desc: "A great machine, which generates enough energon to fuel an entire civilisation, and revitalize the Allspark. All by destroying stars."
+ d_hidden_star_harvester: "Ominous Pyramid"
+ d_hidden_star_harvester_desc: "This vast pyramid was once constructed to imprison death itself, now it holds a terrible secret within its depths."
+
+ d_deactivated_space_bridge: "Inactive Space Bridge"
+ d_deactivated_space_bridge_desc: "This once great device has been disabled either from a lack of energon or critical damage to its sophisticated systems."
+ 
+ d_space_bridge: "Space Bridge"
+ d_space_bridge_desc: "A powerful Cybertronian device capable of providing instantaneous transportation by vast portals to other locations across the universe."
+
+# Omega Lock Funny
+ decision_omega_lock_project_final: "Activate the Omega Lock."
+ omega_lock.1.name: "Activate the Omega Lock."
+ omega_lock.1.desc: "The Omega Lock has been activated, we can now use its cybermanipulation capabilities to modify this Cybertronian World."
+ omega_lock.1.a: "Cyberconstruct Capital Buildings."
+ omega_lock.1.b: "Cyberconstruct a city state on this planet."
+ omega_lock.1.c: "Repair this planet."
+ omega_lock.1.d: "Corrupt this planet."
+ omega_lock.1.e: "Cyberform a targeted world."
+ omega_lock.1.f: "Cyberconstruct a city state on a targeted world."
+ omega_lock.1.g: "Cyberconstruct a Star Harvester on a targeted world."
+ omega_lock.1.x: "Cyberform this world."
+ omega_lock.1.y: "Shield the Omega Lock."
+ omega_lock.1.z: "Abort."
+
+
+ omega_lock.201.name: "Energon Mine Depletion"
+ omega_lock.201.desc: "One of our Energon Mines on [Root.Planet.GetName]been depleted."
+ omega_lock.201.a: "Unfortunate."
+
+ omega_lock.202.name: "Dark Energon Mine Depletion"
+ omega_lock.202.desc: "One of our Dark Energon Mines on [Root.Planet.GetName] has been depleted."
+ omega_lock.202.a: "Unfortunate."
+
+ omega_lock.301.name: "Cybertronian World Depleting!"
+ omega_lock.301.desc: "Without the power of the Allspark, [Root.Planet.GetName] is losing power! We need to replenish it as soon as possible."
+ omega_lock.301.a: "The Allspark must be found."
+
+ omega_lock.302.name: "Cybertronian World Depleting!"
+ omega_lock.302.desc: "Without the crystalised blood of Unicron, [Root.Planet.GetName] is losing power! We must obtain more of the malevolent substance to replenish it as soon as possible."
+ omega_lock.302.a: "Unicron will heed our call."
+
+ omega_lock.401.name: "Omega Lock Depleted!"
+ omega_lock.401.desc: "After running faithfully for many years, the Omega Lock on [Root.Planet.GetName] has finally been depleted of all its Energon and Cybermatter, rendering it inoperable."
+ omega_lock.401.a: "It shall be reactivated."
+
+# All Spark Funny
+
+ all_spark.1.name: "The Allspark"
+ all_spark.1.desc: "Unleash the power of the mythical Allspark."
+ 
+ all_spark.1.a: "Create Life"
+ all_spark.1.b: "Recharge Cybertronian World"
+ all_spark.1.z: "Cancel"
+
+# Technology
+
+ tech_harvester_key: "The Harvester Key"
+ tech_harvester_key_desc: "The crucical component of the Star Harvesters, without it they will never be activated."
+ tech_omegakey: "The Omega Keys"
+ tech_omegakey_desc: "Used to deploy Omega Locks from their shielded states, once they have been released they can be used by anyone."
+ tech_omegalock_restoration: "Omega Lock restoration"
+ tech_omegalock_restoration_desc: "After dutiful study of the Omega Lock's design, and our advances in Energon and Cybermatter research. We are confident in our ability to successfully restore an Omega Lock."
+ tech_magic_and_science: "A fusion of Magic and Science"
+ tech_magic_and_science_desc: "We have reached the Apex of our understanding of Energon and Cybermatter, we can now build our very own Omega Locks."
+
+ tech_cybertronian_titans: "Cybertronian Titans"
+ tech_cybertronian_titans_desc: "Colossal Cybertronians standind hundreds or even thousands of metres tall, capable of transforming into entire cities and vast starships."
+
+# Synth-En
+ building_cybertronian_synthenergon_refinery: "Cybertronian Synthetic Energon Processor"
+ building_cybertronian_synthenergon_refinery_desc: "A Cybertronian facility based upon the theorems of liquefying and energizing rare crystals in order to process them into Energon."
+ 
+ job_cybertronian_synthenergon_refiner: "Cybertronian Synthetic Energon Processor"
+ job_cybertronian_synthenergon_refiner_plural: "Cybertronian Synthetic Energon Processors"
+ job_cybertronian_synthenergon_refiner_desc: "Cybertronian workers operate Synth-En Processors to produce life-giving energon from rare crystals."
+ job_cybertronian_synthenergon_refiner_effect_desc: "Cybertronian workers operate Synth-En Processors to produce life-giving energon from rare crystals."
+
+ job_cybertronian_synthenergon_refiner_drone: "Cybertronian Energon Refiner"
+ job_cybertronian_synthenergon_refiner_drone_plural: "Cybertronian Energon Refiners"
+ job_cybertronian_synthenergon_refiner_drone_desc: "Cybertronian workers operate Synth-En Processors to produce life-giving energon from rare crystals."
+ job_cybertronian_synthenergon_refiner_drone_effect_desc: "Cybertronian workers operate Synth-En Processors to produce life-giving energon from rare crystals."
+
+ mod_job_cybertronian_synthenergon_refiner_add: "$job_cybertronian_synthenergon_refiner$"
+ mod_job_cybertronian_synthenergon_refiner_drone_add: "$job_cybertronian_synthenergon_refiner_drone$"
+ 
+# Planet Classes
+ 
+ pc_cybertronian_world: "Cybertronian World"
+ pc_cybertronian_world_desc: "This planet is seemingly made entirely out of Cybermatter, all of its systems are fueled by a mysterious substance called Energon. The entire metal world is alive in a way, constantly transforming to adapt and suit the needs of its occupants."
+ 
+ pc_damaged_cybertron: "Damaged Cybertronian World"
+ pc_damaged_cybertron_desc: "This Cybertronian world has received extensive damage, its whole surface has been ravaged by conflict and a large chunk of the planet has been launched into a small orbit."
+
+ pc_dead_cybertron: "Ruined Cybertronian World"
+ pc_dead_cybertron_desc: "This Cybertronian world has met its end, all of its once bustling global systems have shut down. It holds no power of its own and the constant storms of rust and radiation diminishes any hope of surviving here, life may never return to this barren husk."
+
+ pc_depleted_cybertron: "Depleted Cybertronian World"
+ pc_depleted_cybertron_desc: "This Cybertronian world has peacefully shut down due to lacking the power to sustain itself, while everything here seems to be rather pristine. Absolutely nothing is working or turning on."
+ 
+
+# Sea of Rust
+ d_sea_of_rust: "The Sea of Rust"
+ d_sea_of_rust_desc: "Following the total shutdown of this cybertronian world, and the destruction of its omega lock. It has descended into utter chaos, vast storms of pure rust and radiation scour the surface of the planet. Consuming everything in its wake, sparing nothing from the displeasure of drowning in metallic dust storms."
+ 
+
+#IACON
+ d_iacon_city: "Naós City"
+ d_iacon_city_desc: "Designated as the home city of the Naós Guilds, and the capital sector of the planet as a whole, Naós city is a cultural and administrative hub which houses important locations such as the High Council Pavilions, Hall of Records, and Stellar Galleries."
+ 
+ d_dead_iacon_city: "Naós City Ruins"
+ d_dead_iacon_city_desc: "What was once the awe-inspiring capital of this Cybertronian world, has now been reduced to an expanse of warped buildings and broken metal."
+ 
+
+#KAON
+ d_kaon_city: "Agon City"
+ d_kaon_city_desc: "Designated as the home city of the Agon Guilds, and the industrial and military hub of the planet, Agon City is compactly constructed for maximal efficiency, every open space has been filled with machinery or been fitted for some kind of purpose."
+ 
+ d_dead_kaon_city: "Agon City Ruins"
+ d_dead_kaon_city_desc: "Agon City has been ravaged by destruction and has become an impressive scrapyard stretching on as far as the eye can see."
+ 
+
+#Cities 
+ d_cybertronian_city: "Cybertronian City-State"
+ d_cybertronian_city_desc: "A large city-state built on the surface of this world."
+
+ d_cybertron_ruins: "City Ruins"
+ d_cybertron_ruins_desc: "A Cybertronian City-State in a condition of horrendous disrepair." 
+
+ d_crystal_city_ruins: "Torvus City Ruins"
+ d_crystal_city_ruins_desc: "the Torvus City has been ravaged by destruction, whatever lush life which was maintained within this city has long since been eradicated." 
+ 
+ d_crystal_city: "Torvus City"
+ d_crystal_city_desc: "Designated as the home city of the Torvus Guilds, Torvus City holds the seats of Arch Partii and Figulii who oversee all nearby worldshaping endeavours." 
+
+ d_sanctuary_fortress: "Sanctuary Fortress"
+ d_sanctuary_fortress_desc: "The Sanctuary Fortress is home to the Fanum Guilds, being the forefront of scientific and engineering research and developments on the planet. The Sanctuary is heavily shielded to both contain its own accidents, and to protect the secrets deep within."
+
+ d_dead_sanctuary_fortress: "Sanctuary Ruins"
+ d_dead_sanctuary_fortress_desc: "The Sanctuary Fortress has been annihilated, whatever secrets were held within its halls has long since been relocated or pillaged."
+
+# Well of All Sparks
+ d_well_of_all_sparks_duplicate: "Cybertronian Well of All Sparks"
+ d_well_of_all_sparks_duplicate_desc: "The Well of All Sparks is an immensely powerful fabrication device which is connected directly to the planet's core. Capable of producing life at an enormous rate."  
+ 
+ d_corrupted_well_of_all_sparks_duplicate: "Corrupted Cybertronian Well of All Sparks"
+ d_corrupted_well_of_all_sparks_duplicate_desc: "Infused with and corrupted by Dark Energon, any life which emerges from this well, will be volatile and aggressive."
+ 
+ d_damaged_well_of_all_sparks_duplicate: "Inactive Well of All Sparks"
+ d_damaged_well_of_all_sparks_duplicate_desc: "This Well of All has ceased functioning, removing the planets ability to bear any new lives."
+ 
+# Cybertronian Cores
+ d_cybertronian_world_core: "Cybertronian World Core"
+ d_cybertronian_world_core_desc: "The esoteric Cybetronian Core, an infinite wellspring of Energon. The pulsing heart of the entire world which supports all life upon the surface of its shell."
+ 
+ d_dark_energon_core: "Corrupted Cybertronian World Core"
+ d_dark_energon_core_desc: "Infused with dark energon, this core has been corrupted and now produces the dark substance, poisoning the world while providing some interesting benefits."
+ 
+ d_damaged_cybertronian_world_core: "Inactive Cybertronian World Core"
+ d_damaged_cybertronian_world_core_desc: "This Cybertronian World Core has ceased functioning, leaving the planet lifeless and unable to support life."
+ 
+# Trypticon Station
+ d_active_trypticon: "Unsealed Trypticon Station"
+ d_active_trypticon_desc: "The Trypticon Station has been unsealed, allowing access to the greatest Dark Energon reserve in the universe."
+
+ d_inactive_trypticon: "Sealed Trypticon Station"
+ d_inactive_trypticon_desc: "The Trypticon Station is an orbital facility, known to many as the vault of Unicron."
+
+# Traits
+ trait_energon_dependence: "Energon Dependency"
+ trait_energon_dependence_desc: "§LThis species has evolved to depend solely on a resource known as £energon£ Energon.§!\n Massively improving their intellectual capabilities at the cost of them being unable to reproduce without a Well of Allsparks."
+ TRAIT_ENERGON_DEPENDENCE_EFFECT: "Replaces §Y100%§! of Base £food£ §YFood§! and §Y75%§! of Base £energy£ §YEnergy§!  Upkeep with £energon£ §YEnergon.§! §RThis trait cannot be removed§!.\n\nA §YEnergon Crystal Deposit§! will be added to your capital including starting §YEnergon buildings and Technologies§!."
+ 
+ trait_dark_energon_dependence: "Dark Energon Dependency"
+ trait_dark_energon_dependence_desc: "§LThis cybertronian species has replaced their dependency on £energon£ Energon for the strong narcotic resource known as £dark_energon£ Dark Energon.§!\n Massively improving their physical capabilities at the cost of them being unable to reproduce without a Well of Allsparks."
+ TRAIT_DARK_ENERGON_DEPENDENCE_EFFECT: "Replaces §Y100%§! of Base £food£ §YFood§! and §Y75%§! of Base £energy£ §YEnergy§! Upkeep with £dark_energon£ §YDark Energon.§! §RThis trait cannot be removed§!.\n\nA §YDark Energon Crystal Deposit§! will be added to your capital including starting §YDark Energon buildings and Technologies§!."

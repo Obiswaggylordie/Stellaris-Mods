@@ -1,0 +1,42 @@
+
+psi_energy = {
+	deficit_modifier = energy_deficit
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+# Ancient ZPMs
+sr_ancient_zpm = {
+	tradable = yes
+	max = 15000
+	market_price = 5000000
+	market_amount = -1
+	fixed_max_amount = yes
+
+	ai_weight = {
+		weight = 1000
+	}
+
+	ai_wants = {
+		base = 1000
+	}
+}
+
+# goa'uld symbiote
+sr_goauld_symbiote = {
+	tradable = no
+	max = 15000
+
+	#prerequisites = { "tech_" }
+	visibility_prerequisite = { always = yes }
+
+	ai_weight = {
+		weight = 150
+	}
+
+	ai_wants = {
+		base = 1
+	}
+}

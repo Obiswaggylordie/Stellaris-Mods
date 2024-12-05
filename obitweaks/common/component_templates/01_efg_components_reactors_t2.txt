@@ -1,0 +1,43 @@
+
+
+##############################################
+### Wave Motion Engine 2
+##############################################
+utility_component_template = {
+	key = "EFG_REACTOR_6_LARGESHIP"
+	size = small
+	icon = "GFX_efg_ship_part_reactor_6"
+	icon_frame = 1
+	power = @efg_largeship_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_efg_t6_reactor_cost
+		}
+		upkeep = {
+			energy = @l_efg_t6_reactor_uk_energy
+			alloys = @l_efg_t6_reactor_uk_alloys
+		}
+	}
+
+	modifier = {
+		ship_weapon_damage = 0.05
+		#ship_weapon_range_mult = 0.20
+		ship_shield_mult = 0.10
+		ship_shield_regen_add_perc = 0.15
+		ship_speed_mult = 0.10
+	}
+
+	prerequisites = { "tech_efg_reactor_6" }
+	component_set = "power_core"
+	
+	upgrades_to = "EFG_REACTOR_7_LARGESHIP"
+
+	ai_weight = {
+		weight = @efg_ai_weight_8
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+}

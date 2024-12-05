@@ -1,0 +1,26 @@
+tech_flood_star_roads = {
+	cost = @tier5cost3
+	area = physics
+	is_rare = yes
+	category = { field_manipulation }
+	tier = 5
+	weight = @tier5weight3
+	is_reverse_engineerable = no
+	prerequisites = { "tech_flood_logic_plague" "tech_flood_keymind_forms" }
+	
+	potential = {
+		has_origin = origin_the_flood
+	}
+	modifier = {
+		country_command_limit_add = 20
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}

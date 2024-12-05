@@ -1,0 +1,817 @@
+namespace = flood_origin
+
+##################
+# THE FLOOD
+##################
+
+country_event = {
+	id = flood_origin.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_origin = origin_the_flood
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				has_origin = origin_the_flood
+			}
+			random_owned_leader = {
+				limit = { is_ruler = yes }
+				add_trait = leader_trait_ruler_the_gravemind
+				set_skill = 5
+			}
+			#if = {
+			#	limit = { is_ai = no }
+			#	add_modifier = { modifier = flood_organic_ships days = -1 }
+			#}
+			capital_scope = {
+				change_pc = pc_flood_hive 
+				clear_deposits = yes 
+				clear_blockers = yes 
+				add_building = building_keymind_nest
+				add_building = building_flood_hatchery
+				add_deposit = d_flood_hive
+				add_deposit = d_flood_infestation
+				add_deposit = d_flood_gravemind_lair
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = flood_origin.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_civic = civic_flood_hivemind
+	}
+	immediate = {
+		give_technology = { message = no tech = tech_flood_bio_armor }
+		give_technology = { message = no tech = tech_flood_weapons }
+		give_technology = { message = no tech = tech_flood_bone_launcher }
+		give_technology = { message = no tech = tech_pd_flood_seeker_spores }
+	}
+}
+
+#AI ONLY 
+country_event = {
+	id = flood_origin.13
+	hide_window = yes 
+	is_triggered_only = yes 
+	
+	trigger = {
+		is_ai = yes 
+		has_origin = origin_the_flood
+	}
+	
+	immediate = {
+		give_technology = { message = no tech = tech_flood_bombardment }
+	}
+}
+
+# Make starting neighbor colonies be Primitives
+country_event = {
+	id = flood_origin.4
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_origin = origin_the_flood
+	}
+
+	immediate = {
+		capital_scope.solar_system = {
+			closest_system = {
+				limit = { has_star_flag = neighbor_t1_first_colony }
+				max_steps = 3
+				random_system_planet = {
+					limit = {
+						is_colonizable = yes
+						is_colony = no
+						#has_planet_flag = prescripted_ideal
+					}
+					generate_very_early_pre_ftls_on_planet = yes
+					set_name = random
+					change_colony_foundation_date = -461
+				}
+			}
+			reroll_random = yes
+			closest_system = {
+				limit = { has_star_flag = neighbor_t2_second_colony }
+				max_steps = 6
+				random_system_planet = {
+					limit = {
+						is_colonizable = yes
+						is_colony = no
+						#has_planet_flag = prescripted_ideal
+					}
+					generate_early_pre_ftls_on_planet = yes
+					set_name = random
+					change_colony_foundation_date = -1275
+
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flood_origin.5
+	hide_window = yes 
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			has_civic = civic_flood_hivemind
+			has_origin = origin_the_flood
+		}
+		FROMFROM = {
+			exists = leader
+			leader = {
+				is_ruler = yes 
+				NOT = {
+					has_trait = leader_trait_ruler_the_gravemind
+				}
+			}
+		}
+	}
+	immediate = {
+		FROMFROM = {
+			leader = {
+				add_trait = leader_trait_ruler_the_gravemind
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flood_origin.3200
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_origin = origin_the_flood
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = { is_idle = no }
+			#This approximates a function to level up every 1.5(n+1) years so that you can expect to get a level 10 leader after 80 years.
+			export_trigger_value_to_variable = { 
+				trigger = has_skill
+				variable = experience_bonus
+			}
+			multiply_variable = { 
+				which = experience_bonus
+				value = 2.5
+			}
+			floor_variable = experience_bonus
+
+			change_variable = {
+				which = experience_bonus
+				value = 4
+			}
+			random_list = { #We want some randomness
+				1 = {
+					set_variable = {
+						which = random_factor
+						value = -3
+					}
+				}
+				1 = {
+					set_variable = {
+						which = random_factor
+						value = -2
+					}
+				}
+				1 = {
+					set_variable = {
+						which = random_factor
+						value = -1
+					}
+				}
+				1 = {
+					set_variable = {
+						which = random_factor
+						value = 0
+					}
+				}
+				1 = {
+					set_variable = {
+						which = random_factor
+						value = 1
+					}
+				}
+				1 = {
+					set_variable = {
+						which = random_factor
+						value = 2
+					}
+				}
+				1 = {
+					set_variable = {
+						which = random_factor
+						value = 3
+					}
+				}
+			}
+			change_variable = {
+				which = experience_bonus
+				value = random_factor
+			}
+			add_experience = experience_bonus
+
+			clear_variable = experience_bonus
+			clear_variable = random_factor
+		}
+	}
+}
+
+#Capital Transfer
+planet_event = {
+	id = flood_origin.3205
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { has_origin = origin_the_flood }
+		from = { 
+			OR = {
+				has_deposit = d_flood_gravemind_lair
+				has_deposit = d_flood_gravemind_lair_empty
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				from = { has_deposit = d_flood_gravemind_lair }
+			}
+			from = { remove_deposit = d_flood_gravemind_lair }
+			add_deposit = d_flood_gravemind_lair
+		} 
+		else_if = {
+			limit = {
+				from = { has_deposit = d_flood_gravemind_lair_empty }
+			}
+			from = { remove_deposit = d_flood_gravemind_lair_empty }
+			add_deposit = d_flood_gravemind_lair_empty
+		}
+	}
+}
+# Triggers country_event for the defender upon defeat
+# This = country, planet owner
+# From = country, attack leader
+# FromFrom = planet
+country_event = {#Capital world lost
+ 	id = flood_origin.3210
+ 	title = flood_origin.3210.name
+ 	desc = flood_origin.3210.desc
+ 	picture = GFX_evt_flood_gravemind
+ 	show_sound = event_bad_omen
+
+ 	is_triggered_only = yes
+
+ 	trigger = {
+ 		has_origin = origin_the_flood
+ 		fromfrom = { has_deposit = d_flood_gravemind_lair }
+ 	}
+
+ 	immediate = { 
+ 		fromfrom = { 
+ 			remove_deposit = d_flood_gravemind_lair
+ 			add_deposit = d_flood_gravemind_lair_empty
+ 		}
+ 	}
+
+ 	option = {
+ 		name = flood_origin.3215.a
+ 		 if = {
+ 		 	limit = { NOT = { has_modifier = missing_flood_gravemind_modifier } }
+			add_modifier = { 
+				modifier = missing_flood_gravemind_modifier
+				days = -1
+			}
+		}
+ 	}
+}
+
+#On Colonize and transfer missing flood_keymind modifier
+planet_event = {
+	id = flood_origin.3225
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { has_origin = origin_the_flood }
+		NOT = { 
+			num_assigned_jobs = {
+				job = keymind_drone
+				value >= 1
+			}
+		}
+	}
+
+	immediate = {
+		if = { 
+			limit = {
+				NOT = { has_modifier = missing_flood_keymind_modifier } 
+			}
+			add_modifier = {
+				modifier = missing_flood_keymind_modifier
+				days = -1
+			}
+		}
+	}
+}
+
+#Monthly check to add and remove missing flood_keymind modifier
+country_event = {
+	id = flood_origin.3230
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { has_origin = origin_the_flood }
+	}
+
+	immediate = {
+		every_owned_planet = { 
+			limit = { 
+				NOR = { 
+					has_modifier = missing_flood_keymind_modifier 
+					num_assigned_jobs = {
+						job = keymind_drone
+						value >= 1
+					}
+				} 
+			}
+			add_modifier = {
+				modifier = missing_flood_keymind_modifier
+				days = -1
+			}
+		}
+		every_owned_planet = {
+			limit = {
+				has_modifier = missing_flood_keymind_modifier 
+				OR = {
+					num_assigned_jobs = {
+						job = keymind_drone
+						value >= 1
+					}
+					has_deposit = d_flood_gravemind_lair
+				}
+
+			}
+			remove_modifier = "missing_flood_keymind_modifier"
+		}
+	}
+}
+
+#Warning every 2 year if you don't have an flood_keymind working
+country_event = {
+	id = flood_origin.3235
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { has_origin = origin_the_flood }
+		any_owned_planet = { 
+			has_modifier = missing_flood_keymind_modifier
+			NOT = { has_planet_flag = flood_keymind_missing_warned }
+			num_pops >= 3
+			is_capital = no
+		}
+	}
+
+	immediate = {
+		every_owned_planet = { 
+			limit = { 
+				has_modifier = missing_flood_keymind_modifier 
+				num_pops >= 3
+				NOT = { has_planet_flag = flood_keymind_missing_warned }
+			}
+			set_timed_planet_flag = { 
+				flag = flood_keymind_missing_warned 
+				days = 720
+			}
+			create_message = {
+				type = MESSAGE_NO_FLOOD_KEYMIND
+				localization = MESSAGE_NO_FLOOD_KEYMIND_DESC
+				days = 30
+				target = this
+				variable = {
+					type = name
+					localization = PLANET
+					scope = this
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = flood_origin.3240 #removes the modifier if you aren't a progenitor hive
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { From = { has_origin = origin_the_flood } }
+		has_modifier = missing_flood_keymind_modifier
+	}
+
+	immediate = {
+		remove_modifier = missing_flood_keymind_modifier
+	}
+}
+
+planet_event = { #Glassing the Gravemind
+	id = flood_origin.3245
+ 	title = flood_origin.3245.name
+ 	desc = flood_origin.3245.desc
+ 	picture = GFX_evt_flood_gravemind
+ 	show_sound = evn_ove_progenitor_throne
+ 	is_triggered_only = yes
+
+ 	pre_triggers = {
+ 		is_capital = yes
+ 		has_owner = yes
+ 	}
+
+ 	trigger = {
+ 		owner = { has_origin = origin_the_flood }
+ 		has_deposit = d_flood_gravemind_lair
+ 	}
+
+ 	immediate = {
+ 		remove_deposit = d_flood_gravemind_lair
+ 		add_deposit = d_flood_gravemind_lair_empty
+ 	}
+ 	option = {
+ 		name = flood_origin.3245.a
+ 	}
+ 	option = {
+ 		name = flood_origin.3245.b
+ 	}
+ 	option = {
+ 		name = flood_origin.3245.c
+ 	}
+ 	option = {
+ 		name = flood_origin.3245.d
+ 	}
+ 	after = {
+ 	 	owner = {
+ 			if = {
+ 				limit = {
+ 					NOT = { has_modifier = missing_flood_gravemind_modifier } 
+ 				}
+				add_modifier = {
+					modifier = missing_flood_gravemind_modifier
+					days = -1
+				}
+			}
+		}
+ 	}
+}
+
+country_event = {
+	id = flood_origin.3250 #removes the deposit even if you kill the country
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_origin = origin_the_flood
+		capital_scope = {
+			OR = {
+				has_deposit = d_flood_gravemind_lair
+				has_deposit = d_flood_gravemind_lair_empty
+			}
+		}
+	}
+
+	immediate = {
+		capital_scope = {
+			if = {
+				limit = { has_deposit = d_flood_gravemind_lair }
+				remove_deposit = d_flood_gravemind_lair
+			}
+			if = {
+				limit = { has_deposit = d_flood_gravemind_lair_empty }
+				remove_deposit = d_flood_gravemind_lair_empty
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = flood_origin.3255 #removes Missing Keymind when abandoning colonies
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_modifier = missing_flood_keymind_modifier
+	}
+	immediate = {
+		remove_modifier = missing_flood_keymind_modifier
+	}
+
+}
+
+# This = owner of ship 1 (destroyed)
+# From = owner of ship 2 (combatant)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+country_event = {
+	id = flood_origin.3260
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_origin = origin_the_flood
+		fromfrom = {
+			has_component = SHIP_AURA_KEYMIND
+			solar_system = {
+				NOT = {
+					any_ship_in_system = {
+						NOT = {
+							is_same_value = fromfrom
+						}
+						is_owned_by = root
+						has_component = SHIP_AURA_KEYMIND
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		create_message = {
+			type = MESSAGE_FINAL_FLOOD_KEYMIND_SHIP
+			localization = MESSAGE_FINAL_FLOOD_KEYMIND_SHIP_DESC
+			days = 30
+			target = fromfrom.solar_system
+			variable = {
+				type = name
+				localization = SYSTEM
+				scope = fromfrom.solar_system
+			}
+		}
+	}
+}
+
+country_event = { #Bombarding Capital
+	id = flood_origin.3265
+ 	title = flood_origin.3265.name
+ 	desc = flood_origin.3265.desc
+ 	picture = GFX_evt_flood_gravemind
+ 	show_sound = evn_ove_progenitor_throne
+ 	is_triggered_only = yes
+
+ 	option = {
+ 		name = origin.3215.a
+ 	}
+ 	after = {
+ 	 	owner = {
+ 			if = {
+ 				limit = {
+ 					NOT = { has_modifier = missing_flood_gravemind_modifier } 
+ 				}
+				add_modifier = {
+					modifier = missing_flood_gravemind_modifier
+					days = -1
+				}
+			}
+		}
+		 capital_scope = {
+ 			add_deposit = d_flood_gravemind_lair_empty
+ 		}
+ 	}
+}
+
+country_event = {
+	id = flood_origin.3270
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		from = { has_origin = origin_the_flood }
+	}
+
+	immediate = {
+		set_origin = origin_the_flood
+		capital_scope = {
+			add_deposit = d_flood_gravemind_lair
+			add_building = building_keymind_nest
+		}
+	}
+}
+
+### Empire init - add ships
+#country_event = {
+#	id = flood_origin.9
+#	hide_window = yes
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		if = {
+#			limit = {
+#				has_origin = origin_the_flood 
+#			}
+#			create_fleet = {
+#				set_take_point = yes
+#				effect = {
+#					set_owner = prev
+#					while = {
+#						count = 1
+#						create_ship = {
+#							name = random
+#							design = NAME_Flood_Keymind
+#							graphical_culture = flood_01
+#							prefix = no
+#							upgradable = yes
+#						}
+#					}
+#					set_location = prev.capital_star
+#				}
+#			}
+#		}
+#	}
+#}
+
+planet_event = {
+	id = flood_origin.10
+	title = "flood_origin.10.name"
+	desc = "flood_origin.10.desc"
+	picture = GFX_evt_flood_gravemind
+	show_sound = evn_ove_crystal_kraken
+	location = from
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EXCELLENT
+	}
+}
+
+#country_event = {
+#	id = flood_origin.11
+#	hide_window = yes
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		owner = {
+#			has_origin = origin_the_flood
+#		}
+#	}
+#	immediate = {
+#		give_technology = { message = no tech = tech_flood_bio_armor }
+#		give_technology = { message = no tech = tech_flood_weapons }
+#	}
+#}
+
+country_event = {
+	id = flood_origin.12
+	hide_window = yes 
+	is_triggered_only = yes 
+	
+	trigger = {
+		owner = {
+			has_origin = origin_the_flood
+		}
+	}
+	immediate = {
+		add_modifier = {
+			modifier = "flood_early_feral_stage"
+			days = -1
+		}
+		if = {
+			limit = {
+				owner = {
+					galaxy_percentage < 0.5
+					OR = {
+						has_modifier = "flood_early_feral_stage"
+						has_modifier = "flood_late_feral_stage"
+						has_modifier = "flood_coordinated_stage"
+						has_modifier = "flood_interstellar_stage"
+						has_modifier = "flood_transgalactic_stage"
+					}
+				}
+			}
+			remove_modifier = "flood_early_feral_stage"
+			remove_modifier = "flood_late_feral_stage"
+			remove_modifier = "flood_coordinated_stage"
+			remove_modifier = "flood_interstellar_stage"
+			remove_modifier = "flood_transgalactic_stage"
+			add_modifier = {
+				modifier = "flood_early_feral_stage"
+				days = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					galaxy_percentage > 0.05
+					OR = {
+						has_modifier = "flood_early_feral_stage"
+						has_modifier = "flood_late_feral_stage"
+						has_modifier = "flood_coordinated_stage"
+						has_modifier = "flood_interstellar_stage"
+						has_modifier = "flood_transgalactic_stage"
+					}
+				}
+			}
+			remove_modifier = "flood_early_feral_stage"
+			remove_modifier = "flood_late_feral_stage"
+			remove_modifier = "flood_coordinated_stage"
+			remove_modifier = "flood_interstellar_stage"
+			remove_modifier = "flood_transgalactic_stage"
+			add_modifier = {
+				modifier = "flood_late_feral_stage"
+				days = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					galaxy_percentage > 0.10
+					OR = {
+						has_modifier = "flood_early_feral_stage"
+						has_modifier = "flood_late_feral_stage"
+						has_modifier = "flood_coordinated_stage"
+						has_modifier = "flood_interstellar_stage"
+						has_modifier = "flood_transgalactic_stage"
+					}
+				}
+			}
+			remove_modifier = "flood_early_feral_stage"
+			remove_modifier = "flood_late_feral_stage"
+			remove_modifier = "flood_coordinated_stage"
+			remove_modifier = "flood_interstellar_stage"
+			remove_modifier = "flood_transgalactic_stage"
+			add_modifier = {
+				modifier = "flood_coordinated_stage"
+				days = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					galaxy_percentage > 0.25
+					OR = {
+						has_modifier = "flood_early_feral_stage"
+						has_modifier = "flood_late_feral_stage"
+						has_modifier = "flood_coordinated_stage"
+						has_modifier = "flood_interstellar_stage"
+						has_modifier = "flood_transgalactic_stage"
+					}
+				}
+			}
+			remove_modifier = "flood_early_feral_stage"
+			remove_modifier = "flood_late_feral_stage"
+			remove_modifier = "flood_coordinated_stage"
+			remove_modifier = "flood_interstellar_stage"
+			remove_modifier = "flood_transgalactic_stage"
+			add_modifier = {
+				modifier = "flood_interstellar_stage"
+				days = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					galaxy_percentage > 0.50
+					OR = {
+						has_modifier = "flood_early_feral_stage"
+						has_modifier = "flood_late_feral_stage"
+						has_modifier = "flood_coordinated_stage"
+						has_modifier = "flood_interstellar_stage"
+						has_modifier = "flood_transgalactic_stage"
+					}
+				}
+			}
+			remove_modifier = "flood_early_feral_stage"
+			remove_modifier = "flood_late_feral_stage"
+			remove_modifier = "flood_coordinated_stage"
+			remove_modifier = "flood_interstellar_stage"
+			remove_modifier = "flood_transgalactic_stage"
+			add_modifier = {
+				modifier = "flood_transgalactic_stage"
+				days = -1
+			}
+		}
+	}
+}

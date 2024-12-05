@@ -1,0 +1,148 @@
+##########################################################################
+# Decisions
+##########################################################################
+
+
+# gaia creation
+decision_ascension_gaia_creation = {
+	owned_planets_only = no
+
+	resources = {
+		category = decisions
+		cost = {
+			psi_energy = 500
+		}
+	}
+	
+	potential = {
+		exists = space_owner
+		space_owner = { is_same_value = from }
+		from = { has_country_flag = ascension_gaia_creation_available }
+		OR = {
+			is_planet_class = pc_continental
+			is_planet_class = pc_tropical
+			is_planet_class = pc_ocean
+			is_planet_class = pc_arid
+			is_planet_class = pc_savannah
+			is_planet_class = pc_desert
+			is_planet_class = pc_tundra
+			is_planet_class = pc_alpine
+			is_planet_class = pc_arctic
+		}
+	}
+	
+	allow = {
+	}
+	
+	effect = {
+		custom_tooltip = decision_ascension_gaia_creation_effects
+		from = {
+			remove_country_flag = ascension_gaia_creation_available
+			#set_country_flag = others_angry
+		}
+		change_pc = pc_gaia
+	}
+	
+	ai_weight = {
+		weight = 10000
+	}
+}
+
+# gaia creation advanced
+decision_ascension_gaia_creation_advanced = {
+	owned_planets_only = no
+
+	resources = {
+		category = decisions
+		cost = {
+			psi_energy = 1000
+		}
+	}
+	
+	potential = {
+		exists = space_owner
+		space_owner = { is_same_value = from }
+		from = {
+			has_country_flag = ascension_gaia_creation_available
+			#set_country_flag = others_angry
+		}
+		OR = {
+			is_planet_class = pc_nuked
+			is_planet_class = pc_molten
+			is_planet_class = pc_barren
+			is_planet_class = pc_barren_cold
+			is_planet_class = pc_frozen
+			is_planet_class = pc_toxic
+		}
+	}
+	
+	allow = {
+	}
+	
+	effect = {
+		custom_tooltip = decision_ascension_gaia_creation_advanced_effects
+		from = { remove_country_flag = ascension_gaia_creation_available }
+		change_pc = pc_gaia
+	}
+	
+	ai_weight = {
+		weight = 10000
+	}
+}
+
+# cloud form
+decision_ascension_cloud_form = {
+	owned_planets_only = yes
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_ascended_cloud_form }
+		any_owned_pop = { has_trait = trait_ascension_4 }	
+	}
+	
+	effect = {
+		custom_tooltip = decision_ascension_cloud_form_effects
+		hidden_effect = {
+			owner = {
+				create_fleet = {
+					name = "Ascended Cloud Form"		
+					effect = {
+						set_owner = PREV
+						create_ship = {
+							name = "Ascended Cloud Form"
+							design = "Ascended Cloud Form"
+							prefix = no
+							upgradable = no
+						}
+						add_modifier = {
+							modifier = "ascended_cloud_form_buff"
+							days = -1
+						}
+						set_location = ROOT
+					}
+				}
+			}
+			while = {
+				count = 1
+				random_owned_pop = {
+					limit = { has_trait = trait_ascension_4 }
+					kill_pop = yes
+				}
+			}
+		}
+
+	}
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			add = -1000
+			num_unemployed <= 4
+		}
+
+		modifier = {
+			add = 1000
+			num_unemployed >= 5
+		}
+	}
+}

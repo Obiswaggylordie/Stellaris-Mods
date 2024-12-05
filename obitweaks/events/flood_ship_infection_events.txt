@@ -1,0 +1,326 @@
+namespace = flood_ships
+
+# FLOOD INFECTION SHIP EVENTS
+# This = owner of ship 1 (destroyed)
+# From = owner of ship 2 (combatant)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+##### Ship is destroyed; a duplicate is spawned for the Flood
+
+country_event = {
+	id = flood_ships.700
+	hide_window = yes 
+	is_triggered_only = yes 
+	
+	trigger = {
+		exists = From
+		From = {
+			has_origin = origin_the_flood
+		}
+		This = {
+			NOR = {
+				is_guardian_country = yes 
+				is_country_type = extradimensional
+				is_country_type = extradimensional_2
+				is_country_type = extradimensional_3
+				is_country_type = crystal
+				is_country_type = crystal_faction
+			}
+		}
+	}
+	#RANDOM CHANCE FOR CAPTURE PREV RATIO: 50/50, 95/5 
+	immediate = {
+		random_list = {
+			0 = {}			# 90% chance ship is destroyed
+			100 = {			# 10% chance ship is infected
+				fromfromfrom = { save_event_target_as = flood_fleet }
+				create_fleet = {
+					name = "Scourge Infected Fleet"
+					effect = {
+						set_owner = From
+						create_ship = {
+							name = FROMFROM 
+							design = FROMFROM
+							graphical_culture = FROMFROM 
+							#effect = {
+							#	set_ship_flag = flood_infected_ship
+							#	add_ship_flood_biomass = yes
+							#}
+						}
+						set_location = {
+							target = event_target:flood_fleet
+							distance = 0
+							angle = random 
+						}
+						set_fleet_stance = passive
+					}
+				}
+			}
+		}
+	}
+}
+
+
+# The Flood Automatically Infects Space Fauna
+
+country_event = {
+	id = flood_ships.300
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_country_type = default
+		has_valid_civic = civic_flood_hivemind
+		from = {
+			NOT = { is_country_type = default }
+		}
+		fromfromfrom = {
+			OR = {
+				is_ship_size = space_whale_1
+				is_ship_size = space_whale_2
+				is_ship_size = space_whale_3
+				is_ship_size = space_whale_4
+				is_ship_size = space_whale_5
+				is_ship_size = space_amoeba_mother
+				is_ship_size = space_amoeba
+			}
+		}
+	}
+
+	immediate = {
+		fromfromfrom = {
+			switch = {
+				trigger = is_ship_size
+				space_whale_1 = {
+					root.fromfrom.fleet = {
+						create_ship = {
+							name = NAME_Infected_Tiyanki_Cow
+							design = NAME_Reanimated_Tiyanki_Cow
+							prefix = yes
+						}
+					}
+				}
+				space_whale_2 = {
+					root.fromfrom.fleet = {
+						create_ship = {
+							name = NAME_Infected_Tiyanki_Bull
+							design = NAME_Reanimated_Tiyanki_Bull
+							prefix = yes
+						}
+					}
+				}
+				space_whale_3 = {
+					root.fromfrom.fleet = {
+						create_ship = {
+							name = NAME_Infected_Tiyanki_Hatchling
+							design = NAME_Reanimated_Tiyanki_Hatchling
+							prefix = yes
+						}
+					}
+				}
+				space_whale_4 = {
+					root.fromfrom.fleet = {
+						create_ship = {
+							name = NAME_Infected_Tiyanki_Calf
+							design = NAME_Reanimated_Tiyanki_Calf
+							prefix = yes
+						}
+					}
+				}
+				space_whale_5 = {
+					root.fromfrom.fleet = {
+						create_ship = {
+							name = NAME_Infected_Tiyanki_Bull
+							design = NAME_Reanimated_Tiyanki_Bull
+							prefix = yes
+						}
+					}
+				}
+				space_amoeba_mother = {
+					root.fromfrom.fleet = {
+						create_ship = {
+							name = NAME_Infected_Great_Space_Organism
+							design = NAME_Reanimated_Great_Space_Organism
+							prefix = yes
+						}
+					}
+				}
+				space_amoeba = {
+					root.fromfrom.fleet = {
+						create_ship = {
+							name = NAME_Infected_Small_Space_Organism
+							design = NAME_Reanimated_Small_Space_Organism
+							prefix = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+starbase_event = {
+	id = flood_ships.305
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_starbase_building = flood_infection_facility
+		owner = {
+			has_valid_civic = civic_flood_hivemind
+		}
+	}
+	immediate = {
+		starbase_event = { id = flood_ships.305 days = 1800 }
+		if = {
+			limit = {
+				solar_system = {
+					OR = {
+						has_star_flag = tiyanki_graveyard_system
+						has_star_flag = tiyanki_spawn_system
+					}
+				}
+			}
+			owner = {
+				create_fleet = {
+					effect = {
+						set_owner = root.owner
+						while = {
+							count = 5
+							create_ship = {
+								name = NAME_Infected_Tiyanki_Cow
+								design = NAME_Reanimated_Tiyanki_Cow
+								prefix = yes
+							}
+						}
+						while = {
+							count = 3
+							create_ship = {
+								name = NAME_Infected_Tiyanki_Bull
+								design = NAME_Reanimated_Tiyanki_Bull
+								prefix = yes
+							}
+						}
+						while = {
+							count = 8
+							create_ship = {
+								name = NAME_Infected_Tiyanki_Calf
+								design = NAME_Reanimated_Tiyanki_Calf
+								prefix = yes
+							}
+						}
+						set_location = root.solar_system
+					}
+				}
+			}
+			owner = {
+				create_message = {
+					type = MESSAGE_FLOOD_INFECTION_COMPLETE
+					localization = MESSAGE_FLOOD_INFECTION_COMPLETE_DESC
+					days = 30
+					target = root
+					variable = {
+						type = name
+						localization = SYSTEM
+						scope = solar_system
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				solar_system = {
+					has_star_flag = amoeba_home_system
+				}
+			}
+			owner = {
+				create_fleet = {
+					effect = {
+						set_owner = root.owner
+						while = {
+							count = 12
+							create_ship = {
+								name = NAME_Infected_Great_Space_Organism
+								design = NAME_Reanimated_Great_Space_Organism
+								prefix = yes
+							}
+						}
+						while = {
+							count = 6
+							create_ship = {
+								name = NAME_Infected_Small_Space_Organism
+								design = NAME_Reanimated_Small_Space_Organism
+								prefix = yes
+							}
+						}
+						set_location = root.solar_system
+					}
+				}
+			}
+			owner = {
+				create_message = {
+					type = MESSAGE_FLOOD_INFECTION_COMPLETE
+					localization = MESSAGE_FLOOD_INFECTION_COMPLETE_DESC
+					days = 30
+					target = root
+					variable = {
+						type = name
+						localization = SYSTEM
+						scope = solar_system
+					}
+				}
+			}
+		}
+	}
+}
+
+
+# The Flood Absorbing Biomass on Destroyed Ships (No Effect on Machines)
+ 
+#country_event = {
+#	id = flood_ships.1005
+#	hide_window = yes 
+#	is_triggered_only = yes 
+#	
+#	immediate = {
+#		FROMFROM = { #Winning Ship. 
+#			if = {
+#				limit = { exists = fleet.leader }
+#				fleet.leader = {
+#					# Flood Infector / Flood Infector II
+#					if = {
+#						limit = {
+#							OR = {
+#								has_trait = leader_trait_flood_mind
+#								has_trait = leader_trait_flood_mind_2
+#								has_trait = leader_trait_flood_mind_3
+#							}
+#							ROOT.FROM = { # Owner of losing fleet.
+#								is_default_or_fallen = yes
+#								is_machine_empire = no
+#							}
+#						}
+#						if = {
+#							limit = { has_trait = leader_trait_flood_mind }
+#							ROOT = {
+#								add_resource = { 
+#									food = @trait_shipbreaker_amt
+#									mult = value:hells_heart_effect
+#								}
+#							}
+#						}
+#						else = {
+#							ROOT = {
+#								add_resource = { 
+#									food = @trait_shipbreaker_2_amt
+#									mult = value:hells_heart_effect
+#								}
+#							}
+#						}
+#					}
+#				}
+#			}
+#		}
+#	}
+#}

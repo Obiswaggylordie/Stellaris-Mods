@@ -1,0 +1,286 @@
+##############################################################
+###	PORTRAITS SETTINGS
+###
+### Which portraits are used is set in 
+### common\species_classes\00_species_classes.txt
+###
+###	This file configures how portraits and planet backgrounds are built.
+###	Default position orientation is lower left.
+##############################################################
+
+portraits = {
+
+	cyrian_female_012 = {	entity = "cyrian_female_02_entity"	clothes_selector = "cyrian_female_clothes_01" attachment_selector = "cyrian_female_01_hair"					greeting_sound = "humanoid_female_greeting_a" }
+	cyrian_female_01 = { entity = "cyrian_female_01_entity"	clothes_selector = "cyrian_female_clothes_01" attachment_selector = "cyrian_female_01_hair"					greeting_sound = "humanoid_female_greeting_a" }
+
+	cyrian_female_022 = {	entity = "cyrian_female_02_entity"	clothes_selector = "cyrian_female_clothes_01" attachment_selector = "cyrian_female_01_hair"						greeting_sound = "humanoid_female_greeting_a" 
+			character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_female_body_02.dds"
+			
+		}
+	}
+
+	cyrian_female_032 = {	entity = "cyrian_female_02_entity"	clothes_selector = "cyrian_female_clothes_01" attachment_selector = "cyrian_female_01_hair"						greeting_sound = "humanoid_female_greeting_a" 
+			character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_female_body_03.dds"
+			
+		}
+	}
+	
+
+	cyrian_female_02 = {	entity = "cyrian_female_01_entity"	clothes_selector = "cyrian_female_clothes_01" attachment_selector = "cyrian_female_01_hair"						greeting_sound = "humanoid_female_greeting_a" 
+			character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_female_body_02.dds"
+			
+		}
+	}
+	
+	cyrian_female_03 = {	entity = "cyrian_female_01_entity"	clothes_selector = "cyrian_female_clothes_01" attachment_selector = "cyrian_female_01_hair"						greeting_sound = "humanoid_female_greeting_a" 
+			character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_female_body_03.dds"
+			
+		}
+	}
+	cyrian_female_04 = {	entity = "cyrian_female_01_entity"	clothes_selector = "cyrian_female_clothes_01" attachment_selector = "cyrian_female_01_hair"						greeting_sound = "humanoid_female_greeting_a" 
+		
+	}
+
+
+	cyrian_male_01 = {	entity = "cyrian_male_01_entity"	clothes_selector = "cyrian_male_clothes_01" attachment_selector = "cyrian_male_01_hair"					greeting_sound = "humanoid_male_greeting_d" 
+		character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_male_body_01.dds"
+			
+		}
+	}
+
+	cyrian_male_02 = {	entity = "cyrian_male_01_entity"	clothes_selector = "cyrian_male_clothes_01" attachment_selector = "cyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_male_body_02.dds"
+			
+		}
+
+	}
+
+	cyrian_male_03 = {	entity = "cyrian_male_01_entity"	clothes_selector = "cyrian_male_clothes_01" attachment_selector = "cyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_male_body_03.dds"
+			
+		}
+	
+	}
+
+	cyrian_male_04 = {	entity = "cyrian_male_01_entity"	clothes_selector = "cyrian_male_clothes_01" attachment_selector = "cyrian_male_01_hair"					greeting_sound = "humanoid_male_greeting_d" 
+		character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_male_body_04.dds"
+			
+		}
+	}
+
+	cyrian_male_05 = {	entity = "cyrian_male_01_entity"	clothes_selector = "cyrian_male_clothes_01" attachment_selector = "cyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_male_body_05.dds"
+			
+		}
+
+	}
+
+	cyrian_male_06 = {	entity = "cyrian_male_01_entity"	clothes_selector = "cyrian_male_clothes_01" attachment_selector = "cyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_male_body_06.dds"
+			
+		}
+	
+	}
+	cyrian_male_07 = {	entity = "cyrian_male_01_entity"	clothes_selector = "cyrian_male_clothes_01" attachment_selector = "cyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_male_body_07.dds"
+			
+		}
+	
+	}
+
+	cyrian_male_012 = {	entity = "cyrian_male_02_entity"	clothes_selector = "cyrian_male_clothes_01" attachment_selector = "cyrian_male_01_hair"					greeting_sound = "humanoid_male_greeting_d" 
+		character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_male_body_01.dds"
+			
+		}
+	}
+
+
+	cyrian_male_022 = {	entity = "cyrian_male_02_entity"	clothes_selector = "cyrian_male_clothes_01" attachment_selector = "cyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_male_body_02.dds"
+			
+		}
+
+	}
+
+	cyrian_male_032 = {	entity = "cyrian_male_02_entity"	clothes_selector = "cyrian_male_clothes_01" attachment_selector = "cyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_male_body_03.dds"
+			
+		}
+	
+	}
+
+	cyrian_male_042 = {	entity = "cyrian_male_02_entity"	clothes_selector = "cyrian_male_clothes_01" attachment_selector = "cyrian_male_01_hair"					greeting_sound = "humanoid_male_greeting_d" 
+		character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_male_body_04.dds"
+			
+		}
+	}
+
+	cyrian_male_052 = {	entity = "cyrian_male_02_entity"	clothes_selector = "cyrian_male_clothes_01" attachment_selector = "cyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_male_body_05.dds"
+			
+		}
+
+	}
+
+	cyrian_male_062 = {	entity = "cyrian_male_02_entity"	clothes_selector = "cyrian_male_clothes_01" attachment_selector = "cyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_male_body_06.dds"
+			
+		}
+	
+	}
+	cyrian_male_072 = {	entity = "cyrian_male_02_entity"	clothes_selector = "cyrian_male_clothes_01" attachment_selector = "cyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/cyrian/cyrian_male_body_07.dds"
+			
+		}
+	
+	}	
+}
+
+portrait_groups = {
+	cyrian = {
+		default = cyrian_male_01
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = { gender = male }
+				}
+				portraits = {
+					cyrian_male_012
+					cyrian_male_022
+					cyrian_male_032
+					cyrian_male_042
+					cyrian_male_052
+					cyrian_male_062
+					cyrian_male_072
+				}
+			}
+			add = {
+				trigger = {
+					ruler = { gender = female }
+				}
+				portraits = {
+					cyrian_female_012
+					cyrian_female_022
+					cyrian_female_032
+					
+				}
+			}
+
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					cyrian_female_01
+					cyrian_female_02
+					cyrian_female_03
+					cyrian_female_04
+					cyrian_male_01
+					cyrian_male_02
+					cyrian_male_03
+					cyrian_male_04
+					cyrian_male_05
+					cyrian_male_06
+					cyrian_male_07
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					cyrian_female_01
+					cyrian_female_02
+					cyrian_female_03
+					cyrian_female_04
+					cyrian_male_01
+					cyrian_male_02
+					cyrian_male_03
+					cyrian_male_04
+					cyrian_male_05
+					cyrian_male_06
+					cyrian_male_07
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					cyrian_female_01
+					cyrian_female_02
+					cyrian_female_03
+					cyrian_female_04
+					
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					cyrian_male_01
+					cyrian_male_02
+					cyrian_male_03
+					cyrian_male_04
+					cyrian_male_05
+					cyrian_male_06
+					cyrian_male_07
+				}
+			}
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					cyrian_male_012
+					cyrian_male_022
+					cyrian_male_032
+					cyrian_male_042
+					cyrian_male_052
+					cyrian_male_062
+					cyrian_male_072
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					cyrian_female_012
+					cyrian_female_022
+					cyrian_female_032
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,52 @@
+
+weapon_component_template = { 
+	key = "EFG_PLANET_KILLER_WAVEMOTIONGUN"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+
+	prerequisites = { "tech_efg_wave_motion_gun_1" }
+
+	icon = GFX_efg_ship_part_wm_gun_1
+	icon_frame = 1
+
+	size_restriction = { efg_planet_killer_wave_motion_gun_ship }
+	component_set = "EFG_PLANET_KILLER_WAVEMOTIONGUN_CS"
+
+	planet_destruction_gfx = "efg_pk_wave_motion_gun_gfx"
+
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_efg_t3_cost
+		}		
+		upkeep = {
+			energy = @xl_efg_t3_uk_energy
+			alloys = @xl_efg_t3_uk_alloys
+		}
+	}
+
+
+	power = -1000.00
+
+	damage = { min = 0 max = 0 }
+	windup = { min = 10.0 max = 10.0 }
+	total_fire_time = 30
+	range = @efg_weapon_range_200
+	accuracy = 1.0
+	#tracking = 0.0
+	#size_damage_factor = 0.0
+
+	ai_weight = {
+		weight = @efg_ai_weight_1
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+}
+
+
+
+

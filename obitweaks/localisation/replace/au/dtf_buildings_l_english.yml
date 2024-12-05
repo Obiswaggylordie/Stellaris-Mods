@@ -1,0 +1,133 @@
+﻿l_english:
+
+building_dtf_factory_1:0 "DTF Dimensional Time Fault Factory (S)"
+building_dtf_factory_1_desc:0 "A central facility, including factories and laboratories under test operation, built on its outer edges, utilizing time faults. \Increase the efficiency of the alloy industrial and research zones."
+
+building_dtf_factory_2:0 "DTF Dimensional Time Fault Factory (M)"
+building_dtf_factory_2_desc:0 "The central facility of a research institute attached to a factory that utilizes time faults. Since the inside of the fault is not tolerated by the living, it is placed between the real space, which is less affected by the fault. \It will increase the efficiency of the ᥉n-alloy industrial and research compartments."
+
+building_dtf_factory_3:0 "DTF Dimensional Time Fault Factory (L)"
+building_dtf_factory_3_desc:0 "A central facility for the plant that utilizes time faults. \Increase the efficiency of the alloy industrial and research zones."
+
+building_dtf_factory_4:0 "DTF Dimensional Time Fault Factory (XL)"
+building_dtf_factory_4_desc:0 "The central facility of the plant that utilizes the entire time fault line. Inside, time passes about 10 times faster. \It will increase the efficiency of the alloy industrial and research compartments."
+
+building_dtf_factory_5:0 "DTF Dimensional Time Fault Factory (T)"
+building_dtf_factory_5_desc:0 "A central facility for a large factory that utilizes the entire time fault line. Inside, time passes about 10 times faster. \It will increase the efficiency of the alloy industrial and research compartments."
+
+building_dtf_factory_6:0 "DTF Dimensional Time Fault Factory (Planetary)"
+building_dtf_factory_6_desc:0 "A central facility for a planetary-scale factory that utilizes the entire time fault line. Inside, time passes about 10 times faster. \Increasing the efficiency of the alloy industrial and research compartments."
+
+
+
+
+building_dtf_defense_command_1:0 "DTF EDF General Headquarters (S)"
+building_dtf_defense_command_1_desc:0 "Branch of the fleet belonging to the Far Eastern Regional District"
+
+building_dtf_defense_command_2:0 "DTF EDF General Headquarters (M)"
+building_dtf_defense_command_2_desc:0 "Headquarters of the fleet belonging to the Far Eastern Regional District"
+
+building_dtf_defense_command_3:0 "DTF EDF General Headquarters (L)"
+building_dtf_defense_command_3_desc:0 "Assist in the operational command of each EDF fleet"
+
+building_dtf_defense_command_4:0 "DTF EDF General Headquarters (XL)"
+building_dtf_defense_command_4_desc:0 "The center of the Earth Defense Agency and the highest level of the chain of command within the Defense Forces."
+
+
+
+
+building_dtf_underground_city_1:0 "DTF Underground City (S)"
+building_dtf_underground_city_1_desc:0 "City renovated from a shelter built during the Inner Planet War."
+
+building_dtf_underground_city_2:0 "DTF Underground City (M)"
+building_dtf_underground_city_2_desc:0 "Underground city expanded to accommodate population growth"
+
+building_dtf_underground_city_3:0 "DTF Underground City (L)"
+building_dtf_underground_city_3_desc:0 "Large underground city that can be used as a shelter in case of emergency"
+
+building_dtf_underground_city_4:0 "DTF Underground City (XL)"
+building_dtf_underground_city_4_desc:0 "Very large underground city that can be used as a shelter in case of emergency"
+
+
+building_dtf_robot_factory_1:0 "DTF Robot Assembly Plant (S)"
+building_dtf_robot_factory_1_desc:0 "Small manufacturing plants with single task or autonomous robots"
+
+building_dtf_robot_factory_2:0 "DTF Robot Assembly Plant (M)"
+building_dtf_robot_factory_2_desc:0 "Medium-scale manufacturing plants with single task or autonomous robots"
+
+building_dtf_robot_factory_3:0 "DTF Robot Assembly Plant (L)"
+building_dtf_robot_factory_3_desc:0 "Large manufacturing plants for single task or autonomous robots"
+
+building_dtf_robot_factory_4:0 "DTF Robot Assembly Plant (XL)"
+building_dtf_robot_factory_4_desc:0 "Very large manufacturing plants with single task or autonomous robots"
+
+
+
+
+
+building_dtf_weapon_factory_1:0 "DTF Weapon Factory (S)"
+building_dtf_weapon_factory_1_desc:0 "Small-scale time-fault factory that manufactures weapons for ground troops and ships"
+
+building_dtf_weapon_factory_2:0 "DTF Weapon Factory (M)"
+building_dtf_weapon_factory_2_desc:0 "Medium-scale factory in time fault that manufactures weapons for ground forces and ships."
+
+building_dtf_weapon_factory_3:0 "DTF Weapon Factory (L)"
+building_dtf_weapon_factory_3_desc:0 "A large time-fault factory that manufactures weapons for ground forces and ships."
+
+building_dtf_weapon_factory_4:0 "DTF Weapon Factory (XL)"
+building_dtf_weapon_factory_4_desc:0 "Very large scale factory within the time fault that manufactures weapons for ground troops and ships."
+
+
+building_dtf_component_factory_1:0 "DTF Ship Component Factory (S)"
+building_dtf_component_factory_1_desc:0 "A small time-fault factory that manufactures components for ships"
+
+building_dtf_component_factory_2:0 "DTF Ship Component Factory (M)"
+building_dtf_component_factory_2_desc:0 "A medium scale in-time fault factory that manufactures ship components"
+
+building_dtf_component_factory_3:0 "DTF Ship Component Factory (L)"
+building_dtf_component_factory_3_desc:0 "A factory within a large time fault that manufactures components for ships"
+
+building_dtf_component_factory_4:0 "DTF Ship Component Factory (XL)"
+building_dtf_component_factory_4_desc:0 "Very large scale time faulted plant that manufactures parts for ships"
+
+
+
+
+building_dtf_energy_plant_1:0 "DTF Planetary Fusion Power Plant (S)"
+building_dtf_energy_plant_1_desc:0 "A central facility for large output power plants. \Increasing the efficiency of the power generation section"
+
+building_dtf_energy_plant_2:0 "DTF Planetary Fusion Power Plant (M)"
+building_dtf_energy_plant_2_desc:0 "A central facility for large output power plants. \Increasing the efficiency of the  power generation section."
+
+building_dtf_energy_plant_3:0 "DTF Planetary Fusion Power Plant (L)"
+building_dtf_energy_plant_3_desc:0 ""
+
+building_dtf_energy_plant_4:0 "DTF Planetary Wave Motion Power Plant (S)"
+building_dtf_energy_plant_4_desc:0 "A central facility for large output power plants. \Increasing the efficiency of the power generation section.
+"
+
+building_dtf_energy_plant_5:0 "DTF Planetary Wave Motion Power Plant (M)"
+building_dtf_energy_plant_5_desc:0 "Central facility for an experimental power plant utilizing wave energy. \It will increase the efficiency of the power generation section."
+
+building_dtf_energy_plant_6:0 "DTF Planetary Wave Motion Power Plant (L)"
+building_dtf_energy_plant_6_desc:0 "A central facility for a hyperdimensional power plant that utilizes wave energy. It increases the efficiency of the power generation section"
+
+
+building_dtf_mining_plant_1:0 "DTF Planetary Mining Facility (S)"
+building_dtf_mining_plant_1_desc:0 "Central facility for a medium-scale mining facility. \Increases the efficiency of the  mining parcel."
+
+building_dtf_mining_plant_2:0 "DTF Planetary Mining Facility (M)"
+building_dtf_mining_plant_2_desc:0 "Central facility for a large mining facility that reaches the mantle. \Increases the efficiency of the mining compartment.""
+
+building_dtf_mining_plant_3:0 "DTF Planetary Mining Facility (L)"
+building_dtf_mining_plant_3_desc:0 "A central facility for mining facilities with a mining network that stretches across the entire planet. \It improves the efficiency of the mining plots.""
+
+building_dtf_mining_plant_4:0 "DTF Planetary Wave Motion Mining Facility (S)"
+building_dtf_mining_plant_4_desc:0 "Central facility for an experimental mining facility applying wave technology. \It will increase the efficiency of the  mining plot.""
+
+building_dtf_mining_plant_5:0 "DTF Planetary Wave Motion Mining Facility (M)"
+building_dtf_mining_plant_5_desc:0 "Central facility for a large-scale mining facility applying wave technology. \It increases the efficiency of the  mining plot.""
+
+building_dtf_mining_plant_6:0 "DTF Planetary Wave Motion Mining Facility (L)"
+building_dtf_mining_plant_6_desc:0 "Central facility for ultra-large scale mining facility based on wave technology. \It increases the efficiency of the  mining plot."
+"

@@ -1,0 +1,270 @@
+namespace = attenuation_field
+
+# GUARDIAN ATTENUATION FIELD
+planet_event = {
+	id = attenuation_field.1
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { is_planet_class = pc_ai }
+				exists = owner
+				owner = { NOT = { is_same_value = from.owner } }
+			}
+			from.owner = {
+				country_event = { id = attenuation_field.2 }
+			}
+		}
+
+		# Contingency Machine World
+		if = {
+			limit = {
+				is_planet_class = pc_ai
+				NOT = { has_planet_flag = machine_lair }
+			}
+			set_planet_flag = destroyed_by_colossus
+			set_planet_flag = planet_disabled
+			planet_event = { id = crisis.2040 }
+			create_ambient_object = {
+				location = this
+				type = habitat_cracker_object
+				duration = 5
+
+				use_3d_location = yes
+				base_angle_towards = star
+				entity_face_object = star
+
+				entity_offset = { min = 0 max = 0 }
+
+				entity_scale_to_size = yes
+				scale = 0.5
+			}
+		}
+
+		# Contingency Final Machine World
+		if = {
+			limit = {
+				is_planet_class = pc_ai
+				has_planet_flag = machine_lair
+			}
+			set_planet_flag = destroyed_by_colossus
+			set_planet_flag = planet_disabled
+			stop_crisis_sound = yes
+			from.owner = { save_event_target_as = final_machine_world_destroyer }
+			planet_event = { id = crisis.2046 }
+			create_ambient_object = {
+				location = this
+				type = habitat_cracker_object
+				duration = 5
+
+				use_3d_location = yes
+				base_angle_towards = star
+				entity_face_object = star
+
+				entity_offset = { min = 0 max = 0 }
+
+				entity_scale_to_size = yes
+				scale = 0.5
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = { is_planet_class = pc_ai }
+				exists = owner
+				owner = {
+					NOT = { is_same_value = from.owner }
+					OR = {
+						is_country_type = default
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire
+					}
+				}
+			}
+			# Generate threat
+			add_threat = { who = from.owner amount = 3 }
+			# modifier for allies + those upset by the EMP
+			every_country = {
+				limit = {
+					NOR = {
+						is_same_value = from.owner
+						is_same_value = root.owner
+						AND = {
+							has_federation = yes
+							is_in_federation_with = from.owner
+						}
+					}
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					OR = {
+						AND = {
+							has_federation = yes
+							is_in_federation_with = root.owner
+						}
+						has_ai_personality = awakened_fallen_empire_materialist
+						AND = {
+							is_country_type = default
+							OR = {
+								is_materialist = yes
+								is_egalitarian = yes
+								has_authority = auth_machine_intelligence
+							}
+						}
+					}
+				}
+				add_opinion_modifier = {
+					modifier = opinion_disabled_a_world
+					who = from.owner
+				}
+			}
+			# modifiers for victim
+			owner = {
+				add_opinion_modifier = {
+					modifier = opinion_disabled_my_world
+					who = from.owner
+				}
+				if = {
+					limit = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+					add_modifier = {
+						modifier = colossus_victim
+						days = 10800 # 30 years
+					}
+				}
+			}
+			# Add war exhaustion to planet owner
+			owner = {
+				if = {
+					limit = { #isn't the case when the crisis bombards planets, for instance
+						is_at_war_with = from.fleet.owner
+					}
+					add_static_war_exhaustion = {
+						attacker = from.fleet.owner
+						location = root
+						value_for_planet_destruction = 1.0
+					}
+				}
+			}
+		}
+		every_owned_pop = {
+			limit = {
+				OR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					has_living_standard = { # Bio-trophies die without care
+						country = root.owner
+						type = living_standard_organic_trophy
+					}
+				}
+			}
+			kill_pop = yes
+			from.owner = {
+				if = {
+					limit = { has_ascension_perk = ap_become_the_crisis }
+					complete_crisis_objective = crisobj_purge_pops
+				}
+			}
+		}
+		add_modifier = {
+			modifier = attenuation_field_emp
+			days = 3600
+		}
+		# For Contingency Worlds 
+		if = {
+			limit = { is_planet_class = pc_ai }
+			random_list = {
+				50 = { change_pc = pc_barren }
+				50 = { change_pc = pc_barren_cold }
+			}
+			add_modifier = { modifier = "terraforming_candidate" days = -1 }
+		}
+		# For Machine Worlds
+		if = {
+			limit = { is_planet_class = pc_machine }
+			destroy_colony = yes 
+		}
+		# For Habitats (Losing power will kill off pops due to life-support systems failing) 
+		if = {
+			limit = {
+				is_planet_class = pc_habitat
+			}
+			spawn_habitat_neutron_effect = yes 
+			destroy_colony = yes 
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_ringworld_habitable
+			}
+			spawn_habitat_neutron_effect = yes			
+		}
+		
+		# Special graphics for Shielded Habitats and Ring Worlds
+		if = {
+			limit = {
+				is_planet_class = pc_habitat_shielded
+			}
+			spawn_habitat_neutron_effect = yes
+			change_pc = { 
+				class = pc_habitat
+				inherit_entity = yes
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_ringworld_shielded
+			}
+			spawn_ringworld_neutron_effect = yes
+			change_pc = {
+				class = pc_ringworld_habitable
+				inherit_entity = yes
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_shielded
+			}
+			random_list = {
+				10 = { change_pc = pc_desert }
+				10 = { change_pc = pc_arid }
+				10 = { change_pc = pc_savannah }
+				10 = { change_pc = pc_ocean }
+				10 = { change_pc = pc_continental }
+				10 = { change_pc = pc_tropical }
+				10 = { change_pc = pc_tundra }
+				10 = { change_pc = pc_arctic }
+				10 = { change_pc = pc_alpine }
+				10 = { change_pc = pc_barren }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = attenuation_field.2
+	title = attenuation_field.2.name
+	desc = attenuation_field.2.desc
+	picture = GFX_evt_planet_disabled
+	show_sound = event_mystic_reveal
+	location = from
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = fired_attenuation_field }
+	}
+
+	immediate = {
+		set_country_flag = fired_attenuation_field
+	}
+
+	option = {
+		name = EXCELLENT
+		from = {
+			custom_tooltip = attenuation_field.2.tooltip
+		}
+	}
+}

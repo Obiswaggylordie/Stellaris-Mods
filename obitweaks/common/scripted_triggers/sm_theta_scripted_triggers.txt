@@ -1,0 +1,56 @@
+has_sm_research_skills = {
+	OR = {
+		OR = {
+			has_trait = leader_trait_acot_curator_archon
+			has_trait = leader_trait_chosen
+			has_trait = sots_infinity_calculator
+			has_trait = pouchkinn_trait_ancient_knowledge
+			has_trait = pouchkinn_trait_modified
+			has_trait = pouchkinn_trait_lifespan
+			has_trait = pouchkinn_trait_deranged
+			has_trait = leader_trait_gpm_guilli
+			has_trait = leader_trait_scientist_fractal
+			has_leader_flag = exakeides
+			has_leader_flag = mythical_leader           ##### empty flag for other mods to make leaders who can research this
+			has_trait = leader_trait_ascension_4
+		}
+		owner = {
+			is_gestalt = yes
+		}
+	}
+	has_level >= 10
+}
+
+cannot_use_theta = {
+	OR = {
+		is_country_type = fallen_empire ###VANILLA
+		is_country_type = awakened_fallen_empire
+		is_country_type = dormant_aeternum ###GIGAS
+		is_country_type = kuat_fallen_empire ###KUAT
+		is_country_type = kuat_awakened_fallen_empire
+		is_country_type = kuat_fleet
+		is_country_type = kuat_fleet_hostile
+		is_country_type = kuat_fire_base
+		is_country_type = kuat_fire_base_hositle
+		is_country_type = ag_kuat_invasion_country
+		is_country_type = awakened_return_kuat_empire
+		is_country_type = eternal_support
+		is_country_type = eternal_support_guadian
+		is_country_type = ag_kae_e_area_guardian
+		is_country_type = ag_kae_ge_invasion_country
+	}
+}
+
+has_sots = {
+	always = yes
+}
+
+is_sots_soulsphere = { is_planet_class = pc_acot_soulsphere }
+is_sm_empty_space = { is_planet_class = pc_sm_empty_space }
+
+can_build_perfect_ship = {
+	is_scope_type = starbase
+	starbase = {
+		has_starbase_building = acot_sb_perfect_phanon_assembly
+	}
+}

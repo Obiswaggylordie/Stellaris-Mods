@@ -1,0 +1,1290 @@
+
+######################################################################################
+###	corvette
+######################################################################################
+
+uncf_01_corvette1_turret_01_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_corvette1_turret_01_entity"
+		weapon_type_energy = "uncf_01_corvette1_turret_01_entity"
+		weapon_type_explosive = "uncf_01_corvette1_turret_01_entity"
+	}
+}
+uncf_01_corvette1_turret_02_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_corvette1_turret_02_entity"
+		weapon_type_energy = "uncf_01_corvette1_turret_02_entity"
+		weapon_type_explosive = "uncf_01_corvette1_turret_02_entity"
+	}
+}
+
+uncf_01_corvette2_turret_01_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_corvette2_turret_01_entity"
+		weapon_type_energy = "uncf_01_corvette2_turret_01_entity"
+		weapon_type_explosive = "uncf_01_corvette2_turret_01_entity"
+	}
+}
+uncf_01_corvette2_turret_02_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_corvette2_turret_02_entity"
+		weapon_type_energy = "uncf_01_corvette2_turret_02_entity"
+		weapon_type_explosive = "uncf_01_corvette2_turret_02_entity"
+	}
+}
+
+uncf_01_corvette3_turret_01_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_corvette3_turret_01_entity"
+		weapon_type_energy = "uncf_01_corvette3_turret_01_entity"
+		weapon_type_explosive = "uncf_01_corvette3_turret_01_entity"
+	}
+}
+uncf_01_corvette3_turret_02_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_corvette3_turret_02_entity"
+		weapon_type_energy = "uncf_01_corvette3_turret_02_entity"
+		weapon_type_explosive = "uncf_01_corvette3_turret_02_entity"
+	}
+}
+
+uncf_01_corvette4_turret_01_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_corvette4_turret_01_entity"
+		weapon_type_energy = "uncf_01_corvette4_turret_01_entity"
+		weapon_type_explosive = "uncf_01_corvette4_turret_01_entity"
+	}
+}
+uncf_01_corvette4_turret_02_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_corvette4_turret_02_entity"
+		weapon_type_energy = "uncf_01_corvette4_turret_02_entity"
+		weapon_type_explosive = "uncf_01_corvette4_turret_02_entity"
+	}
+}
+
+######################################################################################
+###	frigate
+######################################################################################
+
+
+uncf_01_frigate1_turret_01_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_frigate1_turret_01_entity"
+		weapon_type_energy = "uncf_01_frigate1_turret_01_entity"
+		weapon_type_explosive = "uncf_01_frigate1_turret_01_entity"
+	}
+}
+
+uncf_01_frigate2_turret_01_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_frigate2_turret_01_entity"
+		weapon_type_energy = "uncf_01_frigate2_turret_01_entity"
+		weapon_type_explosive = "uncf_01_frigate2_turret_01_entity"
+	}
+}
+uncf_01_frigate2_turret_02_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_frigate2_turret_02_entity"
+		weapon_type_energy = "uncf_01_frigate2_turret_02_entity"
+		weapon_type_explosive = "uncf_01_frigate2_turret_02_entity"
+	}
+}
+uncf_01_frigate2_turret_03_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_frigate2_turret_03_entity"
+		weapon_type_energy = "uncf_01_frigate2_turret_03_entity"
+		weapon_type_explosive = "uncf_01_frigate2_turret_03_entity"
+	}
+}
+
+uncf_01_frigate3_turret_01_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_frigate3_turret_01_entity"
+		weapon_type_energy = "uncf_01_frigate3_turret_01_entity"
+		weapon_type_explosive = "uncf_01_frigate3_turret_01_entity"
+	}
+}
+uncf_01_frigate3_turret_02_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_frigate3_turret_02_entity"
+		weapon_type_energy = "uncf_01_frigate3_turret_02_entity"
+		weapon_type_explosive = "uncf_01_frigate3_turret_02_entity"
+	}
+}
+uncf_01_frigate3_turret_03_slot = {
+	size = point_defence
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_frigate3_turret_03_entity"
+		weapon_type_energy = "uncf_01_frigate3_turret_03_entity"
+		weapon_type_explosive = "uncf_01_frigate3_turret_03_entity"
+	}
+}
+
+######################################################################################
+###	destroyer
+######################################################################################
+
+
+uncf_01_destroyer1_turret_01_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_destroyer1_turret_01_entity"
+		weapon_type_energy = "uncf_01_destroyer1_turret_01_entity"
+		weapon_type_explosive = "uncf_01_destroyer1_turret_01_entity"
+	}
+}
+uncf_01_destroyer1_turret_02_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_destroyer1_turret_02_entity"
+		weapon_type_energy = "uncf_01_destroyer1_turret_02_entity"
+		weapon_type_explosive = "uncf_01_destroyer1_turret_02_entity"
+	}
+}
+uncf_01_destroyer1_turret_03_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_destroyer1_turret_03_entity"
+		weapon_type_energy = "uncf_01_destroyer1_turret_03_entity"
+		weapon_type_explosive = "uncf_01_destroyer1_turret_03_entity"
+	}
+}
+
+uncf_01_destroyer2_turret_01_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_destroyer2_turret_01_entity"
+		weapon_type_energy = "uncf_01_destroyer2_turret_01_entity"
+		weapon_type_explosive = "uncf_01_destroyer2_turret_01_entity"
+	}
+}
+uncf_01_destroyer2_turret_02_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_destroyer2_turret_02_entity"
+		weapon_type_energy = "uncf_01_destroyer2_turret_02_entity"
+		weapon_type_explosive = "uncf_01_destroyer2_turret_02_entity"
+	}
+}
+uncf_01_destroyer2_turret_03_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_destroyer2_turret_03_entity"
+		weapon_type_energy = "uncf_01_destroyer2_turret_03_entity"
+		weapon_type_explosive = "uncf_01_destroyer2_turret_03_entity"
+	}
+}
+
+uncf_01_destroyer3_turret_01_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_destroyer3_turret_01_entity"
+		weapon_type_energy = "uncf_01_destroyer3_turret_01_entity"
+		weapon_type_explosive = "uncf_01_destroyer3_turret_01_entity"
+	}
+}
+uncf_01_destroyer3_turret_02_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_destroyer3_turret_02_entity"
+		weapon_type_energy = "uncf_01_destroyer3_turret_02_entity"
+		weapon_type_explosive = "uncf_01_destroyer3_turret_02_entity"
+	}
+}
+uncf_01_destroyer3_turret_03_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_destroyer3_turret_03_entity"
+		weapon_type_energy = "uncf_01_destroyer3_turret_03_entity"
+		weapon_type_explosive = "uncf_01_destroyer3_turret_03_entity"
+	}
+}
+
+uncf_01_destroyer4_turret_01_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_destroyer4_turret_01_entity"
+		weapon_type_energy = "uncf_01_destroyer4_turret_01_entity"
+		weapon_type_explosive = "uncf_01_destroyer4_turret_01_entity"
+	}
+}
+uncf_01_destroyer4_turret_02_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_destroyer4_turret_02_entity"
+		weapon_type_energy = "uncf_01_destroyer4_turret_02_entity"
+		weapon_type_explosive = "uncf_01_destroyer4_turret_02_entity"
+	}
+}
+uncf_01_destroyer4_turret_03_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_destroyer4_turret_03_entity"
+		weapon_type_energy = "uncf_01_destroyer4_turret_03_entity"
+		weapon_type_explosive = "uncf_01_destroyer4_turret_03_entity"
+	}
+}
+
+uncf_01_destroyer5_turret_01_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_destroyer5_turret_01_entity"
+		weapon_type_energy = "uncf_01_destroyer5_turret_01_entity"
+		weapon_type_explosive = "uncf_01_destroyer5_turret_01_entity"
+	}
+}
+uncf_01_destroyer5_turret_02_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_destroyer5_turret_02_entity"
+		weapon_type_energy = "uncf_01_destroyer5_turret_02_entity"
+		weapon_type_explosive = "uncf_01_destroyer5_turret_02_entity"
+	}
+}
+uncf_01_destroyer5_turret_03_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_destroyer5_turret_03_entity"
+		weapon_type_energy = "uncf_01_destroyer5_turret_03_entity"
+		weapon_type_explosive = "uncf_01_destroyer5_turret_03_entity"
+	}
+}
+
+uncf_01_destroyer6_turret_01_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_frigate2_turret_01_entity"
+		weapon_type_energy = "uncf_01_frigate2_turret_01_entity"
+		weapon_type_explosive = "uncf_01_frigate2_turret_01_entity"
+	}
+}
+uncf_01_destroyer6_turret_02_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_frigate2_turret_02_entity"
+		weapon_type_energy = "uncf_01_frigate2_turret_02_entity"
+		weapon_type_explosive = "uncf_01_frigate2_turret_02_entity"
+	}
+}
+
+
+######################################################################################
+###	cruiser
+######################################################################################
+
+uncf_01_cruiser1_turret_01_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser1_turret_01_entity"
+		weapon_type_energy = "uncf_01_cruiser1_turret_01_entity"
+		weapon_type_explosive = "uncf_01_cruiser1_turret_01_entity"
+	}
+}
+
+uncf_01_cruiser1_turret_02_front_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser1_turret_02_front_entity"
+		weapon_type_energy = "uncf_01_cruiser1_turret_02_front_entity"
+		weapon_type_explosive = "uncf_01_cruiser1_turret_02_front_entity"
+	}
+}
+
+uncf_01_cruiser1_turret_02_back_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser1_turret_02_back_entity"
+		weapon_type_energy = "uncf_01_cruiser1_turret_02_back_entity"
+		weapon_type_explosive = "uncf_01_cruiser1_turret_02_back_entity"
+	}
+}
+
+uncf_01_cruiser2_turret_01_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser2_turret_01_entity"
+		weapon_type_energy = "uncf_01_cruiser2_turret_01_entity"
+		weapon_type_explosive = "uncf_01_cruiser2_turret_01_entity"
+	}
+}
+
+uncf_01_cruiser2_turret_02_front_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser2_turret_02_front_entity"
+		weapon_type_energy = "uncf_01_cruiser2_turret_02_front_entity"
+		weapon_type_explosive = "uncf_01_cruiser2_turret_02_front_entity"
+	}
+}
+
+uncf_01_cruiser2_turret_02_back_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser2_turret_02_back_entity"
+		weapon_type_energy = "uncf_01_cruiser2_turret_02_back_entity"
+		weapon_type_explosive = "uncf_01_cruiser2_turret_02_back_entity"
+	}
+}
+
+uncf_01_cruiser3_turret_01_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser3_turret_01_entity"
+		weapon_type_energy = "uncf_01_cruiser3_turret_01_entity"
+		weapon_type_explosive = "uncf_01_cruiser3_turret_01_entity"
+	}
+}
+
+uncf_01_cruiser3_turret_02_front_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser3_turret_02_front_entity"
+		weapon_type_energy = "uncf_01_cruiser3_turret_02_front_entity"
+		weapon_type_explosive = "uncf_01_cruiser3_turret_02_front_entity"
+	}
+}
+
+uncf_01_cruiser3_turret_02_back_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser3_turret_02_back_entity"
+		weapon_type_energy = "uncf_01_cruiser3_turret_02_back_entity"
+		weapon_type_explosive = "uncf_01_cruiser3_turret_02_back_entity"
+	}
+}
+
+uncf_01_cruiser4_turret_01_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser4_turret_01_entity"
+		weapon_type_energy = "uncf_01_cruiser4_turret_01_entity"
+		weapon_type_explosive = "uncf_01_cruiser4_turret_01_entity"
+	}
+}
+
+uncf_01_cruiser4_turret_02_front_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser4_turret_02_front_entity"
+		weapon_type_energy = "uncf_01_cruiser4_turret_02_front_entity"
+		weapon_type_explosive = "uncf_01_cruiser4_turret_02_front_entity"
+	}
+}
+
+uncf_01_cruiser4_turret_02_back_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser4_turret_02_back_entity"
+		weapon_type_energy = "uncf_01_cruiser4_turret_02_back_entity"
+		weapon_type_explosive = "uncf_01_cruiser4_turret_02_back_entity"
+	}
+}
+
+uncf_01_cruiser4_turret_03_slot = {
+	size = small
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser4_turret_03_entity"
+		weapon_type_energy = "uncf_01_cruiser4_turret_03_entity"
+		weapon_type_explosive = "uncf_01_cruiser4_turret_03_entity"
+	}
+}
+
+uncf_01_cruiser5_turret_01_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser5_turret_01_entity"
+		weapon_type_energy = "uncf_01_cruiser5_turret_01_entity"
+		weapon_type_explosive = "uncf_01_cruiser5_turret_01_entity"
+	}
+}
+
+uncf_01_cruiser5_turret_02_front_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser5_turret_02_front_entity"
+		weapon_type_energy = "uncf_01_cruiser5_turret_02_front_entity"
+		weapon_type_explosive = "uncf_01_cruiser5_turret_02_front_entity"
+	}
+}
+
+uncf_01_cruiser5_turret_02_back_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser5_turret_02_back_entity"
+		weapon_type_energy = "uncf_01_cruiser5_turret_02_back_entity"
+		weapon_type_explosive = "uncf_01_cruiser5_turret_02_back_entity"
+	}
+}
+
+uncf_01_cruiser5_turret_03_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser5_turret_03_entity"
+		weapon_type_energy = "uncf_01_cruiser5_turret_03_entity"
+		weapon_type_explosive = "uncf_01_cruiser5_turret_03_entity"
+	}
+}
+
+uncf_01_cruiser6_turret_01_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser6_turret_01_entity"
+		weapon_type_energy = "uncf_01_cruiser6_turret_01_entity"
+		weapon_type_explosive = "uncf_01_cruiser6_turret_01_entity"
+	}
+}
+
+uncf_01_cruiser6_turret_02_front_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser6_turret_02_front_entity"
+		weapon_type_energy = "uncf_01_cruiser6_turret_02_front_entity"
+		weapon_type_explosive = "uncf_01_cruiser6_turret_02_front_entity"
+	}
+}
+
+uncf_01_cruiser6_turret_02_back_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser6_turret_02_back_entity"
+		weapon_type_energy = "uncf_01_cruiser6_turret_02_back_entity"
+		weapon_type_explosive = "uncf_01_cruiser6_turret_02_back_entity"
+	}
+}
+
+uncf_01_cruiser6_turret_03_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser6_turret_03_entity"
+		weapon_type_energy = "uncf_01_cruiser6_turret_03_entity"
+		weapon_type_explosive = "uncf_01_cruiser6_turret_03_entity"
+	}
+}
+
+uncf_01_cruiser7_turret_01_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser7_turret_01_entity"
+		weapon_type_energy = "uncf_01_cruiser7_turret_01_entity"
+		weapon_type_explosive = "uncf_01_cruiser7_turret_01_entity"
+	}
+}
+
+uncf_01_cruiser7_turret_02_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser7_turret_02_entity"
+		weapon_type_energy = "uncf_01_cruiser7_turret_02_entity"
+		weapon_type_explosive = "uncf_01_cruiser7_turret_02_entity"
+	}
+}
+
+uncf_01_cruiser8_turret_01_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser8_turret_01_entity"
+		weapon_type_energy = "uncf_01_cruiser8_turret_01_entity"
+		weapon_type_explosive = "uncf_01_cruiser8_turret_01_entity"
+	}
+}
+
+uncf_01_cruiser8_turret_02_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser8_turret_02_entity"
+		weapon_type_energy = "uncf_01_cruiser8_turret_02_entity"
+		weapon_type_explosive = "uncf_01_cruiser8_turret_02_entity"
+	}
+}
+
+uncf_01_cruiser8_turret_03_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser8_turret_03_entity"
+		weapon_type_energy = "uncf_01_cruiser8_turret_03_entity"
+		weapon_type_explosive = "uncf_01_cruiser8_turret_03_entity"
+	}
+}
+
+uncf_01_cruiser9_turret_01_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser9_turret_01_entity"
+		weapon_type_energy = "uncf_01_cruiser9_turret_01_entity"
+		weapon_type_explosive = "uncf_01_cruiser9_turret_01_entity"
+	}
+}
+
+uncf_01_cruiser9_turret_02_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser9_turret_02_entity"
+		weapon_type_energy = "uncf_01_cruiser9_turret_02_entity"
+		weapon_type_explosive = "uncf_01_cruiser9_turret_02_entity"
+	}
+}
+
+uncf_01_cruiser9_turret_03_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser9_turret_03_entity"
+		weapon_type_energy = "uncf_01_cruiser9_turret_03_entity"
+		weapon_type_explosive = "uncf_01_cruiser9_turret_03_entity"
+	}
+}
+
+uncf_01_cruiser10_turret_01_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser10_turret_01_entity"
+		weapon_type_energy = "uncf_01_cruiser10_turret_01_entity"
+		weapon_type_explosive = "uncf_01_cruiser10_turret_01_entity"
+	}
+}
+
+uncf_01_cruiser10_turret_02_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser10_turret_02_entity"
+		weapon_type_energy = "uncf_01_cruiser10_turret_02_entity"
+		weapon_type_explosive = "uncf_01_cruiser10_turret_02_entity"
+	}
+}
+
+uncf_01_cruiser10_turret_03_slot = {
+	size = medium
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser10_turret_03_entity"
+		weapon_type_energy = "uncf_01_cruiser10_turret_03_entity"
+		weapon_type_explosive = "uncf_01_cruiser10_turret_03_entity"
+	}
+}
+
+uncf_01_cruiser11_turret_01_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_cruiser11_turret_01_entity"
+		weapon_type_energy = "uncf_01_cruiser11_turret_01_entity"
+		weapon_type_explosive = "uncf_01_cruiser11_turret_01_entity"
+	}
+}
+
+######################################################################################
+###	battleship
+######################################################################################
+
+uncf_01_battleship1_turret_01_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship1_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_battleship1_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_battleship1_turret_01_front_entity"
+	}
+}
+uncf_01_battleship1_turret_01_back_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship1_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_battleship1_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_battleship1_turret_01_back_entity"
+	}
+}
+
+uncf_01_battleship1_turret_01_right_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship1_turret_01_right_entity"
+		weapon_type_energy = "uncf_01_battleship1_turret_01_right_entity"
+		weapon_type_explosive = "uncf_01_battleship1_turret_01_right_entity"
+	}
+}
+
+uncf_01_battleship1_turret_01_left_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship1_turret_01_left_entity"
+		weapon_type_energy = "uncf_01_battleship1_turret_01_left_entity"
+		weapon_type_explosive = "uncf_01_battleship1_turret_01_left_entity"
+	}
+}
+
+uncf_01_battleship2_turret_01_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship2_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_battleship2_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_battleship2_turret_01_front_entity"
+	}
+}
+uncf_01_battleship2_turret_01_back_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship2_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_battleship2_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_battleship2_turret_01_back_entity"
+	}
+}
+
+uncf_01_battleship3_turret_01_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship3_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_battleship3_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_battleship3_turret_01_front_entity"
+	}
+}
+uncf_01_battleship3_turret_01_back_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship3_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_battleship3_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_battleship3_turret_01_back_entity"
+	}
+}
+
+uncf_01_battleship4_turret_01_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship4_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_battleship4_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_battleship4_turret_01_front_entity"
+	}
+}
+uncf_01_battleship4_turret_01_back_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship4_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_battleship4_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_battleship4_turret_01_back_entity"
+	}
+}
+
+uncf_01_battleship5_turret_01_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship5_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_battleship5_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_battleship5_turret_01_front_entity"
+	}
+}
+uncf_01_battleship5_turret_01_back_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship5_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_battleship5_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_battleship5_turret_01_back_entity"
+	}
+}
+
+uncf_01_battleship6_turret_01_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship6_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_battleship6_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_battleship6_turret_01_front_entity"
+	}
+}
+uncf_01_battleship6_turret_01_back_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship6_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_battleship6_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_battleship6_turret_01_back_entity"
+	}
+}
+
+uncf_01_battleship6_turret_02_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship6_turret_02_front_entity"
+		weapon_type_energy = "uncf_01_battleship6_turret_02_front_entity"
+		weapon_type_explosive = "uncf_01_battleship6_turret_02_front_entity"
+	}
+}
+
+uncf_01_battleship12_turret_01_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship12_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_battleship12_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_battleship12_turret_01_front_entity"
+	}
+}
+
+uncf_01_battleship12_turret_01_back_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship12_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_battleship12_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_battleship12_turret_01_back_entity"
+	}
+}
+
+uncf_01_battleship12_turret_03_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship12_turret_03_entity"
+		weapon_type_energy = "uncf_01_battleship12_turret_03_entity"
+		weapon_type_explosive = "uncf_01_battleship12_turret_03_entity"
+	}
+}
+
+uncf_01_battleship14_turret_01_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship14_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_battleship14_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_battleship14_turret_01_front_entity"
+	}
+}
+uncf_01_battleship14_turret_01_back_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship14_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_battleship14_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_battleship14_turret_01_back_entity"
+	}
+}
+
+uncf_01_battleship15_turret_01_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship15_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_battleship15_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_battleship15_turret_01_front_entity"
+	}
+}
+uncf_01_battleship15_turret_01_back_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship15_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_battleship15_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_battleship15_turret_01_back_entity"
+	}
+}
+
+uncf_01_battleship16_turret_01_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship16_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_battleship16_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_battleship16_turret_01_front_entity"
+	}
+}
+uncf_01_battleship16_turret_01_back_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_battleship16_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_battleship16_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_battleship16_turret_01_back_entity"
+	}
+}
+
+######################################################################################
+###	dreadnought
+######################################################################################
+
+
+
+######################################################################################
+###	titan
+######################################################################################
+
+uncf_01_titan_turret_01_front_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_titan_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_titan_turret_01_front_01_entity"
+	}
+}
+
+uncf_01_titan_turret_02_front_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan_turret_02_front_entity"
+		weapon_type_energy = "uncf_01_titan_turret_02_front_entity"
+		weapon_type_explosive = "uncf_01_titan_turret_02_front_01_entity"
+	}
+}
+
+uncf_01_titan_turret_03_back_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan_turret_03_back_entity"
+		weapon_type_energy = "uncf_01_titan_turret_03_back_entity"
+		weapon_type_explosive = "uncf_01_titan_turret_03_back_entity"
+	}
+}
+
+uncf_01_titan_turret_04_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan_turret_04_front_entity"
+		weapon_type_energy = "uncf_01_titan_turret_04_front_entity"
+		weapon_type_explosive = "uncf_01_titan_turret_04_front_01_entity"
+	}
+}
+
+uncf_01_titan_turret_05_back_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan_turret_05_back_entity"
+		weapon_type_energy = "uncf_01_titan_turret_05_back_entity"
+		weapon_type_explosive = "uncf_01_titan_turret_05_back_entity"
+	}
+}
+
+uncf_01_titan1_turret_01_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan1_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_titan1_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_titan1_turret_01_front_entity"
+	}
+}
+
+uncf_01_titan1_turret_01_back_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan1_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_titan1_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_titan1_turret_01_back_entity"
+	}
+}
+
+uncf_01_titan1_turret_02_over_slot = {
+	size = torpedo
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan1_turret_02_over_entity"
+		weapon_type_energy = "uncf_01_titan1_turret_02_over_entity"
+		weapon_type_explosive = "uncf_01_titan1_turret_02_over_entity"
+	}
+}
+
+uncf_01_titan1_turret_02_under_slot = {
+	size = torpedo
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan1_turret_02_under_entity"
+		weapon_type_energy = "uncf_01_titan1_turret_02_under_entity"
+		weapon_type_explosive = "uncf_01_titan1_turret_02_under_entity"
+	}
+}
+
+uncf_01_titan2_turret_01_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan2_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_titan2_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_titan2_turret_01_front_entity"
+	}
+}
+
+uncf_01_titan2_turret_01_back_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan2_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_titan2_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_titan2_turret_01_back_entity"
+	}
+}
+
+uncf_01_titan2_turret_02_over_slot = {
+	size = torpedo
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan2_turret_02_over_entity"
+		weapon_type_energy = "uncf_01_titan2_turret_02_over_entity"
+		weapon_type_explosive = "uncf_01_titan2_turret_02_over_entity"
+	}
+}
+
+uncf_01_titan2_turret_02_under_slot = {
+	size = torpedo
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan2_turret_02_under_entity"
+		weapon_type_energy = "uncf_01_titan2_turret_02_under_entity"
+		weapon_type_explosive = "uncf_01_titan2_turret_02_under_entity"
+	}
+}
+
+uncf_01_titan8_turret_01_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan8_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_titan8_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_titan8_turret_01_front_entity"
+	}
+}
+
+uncf_01_titan8_turret_01_back_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan8_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_titan8_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_titan8_turret_01_back_entity"
+	}
+}
+
+uncf_01_titan8_turret_01_over_slot = {
+	size = torpedo
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan8_turret_01_over_entity"
+		weapon_type_energy = "uncf_01_titan8_turret_01_over_entity"
+		weapon_type_explosive = "uncf_01_titan8_turret_01_over_entity"
+	}
+}
+
+uncf_01_titan8_turret_01_under_slot = {
+	size = torpedo
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan8_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_titan8_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_titan8_turret_01_back_entity"
+	}
+}
+
+uncf_01_titan8_turret_03_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan8_turret_03_entity"
+		weapon_type_energy = "uncf_01_titan8_turret_03_entity"
+		weapon_type_explosive = "uncf_01_titan8_turret_03_entity"
+	}
+}
+
+uncf_01_titan9_turret_01_front_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan9_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_titan9_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_titan9_turret_front_01_entity"
+	}
+}
+
+uncf_01_titan9_turret_01_back_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan9_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_titan9_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_titan9_turret_01_back_entity"
+	}
+}
+
+uncf_01_titan9_turret_02_front_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan9_turret_02_front_entity"
+		weapon_type_energy = "uncf_01_titan9_turret_02_front_entity"
+		weapon_type_explosive = "uncf_01_titan9_turret_02_front_01_entity"
+	}
+}
+
+uncf_01_titan9_turret_02_back_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan9_turret_02_back_entity"
+		weapon_type_energy = "uncf_01_titan9_turret_02_back_entity"
+		weapon_type_explosive = "uncf_01_titan9_turret_02_back_entity"
+	}
+}
+
+uncf_01_titan9_turret_03_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan9_turret_03_front_entity"
+		weapon_type_energy = "uncf_01_titan9_turret_03_front_entity"
+		weapon_type_explosive = "uncf_01_titan9_turret_03_front_01_entity"
+	}
+}
+
+uncf_01_titan9_turret_04_over_slot = {
+	size = torpedo
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan9_turret_04_over_entity"
+		weapon_type_energy = "uncf_01_titan9_turret_04_over_entity"
+		weapon_type_explosive = "uncf_01_titan9_turret_04_over_entity"
+	}
+}
+
+uncf_01_titan9_turret_04_under_slot = {
+	size = torpedo
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan9_turret_04_under_entity"
+		weapon_type_energy = "uncf_01_titan9_turret_04_under_entity"
+		weapon_type_explosive = "uncf_01_titan9_turret_04_under_entity"
+	}
+}
+
+uncf_01_titan10_turret_01_front_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan10_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_titan10_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_titan10_turret_front_01_entity"
+	}
+}
+
+uncf_01_titan10_turret_01_back_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan10_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_titan10_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_titan10_turret_01_back_entity"
+	}
+}
+
+uncf_01_titan10_turret_02_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan10_turret_02_front_entity"
+		weapon_type_energy = "uncf_01_titan10_turret_02_front_entity"
+		weapon_type_explosive = "uncf_01_titan10_turret_02_front_entity"
+	}
+}
+
+uncf_01_titan11_turret_01_front_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan11_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_titan11_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_titan11_turret_front_01_entity"
+	}
+}
+
+uncf_01_titan11_turret_02_front_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan11_turret_02_front_entity"
+		weapon_type_energy = "uncf_01_titan11_turret_02_front_entity"
+		weapon_type_explosive = "uncf_01_titan11_turret_02_front_entity"
+	}
+}
+
+uncf_01_titan11_turret_03_back_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan11_turret_03_back_entity"
+		weapon_type_energy = "uncf_01_titan11_turret_03_back_entity"
+		weapon_type_explosive = "uncf_01_titan11_turret_03_back_entity"
+	}
+}
+
+
+
+uncf_01_titan14_turret_01_slot = {
+	size = torpedo
+	component = weapon
+	is_fixed = yes	
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan14_turret_01_entity"
+		weapon_type_energy = "uncf_01_titan14_turret_01_entity"
+		weapon_type_explosive = "uncf_01_titan14_turret_01_entity"
+	}
+}
+
+uncf_01_titan14_turret_02_slot = {
+	size = torpedo
+	component = weapon
+	is_fixed = yes	
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan14_turret_02_entity"
+		weapon_type_energy = "uncf_01_titan14_turret_02_entity"
+		weapon_type_explosive = "uncf_01_titan14_turret_02_entity"
+	}
+}
+
+uncf_01_titan15_turret_01_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan15_turret_01_entity"
+		weapon_type_energy = "uncf_01_titan15_turret_01_entity"
+		weapon_type_explosive = "uncf_01_titan15_turret_01_entity"
+	}
+}
+
+uncf_01_titan15_turret_02_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan15_turret_02_entity"
+		weapon_type_energy = "uncf_01_titan15_turret_02_entity"
+		weapon_type_explosive = "uncf_01_titan15_turret_02_entity"
+	}
+}
+
+uncf_01_titan16_turret_01_front_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan16_turret_01_front_entity"
+		weapon_type_energy = "uncf_01_titan16_turret_01_front_entity"
+		weapon_type_explosive = "uncf_01_titan16_turret_front_01_entity"
+	}
+}
+
+uncf_01_titan16_turret_01_back_slot = {
+	size = extra_large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan16_turret_01_back_entity"
+		weapon_type_energy = "uncf_01_titan16_turret_01_back_entity"
+		weapon_type_explosive = "uncf_01_titan16_turret_01_back_entity"
+	}
+}
+
+uncf_01_titan16_turret_02_front_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan16_turret_02_front_entity"
+		weapon_type_energy = "uncf_01_titan16_turret_02_front_entity"
+		weapon_type_explosive = "uncf_01_titan16_turret_02_front_01_entity"
+	}
+}
+
+uncf_01_titan16_turret_02_back_slot = {
+	size = large
+	component = weapon
+	entities = {
+		weapon_type_kinetic = "uncf_01_titan16_turret_02_back_entity"
+		weapon_type_energy = "uncf_01_titan16_turret_02_back_entity"
+		weapon_type_explosive = "uncf_01_titan16_turret_02_back_entity"
+	}
+}
+

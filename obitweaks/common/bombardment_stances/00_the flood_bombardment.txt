@@ -1,0 +1,68 @@
+#example = {
+#	icons: Needs "GFX_planet_modifier_ground_support_NAME" and "GFX_fleet_order_button_ground_support_NAME" (hardcoded, no need to define here)
+#
+#	# root = fleet
+#	trigger = {
+#		always = yes
+#	}
+#
+#	default = yes	# Is this the default stance that new fleets will use?
+#
+#	stop_when_armies_dead = yes	# Will this stance continue to bombard planets where all defensive armies are dead? default = no
+#	abduct_pops = no	# Will this stance attempt to abduct pops to your own planets instead of killing them? default = no
+#
+#	planet_damage = 0.5		# General scale of damage to planet, default = 1.0
+#	army_damage = 1.0		# General scale of damage to armies, default = 1.0
+#
+#	kill_pop_chance = {		# Chance that a pop is killed when planetary damage reaches 100%, default = 0
+#		base = 0.25
+#	}
+#	min_pops_to_kill_pop = 8	# Will not kill/abduct pops if pops <= this number already, default = 0. Doesn't work for nations that doesn't have diplomatic wars!
+#
+#	# root = fleet
+#	# from = planet
+#	ai_weight = {
+#		weight = 1
+#	}
+#}
+
+#FLOOD POD DISPERSAL INFECTION
+
+flood_infection = {
+	trigger = {
+		owner = {
+			has_technology = tech_flood_bombardment
+			OR = {
+				has_origin = origin_the_flood
+				has_civic = civic_flood_hivemind
+			}
+		}
+	}
+
+	default = yes
+
+	stop_when_armies_dead = no
+	abduct_pops = no
+
+	planet_damage = 5.0
+	army_damage = 5.0
+
+	kill_pop_chance = { # Should only target organic pops
+		base = 5.0
+		modifier = {
+			factor = 0
+			OR = {
+				pop_has_trait = trait_machine_unit
+				pop_has_trait = trait_mechanical
+				pop_has_trait = trait_ascension_4
+			}
+		}
+	}
+	min_pops_to_kill_pop = 11
+
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 100000
+	}
+}

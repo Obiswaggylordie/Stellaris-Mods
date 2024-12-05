@@ -1,0 +1,51 @@
+
+#####################################################
+### Dimensional Time Fault Factory Connector
+#####################################################
+
+obi_omega_lock_starbase = {
+	icon = "GFX_dtf_connect"
+	construction_days = 90
+
+
+	potential = {
+		exists = owner
+		solar_system = { any_system_planet = { has_deposit = d_active_omega_lock }}
+		solar_system = { any_system_planet = { has_deposit = d_space_bridge }}
+	}
+
+	destroy_trigger = {
+		NOR = {
+			solar_system = { any_system_planet = { has_deposit = d_active_omega_lock }}
+			solar_system = { any_system_planet = { has_deposit = d_space_bridge }}
+		}
+	}
+
+	station_modifier = {
+		starbase_shipyard_build_speed_mult = 1.0
+		starbase_module_build_time_mult = -1.0
+		starbase_module_build_speed_mult = 1.0
+		starbase_shipyard_build_time_mult = -1.0
+		starbase_building_build_speed_mult = 1.0
+		starbase_building_build_time_mult = -1.0
+		starbase_upgrade_speed_mult = 1.0
+		starbase_upgrade_time_mult = -1.0
+		starbase_defensive_war_ship_build_speed_mult = 1.0
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 5000
+		}
+
+		upkeep = {
+			energy = 50
+			alloys = 20
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

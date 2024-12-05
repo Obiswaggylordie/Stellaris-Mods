@@ -1,0 +1,73 @@
+##########################################################################
+# Decisions
+##########################################################################
+
+### Summon Guardian Custodes
+#decision_summon_guardian_custodes = {
+#	owned_planets_only = yes
+#	sound = event_red_alert
+#	icon = decision_summon_guardian_custodes
+#
+#	resources = {
+#		category = decisions
+#		cost = {
+#			energy = 10000
+#			minerals = 10000
+#			alloys = 10000
+#		}
+#	}
+#	
+#	potential = {
+#		is_capital = yes
+#		owner = {
+#			OR = {
+#				has_origin = origin_created_genesis
+#				has_relic = r_forerunner_domain
+#			}
+#		}
+#	}
+#	
+#	allow = {
+#	}
+#	
+#	effect = {
+#		custom_tooltip = decision_summon_guardian_custodes_effects
+#		owner = {
+#			create_fleet = {
+#				name = "Guardian Custodes Detachment"		
+#				effect = {
+#					set_owner = PREV
+#					while = {
+#						count = 1
+#						create_ship = {
+#							name = "Guardian Custode"
+#							design = "NAME_Guardian_Custode"
+#							graphical_culture = forerunner_01
+#							prefix = no
+#							upgradable = yes
+#						}
+#					}
+#					set_location = prev.capital_star
+#					save_event_target_as = guardian_custode_detachment
+#				}
+#			}
+#		}
+#		hidden_effect = {
+#			planet_event = { id = promethean_start.5 }
+#		}
+#	}
+#	
+#	ai_weight = {
+#		weight = 50
+#		
+#		modifier = {
+#			factor = 0
+#			owner = {
+#				OR = {
+#					balance < 20000
+#					income < 300
+#				}
+#			}
+#		}
+#	}
+#}

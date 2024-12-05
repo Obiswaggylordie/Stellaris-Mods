@@ -1,0 +1,387 @@
+
+############################################
+### WCE_ULTRA_GIANT_MISSILE
+############################################
+
+weapon_component_template = {
+	key = "WCE_ULTRA_GIANT_MISSILE_3"
+	size = extra_large
+	
+	icon = "GFX_wce_ship_part_largest_missile_3"
+	icon_frame = 1
+	type = missile
+	
+	prerequisites = { "tech_wce_weapons_6" }
+	component_set = "WCE_ULTRA_GIANT_MISSILE_3_CS"
+	projectile_gfx = "wce_ultra_giant_missile"
+	tags = { weapon_type_sby_specialweapon weapon_type_explosive x_slot }
+	ai_tags = { weapon_role_anti_shield weapon_role_artillery explosive }
+	ai_tag_weight = 0
+	upgrades_to = "WCE_ULTRA_GIANT_MISSILE_4"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_wce_t3_cost
+		}		
+		upkeep = {
+			energy = @xl_wce_t3_uk_energy
+			alloys = @xl_wce_t3_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_6_l
+	damage = { min = 900.00 max = 1800.00 }
+
+	shield_penetration = 0.50
+	shield_damage = 1.50
+	#armor_penetration = 1.00
+	armor_damage = 0.50
+	hull_damage = 1.50
+	
+	windup = { min = 50.0 max = 50.0 }
+	total_fire_time = 100
+	range = @wce_weapon_range_250
+	accuracy = 1
+	tracking = 0.15
+	
+	missile_speed = 13
+	missile_evasion = 0.35
+	missile_health = 400
+	missile_retarget_range = 100
+
+	size_damage_factor = 1.0
+	
+	firing_arc = 25.0
+
+	ai_weight = {
+		weight = @wce_ai_weight_6
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_gatlantis }
+		}
+		modifier = {
+			factor = 2.0
+			from = { 
+				OR = {
+					is_ship_size = battleship_gostok
+					is_ship_size = battleship_goland
+				}
+			}
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "WCE_ULTRA_GIANT_MISSILE_4"
+	size = extra_large
+	
+	icon = "GFX_wce_ship_part_largest_missile_4"
+	icon_frame = 1
+	type = missile
+	
+	prerequisites = { "tech_wce_weapons_7" }
+	component_set = "WCE_ULTRA_GIANT_MISSILE_4_CS"
+	projectile_gfx = "wce_ultra_giant_missile"
+	tags = { weapon_type_sby_specialweapon weapon_type_explosive x_slot }
+	ai_tags = { weapon_role_anti_shield weapon_role_artillery explosive }
+	ai_tag_weight = 0
+	upgrades_to = "WCE_ULTRA_GIANT_MISSILE_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_wce_t4_cost
+		}		
+		upkeep = {
+			energy = @xl_wce_t4_uk_energy
+			alloys = @xl_wce_t4_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_8_l
+	damage = { min = 1300.00 max = 2600.00 }
+
+	shield_penetration = 0.50
+	shield_damage = 1.50
+	#armor_penetration = 1.00
+	armor_damage = 0.50
+	hull_damage = 1.50
+	
+	windup = { min = 50.0 max = 50.0 }
+	total_fire_time = 100
+	range = @wce_weapon_range_250
+	accuracy = 1
+	tracking = 0.15
+	
+	missile_speed = 15
+	missile_evasion = 0.4
+	missile_health = 500
+	missile_retarget_range = 100
+
+	size_damage_factor = 1.0
+	
+	firing_arc = 25.0
+
+	ai_weight = {
+		weight = @wce_ai_weight_7
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_gatlantis }
+		}
+		modifier = {
+			factor = 2.0
+			from = { 
+				OR = {
+					is_ship_size = battleship_gostok
+					is_ship_size = battleship_goland
+				}
+			}
+		}
+	}
+}
+
+
+
+
+############################################
+### WCE_ANNIHILATION_MISSILE
+############################################
+
+weapon_component_template = {
+	key = "WCE_ANNIHILATION_MISSILE_2"
+	#size = extra_large
+	size = titanic
+	
+	icon = "GFX_wce_ship_part_largest_missile_2"
+	icon_frame = 1
+	type = missile
+	
+	prerequisites = { "tech_wce_weapons_7" }
+	component_set = "WCE_ANNIHILATION_MISSILE_2_CS"
+	projectile_gfx = "wce_annihilation_missile"
+	tags = { weapon_type_sby_specialweapon weapon_type_explosive t_slot }
+	ai_tags = { weapon_role_anti_armor weapon_role_artillery explosive }
+	ai_tag_weight = 0
+	upgrades_to = "WCE_ANNIHILATION_MISSILE_3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @t_wce_t3_cost
+		}		
+		upkeep = {
+			energy = @t_wce_t3_uk_energy
+			alloys = @t_wce_t3_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_5_xl
+	damage = { min = 8000.00 max = 10000.00 }
+
+	#shield_penetration = 0.50
+	shield_damage = 0.50
+	armor_penetration = 0.80
+	armor_damage = 1.50
+	hull_damage = 2.50
+	
+	windup = { min = 100.0 max = 100.0 }
+	total_fire_time = 180
+	range = @wce_weapon_range_300
+	accuracy = 1
+	tracking = 0.15
+	
+	missile_speed = 12
+	missile_evasion = 0.30
+	missile_health = 1200
+	missile_retarget_range = 100
+
+	size_damage_factor = 0.50
+	
+	firing_arc = 25.0
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 30000
+			from = { 
+				OR = {
+					is_ship_size = battleship_gostok
+					is_ship_size = battleship_goland
+				}
+			}
+		}
+	}
+}
+
+
+
+############################################
+### WCE_SUPER_CANNON
+############################################
+
+weapon_component_template = {
+	key = "WCE_SUPER_CANNON_3"
+	size = extra_large
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_wce_ship_part_xl_cannon_3"
+	icon_frame = 1
+	prerequisites = { "tech_wce_weapons_7" }
+	component_set = "WCE_SUPER_CANNON_3_CS"
+	projectile_gfx = "wce_green_laser_cannon_ex"
+	tags = { weapon_type_energy x_slot }
+	upgrades_to = "WCE_SUPER_CANNON_4"
+	ai_tags = { weapon_role_artillery }
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_wce_t7_cost
+		}		
+		upkeep = {
+			energy = @l_wce_t7_uk_energy
+			alloys = @l_wce_t7_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_4_xl
+	damage = { min = 720.00 max = 1600.00 }
+	#shield_damage = 0.75
+	armor_damage = 1.25
+	hull_damage = 1.75
+	windup = { min = 22.0 max = 30.0 }
+	total_fire_time = 10.0
+	range = @wce_weapon_range_150
+	accuracy = 0.70
+	tracking = 0.10
+	
+	ai_weight = {
+		weight = @wce_ai_weight_8
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_gatlantis }
+		}
+	}
+
+	
+}
+
+
+
+
+
+############################################
+###EXPANDED WAVE MOTION GUN
+############################################
+
+weapon_component_template = {
+	key = "WCE_FLAME_STRIKE_GUN_3_T"
+	size = titanic
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_wce_ship_part_superweapon_3"
+	icon_frame = 1
+	prerequisites = { "tech_wce_flame_strike_gun_3" }
+	component_set = "WCE_FLAME_STRIKE_GUN_3_T_CS"
+	projectile_gfx = "wce_expanded_flame_strike_gun"
+	tags = { weapon_type_sby_superweapon weapon_type_energy t_slot }
+	ai_tags = { weapon_role_artillery }
+	upgrades_to = "WCE_FLAME_STRIKE_GUN_4_T"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @t_wce_t4_cost
+		}		
+		upkeep = {
+			energy = @t_wce_t4_uk_energy
+			alloys = @t_wce_t4_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_3_t
+	#damage = { min = 34000.00 max = 68000.00 }
+	damage = { min = 17000.00 max = 34000.00 }
+	shield_penetration = 0.25
+	armor_damage = 2.50
+	armor_penetration = 0.50
+	hull_damage = 3.00
+
+	#windup = { min = 360.0 max = 360.0 }
+	#total_fire_time = 720
+	windup = { min = 180.0 max = 180.0 }
+	total_fire_time = 360
+	range = @wce_weapon_range_300
+	accuracy = 0.90
+	tracking = 0.10
+	
+	ai_weight = {
+		weight = @wce_ai_weight_8
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_gatlantis }
+		}
+	}
+
+	
+}
+
+
+############################################
+###SUPER NOVA WAVE MOTION GUN
+############################################
+
+weapon_component_template = {
+	key = "WCE_FLAME_STRIKE_GUN_2_FS"
+	size = titanic
+	#entity = "large_laser_gun_entity"
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_wce_ship_part_superweapon_2"
+	icon_frame = 1
+	prerequisites = { "tech_wce_flame_strike_gun_3" }
+	component_set = "WCE_FLAME_STRIKE_GUN_2_FS_CS"
+	projectile_gfx = "wce_super_nova_flame_strike_gun"
+	tags = { weapon_type_sby_superweapon weapon_type_energy t_slot }
+	upgrades_to = "WCE_FLAME_STRIKE_GUN_3_FS"
+
+	ai_tags = { weapon_role_artillery }
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @t_wce_t4_cost
+		}		
+		upkeep = {
+			energy = @t_wce_t4_uk_energy
+			alloys = @t_wce_t4_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_2_f
+	#damage = { min = 700000.00 max = 1400000.00 }
+	damage = { min = 350000.00 max = 700000.00 }
+	shield_penetration = 0.50
+	armor_damage = 2.50
+	armor_penetration = 0.50
+	hull_damage = 3.00
+
+	#windup = { min = 400.0 max = 400.0 }
+	#total_fire_time = 720
+	windup = { min = 200.0 max = 200.0 }
+	total_fire_time = 360
+	range = @wce_weapon_range_300
+	accuracy = 0.90
+	tracking = 0.10
+	
+	ai_weight = {
+		factor = 0.0
+		#weight = @wce_ai_weight_8
+		#modifier = {
+		#	factor = 0.0
+		#	NOT = { has_origin = origin_gatlantis }
+		#}
+	}
+
+	
+}

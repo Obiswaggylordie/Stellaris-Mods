@@ -1,0 +1,1078 @@
+namespace = sgu_ascension
+
+# ASCENSION I
+country_event = {
+	id = sgu_ascension.1
+	title = "sgu_ascension.1.name"
+	desc = "sgu_ascension.1.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_mind_over_matter
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOR = {
+			has_country_flag = ascended_1
+			has_country_flag = ascended_2
+			has_country_flag = ascended_3
+			has_country_flag = ascended_4
+		} 
+		last_increased_tech = "tech_ascension_1"
+		OR = {
+			has_trait = trait_psionic
+			has_trait = trait_erudite
+			has_modifier = flood_interstellar_stage
+		}
+	}
+
+	immediate = {
+		set_country_flag = ascended_1
+		modify_species = {
+			species = this
+			#base = none
+			add_trait = trait_ascension_1
+			add_traits_at_start_of_list = yes
+		}
+		change_dominant_species = { species = last_created_species change_all = yes }
+	}
+
+	option = {
+		name = "sgu_ascension.1.a"
+	}
+}
+
+# ASCENSION II
+country_event = {
+	id = sgu_ascension.2
+	title = "sgu_ascension.2.name"
+	desc = "sgu_ascension.2.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_mind_over_matter
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOR = { 
+			has_country_flag = ascended_2
+			has_country_flag = ascended_3
+			has_country_flag = ascended_4
+		} 
+		last_increased_tech = "tech_ascension_2"
+		OR = {
+			has_trait = trait_psionic
+			has_trait = trait_erudite
+			has_modifier = flood_interstellar_stage
+		}
+	}
+
+	immediate = {
+		set_country_flag = ascended_2
+		modify_species = {
+			species = this
+			#base = none
+			remove_trait = trait_ascension_1
+			add_trait = trait_ascension_2
+			add_traits_at_start_of_list = yes
+		}
+		change_dominant_species = { species = last_created_species change_all = yes }
+	}
+
+	option = {
+		name = "EXCELLENT"
+	}
+}
+
+# ASCENSION III
+country_event = {
+	id = sgu_ascension.3
+	title = "sgu_ascension.3.name"
+	desc = "sgu_ascension.3.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_mind_over_matter
+	
+	is_triggered_only = yes
+
+	trigger = { 
+		NOR = { 
+			has_country_flag = ascended_3
+			has_country_flag = ascended_4
+		}
+		last_increased_tech = "tech_ascension_3"
+		OR = {
+			has_trait = trait_psionic
+			has_trait = trait_erudite
+			has_modifier = flood_interstellar_stage
+		}
+	}
+
+	immediate = {
+		set_country_flag = ascended_3
+		modify_species = {
+			species = this
+			#base = none
+			remove_trait = trait_ascension_2
+			add_trait = trait_ascension_3
+			add_traits_at_start_of_list = yes
+		}
+		change_dominant_species = { species = last_created_species change_all = yes }
+	}
+
+	option = {
+		name = "EXCELLENT"
+	}
+}
+
+# ASCENSION IV
+country_event = {
+	id = sgu_ascension.4
+	title = "sgu_ascension.4.name"
+	desc = "sgu_ascension.4.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_the_great_awakening
+	
+	is_triggered_only = yes
+
+	trigger = { 
+		NOT = { has_country_flag = ascended_4 }
+		last_increased_tech = "tech_ascension_4"
+		OR = {
+			has_trait = trait_psionic
+			has_trait = trait_erudite
+			has_modifier = flood_interstellar_stage
+		}
+	}
+
+	immediate = {
+		set_country_flag = ascended_4
+		modify_species = {
+			species = this
+			#base = none
+			remove_trait = trait_ascension_3
+			add_trait = trait_ascension_4
+			add_traits_at_start_of_list = yes
+		}
+		change_dominant_species = { species = last_created_species change_all = yes }
+
+		every_owned_leader = {
+			limit = {
+				OR = {
+					has_trait = leader_trait_psionic
+					has_trait = leader_trait_chosen
+				}
+			}
+			add_trait = leader_trait_ascension_4
+		}
+		
+		every_country = {
+			limit = { 
+				is_ai = no
+				has_communications = root
+				NOT = { is_same_value = root }
+			}
+			country_event = { id = sgu_ascension.6 }
+		}
+	}
+
+	option = {
+		name = "EXCELLENT"
+	}
+}
+
+# New Leaders Get Ascension 4 Trait
+#country_event = {
+#	id = sgu_ascension.41
+#	is_triggered_only = yes
+#	hide_window = yes
+#
+#	trigger = {
+#		from = {
+#			species = { has_trait = trait_ascension_4 }
+#		}
+#	}
+#
+#	immediate = {
+#		from = {
+#			add_trait_no_notify = leader_trait_ascension_4
+#		}
+#	}
+#}
+
+# Notification for other empires #
+country_event = {
+	id = sgu_ascension.6
+	title = "sgu_ascension.6.name"
+	desc = "sgu_ascension.6.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_laboratory_sound
+	location = from.capital_scope
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EXCELLENT"
+	}
+}
+
+# ASCENDED POWERS ##################################################################
+country_event = {
+	id = sgu_ascension.1000
+	title = "sgu_ascension.1000.name"
+	desc = "sgu_ascension.1000.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_mind_over_matter
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	# Path of Enlightenment
+	option = {
+		name = "sgu_ascension.1000.a"
+		country_event = { id = sgu_ascension.1001 }
+	}
+
+	# Others
+	option = {
+		name = "sgu_ascension.1000.b"
+		trigger = {
+			owner = {
+				has_technology = tech_ascension_3
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = others_angry }
+				NOT = { has_global_flag = sangraal_activated }
+			}
+			country_event = { id = sgu_ascension.1002 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = others_angry
+				NOT = { has_global_flag = sangraal_activated }
+			}
+			country_event = { id = sgu_ascension.1003 }
+			break = yes
+		}
+		if = {
+			limit = {
+				has_global_flag = sangraal_activated
+			}
+			country_event = { id = sgu_ascension.1100 }
+			break = yes
+		}
+	}
+
+	# Unleash Powers
+	option = {
+		name = "sgu_ascension.1000.c"
+		trigger = {
+			owner = {
+				has_technology = tech_ascension_4
+			}
+		}
+		country_event = { id = sgu_ascension.1004 }
+	}
+
+	option = {
+		name = "sgu_ascension.1000.d"
+		owner = {
+			remove_country_flag = ascended_powers_on_cd
+		}
+		set_timed_country_flag = {
+			flag = ascended_powers_on_short_cd
+			days = 1
+		}
+	}
+}
+
+# Path of Enlightenment #########################################################################
+country_event = {
+	id = sgu_ascension.1001
+	title = "sgu_ascension.1001.name"
+	desc = "sgu_ascension.1001.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_mind_over_matter
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	# Tech options
+	option = {
+		name = "sgu_ascension.1001.a"
+		country_event = { id = sgu_ascension.1011 }
+	}
+
+	# Grant Bonus
+	option = {
+		name = "sgu_ascension.1001.b"
+		country_event = { id = sgu_ascension.1021 }
+	}
+
+	option = {
+		name = "sgu_ascension.1001.c"
+		country_event = { id = sgu_ascension.1000 }
+	}
+}
+
+# Tech options
+country_event = {
+	id = sgu_ascension.1011
+	title = "sgu_ascension.1011.name"
+	desc = "sgu_ascension.1011.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_mind_over_matter
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	# Tech options
+	option = {
+		name = "sgu_ascension.1011.a"
+		trigger = {
+			owner = {
+				resource_stockpile_compare = { resource = psi_energy value >= 10000 }
+				has_technology = tech_ascension_1
+				NOT = { has_country_flag = used_tech_ascended_state_of_mind }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -100 }
+			set_country_flag = used_tech_ascended_state_of_mind
+		}
+		add_research_option = tech_ascended_state_of_mind
+	}
+
+	option = {
+		name = "sgu_ascension.1011.b"
+		trigger = {
+			owner = {
+				resource_stockpile_compare = { resource = psi_energy value >= 20000 }
+				has_technology = tech_ascension_2
+				NOT = { has_country_flag = used_tech_ascended_psionic_link }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -200 }
+			set_country_flag = used_tech_ascended_psionic_link
+		}
+		add_research_option = tech_ascended_psionic_link
+	}
+
+	option = {
+		name = "sgu_ascension.1011.c"
+		trigger = {
+			owner = {
+				resource_stockpile_compare = { resource = psi_energy value >= 40000 }
+				has_technology = tech_ascension_3
+				NOT = { has_country_flag = used_tech_ascended_gene_editing }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -400 }
+			set_country_flag = used_tech_ascended_gene_editing
+		}
+		add_research_option = tech_ascended_gene_editing
+	}
+
+	option = {
+		name = "sgu_ascension.1011.d"
+		trigger = {
+			owner = {
+				resource_stockpile_compare = { resource = psi_energy value >= 100000 }
+				has_technology = tech_ascension_4
+				NOT = { has_country_flag = used_tech_ascended_understanding }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -100000 }
+			set_country_flag = used_tech_ascended_understanding
+		}
+		add_research_option = tech_ascended_understanding
+	}
+
+	option = {
+		name = "sgu_ascension.1011.e"
+		trigger = {
+			owner = {
+				resource_stockpile_compare = { resource = psi_energy value >= 500000 }
+				has_technology = tech_ascension_4
+				NOT = { has_country_flag = used_tech_ascended_cloud_form }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -1000000 }
+			set_country_flag = used_tech_ascended_cloud_form
+		}
+		add_research_option = tech_ascended_cloud_form
+	}
+
+	option = {
+		name = "sgu_ascension.1011.f"
+		trigger = {
+			owner = {
+				resource_stockpile_compare = { resource = psi_energy value >= 250000 }
+				has_technology = tech_ascension_4
+				NOT = { has_country_flag = used_tech_sangraal }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -2500 }
+			set_country_flag = used_tech_sangraal
+		}
+		add_research_option = tech_sangraal
+	}
+
+	option = {
+		name = "sgu_ascension.1011.g"
+		country_event = { id = sgu_ascension.1001 }
+	}
+}
+
+# Grant Bonus
+country_event = {
+	id = sgu_ascension.1021
+	title = "sgu_ascension.1021.name"
+	desc = "sgu_ascension.1021.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_mind_over_matter
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = "sgu_ascension.1021.a"
+		trigger = {
+			owner = {
+				is_ai = no
+				resource_stockpile_compare = { resource = psi_energy value >= 2000 }
+				NOT = { has_modifier = ascended_diplomacy }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -2000 }
+		}
+		add_modifier = {
+			modifier = ascended_diplomacy
+			days = 3600
+		}
+	}
+
+	option = {
+		name = "sgu_ascension.1021.b"
+		trigger = {
+			owner = {
+				is_ai = no
+				resource_stockpile_compare = { resource = psi_energy value >= 1000 }
+				NOT = { has_modifier = ascended_shared_experience }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -1000 }
+		}
+		add_modifier = {
+			modifier = ascended_shared_experience
+			days = 3600
+		}
+	}
+
+	option = {
+		name = "sgu_ascension.1021.c"
+		trigger = {
+			owner = {
+				resource_stockpile_compare = { resource = psi_energy value >= 600 }
+				NOT = { has_modifier = ascended_stability }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -600 }
+		}
+		add_modifier = {
+			modifier = ascended_stability
+			days = 3600
+		}
+	}
+
+	option = {
+		name = "sgu_ascension.1021.d"
+		country_event = { id = sgu_ascension.1001 }
+	}
+}
+
+# Contact - Others Content ###################################################################
+country_event = {
+	id = sgu_ascension.1002
+	title = "sgu_ascension.1002.name"
+	desc = "sgu_ascension.1002.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_mind_over_matter
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	## Grant Exp to random Leader ##
+	option = {
+		name = "sgu_ascension.1002.a"
+		trigger = {
+			owner = {
+				is_ai = no
+				resource_stockpile_compare = { resource = psi_energy value >= 200 }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -200 }
+			set_timed_country_flag = {
+				flag = ascended_powers_on_cd
+				days = 1 # 6 months
+			}
+		}
+		random_owned_leader = {
+			add_experience = 2000
+		}
+	}
+
+	#option = {
+	#	name = "sgu_ascension.1002.b"
+	#}
+
+	#option = {
+	#	name = "sgu_ascension.1002.c"
+	#}
+
+	#option = {
+	#	name = "sgu_ascension.1002.d"
+	#}
+
+	option = {
+		name = "sgu_ascension.1002.e"
+		country_event = { id = sgu_ascension.1000 }
+	}
+}
+
+# Contact - Others Angry ##########################################################################
+country_event = {
+	id = sgu_ascension.1003
+	title = "sgu_ascension.1003.name"
+	desc = "sgu_ascension.1003.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_mind_over_matter
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	# Set Powers on 10 year cd #
+	option = {
+		name = "sgu_ascension.1003.a"
+		owner = {
+			set_timed_country_flag = {
+				flag = ascended_powers_on_cd
+				days = 3600 # 10 Years
+			}
+			remove_country_flag = others_angry
+		}
+	}
+
+	# Pay Psi #
+	option = {
+		name = "sgu_ascension.1003.b"
+		trigger = {
+			owner = {
+				resource_stockpile_compare = { resource = psi_energy value >= 5000 }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -5000 }
+			remove_country_flag = others_angry
+		}
+	}
+
+	#option = {
+	#	name = "sgu_ascension.1003.c"
+	#}
+
+	#option = {
+	#	name = "sgu_ascension.1003.d"
+	#}
+
+	option = {
+		name = "sgu_ascension.1003.e"
+		country_event = { id = sgu_ascension.1000 }
+	}
+}
+
+# Contact - Others Angry AFTER POWER ##########################################################################
+country_event = {
+	id = sgu_ascension.10030
+	title = "sgu_ascension.10030.name"
+	desc = "sgu_ascension.10030.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_mind_over_matter
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	# Set Powers on 10 year cd #
+	option = {
+		name = "sgu_ascension.10030.a"
+		owner = {
+			set_timed_country_flag = {
+				flag = ascended_powers_on_cd
+				days = 3600 # 10 Years
+			}
+			remove_country_flag = others_angry
+		}
+	}
+
+	# Pay Psi #
+	option = {
+		name = "sgu_ascension.10030.b"
+		trigger = {
+			owner = {
+				resource_stockpile_compare = { resource = psi_energy value >= 5000 }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -5000 }
+			remove_country_flag = others_angry
+		}
+	}
+
+	#option = {
+	#	name = "sgu_ascension.10030.c"
+	#}
+
+	#option = {
+	#	name = "sgu_ascension.10030.d"
+	#}
+
+	option = {
+		name = "sgu_ascension.10030.e"
+	}
+}
+
+# Others after Sangraal #
+country_event = {
+	id = sgu_ascension.1100
+	title = "sgu_ascension.1100.name"
+	desc = "sgu_ascension.1100.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_mind_over_matter
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = "OK"
+		country_event = { id = sgu_ascension.1000 }
+	}
+}
+
+# Unleash Powers #################################################################################
+country_event = {
+	id = sgu_ascension.1004
+	title = "sgu_ascension.1004.name"
+	desc = "sgu_ascension.1004.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_mind_over_matter
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	# Add Instant-Terraform Decision #
+	option = {
+		name = "sgu_ascension.1004.a"
+		trigger = {
+			owner = { NOT = { has_country_flag = ascension_gaia_creation_available }}
+		}
+		owner = {
+			set_country_flag = ascension_gaia_creation_available
+			set_country_flag = others_angry
+		}
+		if = {
+			limit = { NOT = { has_global_flag = sangraal_activated }}
+			country_event = { id = sgu_ascension.10030 }
+		}
+	}
+
+	# Opens Leviathan Menu #
+	option = {
+		name = "sgu_ascension.1004.b"
+		trigger = {
+			owner = { NOT = { has_country_flag = ascension_spawn_leviathan_on_cd }}
+		}
+		country_event = { id = sgu_ascension.1014 }
+	}
+
+	# Creates lvl 10 Leader #
+	option = {
+		name = "sgu_ascension.1004.c"
+		trigger = {
+			owner = {
+				is_ai = no
+				resource_stockpile_compare = { resource = psi_energy value >= 1000 }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -1000 }
+			set_country_flag = others_angry
+		}
+		random_owned_leader = {
+			limit = {
+				has_level < 10
+			}
+			set_skill = 10
+		}
+		if = {
+			limit = { NOT = { has_global_flag = sangraal_activated }}
+			country_event = { id = sgu_ascension.10030 }
+		}
+	}
+
+	# Activate Sangraal #
+	option = {
+		name = "sgu_ascension.1004.d"
+		trigger = {
+			owner = {
+				is_ai = no
+				resource_stockpile_compare = { resource = psi_energy value >= 50000 }
+				has_technology = tech_sangraal
+			}
+			NOT = { has_global_flag = sangraal_activated }
+		}
+		owner = {
+			add_resource = { psi_energy = -50000 }
+			
+		}
+		set_global_flag = sangraal_activated
+	}
+
+	# Restore population #
+	option = {
+		name = "sgu_ascension.1004.e"
+		trigger = {
+			owner = {
+				has_country_flag = population_deascended
+				has_technology = tech_ascension_4
+				resource_stockpile_compare = { resource = psi_energy value >= 10000 }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -10000 }
+			remove_country_flag = population_deascended
+		}
+		modify_species = {
+			species = this
+			#base = none
+			add_trait = trait_ascension_4
+			add_traits_at_start_of_list = yes
+		}
+		change_dominant_species = { species = last_created_species change_all = yes }	
+	}
+
+	option = {
+		name = "sgu_ascension.1004.f"
+		country_event = { id = sgu_ascension.1000 }
+	}
+}
+
+# SPAWN LEVIATHANS
+country_event = {
+	id = sgu_ascension.1014
+	title = "sgu_ascension.1014.name"
+	desc = "sgu_ascension.1014.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_mind_over_matter
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+### Ether Drake Blue ###
+	option = {
+		name = "sgu_ascension.1014.a"
+		trigger = {
+			owner = {
+				is_ai = no
+				resource_stockpile_compare = { resource = psi_energy value >= 20000 }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -20000 }
+			set_timed_country_flag = { flag = ascension_spawn_leviathan_on_cd days = 3600 }
+			set_country_flag = others_angry
+			create_fleet = {
+				name = "Summoned Fleet"		
+				effect = {
+					set_owner = PREV
+					create_ship = {
+						name = "Ether Drake Blue"
+						design = "Blue Dragon Pet"
+						#graphical_culture = "asuran_01"
+						prefix = no
+						upgradable = no
+					}
+					add_modifier = {
+						modifier = "summoned_leviathan_buff_1"
+						days = -1
+					}
+					set_location = prev.capital_star
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { has_global_flag = sangraal_activated }}
+			country_event = { id = sgu_ascension.10030 }
+		}
+	}
+
+### Ether Drake Red ###
+	option = {
+		name = "sgu_ascension.1014.b"
+		trigger = {
+			owner = {
+				resource_stockpile_compare = { resource = psi_energy value >= 20000 }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -20000 }
+			set_timed_country_flag = { flag = ascension_spawn_leviathan_on_cd days = 3600 }
+			set_country_flag = others_angry
+			create_fleet = {
+				name = "Summoned Fleet"		
+				effect = {
+					set_owner = PREV
+					create_ship = {
+						name = "Ether Drake Red"
+						design = "Red Dragon Pet"
+						#graphical_culture = "asuran_01"
+						prefix = no
+						upgradable = no
+					}
+					add_modifier = {
+						modifier = "summoned_leviathan_buff_1"
+						days = -1
+					}
+					set_location = prev.capital_star
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { has_global_flag = sangraal_activated }}
+			country_event = { id = sgu_ascension.10030 }
+		}
+	}
+
+### Stellarite Pet ###
+	option = {
+		name = "sgu_ascension.1014.c"
+		trigger = {
+			owner = {
+				is_ai = no
+				resource_stockpile_compare = { resource = psi_energy value >= 20000 }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -20000 }
+			set_timed_country_flag = { flag = ascension_spawn_leviathan_on_cd days = 3600 }
+			set_country_flag = others_angry
+			create_fleet = {
+				name = "Summoned Fleet"		
+				effect = {
+					set_owner = PREV
+					create_ship = {
+						name = "Stellarite Pet"
+						design = "Stellarite Pet"
+						#graphical_culture = "asuran_01"
+						prefix = no
+						upgradable = no
+					}
+					add_modifier = {
+						modifier = "summoned_leviathan_buff_2"
+						days = -1
+					}
+					set_location = prev.capital_star
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { has_global_flag = sangraal_activated }}
+			country_event = { id = sgu_ascension.10030 }
+		}
+	}
+
+### Blue Wraith Pet ###
+	option = {
+		name = "sgu_ascension.1014.d"
+		trigger = {
+			owner = {
+				is_ai = no
+				resource_stockpile_compare = { resource = psi_energy value >= 6000 }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -6000 }
+			set_timed_country_flag = { flag = ascension_spawn_leviathan_on_cd days = 1800 }
+			set_country_flag = others_angry
+			create_fleet = {
+				name = "Summoned Fleet"		
+				effect = {
+					set_owner = PREV
+					create_ship = {
+						name = "Blue Wraith Pet"
+						design = "Blue Wraith Pet"
+						#graphical_culture = "asuran_01"
+						prefix = no
+						upgradable = no
+					}
+					add_modifier = {
+						modifier = "summoned_leviathan_buff_2"
+						days = -1
+					}
+					set_location = prev.capital_star
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { has_global_flag = sangraal_activated }}
+			country_event = { id = sgu_ascension.10030 }
+		}
+	}
+
+### Red Wraith Pet ###
+	option = {
+		name = "sgu_ascension.1014.e"
+		trigger = {
+			owner = {
+				is_ai = no
+				resource_stockpile_compare = { resource = psi_energy value >= 6000 }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -6000 }
+			set_timed_country_flag = { flag = ascension_spawn_leviathan_on_cd days = 1800 }
+			set_country_flag = others_angry
+			create_fleet = {
+				name = "Summoned Fleet"		
+				effect = {
+					set_owner = PREV
+					create_ship = {
+						name = "Red Wraith Pet"
+						design = "Red Wraith Pet"
+						#graphical_culture = "asuran_01"
+						prefix = no
+						upgradable = no
+					}
+					add_modifier = {
+						modifier = "summoned_leviathan_buff_2"
+						days = -1
+					}
+					set_location = prev.capital_star
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { has_global_flag = sangraal_activated }}
+			country_event = { id = sgu_ascension.10030 }
+		}
+	}
+
+### Yellow Wraith Pet ###
+	option = {
+		name = "sgu_ascension.1014.f"
+		trigger = {
+			owner = {
+				is_ai = no
+				resource_stockpile_compare = { resource = psi_energy value >= 6000 }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -6000 }
+			set_timed_country_flag = { flag = ascension_spawn_leviathan_on_cd days = 1800 }
+			set_country_flag = others_angry
+			create_fleet = {
+				name = "Summoned Fleet"		
+				effect = {
+					set_owner = PREV
+					create_ship = {
+						name = "Yellow Wraith Pet"
+						design = "Yellow Wraith Pet"
+						#graphical_culture = "asuran_01"
+						prefix = no
+						upgradable = no
+					}
+					add_modifier = {
+						modifier = "summoned_leviathan_buff_2"
+						days = -1
+					}
+					set_location = prev.capital_star
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { has_global_flag = sangraal_activated }}
+			country_event = { id = sgu_ascension.10030 }
+		}
+	}
+
+### Baby Drake Pet ###
+	option = {
+		name = "sgu_ascension.1014.g"
+		trigger = {
+			owner = {
+				is_ai = no
+				resource_stockpile_compare = { resource = psi_energy value >= 2000 }
+			}
+		}
+		owner = {
+			add_resource = { psi_energy = -2000 }
+			set_timed_country_flag = { flag = ascension_spawn_leviathan_on_cd days = 900 }
+			set_country_flag = others_angry
+			create_fleet = {
+				name = "Summoned Fleet"		
+				effect = {
+					set_owner = PREV
+					create_ship = {
+						name = "Baby Drake Pet"
+						design = "Baby Drake Pet"
+						#graphical_culture = "asuran_01"
+						prefix = no
+						upgradable = no
+					}
+					add_modifier = {
+						modifier = "summoned_leviathan_buff_3"
+						days = -1
+					}
+					set_location = prev.capital_star
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { has_global_flag = sangraal_activated }}
+			country_event = { id = sgu_ascension.10030 }
+		}
+	}
+
+	option = {
+		name = "sgu_ascension.1014.h"
+		country_event = { id = sgu_ascension.1004 }
+	}
+}

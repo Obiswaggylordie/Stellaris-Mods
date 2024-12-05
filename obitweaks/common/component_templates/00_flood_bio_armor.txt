@@ -1,0 +1,105 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
+
+#############
+# UTILITIES #
+#############
+
+###############
+#### Armor ####
+###############
+
+
+#FLOOD BIO ARMOR (SHIP ARMOR)
+
+utility_component_template = {
+	key = "SMALL_FLOOD_BIO_ARMOR"
+	size = small
+	icon = "GFX_flood_bio_armor"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 44
+		}	
+		upkeep = {
+			energy = @s_t6_upkeep_alloys
+		}
+	}
+	
+	modifier = {
+		ship_hull_regen_add_perc = 0.01
+		ship_armor_regen_add_perc = 0.06
+		ship_hull_add = 2000
+		ship_armor_add = 2000
+		ship_armor_hardening_add = 1
+		ship_disengage_chance_mult = -100
+	}
+
+	prerequisites = { "tech_flood_bio_armor" }
+	component_set = "FLOOD_BIO_ARMOR"
+
+	ai_weight = 100000
+}
+
+utility_component_template = {
+	key = "MEDIUM_FLOOD_BIO_ARMOR"
+	size = medium
+	icon = "GFX_flood_bio_armor"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 88
+		}	
+		upkeep = {
+			energy = @m_t6_upkeep_alloys
+		}
+	}
+	
+	modifier = {
+		ship_hull_regen_add_perc = 0.01
+		ship_armor_regen_add_perc = 0.06
+		ship_hull_add = 20000
+		ship_armor_add = 20000
+		ship_armor_hardening_add = 1
+		ship_disengage_chance_mult = -100
+	}
+	
+	prerequisites = { "tech_flood_bio_armor" }
+	component_set = "FLOOD_BIO_ARMOR"
+
+	ai_weight = 100000
+}
+
+utility_component_template = {
+	key = "LARGE_FLOOD_BIO_ARMOR"
+	size = large
+	icon = "GFX_flood_bio_armor"
+	icon_frame = 1
+	power = 0
+		resources = {
+		category = ship_components
+		cost = {
+			alloys = 176
+		}	
+		upkeep = {
+			energy = @l_t6_upkeep_alloys
+		}
+	}
+	
+	modifier = {
+		ship_hull_regen_add_perc = 0.01
+		ship_armor_regen_add_perc = 0.06
+		ship_hull_add = 200000
+		ship_armor_add = 200000
+		ship_armor_hardening_add = 1
+		ship_disengage_chance_mult = -100
+	}
+	
+	prerequisites = { "tech_flood_bio_armor" }
+	component_set = "FLOOD_BIO_ARMOR"
+
+	ai_weight = 100000
+}

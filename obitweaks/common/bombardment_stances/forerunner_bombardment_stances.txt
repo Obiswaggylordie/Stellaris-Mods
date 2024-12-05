@@ -1,0 +1,79 @@
+#example = {
+#	# root = fleet
+#	trigger = {		
+#		always = yes
+#	}
+#	
+#	icon_frame = 1	# This is the frame for the shared icon file, will also need a GFX_fleet_order_button_ground_support_NAME entry
+#	default = yes	# Is this the default stance that new fleets will use?
+#	
+#	stop_when_armies_dead = yes	# Will this stance continue to bombard planets where all defensive armies are dead? default = no
+#	abduct_pops = no	# Will this stance attempt to abduct pops to your own planets instead of killing them? default = no
+#
+#	planet_damage = 0.5		# General scale of damage to planet, default = 1.0
+#	army_damage = 1.0		# General scale of damage to armies, default = 1.0
+#	
+#	kill_pop_chance = {		# Chance that a pop is killed when planetary damage reaches 100%, default = 0
+#		base = 0.25
+#	}					
+#	min_pops_to_kill_pop = 8	# Will not kill/abduct pops if pops <= this number already, default = 0
+#	
+#	# root = fleet
+#	# from = planet
+#	ai_weight = {
+#		weight = 1
+#	}
+#}
+
+#From Forerunner Start Technology - Unlocked by Tech
+forerunner_ion_bombardment = {
+	trigger = {
+		any_owned_ship = {
+			OR = {
+				is_ship_size = guardian_custode
+				is_ship_size = obi_city
+			}
+		}
+		owner = {
+			OR = {
+				has_policy_flag = orbital_bombardment_indiscriminate
+				has_policy_flag = orbital_bombardment_armageddon
+			}
+			has_technology = tech_forerunner_ion_bombardment 
+		}
+	}
+	default = no
+	
+	stop_when_armies_dead = no
+	abduct_pops = no
+
+	planet_damage = 10.0
+	army_damage = 10.0
+	
+	kill_pop_chance = { # All pops will die, turning the planet into a broken world.
+		base = 10.0
+	}
+	min_pops_to_kill_pop = 0
+	
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 8
+		modifier = {
+			factor = 0.01
+			exists = from
+			from = { 
+				owner = { NOT = { is_hostile = root.owner } }
+				NAND = {
+					controller = {
+						OR = {
+							is_crisis_faction = yes
+							is_homicidal = yes 
+						}
+					}
+					planet_garrison_strength > 0
+				}
+			}
+		}
+	}
+}

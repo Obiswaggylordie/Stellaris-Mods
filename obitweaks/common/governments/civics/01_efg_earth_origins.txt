@@ -1,0 +1,34 @@
+
+
+
+
+origin_earth_2200 = {
+
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/efg_origin_earth_icon.dds"
+	picture = GFX_efg_origin_earth_portrait
+
+	starting_colony = pc_cybertronian_world
+	#starting_colony = pc_earth_2200				# スタート時の首都惑星のタイプ
+	#starting_colony = pc_continental
+	habitability_preference = pc_cybertronian_world
+	#preferred_planet_class_neighbor = no
+
+	initializers = { efg_sol_system_initializer }
+
+	playable = {
+		host_has_dlc = "Utopia"
+	}
+
+	possible = {
+		is_ai = no
+	}
+
+	description = "origin_tooltip_efg_2200"
+
+	Advanced_start = no
+
+	ai_weight = {
+		weight = 0
+	}
+}

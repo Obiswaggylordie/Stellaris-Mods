@@ -1,0 +1,28 @@
+﻿l_english:
+
+DTF_THRUSTER_SMALLSHIP_1:0 "Ion Thruster"
+DTF_THRUSTER_MEDIUMSHIP_1:0 "Ion Thruster"
+DTF_THRUSTER_LARGESHIP_1:0 "Ion Thruster"
+
+DTF_THRUSTER_SMALLSHIP_2:0 "Advanced Ion Thruster"
+DTF_THRUSTER_MEDIUMSHIP_2:0 "Advanced Ion Thruster"
+DTF_THRUSTER_LARGESHIP_2:0 "Advanced Ion Thruster"
+
+DTF_THRUSTER_SMALLSHIP_3:0 "Impulse Thruster"
+DTF_THRUSTER_MEDIUMSHIP_3:0 "Impulse Thruster"
+DTF_THRUSTER_LARGESHIP_3:0 "Impulse Thruster"
+
+DTF_THRUSTER_SMALLSHIP_4:0 "Advanced Impulse Thruster"
+DTF_THRUSTER_MEDIUMSHIP_4:0 "Advanced Impulse Thruster"
+DTF_THRUSTER_LARGESHIP_4:0 "Advanced Impulse Thruster"
+
+DTF_THRUSTER_SMALLSHIP_5:0 "Wave Motion Thruster"
+DTF_THRUSTER_MEDIUMSHIP_5:0 "Wave Motion Thruster"
+DTF_THRUSTER_LARGESHIP_5:0 "Wave Motion Thruster"
+
+
+
+JUGGERNAUT_DTFF_SHIP_THRUSTER_1:0 "Ion Thruster"
+JUGGERNAUT_DTFF_SHIP_THRUSTER_2:0 "Impulse Thruster"
+JUGGERNAUT_DTFF_SHIP_THRUSTER_3:0 "Advanced Impulse Thruster"
+JUGGERNAUT_DTFF_SHIP_THRUSTER_4:0 "Wave Motion Thruster"

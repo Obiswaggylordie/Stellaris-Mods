@@ -1,0 +1,820 @@
+namespace = omega_lock
+
+# Omega Lock Main events
+country_event = {
+	id = omega_lock.1
+	title = "omega_lock.1.name"
+	desc = "omega_lock.1.desc"
+	picture = GFX_evt_omega_lock
+	show_sound = event_yellow_alert
+
+	hide_window = no
+	is_triggered_only = yes
+
+	
+	option = { # Construct Capital Buildings
+		name = "omega_lock.1.a"
+
+		allow = {
+			event_target:omegalock_planet = {
+				is_capital = yes
+				NOR = {
+					has_deposit = d_iacon_city
+					has_deposit = d_dead_iacon_city
+				}
+			}
+		}
+
+		hidden_effect = {
+			event_target:omegalock_planet = {
+				add_deposit = d_iacon_city
+				add_deposit = d_crystal_city
+				add_deposit = d_kaon_city
+				add_deposit = d_sanctuary_fortress
+
+				if = {
+					limit = {
+						event_target:omegalock_planet = {
+							is_planet_class = pc_cybertronian_world
+						}
+					}
+					add_deposit = d_inactive_trypticon
+				}
+			}
+		}
+	}
+
+	option = { # Expand Cybertronian World
+		name = "omega_lock.1.b"
+
+		hidden_effect = {
+			event_target:omegalock_planet = {
+				custom_tooltip = decision_expand_cybertronian_world_tooltip
+				if = {
+					limit = {
+						is_planet_class = pc_corrupted_cybertronian_world
+					}
+					add_deposit = d_dark_energon_city
+				}
+				else = {
+					add_deposit = d_cybertronian_city
+				}
+			}
+		}
+	}
+
+	option = { # Restore Cybertronian World
+		name = "omega_lock.1.c"
+
+		allow = {
+			AND = {
+				event_target:omegalock_planet = {
+					OR = {
+						is_planet_class = pc_corrupted_cybertronian_world
+						is_planet_class = pc_damaged_cybertron
+						is_planet_class = pc_dead_cybertron
+						is_planet_class = pc_depleted_cybertron
+					}
+				}
+				has_country_resource = {
+					type = energon
+					amount >= 5000
+				}
+			}
+		}
+
+		hidden_effect = {
+			event_target:omegalock_planet = {
+				remove_modifier = cybertron_corrupted
+				remove_modifier = dark_energon_corruption
+				clear_blockers = yes
+				clear_deposits = yes
+				change_pc = pc_cybertronian_world
+				add_deposit = d_damaged_well_of_all_sparks_duplicate
+				add_deposit = d_cybertronian_world_core
+				add_deposit = d_cybertronian_city
+				add_deposit = d_cybertronian_city
+				add_deposit = d_space_bridge
+				add_deposit = d_energon_bridge
+				add_deposit = d_active_omega_lock
+				add_deposit = d_teletraan_one
+				if = {
+					limit = {
+						has_planet_flag = has_all_spark
+					}
+					add_deposit = d_all_spark
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = has_depleted_all_spark
+					}
+					add_deposit = d_depleted_all_spark
+				}
+				owner = {
+					add_resource = {
+						energon = -5000
+					}
+				}
+			}
+		}
+	}
+
+	option = { # Corrupt Cybertronian World
+		name = "omega_lock.1.d"
+
+		allow = {
+			AND = {
+				event_target:omegalock_planet = {
+					OR = {
+						is_planet_class = pc_cybertronian_world
+						is_planet_class = pc_damaged_cybertron		
+					}
+				}
+				has_country_resource = {
+					type = dark_energon
+					amount >= 5000
+				}
+			}
+	
+		}
+
+		hidden_effect = {
+			event_target:omegalock_planet = {
+				clear_deposits = yes
+				clear_blockers = yes 
+				change_pc = pc_corrupted_cybertronian_world
+				add_deposit = d_dark_energon_core
+				add_deposit = d_dark_energon_city
+				add_deposit = d_dark_energon_city
+				add_deposit = d_corrupted_well_of_all_sparks_duplicate
+				add_deposit = d_space_bridge
+				add_deposit = d_energon_bridge
+				add_deposit = d_active_omega_lock
+				add_deposit = d_teletraan_one
+				add_modifier = { modifier = "cybertron_corrupted" days = -1 }
+				if = {
+					limit = {
+						has_planet_flag = has_all_spark
+					}
+					add_deposit = d_all_spark
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = has_depleted_all_spark
+					}
+					add_deposit = d_depleted_all_spark
+				}
+				owner = {
+					add_resource = {
+						dark_energon = -5000
+					}
+				}
+			}	
+		}
+	}
+
+	option = { # Cyberform Target World
+		name = "omega_lock.1.e"
+
+		allow = {
+			event_target:omegalock_planet = {
+				AND = {
+					has_deposit = d_active_omega_lock
+					has_deposit = d_space_bridge
+				}
+			}
+
+			event_target:omegalock_target = {
+				has_deposit = d_space_bridge
+			}
+		}
+
+		hidden_effect = {
+			event_target:omegalock_target = {
+				set_planet_size = 30
+				remove_modifier = cybertron_corrupted
+				remove_modifier = dark_energon_corruption
+				clear_blockers = yes
+				clear_deposits = yes
+				change_pc = pc_cybertronian_world
+				add_deposit = d_well_of_all_sparks_duplicate
+				add_deposit = d_cybertronian_world_core
+				add_deposit = d_space_bridge
+				add_deposit = d_energon_bridge
+				add_deposit = d_shielded_omega_lock
+				add_deposit = d_teletraan_one
+				if = {
+					limit = {
+						has_planet_flag = has_all_spark
+					}
+					add_deposit = d_all_spark
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = has_depleted_all_spark
+					}
+					add_deposit = d_depleted_all_spark
+				}
+			}
+		}
+	}
+
+	option = { # Expand Target World
+	name = "omega_lock.1.f"
+
+		allow = {
+			event_target:omegalock_planet = {
+				AND = {
+					has_deposit = d_active_omega_lock
+					has_deposit = d_space_bridge
+				}
+			}
+			event_target:omegalock_target = {
+				has_deposit = d_space_bridge
+			}
+		}
+
+		hidden_effect = {
+			event_target:omegalock_target = {
+				if = {
+					limit = {
+						is_planet_class = pc_corrupted_cybertronian_world
+					}
+					add_deposit = d_dark_energon_city
+				}
+				else = {
+					add_deposit = d_cybertronian_city
+				}
+			}
+		}
+	}
+
+	option = { # Cyberconstruct Star Harvester
+	name = "omega_lock.1.g"
+
+		allow = {
+			AND = {
+				event_target:omegalock_planet = {
+					AND = {
+						has_deposit = d_active_omega_lock
+						has_deposit = d_space_bridge
+					}
+				}
+				event_target:omegalock_target = {
+					has_deposit = d_space_bridge
+					NOR = {
+						has_deposit = d_star_harvester
+						has_deposit = d_hidden_star_harvester
+					}
+				}
+				has_technology = tech_harvester_key
+			}
+
+		}
+
+		hidden_effect = {
+			event_target:omegalock_target = {
+				add_deposit = d_star_harvester
+			}
+		}
+	}
+
+	option = { # Cyberform Current World
+	name = "omega_lock.1.x"
+
+		allow = {
+			event_target:omegalock_planet = {
+				has_deposit = d_active_omega_lock
+				NOR = {
+					is_artificial = yes
+					is_planet_class = pc_cybertronian_world
+					is_planet_class = pc_corrupted_cybertronian_world
+					is_planet_class = pc_damaged_cybertron
+					is_planet_class = pc_dead_cybertron
+				}
+			}
+		}
+
+		hidden_effect = {
+			event_target:omegalock_planet = {
+				set_planet_size = 30
+				remove_modifier = cybertron_corrupted
+				remove_modifier = dark_energon_corruption
+				clear_blockers = yes
+				clear_deposits = yes
+				change_pc = pc_cybertronian_world
+				add_deposit = d_well_of_all_sparks_duplicate
+				add_deposit = d_cybertronian_world_core
+				add_deposit = d_space_bridge
+				add_deposit = d_energon_bridge
+				add_deposit = d_active_omega_lock
+				add_deposit = d_teletraan_one
+				if = {
+					limit = {
+						has_planet_flag = has_all_spark
+					}
+					add_deposit = d_all_spark
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = has_depleted_all_spark
+					}
+					add_deposit = d_depleted_all_spark
+				}
+			}
+		}
+	}
+
+	option = { # Shield Omega Lock
+	name = "omega_lock.1.y"
+
+		allow = {
+			event_target:omegalock_planet = {
+				has_deposit = d_active_omega_lock
+			}
+		}
+
+		hidden_effect = {
+			event_target:omegalock_planet = {
+				remove_deposit = d_active_omega_lock
+				add_deposit = d_shielded_omega_lock
+			}
+		}
+	}
+
+	option = { # Exit Menu
+		name = "omega_lock.1.z"
+	}
+}
+
+# City states get fucking rekt lmfao
+planet_event = {
+	id = omega_lock.100
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		planet_devastation >= 50
+		has_deposit = d_cybertronian_city
+	}
+
+	immediate = {
+		while = {
+			count = 1
+			random_deposit = {
+				limit = {
+					is_deposit_type = d_cybertronian_city
+				}
+				remove_deposit = d_cybertronian_city
+			}
+			add_deposit = d_cybertron_ruins
+		}
+	}
+}
+
+# Energon Mines trigger event
+planet_event = {
+	id = omega_lock.200
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_active_building = building_energon_mine
+			}
+			random_list = {
+				50 = { log = no_energon_depletion }
+				50 = { planet_event = { id = omega_lock.201 } }
+			}
+		}
+		else_if = {
+			limit = {
+				has_active_building = building_dark_energon_mine
+			}
+			random_list = {
+				50 = { log = no_dark_energon_depletion }
+				50 = { planet_event = { id = omega_lock.202 } }
+			}
+		}
+	}
+}
+
+# Energon Mines deplete over time
+planet_event = {
+	id = omega_lock.201
+	title = "omega_lock.201.name"
+	desc = "omega_lock.201.desc"
+	hide_window = no
+	show_sound = event_yellow_alert
+	is_triggered_only = yes
+	location = this
+
+	immediate = {
+		planet = {
+			if = {
+				limit = {
+					has_deposit = d_energon_crystals
+					has_active_building = building_energon_mine
+				}
+				remove_deposit = d_energon_crystals
+			}
+		}
+	}
+
+	option = {
+		name = "omega_lock.201.a"
+	}
+}
+
+# Dark Energon Mines deplete over time
+planet_event = {
+	id = omega_lock.202
+	title = "omega_lock.202.name"
+	desc = "omega_lock.202.desc"
+	hide_window = no
+	show_sound = event_yellow_alert
+	is_triggered_only = yes
+	location = this
+
+	immediate = {
+		planet = {
+			if = {
+				limit = {
+					has_deposit = d_dark_energon_crystals
+					has_active_building = building_dark_energon_mine
+				}
+				remove_deposit = d_dark_energon_crystals
+			}
+		}
+	}
+
+	option = {
+		name = "omega_lock.202.a"
+	}
+}
+
+# Cybertronian Worlds Deplete
+
+planet_event = {
+	id = omega_lock.300
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				is_planet_class = pc_cybertronian_world
+				NOT = {
+					has_deposit = d_all_spark
+				}
+			}
+			random_list = {
+				50 = { log = no_cybertron_depletion }
+				50 = { planet_event = { id = omega_lock.301 } }
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_cybertronian_world
+				has_deposit = d_all_spark
+			}
+			random_list = {
+				90 = { log = no_cybertron_depletion }
+				10 = { planet_event = { id = omega_lock.301 } }
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_corrupted_cybertronian_world
+				NOT = {
+					has_deposit = d_dark_energon_crystals
+				}
+			}
+			random_list = {
+				25 = { log = no_corrupted_cybertron_depletion }
+				75 = { planet_event = { id = omega_lock.302 } }
+			}
+		}
+	}
+}
+
+planet_event = { # Cybertronian World Depletion
+	id = omega_lock.301
+	title = "omega_lock.301.name"
+	desc = "omega_lock.301.desc"
+	hide_window = no
+	show_sound = event_yellow_alert
+	is_triggered_only = yes
+	location = this
+
+	immediate = {
+		planet = {
+			if = {
+				limit = {
+					has_deposit = d_well_of_all_sparks_duplicate
+				}
+				remove_deposit = d_well_of_all_sparks_duplicate
+				add_deposit = d_damaged_well_of_all_sparks_duplicate
+			}
+			else_if = {
+				limit = { 
+					has_deposit = d_damaged_well_of_all_sparks_duplicate
+					has_deposit = d_cybertronian_world_core
+				}
+				remove_deposit = d_cybertronian_world_core
+				add_deposit = d_damaged_cybertronian_world_core
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_cybertronian_world
+					has_deposit = d_damaged_cybertronian_world_core
+					has_deposit = d_damaged_well_of_all_sparks_duplicate
+				}
+				change_pc = pc_depleted_cybertron
+				if = {
+					limit = {
+						OR = {
+							has_deposit = d_teletraan_one
+							has_deposit = d_space_bridge
+							has_deposit = d_energon_bridge
+						}
+					}
+					remove_deposit = d_teletraan_one
+					remove_deposit = d_space_bridge
+					remove_deposit = d_energon_bridge
+					add_deposit = d_dead_teletraan_one
+					add_deposit = d_deactivated_space_bridge
+					add_deposit = d_damaged_energon_bridge
+					if = {
+						limit = {
+							has_deposit = d_active_omega_lock
+						}
+						remove_deposit = d_active_omega_lock
+						add_deposit = d_inactive_omega_lock
+					}
+					if = {
+						limit = {
+							has_deposit = d_active_trypticon
+						}
+						remove_deposit = d_active_trypticon
+						add_deposit = d_inactive_trypticon
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "omega_lock.301.a"
+	}
+}
+
+planet_event = { # Corrupted Cybertronian World Depletion
+	id = omega_lock.302
+	title = "omega_lock.302.name"
+	desc = "omega_lock.302.desc"
+	hide_window = no
+	show_sound = event_red_alert
+	is_triggered_only = yes
+	location = this
+
+	immediate = {
+		planet = {
+			if = {
+				limit = {
+					has_deposit = d_corrupted_well_of_all_sparks_duplicate
+					NOT = {
+						has_deposit = d_dark_energon_crystals
+					}
+				}
+				remove_deposit = d_corrupted_well_of_all_sparks_duplicate
+				add_deposit = d_damaged_well_of_all_sparks_duplicate
+			}
+			else_if = {
+				limit = { 
+					has_deposit = d_damaged_well_of_all_sparks_duplicate
+					has_deposit = d_dark_energon_core
+					NOT = {
+						has_deposit = d_dark_energon_crystals
+					}
+				}
+				remove_deposit = d_dark_energon_core
+				add_deposit = d_damaged_cybertronian_world_core
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_corrupted_cybertronian_world
+					has_deposit = d_dark_energon_core
+					has_deposit = d_corrupted_well_of_all_sparks_duplicate
+					NOT = {
+						has_deposit = d_dark_energon_crystals
+					}
+				}
+				change_pc = pc_depleted_cybertron
+				if = {
+					limit = {
+						OR = {
+							has_deposit = d_teletraan_one
+							has_deposit = d_space_bridge
+							has_deposit = d_energon_bridge
+						}
+					}
+					remove_deposit = d_teletraan_one
+					remove_deposit = d_space_bridge
+					remove_deposit = d_energon_bridge
+					add_deposit = d_dead_teletraan_one
+					add_deposit = d_deactivated_space_bridge
+					add_deposit = d_damaged_energon_bridge
+					if = {
+						limit = {
+							has_deposit = d_active_omega_lock
+						}
+						remove_deposit = d_active_omega_lock
+						add_deposit = d_inactive_omega_lock
+					}
+					if = {
+						limit = {
+							has_deposit = d_active_trypticon
+						}
+						remove_deposit = d_active_trypticon
+						add_deposit = d_inactive_trypticon
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "omega_lock.302.a"
+	}
+}
+
+# Omega Lock drain event
+planet_event = {
+	id = omega_lock.400
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			if = {
+				limit = {
+					has_planet_flag = omega_lock_5
+					has_deposit = d_active_omega_lock
+				}
+				random_list = {
+					50 = {
+						remove_planet_flag = omega_lock_5
+						set_planet_flag = omega_lock_4
+					}
+					50 = { log = lmfao }
+				}
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = omega_lock_4
+					has_deposit = d_active_omega_lock
+				}
+				random_list = {
+					50 = {
+						remove_planet_flag = omega_lock_4
+						set_planet_flag = omega_lock_3
+					}
+					50 = { log = lmfao }
+				}
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = omega_lock_3
+					has_deposit = d_active_omega_lock
+				}
+				random_list = {
+					50 = {
+						remove_planet_flag = omega_lock_3
+						set_planet_flag = omega_lock_2
+					}
+					50 = { log = lmfao }
+				}
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = omega_lock_2
+					has_deposit = d_active_omega_lock
+				}
+				random_list = {
+					50 = {
+						remove_planet_flag = omega_lock_2
+						set_planet_flag = omega_lock_1
+					}
+					50 = { log = lmfao }
+				}
+				from = {
+					country_event = {
+						id = omega_lock.1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = omega_lock_1
+					has_deposit = d_active_omega_lock
+				}
+				random_list = {
+					50 = {
+						remove_planet_flag = omega_lock_1
+						set_planet_flag = omega_lock_0
+					}
+					50 = { log = lmfao }
+				}
+			}
+			else_if = {
+				limit = {
+					NOR = {
+						has_planet_flag = omega_lock_5
+						has_planet_flag = omega_lock_4
+						has_planet_flag = omega_lock_3
+						has_planet_flag = omega_lock_2
+						has_planet_flag = omega_lock_1
+						has_planet_flag = omega_lock_0
+					}
+					has_deposit = d_active_omega_lock
+				}
+				set_planet_flag = omega_lock_0
+				remove_deposit = d_active_omega_lock
+				add_deposit = d_inactive_omega_lock
+				planet_event = {
+					id = omega_lock.401
+				}
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = omega_lock_0
+					has_deposit = d_active_omega_lock
+				}
+				remove_deposit = d_active_omega_lock
+				add_deposit = d_inactive_omega_lock
+				planet_event = {
+					id = omega_lock.401
+				}
+			}
+		}
+	}
+}
+
+planet_event = { # Well of Allsparks & Energy Controller spawns Energon dependant pops
+	id = omega_lock.401
+	title = "omega_lock.401.name"
+	desc = "omega_lock.401.desc"
+	hide_window = no
+	show_sound = event_red_alert
+	is_triggered_only = yes
+	location = this
+
+	option = {
+		name = "omega_lock.401.a"
+	}
+}
+
+planet_event = {
+	id = omega_lock.135
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_modifier = planet_population_control
+		}
+		OR = {
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+			has_deposit = d_energy_controller
+		}
+	}
+
+	immediate = {
+		random_list = {
+			50 = { log = nopops }
+			50 = {
+				every_owned_species = {
+					limit = {
+						OR = {
+							has_trait = trait_energon_dependence
+							has_trait = trait_dark_energon_dependence
+						}
+					}
+					prev = {
+						while = {
+							count = 1
+							create_pop = {
+								species = prev
+							}
+						}	
+					}
+				}
+			}
+		}
+	}
+}

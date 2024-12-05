@@ -1,0 +1,702 @@
+###Events Activated On Start###
+
+namespace = slipspace_relay
+
+
+# Test to see if I could make unconfigured relays default ownership to whoever has Maethrillia or the Ark, every month.
+#country_event = {
+#	id = slipspace_relay.69
+#	hide_window = yes
+#	is_triggered_only = yes
+#
+#	trigger = {
+#		any_owned_planet = {
+#			OR = {
+#				has_deposit = d_ark_grid
+#				has_deposit = d_maethrillian_grid
+#			}
+#		}
+#	}
+#
+#	immediate = {
+#		this = {
+#			save_global_event_target_as = relay_master
+#		}
+#		every_megastructure = {
+#			limit = {
+#				is_megastructure_type = forerunner_slipspace_portal_deactivate				
+#			}
+#			set_owner = event_target:relay_master
+#		}
+#	}
+#}
+
+# Relay Management Menu
+country_event = {
+	id = slipspace_relay.1
+	title = "slipspace_relay.1.title"
+	desc = "slipspace_relay.1.desc"
+	show_sound = event_default
+	
+	hide_window = no
+	is_triggered_only = yes
+	
+	option = { # Deactivate all Relays
+		name = "slipspace_relay.1.a"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					OR = {
+						is_megastructure_type = forerunner_slipspace_portal
+						is_megastructure_type = forerunner_slipspace_portal_alpha
+						is_megastructure_type = forerunner_slipspace_portal_beta
+						is_megastructure_type = forerunner_slipspace_portal_delta
+						is_megastructure_type = forerunner_slipspace_portal_gamma
+						is_megastructure_type = forerunner_slipspace_portal_lambda
+						is_megastructure_type = forerunner_slipspace_portal_epsilon
+					}
+				}
+				if = {
+					limit = {
+						is_megastructure_type = forerunner_slipspace_portal
+					}
+					upgrade_megastructure_to = forerunner_slipspace_portal_omega_inactive
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = forerunner_slipspace_portal_alpha
+					}
+					upgrade_megastructure_to = forerunner_slipspace_portal_alpha_inactive
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = forerunner_slipspace_portal_beta
+					}
+					upgrade_megastructure_to = forerunner_slipspace_portal_beta_inactive
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = forerunner_slipspace_portal_delta
+					}
+					upgrade_megastructure_to = forerunner_slipspace_portal_delta_inactive
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = forerunner_slipspace_portal_gamma
+					}
+					upgrade_megastructure_to = forerunner_slipspace_portal_gamma_inactive
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = forerunner_slipspace_portal_lambda
+					}
+					upgrade_megastructure_to = forerunner_slipspace_portal_lambda_inactive
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = forerunner_slipspace_portal_epsilon
+					}
+					upgrade_megastructure_to = forerunner_slipspace_portal_epsilon_inactive
+				}
+			}
+		}
+	}
+
+	option = { # Activate all Relays
+		name = "slipspace_relay.1.b"
+
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					OR = {
+						is_megastructure_type = forerunner_slipspace_portal_omega_inactive
+						is_megastructure_type = forerunner_slipspace_portal_alpha_inactive
+						is_megastructure_type = forerunner_slipspace_portal_beta_inactive
+						is_megastructure_type = forerunner_slipspace_portal_delta_inactive
+						is_megastructure_type = forerunner_slipspace_portal_gamma_inactive
+						is_megastructure_type = forerunner_slipspace_portal_lambda_inactive
+						is_megastructure_type = forerunner_slipspace_portal_epsilon_inactive
+					}
+				}
+				if = {
+					limit = {
+						is_megastructure_type = forerunner_slipspace_portal_omega_inactive
+					}
+					upgrade_megastructure_to = forerunner_slipspace_portal
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = forerunner_slipspace_portal_alpha_inactive
+					}
+					upgrade_megastructure_to = forerunner_slipspace_portal_alpha
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = forerunner_slipspace_portal_beta_inactive
+					}
+					upgrade_megastructure_to = forerunner_slipspace_portal_beta
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = forerunner_slipspace_portal_delta_inactive
+					}
+					upgrade_megastructure_to = forerunner_slipspace_portal_delta
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = forerunner_slipspace_portal_gamma_inactive
+					}
+					upgrade_megastructure_to = forerunner_slipspace_portal_gamma
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = forerunner_slipspace_portal_lambda_inactive
+					}
+					upgrade_megastructure_to = forerunner_slipspace_portal_lambda
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = forerunner_slipspace_portal_epsilon_inactive
+					}
+					upgrade_megastructure_to = forerunner_slipspace_portal_epsilon
+				}
+			}
+		}
+	}
+
+	option = { # Access Relay Management
+		name = "slipspace_relay.1.c"
+		hidden_effect = {
+			country_event = { id = slipspace_relay.2 }
+		}
+	}
+
+	option = { # Assume control of all Relays
+		name = "slipspace_relay.1.d"
+		hidden_effect = {
+			this = {
+				save_global_event_target_as = relay_controller
+			}
+			every_megastructure = {
+				limit = {
+					OR = {
+						is_megastructure_type = forerunner_slipspace_portal
+						is_megastructure_type = forerunner_slipspace_portal_omega_inactive
+						is_megastructure_type = forerunner_slipspace_portal_alpha
+						is_megastructure_type = forerunner_slipspace_portal_alpha_inactive
+						is_megastructure_type = forerunner_slipspace_portal_beta
+						is_megastructure_type = forerunner_slipspace_portal_beta_inactive
+						is_megastructure_type = forerunner_slipspace_portal_delta
+						is_megastructure_type = forerunner_slipspace_portal_delta_inactive
+						is_megastructure_type = forerunner_slipspace_portal_gamma
+						is_megastructure_type = forerunner_slipspace_portal_gamma_inactive
+						is_megastructure_type = forerunner_slipspace_portal_lambda
+						is_megastructure_type = forerunner_slipspace_portal_lambda_inactive
+						is_megastructure_type = forerunner_slipspace_portal_epsilon
+						is_megastructure_type = forerunner_slipspace_portal_epsilon_inactive	
+						is_megastructure_type = forerunner_slipspace_portal_deactivate		
+					}
+				}
+				set_owner = event_target:relay_controller
+			}
+		}
+	}
+
+	option = { # Access Perdition & Genesis
+		name = "slipspace_relay.1.x"
+
+		allow = {
+			any_owned_megastructure = {
+				is_megastructure_type = forerunner_crucible
+			}
+		}
+
+		hidden_effect = {
+			country_event = { id = perdition_genesis.1 }
+		}
+	}
+	
+	option = { # Disable Relay Control
+		name = "slipspace_relay.1.y"
+
+		allow = {
+			event_target:obicitadel = {
+				has_deposit = d_citadel_relay_control
+			} 
+		}
+		
+		hidden_effect = {
+			event_target:obicitadel = {
+				remove_deposit = d_citadel_relay_control
+				add_deposit = d_citadel_inactive_relay_control
+			}
+			
+			add_resource = {
+				sr_ancient_zpm = 1
+			}
+		}
+	}
+
+	option = { # Exit Menu
+		name = "slipspace_relay.1.z"
+	}
+}
+
+# Relay Power Management
+country_event = {
+	id = slipspace_relay.2
+	title = "slipspace_relay.2.title"
+	desc = "slipspace_relay.2.desc"
+	show_sound = event_default
+	
+	hide_window = no
+	is_triggered_only = yes
+
+	option = { # Deactivate Omega Relays
+		name = "slipspace_relay.2.a"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_omega_inactive
+			}
+		}
+	}
+
+	option = { # Deactivate Alpha Relays
+		name = "slipspace_relay.2.b"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_alpha
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_alpha_inactive
+			}
+		}
+	}
+
+	option = { # Deactivate Beta Relays
+		name = "slipspace_relay.2.c"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_beta
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_beta_inactive
+			}
+		}
+	}
+
+	option = { # Deactivate Delta Relays
+		name = "slipspace_relay.2.d"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_delta
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_delta_inactive
+			}
+		}
+	}
+
+	option = { # Deactivate Gamma Relays
+		name = "slipspace_relay.2.e"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_gamma
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_gamma_inactive
+			}
+		}
+	}
+
+	option = { # Deactivate Lambda Relays
+		name = "slipspace_relay.2.f"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_lambda
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_lambda_inactive
+			}
+		}
+	}
+
+	option = { # Activation Menu
+		name = "slipspace_relay.2.y"
+		hidden_effect = {
+			country_event = { id = slipspace_relay.3 }
+		}
+	}
+
+	option = { # Back to Menu
+		name = "slipspace_relay.2.z"
+		hidden_effect = {
+			country_event = { id = slipspace_relay.1 }
+		}
+	}
+}
+
+# Activation Menu
+country_event = {
+	id = slipspace_relay.3
+	title = "slipspace_relay.3.title"
+	desc = "slipspace_relay.3.desc"
+	show_sound = event_default
+	
+	hide_window = no
+	is_triggered_only = yes
+
+	option = { # Activate Omega Relays
+		name = "slipspace_relay.3.a"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_omega_inactive
+
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal
+			}
+		}
+	}
+
+	option = { # Activate Alpha Relays
+		name = "slipspace_relay.3.b"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_alpha_inactive
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_alpha
+			}
+		}
+	}
+
+	option = { # Activate Beta Relays
+		name = "slipspace_relay.3.c"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_beta_inactive
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_beta
+			}
+		}
+	}
+
+	option = { # Activate Delta Relays
+		name = "slipspace_relay.3.d"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_delta_inactive
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_delta
+			}
+		}
+	}
+
+	option = { # Activate Gamma Relays
+		name = "slipspace_relay.3.e"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_gamma_inactive
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_gamma
+			}
+		}
+	}
+
+	option = { # Activate Lambda Relays
+		name = "slipspace_relay.3.f"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_slipspace_portal_lambda_inactive
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_lambda
+			}
+		}
+	}
+
+	option = { # Back to Menu
+		name = "slipspace_relay.3.z"
+		hidden_effect = {
+			country_event = { id = slipspace_relay.1 }
+		}
+	}
+}
+
+# Reconfiguration Menu
+country_event = {
+	id = slipspace_relay.4
+	title = "slipspace_relay.4.title"
+	desc = "slipspace_relay.4.desc"
+	show_sound = event_default
+	
+	hide_window = no
+	is_triggered_only = yes
+
+	option = { # Omega to Alpha
+		name = "slipspace_relay.4.a"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					AND = {
+						is_megastructure_type = forerunner_slipspace_portal_deactivate
+						has_megastructure_flag = relay_omega		
+					}
+
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_alpha
+			}
+		}
+	}
+
+	option = { # Omega to Beta
+		name = "slipspace_relay.4.b"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					AND = {
+						is_megastructure_type = forerunner_slipspace_portal_deactivate
+						has_megastructure_flag = relay_omega	
+					}
+
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_beta
+			}
+		}
+	}
+
+	option = { # Omega to Delta
+		name = "slipspace_relay.4.c"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					AND = {
+						is_megastructure_type = forerunner_slipspace_portal_deactivate
+						has_megastructure_flag = relay_omega
+					}
+
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_delta
+			}
+		}
+	}
+
+	option = { # Omega to Gamma
+		name = "slipspace_relay.4.d"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					AND = {
+						is_megastructure_type = forerunner_slipspace_portal_deactivate
+						has_megastructure_flag = relay_omega
+					}
+
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_gamma
+			}
+		}
+	}
+
+	option = { # Omega to Lambda
+		name = "slipspace_relay.4.e"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					AND = {
+						is_megastructure_type = forerunner_slipspace_portal_deactivate
+						has_megastructure_flag = relay_omega
+					}
+
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal_lambda
+			}
+		}
+	}
+
+	option = { # Alpha to Omega
+		name = "slipspace_relay.4.f"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					AND = {
+						is_megastructure_type = forerunner_slipspace_portal_deactivate
+						has_megastructure_flag = relay_alpha
+					}
+
+				}
+				upgrade_megastructure_to = forerunner_slipspace_portal
+			}
+		}
+	}
+
+	option = { # Back to Menu
+		name = "slipspace_relay.4.z"
+		hidden_effect = {
+			country_event = { id = slipspace_relay.1 }
+		}
+	}
+}
+
+
+## Deactivate ALL Relays
+#country_event = {
+#	id = slipspace_relay.2
+#	is_triggered_only = yes 
+#	hide_window = yes
+#
+#	immediate = {
+#		
+#		every_megastructure = {
+#			limit = {
+#				OR = {
+#					is_megastructure_type = forerunner_slipspace_portal
+#					is_megastructure_type = forerunner_slipspace_portal_alpha
+#					is_megastructure_type = forerunner_slipspace_portal_beta
+#					is_megastructure_type = forerunner_slipspace_portal_delta
+#					is_megastructure_type = forerunner_slipspace_portal_gamma
+#					is_megastructure_type = forerunner_slipspace_portal_lambda
+#				}
+#			}
+#			upgrade_megastructure_to = forerunner_slipspace_portal_deactivate
+#		}
+#	}
+#}
+#
+## Deactivate Omega Relays
+#country_event = {
+	id = slipspace_relay.1
+	is_triggered_only = yes 
+	hide_window = yes
+
+	immediate = {
+		
+		every_megastructure = {
+			limit = {
+				is_megastructure_type = forerunner_slipspace_portal
+			}
+			upgrade_megastructure_to = forerunner_slipspace_portal_deactivate
+		}
+	}
+#}
+#
+## Deactivate Alpha Relays
+#country_event = {
+#	id = slipspace_relay.3
+#	is_triggered_only = yes 
+#	hide_window = yes
+#
+#	immediate = {
+#		
+#		every_megastructure = {
+#			limit = {
+#				is_megastructure_type = forerunner_slipspace_portal_alpha
+#			}
+#			upgrade_megastructure_to = forerunner_slipspace_portal_deactivate
+#		}
+#	}
+#}
+#
+## Deactivate Beta Relays
+#country_event = {
+#	id = slipspace_relay.1
+#	is_triggered_only = yes 
+#	hide_window = yes
+#
+#	immediate = {
+#		
+#		every_megastructure = {
+#			limit = {
+#				OR = {
+#					is_megastructure_type = forerunner_slipspace_portal
+#					is_megastructure_type = forerunner_slipspace_portal_alpha
+#					is_megastructure_type = forerunner_slipspace_portal_beta
+#					is_megastructure_type = forerunner_slipspace_portal_delta
+#					is_megastructure_type = forerunner_slipspace_portal_gamma
+#					is_megastructure_type = forerunner_slipspace_portal_lambda
+#				}
+#			}
+#			upgrade_megastructure_to = forerunner_slipspace_portal_deactivate
+#		}
+#	}
+#}
+#
+## Deactivate ALL Relays
+#country_event = {
+#	id = slipspace_relay.1
+#	is_triggered_only = yes 
+#	hide_window = yes
+#
+#	immediate = {
+#		
+#		every_megastructure = {
+#			limit = {
+#				OR = {
+#					is_megastructure_type = forerunner_slipspace_portal
+#					is_megastructure_type = forerunner_slipspace_portal_alpha
+#					is_megastructure_type = forerunner_slipspace_portal_beta
+#					is_megastructure_type = forerunner_slipspace_portal_delta
+#					is_megastructure_type = forerunner_slipspace_portal_gamma
+#					is_megastructure_type = forerunner_slipspace_portal_lambda
+#				}
+#			}
+#			upgrade_megastructure_to = forerunner_slipspace_portal_deactivate
+#		}
+#	}
+#}
+#
+## Deactivate ALL Relays
+#country_event = {
+#	id = slipspace_relay.1
+#	is_triggered_only = yes 
+#	hide_window = yes
+#
+#	immediate = {
+#		
+#		every_megastructure = {
+#			limit = {
+#				OR = {
+#					is_megastructure_type = forerunner_slipspace_portal
+#					is_megastructure_type = forerunner_slipspace_portal_alpha
+#					is_megastructure_type = forerunner_slipspace_portal_beta
+#					is_megastructure_type = forerunner_slipspace_portal_delta
+#					is_megastructure_type = forerunner_slipspace_portal_gamma
+#					is_megastructure_type = forerunner_slipspace_portal_lambda
+#				}
+#			}
+#			upgrade_megastructure_to = forerunner_slipspace_portal_deactivate
+#		}
+#	}
+#}
+#
+## Deactivate ALL Relays
+#country_event = {
+#	id = slipspace_relay.1
+#	is_triggered_only = yes 
+#	hide_window = yes
+#
+#	immediate = {
+#		
+#		every_megastructure = {
+#			limit = {
+#				OR = {
+#					is_megastructure_type = forerunner_slipspace_portal
+#					is_megastructure_type = forerunner_slipspace_portal_alpha
+#					is_megastructure_type = forerunner_slipspace_portal_beta
+#					is_megastructure_type = forerunner_slipspace_portal_delta
+#					is_megastructure_type = forerunner_slipspace_portal_gamma
+#					is_megastructure_type = forerunner_slipspace_portal_lambda
+#				}
+#			}
+#			upgrade_megastructure_to = forerunner_slipspace_portal_deactivate
+#		}
+#	}
+#}
+#
+#

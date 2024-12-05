@@ -1,0 +1,43 @@
+# overridden to add my custom Void Dwellers system to the list of allowable ones
+origin_void_dwellers = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_void_dwellers.dds"
+	picture = GFX_origin_void_dwellers
+
+	starting_colony = pc_habitat
+	initializers = { void_dweller_system sol_system_void_dweller_system void_dweller_quarian_system }
+	habitability_preference = pc_habitat
+	preferred_planet_class_neighbor = no
+
+	playable = {
+		has_federations_dlc = yes
+	}
+
+	possible = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		civics = {
+			NOR = {
+				text = civic_tooltip_not_idyllic_bloom
+				value = civic_idyllic_bloom
+				value = civic_hive_idyllic_bloom
+			}
+			NOT = { value = civic_agrarian_idyll }
+			NOR = {
+				text = civic_tooltip_not_anglers
+				value = civic_anglers
+				value = civic_corporate_anglers
+			}
+		}
+	}
+
+	description = "origin_tooltip_void_dwellers_effects"
+	flags = { custom_start_screen }
+
+	traits = {
+		trait = trait_void_dweller_1
+	}
+
+	random_weight = {
+		base = 3
+	}
+}

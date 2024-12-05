@@ -1,0 +1,946 @@
+# Do not remove or rename this
+
+# Possible Variables for Buildings:
+# strategic_resource: strategic resource, deprecated, strategic resource used by the building.
+# allow: trigger to check for allowing construction of building.
+# prerequisites: Tech requirements for building.
+# empire_unique: boolean, can only build one if set to true.
+# cost: resource table, cost of building.
+# is_orbital: boolean, can only be built in orbital station.
+# modifier: modifier, deprecated, applies a modifier to planet.
+# base_buildtime: int, number of days for construction.
+# requires_pop, boolean, building will require a pop for production.
+# required_resources, resource table, required resources for production.
+# produced_resources, resource table, produced resources in production.
+# upgrades, buildings list, buildings this building can upgrade into.
+# is_listed, boolean, toggles if this building is shown in the non-upgrade buildable list.
+# planet_unique, toggles if one can build multiple of this type on a single planet.
+# ai_weight, weight for AI, default is set to one, weight set to 0 means that AI will never build it
+
+# ###############
+# Building List #
+# ###############
+#
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+
+
+
+
+#
+# BALANCE
+# can change the time and cost of all common buildings with these variables below
+
+@b0time = 120
+@b0cost = 30
+@b0effect = 1
+@b0upkeep = 1
+
+@b1time = 210
+@b1cost = 60
+@b1effect = 2
+@b1upkeep = 1
+
+@b2time = 180
+@b2cost = 90
+@b2effect = 3
+@b2upkeep = 1.5
+
+@b3time = 180
+@b3cost = 120
+@b3effect = 4
+@b3upkeep = 2
+
+@b4time = 180
+@b4cost = 150
+@b4effect = 5
+@b4upkeep = 2.5
+
+@b5time = 180
+@b5cost = 180
+@b5effect = 8
+@b5upkeep = 3
+
+@feupkeep = 4
+@feproduction = 12
+
+@science1 = 1
+@science2 = 2
+@science3 = 3
+@science4 = 4
+@science5 = 6
+
+# Vanir Forbidden Research Institute
+building_vanir_forbidden_research_institute_1 = {
+	base_buildtime = 360
+	base_cap_amount = 1
+	position_priority = 1
+
+	category = resource
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			uses_habitat_capitals = yes
+		}
+		exists = owner
+		owner = { has_technology = tech_vanir_start_1 }
+	}
+	
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	planet_modifier = {
+		job_head_researcher_add = 1
+		job_researcher_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_vanir_forbidden_research_1 }
+		}
+		modifier = {
+			job_researcher_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_vanir_forbidden_research_2 }
+		}
+		modifier = {
+			job_researcher_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_vanir_forbidden_research_3 }
+		}
+		modifier = {
+			job_head_researcher_add = 1
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}
+		produces = {
+			trigger = {
+				owner = { has_technology = tech_vanir_breakthrough_4 }
+				owner = { NOT = { has_technology = tech_vanir_breakthrough_5 }}
+				owner = { NOT = { has_technology = tech_vanir_breakthrough_6 }}
+			}
+			sr_dark_matter = 3
+		}
+		produces = {
+			trigger = {
+				owner = { has_technology = tech_vanir_breakthrough_5 }
+				owner = { NOT = { has_technology = tech_vanir_breakthrough_6 }}
+			}
+			sr_dark_matter = 6
+		}
+		produces = {
+			trigger = {
+				owner = { has_technology = tech_vanir_breakthrough_6 }
+			}
+			sr_dark_matter = 12
+		}
+		upkeep = {
+			trigger = {
+				owner = { has_technology = tech_vanir_breakthrough_4 }
+				owner = { NOT = { has_technology = tech_vanir_breakthrough_5 }}
+				owner = { NOT = { has_technology = tech_vanir_breakthrough_6 }}
+			}
+			physics_research = 30
+			society_research = 30
+			engineering_research = 30
+			energy = 60
+		}
+		upkeep = {
+			trigger = {
+				owner = { has_technology = tech_vanir_breakthrough_5 }
+				owner = { NOT = { has_technology = tech_vanir_breakthrough_6 }}
+			}
+			physics_research = 60
+			society_research = 60
+			engineering_research = 60
+			energy = 90
+		}
+		upkeep = {
+			trigger = {
+				owner = { has_technology = tech_vanir_breakthrough_6 }
+			}
+			physics_research = 120
+			society_research = 120
+			engineering_research = 120
+			energy = 120
+		}
+	}
+	
+	prerequisites = {
+		"tech_vanir_start_1"
+	}
+
+	#upgrades = {
+	#	"building_vanir_forbidden_research_institute_2"
+	#}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = { has_technology = tech_vanir_start_1 }
+		}
+	}
+
+	ai_weight = {
+		weight = 3000
+	}	
+}
+
+# Asgard Dark Matter Institute
+building_asgard_dark_matter_institute_1 = {
+	base_buildtime = 360
+	base_cap_amount = 1
+	position_priority = 1
+
+	category = resource
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			uses_habitat_capitals = yes
+		}
+		exists = owner
+		owner = {
+			has_trait = trait_asgard
+			has_technology = tech_asgard_technological_supremacy
+		}
+	}
+	
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+		}
+		produces = {
+			sr_dark_matter = 15
+		}
+		upkeep = {
+			physics_research = 150
+			society_research = 150
+			engineering_research = 150
+			energy = 150
+		}
+	}
+	
+	prerequisites = {
+		"tech_asgard_technological_supremacy"
+	}
+
+	upgrades = {
+		"building_asgard_dark_matter_institute_2"
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = { has_technology = tech_asgard_technological_supremacy }
+		}
+	}
+
+	ai_weight = {
+		weight = 3000
+	}	
+}
+
+building_asgard_dark_matter_institute_2 = {
+	base_buildtime = 360
+	can_build = no
+	position_priority = 1
+
+	category = resource
+	
+	allow = {
+		has_fully_upgraded_capital = yes
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1500
+		}
+		produces = {
+			sr_dark_matter = 25
+		}
+		upkeep = {
+			physics_research = 250
+			society_research = 250
+			engineering_research = 250
+			energy = 250
+		}
+	}
+	
+	prerequisites = {
+		"tech_asgard_technological_supremacy"
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = { has_technology = tech_asgard_technological_supremacy }
+		}
+	}
+
+	ai_weight = {
+		weight = 5000
+	}	
+}
+
+# unlocks zpm facility
+building_zpm_production_facility = {
+	base_buildtime = 360
+	position_priority = 1
+
+	category = resource
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			uses_habitat_capitals = yes
+		}
+		exists = owner
+		owner = { has_technology = tech_zpm_construction }
+	}
+	
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+		}
+		produces = {
+			sr_ancient_zpm = 0.1
+		}
+		upkeep = {
+			rare_crystals = 10
+			exotic_gases = 5
+			volatile_motes = 5
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_technology = tech_zpm_production_efficiency
+				}
+			}
+			sr_ancient_zpm = 1
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					has_technology = tech_zpm_production_efficiency
+				}
+			}
+			rare_crystals = 5
+			exotic_gases = 2.5
+			volatile_motes = 2.5
+		}
+	}
+	
+	prerequisites = {
+		"tech_zpm_construction"
+	}
+
+	ai_weight = {
+		weight = 30000
+	}	
+}
+
+# unlocks Monument of Origin
+building_monument_of_origin = {
+	base_buildtime = 120
+	base_cap_amount = 1
+	position_priority = 2
+
+	category = unity
+
+	potential = {
+		exists = owner
+		owner = {
+			has_active_tradition = tr_sgu_origin_3
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 350
+		}
+		produces = {
+			unity = 4
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_active_tradition = tr_sgu_origin_4
+				}
+			}
+			unity = 6
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	
+	planet_modifier  = {
+		job_ori_prior_add = 1
+		planet_crime_add = -20
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = { has_technology = tech_ori_start_1 }
+		}
+	}
+
+	ai_weight = {
+		weight = 3000
+	}	
+}
+
+# unlocks Goauld Breeding Facility
+building_goauld_breeding_facility = {
+	base_buildtime = 90
+	base_cap_amount = 1
+	position_priority = 2
+
+	category = army
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		produces = {
+			sr_goauld_symbiote = 0.1
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_technology = "tech_goauld_breeding_facility"
+				}
+			}
+			sr_goauld_symbiote = 0.1
+		}
+		upkeep = {
+			food = 3
+			energy = 3
+		}
+	}
+
+	planet_modifier  = {
+		pop_growth_speed = 0.10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = "tech_goauld_breeding_facility"
+			}
+		}
+		modifier = {
+			pop_growth_speed = 0.10
+		}
+	}
+	
+	prerequisites = {
+		"tech_goauld_start_1"
+	}
+
+	ai_resource_production = {
+		trigger = { always = yes }
+		alloys = 80
+		consumer_goods = 80
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_technology = tech_goauld_start_1} }
+	}
+
+	ai_weight = {
+		weight = 3000
+	}	
+}
+
+building_goauld_shield_dome = {
+	base_buildtime = 120
+	base_cap_amount = 1
+
+	category = government
+	
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 350
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+
+	planet_modifier  = {
+		pop_environment_tolerance = 0.20
+	}
+	
+	prerequisites = {
+		"tech_goauld_shield_dome"
+	}
+
+	#ai_weight = {
+	#	weight = 100
+	#}	
+}
+
+# unlocks wraith breeding pods
+building_wraith_breeding_pods = {
+	base_buildtime = 100
+	base_cap_amount = 1
+	position_priority = 2
+	
+	category = pop_assembly
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 2
+			food = 5
+		}
+	}
+
+	planet_modifier  = {
+		job_wraith_queen_add = 1
+		planet_pop_assembly_organic_add = 2
+		planet_army_build_speed_mult = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_wraith_breeding_pods
+			}					
+		}
+		modifier = {
+			planet_pop_assembly_organic_add = 1
+		}
+	}
+	
+	prerequisites = {
+		"tech_wraith_start_1"
+	}
+
+	upgrades = {
+		"building_wraith_zpm_breeding_pods"
+	}
+
+	ai_resource_production = {
+		trigger = { always = yes }
+		alloys = 80
+		energy = 80
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_technology = tech_wraith_start_1} }
+	}
+
+	ai_weight = {
+		weight = 3000
+	}	
+}
+
+building_wraith_zpm_breeding_pods = {
+	base_buildtime = 360
+	can_build = no
+	position_priority = 2
+	
+	category = pop_assembly
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			sr_ancient_zpm = 1
+		}
+		upkeep = {
+			food = 40
+		}
+	}
+
+	planet_modifier  = {
+		job_wraith_queen_add = 1
+		planet_pop_assembly_organic_add = 12
+		planet_army_build_speed_mult = 5
+	}
+	
+	prerequisites = {
+		"tech_wraith_zpm_breeding_pods"
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_technology = tech_wraith_start_1} }
+	}
+
+	ai_weight = {
+		weight = 3000
+	}	
+}
+
+building_nox_floating_city = {
+	base_buildtime = 360
+	base_cap_amount = 1
+	position_priority = 1
+	
+	category = government
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 2000
+		}
+		upkeep = {
+			energy = 20
+		}
+	}
+
+	planet_modifier  = {
+		job_nox_elder_add = 2
+		job_head_researcher_add = 5
+		planet_housing_add = 25
+		planet_crime_add = -25
+	}
+	
+	prerequisites = {
+		"tech_nox_floating_city"
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_technology = tech_nox_start_1} }
+	}
+
+	ai_weight = {
+		weight = 5000
+	}	
+}
+
+building_nox_sacred_garden = {
+	base_buildtime = 240
+	base_cap_amount = 1
+	position_priority = 2
+	
+	category = unity
+
+	potential = {
+		exists = owner
+		owner = {
+			has_active_tradition = tr_sgu_sacred_unity_3
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 250
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	planet_modifier  = {
+		job_nox_elder_add = 1
+		pop_growth_speed = 0.10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_active_tradition = tr_sgu_sacred_unity_4
+			}
+		}
+		modifier = {
+			pop_growth_speed = 0.10
+		}
+	}
+	
+	prerequisites = {
+		"tech_nox_start_1"
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_technology = tech_nox_start_1} }
+	}
+
+	ai_weight = {
+		weight = 3000
+	}	
+}
+
+building_energy_matter_converter_1 = {
+	base_buildtime = 480
+	position_priority = 2
+	
+	category = manufacturing
+
+	potential = {
+		owner = { has_technology = tech_energy_matter_conversion }
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = { has_technology = tech_energy_matter_conversion }
+		}
+	}
+	
+	planet_modifier = {
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1500
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_edict = emc_alloys
+				}
+			}
+			alloys = 100
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_edict = emc_consumer_goods
+				}
+			}
+			consumer_goods = 150
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_edict = emc_mixed
+				}
+			}
+			alloys = 50
+			consumer_goods = 75
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					OR = {
+						has_edict = emc_alloys
+						has_edict = emc_consumer_goods
+						has_edict = emc_mixed
+					}
+				}
+			}
+			energy = 250
+		}
+	}
+
+	prerequisites = {
+		"tech_energy_matter_conversion"
+	}
+
+	ai_weight = {
+		weight = 3000
+		modifier = {
+			factor = 0
+			owner = { 
+				has_monthly_income = {
+					resource = energy
+					value < 300
+				}
+			}
+		}
+	}
+}
+
+# unlocks research center
+building_research_center = {
+	base_buildtime = 240
+	base_cap_amount = 1
+	position_priority = 2
+	
+	category = research
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			uses_habitat_capitals = yes
+		}
+		exists = owner
+		owner = {
+			NOR = {
+				has_trait = trait_void_entity
+				has_trait = trait_nox
+			}
+		}
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	planet_modifier  = {
+		planet_researchers_produces_mult = 0.1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_head_researcher_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_brain_drone_add = 3
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {	
+			job_calculator_add = 3
+		}
+	}
+
+	triggered_desc = {
+		trigger = { 
+			exists = owner
+			owner = { is_regular_empire = yes } 
+		}
+		text = job_head_researcher_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = { 
+			exists = owner
+			owner = { is_regular_empire = yes } 
+		}
+		text = job_researcher_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = { 
+			exists = owner
+			owner = { is_hive_empire = yes } 
+		}
+		text = job_brain_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = { 
+			exists = owner
+			owner = { is_machine_empire = yes } 
+		}
+		text = job_calculator_effect_desc
+	}	
+
+	prerequisites = {
+		"tech_research_center"
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			OR = {
+				has_trait = trait_void_entity
+				has_trait = trait_nox
+			}
+		}
+	}
+
+	#ai_weight = {
+	#	weight = 3000
+	#}	
+}

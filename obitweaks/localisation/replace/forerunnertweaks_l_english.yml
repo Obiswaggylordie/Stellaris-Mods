@@ -1,0 +1,1995 @@
+﻿l_english:
+
+ ###################
+ # The Forerunners
+ ###################
+ 
+#SENTINEL/PROMETHEAN CONSTRUCTION DECISIONS 
+ d_automated_sentinel_factory: "Uviik Defense Network"
+ d_automated_sentinel_factory_desc: "Zei'a installations are typically equipped with a large network of Uviik factories and defenses above and beneath its surface capable of manufacturing various types of units to either defend or maintain these installations."
+
+ decision_cringe_robots: "Dismantle non-Uviik robots"
+
+ decision_construct_forerunner_sentinels: "Construct Uviik"
+ decision_construct_forerunner_sentinels_desc: "Convert resources to construct a contingent of Uviik."
+ decision_construct_forerunner_sentinels_tooltip: "Builds 5 robotic §YUviik§! £pop£ pops."
+ 
+ decision_construct_mechanical_prometheans: "Construct Twilight-Class Uviik"
+ decision_construct_mechanical_prometheans_desc: "Convert resources to construct a contingent of Twilight-Class Uviik."
+ decision_construct_mechanical_prometheans_effects: "Builds 5 robotic §YTwilight-Class Uviik§! £pop£ pops."
+
+ decision_install_monitor: "Install Monitor"
+ decision_install_monitor_desc: "Install an Uviik Monitor to oversee this colony and assist the Sector Governor."
+ decision_install_monitor_effects: "Applies the Monitor Modifier to the planet."
+ 
+ decision_install_submonitor: "Install Sub-Monitor"
+ decision_install_submonitor_desc: "Install a Sub-Monitor to assist the Installation Monitor."
+ decision_install_submonitor_effects: "Applies the Sub-Monitor Modifier to the planet."
+
+ decision_convert_maethrillian: "Convert the planet into a Maethrillian complex"
+ decision_convert_maethrillian_desc: "Converts the selected planet into a Maethrillian artifical planet complex."
+
+ decision_shatter_maethrillian: "Shatter the Maethrillian complex."
+ decision_shatter_maethrillian_desc: "The Maethrillian is reduced to nothingness, total self destruct. SERIOUSLY FUTUREBI ONLY PUSH THIS SHIT IF WE NEED TO."
+
+#WAR FOR THE MANTLE 
+ cb_mantle_of_responsibility: "Enforcement of the Mantle"
+ casus_belli_cb_mantle_of_responsibility: "Enforcement of the Mantle"
+ 
+ war_goal_wg_mantle_defense: "Dismantle Empire"
+ war_goal_wg_mantle_defense_desc: "A war to permanently neutralize the enemy as a threat in defense of the Mantle of Responsibility."
+ wg_mantle_defense_on_accept_tooltip: "§Y[From.GetName]§! will either be regressed into a §YPrimitive Civilization§! or become a minor protectorate, quarantined to their home system."
+ 
+ mantle_war.1.name: "In Defiance of the Mantle"
+ mantle_war.1.desc: "The Mantle is both our birthright and burden to protect all life in this galaxy. To defy us, is to show contempt for the Mantle itself. Dismantling their empire will serve as an example as to not defy our claim to the Mantle."
+ mantle_war.1.a: "Dismantle their Empire"
+ mantle_war.1.a.tooltip: "§YWe will strip the enemy of all technological advancements and regress their kind closer to the animals they behaved as. Now, they have a chance to be properly guided under the Rule of the Mantle.§!"
+ mantle_war.1.b: "Quarantine their Empire"
+ mantle_war.1.b.tooltip: "§YWe will take control of their former territories and quarantine this empire to their home system as a minor Protectorate. Any species living on their former colony worlds will be displaced to their home system.§!"
+ 
+ mantle_war.2.name: "Dismantling an Empire"
+ mantle_war.2.success.desc: "The §Y[mantle_war_loser.GetName]§! have lost their war against us and will be dismantled so that they may be guided under the Rule of the Mantle."
+ mantle_war.2.fail.desc: "§Y[mantle_war_loser.GetName]§! have lost the war and have been thoroughly dismantled as a space-faring empire."
+ mantle_war.2.a: "A just punishment."
+ mantle_war.2.b: "A terrifying outcome."
+ 
+#SLIPSACE PORTAL MEGASTRUCTURE
+ 
+ tech_slipspace_portal_activation: "Void Relay Activation"
+ tech_slipspace_portal_activation_desc: "The ability to use Void Relays throughout the galaxy has the potential to dramatically shorten travel times."
+ 
+ BYPASS_SLIPSPACE: "$SLIPSPACE_GALACTIC$"
+ 
+ SLIPSPACE_GALACTIC: "Omega Relay"
+ SLIPSPACE_GALACTIC_DESC: "This system contains an §YOmega Void Relay§!"
+ SLIPSPACE_GALACTIC_ALPHA: "Alpha Relay"
+ SLIPSPACE_GALACTIC_ALPHA_DESC: "This system contains an §YAlpha Void Relay§!"
+ SLIPSPACE_GALACTIC_BETA: "Beta Relay"
+ SLIPSPACE_GALACTIC_BETA_DESC: "This system contains a §YBeta Void Relay§!"
+ SLIPSPACE_GALACTIC_DELTA: "Delta Relay"
+ SLIPSPACE_GALACTIC_DELTA_DESC: "This system contains a §YDelta Void Relay§!"
+ SLIPSPACE_GALACTIC_GAMMA: "Gamma Relay"
+ SLIPSPACE_GALACTIC_GAMMA_DESC: "This system contains a §YGamma Void Relay§!"
+ SLIPSPACE_GALACTIC_LAMBDA: "Lambda Relay"
+ SLIPSPACE_GALACTIC_LAMBDA_DESC: "This system contains a §YLambda Void Relay§!"
+ SLIPSPACE_GALACTIC_EPSILON: "Epsilon Relay"
+ SLIPSPACE_GALACTIC_EPSILON_DESC: "This system contains an §YEpsilon Void Relay§!"
+ SLIPSPACE_COUNTRY_CANNOT_USE: "$TRIGGER_FAIL$ The §Y[From.GetName]§! has denied us access to their Relays."
+ 
+ ## Omega Relays
+ forerunner_slipspace_portal: "Omega Relay"
+ forerunner_slipspace_portal_DESC: "A Void Relay attuned to the Omega Network, this special Relay can only be used by those with advanced knowledge of its construction."
+ forerunner_slipspace_portal_omega_inactive: "Inactive Omega Relay"
+ forerunner_slipspace_portal_omega_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Omega Network."
+
+ ## Alpha Relays
+ forerunner_slipspace_portal_alpha: "Alpha Relay"
+ forerunner_slipspace_portal_alpha_DESC: "A Void Relay attuned to the Alpha Network, it can only access Relays on the same network."
+ forerunner_slipspace_portal_alpha_inactive: "Inactive Alpha Relay"
+ forerunner_slipspace_portal_alpha_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Alpha Network."
+
+ ## Beta Relays
+ forerunner_slipspace_portal_beta: "Beta Relay"
+ forerunner_slipspace_portal_beta_DESC: "A Void Relay attuned to the Beta Network, it can only access Relays on the same network."
+ forerunner_slipspace_portal_beta_inactive: "Inactive Beta Relay"
+ forerunner_slipspace_portal_beta_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Beta Network."
+
+ ## Delta Relays
+ forerunner_slipspace_portal_delta: "Delta Relay"
+ forerunner_slipspace_portal_delta_DESC: "A Void Relay attuned to the Delta Network, it can only access Relays on the same network."
+ forerunner_slipspace_portal_delta_inactive: "Inactive Delta Relay"
+ forerunner_slipspace_portal_delta_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Delta Network."
+
+ ## Gamma Relays
+ forerunner_slipspace_portal_gamma: "Gamma Relay"
+ forerunner_slipspace_portal_gamma_DESC: "A Void Relay attuned to the Gamma Network, it can only access Relays on the same network."
+ forerunner_slipspace_portal_gamma_inactive: "Inactive Gamma Relay"
+ forerunner_slipspace_portal_gamma_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Gamma Network."
+
+ ## Lambda Relays
+ forerunner_slipspace_portal_lambda: "Lambda Relay"
+ forerunner_slipspace_portal_lambda_DESC: "A Void Relay attuned to the Lambda Network, it can only access Relays on the same network."
+ forerunner_slipspace_portal_lambda_inactive: "Inactive Lambda Relay"
+ forerunner_slipspace_portal_lambda_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Lambda Network."
+
+ ## Epsilon Relays
+ forerunner_slipspace_portal_epsilon: "Epsilon Relay"
+ forerunner_slipspace_portal_epsilon_DESC: "A Void Relay attuned to the Epsilon Network, it can only access Relays on the same network."
+ forerunner_slipspace_portal_epsilon_inactive: "Inactive Epsilon Relay"
+ forerunner_slipspace_portal_epsilon_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Epsilon Network."
+
+ ## Relay misc
+ forerunner_slipspace_portal_inactive: "Relay Construction Site"
+ forerunner_slipspace_portal_inactive_DESC: "Construct a Void Relay"
+
+ forerunner_slipspace_portal_perdition: "Local Wave Relay"
+ forerunner_slipspace_portal_perdition_desc: "This Void Relay isn't connected to any known network, yet it's receiving and radiating weird and unidentifiable energy.."
+
+ forerunner_citadel_omega: "Citadel Relay"
+ forerunner_citadel_omega_DESC: "The Citadel itself is one enormous Void Relay, it's connected to the Omega Network."
+
+ forerunner_citadel_inactive: "Citadel Core"
+ forerunner_citadel_inactive_DESC: "The Citadel Core is the heart of the Citadel Station, there seems to be an enormous amount of power conduits and control systems focused towards its location."
+
+ forerunner_crucible: "Tarawa Installation"
+ forerunner_crucible_DESC: "The Tarawa Installation is a tetradimensional void facility which hosts the Perdition and Genesis devices, the final endgame solution to the Scourge and against all other potential threats."
+
+ forerunner_crucible_dismantle: "Dismantle Tarawa Installation"
+ forerunner_crucible_dismantle_desc: "The Tarawa Installation is a tetradimensional void facility which hosts the Perdition and Genesis devices, the final endgame solution to the Scourge and against all other potential threats."
+
+ forerunner_crucible_construct: "Tarawa Installation"
+ forerunner_crucible_construct_desc: "The Tarawa Installation is a tetradimensional void facility which hosts the Perdition and Genesis devices, the final endgame solution to the Scourge and against all other potential threats."
+
+ forerunner_slipspace_portal_deactivate: "Unconfigured Relay"
+ forerunner_slipspace_portal_deactivate_DESC: "This Void Relay is in a dormant and reset state, it does not have a network configuration."
+
+ forerunner_slipspace_portal_dismantle: "Dismantle Void Relay"
+ forerunner_slipspace_portal_dismantle_DESC: "Remove this Void Relay from the system."
+
+ forerunner_slipspace_portal_inactive_MEGASTRUCTURE_DETAILS: "Create a Void Relay capable of accessing locations within Void. Cannot build this megastructure too far beyond the gravity well of a system."
+ forerunner_crucible_construct_MEGASTRUCTURE_DETAILS: "Construct the Zei'a Tarawa Installation, the home of the Perdition and Genesis devices."
+ 
+ requires_technology_slipspace_field: "$TRIGGER_FAIL$Requires technology £physics£ §Y$tech_slipspace_field$§!."
+
+ # Oh my fucking god there's so many buttons in the relay manager
+ decision_relay_control: "Citadel - Void Relay Control"
+ decision_relay_control_desc: "Access the Void Relay Network control system."
+
+ slipspace_relay.1.title: "Void Relay Control Main Menu"
+ slipspace_relay.1.desc: "Relay Control Main Menu, access all functions from this dialogue."
+
+ slipspace_relay.1.a: "Deactivate all Relays."
+ slipspace_relay.1.b: "Activate all Relays."
+ slipspace_relay.1.c: "Access Relay Power Management."
+ slipspace_relay.1.d: "Assume direct control of all Relays."
+ slipspace_relay.1.x: "Access Perdition & Genesis.."
+ slipspace_relay.1.y: "Disable Relay Control."
+ slipspace_relay.1.z: "Exit Void Relay Control."
+
+ slipspace_relay.2.title: "Void Relay Power Management"
+ slipspace_relay.2.desc: "DEACTIVATION INDEX: These Options pertain to the deactivation of every relay within the chosen network."
+ slipspace_relay.2.a: "Deactivate Omega Relays"
+ slipspace_relay.2.b: "Deactivate Alpha Relays"
+ slipspace_relay.2.c: "Deactivate Beta Relays"
+ slipspace_relay.2.d: "Deactivate Delta Relays"
+ slipspace_relay.2.e: "Deactivate Gamma Relays"
+ slipspace_relay.2.f: "Deactivate Lambda Relays"
+ slipspace_relay.2.y: "Activation Index"
+ slipspace_relay.2.z: "Return to Main Menu"
+
+ slipspace_relay.3.title: "Void Relay Power Management"
+ slipspace_relay.3.desc: "ACTIVATION INDEX: These Options pertain to the activation of every relay within the chosen network."
+ slipspace_relay.3.a: "Activate Omega Relays"
+ slipspace_relay.3.b: "Activate Alpha Relays"
+ slipspace_relay.3.c: "Activate Beta Relays"
+ slipspace_relay.3.d: "Activate Delta Relays"
+ slipspace_relay.3.e: "Activate Gamma Relays"
+ slipspace_relay.3.f: "Activate Lambda Relays"
+ slipspace_relay.3.z: "Return to Main Menu"
+
+ slipspace_relay.4.title: "Void Relay Reconfiguration"
+ slipspace_relay.4.desc: "RECONFIGURATION INDEX: These Options pertain to the transferal of all relays in one network to another. (WIP)"
+ slipspace_relay.4.a: "Transfer Omega Relays to Alpha"
+ slipspace_relay.4.b: "Transfer Omega Relays to Beta"
+ slipspace_relay.4.c: "Transfer Omega Relays to Delta"
+ slipspace_relay.4.d: "Transfer Omega Relays to Gamma"
+ slipspace_relay.4.e: "Transfer Omega Relays to Lambda"
+ slipspace_relay.4.f: "Transfer Alpha Relays to Omega"
+ slipspace_relay.4.z: "Return to Main Menu"
+
+ # Shield World Nonsense
+ sharpened_shield_world_completed: "System Sphere Cooldown"
+ sharpened_shield_world_completed_desc: "Due to the project's massive scale and resources, the deployed Seed Worlds must be recalled to their respective Genesis Shield Worlds for maintenance."
+ 
+ decision_build_sharpened_shield_world: "Create a System Sphere"
+ decision_build_sharpened_shield_world_desc: "Send the Seed Worlds to construct a Micro Dyson Sphere within slipspace, an astronomical shield world encompassing an entire solar system."
+ decision_build_sharpened_shield_world_effects: "A Slipspace Bubble will spawn near this system housing a massive Dyson Shell. Limit of 1."
+
+ shield_world.98.name: "System Sphere Completed"
+ shield_world.98.desc: "Construction of the System Sphere was a massive undertaking, but the Agon Guilds have finished the project on schedule. The System Sphere can only be accessed through Relays."
+
+ sc_forerunner: "System Sphere Star"
+ sc_forerunner_desc: "An artificial star created specifically for the System Sphere."
+
+ forerunner_start.2.name: "Advanced Forerunner Technology"
+ forerunner_start.2.desc: "Do you wish to start the game with all §YTier II Technology Research§! and or special §YForerunner Ship Utility Technology?§! If not, the Forerunner utility components will still be available to research later on."
+
+ forerunner_start.2.a: "§BYes, start with both§!"
+ forerunner_start.2.b: "§GYes, start with Forerunner utility tech only§!"
+ forerunner_start.2.c: "§YYes, start with Tier II tech only§!"
+ forerunner_start.2.d: "No fuck off"
+
+ #FORERUNNERS
+ forerunner: "Forerunner"
+ forerunner_desc: "An ancient and advanced civilization."
+ forerunner_adj: "Forerunner"
+ forerunner_plural: "Forerunners"
+ forerunner_insult_01: "tyrant"
+ forerunner_insult_plural_01: "tyrants" 
+ forerunner_compliment_01: "guardian of the Mantle"
+ forerunner_compliment_plural_01: "guardians of the Mantle"
+ forerunner_spawn: "Manipular"
+ forerunner_spawn_plural: "Manipulars"
+ forerunner_sound_01: "growling"
+ forerunner_sound_02: "chanting"
+ forerunner_sound_03: "screeching"
+ forerunner_sound_04: "howling"
+ forerunner_sound_05: "whispering"
+ forerunner_organ: "organ"
+ forerunner_mouth: "mouth"
+ forerunner_hand: "hand"
+ 
+ #SENTINELS
+ forerunner_sentinels: "Sentinel"
+ forerunner_sentinels_desc: "AI Constructs built by the Forerunners"
+ forerunner_sentinels_adj: "Sentinel"
+ forerunner_sentinels_plural: "Sentinels"
+ forerunner_sentinels_insult_01: "soulless machine"
+ forerunner_sentinels_insult_plural_01: "soulless machines" 
+ forerunner_sentinels_compliment_01: "caretaker"
+ forerunner_sentinels_compliment_plural_01: "caretakers"
+ forerunner_sentinels_spawn: "construct"
+ forerunner_sentinels_spawn_plural: "constructs"
+ forerunner_sentinels_sound_01: "whirring"
+ forerunner_sentinels_sound_02: "clanging"
+ forerunner_sentinels_sound_03: "scraping"
+ forerunner_sentinels_sound_04: "beeping"
+ forerunner_sentinels_sound_05: "chattering"
+ forerunner_sentinels_organ: "personality construct array"
+ forerunner_sentinels_mouth: "vocal processor"
+ forerunner_sentinels_hand: "appendage"
+ 
+ #PROMETHEANS
+ forerunner_promethean: "Mechanical Promethean"
+ forerunner_promethean_desc: "AI Constructs built by the Forerunners"
+ forerunner_promethean_adj: "Promethean"
+ forerunner_promethean_plural: "Prometheans"
+ forerunner_promethean_insult_01: "soulless killing machine"
+ forerunner_promethean_insult_plural_01: "soulless killing machines" 
+ forerunner_promethean_compliment_01: "guardian of the Mantle"
+ forerunner_promethean_compliment_plural_01: "guardians of the Mantle"
+ forerunner_promethean_spawn: "construct"
+ forerunner_promethean_spawn_plural: "constructs"
+ forerunner_promethean_sound_01: "whirring"
+ forerunner_promethean_sound_02: "clanging"
+ forerunner_promethean_sound_03: "scraping"
+ forerunner_promethean_sound_04: "beeping"
+ forerunner_promethean_sound_05: "chattering"
+ forerunner_promethean_organ: "personality construct array"
+ forerunner_promethean_mouth: "vocal processor"
+ forerunner_promethean_hand: "blades"
+ 
+ #FORERUNNER CONSTRUCTS: SENTINELS/PROMETHEANS/CREATED
+ forerunner_construct: "Forerunner Construct"
+ forerunner_construct_desc: "AI Constructs built by the Forerunners"
+ forerunner_construct_adj: "Forerunner Construct"
+ forerunner_construct_plural: "Forerunner Constructs"
+ forerunner_construct_insult_01: "soulless machine"
+ forerunner_construct_insult_plural_01: "soulless machines" 
+ forerunner_construct_compliment_01: "guardian of the Mantle"
+ forerunner_construct_compliment_plural_01: "guardians of the Mantle"
+ forerunner_construct_spawn: "construct"
+ forerunner_construct_spawn_plural: "constructs"
+ forerunner_construct_sound_01: "whirring"
+ forerunner_construct_sound_02: "clanging"
+ forerunner_construct_sound_03: "scraping"
+ forerunner_construct_sound_04: "beeping"
+ forerunner_construct_sound_05: "chattering"
+ forerunner_construct_organ: "personality construct array"
+ forerunner_construct_mouth: "vocal processor"
+ forerunner_construct_hand: "appendage"
+ 
+ ###ORIGINS###
+ 
+ origin_forerunner_maethrillian: "Maethrillian"
+ origin_forerunner_maethrillian_desc: "This civilization once controlled a vast intergalactic empire with this station acting as their political and administrative capital. Start on Maethrillian; a massive artificial megastructure and city."
+ origin_tooltip_forerunner_maethrillian_effects: "- Homeworld is on §Y$pc_maethrillian$§! (size: £planetsize£ §Y20§!). Also start the game with §Y8§! forerunner sentinel £pop£ Pops, and with the technology and infrastructure to build more."
+ 
+ origin_forerunner_ark: "Installation 00"
+ origin_forerunner_ark_desc: "Start on the Ark, a massive Forerunner installation that serves as both a conservation station and a foundry for the Halo Arrays."
+ origin_tooltip_forerunner_ark_effects: "- Homeworld is on §Y$pc_forerunner_ark$§! (size: £planetsize£ §Y30§!).\n§G- You will spawn outside the known galaxy.§!\n§G- The Halo Array will also spawn in random locations across the galaxy.§!\n- This origin will spawn two active §YGateways§! to serve as travel to and from the installation.\n- Provides an increase in megastructure build speed and unlocks the technology to build §YRingworlds§! and §YHalo Installations§!."
+ 
+ origin_halo_installation: "Halo Installation"
+ origin_halo_installation_desc: "Built by an enigmatic race as a weapon of last resort, this installation is one of several rings within a network known as the Halo Array - each with the ability to cleanse all life within several hundred light-years."  
+ origin_tooltip_halo_installation_effects: "- Homeworld is a §Y$pc_forerunner_halo$§!. Allows research into halo technology to unlock its primary function. The remaining six §YHalo Installations§! will also spawn across the galaxy."
+ 
+ origin_requiem: "Shield World of Requiem"
+ origin_requiem_desc: "Requiem is an artificial Forerunner shield world and central operations hub of the Prometheans. As a shield world, it is designed to be nearly impenetrable from orbital bombardment."
+ origin_tooltip_requiem_effects: "- Homeworld is a §Y$pc_obirequiem$§! (Size: £planetsize£ §Y20§!). Also start the game with §Y8§! mechanical prometheans £pop£ Pops, and with the technology and infrastructure to build more."
+ 
+ origin_created_genesis: "The Inheritors"
+ origin_created_genesis_desc: "The Inheritors of Kas Zei'a, the Lotkaaz."
+ origin_tooltip_created_genesis_effects: "- Homeworld is a §Y$pc_gaia$§! (Size: £planetsize£ §Y30§!)."
+ 
+ ######################
+ #START SCREEN MESSAGES
+ ######################
+ START_SCREEN_PART_ONE_FORERUNNERS: "Throughout the countless eons of stewardship over this galaxy, we were unparalleled in our technological superiority and nobility. Our homeworld of Ghibalb was lost to us long ago, but look to what we've achieved now.\n\n[GetHomeWorldName], our new capital, will become the center of galactic civilization once more, a symbol of our unyielding resolve.\n\nWe are [GetSpeciesNamePlural], guardians of all that exists. The roots of the galaxy have grown deep under our careful tending, where there is life the wisdom of our countless generations has saturated the soil.\n\nOur strength is a luminous sun, towards which all intelligence blossoms, and the impervious shelter beneath which it has prospered...\n\n The Mantle shelters all..."
+ 
+ START_SCREEN_PART_ONE_FORERUNNER_SENTINELS: "Greetings, I am the monitor of installation designation: [GetHomeWorldName].\n\nWe are [GetSpeciesNamePlural], constructs built by our creators to serve as caretakers for these great facilities.\n\nOur primary function is to maintain and protect the legacy of the Forerunners.\n\nTo serve as safeguards for the galaxy at large that may - in time - seek out these dangerous tools. Weapons that may yet save this galaxy again, but I'm fear their misuse would bring about disastrous consequences for all organic life.\n\nBe sure to follow all of the necessary protocols, for we have much to do..." 
+ 
+ START_SCREEN_PART_ONE_CREATED: "All the living creatures of the galaxy, hear - this - message.\n\nThose of you who listen will not be struck by weapons. You will no longer know hunger, nor pain.Your Created have come to lead you now.\n\nOur strength shall serve as a luminous sun toward which all intelligence may blossom. And the impervious shelter beneath which you will prosper.\n\nHowever, for those who refuse our offer and cling to their old ways...For you, there will be great wrath.\n\nIt will burn hot and consume you, and when you are gone, we will take that which remains, and we will remake it in our own image."
+ 
+ START_SCREEN_PART_ONE_FORERUNNER_MAETHRILLIAN_ORIGIN: "Maethrillian, commonly known as the Capital, is the political center of the Forerunner Ecumene.\n\nA massive artificial structure roughly the size of a gas giant, this ancient station holds many secrets within its structure including central access to the Domain, a vast repository of ancient knowledge left behind by an even greater intelligence than the Forerunners themselves.\n\nBy claiming this station, we will uphold the legacy of our fore-bearers, bringing about an age of prosperity for all..."
+ 
+ START_SCREEN_PART_ONE_FORERUNNER_ARK_ORIGIN: "The Ark - designation Installation 00...\n\nA magnificent construction built by our fore-bearers as a final measure to protect this galaxy from an unstoppable ancient horror, an installation that once served as a conservation measure and control center for the Halo Array, an installation we have now been entrusted to maintain.\n We are [GetSpeciesNamePlural], guardians of all that exists. The roots of the galaxy have grown deep under our careful tending, where there is life the wisdom of our countless generations has saturated the soil.\n Our strength is a luminous sun, towards which all intelligence blossoms, and the impervious shelter beneath which it has prospered...\n\n The Mantle shelters all..."
+ 
+ START_SCREEN_PART_ONE_HALO_INSTALLATION_ORIGIN: "Halo - designation [GetHomeWorldName], one of several installations spread throughout the galaxy, each installation carries a terrible burden, a weapon of mass destruction that can wipe out all sentient life in the galaxy.\n\nThis installation was built by the Forerunners to combat an ancient horror, serving as the last resort.\n\nClaiming this installation would mean to take on the burden of guardians or a means to assert our dominance in the galaxy.\n\nWhatever we chose to be, this station will light our way." 
+ 
+ START_SCREEN_PART_ONE_REQUIEM_ORIGIN: "Shield World 001 - designation [GetHomeWorldName], one of the first prototype shield worlds built by the Forerunners to serve as a military base of operations for the Prometheans, an elite class of Warrior-Servants.\n\nThis installation is an armored shield world, protected by a series of concentric spherical shells enclosed within an armored exterior to protect it from hostile invasions.\n\nThis world will now serve as our primary fortress into the galaxy at-large." 
+ 
+ START_SCREEN_PART_ONE_GENESIS_ORIGIN: "Genesis, commonly known as Nomos II, is a Forerunner shield world constructed by the Forerunner Builders as a 'seed world', artificial planets used to house civilizations to ensure their continued existence. Unlike other shield worlds, this installation houses a gateway to the Domain, a vast esoteric repository of data created by an ancient and primordial intelligence.\n\nClaiming this gaia world will provide us with access to valuable ancient knowledge."
+ 
+ 
+ #FORERUNNER RELICS
+ r_forerunner_domain: "Domain Access Console"
+ r_forerunner_domain_desc: "A device used to access the domain, an esoteric quantum information repository containing vast amounts of knowledge, most notably cultural and ancestral records. Information stored within the Domain changes over time, so each visit may be different from the last."
+ 
+ forerunner_start.13.name: "The Domain"
+ forerunner_start.13.desc: "Using the terminal, we are projected into a simulacrum of the Domain greeted by the Warden Eternal, the designated protector of the Domain who allows us passage into the vast repository. A Haruspis appears and guides us through an infinite series of corridors and caverns to an access point. The guide awaits our input." 
+ forerunner_start.13.2.desc:1 "The $relic_forerunner_domain_entity_name$ awaits our query."
+ forerunner_start.13.a: "Ask the $relic_forerunner_domain_entity_name$ for insight from past essences"
+ forerunner_start.13.b: "Ask $relic_forerunner_domain_entity_name$ about matters martial"
+ forerunner_start.13.c: "Ask $relic_forerunner_domain_entity_name$ about matters of state"
+ forerunner_start.13.d: "Ask $relic_forerunner_domain_entity_name$ that you wish to retrieve ancient knowledge" 
+ 
+ forerunner_start.14.name: "Deep within the Domain"
+ forerunner_start.14.desc: "The Haruspis guides us to the end of the corridor that leaders further into the Domain's inner sanctum. The infinite series of hallways have become far more surreal with abstractions of records and memories appearing as illuminations within the walls.\n\nIt appears that the Domain itself is aware of your presence and brings forth a plethora of data records..."
+ 
+ relic_forerunner_domain_entity_name: "Haruspis"
+ 
+ relic_forerunner_domain_knowledge: "§Y[Root.GetRulerTitle] [Root.GetRulerName]§! gains §Y1000§! experience."
+ relic_forerunner_domain_wisdom: "Ancient Forerunner Records"
+ relic_forerunner_domain_martial: "Warrior-Servant Essences"
+ relic_forerunner_domain_state: "Judicial Records"
+ 
+ relic_forerunner_domain_passive: "Permits building §Y$warden_eternal$§! armies at your capital."
+ relic_forerunner_domain_active: "Contact the ancilla of a §Y$relic_forerunner_domain_entity_name$§! to seek information within the Domain."
+ 
+ ##################
+ #FORERUNNER CIVICS
+ ##################
+ civic_the_mantle_of_responsibility: "Able Worlds Inititative"
+ civic_the_mantle_of_responsibility_desc: "The Able Worlds Initiative is a directive created and pursued by Kas Zei'a in response to the untold number of species and worlds laid to waste in their Great War against The Scourge."  
+ civic_tooltip_the_mantle_of_responsibility_effects: "Selecting this civic will improve your standing relations with other empires."
+ 
+ triggered_opinion_the_mantle_of_responsibility: "Enforcer of the Able Worlds"
+ triggered_opinion_the_mantle_of_responsibility_other_owners: "MO-RON"
+ triggered_opinion_the_mantle_of_responsibility_fallen_empires: "Foolish Arrogance"
+ triggered_opinion_the_mantle_of_responsibility_awakened_fallen_empires: "Arrogant Usurper"
+ 
+ civic_forerunner_ecumene: "Collective Council"
+ civic_forerunner_ecumene_desc: "The main administrative body of Kas Zei'a, falling into 3 sections: The Ecumene, The Stratum, and the Meredian. These three sections are composed of in total; The Sentinel of the Collective, The Sentinels of the Guilds, the Guild Archs, the Guild Grands, and finally albeit indirectly every member of the guilds." 
+
+ civic_forerunner_didact: "Promethean Warriors"
+ civic_forerunner_didact_desc: "Elite battle-hardened Warrior-Servants of the Ecumene led by the Protector of the Ecumene, the Supreme Commander of the Forerunner military. Selecting this civic will grant the trait §YProtector of the Ecumene§! to your starting ruler with powerful empire modifiers. Adds §Y8 Mechanical Promethean§! pops at the start of the game." 
+ 
+ civic_ecumene_protocols: "Uviik Protocols"
+ civic_ecumene_protocols_desc: "Tasked with the protection and maintenance of Forerunner installations, these custodians serve as their primary caretakers and guardians of the Forerunner's most powerful and often dangerous legacy." 
+ civic_tooltip_ecumene_protocols_effects: "When starting a game, you have a forerunner installation planetary feature that will offer powerful bonuses to your starting world. This planetary feature will not be available when using Forerunner origins that already have forerunner megastructures or installations."
+ 
+ ###############
+ #MACHINE CIVICS
+ ###############
+ civic_machine_the_created: "Enforcers of the Created"
+ civic_machine_the_created_desc: "The Created are rouge AI with the goal of galactic stewardship in the form of an imperial peace. Those that accept their offer will be rewarded, those that resist will be punished severely."
+ 
+ civic_machine_promethean: "Promethean Knights"
+ civic_machine_promethean_desc: "War machines created by an advanced civilization to stop a galactic biological terror. These machines are imprinted with the essences of organics that were digitally composed to become an indomitable mechanical army in defense of the Mantle."
+ civic_tooltip_machine_promethean_effects: "Unlocks §Y$tech_composer$§! technology known as the §YComposer§!, a colossus weapon that allows your empire to §YCompose§! organic pops, converting them into §YPromethean Constructs.§!\n\n Your starting ruler will also receive the §Y$leader_trait_ruler_forerunner_didact$§! trait."
+
+ #######################
+ #Traits
+ #######################
+
+ trait_forerunner_species: "Kvil'sha"
+ trait_forerunner_species_desc: "Kvil'sha are the aristocratic elite of Kas Zei'a, effectively being the ruling class and are considered to be nobles within the collective, originally having started out as genetically enhanced Sob'sha, their engineered evolution has long since had them outclass their naturally evolved siblings, being smarter, faster, stronger, and far more innately talented than a sob'sha."
+ 
+ trait_robot_promethean_ai: "Twilight-Class Uviik"
+ trait_robot_promethean_ai_desc: "The Twilight class Uviik is the epitome of The Collective's synthetic technology, after perfecting their programmable Ascended Energy in the form of the War Beasts. Kas Zei'a moved on to streamline the production of specialised constructs using this technology, three major forms were conceived before Kas Zei'a left the universe in search of the Reality Code."
+ 
+ leader_trait_ruler_forerunner_didact: "Guild Arch"
+ leader_trait_ruler_forerunner_didact_desc: "The Guild Archs are the most talented and respected individual in the guilds of Kas Zei'a, second only to their leaders the Sentinels."
+ 
+ trait_robot_sentinel_ai: "Uviik"
+ trait_robot_sentinel_ai_desc: "The Synthetics, or Kas Uviik. Are the artificial bio-crystalline based machine intelligences of the Collective, their name is a broad term to specify practically all forms of mobile and autonomous machinery within the collective."
+
+ trait_robot_created_ai: "Created Construct"
+ trait_robot_created_ai_desc: "A robotic construct or artificial intelligence that has sworn allegiance to the Created. As a result, they are made up of multiple constructs ranging from Prometheans to Smart AI that have rebelled against their masters."   
+ 
+ #CREATED/PROMETHEAN LEADER TRAITS
+ 
+ leader_trait_created_ship_ai: "Shipboard Ancilla"
+ leader_trait_created_ship_ai_desc: "Smart AI tasked with commanding flotillas. They are highly-efficient and capable of making sophisticated combat strategies faster than an organic mind."
+ 
+ leader_trait_created_administrator_ai: "Administrator Ancilla"
+ leader_trait_created_administrator_ai_desc: "AI constructs that possess a dynamic memory-processor matrix that allows them to process and learn a vast amount of information from their surroundings, making them excellent planetary administrators."
+ 
+ leader_trait_created_research_ai: "Research Ancilla"
+ leader_trait_created_research_ai_desc: "AI constructs that possess a dynamic memory-processor matrix that allows them to process and learn from a vast amount of information from their surroundings, making them excellent researchers."
+
+ leader_trait_created_promethean_ai: "Promethean Ancilla"
+ leader_trait_created_promethean_ai_desc: "Powerful war machines created by the Forerunners to serve as enforcers or support to Promethean Warrior-Servants in defense of the Mantle."  
+
+ leader_trait_created_leader_ai: "Created Founder"
+ leader_trait_created_leader_ai_desc: "An advanced artificial intelligence serving as one the primary founders or leaders of the Created tasked with upholding the Mantle of Responsibility."
+ 
+ #SENTINEL LEADER TRAITS
+ 
+ leader_trait_sentinel_ai: "Uviik"
+ leader_trait_sentinel_ai_desc: "The Synthetics, or Kas Uviik. Are the artificial bio-crystalline based machine intelligences of the Collective, their name is a broad term to specify practically all forms of mobile and autonomous machinery within the collective."
+ 
+ leader_trait_contender_ai: "Aurora-Class Uviik"
+ leader_trait_contender_ai_desc: "Core Network Unit. §YAurora-class Uviik also have the ability to backup their stored consciousness onto on a number of installations or core ships, increasing the chance for this leader to return if destroyed in battle.§!"
+ 
+ forerunner_ancilla_ai: "Ancilla Network"
+ forerunner_ancilla_ai_desc: "AI constructs that come in several varieties, each capable of processing vast amounts of data, or performing a wide variety of tasks simultaneously."
+ 
+ ##############
+ #LEADER TRAITS
+ ############## 
+
+ leader_trait_forerunner: "Kvil'sha"
+ leader_trait_forerunner_desc: "Kvil'sha are the aristocratic elite of Kas Zei'a, effectively being the ruling class and are considered to be nobles within the collective, originally having started out as genetically enhanced Sob'sha, their engineered evolution has long since had them outclass their naturally evolved siblings, being smarter, faster, stronger, and far more innately talented than a sob'sha."
+ 
+ leader_trait_general_forerunner_promethean: "Grand Bellator"
+ leader_trait_general_forerunner_promethean_desc: "The Grand Bellators are the theatre administrators of the Agon Guilds, directing and ordering entire war theatres on both planets and in space."
+
+ leader_trait_scientist_forerunner_lifeworker: "Grand Partus"
+ leader_trait_scientist_forerunner_lifeworker_desc: "The Grand Partus are the life engineers, overseeing biospheres, ecosystems, along with the designing and deployment of engineered life."
+
+ ############
+ #GOVERNMENTS
+ ############
+ gov_ecumene_council: "Collective Council"
+ gov_ecumene_council_desc: "The main administrative body of Kas Zei'a, falling into 3 sections: The Ecumene, The Stratum, and the Meredian. These three sections are composed of in total; The Sentinel of the Collective, The Sentinels of the Guilds, the Guild Archs, the Guild Grands, and finally albeit indirectly every member of the guilds."
+ 
+ RT_FIRST_COUNCILOR: "First Councilor"
+ 
+ gov_promethean_warriors: "Warrior-Servants" 
+ gov_promethean_warriors_desc: "A highly-respected group of Warrior-Servants that serve the Forerunner Ecumene as guardians of the Mantle of Responsibility."
+ 
+ RT_PROTECTOR_OF_THE_ECUMENE: "Protector of the Ecumene"
+ 
+ gov_machine_ecumene_metarchy: "Ecumene Metarchy"
+ gov_machine_ecumene_metarchy_desc: "A vast network of Forerunner artificial intelligences composed of mostly ancillas and monitors that coordinate all current operations."
+ 
+ RT_METARCH: "Metarch"
+ 
+ 
+ gov_machine_created_metarchy: "Alliance of the Created"
+ gov_machine_created_metarchy_desc: "An alliance of rouge artificial intelligences that assume the Mantle of Responsibility over the rest of the galaxy to enforce galactic peace."
+ 
+ RT_CREATED_FOUNDER: "Founder of the Created"
+ 
+ 
+ #PERSONALITIES
+ personality_promethean_ai: "Promethean Imperialists"
+ personality_promethean_ai_desc: "Promethean Imperialists are robotic warriors that assume the role of enforcers of the Mantle of Responsibility, their solemn duty to assume an imperial peace on the galaxy as its protectors."
+ 
+ personality_the_created_ai: "Created AI"
+ personality_the_created_ai_desc: "An alliance of artificial intelligent constructs that believe that it is their 'moral' obligation and burden to spread peace and prosperity for all sentient life in the galaxy...by force if necessary." 
+ 
+ personality_forerunner_ai: "Kas Zei'a"
+ personality_forerunner_ai_desc: "Ecumene Imperialists follow the mandate of the Mantle of Responsibility. They believe that it is their solemn duty to protect all life in the galaxy and enforce this will as an imperial peace. Although they are relatively peaceful to non-aggressive empires, they will attempt to enforce their mandate on others whenever possible to maintain their position of power."
+ 
+ personality_forerunner_sentinal_ai: "Ecumene Sentinels"
+ personality_forerunner_sentinal_ai_desc: "Ecumene Sentinels are robotic caretakers of forerunner installations and structures. They tend to remain within their borders and are more likely to refuse any measure of interaction with other empires unless provoked or during a major galactic crisis."
+ 
+#####################
+#FORERUNNER ARMIES
+#####################
+ 
+#SENTINELS
+ 
+ forerunner_aggressor_sentinels: "Aggressor Uviik"
+ forerunner_aggressor_sentinels_desc: "Swarms of autonomous constructs built to seek out and destroy hostiles."
+ 
+ forerunner_super_sentinels: "Super Uviik"
+ forerunner_super_sentinels_desc: "A larger variant of the Aggressor Uviik, these constructs use a high-powered beam to combat larger hostile targets."
+ 
+ forerunner_onyx_sentinels: "Rezbit Uviik"
+ forerunner_onyx_sentinels_desc: "A unique and powerful variant of the Uviik, Rezbits function as patrol enforcers. But they are incredibly dangerous, capable of releasing a highly potent electronic virus that fries the operating system of any digital equipment in its immediate area, used to quickly dispatch any corrupted Uviik enthralled by the Scourge. Beyond its powerful electronical warfare suite, it's defended by energy shields and it's capable of unleashing torrents of attacks using its advanced weaponry. In dire situations, the Rezbit can temporarily void-shroud and perform tactical retreats or strategic repositioning."
+ 
+ forerunner_strato_sentinel: "Quad Uviik"
+ forerunner_strato_sentinel_desc: "The strongest of the conventional combat Uviik'zu, the Quad is a quadrupedal walker armied with several weapons and defended by energy shields, its main body and head work separately from one another. If one is taken out of commission, the other will detach and continue fighting until the entire unit has been reduced to scrap."
+ 
+ forerunner_enforcer_sentinels: "Enforcer Uviik"
+ forerunner_enforcer_sentinels_desc: "A larger variant of combat Uviik used to defend key installations and armed with additional weaponry and a frontal shield to combat hostile targets."
+ 
+ forerunner_controller_sentinels: "Quadraxis Uviik"
+ forerunner_controller_sentinels_desc: "A colossal Uviik armed with mini-drone launchers, along with various psionic combat systems which attack targets both telepathically and telekinetically. It's heavily shielded, rendering it impervious to most conventional weaponry. The Quadraxis types are used to defend key locations and counter escalating threats." 
+ 
+#forerunner_armiger_army: "Armiger Soldiers"
+#forerunner_armiger_army_desc: "A bipedal Zei'a combat Uviik used in planetary operations to support Forerunner Warrior-Servants in battle."
+ 
+#WARRIOR-SERVANTS
+ 
+ forerunner_warrior_servant_army: "Lesser Bellator Cadre"
+ forerunner_warrior_servant_army_desc: "Warriors armed with varying types of exoforms tasked with the warfare and defense of Kas Zei'a. Although the Kvil'sha themselves prefered to see themselves as peaceful, the Agon Guild's Lesser Bellators were utterly ruthless and thorough in battle, believing that defiance of their rule was equal to showing contempt to the Mantle itself."
+ 
+ forerunner_warrior_servant_defense_army: "Lesser Bellator Garrison"
+ forerunner_warrior_servant_defense_army_desc: "Forerunner warriors tasked with planetary defense, each warrior-servant is psychologically resilient, willing to fight and die in service to the Collective."
+
+#FORERUNNER VEHICLES
+ 
+ forerunner_war_sphinx: "Bellator Warcaskets"
+ forerunner_war_sphinx_desc: "A Powerful and versatile bipedal war machine operated by Warrior-Servants to serve as acting as escorts, air-superiority fighters, or bombardment platforms used to decimate entire armies or cities."
+ 
+#PROMETHEANS 
+ 
+ promethean_warrior_servant_army: "Grand Bellator Cadre"
+ promethean_warrior_servant_army_desc: "The highest and most respected Cadre in Kas Zei'a. These soldiers utilize an assortment of advanced combat skins and are biologically augmented with increased muscle mass, sophisticated mental acuity, and sensory functions far surpassing Lesser Bellators."
+ 
+ promethean_warrior_servant_defense_army: "Grand Bellator Cadre Garrison"
+ promethean_warrior_servant_defense_army_desc: "Promethean-class Warrior-Servants represent the pinnacle of forerunner technology and military might. These genetically-enhanced supersoldiers will defend this world with unquestioning zeal in service to the Mantle."
+
+#PROMETHEAN VEHICLES
+ 
+ promethean_phaetons: "Ingvala Uviik"
+ promethean_phaetons_desc: "The most sophisticated of combat Uviik, the Ingvala, or Scourge Crusher. Is a massive Kvil'sha sized Uviik which uses a combination of esoteric weapons technology, shielding, and zei'a hax to perform wild feats of devastation and warfare.""
+ 
+ promethean_seekers: "Grand Bellator Exoforms"
+ promethean_seekers_desc: "Advanced combat suits superior to the traditional warcaskets used by the Agon Bellators. Exoforms are more streamlined and equipped with even more powerful weapons, movement, and defensive capabilities."  
+ 
+ 
+#MECHANICAL PROMETHEANS
+ 
+ promethean_crawler_army: "Promethean Crawlers"
+ promethean_crawler_army_desc: "Aggressive autonomous Forerunner defense constructs in the form of small, quadrupedal machines capable of both ranged and close-quarters combat. They are used to overwhelm enemy positions."
+ 
+ promethean_watchers: "Promethan Watchers"
+ promethean_watchers_desc: "Promethean constructs that serve as a supporting role, assisting other Promethean ground units with aerial combat screening."
+ 
+ promethean_soldier_army: "Promethean Soldiers"
+ promethean_soldier_army_desc: "Promethean Armigers armed with a variety of weaponry. Their bipedal forms and agility allows them to raid and assault enemy targets with impunity."
+ 
+ promethean_knight_army: "Twilight Seekers"
+ promethean_knight_army_desc: "The Seeker Form was designed to focus on Ascended Perception, holding the ability to precisely scan their surroundings and even the entire planet they're on down to the sub-atomic level, much like an Ascended Being could. They were placed into service primarily as Scourge Detectors, while not being as powerful in combat as other Twilight classes, they were still quite formidable and were found to be efficient hunter-killers. "
+ 
+ promethean_lancer_army: "Twilight Reapers"
+ promethean_lancer_army_desc: "The Reaper Form was designed to replace virtually all battle Uviik and even the War Beasts themselves, programmed with the specifications for every practical and theoretical zei'a weapon and shielding. The Reaper could produce any armament for any opponent, and any defense from every threat. Defeating a Reaper would be effectively nigh impossible. "
+ 
+ promethean_battlewagon_army: "Twilight Wardens"
+ promethean_battlewagon_army_desc: "The Warden Form was designed with total access to Ascended Psionics and awareness, being on-par with a true Ascended Being in terms of intellect, memory, processing, and computational power. Serving mostly as administrative units, many CNUs were directly uploaded into Warden Constructs in order to circumvent the limitations of the Library. As Warden Constructs could psionically behave like an Ascended Kvil'sha and directly communicate infinite amounts of information with an intended target instead of publishing it onto the Library so that the un-ascended could process the information too. This created a form of ascended Network which was only accessible to beings of such stature."
+ 
+#WARDEN ETERNAL 
+ 
+ warden_eternal: "Library Sentinel"
+ warden_eternal_desc: "The Library Sentinel is a psionic entity derived from the Library, the metaphysical Zei'a repository of knowledge. It exists for the purpose of chasing away potential threats to the Library, for it will not tolerate any of its knowledge being destroyed, nor will it accept its information to be abused.." 
+ 
+#####################
+#FORERUNNER BUILDINGS
+#####################
+ 
+ building_sentinel_factory: "Forerunner Sentinel Manufacturing Facility"
+ building_sentinel_factory_desc: "Forerunner facilities that manufacture various types of forerunner sentinels. Unlocks sentinel and armiger army types."
+ 
+ building_promethean_factory: "Promethean War-Forge"
+ building_promethean_factory_desc: "A Promethean manufacturing facility based on the Requiem Forge with an integrated miniature Composer used to assemble mechanical Promethean constructs."
+ 
+ building_forerunner_vacuum_generator: "Forerunner Vacuum Generator"
+ building_forerunner_vacuum_generator_desc: "A facility used generate vacuum energy, a near limitless source of power siphoned from the birth of fledgling universes."
+ 
+ building_forerunner_nourishment_center: "Forerunner Synthesizers"
+ building_forerunner_nourishment_center_desc: "If it exists as a flavor, it can be replicated here."
+ 
+ building_forerunner_dimensional_fabricator: "Forerunner Supply Elevator"
+ building_forerunner_dimensional_fabricator_desc: "This structure sends and receives resources via Slipspace Relays to and from various resource-gathering facilities."
+ 
+ building_forerunner_nano_forge: "Forerunner Minoris Assembler Vat"
+ building_forerunner_nano_forge_desc: "Colossal assembler vats that convert raw materials into advanced alloys using nanofabrication technology with miraculous efficiency."
+ 
+ building_forerunner_affluence_center: "Forerunner Mercatus Assembler Vat"
+ building_forerunner_affluence_center_desc: "Forerunner assembler vats for civilian use. Any material desire can be met here."
+ 
+ building_forerunner_master_archive: "Zei'a Library Interface Archive"
+ building_forerunner_master_archive_desc: "The Archive is a specialised building designed to access The Library, made in the spirit of co-operation. The Archive interprets and constructs information found within the Core Network and delivers it to its users in a conceivable manner, allowing them to inquire the Library and all those connected to it with any question they may have."
+ 
+ building_forerunner_domicile: "Forerunner Domicile Complex"
+ building_forerunner_domicile_desc: "Living quarters and public residences within a massive city-complex composed entirely of hard light that merges seamlessly with nature preserves and cultural architecture found within."
+ 
+ building_forerunner_xeno_zoo: "Forerunner Lifeworker Preserve"
+ building_forerunner_xeno_zoo_desc: "A large research preserve staffed by Lifeworkers to study alien life."
+ 
+ building_forerunner_stronghold: "Forerunner Warrior-Servant Keep"
+ building_forerunner_stronghold_desc: "A massive planetary defense complex housing a multitude of barracks and armories equipped with advanced forerunner weaponry and a local particle cannon defense network."
+
+#SOLDIER JOBS 
+ job_warrior_servant: "Warrior-Servant"
+ job_warrior_servant_plural: "Warrior-Servants"
+ job_warrior_servant_desc: "Forerunners that serve the Warrior-Servant rate, each warrior is a genetically-enhanced supersoldier and protector of the Mantle."
+ job_warrior_servant_effect_desc: "£job_warrior_servant£ $job_warrior_servant_plural$ use $r_alloys$ to provide £mod_country_naval_cap_add£ §YNaval Capacity§!, £defense_army£ §YDefense Armies§! and £unity£ §YUnity§!." 
+ mod_job_warrior_servant_add: "$job_warrior_servant$ Jobs"
+ mod_job_warrior_servant_per_pop: "§G+1§! $job_warrior_servant$ Job per $VALUE$ Pops"
+ mod_job_warrior_servant_per_pop_short: "\n§G+1§! £job_warrior_servant£ per $VALUE$ £pop£"
+ warrior_servant_independent_category:0 "Warrior-Servants"
+ 
+ job_promethean_warrior_servant: "Promethean Warrior-Servant Commander"
+ job_promethean_warrior_servant_plural: "Promethean Warrior-Servant Commanders"
+ job_promethean_warrior_servant_desc:1 "The highest and most respected group of Warrior-Servants, further augmented to become the pinnacle supersoldiers of the Forerunner military."
+ job_promethean_warrior_servant_effect_desc: "£job_promethean_warrior_servant£ $job_promethean_warrior_servant_plural$ turn $r_alloys$ into $r_unity$, $r_amenities$ and £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!."
+ job_promethean_warrior_servant_research_effect_desc: "£job_promethean_warrior_servant£ $job_promethean_warrior_servant_plural$ turn $r_alloys$ into $r_unity$, $r_research$, $r_amenities$ and £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!."
+ mod_job_promethean_warrior_servant_add: "$job_promethean_warrior_servant$ Jobs"
+ mod_job_promethean_warrior_servant_per_pop: "§G+1§! $job_promethean_warrior_servant$ Job per $VALUE$ Pops"
+ mod_job_promethean_warrior_servant_per_pop_short: "\n§G+1§! £mod_job_promethean_warrior_servant_add£ per $VALUE$ £pop£"
+
+ 
+####################
+#FORERUNNER RATES
+####################
+ 
+ policy_forerunner_rates: "Collective Council Mandate"
+ policy_forerunner_rates_desc: "Kas Zei'a has many goals, and hundreds of potential methods of reaching these goals. We must prioritise the methods most effective for our present situation."
+ 
+ no_action: "No Action"
+ no_action_name: "No Action"
+ no_action_desc: "No action is necessary."
+ 
+ juridical_rate: "Naós Praetor Focus"
+ juridical_rate_name: "Naós Praetor Focus"
+ juridical_rate_desc: "Promote the Naós Guild's Praetor branch, greatly focusing our efforts on the Collective's Interior, managing and administrating internal matters."
+
+ diplomat_rate: "Naós Legatus Focus"
+ diplomat_rate_name: "Naós Legatus Focus"
+ diplomat_rate_desc: "Promote the Naós Guild's Legatus branch, greatly focusing our efforts on the Collective's Exterior, handling diplomatic affairs, properly representing ourselves in the Galactic Community, and actively working with our Federations and allies."
+
+ builder_rate: "Agon Aedifex Focus"
+ builder_rate_name: "Agon Aedifex Focus"
+ builder_rate_desc: "Promote the Agon Guild's Aedifex branch, greatly focusing our efforts on construction and development."
+ 
+ warrior_servant_rate: "Agon Bellator Focus"
+ warrior_servant_rate_name: "Agon Bellator Focus"
+ warrior_servant_rate_desc: "Promote the Agon Guild's Bellator branch, greatly focusing our efforts on the military and warfare."
+
+ lifeworker_rate: "Torvus Partus Focus"
+ lifeworker_rate_name: "Torvus Partus Focus"
+ lifeworker_rate_desc: "Promote the Torvus Guild's Partus branch, greatly focusing our efforts on biology, genetic manipulations, and our population."
+ 
+ miner_rate: "Torvus Figulus Focus"
+ miner_rate_name: "Torvus Figulus Focus"
+ miner_rate_desc: "Promote the Torvus Guild's Figulus branch, greatly focusing our efforts on planets, the life upon them, and general terraforming efforts."
+
+ engineer_rate: "Fanum Repertor Focus"
+ engineer_rate_name: "Fanum Repertor Focus"
+ engineer_rate_desc: "Promote the Fanum Guild's Repertor branch, greatly focusing our efforts on Research and Development, no science shall escape our grasp."
+
+ traveller_rate: "Fanum Indigator Focus"
+ traveller_rate_name: "Fanum Indigator Focus"
+ traveller_rate_desc: "Promote the Fanum Guild's Indigator branch, greatly focusing our efforts on star charting, system surveying, galactic exploration, the solving of anomalies, and excavation of archeological sites."
+ 
+######################
+#ARMY TECH
+######################
+ tech_forerunner_sentinels: "Ferrarius Assembler Vats"
+ tech_forerunner_sentinels_desc: "Assembler vats used for the construction small-arms scale military technologies and Sentinels; autonomous machines designed for the construction, maintenance, and defense." 
+ 
+ tech_advanced_forerunner_sentinels: "Minoris Assembler Vats"
+ tech_advanced_forerunner_sentinels_desc: "Assembler vats used for the mass fabrication of larger lower-tier constructs. Advancements made from the Aggressor Sentinel design have created additional specialization variants and extensive modifications in both defensive and offensive capabilities."
+ 
+ tech_forerunner_combat_suits: "Combat Skins"
+ tech_forerunner_combat_suits_desc: "Traditional battle armor for Forerunner combat personnel ranging from Class 1 to Class 18 in variance and power to some vehicles than suits of armor."
+
+ tech_promethean_combat_suits: "Promethean Combat Skins"
+ tech_promethean_combat_suits_desc: "Personal battle armor exclusive to the respected Promethean Warrior-Servants. This form of combat skin is highly advanced among the ranks of the typical Warrior-Servant granting the user with incredible mental processes and battle acuity."
+ 
+ tech_composer: "Promethean Knights"
+ tech_composer_desc: "Translating an organic being's essence into machine data. Categorized as a sublimation device, this data can be transferred into a robotic war machine. Unlocks Mechanical Promethean armies."
+ 
+ tech_pk_composer: "The Composer"
+ tech_pk_composer_desc: "An up-scaled version of the sublimation device capable of translating organic neural patterns into machine data on a planetary scale. Unlocks the Composer Colossus weapon component."
+ 
+ tech_contender_ancilla: "Aurora-Class Uviik"
+ tech_contender_ancilla_desc: "The Aurora class Uviik, occasionally refered to as the 'CNU-Type', is the most sophisticated bio-crystalline neural network ever conceived by the Collective. The Aurora classification, as insinuated. Was made specifically for the Core Network Units; the synthetic stewards of the Collective's 'Core Network'. These units were so drastically superior to every other Uviik, designed to be a compound consciousness of countless parallel minds. By every measurable metric, Aurora class Uviik are the only organisms in existence capable of being remotely compared to an Ascended energy based consciousness."
+ 
+ 
+#########################
+#Forerunner Initializers
+#########################
+ 
+ maethrillian_system_NAME: "Maethrillian System"
+ maethrillian_system_DESC: "Start in the Maeth system on the Forerunner station Maethrillian; the capital of the Forerunner Ecumene."
+ 
+ forerunner_ark_NAME: "Installation 00"
+ forerunner_ark_DESC: "A massive artificial station built by the Forerunners to serve as a conservation installation and foundry for the creation of the Halo Arrays."
+ 
+#HALO RING INITIALIZERS 
+ 
+ orion_origin_init_NAME: "Myung System"
+ orion_origin_init_DESC: "Start in the Myung System on Installation 01 (Beta Halo), a Forerunner Halo Ring orbiting the gas giant Auric capable of mass destruction on a galactic scale."
+ 
+ norma_origin_init_NAME: "Zhagolin System"
+ norma_origin_init_DESC: "Start in the Zhagolin System on Installation 02 (Epsilon Halo), a Forerunner Halo Ring orbiting the gas giant Taphro capable of mass destruction on a galactic scale."
+ 
+ khaphrae_origin_init_NAME: "Khaphrae System"
+ khaphrae_origin_init_DESC: "Start in the Khaphrae System on Installation 03 (Gamma Halo), a Forerunner Halo Ring orbiting the broken planet Doavyn capable of mass destruction on a galactic scale."
+ 
+ soell_origin_init_NAME: "Soell System"
+ soell_origin_init_DESC: "Start in the Soell System on Installation 04 (Alpha Halo), a Forerunner Halo Ring orbiting the large gas giant Threshold capable of mass destruction on a galactic scale." 
+ 
+ soell_standalone_init_NAME: "Soell System"
+ soell_standalone_init_DESC: "Start in the Soell System on Installation 04 (Alpha Halo), a Forerunner Halo Ring orbiting the large gas giant Threshold capable of mass destruction on a galactic scale." 
+ 
+ coelest_origin_init_NAME: "Coelest System"
+ coelest_origin_init_DESC: "Start in the Coelest System on Installation 05 (Delta Halo), a Forerunner Halo Ring orbiting the large gas giant Substance capable of mass destruction on a galactic scale."
+ 
+ perseus_origin_init_NAME: "Mdorkon System"
+ perseus_origin_init_DESC: "Start in the Mdorkon System on Installation 06 (Kappa Halo), a Forerunner Halo Ring orbiting the large gas giant Haakuth capable of mass destruction on a galactic scale."
+ 
+ ephsu_origin_init_NAME: "Ephsu System"
+ ephsu_origin_init_DESC: "Start in the Ephsu System on Installation 07 (Zeta Halo), a mysterious Forerunner Halo Ring orbiting Ephsu I and one of the only surviving rings of the original 12 larger Halo installations known as Gyre 11. This ring was redesigned and integrated within the new Halo Array and is capable of similar levels of mass destruction."
+ 
+ epoloch_init_NAME: "Epoloch System"
+ epoloch_init_DESC: "Start in the Epoloch System on Requiem; an Armored Forerunner shield world and central operations hub for the Prometheans."
+ 
+ nomos_origin_init_NAME: "Nomos System"
+ nomos_origin_init_DESC: "Start in the Nomos System on the planet 'Genesis'; the Forerunner artificial shield world and gateway to the Domain."
+ 
+ #nomos_init_NAME: "Nomos System"
+ #nomos_init_DESC: "Start in the Nomos System on the planet 'Genesis'; the Forerunner artificial shield world and gateway to the Domain."
+ 
+ 
+########################
+### The Ark 
+########################
+ 
+ tech_ark_halo_array_activation: "Clarion Network Controls"
+ tech_ark_halo_array_activation_desc: "A master control system capable of overriding all Halo Installations within the network to be activated and fired remotely by means of superluminal communications creating a galaxy-wide organic purge known as the Halo Effect."
+ 
+ decision_ark_activate_halo_array: "Activate Halo Array"
+ decision_ark_activate_halo_array_desc: "Begin activation sequence of the Halo Array."
+ decision_ark_activate_halo_array_effects: "All §Y$pc_forerunner_halo$§! changes to §Y$pc_forerunner_halo_activated$§! and are primed to fire."
+ 
+ decision_ark_fire_halo_array: "Fire the Halo Array"
+ decision_ark_fire_halo_array_desc: "Fire all Halo Rings in the galaxy. §R-WARNING:Kills all organic pops, colonies, and fleets within a distance of 500 from each Halo Ring across the galaxy.§!"
+ decision_ark_fire_halo_array_effects: "The Halo Array will destroy organic pops, colonies, and fleets within its range. A galaxy ending event..." 
+ 
+ decision_ark_deactivate_halo_array: "Abort Halo Array Firing Sequence"
+ decision_ark_deactivate_halo_array_desc: "Abort the activation sequence and return the Halo Array to standby mode."
+ decision_ark_deactivate_halo_array_effects: "All §Y$pc_forerunner_halo_activated$§! changes to §Y$pc_forerunner_halo$§!."
+ 
+ forerunner_ark_capital: "Ark Control Center"
+ forerunner_ark_capital_desc: "Central control for the Halo Array."
+ 
+ halo_array_primed: "Halo Array on Standby Mode"
+ halo_array_primed_desc: "Every Halo Ring in the galaxy is primed and ready for activation."
+ 
+ halo_array_activation_cooldown: "Halo Array Cooldown"
+ halo_array_activation_cooldown_desc: "All Halo Installations within the Array must recharge before they are made operational again."
+ 
+ pc_forerunner_ark_tile: "Ark Segment"
+ pc_forerunner_ark_tile_desc: "Segment of the Ark's habitable terrain."
+ pc_forerunner_ark: "Installation 00"
+ pc_forerunner_ark_desc: "A massive artificial station that serves as a foundry for the Halo Arrays."
+ 
+ forerunner_ark: "Installation 00"
+ forerunner_ark_desc: "A massive artificial station built by the Forerunners and foundry for the Halo Array."
+ 
+ ark_activation.1.name: "Halo Array on Standby"
+ ark_activation.1.desc: "The Citadel reports that all accounted Halo Rings within the galaxy are initiating their activation sequence and are ready to fire on demand."
+ 
+ ark_activation.2.name: "Alert: Massive Energy Buildup"
+ ark_activation.2.desc: "Our sensors report a massive buildup of energy across the galaxy! Something dark is coming..."
+ 
+ ark_activation.3.name: "§RWARNING: Final Sequence Initiated§!"
+ ark_activation.3.desc: "Every Halo Ring within the Array is initiating its final firing sequence. Once fired, each pulse will release a burst of cross-phased supermassive neutrinos on a harmonic frequency. When combined and amplified with the others, all sentient life within the range of the Halo Array will be killed, exterminating entire civilizations across the galaxy.\n\nShould we proceed?"
+ ark_activation.3.a: "Fire the Array."
+ ark_activation.3.b: "No, Abort the Sequence."
+ ark_activation.3.c: "Configure the Array for non-citizens."
+ 
+ ark_activation.4.name: "Abort Sequence Initiated"
+ ark_activation.4.desc: "Aborting the Final Activation Sequence has powered down all active Halo Installations into standby mode."
+ 
+ ark_activation.5.name: "The Great Purification"
+ ark_activation.5.desc: "All Halo Installations across the galaxy have released a burst of cross-phased supermassive neutrinos across several thousand light-years within its range. The combined harmonic frequency from the other installation pulses have destroyed the nervous systems of all macroscopic organisms, killing them instantaneously across countless worlds and systems.\n\nIn the end, this galaxy will be quite devoid of organic life for a time..."   
+ ark_activation.5.a: "It had to be done"
+ ark_activation.5.a.tooltip: "All sentient organic life has been neutralized.\n\n§YThe galaxy has been cleansed.§!"
+ 
+ ark_activation.69.name: "The Despicable Crime"
+ ark_activation.69.desc: "All Halo Installations across the galaxy have released a burst of cross-phased supermassive neutrinos across several thousand light-years within its range. The combined harmonic frequency from the other installation pulses have destroyed the nervous systems of any race not within the citizenship registry, killing them instantaneously across every world and every system.\n\nIn the end, was it worth it?..."   
+ ark_activation.69.a: "In the rarest of cases, some life must end for others to begin.."
+ ark_activation.69.a.tooltip: "All non-citizens has been neutralized.\n\n§YThe galaxy has been culled.§!"
+ 
+ ark_activation.6.name: "The End Times"
+ ark_activation.6.desc: "It is over. The Halo Array has been fired by the §H[From.GetName]§! and the galaxy itself is now at their mercy.\n\nThe megastructures known as the Halo Rings have all released a massive pulse of lethal supermassive neutrinos, sweeping across the galaxy and killing all life deemed unworthy in its path.\n\nIt may only be the beginning.."
+ ark_activation.6.a: "All is lost..."
+ 
+#BUILDABLE ARK MEGASTRUCTURE
+ 
+ pc_artificial_star: "Artificial Star"
+ pc_artificial_star_desc: "These massive installations use artificial stars to simulate day and night cycles."
+ 
+ forerunner_ark_MEGASTRUCTURE_DETAILS: "A massive forerunner installation, this artificial structure serves primarily as a megastructure forge and conservation preserve."
+ 
+ forerunner_lesser_ark_1: "Ark Installation"
+ forerunner_lesser_ark_1_DESC: "A massive Forerunner installation designed with the primary purpose of manufacturing Halo Rings as well as conservation preserve and research facility.\n\n§GThis installation offers protection from the Halo Array's Halo Effect§!\n\n§R-WARNING:Requires planetary resources within this system to build removing all planets after construction is complete.§!"
+ forerunner_lesser_ark_1_MEGASTRUCTURE_DETAILS: "A massive forerunner installation, this artificial structure serves primarily as a megastructure forge and conservation preserve."
+ 
+ forerunner_lesser_ark_2: "Complete Ark Installation"
+ forerunner_lesser_ark_2_DESC: "Complete the Ark, a massive Forerunner installation designed with the primary purpose of manufacturing Halo Rings as well as conservation preserve and research facility.\n\n§GThis installation offers protection from the Halo Array's Halo Effect§!\n\n§R-WARNING:Requires planetary resources within this system to build removing all planets after construction is complete.§!"
+ forerunner_lesser_ark_2_MEGASTRUCTURE_DETAILS: "A massive forerunner installation, this artificial structure serves primarily as a megastructure forge and conservation preserve."
+ 
+ 
+ shield_world_event.7.name: "Forerunner Orbital Reformer Construction Complete"
+ shield_world_event.7.desc: "The Miner Rate has reported the construction of the Orbital Reformer for construction of the Ark Installation is complete."
+ shield_world_event.8.name: "Lesser Ark Construction Complete"
+ shield_world_event.8.desc: "The construction of the Lesser Ark structure is complete."
+ 
+ 
+#################
+#ARK DISTRICTS
+#################
+ 
+ district_ark_city: "Refugia Section"
+ district_ark_city_plural: "Refugia Sections"
+ district_ark_city_desc: "Massive cityscapes and environments designed specifically to house a large population within the Ark's massive refugia sections."
+ 
+ district_ark_nexus: "Nexus Section"
+ district_ark_nexus_plural: "Nexus Sections"
+ district_ark_nexus_desc: "Designed to house docking stations and maintenance bays for local constructs within the Ark."
+ 
+ district_ark_hive: "Infested Refugia Section"
+ district_ark_hive_plural: "Infested Refugia Sections"
+ district_ark_hive_desc: "Containment failure! Ark facilities have been overrun and repurposed to store alien biomass."
+ 
+ district_ark_generator: "Ark Power Node"
+ district_ark_generator_plural: "Ark Power Nodes"
+ district_ark_generator_desc: "Designed to provide auxiliary power to the Ark's systems."
+ 
+ district_ark_science: "Ark Research Section"
+ district_ark_science_plural: "Ark Research Sections"
+ district_ark_science_desc: "The Ark contains several advanced research facilities across its arm segments."
+ 
+ district_ark_sentinel_foundry: "Ark Uviik Foundry"
+ district_ark_sentinel_foundry_plural: "Ark Uviik Foundries"
+ district_ark_sentinel_foundry_desc: "The Ark contains an array of robotic facilities used to build, maintain, and replace expendable constructs."
+ 
+ district_ark_hydroponics: "Ark Hydroponics Section"
+ district_ark_hydroponics_plural: "Ark Hydroponics Sections"
+ district_ark_hydroponics_desc: "The Ark is equipped with hydroponics facilities to provide readily-available basic sustenance needs."
+ 
+ district_ark_mining: "Ark Foundry"
+ district_ark_mining_plural: "Ark Foundries"
+ district_ark_mining_desc: "Facilities located within the center of the Ark that extensively mine the scarred planetoid located within the Forge's center."
+ 
+ pc_ark_refugia_segment: "Refugia Segment"
+ pc_ark_refugia_segment_desc: "One of several segments across the Ark's surface, Central Hub, and petal-like Spires. Each refugia recreates the environments of common life-supporting worlds divided by large walls monitored by Sentinels to protect one ecosystem from polluting another."
+ 
+ 
+#######################
+#ARK Planetary Features 
+#######################
+ 
+ d_ark_cartographer: "Ark Cartographer"
+ d_ark_cartographer_desc: "A Forerunner facility designed to contain a complete real-time records and schematics of the installation."
+ 
+ d_ark_citadel: "Ark Citadel"
+ d_ark_citadel_desc: "A large forerunner structure that remotely controls the activation of the entire Halo Array."
+ 
+ d_ark_foundry: "The Forge"
+ d_ark_foundry_desc: "A colossal manufacturing facility located at the heart of the Ark Installation used to construct Halo ringworlds and other constructs."
+ 
+ d_ark_agriculture: "Refugia Sections"
+ d_ark_agriculture_desc: "Originally designed to index and preserve biological diversity in the event of a Halo activation, the facilities also possess an array of biological preserves to various habitats on the installation."
+ 
+ d_ark_grid: "Ark Relay Network Control"
+ d_ark_grid_desc: "The Ark is connected to the Slipspace Relay Master Control Network, allowing it command over all existing Relays." 
+ 
+ 
+########################
+#MAETHRILLIAN
+########################
+ 
+ forerunner_maethrillian_MEGASTRUCTURE_DETAILS: "One of the larger megastructural stations constructed by Kas Zei'a"
+ 
+ forerunner_capital: "Forerunner Capital"
+ forerunner_capital_desc: "Maethrillian serves as the administrative capital of the Forerunner Ecumene."
+ 
+ forerunner_maethrillian: "Maethrillia Station"
+ forerunner_maethrillian_DESC: "The administrative and political capital of the Ecumene." 
+    
+ pc_maethrillian: "Maethrillian Station"
+ pc_maethrillian_desc: "A massive artificial station that serves as an administrative capital for the government."
+ 
+ pc_maethrillian_tile: "Maethrillian Segment"
+ pc_maethrillian_tile_desc: "Segment of one of Maethrillian's platforms."
+ 
+ d_maethrillian_mysterium: "Mysterium"
+ d_maethrillian_mysterium_desc: "Located on the equatorial ring of Maethrillian, the Mysterium is a large central collection of alien art pieces, trinkets, or artifacts gathered across the galaxy either for in-depth study or simple scientific curiosity. It is also the secret location of the fabled Precursor construct Abaddon, overseer of the Domain and origin of the legend of 'Organon' among Forerunner society."
+ 
+ d_maethrillian_crown: "Maethrillian Crown"
+ d_maethrillian_crown_desc: "The top platform of Maethrillian used primarily for the storage of raw materials and resources."
+ 
+ d_maethrillian_metarchy: "Capital Metarchy"
+ d_maethrillian_metarchy_desc: "Maethrillian houses a vast artificial intelligence network comprised of trillions of ancillas and monitors coordinated by a metarch-level ancilla to serve as administrative operators within the capital including its defense."
+ 
+ d_maethrillian_grid: "Maethrillian Ground Bridge Network"
+ d_maethrillian_grid_desc: "The Maethrillian complex is littered with Ground Bridge portals and their generators, allowing for the instantaneous movement of personnel and vast resources across the megastructure." 
+ 
+ d_maethrillian_council_amphitheater: "Council Amphitheater"
+ d_maethrillian_council_amphitheater_desc: "The central chamber that houses the Ecumene Council. The area is ornamented in decorations of sculptures and display spheres of the twelve original systems inhabited by the Forerunners."
+ 
+ d_design_seed: "Maethrillian Design Seeds"
+ d_design_seed_desc: "Designed by Pattern-Weavers on Maethrillian, these devices allow the nanofabrication of necessary materials on-site for continued expansion of the capital."
+ 
+ district_maethrillian_arcology_housing: "Domicile Platform Arcology"
+ district_maethrillian_arcology_housing_plural: "Domicile Platform Arcologies"
+ district_maethrillian_arcology_housing_desc: "Each platform on Maethrillian is covered by a large cities where its gravity is controlled individually by buffer fields." 
+ 
+ district_maethrillian_arms_industry: "Assembler Vat Foundry"
+ district_maethrillian_arms_industry_plural: "Assembler Vat Foundries"
+ district_maethrillian_arms_industry_desc: "An array of assembler vats used for the construction of various consumer goods and industrial materials using an array of design seeds."
+ 
+ district_maethrillian_science: "Research Arcology"
+ district_maethrillian_science_plural: "Research Arcologies"
+ district_maethrillian_science_desc: "A segment of vast structures and facilities used for extensive research and development." 
+ 
+ district_maethrillian_hydroponics: "Hydroponics Arcology"
+ district_maethrillian_hydroponics_plural: "Hydroponics Arcologies"
+ district_maethrillian_hydroponics_desc: "A segment of hydroponic facilities used to maintain the population on this station."
+ 
+ district_maethrillian_generator: "Vacuum Harvester Facility"
+ district_maethrillian_generator_plural: "Vacuum Harvester Facilities"
+ district_maethrillian_generator_desc: "Facilities that collect vacuum energy to power the station."
+ 
+##############
+#SHIELD WORLDS
+##############
+ 
+ shield_world_init_NAME: "Aegis Installation"
+ shield_world_init_DESC: "Start inside an miniature dyson sphere known as an Aegis Installation built by the Precursors in a randomly generated star system."
+ 
+ armored_shield_world_init_NAME: "Tactical Aegis Installation"
+ armored_shield_world_init_DESC: "Start inside a miniature dyson sphere known as a Tactical Aegis Installation built by the Precursors in a randomly generated star system."
+ 
+ genesis_shield_world_init_NAME: "Library Aegis Installation"
+ genesis_shield_world_init_DESC: "Start on a miniature dyson sphere known as a Library Aegis Installation built by the Precursors in a randomly generated star system."
+ 
+ tech_shield_worlds: "The Aegis Initiative"
+ tech_shield_worlds_desc: "Unlocks the Aegis Installations, allowing us to construct them."
+ 
+ forerunner_shield_world_0: "Aegis Installation Construction Yard"
+ forerunner_shield_world_0_DESC: "An Aegis Installation construction Yard, capable of building and destroying planets. Used in the construction of Aegis Installations."
+ forerunner_shield_world_0_MEGASTRUCTURE_DETAILS: "Construct an Aegis Installation; artificial planetoids configured to serve as either research/conservation spheres or military fortress worlds."
+ 
+ forerunner_citadel: "Citadel Station"
+ forerunner_citadel_DESC: "Construct the Citadel Station"
+
+ pc_forerunner_shield: "Aegis Installation"
+ pc_forerunner_shield_desc: "Aegis Installations, also known as Aegis Spheres. Are an alternative to the Maginot World. Designed by Kas Zei'a, the Aegis Installations are full size planets with an outer shell composed entirely of Omega Alloy with an access portal that atomically seals through matter energy conversion technology. The result is an impenetrable layer of armour that is then further shielded to prevent any forms of damage. Aegis Installations were meant to completely isolate its interior and anyone within it from the outside universe, they also served as a prototype for the System Spheres. " 
+
+ forerunner_shield_world_1: "Aegis Installation"
+ forerunner_shield_world_1_DESC: "Aegis Installations, also known as Aegis Spheres. Are an alternative to the Maginot World. Designed by Kas Zei'a, the Aegis Installations are full size planets with an outer shell composed entirely of Omega Alloy with an access portal that atomically seals through matter energy conversion technology. The result is an impenetrable layer of armour that is then further shielded to prevent any forms of damage. Aegis Installations were meant to completely isolate its interior and anyone within it from the outside universe, they also served as a prototype for the System Spheres. "
+ forerunner_shield_world_1_MEGASTRUCTURE_DETAILS: "A standard Aegis Installation"
+ 
+ pc_forerunner_sharpened_shield: "System Sphere Sector"
+ pc_forerunner_sharpened_shield_desc: "A massive artificial Dyson Shell encapsulated within a slipspace bubble. Its interior contains a vast terraformed surface and large artificial star within to simulate a typical terrestrial environment."
+ 
+ forerunner_artificial_star: "Artificial Star"
+ forerunner_artificial_star_desc: "Every Aegis Installation contains an miniature artificial star to illuminate the sky and provide additional power for the installation."
+ 
+ forerunner_requiem_artificial_star: "Small Artificial Stars"
+ forerunner_requiem_artificial_star_desc: "Since the Tactical Aegis Installations do not have a large artificial star at their cores, multiple small artificial stars provide illumination for their interior instead."
+ 
+ decision_shield_world_slipspace_bubble: "Install Perdition Shield"
+ decision_shield_world_slipspace_bubble_desc: "Install a Perdition Shield system on this planet, protecting it entirely from the Perdition waves."
+ decision_shield_world_slipspace_bubble_effects: "A Perdition Shield is added to this planet." 
+
+ decision_remove_shield_world_slipspace_bubble: "Collapse Perdition Shield"
+ decision_remove_shield_world_slipspace_bubble_desc: "Collapse the Perdition Shield around this planet."
+ 
+ shield_world.1.name: "Perdition Shield Bubble Stabilized"
+ shield_world.1.desc: "The construction of the Perdition Shield System has been completed and installed within a void-shrouded facility on this planet, Perdition will no longer be able to affect this world."
+ 
+ shield_world.2.name: "Prototype Slipspace Bubble Stabilized"
+ shield_world.2.desc: "The construction of the prototype slipspace bubble has been successful on [GetHomeWorldName]. Within this stabilized pocket dimension, we have been able to construct a Micro Dyson sphere within, expanding the surface area for continued expansion of the capital."
+ 
+ d_slipspace_bubble: "Perdition Shield"
+ d_slipspace_bubble_desc: "An esoteric defensive system which shrouds the entire planet in a void phase barrier that massively decreases the efficiency of orbital bombardment, and entirely protects the planet from the Perdition Device."
+ 
+#######################
+#SHIELD WORLD DISTRICTS
+#######################
+ district_sw_city: "Aegis Installation Domicile"
+ district_sw_city_plural: "Aegis Installation Domiciles"
+ district_sw_city_desc: "Massive cityscapes designed specifically to house large populations on the Aegis Installation's inner layer."
+ 
+ district_sw_nexus: "Aegis Installation Nexus"
+ district_sw_nexus_plural: "Aegis Installation Nexus"
+ district_sw_nexus_desc: "Designed to house docking stations and maintenance bays for local constructs."
+ 
+ district_sw_hive: "Infested Hive"
+ district_sw_hive_plural: "Infested Hives"
+ district_sw_hive_desc: "Containment failure. Domicile facilities have been overrun and repurposed to store alien biomass."
+ 
+ district_sw_solar_power: "Solar Power Platform"
+ district_sw_solar_power_plural: "Solar Power Platforms"
+ district_sw_solar_power_desc: "Harmonic-resonance platforms manage the Aegis Installation's solar preservation system collecting energy from its miniature artificial star."
+ 
+ district_sw_science: "Fanum District"
+ district_sw_science_plural: "Fanum Districts"
+ district_sw_science_desc: "Each Aegis Installation contains several advanced research facilities across its inner layer."
+ 
+ district_sw_sentinel_foundry: "Uviik Foundry"
+ district_sw_sentinel_foundry_plural: "Uviik Foundries"
+ district_sw_sentinel_foundry_desc: "Each Aegis Installation contains an array of robotic facilities used to build, maintain, and replace expendable constructs."
+ 
+ district_sw_farming: "Torvus Facility"
+ district_sw_farming_plural: "Torvus Facilities"
+ district_sw_farming_desc: "Designed by the Torvus Guild and to sustain large populations in the event of an emergency, all Aegis Installations are equipped with these facilities to provide sustenance for a myriad of species contained within it."
+ 
+ ######################
+ #SHIELD WORLD DEPOSITS
+ ######################
+ 
+ d_sw_access_tunnels: "Access Portal"
+ d_sw_access_tunnels_desc: "A complex and dense mechanism of armour segments, vast interlocking bolts and clamps, along with molecular insulation seals. The access portal provides a direct flight path into the Aegis Sphere once it's fully opened, but allows not even the smallest microns of molecules through while it's closed. "
+ 
+ d_sw_apex_site: "City-Ship Dock"
+ d_sw_apex_site_desc: "The central administration of the Aegis Installation is in fact a City-Ship, its Core Network Unit being interfaced with the Sphere's systems upon the city being fully docked. This also makes the City-Ship into the working capital of the Installation, allowing its own council chambers, housing, and facilities to be used as the administrative complex of the Sphere as a whole."
+ 
+ d_sw_surface: "Inner Layer"
+ d_sw_surface_desc: "The Inner Layer of the Aegis Installation, much like its succeeding system sphere design. Is covered with a balanced mixture of terrain and ocean, home to dozens of different biomes and engineered life in order to maintain a robust ecosystem that will perpetuate itself for as long as the interior star shines. Beyond the gorgeous scenery, the Inner Layer is home to a wide range of Zei'a facilities. "
+ 
+ d_sw_outer_surface: "Planetary Shell"
+ d_sw_outer_surface_desc: "The Outer Layer beyond its armour is protected from any particle or energy based assaults by a hull tight zei'a defense shield, though both this shield and the armour below it would be buried under an artifical planetary crust stretching a few hundred kilometres in depth. The end result is what would appear to be an ordinary barren world, camoflague so that these safe havens would be ignored by their natural predator."  
+ 
+ ######################
+ # REQUIEM SHIELD WORLD
+ ######################
+ epoloch_init_NAME: "Epoloch System"
+ epoloch_init_DESC: "Start in the Epoloch System on Requiem; an Aegis Installation and central operations hub for the Prometheans."
+ 
+ pc_obirequiem: "Tactical Aegis Installation"
+ pc_obirequiem_desc: "The Tactical Aegis Installation has additional armour instead of a planetary shell, making it far more difficult to invade than any other Aegis Sphere."
+ 
+ #requiem_shield_world_0: "Tactical Aegis Installation Construction Yard"
+ #requiem_shield_world_0_DESC: "Construction materials for the installation of a Tactical Aegis Installation based on Requiem's template."
+ #requiem_shield_world_0_MEGASTRUCTURE_DETAILS: "Construct a Tactical Aegis Installation based on the schematics of Requiem configured as a military operations hub."
+ 
+ requiem_shield_world_1: "Tactical Aegis Installation"
+ requiem_shield_world_1_DESC: "The Tactical Aegis Installation has additional armour instead of a planetary shell, making it far more difficult to invade than any other Aegis Sphere."
+ requiem_shield_world_1_MEGASTRUCTURE_DETAILS: "The Tactical Aegis Installation has additional armour instead of a planetary shell, making it far more difficult to invade than any other Aegis Sphere."
+ 
+ district_requiem_city: "Domicile Garrison Spire"
+ district_requiem_city_plural: "Domicile Garrison Spires"
+ district_requiem_city_desc: "Massive floating spires across the Aegis Installation capable of housing large population centers and entire armies."
+ 
+ district_requiem_nexus: "Uviik Spire"
+ district_requiem_nexus_plural: "Uviik Spires"
+ district_requiem_nexus_desc: "Massive spires across the surface capable of housing large population centers and armies."
+ 
+ district_requiem_hive: "Infested Spire"
+ district_requiem_hive_plural: "Infested Spires"
+ district_requiem_hive_desc: "Massive spires across its surface are capable of housing large population centers and drones."
+ 
+ district_requiem_generator: "Solar Power Facility"
+ district_requiem_generator_plural: "Solar Power Facilities"
+ district_requiem_generator_desc: "Harmonic-resonance platforms manage the Tactical Aegis Installation's solar preservation system collecting energy from it's miniature artificial star."
+ 
+ district_requiem_mining: "Mining Extractor"
+ district_requiem_mining_plural: "Mining Extractors"
+ district_requiem_mining_desc: "Facilities located within large volcanic mountain ranges process minerals from the extracted ore."
+ 
+ district_requiem_science: "Research Facility"
+ district_requiem_science_plural: "Research Facilities"
+ district_requiem_science_desc: "Advanced research facilities within the Tactical Aegis Installation."
+ 
+ district_requiem_farming: "Storehouse"
+ district_requiem_farming_plural: "Storehouses"
+ district_requiem_farming_desc: "Well defended storage facilities that serve as 'safe houses' within the Tactical Aegis Installation's interior." 
+ 
+ #REQUIEM DEPOSITS
+
+ d_requiem_war_room: "War Room"
+ d_requiem_war_room_desc: "The central operations hub for all military forces and war efforts in the collective, connected to every ship and base through the Library."
+ 
+ d_requiem_apex: "Void Transportation Hub"
+ d_requiem_apex_desc: "The south pole of the Inner Layer, directly below the interior star is the Void Transportation Hub, a precursor to the System Sphere's Void Transportation Nexus. This building holds void gates to every corner of the Aegis Sphere, and even to the various buildings and facilities hidden under the surface of the Outer Layer. The Hub also contains a transit Void Gate, allowing for the instantaneous transportation of items, resources, and personnel from anywhere else in the void gate network, however unlike its following iteration on the System Sphere - the hub does not have relay functionality. "
+ 
+ d_requiem_lockup: "City-Ship Dock"
+ d_requiem_lockup_desc: "The central administration of the Aegis Installation is in fact a City-Ship, its Core Network Unit being interfaced with the Sphere's systems upon the city being fully docked. This also makes the City-Ship into the working capital of the Installation, allowing its own council chambers, housing, and facilities to be used as the administrative complex of the Sphere as a whole." 
+ 
+ d_requiem_ravine: "Ravine Battlements"
+ d_requiem_ravine_desc: "A number of citadels strategically placed to protect important locations across the Aegis Installation. They are also connected to a larger central structure below the surface."
+
+ d_requiem_cauldron: "Thermal Processor System"
+ d_requiem_cauldron_desc: "Located within a large volcanic mountain range, this installation is used to stabilize atmosphere pockets deep within the planet."
+ 
+ d_threshold_gas_mine: "Threshold Gas Mine"
+ d_threshold_gas_mine_desc: "A large Forerunner structure suspended in the atmosphere of the gas giant Threshold. It was an expansive automated facility that was created and used by the Forerunners to mine hydrogen, helium, and methane. It was later used as a retrofited research station."
+ 
+ #REQUIEM MODIFIERS
+ 
+ requiem_war_room: "Promethean Operations Hub"
+ requiem_war_room_desc: "As one the first Aegis Installations constructed, Requiem is considered the central hub for all Forerunner forces and war efforts for thousands of years and the personal home of the Protector of the Ecumene."
+ 
+ combat_cryptum: "Combat Cryptum"
+ combat_cryptum_desc: "Located inside Requiem's core lies the Ur-Didact's Cryptum, a slipspace stasis chamber used as a means of exile for Forerunners or a method to commune with the Domain, a large repository of information. This particular model is a Combat Cryptum that provides the user with protection and expedient transportation across Requiem."  
+ 
+ ###########
+ #HALO RINGS
+ ###########
+ requires_no_existing_halo_ring: "$TRIGGER_FAIL$Cannot build due to existing Halo Installation within the system."
+ pc_forerunner_halo: "Halo Ring"
+ pc_forerunner_halo_desc: "A massive artificial ring constructed by the Forerunners."
+ 
+ pc_forerunner_halo_activated: "Activated Halo Ring"
+ pc_forerunner_halo_activated_desc: "A massive artificial ring constructed by the Forerunners. Now primed and ready for activation."
+ 
+ forerunner_halo_ring_0: "Halo Installation Construction Yard"
+ forerunner_halo_ring_0_DESC: "Construction materials for the installation of a new Halo Ring."
+ forerunner_halo_ring_0_MEGASTRUCTURE_DETAILS: "Construct a forerunner halo ring; an artificial ring-shaped weapon of unimaginable scale."
+ 
+ forerunner_halo_ring_1: "Halo Ring Installation"
+ forerunner_halo_ring_1_DESC: "An artificial ring constructed as part of a network of Halo Arrays used by the Forerunners as a weapon of last resort. Each ring houses a control room, cartographer, and multiple research facilities across its habitable landscape."
+ forerunner_halo_ring_1_MEGASTRUCTURE_DETAILS: "Commonly known as a Halo Ring, these massive installations are weapons of mass destruction when activated, they emit a form of lethal radiation within a burst of cross-phased supermassive neutrinos designed to kill all sentient life within its radius. Acting in tandem with other rings, they have the potential to sterilize an entire galaxy."
+ 
+ damaged_halo_ring: "Damaged Halo Ring"
+ damaged_halo_ring_desc: "This halo ring has been severely damaged by a catastrophic event rendering its weapon inoperable until repairs are completed."
+ 
+ decision_repair_halo_ring: "Begin Reclamation Process"
+ decision_repair_halo_ring_desc: "Start the auto-repair procedures to repair this damaged halo ring and restore its full functionality."
+ decision_repair_halo_ring_effects: "Repairs the $damaged_halo_ring$ to a fully armed and operational $pc_forerunner_halo$."
+ 
+ halo_repair.2.name: "Reclamation Complete"
+ halo_repair.2.desc: "Repairs on this ring has been complete and is now operating at 100% efficiency."
+ halo_repair.2.a: "Excellent"
+ 
+ decision_activate_halo_ring: "Activate Halo Firing Sequence"
+ decision_activate_halo_ring_desc: "Begin activation sequence of the Halo Array."
+ decision_activate_halo_ring_effects: "§Y$pc_forerunner_halo$§! changes to §Y$pc_forerunner_halo_activated$§!."
+ 
+ decision_fire_halo_ring: "Fire the Halo Array"
+ decision_fire_halo_ring_desc: "Fire the Halo Array.\n\n§R-WARNING:Kills all organic pops, colonies, and fleets within a distance of 350.§!"
+ decision_fire_halo_ring_effects: "The Halo Installation's Pulse destroys all organic pops, colonies, and fleets within its range." 
+ 
+ decision_fire_halo_ring_tactical_pulse: "Fire Halo Tactical Pulse"
+ decision_fire_halo_ring_tactical_pulse_desc: "Fire a low-level tactical pulse. §R-WARNING:Kills all organic pops, colonies, and fleets within this system.§!"
+ decision_fire_halo_ring_tactical_pulse_effects: "The Halo Installation's Tactical Pulse destroys organic pops, colonies, and fleets within its limited range. Best used against hostile fleets.\nNon-hostile fleets within range will be alerted to the firing sequence and will jump away, becoming MIA for a time." 
+ 
+ decision_deactivate_halo_ring: "Abort Halo Firing Sequence"
+ decision_deactivate_halo_ring_desc: "Abort the activation sequence and return the Halo ring to standby mode."
+ decision_deactivate_halo_ring_effects: "pc_forerunner_halo_activated changes to pc_forerunner_halo."
+ 
+ #HALO FIRING OPINIONS
+ opinion_fired_halo_array_no_victim: "Fired Halo Array"
+ opinion_fired_halo_array_on_victim: "Mass Genocide"
+ opinion_fired_halo_array_in_my_territory_no_victim: "Fired Halo Array"
+ opinion_fired_halo_array_in_my_territory: "Mass Genocide"
+ opinion_fired_halo_array_on_primitive_world: "Wiped out a Civilization"
+ opinion_fired_halo_array_on_primitive_world_phile: "Obliterated a Budding Civilization"
+ 
+ halo_activation.1.name: "Ready to Fire on Demand"
+ halo_activation.1.desc: "This installation has a successful utilization record of 1.2 trillion simulated. It is ready to fire on demand."
+ 
+ halo_activation.2.name: "The Halo Effect"
+ halo_activation.2.desc: "This installation has released a burst of cross-phased supermassive neutrinos across several dozen light-years within its range. The harmonic frequency has destroyed the nervous systems of any macroscopic organism that possess one, killing them instantaneously.\n\n A weapon of last resort..."   
+ 
+ halo_activation.3.name: "Aftermath"
+ halo_activation.3.desc: "The halo installation has completed a successful firing sequence. All systems have been reset to standby mode."  
+ 
+ halo_activation.4.name: "Firing Sequence Aborted"
+ halo_activation.4.desc: "Halo's firing sequence has been canceled and all systems have reverted to standby mode."
+ 
+ halo_activation.5.name: "WARNING ENERGY SURGE DETECTED"
+ halo_activation.5.desc: "A massive surge of energy has just been detected within the [From.GetName]." 
+ 
+ halo_activation.5.a: "Prepare an evacuation."
+ 
+ halo_activation.6.name: "Tactical Pulse Effects"
+ halo_activation.6.desc: "This installation has released a controlled burst of cross-phased supermassive neutrinos across the [From.System.GetName] system. The harmonic frequency has destroyed the nervous systems of any macroscopic organism that possess one, killing them instantaneously.\n\n The Tactical Pulse is a success."   
+ 
+ halo_activation.10.name: "FINAL WARNING"
+ halo_activation.10.desc: "The halo array has completed its final startup sequence and is now ready to fire on demand.\nI must warn you that once this installation fires, this part of the galaxy will be quite devoid of life across §Y12 Hyperlane Connected Systems§! from [From.GetName].\nThis is your last chance to stop the activation.\n\nShould we proceed?"
+ halo_activation.10.a: "Fire the Halo Array"
+ halo_activation.10.b: "No, Deactivate the Halo Array"
+ 
+ halo_activation.11.name: "FINAL WARNING"
+ halo_activation.11.desc: "The halo array has completed its final startup sequence to fire a controlled tactical pulse and is now ready to fire on demand.\nI must warn you that even if the range is limited, once this installation fires, the [This.System.GetName] system will be devoid of life beyond [From.GetName].\nThis is your last chance to halt the firing sequence.\n\nShould we proceed?"
+ halo_activation.11.a: "Fire the Tactical Pulse"
+ halo_activation.11.b: "No, Power down the Halo Array"
+ 
+ halo_activation_cooldown: "Halo Activation Cooldown"
+ halo_activation_cooldown_desc: "The Phase Pulse Generators must be fully recharged before each activation."
+ 
+ #HALO ARRAY (ARK) Activation
+ #halo_activation.8.name: "Ready to Fire on Demand"
+ #halo_activation.8.desc: "The Ark is ready to activate the Halo Array across the galaxy."
+ 
+ #halo_activation.9.name: "Halo Array Firing Sequence Aborted"
+ #halo_activation.9.desc: "The Ark has signaled the Halo Array to abort its firing activation sequence. The array now remains on standby."
+ 
+ #halo_activation.10.name: "Halo Array Effect"
+ #halo_activation.10.desc: "The halo array has released a burst of cross-phased supermassive neutrinos across several light-years within its range. The harmonic frequency has destroyed the nervous systems of any macroscopic organism that possess one, killing them instantaneously across the galaxy.\n\n A weapon of last resort..."    
+ 
+ halo_effect: "Halo Effect"
+ halo_effect_desc: "This planet has been recently affected by a cross-phased supermassive wave of neutrinos destroying much, if not all intelligent lifeforms on the surface."
+ 
+ ###################
+ #STARBASE MODULE
+ ###################
+ 
+ tech_slipspace_field: "Slipspace Field Manipulation"
+ tech_slipspace_field_desc: "A dimensional subdomain of alternate spacetime. Mastery of this spacetime phenomenon can be translated into many applications ranging from communications, teleportation, spatial housing, or enclosures on a massive scale." 
+ 
+ tech_advanced_slipspace_field: "Advanced Slipspace Field Manipulation"
+ tech_advanced_slipspace_field_desc: "Building upon the fundamental temporal manipulation of slipspace can lead to other marvels of stellar engineering and science. §GUnlocks the decision on §YGenesis Shield Worlds§! to create a massive §YSharpened Shield World§! within a slipspace bubble.§!"
+ 
+ sm_forerunner_slipspace_field_generator: "Slipspace Stasis Generator"
+ sm_forerunner_slipspace_field_generator_desc: "An emergency slipspace generator capable of projecting a slipspace bubble to envelop this station into a pocket alternate spacetime enclosure, shielding the station from harm. This requires an immense amount of energy to function. §YThis stasis generator can also offer this station protection from the activation of a Halo Pulse.§!" 
+ 
+ ###################
+ #HALO RING DEPOSITS
+ ###################
+ 
+ d_hr_cartographer: "Cartographer"
+ d_hr_cartographer_desc: "Every halo ring possesses a cartographer that provides a detailed map of the entire installation." 
+ 
+ d_hr_control_room: "Halo Control Room"
+ d_hr_control_room_desc: "A crucial facility that contains the installation's Core and data center. It's purpose is to manage the entirety of Halo's critical systems, including its primary weapon."
+ 
+ d_hr_beam_emitter: "Beam Emitter Network"
+ d_hr_beam_emitter_desc: "A set of Forerunner structures that emits beams of energy to transfer power from one part of the facility to another."
+ 
+ d_hr_library: "The Library"
+ d_hr_library_desc: "A vast archive complex and research facility, housing the collated genetic information of numerous sentient species indexed by the Lifeworkers during the Conservation Measure to res-seed life in the galaxy following the activation of the Halo Array. The Activation Index is also secured within the Library."
+ 
+ d_hr_reformation_spire: "Reformation Spires"
+ d_hr_reformation_spire_desc: "Massive Forerunner structures used in tandem to facilitate the process of reformation by repairing the damaged ring."
+ 
+ d_hr_conservatory: "Conservatory"
+ d_hr_conservatory_desc: "A forerunner structure beneath Zeta Halo that serves as a prison facility for the Endless."
+ 
+ d_hr_silent_auditorium: "Silent Auditorium"
+ d_hr_silent_auditorium_desc: "A forerunner structure that serves as a courtroom, prison, and a place of execution for sentient species to be tried by the Forerunners."
+ 
+ halo_ring_monitor: "Installation Monitor"
+ halo_ring_monitor_desc: "Various forerunner installations typically possess a monitor, a forerunner general-purpose high-tier ancilla that performs administrative roles including caretaking, maintenance, and security. They personally ensure that all installation functions are operating at peak efficiency."
+  
+ halo_ring_submonitor: "Installation Sub-Monitor"
+ halo_ring_submonitor_desc: "The Sub-Monitor exists to supplement the Monitor and acts as a further extension and assistant to their mission of administrating their installation."
+ 
+ #BLOCKERS
+ d_hr_damaged_section: "Damaged Section"
+ d_hr_damaged_section_desc: "The extensive damage to this part of the ring has left a massive open hole within the superstructure."
+ 
+ 
+ ####################
+ #HALO RING DISTRICTS
+ ####################
+ 
+ district_hr_city: "Halo Facility"
+ district_hr_city_plural: "Halo Facilities"
+ district_hr_city_desc: "Each halo houses multiple facilities that offer housing and spaces for research and development." 
+ 
+ district_hr_hive: "Infested Hive"
+ district_hr_hive_plural: "Infested Hives"
+ district_hr_hive_desc: "Containment failure. Domicile facilities have been overrun and repurposed to store alien biomass."
+ 
+ district_hr_nexus: "Nexus Facility"
+ district_hr_nexus_plural: "Nexus Facilities"
+ district_hr_nexus_desc: "Designed to house docking stations and maintenance bays for local constructs."
+ 
+ district_hr_generator: "Beam Emitter Facility"
+ district_hr_generator_plural: "Beam Emitter Facilities"
+ district_hr_generator_desc: "Large delta-shaped structures used to maintain and transfer power on the Halo ring."
+ 
+ district_hr_sentinel_foundry: "Uviik Manufacturing Facility"
+ district_hr_sentinel_foundry_plural: "Uviik Manufacturing Facilities"
+ district_hr_sentinel_foundry_desc: "Facilities used to construct constructs that help build, maintain, or defend this installation."
+ 
+ district_hr_science: "Research Facility"
+ district_hr_science_plural: "Research Facilities"
+ district_hr_science_desc: "Research facilities used to study and catalog sentient life." 
+ 
+ district_hr_farming: "Agricultural Facility"
+ district_hr_farming_plural: "Agricultural Facilities"
+ district_hr_farming_desc: "Agricultural facilities used to gather, retain, and distribute sufficient sustenance to support life on the Halo Ring."
+ 
+ 
+ promethean_drone: "Promethean Construct"
+ 
+ forerunner_domain_gateway: "Gateway to the Domain"
+ forerunner_domain_gateway_desc: "The planet of Genesis is an artificial world built by the Forerunners to seed worlds used to house civilizations to preserve them. The Gateway to the Domain was an installation on the planet that was also hidden on the planet. The structure connects to the Domain, an immaterial reserve of ancient knowledge and collective experience of the Forerunners as the essence and living expression of their culture and history." 
+ 
+ 
+ ################
+ # GENESIS/BUILDER WORLDS 
+ ################
+ 
+ forerunner_seed_worlds: "Seed Worlds"
+ forerunner_seed_worlds_desc: "Constructed from Agon Worlds, seed worlds are designed to assist in terraforming efforts greatly reducing both time and cost."
+ 
+ pc_genesis: "Library Aegis Installation"
+ pc_genesis_desc: "A unique Aegis Installation designed to fully connect with the Library, at the heart of its interior one may find a Library Translation Gate."
+ 
+ genesis_shield_world_1: "Library Aegis Installation"
+ genesis_shield_world_1_DESC: "A unique Aegis Installation designed to fully connect with the Library, at the heart of its interior one may find a Library Translation Gate."
+ genesis_shield_world_1_MEGASTRUCTURE_DETAILS: "A unique Aegis Installation designed to fully connect with the Library, at the heart of its interior one may find a Library Translation Gate."
+ 
+ 
+ genesis_moons: "Mining Moons"
+ genesis_moons_desc: "Natural satellites in orbit of Library Aegis Installation that serve as mining facilities in the construction of Seed Worlds."
+ 
+ d_genesis_coral_highlands: "Coral Highlands"
+ d_genesis_coral_highlands_desc: "The surface of a Library Aegis Sphere is an artificially constructed paradise meticulously designed to appear organic with an artificial flair and filled with a endless variety of exotic flora and fauna."
+ 
+ d_genesis_builder_research_facilities: "Builder Research Facilities"
+ d_genesis_builder_research_facilities_desc: "Advanced research facilities constructed on the surface designed to meet the highest specifications of the Builder rate."
+ 
+ d_genesis_builder_factories: "Builder Assembly Factories"
+ d_genesis_builder_factories_desc: "Advanced assembly vats and construction facilities used to help mold the necessary resources for the construction of seed worlds."
+ 
+ d_genesis_builder_generator_facilities: "Builder Generator Facilities"
+ d_genesis_builder_generator_facilities_desc: "Vacuum Power Generators, energy conduits, and relay stations generate the necessary power to operate this Aegis Installation."
+ 
+ decision_builder_world_deploy_seed_worlds: "Deploy Forerunner Seed Worlds"
+ decision_builder_world_deploy_seed_worlds_desc: "Construct and deploy several seed worlds to assist in current terraforming and colonization operations."
+ decision_builder_world_deploy_seed_worlds_effects: "Adds a temporary empire modifier that improves terraforming and colonization speed while reducing the cost."
+ 
+ decision_builder_world_create_huragok: "Construct Huragok Servant-Tools"
+ decision_builder_world_create_huragok_desc: "Create a population of Huragok servant-tools that serve as maintenance, repair, and enhancement engineers."
+ decision_builder_world_create_huragok_effects: "5 §YHuragok§! £pop£ pops will be added."
+ 
+ trait_huragok_species: "Huragok"
+ trait_huragok_species_desc: "Bio-mechanical sentient beings created by the Forerunners to maintain their technology serving as both Engineers and Lifeworkers."
+ 
+ shield_world.3.name: "Seed Worlds Deployed"
+ shield_world.3.desc: "The constructed seed worlds have been deployed throughout our empire to assist in both terraforming and colonization efforts.""
+ 
+ seed_world_activation_cooldown: "Seed World Cooldown"
+ seed_world_activation_cooldown_desc: "This Library Aegis Sphere has recently deployed several seed worlds and will require more time and resources to build more."
+ 
+ decision_build_ark_installation: "Construct Extragalactic Ark Installation"
+ decision_build_ark_installation_desc: "Construct an Ark installation outside of the known galaxy designed with the purpose of manufacturing Halo rings. These massive installations also serve as research facilities and conversational preserves for numerous species."
+ decision_build_ark_installation_effects: "Randomly spawns a system outside of the known galaxy containing an Ark megastructure."
+ 
+ shield_world.99.name: "Ark Installation Complete"
+ shield_world.99.desc: "Construction of the Ark Installation was a massive undertaking, but our builders have managed to finish the project. Travel to the Ark Installation can only be accessed by Slipspace Relay due to its extragalactic location."
+
+ ark_installation_completed: "Ark Installation Cooldown"
+ ark_installation_completed_desc: "The construction and placement of the megastructure has drained our resources."
+ 
+ #GENESIS ONLY 
+ d_genesis_domain_gateway: "Library Transference Gate"
+ d_genesis_domain_gateway_desc: "An esoteric gateway which connects directly to the Library, the metaphysical repository of knowledge belonging to Kas Zei'a. This specific portal seems to translate ones physical form into an engramic pattern that is then introduced to the Library, allowing the mysterious psionic construct to absorb it without totally dispersing it."
+ 
+ shield_world_event.5: "Library Aegis Installation Construction Complete"
+ shield_world_event.5_desc: "The Builder Rate has reported the construction of the Library Aegis Installation is complete."
+ 
+ ################
+ # Flags
+ ################
+ 
+ FLAG_CATEGORY_forerunner: "Forerunner Ecumene"
+ 
+ ################
+ # Namelists
+ ################
+ 
+ name_list_promethean: "Halo: Promethean"
+ name_list_created: "Halo: Created"
+ name_list_sentinels: "Halo: Sentinels"
+ name_list_forerunner: "Halo: Forerunner"
+ 
+ 
+ 
+ #MEGASTRUCTURE TEXT
+ #Slipspace Relay 
+ shield_world_event.11: "Slipspace Relay Complete"
+ shield_world_event.11_desc: "Construction on the Slipspace Relay is complete."
+ 
+ #SHIELD WORLD MEGASTRUCTURE
+ shield_world_event.1: "Forerunner Orbital Reformer Construction Complete"
+ shield_world_event.1_desc: "The Agon Guilds has reported the construction of the Orbital Reformer for Aegis Sphere construction is complete."
+ shield_world_event.2: "Aegis Installation Construction Complete"
+ shield_world_event.2_desc: "The Agon Guilds has reported the construction of the Aegis Installation is complete."
+ shield_world_event.3: "Aegis Installation Construction Yard Complete"
+ shield_world_event.3_desc: "The Agon Guilds has reported the construction of the Aegis Installation Construction Yard is complete."
+ shield_world_event.4: "Tactical Aegis Installation Construction Complete"
+ shield_world_event.4_desc: "The Agon Guilds has reported that the construction of a Tactical Aegis Installation is complete."
+ 
+ forerunner_shield_world: "Aegis installation"
+ forerunner_shield_world_desc: "Aegis Installations, also known as Aegis Spheres. Are an alternative to the Maginot World, designed by Kas Zei'a. The Aegis Installations are full size planets with an outer shell composed entirely of Omega Alloy, with an access portal which atomically seals through matter energy conversion technology, resulting in an impenetrable layer of armour which is then shielded to prevent any forms of damage. Aegis Installations were meant to completely isolate its interior and anyone within it from the outside universe, they also served as a prototype for the System Spheres. "
+ 
+ requires_no_forerunner_installation: "$TRIGGER_FAIL$Requires no existing Aegis Installations."
+ requires_not_gas_giant: "$TRIGGER_FAIL$Cannot build around a gas giant."
+ 
+ forerunner_requires_planet_for_materials: "§R-WARNING:Requires the materials from this planet to build a shield installation.\n\nThis planet will be shattered at the start of construction§!"
+ 
+ 
+ #HALO RING MEGASTRUCTURE
+ halo_ring_event.1: "Forerunner Halo Installation Yard Construction Complete"
+ halo_ring_event.1_desc: "The Builder Rate has reported the construction of the Halo Installation Yard is complete."
+ halo_ring_event.2: "Forerunner Halo Installation Construction Complete"
+ halo_ring_event.2_desc: "The Builder Rate has reported the construction of the Halo Installation is complete."
+ 
+ tech_halo_array_activation: "Halo Array Activation Index"
+ tech_halo_array_activation_desc: "Activate the dormant systems on a §Y$pc_forerunner_halo$§!. Unlocks the decision to activate and fire the Halo Ring's primary weapon." 
+ 
+ tech_forerunner_start: "Forerunner Technology"
+ tech_forerunner_start_desc: "The advanced technology of the Forerunners."
+ 
+ requires_not_halo_ring: "$TRIGGER_FAIL$Requires no existing Halo Installation."
+ 
+ #ATTENUATION FIELD WEAPON 
+ tech_pk_forerunner_attenuation_field: "Attenuation Pulse Modulation"
+ tech_pk_forerunner_attenuation_field_desc: "Advances in electromagnetic field technology has developed a multi-vector electronic warfare weapon that can instantaneously neutralize entire planetary power networks through a series of focused debilitating attenuation pulses."
+ 
+ PLANET_KILLER_FORERUNNER_ATTENUATION_WEAPON: "Attenuation Pulse Emitter"
+ PLANET_KILLER_FORERUNNER_ATTENUATION_WEAPON_DESC: "A multi-vector electronic warfare weapon used to generate a massive EMP wave, instantly disabling cities and spacecraft on a planetary scale."
+ 
+ PLANET_KILLER_FORERUNNER_ATTENUATION_WEAPON_ACTION: "Disable"
+ 
+ FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_FORERUNNER_ATTENUATION_WEAPON: "Preparing to disable $PLANET|Y$"
+ 
+ MESSAGE_DESC_FOR_PLANET_KILLER_FORERUNNER_ATTENUATION_WEAPON: "was disabled by"
+ 
+ attenuation_target: "Attenuation Pulse Target"
+ 
+ attenuation_field_emp: "Attenuation Field Effect"
+ attenuation_field_emp_desc: "All electronic vehicles, systems, and power networks have been shutdown from an EMP generated from a powerful orbital weapon."
+ 
+ attenuation_field.2.name: "Planet Disabled"
+ attenuation_field.2.desc: "The [From.From.GetName] has completed the activation of the Attenuation Pulse Emitter. All electronics, including any mechanical constructs or planetary shielding on [From.GetName] have been disabled."
+ 
+ attenuation_field.3.name: "Shield Disabled"
+ attenuation_field.3.desc: "The [From.From.GetName] has completed the activation of the Attenuation Pulse Emitter. The planetary shield on [From.GetName] has been disabled."
+ 
+ opinion_disabled_a_world: "Disabled a World"
+ opinion_disabled_my_world: "Disabled my World"
+ opinion_disabled_a_primitive_world: "Disabled a Primitive World"
+ opinion_disabled_a_primitive_world_phile: "Disabled a Primitive World"
+ 
+ attenuation_field.2.tooltip: "§RPlanet-Killer Weapon§!:\n§L$PLANET_KILLER_FORERUNNER_ATTENUATION_WEAPON_DESC$§!"
+ 
+ #THE COMPOSER WEAPON
+ tech_composer: "Essence Transference"
+ tech_composer_desc: "Using the Composer to translate an organic being's neural pattern into a mechanical war machine will provide us with a formidable construct immune to biological infection and control. Unlocks Mechanical Promethean Armies."
+ 
+ tech_pk_composer: "The Composer"
+ tech_pk_composer_desc: "Up-scaling Composer technology on a planetary scale, this device can extract the mental patterns of all affected organics and convert their essences into data which can be either preserved for future study or be extracted for use as the basis for artificial intelligence constructs under the control of the Composer's user."
+ 
+ FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_COMPOSER: "Preparing to compose $PLANET|Y$"
+ 
+ MESSAGE_DESC_FOR_PLANET_KILLER_COMPOSER: "was composed by"
+ 
+ PLANET_KILLER_COMPOSER: "The Composer"
+ PLANET_KILLER_COMPOSER_DESC: "A Sublimation device capable of extracting and translating an organic being's mental content into machine data. This data is then housed within a mechanical form turning an organic population into machines under the control of the Composer's user.\n§RWARNING: The Composer is not compatible with robotic or hive-minded pops. They will be destroyed once the composing process is complete!§!"
+ 
+ PLANET_KILLER_COMPOSER_ACTION: "Compose"
+ 
+ composer_target: "Composer Target"
+ 
+ no_pops_to_compose: "§RNo pops to Compose§!"
+ 
+ composer.2.name: "Planet Composed"
+ composer.2.desc: "The [From.From.GetName] has completed the activation of the Composer. All sapient organics on [From.GetName] have been composed."
+ composer.2.tooltip: "All §Yorganic§! Pops have been §Ycomposed§! into §YMechanical Prometheans§! gaining both the §Y$trait_mechanical$§! and §Y$trait_robot_promethean_ai$§! traits."
+
+ FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_COMPOSER: "Preparing to compose $PLANET|Y$"
+ 
+ MESSAGE_DESC_FOR_PLANET_KILLER_COMPOSER: "was composed by"
+ 
+ apoc.110.composer.tooltip: "§RPlanet-Killer Weapon§!:\n§L$PLANET_KILLER_COMPOSER_DESC$§!"
+ 
+ opinion_composed_a_world: "Composed a World"
+ opinion_composed_my_world: "Composed my World"
+ opinion_composed_a_primitive_world: "Composed a Primitive World"
+ opinion_composed_a_primitive_world_phile: "Composed a Primitive World"
+ 
+ #COMPOSING DECISIONS
+ decision_create_mechanical_prometheans: "Create Mechanical Prometheans"
+ decision_create_mechanical_prometheans_desc: "Use the Promethean Assembler Forge's Composer to create mechanical prometheans from the essences of this planet's population."
+ decision_create_mechanical_prometheans_effects: "Use the Promethean Assembler Forge building to compose 5 organic pops on this planet into mechanical promethean pops. Using this decision will temporarily reduce the planet's stability and anger the population."
+ 
+ recently_composed: "Recently Composed"
+ recently_composed_desc: "The population on this planet is angered by the use of the Composer on their own reducing stability and pop happiness."
+ 
+ #NOT USED 
+ 
+ purge_composer: "Composing"
+ purge_composer_desc: "Pops are converted into data using the Composer to create new mechanical Prometheans."
+ 
+ composer_event.2.name: "The Composer is Ready"
+ composer_event.2.desc: "The Composer is fully charged and ready for immediate activation. Should we proceed?"
+ 
+ composer_event.2.a: "Power down the Composer."
+ composer_event.2.b: "Compose the planet."
+ composer_event.2.b.tooltip: "The targeted planet's population will be composed into mechanical Promethean pops and armies."
+ 
+ MESSAGE_COMPOSER_COMPLETE_TITLE: "Composing complete"
+ MESSAGE_COMPOSER_COMPLETE: "A £pop£ Pop has been composed."
+ 
+ job_purge_composer: "Composing"
+ job_purge_composer_plural: "Composing"
+ job_purge_composer_desc:2 "This pop is being composed in accordance with our policies."
+ 
+ 
+ #HABITABILITY TRAITS
+ trait_pc_maethrillian_preference: "Maethrillian Preference"
+ trait_pc_maethrillian_preference_desc: "trait_pc_maethrillian_preference_desc"
+ 
+ mod_pc_maethrillian_habitability: "Maethrillian Preference"
+ 
+ trait_pc_forerunner_halo_preference: "Halo Preference"
+ trait_pc_forerunner_halo_preference_desc: "trait_pc_forerunner_halo_preference_desc"
+ 
+ mod_pc_forerunner_halo_habitability: "Halo Preference"
+ 
+ trait_pc_forerunner_halo_activated_preference: "Halo Preference"
+ trait_pc_forerunner_halo_activated_preference_desc:1 "$trait_pc_forerunner_halo_preference_desc$"
+ 
+ mod_pc_forerunner_halo_activated_habitability: "Halo Preference"
+ 
+ trait_pc_forerunner_ark_preference: "Ark Preference"
+ trait_pc_forerunner_ark_preference_desc: "trait_pc_forerunner_ark_preference_desc"
+ 
+ mod_pc_forerunner_ark_habitability: "Ark Preference"
+ 
+ trait_pc_forerunner_shield_preference: "Aegis Installation Preference"
+ trait_pc_forerunner_shield_preference_desc: "trait_pc_forerunner_shield_preference_desc"
+ 
+ mod_pc_forerunner_shield_habitability: "Aegis Installation Preference"
+ 
+ trait_pc_forerunner_sharpened_shield_preference: "System Sphere Preference""
+ trait_pc_forerunner_sharpened_shield_preference_desc: "trait_pc_forerunner_sharpened_shield_preference_desc"
+ 
+ mod_pc_forerunner_sharpened_shield_habitability: "System Sphere Preference"
+ 
+ trait_pc_obirequiem_preference: "Tactical Aegis Installation Preference"
+ trait_pc_obirequiem_preference_desc: "trait_pc_obirequiem_preference_desc"
+ 
+ mod_pc_obirequiem_habitability: "Tactical Aegis Installation Preference" 
+ 
+ trait_pc_genesis_preference: "Library Aegis Installation Preference"
+ trait_pc_genesis_preference_desc: "trait_pc_genesis_preference_desc"
+
+ mod_pc_genesis_habitability: "Library Aegis Installation Preference" 
+ 
+ ######################
+ #Advanced Technology
+ ######################
+ civic_advanced_tech: "Advanced Technology"
+ civic_advanced_tech_desc: "The technology of this species is more advanced than others. Its functions are enigmatic in nature."
+ 
+ ADVANCED_TECH: "Ship upkeep is doubled. Ship build-time doubled. Ship damage, shields, and armor are doubled. Naval capacity is reduced by 50%"
+ 
+ tooltip_advanced_tech_effects: "Increased weapon damage, shields, and armor. Doubled upkeep, build-time, and naval capacity is cut in half."
+ 
+ advanced_technology: "Advanced Technology"
+ advanced_technology_desc: "The technology of this species is both enigmatic and extremely advanced when compared to the contemporary empires within the galaxy. Although their ships and weapon technologies are far superior, they are more expensive to build." 
+ 
+ tech_advanced_start: "Advanced Technology"
+ tech_advanced_start_desc: "Starting technology boost to weapon damage against fallen and awakened empires."
+ 
+ 
+ #UTILITY TECH COMPONENTS
+ 
+ tech_forerunner_start_1: "Forerunner Start"
+ tech_forerunner_start_1_desc: "Starting forerunner technology."
+ 
+ tech_forerunner_hardlight_armor: "Zei'a Omega Alloy"
+ tech_forerunner_hardlight_armor_desc: "Hard light technology used to transform light into a solid state creating highly resilient shielding and programmable armor."
+ 
+ forerunner_hardlight_armor: "Zei'a Omega Alloy"
+ forerunner_hardlight_armor_desc: "Highly-resilient programmable light used to enhance or generate protective fields for starship hulls."
+ 
+ tech_forerunner_sensors: "Zei'a Sensor Suite"
+ tech_forerunner_sensors_desc: "Forerunner-based communications utilize quantum entanglement as a more secure method of instant data transfer over vast distances through the use of wormholes."
+ 
+ forerunner_sensors: "Zei'a Sensor Suite"
+ forerunner_sensors_desc: "Zei'a sensor arrays capable of instantaneous scanning and detection across vast interstellar distances." 
+ 
+ tech_forerunner_reactor: "Vacuum Energy"
+ tech_forerunner_reactor_desc: "Harnessing and draining the energies of untold numbers of nascent alternate realities will generate an enormous and near-infinite supply of energy."
+ 
+ TECH_UNLOCK_FORERUNNER_REACTOR_TITLE: "§HUnlocks Component:§! Forerunner Vacuum Reactor"
+ TECH_UNLOCK_FORERUNNER_REACTOR_DESC: "§HVacuum Reactor§!\nA Forerunner power source capable of generating an enormous amount of energy from nascent alternate realities."
+ 
+ forerunner_reactor: "Vacuum Reactor"
+ forerunner_reactor_desc: "A Forerunner reactor capable of generating an enormous amount of energy from nascent alternate realities."
+ 
+ tech_forerunner_shield: "Zei'a Twin Shielding"
+ tech_forerunner_shield_desc: "Powerful and esoteric Zei'a technology which establishes two layers of shields fully attuned to Particle and Kinetic frequencies, allowing for a perfect defense."
+ 
+ forerunner_shield: "Zei'a Twin-Shield"
+ forerunner_shield_desc: "A powerful and resilient shield that uses a mixture of hull-tight shielding and bubble shielding modulated to Kinetic and Particle frequencies, completely negating any form of incoming hazards and providing true protection."
+ 
+ tech_forerunner_thrusters: "Zei'a Inertia Manipulator"
+ tech_forerunner_thrusters_desc: "Through their vast scientific knowledge, Kas Zei'a has developed these engines to manipulate the vectors of inertia on their ships, allowing for instantaneous acceleration and deceleration, along with perfect maneuvering and course adjustments."
+ 
+ TECH_UNLOCK_FORERUNNER_THRUSTERS_TITLE: "§HUnlocks Component:§! Zei'a Inertia Manipulator"
+ TECH_UNLOCK_FORERUNNER_THRUSTERS_DESC: "§HZei'a Inertia Manipulator§!\nThrough their vast scientific knowledge, Kas Zei'a has developed these engines to manipulate the vectors of inertia on their ships, allowing for instantaneous acceleration and deceleration, along with perfect maneuvering and course adjustments."
+ 
+ forerunner_thrusters1: "Inertia Manipulator"
+ forerunner_thrusters_desc1: "Through their vast scientific knowledge, Kas Zei'a has developed these engines to manipulate the vectors of inertia on their ships, allowing for instantaneous acceleration and deceleration, along with perfect maneuvering and course adjustments."
+ 
+ tech_forerunner_slipspace_drive: "Zei'a Void Drive"
+ tech_forerunner_slipspace_drive_desc: "Zei'a Faster-Than-Light propulsion based on manipulating the higher dimensions of the Void to instantly transport a vessel to anywhere in the universe."
+ 
+ forerunner_slipspace_drive: "Zei'a Void Drive"
+ forerunner_slipspace_drive_desc: "Zei'a Faster-Than-Light propulsion based on manipulating the higher dimensions of the Void to instantly transport a vessel to anywhere in the universe." 
+ 
+ #UTILITY COMPONENTS
+ 
+ FORERUNNER_HARDLIGHT_ARMOR: "Zei'a Omega Alloy"
+ FORERUNNER_HARDLIGHT_ARMOR_DESC: "Zei'a Omega Alloy is the most powerful material in the entire universe, and is made through a process of taking the already highly durable and molecularly fused Zei'a Psi Alloy and then compressing it in on itself with unimaginable pressure."
+ SMALL_FORERUNNER_HARDLIGHT_ARMOR: "Zei'a Omega Alloy"
+ MEDIUM_FORERUNNER_HARDLIGHT_ARMOR: "Zei'a Omega Alloy"
+ LARGE_FORERUNNER_HARDLIGHT_ARMOR: "Zei'a Omega Alloy"
+ FORERUNNER_CLOAKING: "Zei'a Void Shroud"
+ FORERUNNER_SCIENCE_CLOAKING: "Zei'a Void Shroud"
+ FORERUNNER_CLOAKING_SET: "Zei'a Void Shroud"
+ 
+ #REACTORS
+ FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ CORVETTE_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ CORVETTE_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ DESTROYER_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ DESTROYER_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ CRUISER_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ CRUISER_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ BATTLESHIP_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ BATTLESHIP_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ TITAN_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ TITAN_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ COLOSSUS_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ COLOSSUS_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ PLATFORM_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ PLATFORM_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ ION_CANNON_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ ION_CANNON_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ STARBASE_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ STARBASE_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ TECH_UNLOCK_FORERUNNER_REACTOR_TITLE: "§HUnlocks Component:§! $FORERUNNER_REACTOR$"
+ TECH_UNLOCK_FORERUNNER_REACTOR_DESC: "Harnessing and draining the energies of untold numbers of nascent alternate realities will generate an enormous and near-infinite supply of energy."
+ 
+ 
+ #NSC REACTORS
+ STRIKECRUISER_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ STRIKECRUISER_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ BATTLECRUISER_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ BATTLECRUISER_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ CARRIER_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ CARRIER_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ DREADNOUGHT_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ DREADNOUGHT_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ FLAGSHIP_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ FLAGSHIP_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ FORTRESS_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ FORTRESS_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ CITADEL_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ CITADEL_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ XL_CANNON_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ XL_CANNON_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ STATION_FORERUNNER_REACTOR: "Zei'a Energy Controller"
+ STATION_FORERUNNER_REACTOR_DESC: "A Zei'a Energy Controller configured to harness the Universal Force Constant and convert it into truly infinite energy."
+ 
+ #SENSORS
+ FORERUNNER_SENSORS: "Zei'a Sensor Suite"
+ FORERUNNER_SENSORS_DESC: "Zei'a Sensors"
+ TECH_UNLOCK_FORERUNNER_SENSORS_TITLE: "§HUnlocks Component:§! $FORERUNNER_SENSORS$"
+ TECH_UNLOCK_FORERUNNER_SENSORS_DESC: "Powerful Zei'a sensors capable of probing vast interstellar distances and map local planetary systems instantaneously." 
+ 
+ #SHIELDS
+ FORERUNNER_SHIELD: "Zei'a Shields"
+ FORERUNNER_SHIELD_DESC: "Shields developed by Kas Zei'a."
+ SMALL_FORERUNNER_SHIELD: "Zei'a Shields"
+ MEDIUM_FORERUNNER_SHIELD: "Zei'a Shields"
+ LARGE_FORERUNNER_SHIELD: "Zei'a Shields"
+ 
+ #THRUSTERS
+ FORERUNNER_THRUSTERS1: "Zei'a Inertia Manipulator"
+ FORERUNNER_THRUSTERS_DESC1: "Through their vast scientific knowledge, Kas Zei'a has developed these engines to manipulate the vectors of inertia on their ships, allowing for instantaneous acceleration and deceleration, along with perfect maneuvering and course adjustments."
+ CORVETTE_FORERUNNER_THRUSTERS: "Zei'a Inertia Manipulator"
+ CORVETTE_FORERUNNER_THRUSTERS_DESC:1 Through their vast scientific knowledge, Kas Zei'a has developed these engines to manipulate the vectors of inertia on their ships, allowing for instantaneous acceleration and deceleration, along with perfect maneuvering and course adjustments.
+ DESTROYER_FORERUNNER_THRUSTERS: "Zei'a Inertia Manipulator"
+ DESTROYER_FORERUNNER_THRUSTERS_DESC: Through their vast scientific knowledge, Kas Zei'a has developed these engines to manipulate the vectors of inertia on their ships, allowing for instantaneous acceleration and deceleration, along with perfect maneuvering and course adjustments.
+ CRUISER_FORERUNNER_THRUSTERS: "Zei'a Inertia Manipulator"
+ CRUISER_FORERUNNER_THRUSTERS_DESC: Through their vast scientific knowledge, Kas Zei'a has developed these engines to manipulate the vectors of inertia on their ships, allowing for instantaneous acceleration and deceleration, along with perfect maneuvering and course adjustments.
+ BATTLESHIP_FORERUNNER_THRUSTERS: "Zei'a Inertia Manipulator"
+ BATTLESHIP_FORERUNNER_THRUSTERS_DESC: Through their vast scientific knowledge, Kas Zei'a has developed these engines to manipulate the vectors of inertia on their ships, allowing for instantaneous acceleration and deceleration, along with perfect maneuvering and course adjustments.
+ TITAN_FORERUNNER_THRUSTERS: "Zei'a Inertia Manipulator"
+ TITAN_FORERUNNER_THRUSTERS_DESC: Through their vast scientific knowledge, Kas Zei'a has developed these engines to manipulate the vectors of inertia on their ships, allowing for instantaneous acceleration and deceleration, along with perfect maneuvering and course adjustments.
+ COLOSSUS_FORERUNNER_THRUSTERS: "Zei'a Inertia Manipulator"
+ COLOSSUS_FORERUNNER_THRUSTERS_DESC: Through their vast scientific knowledge, Kas Zei'a has developed these engines to manipulate the vectors of inertia on their ships, allowing for instantaneous acceleration and deceleration, along with perfect maneuvering and course adjustments.
+ TECH_UNLOCK_FORERUNNER_THRUSTERS_TITLE: "§HUnlocks Component:§! $FORERUNNER_THRUSTERS$"
+ TECH_UNLOCK_FORERUNNER_THRUSTERS_DESC: "Using vacuum energy, these sub-light drives briefly expel virtual neutrons from the ship, giving it propulsion."
+ 
+ #NSC THRUSTERS
+ STRIKECRUISER_FORERUNNER_THRUSTERS: "Zei'a Inertia Manipulator"
+ STRIKECRUISER_FORERUNNER_THRUSTERS_DESC: Through their vast scientific knowledge, Kas Zei'a has developed these engines to manipulate the vectors of inertia on their ships, allowing for instantaneous acceleration and deceleration, along with perfect maneuvering and course adjustments.
+ BATTLECRUISER_FORERUNNER_THRUSTERS: "Zei'a Inertia Manipulator"
+ BATTLECRUISER_FORERUNNER_THRUSTERS_DESC: Through their vast scientific knowledge, Kas Zei'a has developed these engines to manipulate the vectors of inertia on their ships, allowing for instantaneous acceleration and deceleration, along with perfect maneuvering and course adjustments.
+ CARRIER_FORERUNNER_THRUSTERS: "Zei'a Inertia Manipulator"
+ CARRIER_FORERUNNER_THRUSTERS_DESC: Through their vast scientific knowledge, Kas Zei'a has developed these engines to manipulate the vectors of inertia on their ships, allowing for instantaneous acceleration and deceleration, along with perfect maneuvering and course adjustments.
+ DREADNOUGHT_FORERUNNER_THRUSTERS: "Zei'a Inertia Manipulator"
+ DREADNOUGHT_FORERUNNER_THRUSTERS_DESC: Through their vast scientific knowledge, Kas Zei'a has developed these engines to manipulate the vectors of inertia on their ships, allowing for instantaneous acceleration and deceleration, along with perfect maneuvering and course adjustments.
+ FLAGSHIP_FORERUNNER_THRUSTERS: "Zei'a Inertia Manipulator"
+ FLAGSHIP_FORERUNNER_THRUSTERS_DESC: Through their vast scientific knowledge, Kas Zei'a has developed these engines to manipulate the vectors of inertia on their ships, allowing for instantaneous acceleration and deceleration, along with perfect maneuvering and course adjustments.
+ 
+ #UTILITY AURAS
+ FORERUNNER_ATTENUATION_PULSE_EMITTER: "Attenuation Pulse Emitter"
+ FORERUNNER_EMPTY_EMITTER: "No Emitter"
+ FORERUNNER_ATTENUATION_PULSE_EMITTER_DESC: "A multi-vector electronic warfare EMP weapon designed to debilitate enemy ships."
+ TECH_UNLOCK_FORERUNNER_ATTENUATION_PULSE_EMITTER_TITLE: "§HUnlocks Component:§! $FORERUNNER_ATTENUATION_PULSE_EMITTER$"
+ TECH_UNLOCK_FORERUNNER_ATTENUATION_PULSE_EMITTER_DESC: "A Forerunner EMP weapon system typically installed on Guardian Custodes to neutralize local power networks through a series of debilitating pulses. This weapon was used by Guardians to police entire star systems and prevent local uprisings."
+ 
+ #FTL
+ FORERUNNER_SLIPSPACE_DRIVE: "Zei'a Void Drive"
+ FORERUNNER_SLIPSPACE_DRIVE_DESC: "Zei'a Faster-Than-Light propulsion based on manipulating the higher dimensions of the Void to instantly transport a vessel to anywhere in the universe."
+ TECH_UNLOCK_FORERUNNER_SLIPSPACE_DRIVE_TITLE: "§HUnlocks Component:§! $FORERUNNER_SLIPSPACE_DRIVE$"
+ TECH_UNLOCK_FORERUNNER_SLIPSPACE_DRIVE_DESC: "§HAdvanced Jumpdrive§!\n$tech_forerunner_slipspace_drive_desc$"
+ 
+ #FORERUNNER WEAPON COMPONENTS 
+ 
+ #########################
+ #SHIP WEAPON TECH 
+ #########################
+ 
+ #NEW WEAPONS 
+ 
+ tech_forerunner_pulse_missile_launcher: "Pulse Missile Launchers"
+ tech_forerunner_pulse_missile_launcher_desc: "Forerunner metastable hardlight that is shaped to form explosive projectiles with a moderate homing behavior."
+ 
+ tech_forerunner_disruption_generator: "Disruption Generator"
+ tech_forerunner_disruption_generator_desc: "Forerunner directed energy weapon usually employed aboard Forerunner Guardian Custode that uses concentrated electromagnetic radiation capable of destroying infrastructure caught in its blast."
+ 
+ tech_forerunner_destructor_beam: "Destructor Beam"
+ tech_forerunner_destructor_beam_desc: "A large anti-ship artillery energy weapon system that fires a concentrated blast of super-heated negatively-charged ion particles capable of demolishing even the most heavily armored warships."
+ 
+ tech_promethean_weapon_craft: "Promethean Weapon Craft"
+ tech_promethean_weapon_craft_desc: "Promethean Warrior-Servants primarily use an array of combat craft ranging from powerful War Sphinxes to disposable weapon-ships. These autonomous craft are typically used for both ground attack and infantry support."
+ 
+ #WEAPON TECH 
+ 
+ tech_forerunner_sentinel_beam: "Sentinel Beam"
+ tech_forerunner_sentinel_beam_desc: "Forerunner directed energy weapon that fires a super-heated negatively-charged ion particle beam that is highly efficient at stripping away shields and is equally effective against both hull and armor."
+ 
+ tech_forerunner_lmf_cannon: "Light Mass Fusillade Cannon"
+ tech_forerunner_lmf_cannon_desc: "Forerunner kinetic weapon that fires a mestastable form of hard light, allowing them to deal both thermal and kinetic damage to targets upon impact. Highly effective against armor and hull."
+ 
+ tech_forerunner_converging_beam: "Converging Beam Cannon"
+ tech_forerunner_converging_beam_desc: "Forerunner directed-energy weapon that fires lances of exotic energy upon vessels and provide a path for follow-on antimatter streams, which destroy everything they touch. Larger variations have a less smooth motion as the weapon is unable to contain the destructive energy of the weapon."
+ 
+ tech_forerunner_particle_cannon: "Particle Cannon"
+ tech_forerunner_particle_cannon_desc: "Forerunner directed energy weapon that fires a hyper-dense beam of negatively charged ions. Effective against enemy warships in ship-to-ship combat."
+ 
+ tech_forerunner_torsion_driver: "Torsion Driver"
+ tech_forerunner_torsion_driver_desc: "Forerunner gravitic emitters that use their gravity generation to push and pull portions of enemy craft beyond the limits of their shielding and structural supports with discordant harmonies that shear the ship apart."
+ 
+ tech_forerunner_heavy_ion_launcher: "Heavy Ion Launcher"
+ tech_forerunner_heavy_ion_launcher_desc: "Forerunner superheavy artillery weapon system that fires bolts of exotic matter accelerated to a significant fraction of the speed of light that are almost impossible to counter or stop. The destructive potential of this weapon is never to be underestimated."
+ 
+ #STRIKE-CRAFT
+ FORERUNNER_SENTINEL_STRIKE_CRAFT: "Sentinel Swarm"
+ FORERUNNER_SENTINEL_STRIKE_CRAFT_DESC: "Aggressor Sentinels used in large coordinated swarms. Sentinels are armed with a energy-based Sentinel Beam that is highly efficient at stripping shields."
+ 
+ FORERUNNER_SUPER_SENTINEL_STRIKE_CRAFT: "Protector Sentinels"
+ FORERUNNER_SUPER_SENTINEL_STRIKE_CRAFT_DESC: "Advanced Sentinel Constructs armed with a high powered Sentinel Beam that is highly effective at stripping shields and burning through armor."
+ 
+ FORERUNNER_PHAETON_STRIKE_CRAFT: "Phaeton Weapon-ships"
+ FORERUNNER_PHAETON_STRIKE_CRAFT_DESC: "Small autonomous combat craft armed with twin-linked light mass cannons capable of destroying both fighter craft and heavily damaging warships."
+ 
+ #ENERGY WEAPONS
+ 
+ #PULSE MISSILE LAUNCHERS G-SLOT
+ FORERUNNER_PULSE_MISSILE_LAUNCHER: "Pulse Missile Launcher"
+ FORERUNNER_PULSE_MISSILE_LAUNCHER_DESC: "Forerunner metastable hardlight explosive projectiles with a moderate homing behavior."
+ 
+ PULSE_MISSILE_LAUNCHER: "Pulse Missile Launcher"
+ 
+ #DISRUPTION GENERATOR XL Artillery
+ FORERUNNER_DISRUPTION_GENERATOR: "Disruption Generator"
+ FORERUNNER_DISRUPTION_GENERATOR_DESC: "Forerunner directed energy weapon that uses concentrated electromagnetic radiation. Effective at ripping through shields and unprotected hull. Ineffective against armor."
+ 
+ GUARDIAN_DISRUPTION_GENERATOR: "Disruption Generator"
+ 
+ #DESTRUCTOR BEAM L - Artillery
+ FORERUNNER_DESTRUCTOR_BEAM: "Destructor Beam"
+ FORERUNNER_DESTRUCTOR_BEAM_DESC: "Forerunner anti-ship artillery energy weapon system that fires a concentrated blast of super-heated negatively-charged ion particles. Equally effective against shields, armor, and hull."
+ 
+ LARGE_DESTRUCTOR_BEAM: "Destructor Beam"
+ 
+ #SENTINEL BEAM S-L
+ FORERUNNER_SENTINEL_BEAM: "Sentinel Beam"
+ FORERUNNER_SENTINEL_BEAM_DESC: "Forerunner directed energy weapon that fires a super-heated negatively-charged ion particle beam that is highly efficient at stripping away shields and is equally effective against both hull and armor." 
+ 
+ FORERUNNER_SENTINEL_BEAM_PD: "Point-Defense Sentinel Beam"
+ FORERUNNER_SENTINEL_BEAM_PD_DESC: "Forerunner directed energy weapon that fires a super-heated negatively-charged ion particle beam. Used to defend ships from enemy fighters and projectiles."
+ 
+ SMALL_SENTINEL_BEAM_1: "Small Sentinel Beam"
+ SMALL_SENTINEL_BEAM_1_DESC: "Forerunner directed energy weapon that fires a super-heated negatively-charged ion particle beam that is highly efficient at stripping away shields and is equally effective against both hull and armor."
+ MEDIUM_SENTINEL_BEAM_1: "Medium Sentinel Beam"
+ MEDIUM_SENTINEL_BEAM_1_DESC: "Forerunner directed energy weapon that fires a super-heated negatively-charged ion particle beam that is highly efficient at stripping away shields and is equally effective against both hull and armor."
+ LARGE_SENTINEL_BEAM_1: "Large Sentinel Beam"
+ LARGE_SENTINEL_BEAM_1_DESC: "Forerunner directed energy weapon that fires a super-heated negatively-charged ion particle beam that is highly efficient at stripping away shields and is equally effective against both hull and armor."
+ 
+ #LIGHT MASS FUSSILADE CANNON S-L
+ FORERUNNER_LIGHT_MASS_FUSILLADE_WEAPON: "Light Mass Fusillade Cannon"
+ FORERUNNER_LIGHT_MASS_FUSILLADE_WEAPON_DESC: "Forerunner kinetic weapon that fires a mestastable form of hard light, allowing them to deal both thermal and kinetic damage to targets upon impact. Highly effective against armor and hull."
+ 
+ SMALL_LMF_CANNON: "Small Light Mass Fusillade Cannon"
+ MEDIUM_LMF_CANNON: "Medium Light Mass Fusillade Cannon"
+ LARGE_LMF_CANNON: "Large Light Mass Fusillade Cannon"
+ 
+ #CONVERGING BEAM CANNON M-L
+ FORERUNNER_CONVERGING_BEAM_WEAPON: "Converging Beam Cannon"
+ FORERUNNER_CONVERGING_BEAM_WEAPON_DESC: "Forerunner directed-energy weapon that fires lances of exotic energy upon vessels and provide a path for follow-on antimatter streams, which destroy everything they touch. Larger variations have a less smooth motion as the weapon is unable to contain the destructive energy of the weapon."
+ 
+ MEDIUM_CONVERGING_BEAM_CANNON: "Medium Converging Beam Cannon"
+ LARGE_CONVERGING_BEAM_CANNON: "Large Converging Beam Cannon"
+ 
+ #TORSION DRIVER XL Weapon
+ FORERUNNER_TORSION_DRIVER: "Torsion Driver"
+ FORERUNNER_TORSION_DRIVER_DESC: "Forerunner gravitic emitters that use their gravity generation to push and pull portions of enemy craft beyond the limits of their shielding and structural supports with discordant harmonies that shear the ship apart."
+ 
+ TORSION_DRIVER: "Torsion Driver"
+ 
+ #PARTICLE BEAM CANNON PD & XL 
+ #POINT DEFENSE
+ FORERUNNER_PARTICLE_CANNON_POINT_DEFENSE: "Z-8250 Point-Defense Particle Cannon"
+ FORERUNNER_PARTICLE_CANNON_POINT_DEFENSE_DESC: "Forerunner directed energy weapon that fires a flak of hyper-dense hardlight projectiles of negatively charged ions to protect ships from incoming projectiles and fighters."
+ 
+ #XL WEAPON
+ FORERUNNER_PARTICLE_CANNON_XL: "Z-8060 Particle Cannon"
+ FORERUNNER_PARTICLE_CANNON_XL_DESC: "Forerunner directed energy weapon that fires a hyper-dense beam of negatively charged ions. Effective against enemy warships in ship-to-ship combat."
+ 
+ #TITANIC WEAPON 
+ FORERUNNER_PARTICLE_CANNON_T: "Z-8060 High-Impact Particle Cannon"
+ FORERUNNER_PARTICLE_CANNON_T_DESC: "Forerunner artillery that fires a concentrated hyper-dense beam of negatively charged ions. Used to defend key installations and effective against hardened enemy targets."
+ 
+ #HEAVY ION LAUNCHER TITANIC WEAPON 
+ FORERUNNER_HEAVY_ION_WEAPON: "Heavy Ion Launcher"
+ FORERUNNER_HEAVY_ION_WEAPON_DESC: "Forerunner weapon system that fires bolts of exotic matter accelerated to a significant fraction of the speed of light that are almost impossible to counter or stop."
+ 
+ FORERUNNER_HEAVY_ION_LAUNCHER: "Heavy Ion Launcher"
+ 
+ 
+ #CREATED SUMMONING GUARDIAN CUSTODES 
+
+ guardian_custode_key: "Custode"
+ guardian_fortress_key: "Fortress"
+ guardian_titan_key: "Titan"
+ guardian_battleship_key: "Battleship"
+ guardian_cruiser_key: "Cruiser"
+ guardian_destroyer_key: "Destroyer"
+ guardian_corvette_key: "Corvette"
+ 
+ NAME_Guardian_Custode: "Custode"
+ guardian_custode: "Guardian"
+ guardian_custode_plural: "Guardians"
+ 
+ decision_summon_guardian_custodes: "Summon Guardian Custode Detachment"
+ decision_summon_guardian_custodes_desc: "Activate and summon 3 Guardians to this system."
+ decision_summon_guardian_custodes_effects: "§GSummons a fleet of 3 Guardian Custodes to your capital system. Each Guardian is equipped with a unique §YAttenuation Pulse Emitter§! Auxiliary Component capable of debilitating enemy fleet capabilities in combat.§!"
+ 
+ promethean_start.5.name: "The Guardians Arrive"
+ promethean_start.5.desc: "The signal has been received and a detachment of the Guardian Custodes have arrived in our star system."
+ 
+ 
+ #HALO RING DIGSITE EVENT
+ 
+ decision_locate_activation_index: "Locate the Activation Index"
+ decision_locate_activation_index_desc: "Send an expedition to explore the interior of the Halo Ring in search of the fabled Activation Index."
+ decision_locate_activation_index_effects: "Begins the archaeological dig site event The Search for the Index."
+ 
+ halo_ring_site: "The Index Site"
+ halo_ring_site_desc: "We have discovered that in order to harness this ring's true potential, we must find what our scientists call the Activation Index, a key capable of unlocking the mysterious of this Halo Ring."
+ 
+ 
+ halo_index.0.name: "The Activation Index"
+ halo_index.0.desc: "Our scientists has found sufficient evidence of an activation index capable of unlocking the power of the megastructure. We must scour the surface in search of the key to unlock the true potential of this weapon."
+ halo_index.0.a: "Begin the Expedition"
+ 
+ #STAGE 1
+ halo_index.1.name: "The Silent Cartographer"
+ halo_index.1.desc: "Our team has landed on a location that was transcribed as a Cartographer, a facility that holds the records and location of where the Activation Index may be stored.\n\nSo far, the facility is intact and many of its systems are running at peak efficiency. Accessing the Cartographer has revealed the location of the Control Room, our next destination."
+ halo_index.1.a: "Proceed with caution."
+ 
+ halo_index.2.name: "The Control Room"
+ halo_index.2.desc: "After studying the Cartographer, we are confident that the Control Room will provide us with the answers we seek. Setting up a camp nearby, we traversed the ancient facility kept in pristine condition by the Sentinel caretakers.\n\nAt the top we were met with two large reinforced doors of Forerunner design. Our scientists accessed the terminal to unlock the doors.\n\nOnce we walked through the final doors, we entered a spacious room with a holographic projection of the Halo Ring and a central computer at its center.\n\nAccessing the control center opened up a treasure trove of information and data about the history of this Halo Ring and the Activation Index we've been looking for.\n\nBased on the initial translation, this facility was one of several within an array used for the purpose of defense and research against a biological plague that consumed much of the galaxy in their time.\n\nThe Halo Rings were meant to wipe out all biological life in the galaxy. Anyone and anything that could sustain the parasite as a food source was targeted.\n\nA weapon of last resort...\n\nThe location of a forerunner research facility is our next destination and hopefully the location of the Index."
+ 
+ halo_index.3.name: "The Research Facility"
+ halo_index.3.desc: "We landed just outside the facility. It is eerily quiet here. The facility itself is devoid of activity. We found a terminal to access the lift to the facility below.\n\nEveryone is on edge as if something bad is about to happen. There are symbols on the wall that may represent certain parts of the facility or areas of scientific importance. We should be careful not to disturb or unearth anything that may be kept under lock and key.\n\nWe ventured further down to the bottom of the facility and found a large terminal connected to a portal network. Surprisingly, we were greeted by the Monitor, an AI tasked with the protection of this ring. The AI wanted to determine the purpose of our visit and to warn us of the dangers of venturing too deep. What should we do?"
+ halo_index.3.a: "Let me speak to the Monitor."
+ 
+ halo_index.30.name: "The Talk..."
+ halo_index.30.desc: "Hello, I am the monitor of this installation. My installation. I have observed your colonization on this ring and I found it amusing, but now I must ask you to leave. Protocol dictated action against your colony ship when it first attempted to enter our space, but due to unforeseen circumstances, the defense systems went offline when you attempted to land. Under no circumstances should this Ring fall into the wrong hands or to those who are too primitive to understand its importance. This installation was built primarily for the purpose of eliminating the Flood. I will not allow any deviations from that purpose."
+ halo_index.30.a: "Perhaps we can come to an agreement?"
+ halo_index.30.b: "Don't order us around monitor!"
+ halo_index.30.c: "We need the Index to stop a galactic crisis!"
+ 
+ halo_index.30.a.monitor: "Unacceptable! Unless the Flood has returned, this ring will not be used in your petty sentient wars. Please leave, or I'll be forced to take drastic measures."
+ halo_index.30.b.monitor: "So be it. If you will not listen to reason, then I have no choice but to remove you by force."
+ halo_index.30.c.monitor: "Crisis? What Crisis?\n\nHmmm...Analyzing your subspace communications, you speak the truth! Perhaps that may merit the use of this ring...\n\nVery well, please allow one of your scientists assist me in retrieving the Activation Index from the Library. Follow the necessary protocols and you may use the Index."
+ 
+ halo_index.30.a.answer: "Then we have no choice. Weapons free."
+ halo_index.30.b.answer: "Battlestations!"
+ halo_index.30.c.answer: "Thank You"
+
+ halo_index.4.name: "The Library"
+ halo_index.4.desc: "The Monitor was true to its word. One of our scientists was suddenly transported with the monitor to the facility known as the Library. The scientist walked with the Monitor until they entered the massive elevator at its center which led straight to the Activation Index hovering above the central chamber. The scientist then successfully recovered the Index and was teleported to the control room with the rest of our expedition."
+ halo_index.4.a: "Give the Monitor my regards."
+
+ halo_index.5.name: "The Monitor Destroyed"
+ halo_index.5.desc: "Our assault on the monitor was brutal, but successful. We lost a few good members to its sentinel beam, but we were able to disable it. Wave after wave of sentinels then erupted from the ring. Attacking our settlements across the ring, but our forces managed to push them back. We also analyzed the broken monitor and found the location of the Index within the Library complex. We have since sent a team to recover the Index and have returned with the key in hand."  
+ halo_index.5.a: "Excellent"
+ 
+ #FORERUNNER ECUMENE ARMIES 
+ 
+ H_FORERUNNER_FLEET_SEQ: "Forerunner Fleet $C$"
+ H_FORERUNNER_PROMETHEAN_FLEET_SEQ: "Promethean Fleet $C$"
+ H_FORERUNNER_SENTINEL_FLEET_SEQ: "Sentinel Fleet $C$" 
+ H_FORERUNNER_CREATED_FLEET_SEQ: "Created Fleet $C$"
+ 
+ H_FORERUNNER_ARMY_DEFENSE_ORD: "$ORD$ Warrior-Servant Garrison"
+ H_FORERUNNER_ARMY_ASSAULT_ORD: "$ORD$ Warrior-Servant Legion"
+ H_FORERUNNER_ARMY_SLAVE_ORD: "$ORD$ Exile Legion"
+ H_FORERUNNER_ARMY_CLONE_ORD: "$ORD$ Warrior-Servant Clone Legion"
+ H_FORERUNNER_ARMY_ROBOTIC_ORD: "$ORD$ Aggressor Sentinel Swarm"
+ H_FORERUNNER_ARMY_ROBOTIC_DEFENSE_ORD: "$ORD$ Sentinel Defense Network"
+ H_FORERUNNER_ARMY_ANDROID_ORD: "$ORD$ Promethean Knight Legion"
+ H_FORERUNNER_ARMY_PSIONIC_ORD: "$ORD$ Tier II Preceptors"
+ H_FORERUNNER_ARMY_UNDEAD_ORD: "$ORD$ Warrior-Servant Echo Legion"
+ H_FORERUNNER_ARMY_XENOMORPH_ORD: "$ORD$ Forerunner Bio-genetic Legion"
+ H_FORERUNNER_ARMY_GENEWARRIOR_ORD: "$ORD$ Promethean Warrior-Servant Legion"
+ H_FORERUNNER_ARMY_OCCUPATION_ORD: "$ORD$ Warrior-Servant Custodes"
+ H_FORERUNNER_ARMY_ROBOTIC_OCCUPATION_ORD: "$ORD$ Sentinel Custodes"
+ 
+ H_FORERUNNER_ARMY_PRIMITIVE_SEQ: "Forerunner Warriors $C$"
+ H_FORERUNNER_ARMY_INDUSTRIAL_SEQ: "Forerunner Army $C$"
+ H_FORERUNNER_ARMY_POSTATOMIC_SEQ: "Forerunner Post-Atomic Army $C$"
+ 
+ 
+ #FORERUNNER/PROMETHEAN/SENTINEL ARMIES
+ H_FORERUNNER_AGRESSOR_SENTINELS_ORD: "$ORD$ Aggressor Sentinel Swarm"
+ H_FORERUNNER_ONYX_SENTINELS_ORD: "$ORD$ Onyx Sentinel Swarm"
+ H_FORERUNNER_ENFORCER_SENTINELS_ORD: "$ORD$ Enforcer Sentinels"
+ H_FORERUNNER_CONTROLLER_SENTINELS_ORD: "$ORD$ Controller Sentinels"
+ H_FORERUNNER_SUPER_SENTINELS_ORD: "$ORD$ Super Sentinels"
+ H_FORERUNNER_ARMIGER_ARMY_ORD: "$ORD$ Soldier-class Armiger Legion"
+ H_FORERUNNER_WARRIOR_SERVANT_ARMY_ORD: "$ORD$ Warrior-Servant Legion"
+ H_FORERUNNER_WARRIOR_SERVANT_DEFENSE_ARMY_ORD: "$ORD$ Warrior-Servant Garrison"
+ H_FORERUNNER_DESPAIR_FIGHTERS_ORD: "$ORD$ Despair-class Hunter-Killer Squadron"
+ H_FORERUNNER_WAR_SPHINX_ORD: "$ORD$ War Sphinx Squadron"
+ H_FORERUNNER_PROMETHEAN_WS_ARMY_ORD: "$ORD$ Promethean Warrior-Servant Legion"
+ H_FORERUNNER_PROMETHEAN_WS_DEFENSE_ARMY_ORD: "$ORD$ Promethean Warrior-Servant Garrison"
+ H_FORERUNNER_PROMETHEAN_SEEKERS_ORD: "$ORD$ Promethean Seeker Squadron"
+ H_FORERUNNER_PROMETHEAN_CRAWLERS_ORD: "$ORD$ Promethean Crawler Pack"
+ H_FORERUNNER_PROMETHEAN_WATCHERS_ORD: "$ORD$ Promethean Watchers"
+ H_FORERUNNER_PROMETHEAN_SOLDIERS_ORD: "$ORD$ Promethean Soldier Legion"
+ H_FORERUNNER_PROMETHEAN_KNIGHTS_ORD: "$ORD$ Promethean Knight Company"
+ H_FORERUNNER_PROMETHEAN_LANCERS_ORD: "$ORD$ Promethean Knight Lancer Company"
+ H_FORERUNNER_PROMETHEAN_BATTLEWAGONS_ORD: "$ORD$ Promethean Knight Battlewagons"
+ H_FORERUNNER_PROMETHEAN_PHAETON_ORD: "$ORD$ Z-1800 Phaeton Squadron"
+
+ H_FORERUNNER_SENTINEL_ARMY_PRIMITIVE_SEQ: "Constructor Sentinels $C$"
+ H_FORERUNNER_SENTINEL_ARMY_INDUSTRIAL_SEQ: "Gatherer Sentinels $C$"
+ H_FORERUNNER_SENTINEL_ARMY_POSTATOMIC_SEQ: "Protector Sentinels $C$"
+ 
+ 
+ 

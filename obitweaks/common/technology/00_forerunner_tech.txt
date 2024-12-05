@@ -1,0 +1,656 @@
+######################
+# Forerunner Tech
+#####################
+
+tech_forerunner_start = {
+	cost = 100000
+	area = physics
+	tier = 3
+	is_reverse_engineerable = yes
+	category = { particles }
+	weight = 1000
+	is_rare = yes
+
+	potential = {
+		any_owned_species = {
+			OR = {
+				has_trait = "trait_forerunner_species"
+				has_trait = "trait_robot_sentinel_ai"
+				has_trait = "trait_robot_promethean_ai"
+			}
+		}
+	}
+
+	modifier = {
+		damage_vs_country_type_default_mult = 0.5
+		damage_vs_country_type_swarm_mult = 0.5
+		damage_vs_country_type_fallen_empire_mult = 0.5
+		damage_vs_country_type_awakened_fallen_empire_mult = 0.5
+	}
+
+	weight_modifier = {
+		factor = 1000
+	}
+	
+	ai_weight = {
+		factor = 1
+	}
+}
+
+#TIER III FORERUNNER BUILDINGS 
+
+tech_forerunner_affluence_center = {
+	cost = @tier3cost3 
+	area = engineering 
+	category = { industry } 
+	is_reverse_engineerable = yes 
+	tier = 3
+	prerequisites = { "tech_forerunner_start" }
+	weight = @tier3weight3 
+	is_rare = yes 
+	
+	potential = {
+		has_technology = tech_forerunner_start 
+	}
+	
+	weight_modifier = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			has_technology = tech_forerunner_start
+		}
+	}
+	
+	ai_weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.25
+			has_technology = tech_forerunner_start 
+		}
+	}
+}
+
+tech_forerunner_nano_forge = {
+	cost = @tier3cost3 
+	area = engineering 
+	category = { industry } 
+	is_reverse_engineerable = yes 
+	tier = 3
+	prerequisites = { "tech_forerunner_start" }
+	weight = @tier3weight3 
+	is_rare = yes 
+	
+	potential = {
+		has_technology = tech_forerunner_start 
+	}
+	
+	weight_modifier = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			has_technology = tech_forerunner_start
+		}
+	}
+	
+	ai_weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.25
+			has_technology = tech_forerunner_start 
+		}
+	}
+}
+
+tech_forerunner_xeno_zoo = {
+	cost = @tier3cost3
+	area = society 
+	category = { biology } 
+	is_reverse_engineerable = yes 
+	tier = 3
+	prerequisites = { "tech_forerunner_start" }
+	weight = @tier3weight3
+	is_rare = yes 
+	
+	potential = {
+		has_technology = tech_forerunner_start 
+	}
+	
+	weight_modifier = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			has_technology = tech_forerunner_start
+		}
+	}
+	
+	ai_weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.25
+			has_technology = tech_forerunner_start 
+		}
+	}
+}
+
+#TIER IV FORERUNNER BUILDINGS 
+
+tech_forerunner_master_archive = {
+	cost = @tier4cost3
+	area = physics 
+	category = { computing } 
+	is_reverse_engineerable = yes 
+	tier = 4
+	prerequisites = { "tech_forerunner_start" }
+	weight = @tier4weight3
+	is_rare = yes 
+	
+	potential = {
+		has_technology = tech_forerunner_start 
+	}
+	
+	weight_modifier = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			has_technology = tech_forerunner_start
+		}
+	}
+	ai_weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.25
+			has_technology = tech_forerunner_start 
+		}
+	}
+}
+
+tech_forerunner_nourishment_center = {
+	cost = @tier4cost3
+	area = society 
+	category = { biology } 
+	is_reverse_engineerable = yes 
+	tier = 4
+	prerequisites = { "tech_forerunner_start" }
+	weight = @tier4weight3
+	is_rare = yes 
+	
+	potential = {
+		has_technology = tech_forerunner_start 
+	}
+	
+	weight_modifier = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			has_technology = tech_forerunner_start
+		}
+	}
+	ai_weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.25
+			has_technology = tech_forerunner_start 
+		}
+	}
+}
+
+tech_forerunner_dimensional_fabricator = {
+	cost = @tier4cost3 
+	area = physics 
+	category = { field_manipulation } 
+	is_reverse_engineerable = yes 
+	tier = 4
+	prerequisites = { "tech_forerunner_start" }
+	weight = @tier4weight3 
+	is_rare = yes 
+	
+	potential = {
+		has_technology = tech_forerunner_start 
+	}
+	
+	weight_modifier = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			has_technology = tech_forerunner_start
+		}
+	}
+	ai_weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.25
+			has_technology = tech_forerunner_start 
+		}
+	}
+}
+
+tech_forerunner_vacuum_generator = {
+	cost = @tier4cost3 
+	area = physics 
+	category = { field_manipulation } 
+	is_reverse_engineerable = yes 
+	tier = 4
+	prerequisites = { "tech_forerunner_start" }
+	weight = @tier4weight3 
+	is_rare = yes 
+	
+	potential = {
+		has_technology = tech_forerunner_start 
+	}
+	
+	weight_modifier = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			has_technology = tech_forerunner_start
+		}
+	}
+	ai_weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.25
+			has_technology = tech_forerunner_start 
+		}
+	}
+}
+
+# Shield World Fuckery
+
+tech_shield_worlds = {
+	cost = @tier5cost3
+	area = engineering
+	category = { voidcraft }
+	ai_update_type = all
+	is_reverse_engineerable = no
+	tier = 5
+	prerequisites = { "tech_mega_engineering" "tech_forerunner_start" }
+	weight = @tier5weight3
+	is_rare = yes
+
+	potential = {
+		has_technology = tech_forerunner_start
+	}
+	modifier = {
+		megastructure_build_speed_mult = 0.5
+		country_megastructure_build_cap_add = 1
+	}
+	weight_modifier = {
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_slipspace_field = {
+	cost = @tier3cost3
+	area = physics
+	category = { field_manipulation }
+	is_reverse_engineerable = no
+	tier = 3
+	weight = @tier3weight3
+	is_rare = yes
+
+	
+	modifier = {
+		ship_windup_mult = -0.50
+		ship_emergency_ftl_min_days_mult = -0.50
+	}
+	weight_modifier = {
+		factor = 1.0
+		modifier = {
+			factor = 0
+			NOR = {
+				#any_owned_planet = {
+				#	has_deposit = d_maethrillian_grid
+				#}
+				#any_owned_planet = {
+				#	has_deposit = d_ark_grid
+				#}
+				any_owned_planet = {
+					has_deposit = d_citadel_relay_control
+				}
+			}
+		}
+		modifier = {
+			factor = 20
+			OR = {
+				#any_owned_planet = {
+				#	has_deposit = d_maethrillian_grid
+				#}
+				#any_owned_planet = {
+				#	has_deposit = d_ark_grid
+				#}
+				any_owned_planet = {
+					has_deposit = d_citadel_relay_control
+				}
+			}
+		}
+		modifier = {
+			factor = 20
+			has_technology = tech_forerunner_start
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+	}
+}
+
+tech_advanced_slipspace_field = {
+	cost = @tier5cost3
+	area = physics
+	category = { field_manipulation }
+	ai_update_type = all
+	is_reverse_engineerable = no
+	tier = 5
+	prerequisites = { "tech_slipspace_field" }
+	weight = @tier5weight3
+	is_rare = yes
+
+	potential = {
+		has_technology = tech_forerunner_start
+	}
+	modifier = {
+	}
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_specialist_subject_type = { TYPE = scholarium }
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+tech_slipspace_portal_activation = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	is_rare = yes
+	is_reverse_engineerable = yes
+	weight = 100
+	prerequisites = { "tech_hyper_drive_1" }
+
+	feature_flags = { gateway_activation }
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0
+			NOR = {
+				OR = {
+					has_seen_any_bypass = slipspace_alpha
+					has_seen_any_bypass = slipspace_beta
+					has_seen_any_bypass = slipspace_delta
+					has_seen_any_bypass = slipspace_gamma
+					has_seen_any_bypass = slipspace_lambda
+				}
+				any_relation = {
+					is_country_type = default
+					has_communications = ROOT
+					has_technology = tech_slipspace_portal_activation
+				}
+			}
+		}
+		modifier = {
+			factor = 4.0
+			OR = {
+				owns_any_bypass = slipspace
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 2
+			is_ai = no #auto-research
+		}
+	}
+}
+
+tech_contender_ancilla = {
+	cost = @tier4cost2
+	area = physics
+	category = { computing }
+	ai_update_type = all
+	is_reverse_engineerable = no
+	tier = 4
+	prerequisites = { "tech_forerunner_start" "tech_synthetic_leaders" }
+	weight = @tier4weight2
+	is_rare = yes
+
+	potential = {
+		has_technology = tech_forerunner_start
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_specialist_subject_type = { TYPE = scholarium }
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}
+
+tech_halo_array_activation = {
+	cost = @tier5cost1
+	area = physics
+	category = { computing }
+	is_reverse_engineerable = no
+	tier = 5
+	prerequisites = { "tech_mega_engineering" }
+	weight = @tier5weight1
+	is_rare = yes
+	is_dangerous = yes
+
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet = {
+					has_deposit = d_hr_library
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics 
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 20
+			any_owned_planet = {
+				has_deposit = d_hr_library
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics 
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 20
+			has_any_halo_ring_in_empire = yes
+		}
+	}
+}
+
+tech_ark_halo_array_activation = {
+	cost = @tier5cost3
+	area = physics
+	category = { computing }
+	is_reverse_engineerable = no
+	tier = 5
+	prerequisites = { "tech_halo_array_activation" }
+	weight = @tier5weight3
+	is_rare = yes
+	is_dangerous = yes
+
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics 
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet = {
+					has_deposit = d_ark_citadel
+				}
+			}
+		}
+		modifier = {
+			factor = 10
+			any_owned_planet = {
+				has_deposit = d_ark_citadel
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics 
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 20
+			has_any_halo_ring_in_empire = yes
+		}
+	}
+}
+
+#FORERUNNER ATTENUATION FIELD
+
+tech_pk_forerunner_attenuation_field = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	is_rare = yes
+	is_dangerous = yes 
+	category  = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_colossus" }
+	weight = @tier5weight3
+	
+	potential = {
+		host_has_dlc = "Apocalypse"
+		has_country_flag = colossus_project
+		has_technology = "tech_forerunner_start"
+	}
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_pk_forerunner_attenuation_field }
+			}
+		}
+		modifier = {
+			factor = 0.20
+			NOR = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_maniacal"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_expertise_field_manipulation"
+				}
+			}					
+		}
+	}
+
+	ai_weight = {
+		factor = 0.25
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_materialist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_materialist
+		}
+	}
+}

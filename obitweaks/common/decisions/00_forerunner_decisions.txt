@@ -1,0 +1,265 @@
+##########################################################################
+# Forerunner/Promethean Decisions
+##########################################################################
+
+decision_install_monitor = {
+	owned_planets_only = yes
+	icon = decision_install_monitor
+	
+	enactment_time = 10
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 100
+			energy = 100
+		}
+	}
+	
+	potential = {
+		owner = {
+			has_technology = tech_forerunner_start
+		}
+		NOT = {
+			has_modifier = halo_ring_monitor
+		}
+		OR = {
+				has_active_building = building_sentinel_factory 
+				has_active_building = building_promethean_factory
+		}
+	}
+	
+	effect = {
+		add_modifier = {
+			modifier = halo_ring_monitor
+			days = -1
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+decision_install_submonitor = {
+	owned_planets_only = yes
+	icon = decision_install_submonitor
+	
+	enactment_time = 10
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 100
+			energy = 100
+		}
+	}
+	
+	potential = {
+		AND = {
+			owner = {
+				has_technology = tech_forerunner_start
+			}
+			planet = {
+				NOT = {
+					has_modifier = halo_ring_submonitor
+				}
+				has_modifier = halo_ring_monitor
+			}
+		}
+	}
+	
+	effect = {
+		add_modifier = {
+			modifier = halo_ring_submonitor
+			days = -1
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+## Access Relay Control
+decision_relay_control = {
+	owned_planets_only = yes
+	icon = decision_shield_world_slipspace_bubble
+	
+	potential = {
+		AND = {
+			owner = {
+				has_technology = tech_slipspace_field
+			}
+
+			planet = {
+				has_deposit = d_citadel_relay_control
+			}
+		}
+	}
+	
+	effect = {
+		save_global_event_target_as = obicitadel
+		from = {
+			save_global_event_target_as = masterchief
+			country_event = { id = slipspace_relay.1 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+## Destroy cringe robots
+
+decision_cringe_robots = {
+	owned_planets_only = yes
+	icon = decision_shield_world_slipspace_bubble
+	
+	potential = {
+		owner = {
+			OR = {
+				has_valid_civic = civic_forerunner_ecumene
+				has_valid_civic = civic_ecumene_protocols
+				has_technology = tech_forerunner_start
+				has_technology = tech_efg_pretech
+			}
+		}
+		count_owned_pop = {
+			count >= 1
+			limit = {
+				has_trait = trait_mechanical
+				NOT = {
+					has_trait = trait_robot_sentinel_ai
+				}
+			}
+		}
+	}
+	
+	effect = {
+		every_owned_pop = {
+			limit = {
+				AND = {
+					OR = {
+						pop_has_trait = trait_mechanical
+					}
+					NOT = {
+						pop_has_trait = trait_robot_sentinel_ai
+					}
+				}
+			}
+			kill_pop = yes
+		}
+	}
+
+	ai_weight = 0
+}
+
+
+## Create Sentinels
+decision_construct_forerunner_sentinels = {
+	owned_planets_only = yes 
+	icon = decision_construct_forerunner_sentinels
+	
+	enactment_time = 10
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 500
+			energy = 500
+		}
+	}
+	potential = {
+		owner = {
+			AND = {
+				has_technology = tech_forerunner_start
+				NOT = { 
+					is_gestalt = yes 
+				}
+			}
+		}
+		planet = {
+			OR = {
+				has_active_building = building_sentinel_factory 
+				has_active_building = building_promethean_factory
+				has_deposit = d_automated_sentinel_factory
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = decision_construct_forerunner_sentinels_tooltip
+		hidden_effect = {
+			create_species = {
+				name = "Uviik"
+				plural = "Uviik'zu"
+				adjective = "Uviik"
+				name_list = "sentinels"
+				class = ROBOT
+				portrait = "sentinels"
+				traits = {
+					trait = trait_pc_cybertronian_world_preference
+					trait = trait_mechanical
+					trait = trait_robot_sentinel_ai
+					trait = trait_asuran
+					trait = trait_auto_mod_robotic
+				}
+			}
+			while = {	
+				count = 5
+				create_pop =  {
+					species = "Uviik"
+				}
+			}
+		}
+	}
+}
+
+## Create Mechanical Prometheans
+decision_construct_mechanical_prometheans = {
+	owned_planets_only = yes
+	icon = decision_construct_mechanical_prometheans
+	
+	enactment_time = 30
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 2000
+			energy = 1000
+		}
+	}
+	
+	potential = {
+		exists = owner 
+		AND = {
+			owner = { NOT = { is_gestalt = yes }}
+			owner = {
+				has_technology = tech_pk_composer
+			}		
+		}
+		planet = {
+			is_planet_class = pc_requiem
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_construct_mechanical_prometheans_effects
+		hidden_effect = {
+			create_species = {
+				name = "Twilight-Class Uviik"
+				plural = "Twilight-Class Uviik'zu"
+				class = "forerunner_promethean"
+				portrait = "promethean"
+				name_list = "promethean"
+				traits = {
+					trait = trait_mechanical
+					trait = trait_robot_promethean_ai
+				}
+			}
+			while = {
+				count = 1
+				create_pop = {
+					species = "Twilight-Class Uviik"
+				}
+			}
+		}
+	}
+}

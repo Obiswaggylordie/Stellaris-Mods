@@ -1,0 +1,408 @@
+###################
+# RULER JOBS      #
+###################
+#		planet_priests_produces_mult = 0.2
+
+void_elder = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_void_archive_1
+	clothes_texture_index = 1
+	icon = noble
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_ruler_job
+	
+	resources = {
+		category = planet_administrators
+		produces = {
+			unity = 5
+		}	
+	}
+	
+	planet_modifier = {
+		planet_pop_assembly_organic_add = 1
+		planet_amenities_add = 5
+		planet_stability_add = 5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_technology = tech_ascension_1
+				NOT = { has_technology = tech_ascension_2 }
+				NOT = { has_technology = tech_ascension_3 }
+				NOT = { has_technology = tech_ascension_4 }
+			}
+		}
+		modifier = {
+			planet_amenities_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_technology = tech_ascension_1
+				has_technology = tech_ascension_2
+				NOT = { has_technology = tech_ascension_3 }
+				NOT = { has_technology = tech_ascension_4 }
+			}
+		}
+		modifier = {
+			planet_amenities_add = 4
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_technology = tech_ascension_1
+				has_technology = tech_ascension_2
+				has_technology = tech_ascension_3
+				NOT = { has_technology = tech_ascension_4 }
+			}
+		}
+		modifier = {
+			planet_amenities_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_technology = tech_ascension_1
+				has_technology = tech_ascension_2
+				has_technology = tech_ascension_3
+				has_technology = tech_ascension_4
+			}
+		}
+		modifier = {
+			planet_amenities_add = 10
+		}
+	}
+
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 5
+			has_job = void_elder
+		}
+	}
+}
+
+###################
+# SPECIALIST JOBS #
+###################
+
+void_psionic_master = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_void_psionic_beacon_1
+	clothes_texture_index = 1
+	icon = telepath
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	
+	resources = {
+		category = planet_psi_masters
+		produces = {
+			psi_energy = 50
+		}
+		upkeep = {
+			unity = 50
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 1.5
+			has_job = void_psionic_master
+		}
+	}
+}
+
+psionic_master = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_void_psionic_beacon_1
+	clothes_texture_index = 1
+	icon = telepath
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	
+	resources = {
+		category = planet_psi_masters
+		produces = {
+			psi_energy = 25
+		}
+		upkeep = {
+			unity = 40
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 1.5
+			has_job = psionic_master
+		}
+	}
+}
+
+void_seeker = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_void_institute_of_enlightenment_1
+	clothes_texture_index = 1
+	icon = telepath
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_researchers
+		produces = {
+			unity = 5
+			physics_research = 5
+			engineering_research = 5
+			society_research = 5
+		}
+		upkeep = {
+			energy = 5
+		}	
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 1.5
+			has_job = void_seeker
+		}
+	}
+}
+
+void_metallurgist = {	
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_void_foundry_1
+	clothes_texture_index = 5
+	icon = foundry
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_metallurgists
+		produces = {
+			alloys = 5
+			volatile_motes = 0.1
+			exotic_gases = 0.1
+			rare_crystals = 0.1
+		}
+		upkeep = {
+			minerals = 6
+			energy = 6
+		}
+	}
+	
+	planet_modifier = {
+	}
+	
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 1.5
+			has_job = void_metallurgist
+		}		
+	}
+}
+
+void_energizer = {	
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_void_generator_1
+	clothes_texture_index = 5
+	icon = technician
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_technician
+		produces = {
+			energy = 20
+		}
+		upkeep = {
+			unity = 5
+		}
+	}
+	
+	planet_modifier = {
+	}
+	
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 1.5
+			has_job = void_energizer
+		}		
+	}
+}
+
+void_guardian = {	
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_precinct_house
+	clothes_texture_index = 5
+	icon = soldier
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+	
+	planet_modifier = {
+		planet_crime_add = -50
+	}
+	
+	pop_modifier = {
+		pop_defense_armies_add = 5
+	}
+
+	country_modifier = {
+		country_naval_cap_add = 5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_active_tradition = tr_domination_judgment_corps }
+		}
+		modifier = {
+			planet_crime_add = -10
+		}		
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			planet = { has_modifier = anticrime_campaign }
+		}
+		modifier = {
+			planet_crime_add = -20
+		}		
+	}
+	
+	
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 1.5
+			has_job = void_guardian
+		}		
+	}
+}
+
+#####################
+#### WORKERS ########
+#####################
+
+void_keeper = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_void_archive_1
+	clothes_texture_index = 2
+	icon = clerk
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_worker_job
+	
+	resources = {
+		category = planet_researchers
+		produces = {
+			unity = 3
+		}	
+	}
+
+	planet_modifier = {
+		planet_amenities_add = 6
+	}
+	
+	weight = {
+		weight = @clerk_job_weight
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+	}
+}

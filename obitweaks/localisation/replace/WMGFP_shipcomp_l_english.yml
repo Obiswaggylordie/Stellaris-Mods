@@ -1,0 +1,60 @@
+﻿l_english:
+####################################
+PEDF_TITAN_yamato: "Yamato"
+PEDF_TITAN_ginga: "Ginga"
+PEDF_TITAN_Shunran_XL: "Shunran"
+
+PEDF_TITAN_Laboratory_Aquarius: "Laboratory Aquarius"
+PEDF_BATTLESHIP_andromeda: "Andromeda"
+PEDF_BATTLESHIP_andromeda_Blue: "Aldebaran"
+PEDF_BATTLESHIP_andromeda_AI: "Andromeda Earthfront Special"
+PEDF_BATTLESHIP_andromeda_AI2: "Andromeda Earthfront"
+PEDF_BATTLESHIP_amaterasu: "Amaterasu"
+PEDF_TITAN_yamanamispecial: "Yamanami Special"
+PEDF_TITAN_yamanamispecial_addlocators: "Yamanami S additional armament"
+PEDF_TITAN_yamanamispecial2: "Andromeda Kai"
+PEDF_BATTLESHIP_antares: "Antares"
+PEDF_BATTLESHIP_apollonome: "Apollonome"
+
+PEDF_BATTLESHIP_Dreadnought: "Dreadnought"
+PEDF_BATTLESHIP_Dreadnought_ED: "Dreadnought Earthfront"
+PEDF_BATTLESHIP_Dreadnought_MB: "Dreadnought Marsfront"
+PEDF_BATTLESHIP_PS_Autodreadnought: "Auto"
+
+PEDF_CRUISER_escort: "Escort"
+PEDF_CRUISER_patrol: "Enceladus"
+
+PEDF_CRUISER_ticonderoga: "Ticonderoga"
+PEDF_CRUISER_ticonderoga2: "Ticonderoga "
+
+PEDF_DESTROYER_saratoga: "Saratoga"
+PEDF_DESTROYER_murasame: "Murasame"
+PEDF_DESTROYER_saratoga2: "Saratoga X"
+PEDF_DESTROYER_murasame2: "Murasame X"
+
+
+PEDF_CORVETTE_isokaze: "Isokaze Kai"
+PEDF_CORVETTE_yukikaze: "Yukikaze"
+
+
+PEDF_CRUISER_oldcruiser: "old cruiser"
+PEDF_DESTROYER_olddestroyer: "old destroyer"
+PEDF_BATTLESHIP_oldlightcarrier: "Old Spacecraft Carrier"
+PEDF_BATTLESHIP_oldbattlecarrier: "Battle carrier"
+
+PEDF_TITAN_DUMMY_COMMON_CR: "common section"
+PEDF_BATTLESHIP_DUMMY_COMMON_CR: "common section"
+PEDF_DREADNOUGHT_DUMMY_COMMON_CR: "common section"
+PEDF_CRUISER_DUMMY_COMMON_CR: "common section"
+PEDF_DESTROYER_DUMMY_COMMON_CR: "common section"
+
+CR_WMG_SINGLE: "Wave Motion Gun Single"
+CR_WMG_TWIN: "Wave Motion Gun Double"
+CR_WMG_TRIPLE: "Wave Motion Gun Triple"
+CR_WMG_QUADRUPLE: "Wave Motion Gun Quadruple"
+
+CR_ZEIA_HULL: "Zei'a Hull Configuration"
+
+
+tech_Wave_motion_gun_Fleet: "Wave Motion Gun Fleet Plan"
+tech_Wave_motion_gun_Fleet_desc: "Our war potential is inexhaustible!"

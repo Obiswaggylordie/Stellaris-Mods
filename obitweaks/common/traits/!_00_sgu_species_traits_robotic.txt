@@ -1,0 +1,144 @@
+
+
+##################
+# Species Traits #
+##################
+
+trait_asuran = {
+	cost = 1
+	randomized = no
+	species_potential_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		from = {
+			has_technology = tech_forerunner_start
+		}
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	immortal_leaders = yes
+	forced_happiness = yes 
+
+	opposites = {
+		"trait_ancient"
+		"trait_ori"
+		"trait_asgard"
+		"trait_vanir"
+		"trait_tauri"
+		"trait_goauld"
+		"trait_jaffa"
+		"trait_wraith"
+		"trait_replicator"
+		"trait_nox"
+		"trait_traveler"
+		"trait_lucian"
+	}
+
+	allowed_archetypes = { ROBOT MACHINE BIOLOGICAL}
+
+	modifier = {
+		planet_jobs_robotic_produces_mult = 1.00
+		planet_pop_assembly_mult = 1.00
+	}
+
+	triggered_pop_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_tradition = tr_sgu_nanites_adopt }
+		}
+		planet_metallurgists_nanites_produces_add = 0.20
+		planet_metallurgists_alloys_produces_add = -1
+	}
+
+	custom_tooltip_with_modifiers = asuran_trait_tooltip #unlike custom_tooltip, this shows in addition to the modifiers
+	triggered_pop_modifier = { #won't show in trait tooltips, use custom_tooltip/custom_tooltip_with_modifiers
+		potential = {
+			exists = planet
+			planet = {
+				OR = {
+					is_planet_class = pc_machine 
+					is_planet_class = pc_forerunner_shield
+					is_planet_class = pc_cybertronian_world
+					is_planet_class = pc_corrupted_cybertronian_world
+					is_planet_class = pc_obicitadel
+					is_planet_class = pc_maethrillian
+					is_planet_class = pc_requiem
+					is_planet_class = pc_genesis
+				}
+			}
+			exists = owner
+			owner = { has_ascension_perk = ap_machine_ascension }
+		}
+		planet_jobs_robotic_produces_mult = 1.00
+	}
+
+	prerequisites = {
+		tech_forerunner_start
+	}
+}
+
+trait_replicator = {
+	cost = 1
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	immortal_leaders = yes
+	forced_happiness = yes
+
+	opposites = {
+		"trait_ancient"
+		"trait_ori"
+		"trait_asgard"
+		"trait_vanir"
+		"trait_tauri"
+		"trait_goauld"
+		"trait_jaffa"
+		"trait_wraith"
+		"trait_asuran"
+		"trait_nox"
+		"trait_traveler"
+		"trait_lucian"
+	}
+
+	allowed_archetypes = { ROBOT MACHINE BIOLOGICAL }
+
+	modifier = {
+		planet_pop_assembly_mult = 0.20
+	}
+
+	triggered_pop_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_tradition = tr_sgu_nanites_adopt }
+		}
+		planet_metallurgists_nanites_produces_add = 0.20
+		planet_metallurgists_alloys_produces_add = -1
+	}
+
+	custom_tooltip_with_modifiers = replicator_trait_tooltip #unlike custom_tooltip, this shows in addition to the modifiers
+	triggered_pop_modifier = { #won't show in trait tooltips, use custom_tooltip/custom_tooltip_with_modifiers
+		potential = {
+			exists = planet
+			planet = { is_planet_class = pc_nuked }
+			exists = owner
+			owner = { has_ascension_perk = ap_world_devourer }
+		}
+		planet_jobs_robotic_produces_mult = 0.10
+	}
+}
+
+
+
+
+
+
+

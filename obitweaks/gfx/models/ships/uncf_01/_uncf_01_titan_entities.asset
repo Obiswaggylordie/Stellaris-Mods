@@ -1,0 +1,1583 @@
+	@small_trail_W = 10
+	@small_trail_L = 60
+	@medium_trail_W = 25
+	@medium_trail_L = 150
+	@large_trail_W = 50
+	@large_trail_L =  300
+
+@titan_scale = 1.0
+
+######### Titan Frame #######
+
+entity = {
+	name = "uncf_01_titan_entity"
+	pdxmesh = "generic_shipset_hugeship_frame_mesh"
+
+	default_state = idle
+	state = { name = "idle"	animation = "idle"	animation_blend_time = 3 }
+	state = { name = "moving" animation = "idle"	animation_blend_time = 3 }
+	state = { name = "death" animation = "death1" animation_blend_time = 0.0 chance = 1 looping = no
+		event = { time = 4.56 node = "explosion_locator1" particle = "ship_explosion_air_vent_particle" }
+		event = { time = 6.56 node = "explosion_locator2" particle = "ship_burn_particle" }
+		event = { time = 7.56 node = "explosion_locator4" particle = "large_ship_explosion_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 9.0 node = "explosion_locator6" particle = "ship_explosion_particle" }
+
+		event = { time = 9.56 node = "explosion_locator5" particle = "ship_explosion_air_vent_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 9.56 node = "explosion_locator3" particle = "ship_burn_particle" }
+		event = { time = 12.7 node = "explosion_locator2" particle = "ship_explosion_air_vent_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 13.7 node = "explosion_locator6" particle = "ship_burn_particle" }
+
+		event = { time = 14.7 node = "explosion_locator1" particle = "ship_explosion_air_vent_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 15.7 node = "explosion_locator3" particle = "ship_burn_particle" }
+		event = { time = 16.7 node = "explosion_locator4" particle = "large_ship_explosion_particle" }
+
+		event = { time = 20.5 node = "explosion_locator2" particle = "small_player_ship_explosion_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 21.5 node = "explosion_locator5" particle = "small_player_ship_explosion_particle" sound = { soundeffect = ship_explosion_large } }
+		event = { time = 22.5 node = "part1" particle = "dreadnought_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "amb_titan_ship_death" } }
+	}
+	state = { name = "death" animation = "death2" animation_blend_time = 0.0 chance = 1 looping = no
+		event = { time = 4.56 node = "explosion_locator1" particle = "ship_explosion_air_vent_particle" }
+		event = { time = 6.56 node = "explosion_locator2" particle = "ship_burn_particle" }
+		event = { time = 7.56 node = "explosion_locator4" particle = "large_ship_explosion_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 9.0 node = "explosion_locator6" particle = "ship_explosion_particle" }
+
+		event = { time = 9.56 node = "explosion_locator5" particle = "ship_explosion_air_vent_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 9.56 node = "explosion_locator3" particle = "ship_burn_particle" }
+		event = { time = 12.7 node = "explosion_locator2" particle = "ship_explosion_air_vent_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 13.7 node = "explosion_locator6" particle = "ship_burn_particle" }
+
+		event = { time = 14.7 node = "explosion_locator1" particle = "ship_explosion_air_vent_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 15.7 node = "explosion_locator3" particle = "ship_burn_particle" }
+		event = { time = 16.7 node = "explosion_locator4" particle = "large_ship_explosion_particle" }
+
+		event = { time = 20.5 node = "explosion_locator2" particle = "small_player_ship_explosion_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 21.5 node = "explosion_locator5" particle = "small_player_ship_explosion_particle" sound = { soundeffect = ship_explosion_large } }
+		event = { time = 22.5 node = "part1" particle = "dreadnought_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "amb_titan_ship_death" } }
+	}
+	state = { name = "death" animation = "death3" animation_blend_time = 0.0 chance = 1 looping = no
+		event = { time = 4.56 node = "explosion_locator1" particle = "ship_explosion_air_vent_particle" }
+		event = { time = 6.56 node = "explosion_locator2" particle = "ship_burn_particle" }
+		event = { time = 7.56 node = "explosion_locator4" particle = "large_ship_explosion_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 9.0 node = "explosion_locator6" particle = "ship_explosion_particle" }
+
+		event = { time = 9.56 node = "explosion_locator5" particle = "ship_explosion_air_vent_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 9.56 node = "explosion_locator3" particle = "ship_burn_particle" }
+		event = { time = 12.7 node = "explosion_locator2" particle = "ship_explosion_air_vent_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 13.7 node = "explosion_locator6" particle = "ship_burn_particle" }
+
+		event = { time = 14.7 node = "explosion_locator1" particle = "ship_explosion_air_vent_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 15.7 node = "explosion_locator3" particle = "ship_burn_particle" }
+		event = { time = 16.7 node = "explosion_locator4" particle = "large_ship_explosion_particle" }
+
+		event = { time = 20.5 node = "explosion_locator2" particle = "small_player_ship_explosion_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 21.5 node = "explosion_locator5" particle = "small_player_ship_explosion_particle" sound = { soundeffect = ship_explosion_large } }
+		event = { time = 22.5 node = "part1" particle = "dreadnought_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "amb_titan_ship_death" } }
+	}
+
+	scale = 1.0	
+	game_data = {
+		size = @titan_scale
+		#emissive_recolor_crunch = 5.0
+	}
+}
+
+######### Titan Bow Sections  #######
+
+entity = {
+	name = "uncf_01_titan_bow_entity"
+	pdxmesh = "uncf_01_titan1_locator_mesh"
+}
+
+entity = {
+	name = "uncf_01_titan1_bow_entity"
+	pdxmesh = "uncf_01_titan1_locator_mesh"
+}
+
+######### Titan Mid Sections  #######
+
+entity = {
+	name = "uncf_01_titan_mid_entity"
+	pdxmesh = "uncf_01_titan1_mid_mesh"
+	
+		default_state = idle
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		}
+		state = { name = "moving" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+		}
+			state = { name = "death" state_time = 5 }
+		
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   }
+			"engine_small_01" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_02" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_03" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_04" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"exhaust_01"	= 		    { width = @large_trail_W 	lenght = @large_trail_L   }
+		}
+	}
+}
+
+######### Titan Stern Sections  #######
+
+entity = {
+	name = "uncf_01_titan_stern_entity"
+	pdxmesh = "uncf_01_titan1_locator_mesh"
+
+}
+
+######### Titan Locator Sections  #######
+
+entity = {
+	name = "uncf_01_titan_locator_entity"
+	pdxmesh = "uncf_01_titan1_locator_mesh"
+
+}
+
+######### Titan Body Sections  #######
+
+entity = {
+	name = "uncf_01_titan_body_entity"
+	pdxmesh = "uncf_01_titan_body_mesh"
+				
+		default_state = idle
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		}
+		state = { name = "moving" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+		}
+			state = { name = "death" state_time = 5 }
+		
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   }
+			"engine_small_01" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_02" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_03" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_04" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"exhaust_01"	= 		    { width = @large_trail_W 	lenght = @large_trail_L   }
+		}
+	}
+	}
+
+entity = {
+	name = "uncf_01_titan1_body_entity"
+	pdxmesh = "uncf_01_titan1_body_mesh"
+				
+		default_state = idle
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		}
+		state = { name = "moving" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+		}
+			state = { name = "death" state_time = 5 }
+		
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   }
+			"engine_small_01" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_02" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_03" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_04" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"exhaust_01"	= 		    { width = @large_trail_W 	lenght = @large_trail_L   }
+		}
+	}
+	}
+
+entity = {
+	name = "uncf_01_titan2_body_entity"
+	pdxmesh = "uncf_01_titan2_body_mesh"
+				
+		default_state = idle
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		}
+		state = { name = "moving" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+		}
+			state = { name = "death" state_time = 5 }
+		
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   }
+			"engine_small_01" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_02" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_03" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_04" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"exhaust_01"	= 		    { width = @large_trail_W 	lenght = @large_trail_L   }
+		}
+	}
+	}
+
+entity = {
+	name = "uncf_01_titan3_body_entity"
+	pdxmesh = "uncf_01_titan3_body_mesh"
+				
+		default_state = idle
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		}
+		state = { name = "moving" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+		}
+			state = { name = "death" state_time = 5 }
+		
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   }
+			"engine_small_01" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_02" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_03" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_04" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"exhaust_01"	= 		    { width = @large_trail_W 	lenght = @large_trail_L   }
+		}
+	}
+	}
+	
+entity = {
+	name = "uncf_01_titan4_body_entity"
+	pdxmesh = "uncf_01_titan4_body_mesh"
+				
+		default_state = idle
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		}
+		state = { name = "moving" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+		}
+			state = { name = "death" state_time = 5 }
+		
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   }
+			"engine_small_01" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_02" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_03" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_04" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"exhaust_01"	= 		    { width = @large_trail_W 	lenght = @large_trail_L   }
+		}
+	}
+	}
+
+entity = {
+	name = "uncf_01_titan5_body_entity"
+	pdxmesh = "uncf_01_titan5_body_mesh"
+				
+		default_state = idle
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		}
+		state = { name = "moving" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+		}
+			state = { name = "death" state_time = 5 }
+		
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   }
+			"engine_small_01" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_02" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_03" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_04" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"exhaust_01"	= 		    { width = @large_trail_W 	lenght = @large_trail_L   }
+		}
+	}
+	}
+
+entity = {
+	name = "uncf_01_titan6_body_entity"
+	pdxmesh = "uncf_01_titan6_body_mesh"
+				
+		default_state = idle
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		}
+		state = { name = "moving" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+		}
+			state = { name = "death" state_time = 5 }
+		
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   }
+			"engine_small_01" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_02" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_03" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_04" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"exhaust_01"	= 		    { width = @large_trail_W 	lenght = @large_trail_L   }
+		}
+	}
+	}
+
+entity = {
+	name = "uncf_01_titan7_body_entity"
+	pdxmesh = "uncf_01_titan7_body_mesh"
+				
+		default_state = idle
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		}
+		state = { name = "moving" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+		}
+			state = { name = "death" state_time = 5 }
+		
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   }
+			"engine_small_01" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_02" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_03" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_04" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"exhaust_01"	= 		    { width = @large_trail_W 	lenght = @large_trail_L   }
+		}
+	}
+	}
+
+entity = {
+	name = "uncf_01_titan8_body_entity"
+	pdxmesh = "uncf_01_titan8_body_mesh"
+				
+		default_state = idle
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		}
+		state = { name = "moving" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+		}
+			state = { name = "death" state_time = 5 }
+		
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   }
+			"engine_small_01" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_02" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_03" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_04" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"exhaust_01"	= 		    { width = @large_trail_W 	lenght = @large_trail_L   }
+		}
+	}
+	}
+
+
+entity = {
+	name = "uncf_01_titan9_body_entity"
+	pdxmesh = "uncf_01_titan9_body_mesh"
+				
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_07" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_08" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_07" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_08" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+
+	
+	}
+	state = { name = "death" state_time = 5 looping = no }
+	
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_02" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_03" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_04" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_05" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_06" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_07" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_08" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"exhaust_01"	= 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+		}
+	}
+}
+
+entity = {
+	name = "uncf_01_titan10_body_entity"
+	pdxmesh = "uncf_01_titan10_body_mesh"
+				
+		default_state = idle
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		}
+		state = { name = "moving" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+		}
+			state = { name = "death" state_time = 5 }
+		
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   }
+			"engine_small_01" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_02" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_03" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_04" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"exhaust_01"	= 		    { width = @large_trail_W 	lenght = @large_trail_L   }
+		}
+	}
+	}
+
+entity = {
+	name = "uncf_01_titan11_body_entity"
+	pdxmesh = "uncf_01_titan11_body_mesh"
+				
+		default_state = idle
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		}
+		state = { name = "moving" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+		}
+			state = { name = "death" state_time = 5 }
+		
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   }
+			"engine_small_01" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_02" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_03" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_04" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"exhaust_01"	= 		    { width = @large_trail_W 	lenght = @large_trail_L   }
+		}
+	}
+	}
+
+entity = {
+	name = "uncf_01_titan12_body_entity"
+	pdxmesh = "uncf_01_titan12_body_mesh"
+				
+		default_state = idle
+		state = { name = "idle" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_035_exhaust_line_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	    	event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		}
+		state = { name = "moving" state_time = 5
+			event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		    event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+		}
+			state = { name = "death" state_time = 5 }
+		
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   }
+			"engine_small_01" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_02" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_03" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"engine_small_04" = 	    { width = @medium_trail_W 	lenght = @medium_trail_L  }
+			"exhaust_01"	= 		    { width = @large_trail_W 	lenght = @large_trail_L   }
+		}
+	}
+	}
+
+entity = {
+	name = "uncf_01_titan13_body_entity"
+	pdxmesh = "uncf_01_titan13_body_mesh"
+				
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_07" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_08" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_07" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_08" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	
+	}
+	state = { name = "death" state_time = 5 looping = no }
+	
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_02" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_03" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_04" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_05" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_06" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_07" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_08" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"exhaust_01"	= 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+		}
+	}
+}
+
+entity = {
+	name = "uncf_01_titan14_body_entity"
+	pdxmesh = "uncf_01_titan14_body_mesh"
+				
+	default_state = "idle"
+				
+	default_state = "idle"
+	state = { name = "idle"		animation = "idle"    	animation_blend_time = 2
+		event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_07" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_08" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+
+	}
+	state = { name = "moving"		animation = "idle"    	animation_blend_time = 2
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_07" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_08" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+
+	
+	}
+	state = { name = "combat_idle"		animation = "combat"    	animation_blend_time = 2
+		event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_07" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_08" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+
+	}
+	state = { name = "combat_moving"		animation = "combat"    	animation_blend_time = 2
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_07" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_08" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+	
+	}
+	state = { name = "death" state_time = 5 looping = no }
+	
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_02" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_03" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_04" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_05" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_06" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_07" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_08" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"exhaust_01"	= 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+		}
+	}
+}
+
+entity = {
+	name = "uncf_01_titan15_body_entity"
+	pdxmesh = "uncf_01_titan15_body_mesh"
+				
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_07" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_08" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_07" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_08" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	
+	}
+	state = { name = "death" state_time = 5 looping = no }
+	
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_02" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_03" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_04" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_05" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_06" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_07" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_08" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"exhaust_01"	= 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+		}
+	}
+}
+
+entity = {
+	name = "uncf_01_titan16_body_entity"
+	pdxmesh = "uncf_01_titan16_body_mesh"
+				
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_07" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_08" particle = "generic_075_exhaust_line_idle" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_07" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_08" particle = "generic_1_25_exhaust_line_wide_moving" keep_particle = yes trigger_once = yes }
+	
+	}
+	state = { name = "death" state_time = 5 looping = no }
+	
+		game_data = {
+		trail_locators = {
+			"engine_large_01" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_02" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_03" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_04" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_05" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_06" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_07" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"engine_large_08" = 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+			"exhaust_01"	= 		{ width = @large_trail_W 	lenght = @large_trail_L   	}
+		}
+	}
+}
+
+
+#######  Titan Turret Sections  #######
+
+entity = {
+	name = "uncf_01_titan_turret_01_front_entity"	
+	pdxmesh = "uncf_01_titan_turret_01_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+
+entity = {
+	name = "uncf_01_titan_turret_02_front_entity"	
+	pdxmesh = "uncf_01_titan_turret_02_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+
+entity = {
+	name = "uncf_01_titan_turret_03_back_entity"	
+	pdxmesh = "uncf_01_titan_turret_03_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle" animation_blend_time = 4
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving" animation_blend_time = 4
+	}
+}
+
+entity = {
+	name = "uncf_01_titan_turret_04_front_entity"	
+	pdxmesh = "uncf_01_titan_turret_04_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+
+entity = {
+	name = "uncf_01_titan_turret_05_back_entity"	
+	pdxmesh = "uncf_01_titan_turret_05_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle" animation_blend_time = 4
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving" animation_blend_time = 4
+	}
+}
+
+entity = {
+	name = "uncf_01_titan1_turret_01_front_entity"	
+	pdxmesh = "uncf_01_titan1_turret_01_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+entity = {
+	name = "uncf_01_titan1_turret_01_back_entity"	
+	pdxmesh = "uncf_01_titan1_turret_01_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle" animation_blend_time = 4
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving" animation_blend_time = 4
+	}
+}
+
+entity = {
+	name = "uncf_01_titan1_turret_02_over_entity"	
+	pdxmesh = "uncf_01_titan1_turret_02_over_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "idle_turret" looping = no next_state = "idle" animation_blend_time = 5
+	}
+	state = { name = "moving"	animation = "idle_turret" looping = no next_state = "moving" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_idle"  animation = "combat_turret" looping = no next_state = "combat_idle" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_moving"  animation = "combat_turret" looping = no next_state = "combat_moving" animation_blend_time = 5
+	}
+}
+
+entity = {
+	name = "uncf_01_titan1_turret_02_under_entity"	
+	pdxmesh = "uncf_01_titan1_turret_02_under_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "idle_turret" looping = no next_state = "idle" animation_blend_time = 5
+	}
+	state = { name = "moving"	animation = "idle_turret" looping = no next_state = "moving" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_idle"  animation = "combat_turret" looping = no next_state = "combat_idle" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_moving"  animation = "combat_turret" looping = no next_state = "combat_moving" animation_blend_time = 5
+	}
+}
+
+entity = {
+	name = "uncf_01_titan2_turret_01_front_entity"	
+	pdxmesh = "uncf_01_titan2_turret_01_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+entity = {
+	name = "uncf_01_titan2_turret_01_back_entity"	
+	pdxmesh = "uncf_01_titan2_turret_01_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle" animation_blend_time = 4
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving" animation_blend_time = 4
+	}
+}
+
+entity = {
+	name = "uncf_01_titan2_turret_02_over_entity"	
+	pdxmesh = "uncf_01_titan2_turret_02_over_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "idle_turret" looping = no next_state = "idle" animation_blend_time = 5
+	}
+	state = { name = "moving"	animation = "idle_turret" looping = no next_state = "moving" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_idle"  animation = "combat_turret" looping = no next_state = "combat_idle" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_moving"  animation = "combat_turret" looping = no next_state = "combat_moving" animation_blend_time = 5
+	}
+}
+
+entity = {
+	name = "uncf_01_titan2_turret_02_under_entity"	
+	pdxmesh = "uncf_01_titan2_turret_02_under_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "idle_turret" looping = no next_state = "idle" animation_blend_time = 5
+	}
+	state = { name = "moving"	animation = "idle_turret" looping = no next_state = "moving" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_idle"  animation = "combat_turret" looping = no next_state = "combat_idle" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_moving"  animation = "combat_turret" looping = no next_state = "combat_moving" animation_blend_time = 5
+	}
+}
+
+entity = {
+	name = "uncf_01_titan8_turret_01_front_entity"	
+	pdxmesh = "uncf_01_titan8_turret_01_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+entity = {
+	name = "uncf_01_titan8_turret_01_back_entity"	
+	pdxmesh = "uncf_01_titan8_turret_01_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle" animation_blend_time = 4
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving" animation_blend_time = 4
+	}
+}
+
+entity = {
+	name = "uncf_01_titan8_turret_02_over_entity"	
+	pdxmesh = "uncf_01_titan8_turret_02_over_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "idle_turret" looping = no next_state = "idle" animation_blend_time = 5
+	}
+	state = { name = "moving"	animation = "idle_turret" looping = no next_state = "moving" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_idle"  animation = "combat_turret" looping = no next_state = "combat_idle" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_moving"  animation = "combat_turret" looping = no next_state = "combat_moving" animation_blend_time = 5
+	}
+}
+
+entity = {
+	name = "uncf_01_titan8_turret_02_under_entity"	
+	pdxmesh = "uncf_01_titan8_turret_02_under_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "idle_turret" looping = no next_state = "idle" animation_blend_time = 5
+	}
+	state = { name = "moving"	animation = "idle_turret" looping = no next_state = "moving" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_idle"  animation = "combat_turret" looping = no next_state = "combat_idle" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_moving"  animation = "combat_turret" looping = no next_state = "combat_moving" animation_blend_time = 5
+	}
+}
+
+entity = {
+	name = "uncf_01_titan8_turret_03_entity"	
+	pdxmesh = "uncf_01_titan8_turret_03_mesh"
+
+}
+entity = {
+	name = "uncf_01_titan9_turret_01_front_entity"	
+	pdxmesh = "uncf_01_titan9_turret_01_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+entity = {
+	name = "uncf_01_titan9_turret_01_back_entity"	
+	pdxmesh = "uncf_01_titan9_turret_01_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle" animation_blend_time = 4
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving" animation_blend_time = 4
+	}
+}
+
+entity = {
+	name = "uncf_01_titan9_turret_02_front_entity"	
+	pdxmesh = "uncf_01_titan9_turret_02_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+
+entity = {
+	name = "uncf_01_titan9_turret_02_back_entity"	
+	pdxmesh = "uncf_01_titan9_turret_02_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle" animation_blend_time = 4
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving" animation_blend_time = 4
+	}
+}
+
+entity = {
+	name = "uncf_01_titan9_turret_03_front_entity"	
+	pdxmesh = "uncf_01_titan9_turret_03_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+entity = {
+	name = "uncf_01_titan9_turret_03_back_entity"	
+	pdxmesh = "uncf_01_titan9_turret_03_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle" animation_blend_time = 4
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving" animation_blend_time = 4
+	}
+}
+
+entity = {
+	name = "uncf_01_titan9_turret_04_over_entity"	
+	pdxmesh = "uncf_01_titan9_turret_04_over_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "idle_turret" looping = no next_state = "idle" animation_blend_time = 5
+	}
+	state = { name = "moving"	animation = "idle_turret" looping = no next_state = "moving" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_idle"  animation = "combat_turret" looping = no next_state = "combat_idle" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_moving"  animation = "combat_turret" looping = no next_state = "combat_moving" animation_blend_time = 5
+	}
+}
+
+entity = {
+	name = "uncf_01_titan9_turret_04_under_entity"	
+	pdxmesh = "uncf_01_titan9_turret_04_under_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "idle_turret" looping = no next_state = "idle" animation_blend_time = 5
+	}
+	state = { name = "moving"	animation = "idle_turret" looping = no next_state = "moving" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_idle"  animation = "combat_turret" looping = no next_state = "combat_idle" animation_blend_time = 5
+	}
+	state = {
+		name = "combat_moving"  animation = "combat_turret" looping = no next_state = "combat_moving" animation_blend_time = 5
+	}
+}
+
+entity = {
+	name = "uncf_01_titan10_turret_01_front_entity"	
+	pdxmesh = "uncf_01_titan10_turret_01_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+
+entity = {
+	name = "uncf_01_titan10_turret_01_back_entity"	
+	pdxmesh = "uncf_01_titan10_turret_01_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle" animation_blend_time = 4
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving" animation_blend_time = 4
+	}
+}
+
+entity = {
+	name = "uncf_01_titan10_turret_02_front_entity"	
+	pdxmesh = "uncf_01_titan10_turret_02_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+
+entity = {
+	name = "uncf_01_titan11_turret_01_front_entity"	
+	pdxmesh = "uncf_01_titan11_turret_01_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+
+entity = {
+	name = "uncf_01_titan11_turret_02_front_entity"	
+	pdxmesh = "uncf_01_titan11_turret_02_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+
+entity = {
+	name = "uncf_01_titan11_turret_03_back_entity"	
+	pdxmesh = "uncf_01_titan11_turret_03_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle" animation_blend_time = 4
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving" animation_blend_time = 4
+	}
+}
+
+
+
+entity = {
+	name = "uncf_01_titan14_turret_01_entity"	
+	pdxmesh = "uncf_01_titan14_turret_01_mesh"
+
+}
+
+entity = {
+	name = "uncf_01_titan14_turret_02_entity"	
+	pdxmesh = "uncf_01_titan14_turret_02_mesh"
+
+}
+
+entity = {
+	name = "uncf_01_titan15_turret_01_entity"	
+	pdxmesh = "uncf_01_titan15_turret_01_mesh"
+	
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+
+entity = {
+	name = "uncf_01_titan15_turret_02_entity"	
+	pdxmesh = "uncf_01_titan15_turret_02_mesh"
+	
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+
+entity = {
+	name = "uncf_01_titan16_turret_01_front_entity"	
+	pdxmesh = "uncf_01_titan16_turret_01_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+
+entity = {
+	name = "uncf_01_titan16_turret_01_back_entity"	
+	pdxmesh = "uncf_01_titan16_turret_01_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle" animation_blend_time = 4
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving" animation_blend_time = 4
+	}
+}
+
+entity = {
+	name = "uncf_01_titan16_turret_02_front_entity"	
+	pdxmesh = "uncf_01_titan16_turret_02_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+}
+entity = {
+	name = "uncf_01_titan16_turret_02_back_entity"	
+	pdxmesh = "uncf_01_titan16_turret_02_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle" animation_blend_time = 4
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle" animation_blend_time = 4
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving" animation_blend_time = 4
+	}
+}
+
+

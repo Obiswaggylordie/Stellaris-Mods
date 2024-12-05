@@ -1,0 +1,1933 @@
+@section_cost = 160
+
+ship_section_template = {
+	key = "TITAN_MID_ANDROMEDA1"
+	ship_size = cr_battleship
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_titan1_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_efg_wave_motion_gun_2" }
+	
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "uncf_01_titan1_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "uncf_01_titan1_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "uncf_01_titan1_turret_01_back_slot"
+		locatorname = "turret_gun_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "uncf_01_titan1_turret_01_back_slot"
+		locatorname = "turret_gun_04"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "uncf_01_titan1_turret_02_over_slot"
+		locatorname = "turret_gun_05"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "uncf_01_titan1_turret_02_over_slot"
+		locatorname = "turret_gun_06"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "uncf_01_titan1_turret_02_under_slot"
+		locatorname = "turret_gun_07"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "uncf_01_titan1_turret_02_under_slot"
+		locatorname = "turret_gun_08"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}	
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}		
+
+	large_utility_slots = 6
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 200
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "TITAN_MID_ANDROMEDA2"
+	ship_size = cr_battleship
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_titan2_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_efg_wave_motion_gun_2" }
+	
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "uncf_01_titan2_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "uncf_01_titan2_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "uncf_01_titan2_turret_01_back_slot"
+		locatorname = "turret_gun_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "uncf_01_titan2_turret_01_back_slot"
+		locatorname = "turret_gun_04"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "uncf_01_titan2_turret_02_over_slot"
+		locatorname = "turret_gun_05"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "uncf_01_titan2_turret_02_over_slot"
+		locatorname = "turret_gun_06"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "uncf_01_titan2_turret_02_under_slot"
+		locatorname = "turret_gun_07"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "uncf_01_titan2_turret_02_under_slot"
+		locatorname = "turret_gun_08"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}	
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}			
+
+	ai_tags = { artillery gunship }
+
+	
+	large_utility_slots = 6
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 200
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "TITAN_MID_ANDROMEDA3"
+	ship_size = cr_battleship
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_titan3_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_efg_wave_motion_gun_2" }
+	
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "uncf_01_titan2_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "uncf_01_titan2_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "uncf_01_titan2_turret_02_over_slot"
+		locatorname = "turret_gun_05"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "uncf_01_titan2_turret_02_over_slot"
+		locatorname = "turret_gun_06"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "uncf_01_titan2_turret_02_under_slot"
+		locatorname = "turret_gun_07"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "uncf_01_titan2_turret_02_under_slot"
+		locatorname = "turret_gun_08"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}	
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}			
+
+	large_utility_slots = 6
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 200
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+#ship_section_template = {
+#	key = "TITAN_MID_ANDROMEDA4"
+#	ship_size = cr_battleship
+#	fits_on_slot = mid
+#	should_draw_components = yes
+#	entity = "uncf_01_titan4_body_entity"
+#	icon = "GFX_ship_part_core_mid"
+#	prerequisites = { "tech_Wave_motion_gun_Fleet" }
+#	
+#	component_slot = {
+#		name = "TITANIC_01"
+#		template = "invisible_titanic_fixed"
+#		locatorname = "xl_gun_01"
+#	}
+#	component_slot = {
+#		name = "TITANIC_02"
+#		template = "invisible_titanic_fixed"
+#		locatorname = "xl_gun_02"
+#	}
+#	component_slot = {
+#		name = "LARGE_GUN_01"
+#		template = "uncf_01_titan1_turret_01_front_slot"
+#		locatorname = "turret_gun_01"
+#	}
+#	component_slot = {
+#		name = "LARGE_GUN_02"
+#		template = "uncf_01_titan1_turret_01_front_slot"
+#		locatorname = "turret_gun_02"
+#	}
+#	component_slot = {
+#		name = "LARGE_GUN_03"
+#		template = "uncf_01_titan1_turret_01_back_slot"
+#		locatorname = "turret_gun_03"
+#	}
+#	component_slot = {
+#		name = "LARGE_GUN_04"
+#		template = "uncf_01_titan1_turret_01_back_slot"
+#		locatorname = "turret_gun_04"
+#	}
+#	component_slot = {
+#		name = "EXTRA_LARGE_01"
+#		template = "uncf_01_titan1_turret_02_over_slot"
+#		locatorname = "turret_gun_05"
+#	}	
+#	component_slot = {
+#		name = "EXTRA_LARGE_02"
+#		template = "uncf_01_titan1_turret_02_over_slot"
+#		locatorname = "turret_gun_06"
+#	}
+#	component_slot = {
+#		name = "EXTRA_LARGE_03"
+#		template = "uncf_01_titan1_turret_02_under_slot"
+#		locatorname = "turret_gun_07"
+#	}	
+#	component_slot = {
+#		name = "EXTRA_LARGE_04"
+#		template = "uncf_01_titan1_turret_02_under_slot"
+#		locatorname = "turret_gun_08"
+#	}	
+#	component_slot = {
+#		name = "PD_01"
+#		template = "invisible_point_defence_turret"
+#		locatorname = "small_gun_01"
+#	}
+#	component_slot = {
+#		name = "PD_02"
+#		template = "invisible_point_defence_turret"
+#		locatorname = "small_gun_02"
+#	}
+#	component_slot = {
+#		name = "PD_03"
+#		template = "invisible_point_defence_turret"
+#		locatorname = "small_gun_03"
+#	}
+#	component_slot = {
+#		name = "PD_04"
+#		template = "invisible_point_defence_turret"
+#		locatorname = "small_gun_04"
+#	}		
+#
+#	large_utility_slots = 6
+#	aux_utility_slots = 1
+#
+#	resources = {
+#		category = ship_sections
+#		cost = { alloys = @cost0 }
+#	}
+#
+#	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+#
+#
+#	ai_weight = {
+#		modifier = {
+#			factor = 0
+#			NOT = { has_technology = tech_uncf_ship2 }
+#		}
+#		modifier = {
+#			factor = 200
+#			has_technology = tech_uncf_ship2
+#		}		
+#	}
+#}
+
+ship_section_template = {
+	key = "TITAN_MID_ANDROMEDA5"
+	ship_size = cr_battleship
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_titan5_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_efg_wave_motion_gun_2" }
+	
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "uncf_01_titan1_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "uncf_01_titan1_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "uncf_01_titan1_turret_02_over_slot"
+		locatorname = "turret_gun_05"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "uncf_01_titan1_turret_02_over_slot"
+		locatorname = "turret_gun_06"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "uncf_01_titan1_turret_02_under_slot"
+		locatorname = "turret_gun_07"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "uncf_01_titan1_turret_02_under_slot"
+		locatorname = "turret_gun_08"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}	
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}		
+
+	large_utility_slots = 6
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 200
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "TITAN_MID_ANDROMEDA6"
+	ship_size = cr_battleship
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_titan6_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_efg_wave_motion_gun_2" }
+	
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "uncf_01_titan1_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "uncf_01_titan1_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "uncf_01_titan1_turret_01_front_slot"
+		locatorname = "turret_gun_15"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "uncf_01_titan1_turret_01_back_slot"
+		locatorname = "turret_gun_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "uncf_01_titan1_turret_01_front_slot"
+		locatorname = "turret_gun_09"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "uncf_01_titan1_turret_01_front_slot"
+		locatorname = "turret_gun_10"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "uncf_01_titan1_turret_01_front_slot"
+		locatorname = "turret_gun_11"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "uncf_01_titan1_turret_01_front_slot"
+		locatorname = "turret_gun_12"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "uncf_01_titan1_turret_01_front_slot"
+		locatorname = "turret_gun_13"
+	}
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "uncf_01_titan1_turret_01_front_slot"
+		locatorname = "turret_gun_14"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "uncf_01_titan1_turret_02_over_slot"
+		locatorname = "turret_gun_05"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "uncf_01_titan1_turret_02_over_slot"
+		locatorname = "turret_gun_06"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "uncf_01_titan1_turret_02_under_slot"
+		locatorname = "turret_gun_07"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "uncf_01_titan1_turret_02_under_slot"
+		locatorname = "turret_gun_08"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}	
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}		
+
+	large_utility_slots = 6
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 200
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "TITAN_MID_ANDROMEDA7"
+	ship_size = cr_battleship
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_titan7_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_efg_wave_motion_gun_2" }
+	
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "uncf_01_titan1_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "uncf_01_titan1_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "uncf_01_titan1_turret_01_back_slot"
+		locatorname = "turret_gun_04"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "uncf_01_titan1_turret_02_over_slot"
+		locatorname = "turret_gun_05"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "uncf_01_titan1_turret_02_over_slot"
+		locatorname = "turret_gun_06"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "uncf_01_titan1_turret_02_under_slot"
+		locatorname = "turret_gun_07"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "uncf_01_titan1_turret_02_under_slot"
+		locatorname = "turret_gun_08"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}	
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}
+	
+	large_utility_slots = 6
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 200
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+
+ship_section_template = {
+	key = "TITAN_MID_ANDROMEDA8"
+	ship_size = cr_battleship
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_titan8_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_efg_wave_motion_gun_3" }
+	
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "uncf_01_titan8_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "uncf_01_titan8_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "uncf_01_titan8_turret_01_back_slot"
+		locatorname = "turret_gun_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "uncf_01_titan8_turret_01_back_slot"
+		locatorname = "turret_gun_04"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "uncf_01_titan1_turret_02_over_slot"
+		locatorname = "turret_gun_05"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "uncf_01_titan1_turret_02_over_slot"
+		locatorname = "turret_gun_06"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "uncf_01_titan1_turret_02_under_slot"
+		locatorname = "turret_gun_07"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "uncf_01_titan1_turret_02_under_slot"
+		locatorname = "turret_gun_08"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}	
+
+	large_utility_slots = 6
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 200
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+# Shunran
+ship_section_template = {
+	key = "TITAN_MID_ANDROMEDA9"
+	ship_size = cr_titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_titan9_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_efg_wave_motion_gun_3" }
+	
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_03"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "uncf_01_titan9_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "uncf_01_titan9_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "uncf_01_titan9_turret_01_front_slot"
+		locatorname = "turret_gun_03"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "uncf_01_titan9_turret_01_back_slot"
+		locatorname = "turret_gun_04"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "uncf_01_titan9_turret_01_back_slot"
+		locatorname = "turret_gun_05"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "uncf_01_titan9_turret_02_front_slot"
+		locatorname = "turret_gun_06"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "uncf_01_titan9_turret_02_back_slot"
+		locatorname = "turret_gun_07"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "uncf_01_titan9_turret_03_front_slot"
+		locatorname = "turret_gun_08"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "uncf_01_titan9_turret_03_front_slot"
+		locatorname = "turret_gun_09"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_fixed"
+		locatorname = "large_gun_01"
+	}	
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "uncf_01_titan9_turret_04_over_slot"
+		locatorname = "medium_gun_01"
+	}	
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "uncf_01_titan9_turret_04_over_slot"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "uncf_01_titan9_turret_04_under_slot"
+		locatorname = "medium_gun_03"
+	}	
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "uncf_01_titan9_turret_04_under_slot"
+		locatorname = "medium_gun_04"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}
+	
+	large_utility_slots = 6
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 200
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "TITAN_MID_GOEI1"
+	ship_size = cr_titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_titan12_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_efg_wave_motion_gun_4" }
+	
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "uncf_01_titan10_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "uncf_01_titan10_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "uncf_01_titan10_turret_01_back_slot"
+		locatorname = "turret_gun_03"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "uncf_01_titan10_turret_02_front_slot"
+		locatorname = "turret_gun_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "uncf_01_titan10_turret_02_front_slot"
+		locatorname = "turret_gun_05"
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_fixed"
+		locatorname = "meidum_gun_01"
+	}	
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_03"
+	}	
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_04"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}
+	component_slot = {
+		name = "PD_05"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_05"
+	}
+	component_slot = {
+		name = "PD_06"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_06"
+	}
+	component_slot = {
+		name = "PD_07"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_07"
+	}
+	component_slot = {
+		name = "PD_08"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_08"
+	}
+	component_slot = {
+		name = "PD_09"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_09"
+	}
+	component_slot = {
+		name = "PD_10"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_10"
+	}
+	
+	large_utility_slots = 6
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 200
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "TITAN_MID_GOEI2"
+	ship_size = cr_titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_titan13_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_efg_wave_motion_gun_4" }
+	
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "uncf_01_titan10_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "uncf_01_titan10_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "uncf_01_titan10_turret_01_front_slot"
+		locatorname = "turret_gun_03"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "uncf_01_titan10_turret_01_back_slot"
+		locatorname = "turret_gun_04"
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_fixed"
+		locatorname = "meidum_gun_01"
+	}	
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_01"
+	}	
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "TORPEDO_05"
+		template = "invisible_missile_fixed"
+		locatorname = "meidum_gun_01"
+	}	
+	component_slot = {
+		name = "TORPEDO_06"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}	
+	
+	large_utility_slots = 6
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 200
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "TITAN_MID_GOEI3"
+	ship_size = cr_titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_titan14_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_efg_wave_motion_gun_4" }
+	
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "uncf_01_titan10_turret_01_front_slot"
+		locatorname = "turret_gun_03"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "uncf_01_titan10_turret_01_front_slot"
+		locatorname = "turret_gun_04"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "uncf_01_titan10_turret_01_back_slot"
+		locatorname = "turret_gun_05"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "uncf_01_titan10_turret_01_back_slot"
+		locatorname = "turret_gun_06"
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_01"
+	}	
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_03"
+	}	
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_04"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_04"
+	}
+	component_slot = {
+		name = "PD_05"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_05"
+	}
+	component_slot = {
+		name = "PD_06"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_06"
+	}
+	component_slot = {
+		name = "PD_07"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_07"
+	}
+	component_slot = {
+		name = "PD_08"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_08"
+	}
+	component_slot = {
+		name = "PD_09"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_09"
+	}
+	component_slot = {
+		name = "PD_10"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_10"
+	}
+	component_slot = {
+		name = "PD_11"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_11"
+	}
+	component_slot = {
+		name = "PD_12"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_12"
+	}
+	
+	large_utility_slots = 6
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 200
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "TITAN_MID_GOEI4"
+	ship_size = cr_titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_titan15_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_efg_wave_motion_gun_4" }
+	
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "uncf_01_titan15_turret_02_slot"
+		locatorname = "turret_gun_01"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "uncf_01_titan15_turret_02_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "uncf_01_titan15_turret_01_slot"
+		locatorname = "turret_gun_03"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "uncf_01_titan15_turret_01_slot"
+		locatorname = "turret_gun_04"
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_fixed"
+		locatorname = "meidum_gun_01"
+	}	
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_01"
+	}	
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_02"
+	}
+
+	large_utility_slots = 6
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 200
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+ship_section_template = {
+	key = "TITAN_MID_BLUE"
+	ship_size = cr_titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "uncf_01_titan16_body_entity"
+	icon = "GFX_ship_part_core_mid"
+	prerequisites = { "tech_efg_wave_motion_gun_4" }
+	
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "uncf_01_titan16_turret_01_front_slot"
+		locatorname = "turret_gun_01"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "uncf_01_titan16_turret_01_front_slot"
+		locatorname = "turret_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "uncf_01_titan16_turret_01_front_slot"
+		locatorname = "turret_gun_03"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "uncf_01_titan16_turret_01_front_slot"
+		locatorname = "turret_gun_04"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "uncf_01_titan16_turret_01_front_slot"
+		locatorname = "turret_gun_05"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "uncf_01_titan16_turret_01_front_slot"
+		locatorname = "turret_gun_06"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "uncf_01_titan16_turret_01_back_slot"
+		locatorname = "turret_gun_07"
+	}	
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "uncf_01_titan16_turret_01_back_slot"
+		locatorname = "turret_gun_08"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "uncf_01_titan16_turret_02_front_slot"
+		locatorname = "turret_gun_09"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "uncf_01_titan16_turret_02_front_slot"
+		locatorname = "turret_gun_10"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "uncf_01_titan16_turret_02_back_slot"
+		locatorname = "turret_gun_11"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "uncf_01_titan16_turret_02_back_slot"
+		locatorname = "turret_gun_12"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_fixed"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_03"
+	}	
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_04"
+	}
+	component_slot = {
+		name = "TORPEDO_05"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_05"
+	}	
+	component_slot = {
+		name = "TORPEDO_06"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_06"
+	}
+	component_slot = {
+		name = "TORPEDO_07"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_07"
+	}	
+	component_slot = {
+		name = "TORPEDO_08"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_08"
+	}
+	component_slot = {
+		name = "TORPEDO_09"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "TORPEDO_10"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "TORPEDO_11"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_03"
+	}	
+	component_slot = {
+		name = "TORPEDO_12"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_04"
+	}
+	component_slot = {
+		name = "TORPEDO_13"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_05"
+	}	
+	component_slot = {
+		name = "TORPEDO_14"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_06"
+	}
+	component_slot = {
+		name = "TORPEDO_15"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_07"
+	}	
+	component_slot = {
+		name = "TORPEDO_16"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_08"
+	}
+	component_slot = {
+		name = "TORPEDO_17"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "TORPEDO_18"
+		template = "invisible_missile_fixed"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}	
+	component_slot = {
+		name = "PD_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	large_utility_slots = 6
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost0 }
+	}
+
+	ai_tags = { artillery artillery_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth gunship carrier }
+
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_uncf_ship2 }
+		}
+		modifier = {
+			factor = 200
+			has_technology = tech_uncf_ship2
+		}		
+	}
+}
+
+

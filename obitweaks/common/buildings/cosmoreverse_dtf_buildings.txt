@@ -1,0 +1,244 @@
+building_cr_dtf_factory = {
+	base_buildtime = 180
+	category = manufacturing
+
+	icon = building_efg_factory
+	
+	is_capped_by_modifier = yes
+	can_be_ruined = no
+
+	allow = { 
+		has_deposit = d_cr_dtf
+	}
+
+	planet_modifier = {
+		job_dtf_foundry_add = 10
+		job_dtf_technician_add = 10
+		job_dtf_miner_add = 10
+		planet_housing_add = 30
+
+		building_cr_dtf_laboratory_max = -1
+		building_cr_dtf_breeder_max = -1
+		building_cr_dtf_shipyard_max = -1
+		building_cr_dtf_bunker_max = -1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 10000
+			energy = 10000
+		}
+		upkeep = {
+			energy = 60
+		}
+	}
+
+	country_modifier = {
+		country_resource_max_add = 1000000
+	}
+
+	on_built = {
+		set_planet_flag = dtf_factory_built_1
+	}
+	on_unqueued = {
+		remove_planet_flag = dtf_factory_built_1
+	}
+	on_destroy = {
+		remove_planet_flag = dtf_factory_built_1
+	}
+
+	prerequisites = { "tech_cr_access" }
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+building_cr_dtf_laboratory = {
+	base_buildtime = 180
+	category = manufacturing
+
+	icon = building_efg_biomineral_casting_facility
+	
+	is_capped_by_modifier = yes
+	can_be_ruined = no
+
+	allow = { 
+		has_deposit = d_cr_dtf
+	}
+
+	planet_modifier = {
+		job_dtf_head_researcher_add = 1
+		job_dtf_researcher_add = 10
+		planet_housing_add = 11
+
+		building_cr_dtf_factory_max = -1
+		building_cr_dtf_breeder_max = -1
+		building_cr_dtf_shipyard_max = -1
+		building_cr_dtf_bunker_max = -1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 10000
+			energy = 10000
+		}
+		upkeep = {
+			energy = 60
+		}
+	}
+
+	prerequisites = { "tech_cr_access" }
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+building_cr_dtf_breeder = {
+	base_buildtime = 180
+	category = manufacturing
+
+	icon = building_efg_defense_command
+	
+	is_capped_by_modifier = yes
+	can_be_ruined = no
+
+	allow = { 
+		has_deposit = d_cr_dtf
+	}
+
+	planet_modifier = {
+		pop_growth_speed = 10
+		planet_pop_assembly_add = 100
+		planet_pop_assembly_organic_add = 100
+		planet_housing_add = 30
+
+		building_cr_dtf_factory_max = -1
+		building_cr_dtf_laboratory_max = -1
+		building_cr_dtf_shipyard_max = -1
+		building_cr_dtf_bunker_max = -1
+		
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 10000
+			energy = 10000
+		}
+		upkeep = {
+			energy = 60
+		}
+	}
+
+	prerequisites = { "tech_cr_access" }
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+building_cr_dtf_shipyard = {
+	base_buildtime = 180
+	category = manufacturing
+
+	icon = building_efg_weapon_factory
+	
+	is_capped_by_modifier = yes
+	can_be_ruined = no
+
+	allow = { 
+		has_deposit = d_cr_dtf
+	}
+
+	planet_modifier = {
+		building_cr_dtf_factory_max = -1
+		building_cr_dtf_laboratory_max = -1
+		building_cr_dtf_breeder_max = -1
+		building_cr_dtf_bunker_max = -1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 10000
+			energy = 10000
+		}
+		upkeep = {
+			energy = 60
+			minerals = 60
+			alloys = 60
+		}
+	}
+
+	prerequisites = { "tech_cr_access" }
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+building_cr_dtf_bunker = {
+	base_buildtime = 180
+	category = manufacturing
+
+	icon = building_efg_food_processing_facility
+	
+	is_capped_by_modifier = yes
+	can_be_ruined = no
+	planetary_ftl_inhibitor = yes
+
+	allow = { 
+		has_deposit = d_cr_dtf
+	}
+
+	planet_modifier = {
+		ship_orbital_bombardment_pop_damage_mult = -10
+		planet_army_build_speed_mult = 10
+		army_defense_health_mult = 10
+		army_defense_morale_mult = 10
+		defense_armies_add = 10
+		job_soldier_add = 10
+
+		building_cr_dtf_factory_max = -1
+		building_cr_dtf_laboratory_max = -1
+		building_cr_dtf_breeder_max = -1
+		building_cr_dtf_shipyard_max = -1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_technology = tech_forerunner_start
+			}
+		}
+		job_promethean_warrior_servant_add = 10
+		job_warrior_servant_add = 10
+	}
+
+	army_modifier = {
+		army_defense_damage_mult = 10
+		army_defense_health_mult = 10
+		army_defense_morale_mult = 10
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 10000
+			energy = 10000
+		}
+		upkeep = {
+			energy = 60
+		}
+	}
+
+	prerequisites = { "tech_cr_access" }
+
+	ai_weight = {
+		weight = 100
+	}
+}

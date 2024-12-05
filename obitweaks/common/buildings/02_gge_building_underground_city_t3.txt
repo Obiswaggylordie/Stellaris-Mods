@@ -1,0 +1,78 @@
+
+@gge_underground_city_build_time_3 = 210
+@gge_underground_city_build_time_4 = 240
+
+
+@gge_underground_city_housing_3 = 210
+@gge_underground_city_housing_4 = 240
+
+@gge_underground_city_amenities_3 = 210
+@gge_underground_city_amenities_4 = 240
+
+
+@gge_underground_city_alloys_cost_3 = 210
+@gge_underground_city_alloys_cost_4 = 240
+
+
+@gge_underground_city_energy_upkeep_3 = 8
+@gge_underground_city_energy_upkeep_4 = 12
+
+@gge_underground_city_minerals_upkeep_3 = 0
+@gge_underground_city_minerals_upkeep_4 = 0
+
+
+
+
+
+
+building_gge_underground_city_4 = {
+	base_buildtime = @gge_underground_city_build_time_4
+	category = government
+	can_build = no
+
+	icon = building_gge_underground_city
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = @gge_underground_city_alloys_cost_4
+		}
+		upkeep = {
+			energy = @gge_underground_city_energy_upkeep_4
+			minerals = @gge_underground_city_minerals_upkeep_4
+		}
+
+		produces = {
+			#food = 250	
+		}
+	}
+
+	triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+        modifier = {
+			habitability_floor_add = 0.12
+			job_gge_foundry_add = 12
+			job_gge_miner_add = 12
+			job_gge_technician_add = 12
+        }
+    }
+
+	planet_modifier = {
+		planet_housing_add = @gge_underground_city_housing_4
+		planet_amenities_add = @gge_underground_city_amenities_4
+		planet_orbital_bombardment_damage = -0.50
+	}
+
+	country_modifier = {
+		country_resource_max_add = 2000000
+	}
+
+	prerequisites = { "tech_gge_technology_3" }
+
+	ai_weight = {
+		weight = 100000
+	}
+}

@@ -1,0 +1,286 @@
+# Time Fault
+d_cr_dtf = {
+	is_for_colonizable = yes
+	icon = d_dtf_factory
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_building_build_speed_mult = 0.10
+		planet_decision_enact_speed_mult = 0.10
+		planet_max_districts_add = 10
+		planet_max_buildings_add = 10
+		district_farming_max = 10
+		district_generator_max = 10
+		district_mining_max = 10
+		building_cr_dtf_factory_max = 1
+		building_cr_dtf_laboratory_max = 1
+		building_cr_dtf_breeder_max = 1
+		building_cr_dtf_shipyard_max = 1
+		building_cr_dtf_bunker_max = 1
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Magic Pocket
+d_magic_pocket = {
+	is_for_colonizable = yes
+	icon = d_magic_pocket
+	category = deposit_cat_rare
+
+	country_modifier = {
+		starbase_shipyard_capacity_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			NOT = {
+				is_planet_class = pc_gaia
+			}
+		}
+		modifier = {
+			planet_max_districts_add = 10
+			planet_max_buildings_add = 10
+			district_farming_max = 10
+			district_generator_max = 10
+			district_mining_max = 10
+			planet_orbital_bombardment_damage = -0.10
+			army_defense_health_mult = 0.10
+			army_defense_damage_mult = 0.10
+			army_defense_morale_mult = 0.10
+			pop_environment_tolerance = 0.10
+			planet_jobs_produces_mult = 0.10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			is_planet_class = pc_gaia
+		}
+		modifier = {
+			planet_max_districts_add = 20
+			planet_max_buildings_add = 20
+			district_farming_max = 20
+			district_generator_max = 20
+			district_mining_max = 20
+			planet_orbital_bombardment_damage = -0.20
+			army_defense_health_mult = 0.20
+			army_defense_damage_mult = 0.20
+			army_defense_morale_mult = 0.20
+			pop_environment_tolerance = 0.20
+			planet_jobs_produces_mult = 0.20
+		}
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Chair Outpost
+d_chair_outpost = {
+	is_for_colonizable = yes
+	icon = d_chair_outpost
+	category = deposit_cat_rare_blocker
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+	can_be_cleared = {
+		owner = {
+			has_technology = tech_zpm
+		}
+	}
+
+	time = 1
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			sr_ancient_zpm = 1
+		}
+	}
+
+	blocker_swap_types = {
+		d_chair_outpost_active
+	}
+}
+
+# Active Chair Outpost
+d_chair_outpost_active = {
+	is_for_colonizable = yes
+	icon = d_chair_outpost_active
+	category = deposit_cat_rare
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Attero Device
+d_attero_device_inactive = {
+	is_for_colonizable = yes
+	icon = d_attero_device_inactive
+	category = deposit_cat_rare_blocker
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+	can_be_cleared = {
+		owner = {
+			has_technology = tech_shield_worlds
+		}
+	}
+
+	time = 1
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energon = 1000
+		}
+	}
+
+	blocker_swap_types = {
+		d_attero_device
+	}
+}
+
+# Active Attero Device
+d_attero_device = {
+	is_for_colonizable = yes
+	icon = d_attero_device
+	category = deposit_cat_rare
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# City-Ship
+d_city_ship = {
+	is_for_colonizable = yes
+	icon = d_city_ship
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		# ZPM Modifiers
+		planet_jobs_produces_mult = 3
+		planet_jobs_robotic_produces_mult = 30
+		planet_pop_assembly_mult = 3
+		planet_pop_assembly_organic_mult = 3
+
+		# CNU modifiers
+		planet_buildings_cost_mult = -0.50
+		planet_districts_cost_mult = -0.50
+		planet_building_build_speed_mult = 0.50
+		planet_jobs_produces_mult = 0.50
+		planet_stability_add = 25
+
+		# Habitability / City Colony modifiers
+		habitability_ceil_mult = 100
+		habitability_floor_mult = 100
+		pop_environment_tolerance = 100
+		planet_max_districts_add = 25
+		planet_crime_mult = -0.50
+
+		# Defensive Modifiers
+		planet_orbital_bombardment_damage = -1.00
+		army_defense_damage_mult = 1.00
+		army_defense_health_mult = 1.00
+		army_defense_morale_mult = 1.00
+		planet_army_build_speed_mult = 1.00
+
+		# Space Bridge Modifiers
+		planet_colony_development_speed_mult = 1000.0
+		pop_resettlement_cost_mult = -100.0
+		planet_hyperlane_range_add = 10
+		colony_start_num_pops_add = 10
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Energy Controller
+d_energy_controller = {
+	is_for_colonizable = yes
+	icon = d_energy_controller
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_jobs_energy_produces_mult = 10.00
+		planet_jobs_energy_upkeep_mult = -10.00
+		planet_districts_energy_upkeep_mult = -10.00
+		planet_stability_add = 10
+		pop_environment_tolerance = 0.10
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Energy Controller Empty
+d_energy_controller_empty = {
+	is_for_colonizable = yes
+	icon = d_energy_controller_empty
+	category = deposit_cat_rare_blocker
+
+	potential = {
+		always = no
+	}
+
+	can_be_cleared = {
+		owner = {
+			has_technology = tech_cr_cosmoreverse
+		}
+	}
+
+	time = 1
+
+	blocker_swap_types = {
+		d_energy_controller
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}

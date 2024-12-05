@@ -1,0 +1,180 @@
+
+@dtf_odscost_energy_1 = 3600
+@dtf_odscost_energy_2 = 12000
+
+@dtf_odscost_alloys_1 = 5000
+@dtf_odscost_alloys_2 = 20000
+
+###############################################################
+# orbital_defense_system
+###############################################################
+
+dtf_ms_orbital_defense_system_1 = {
+	#entity = "interstellar_assembly_stage_1_entity"
+	construction_entity = "interstellar_assembly_stage_1_entity"
+	portrait = "GFX_dtf_mega_ods"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	#entity_offset = { x = -27 y = -27 }
+	entity_offset = { x = 0 y = 0 }
+	show_galactic_map_icon = yes
+	
+	build_time = 360
+
+	potential = {
+		host_has_dlc = "Apocalypse"
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+	
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+		}
+	}
+
+	resources = {
+		category = megastructures
+		cost = {
+			energy = @dtf_odscost_energy_1
+			alloys = @dtf_odscost_alloys_1
+		}
+
+		upkeep = {
+
+		}
+
+		produces = {	
+
+		}
+	}
+
+	country_modifier = {
+		
+	}
+
+	prerequisites = { "tech_dtf_technology_1" }
+	show_prereqs = yes
+
+	on_build_complete = {
+		fromfrom.planet = {
+			#set_planet_flag = mega_shipyard_built
+			#set_planet_flag = has_ods_on_moon
+			#save_event_target_as = dtf_planet
+		}
+		#from = {
+		#	set_country_flag = has_dtf_ms_ods_1
+		#}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+dtf_ms_orbital_defense_system_2 = {
+	#entity = "interstellar_assembly_stage_3_entity"
+	construction_entity = "interstellar_assembly_stage_3_entity"
+	portrait = "GFX_dtf_mega_ods"
+	place_entity_on_planet_plane = yes
+	#entity_offset = { x = -27 y = -27 }
+	entity_offset = { x = 0 y = 0 }
+	show_galactic_map_icon = no
+
+	
+	upgrade_from = { dtf_ms_orbital_defense_system_1 }
+	
+	build_time = 360
+
+	potential = {
+		host_has_dlc = "Apocalypse"
+	}
+
+	possible = {
+
+	}
+
+	resources = {
+		category = megastructures
+		cost = {
+			energy = @dtf_odscost_energy_2
+			alloys = @dtf_odscost_alloys_2
+		}
+
+		upkeep = {
+
+		}
+
+		produces = {	
+
+		}
+	}
+
+	country_modifier = {
+		
+	}
+
+	prerequisites = { "tech_dtf_technology_1" }
+	show_prereqs = yes
+
+	on_build_complete = {
+		fromfrom.planet = {
+			#set_planet_flag = mega_shipyard_built
+			#set_planet_flag = has_ods_on_moon
+			#save_event_target_as = dtf_system
+			#save_event_target_as = dtf_planet
+		}
+		#if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = dtf_planet } }
+		#from = {
+		#	set_country_flag = has_dtf_ms_ods_2
+		#}
+		create_fleet = { 
+			name = "Orbital Defense System" 
+			settings = { spawn_debris = no } 
+			effect = { 
+				set_owner = prev.space_owner
+				create_ship = { 
+					name = "Orbital Defense System" 
+					random_existing_design = dtf_orbital_defense_system
+				}
+				set_location = {
+					#target = fromfrom.planet
+					#distance = 0.0
+					target = fromfrom
+					distance = 0.0
+					angle = 0
+				}
+			}
+		}
+		remove_megastructure = fromfrom
+		#delete_megastructure = fromfrom
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}

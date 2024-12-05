@@ -1,0 +1,24 @@
+objectTypes = {
+		
+	pdxmesh = {
+		name = "gatlantis_01_juggernaut_frame_mesh"
+		file = "gfx/models/ships/juggernauts/molluscoid_01/molluscoid_01_juggernaut_frame.mesh"
+		animation = { id = "idle" 			type = "molluscoid_01_juggernaut_frame_idle_animation" }
+		animation = { id = "death" 			type = "molluscoid_01_juggernaut_frame_death_animation" }
+	}
+	
+	pdxmesh = {
+		name = "gatlantis_01_juggernaut_mesh"
+		file = "gfx/models/ships/gatlantis_01/Juggernauts/gatlantis_01_horobi.mesh"
+		scale = 1.5
+		meshsettings = {
+			name = "axis_mesh"
+			index = 0
+			texture_diffuse = "gatlantis_01_horobi_diffuse.dds"
+			texture_normal = "gatlantis_01_horobi_normal.dds"
+			texture_specular = "generic_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+	}
+}

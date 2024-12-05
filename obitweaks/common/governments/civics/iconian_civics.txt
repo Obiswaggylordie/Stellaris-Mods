@@ -1,0 +1,84 @@
+#civic_example = {
+#	playable = {}								# AND trigger, no scope; use this to prevent the civic from being selectable by the player (UI)
+#	potential = {}								# requirements list, see ../readme_requirements.txt
+#	possible = {}								# requirements list, see ../readme_requirements.txt
+#	pickable_at_start = yes / no				# default: yes
+#	modification = yes / no						# default: yes, set to no to prevent adding or removing this after creation of the empire
+#
+#	random_weight = { base = 1 }				# scriptable weight for randomizing a civic; required, else the civic will not get assigned randomly
+#
+#	modifier = {}								# modifier added to the country if the civic is selected and valid
+#	can_build_ruler_military_station = yes / no	# default: no
+#	can_build_ruler_ship = yes / no				# default: no
+#}
+
+civic_iconian_whole = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate} }
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_pacifist
+				value = ethic_pacifist
+				value = ethic_fanatic_pacifist
+			}
+		}
+	}
+	random_weight = { base = -1 }
+	modifier = {
+		ascension_perks_add = 1
+		country_unity_produces_mult = 0.20
+		diplo_weight_naval_mult = 0.20
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+civic_ancient_iconian_whole = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate} }
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_militarist
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+			}
+		}
+	}
+	random_weight = { base = -1 }
+	modifier = {
+		ascension_perks_add = 1
+		country_unity_produces_mult = 0.20
+		diplo_weight_technology_mult = 0.20
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+civic_iconian_gateway_technology = {
+	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness } } }
+	possible = {
+		civics = {
+			OR = {
+				value = civic_iconian_whole
+				value = civic_ancient_iconian_whole
+			}
+		}
+	}
+	random_weight = { base = -1 }
+	modifier = {
+		empire_size_systems_mult = -0.25
+		empire_size_colonies_mult = -0.25
+		ship_windup_mult = -0.25
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

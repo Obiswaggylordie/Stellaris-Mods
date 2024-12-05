@@ -1,0 +1,4135 @@
+
+
+
+
+
+
+
+
+
+
+################################################################################
+
+
+
+
+animation = {
+	name = "PEDF_yamato_idle_animation"
+	file = "PEDF_yamato_idle.anim"
+}
+animation = {
+	name = "PEDF_yamato_combat_idle_animation"
+	file = "PEDF_yamato_combat_idle.anim"
+}
+
+
+animation = {
+	name = "PEDF_yamato_turret_L_idle_front_animation"
+	file = "PEDF_yamato_turret_L_idle_front.anim"
+}
+animation = {
+	name = "PEDF_yamato_turret_L_idle_back_animation"
+	file = "PEDF_yamato_turret_L_idle_back.anim"
+}
+
+animation = {
+	name = "PEDF_yamato_turret_M_idle_front_animation"
+	file = "PEDF_yamato_turret_M_idle_front.anim"
+}
+animation = {
+	name = "PEDF_yamato_turret_M_idle_back_animation"
+	file = "PEDF_yamato_turret_M_idle_back.anim"
+}
+animation = {
+	name = "PEDF_yamato_turret_PDS_idle_left_animation"
+	file = "PEDF_yamato_turret_PDS_idle_left.anim"
+}
+animation = {
+	name = "PEDF_yamato_turret_PDS_idle_right_animation"
+	file = "PEDF_yamato_turret_PDS_idle_right.anim"
+}
+animation = {
+	name = "PEDF_yamato_turret_PDS_idle_front_animation"
+	file = "PEDF_yamato_turret_PDS_idle_front.anim"
+}
+
+
+
+
+
+
+
+
+
+
+animation = {
+	name = "PEDF_andromeda_idle_animation"
+	file = "PEDF_andromeda_idle.anim"
+}
+animation = {
+	name = "PEDF_andromeda_idle_to_combat_idle_animation"
+	file = "PEDF_andromeda_idle_to_combat_idle.anim"
+}
+animation = {
+	name = "PEDF_andromeda_combat_idle_animation"
+	file = "PEDF_andromeda_combat_idle.anim"
+}
+animation = {
+	name = "PEDF_andromeda_combat_idle_to_idle_animation"
+	file = "PEDF_andromeda_combat_idle_to_idle.anim"
+}
+
+
+
+
+animation = {
+	name = "PEDF_andromeda_turret_L_idle_front_animation"
+	file = "PEDF_andromeda_turret_L_idle_front.anim"
+}
+animation = {
+	name = "PEDF_andromeda_turret_L_idle_back_animation"
+	file = "PEDF_andromeda_turret_L_idle_back.anim"
+}
+
+
+
+
+
+animation = {
+	name = "PEDF_dreadnought_turret_L_idle_front_animation"
+	file = "PEDF_dreadnought_turret_L_idle_front.anim"
+}
+animation = {
+	name = "PEDF_dreadnought_turret_L_idle_back_animation"
+	file = "PEDF_dreadnought_turret_L_idle_back.anim"
+}
+
+
+animation = {
+	name = "PEDF_escort_turret_M_idle_upper_animation"
+	file = "PEDF_escort_turret_M_idle_upper.anim"
+}
+animation = {
+	name = "PEDF_escort_turret_M_idle_under_animation"
+	file = "PEDF_escort_turret_M_idle_under.anim"
+}
+
+animation = {
+	name = "PEDF_escort_turret_PD_idle_front_animation"
+	file = "PEDF_escort_turret_PD_idle_front.anim"
+}
+animation = {
+	name = "PEDF_escort_turret_PD_idle_back_animation"
+	file = "PEDF_escort_turret_PD_idle_back.anim"
+}
+
+
+
+animation = {
+	name = "PEDF_patrol_turret_M_idle_upper_animation"
+	file = "PEDF_patrol_turret_M_idle_upper.anim"
+}
+animation = {
+	name = "PEDF_patrol_turret_M_idle_under_animation"
+	file = "PEDF_patrol_turret_M_idle_under.anim"
+}
+
+
+
+
+
+animation = {
+	name = "PEDF_ticonderoga_idle_animation"
+	file = "PEDF_ticonderoga_idle.anim"
+}
+animation = {
+	name = "PEDF_ticonderoga_idle_to_combat_idle_animation"
+	file = "PEDF_ticonderoga_idle_to_combat_idle.anim"
+}
+animation = {
+	name = "PEDF_ticonderoga_combat_idle_animation"
+	file = "PEDF_ticonderoga_combat_idle.anim"
+}
+animation = {
+	name = "PEDF_ticonderoga_combat_idle_to_idle_animation"
+	file = "PEDF_ticonderoga_combat_idle_to_idle.anim"
+}
+
+
+
+
+animation = {
+	name = "PEDF_ticonderoga_turret_M3_idle_front_animation"
+	file = "PEDF_ticonderoga_turret_M3_idle_front.anim"
+}
+animation = {
+	name = "PEDF_ticonderoga_turret_M3_idle_back_animation"
+	file = "PEDF_ticonderoga_turret_M3_idle_back.anim"
+}
+
+
+animation = {
+	name = "PEDF_saratoga_turret_M1_idle_front_animation"
+	file = "PEDF_saratoga_turret_M1_idle_front.anim"
+}
+animation = {
+	name = "PEDF_saratoga_turret_M1_idle_back_animation"
+	file = "PEDF_saratoga_turret_M1_idle_back.anim"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+animation = {
+	name = "PEDF_oldcruiser_turret_L_idle_front_animation"
+	file = "PEDF_oldcruiser_turret_L_idle_front.anim"
+}
+animation = {
+	name = "PEDF_oldcruiser_turret_L_idle_back_animation"
+	file = "PEDF_oldcruiser_turret_L_idle_back.anim"
+}
+
+animation = {
+	name = "PEDF_olddestroyer_turret_S_idle_upper_animation"
+	file = "PEDF_olddestroyer_turret_S_idle_upper.anim"
+}
+animation = {
+	name = "PEDF_olddestroyer_turret_S_idle_under_animation"
+	file = "PEDF_olddestroyer_turret_S_idle_under.anim"
+}
+
+animation = {
+	name = "PEDF_olddestroyer_turret_PD_idle_front_animation"
+	file = "PEDF_olddestroyer_turret_PD_idle_front.anim"
+}
+animation = {
+	name = "PEDF_olddestroyer_turret_PD_idle_back_animation"
+	file = "PEDF_olddestroyer_turret_PD_idle_back.anim"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#####################################ダミーセクション用エンティティ###########################################
+
+entity = {
+	name = "PEDF_common_locator_entity"	
+	pdxmesh = "molluscoid_01_corvette_frame_mesh"
+	scale = 1.0
+}
+
+
+################################################################################
+
+
+
+
+
+
+
+
+
+
+
+#ヤマト
+
+entity = {
+	name = "PEDF_yamato_entity"
+	pdxmesh = "PEDF_yamato_mesh"
+
+
+	get_state_from_parent = yes
+
+	default_state = "idle"
+
+	state = {
+		name = "idle"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_025_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_025_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+	state = {
+		name = "combat_idle"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_025_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_025_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "combat_moving"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+	}
+
+
+
+
+
+	state = {
+		name = "combat_idle"  animation = "idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_025_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_025_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+
+	state = {
+		name = "combat_moving"  animation = "idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+	}
+
+
+	state = { name = "death" state_time = 5 }
+	scale = 2.0
+}
+
+
+entity = {
+	name = "PEDF_yamato_turret_L_front_entity"	
+	pdxmesh = "PEDF_yamato_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_yamato_turret_L_back_entity"	
+	pdxmesh = "PEDF_yamato_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_yamato_turret_M_front_entity"	
+	pdxmesh = "PEDF_yamato_turret_M_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_yamato_turret_M_back_entity"	
+	pdxmesh = "PEDF_yamato_turret_M_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_yamato_turret_S_left_entity"	
+	pdxmesh = "PEDF_yamato_turret_S_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "left" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "left" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_yamato_turret_S_right_entity"	
+	pdxmesh = "PEDF_yamato_turret_S_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "right" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "right" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_yamato_turret_PD_left_entity"	
+	pdxmesh = "PEDF_yamato_turret_PD_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "left" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "left" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_yamato_turret_PD_right_entity"	
+	pdxmesh = "PEDF_yamato_turret_PD_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "right" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "right" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+
+
+
+
+
+
+
+
+#銀河
+
+entity = {
+	name = "PEDF_ginga_entity"
+	pdxmesh = "PEDF_ginga_mesh"
+
+
+	get_state_from_parent = yes
+
+	default_state = "idle"
+
+	state = {
+		name = "idle"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_025_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_025_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_05_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+	state = { name = "death" state_time = 5 }
+	scale = 2.0
+}
+
+
+entity = {
+	name = "PEDF_ginga_turret_L_front_entity"	
+	pdxmesh = "PEDF_ginga_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_ginga_turret_L_back_entity"	
+	pdxmesh = "PEDF_ginga_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+
+
+
+
+
+
+
+
+
+
+#アンドロメダ
+#対空砲はドレッドノートPD砲塔を流用
+
+entity = {
+	name = "PEDF_andromeda_entity"
+	pdxmesh = "PEDF_andromeda_mesh"
+
+
+	get_state_from_parent = yes
+
+	default_state = "idle"
+
+	state = {
+		name = "idle"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+	state = {
+		name = "combat_idle"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "combat_moving"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+
+
+	state = {
+		name = "combat_idle"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+
+	state = {
+		name = "combat_moving"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = {
+		name = "idle"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 100
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = { name = "death" state_time = 5 }
+	meshsettings = {
+		name = "EarthDefenseForce_BattleshipShape.007"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_Battleship_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battleship_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battleship_Spec.dds"
+	}
+}
+
+
+entity = {
+	name = "PEDF_andromeda_turret_L_front_entity"	
+	pdxmesh = "PEDF_andromeda_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+	meshsettings = {
+		name = "EarthDefenseForce_BattleshipShape"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_Battleship_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battleship_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battleship_Spec.dds"
+	}
+}
+
+entity = {
+	name = "PEDF_andromeda_turret_L_back_entity"	
+	pdxmesh = "PEDF_andromeda_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+	meshsettings = {
+		name = "EarthDefenseForce_BattleshipShape"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_Battleship_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battleship_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battleship_Spec.dds"
+	}
+}
+
+
+
+
+
+
+#アルデバラン
+#対空砲はドレッドノートPD砲塔を流用
+
+entity = {
+	name = "PEDF_andromeda_Blue_entity"
+	pdxmesh = "PEDF_andromeda_mesh"
+
+
+	get_state_from_parent = yes
+
+	default_state = "idle"
+
+	state = {
+		name = "idle"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+	state = {
+		name = "combat_idle"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "combat_moving"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+
+
+	state = {
+		name = "combat_idle"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+
+	state = {
+		name = "combat_moving"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = {
+		name = "idle"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 100
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = { name = "death" state_time = 5 }
+	meshsettings = {
+		name = "EarthDefenseForce_BattleshipShape.007"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_Battleship_Blue_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battleship_Blue_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battleship_Blue_Spec.dds"
+	}
+
+}
+
+
+entity = {
+	name = "PEDF_andromeda_Blue_turret_L_front_entity"	
+	pdxmesh = "PEDF_andromeda_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+	meshsettings = {
+		name = "EarthDefenseForce_BattleshipShape"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_Battleship_Blue_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battleship_Blue_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battleship_Blue_Spec.dds"
+	}
+}
+
+entity = {
+	name = "PEDF_andromeda_Blue_turret_L_back_entity"	
+	pdxmesh = "PEDF_andromeda_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+	meshsettings = {
+		name = "EarthDefenseForce_BattleshipShape"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_Battleship_Blue_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battleship_Blue_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battleship_Blue_Spec.dds"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#アンドロメダ級(AI)
+#対空砲はドレッドノートPD砲塔を流用
+#左右はドレッドノート級地球戦線
+
+entity = {
+	name = "PEDF_andromeda_AI_entity"
+	pdxmesh = "PEDF_andromeda_AI_mesh"
+
+
+	get_state_from_parent = yes
+
+	default_state = "idle"
+
+	state = {
+		name = "idle"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+	state = {
+		name = "combat_idle"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "combat_moving"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+
+
+	state = {
+		name = "combat_idle"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+
+	state = {
+		name = "combat_moving"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = {
+		name = "idle"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 100
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+	state = { name = "death" state_time = 5 }
+
+	attach = { L_dreadnought = "PEDF_dreadnought_ED_entity" }
+	attach = { R_dreadnought = "PEDF_dreadnought_ED_entity" }
+
+
+	meshsettings = {
+		name = "EarthDefenseForce_BattleshipShape.007"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_Battleship_AI_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battleship_AI_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battleship_AI_Spec.dds"
+	}
+}
+
+
+entity = {
+	name = "PEDF_andromeda_AI_turret_L_front_entity"	
+	pdxmesh = "PEDF_andromeda_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+	meshsettings = {
+		name = "EarthDefenseForce_BattleshipShape"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_Battleship_AI_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battleship_AI_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battleship_AI_Spec.dds"
+	}
+}
+
+entity = {
+	name = "PEDF_andromeda_AI_turret_L_back_entity"	
+	pdxmesh = "PEDF_andromeda_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+	meshsettings = {
+		name = "EarthDefenseForce_BattleshipShape"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_Battleship_AI_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battleship_AI_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battleship_AI_Spec.dds"
+	}
+}
+
+
+
+
+#アンドロメダ級(AI通常)
+#対空砲はドレッドノートPD砲塔を流用
+
+entity = {
+	name = "PEDF_andromeda_AI2_entity"
+	pdxmesh = "PEDF_andromeda_AI_mesh"
+
+
+	get_state_from_parent = yes
+
+	default_state = "idle"
+
+	state = {
+		name = "idle"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+	state = {
+		name = "combat_idle"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "combat_moving"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+
+
+	state = {
+		name = "combat_idle"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+
+	state = {
+		name = "combat_moving"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = {
+		name = "idle"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 100
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+	state = { name = "death" state_time = 5 }
+
+	#attach = { L_dreadnought = "PEDF_dreadnought_ED_entity" }
+	#attach = { R_dreadnought = "PEDF_dreadnought_ED_entity" }
+
+
+	meshsettings = {
+		name = "EarthDefenseForce_BattleshipShape.007"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_Battleship_AI_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battleship_AI_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battleship_AI_Spec.dds"
+	}
+}
+
+
+
+
+
+
+#アマテラス
+#対空砲はドレッドノートPD砲塔を流用
+
+entity = {
+	name = "PEDF_amaterasu_entity"
+	pdxmesh = "PEDF_amaterasu_mesh"
+
+
+	get_state_from_parent = yes
+
+	default_state = "idle"
+
+	state = {
+		name = "idle"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+	state = {
+		name = "combat_idle"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "combat_moving"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+
+
+	state = {
+		name = "combat_idle"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+
+	state = {
+		name = "combat_moving"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = {
+		name = "idle"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 100
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = { name = "death" state_time = 5 }
+	meshsettings = {
+		name = "EarthDefenseForce_BattleshipShape.007"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_Battleship_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battleship_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battleship_Spec.dds"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#ヤマナミスペシャル
+#対空砲はドレッドノートPD砲塔を流用
+#左右はドレッドノート級火星戦線
+
+entity = {
+	name = "PEDF_yamanamispecial_entity"
+	pdxmesh = "PEDF_yamanamispecial_mesh"
+
+
+	get_state_from_parent = yes
+
+	default_state = "idle"
+
+	state = {
+		name = "idle"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+	state = {
+		name = "combat_idle"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "combat_moving"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+
+
+	state = {
+		name = "combat_idle"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+
+	state = {
+		name = "combat_moving"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = {
+		name = "idle"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 100
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+	state = { name = "death" state_time = 5 }
+
+	attach = { L_dreadnought = "PEDF_dreadnought_MB_entity" }
+	attach = { R_dreadnought = "PEDF_dreadnought_MB_entity" }
+}
+
+
+entity = {
+	name = "PEDF_yamanamispecial_turret_L_front_entity"	
+	pdxmesh = "PEDF_yamanamispecial_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_yamanamispecial_turret_L_back_entity"	
+	pdxmesh = "PEDF_yamanamispecial_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+#対空砲群追加ロケータ
+entity = {
+	name = "PEDF_yamanamispecial_addlocators_entity"	
+	pdxmesh = "PEDF_yamanamispecial_addlocators_mesh"
+	scale = 1.0
+}
+
+
+
+
+
+
+#アンドロメダ改
+#対空砲はドレッドノートPD砲塔を流用
+
+entity = {
+	name = "PEDF_yamanamispecial2_entity"
+	pdxmesh = "PEDF_yamanamispecial_mesh"
+
+
+	get_state_from_parent = yes
+
+	default_state = "idle"
+
+	state = {
+		name = "idle"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+	state = {
+		name = "combat_idle"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "combat_moving"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+
+
+	state = {
+		name = "combat_idle"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+
+	state = {
+		name = "combat_moving"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = {
+		name = "idle"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 100
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+	state = { name = "death" state_time = 5 }
+
+	#attach = { L_dreadnought = "PEDF_dreadnought_MB_entity" }
+	#attach = { R_dreadnought = "PEDF_dreadnought_MB_entity" }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#アンタレス
+#対空砲、主砲塔はアンドロメダのものを流用
+
+entity = {
+	name = "PEDF_antares_entity"
+	pdxmesh = "PEDF_antares_mesh"
+
+
+	get_state_from_parent = yes
+
+	default_state = "idle"
+
+	state = {
+		name = "idle"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+	state = {
+		name = "combat_idle"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "combat_moving"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+
+
+	state = {
+		name = "combat_idle"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+
+	state = {
+		name = "combat_moving"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = {
+		name = "idle"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 100
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = { name = "death" state_time = 5 }
+	meshsettings = {
+		name = "EarthDefenseForce_carrierShape"
+		texture_diffuse = "EarthDefenseForce_carrier_Diff.dds"
+		texture_normal = "EarthDefenseForce_carrier_Norm.dds"
+		texture_specular = "EarthDefenseForce_carrier_Spec.dds"
+	}
+	meshsettings = {
+		name = "EarthDefenseForce_carrierShape.001"
+		texture_diffuse = "EarthDefenseForce_Battleship_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battleship_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battleship_Spec.dds"
+	}
+}
+
+
+
+
+
+
+
+
+
+#アポロノーム
+#対空砲、主砲塔はアルデバランのものを流用
+
+entity = {
+	name = "PEDF_apollonome_entity"
+	pdxmesh = "PEDF_antares_mesh"
+
+
+	get_state_from_parent = yes
+
+	default_state = "idle"
+
+	state = {
+		name = "idle"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+	state = {
+		name = "combat_idle"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "combat_moving"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+
+
+	state = {
+		name = "combat_idle"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+
+	state = {
+		name = "combat_moving"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = {
+		name = "idle"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 100
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = { name = "death" state_time = 5 }
+	meshsettings = {
+		name = "EarthDefenseForce_carrierShape"
+		texture_diffuse = "EarthDefenseForce_carrier_blue_Diff.dds"
+		texture_normal = "EarthDefenseForce_carrier_blue_Norm.dds"
+		texture_specular = "EarthDefenseForce_carrier_blue_Spec.dds"
+	}
+	meshsettings = {
+		name = "EarthDefenseForce_carrierShape.001"
+		texture_diffuse = "EarthDefenseForce_Battleship_Blue_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battleship_Blue_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battleship_Blue_Spec.dds"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+#ドレッドノート
+#対空砲は共用
+
+entity = {
+	name = "PEDF_dreadnought_entity"	
+	pdxmesh = "PEDF_dreadnought_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	 state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "moving"	 state_time = 5 
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "combat_idle"	 state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "combat_moving"	 state_time = 5 
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+	}
+
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+	
+	meshsettings = {
+		name = "EarthDefenseForce_BattlecruiserShape.005"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_Battlecruiser_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battlecruiser_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battlecruiser_Spec.dds"
+	}
+}
+
+
+entity = {
+	name = "PEDF_dreadnought_turret_L_front_entity"	
+	pdxmesh = "PEDF_dreadnought_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+	meshsettings = {
+		name = "EarthDefenseForce_BattlecruiserShape"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_Battlecruiser_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battlecruiser_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battlecruiser_Spec.dds"
+	}
+}
+
+entity = {
+	name = "PEDF_dreadnought_turret_L_back_entity"	
+	pdxmesh = "PEDF_dreadnought_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+	meshsettings = {
+		name = "EarthDefenseForce_BattlecruiserShape"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_Battlecruiser_Diff.dds"
+		texture_normal = "EarthDefenseForce_Battlecruiser_Norm.dds"
+		texture_specular = "EarthDefenseForce_Battlecruiser_Spec.dds"
+	}
+}
+#対空砲は共用のためテクスチャ指定なし
+entity = {
+	name = "PEDF_dreadnought_turret_PD_entity"	
+	pdxmesh = "PEDF_dreadnought_turret_PD_mesh"
+
+	scale = 1.0
+}
+
+
+
+
+
+
+#ドレッドノート・アースフロント
+entity = {
+	name = "PEDF_dreadnought_ED_entity"	
+	pdxmesh = "PEDF_dreadnought_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	 state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "moving"	 state_time = 5 
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "combat_idle"	 state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "combat_moving"	 state_time = 5 
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+	}
+
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+	
+	meshsettings = {
+		name = "EarthDefenseForce_BattlecruiserShape.005"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_EDBattlecruiser_Diff.dds"
+		texture_normal = "EarthDefenseForce_EDBattlecruiser_Norm.dds"
+		texture_specular = "EarthDefenseForce_EDBattlecruiser_Spec.dds"
+	}
+}
+
+
+entity = {
+	name = "PEDF_dreadnought_ED_turret_L_front_entity"	
+	pdxmesh = "PEDF_dreadnought_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+	meshsettings = {
+		name = "EarthDefenseForce_BattlecruiserShape"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_EDBattlecruiser_Diff.dds"
+		texture_normal = "EarthDefenseForce_EDBattlecruiser_Norm.dds"
+		texture_specular = "EarthDefenseForce_EDBattlecruiser_Spec.dds"
+	}
+}
+
+entity = {
+	name = "PEDF_dreadnought_ED_turret_L_back_entity"	
+	pdxmesh = "PEDF_dreadnought_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+	meshsettings = {
+		name = "EarthDefenseForce_BattlecruiserShape"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_EDBattlecruiser_Diff.dds"
+		texture_normal = "EarthDefenseForce_EDBattlecruiser_Norm.dds"
+		texture_specular = "EarthDefenseForce_EDBattlecruiser_Spec.dds"
+	}
+}
+
+
+
+
+
+
+#ドレッドノート・マーズフロント
+entity = {
+	name = "PEDF_dreadnought_MB_entity"	
+	pdxmesh = "PEDF_dreadnought_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	 state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "moving"	 state_time = 5 
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "combat_idle"	 state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "combat_moving"	 state_time = 5 
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_01" particle = "generic_2_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+	}
+
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+	
+	meshsettings = {
+		name = "EarthDefenseForce_BattlecruiserShape.005"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_MBBattlecruiser_Diff.dds"
+		texture_normal = "EarthDefenseForce_MBBattlecruiser_Norm.dds"
+		texture_specular = "EarthDefenseForce_MBBattlecruiser_Spec.dds"
+	}
+}
+
+
+entity = {
+	name = "PEDF_dreadnought_MB_turret_L_front_entity"	
+	pdxmesh = "PEDF_dreadnought_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+	meshsettings = {
+		name = "EarthDefenseForce_BattlecruiserShape"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_MBBattlecruiser_Diff.dds"
+		texture_normal = "EarthDefenseForce_MBBattlecruiser_Norm.dds"
+		texture_specular = "EarthDefenseForce_MBBattlecruiser_Spec.dds"
+	}
+}
+
+entity = {
+	name = "PEDF_dreadnought_MB_turret_L_back_entity"	
+	pdxmesh = "PEDF_dreadnought_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+	meshsettings = {
+		name = "EarthDefenseForce_BattlecruiserShape"
+		index = 0
+		shader = "PdxMeshShip"
+		texture_diffuse = "EarthDefenseForce_MBBattlecruiser_Diff.dds"
+		texture_normal = "EarthDefenseForce_MBBattlecruiser_Norm.dds"
+		texture_specular = "EarthDefenseForce_MBBattlecruiser_Spec.dds"
+	}
+}
+
+
+
+
+
+
+#護衛艦
+entity = {
+	name = "PEDF_escort_entity"	
+	pdxmesh = "PEDF_escort_mesh"
+
+	default_state = "idle"	
+
+	state = { name = "idle"	 state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_cruiser_hum" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_0_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "moving"	 state_time = 5 
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_cruiser" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+	}
+
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 2.0
+}
+
+
+entity = {
+	name = "PEDF_escort_turret_M_upper_entity"	
+	pdxmesh = "PEDF_escort_turret_M_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "upper" looping = no next_state = "idle"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_escort_turret_M_under_entity"	
+	pdxmesh = "PEDF_escort_turret_M_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "under" looping = no next_state = "idle"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+
+
+entity = {
+	name = "PEDF_escort_turret_PD_entity"	
+	pdxmesh = "PEDF_escort_turret_PD_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+
+
+
+
+
+#パトロール艦
+entity = {
+	name = "PEDF_patrol_entity"	
+	pdxmesh = "PEDF_patrol_mesh"
+
+	default_state = "idle"	
+
+	state = { name = "idle"	 state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_cruiser_hum" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_0_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "moving"	 state_time = 5 
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_cruiser" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+	}
+
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 2.0
+}
+
+
+entity = {
+	name = "PEDF_patrol_turret_M_upper_entity"	
+	pdxmesh = "PEDF_patrol_turret_M_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "upper" looping = no next_state = "idle"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_patrol_turret_M_under_entity"	
+	pdxmesh = "PEDF_patrol_turret_M_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "under" looping = no next_state = "idle"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+
+
+
+
+
+
+#タイコンデロガ(金剛改)
+
+entity = {
+	name = "PEDF_ticonderoga_entity"
+	pdxmesh = "PEDF_ticonderoga_mesh"
+
+
+	get_state_from_parent = yes
+
+	default_state = "idle"
+
+	state = {
+		name = "idle"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_cruiser_hum" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_cruiser" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+	state = {
+		name = "combat_idle"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 100
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_cruiser_hum" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "combat_moving"  animation = "idle_to_combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 100
+				"combat_idle" = 0
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_cruiser" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+
+
+
+	state = {
+		name = "combat_idle"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_cruiser_hum" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+
+	state = {
+		name = "combat_moving"  animation = "combat_idle" animation_blend_time = 0 looping = no next_state = "combat_idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 100
+			}
+			default = 1
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_cruiser" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = {
+		name = "idle"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "idle"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 100
+				"combat_moving" = 0
+			}
+			default = 0
+		}
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_cruiser_hum" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_0_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving"	 animation = "combat_idle_to_idle" animation_blend_time = 0 looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"start" = 0
+				"idle" = 0
+				"moving" = 0
+				"combat_idle" = 0
+				"combat_moving" = 100
+			}
+			default = 0
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_cruiser" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+
+	}
+
+
+	state = { name = "death" state_time = 5 }
+}
+
+
+entity = {
+	name = "PEDF_ticonderoga_turret_M1_entity"	
+	pdxmesh = "PEDF_ticonderoga_turret_M1_mesh"
+	
+	scale = 1.0
+}
+
+
+entity = {
+	name = "PEDF_ticonderoga_turret_M2_entity"	
+	pdxmesh = "PEDF_ticonderoga_turret_M2_mesh"
+	
+	scale = 1.0
+}
+
+
+entity = {
+	name = "PEDF_ticonderoga_turret_M3_front_entity"	
+	pdxmesh = "PEDF_ticonderoga_turret_M3_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_ticonderoga_turret_M3_back_entity"	
+	pdxmesh = "PEDF_ticonderoga_turret_M3_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+
+
+
+
+
+
+
+
+
+
+#サラトガ(村雨改)
+
+entity = {
+	name = "PEDF_saratoga_entity"
+	pdxmesh = "PEDF_saratoga_mesh"
+
+	default_state = "idle"
+
+	state = {
+		name = "idle" state_time = 5 next_state = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_destroyer_hum" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving" state_time = 5 next_state = "moving"
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_destroyer" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+	}
+
+
+	state = { name = "death" state_time = 5 }
+}
+
+
+
+entity = {
+	name = "PEDF_saratoga_turret_M1_front_entity"	
+	pdxmesh = "PEDF_saratoga_turret_M1_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_saratoga_turret_M1_back_entity"	
+	pdxmesh = "PEDF_saratoga_turret_M1_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_saratoga_turret_M2_entity"	
+	pdxmesh = "PEDF_saratoga_turret_M2_mesh"
+	
+	scale = 1.0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#村雨
+
+entity = {
+	name = "PEDF_murasame_entity"
+	pdxmesh = "PEDF_saratoga_mesh"
+
+	default_state = "idle"
+
+	state = {
+		name = "idle" state_time = 5 next_state = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_destroyer_hum" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving" state_time = 5 next_state = "moving"
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_destroyer" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+	}
+	meshsettings = {
+		name = "EarthDefenseForce_destroyerShape.008"
+		texture_diffuse = "EarthDefenseForce_transport_Diff.dds"
+		texture_normal = "EarthDefenseForce_transport_Norm.dds"
+		texture_specular = "EarthDefenseForce_transport_Spec.dds"
+	}
+
+	state = { name = "death" state_time = 5 }
+}
+
+
+
+entity = {
+	name = "PEDF_murasame_turret_M1_front_entity"	
+	pdxmesh = "PEDF_saratoga_turret_M1_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "front" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "front" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	meshsettings = {
+		name = "EarthDefenseForce_destroyerShape.002"
+		texture_diffuse = "EarthDefenseForce_transport_Diff.dds"
+		texture_normal = "EarthDefenseForce_transport_Norm.dds"
+		texture_specular = "EarthDefenseForce_transport_Spec.dds"
+	}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_murasame_turret_M1_back_entity"	
+	pdxmesh = "PEDF_saratoga_turret_M1_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	meshsettings = {
+		name = "EarthDefenseForce_destroyerShape.002"
+		texture_diffuse = "EarthDefenseForce_transport_Diff.dds"
+		texture_normal = "EarthDefenseForce_transport_Norm.dds"
+		texture_specular = "EarthDefenseForce_transport_Spec.dds"
+	}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_murasame_turret_M2_entity"	
+	pdxmesh = "PEDF_saratoga_turret_M2_mesh"
+	
+	meshsettings = {
+		name = "EarthDefenseForce_destroyerShape"
+		texture_diffuse = "EarthDefenseForce_transport_Diff.dds"
+		texture_normal = "EarthDefenseForce_transport_Norm.dds"
+		texture_specular = "EarthDefenseForce_transport_Spec.dds"
+	}
+
+	scale = 1.0
+}
+
+
+
+
+
+
+
+#磯風改
+
+entity = {
+	name = "PEDF_isokaze_entity"
+	pdxmesh = "PEDF_isokaze_mesh"
+
+	default_state = "idle"
+
+	state = {
+		name = "idle" state_time = 5 next_state = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_corvette_hum" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving" state_time = 5 next_state = "moving"
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_corvette" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+	}
+
+	state = { name = "death" state_time = 5 }
+}
+
+
+entity = {
+	name = "PEDF_isokaze_turret_S1_entity"	
+	pdxmesh = "PEDF_isokaze_turret_S1_mesh"
+
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_isokaze_turret_S2_entity"	
+	pdxmesh = "PEDF_isokaze_turret_S2_mesh"
+
+	scale = 1.0
+}
+
+
+
+#ゆきかぜ
+
+entity = {
+	name = "PEDF_yukikaze_entity"
+	pdxmesh = "PEDF_isokaze_mesh"
+
+	default_state = "idle"
+
+	state = {
+		name = "idle" state_time = 5 next_state = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_corvette_hum" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+	state = {
+		name = "moving" state_time = 5 next_state = "moving"
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_corvette" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+	}
+
+	meshsettings = {
+		name = "EarthDefenseForce_corvette1Shape.002"
+		texture_diffuse = "EarthDefenseForce_sciences_Diff.dds"
+		texture_normal = "EarthDefenseForce_sciences_Norm.dds"
+		texture_specular = "EarthDefenseForce_sciences_Spec.dds"
+	}
+
+	state = { name = "death" state_time = 5 }
+}
+
+
+entity = {
+	name = "PEDF_yukikaze_turret_S1_entity"	
+	pdxmesh = "PEDF_isokaze_turret_S1_mesh"
+
+	meshsettings = {
+		name = "EarthDefenseForce_corvette1Shape"
+		texture_diffuse = "EarthDefenseForce_sciences_Diff.dds"
+		texture_normal = "EarthDefenseForce_sciences_Norm.dds"
+		texture_specular = "EarthDefenseForce_sciences_Spec.dds"
+	}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_yukikaze_turret_S2_entity"	
+	pdxmesh = "PEDF_isokaze_turret_S2_mesh"
+
+	meshsettings = {
+		name = "EarthDefenseForce_corvette1Shape.001"
+		texture_diffuse = "EarthDefenseForce_sciences_Diff.dds"
+		texture_normal = "EarthDefenseForce_sciences_Norm.dds"
+		texture_specular = "EarthDefenseForce_sciences_Spec.dds"
+	}
+
+	scale = 1.0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#旧作巡洋艦
+entity = {
+	name = "PEDF_oldcruiser_entity"	
+	pdxmesh = "PEDF_oldcruiser_mesh"
+
+	default_state = "idle"	
+
+	state = { name = "idle"	 state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_cruiser_hum" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_25_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "moving"	 state_time = 5 
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_cruiser" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_5_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+	}
+
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_oldcruiser_turret_M1_entity"	
+	pdxmesh = "PEDF_oldcruiser_turret_M1_mesh"
+
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_oldcruiser_turret_M2_entity"	
+	pdxmesh = "PEDF_oldcruiser_turret_M2_mesh"
+
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_oldcruiser_turret_L_entity"	
+	pdxmesh = "PEDF_oldcruiser_turret_L_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#旧作駆逐艦
+entity = {
+	name = "PEDF_olddestroyer_entity"	
+	pdxmesh = "PEDF_olddestroyer_mesh"
+
+	default_state = "idle"	
+
+	state = { name = "idle"	 state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_destroyer_hum" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_0_75_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "moving"	 state_time = 5 
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_destroyer" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+	}
+
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 2.0
+}
+
+
+entity = {
+	name = "PEDF_olddestroyer_turret_S_upper_entity"	
+	pdxmesh = "PEDF_olddestroyer_turret_S_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "upper" looping = no next_state = "idle"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+entity = {
+	name = "PEDF_olddestroyer_turret_S_under_entity"	
+	pdxmesh = "PEDF_olddestroyer_turret_S_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "under" looping = no next_state = "idle"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+
+
+entity = {
+	name = "PEDF_olddestroyer_turret_PD_entity"	
+	pdxmesh = "PEDF_olddestroyer_turret_PD_mesh"
+
+	get_state_from_parent = yes
+
+	default_state = "idle"	
+
+	state = { name = "idle"	animation = "back" looping = no next_state = "idle"
+	}
+	state = { name = "moving"	animation = "back" looping = no next_state = "moving"
+	}
+	state = {
+		name = "combat_idle"  animation = "front" looping = no next_state = "combat_idle"
+	}
+	state = {
+		name = "combat_moving"  animation = "front" looping = no next_state = "combat_moving"
+	}
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+
+
+#旧作宇宙空母
+entity = {
+	name = "PEDF_oldlightcarrier_entity"	
+	pdxmesh = "PEDF_oldlightcarrier_mesh"
+
+	default_state = "idle"	
+
+	state = { name = "idle"	 state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_destroyer_hum" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "generic_1_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+	}
+
+	state = { name = "moving"	 state_time = 5 
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_destroyer" } }
+		event = { time = 0 node = "engine_small_01" particle = "generic_1_25_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_1_25_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "generic_1_25_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "generic_1_25_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_05" particle = "generic_1_25_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+	}
+
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+
+entity = {
+	name = "PEDF_oldlightcarrier_turret_L_entity"	
+	pdxmesh = "PEDF_oldlightcarrier_turret_L_mesh"
+	
+	scale = 1.0
+}
+
+
+#バトルキャリア
+entity = {
+	name = "PEDF_oldbattlecarrier_entity"	
+	pdxmesh = "PEDF_oldbattlecarrier_mesh"
+
+	default_state = "idle"	
+
+	state = { name = "idle"	 state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_destroyer_hum" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_1_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_1_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_1_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_1_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_1_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_07" particle = "generic_1_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_08" particle = "generic_1_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+
+
+
+	}
+
+	state = { name = "moving"	 state_time = 5 
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_destroyer" } }
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_25_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_1_25_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_1_25_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_1_25_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_1_25_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_1_25_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_07" particle = "generic_1_25_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_large_08" particle = "generic_1_25_exhaust_circle_moving" trigger_once = yes keep_particle = yes }
+
+	}
+
+	state = { name = "death" state_time = 5 }	
+	
+	scale = 1.0
+}
+
+
+entity = {
+	name = "PEDF_oldbattlecarrier_turret_L_entity"	
+	pdxmesh = "PEDF_oldbattlecarrier_turret_L_mesh"
+	
+	scale = 1.0
+}
+
+

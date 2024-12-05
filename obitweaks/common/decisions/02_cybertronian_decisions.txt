@@ -1,0 +1,1583 @@
+##########################################################################
+# Cybertronian Decisions
+##########################################################################
+
+# Activate the All Spark Cube
+decision_activate_cube = {
+	owned_planets_only = yes 
+	icon = decision_construct_forerunner_sentinels
+
+	potential = {
+		planet = {
+			has_deposit = d_all_spark
+		}
+	}
+	effect = {
+		planet = {
+			save_global_event_target_as = all_spark_planet
+
+			if = {
+				limit = {
+					from = {
+						has_country_flag = all_spark_5
+					}
+				}
+				from = {
+					random_list = {
+						50 = {
+							remove_country_flag = all_spark_5
+							set_country_flag = all_spark_4
+						}
+						50 = { log = lmfao }
+					}
+					country_event = {
+						id = all_spark.1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					from = {
+						has_country_flag = all_spark_4
+					}
+				}
+				from = {
+					random_list = {
+						50 = {
+							remove_country_flag = all_spark_4
+							set_country_flag = all_spark_3
+						}
+						50 = { log = lmfao }
+					}
+					country_event = {
+						id = all_spark.1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					from = {
+						has_country_flag = all_spark_3
+					}
+				}
+				from = {
+					random_list = {
+						50 = {
+							remove_country_flag = all_spark_3
+							set_country_flag = all_spark_2
+						}
+						50 = { log = lmfao }
+					}
+					country_event = {
+						id = all_spark.1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					from = {
+						has_country_flag = all_spark_2
+					}
+				}
+				from = {
+					random_list = {
+						50 = {
+							remove_country_flag = all_spark_2
+							set_country_flag = all_spark_1
+						}
+						50 = { log = lmfao }
+					}
+					country_event = {
+						id = all_spark.1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					from = {
+						has_country_flag = all_spark_1
+					}
+				}
+				from = {
+					random_list = {
+						50 = {
+							remove_country_flag = all_spark_1
+							set_country_flag = all_spark_0
+						}
+						50 = { log = lmfao }
+					}
+					prev = {
+						remove_deposit = d_all_spark
+						add_deposit = d_depleted_all_spark
+					}
+					country_event = {
+						id = all_spark.1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					from = {
+						NOR = {
+							has_country_flag = all_spark_5
+							has_country_flag = all_spark_4
+							has_country_flag = all_spark_3
+							has_country_flag = all_spark_2
+							has_country_flag = all_spark_1
+						}
+					}
+				}
+				from = {
+					set_country_flag = all_spark_0
+				}
+				prev = {
+					remove_deposit = d_all_spark
+					remove_planet_flag = has_all_spark
+					add_deposit = d_depleted_all_spark
+					set_planet_flag = has_depleted_all_spark
+				}
+			}
+			else_if = {
+				limit = {
+					from = {
+						has_country_flag = all_spark_0
+					}
+				}
+				prev = {
+					remove_deposit = d_all_spark
+					remove_planet_flag = has_all_spark
+					add_deposit = d_depleted_all_spark
+					set_planet_flag = has_depleted_all_spark
+				}
+			}
+		}
+	}
+}
+
+# Transfer All Spark
+decision_transfer_cube = {
+	icon = decision_construct_forerunner_sentinels
+
+	potential = {
+		AND = {
+			from = {
+				any_planet_within_border = {
+					OR = {
+						has_deposit = d_all_spark
+						has_deposit = d_depleted_all_spark
+					}
+					has_deposit = d_space_bridge
+				}
+			}
+			this = {
+				NOR = {
+					has_deposit = d_all_spark
+					has_deposit = d_depleted_all_spark
+				}
+				has_deposit = d_space_bridge
+			}
+		}
+
+	}
+	effect = {
+		save_global_event_target_as = all_spark_target
+		from = {
+			every_planet_within_border = {
+				limit = {
+					OR = {
+						has_deposit = d_all_spark
+						has_deposit = d_depleted_all_spark
+					}
+				}
+				if = {
+					limit = {
+						has_deposit = d_all_spark
+					}
+					remove_planet_flag = has_all_spark
+					remove_deposit = d_all_spark
+					event_target:all_spark_target = {
+						add_deposit = d_all_spark
+						set_planet_flag = has_all_spark
+					}
+				}
+				else_if = {
+					limit = {
+						has_deposit = d_depleted_all_spark
+					}
+					remove_planet_flag = has_depleted_all_spark
+					remove_deposit = d_depleted_all_spark
+					event_target:all_spark_target = {
+						add_deposit = d_depleted_all_spark
+						set_planet_flag = has_depleted_all_spark
+					}
+				}
+			}
+		}
+	}
+}
+
+# Build Harvester
+decision_build_harvester = {
+	owned_planets_only = no
+	icon = decision_construct_forerunner_sentinels
+	
+	enactment_time = 365
+	resources = {
+		category = decisions 
+		cost = {
+			sr_living_metal = 5000
+			energon = 2500
+		}
+	}
+
+	prerequisites = {
+		"tech_harvester_key"
+	}
+
+	potential = {
+		planet = {
+			OR = {
+				is_colonizable = yes
+				is_colony = yes
+			}
+			NOR = {
+				has_deposit = d_star_harvester
+				is_cybertronian_world = yes
+			}
+		}
+	}
+	effect = {
+		planet = {
+			add_deposit = d_star_harvester
+		}
+	}
+}
+
+# Activate Harvester
+decision_activate_harvester = {
+	icon = decision_construct_forerunner_sentinels
+	
+	resources = {
+		category = decisions 
+		cost = {
+			energon = -100000
+			sr_stellar_plasma = -100000
+		}
+	}
+
+	prerequisites = {
+		"tech_harvester_key"
+	}
+
+	potential = {
+		planet = {
+			has_deposit = d_star_harvester
+		}
+	}
+	effect = {
+		harvest_star = yes
+		from = {
+			remove_country_flag = all_spark_0
+			set_country_flag = all_spark_5
+		}
+	}
+}
+
+# Hide Harvester
+decision_hide_harvester = {
+	owned_planets_only = yes 
+	icon = decision_construct_forerunner_sentinels
+	
+	enactment_time = 365
+	resources = {
+		category = decisions 
+		cost = {
+			energy = 1000
+			minerals = 5000
+		}
+	}
+	potential = {
+		planet = {
+			has_deposit = d_star_harvester
+		}
+	}
+	effect = {
+		planet = {
+			remove_deposit = d_star_harvester
+			add_deposit = d_hidden_star_harvester
+		}
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+# Build Space Bridge
+decision_install_spacebridge = {
+	owned_planets_only = no
+	icon = decision_install_groundbridge
+	
+	resources = {
+		category = decisions 
+		cost = {
+			sr_living_metal = 1000
+			energon = 1000
+		}
+	}
+
+	potential = {
+		planet = {
+			NOR = {
+				is_star = yes
+				is_planet_class = pc_gas_giant
+				is_asteroid = yes
+				has_deposit = d_deactivated_space_bridge
+				has_deposit = d_space_bridge
+				is_cybertronian_world = yes
+			}
+		}
+	}
+
+	effect = {
+		planet = {
+			add_deposit = d_space_bridge
+		}
+	}
+
+	prerequisites = {
+		"tech_cybertronian_technology"
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+# Disable Space Bridge
+decision_disable_spacebridge = {
+	owned_planets_only = no
+	icon = decision_install_groundbridge
+	
+	resources = {
+		category = decisions 
+		cost = {
+			energon = -1000
+		}
+	}
+	potential = {
+		planet = {
+			has_deposit = d_space_bridge
+		}
+	}
+	effect = {
+		planet = {
+			remove_deposit = d_space_bridge
+			add_deposit = d_deactivated_space_bridge
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Remove Space Bridge
+decision_remove_spacebridge = {
+	owned_planets_only = no
+	icon = decision_install_groundbridge
+	
+	enactment_time = 180
+	resources = {
+		category = decisions 
+		cost = {
+			energy = 1000
+			minerals = 5000
+		}
+	}
+	potential = {
+		planet = {
+			has_deposit = d_deactivated_space_bridge
+			NOT = {
+				is_cybertronian_world = yes
+			}
+		}
+	}
+	effect = {
+		planet = {
+			remove_deposit = d_deactivated_space_bridge
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Activating the Omega Lock (Menu funny)
+decision_omega_lock_project_final = {
+	owned_planets_only = yes
+	icon = decision_omega_lock_project
+
+	potential = {
+		has_deposit = d_active_omega_lock
+	}
+	
+	allow = {
+		has_deposit = d_active_omega_lock
+	}
+	
+	effect = {
+		save_global_event_target_as = omegalock_planet
+
+		if = {
+			limit = {
+				has_planet_flag = omega_lock_5
+			}
+			random_list = {
+				50 = {
+					remove_planet_flag = omega_lock_5
+					set_planet_flag = omega_lock_4
+				}
+				50 = { log = lmfao }
+			}
+			from = {
+				country_event = {
+					id = omega_lock.1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_planet_flag = omega_lock_4
+			}
+			random_list = {
+				50 = {
+					remove_planet_flag = omega_lock_4
+					set_planet_flag = omega_lock_3
+				}
+				50 = { log = lmfao }
+			}
+			from = {
+				country_event = {
+					id = omega_lock.1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_planet_flag = omega_lock_3
+			}
+			random_list = {
+				50 = {
+					remove_planet_flag = omega_lock_3
+					set_planet_flag = omega_lock_2
+				}
+				50 = { log = lmfao }
+			}
+			from = {
+				country_event = {
+					id = omega_lock.1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_planet_flag = omega_lock_2
+			}
+			random_list = {
+				50 = {
+					remove_planet_flag = omega_lock_2
+					set_planet_flag = omega_lock_1
+				}
+				50 = { log = lmfao }
+			}
+			from = {
+				country_event = {
+					id = omega_lock.1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_planet_flag = omega_lock_1
+			}
+			random_list = {
+				50 = {
+					remove_planet_flag = omega_lock_1
+					set_planet_flag = omega_lock_0
+				}
+				50 = { log = lmfao }
+			}
+			from = {
+				country_event = {
+					id = omega_lock.1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOR = {
+					has_planet_flag = omega_lock_5
+					has_planet_flag = omega_lock_4
+					has_planet_flag = omega_lock_3
+					has_planet_flag = omega_lock_2
+					has_planet_flag = omega_lock_1
+					has_planet_flag = omega_lock_0
+				}
+			}
+			set_planet_flag = omega_lock_0
+			remove_deposit = d_active_omega_lock
+			add_deposit = d_inactive_omega_lock
+		}
+		else_if = {
+			limit = {
+				has_planet_flag = omega_lock_0
+			}
+			remove_deposit = d_active_omega_lock
+			add_deposit = d_inactive_omega_lock
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Designate Planet as Omega Lock Target
+decision_omega_lock_target = {
+	owned_planets_only = no
+	icon = decision_omega_lock_project
+
+	potential = {
+		space_owner = {
+			any_owned_planet = {
+				AND = {
+					has_deposit = d_active_omega_lock
+					has_deposit = d_space_bridge
+				}
+			}
+		}
+		planet = {
+			NOR = {
+				is_planet_class = pc_cybertronian_world
+				is_planet_class = pc_corrupted_cybertronian_world
+				is_planet_class = pc_damaged_cybertron
+				is_planet_class = pc_dead_cybertron
+			}
+		}
+	}
+	
+	effect = {
+		save_global_event_target_as = omegalock_target
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Construct Omega Lock
+decision_install_omegalock = {
+	owned_planets_only = yes
+	sound = event_ship_bridge
+	icon = decision_omega_lock_project
+	
+	enactment_time = 180
+	
+	resources = {
+		category = decisions
+		cost = {
+			sr_living_metal = 2500
+		}
+	}
+	
+	potential = {
+		exists = owner 
+		NOR = {
+			has_deposit = d_shielded_omega_lock
+			has_deposit = d_active_omega_lock
+			has_deposit = d_inactive_omega_lock
+			has_deposit = d_damaged_omega_lock
+		}
+		owner = {
+			has_technology = tech_magic_and_science
+		}
+	}
+	
+	effect = {
+		add_deposit = d_inactive_omega_lock
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Core Infusion
+decision_core_infusion = {
+	owned_planets_only = yes
+	sound = event_ship_bridge
+	icon = decision_omega_lock_project
+	
+	enactment_time = 1800
+	
+	resources = {
+		category = decisions
+		cost = {
+			sr_living_metal = 5000
+			energon = 10000
+		}
+	}
+	
+	potential = {
+		exists = owner 
+		OR = {
+			is_planet_class = pc_damaged_cybertron
+			is_planet_class = pc_dead_cybertron
+			is_planet_class = pc_depleted_cybertron
+		}
+		owner = {
+			has_ascension_perk = ap_cybertronian_worlds
+		}
+		NOT = {
+			has_deposit = d_active_omega_lock
+		}
+	}
+	
+	effect = {
+		if = {
+			limit = {
+				is_planet_class = pc_damaged_cybertron
+			}
+			#remove_deposit = d_damaged_well_of_all_sparks_duplicate
+			#add_deposit = d_well_of_all_sparks_duplicate
+			change_pc = pc_cybertronian_world
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_dead_cybertron
+			}
+			remove_deposit = d_damaged_cybertronian_world_core
+			add_deposit = d_cybertronian_world_core
+			change_pc = pc_damaged_cybertron
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_depleted_cybertron
+			}
+			change_pc = pc_cybertronian_world
+			#remove_deposit = d_damaged_well_of_all_sparks_duplicate
+			remove_deposit = d_damaged_cybertronian_world_core
+			#add_deposit = d_well_of_all_sparks_duplicate
+			add_deposit = d_cybertronian_world_core
+			if = {
+				limit = {
+					OR = {
+						has_deposit = d_dead_teletraan_one
+						has_deposit = d_deactivated_space_bridge
+						has_deposit = d_damaged_energon_bridge
+					}
+				}
+				remove_deposit = d_dead_teletraan_one
+				remove_deposit = d_deactivated_space_bridge
+				remove_deposit = d_damaged_energon_bridge
+				add_deposit = d_teletraan_one
+				add_deposit = d_space_bridge
+				add_deposit = d_energon_bridge
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Capital Development
+decision_cyber_capital_development = {
+	owned_planets_only = yes
+	sound = event_ship_bridge
+	icon = decision_omega_lock_project
+	
+	enactment_time = 365
+	
+	resources = {
+		category = decisions
+		cost = {
+			sr_living_metal = 2500
+		}
+	}
+	
+	potential = {
+		exists = owner 
+		is_planet_class = pc_cybertronian_world
+		is_capital = yes
+		owner = {
+			has_ascension_perk = ap_cybertronian_worlds
+		}
+		NOR = {
+			has_deposit = d_active_omega_lock
+			has_deposit = d_iacon_city
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					AND = {
+						has_deposit = d_kaon_city
+						has_deposit = d_sanctuary_fortress
+						has_deposit = d_crystal_city
+					}
+					NOT = {
+						has_deposit = d_iacon_city
+					}
+				}
+			}
+			add_deposit = d_iacon_city
+		}
+		if = {
+			limit = {
+				AND = {
+					AND = {
+						has_deposit = d_crystal_city
+						has_deposit = d_kaon_city
+					}
+					NOT = {
+						has_deposit = d_sanctuary_fortress
+					}
+				}
+			}
+			add_deposit = d_sanctuary_fortress
+		}
+		if = {
+			limit = {
+				AND = {
+					AND = {
+						has_deposit = d_kaon_city
+					}
+					NOT = {
+						has_deposit = d_crystal_city
+					}
+				}
+			}
+			add_deposit = d_crystal_city
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_deposit = d_kaon_city
+				}
+			}
+			add_deposit = d_kaon_city
+		}
+		if = {
+			limit = {
+				AND = {
+					has_deposit = d_kaon_city
+					has_deposit = d_sanctuary_fortress
+					has_deposit = d_crystal_city
+					has_deposit = d_iacon_city
+				}
+			}
+			add_deposit = d_inactive_trypticon
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+# Install Ground Bridge
+decision_install_groundbridge = {
+	owned_planets_only = yes
+	sound = event_ship_bridge
+	icon = decision_install_groundbridge
+	
+	enactment_time = 10
+	
+	resources = {
+		category = decisions
+		cost = {
+			energon = 100
+			alloys = 100
+		}
+	}
+	
+	potential = {
+		exists = owner 
+		owner = { is_cybertronian = yes }
+		NOR = {
+			has_deposit = d_ground_bridge
+		}
+	}
+	
+	effect = {
+		add_deposit = d_ground_bridge
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+# Build Cybertronian World from Primordial Cybermatter World
+decision_build_cybertronian_world = {
+	icon = decision_build_cybertronian_world
+	sound = event_activating_unknown_technology
+	owned_planets_only = no
+	
+	enactment_time = 912
+	
+	resources = {
+		category = decisions
+		cost = {
+			influence = 100
+			energon = 5000
+		}
+	}
+	prerequisites = {
+		"tech_energon_mining_2"
+	}
+	potential = {	
+		is_planet_class = "pc_primordial_cybertronian_world"
+		exists = space_owner
+		space_owner = { has_ascension_perk = ap_cybertronian_worlds }
+	}
+	
+	allow = {
+		space_owner = { has_technology = tech_terrestrial_sculpting }
+	}
+	
+	effect = {
+		# Make Cybertronian Planet from Raw Cybermatter-World
+		custom_tooltip = decision_build_cybertronian_world_effects
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_cybertronian_world
+			remove_deposit = d_primordial_cybertronian_planet_deposit
+			add_deposit = d_well_of_all_sparks_duplicate
+			add_deposit = d_cybertronian_world_core
+			add_deposit = d_cybertronian_city
+			add_deposit = d_cybertronian_city
+			add_deposit = d_space_bridge
+			add_deposit = d_energon_bridge
+			add_deposit = d_teletraan_one
+			planet_event = { id = cybertron_start.14 }
+			if = {
+				limit = {
+					OR = {
+						is_active_resolution = "resolution_ecology_environmental_control_board"
+						is_active_resolution = "resolution_ecology_paradise_initiative"
+					}
+				}
+				owner = {
+					set_timed_country_flag = { flag = resolution_breached_terraformed days = 3600 }
+				}
+			}
+		}
+	}
+	ai_weight = {
+		weight = 10
+	}
+}
+
+# Strip Primordial Cybermatter World
+decision_strip_cybermatter_world = {
+	icon = decision_build_cybertronian_world
+	sound = event_activating_unknown_technology
+	owned_planets_only = no
+	
+	resources = {
+		category = decisions
+		produces = {
+			sr_living_metal = 10000
+		}
+	}
+	prerequisites = {
+		"tech_energon_mining_2"
+	}
+	potential = {	
+		is_planet_class = "pc_primordial_cybertronian_world"
+		exists = space_owner
+		space_owner = { has_ascension_perk = ap_cybertronian_worlds }
+	}
+	
+	allow = {
+		space_owner = { has_technology = tech_terrestrial_sculpting }
+	}
+	
+	effect = {
+		space_owner = {
+			add_resource = {
+				sr_living_metal = 10000
+			}
+		}
+
+		# Slorp cybermatter world
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_barren
+			set_planet_size = 1
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+# TURN WORLD INTO A CYBERTRONIAN PLANET
+decision_cybertronian_project = {
+	owned_planets_only = yes
+	icon = decision_cybertron_project
+	
+	enactment_time = 1825
+	resources = {
+		category = decisions
+		cost = {
+			influence = 100
+			energon = 5000
+			sr_living_metal = 10000
+		}
+	}
+	prerequisites = {
+		"tech_energon_mining_2"
+	}
+	potential = {	
+		NOR = {
+			is_cybertronian_world = yes
+			is_planet_class = pc_city
+			is_planet_class = pc_relic
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+			has_modifier = pm_wenkwort_custodian
+		}
+		is_artificial = no 
+		exists = owner
+		owner = { has_ascension_perk = ap_cybertronian_worlds }
+		always = no
+	}
+	
+	allow = {
+		owner = { has_technology = tech_housing_2 }
+	}
+	
+	effect = {
+		# Make Cybertronian Planet
+		custom_tooltip = decision_cybertronian_project_effects
+		hidden_effect = {
+			clear_deposits = yes
+			clear_blockers = yes 
+			change_pc = pc_cybertronian_world
+			set_planet_size = 30
+			remove_modifier = cybertron_corrupted
+			remove_modifier = dark_energon_corruption
+			add_deposit = d_well_of_all_sparks_duplicate
+			add_deposit = d_cybertronian_world_core
+			add_deposit = d_cybertronian_city
+			add_deposit = d_cybertronian_city
+			add_deposit = d_space_bridge
+			add_deposit = d_energon_bridge
+			add_deposit = d_teletraan_one
+			planet_event = { id = cybertron_start.14 }
+			if = {
+				limit = {
+					OR = {
+						is_active_resolution = "resolution_ecology_environmental_control_board"
+						is_active_resolution = "resolution_ecology_paradise_initiative"
+					}
+				}
+				owner = {
+					set_timed_country_flag = { flag = resolution_breached_terraformed days = 3600 }
+				}
+			}
+		}
+	}
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 50
+			from = { is_cybertronian = yes }
+		}
+		modifier = {
+			factor = 20
+			from = {
+				OR = {
+					has_trait = trait_robot_autobot
+					has_trait = trait_robot_maximal
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			has_resource = { type = energon amount < 5500 } 
+		}
+		modifier = {
+			factor = 0
+			has_resource = { type = living_metal amount < 3000 }
+		}
+	}
+}
+
+# SEEDING RAW ENERGON
+decision_seed_energon = {
+	icon = decision_seed_energon
+	owned_planets_only = yes
+	sound = event_ship_bridge
+	
+	enactment_time = 30
+	
+	prerequisites = {
+		"tech_energon_mining_1"
+	}
+	
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1000
+			energon = 500
+			influence = 50
+		}
+	}
+	
+	
+	potential = {
+		is_cybertronian_world = no
+		exists = owner
+	}
+	
+	effect = {
+		add_deposit = d_energon_crystals
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 100
+			from = { is_cybertronian = yes }
+		}
+		modifier = {
+			factor = 0
+			has_resource = { type = energy amount < 1500 }
+		}
+		modifier = {
+			factor = 0
+			has_resource = { type = energon amount < 550 }
+		}
+	}
+}
+
+# REMOVING RAW ENERGON
+decision_energon_clearing = {
+	owned_planets_only = yes
+	sound = event_ship_bridge
+	icon = decision_seed_energon
+	
+	enactment_time = 30
+	
+	resources = {
+		category = decisions
+		cost = {
+			energy = 3000
+		}
+	}
+	
+	potential = {
+		#has_deposit = d_energon_crystals
+		#NOR = {
+		#	is_planet_class = pc_damaged_cybertron 
+		#	is_planet_class = pc_dead_cybertron
+		#	is_planet_class = pc_restored_cybertron 			
+		#	is_planet_class = pc_cybertronian_world 
+		#	is_planet_class = pc_corrupted_cybertronian_world
+		#	is_planet_class = pc_corrupted_cybertron
+		#}
+		#exists = owner
+		always = no
+	}
+	
+	effect = {
+		remove_deposit = d_energon_crystals
+		owner = {
+			add_resource = {
+				energon = 500
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_building = building_energon_refinery
+					has_building = building_cybertronian_energon_refinery
+					has_building = building_energon_mine
+				}
+			}
+			remove_building = building_energon_refinery
+			remove_building = building_cybertronian_energon_refinery
+			remove_building = building_energon_mine
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 10
+			from = {
+				OR = {
+					has_trait = trait_robot_autobot
+					has_trait = trait_robot_maximal
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			from = {
+				OR = {
+					has_trait = trait_robot_decepticon
+					has_trait = trait_robot_predacon
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			exists = owner
+			owner = {
+				NOT = {
+					has_technology = tech_energon_mining_2
+				}
+			}
+		}
+	}
+}
+
+# SEEDING DARK ENERGON
+decision_seed_dark_energon = {
+	icon = decision_seed_dark_energon
+	owned_planets_only = yes
+	sound = event_ship_bridge
+	
+	enactment_time = 30
+	
+	prerequisites = {
+		"tech_dark_energon_mining"
+	}
+	
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1000
+			dark_energon = 500
+			influence = 100
+		}
+	}
+	
+	
+	potential = {
+		NOR = { 
+			is_planet_class = pc_damaged_cybertron 
+			is_planet_class = pc_depleted_cybertron 
+			is_planet_class = pc_restored_cybertron 
+			is_planet_class = pc_dead_cybertron 
+			is_planet_class = pc_cybertronian_world
+		}
+		exists = owner
+	}
+	
+	effect = {
+		add_deposit = d_dark_energon_crystals
+		hidden_effect = {
+			set_planet_flag = dark_energon_crystals
+		}
+	}
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0
+			exists = owner
+			owner = {
+				NOT = {
+					has_technology = tech_dark_energon_mining
+				}
+			}
+		}
+		modifier = {
+			factor = 10
+			from = {
+				OR = {
+					has_trait = trait_robot_decepticon
+					has_trait = trait_robot_predacon
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			from = {
+				OR = {
+					has_trait = trait_robot_autobot
+					has_trait = trait_robot_maximal
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			has_resource = { type = energy amount < 1500 }
+		}
+		modifier = {
+			factor = 0
+			has_resource = { type = dark_energon amount < 550 }
+		}
+	}
+}
+
+# REMOVING DARK ENERGON
+decision_dark_energon_clearing = {
+	owned_planets_only = yes
+	sound = event_ship_bridge
+	icon = decision_seed_dark_energon
+	
+	enactment_time = 30
+	
+	resources = {
+		category = decisions
+		cost = {
+			energy = 3000
+		}
+	}
+	
+	potential = {
+		#has_deposit = d_dark_energon_crystals
+		#NOR = {
+		#	is_planet_class = pc_corrupted_cybertron
+		#	is_planet_class = pc_corrupted_cybertronian_world
+		#	is_planet_class = pc_damaged_cybertron
+		#	is_planet_class = pc_dead_cybertron
+		#	is_planet_class = pc_restored_cybertron
+		#}
+		#exists = owner
+		always = no
+	}
+	
+	effect = {
+		remove_modifier = dark_energon_corruption
+		remove_deposit = d_dark_energon_crystals
+		owner = {
+			add_resource = {
+				dark_energon = 500
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_building = building_dark_energon_refinery
+					has_building = building_cybertronian_dark_energon_refinery
+					has_building = building_dark_energon_mine
+				}
+			}
+			remove_building = building_dark_energon_refinery
+			remove_building = building_cybertronian_dark_energon_refinery
+			remove_building = building_dark_energon_mine
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			exists = owner
+			owner = {
+				has_technology = tech_dark_energon_mining
+			}
+		}
+	}
+}
+
+# Restoring Cybertronian World with Omega Lock
+decision_omega_lock_project_funny = {
+	owned_planets_only = yes
+	icon = decision_omega_lock_project
+
+	potential = {
+		OR = {
+			is_planet_class = pc_dead_cybertron
+			is_planet_class = pc_damaged_cybertron
+			is_planet_class = pc_corrupted_cybertronian_world
+		}
+		owner = {
+			NOT = {
+				has_origin = origin_cybertron
+			}
+		}
+		habitable_structure = no
+		exists = owner
+		always = no
+	}
+	
+	allow = {
+		has_deposit = d_active_omega_lock
+	}
+	
+	effect = {
+		# Repair Cybertronian World
+		#hidden_effect = {
+		#	remove_modifier = cybertron_corrupted
+		#	remove_modifier = dark_energon_corruption
+		#	clear_blockers = yes
+		#	clear_deposits = yes
+		#	change_pc = pc_cybertronian_world
+		#	set_planet_size = 30
+		#	add_deposit = d_well_of_all_sparks_duplicate
+		#	add_deposit = d_cybertronian_world_core
+		#	add_deposit = d_cybertronian_city
+		#	add_deposit = d_cybertronian_city
+		#	add_deposit = d_space_bridge
+		#	add_deposit = d_energon_bridge
+		#	add_deposit = d_active_omega_lock
+		#	add_deposit = d_crystal_city
+		#	add_deposit = d_teletraan_one
+		#	add_deposit = d_iacon_city
+		#	add_deposit = d_kaon_city
+		#	add_deposit = d_sanctuary_fortress
+		#}
+		from = {
+			country_event = { id = omega_lock.1 }
+		}
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 500
+			from = { is_cybertronian = yes }
+		}
+	}
+}
+
+# Expand Cybertronian World
+decision_expand_cybertronian_world = {
+	owned_planets_only = yes
+	icon = decision_build_cybertronian_world
+	sound = event_activating_unknown_technology
+
+	enactment_time = 180
+
+	potential = {
+		OR = {
+			is_planet_class = pc_cybertronian_world
+			is_planet_class = pc_corrupted_cybertronian_world
+		}
+		exists = owner
+		owner = {
+			has_ascension_perk = ap_cybertronian_worlds
+		}
+		NOT = {
+			has_deposit = d_active_omega_lock
+		}
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			sr_living_metal = 2000
+			energon = 2000
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_expand_cybertronian_world_tooltip
+		if = {
+			limit = {
+				is_planet_class = pc_corrupted_cybertronian_world
+			}
+			add_deposit = d_dark_energon_city
+		}
+		else = {
+			add_deposit = d_cybertronian_city
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 2
+			num_pops > 25
+		}
+		modifier = {
+			factor = 3
+			num_pops > 50
+		}
+	}
+}
+
+# TURN WORLD INTO A CYBERTRONIAN PLANET USING DARK ENERGON
+decision_corrupt_cybertronian_world = {
+	owned_planets_only = yes
+	icon = decision_corrupt_cybertronian_project
+	
+	enactment_time = 365
+	resources = {
+		category = decisions
+		cost = {
+			influence = 100
+			dark_energon = 5000
+		}
+	}
+	prerequisites = {
+		"tech_dark_energon_mining"
+	}
+	potential = {
+		is_planet_class = pc_cybertronian_world
+		exists = owner
+		owner = { has_ascension_perk = ap_cybertronian_worlds }
+		NOT = {
+			has_deposit = d_active_omega_lock
+		}
+	}
+	
+	allow = {
+		owner = { has_technology = tech_dark_energon_mining }
+	}
+	
+	effect = {
+		# Make Dark Energon Cybertronian Planet
+		random_list = {
+			50 = {
+				change_pc = pc_corrupted_cybertronian_world
+				clear_deposits = yes
+				clear_blockers = yes 
+				add_deposit = d_dark_energon_core
+				add_deposit = d_dark_energon_city
+				add_deposit = d_dark_energon_city
+				add_deposit = d_corrupted_well_of_all_sparks_duplicate
+				add_deposit = d_space_bridge
+				add_deposit = d_energon_bridge
+				add_deposit = d_active_omega_lock
+				add_deposit = d_teletraan_one
+				add_modifier = { modifier = "cybertron_corrupted" days = -1 }
+				if = {
+					limit = {
+						has_planet_flag = has_all_spark
+					}
+					add_deposit = d_all_spark
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = has_depleted_all_spark
+					}
+					add_deposit = d_depleted_all_spark
+				}
+			}
+			50 = {
+				remove_deposit = d_well_of_all_sparks_duplicate
+				add_deposit = d_damaged_well_of_all_sparks_duplicate
+				remove_deposit = d_cybertronian_world_core
+				add_deposit = d_damaged_cybertronian_world_core
+				change_pc = pc_depleted_cybertron
+				if = {
+					limit = {
+						OR = {
+							has_deposit = d_teletraan_one
+							has_deposit = d_space_bridge
+							has_deposit = d_energon_bridge
+						}
+					}
+					remove_deposit = d_teletraan_one
+					remove_deposit = d_space_bridge
+					remove_deposit = d_energon_bridge
+					add_deposit = d_dead_teletraan_one
+					add_deposit = d_deactivated_space_bridge
+					add_deposit = d_damaged_energon_bridge
+					if = {
+						limit = {
+							has_deposit = d_active_omega_lock
+						}
+						remove_deposit = d_active_omega_lock
+						add_deposit = d_inactive_omega_lock
+					}
+					if = {
+						limit = {
+							has_deposit = d_active_trypticon
+						}
+						remove_deposit = d_active_trypticon
+						add_deposit = d_inactive_trypticon
+					}
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 50
+			from = {
+				OR = {
+					has_trait = trait_robot_decepticon
+					has_trait = trait_robot_predacon
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			from = {
+				OR = {
+					has_trait = trait_robot_autobot
+					has_trait = trait_robot_maximal
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			has_resource = { type = dark_energon amount < 5500 } 
+		}
+		modifier = {
+			factor = 0
+			has_resource = { type = influence amount < 150 }
+		}
+	}
+}
+
+# Colonize through Space Bridge
+decision_colonize_spacebridge = {
+	owned_planets_only = no
+	icon = decision_install_groundbridge
+
+	resources = {
+		category = decisions
+		cost = {
+			energon = 250
+		}
+	}
+	
+	potential = {
+		planet = {
+			has_deposit = d_space_bridge
+			is_colonizable = yes
+			is_under_colonization = no
+		}
+		space_owner = {
+			is_same_empire = solar_system.space_owner
+			any_owned_planet = {
+				has_deposit = d_space_bridge
+			}
+		}
+	}
+	
+	effect = {
+		planet = {
+			start_colony = {
+				owner = space_owner
+				species = space_owenr
+				ethos = random
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000
+	}
+}

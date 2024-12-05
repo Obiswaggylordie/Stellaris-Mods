@@ -1,0 +1,109 @@
+
+
+###########################
+### FORERUNNER SHIELDS  ###
+###########################
+
+utility_component_template = {
+	key = "SMALL_FORERUNNER_SHIELD"
+	size = small
+	icon = "GFX_forerunner_shield"
+	icon_frame = 1
+	power = -100
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 100
+			energon = 500
+		}	
+		upkeep = {
+			energon = 0.45
+			sr_living_metal = 0.045
+		}
+	}
+	modifier = {
+		ship_shield_add = 1500
+		ship_shield_hardening_add = 0.1
+		ship_shield_regen_add_static = 10.0 #Regeneration per day
+	}
+	prerequisites = { "tech_forerunner_shield" }
+	component_set = "FORERUNNER_SHIELD"
+
+	ai_weight = {
+		weight = 50000
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_FORERUNNER_SHIELD"
+	size = medium
+	icon = "GFX_forerunner_shield"
+	icon_frame = 1
+	power = -300
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 100
+			energon = 500
+		}	
+		upkeep = {
+			energon = 0.9
+			sr_living_metal = 0.09
+		}
+	}
+	modifier = {
+		ship_shield_add = 3000
+		ship_shield_hardening_add = 0.2
+		ship_shield_regen_add_static = 50.0 #Regeneration per day
+	}
+	prerequisites = { "tech_forerunner_shield" }
+	component_set = "FORERUNNER_SHIELD"
+
+
+	ai_weight = {
+		weight = 50000
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_FORERUNNER_SHIELD"
+	size = large
+	icon = "GFX_forerunner_shield"
+	icon_frame = 1
+	power = -500
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 100
+			energon = 500
+		}	
+		upkeep = {
+			energon = 1.8
+			sr_living_metal = 0.18
+		}
+	}
+	modifier = {
+		ship_shield_add = 6000
+		ship_shield_hardening_add = 0.3
+		ship_shield_regen_add_static = 100.0 #Regeneration per day
+	}
+	prerequisites = { "tech_forerunner_shield" }
+	component_set = "FORERUNNER_SHIELD"
+
+	ai_weight = {
+		weight = 50000
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+	}
+}
+

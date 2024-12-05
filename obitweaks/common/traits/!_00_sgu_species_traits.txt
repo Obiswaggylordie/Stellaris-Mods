@@ -1,0 +1,774 @@
+
+
+##################
+# Species Traits #
+##################
+trait_ancient = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0
+	randomized = no
+	species_potential_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		from = {
+			has_technology = tech_magic_and_science
+		}
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+
+	opposites = {
+		"trait_necron_servant"
+		"trait_void_entity"
+		"trait_ori"
+		"trait_asgard"
+		"trait_vanir"
+		"trait_tauri"
+		"trait_goauld"
+		"trait_wraith"
+		"trait_jaffa"
+		"trait_replicator"
+		"trait_asuran"
+		"trait_nox"
+		"trait_traveler"
+		"trait_lucian"
+	}
+
+	allowed_archetypes = { BIOLOGICAL }
+	
+	prerequisites = {
+		tech_magic_and_science
+	}
+
+	modifier = {
+		planet_researchers_physics_research_produces_add = 100
+		planet_researchers_society_research_produces_add = 100
+		planet_researchers_engineering_research_produces_add = 100
+		#planet_researchers_consumer_goods_upkeep_add = 0.5
+	}
+
+	slave_cost = {
+		energy = 150
+	}
+
+}
+
+trait_asgard = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	immortal_leaders = yes
+
+	opposites = {
+		"trait_necron_servant"
+		"trait_void_entity"
+		"trait_ancient"
+		"trait_ori"
+		"trait_vanir"
+		"trait_tauri"
+		"trait_goauld"
+		"trait_wraith"
+		"trait_jaffa"
+		"trait_replicator"
+		"trait_asuran"
+		"trait_nox"
+		"trait_traveler"
+		"trait_lucian"
+		"trait_venerable"
+		"trait_enduring"
+		"trait_fleeting"
+		"trait_rapid_breeders"
+		"trait_slow_breeders"
+		"trait_decadent"
+	}
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	modifier = {
+		planet_researchers_physics_research_produces_add = 1.5
+		planet_researchers_engineering_research_produces_add = 1.5
+		pop_amenities_usage_mult = -0.50
+	}
+
+	slave_cost = {
+		energy = 150
+	}
+
+}
+
+trait_vanir = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	immortal_leaders = yes
+
+	opposites = {
+		"trait_necron_servant"
+		"trait_void_entity"
+		"trait_ancient"
+		"trait_ori"
+		"trait_asgard"
+		"trait_tauri"
+		"trait_goauld"
+		"trait_wraith"
+		"trait_jaffa"
+		"trait_replicator"
+		"trait_asuran"
+		"trait_nox"
+		"trait_traveler"
+		"trait_lucian"
+		"trait_venerable"
+		"trait_enduring"
+		"trait_fleeting"
+		"trait_rapid_breeders"
+		"trait_slow_breeders"
+		"trait_decadent"
+	}
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	modifier = {
+		planet_metallurgists_alloys_produces_add = 0.5
+		#planet_metallurgists_minerals_upkeep_add = 2
+		pop_amenities_usage_mult = -0.50
+	}
+
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_ascension_perk = ap_vanir_rebirth }
+		}
+		pop_growth_speed = 2.5
+	}
+
+	slave_cost = {
+		energy = 150
+	}
+
+}
+
+trait_ori = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+
+	opposites = {
+		"trait_necron_servant"
+		"trait_void_entity"
+		"trait_ancient"
+		"trait_asgard"
+		"trait_vanir"
+		"trait_tauri"
+		"trait_goauld"
+		"trait_wraith"
+		"trait_jaffa"
+		"trait_replicator"
+		"trait_asuran"
+		"trait_nox"
+		"trait_traveler"
+		"trait_lucian"
+	}
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	modifier = { 
+		leader_lifespan_add = 30
+		planet_researchers_physics_research_produces_add = 1
+		planet_researchers_society_research_produces_add = 1
+		planet_researchers_engineering_research_produces_add = 1
+	}
+
+	slave_cost = {
+		energy = 150
+	}
+
+}
+
+trait_tauri = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+
+	opposites = {
+		"trait_necron_servant"
+		"trait_void_entity"
+		"trait_ancient"
+		"trait_ori"
+		"trait_asgard"
+		"trait_vanir"
+		"trait_goauld"
+		"trait_wraith"
+		"trait_jaffa"
+		"trait_replicator"
+		"trait_asuran"
+		"trait_nox"
+		"trait_traveler"
+		"trait_lucian"
+	}
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	modifier = {
+		pop_growth_speed = 0.20
+		planet_artisans_consumer_goods_produces_add = 1.5
+		#planet_artisans_minerals_upkeep_add = 1.5
+	}
+
+	slave_cost = {
+		energy = 150
+	}
+
+}
+
+trait_wraith = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	immortal_leaders = yes
+	infertile = yes
+
+	opposites = {
+		"trait_necron_servant"
+		"trait_void_entity"
+		"trait_ancient"
+		"trait_ori"
+		"trait_asgard"
+		"trait_vanir"
+		"trait_tauri"
+		"trait_goauld"
+		"trait_jaffa"
+		"trait_replicator"
+		"trait_asuran"
+		"trait_nox"
+		"trait_traveler"
+		"trait_lucian"
+		"trait_rapid_breeders"
+		"trait_slow_breeders"
+		"trait_venerable"
+		"trait_enduring"
+		"trait_fleeting"
+		"trait_decadent"
+		"trait_conservational"
+		"trait_wasteful"
+		"trait_adaptive"
+		"trait_extremely_adaptive"
+	}
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	modifier = {
+		planet_miners_minerals_produces_add = 1
+		planet_technician_energy_produces_add = 1
+		pop_environment_tolerance = 0.20
+	}
+
+	slave_cost = {
+		energy = 150
+	}
+
+}
+
+trait_goauld = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	infertile = yes
+
+	opposites = {
+		"trait_necron_servant"
+		"trait_void_entity"
+		"trait_ancient"
+		"trait_ori"
+		"trait_asgard"
+		"trait_vanir"
+		"trait_tauri"
+		"trait_wraith"
+		"trait_jaffa"
+		"trait_replicator"
+		"trait_asuran"
+		"trait_nox"
+		"trait_traveler"
+		"trait_lucian"
+		"trait_rapid_breeders"
+		"trait_slow_breeders"
+		"trait_adaptive"
+		"trait_extremely_adaptive"
+	}
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	modifier = {
+		leader_lifespan_add = 100
+		planet_jobs_ruler_produces_mult = 0.50
+		planet_researchers_produces_mult = 0.10
+		#planet_researchers_upkeep_mult = 0.20
+		pop_environment_tolerance = 0.20
+	}
+
+	slave_cost = {
+		energy = 150
+	}
+
+}
+
+trait_jaffa = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+
+	opposites = {
+		"trait_necron_servant"
+		"trait_void_entity"
+		"trait_ancient"
+		"trait_ori"
+		"trait_asgard"
+		"trait_vanir"
+		"trait_tauri"
+		"trait_wraith"
+		"trait_goauld"
+		"trait_replicator"
+		"trait_asuran"
+		"trait_nox"
+		"trait_traveler"
+		"trait_lucian"
+		"trait_adaptive"
+		"trait_extremely_adaptive"
+	}
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	custom_tooltip_with_modifiers = trait_jaffa_trait_tooltip 
+
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_jaffa_tretonin_serum }
+		}
+		pop_growth_speed = 0.3
+	}
+
+	modifier = {
+		leader_lifespan_add = 50
+		planet_farmers_food_produces_add = 1
+		planet_miners_minerals_produces_add = 1
+		planet_pops_consumer_goods_upkeep_mult = -0.25
+		pop_environment_tolerance = 0.20
+	}
+
+	slave_cost = {
+		energy = 150
+	}
+
+}
+
+trait_nox = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+
+	opposites = {
+		"trait_necron_servant"
+		"trait_void_entity"
+		"trait_ancient"
+		"trait_ori"
+		"trait_asgard"
+		"trait_vanir"
+		"trait_tauri"
+		"trait_goauld"
+		"trait_wraith"
+		"trait_jaffa"
+		"trait_replicator"
+		"trait_asuran"
+		"trait_traveler"
+		"trait_lucian"
+	}
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	modifier = {
+		planet_researchers_society_research_produces_add = 2
+		planet_pops_consumer_goods_upkeep_mult = -0.25
+		pop_growth_speed = -0.20
+	}
+
+	slave_cost = {
+		energy = 150
+	}
+
+}
+
+trait_lucian = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+
+	opposites = {
+		"trait_necron_servant"
+		"trait_void_entity"
+		"trait_ancient"
+		"trait_ori"
+		"trait_asgard"
+		"trait_vanir"
+		"trait_tauri"
+		"trait_goauld"
+		"trait_wraith"
+		"trait_jaffa"
+		"trait_replicator"
+		"trait_asuran"
+		"trait_nox"
+		"trait_traveler"
+	}
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	modifier = {
+		planet_metallurgists_alloys_produces_add = 0.5
+	}
+
+	slave_cost = {
+		energy = 150
+	}
+
+}
+
+trait_traveler = {
+	cost = 2
+	potential_crossbreeding_chance = 1.0
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	infertile = yes
+
+	opposites = {
+		"trait_necron_servant"
+		"trait_void_entity"
+		"trait_ancient"
+		"trait_ori"
+		"trait_asgard"
+		"trait_vanir"
+		"trait_tauri"
+		"trait_goauld"
+		"trait_wraith"
+		"trait_jaffa"
+		"trait_replicator"
+		"trait_asuran"
+		"trait_nox"
+		"trait_lucian"
+	}
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	modifier = {
+		pop_amenities_usage_mult = -1
+		planet_pops_consumer_goods_upkeep_mult = -1
+	}
+
+	slave_cost = {
+		energy = 150
+	}
+
+}
+
+trait_ascension_1 = {
+	cost = 0
+	potential_crossbreeding_chance = 1.0
+	randomized = no
+
+	species_potential_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		from = {
+			has_technology = tech_ascended_gene_editing
+		}
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	initial = no
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	modifier = {
+		planet_jobs_produces_mult = 1.00
+		species_leader_exp_gain = 1.00
+		pop_environment_tolerance = 0.25
+	}
+
+	opposites = {
+		"trait_ascension_2"
+		"trait_ascension_3"
+		"trait_ascension_4"
+	}
+
+	slave_cost = {
+		energy = 150
+	}
+
+	prerequisites = {
+		tech_ascended_gene_editing
+	}
+
+}
+
+trait_ascension_2 = {
+	cost = 0
+	potential_crossbreeding_chance = 1.0
+	randomized = no
+	species_potential_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		from = {
+			has_technology = tech_ascended_gene_editing
+		}
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	initial = no 
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	modifier = {
+		planet_jobs_produces_mult = 2.0
+		species_leader_exp_gain = 2.0
+		pop_environment_tolerance = 0.50
+	}
+
+	opposites = {
+		"trait_ascension_1"
+		"trait_ascension_3"
+		"trait_ascension_4"
+	}
+
+	slave_cost = {
+		energy = 250
+	}
+
+	prerequisites = {
+		tech_ascended_gene_editing
+	}
+
+}
+
+trait_ascension_3 = {
+	cost = 0
+	potential_crossbreeding_chance = 1.0
+	randomized = no
+	species_potential_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		from = {
+			has_technology = tech_ascended_gene_editing
+		}
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	initial = no 
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	prerequisites = {
+		tech_ascended_gene_editing
+	}
+
+	opposites = {
+		"trait_ascension_1"
+		"trait_ascension_2"
+		"trait_ascension_4"
+	}
+
+	modifier = {
+		planet_jobs_produces_mult = 3.0
+		species_leader_exp_gain = 3.0
+		pop_environment_tolerance = 0.75
+	}
+
+	slave_cost = {
+		energy = 400
+	}
+
+}
+
+trait_ascension_4 = {
+	cost = 0
+	potential_crossbreeding_chance = 1.0
+	randomized = no
+	species_potential_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		from = {
+			has_technology = tech_ascended_gene_editing
+		}
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	initial = no
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	prerequisites = {
+		tech_ascended_gene_editing
+	}
+
+	opposites = {
+		"trait_ascension_1"
+		"trait_ascension_2"
+		"trait_ascension_3"
+	}
+
+	modifier = {
+		planet_jobs_produces_mult = 4.0
+		species_leader_exp_gain = 4.0
+		pop_environment_tolerance = 1.0
+	}
+
+	slave_cost = {
+		energy = 10000
+	}
+
+}
+
+trait_vanilla_weapons = {
+	cost = 0
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+
+	allowed_archetypes = { BIOLOGICAL ROBOT MACHINE }
+
+	modifier = {
+		#Access to vanilla weapon Tech
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_prey = {
+	cost = 0
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	modifier = {
+		pc_hive_habitability = 1.0
+		planet_livestock_food_produces_add = 1
+	}
+
+}
+
+
+

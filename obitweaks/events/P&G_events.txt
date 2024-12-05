@@ -1,0 +1,76 @@
+namespace = perdition_genesis
+
+# Perdition & Genesis Main Menu
+country_event = {
+	id = perdition_genesis.1
+	title = "perdition_genesis.1.name"
+	desc = "perdition_genesis.1.desc"
+	#picture = GFX_evt_halo_aftermath
+	show_sound = event_yellow_alert
+	
+	is_triggered_only = yes
+	
+	option = { # Genesis Device
+		name = "perdition_genesis.1.a"
+
+		hidden_effect = {
+			country_event = {
+				id = genesis_device.1
+			}
+		}
+	}
+
+	option = { # Organic Perdition
+		name = "perdition_genesis.1.b"
+
+		hidden_effect = {
+			country_event = {
+				id = perdition_organic.1
+			}
+		}
+	}
+
+	option = { # Mechanical Perdition
+		name = "perdition_genesis.1.c"
+
+		hidden_effect = {
+			country_event = {
+				id = perdition_mechanical.1
+			}
+		}
+	}
+
+	option = { # Unascended Perdition
+		name = "perdition_genesis.1.d"
+
+		hidden_effect = {
+			country_event = {
+				id = perdition_unascended.1
+			}
+		}
+	}
+
+	option = { # Sangraal Perdition
+		name = "perdition_genesis.1.e"
+
+		hidden_effect = {
+			country_event = {
+				id = perdition_sangraal.1
+			}
+		}
+	}
+
+	option = { # Dakara Perdition
+	name = "perdition_genesis.1.f"
+
+		hidden_effect = {
+			country_event = {
+				id = perdition_dakara.1
+			}
+		}
+	}
+
+	option = { # Cancel
+	name = "perdition_genesis.1.g"
+	}
+}

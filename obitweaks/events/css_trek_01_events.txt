@@ -1,0 +1,40 @@
+namespace = csstrek
+
+# Game Startup choice to use tech or not
+country_event = {
+    id = csstrek.00100
+    title = csstrek.00100.name
+    desc = csstrek.00100.desc
+    picture = GFX_evt_csstrek_options
+    show_sound = event_ship_bridge
+    location = root
+    hide_window = yes
+
+    is_triggered_only = yes
+
+    trigger = {
+        OR = {
+            graphical_culture = "trek_01"
+            graphical_culture = "trek_02"
+        }
+	}
+
+    immediate = {
+        give_technology = {
+            tech = tech_css_trek_01
+            message = no
+        }
+        give_technology = {
+            tech = tech_css_trek_22nd_cen
+            message = no
+        }
+        give_technology = {
+            tech = tech_css_trek_23rd_cen
+            message = no
+        }
+        give_technology = {
+            tech = tech_css_trek_24th_a_cen
+            message = no
+        }
+    }
+}

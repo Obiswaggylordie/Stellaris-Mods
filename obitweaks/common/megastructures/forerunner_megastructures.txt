@@ -1,0 +1,1985 @@
+# Forerunner Megastructures
+@phase_0_entity_x = -15
+@phase_0_entity_y = -5
+@entity_x = -15
+@entity_y = -15
+
+# Void Relay Omega
+forerunner_slipspace_portal = {
+	entity = "forerunner_01_slipspace_portal_entity"
+	construction_entity = "forerunner_01_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_field
+	}
+	construction_blocks_and_blocked_by = self_type
+	
+	country_modifier = {
+		country_base_influence_produces_add = 2
+	}
+
+	bypass_type = slipspace
+	
+	placement_rules = {
+	}
+
+	upgrade_from = {
+		forerunner_slipspace_portal_deactivate
+		forerunner_slipspace_portal_omega_inactive
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 100
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = relay_omega
+			remove_megastructure_flag = relay_alpha
+			remove_megastructure_flag = relay_beta
+			remove_megastructure_flag = relay_delta
+			remove_megastructure_flag = relay_gamma
+			remove_megastructure_flag = relay_lambda
+		}
+	}
+}
+
+# Void Relay Omega Inactive
+forerunner_slipspace_portal_omega_inactive = {
+	entity = "forerunner_02_slipspace_portal_entity"
+	construction_entity = "forerunner_02_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = yes
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_field
+		is_ai = no
+	}
+
+	construction_blocks_and_blocked_by = self_type
+	
+	placement_rules = {
+	}
+
+	upgrade_from = {
+		forerunner_slipspace_portal
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		fromfrom = {
+			set_megastructure_flag = relay_omega
+			remove_megastructure_flag = relay_alpha
+			remove_megastructure_flag = relay_beta
+			remove_megastructure_flag = relay_delta
+			remove_megastructure_flag = relay_gamma
+			remove_megastructure_flag = relay_lambda
+		}
+	}
+}
+
+# Void Relay Alpha
+forerunner_slipspace_portal_alpha = {
+	entity = "forerunner_01_slipspace_portal_entity"
+	construction_entity = "forerunner_01_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_portal_activation
+	}
+	construction_blocks_and_blocked_by = self_type
+	
+	country_modifier = {
+		country_base_influence_produces_add = 2
+	}
+
+	bypass_type = slipspace_alpha
+	
+	placement_rules = {
+	}
+
+	upgrade_from = {
+		forerunner_slipspace_portal_deactivate
+		forerunner_slipspace_portal_alpha_inactive
+	}
+	
+	# root = system
+	# from = country
+
+
+	ai_weight = {
+		weight = 100
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = relay_alpha
+			remove_megastructure_flag = relay_omega
+			remove_megastructure_flag = relay_beta
+			remove_megastructure_flag = relay_delta
+			remove_megastructure_flag = relay_gamma
+			remove_megastructure_flag = relay_lambda
+		}
+	}
+}
+
+# Void Relay Alpha Inactive
+forerunner_slipspace_portal_alpha_inactive = {
+	entity = "forerunner_02_slipspace_portal_entity"
+	construction_entity = "forerunner_02_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = yes
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_portal_activation
+		is_ai = no
+	}
+
+	construction_blocks_and_blocked_by = self_type
+
+	upgrade_from = {
+		forerunner_slipspace_portal_alpha
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		fromfrom = {
+			set_megastructure_flag = relay_alpha
+			remove_megastructure_flag = relay_omega
+			remove_megastructure_flag = relay_beta
+			remove_megastructure_flag = relay_delta
+			remove_megastructure_flag = relay_gamma
+			remove_megastructure_flag = relay_lambda
+		}
+	}
+}
+
+# Void Relay Beta
+forerunner_slipspace_portal_beta = {
+	entity = "forerunner_01_slipspace_portal_entity"
+	construction_entity = "forerunner_01_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_portal_activation
+	}
+	construction_blocks_and_blocked_by = self_type
+	
+	country_modifier = {
+		country_base_influence_produces_add = 2
+	}
+
+	bypass_type = slipspace_beta
+	
+	placement_rules = {
+	}
+
+	upgrade_from = {
+		forerunner_slipspace_portal_deactivate
+		forerunner_slipspace_portal_beta_inactive
+	}
+	
+	# root = system
+	# from = country
+
+
+	ai_weight = {
+		weight = 100
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = relay_beta
+			remove_megastructure_flag = relay_omega
+			remove_megastructure_flag = relay_alpha
+			remove_megastructure_flag = relay_delta
+			remove_megastructure_flag = relay_gamma
+			remove_megastructure_flag = relay_lambda
+		}
+	}
+}
+
+# Void Relay Beta Inactive
+forerunner_slipspace_portal_beta_inactive = {
+	entity = "forerunner_02_slipspace_portal_entity"
+	construction_entity = "forerunner_02_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = yes
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_portal_activation
+		is_ai = no
+	}
+
+	construction_blocks_and_blocked_by = self_type
+
+	upgrade_from = {
+		forerunner_slipspace_portal_beta
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		fromfrom = {
+			set_megastructure_flag = relay_beta
+			remove_megastructure_flag = relay_omega
+			remove_megastructure_flag = relay_alpha
+			remove_megastructure_flag = relay_delta
+			remove_megastructure_flag = relay_gamma
+			remove_megastructure_flag = relay_lambda
+		}
+	}
+}
+
+# Void Relay Delta
+forerunner_slipspace_portal_delta = {
+	entity = "forerunner_01_slipspace_portal_entity"
+	construction_entity = "forerunner_01_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_portal_activation
+	}
+	construction_blocks_and_blocked_by = self_type
+	
+	country_modifier = {
+		country_base_influence_produces_add = 2
+	}
+
+	bypass_type = slipspace_delta
+	
+	placement_rules = {
+	}
+
+	upgrade_from = {
+		forerunner_slipspace_portal_deactivate
+		forerunner_slipspace_portal_delta_inactive
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 100
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = relay_delta
+			remove_megastructure_flag = relay_omega
+			remove_megastructure_flag = relay_alpha
+			remove_megastructure_flag = relay_beta
+			remove_megastructure_flag = relay_gamma
+			remove_megastructure_flag = relay_lambda
+		}
+	}
+}
+
+# Void Relay Delta Inactive
+forerunner_slipspace_portal_delta_inactive = {
+	entity = "forerunner_02_slipspace_portal_entity"
+	construction_entity = "forerunner_02_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = yes
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_portal_activation
+		is_ai = no
+	}
+
+	construction_blocks_and_blocked_by = self_type
+
+	upgrade_from = {
+		forerunner_slipspace_portal_delta
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		fromfrom = {
+			set_megastructure_flag = relay_delta
+			remove_megastructure_flag = relay_omega
+			remove_megastructure_flag = relay_alpha
+			remove_megastructure_flag = relay_beta
+			remove_megastructure_flag = relay_gamma
+			remove_megastructure_flag = relay_lambda
+		}
+	}
+}
+
+# Void Relay Gamma
+forerunner_slipspace_portal_gamma = {
+	entity = "forerunner_01_slipspace_portal_entity"
+	construction_entity = "forerunner_01_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_portal_activation
+	}
+	construction_blocks_and_blocked_by = self_type
+	
+	country_modifier = {
+		country_base_influence_produces_add = 2
+	}
+
+	bypass_type = slipspace_gamma
+	
+	placement_rules = {
+	}
+
+	upgrade_from = {
+		forerunner_slipspace_portal_deactivate
+		forerunner_slipspace_portal_gamma_inactive
+	}
+	
+	# root = system
+	# from = country
+
+
+	ai_weight = {
+		weight = 100
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = relay_gamma
+			remove_megastructure_flag = relay_omega
+			remove_megastructure_flag = relay_alpha
+			remove_megastructure_flag = relay_beta
+			remove_megastructure_flag = relay_delta
+			remove_megastructure_flag = relay_lambda
+		}
+	}
+}
+
+# Void Relay Gamma Inactive
+forerunner_slipspace_portal_gamma_inactive = {
+	entity = "forerunner_02_slipspace_portal_entity"
+	construction_entity = "forerunner_02_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = yes
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_portal_activation
+		is_ai = no
+	}
+
+	construction_blocks_and_blocked_by = self_type
+
+	upgrade_from = {
+		forerunner_slipspace_portal_gamma
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		fromfrom = {
+			set_megastructure_flag = relay_gamma
+			remove_megastructure_flag = relay_omega
+			remove_megastructure_flag = relay_alpha
+			remove_megastructure_flag = relay_beta
+			remove_megastructure_flag = relay_delta
+			remove_megastructure_flag = relay_lambda
+		}
+	}
+}
+
+# Void Relay Lambda
+forerunner_slipspace_portal_lambda = {
+	entity = "forerunner_01_slipspace_portal_entity"
+	construction_entity = "forerunner_01_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_portal_activation
+	}
+	construction_blocks_and_blocked_by = self_type
+	
+	country_modifier = {
+		country_base_influence_produces_add = 2
+	}
+
+	bypass_type = slipspace_lambda
+	
+	placement_rules = {
+	}
+
+	upgrade_from = {
+		forerunner_slipspace_portal_deactivate
+		forerunner_slipspace_portal_lambda_inactive
+	}
+	
+	# root = system
+	# from = country
+
+
+	ai_weight = {
+		weight = 100
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = relay_lambda
+			remove_megastructure_flag = relay_alpha
+			remove_megastructure_flag = relay_beta
+			remove_megastructure_flag = relay_delta
+			remove_megastructure_flag = relay_gamma
+			remove_megastructure_flag = relay_omega
+		}
+	}
+}
+
+# Void Relay Lambda Inactive
+forerunner_slipspace_portal_lambda_inactive = {
+	entity = "forerunner_02_slipspace_portal_entity"
+	construction_entity = "forerunner_02_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = yes
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_portal_activation
+		is_ai = no
+	}
+
+	construction_blocks_and_blocked_by = self_type
+
+	upgrade_from = {
+		forerunner_slipspace_portal_lambda
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		fromfrom = {
+			set_megastructure_flag = relay_lambda
+			remove_megastructure_flag = relay_alpha
+			remove_megastructure_flag = relay_beta
+			remove_megastructure_flag = relay_delta
+			remove_megastructure_flag = relay_gamma
+			remove_megastructure_flag = relay_omega
+		}
+	}
+}
+
+# Void Relay Epsilon
+forerunner_slipspace_portal_epsilon = {
+	entity = "forerunner_01_slipspace_portal_entity"
+	construction_entity = "forerunner_01_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_portal_activation
+	}
+	construction_blocks_and_blocked_by = self_type
+	
+	country_modifier = {
+		country_base_influence_produces_add = 2
+	}
+
+	bypass_type = slipspace_lambda
+	
+	placement_rules = {
+	}
+
+	upgrade_from = {
+		forerunner_slipspace_portal_deactivate
+		forerunner_slipspace_portal_epsilon_inactive
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 100
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = relay_epsilon
+			remove_megastructure_flag = relay_alpha
+			remove_megastructure_flag = relay_beta
+			remove_megastructure_flag = relay_delta
+			remove_megastructure_flag = relay_gamma
+			remove_megastructure_flag = relay_lambda
+			remove_megastructure_flag = relay_omega
+		}
+	}
+}
+
+# Void Relay Epsilon Inactive
+forerunner_slipspace_portal_epsilon_inactive = {
+	entity = "forerunner_02_slipspace_portal_entity"
+	construction_entity = "forerunner_02_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = yes
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_portal_activation
+		is_ai = no
+	}
+
+	construction_blocks_and_blocked_by = self_type
+
+	upgrade_from = {
+		forerunner_slipspace_portal_epsilon
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		fromfrom = {
+			set_megastructure_flag = relay_epsilon
+			remove_megastructure_flag = relay_alpha
+			remove_megastructure_flag = relay_beta
+			remove_megastructure_flag = relay_delta
+			remove_megastructure_flag = relay_gamma
+			remove_megastructure_flag = relay_lambda
+			remove_megastructure_flag = relay_omega
+		}
+	}
+}
+
+# Void Relay Perdition (local wave)
+forerunner_slipspace_portal_perdition = {
+	entity = "forerunner_01_slipspace_portal_entity"
+	construction_entity = "forerunner_01_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_field
+	}
+	construction_blocks_and_blocked_by = self_type
+	
+	country_modifier = {
+		country_base_influence_produces_add = 2
+	}
+	
+	placement_rules = {
+	}
+
+	upgrade_from = {
+		forerunner_slipspace_portal_deactivate
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 100
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = relay_epsilon
+			remove_megastructure_flag = relay_alpha
+			remove_megastructure_flag = relay_beta
+			remove_megastructure_flag = relay_delta
+			remove_megastructure_flag = relay_gamma
+			remove_megastructure_flag = relay_lambda
+			remove_megastructure_flag = relay_omega
+		}
+	}
+}
+
+# Void Relay Deactivate
+forerunner_slipspace_portal_deactivate = {
+	entity = "forerunner_02_slipspace_portal_entity"
+	construction_entity = "forerunner_02_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = yes
+	build_time = 1
+
+	potential = {
+		has_technology = tech_slipspace_field
+		is_ai = no
+	}
+	
+	upgrade_from = {
+		forerunner_slipspace_portal_omega_inactive
+		forerunner_slipspace_portal_alpha_inactive
+		forerunner_slipspace_portal_beta_inactive
+		forerunner_slipspace_portal_delta_inactive
+		forerunner_slipspace_portal_gamma_inactive
+		forerunner_slipspace_portal_epsilon_inactive
+		forerunner_slipspace_portal_lambda_inactive
+		forerunner_slipspace_portal_perdition
+		forerunner_slipspace_portal_primary_unlinked
+	}
+	
+	placement_rules = {
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {}
+}
+
+# Forerunner Slipspace Portal Inactive (Construct)
+forerunner_slipspace_portal_inactive = {
+	entity = "forerunner_02_slipspace_portal_entity"
+	construction_entity = "forerunner_02_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 30
+	resources = {
+		category = megastructures 
+		cost = {
+			alloys = 2500
+		}
+	}
+	potential = {
+		has_technology = tech_slipspace_field
+		is_ai = no
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_technology_slipspace_field"
+			from = { has_technology = tech_slipspace_field }
+		}
+	}
+	
+	country_modifier = {
+		country_base_influence_produces_add = 2
+	}
+	
+	placement_rules = {
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+		set_star_flag = slipspace_portal_built
+		from = { 
+			set_country_flag = built_slipspace_portal
+			country_event = { id = ForerunnerShieldEvent.11 }
+		}
+		fromfrom = { 
+			save_global_event_target_as = slipspace_relay
+		}
+		spawn_megastructure = {
+			type = forerunner_slipspace_portal_deactivate
+			owner = from
+			coords_from = event_target:slipspace_relay
+		}
+		remove_megastructure = event_target:slipspace_relay
+	}
+}
+
+# Forerunner Slipspace Portal Dismantle
+forerunner_slipspace_portal_dismantle = {
+	entity = "forerunner_02_slipspace_portal_entity"
+	construction_entity = "forerunner_02_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 30
+	potential = {
+		has_technology = tech_slipspace_field
+		is_ai = no
+	}
+
+	construction_blocks_and_blocked_by = self_type
+	
+	country_modifier = {
+		country_base_influence_produces_add = 2
+	}
+	
+	placement_rules = {
+	}
+
+	upgrade_from = {
+		forerunner_slipspace_portal_deactivate
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		remove_star_flag = slipspace_portal_built
+		remove_megastructure = fromfrom
+	}
+}
+
+# Crucible
+forerunner_crucible = {
+	entity = "btr_crucible_mid_1_entity"
+	construction_entity = "btr_crucible_mid_1_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 10
+	resources = {
+		category = megastructures 
+		cost = {
+			alloys = 2500
+		}
+	}
+
+	potential = {
+		has_technology = tech_slipspace_field
+		is_ai = no
+	}
+
+	upgrade_from = {
+		forerunner_crucible_construct
+	}
+	
+	country_modifier = {
+	}
+	
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {}
+}
+
+# Crucible Dismantle
+forerunner_crucible_dismantle = {
+	entity = "btr_crucible_mid_1_entity"
+	construction_entity = "btr_crucible_mid_1_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 10
+
+	potential = {
+		has_technology = tech_slipspace_field
+		is_ai = no
+	}
+
+	upgrade_from = {
+		forerunner_crucible
+	}
+	
+	country_modifier = {
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		remove_megastructure = fromfrom
+	}
+}
+
+# Crucible Construct
+forerunner_crucible_construct = {
+	entity = "btr_crucible_mid_1_entity"
+	construction_entity = "btr_crucible_mid_1_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 365
+	resources = {
+		category = megastructures 
+		cost = {
+			alloys = 2500
+		}
+	}
+	potential = {
+		AND = {
+			has_technology = tech_slipspace_field
+			has_technology = giga_tech_tetradimensional_engineering
+			is_ai = no
+		}
+
+	}
+	possible = {
+		OR = {
+			any_system_planet = {
+				is_planet_class = pc_obicitadel
+			}
+			any_system_megastructure = {
+				OR = {
+					is_megastructure_type = forerunner_slipspace_portal
+					is_megastructure_type = forerunner_slipspace_portal_alpha
+					is_megastructure_type = forerunner_slipspace_portal_beta
+					is_megastructure_type = forerunner_slipspace_portal_delta
+					is_megastructure_type = forerunner_slipspace_portal_gamma
+					is_megastructure_type = forerunner_slipspace_portal_lambda
+					is_megastructure_type = forerunner_slipspace_portal_epsilon
+					is_megastructure_type = forerunner_slipspace_portal_perdition
+				}
+			}
+		}
+	}
+	
+	country_modifier = {
+	}
+	
+	placement_rules = {
+	}
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		spawn_megastructure = {
+			type = forerunner_crucible
+			coords_from = fromfrom
+		}
+		remove_megastructure = fromfrom
+	}
+}
+
+# Citadel Relay Active
+forerunner_citadel_omega = {
+	entity = "forerunner_04_slipspace_portal_entity"
+	construction_entity = "forerunner_04_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+	resources = {
+		category = megastructures 
+		cost = {
+			alloys = 2500
+		}
+	}
+
+	potential = {
+		has_technology = tech_slipspace_field
+		is_ai = no
+	}
+
+	upgrade_from = {
+		forerunner_citadel_inactive
+	}
+	
+	country_modifier = {
+	}
+	
+	bypass_type = slipspace
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+	}
+}
+
+# Citadel Relay Inactive
+forerunner_citadel_inactive = {
+	entity = "forerunner_04_slipspace_portal_entity"
+	construction_entity = "forerunner_04_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+	resources = {
+		category = megastructures 
+		cost = {
+			alloys = 2500
+		}
+	}
+
+	potential = {
+		has_technology = tech_slipspace_field
+		is_ai = no
+	}
+
+	upgrade_from = {
+		forerunner_citadel_omega
+	}
+	
+	country_modifier = {
+	}
+	
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {}
+}
+
+
+#FOR ARK ORIGIN
+forerunner_ark = {
+	entity = "no_ark_planet_entity"
+	construction_entity = "no_ark_planet_entity"
+	portrait = "GFX_forerunner_ark"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = 0 y = 0 }
+	build_time = 730
+	resources = {
+		category = megastructures
+		produces = {
+			minerals = 100
+			alloys = 100
+		}
+	}
+	country_modifier = {
+		megastructure_build_speed_mult = 10.0
+		country_megastructure_build_cap_add = 100
+	}
+	potential = {
+		always = no
+	}
+}
+
+#FOR BUILDING ARKS 
+forerunner_lesser_ark_1 = {
+	entity = "construction_platform_entity"
+	construction_entity = construction_platform_entity
+	place_entity_on_planet_plane = no 
+	entity_offset = { x = -7 y = -7 }
+	build_time = 730
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	potential = {
+		NOT = {
+			count_owned_planet = {
+				count = 1
+				limit = {
+					is_planet_class = pc_forerunner_ark	
+				}
+			}				
+		}
+	}
+	
+	prerequisites = { "tech_shield_worlds" }
+
+	possible = {
+		exists = starbase 
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_habitable_planets"
+			NOT = {
+				any_system_planet = {
+					colonizable_planet = yes 
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_black_hole"
+			NOT = { is_star_class = sc_black_hole }
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_binary_trinary"
+			NOR = {
+				is_star_class = sc_binary_1
+				is_star_class = sc_binary_2
+				is_star_class = sc_binary_3
+				is_star_class = sc_binary_4
+				is_star_class = sc_binary_5
+				is_star_class = sc_binary_6
+				is_star_class = sc_binary_7
+				is_star_class = sc_binary_8
+				is_star_class = sc_binary_9
+				is_star_class = sc_binary_10
+				is_star_class = sc_trinary_1
+				is_star_class = sc_trinary_2
+				is_star_class = sc_trinary_3
+				is_star_class = sc_trinary_4
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			#NOT = { has_any_megastructure = yes }
+			has_no_non_gate_megastructure = yes
+		}
+	}
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "must_build_around_star"
+				is_star = yes
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_planets_for_material"
+				hidden:solar_system = { any_system_planet = { NOT = { is_star = yes } } }
+			}
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		set_star_flag = built_forerunner_structure
+		from = { country_event = { id = ForerunnerShieldEvent.7 } }
+	}
+}
+
+forerunner_lesser_ark_2 = {
+	entity = "ark_installation_01_entity"
+	construction_entity = "ark_installation_01_entity"
+	portrait = "GFX_forerunner_ark"
+	build_time = 730
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 30000
+		}
+	}
+	
+	upgrade_from = {
+		forerunner_lesser_ark_1
+	}
+	
+	prerequisites = { "tech_shield_worlds" }
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		every_system_planet = {
+			limit = { is_star = no }
+			remove_planet = yes 
+		}
+		every_system_planet = {
+			limit = { is_star = yes }
+			change_pc = pc_artificial_star
+		}
+		set_asteroid_belt = {
+			radius = 0
+		}
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+			set_star_flag = built_forerunner_structure
+		}
+		spawn_planet = {
+			class = "pc_forerunner_ark"
+			location = fromfrom
+			orbit_distance_offset = 0
+			size = 30
+			init_effect = {
+				set_planet_entity = {
+					entity = "ark_installation_01_entity"
+					picture = pc_forerunner_ark
+				}
+				prevent_anomaly = yes
+				clear_deposits = yes
+				add_deposit = d_ark_cartographer
+				add_deposit = d_ark_citadel
+				add_deposit = d_ark_foundry
+				add_deposit = d_ark_grid
+				add_deposit = d_ark_agriculture
+				add_deposit = d_automated_sentinel_factory
+				set_name = "Ark Installation"
+				set_surveyed = { surveyed = yes surveyor = FROM }
+				add_building = "building_capital"
+				add_modifier = {
+					modifier = forerunner_ark_capital
+					days = -1
+				}
+				add_modifier = {
+					modifier = halo_ring_monitor
+					days = -1
+				}
+				set_planet_flag = megastructure
+				trigger_megastructure_icon = yes
+				set_all_comms_surveyed = yes
+				clear_blockers = yes
+			}
+		}
+		remove_megastructure = fromfrom
+		spawn_megastructure = {
+			name = "Ark Foundry"
+			type = forerunner_ark
+			orbit_distance = 0.2
+			owner = from
+		}
+		from = { 
+			country_event = { id = ForerunnerShieldEvent.8 }
+		}
+	}
+}
+
+# Aegis Installation Construction Yard
+forerunner_shield_world_0 = {
+	entity = "construction_platform_entity"
+	portrait = "GFX_forerunner_shield_world_yard"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = @phase_0_entity_x y = @phase_0_entity_y }
+	build_time = 730
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+		}
+		
+		upkeep = {
+			energy = 20
+		}
+	}
+	
+	prerequisites = { "tech_shield_worlds" }
+	
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		#custom_tooltip = {
+		#	fail_text = "requires_no_existing_forerunner_structure"
+		#	NOT = {
+		#		has_star_flag = built_forerunner_structure
+		#	}
+		#}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_surveyed_planet"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				#can_build_megastructure_on_planet = yes
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+					solar_system = {
+						has_star_flag = ring_world_built
+					}
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_seam_damaged
+					is_planet_class = pc_habitat
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_forerunner_installation"
+				NOR = {
+					is_planet_class = pc_forerunner_halo
+					is_planet_class = pc_forerunner_halo_activated
+					is_planet_class = pc_forerunner_shield
+					is_planet_class = pc_obirequiem
+					is_planet_class = pc_maethrillian
+					is_planet_class = pc_forerunner_ark
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_gas_giant"
+				NOT = { is_planet_class = pc_gas_giant }
+			}
+			
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+		} # use these for all non-star megastructures
+	}
+	ai_weight = {
+		factor = 5
+		
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}
+		
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = { 
+					owner = { is_same_value = from } 
+				}
+			}
+		}
+	}
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		#fromfrom.planet = {
+		#	set_planet_flag = has_megastructure
+		#}
+		from = { country_event = { id = ForerunnerShieldEvent.1 } }
+	}
+}
+
+# Maethrillia
+forerunner_maethrillian = {
+	entity = "construction_platform_entity"
+	portrait = "GFX_forerunner_maethrillian"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = 0 y = 0 }
+	build_time = 365
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+		}
+	}
+
+	potential = {
+		NOT = {
+			count_owned_planet = {
+				count = 1
+				limit = {
+					is_planet_class = pc_maethrillian	
+				}
+			}				
+		}
+	}
+
+	upgrade_from = {
+		forerunner_shield_world_0
+	}
+
+	on_build_complete = {
+		fromfrom.planet = {
+			clear_deposits = yes
+			clear_planet_modifiers = yes
+			change_pc = pc_maethrillian
+			set_planet_size = 50
+			add_deposit = d_design_seed
+			add_deposit = d_maethrillian_metarchy
+			add_deposit = d_maethrillian_grid
+			add_deposit = d_maethrillian_council_amphitheater
+			add_deposit = d_maethrillian_crown
+			add_deposit = d_maethrillian_mysterium
+			add_deposit = d_automated_sentinel_factory
+			add_modifier = {
+				modifier = halo_ring_monitor
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_submonitor
+				days = -1
+			}
+			clear_blockers = yes
+		}
+		remove_megastructure = fromfrom
+	}
+}
+
+# Citadel
+forerunner_citadel = {
+	entity = "construction_platform_entity"
+	portrait = "GFX_forerunner_maethrillian"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = 0 y = 0 }
+	build_time = 180
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+		}
+	}
+
+	potential = {
+		NOT = {
+			count_owned_planet = {
+				count = 1
+				limit = {
+					is_planet_class = pc_obicitadel
+				}
+			}				
+		}
+	}
+
+	upgrade_from = {
+		forerunner_shield_world_0
+	}
+
+	on_build_complete = {
+		fromfrom.planet = {
+			clear_planet_modifiers = yes
+			change_pc = pc_obicitadel
+			set_planet_size = 30
+			clear_deposits = yes
+			clear_blockers = yes
+			add_deposit = d_citadel_wards
+			add_deposit = d_citadel_presidium
+			add_deposit = d_citadel_tower
+			add_deposit = d_citadel_csec
+			add_deposit = d_citadel_huerta_memorial_hospital
+			add_deposit = d_citadel_joint_research_division
+			add_deposit = d_citadel_keeper_workshops
+			add_deposit = d_citadel_inactive_relay_control
+			solar_system = {
+				spawn_megastructure = {
+					type = forerunner_citadel_inactive
+					owner = from
+					coords_from = prev
+				}
+			}
+			add_modifier = {
+				modifier = halo_ring_monitor
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_submonitor
+				days = -1
+			}
+		}
+		remove_megastructure = fromfrom
+	}
+}
+
+# Aegis Installation
+forerunner_shield_world_1 = {
+	entity = "machine_planet_01_entity"
+	construction_entity = "machine_planet_01_entity"
+	portrait = "GFX_forerunner_shield_world"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = 0 y = 0 }
+	build_time = 730
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 12500
+		}
+	}
+	upgrade_from = {
+		forerunner_shield_world_0
+	}
+	
+	station_modifier = {
+	}
+	country_modifier = {
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+		}
+		fromfrom.planet = {
+			change_pc = "pc_forerunner_shield"
+			set_planet_size = 30
+			prevent_anomaly = yes
+			clear_deposits = yes
+			clear_planet_modifiers = yes
+			add_deposit = d_sw_apex_site
+			add_deposit = d_sw_access_tunnels
+			add_deposit = d_sw_surface
+			add_deposit = d_sw_outer_surface
+			add_deposit = d_automated_sentinel_factory
+			set_name = "Aegis 0000-00-#"
+			set_surveyed = { surveyed = yes surveyor = FROM }
+			add_building = "building_capital"
+			add_modifier = {
+				modifier = forerunner_artificial_star
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_monitor
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_submonitor
+				days = -1
+			}
+			clear_blockers = yes
+		}
+		remove_megastructure = fromfrom
+		from = { 
+			country_event = { id = ForerunnerShieldEvent.2 }
+		}
+    }
+}
+
+# Tactical Aegis Installation
+requiem_shield_world_1 = {
+	entity = "machine_planet_01_entity"
+	construction_entity = "machine_planet_01_entity"
+	portrait = "GFX_requiem_shield_world"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = 0 y = 0 }
+	build_time = 1095
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 25000
+		}
+	}
+	upgrade_from = {
+		forerunner_shield_world_0
+	}
+
+	potential = {
+		NOT = {
+			count_owned_planet = {
+				count = 1
+				limit = {
+					is_planet_class = pc_obirequiem	
+				}
+			}				
+		}
+	}
+	
+	station_modifier = {
+	}
+	country_modifier = {
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+		}
+		fromfrom.planet = {
+			change_pc = "pc_obirequiem"
+			set_planet_size = 30
+			prevent_anomaly = yes
+			clear_deposits = yes
+			clear_planet_modifiers = yes
+			add_deposit = d_requiem_war_room
+			add_deposit = d_requiem_apex
+			add_deposit = d_requiem_lockup
+			add_deposit = d_requiem_ravine
+			add_deposit = d_requiem_cauldron
+			add_deposit = d_sw_access_tunnels
+			add_deposit = d_automated_sentinel_factory
+			set_name = "Aegis 0000-00-T"
+			set_surveyed = { surveyed = yes surveyor = FROM }
+			add_building = "building_capital"
+			add_modifier = {
+				modifier = forerunner_requiem_artificial_star
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_monitor
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_submonitor
+				days = -1
+			}
+			clear_blockers = yes
+		}
+		remove_megastructure = fromfrom
+		from = { 
+			country_event = { id = ForerunnerShieldEvent.6 }
+		}
+    }
+}
+
+# Library Aegis Installation
+genesis_shield_world_1 = {
+	entity = "machine_planet_01_entity"
+	construction_entity = "machine_planet_01_entity"
+	portrait = "GFX_genesis_shield_world"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = 0 y = 0 }
+	build_time = 365
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 6250
+		}
+	}
+	upgrade_from = {
+		forerunner_shield_world_0
+	}
+	
+	station_modifier = {
+	}
+	country_modifier = {
+	}
+
+	potential = {
+		NOT = {
+			count_owned_planet = {
+				count = 1
+				limit = {
+					is_planet_class = pc_genesis
+				}
+			}				
+		}
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+			set_star_flag = built_forerunner_structure
+		}
+		fromfrom.planet = {
+			change_pc = "pc_genesis"
+			set_planet_size = 30
+			prevent_anomaly = yes
+			clear_deposits = yes
+			clear_planet_modifiers = yes
+			add_deposit = d_genesis_coral_highlands
+			add_deposit = d_genesis_builder_facilities
+			add_deposit = d_genesis_builder_research_facilities
+			add_deposit = d_genesis_builder_factories
+			add_deposit = d_genesis_builder_generator_facilities
+			add_deposit = d_genesis_domain_gateway
+			add_deposit = d_automated_sentinel_factory
+			add_deposit = d_dust_caverns
+			add_deposit = d_bubbling_swamp
+			add_deposit = d_crystalline_caverns
+			add_deposit = d_searing_desert
+			add_deposit = d_frozen_gas_lake
+			add_deposit = d_underwater_vents
+			add_deposit = d_tempestuous_mountain
+			add_deposit = d_prosperous_mesa
+			add_deposit = d_ore_rich_caverns
+			add_deposit = d_submerged_ore_veins
+			add_deposit = d_lush_jungle
+			add_deposit = d_black_soil
+			add_deposit = d_teeming_reef
+			set_name = "Aegis 0000-00-L"
+			set_surveyed = { surveyed = yes surveyor = FROM }
+			add_building = "building_capital"
+			add_modifier = {
+				modifier = genesis_moons
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_monitor
+				days = -1
+			}
+			add_modifier = {
+				modifier = halo_ring_submonitor
+				days = -1
+			}
+			clear_blockers = yes
+		}
+		remove_megastructure = fromfrom
+		from = { 
+			country_event = { id = ForerunnerShieldEvent.10 }
+		}
+    }
+}
+
+#HALO RINGS
+forerunner_halo_ring_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_forerunner_halo_ring_yard"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -7 y = -7 }
+	build_time = 730
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+	
+	prerequisites = { 
+		"tech_shield_worlds"
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_halo_ring"
+			NOT = {
+				any_system_planet = {
+					is_halo_ring = yes
+				}
+			}
+		}
+	}
+	
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+		}
+		
+	}
+	
+	ai_weight = {
+		factor = 0		
+		
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}	
+
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = {
+					owner = { is_same_value = from } 
+				}
+			}
+		}	
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		#fromfrom.planet = {
+		#	set_planet_flag = has_megastructure
+		#}
+		from = { country_event = { id = ForerunnerShieldEvent.3 } }
+	}
+}
+
+forerunner_halo_ring_1 = {
+	entity = ""
+	construction_entity = "halo_ring_01_entity"
+	portrait = "GFX_forerunner_halo_ring"
+	build_time = 730
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+		}
+	}
+	
+	upgrade_from = {
+		forerunner_halo_ring_0
+	}
+	
+	prerequisites = { 
+		"tech_shield_worlds"
+	}
+	show_prereqs = yes
+	prereq_name = "RING_WORLD_SHOW_NAME"
+	
+	on_build_complete = {
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+			set_star_flag = has_forerunner_ring
+		}
+		spawn_planet = {
+			class = "pc_forerunner_halo"
+			location = fromfrom
+			orbit_angle_offset = 15
+			size = 5
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+				add_deposit = d_hr_control_room
+				add_deposit = d_hr_cartographer
+				add_deposit = d_hr_library
+				add_deposit = d_hr_beam_emitter
+				add_deposit = d_automated_sentinel_factory
+				create_colony = { owner = from species = from }
+				create_pop = { species = from }
+				add_building = "building_capital"
+				set_name = "Halo Installation"
+				set_planet_entity = {
+					entity = "halo_ring_01_entity"
+				}
+				add_modifier = {
+					modifier = halo_ring_monitor
+					days = -1
+				}
+				set_surveyed = {
+					surveyed = yes
+					surveyor = FROM
+				}
+				set_all_comms_surveyed = yes
+				set_planet_flag = megastructure
+				clear_blockers = yes
+				trigger_megastructure_icon = yes
+			}
+		}
+		remove_megastructure = fromfrom
+		from = {
+			country_event = { id = ForerunnerShieldEvent.4 }
+		}
+	}
+}
