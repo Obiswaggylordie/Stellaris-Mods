@@ -1,6 +1,6 @@
-dtf_orbital_defense_system = {
+efg_orbital_defense_system = {
 	
-	graphical_culture = no
+	graphical_culture = { "asuran_01" }
 	max_speed = 0
 	acceleration = 0
 	rotation_speed = 0.5
@@ -45,7 +45,7 @@ dtf_orbital_defense_system = {
 
 	selectable = { host_has_dlc = "Apocalypse" }
 
-	prerequisites = { "tech_dtf_technology_1" }
+	prerequisites = { "tech_efg_technology_1" }
 
 	class = shipclass_military_station
 	required_component_set = "power_core"

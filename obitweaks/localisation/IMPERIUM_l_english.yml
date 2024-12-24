@@ -438,10 +438,10 @@ pc_mechanicus_forge_desc: "A true Forge world run by the Adeptus Mechanicus only
 mechanicus_forge_planet: "Forge World"
 mechanicus_forge_planet_desc: "A true Forge world run by the Adeptus Mechanicus only manned by tech preists, servitors, Arch-magos and associated workers"
 
-pc_relic_iom: "§HRuins World§!"
-pc_relic_iom_desc: "Ruins everywhere..."
+pc_relic_iom: "§HRuined World§!"
+pc_relic_iom_desc: "A planet brought down to absolute ruin, it's hard to believe civilisation even exists here."
 pc_city_iom: "§HImperial Throne World§!"
-pc_city_iom_desc: "Pearl of the civilisation..."
+pc_city_iom_desc: "The heart of the Rinneworldian Hegemony."
 
 pc_armoury: "Armoury World"
 pc_armoury_desc: "This heavily defended world is used by the Departmento Munitorum to store vast amounts of weapons, ammunition, and war machines, while they await to be transported to wherever they are needed or can raise armies at a moments notice."
