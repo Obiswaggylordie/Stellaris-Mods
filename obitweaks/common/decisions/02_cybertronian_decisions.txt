@@ -564,9 +564,6 @@ decision_omega_lock_target = {
 				is_planet_class = pc_corrupted_cybertronian_world
 				is_planet_class = pc_damaged_cybertron
 				is_planet_class = pc_dead_cybertron
-				is_planet_class = pc_gas_giant
-				is_star = yes
-				is_asteroid = yes
 			}
 		}
 	}

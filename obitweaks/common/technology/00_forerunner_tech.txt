@@ -387,9 +387,9 @@ tech_advanced_slipspace_field = {
 }
 
 tech_slipspace_portal_activation = {
-	cost = @tier1cost3
+	cost = @tier4cost3
 	area = physics
-	tier = 1
+	tier = 4
 	category = { particles }
 	is_rare = yes
 	is_reverse_engineerable = yes
@@ -409,7 +409,6 @@ tech_slipspace_portal_activation = {
 					has_seen_any_bypass = slipspace_delta
 					has_seen_any_bypass = slipspace_gamma
 					has_seen_any_bypass = slipspace_lambda
-					has_seen_any_bypass = slipspace_epsilon
 				}
 				any_relation = {
 					is_country_type = default

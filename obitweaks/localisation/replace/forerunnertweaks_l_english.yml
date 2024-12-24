@@ -576,17 +576,17 @@
 #WARDEN ETERNAL 
  
  warden_eternal: "Library Sentinel"
- warden_eternal_desc: "The Library Sentinel is a psionic entity derived from the Library, the metaphysical Zei'a repository of knowledge. It exists for the purpose of chasing away potential threats to the Library, for it will not tolerate any of its knowledge being destroyed, nor will it accept its information to be abused." 
+ warden_eternal_desc: "The Library Sentinel is a psionic entity derived from the Library, the metaphysical Zei'a repository of knowledge. It exists for the purpose of chasing away potential threats to the Library, for it will not tolerate any of its knowledge being destroyed, nor will it accept its information to be abused.." 
  
 #####################
 #FORERUNNER BUILDINGS
 #####################
  
- building_sentinel_factory: "Uviik Manufacturing Facility"
- building_sentinel_factory_desc: "Zei'a facilities that manufacture various types of Uviik."
+ building_sentinel_factory: "Forerunner Sentinel Manufacturing Facility"
+ building_sentinel_factory_desc: "Forerunner facilities that manufacture various types of forerunner sentinels. Unlocks sentinel and armiger army types."
  
- building_promethean_factory: "Agon War-Forge"
- building_promethean_factory_desc: "An advanced Zei'a military factory, designed to manufacture untold amounts of weapons and equipment."
+ building_promethean_factory: "Promethean War-Forge"
+ building_promethean_factory_desc: "A Promethean manufacturing facility based on the Requiem Forge with an integrated miniature Composer used to assemble mechanical Promethean constructs."
  
  building_forerunner_vacuum_generator: "Forerunner Vacuum Generator"
  building_forerunner_vacuum_generator_desc: "A facility used generate vacuum energy, a near limitless source of power siphoned from the birth of fledgling universes."
@@ -612,22 +612,22 @@
  building_forerunner_xeno_zoo: "Forerunner Lifeworker Preserve"
  building_forerunner_xeno_zoo_desc: "A large research preserve staffed by Lifeworkers to study alien life."
  
- building_forerunner_stronghold: "Agon Fortress"
- building_forerunner_stronghold_desc: "A massive planetary defense complex housing a multitude of barracks and armories equipped with advanced zei'a weaponry and a local anti-electron caster defense network."
+ building_forerunner_stronghold: "Forerunner Warrior-Servant Keep"
+ building_forerunner_stronghold_desc: "A massive planetary defense complex housing a multitude of barracks and armories equipped with advanced forerunner weaponry and a local particle cannon defense network."
 
 #SOLDIER JOBS 
- job_warrior_servant: "Bellator"
- job_warrior_servant_plural: "Bellators"
- job_warrior_servant_desc: "Kvil'sha belonging to the Agon phenotype, each warrior is a genetically-enhanced supersoldier and protector of the Collective."
+ job_warrior_servant: "Warrior-Servant"
+ job_warrior_servant_plural: "Warrior-Servants"
+ job_warrior_servant_desc: "Forerunners that serve the Warrior-Servant rate, each warrior is a genetically-enhanced supersoldier and protector of the Mantle."
  job_warrior_servant_effect_desc: "£job_warrior_servant£ $job_warrior_servant_plural$ use $r_alloys$ to provide £mod_country_naval_cap_add£ §YNaval Capacity§!, £defense_army£ §YDefense Armies§! and £unity£ §YUnity§!." 
  mod_job_warrior_servant_add: "$job_warrior_servant$ Jobs"
  mod_job_warrior_servant_per_pop: "§G+1§! $job_warrior_servant$ Job per $VALUE$ Pops"
  mod_job_warrior_servant_per_pop_short: "\n§G+1§! £job_warrior_servant£ per $VALUE$ £pop£"
  warrior_servant_independent_category:0 "Warrior-Servants"
  
- job_promethean_warrior_servant: "Grand Bellator"
- job_promethean_warrior_servant_plural: "Grand Bellators"
- job_promethean_warrior_servant_desc:1 "The highest and most respected group of warriors, further augmented to become the pinnacle supersoldiers of the Zei'a military."
+ job_promethean_warrior_servant: "Promethean Warrior-Servant Commander"
+ job_promethean_warrior_servant_plural: "Promethean Warrior-Servant Commanders"
+ job_promethean_warrior_servant_desc:1 "The highest and most respected group of Warrior-Servants, further augmented to become the pinnacle supersoldiers of the Forerunner military."
  job_promethean_warrior_servant_effect_desc: "£job_promethean_warrior_servant£ $job_promethean_warrior_servant_plural$ turn $r_alloys$ into $r_unity$, $r_amenities$ and £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!."
  job_promethean_warrior_servant_research_effect_desc: "£job_promethean_warrior_servant£ $job_promethean_warrior_servant_plural$ turn $r_alloys$ into $r_unity$, $r_research$, $r_amenities$ and £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!."
  mod_job_promethean_warrior_servant_add: "$job_promethean_warrior_servant$ Jobs"

@@ -1,0 +1,429 @@
+
+@dtf_rf_build_time_1 = 1800
+@dtf_rf_build_time_2 = 2400
+@dtf_rf_build_time_3 = 3600
+@dtf_rf_build_time_4 = 3600
+@dtf_rf_build_time_5 = 3600
+@dtf_rf_build_time_6 = 3600
+
+
+@dtf_rfproduces_energy_1 = 400
+@dtf_rfproduces_energy_2 = 750
+@dtf_rfproduces_energy_3 = 1500
+@dtf_rfproduces_energy_4 = 3600
+@dtf_rfproduces_energy_5 = 4800
+@dtf_rfproduces_energy_6 = 6000
+
+@dtf_rfproduces_minerals_1 = 200
+@dtf_rfproduces_minerals_2 = 500
+@dtf_rfproduces_minerals_3 = 800
+@dtf_rfproduces_minerals_4 = 1200
+@dtf_rfproduces_minerals_5 = 1600
+@dtf_rfproduces_minerals_6 = 2000
+
+@dtf_rfproduces_alloys_1 = 240
+@dtf_rfproduces_alloys_2 = 400
+@dtf_rfproduces_alloys_3 = 1000
+@dtf_rfproduces_alloys_4 = 2400
+@dtf_rfproduces_alloys_5 = 5000
+@dtf_rfproduces_alloys_6 = 10000
+
+@dtf_rfproduces_consumer_goods_1 = 100
+@dtf_rfproduces_consumer_goods_2 = 200
+@dtf_rfproduces_consumer_goods_3 = 400
+@dtf_rfproduces_consumer_goods_4 = 600
+@dtf_rfproduces_consumer_goods_5 = 800
+@dtf_rfproduces_consumer_goods_6 = 1000
+
+
+@dtf_rfupkeep_rare_1 = 5
+@dtf_rfupkeep_rare_2 = 10
+@dtf_rfupkeep_rare_3 = 15
+@dtf_rfupkeep_rare_4 = 20
+@dtf_rfupkeep_rare_5 = 25
+@dtf_rfupkeep_rare_6 = 30
+
+@dtf_rfupkeep_dark_matter_1 = 2.5
+@dtf_rfupkeep_dark_matter_2 = 5
+@dtf_rfupkeep_dark_matter_3 = 7.5
+@dtf_rfupkeep_dark_matter_4 = 10
+@dtf_rfupkeep_dark_matter_5 = 12.5
+@dtf_rfupkeep_dark_matter_6 = 15
+
+
+
+###############################################################
+# Resource Factory
+###############################################################
+
+dtf_resource_factory_1 = {
+	entity = "interstellar_assembly_stage_1_entity"
+	construction_entity = "interstellar_assembly_stage_1_entity"
+	portrait = "GFX_dtf_mega_dimentional_time_fault_factory"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -27 y = -27 }
+	show_galactic_map_icon = yes
+	
+	build_time = @dtf_rf_build_time_1
+
+	potential = {
+		always = no
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+	
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+		}
+	}
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000000
+			unity = 1000000
+			influence = 100000
+		}
+
+		upkeep = {
+			exotic_gases = @dtf_rfupkeep_rare_1
+			rare_crystals = @dtf_rfupkeep_rare_1
+			volatile_motes = @dtf_rfupkeep_rare_1
+			#sr_dark_matter = @dtf_rfupkeep_dark_matter_1
+		}
+
+		produces = {	
+			energy = @dtf_rfproduces_energy_1
+			minerals = @dtf_rfproduces_minerals_1
+			alloys = @dtf_rfproduces_alloys_1
+			consumer_goods = @dtf_rfproduces_consumer_goods_1
+		}
+	}
+
+	country_modifier = {
+		country_resource_max_add = 100000
+	}
+
+	prerequisites = { "tech_dtf_pretech" }
+	show_prereqs = yes
+
+	on_build_complete = {
+		set_planet_flag = mega_shipyard_built
+		from = {
+			set_country_flag = has_dtf_resource_factory_1
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+dtf_resource_factory_2 = {
+	entity = "interstellar_assembly_stage_2_entity"
+	construction_entity = "interstellar_assembly_stage_2_entity"
+	portrait = "GFX_dtf_mega_dimentional_time_fault_factory"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -27 y = -27 }
+	show_galactic_map_icon = yes
+	
+	build_time = @dtf_rf_build_time_2
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 20000
+			unity = 2000
+			influence = 200
+		}
+
+		upkeep = {
+			exotic_gases = @dtf_rfupkeep_rare_2
+			rare_crystals = @dtf_rfupkeep_rare_2
+			volatile_motes = @dtf_rfupkeep_rare_2
+			sr_dark_matter = @dtf_rfupkeep_dark_matter_2
+		}
+
+		produces = {	
+			energy = @dtf_rfproduces_energy_2
+			minerals = @dtf_rfproduces_minerals_2
+			alloys = @dtf_rfproduces_alloys_2
+			consumer_goods = @dtf_rfproduces_consumer_goods_2
+		}
+	}
+
+	upgrade_from = {
+		dtf_resource_factory_1
+	}
+
+	country_modifier = {
+		country_resource_max_add = 500000
+	}
+
+	prerequisites = { "tech_dtf_technology_1" }
+	show_prereqs = yes
+
+	on_build_complete = {
+		set_planet_flag = mega_shipyard_built
+		from = {
+			set_country_flag = has_dtf_resource_factory_2
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+dtf_resource_factory_3 = {
+	entity = "interstellar_assembly_stage_3_entity"
+	construction_entity = "interstellar_assembly_stage_3_entity"
+	portrait = "GFX_dtf_mega_dimentional_time_fault_factory"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -27 y = -27 }
+	show_galactic_map_icon = yes
+	
+	build_time = @dtf_rf_build_time_3
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 40000
+			unity = 4000
+			influence = 300
+		}
+
+		upkeep = {
+			exotic_gases = @dtf_rfupkeep_rare_3
+			rare_crystals = @dtf_rfupkeep_rare_3
+			volatile_motes = @dtf_rfupkeep_rare_3
+			sr_dark_matter = @dtf_rfupkeep_dark_matter_3
+		}
+
+		produces = {	
+			energy = @dtf_rfproduces_energy_3
+			minerals = @dtf_rfproduces_minerals_3
+			alloys = @dtf_rfproduces_alloys_3
+			consumer_goods = @dtf_rfproduces_consumer_goods_3
+		}
+	}
+
+	upgrade_from = {
+		dtf_resource_factory_2
+	}
+
+	country_modifier = {
+		country_resource_max_add = 1000000
+	}
+
+	prerequisites = { "tech_dtf_technology_2" }
+	show_prereqs = yes
+
+	on_build_complete = {
+		set_planet_flag = mega_shipyard_built
+		from = {
+			set_country_flag = has_dtf_resource_factory_3
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+dtf_resource_factory_4 = {
+	entity = "interstellar_assembly_stage_4_entity"
+	construction_entity = "interstellar_assembly_stage_4_entity"
+	portrait = "GFX_dtf_mega_dimentional_time_fault_factory"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -27 y = -27 }
+	show_galactic_map_icon = yes
+	
+	build_time = @dtf_rf_build_time_4
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 80000
+			unity = 8000
+			influence = 400
+		}
+
+		upkeep = {
+			exotic_gases = @dtf_rfupkeep_rare_4
+			rare_crystals = @dtf_rfupkeep_rare_4
+			volatile_motes = @dtf_rfupkeep_rare_4
+			sr_dark_matter = @dtf_rfupkeep_dark_matter_4
+		}
+
+		produces = {	
+			energy = @dtf_rfproduces_energy_4
+			minerals = @dtf_rfproduces_minerals_4
+			alloys = @dtf_rfproduces_alloys_4
+			consumer_goods = @dtf_rfproduces_consumer_goods_4
+		}
+	}
+
+	country_modifier = {
+		country_resource_max_add = 2000000
+	}
+
+	upgrade_from = {
+		dtf_resource_factory_3
+	}
+
+	prerequisites = { "tech_dtf_technology_3" }
+	show_prereqs = yes
+
+	on_build_complete = {
+		set_planet_flag = mega_shipyard_built
+		from = {
+			set_country_flag = has_dtf_resource_factory_4
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+dtf_resource_factory_5 = {
+	entity = "interstellar_assembly_stage_4_entity"
+	construction_entity = "interstellar_assembly_stage_4_entity"
+	portrait = "GFX_dtf_mega_dimentional_time_fault_factory"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -27 y = -27 }
+	show_galactic_map_icon = yes
+	
+	build_time = @dtf_rf_build_time_5
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 160000
+			unity = 16000
+			influence = 600
+		}
+
+		upkeep = {
+			exotic_gases = @dtf_rfupkeep_rare_5
+			rare_crystals = @dtf_rfupkeep_rare_5
+			volatile_motes = @dtf_rfupkeep_rare_5
+			sr_dark_matter = @dtf_rfupkeep_dark_matter_5
+		}
+
+		produces = {	
+			energy = @dtf_rfproduces_energy_5
+			minerals = @dtf_rfproduces_minerals_5
+			alloys = @dtf_rfproduces_alloys_5
+			consumer_goods = @dtf_rfproduces_consumer_goods_5
+		}
+	}
+
+	country_modifier = {
+		country_resource_max_add = 3000000
+	}
+
+	upgrade_from = {
+		dtf_resource_factory_4
+	}
+
+	prerequisites = { "tech_dtf_technology_4" }
+	show_prereqs = yes
+
+	on_build_complete = {
+		set_planet_flag = mega_shipyard_built
+		from = {
+			set_country_flag = has_dtf_resource_factory_5
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+dtf_resource_factory_6 = {
+	entity = "interstellar_assembly_stage_4_entity"
+	construction_entity = "interstellar_assembly_stage_4_entity"
+	portrait = "GFX_dtf_mega_dimentional_time_fault_factory"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -27 y = -27 }
+	show_galactic_map_icon = yes
+	
+	build_time = @dtf_rf_build_time_6
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 320000
+			unity = 32000
+			influence = 800
+		}
+
+		upkeep = {
+			exotic_gases = @dtf_rfupkeep_rare_6
+			rare_crystals = @dtf_rfupkeep_rare_6
+			volatile_motes = @dtf_rfupkeep_rare_6
+			sr_dark_matter = @dtf_rfupkeep_dark_matter_6
+		}
+
+		produces = {	
+			energy = @dtf_rfproduces_energy_6
+			minerals = @dtf_rfproduces_minerals_6
+			alloys = @dtf_rfproduces_alloys_6
+			consumer_goods = @dtf_rfproduces_consumer_goods_6
+		}
+	}
+
+	country_modifier = {
+		country_resource_max_add = 6000000
+	}
+
+	upgrade_from = {
+		dtf_resource_factory_5
+	}
+
+	prerequisites = { "tech_dtf_technology_5" }
+	show_prereqs = yes
+
+	on_build_complete = {
+		set_planet_flag = mega_shipyard_built
+		from = {
+			set_country_flag = has_dtf_resource_factory_6
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
