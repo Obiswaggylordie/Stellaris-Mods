@@ -1,0 +1,185 @@
+﻿### Tyranid_Names_1 
+TYRANID1 = {	
+ 
+	category = "Arthropoid" 
+ 
+	### SHIPS 
+	ship_names = {
+	
+		generic = { 
+			Ramsmiter Smeltfaster "Hive Crone" Tyrannocyte Narvhal "Vanguard Drone" 
+		}
+	
+		corvette = { 
+			"Deathburner Kraken" "Doomripper Kraken" "Hellblaster Kraken" 
+		}
+		
+		destroyer = {
+		}
+		
+		cruiser = { 
+			Devourer Razorfiend "Dark Prowler" "Void Fiend" 
+		}
+		
+		battleship = { 
+			Hive 
+		}
+		
+		titan = {
+			"System Devourer" 
+		}
+ 
+		colossus = {
+			Uterus 
+		}
+		
+		science = { 
+			"War Drone" 
+		}
+		
+		colonizer = { 
+			"Stalker Drone" "Rebirth Vessel" 
+		}
+		
+		constructor = { 
+			"Bio Drone"  
+		}
+ 
+		military_station_small = {
+			"Tendriled Lurker" "Pyro-acid Battery" "Lurking Deep" "Awakened Kraken" "Rending Claw" 
+		}
+		
+		ion_cannon = {
+		}
+	}
+	
+	fleet_names = {
+		random_names = {
+			"Hive Fleet Behemoth" "Hive Fleet Naga" "Hive Fleet Gorgon" "Hive Fleet Kraken" "Hive Fleet Jormungandr" "Hive Fleet Leviathan" 
+			"Hive Fleet Hydra" "Hive Fleet Colossus" "Kinshara Fleet" "Hive Fleet Dagon" "Hive Fleet Eumenides" 
+			"Hive Fleet Gegenees" "Hive Fleet Grendel" "Hive Fleet Harbinger" "Hive Fleet Magalodon" 
+			"Hive Fleet Ophidia" "Hive Fleet Ouroboros" "Hive Fleet Perseus" 
+			"Hive Fleet Scarabus" "Hive Fleet Scylla" "Hive Fleet Tiamat" 
+		}
+		sequential_name = "%O% Fleet" 
+	}
+ 
+ 
+	###ARMIES 
+	army_names = {
+	
+		defense_army = {
+			sequential_name = "%O% Tervigons" 
+		}
+			
+		assault_army = {
+			sequential_name = "%O% Gaunts" 
+		}
+		
+		slave_army = {
+			sequential_name = "%O% Lesser Race Warriors" 
+		}
+		
+		clone_army = {
+			sequential_name = "%O% Cloned Genestealers" 
+		}
+		
+		robotic_army = {
+			sequential_name = "%O% Carnifex" 
+		}
+		
+		android_army = {
+			sequential_name = "%O% Biovores" 
+		}
+		
+		psionic_army = {
+			sequential_name = "%O% Zoanthropes" 
+		}
+		
+		xenomorph_army = {
+			sequential_name = "%O% Lictors" 
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "%O% Broodlords" 
+		}
+	}
+	
+	### PLANETS 
+	planet_names = {
+	
+		generic = {
+			names = {
+				"Beta Fortanis" Ephraeleon Porphetus Vallyx Arcteri Bekrin Gryphonne Miral Radnar Tan Ymgarl 
+				Aradium Darvon Graia Gravalax Ichar Lamarno "Ghosar Quintus" Radnar Sabulorb Stalinvast Thranx 
+				Torhaven Sotha Miral Macragge 
+		
+			}
+		}
+		
+		pc_desert = {
+			names = {
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+			}
+		}
+		
+		pc_arid = {
+			names = {
+			}
+		}
+		
+		pc_continental = {
+			names = {
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+			}
+		}
+		
+	}
+	
+	### CHARACTERS 
+	character_names = {
+		default = {
+			# A complete name 
+			full_names = {
+				Swarmlord "Death Leaper" "Doom of Malan'tai" "Old One Eye" "Parasite of Motrex" "Red Terror" 
+			}
+			
+			# Always combined with a second name 
+			first_names = { 
+				Leaper Render Destroyer Terrifying Crazed Maddening Seductive Tentacled Mindbreaker Parasite Old Doom Grotesque Acidic 
+			}
+			
+			# Always combined with a first name 
+			second_names = { 
+				"Hive Guard" Lictor "Malanthrope" Pyrovore Ravener Venomthrope "Tyranid Warrior" "Tyranid Prime" "Tyrant Guard" "Zoanthrope" "Neurothrope" Sporocyst 
+				Genestealer "Ymgarl Genestealer" Hormagaunt Spinegaunt Termagant Ripper Biovore Carnifex Exocrine Haruspex Hierodule Maleceptor Mawloc Tervigon Toxicrene Trygon Tyrannofex Dimachaeron 
+			}
+			
+			regnal_first_names = {
+				Leaper Render Destroyer Terrifying Crazed Maddening Seductive Tentacled Mindbreaker Parasite Old Doom Grotesque Acidic 
+			}
+			
+			regnal_second_names = { 
+				"Hive Tyrant" Broodlord "Hive Queen" "Genestealer Patriarch" "Genestealer Primus" "Genestealer Magus" 
+			}
+		}
+	}
+}

@@ -1,0 +1,173 @@
+﻿### Tau_Names_1 
+TAU1 = {	
+ 
+	category = "Humanoid" 
+ 
+	### SHIPS 
+	ship_names = {
+	
+		generic = {
+			Gal'leath "Or'es El'leath" Il'fannor Lar'shi Il'Porrui Lar'shi'vre Kir'shasvre Kass'l Kir'la Il'Emaar Barracuda Manta Orca Razorshark Remora "Tiger Shark"  
+			"Sun Shark" "Moon Shark" "Bullhead Shark" "Dogfish Shark" "Sharp-nose Shark" "Frilld Shark" 
+			"Lantern Shark" "Bramble Shark" "Hook-tooth Shark" "Black Shark" "White Orca" "Red Orca" "Blue Orca" 
+			"Pgymy Shark" "Large-tooth Shark" "Sei Whale" "Eden's Whale" "Omura Orca" "Hourglass Shark" 
+		}
+	
+		corvette = {
+		}
+		
+		destroyer = {
+		}
+		
+		cruiser = {
+		}
+		
+		battleship = {
+		}
+		
+		titan = {
+		}
+ 
+		colossus = {
+		}
+		
+		science = {
+		}
+		
+		colonizer = {
+		}
+		
+		constructor = {
+		}
+		
+		military_station_small = {
+			La'rua Kau'ui Tio've Isla'su Mal'kor 
+		}
+		
+		ion_cannon = {
+		}
+	}
+	
+	fleet_names = {
+		random_names = {
+			"Orca Fleet" "Sun Shark Fleet" "Sand Shark Fleet" "Dolphin Fleet" "Stingray Fleet" "Crab Fleet" 
+			"Jellyfish Fleet" "Carp Fleet" "Anglerfish Fleet" "Great White Shark Fleet" "Blue Shark Fleet" 
+		}
+		sequential_name = "%O% Fleet" 
+	}
+ 
+ 
+	###ARMIES 
+	army_names = {
+	
+		defense_army = {
+			sequential_name = "%O% Planetary Guards" 
+		}
+			
+		assault_army = {
+			sequential_name = "%O% Fire Warriors" 
+		}
+		
+		slave_army = {
+			sequential_name = "%O% Unenlightened Ones" 
+		}
+		
+		clone_army = {
+			sequential_name = "%O% Clone Warriors" 
+		}
+		
+		robotic_army = {
+			sequential_name = "%O% Crisis Battlesuits" 
+		}
+		
+		android_army = {
+			sequential_name = "%O% Drone Sentry Turrets" 
+		}
+		
+		psionic_army = {
+			sequential_name = "%O% Ethereals" 
+		}
+		
+		xenomorph_army = {
+			sequential_name = "%O% Gue'vesa" 
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "%O% XV104 Riptide" 
+		}
+	}
+	
+	### PLANETS 
+	planet_names = {
+	
+		generic = {
+			names = {
+				"T'au" Pech Vespid "Tau'n" "D'yanoi" "Dal'yth" "Fal'shia" "Vior'la" "Sa'cea" "Au'taal" "N'dras" "Ke'Ishan" "Elsy'eir" "Tash'var" "Vash'ya" "T'olku" "Ksi'm'yen" "Fi'rios" "Mu'gulath" "Vas'talos" "Uan'Voss" "Velk'han" "Es'Tau" "T'ros" "Sha'draig" "Ka'mais" "Ho'sarn" "Kor'var" "Va'yun" 
+				"Ai'shi" "Au'kiia" "Ao'ori" "Ci'iba" "Eh'ime" "Uan'kui" "Vior'kuo'ka" "Vior'myth" "Gi'sarn" "Gi'lshan" "Hir'taolos" "Hir'dras" "Elsy'nma" "Iba'eir" "Es'kaya" "Is'yth" "Ksi'yen" "Ka'taolos" "Kal'rios" 
+				"Sa'nma" "Vash'kaya" "K'to" Mie "Me'cea" "Me'var'la" "N'gano" "Na'shia" "N'talos" "Ni'lshan" "M'tia" "M'yan'nma" "M'tao'mais" "M'saal" "M'ga" "M'yan'nma" "M'saal" "M'ga" Taitama Tiga 
+				"T'sarn" "Tm'yar" "Tsa'eir" "Trios'aal" Tyen "T'ishan" "T'yanoi" "Uan'rios" "Sha'yth" "Sha'lek" "Sha'ya" 
+			}
+		}
+		
+		pc_desert = {
+			names = {
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+			}
+		}
+		
+		pc_arid = {
+			names = {
+			}
+		}
+		
+		pc_continental = {
+			names = {
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+			}
+		}
+		
+	}
+	
+	### CHARACTERS 
+	character_names = {
+		default = {
+			# A complete name 
+			full_names = {
+				Aun'Va Aun'shi O'Shaserra O'Shovah Puretide El'Myamoto Shas'Ui N'dras Krin'rax Shas'La Elsy'eir Irahira Shas'El Bork'an Kor'Vre Aun'Vre Bork'an Tsuira Shas'Saal Ksi'm'yen Dra'nera Por'El Bor'kan Ar'ko Shas'O Ksi'm'yen Orna'xan Shas'O Dal'yth Alish Kor'La Tash'var Hia'pin Aun'Ui Tau'n Xira'xil 
+			}
+			
+			# Always combined with a second name 
+			first_names = {Xira' Tau'n Aun' Bork' Tsuira Saal Por Aun' Shas Ar Ksi Orna Dal Aun'ti Xil Fio Sa Wua Tsu Kor Vash Gras Firen La T' Krin Irax Yanoi Giror Ui 
+			}
+			
+			# Always combined with a first name 
+			second_names = {El N M'yen Dra Nera Kan Oxaix 'O Vre Cea Sioeh Saal Alish Farsight Xo'erk Las Jilaot 
+			}
+			
+			regnal_first_names = {
+				Xira' Tau'n Aun' Bork' Tsuira Saal Por Aun' Shas Ar Ksi Orna Dal Aun'ti Xil Fio Sa Wua Tsu Tsu Kor Vash Gras Firen La T' Krin Irax Yanoi Giror Ui 
+			}
+			regnal_second_names = {
+				El M'yen Dra Nera Kan Oxaix 'O Vre Cea Sioeh Saal Alish Farsight Xo'erk Las Jilaot Tau'va Aun'cho Aun'do Aun'Fyr Aun'Pau Aun'Ro'Yr Aun'taniel Sha'Aux'Phan Shi'Ores 
+			}
+		}
+	}
+}

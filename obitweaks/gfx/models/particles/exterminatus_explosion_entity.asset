@@ -1,0 +1,22 @@
+entity = {
+	name = "exterminatus_explosion_entity"
+	scale = 1
+
+	locator = {
+		name = "root"
+	}
+	
+	default_state = "idle"
+	state = {
+		name = "idle"
+		state_time = 1
+		event = {
+			time = 0
+			#node = "root"
+			particle = "exterminatus_explosion_particle"
+			trigger_once = yes
+			keep_particle = yes
+			sound = { soundeffect = "amb_super_explosion" }
+		}
+	}
+}

@@ -1,0 +1,83 @@
+objectTypes = {
+
+#############
+# IDLE
+#############
+	
+	pdxparticle = {
+		name = "necron_01_civilian_exhaust_idle_generic_particle"
+		type = "necron_01_ship_exhaust_idle_generic_file"
+		scale = 1.0
+	}	
+	
+	pdxparticle = {
+		name = "necron_01_small_exhaust_idle_particle"
+		type = "necron_01_ship_exhaust_idle_file"
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "necron_01_large_side_exhaust_idle_particle"
+		type = "necron_01_large_side_ship_exhaust_idle_file"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "necron_01_large_mid_exhaust_idle_particle"
+		type = "necron_01_large_mid_ship_exhaust_idle_file"
+		scale = 1.0
+	}
+	
+#############
+# MOVING
+#############
+
+	pdxparticle = {
+		name = "necron_01_large_side_exhaust_moving_particle"
+		type = "necron_01_large_side_ship_exhaust_moving_file"
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "necron_01_large_mid_exhaust_moving_particle"
+		type = "necron_01_large_mid_ship_exhaust_moving_file"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "necron_01_small_exhaust_moving_particle"
+		type = "necron_01_ship_exhaust_moving_file"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "necron_01_civilian_exhaust_moving_particle"
+		type = "necron_01_ship_exhaust_moving_generic_file"
+		scale = 1.0
+	}
+	
+#############
+# OTHER
+#############
+
+	pdxparticle = {
+		name = "necron_01_large_station_core_effect"
+		type = "necron_01_large_station_core_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "necron_01_small_station_core_effect"
+		type = "necron_01_large_station_core_effect"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "necron_01_circuit_green_light_effect"
+		type = "necron_01_circuit_green_light_effect"
+		
+		scale = 1.0
+	}
+}

@@ -1,0 +1,199 @@
+﻿### Necron_Names_1 
+NECRON1 = {	
+ 
+	category = "Machine" 
+ 
+	### SHIPS 
+	ship_names = {
+	
+		generic = { 
+			"Death Whisper" "Life Leech" "Pariah" "Tormentor of Shadows" "Death Tomb" "Funeral Mask" 
+			"Lifebane" "Grave Digger" "Bone Taker" "Undertaker" "Flesh Mask" "Metallic Kiss" "Blood Leech" "Soul Leech" 
+			"Carrion Tomb" "Pyramid of Deception" "Pyramid of Lies" "Pyramid of Hate" "Pyramid of Destruction" "Pyramid of Ruin" 
+			"Soul Breaker" Tormentor "Soul Cracker" "Funeral Barge" "Styx" "The Gallows" "Hangman" "Kiss of Death" 
+		}
+	
+		corvette = { 
+			"Doom Scythe" "Night Scythe" "Night Shroud" 
+		}
+		
+		destroyer = { 
+			"Death's Grasp" 
+		}
+		
+		cruiser = { 
+			"Scythe Harvest" Shroud 
+		}
+		
+		battleship = { 
+			"Cairn Tomb" 
+		}
+		
+		titan = {
+			"Puissant Tomb" 
+		}
+ 
+		colossus = {
+			"Tomb Shipyard" 
+		}
+		
+		science = { 
+			"Soul Harvester" 
+		}
+		
+		colonizer = { 
+			"Tomb Builder" 
+		}
+		
+		constructor = { 
+			"Unbroken Servant" 
+		}
+ 
+		military_station_small = {
+			"World Engine" "Forsaken Bastion" "Well of Souls" "Unyielding Steel" 
+		}
+ 
+		ion_cannon = {
+			"Tomb Cannon" 
+		}
+	}
+	
+	fleet_names = {
+		random_names = {
+			"Agdagath Dynasty" "Atun Dynasty" "Altymhor Dynasty" "Arotepk Dynasty" "Arrynmarok Dynasty" "Charnovokh Dynasty" "Dyvanakh Dynasty" 
+			"Hrekh Dynasty" "Kayra Dynasty" "Khansu Dynasty" "Kardenath Dynasty" "Maynarkh Dynasty" "Mephrit Dynasty" 
+			"Nekthyst Dynasty" "Nephrekh Dynasty" "Nihilakh Dynasty" "Novokh Dynasty" "Ogdobekh Dynasty" "Oltep Dynasty" 
+			"Oroskh Dynasty" "Oruscar Dynasty" "Rytak Dynasty" "Sautekh Dynasty" "Sarnekh Dynasty" "Sekemtar Dynasty" 
+			"Shemnoch Dynasty" "Suhbkhar Dynasty" "Thokt Dynasty" "Xonthar Dynasty" 
+		}
+		sequential_name = "%O% Fleet" 
+	}
+ 
+ 
+	###ARMIES 
+	army_names = {
+	
+		defense_army = {
+			sequential_name = "%O% Dormant Squads" 
+		}
+			
+		assault_army = {
+			sequential_name = "%O% Necron Warriors" 
+		}
+		
+		slave_army = {
+			sequential_name = "%O% Worthless Slaves" 
+		}
+		
+		clone_army = {
+			sequential_name = "%O% Pariahs" 
+		}
+		
+		robotic_army = {
+			sequential_name = "%O% Immortals" 
+		}
+		
+		android_army = {
+			sequential_name = "%O% Tomb Scarabs" 
+		}
+		
+		psionic_army = {
+			sequential_name = "%O% Necron Lords" 
+		}
+		
+		xenomorph_army = {
+			sequential_name = "%O% C'tan" 
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "%O% Overlords" 
+		}
+	}
+	
+	### PLANETS 
+	planet_names = {
+	
+		generic = {
+			names = {
+				Adacore Akator Akynatos Ankekh Aryand Avarris Bardic Bellicas Berien Brogrod Cano'var Cardrim 
+				Carnac "Carrion Deep" Chandrax Cocholos Cthelmax Damnos Davatas Dhol Draven Drazak Fordris 
+				Gheden Ghelleph Gidrim Angelis "Hollow Sun" Icnarus "Iori Delta Tove" "Interitus Prime" 
+				Ixya Kaurava Kavardia Kinbriar Kronus Loxar "Luther Macintyre" Mandragora Medusa 
+				Meghoshta Moebius Morrigar Morrigor Nagathar Naogeddon "Segmentum Obscurus" 
+				Nervkor Nymidae Orrak Pavonis Perdita Phaethon Primordus Pyrrhia Qyrakotosh Rithcarin  
+				Sanctarro Santos Sarkon Sarlok Schrodinger Seidon "Septimus Moore" Shemnoch 
+				"Simia Orichalcae" Solemnace Somonor Suranas Tamar Thanatos Thridia Trakonn Trantis 
+				Tyr "Uttu Prime" "Verdus Prime" Vorketh Zantragora Zapennec Zykorak 
+			}
+		}
+		
+		pc_desert = {
+			names = {
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+			}
+		}
+		
+		pc_arid = {
+			names = {
+			}
+		}
+		
+		pc_continental = {
+			names = {
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+			}
+		}
+		
+	}
+	
+	### CHARACTERS 
+	character_names = {
+		default = {
+			# A complete name 
+			full_names = {
+				"Szarekh the Silent King" "Valgul Drazak" "Illmahnokh Suhbekhar" "Stygos M'rrith Xonthar" "Henghast Zo Xonthar" 
+				"Harbinger of Awakening" "Harbinger of Night" "Harbinger of Storm" "Herald of Dismay" "Aetehk the Watcher" "Herald of Storm" 
+				"Kronus" "All Kaurava" 
+			}
+			
+			# Always combined with a second name 
+			first_names = { 
+				Ashakhmet Mernenza Ganyhyt Khusankh Djedet Udjetanath Djashet Takhamaka Semeqar Thutmonamun 
+				Intefret Nebnekhat Psusetep Horeseneb Imhophren Petunebti Amenhokare Hekenunhor Yanhatep Rahoseneb 
+				Nectaru Nimaes Demereh Baqemose Sehetamen Hewetep Parenhotep Nebeptah Djadkare Nakhtotep 
+			}
+			
+			# Always combined with a first name 
+			second_names = { 
+				Merykhmire Hewekht Duaetka Mentutaten Hewekauhor Nectakhotep Djanamun Rahotamun Hakotka Gilunamen 
+			}
+			
+			regnal_first_names = { 
+				Ahmontekh Akanabekh Anrakyr Aramakh Atun Galmakh Imotekh Krispekh Naszar Ogdovakh Rakzan Sarkoni Szarekh Szaron 
+				Thaszar Trazyn Vitokh Xun'bakyr Zahndrekh Zarathusa 
+			}
+			
+			regnal_second_names = { 
+				Atun Suhbekhar Sautekh Nihilakh Khansu Sekemtar Altymhor Mephrit 
+			}
+		}
+	}
+}

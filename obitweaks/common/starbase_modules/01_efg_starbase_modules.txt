@@ -6,11 +6,14 @@ dtf_large_shipyard = {
 	construction_days = 30
 
 	potential = {
-		exists = owner
-		
-		AND = {
-			owner = { has_technology = tech_interstellar_fleet_traditions }
-			owner = { has_technology = tech_efg_weapons_2 }
+		owner = {
+			has_technology = tech_interstellar_fleet_traditions
+			OR = {
+				has_origin = origin_earth_2200
+				has_origin = origin_garmillas
+				has_origin = origin_gatlantis
+				has_origin = origin_gcs_imperium
+			}
 		}
 	}
 

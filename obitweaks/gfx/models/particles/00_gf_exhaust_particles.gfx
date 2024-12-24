@@ -1,0 +1,115 @@
+objectTypes = {
+	
+#############
+# IDLE
+#############
+	
+	# SINGLE
+	
+	pdxparticle = {
+		name = "gothic_01_0_65_exhaust_idle_particle"
+		type = "gothic_01_ship_exhaust_idle_file"
+		scale = 0.65
+	}
+	
+	pdxparticle = {
+		name = "gothic_01_1_45_exhaust_idle_particle"
+		type = "gothic_01_ship_exhaust_idle_file"
+		scale = 1.45
+	}
+	
+	pdxparticle = {
+		name = "gothic_01_2_35_exhaust_idle_particle"
+		type = "gothic_01_ship_exhaust_idle_file"
+		scale = 2.35
+	}
+	
+	pdxparticle = {
+		name = "gothic_01_3_35_exhaust_idle_particle"
+		type = "gothic_01_ship_exhaust_idle_file"
+		scale = 3.35
+	}
+	
+	# OBLONG
+	
+	pdxparticle = {
+		name = "gothic_01_1_0_exhaust_oblong_idle_particle"
+		type = "gothic_01_ship_exhaust_idle_large_file"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "gothic_01_1_5_exhaust_oblong_idle_particle"
+		type = "gothic_01_ship_exhaust_idle_large_file"
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "gothic_01_1_8_exhaust_oblong_idle_particle"
+		type = "gothic_01_ship_exhaust_idle_large_file"
+		scale = 1.8
+	}
+	
+	pdxparticle = {
+		name = "gothic_01_2_0_exhaust_oblong_idle_particle"
+		type = "gothic_01_ship_exhaust_idle_large_file"
+		scale = 2.0
+	}
+	
+	pdxparticle = {
+		name = "gothic_01_2_35_exhaust_oblong_idle_particle"
+		type = "gothic_01_ship_exhaust_idle_large_file"
+		scale = 2.35
+	}
+
+#############
+# MOVING
+#############
+
+	# SINGLE
+	
+	pdxparticle = {
+		name = "gothic_01_0_65_ship_exhaust_moving_particle"
+		type = "gothic_01_ship_exhaust_file"
+		scale = 0.65
+	}
+	
+	pdxparticle = {
+		name = "gothic_01_1_45_ship_exhaust_moving_particle"
+		type = "gothic_01_ship_exhaust_file"
+		scale = 1.45
+	}
+	
+	pdxparticle = {
+		name = "gothic_01_2_35_ship_exhaust_moving_particle"
+		type = "gothic_01_ship_exhaust_file"
+		scale = 2.35
+	}
+	
+	pdxparticle = {
+		name = "gothic_01_3_35_ship_exhaust_moving_particle"
+		type = "gothic_01_ship_exhaust_file"
+		scale = 3.35
+	}
+	
+	# OBLONG
+	
+	pdxparticle = {
+		name = "gothic_01_1_5_ship_exhaust_oblong_moving_particle"
+		type = "gothic_01_ship_exhaust_oblong_file"
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "gothic_01_2_0_ship_exhaust_oblong_moving_particle"
+		type = "gothic_01_ship_exhaust_oblong_file"
+		scale = 2.0
+	}
+	
+	pdxparticle = {
+		name = "gothic_01_2_35_ship_exhaust_oblong_moving_particle"
+		type = "gothic_01_ship_exhaust_oblong_file"
+		scale = 2.35
+	}
+
+}

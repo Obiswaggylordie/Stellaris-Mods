@@ -1,0 +1,675 @@
+##########################################################
+########### Planet Conversions to Hive Worlds ############
+##########################################################
+
+########### Small Arid Hive World ###########
+decision_hive_arid_project = {
+	owned_planets_only = yes
+    ### UPDATE THIS FROM VANILLA ###
+	icon = decision_small_hive_project
+
+	enactment_time = 160
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 1000
+            alloys = 2000
+		}
+	}
+	potential = {
+        OR = {
+			is_planet_class = pc_arid
+        	is_planet_class = pc_desert
+        	is_planet_class = pc_savannah
+			AND = {
+				has_planetary_diversity = yes
+				OR = {
+					is_pd_arid = yes
+					is_pd_desert = yes
+					is_pd_savannah = yes
+				}
+			}
+        }
+		habitable_structure = no
+		exists = owner
+		owner = { has_ascension_perk = ap_imperial_planet_designations }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_hive_arid_project_requirements
+			num_districts = { type = district_farming value < 1 }
+			num_districts = { type = district_mining value < 1 }
+			num_districts = { type = district_generator value < 1 }
+            num_districts = { type = district_city value >= 6 }
+
+		}
+		num_uncleared_blockers < 1
+        num_pops >= 20
+	}
+
+	effect = {
+		# Make Small Hive World
+                add_modifier = { modifier = "40khive_small_planet" days = -1 }
+		custom_tooltip = decision_hive_arid_project_effects
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_hive_arid
+			set_planet_entity = {
+				entity = "hive_arid"
+				graphical_culture = owner
+			}
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+########### Small Continental Hive World ###########
+decision_hive_continental_project = {
+	owned_planets_only = yes
+    ### UPDATE THIS FROM VANILLA ###
+	icon = decision_small_hive_project
+    ###
+
+	enactment_time = 160
+    #enactment_time = 1 #for testing
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 1000
+            alloys = 2000
+		}
+	}
+	potential = {
+        OR = {
+		is_planet_class = pc_tropical
+        	is_planet_class = pc_continental
+        	is_planet_class = pc_gaia
+			AND = {
+				has_planetary_diversity = yes
+				OR = {
+					is_pd_tropical = yes
+					is_pd_continental = yes
+					is_pd_gaia = yes
+				}
+			}
+        }
+		habitable_structure = no
+		exists = owner
+		owner = { has_ascension_perk = ap_imperial_planet_designations }
+	}
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_hive_continental_project_requirements
+			num_districts = { type = district_farming value < 1 }
+			num_districts = { type = district_mining value < 1 }
+			num_districts = { type = district_generator value < 1 }
+            num_districts = { type = district_city value >= 6 }
+		}
+		num_uncleared_blockers < 1
+        num_pops >= 20
+	}
+	effect = {
+		# Make Small Hive World
+                add_modifier = { modifier = "40khive_small_planet" days = -1 }
+		custom_tooltip = decision_hive_continental_project_effects
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_hive_continental_01
+			set_planet_entity = {
+				entity = "hive_continental_01"
+				graphical_culture = owner
+			}
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+########### Small Ocean Hive World ###########
+decision_hive_ocean_project = {
+	owned_planets_only = yes
+    ### UPDATE THIS FROM VANILLA ###
+	icon = decision_small_hive_project
+    ###
+
+	enactment_time = 160
+    #enactment_time = 1 #for testing
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 1000
+            alloys = 2000
+		}
+	}
+
+	potential = {
+        OR = {
+		is_planet_class = pc_ocean
+        	is_planet_class = pc_arctic
+			AND = {
+				has_planetary_diversity = yes
+				OR = {
+					is_pd_ocean = yes
+					is_pd_arctic = yes
+				}
+			}
+        }
+		habitable_structure = no
+		exists = owner
+		owner = { has_ascension_perk = ap_imperial_planet_designations}
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_hive_ocean_project_requirements
+			num_districts = { type = district_farming value < 1 }
+			num_districts = { type = district_mining value < 1 }
+			num_districts = { type = district_generator value < 1 }
+            num_districts = { type = district_city value >= 6 }
+		}
+		num_uncleared_blockers < 1
+        num_pops >= 20
+	}
+
+	effect = {
+		# Make Small Hive World
+                add_modifier = { modifier = "40khive_small_planet" days = -1 }
+		custom_tooltip = decision_hive_ocean_project_effects
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_hive_ocean
+			set_planet_entity = {
+				entity = "hive_ocean"
+				graphical_culture = owner
+			}
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+########### Small Tundra Hive World ###########
+decision_hive_tundra_project = {
+	owned_planets_only = yes
+    ### UPDATE THIS FROM VANILLA ###
+	icon = decision_small_hive_project
+    ###
+
+	enactment_time = 160
+    #enactment_time = 1 #for testing
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 1000
+            alloys = 2000
+		}
+	}
+
+	potential = {
+        OR = {
+			is_planet_class = pc_tundra
+        	is_planet_class = pc_alpine
+			AND = {
+				has_planetary_diversity = yes
+				OR = {
+					is_pd_tundra = yes
+					is_pd_alpine = yes
+				}
+			}
+        }
+		habitable_structure = no
+		exists = owner
+		owner = { has_ascension_perk = ap_imperial_planet_designations }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_hive_tundra_project_requirements
+			num_districts = { type = district_farming value < 1 }
+			num_districts = { type = district_mining value < 1 }
+			num_districts = { type = district_generator value < 1 }
+            num_districts = { type = district_city value >= 6 }
+		}
+		num_uncleared_blockers < 1
+        num_pops >= 20
+	}
+
+	effect = {
+		# Make Small Hive World
+                add_modifier = { modifier = "40khive_small_planet" days = -1 }
+		custom_tooltip = decision_hive_tundra_project_effects
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_hive_tundra
+			set_planet_entity = {
+				entity = "hive_tundra"
+				graphical_culture = owner
+			}
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+########### Medium Hive World ###########
+decision_hive_medium_project = {
+	owned_planets_only = yes
+    ### UPDATE THIS FROM VANILLA ###
+	icon = decision_medium_hive_project
+    ###
+
+	enactment_time = 240
+    #enactment_time = 1 #for testing
+	resources = {
+		category = decisions
+		cost = {
+			influence = 100
+			minerals = 2000
+            alloys = 4000
+		}
+	}
+
+	potential = {
+        is_wh_planet_small_hive = yes
+		habitable_structure = no
+		exists = owner
+		#owner = { has_ascension_perk = ap_imperial_planet_designations }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_forge_world_project_requirements
+			#free_district_slots < 1
+		}
+        num_pops >= 40
+	}
+
+	effect = {
+		# Make Medium Hive World
+                remove_modifier = 40khive_small_planet
+                add_modifier = { modifier = "40khive_medium_planet" days = -1 }
+		custom_tooltip = decision_hive_medium_project_effects
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_hive_medium
+			set_planet_entity = {
+				entity = "fe_hive_planet"
+				graphical_culture = owner
+			}
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+########### Industrial Hive World ###########
+decision_hive_industrial_project = {
+	owned_planets_only = yes
+    ### UPDATE THIS FROM VANILLA ###
+	icon = decision_hive_industrial_project
+    ###
+
+	enactment_time = 240
+    #enactment_time = 1 #for testing
+	resources = {
+		category = decisions
+		cost = {
+			influence = 100
+			minerals = 2000
+            alloys = 4000
+		}
+	}
+
+	potential = {
+        is_wh_planet_small_hive = yes
+		habitable_structure = no
+		exists = owner
+		#owner = { has_ascension_perk = ap_imperial_planet_designations }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_hive_industrial_project_requirements
+			#free_district_slots < 1
+		}
+        num_pops >= 40
+	}
+
+	effect = {
+		# Make Medium Hive World
+                remove_modifier = 40khive_small_planet
+                add_modifier = { modifier = "40khive_industrial_planet" days = -1 }
+		custom_tooltip = decision_hive_industrial_project_effects
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_hive_industrial
+			set_planet_entity = {
+				entity = "hive_industrial"
+				graphical_culture = owner
+			}
+		}
+	}
+	ai_weight = {
+		weight = 50
+	}
+}
+
+########### Super Hive World ###########
+# Upgrades from Medium Hive World
+decision_super_hive_project = {
+	owned_planets_only = yes
+    ### UPDATE THIS FROM VANILLA ###
+	icon = decision_super_hive_project
+    ###
+
+	enactment_time = 360
+    #enactment_time = 1 #for testing
+	resources = {
+		category = decisions
+		cost = {
+			influence = 200
+			minerals = 2500
+            alloys = 8000
+		}
+	}
+
+	potential = {
+        is_planet_class = pc_hive_medium
+		habitable_structure = no
+		exists = owner
+		#owner = { has_ascension_perk = ap_imperial_planet_designations }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_super_hive_project_requirements
+			#free_district_slots < 1
+		}
+        num_pops >= 80
+	}
+
+	effect = {
+		# Make Medium Hive World
+                remove_modifier = 40khive_medium_planet
+                add_modifier = { modifier = "40ksuper_hive_planet" days = -1 }
+		custom_tooltip = decision_super_hive_project_effects
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_super_hive
+			set_planet_entity = {
+				entity = "super_hive"
+				graphical_culture = owner
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 50
+	}
+}
+
+########### Mega Hive World ###########
+# Upgrades from Industrial Hive World
+decision_mega_hive_project = {
+	owned_planets_only = yes
+    ### UPDATE THIS FROM VANILLA ###
+	icon = decision_mega_hive_project
+    ###
+
+	enactment_time = 360
+    #enactment_time = 1 #for testing
+	resources = {
+		category = decisions
+		cost = {
+			influence = 200
+			minerals = 2500
+            alloys = 8000
+		}
+	}
+
+	potential = {
+        is_planet_class = pc_hive_industrial
+		habitable_structure = no
+		exists = owner
+		#owner = { has_ascension_perk = ap_imperial_planet_designations }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_mega_hive_project_requirements
+			#free_district_slots < 1
+		}
+        num_pops >= 80
+	}
+
+	effect = {
+		# Make Medium Hive World
+                remove_modifier = 40khive_industrial_planet
+                add_modifier = { modifier = "40kmega_hive_planet" days = -1 }
+		custom_tooltip = decision_mega_hive_project_effects
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_mega_hive
+			set_planet_entity = {
+				entity = "mega_hive"
+				graphical_culture = owner
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 50
+	}
+}
+
+########### Agri World ###########
+decision_agri_world_project = {
+	owned_planets_only = yes
+    ### UPDATE THIS FROM VANILLA ###
+	icon = decision_agri_project
+    ###
+
+	enactment_time = 160
+    #enactment_time = 1 #for testing
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 5000
+		}
+	}
+
+        potential = {
+        OR = {
+		is_planet_class = pc_tropical
+        	is_planet_class = pc_continental
+        	is_planet_class = pc_gaia
+                is_planet_class = pc_arid
+        	is_planet_class = pc_desert
+        	is_planet_class = pc_savannah
+			AND = {
+				has_planetary_diversity = yes
+				OR = {
+					is_pd_tropical = yes
+					is_pd_continental = yes
+					is_pd_gaia = yes
+					is_pd_arid = yes
+					is_pd_desert = yes
+					is_pd_savannah = yes
+				}
+		        }
+        }
+		habitable_structure = no
+		exists = owner
+		owner = { has_ascension_perk = ap_imperial_planet_designations }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_agri_world_project_requirements
+			#free_district_slots < 1
+            NOR = {
+                num_districts = { type = district_mining value > 1 }
+                num_districts = { type = district_generator value > 1 }
+                num_districts = { type = district_underdeveloped_power > 1 }
+                num_districts = { type = district_basic_infrastructure > 1 }
+            }
+            #Possible requirements for Agri World, still balancing
+            # OR = {
+                # num_districts = { type = district_farming value > 6 }
+                # num_districts = { type = district_agri value > 3 }
+            # }
+		}
+		num_uncleared_blockers < 1
+	}
+
+	effect = {
+		# Make Agri World
+                add_modifier = { modifier = "40kagri_planet" days = -1 }
+		custom_tooltip = decision_agri_world_project_effects
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_agri
+			set_planet_entity = {
+				entity = "agri_planet"
+				graphical_culture = owner
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 50
+	}
+}
+
+########### Penal World ###########
+decision_penal_world_project = {
+	owned_planets_only = yes
+    ### UPDATE THIS FROM VANILLA ###
+	icon = decision_shrine_project
+    ###
+
+	enactment_time = 160
+    #enactment_time = 1 #for testing
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 5000
+		}
+	}
+
+	potential = {
+		NOR = {
+			is_planet_class = pc_city
+			is_planet_class = pc_relic
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+			has_modifier = pm_wenkwort_custodian
+		}
+		is_wh_planet_all = no
+        habitable_structure = no
+		exists = owner
+                owner = { has_ascension_perk = ap_imperial_planet_designations }
+    }
+
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_penal_world_project_requirements
+			#free_district_slots < 1
+		}
+		#num_uncleared_blockers < 1
+        num_pops <= 20
+	}
+
+	effect = {
+		# Make Penal World
+		custom_tooltip = decision_penal_world_project_effects
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_penal
+			set_planet_entity = {
+				entity = "penal_planet"
+				graphical_culture = owner
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 50
+	}
+}
+
+########### Fortress World ###########
+decision_fortress_world_project = {
+	owned_planets_only = yes
+    ### UPDATE THIS FROM VANILLA ###
+	icon = decision_fortress_project
+    ###
+
+	enactment_time = 240
+    #enactment_time = 1 #for testing
+	resources = {
+		category = decisions
+		cost = {
+			influence = 100
+			minerals = 5000
+            alloys = 2000
+		}
+	}
+
+	potential = {
+		NOR = {
+			is_planet_class = pc_city
+			is_planet_class = pc_relic
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+			has_modifier = pm_wenkwort_custodian
+		}
+		OR = {
+			is_wh_planet_all = no
+			is_wh_planet_small_hive = yes
+		}
+        habitable_structure = no
+		exists = owner
+                owner = { has_ascension_perk = ap_imperial_planet_designations }
+    }
+
+
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_fortress_world_project_requirements
+			#free_district_slots < 1
+		}
+		#num_uncleared_blockers < 1
+        num_pops >= 15
+	}
+
+	effect = {
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_fortress
+			set_planet_entity = {
+				entity = "fortress_planet"
+				graphical_culture = owner
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 50
+	}
+}

@@ -1,0 +1,83 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_aa_army_icons"
+		textureFile = "gfx/interface/planetview/aa_army_icon.dds"
+		noOfFrames = 14
+	}
+
+	spriteType = {
+		name = ""
+		sprite_sheet_sprite_type = ""
+		default_frame = 
+	}
+	spriteType = {
+		name = ""
+		sprite_sheet_sprite_type = ""
+		default_frame = 
+	}
+	spriteType = {
+		name = ""
+		sprite_sheet_sprite_type = ""
+		default_frame = 
+	}
+	spriteType = {
+		name = ""
+		sprite_sheet_sprite_type = ""
+		default_frame = 
+	}
+	spriteType = {
+		name = ""
+		sprite_sheet_sprite_type = ""
+		default_frame = 
+	}
+	spriteType = {
+		name = ""
+		sprite_sheet_sprite_type = ""
+		default_frame = 
+	}
+	spriteType = {
+		name = ""
+		sprite_sheet_sprite_type = ""
+		default_frame = 
+	}
+	spriteType = {
+		name = ""
+		sprite_sheet_sprite_type = ""
+		default_frame = 
+	}
+	spriteType = {
+		name = ""
+		sprite_sheet_sprite_type = ""
+		default_frame = 
+	}
+	spriteType = {
+		name = ""
+		sprite_sheet_sprite_type = ""
+		default_frame = 
+	}
+	spriteType = {
+		name = ""
+		sprite_sheet_sprite_type = ""
+		default_frame = 
+	}
+	spriteType = {
+		name = ""
+		sprite_sheet_sprite_type = ""
+		default_frame = 
+	}
+	spriteType = {
+		name = ""
+		sprite_sheet_sprite_type = ""
+		default_frame = 
+	}
+	spriteType = {
+		name = ""
+		sprite_sheet_sprite_type = ""
+		default_frame = 
+	}
+	spriteType = {
+		name = ""
+		texturefile = ""
+		alwaystransparent = yes
+	}
+}

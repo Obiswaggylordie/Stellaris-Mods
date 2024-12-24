@@ -1,0 +1,159 @@
+#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+
+# collateral_damage was not part of old file so set to vanilla values
+# war_exhaustion was not part of old file so set to 0.0, this is WARHAMMER 40K and losing a few milion souls don't matter ;)
+
+skitarii_defense = {
+	defensive = yes
+	is_pop_spawned = yes
+	damage = 2
+	health = 6
+	morale = 2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	
+	icon_frame = 124
+
+	potential = {
+		planet = {
+			OR = {
+				is_planet_class = pc_mechanicus_forge
+				is_planet_class = pc_forgee
+				is_planet_class = pc_forgeee
+				is_planet_class = pc_forge_ring
+				is_planet_class = pc_forge_ring2
+				is_planet_class = pc_forge_ring3
+			}
+		}
+		owner = { has_country_flag = imperium }
+	}
+}
+
+penal_legion_defense = {
+	defensive = yes
+	is_pop_spawned = yes
+	damage = 2
+	health = 5
+	morale = 2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+
+	icon_frame = 125
+
+	potential = {
+		planet = {
+			is_planet_class = pc_penal
+		}
+		owner = { has_country_flag = imperium }
+	}
+}
+
+death_korps_defense = {
+	defensive = yes
+	is_pop_spawned = yes
+	damage = 2
+	health = 6
+	morale = 2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+
+	icon_frame = 153
+
+	potential = {
+		planet = {
+			is_planet_class = pc_nuked
+			is_planet_class = pc_barren
+			is_planet_class = pc_tomb
+			is_planet_class = pc_asteroid
+		}
+		owner = { has_country_flag = imperium }
+	}
+}
+
+imperial_guard_big_defense = {
+	defensive = yes
+	is_pop_spawned = yes
+	damage = 2
+	health = 7
+	morale = 2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+
+	icon_frame = 132
+
+	potential = {
+		planet = {
+			OR = {
+				is_planet_class = pc_hive_medium
+				is_planet_class = pc_super_hive
+				is_planet_class = pc_mega_hive
+			}
+		}
+		owner = { has_country_flag = imperium }
+	}
+}
+
+imperial_guard_medium_defense = {
+	defensive = yes
+	is_pop_spawned = yes
+	damage = 2
+	health = 5
+	morale = 2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+
+	icon_frame = 122
+
+	potential = {
+		planet = {
+			OR = {
+				is_planet_class = pc_industrial
+				is_planet_class = pc_hive_arid
+				is_planet_class = pc_hive_continental_01
+				is_planet_class = pc_hive_continental_02
+				is_planet_class = pc_hive_ocean
+				is_planet_class = pc_hive_tundra
+				is_planet_class = pc_hive_industrial
+			}
+		}
+		owner = { has_country_flag = imperium }
+	}
+}
+
+imperial_guard_small_defense = {
+	defensive = yes
+	is_pop_spawned = yes
+	damage = 1
+	health = 5
+	morale = 2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+
+	icon_frame = 127
+
+	potential = {
+		owner = { has_country_flag = imperium }
+	}
+}
+
+heavy_weapon_squad_defense = {
+	defensive = yes
+	is_pop_spawned = yes
+	damage = 2.0
+	health = 6.0
+	morale = 2.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+
+	icon_frame = 148
+
+	potential = {
+		planet = {
+			OR = {
+				is_planet_class = pc_fortress
+				is_planet_class = pc_armoury
+			}
+		}
+		owner = { has_country_flag = imperium }
+	}
+}

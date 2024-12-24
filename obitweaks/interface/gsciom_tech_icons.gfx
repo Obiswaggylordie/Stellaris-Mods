@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ship_part_iom_warp_drive_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_iom_warp_drive_1.dds"
+	}
+		
+}

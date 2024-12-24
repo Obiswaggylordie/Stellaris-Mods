@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_origin_commorragh_eldar"
+		texturefile = "gfx/event_pictures/origins/origin_commorragh_eldar.dds"
+		alwaysstransparent = yes
+	}
+	
+}

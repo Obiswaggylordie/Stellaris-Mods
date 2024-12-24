@@ -185,7 +185,7 @@ ap_the_fifth_race = {
 		add_research_option = tech_battleship_annihilator
 
 		owner = {
-			add_resource = { alloys = -10000 sr_ancient_zpm = -1 }
+			add_resource = { alloys = -10000 }
 			save_event_target_as = odyssey_owner
 			create_fleet = {
 				name = "Odyssey"		
@@ -228,7 +228,6 @@ ap_the_fifth_race = {
 		custom_tooltip = {
 			fail_text = "requires_odyssey_resources"
 			owner = { resource_stockpile_compare = { resource = alloys value > 14999 }}
-			owner = { resource_stockpile_compare = { resource = sr_ancient_zpm value > 0.99 }}
 		}
 	}
 

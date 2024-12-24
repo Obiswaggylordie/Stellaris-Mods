@@ -1,0 +1,107 @@
+#####    Planets    ######
+
+entity = {
+	name = "webway_planet_basic_01_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	#planet surface texture override
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "forge_01_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "testowee_01_spec.dds"
+	}
+	
+	##pole texture override
+	meshsettings = {
+	name = "polesShape"
+	texture_diffuse = "poles_barren_1_diffuse.dds"
+	texture_normal = "poles_barren_1_normal.dds"
+	texture_specular = "poles_barren_1_specular.dds"
+	}
+	
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "clouds_hive_thin_diffuse.dds"
+	texture_normal = "toxic_clouds_normal.dds"
+	texture_specular = "toxic_clouds_specular.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "clouds_hive_thin_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 } }
+}
+########################    Forge with ring   ##############################################
+entity = {
+	name = "webwayportal_entity"
+	cull_radius = 0
+	pdxmesh = "portal_webway_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_01" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_02" } }
+	}
+	scale = 1.0
+
+}
+
+entity = {
+	name = "webwayportal_portal_entity"
+	cull_radius = 0	
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 0 }}
+	locator = { name = "loc1012" position = { 0 0 0 } rotation = { 0 0 270 }}
+	#locator = { name = "loc1013" position = { 0 0 0 } rotation = { 0 0 270 }}
+	locator = { name = "loc1014" position = { 0 0 0 } rotation = { 0 0 -270 }}
+	#locator = { name = "loc1015" position = { 0 0 0 } rotation = { 0 0 -270 }}
+	
+	locator = { name = "loc1016" position = { 0 0 0 } rotation = { 0 0 -120 }}
+	locator = { name = "loc1017" position = { 0 0 0 } rotation = { 0 0 120 }}
+	locator = { name = "loc1018" position = { 0 0 0 } rotation = { 0 0 -40 }}
+	locator = { name = "loc1019" position = { 0 0 0 } rotation = { 0 0 40 }}
+	locator = { name = "loc10110" position = { 0 10 0 } rotation = { 0 0 0 }}
+	
+	locator = { name = "loc10111" position = { 0 0 -2 } rotation = { 0 0 0 }}
+	locator = { name = "loc10112" position = { 0 0 -2 } rotation = { 0 0 45 }}
+	locator = { name = "loc10113" position = { 0 0 -7 } rotation = { 90 0 90 }}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+
+	attach = { "loc101" = "webwayportal_entity"}
+	attach = { "loc1012" = "webwayportal_entity"}
+	#attach = { "loc1013" = "webwayportal_entity"}
+	attach = { "loc1014" = "webwayportal_entity"}
+	#attach = { "loc1015" = "webwayportal_entity"}
+	
+	attach = { "loc1016" = "webwayportal_entity"}
+	attach = { "loc1017" = "webwayportal_entity"}
+	attach = { "loc1018" = "webwayportal_entity"}
+	attach = { "loc1019" = "webwayportal_entity"}
+	attach = { "loc10110" = "webwayportal_entity"}
+	attach = { "loc10111" = "pulsar_entity"}
+	attach = { "loc10112" = "pulsar_entity"}
+	attach = { "loc10113" = "black_hole_entity"}
+	scale = 1.0
+}
+
+entity = {
+	name = "webway_planet_01_entity"
+
+	locator = { name = "loc1" position = { 0 0 0 } rotation = { 0 0 0 }}
+	locator = { name = "loc2" position = { 0 0 0 } rotation = { 0 0 0 }}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+	attach = { "loc1" = "webwayportal_portal_entity"}
+	attach = { "loc2" = "webway_planet_basic_01_entity"}
+	
+	scale = 1
+}

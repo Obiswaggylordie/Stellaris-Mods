@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxparticle = {
+		name = "quadrant_particle"
+		type = "quadrant_particle"
+		scale = 1.0
+	}
+}

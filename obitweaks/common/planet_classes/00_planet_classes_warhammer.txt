@@ -1,0 +1,789 @@
+pc_relic_iom = {
+	entity = "iom_relic_world"
+	entity_scale = @planet_standard_scale
+	icon_frame = 17
+	
+	climate = "wet"
+
+	atmosphere_color		= hsv { 0.6 0.5 0.5 }
+	atmosphere_intensity	= 1.2
+	atmosphere_width		= 0.85
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.dds"
+
+	min_distance_from_sun = 60
+	max_distance_from_sun = 110
+	spawn_odds = 0
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+
+	chance_of_ring = 0.2
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+
+	starting_planet = yes
+	colonizable = yes
+	district_set = standard
+	ideal = no
+	show_city = no
+	uses_alternative_skies_for_moons = no
+
+	modifier = {
+		pop_environment_tolerance = 0.80
+		planet_miners_produces_mult = 0.05
+		planet_technician_produces_mult = 0.05
+		job_miner_per_pop = 0.02 
+		job_technician_per_pop = 0.02 
+		planet_crime_mult = 0.50
+	}
+
+	carry_cap_per_free_district = @carry_cap_normal
+}
+
+pc_city_iom = {
+	entity = "iom_city_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 25
+	
+	climate = "wet"
+
+	atmosphere_color		= hsv { 0.75 0.10 0.60 }		#DONE
+	atmosphere_intensity	= 1.0
+	atmosphere_width		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+
+	modifier = {
+		planet_jobs_produces_mult = 0.20
+		planet_max_buildings_add = 12
+		planet_miners_produces_mult = 0.10
+		planet_technician_produces_mult = 0.10
+		planet_crime_mult = 0.15
+		pop_environment_tolerance = 0.90 
+		pop_growth_speed = 0.60 
+		trade_value_mult = 1.0 
+		planet_housing_mult = 0.2 
+		job_miner_per_pop = 0.5
+		job_technician_per_pop = 0.5
+		job_clerk_per_pop = 0.5
+	}
+
+	min_distance_from_sun = @habitable_min_distance
+	max_distance_from_sun = @habitable_max_distance
+	spawn_odds = 0
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+
+	fixed_city_level = 6
+
+	chance_of_ring = 0.2
+
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+
+	colonizable = yes
+	district_set = standard
+	starting_planet = no
+	ideal = yes
+	show_city = no
+	uses_alternative_skies_for_moons = no
+
+	carry_cap_per_free_district = @carry_cap_high
+}
+
+pc_mechanicus_forge = {
+	entity = "forge_planet"
+	picture = pc_forge
+	entity_scale = @planet_standard_scale
+	icon_frame = 37
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+        
+	modifier = {
+		planet_jobs_produces_mult = 0.40
+		planet_max_buildings_add = 300
+		planet_miners_produces_mult = 0.20
+		planet_jobs_alloys_produces_mult = 2.0
+		planet_technician_produces_mult = 0.20
+		pop_growth_speed = -0.1 
+		trade_value_mult = 0.50 
+		planet_housing_mult = 0.2 
+		job_miner_per_pop = 0.5
+		job_technician_per_pop = 0.5
+		job_clerk_per_pop = 0.5
+	}
+
+	min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = mechanicus_forge_world
+}
+
+pc_refinery= {
+	entity = "forgee_planet"
+	picture = pc_forgeee
+	entity_scale = @planet_standard_scale
+	icon_frame = 37
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+        
+	modifier = {
+		planet_jobs_produces_mult = 0.10
+		planet_max_buildings_add = 300
+		trade_value_mult = 0.40
+		planet_jobs_exotic_gases_produces_mult = 0.30
+		planet_jobs_rare_crystals_produces_mult = 0.30
+		planet_jobs_volatile_motes_produces_mult = 0.30
+	}
+
+        min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = forgee_planet
+}
+
+pc_industrial = {
+	entity = "industrial_planet"
+	picture = pc_industrial 
+	entity_scale = @planet_standard_scale
+	icon_frame = 35
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+	
+	modifier = {
+		planet_jobs_produces_mult = 0.15
+		planet_max_buildings_add = 300
+		planet_miners_produces_mult = 0.30
+		planet_technician_produces_mult = 0.40
+		job_miner_per_pop = 0.5
+		job_technician_per_pop = 0.5
+	}
+	
+	min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = industrial_world
+}
+
+pc_agri = {
+	entity = "agri_planet"
+	picture = pc_agri
+	entity_scale = @planet_standard_scale
+	icon_frame = 33
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+	
+	modifier = {
+		planet_jobs_produces_mult = 0.40
+		planet_jobs_food_produces_mult = 1.50
+		planet_max_buildings_add = 12
+		pop_environment_tolerance = -0.40 
+		pop_growth_speed = -0.60 
+		trade_value_mult = 1.0 
+		planet_housing_mult = 0.2
+	}
+
+	min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = 40kagri_world
+}
+
+pc_shrine = {
+	entity = "shrine_planet"
+	picture = pc_shrine
+	entity_scale = @planet_standard_scale
+	icon_frame = 41
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+
+	modifier = {
+		planet_jobs_society_research_produces_mult = 0.5
+		planet_stability_add = 20
+		planet_max_buildings_add = 300
+		pop_ethic_spiritualist_attraction_mult = 0.5
+		planet_jobs_unity_produces_mult = 0.85
+		pop_environment_tolerance = 0.20 
+		pop_growth_speed = 0.5
+		trade_value_mult = 0.30 
+		planet_housing_mult = 0.5 
+		biological_pop_happiness = 0.30
+		army_morale = 1.5
+	}
+
+        min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = shrine_world
+}
+
+pc_hive_medium = {
+	entity = "hive_planet"
+	picture = pc_hive_medium
+	entity_scale = @planet_standard_scale
+	icon_frame = 39
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+
+        modifier = {
+		planet_jobs_produces_mult = 0.05
+	}
+	
+        min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	district_set = hivecity_world
+	starting_planet = no
+	show_city = no
+}
+
+pc_penal = {
+	entity = "penal_planet"
+	picture = pc_penal
+	entity_scale = @planet_standard_scale
+	icon_frame = 38
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+
+	modifier = {
+		planet_crime_mult = 1
+		planet_immigration_pull_mult = 0.33
+		planet_buildings_cost_mult = 0.5
+		planet_max_buildings_add = 300 
+		planet_housing_mult = 0.5 
+		biological_pop_happiness = -0.50 
+		penal_colony = 0.50
+		apply_modifier_to_other_planets = penal_colony_other_planets
+	}
+
+        min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = penal_world
+}
+
+pc_fortress = {
+	entity = "fortress_planet"
+	picture = pc_fortress
+
+	entity_scale = @planet_standard_scale
+	icon_frame = 42
+
+	modifier = {
+		planet_stability_add = 10
+		planet_army_build_speed_mult = 0.15
+	}
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+
+	min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = fortress_world
+}
+
+pc_hive_arid = {
+	entity = "hive_arid"
+	picture = pc_hive_arid
+
+	entity_scale = @planet_standard_scale
+	icon_frame = 48
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+        
+        modifier = {
+		planet_jobs_produces_mult = 0.05
+	}
+	
+        min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = hivecity_world
+}
+
+pc_hive_continental_01 = {
+	entity = "hive_continental_01"
+	picture = pc_hive_continental_01
+
+	entity_scale = @planet_standard_scale
+	icon_frame = 46
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+        
+        modifier = {
+		planet_jobs_produces_mult = 0.05
+	}
+	
+        min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = hivecity_world
+}
+
+pc_hive_continental_02 = {
+	entity = "hive_continental_02"
+	picture = pc_hive_continental_02
+
+	entity_scale = @planet_standard_scale
+	icon_frame = 43
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+        
+        modifier = {
+		planet_jobs_produces_mult = 0.05
+	}
+	
+        min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = hivecity_world
+}
+
+pc_hive_ocean = {
+	entity = "hive_ocean"
+	picture = pc_hive_ocean
+	tile_set = pc_ocean
+	entity_scale = @planet_standard_scale
+	icon_frame = 53
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+        
+        modifier = {
+		planet_jobs_produces_mult = 0.05
+	}
+	
+        min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = hivecity_world
+}
+
+pc_hive_tundra = {
+	entity = "hive_tundra"
+	picture = pc_hive_tundra
+
+	entity_scale = @planet_standard_scale
+	icon_frame = 44
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+        
+        modifier = {
+		planet_jobs_produces_mult = 0.05
+	}
+	
+        min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = hivecity_world
+}
+
+pc_super_hive = {
+	entity = "super_hive"
+	picture = pc_super_hive 
+
+	entity_scale = @planet_standard_scale
+	icon_frame = 49
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+        
+        modifier = {
+		planet_jobs_produces_mult = 0.05
+	}
+	
+        min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = hivecity_world
+}
+
+pc_mega_hive = {
+	entity = "mega_hive"
+	picture = pc_mega_hive 
+
+	entity_scale = @planet_standard_scale
+	icon_frame = 36
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+        
+        modifier = {
+		planet_jobs_produces_mult = 0.05
+	}
+	
+        min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = hivecity_world
+}
+
+pc_hive_industrial = {
+	entity = "hive_industrial"
+	picture = pc_hive_arid
+
+	entity_scale = @planet_standard_scale
+	icon_frame = 40
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+        modifier = {
+		planet_job_artisan_produces_mult = 0.05
+	}
+	
+        min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = hivecity_world
+}
+
+pc_armoury = {
+	entity = "armoury_planet"
+	picture = pc_armoury 
+
+	entity_scale = @planet_standard_scale
+	icon_frame = 51
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+
+	modifier = {
+		planet_buildings_cost_mult = -0.3
+		planet_max_buildings_add = 300
+		trade_value_mult = 0.5  
+		armies_upkeep_mult = -0.40
+		army_defense_damage_mult = 0.20
+		army_morale = 0.50
+		armies_cost_mult = -0.30
+	}
+        
+        min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 1
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = pc_armoury
+}
+
+pc_craftworld = {
+	entity = "craftworld_01_entity"
+	picture = pc_craftworld
+
+	entity_scale = @planet_standard_scale
+	icon_frame = 50
+
+	modifier = {
+		planet_jobs_energy_produces_mult = 0.2
+		planet_jobs_minerals_produces_mult = 0.5
+		planet_jobs_unity_produces_mult = 0.7
+		planet_army_build_speed_mult = -0.1
+		planet_sensor_range_add = 2
+	}
+	
+	atmosphere_color = hsv { 0.89 0.89 0.56 }		
+	atmosphere_intensity = 0.5
+	atmosphere_width = 0.5
+	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+
+	min_distance_from_sun = 60
+	max_distance_from_sun = 95
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	colonizable = yes
+	ideal = yes
+	starting_planet = no
+	show_city = no
+	district_set = craft_world
+}

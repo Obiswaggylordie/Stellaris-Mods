@@ -12,10 +12,10 @@ building_cr_dtf_factory = {
 	}
 
 	planet_modifier = {
-		job_dtf_foundry_add = 10
-		job_dtf_technician_add = 10
-		job_dtf_miner_add = 10
-		planet_housing_add = 30
+		job_dtf_foundry_per_pop = 1
+		job_dtf_technician_per_pop = 1
+		job_dtf_miner_per_pop = 1
+		planet_housing_mult = 10
 
 		building_cr_dtf_laboratory_max = -1
 		building_cr_dtf_breeder_max = -1
@@ -69,9 +69,9 @@ building_cr_dtf_laboratory = {
 	}
 
 	planet_modifier = {
-		job_dtf_head_researcher_add = 1
-		job_dtf_researcher_add = 10
-		planet_housing_add = 11
+		job_dtf_head_researcher_per_pop = 0.1
+		job_dtf_researcher_per_pop = 1
+		planet_housing_mult = 10
 
 		building_cr_dtf_factory_max = -1
 		building_cr_dtf_breeder_max = -1
@@ -114,7 +114,7 @@ building_cr_dtf_breeder = {
 		pop_growth_speed = 10
 		planet_pop_assembly_add = 100
 		planet_pop_assembly_organic_add = 100
-		planet_housing_add = 30
+		planet_housing_mult = 10
 
 		building_cr_dtf_factory_max = -1
 		building_cr_dtf_laboratory_max = -1
@@ -215,8 +215,8 @@ building_cr_dtf_bunker = {
 				has_technology = tech_forerunner_start
 			}
 		}
-		job_promethean_warrior_servant_add = 10
-		job_warrior_servant_add = 10
+		job_promethean_warrior_servant_per_pop = 0.1
+		job_warrior_servant_per_pop = 1
 	}
 
 	army_modifier = {

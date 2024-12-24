@@ -1,0 +1,145 @@
+namespace = GCSE
+
+event = {
+	id = GCSE.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			limit = { 
+				has_origin = origin_gcs_imperium
+			}
+			ruler = {
+				add_ruler_trait = trait_man_emperor_mankind
+				add_ruler_trait = leader_trait_ruler_psionic
+			}
+			capital_scope = {
+				gcsiom_initialize = yes
+				add_modifier = { modifier = unification_war_terra_planet_modifier days = -1 }
+			}
+			give_technology = {
+			tech = tech_planetary_unification
+			message = no
+			}
+		}
+	}
+}
+
+namespace = planets
+# Add modifiers by planet class
+planet_event = {
+    id = planets.1
+    hide_window = yes
+
+    trigger = { always = no }
+
+    immediate = {
+           any_planet_within_border = {
+			limit = { exists = owner }
+			# Add modifiers by planet class
+			else_if = {
+				limit = { is_planet_class = pc_agri }
+				add_modifier = { modifier = "agri_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_shrine }
+				add_modifier = { modifier = "shrine_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_hive_medium }
+				add_modifier = { modifier = "hive_medium_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_penal }
+				add_modifier = { modifier = "penal_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_fortress }
+				add_modifier = { modifier = "fortress_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_tomb }
+				add_modifier = { modifier = "tomb_planet" days = -1 }
+			}
+			else_if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_hive_arid
+						is_planet_class = pc_hive_continental_01
+						is_planet_class = pc_hive_continental_02
+						is_planet_class = pc_hive_ocean
+						is_planet_class = pc_hive_tundra
+					}
+				}
+				add_modifier = { modifier = "hive_small_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_super_hive }
+				add_modifier = { modifier = "super_hive_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_mega_hive }
+				add_modifier = { modifier = "mega_hive_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_hive_industrial }
+				add_modifier = { modifier = "hive_industrial_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_craftworld }
+				add_modifier = { modifier = "craftworld_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_advancecity }
+				add_modifier = { modifier = "advancecity_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_daemon }
+				add_modifier = { modifier = "daemon_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_daemonn }
+				add_modifier = { modifier = "daemonn_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_daemont }
+				add_modifier = { modifier = "daemont_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_daemons }
+				add_modifier = { modifier = "daemons_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_advancexenocity }
+				add_modifier = { modifier = "advancexenocity_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_advancexenocityy }
+				add_modifier = { modifier = "advancexenocityy_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_advancexenocityyy }
+				add_modifier = { modifier = "advancexenocityyy_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_orkworld }
+				add_modifier = { modifier = "orkworld_planet" days = -1 }
+			}
+			else_if = {
+				limit = { is_planet_class = pc_armoury }
+				add_modifier = { modifier = "armoury_planet" days = -1 }
+			}
+			
+			# Add modifiers by flags
+			if = {
+				limit = { has_planet_flag = spacemarine_homeworld }
+				add_modifier = { modifier = "spacemarine_planet" days = -1 }
+			}
+			else_if = {
+				limit = { has_planet_flag = mechanicus_homeworld }
+				add_modifier = { modifier = "mechanicus_planet" days = -1 }
+			}
+		}
+	}
+}

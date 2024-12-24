@@ -1,0 +1,62 @@
+decision_shrine_world_project = {
+	owned_planets_only = yes
+    ### UPDATE THIS FROM VANILLA ###
+	icon = decision_small_hive_project
+
+	enactment_time = 160
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 1000
+            alloys = 2000
+                }
+        }
+        potential = {
+        OR = {
+			is_planet_class = pc_tropical
+        	is_planet_class = pc_continental
+        	is_planet_class = pc_gaia
+			is_planet_class = pc_arid
+        	is_planet_class = pc_desert
+        	is_planet_class = pc_savannah
+			AND = {
+				has_planetary_diversity = yes
+				OR = {
+					is_pd_tropical = yes
+					is_pd_continental = yes
+					is_pd_gaia = yes
+					is_pd_arid = yes
+					is_pd_desert = yes
+					is_pd_savannah = yes
+				}
+			}
+        }
+		habitable_structure = no
+		exists = owner
+		owner = { has_ascension_perk = ap_imperial_planet_designations }
+	}
+
+
+	allow = {
+		custom_tooltip = {
+			#free_district_slots < 1
+		}
+        num_pops >= 15
+	}
+
+	effect = {
+		hidden_effect = {
+			clear_deposits = yes
+			change_pc = pc_shrine
+			set_planet_entity = {
+				entity = "shrine_planet"
+				graphical_culture = owner
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 50
+	}
+}

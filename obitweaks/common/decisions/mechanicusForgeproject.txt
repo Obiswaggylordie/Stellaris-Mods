@@ -1,0 +1,60 @@
+# Forge Arcology Project IOM
+decision_forge_project_IOM = {
+	owned_planets_only = yes
+	icon = decision_forge_project
+	sound = event_air_raid_siren
+	
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			influence = 200
+			minerals = 4000
+            energy = 1500
+		}
+	}
+
+	potential = {
+		NOR = {
+			is_planet_class = pc_city
+			is_planet_class = pc_habitat
+			is_planet_class = pc_ringworld_habitable
+			is_planet_class = pc_machine
+			is_planet_class = pc_mechanicus_forge
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+		is_wh_planet_all = no
+		is_artificial = no
+		exists = owner
+		owner = { has_origin = origin_gcs_imperium }
+		owner = { has_ascension_perk = ap_imperial_planet_designations } 
+	}
+
+	allow = {
+		num_uncleared_blockers < 1
+	}
+
+	effect = {
+		hidden_effect = {
+			change_pc = pc_mechanicus_forge
+			set_planet_entity = {
+				entity = "iom_city_planet_entity"
+				graphical_culture = owner
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 30
+		modifier = {
+			factor = 100
+			exists = owner
+			OR = {
+				num_pops >= 70
+				is_capital = no
+			}
+		}
+	}
+}

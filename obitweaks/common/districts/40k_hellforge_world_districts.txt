@@ -1,0 +1,231 @@
+district_hellforge_housing = {
+        icon = district_hellforge_housing
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = hell_forge_world
+	}
+
+	potential = {
+        OR = {
+             uses_district_set = hell_forge_world
+             uses_district_set =           
+        }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 800
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 8
+        planet_max_buildings_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_non_swapped_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire = no
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_clerk_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_non_swapped_tradition = tr_prosperity_interstellar_franchising }
+		}
+		modifier = {
+			job_clerk_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_fallen_empire = no
+				is_regular_empire = yes
+			}
+		}
+		text = job_clerk_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_maintenance_drone_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			free_housing < 10
+		}
+	}
+}
+
+district_hellforges = {
+        icon = forgeworldalloylinesicon
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = hell_forge_world
+		from = {
+			is_regular_empire = yes
+		}
+	}
+
+	potential = {
+        OR = {
+             uses_district_set = hell_forge_world
+             uses_district_set =         
+        }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 2000
+			alloys = 100
+		}
+		upkeep = {
+			energy = 5
+            volatile_motes = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 6
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_foundry_add = 10
+		}
+	}
+    
+    planet = {
+        owner = {
+            empire_modifier = {
+                
+                
+            }
+        }
+    }
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_foundry_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 250
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 200
+				}
+				has_monthly_income = {
+					resource = alloys
+					value > 500
+				}
+			}
+		}
+	}
+}

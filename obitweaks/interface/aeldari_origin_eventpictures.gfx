@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "origin_craftworld_aeldari"
+		texturefile = "gfx/event_pictures/origins/origin_craftworld_aeldari.dds"
+		alwaysstransparent = yes
+	}
+	
+}

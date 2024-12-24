@@ -1,0 +1,186 @@
+﻿### Chaos_Names_1 
+CHAOS1 = {	
+ 
+	category = "Humanoid" 
+	
+	### SHIPS 
+	ship_names = {
+	
+		generic = {
+			Despoiler Desolator Desecrator "Battle Barge" Gloriana "Planet Killer" "Terminus Est" "Fortress of Agony" "Sword of Sacrilege" "Damnations Fury" "Merciless Death" "Eternity of Pain" Torment "The Ninth Eye" "The Treacherous" "Vengeful Spirit" Conqueror Retaliator Repulsive 
+			Executor "Blood Royale" "Bloodied Sword" "Foe-Reaper" "Bringer of Despair" Foebane Acheron Hades "Chaos Eternus" "Injustice" "Warmaker" "Malignus" "Maximus" "Contagion" Hellfire Styx Horrific Darkblood "Heartless Destroyer" Styx Hecate Carnage Strike "Wanton Destruction" 
+			Devestation Murder Slaughter Inferno Hellbringer Pestilaan "Anarchic Vendetta" Excessive "Infidus Diabolus" "Convenant of Blood" "Piercing Nova" "Aeternum Dread" "Lady Sapienta" Obfuscate "Praxis Mundi" "Throneless King" Deathbane Unforgivable Doombringer 
+			Deathblade "Steel Fang" Monstrous "Unholy Dominion" Plagueclaw "Despicable Ecstasy" Deathskull "Heathen Promise" Killfrenzy Soulless Shade Neutron Knossos "The Colossus" 
+			Myrmidon Conqueror Damascus Tyrant Pegasus Antagonist Cyclone Pathfinder Discovery "Ice Lance" Trinity Cyclops 
+			Vanguard "Steel Aurora" 
+		}
+	
+		corvette = {
+		}
+		
+		destroyer = {
+		}
+		
+		cruiser = {
+		}
+		
+		battleship = {
+		}
+		
+		titan = {
+		}
+ 
+		colossus = {
+		}
+		
+		science = {
+		}
+		
+		colonizer = {
+		}
+		
+		constructor = {
+		}
+		
+		military_station_small = {
+			"Blackstone Fortress" "Melgator" "Furnace Fabricator" "Warp Abyss" "Mavelous Omega" 
+		}
+		
+		ion_cannon = {
+		}
+	}
+	
+	fleet_names = {
+		random_names = {
+			"Sons of Horus Fleet" "Black Legion Fleet" "World Eaters Fleet" "Thousand Sons Fleet" "Death Guard Fleet" "Emperor's Children Fleet" " Word Bearers Fleet" 
+			"Iron Warriors Fleet" "Alpha Legion Fleet" "Night Lords Fleet" "Noise Fleet" "Plague Fleet" 
+		}
+		sequential_name = "%O% Fleet" 
+	}
+ 
+ 
+	###ARMIES 
+	army_names = {
+	
+		defense_army = {
+			sequential_name = "%O% Acolytes" 
+		}
+			
+		assault_army = {
+			sequential_name = "%O% Chaos Space Marines" 
+		}
+		
+		slave_army = {
+			sequential_name = "%O% Renegades" 
+		}
+		
+		clone_army = {
+			sequential_name = "%O% Clone Warriors" 
+		}
+		
+		robotic_army = {
+			sequential_name = "%O% Possessed Machine Spirits" 
+		}
+		
+		android_army = {
+			sequential_name = "%O% Hellspawns" 
+		}
+		
+		psionic_army = {
+			sequential_name = "%O% Sorcerers" 
+		}
+		
+		xenomorph_army = {
+			sequential_name = "%O% Xenos" 
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "%O% Mutants" 
+		}
+	}
+	
+	### PLANETS 
+	planet_names = {
+	
+		generic = {
+			names = {Adraith Aktosha Anathrax "Brigannion Four" Bubonicus Drakaasi Eidolon Harmony Maeleum Medrengard Oliensis "Plague Planet" Sicarius Sortiarius Temporaria "Immortal Sorrows" 
+			Xana Chinchare Scarus Medusa Sentinel Nemesis Scelus "Absolom Reach" Almarit Anathrax "Fool's Paradise" Fyre Kathalon M'Laar "Planet of the Sorcerers" Torvendis 
+			"Urskas Sol Tetra" "Hell's Teeth" 
+		
+			}
+		}
+		
+		pc_desert = {
+			names = {
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+			}
+		}
+		
+		pc_arid = {
+			names = {
+			}
+		}
+		
+		pc_continental = {
+			names = {
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+			}
+		}
+		
+	}
+	
+	### CHARACTERS 
+	character_names = {
+		default = {
+			# A complete name 
+			full_names = {
+				"Abaddon the Despoiler" Typhus "Lucius the Eternal" "Fabius Bile" "Kharn the Betrayer" Ahriman "Huron Blackheart" Honsou Shon'tu Erebus "Sholen Skara" "Roghrax Bloodhand" "Uraka Az'baramael" 
+				Angron An'ggrath Ka'Bandha Skarbrand Doombreed Skulltaker Kharn Kossolax "Zhufor the Impaler" "Magnus the Red" "Kairos Fateweaver" Ghargatuloth "Blue Scribes" "Ahzek Ahriman" Ti'Lath "Gallus Herodicus" 
+				Akhor'menet Malfallax Fulgrim Zarakynel N'Kari "The Masque" Lucius "Jihar the Lacerator" "Emeli Duboir" Mortarion Scabeiathrax Ku'Gath Epidemius 
+				Typhus "Ignatius Grulgor" Ulkair Corpulax "Cor'bax Utterblight" 
+			}
+			
+			# Always combined with a second name 
+			first_names = { 
+				Zaphoz Andekai Kalgar Zhudiaz Kalrus Aranux Zhu'lumin Halanath Talolax Monux 
+				Ferriroush Mordesty Azugoye Demathall Anbise Fihrsty Arhidehk Beldivix Telodash Pergedea 
+				Dyzar Zalaz Furiroth Khrodred Antadekai Cruron Endekai Yga'ryon Chenstix Khanacus 
+			}
+			
+			# Always combined with a first name 
+			second_names = { 
+				Noxious Bloodthirster Painbringer Deathblade Warmaker Lacerator Bile Eternal Corpulax Utterblight Impaler Blackheart Duboir Necrosius Myrath Atum Sum 
+				Volkstein Zaraphiston Porphyricus Kelmaur Drask Sum Ahriman Ussax Worldeater Ironhand Daemonblood 
+			}
+			
+			regnal_first_names = { 
+				Zaphoz Andekai Kalgar Zhudiaz Kalrus Aranux Zhu'lumin Halanath Talolax Monux 
+				Ferriroush Mordesty Azugoye Demathall Anbise Fihrsty Arhidehk Beldivix Telodash Pergedea 
+				Dyzar Zalaz Furiroth Khrodred Antadekai Cruron Endekai Yga'ryon Chenstix Khanacus 
+			}
+			
+			regnal_second_names = { 
+				Noxious Bloodthirster Painbringer Deathblade Warmaker Lacerator Bile Eternal Corpulax Utterblight Impaler Blackheart Duboir Necrosius Myrath Atum Sum 
+				Volkstein Zaraphiston Porphyricus Kelmaur Drask Sum Ahriman Ussax Worldeater Ironhand Daemonblood 
+			}
+		}
+	}
+}

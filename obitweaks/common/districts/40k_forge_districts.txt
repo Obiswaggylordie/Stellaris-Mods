@@ -1,0 +1,1243 @@
+########### Forge & Forge World Derivatives District Sets ###########
+
+@base_cost = 300
+@city_cost = 500
+
+########### Industrial World District Set ###########
+
+########### Industrial City ###########
+district_industrial_city = {
+        # icon =
+	base_buildtime = 480
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		OR = {
+			uses_district_set = industrial_world
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_regular_empire = yes }
+		OR = {
+			uses_district_set = industrial_world
+		}
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+        district_forge_housing
+	}
+
+	resources = {
+		category = planet_districts_cities
+		cost = {
+			minerals = @city_cost
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 5
+        planet_max_buildings_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_fallen_empire = no
+			}
+		}
+		modifier = {
+			job_clerk_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_non_swapped_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_non_swapped_tradition = tr_prosperity_interstellar_franchising }
+		}
+		modifier = {
+			job_clerk_add = 1
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_clerk_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 100
+			planet = {
+				planet_devastation < 1
+				years_passed > 10
+				free_housing < 4
+			}
+		}
+		modifier = {
+			weight = 1
+			num_free_districts = { type = district_mining value = 0 }
+			num_free_districts = { type = district_generator value = 0 }
+			num_free_districts = { type = district_farming value = 0 }
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_free_districts = { type = district_mining value = 0 }
+				num_free_districts = { type = district_generator value = 0 }
+				num_free_districts = { type = district_farming value = 0 }
+			}
+			OR = {
+				num_free_districts = { type = district_mining value > 0 }
+				num_free_districts = { type = district_generator value > 0 }
+				num_free_districts = { type = district_farming value > 0 }
+			}
+			count_pops = {
+				limit = {
+					is_unemployed = yes
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+				count >= 1
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_free_districts = { type = district_mining value = 0 }
+				num_free_districts = { type = district_generator value = 0 }
+				num_free_districts = { type = district_farming value = 0 }
+			}
+			owner = {
+				has_resource = {
+					type = minerals
+					amount < 400
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_free_districts = { type = district_mining value = 0 }
+				num_free_districts = { type = district_generator value = 0 }
+				num_free_districts = { type = district_farming value = 0 }
+			}
+			free_jobs > 1
+			free_housing > 1
+		}
+	}
+}
+
+district_industrial_forge = {
+        icon = district_hive_industrial
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = industrial_world
+	}
+
+	potential = {
+		uses_district_set = industrial_world
+		exists = owner
+		owner = {
+			exists = owner
+			is_regular_empire = yes
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_industrial_forge
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 2000
+			alloys = 100
+            volatile_motes = 25
+			rare_crystals = 25
+		}
+		upkeep = {
+			energy = 4
+            volatile_motes = 1
+			rare_crystals = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 6
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_artisan_drone_add = 1
+            job_fabricator_drone_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+            job_artisan_add_mult = 0.02 # 2% artisan job modifier
+			job_artisan_add = 10
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_artisan_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_artisan_drone_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 500
+			owner = {
+				has_monthly_income = {
+					resource = alloys
+					value < 200
+				}
+				has_monthly_income = {
+					resource = minerals
+					value > 99
+				}
+			}
+		}
+		modifier = {
+			weight = 1000
+			owner = {
+				has_monthly_income = {
+					resource = alloys
+					value < 0
+				}
+			}
+		}
+	}
+}
+
+########### Industrial Generator ###########
+district_industrial_generator = {
+        icon = district_forge_geothermal
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = industrial_world
+	}
+
+	potential = {
+		uses_district_set = industrial_world
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_forge_geothermal
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 3
+        planet_technician_produces_mult = 0.02 # 2% technician job bonus
+        planet_technician_drone_mult = 0.02 # 2% technician job modifier
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_technician_drone_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_technician_drone_add = 3
+			planet_housing_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_technician_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		modifier = {
+			job_fe_acolyte_generator_add = 3
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_technician_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_technician_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		text = job_fe_acolyte_generator_effect_desc
+	}
+
+	prerequisites = {
+		tech_power_plant_1
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 3
+			OR = {
+				free_jobs < 2
+				AND = {
+					districts_good_energy = yes
+					free_jobs < 5
+				}
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+			}
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 150
+				}
+				has_monthly_income = {
+					resource = minerals
+					value > 50
+				}
+			}
+		}
+		modifier = {
+			weight = 3
+			free_jobs < 2
+			num_free_districts = { type = district_mining value = 0 }
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 250
+				}
+			}
+		}
+		modifier = {
+			weight = 250
+			years_passed > 4
+			OR = {
+				free_jobs < 3
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+			}
+			OR = {
+				owner = { country_uses_food = no }
+				owner = {
+					has_monthly_income = {
+						resource = food
+						value > 0
+					}
+				}
+				num_free_districts = { type = district_farming value = 0 }
+			}
+			OR = {
+				owner = {
+					has_monthly_income = {
+						resource = energy
+						value < -10
+					}
+				}
+				owner = {
+					has_monthly_income = {
+						resource = minerals
+						value > 50
+					}
+				}
+				num_free_districts = { type = district_mining value = 0 }
+			}
+		}
+		modifier = {
+			factor = 3
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 0
+				}
+			}
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				has_deficit = energy
+			}
+		}
+	}
+
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+########### Industrial Mining ###########
+district_industrial_mining = {
+        # icon =
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = industrial_world
+	}
+
+	potential = {
+		uses_district_set = industrial_world
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_forge_geothermal
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 3
+        planet_miners_produces_mult = 0.02 # 2% miner job bonus
+        planet_job_mining_drone_produces_mult = 0.02 # 2% miner job bonus
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_mining_drone_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_mining_drone_add = 3
+			planet_housing_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_miner_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		modifier = {
+			job_fe_acolyte_mine_add = 3
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_mining_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_miner_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		text = job_fe_acolyte_mine_effect_desc
+	}
+
+	prerequisites = {
+		tech_mechanized_mining
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 3
+			OR = {
+				free_jobs < 2
+				AND = {
+					districts_good_minerals = yes
+					free_jobs < 6
+				}
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+			}
+		}
+		modifier = {
+			weight = 300
+			OR = {
+				AND = {
+					years_passed > 4
+					OR = {
+						free_jobs < 3
+						owner = { has_ascension_perk = ap_arcology_project }
+						any_owned_pop = {
+							is_unemployed = yes
+							NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+							NOR = {
+								is_pop_category = specialist
+								is_pop_category = ruler
+							}
+						}
+					}
+					owner = {
+						has_monthly_income = {
+							resource = minerals
+							value < 100
+						}
+					}
+					OR = {
+						owner = {
+							has_monthly_income = {
+								resource = food
+								value > 0
+							}
+						}
+						num_free_districts = { type = district_farming value = 0 }
+					}
+				}
+				AND = {
+					free_jobs < 5
+					districts_good_energy = no
+					districts_good_food = no
+					owner = {
+						used_naval_capacity_percent < 0.9
+						has_monthly_income = {
+							resource = alloys
+							value <= 5
+						}#Alloy production has shut down which means the current mineral income can't be trusted
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			exists = owner
+			owner = {
+				is_lithoid_empire = yes
+			}
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				has_deficit = minerals
+			}
+		}
+	}
+
+	ai_resource_production = {
+		minerals = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+########### Forge World Geothermal Mining District ###########
+district_forge_geothermal = {
+        # icon =
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = fe_forge_planet
+	}
+
+	potential = {
+        OR = {
+            uses_district_set = fe_forge_planet
+            uses_district_set = fe_refinery_planet
+            uses_district_set = fe_armory_planet
+        }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_forge_geothermal
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+            alloys = 50
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 6
+        planet_jobs_worker_produces_mult = 0.02 # 2% worker job modifier
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_mining_drone_add = 3
+            job_technician_drone_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_mining_drone_add = 5
+            job_technician_drone_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_miner_add = 3
+            job_technician_add = 3
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_miner_effect_desc
+        text = job_technician_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+        text = job_mining_drone_effect_desc
+        text = job_technician_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+        text = job_mining_drone_effect_desc
+        text = job_technician_drone_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 500
+			owner = {
+				has_monthly_income = {
+					resource = alloys
+					value < 500
+				}
+				has_monthly_income = {
+					resource = minerals
+					value > 99
+				}
+			}
+		}
+	}
+}
+
+########### Forge World Archeotech Administration District ###########
+district_forge_archeotech_admin = {
+        # icon =
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = fe_forge_planet
+		from = {
+			is_regular_empire = yes
+		}
+	}
+
+	potential = {
+        OR = {
+            uses_district_set = fe_forge_planet
+            uses_district_set = fe_refinery_planet
+            uses_district_set = fe_armory_planet
+        }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_forge_archeotech_admin
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			alloys = 50
+            exotic_gases = 50
+		}
+		upkeep = {
+			energy = 4
+            exotic_gases = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 6
+        planet_job_researcher_produces_mult = 0.02 # 2% researcher job modifier
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				NOT = { has_valid_civic = civic_warrior_culture }
+			}
+		}
+		modifier = {
+            job_researcher_mult = 0.02 # 2% researcher job modifier
+			job_administrator_add = 1
+            job_priest_add = 1
+            job_researcher_add = 4
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+        text = job_administrator_effect_desc
+        text = job_priest_effect_desc
+		text = job_researcher_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 250
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 200
+				}
+				has_monthly_income = {
+					resource = alloys
+					value > 500
+				}
+			}
+		}
+	}
+}
+
+########### Forge World Volcanic Furnace District ###########
+district_forge_furnace = {
+        # icon =
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = fe_forge_planet
+	}
+
+	potential = {
+		uses_district_set = fe_forge_planet
+		exists = owner
+		owner = {
+			exists = owner
+			is_regular_empire = yes
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_forge_furnace
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 2000
+			alloys = 100
+            volatile_motes = 25
+			rare_crystals = 25
+		}
+		upkeep = {
+			energy = 4
+            volatile_motes = 1
+			rare_crystals = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 6
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_artisan_drone_add = 1
+            job_fabricator_drone_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+            job_foundry_add_mult = 0.02 # 2% metallurgists job modifier
+			job_artisan_add = 1
+            job_foundry_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_artisan_effect_desc
+        text = job_foundry_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_artisan_drone_effect_desc
+        text = job_fabricator_drone_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 500
+			owner = {
+				has_monthly_income = {
+					resource = alloys
+					value < 200
+				}
+				has_monthly_income = {
+					resource = minerals
+					value > 99
+				}
+			}
+		}
+		modifier = {
+			weight = 1000
+			owner = {
+				has_monthly_income = {
+					resource = alloys
+					value < 0
+				}
+			}
+		}
+	}
+}
+
+########### Refinery World Great Machine Refinery District ###########
+district_forge_refinery = {
+        # icon =
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = fe_refinery_planet
+		from = {
+			is_regular_empire = yes
+		}
+	}
+
+	potential = {
+		uses_district_set = fe_refinery_planet
+		owner = {
+			exists = owner
+			is_regular_empire = yes
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_forge_refinery
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 2000
+			alloys = 100
+		}
+		upkeep = {
+			energy = 5
+			alloys = 5
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 6
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+            planet_jobs_specialist_produces_mult = 0.02 # 2% specialist job modifier
+			job_chemist_add = 2
+			job_translucer_add = 2
+            job_gas_refiner_add = 2
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_chemist_effect_desc
+        text = job_crystal_miner_effect_desc
+        text = job_gas_refiner_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 250
+			owner = {
+				has_monthly_income = {
+					resource = rare_crystals
+					value > 2
+				}
+				has_monthly_income = {
+					resource = volatile_motes
+					value > 2
+                }
+                has_monthly_income = {
+					resource = exotic_gases
+					value > 2
+				}
+			}
+		}
+	}
+}
+
+########### Armory World Workshop-Fortress District ###########
+district_forge_armory = {
+        # icon =
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = fe_armory_planet
+		from = {
+			is_regular_empire = yes
+		}
+	}
+
+	potential = {
+		uses_district_set = fe_armory_planet
+		owner = {
+			exists = owner
+			is_regular_empire = yes
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_forge_armory
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 2000
+			alloys = 100
+		}
+		upkeep = {
+			energy = 5
+            volatile_motes = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 6
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				NOT = { has_valid_civic = civic_warrior_culture }
+			}
+		}
+		modifier = {
+            country_naval_cap_add = 10
+			job_soldier_add = 3
+			job_foundry_add = 3
+		}
+	}
+    
+    planet = {
+        owner = {
+            empire_modifier = {
+                shipclass_military_build_cost_mult = -0.10 # 10% decrease to ship build cost
+                shipclass_military_build_speed_mult = 0.10 # 10% increase in ship build speed
+            }
+        }
+    }
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_soldier_effect_desc
+        text = job_foundry_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 250
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 200
+				}
+				has_monthly_income = {
+					resource = alloys
+					value > 500
+				}
+			}
+		}
+	}
+}

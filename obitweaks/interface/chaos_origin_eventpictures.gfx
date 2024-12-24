@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "origin_chaos_undivided"
+		texturefile = "gfx/event_pictures/origins/origin_chaos_undivided.dds"
+		alwaysstransparent = yes
+	}
+	
+}

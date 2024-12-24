@@ -1,0 +1,69 @@
+gcsiom_initialize = {
+	
+####vanilla deposits####
+
+	add_deposit = d_ancient_reactor_pits
+	add_deposit = d_abandoned_mining_tunnels
+	add_deposit = d_ancient_bombardment_craters
+	add_deposit = d_ancient_battlefield
+	add_deposit = d_industrial_sector
+	add_deposit = d_ancient_particle_accelerator
+	add_deposit = d_arcane_replicator
+	add_deposit = d_ancient_mining_site
+	add_deposit = d_irradiated_ruins
+	add_deposit = d_underground_vault
+	add_deposit = d_former_relic_world
+	add_deposit = d_central_spire
+	add_deposit = d_searing_desert
+	add_deposit = d_irradiated_valley
+	add_deposit = d_metal_boneyard
+	add_deposit = d_relic_dense_ruins
+	add_deposit = d_d_quarantine_zone
+	add_deposit = d_radioactive_wasteland
+	add_deposit = d_failing_infrastructure
+	add_deposit = d_exterminators_ruins
+	add_deposit = d_tomb_world_ruins
+	add_deposit = d_tomb_world_wasteland
+	add_deposit = d_city_ruins
+	add_deposit = d_ruined_arcology
+	add_deposit = d_unsupervised_settlement
+	add_deposit = d_collapsed_burrows
+	
+####custom deposits####
+
+	add_deposit = d_iom_city_ruined
+	add_deposit = d_iom_city_ruined
+	add_deposit = d_iom_city_ruined
+	add_deposit = d_iom_city_ruined
+	add_deposit = d_iom_city_ruined
+	add_deposit = d_iom_city_ruined
+	add_deposit = d_iom_city_ruined
+	add_deposit = d_iom_city_ruined
+	add_deposit = d_iom_city_ruined
+	add_deposit = d_iom_city_ruined
+	add_deposit = d_iom_imperial_palace
+	add_deposit = d_iom_eternity_gate
+	add_deposit = d_iom_forbidden_fortress
+	add_deposit = d_terra_hive_karelia_sprawl
+	add_deposit = d_terra_hive_tashkent_sprawl
+	add_deposit = d_terra_hive_salvator_sprawl
+	add_deposit = d_terra_hive_malliax_sprawl
+	add_deposit = d_terra_hive_novion_primus_sprawl
+	add_deposit = d_terra_hive_xericho_sprawl
+	add_deposit = d_terra_hive_ababa_sprawl
+	add_deposit = d_terra_hive_skhallax_sprawl
+	add_deposit = d_iom_wyverns_gate_spaceport
+	add_deposit = d_iom_lion_gate_spaceport 
+	add_deposit = d_iom_damocles_spaceport
+	add_deposit = d_iom_khangba_marwu_prison
+	
+	while = {
+		limit = { num_pops < 60 }
+		create_pop = {
+			species = owner_main_species
+			ethos = random
+		}
+	}
+	
+	check_planet_employment = yes
+}

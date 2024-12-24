@@ -1,0 +1,142 @@
+district_armoury_storage = {
+        icon = district_armoury_storage
+	base_buildtime = 200
+	is_capped_by_modifier = no
+	
+	show_on_uncolonized = {
+		uses_district_set = pc_armoury
+	}
+
+	potential = {
+		uses_district_set = pc_armoury
+		exists = owner
+		owner = { is_regular_empire = yes }
+	}
+	
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 2000
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	
+
+	country_modifier = {
+		country_resource_max_add = 10000
+	}
+	
+	planet_modifier = {
+		planet_army_build_speed_mult = 1.1
+		planet_housing_add = 5
+		job_clerk_add = 5
+	}
+
+	triggered_desc = {
+		text = job_clerk_effect_desc
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			weight = 50
+			is_active_resolution = "resolution_greatergood_balance_in_the_middle"
+		}
+		modifier = {
+			weight = 500
+			is_active_resolution = "resolution_greatergood_universal_prosperity_mandate"
+		}
+	}
+}
+
+district_defence_laser = {
+        icon = district_defence_laser
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = pc_armoury
+	}
+
+	potential = {
+		uses_district_set = pc_armoury
+		exists = owner
+		owner = { is_regular_empire = yes }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 3
+		job_soldier_add = 3
+		planet_orbital_bombardment_damage = -0.05
+	}
+
+	triggered_desc = {
+		text = job_soldier_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 10
+			free_jobs > 5
+			free_housing > 10
+		}
+	}
+}
+
+district_militarium_barracks = {
+        icon = district_militarium_barracks
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = pc_armoury
+	}
+
+	potential = {
+		uses_district_set = pc_armoury
+		exists = owner
+		owner = { is_regular_empire = yes }
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+		job_enforcer_add = 6
+                job_soldier_add = 4
+	}
+	
+	triggered_desc = {
+		text = job_enforcer_effect_desc
+                text = job_soldier_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			free_housing < 10
+		}
+	}
+}

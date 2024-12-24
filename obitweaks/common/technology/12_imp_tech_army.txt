@@ -1,0 +1,4641 @@
+tech_combat_doctrine = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight3
+
+	modifier = {
+		army_attack_damage_mult = 0.05
+		army_attack_health_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_defense_doctrine = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight3
+
+	modifier = {
+		army_defense_damage_mult = 0.2
+		army_defense_health_mult = 0.2
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_for_the_emperor = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight3
+
+	modifier = {
+		army_attack_morale_mult = 0.05
+		army_defense_morale_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_valor_code = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight3
+
+	modifier = {
+		army_attack_morale_mult = 0.2
+		army_defense_morale_mult = 0.2
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_weapon_aimed_fire = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight3
+
+	modifier = {
+		army_morale_damage_mult = 0.15
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_weapon_heavy_fire = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight3
+
+	modifier = {
+		army_disengage_chance_mult = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_weapon_sniper_ai_aim = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight3
+
+	modifier = {
+		army_attack_damage_mult = 0.05
+		army_defense_damage_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_signum = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight3
+
+	modifier = {
+		planet_orbital_bombardment_damage = -0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_smoke_grenades = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = { weapon }
+	weight = @tier1weight3
+
+	modifier = {
+		army_defense_damage_mult = 0.05
+		army_disengage_chance_mult = 0.1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+		
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_blind_grenades = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = { weapon }
+	weight = @tier1weight3
+
+	modifier = {
+		army_disengage_chance_mult = 0.15
+		army_defense_health_mult = 0.05
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}	
+		
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_kraken_bolts = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = { weapon }
+	weight = @tier1weight3
+
+	modifier = {
+		army_collateral_damage_mult = 0.1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_improved_ballistics = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = { propulsion }
+	weight = @tier1weight3
+
+	modifier = {
+		army_damage_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_advanced_implants = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { biology }
+	weight = @tier1weight3
+
+	modifier = {
+		army_attack_health_mult = 0.1
+		army_defense_health_mult = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_increased_tithe = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight1
+
+	modifier = {
+		planet_army_build_speed_mult = 0.2
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_navy_req = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight1
+
+	modifier = {
+		planet_army_build_speed_mult = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_drop_pod = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 1
+	category = { voidcraft }
+	weight = @tier3weight1
+
+	modifier = {
+		ship_landing_time_mult = -0.3
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_purity_seal = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight3
+
+	modifier = {
+		army_starting_experience_add = 100
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_battle_standard = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = { weapon }
+	weight = @tier1weight3
+
+	modifier = {
+		army_experience_gain_mult = 0.1
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_obsidian_raven = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight3
+
+	modifier = {
+		armies_upkeep_mult = -0.05
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_emperors_justice = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight3
+
+	modifier = {
+		armies_cost_mult = -0.1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_deployable_cover = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight3
+
+	modifier = {
+		army_defense_health_mult = 0.1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_teleport = {
+	cost = @tier2cost1
+	area = physics
+	tier = 2
+	category = { field_manipulation }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	modifier = {
+		ship_landing_time_mult = -0.15
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_ressurect = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { biology }
+	weight = @tier2weight3
+
+	modifier = {
+		army_attack_health_mult = 0.1
+		army_defense_health_mult = 0.1
+	}
+	
+	prerequisites = { "tech_adeptus_astartes" }
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_relic_armor = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	modifier = {
+		army_attack_health_mult = 0.1
+		army_defense_health_mult = 0.1
+	}
+	
+	prerequisites = { "tech_adeptus_astartes" }
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_litanies_of_hate = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight3
+
+	modifier = {
+		army_damage_mult = 0.05
+	}
+	
+	prerequisites = { "tech_adeptus_astartes" }
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_merciless_strike = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight3
+
+	modifier = {
+		army_attack_damage_mult = 0.05
+	}
+	
+	prerequisites = { "tech_adeptus_astartes" }
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_acc_charge = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight3
+
+	modifier = {
+		army_attack_health_mult = 0.05
+	}
+	
+	prerequisites = { "tech_adeptus_astartes" }
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_retreat_enemies = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight3
+
+	modifier = {
+		army_attack_morale_mult = 0.05
+	}
+	
+	prerequisites = { "tech_adeptus_astartes" }
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_apoth_combat_stimulant_equipment = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { biology }
+	weight = @tier2weight3
+
+	modifier = {
+		army_attack_health_mult = 0.05
+	}
+	
+	prerequisites = { "tech_adeptus_astartes" }
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_larramans_blessing = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight3
+
+	modifier = {
+		army_defense_morale_mult = 0.05
+	}
+	
+	prerequisites = { "tech_adeptus_astartes" }
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+############################################################################
+
+tech_adeptus_astartes = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight3
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_wings_of_shrike = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_ASSAULT_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_ASSAULT_SPACE_MARINES_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_INCEPTOR_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_INCEPTOR_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_advanced_dreadnought_armor = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_DREADNOUGHT_TITLE"
+			desc = "TECH_UNLOCK_DREADNOUGHT_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_dreadnaught_charge_drives = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_VENERABLE_DREADNOUGHT_TITLE"
+			desc = "TECH_UNLOCK_VENERABLE_DREADNOUGHT_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_assault_cannon = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_SUPPRESSOR_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_SUPPRESSOR_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_assault_cannon_dread = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_DREADNOUGHT_TITLE"
+			desc = "TECH_UNLOCK_DREADNOUGHT_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_bolt_pistol = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_APOTHECARY_TITLE"
+			desc = "TECH_UNLOCK_APOTHECARY_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_REIVER_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_REIVER_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_bolter = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_TECHMARINES_TITLE"
+			desc = "TECH_UNLOCK_TECHMARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_chainsword = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_APOTHECARY_TITLE"
+			desc = "TECH_UNLOCK_APOTHECARY_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_cyclone_missile_launcher = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_TERMINATOR_TITLE"
+			desc = "TECH_UNLOCK_TERMINATOR_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_dark_age_dreadnought = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { lost_knowledge }
+	weight = @tier3weight3
+	
+	prerequisites = { "tech_darkage_knowledge" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_lost_knowledge"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_lost_knowledge"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_VENERABLE_DREADNOUGHT_TITLE"
+			desc = "TECH_UNLOCK_VENERABLE_DREADNOUGHT_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_dreadnought_claws = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_DREADNOUGHT_TITLE"
+			desc = "TECH_UNLOCK_DREADNOUGHT_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_flamer = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_IMPERIAL_GUARD_BIG_TITLE"
+			desc = "TECH_UNLOCK_IMPERIAL_GUARD_BIG_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_IMPERIAL_GUARD_MEDIUM_TITLE"
+			desc = "TECH_UNLOCK_IMPERIAL_GUARD_MEDIUM_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_IMPERIAL_GUARD_SMALL_TITLE"
+			desc = "TECH_UNLOCK_IMPERIAL_GUARD_SMALL_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_force_sword = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_LIBRARIAN_TITLE"
+			desc = "TECH_UNLOCK_LIBRARIAN_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_grenade_launcher = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_STORMTROOPERS_TITLE"
+			desc = "TECH_UNLOCK_STORMTROOPERS_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_heavy_assault_cannon = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_TACTICAL_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_TACTICAL_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_heavy_bolter = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_DEVASTATOR_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_DEVASTATOR_SPACE_MARINES_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_HELLBLASTER_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_HELLBLASTER_SPACE_MARINES_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_SUPPRESSOR_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_SUPPRESSOR_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_heavy_flamer = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_LANDRAIDER_TITLE"
+			desc = "TECH_UNLOCK_LANDRAIDER_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_lasgun = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_IMPERIAL_GUARD_BIG_TITLE"
+			desc = "TECH_UNLOCK_IMPERIAL_GUARD_BIG_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_IMPERIAL_GUARD_MEDIUM_TITLE"
+			desc = "TECH_UNLOCK_IMPERIAL_GUARD_MEDIUM_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_IMPERIAL_GUARD_SMALL_TITLE"
+			desc = "TECH_UNLOCK_IMPERIAL_GUARD_SMALL_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_GRENADIERS_TITLE"
+			desc = "TECH_UNLOCK_GRENADIERS_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_librarian_armor = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_LIBRARIAN_TITLE"
+			desc = "TECH_UNLOCK_LIBRARIAN_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_librarian_force_staff = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_LIBRARIAN_TITLE"
+			desc = "TECH_UNLOCK_LIBRARIAN_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_lightning_claw = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_ASSAULT_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_ASSAULT_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_lightning_claws_upgrade = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_INCEPTOR_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_INCEPTOR_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_melta_gun = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_STORMTROOPERS_TITLE"
+			desc = "TECH_UNLOCK_STORMTROOPERS_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_missile_launcher = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_HEAVY_WEAPON_SQUAD_TITLE"
+			desc = "TECH_UNLOCK_HEAVY_WEAPON_SQUAD_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_multimelta = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_DREADNOUGHT_TITLE"
+			desc = "TECH_UNLOCK_DREADNOUGHT_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_antitank_grenades = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_REIVER_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_REIVER_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_plasma_cannon = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_DEVASTATOR_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_DEVASTATOR_SPACE_MARINES_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_HELLBLASTER_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_HELLBLASTER_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_plasma_gun = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_IMPERIAL_GUARD_BIG_TITLE"
+			desc = "TECH_UNLOCK_IMPERIAL_GUARD_BIG_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_IMPERIAL_GUARD_MEDIUM_TITLE"
+			desc = "TECH_UNLOCK_IMPERIAL_GUARD_MEDIUM_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_IMPERIAL_GUARD_SMALL_TITLE"
+			desc = "TECH_UNLOCK_IMPERIAL_GUARD_SMALL_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_plasma_pistol = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_TECHMARINES_TITLE"
+			desc = "TECH_UNLOCK_TECHMARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_power_fist = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_DEVASTATOR_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_DEVASTATOR_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_power_fist_upgrade = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_HELLBLASTER_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_HELLBLASTER_SPACE_MARINES_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_SUPPRESSOR_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_SUPPRESSOR_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_power_sword = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_TACTICAL_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_TACTICAL_SPACE_MARINES_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_REIVER_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_REIVER_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_power_axe = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_TECHMARINES_TITLE"
+			desc = "TECH_UNLOCK_TECHMARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_predator_lascannon = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_PREDATOR_TITLE"
+			desc = "TECH_UNLOCK_PREDATOR_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_psychic_hood = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_LIBRARIAN_TITLE"
+			desc = "TECH_UNLOCK_LIBRARIAN_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_reinforced_armor_plating = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_PREDATOR_TITLE"
+			desc = "TECH_UNLOCK_PREDATOR_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_scout_armor = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_SCOUTS_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_SCOUTS_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_scout_equipment = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_SCOUTS_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_SCOUTS_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_scout_sergeant = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { military_theory }
+	weight = @tier3weight3
+
+	prerequisites = { "tech_helm_of_command" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_SCOUTS_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_SCOUTS_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_sergeant_assault_squad = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { military_theory }
+	weight = @tier3weight3
+
+	prerequisites = { "tech_helm_of_command" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_ASSAULT_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_ASSAULT_SPACE_MARINES_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_INCEPTOR_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_INCEPTOR_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_shotgun = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_apothecary_armor = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_APOTHECARY_TITLE"
+			desc = "TECH_UNLOCK_APOTHECARY_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_sniper_rifle = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_VINDICARE_ASSASSIN_TITLE"
+			desc = "TECH_UNLOCK_VINDICARE_ASSASSIN_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_spell_librarian = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_LIBRARIAN_TITLE"
+			desc = "TECH_UNLOCK_LIBRARIAN_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_storm_bolter = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_RAZORBACK_TITLE"
+			desc = "TECH_UNLOCK_RAZORBACK_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_storm_shield = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_TERMINATOR_TITLE"
+			desc = "TECH_UNLOCK_TERMINATOR_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_tactical_sergeant = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { military_theory }
+	weight = @tier3weight3
+
+	prerequisites = { "tech_helm_of_command" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_TACTICAL_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_TACTICAL_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_terminator_armor = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_TERMINATOR_TITLE"
+			desc = "TECH_UNLOCK_TERMINATOR_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_terminator_teleporter = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	category = { armor }
+	weight = @tier3weight3
+	
+	prerequisites = { "tech_teleport" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_TERMINATOR_TITLE"
+			desc = "TECH_UNLOCK_TERMINATOR_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_thunder_hammer = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_TERMINATOR_TITLE"
+			desc = "TECH_UNLOCK_TERMINATOR_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_mk8_armor = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_TECHMARINES_TITLE"
+			desc = "TECH_UNLOCK_TECHMARINES_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_TACTICAL_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_TACTICAL_SPACE_MARINES_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_ASSAULT_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_ASSAULT_SPACE_MARINES_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_DEVASTATOR_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_DEVASTATOR_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_gravis_armor = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_INCEPTOR_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_INCEPTOR_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_omnis_armor = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_SUPPRESSOR_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_SUPPRESSOR_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_phobos_armor = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_REIVER_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_REIVER_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_tacticus_armor = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_HELLBLASTER_SPACE_MARINES_TITLE"
+			desc = "TECH_UNLOCK_HELLBLASTER_SPACE_MARINES_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_vanquisher = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_assault_kit = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_STORMTROOPERS_TITLE"
+			desc = "TECH_UNLOCK_STORMTROOPERS_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_cadian_trooper = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { military_theory }
+	weight = @tier3weight3
+
+	prerequisites = { "tech_helm_of_command" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_STORMTROOPERS_TITLE"
+			desc = "TECH_UNLOCK_STORMTROOPERS_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_demoman = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_GRENADIERS_TITLE"
+			desc = "TECH_UNLOCK_GRENADIERS_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_executioner = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium 
+	}
+}
+
+tech_guardsmen_squad_commissar = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { military_theory }
+	weight = @tier3weight3
+
+	prerequisites = { "tech_helm_of_command" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_IMPERIAL_GUARD_BIG_TITLE"
+			desc = "TECH_UNLOCK_IMPERIAL_GUARD_BIG_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_IMPERIAL_GUARD_MEDIUM_TITLE"
+			desc = "TECH_UNLOCK_IMPERIAL_GUARD_MEDIUM_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_IMPERIAL_GUARD_SMALL_TITLE"
+			desc = "TECH_UNLOCK_IMPERIAL_GUARD_SMALL_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_heavy_weapon_squad_autocannon = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_HEAVY_WEAPON_SQUAD_TITLE"
+			desc = "TECH_UNLOCK_HEAVY_WEAPON_SQUAD_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_heavy_weapon_squad_lascannon = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_HEAVY_WEAPON_SQUAD_TITLE"
+			desc = "TECH_UNLOCK_HEAVY_WEAPON_SQUAD_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_ogryn_squad_leader = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { military_theory }
+	weight = @tier3weight3
+
+	prerequisites = { "tech_helm_of_command" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_OGRYN_SQUAD_TITLE"
+			desc = "TECH_UNLOCK_OGRYN_SQUAD_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_tank_armor = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { materials }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_sentinel_missile = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_manticore_shot = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_iron_halo = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_APOTHECARY_TITLE"
+			desc = "TECH_UNLOCK_APOTHECARY_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_armoured_ceramite_plating = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { materials }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_LANDRAIDER_TITLE"
+			desc = "TECH_UNLOCK_LANDRAIDER_DESC"
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_RAZORBACK_TITLE"
+			desc = "TECH_UNLOCK_RAZORBACK_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_infiltrate = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_VINDICARE_ASSASSIN_TITLE"
+			desc = "TECH_UNLOCK_VINDICARE_ASSASSIN_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_ogryn_army = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_OGRYN_SQUAD_TITLE"
+			desc = "TECH_UNLOCK_OGRYN_SQUAD_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_special_recruits = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_carapace_armor = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { armor }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_armor"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_GRENADIERS_TITLE"
+			desc = "TECH_UNLOCK_GRENADIERS_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+#tech_heavy_bolter_turret = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_demolition_charge = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	category = { weapon }
+	weight = @tier3weight3
+
+	prerequisites = { "tech_remote_detonation" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_GRENADIERS_TITLE"
+			desc = "TECH_UNLOCK_GRENADIERS_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_remote_detonation = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_collegia_titanica = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_officio_assassinorum = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_VINDICARE_ASSASSIN_TITLE"
+			desc = "TECH_UNLOCK_VINDICARE_ASSASSIN_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_deathwatch = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_sisters_of_battle = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+#tech_heavy_bolter_turret_common = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_HEAVY_WEAPON_SQUAD_TITLE"
+			desc = "TECH_UNLOCK_HEAVY_WEAPON_SQUAD_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_power_fist_common = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_OGRYN_SQUAD_TITLE"
+			desc = "TECH_UNLOCK_OGRYN_SQUAD_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+#tech_planetary_turret_gun = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}
+
+tech_sniper_squad_targeted_grenades = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { weapon }
+	weight = @tier2weight3
+
+	prerequisites = { "tech_adeptus_astartes" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_weapon"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_VINDICARE_ASSASSIN_TITLE"
+			desc = "TECH_UNLOCK_VINDICARE_ASSASSIN_DESC"
+		}
+	}
+	
+	potential = {
+		has_country_flag = imperium  
+	}
+}

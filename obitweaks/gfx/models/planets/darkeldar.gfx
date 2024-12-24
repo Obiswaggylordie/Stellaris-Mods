@@ -1,0 +1,37 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "portal_webway_mesh"
+		file = "gfx/models/planets/portalww.mesh"
+		
+		animation = { id = "idle"			type = "portal_idle_animation" }
+		
+		scale = 10.0
+		
+		meshsettings = {
+			texture_diffuse = "webwayportal.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "planet_clouded_mesh_webway"
+		file = "gfx/models/planets/planet_cloudedwebway.mesh"
+		animation = { id = "idle"	type = "planet_clouded_idle" }
+		scale = 1
+		cull_distance = 99999999.0f
+	}
+	
+	pdxmesh = {
+		name = "craftworld_01_mesh"
+		file = "gfx/models/planets/craftworld_01.mesh"
+		
+		scale = 1.0
+		
+		meshsettings = {
+			shader = "PdxMeshPlanet"
+			texture_diffuse = "cccraftworld_01_diffuse.dds"
+			texture_normal = "ccraftworld_01_normal.dds"
+			texture_specular = "cccraftworld_01_specular.dds"
+		}
+	}
+}

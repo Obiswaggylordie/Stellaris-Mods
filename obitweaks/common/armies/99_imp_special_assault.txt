@@ -1,0 +1,380 @@
+#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+
+# collateral_damage was not part of old file so set to vanilla values
+# war_exhaustion was not part of old file so set to 0.0, this is WARHAMMER 40K and losing a few milion souls don't matter ;)
+
+catachan_fighters = {
+	damage = 2
+	health = 4
+	morale = 2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 150
+	
+	icon_frame = 66
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 15
+		}
+
+		upkeep = {
+			energy = 2.8
+		}
+	}
+	
+	prerequisites = { "tech_special_recruits" }
+	
+	allow = {
+		has_building = building_navy_recruitment
+	}
+	
+	potential = {
+		planet = { has_planet_flag = catachan_planet }
+		owner = { has_country_flag = human_empire }
+	}
+}
+
+cadian_shock_troops = {
+	damage = 2.2
+	health = 4
+	morale = 2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 150
+	
+	icon_frame = 67
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 15
+		}
+
+		upkeep = {
+			energy = 2.8
+		}
+	}
+	
+	prerequisites = { "tech_special_recruits" }
+	
+	allow = {
+		has_building = building_navy_recruitment
+	}
+	
+	potential = {
+		planet = { has_planet_flag = cadia_planet }
+		owner = { has_country_flag = human_empire }
+	}
+	
+}
+
+armageddon_steel_legion = {
+	damage = 2
+	health = 4.2
+	morale = 2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 150
+	
+	icon_frame = 68
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 15
+		}
+
+		upkeep = {
+			energy = 2.8
+		}
+	}
+	
+	prerequisites = { "tech_special_recruits" }
+	
+	allow = {
+		has_building = building_navy_recruitment
+	}
+	
+	potential = {
+		planet = { has_planet_flag = armageddon_planet }
+		owner = { has_country_flag = human_empire }
+	}
+	
+}
+
+death_korps_of_krieg = {
+	damage = 2.2
+	health = 4.2
+	morale = 100
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 100
+	
+	icon_frame = 69
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 15
+		}
+
+		upkeep = {
+			energy = 2.8
+		}
+	}
+	
+	prerequisites = { "tech_special_recruits" }
+	
+	allow = {
+		has_building = building_navy_recruitment
+	}
+	
+	potential = {
+		planet = { has_planet_flag = kriegplanett }
+		owner = { has_country_flag = human_empire }
+	}
+}
+
+mordian_iron_guard = {
+	damage = 2
+	health = 4.2
+	morale = 2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 150
+	
+	icon_frame = 70
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 15
+		}
+
+		upkeep = {
+			energy = 2.8
+		}
+	}
+	
+	prerequisites = { "tech_special_recruits" }
+	
+	allow = {
+		has_building = building_navy_recruitment
+	}
+	
+	potential = {
+		planet = { has_planet_flag = mordian_planet }
+		owner = { has_country_flag = human_empire }
+	}
+}
+
+scintillan_fusiliers = {
+	damage = 2
+	health = 4.2
+	morale = 2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 150
+	
+	icon_frame = 71
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 15
+		}
+
+		upkeep = {
+			energy = 2.8
+		}
+	}
+	
+	prerequisites = { "tech_special_recruits" }
+	
+	allow = {
+		has_building = building_navy_recruitment
+	}
+	
+	potential = {
+		planet = { has_planet_flag = scintilla_planet }
+		owner = { has_country_flag = human_empire }
+	}
+}
+
+praetorian_guard = {
+	damage = 2
+	health = 4.2
+	morale = 2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 150
+	
+	icon_frame = 72
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 15
+		}
+
+		upkeep = {
+			energy = 2.8
+		}
+	}
+	
+	prerequisites = { "tech_special_recruits" }
+	
+	allow = {
+		has_building = building_navy_recruitment
+	}
+	
+	potential = {
+		planet = { has_planet_flag = praetoria_planet }
+		owner = { has_country_flag = human_empire }
+	}
+}
+
+valhallan_ice_warriors = {
+	damage = 2.2
+	health = 4.2
+	morale = 2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 150
+	
+	icon_frame = 73
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 15
+		}
+
+		upkeep = {
+			energy = 2.8
+		}
+	}
+	
+	prerequisites = { "tech_special_recruits" }
+	
+	allow = {
+		has_building = building_navy_recruitment
+	}
+	
+	potential = {
+		planet = { has_planet_flag = valhalla_planet }
+		owner = { has_country_flag = human_empire }
+	}
+}
+
+tallarn_desert_raiders = {
+	damage = 2
+	health = 4
+	morale = 2.2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 150
+	
+	icon_frame = 74
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 15
+		}
+
+		upkeep = {
+			energy = 2.8
+		}
+	}
+	
+	prerequisites = { "tech_special_recruits" }
+	
+	allow = {
+		has_building = building_navy_recruitment
+	}
+	
+	potential = {
+		planet = { has_planet_flag = tallarn_planet }
+		owner = { has_country_flag = human_empire }
+	}
+}
+
+vostroyan_firstborn = {
+	damage = 2.2
+	health = 4.2
+	morale = 2.2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 150
+	
+	icon_frame = 75
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 15
+		}
+
+		upkeep = {
+			energy = 2.8
+		}
+	}
+	
+	prerequisites = { "tech_special_recruits" }
+	
+	allow = {
+		has_building = building_navy_recruitment
+	}
+	
+	potential = {
+		planet = { has_planet_flag = vostroya_planet }
+		owner = { has_country_flag = human_empire }
+	}
+}
+
+elysian_drop_troops = {
+	damage = 2.2
+	health = 4.2
+	morale = 2.2
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	has_species = yes
+	time = 150
+	
+	icon_frame = 142
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 15
+		}
+
+		upkeep = {
+			energy = 2.8
+		}
+	}
+	
+	prerequisites = { "tech_special_recruits" }
+	
+	allow = {
+		has_building = building_navy_recruitment
+	}
+	
+	potential = {
+		planet = { has_planet_flag = elysia_planet }
+		owner = { has_country_flag = human_empire }
+	}
+}

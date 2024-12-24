@@ -1,0 +1,58 @@
+#IOM traits
+trait_hope_res_human = {
+	cost = 0
+	initial = no
+	randomized = no
+	species_possible_remove = {
+		always = no
+	}
+
+	icon = "gfx/interface/icons/traits/STGIOM/trait_stg_iom.dds"
+	immortal_leaders = no
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		army_attack_morale_mult = 0.05
+		army_morale = 0.05
+		planet_army_build_speed_mult = 0.05
+		leader_skill_levels = 4
+		pop_growth_speed = 0.20
+		planet_jobs_worker_produces_mult = 0.05
+		planet_jobs_unity_produces_mult = 0.05
+		ruler_skill_levels = 5
+		species_leader_exp_gain = 0.20
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+
+}
+
+trait_man_emperor_mankind = {
+	is_councilor_trait_for_ruler = yes
+	immortal_leaders = yes
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "gfx/interface/icons/traits/STGIOM/trait_man_emperor_iom.dds"
+		RARITY = common
+		COUNCIL = triggered
+		TIER = none
+	}
+
+	leader_class = { scientist commander official }
+	initial = no
+	randomized = no
+	
+	starting_ruler_trait = yes
+	cost = 0
+	
+	modifier = {
+		pop_government_ethic_attraction = 0.1
+		country_ruler_influence_produces_add = 1.0
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

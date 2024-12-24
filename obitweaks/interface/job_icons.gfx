@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_promethium_job"
+		texturefile = "gfx/interface/icons/jobs/job_promethium_miner.dds"
+	}
+	spriteType = {
+		name = "GFX_electronics_tau_job"
+		texturefile = "gfx/interface/icons/jobs/job_electronics_manufacturer_tau.dds"
+	}
+		
+}

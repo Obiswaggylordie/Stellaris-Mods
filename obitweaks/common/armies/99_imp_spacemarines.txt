@@ -1,0 +1,953 @@
+#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+
+# collateral_damage was not part of old file so set to vanilla values
+# war_exhaustion was not part of old file so set to 0.0, this is WARHAMMER 40K and losing a few milion souls don't matter ;)
+
+dark_angels = {
+	damage = 3.0
+	health = 8.0
+	morale = 3.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 360
+	
+	icon_frame = 10
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 35
+			alloys = 10
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	allow = {
+		has_building = building_chapel_barracks
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "dark_angels_count" 
+					value = 6
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "dark_angels_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "dark_angels_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		OR = {
+			owner = { has_country_flag = the_dark_angels }
+			AND = {
+				planet = { has_planet_flag = caliban_planet }
+				owner = { has_country_flag = imperium }
+			}
+		}
+	}
+}
+
+white_scars = {
+	damage = 3.0
+	health = 8.0
+	morale = 3.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 160
+	
+	icon_frame = 11
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 35
+			alloys = 10
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	allow = {
+		has_building = building_chapel_barracks
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "white_scars_count" 
+					value = 6
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "white_scars_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "white_scars_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		OR = {
+			owner = { has_country_flag = the_white_scars }
+			AND = {
+				planet = { has_planet_flag = chogoris_planet }
+				owner = { has_country_flag = imperium }
+			}
+		}
+	}
+}
+
+space_wolves = {
+	damage = 3.1
+	health = 8.1
+	morale = 3.1
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 360
+	
+	icon_frame = 12
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 35
+			alloys = 10
+		}
+
+		upkeep = {
+			energy = 3.1
+		}
+	}
+
+	allow = {
+		has_building = building_chapel_barracks
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "space_wolves_count" 
+					value = 6
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "space_wolves_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "space_wolves_count" 
+				value = -1
+			}
+		}
+	}
+
+	potential = {
+		OR = {
+			owner = { has_country_flag = the_space_wolves }
+			AND = {
+				planet = { has_planet_flag = fenris_planet }
+				owner = { has_country_flag = imperium }
+			}
+		}
+	}
+}
+
+imperial_fists = {
+	damage = 3.0
+	health = 8.0
+	morale = 3.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 160
+	
+	icon_frame = 13
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 35
+			alloys = 10
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	allow = {
+		has_building = building_chapel_barracks
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "imperial_fists_count" 
+					value = 6
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "imperial_fists_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "imperial_fists_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		OR = {
+			owner = { has_country_flag = the_imperial_fist }
+			AND = {
+				planet = {
+					OR = {
+						has_planet_flag = terra_planet
+						has_planet_flag = phalanx_planet
+					}
+				}
+				owner = { has_country_flag = imperium }
+			}
+		}
+	}
+}
+
+blood_angels = {
+	damage = 3.0
+	health = 8.0
+	morale = 3.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 360
+	
+	icon_frame = 14
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 35
+			alloys = 10
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	allow = {
+		has_building = building_chapel_barracks
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "blood_angels_count" 
+					value = 6
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "blood_angels_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "blood_angels_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		OR = {
+			owner = { has_country_flag = the_blood_angels }
+			AND = {
+				planet = { has_planet_flag = baal_planet }
+				owner = { has_country_flag = imperium }
+			}
+		}
+	}
+}
+
+iron_hands  = {
+	damage = 3.0
+	health = 8.0
+	morale = 3.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 160
+	
+	icon_frame = 15
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 35
+			alloys = 10
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	allow = {
+		has_building = building_chapel_barracks
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "iron_hands_count" 
+					value = 6
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "iron_hands_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "iron_hands_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		OR = {
+			owner = { has_country_flag = the_iron_hand }
+			AND = {
+				planet = { has_planet_flag = medusa_planet }
+				owner = { has_country_flag = imperium }
+			}
+		}
+	}
+}
+
+ultramarines = {
+	damage = 3.0
+	health = 8.0
+	morale = 3.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 360
+	
+	icon_frame = 16
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 35
+			alloys = 10
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	allow = {
+		has_building = building_chapel_barracks
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "ultramarines_count" 
+					value = 6
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "ultramarines_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "ultramarines_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		OR = {
+			owner = { has_country_flag = the_ultra_marines }
+			AND = {
+				planet = { has_planet_flag = macragge_planet }
+				owner = { has_country_flag = imperium }
+			}
+		}
+	}
+}
+
+salamanders = {
+	damage = 3.0
+	health = 8.0
+	morale = 3.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 160
+	
+	icon_frame = 17
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 35
+			alloys = 10
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	allow = {
+		has_building = building_chapel_barracks
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "salamanders_count" 
+					value = 6
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "salamanders_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "salamanders_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		OR = {
+			owner = { has_country_flag = the_salamanders }
+			AND = {
+				planet = { has_planet_flag = nocturne_planet }
+				owner = { has_country_flag = imperium }
+			}
+		}
+	}
+}
+
+raven_guard = {
+	damage = 3.0
+	health = 8.0
+	morale = 3.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 160
+	
+	icon_frame = 18
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 35
+			alloys = 10
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	allow = {
+		has_building = building_chapel_barracks
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "raven_guard_count" 
+					value = 6
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "raven_guard_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "raven_guard_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		OR = {
+			owner = { has_country_flag = the_raven_guard }
+			AND = {
+				planet = { has_planet_flag = deliverance_planet }
+				owner = { has_country_flag = imperium }
+			}
+		}
+	}
+}
+
+grey_knights = {
+	damage = 3.0
+	health = 8.0
+	morale = 3.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 360
+	
+	icon_frame = 20
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 50
+			alloys = 15
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	allow = {
+		has_building = building_chapel_barracks
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "grey_knights_count" 
+					value = 6
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "grey_knights_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "grey_knights_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		planet = { has_planet_flag = titan_planet }
+		owner = { has_country_flag = imperium }
+	}
+}
+
+black_templars = {
+	damage = 3.0
+	health = 8.0
+	morale = 3.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 360
+	
+	icon_frame = 21
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 50
+			alloys = 15
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	allow = {
+		has_building = building_chapel_barracks
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "black_templars_count" 
+					value = 6
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "black_templars_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "black_templars_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		OR = {
+			owner = { has_country_flag = the_imperial_fist }
+			AND = {
+				planet = {
+					OR = {
+						has_planet_flag = terra_planet
+						has_planet_flag = phalanx_planet
+					}
+				}
+				owner = { has_country_flag = imperium }
+			}
+		}
+	}
+}
+
+blood_ravens = {
+	damage = 3.0
+	health = 8.0
+	morale = 3.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 360
+	
+	icon_frame = 19
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 50
+			alloys = 15
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	allow = {
+		has_building = building_chapel_barracks
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "blood_ravens_count" 
+					value = 6
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "blood_ravens_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "blood_ravens_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		planet = { has_planet_flag = aurelia_planet }
+		owner = { has_country_flag = imperium }
+	}
+}
+
+legio_custodes = {
+	damage = 3.0
+	health = 13.0
+	morale = 3.0
+	defensive = yes
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 160
+	
+	icon_frame = 22
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 35
+			alloys = 20
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	allow = {
+		has_building = building_chapel_barracks
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "legio_custodes_count" 
+					value = 5
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "legio_custodes_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "legio_custodes_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		planet = { has_planet_flag = terra_planet }
+		owner = { has_country_flag = imperium }
+	}
+}
+
+deathwatch = {
+	damage = 3.0
+	health = 8.0
+	morale = 3.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 160
+	
+	icon_frame = 23
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 40
+			alloys = 10
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+	
+	prerequisites = { "tech_deathwatch" }
+	
+	allow = {
+		owner = { has_country_flag = imperium }
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "deathwatch_count" 
+					value = 6
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "deathwatch_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "deathwatch_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		owner = { has_country_flag = imperium }
+	}
+}
+
+sisters_of_battle = {
+	damage = 4.0
+	health = 5.0
+	morale = 3.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 160
+	
+	icon_frame = 24
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 35
+			alloys = 5
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+	
+	prerequisites = { "tech_sisters_of_battle" }
+	
+	allow = {
+		owner = { has_country_flag = imperium }
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "sisters_of_battle_count" 
+					value = 8
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "sisters_of_battle_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "sisters_of_battle_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		owner = { has_country_flag = imperium }
+	}
+}

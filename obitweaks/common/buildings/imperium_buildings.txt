@@ -1,0 +1,894 @@
+building_chapel_barracks = {
+    base_buildtime = 360
+
+    category = army
+    
+    potential = {
+        exists = owner
+        owner = { has_country_flag = imperium }
+    }
+
+    country_modifier = {
+        country_commander_cap_add = 2  
+        country_naval_cap_mult = 0.05
+    }	
+	
+    destroy_trigger = {
+        exists = owner
+        owner = { NOT = { has_country_flag = imperium } }
+    }
+
+    prerequisites = { "tech_adeptus_astartes" }
+
+    planet_modifier = {
+        job_gene_tech_add = 1
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 500
+        }	
+        upkeep = {
+            energy = 10
+        }
+    }
+	
+    ai_weight = {
+        weight = 20
+        modifier = {
+            factor = 0
+            has_building = building_chapel_barracks
+        }
+    }
+}
+
+building_residence = {
+    base_buildtime = 240
+
+    category = amenity
+    
+    potential = {
+        exists = owner
+        owner = { has_country_flag = imperium }
+    }
+    
+    destroy_trigger = {
+        exists = owner
+        owner = { NOT = { has_country_flag = imperium } }
+    }
+
+    prerequisites = { "tech_advanced_construction" }
+
+    allow = {
+	    OR = {
+		  has_building = building_capital
+		  has_building = building_major_capital
+		  has_building = building_system_capital
+	    }
+    }
+	
+    planet_modifier = {
+        planet_housing_add = 10
+        planet_amenities_add = 5
+    }
+	
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 500
+        }
+        upkeep = {
+            energy = 5
+        }
+    }
+
+    ai_weight = {
+        weight = 0
+        modifier = {
+            weight = 100 # High weight to guarantee that if the below is true then the AI should build it
+            free_housing < 3 # Prevents the AI from running out of residences when nearly out of tiles
+            OR = {
+                free_jobs > 0 # Prevents spamming of residence buildings when no jobs are open
+                AND = {
+                    free_housing < 0 # Prevents the AI from running out of residences when nearly out of tiles
+                    NOT = { any_owned_pop = { is_unemployed = yes } }
+                }
+            }
+            free_district_slots = 0 # Do not build when city districts can still be built
+        }
+        modifier = {
+            factor = 0
+            has_building = building_residence
+        }
+    }
+}
+
+building_administratum = {
+    base_buildtime = 480
+
+    can_build = yes
+    can_be_ruined = yes
+    base_cap_amount = 1
+
+    category = government
+	
+    potential = {
+        exists = owner
+        owner = { has_country_flag = imperium }
+    }	
+	
+    destroy_trigger = {
+        exists = owner
+        owner = { NOT = { has_country_flag = imperium } }
+    }
+	
+    prerequisites = { "tech_advanced_construction" }
+
+    allow = {
+        num_pops >= 50
+    }
+
+    convert_to = {
+        building_chaos_tower
+    }
+	
+    planet_modifier = {
+        planet_amenities_add = 10
+        job_bureaucrat_add = 15
+        job_inquisitor_add = 2
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 1000
+        }
+        upkeep = {
+            energy = 10
+        }
+    }
+	
+    triggered_desc = {
+        text = job_inquisitor_effect_desc
+    }
+
+    ai_weight = {
+        weight = 20
+    }
+}
+
+building_fortress_iom = {
+    base_buildtime = 140
+    planetary_ftl_inhibitor = yes
+
+    category = army
+	
+    potential = {
+        exists = owner
+        owner = { has_country_flag = imperium }
+    }
+	
+    destroy_trigger = {
+        exists = owner
+        owner = { NOT = { has_country_flag = imperium } }
+    }
+	
+    planet_modifier = {
+        planet_housing_add = 2
+    }
+	
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        modifier = {
+            job_iom_militarum_add = 3
+        }
+    }
+
+    resources = {
+        category = planet_buildings_strongholds
+        cost = {
+            minerals = @b2_minerals
+        }			
+        upkeep = {
+            energy = 3
+            food = 2
+        }
+    }
+	
+    ai_weight = {
+        weight = 20
+    }
+}
+
+building_manufactorium = {
+    base_buildtime = 480
+
+    category = manufacturing
+	
+    potential = {
+        exists = owner
+        owner = { has_country_flag = imperium }
+    }
+	
+    destroy_trigger = {
+        exists = owner
+        owner = { NOT = { has_country_flag = imperium } }
+    }
+	
+    prerequisites = { "tech_advanced_processing" }
+ 
+    planet_modifier = {
+        job_mote_harvester_add = 5
+        job_gas_extractor_add = 5
+        job_crystal_miner_add = 5
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 500
+        }
+        upkeep = {
+            energy = 15
+        }
+    }
+
+    triggered_desc = {
+        text = job_military_artisan_effect_desc
+
+    }
+
+    triggered_desc = {
+        text = job_electronics_manufacturer_effect_desc
+    }
+
+    ai_weight = {
+        weight = 20
+        modifier = {
+            weight = 100
+            owner = {
+                has_monthly_income = {
+                    resource = electronics
+                    value < 5
+                }
+            }
+        }
+    }
+
+    ai_resource_production = {
+        electronics = 1
+        trigger = {
+            always = yes
+        }
+    }
+}
+
+building_librarium = {
+    base_buildtime = 240
+	
+    category = research
+	
+    potential = {
+        exists = owner
+        owner = { has_country_flag = imperium }
+    }
+	
+    destroy_trigger = {
+        exists = owner
+        owner = { NOT = { has_country_flag = imperium } }
+    }
+	
+    prerequisites = { "tech_advanced_construction" }
+
+    planet_modifier = {
+        job_librarian_add = 10
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 400
+        }
+        upkeep = {
+            energy = 5
+        }
+    }
+	
+    triggered_desc = {
+        text = job_librarian_effect_desc
+    }
+	
+    ai_weight = {
+        weight = 20
+        modifier = {
+            factor = 0
+            has_building = building_librarium
+        }
+    }
+}
+
+building_mausoleum = {
+    base_buildtime = 240
+
+    category = unity
+	
+    potential = {
+        exists = owner
+        owner = { has_country_flag = imperium }
+    }
+	
+    destroy_trigger = {
+        exists = owner
+        owner = { NOT = { has_country_flag = imperium } }
+    }
+
+    prerequisites = { "tech_advanced_construction" }
+
+    planet_modifier = {
+        job_culture_worker_add = 5
+    }
+	
+    army_modifier = {
+        army_defense_morale_mult = 2.0
+    }
+	
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 400
+        }
+        upkeep = {
+            energy = 5
+        }
+    }
+	
+    triggered_desc = {
+        text = job_culture_worker_effect_desc
+    }
+	
+    ai_weight = {
+        weight = 20
+        modifier = {
+            weight = 5
+            NOT = { has_building = building_mausoleum }
+            owner = {
+                has_monthly_income = {
+                    resource = consumer_goods
+                    value > 10
+                }
+            }
+        }
+    }
+}
+
+building_arbitratorum = {
+    base_buildtime = 240
+
+    category = government
+
+    potential = {
+        exists = owner
+        owner = { has_country_flag = imperium }
+    }
+
+    destroy_trigger = {
+        exists = owner
+        owner = { NOT = { has_country_flag = imperium } }
+    }
+	
+    prerequisites = { "tech_advanced_construction" }
+	
+    planet_modifier = {
+        job_enforcer_add = 10
+    }
+	
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 500
+        }
+        upkeep = {
+            energy = 10
+        }
+    }
+
+    triggered_desc = {
+	    text = job_enforcer_effect_desc
+    }
+
+    ai_weight = {
+        weight = 20
+    }
+}
+
+building_generatorum = {
+	base_buildtime = 240
+
+	category = resource
+	
+	potential = {
+		exists = owner
+		owner = { has_country_flag = imperium }
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = imperium } }
+	}
+
+	allow = {
+		OR = {
+                        has_building = building_capital
+			has_building = building_major_capital
+			has_building = building_system_capital
+		}
+	}
+	
+        prerequisites = { "tech_power_gen" }
+
+	upgrades = {
+		building_plasma_generatorum
+	}
+	
+	planet_modifier = {
+		job_technician_add = 5
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 700
+		}
+                upkeep = {
+                    promethium = 5
+                }
+		produces = {
+			energy = 50
+		}
+		produces = {
+			trigger = {
+				exists = owner
+
+				owner = { NOT = { has_deficit = promethium } }
+				planet = { has_modifier = planet_burn_promethium }
+			}
+			energy = 100
+		}
+		upkeep = {
+			trigger = {
+				planet = { has_modifier = planet_burn_promethium }
+			}
+			promethium = 4
+		}
+	}
+	
+	triggered_desc = {
+		text = job_technician_effect_desc
+	}
+	
+	ai_weight = {
+		weight = 20
+		modifier = {
+			weight = 100
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 100
+				}
+			}
+		}
+	}
+
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+building_plasma_generatorum = {
+	base_buildtime = 480
+	can_build = no
+	
+	category = resource
+	
+	potential = {
+		exists = owner
+		owner = { has_country_flag = imperium }
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = imperium } }
+	}
+	
+	allow = {
+		OR = {
+			has_building = building_major_capital
+			has_building = building_system_capital
+		}
+	}
+	
+	prerequisites = { "tech_power_gen2" }
+	
+	planet_modifier = {
+		job_technician_add = 10
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+		}
+                upkeep = {
+                    promethium = 10
+                }
+		produces = {
+			energy = 100
+		}
+		produces = {
+			trigger = {
+				exists = owner
+
+				owner = { NOT = { has_deficit = promethium } }
+				planet = { has_modifier = planet_burn_promethium }
+			}
+			energy = 100
+		}
+		upkeep = {
+			trigger = {
+				planet = { has_modifier = planet_burn_promethium }
+			}
+			promethium = 5
+		}
+	}
+	
+	triggered_desc = {
+		text = job_technician_effect_desc
+	}
+	
+	ai_weight = {
+		weight = 20
+		modifier = {
+			weight = 100
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 100
+				}
+			}
+		}
+	}
+
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+building_cellarion = {
+	base_buildtime = 240
+
+	category = trade
+
+	potential = {
+		exists = owner
+		owner = { has_country_flag = imperium }
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = imperium } }
+	}
+	
+        prerequisites = { "tech_advanced_construction" }
+
+	allow = {
+		OR = {
+			has_building = building_capital
+			has_building = building_major_capital
+			has_building = building_system_capital
+		}
+	}
+	
+	planet_modifier = {
+		trade_value_mult = 0.40
+		job_bureaucrat_add = 2
+                job_merchant_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+	
+	triggered_desc = {
+		text = job_bureaucrat_effect_desc
+	}
+
+	ai_weight = {
+		weight = 20
+		modifier = {
+			weight = 20
+			owner = { empire_sprawl_over_cap > 0 }
+		}
+		modifier = {
+			weight = 50
+			owner = { empire_sprawl_over_cap > 10 }
+		}
+		modifier = {
+			weight = 100
+			owner = { empire_sprawl_over_cap > 20 }
+		}
+		modifier = {
+			weight = 500
+			owner = { empire_sprawl_over_cap > 40 }
+		}
+	}
+}
+
+building_legionary_statue = {
+	base_buildtime = 240
+	base_cap_amount = 1
+	
+	category = army
+	
+	potential = {
+		exists = owner
+		owner = { has_country_flag = imperium }
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = imperium } }
+	}
+	
+	allow = {
+		OR = {
+			has_building = building_capital
+			has_building = building_major_capital
+			has_building = building_system_capital
+		}
+	}
+	
+	prerequisites = { "tech_imperium_statues" }
+
+	army_modifier = {
+		army_defense_health_mult = 0.1
+		army_defense_damage_mult = 0.1
+		army_defense_morale_mult = 0.3
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+building_navy_recruitment = {
+	base_buildtime = 240
+	add_to_first_building_slot = no
+	
+	category = army
+	
+	potential = {
+		exists = owner
+		owner = { has_country_flag = imperium }
+	}	
+	
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = imperium } }
+	}
+
+	prerequisites = { "tech_navy_req" }
+
+	planet_modifier = {
+		planet_housing_add = 10
+		planet_amenities_add = 10
+		job_iom_militarum_add = 5
+	}
+	
+	army_modifier = {
+		army_starting_experience_add = 200
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}	
+		upkeep = {
+			energy = 10
+		}
+	}
+	
+	ai_weight = {
+		weight = 20
+		modifier = {
+			weight = 100 # High weight to guarantee that if the below is true, the AI should build it
+			free_housing < 3 # Prevents the AI from running out of residences when nearly out of tiles
+			OR = {
+				free_jobs > 0 # Prevents spamming of residence buildings when no jobs are open
+				AND = {
+					free_housing < 0 # Prevents the AI from running out of residences when nearly out of tiles
+					NOT = { any_owned_pop = { is_unemployed = yes } }
+				}
+			}
+			free_district_slots = 0 # Do not build when city districts can still be built
+		}
+		modifier = {
+			factor = 0
+			has_building = building_navy_recruitment
+		}
+	}
+}
+
+
+building_machine_cult = {
+        base_cap_amount = 1
+	base_buildtime = 360
+
+	category = army
+	
+	potential = {
+		exists = owner
+		owner = { has_country_flag = imperium }
+	}	
+	
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = imperium } }
+	}
+	
+        prerequisites = { "tech_advanced_processing" }
+
+	planet_modifier = {
+                job_arch_magos_add = 1
+		job_magos_add = 2
+                job_enginseers_add = 2
+                job_iom_skitarii_add = 2
+                job_servitor_add = 10
+        }
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}	
+		upkeep = {
+			energy = 20
+		}
+	}
+	
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 0
+			has_building = building_machine_cult
+		}
+	}
+}
+
+building_promethium_refinery = {
+        icon = building_promethium_refinery
+	base_buildtime = 360
+
+	category = resource
+	
+	potential = {
+		exists = owner
+		owner = { has_country_flag = imperium }
+	}	
+	
+	destroy_trigger = {
+		exists = owner
+		owner = { NOT = { has_country_flag = imperium } }
+	}
+
+	allow = {
+		OR = {
+			has_building = building_capital
+			has_building = building_major_capital
+			has_building = building_system_capital
+		}
+	}
+	
+        prerequisites = { "tech_advanced_processing" }
+
+	planet_modifier = {
+                job_promethium_miner_add = 3
+        }
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}	
+		upkeep = {
+			energy = 10
+		}
+	}
+	
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 0
+			has_building = building_promethium_refinery
+		}
+	}
+}
+
+building_factorum = {
+    base_buildtime = 240
+
+    category = manufacturing
+	
+    potential = {
+        exists = owner
+        owner = { has_country_flag = imperium }
+    }
+	
+    destroy_trigger = {
+        exists = owner
+        owner = { NOT = { has_country_flag = imperium } }
+    }
+	
+    prerequisites = { "tech_advanced_manipulators" }
+
+    planet_modifier = {
+        job_artisan_add = 5
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 400
+        }
+        upkeep = {
+            energy = 5
+        }
+    }
+
+    triggered_desc = {
+        text = job_artisan_effect_desc
+    }
+
+    ai_weight = {
+        weight = 20
+        modifier = {
+            weight = 100
+            owner = {
+                has_monthly_income = {
+                    resource = consumer_goods
+                    value < 25
+                }
+            }
+        }
+    }
+
+    ai_resource_production = {
+        consumer_goods = 1
+        trigger = {
+            always = yes
+        }
+    }
+}

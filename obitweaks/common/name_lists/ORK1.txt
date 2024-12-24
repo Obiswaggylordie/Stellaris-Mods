@@ -1,0 +1,188 @@
+﻿### Ork_Names_1 
+ORK1 = {
+	
+	category = "Plantoid" 
+ 
+	### SHIPS 
+	ship_names = {
+	
+		generic = {
+			Gitcrusha "Weird Git" Cleava Choppa Slugga Shoota Rippa Shredda Skorcha Krasha Smasha Gutter Deffship Killa "Orky Klaw" Klaw Jaw Toof  
+			"Big Skorcha" "Mean Krasha" Bonekrasha Bonesmasha Bonechugga "'Umie Kutta" "Sneaky Git" Mekfisto "Da Klan's Pride"		
+		}
+	
+		corvette = { 
+			"Lite Kroozer" "Brute Ram" Onslaught Ravager Grunt Ardenuff "Rockit Boat" "Ugwort's Deffship" "Bada Bomba" "Evil Blueface" "Greedy Tractor" 
+		}
+		
+		destroyer = { 
+			"Kill Kroozer" "Sneaky Killa" "Da Big Boom" "Red 'n' Mean" "'Ungry Git" "'Umie Shredder" "Grimzod's Dakka" 
+		}
+		
+		cruiser = { 
+			"Hammer Battlekroozer" "Da Big 'Ammer" Butcher "Grimzag's 'Ammer" Scarfist "Zukov's Klaw" "Nazbad's Skull" "Da Unstoppable" "Snagga Snagga" "Da Starsmasha" Smashface "Da 'Ard Jaw" Longtoof 
+		}
+		
+		battleship = { 
+			"Da Big Dakka" Dethdeala Slamblasta Kroolboy "Gorbag's Revenge" "Ghazghkull's Megadeffship" "Badfragg's Defiler" "Bolgrog's Smasha" "Garmek's Stompa" "Gazbag's Guzzler" "Gorgutz's Kraka" "Da Humiechacka" "Klawjaw's Fister" "Irontoof's Chacka" "Krugg's Klaw" 
+		}
+		
+		titan = {
+		}
+ 
+		colossus = {
+		}
+		
+		science = { 
+			Orkimedes "Fisk's Ship" "Grotsnik's Krooza" "Gutslash's Slasha" "Zogword's Weirdkrooza" "Zagdakka's Teef" "Zoggit's Barge" 
+		}
+		
+		colonizer = { 
+			"Green Boy Deliverer" "Green iz Best" Kolonizer "Da Green Rock" "Da Big Seeder" "We Be's Koming" "Ruthnerd's Freeship" 
+		}
+		
+		constructor = { 
+			"Da Mekz Tools" "Da Mekaniks Krooza" "Gazmek's Krooza" "Gorsmak's Krooza" "Buzzgob's Krooza" "Grimgutz's Krooza" Nailbrain Flymek "Mogrok's Flyer" "Nazdakka's Truck" "Orghamek's 'Ammer" 
+		}
+		
+		military_station_small = {
+			"Listena" "Boss Hut" "Eadcrumpa" "Oil-Guzzler" "Dakkapoint" "Bonecleava" "Mean Stoppa" "Da Orky Voidtower" "Gunhut Rokclaw" "Mektown" "Fort Mork" "Grabskabdur" "Gargates" 
+		}
+		
+		ion_cannon = {
+		}
+	}
+	
+	fleet_names = {
+		random_names = {
+			"Crusha Fleet" "Bad Moonz Fleet" "Goff Fleet" "Burning Blades Fleet" "Bloody Axe Fleet" 
+			"Angry Sun Fleet" "Waaagh! Gulgrag" "Waaagh! Arbuttz" "Waaagh! Argluk" "Waaagh! Argluk" 
+			"Waaagh! Bigtoof" "Waaagh! Blaktoof" "Waaagh! The Beast" "Waaagh! Bloodskar" "Waaagh! Bork" 
+			"Broken Worlds Waaagh!" "Da Green Kroosade!" "Red Waaagh" "Green Tide" "Waaagh! Dethrekka" 
+			"Waaagh! Megamek" "Waaagh! Starsmasha" "Waaagh! Zoggit" "Waaagh! Rekkfist" 
+		}
+		sequential_name = "%O% Fleet" 
+	}
+ 
+	###ARMIES 
+	army_names = {
+	
+		defense_army = {
+			sequential_name = "%O% Grotz" 
+		}
+			
+		assault_army = {
+			sequential_name = "%O% Ork Boyz" 
+		}
+		
+		slave_army = {
+			sequential_name = "%O% Enslaved Gitz" 
+		}
+		
+		clone_army = {
+			sequential_name = "%O% Clone Boyz" 
+		}
+		
+		robotic_army = {
+			sequential_name = "%O% Mekka Boyz" 
+		}
+		
+		android_army = {
+			sequential_name = "%O% Cybork Boyz" 
+		}
+		
+		psionic_army = {
+			sequential_name = "%O% Weird Boyz" 
+		}
+		
+		xenomorph_army = {
+			sequential_name = "%O% Alien Gitz" 
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "%O% Ork Nobz" 
+		}
+	}
+	
+	### PLANETS 
+	planet_names = {
+	
+		generic = {
+			names = {
+				"Atari Vo" "Avitohol" Bleakfrost Bork'an Boros Charadon Chosin Erenon "Garaghak's World" Gloriam "Piscina IV" Temaxia Temportus "Thantus X" Tigrus Xit 
+				Golgotha Gorkamorka "Jorun's World" Kastorel-Novem Kulth "Lethe Eleven" "Magdaelene IX" "Mekslag-llks" Moredakka Octarius "Pandora Prime" Tusk Urk "Varestus Prime" Vorsk V'run Octarius 
+				Absteron Alacanth Barac Castellax Chosin Cilix Corva Excorvar Eyrok Flyberia Grax "Gurgit's Mekworld" Imbrium Kolchis Kongajaro Krosk Marlisanct "Mekslag-Ikks" "Minos V" Moredakka Morloq Obetrus Ogrolla "Periliac Prime" 
+				"Perseus IV" "Proctus Prime" Pseudopol Redwold "Scalex VI" Scythia Tallarax "Thoria III" "Ulani IV" Ulants Krakskull Snagruz Stompgit Tusk Vorsk Yurk "Zogg-Dis" Baran Corinth "Dulma'lin" Ghorala Graegus Jagga 
+				Iwozere Gudguts Busruket Fasta' Zogallagain Lockjaw Bigrok Toofjaw Gargun Flashrok Nuffinere Bigrok Redrok Blurok Grenrok Yelrok Deffrok 
+				Bosrok Magga Dakka Goeffrok Skulrok Golsunza Goluna Golbita Oops Crasha Dakkarok Ismineitis Pissoffgits Gityerown Daisy Bluddflagg 
+				Skulban Gitoff Yugefang Krumpya Krumpy Dakkahere "WWWAAAAGGGHHHH!!!" Madeyerlok Ardenuff "Battlestations!" Shinies "Yarrick's World" 
+			}
+		}
+		
+		pc_desert = {
+			names = {
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+			}
+		}
+		
+		pc_arid = {
+			names = {
+			}
+		}
+		
+		pc_continental = {
+			names = {
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+			}
+		}
+	}
+	
+	### CHARACTERS 
+	character_names = {
+		default = {
+			# A complete name 
+			full_names = {
+				Arbutzz Arrguard Badfragg Blud Biglug Bolgrog Bonekraka Bone Brug Buzzgob Chatak Dragnatz Gharkul Ghazghkull Ghenghiz Grimgor Gorsnik Gorzod Gorwazza Grax Gragnatz Grax Grimgutz 
+				Klawjaw Kogtoof Killzkar Madbrakka Kozgrob Humiehacka Hruk Gutstompa Orkamungus Nekbrekka Ozdakka Rukrippa Skarfang Skargor Skargrim Toofjaw Sunspitta Wurgzark Zagdakka Zrikgutta 
+			}
+			
+			# Always combined with a second name 
+			first_names = { 
+				Arbutzz Arrguard Badfragg Blud Biglug Bolgrog Bonekraka Bone Brug Buzzgob Chatak Dragnatz Gharkul Ghazghkull Ghenghiz Grimgor Gorsnik Gorzod Gorwazza Grax Gragnatz Grax Grimgutz 
+				Klawjaw Kogtoof Killzkar Madbrakka Kozgrob Humiehacka Hruk Gutstompa Orkamungus Nekbrekka Ozdakka Rukrippa Skarfang Skargor Skargrim Toofjaw Sunspitta Wurgzark Zagdakka Zrikgutta 
+			}
+			
+			# Always combined with a first name 
+			second_names = { 
+				Stompa Burnaboy Bonekraka Crumpa Skorcha Beast Defiler Destroyer Oil-Guzzler Faceless Badtoof Blackfang Bogga Grimtoof Stompa Thraka Bloodboila Ironteef Flayer Irontoof Skroll Grimskar 
+			}
+			
+			regnal_first_names = {
+				Arbutzz Arrguard Badfragg Blud Biglug Bolgrog Bonekraka Bone Brug Buzzgob Chatak Dragnatz Gharkul Ghazghkull Ghenghiz Grimgor Gorsnik Gorzod Gorwazza Grax Gragnatz Grax Grimgutz 
+				Klawjaw Kogtoof Killzkar Madbrakka Kozgrob Humiehacka Hruk Gutstompa Orkamungus Nekbrekka Ozdakka Rukrippa Skarfang Skargor Skargrim Toofjaw Sunspitta Wurgzark Zagdakka Zrikgutta 
+			}
+			
+			regnal_second_names = {
+				Stompa Burnaboy Bonekraka Crumpa Skorcha Beast Defiler Destroyer Oil-Guzzler Faceless Badtoof Blackfang Bogga Grimtoof Stompa Thraka Bloodboila Ironteef Flayer Irontoof Skroll Grimskar 
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+utility_component_template = {
+	key = "IOM_WARP_DRIVE_1"
+	size = small
+	power = -40
+	icon = "GFX_ship_part_iom_warp_drive_1"
+	icon_frame = 1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 500
+		}
+	}
+	ftl = yes
+	jumpdrive = yes
+	ship_modifier = {
+		ship_windup_mult = -1
+		ship_ftl_jumpdrive_range_mult = 1000
+		ship_winddown_mult = -1
+		ship_jumpdrive_cooldown_mult = -1
+	}
+
+	ai_weight = {
+		weight = 0.1
+	}
+
+	prerequisites = { "tech_warp_jump_drive" }
+    component_set = "ftl_components"
+}
+

@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "origin_necron_rising"
+		texturefile = "gfx/event_pictures/origins/origin_necron_rising.dds"
+		alwaysstransparent = yes
+	}
+	
+}

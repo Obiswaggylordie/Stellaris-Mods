@@ -1,0 +1,41 @@
+objectTypes = {
+	pdxmesh = {
+		name = "super_hive_mesh"
+		file = "gfx/models/planets/super_hive.mesh"
+		cull_distance = 99999999.0f
+		scale = 0.5
+	}
+
+	pdxmesh = {
+		name = "mega_hive_mesh"
+		file = "gfx/models/planets/mega_hive.mesh"
+		cull_distance = 99999999.0f
+	}
+	
+	pdxmesh = {
+		name = "clouds_hive_asset_mesh"
+		file = "gfx/models/planets/clouds_hive_asset.mesh"
+		cull_distance = 99999999.0f
+		scale = 0.5
+	}
+	
+	pdxmesh = {
+		name = "clouds_hive2_asset_mesh"
+		file = "gfx/models/planets/clouds_hive_asset.mesh"
+		cull_distance = 99999999.0f
+		scale = 0.5
+	}
+	
+	pdxmesh = {
+		name = "ring_ring_01_mesh"
+		file = "gfx/models/planets/anneau_ring_01.mesh"
+		cull_distance = 999999999.0f
+	}
+	
+	#pdxmesh = {
+	#	name = "craftworld_01_mesh"
+	#	file = "gfx/models/planets/craftworld_01.mesh"
+	#	cull_distance = 999999999.0f
+	#}
+	
+}

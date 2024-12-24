@@ -1,0 +1,44 @@
+ap_imperial_planet_designations = {
+	icon = GFX_ap_imperial_planet_designations
+	picture = GFX_ap_imperial_planet_designations
+	potential = {
+		host_has_dlc = "Megacorp"
+		has_origin = origin_gcs_imperium
+		NOT = { has_valid_civic = civic_agrarian_idyll }
+		NOT = {
+			has_ascension_perk = ap_imperial_planet_designations
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+	}
+
+	on_enabled = {
+		custom_tooltip = "decision_Pdesignation_project_effects"
+	}		
+	
+        ai_weight = {
+		
+        factor = 30
+		modifier = {
+			factor = 2
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_materialist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_materialist
+		}
+	}
+}

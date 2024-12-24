@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "origin_tau"
+		texturefile = "gfx/event_pictures/origins/origin_tau.dds"
+		alwaysstransparent = yes
+	}
+	
+}

@@ -1,0 +1,549 @@
+########### Forge World District Set ###########
+district_forge_housing = {
+	icon = forgeworldworkerhabicon
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = mechanicus_forge_world
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_regular_empire = yes }
+        OR = {
+            uses_district_set = mechanicus_forge_world     
+        }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_forge_housing
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 800
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 8
+        planet_max_buildings_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire = no
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_clerk_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_fallen_empire = no
+				is_regular_empire = yes
+			}
+		}
+		text = job_clerk_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			free_housing < 10
+		}
+	}
+}
+
+########### Forge Plasma Generator ###########
+district_forge_plasma_generator = {
+        icon = forgeworldgenicon
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = mechanicus_forge_world 
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_regular_empire = yes }
+        OR = {
+             uses_district_set = mechanicus_forge_world     
+        }
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_forge_plasma_generator
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+		job_technician_add = 2
+        planet_technician_produces_mult = 0.3 # 30% technician job bonus
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		text = job_technician_effect_desc
+	}
+
+	prerequisites = {
+		tech_power_plant_1
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 3
+			OR = {
+				free_jobs < 2
+				AND = {
+					districts_good_energy = yes
+					free_jobs < 5
+				}
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+			}
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 150
+				}
+				has_monthly_income = {
+					resource = minerals
+					value > 50
+				}
+			}
+		}
+		modifier = {
+			weight = 3
+			free_jobs < 2
+			num_free_districts = { type = district_mining value = 0 }
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 250
+				}
+			}
+		}
+		modifier = {
+			weight = 250
+			years_passed > 4
+			OR = {
+				free_jobs < 3
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+			}
+			OR = {
+				owner = { country_uses_food = no }
+				owner = {
+					has_monthly_income = {
+						resource = food
+						value > 0
+					}
+				}
+				num_free_districts = { type = district_farming value = 0 }
+			}
+			OR = {
+				owner = {
+					has_monthly_income = {
+						resource = energy
+						value < -10
+					}
+				}
+				owner = {
+					has_monthly_income = {
+						resource = minerals
+						value > 50
+					}
+				}
+				num_free_districts = { type = district_mining value = 0 }
+			}
+		}
+		modifier = {
+			factor = 3
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 0
+				}
+			}
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				has_deficit = energy
+			}
+		}
+	}
+
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+########### Forge World Material Processing ###########
+district_material_processing = {
+        icon = forgeworldmaterialprocessingicon
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = mechanicus_forge_world
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_regular_empire = yes }
+        OR = {
+             uses_district_set = mechanicus_forge_world     
+        }
+	}
+	
+    allow = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_material_processing
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+		job_miner_add = 2
+        planet_miners_produces_mult = 0.5 # 50% miner job bonus
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		text = job_fe_acolyte_mine_effect_desc
+	}
+
+	prerequisites = {
+		tech_mechanized_mining
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 3
+			OR = {
+				free_jobs < 2
+				AND = {
+					districts_good_minerals = yes
+					free_jobs < 6
+				}
+				any_owned_pop = {
+					is_unemployed = yes
+					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOR = {
+						is_pop_category = specialist
+						is_pop_category = ruler
+					}
+				}
+			}
+		}
+		modifier = {
+			weight = 300
+			OR = {
+				AND = {
+					years_passed > 4
+					OR = {
+						free_jobs < 3
+						owner = { has_ascension_perk = ap_arcology_project }
+						any_owned_pop = {
+							is_unemployed = yes
+							NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+							NOR = {
+								is_pop_category = specialist
+								is_pop_category = ruler
+							}
+						}
+					}
+					owner = {
+						has_monthly_income = {
+							resource = minerals
+							value < 100
+						}
+					}
+					OR = {
+						owner = {
+							has_monthly_income = {
+								resource = food
+								value > 0
+							}
+						}
+						num_free_districts = { type = district_farming value = 0 }
+					}
+				}
+				AND = {
+					free_jobs < 5
+					districts_good_energy = no
+					districts_good_food = no
+					owner = {
+						used_naval_capacity_percent < 0.9
+						has_monthly_income = {
+							resource = alloys
+							value <= 5
+						}#Alloy production has shut down which means the current mineral income can't be trusted
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			exists = owner
+			owner = {
+				is_lithoid_empire = yes
+			}
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				has_deficit = minerals
+			}
+		}
+	}
+
+	ai_resource_production = {
+		minerals = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+## Forge Lines ##
+district_forge_lines = {
+	icon = forgeworldalloylinesicon
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = mechanicus_forge_world
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_regular_empire = yes }
+        OR = {
+             uses_district_set = mechanicus_forge_world     
+        }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_forge_lines	
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 2000
+			alloys = 100
+		}
+		upkeep = {
+			energy = 5
+            volatile_motes = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 6
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_foundry_add = 10
+		}
+	}
+    
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_foundry_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 250
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 200
+				}
+				has_monthly_income = {
+					resource = alloys
+					value > 500
+				}
+			}
+		}
+	}
+}
+
+district_starship_forge = {
+	icon = forgeworldstarshiplineicon
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = pc_forge_ring 
+		from = {
+			is_regular_empire = yes
+		}
+	}
+
+	potential = {
+		    uses_district_set = pc_forge_ring 
+		owner = {
+			exists = owner
+			is_regular_empire = yes
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_starship_forge
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 2000
+			alloys = 100
+		}
+		upkeep = {
+			energy = 5
+            volatile_motes = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 6
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_soldier_add = 3
+			job_foundry_add = 1
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 250
+			owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value > 200
+				}
+				has_monthly_income = {
+					resource = alloys
+					value > 500
+				}
+			}
+		}
+	}
+}

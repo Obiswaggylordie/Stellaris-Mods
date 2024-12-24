@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxparticle = {
+		name = "exterminatus_explosion_particle"
+		type = "exterminatus_explosion_particle"
+		scale = 2.0
+	}
+}

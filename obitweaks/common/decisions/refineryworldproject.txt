@@ -1,0 +1,46 @@
+decision_refinery_world_project = {
+	owned_planets_only = yes
+    ### UPDATE THIS FROM VANILLA ###
+	icon = decision_refinery_city_project
+
+	enactment_time = 240
+    #enactment_time = 1 #for testing
+	resources = {
+		category = decisions
+		cost = {
+			influence = 100
+			minerals = 1000
+            alloys = 2000
+		}
+	}
+
+	potential = {
+        is_planet_class = pc_industrial
+		habitable_structure = no
+		exists = owner
+		owner = { has_ascension_perk = ap_imperial_planet_designations }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_refinery_world_project_requirements
+			#free_district_slots < 1
+		}
+        num_pops >= 15
+	}
+
+	effect = {
+		hidden_effect = {
+		clear_deposits = yes
+		change_pc = pc_refinery
+			set_planet_entity = {
+				entity = "forgee_planet"
+				graphical_culture = owner   
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 50
+	}
+}

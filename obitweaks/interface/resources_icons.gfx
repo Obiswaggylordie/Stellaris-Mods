@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_promethium"
+		texturefile = "gfx/interface/icons/jobs/job_promethium_miner.dds"
+	}
+		
+}

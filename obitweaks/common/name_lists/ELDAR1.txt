@@ -1,0 +1,589 @@
+﻿### Eldar_Names_1 
+ELDAR1 = {	
+ 
+	category = "Humanoid" 
+ 
+	### SHIPS 
+	ship_names = {
+	
+		generic = {
+			"Sei Eakion Iadanna" "Tri Istrill" "Ortos Kion Iad" "Ainaarin Isha" "Nikav Eakion Iem" "Elohar Eakion Okas" "Iyalith Shlaereen" "Surathin Uial Kian" 
+			"Esdainn Badbaltrilas" "Ca Shieluin" "Gcheil Brylidassian" "Menshad Korum Uial" "Biel'tan Eakion Neosfi" "Uken Eakion Siar" "Deas B'fheidir" 
+			"Kiar Tossirian" "Shenestra Mironin" "Yval Eshairr" "Kharant Piat" "I' Uial Ucat" "Ot' Uial Fainnaid" "Ainulin Dial" "Yngir Eakion Larill" "Sikal Uial Solerant" 
+			"Turt Uial Pikaart" "Iytthalith Uial I" "Mironin Uial Cora" "Tann Cassion" "Athair Chiru" "Sier Slavhreenur" "Are Uial Sis'emwa" "Ca Kion Rrith" "Gceilfi Destra" 
+			"Buanna Belar" "Suitheakion'eliath" "Zar Seria" "Siar Laim" "Shad Athair" "Iad Uial Larill" "Koruan Kion Mironin" "Diann Kion Bionnearan" "Edi Kion Iyalis" 
+			"Ynnead Uial Ag" "Disthir Uial Saim'hann" "Yirrikshad Eakion Xamanth" "Ishpoiem Serciam" "Addankiamenad Uial" "Muraddin Mear" "Caur' Kion Enadlam" 
+			"Qualistar Eakion Shieluin" "Sikal Eakion Ofell" "Sin Kion Eadar" "Shiasta Eakion Larill" "Yirrikshad Tera" "Ishniva'garoth" "Dyann Eakion Caihe" "Menshad Korum Zar" 
+			"Lam Uial Ishnikav" "Iren Uial Menlia" "Fian Dialcaman Garisam" "Xia Eakion Larill" "Mironin Fian" "Oriosa Eakion Mear" "Meantokath Kion Ehk" "Carrec Kion Ceur" 
+			"Suitheakion'eliath Losse" "Joisa Uial Dieliet" "Slaan Eakion Arathinos" "I' Kion Cora" "Ish' Uial Gona" "Iem Uial Pikarid" "Surathin Deash" "Harakht Gorach" "Neosfai Kion Mael" 
+			"Shlaereen Eakion Solerant" "Jiorquas Harakh" "Marsgrech Eakion Bruith" "Faolchu Kion Solerant" "Rith Riath" "Amon Harakht Eakion Mael" "Raiph Pikal" "Partente Eakion Ishtoem" 
+			"Destra Brathai" "Mael Dannan Eakion Istau" "Larill Pieth" "Mile'ionahd Tial" "Ynnead Tava" "Sier Cha'los" "Leanir Uial Boniokar" "Ceifulgaithann Kion" "Eshairr Eosik" 
+			"Anaris Eakion B'fheidiren" "Iem Mael" "Beithir Iall" "Dael Uial Thelios" "Uken Eakion Lir" "Isturriath Elehorn" "Maugan Haranshemash" "Jiorquas Deash" "Dannwye Gerona" 
+			"Silmordriel Eakion" "Bruiith Uial Ian" "Dathedi Eakion Carrecenad" "Suitheakion'eliath Uom" "Caurmenli Ibb" "Fari Tranglam" "Offig Ainn" "Piat Uial Offigascarath" 
+			"Rega Uial Quan" "Ulieth Uial Deash" "Buanna Kion Grech" "Ishnive Tiel" "Iyanden Kion Istau" "Ut Uial Salo" "Dannwye Dael" "Cora Fainnaid" "Endobai Eakion Gerona" "Iyri Rith" 
+			"Gyaran Orion" "Saim Ashafares" "Sai Eakion Ifiath" "Eihk Soa" "Leram Eakion Cora" "Thelios Uial Kion" "Kienadda Koem" "Larrasurath Uial Eadar" "Athe'sier Eakion Quan" 
+			"Muraddin Uial Aarthia" "Anu Ainulin" "Angau Suithal" "Cre' Uial Unan" "Eaxamath Brathu" "Cora Kion Xamath" "Arith Eakion Quan" "Silmordriel Eihk" "iok Eakion Aarthia" 
+			"Novine Haranshemash" "Beithir Kion Furte" "Leram Kion Losseainn" "Ulia Kion Istu'karun" "Furta Istu" "Illmureead Ishjuketh" "B'fheidir Kion Cormer" "Xia Rois" 
+			"Losseainn Kianenad" "Suin Daellae Farture" "rea Lam" "Margorach Pivam" "Cormer Deketh" "Ishnive Uial Fhirin" "Uleran Cormei" "Weand Yirraith" "Fiallathandire" 
+			"Eakion Deas" "Dathedi Ath" "Quaarin Kerun" "Quan Ut" "Arios Uial Novi" "Kiram Kion Beithir" "Quan Kion Larr" "Cait Angau" "Brylidassian Ainulin" "Beithir Creagleram" 
+			"Siar Uial Uial" "Subast Eakion Quas" "Carrecenad Uial Defath" "Furtafar Uial Astherian" "Ceilann Larill" "Raiph Dyann" "Illrun Soam" "Quisach Liann" "Rrith Baharr" 
+			"Cheapamir Carrecenad" "Edi Eakion Shiasta" "Rillietann Yiss" "Orthos Es" "Rrith Kion Bionerath" "Bal Mear" "Cassion Kion Novar" "Shad Nanar" "Silmordriel Ainulin" 
+			"Arathi Eakion Harai" "Enad Brylidassian" "Kal Sema" "Suinmure Kion Tossirian" "Quasnanar Sierbann" "Sai Sutherinan" "Quan Uial Dathedi" "Raibh Kion Shemas" 
+			"Istu Lir" "Nan Parten" "Aithben Ainulin" "Asurya Sien" "An Eakion Ishtikam" "Sien Eakion Tri" "Dial Kion Suithal" "Iann Uial Kharant" "Arios Brion" "Ter'harai" 
+			"Sial Bad" "Farture Oris" "Metos Ceifulgaithann" "A'joisa" "Ishsoam Garoth" "Buanna Gcheil" "Kurnous Ulerans" "Tossirian Eaxamath" "Enarc Breaga" "Ashafares Eakion Solerant" 
+			"Quan Defath" "Farture Corim" "Rillisliddian" "Sercam Kion Idain" "Hesh Furte" "Dial Brathai" "Lir Uial Deash" "Cherakan Marb'ailtor" "Iall Elourge" "Chiru Kion Carrecenad" 
+			"Ulem Eakion Yval" "Istu Disthir" "Sercam Diann" "Atha'sain Kion Tosthuich" "Jiokin Uial Shiasta" "Serciam Torev" "Ulthwe Harakht" "Belar Uial Raibha" "Credeas Uial Turta" "Ika Kion Zapat" 
+			"Turten Koruan" "Mor' Kion Chiru" "Murekhalir Ishjiokin" "Eshairr Thelios" "Isturrath Xamath" "Iytthalith Kion Zaineth" "Otbuanna Coriam" "Far Xamath" "Laim Baharr" 
+			"Fir A" "Asturi Uial Baruth" "Ashami Uial Furtafar" "Boniokar Fian Dialcaman" "Distau Larrasurath" "Muan Ca" "Belac Eakion Ashafares" "Ishjuketh Xios" "Elourge Kion Istau" 
+			"Hela Eakion Kiuom" "Menliadeng Kion Raiph" "Ucat Uial Till" "Geir Kiamenad" "Arten Uial Furta" "Tiel Lameldannar" "Cha'los Carrecenad" "Koesh Ard'ladanna" "Quass Eakion'iok" 
+			"Gorach Dorcha" "Oris Kion Ishoris" "Ishokas Brathu'angau" "Ulia Serciam" "Turt Seach" "Arith Ortos" "Gorash Serciam" "Fir Caurifel Eakion Orkead" "Addin Lirun" "Ard Dielier" 
+			"Chom Koruan" "Estera Shemash" "Beithir Uial Quan" "Soa' Kion Dielier" "Ran' Uial Iren" "Furtafar Ishulam" "Tonesh Eakion Ishpikel" "Marathag Slidd" "Caurmenli Sierbann" 
+			"Mael Elehar" "Suithimarith Esikcaman" "Kerun Finnail" "Tannascurath Uial Surathin" "Ifeth Uial Anu" "Rois Elourge" "Yirraith Urgebelash" "Riuway Buanna" "Kianenad Brylidassian" 
+			"Subarn Piost" "Liad'farture" "Atha'sain Useerant" "Foen Eakion Eaxamar" "B'fheidir Buanna" "Sien Carrecenad" "Ehka Kion Orkead" "Ulieth Uial Enaid" "Ish' Kion Atherakhia" 
+			"Ibb Kian" "Carrecenad Distaur" "Meantokath Uial Garisam" "Olithos Uial Mairnovis" "Slidd Eakion Mile'ionahd" "Ashami Eakion Nive" "Kerun Eakion Eaxamar" "Amur Am" "Suith Liann" 
+			"Elohar Eakion Sikam" "Carrecenad Fir" "Kiamenad Uial Edi" "Kharant Eakion Solerant" "Elith Iok" "Baruth Eakion Elourge" "B'fheidir Uial Shelwe" "Garisam Eakion Fainnaid" 
+			"Dathedi Kion Metos" "Dark Uial Lonann" "Lavaillian Uliar" "Weand Garoth" "Saim Uial Es" "Ulem Eakion Joisa" "Scurathainn Uial Ishsikam" "Ulieth Uial Haranshemash" 
+			"Tuisich'novasmair" "Mael Dannan Ehka" "Cora Larill" "Margorach Lir" "Istau Isha" "Rillie Uial Koesh" "Baharr Uial Sier" "Tri B'fheidir" "Aiel Uial Koesh" 
+			"Menshad Korum Uial Orthos" "Id Istrill" "Gorach Kion Liras" "Larill Liran" "Kion'fari" "Menshad Korum Uial Ehka" "Margorach Eakion Xios" "Kerun Roisha" "Dieliet Kion Distaur" 
+			"Kerun Kion Quaarin" "Tranglam I" "Belar Uial Lavair" "Angau Uial Feik" "Caihe Kion Biel'tan" "Faras Mear'feothan" "Gorash Eakion Belar" "Eihk Kion Hasoi" "Sierann Fainnaid" 
+			"Bal Suther" "Rrith Kion Tosthuich" "Cre' Kion Gorash" "Bennan Mean" "Mael Amon" "Cormei Eakion Tava" "Iishill Uial Thelios" "Ishsoem Uial Jiokin" "Asurya Eakion Amure" 
+			"Mael Uial Mear" "Gorach Kion Marsgrech" "Lantillifieth Dielier" "Ishnive Mironin" "Losseainn Dekair" "Aiel Eakion Garoth" "Ea'metos" "Parteilath Uial Kerun" "Edi I" 
+			"Alai Finnail" "Suith Kaelis Ra" "Ishtikam Yirraith" "Iann Uial Dielier" "I' Uial Iann" "Aiel Yngir" "Ter'kienadda" "Amon Harakht Chii" "Khanel Kion Kienadda" 
+			"Dath Eakion Mirrotuis" "Shelwe Cielar" "Iyalis Maugan Ra" "Lir'ehk" "Tirtu Rillisliddian" "Suithal Bahn" "am Kion Leanir" "Ishjiokin Garoth" "Arith Eakion Tiel" 
+			"Some Enarc" "Gillath Kion Koem" "Otbuanna Eakion Uom" "Grech Uial Garoth" "Isha Shelwe" "Saim'hann Illmureead" "Ika Liras" "Suin Daellae Felchu" "Sha'eil Ishsoem" 
+			"Rrith Kion Regaen" "Ishjukath Uial B'fheidir" "Sha'eil Murekhalir" "Carrec Nan" "Mairnovis Rrith" "Ishoris Kion Dyann" "Saim Eakion Taer" "Endobai Deash" 
+			"Alai Eakion Mael Dannan" "Joisa Kion Sista" "Mear Roisha" "Domanith Diann" "Cour'harakht" "Dannwye Yass" "Ran' Uial Badd" "Naran Ishpivam" "Sis'emwa Kion Creliam" 
+			"Marb Uken" "Deshial Kion Eshairr" "Isturriath Uial Sial" "Subast Shieluin" "Belar Ishnikav" "Bruith Eakion Ishulam" "Harai Uial Failleanan" "Meantokath Cherakan" 
+			"Amon Harakht Uliar" "Enarc Uial Shieluin" "Murekhalir Destra" "Illrun Uial Tial" "Wea Dyass" "Amure Domanith" "Ashami Ishoras" "Illrun'ainn Kion Idann" "Fhirinne Taer" 
+			"Seachran Ag" "Iyanden Uial Credeas" "Atha'sain Oiche" "Aill'belar" "Silmordriel Kion Belar" "Larrasurath Shelwe" "Badbaltrilas Zhai" "Atha'sain Dielier" "Yirrik Kiest" 
+			"Gorash Uial Arathinos" "Zar Sercam" "Faolchu Eakion Kiest" "Lavaillian Kion Foen" "Jain Tossirial" "Fhir Iem" "Esikcaman Uial Dieliet" "Tag Iall" "Quas Uial Xama" "I'liad" 
+			"Ika Eakion Ishtikam" "Kian Orion" "Sien Eakion Suithal" "Ulem Eakion Seach" "Athistaur Kion Fare" "Sercambelach Kion Partente" "Riga Yngir" "Tri Kion Tuisich'novasmair" 
+			"Buanna Elourge" "Creagleram Kion Jiokin" "Koesh Uial Subeliast" "Las Fari" "Tranglam Kion Harakht" "Deketh Na'daan" "Bih Eakion Atha'sain" "Kion Uial Ucat" "Kianenad Illmureead" 
+			"Mirrotuis Tageth" "Ibb Shad" "Dannwye Athag" "Esikcaman Bratha" "Ishjiokin Eakion Kiest" "Lonann Cassion" "Uliar Eakion Brion" "Parten Eakion Oriosa" "Ann Pikal" 
+			"Ishjuketh Uial Ofell" "Fian Tonesh" "Enadlam Eakion Ann" "Iann Tranglam" "Aarthia Weand" "Elourge Ea" "Shemash Eakion Deash" "Otesh Kion Ulia" "Xios Eakion Buanna" 
+			"Deas Shenestra" "Mor Kion Dieliet" "Ainn Eakion Fein" "Ishtoem Otbuanna" "Arathi Kion Xia" "Ofell Uial Ishtoem" "Liann Eakion Ofell" "Xamath Muan" "Sial Uial Uial" 
+			"Mael Dannan Seachmall" "Zenil Kaelis Ra" "Eihk Vergreal" "Hish Otesdainn" "Sin Kion Dekair" "Sier Tannascurath" "Cormer Mor" "Menlia Badd" "Wea Eakion Las" 
+			"Beithir Eakion Dias" "Feik Riuway" "Mironin Uial Corim" "Darhathin Eakion Leanir" "Iadanna Kion Uom" "Deshial Kion Xamath" "Ishtoem Kion" "Kaela (adverb) Suith" 
+			"Ceur' Eakion Losse" "Las Suitheakion'eliath" "Ulieth Kion Ulia" "Lan Eakion Roisha" "Badbaltrilas Uial Ishoris" "Gceilan Kion Brathu" "Cormer Aiek" "Breag Ainn" 
+			"Kaelis Ra Ishnive" "Ishjuketh Kharant" "Atherakhia Uial Thelios" "Liras Uial Cre" "Eakion' Uial Mear" "Suther Uial Pikarid" "Anaris Kion Ishpivam" "Ifieth Ynnead" 
+			"Pikarid Uial Dras" "Istu Uial Idain" "Fhaisorr'ko Kion Zapat" "Pikaard Ceiful" "Koem Ishulam" "Caihe Kion Slaan" "Menlia Id" "Amon Harakht Mirrotuis" "Ishpieth Sista" 
+			"Suda Uial Biel'tan" "Quas Eakion Ra" "Ainulin Keran" "Caurmenli Joisa" "Kal Wea" "Novis Neosfai" "Yngir Iyallir" "Arith Marsgrech" "Sierann Eakion Xama" "Far Eakion Sier" 
+			"Illmureead Suda" "Gyaran Kion Theliol" "Carrec Esikcaman" "Buanna Kion Suith" "Amon Harakht Cielar" "Ofell Sercamarith" "Ashfar Kion Quan" "Tageth Kion Bionerath" 
+			"Deas Eadar" "Rillie Diann" "Gorach Dyann" "Aiek Are" "am Kion Amure" "Bal Eakion Uial" "Leanir Eakion Xamath" "Quisach Uial Quan" "Bionnearan Jain" "Iad Eakion Sierann" 
+			"Xamath Eakion Mironin" "Eikal Eakion Thelios" "Arith Quas" "Ofell Diann" "Mon'keigh Eakion Dyann" "Agai Uial Ashami" "Weand Tag" "Tera Sierbann" "Angau Pikarid" "Kion''salo" 
+			"Cait Eakion Tir" "Hesh Cheapmai" "Neosfi Istu" "Fell Kion Koesh" "Vergreal Kion Regaen" "Eihk Carrecenad" "Asuryan Dekair" "Buanna Iyanden" "Ishsoem Uial Quas" "Fari Tossirian" 
+			"Rillietann Suith" "Kiar Fian Dialcaman" "Angau Eakion Athal'sain" "Arioth Menshad Korum" "Mironin Kion Isturrath" "Quas Kion Ainiluin" "Iytthalith Gceilan" "Quan Eakion Metos" 
+			"Dyann Kion Ceiful" "Ann Ra" "Bionnearan Kion Lam" "Sien Eliath" "Cheapmai Uial Okas" "Ehk Koem" "Margorach Eakion Shad" "Ter'candsor Uial Shemas" "Athain Turta" "Partecion Iyri" 
+			"Asha Uial Dyann" "Uliar Uial Fian" "Suda Arith" "Rhiantha Kion Ishulam" "Lann Caihe Eakion Ya" "Cre' Uial Finnail" "Harai Uial Iem" "Brylidassian Kion Aithben" 
+			"Furte Uial Brathu'angau" "Ainaarin Riuway" "Aithben Uial Tann" "Aiek Otesh" "Ishjiokin Kion Xios" "Tiel Fari" "Fein Kharant" "Arios Uial Tannascurath" "Daras Kion Piost" 
+			"Farath'mure Illmureead" "Ut Qualistar" "Fell Slaan" "Dael Kion Furtafar" "Iytthalith Uial Mironin" "Tuisach Eakion Iem" "Shinsil Shlaereen" "Ifeth Carrecenad" "Urge Reu" 
+			"Ran'koesh" "Alean Uial Ard" "Sis'emwa Marsgrech" "Turten Cassion" "Atherakhia Uial Kienadda" "Iad Dras" "Larrasurath Fare" "Fian Dialcaman Murekhalir" "Camion Ishulem" 
+			"Breaga Tera" "Cormer Fian Dialcaman" "Cour'siar" "Offigascarath Elourge" "Enadlam Uial Yngir" "Dial An" "Eikal Buanna" "Ishokas Distau" "Iall Eakion Joisa" 
+			"Kion Eakion Dathedi" "Solerant'b'fheidiren" "Regaen Fir Caurifel" "Athal'sain Faras" "A' Eakion Kaelis Ra" "Riuway Mear'feothan" "Ishniva' Uial Liann" "Losse Kion Eshairr" 
+			"Carrecenad Rega" "Koesh Gerona" "Jain Haranshemash" "Breag Mear" "Addinav Fainnaid" "Elourge Kion Ynnead" "Fir Farilleca Otbuanna" "Creliam Addan" "Bratha Lann" 
+			"Yirrikshad Asuryan" "Mael Harat" "Yngir Kion Shemash" "Tuelean Uial Lan" "Idain Kion Bonnikel" "Gaithann Eakion Lir" "Zar Dark" "Ot' Uial Aithliam" "Fiallathandirel" 
+			"Istu Eakion Thelriann" "Ika Kion Joisa" "Ishsikam Diallir" "Yngir Uial Tag" "Gorach Hish" "Garem Mon'keigh" "Deshial Uial Finnail" "Gorash Kion Garem" "Ehka'nash" "Rega Jukath" 
+			"Joisa Riath" "Elehorn Tiell" "Olithos Dannwye" "Breaga Uial Eshairr" "Raiph Kion Bratha" "Zapat Fell" "Geir Uial Far" "Aithliam Eakion Enarc" "Suther Aiek" "Edi Tokath" 
+			"Caurmenli Eakion Reu" "Ehka Fian Silsperiaigh" "Fiallashemash" "Pikal Uial Slidd" "Meantokath Ifiath" "Agai Xama" "Estera Dannwye" "Cassion Surathin" 
+			"Unan Seachmall" "Kharanis Uial We" "Offigascarath Uial Regaen" "Aill' Uial Torev" "Addinav Aithben" "Quas Kion Larrasurath" "Tossirial Uial Distaur" "Ulerant Dannwye" 
+			"Tokath Eakion Baharr" "Ainaarin Uial Sha'eil" "Yngir Kion Enadlam" "Garem Eakion Fell" "Xamath Olithon" "Ter' Eakion Arten" "Arith Uial Athistaur" "Ca Beithir" 
+			"Raiph Kion Isturrith" "Soa' Kion Rega" "Faolchu Illrun'ainn" "Rillietann Eakion Gorash" "Gaithann Mon'keigh" "Iad Eakion Belar" "Amon Leram" "Enarc Tranglam" 
+			"Arathi Oriosa" "Ea' Kion'salo" "Carrecenad Eakion Tranglam" "Novas Kion Istu'karun" "Surathin Saim'hann" "Haranshemash Shelwe" "Belar Uial Serciam" "yan Kion Beithir" 
+			"Sema Eakion Athain" "Gaithall Dieliet" "Menshad Korum Joisa" "Elith Subeliast" "Atherakhia Kan" "B'fheidir Kion Slavhreenur" "Mirrotuis Sierann" "Slavhreenur Quas" 
+			"Ulieth Uial Crelirun" "Sien Uial Yngir" "Tirtu Eakion Iyallir" "Ortos Thara" "Iadanna Fiallathandirel" "Dannan Eakion Pieth" "Scurathainn Bratha" "Tosthuich Ashfar" 
+			"Sikal Otesh" "Ucat Ishnikav" "Arios Tiel" "Rillietann Are" "Gceilfi Amur" "Furtafar Uial Rhiantha" "Raibha Amon Harakht" "Athag Sercam" "Tonn Edi" "Eihk Eakion Ceur" 
+			"Esik Uial Tann" "Gyaran Neosfi" "Dias Suinmure" "Ag'mor" "Ceifulgaithann Qualistar" "Ehk Coriam" "Anu Avten" "Quan Eakion Kahli" "Tuisich'novasmair Ortos" 
+			"Talu Eakion Ashfar" "Roisha Kion Ishjiokin" "Cassion Kion Illrun" "Sial Uial Amure" "Isturrith Uial Xamanth" "Hela Kion Na'daan" "Dathedi Tonesh" 
+			"Karan Eakion Bruiith" "Buanna Kion Novine" "Jukath Ishpivam" "Sin' Uial Ishokas" "Olithos Eakion Quaarin" "Fian Silsperiaigh" "Xamath Kion Gilath" 
+			"Kurom Uial Dorchain" "Caur' Eakion Jukath" "Uial Tuisich'novasmair" "Orion Ishulem" "Foen Kion Ainiluin" "Soa'rillie" "Failleanan Shinsil" "Fian Neosfail" 
+			"Ofell Uial Novi" "Zhai Pikal" "Dyann Fainnaid" "Tri Sha'eil" "Ehka Yirral" "Quan Eshairr" "Kilithikadya Sercambelach" "Caihe Kion Sin" "Deash Uial Coriam" 
+			"Naran Kion Creagleram" "Ill' Uial Sha'eil" "Otesh Dielier" "Ika Uial Kiam" "Menliadeng Xamath" "Ish'gaithall" "Iok Muraddin" "Yass Eaxamath" "Av Gyaran" 
+			"Distau Eakion Shad" "Turt Angau" "Ofigascarath" "Gorach Eakion Uliar" "Choma Eakion Es" "Kareag Tageth" "Eaxamath Sista" "Agai Cormei" 
+			"yan Thelios" "Suin Daellae Mon'keigh" "Ishokas Feis" "Mile'ionahd Uial Ath" "Piat Sial" "Orkan Kiam" "Carrec Some" "Lir Eakion Ulem" "Foen Uial Quan" 
+			"Ishpivam Arith" "Yval Endobai" "Dyann Rrith" "Scurath Uial Elehorn" "Pikaart Edi" "Raibh Sikam" "Fhaisorr'ko Eakion Dieliet" "sub Kion Rage" "Idann Astherian" 
+			"Yngir Iall" "Liad'istaur" "Shair Marsgrech" "Menlia Thara" "Yngir Kion Otbuanna" "Sutherial Eakion Orthos" "Offigascarath Eakion Chiru" "Tonesh Eakion" 
+			"Ishokas Kion I" "Buanna Tiel" "Ard Eakion Angaur" "Iyri Eakion Ish" "An Dathedi" "Darhathin Anastari" "Tuisich'novasmair Ishnikav" "Diann Uial Ainulin" 
+			"Deshial Kion Faolchu" "Hish Uial Riuway" "Ortos Uial Pikaart" "Neosfail Sercam" "Garoth Xama" "Alai Eakion Dael" "Brathai Hesh" "Leram Eakion Menshad Korum" 
+			"Gaithall Uial Murekhalir" "Sikam Isturrath" "Esik Uial Carrecenad" "Kaelis Ra Yngir" "Xamath Parten" "Mear'feothan Eakion Uom" "Diallir Uial Shelwe" 
+			"Taluclu Partente" "Agaith Ran" "Ashfar Kion Zhai" "Gyaran Ishsoem" "Turta Eakion Tava" "Marathag Ifeth" "Fian Silsperiaigh Offig" "Iall Mael Dannan" 
+			"Ishkioum Eakion Sin" "Ofell Uial Riaway" "Harakht Asturi" "Orthos Maugan Ra" "Yirral Ishniva" "Baharroth Chii" "Shlaereen Caurifel" "Ishoris Kion Ishkioum" 
+			"Jukath Shieluin" "Dias Cielar" "Kiamenad Ulam" "Domanith Feik" "Quan Yngir" "Furta Eakion Rrith" "Carreciann Trilas" "Turta Eakion Pikaard" "Defath Joisa" 
+			"Kurom Uial Cormer" "Bal Uial Id" "Ca Eakion Yirrikshad" "Ortos Seach" "Eihk Kion Gilath" "Aill' Eakion Buanial" "Kienadda Uial Foen" "Roisha Shenestra" "Ishjiokin Caihe" 
+			"Reu Uial" "Kareag Eakion Koruan" "Gaithann Gceilan" "Camion Kion Otesdainn" "Dorcha Fiallathandirel" "Novis Elourge" "Xama Uial Turta" "Xamath Fian Silsperiaigh" 
+			"Kurom Eakion Naran" "Addol Partecion" "Athag Uial Nive" "Kiram Ishulem" "Gorach Rrith" "Sutherinan Chom" "Kiar Uial Bennan" "Men Eakion Iall" "Neosfai Dras" "Quas Marb" 
+			"Koesh Eakion Athistaur" "Istu'karun Angau" "Thelriann Iadanna" "Ag'eaxamath" "Crelirun Kion Baharr" "Arios Kion Ishpivam" "Ainulin Finnaidann" "Yngir Carrecenad" 
+			"Faolchu Kion Otesdainn" "Tranglam Keran" "Otbuanna Sei" "Hesh Ter'candsor" "Lantillifieth Kion Neosfi" "Suda Kion Cheapamir" "Siar Kion Lam" "Margorach Cheapmai" 
+			"Kiam Ainn" "Bad Uial Tuisach" "Kilithikadya Eakion Addan" "Ucan Eakion Fari" "Saim'hann Eakion Torev" "Iyalis Ehk" "Kharant Eakion Sien" "Ishokas Eakion Marsgrech" 
+			"Gorash Uial Feik" "Margorach Vial" "Lann Harat" "Ceiful Uial Xamanth" "Harakh Uial Lir" "Turt Uial Qualistar" "salo Eakion'yan" "Ishtoam Edi" "Lir'menshad Korum" 
+			"Tranglam Ifiath" "Rrith Astherian" "Sial Kion Piost" "Ya' Uial Hara" "Liran Ceilann" "Lam Kion Eshairr" "Rois Thelriann" "Ehk Ishpoiem" "Deas Eakion Xamanth" 
+			"Suin Lann" "Eosik Iall" "Ashfar Istrill" "Surathin Eakion Amure" "Chom Pieth" "Estu Lavair" "Mironin Kion Haranshemash" "Cre' Uial I" "Oiche Xama" 
+			"Tossirian Daellae" "Ag' Uial Mael Dannan" "Ofell Pikaard" "Thelriann Turta" "Gilath Kion Arebennian" "Larr Eakion Ifiath" "Cassion Brathu" 
+			"Druchii Uial Shinsil" "Fian Dialcaman Xamath" "Na'daan' Kion Ulthwe" "Fainnaid Uial Ishjuketh" "Suitheakion'eliath" "Tosthuich Garoth" 
+			"Corim Buanna" "Partecion Uial Belac" "Caihe Eakion Suithal" "Gceilan Eakion Elourge" "Credeas Maugan Ra" "Eshairr Esdainn" "Sha'eil Tann" "Ishsikam Uial Iann" 
+			"Fiallathandirel'Tonesh" "Baharr Ulieth" "Uri Kion Cheapmai" "Losseainn Ortos" "Ishpivam Uial Kaela" "Ishnikav Eakion Ishtoem" "Iem Wea" 
+			"Turta Losse" "Failleanan Uial Dial" "Esikcaman Eakion Ofell" "B'fheidiren Uial Ashfar" "Cherakinan Isturrith" "Bennan Eakion Raiph" "Quass Kion Caihan" 
+			"Ran'athal'sain" "Tain Idain" "Lir Orion" "Badbaltrilas Hesh" "Bratha Eakion Tial" "Eaxamath Kion Cassion" "Tir Yngir" "Otesh Uial Thelios" "Orkead Belar" 
+			"Ishsoem Kion Addan" "An Uial Tranglam" "Quas Uial Quas" "Raibh Riath" "Shelwe Kion Saim'hann" "nash Uial Aiek" "Ishjuketh Ulam" "Eihk Piost" "Offigascarath Yirrikshad" 
+			"Weand Diallir" "Sui'Kion Gyaran" "Woris Uial Deketh" "Bionnenan Tial" "Joisa Eakion Ulerans" "Belah Koesh" "Dras'rea" "Kurom Kion Iem" "Iytthalith Uial Yngir" 
+			"Mirrotuis Uial I" "Ran' Kion Ishjiokin" "Nikav Yirrik" "Iem Belac" "Esikcaman Uial Beithir" "Lonann Rhiantha" "Tosthuich Eakion Eakion" "Menshad Korum" 
+			"Mironin Kiest" "Roisin Kion Dyann" "Sha'eil Shieluin" "Yngir Uial Iem" "Margorach Eakion Catumen" "Silmordriel Theliol" "Quass Eakion Addol" "Isturrath Uial Iytthalith" 
+			"Bratha Istu" "Murehk Ishjiokin" "Arebennian Uial Shieluin" "Caur' Eakion Tranglam" "Domanith Yass" "Qualistar Ishnive" "Dieleir Lambruith" "Aiel Eakion Lirun" 
+			"Are Eakion Joisa" "Deshial Cheapamir" "Eliath Kion Athal'sain" "Bruiith Bionnearan" "Feis Ishokas" "Soam Kion Fari" "Koesh Shinsil" "Kian Eakion Turten" 
+			"Saim'hann Lann" "Caihan Farture" "sub Menliadeng" "Thelriann Kion Xamath" "We Gceilfi" "Isturrith Kion Dieleir" "Koem Buanna" "Suithal Sutherial" 
+			"Kaelis Ra Kion Ceiful" "Caihan Eakion Bih" "Ea' Eakion Marathag" "Fare B'fheidir" "Olithos Kion Fhirin" "Subeliast Raibha" "Turta Uial'rea" 
+			"Baruth Quan" "Idain Eakion'salo" "Anu Kion Kurom" "Taluclu Eakion Mor" "Chomh Eakion Sial" "Arathi Uial Buanneth" "Thara Creagleram" 
+			"Caur' Kion Ortos" "Raiph Eakion Rith" "Ortos Uial Sial" "Cherakan Koruan" "Xama Athain" "Athair Subeliast" "Bionerath Garoth" 
+			"Quan Kion Lia" "Dearas Uial Chii" "Losse Eakion Tuelean" "Distaur Sin" "Dieliet Ishokas" "Elourge Eakion Yirrik" "Gilath Ortos" "Eihk Ishsoem" 
+			"Tonn Koruan" "Zhai Harakh" "Woris Uial Iytthalith" "yan Uial Eliath" "Unan Badd" "Ceur'cielar" "Iem Kion Crelirun" "Ca Kion Ashafares" "Xia Breaga" 
+			"Ceiful Eakion Oris" "Angau Farture" "Credeas Kion Addolir" "Isha Eakion Offig" "Ya'Tuisich'novasmair" "Tuisich'novasmair" "Partecion Uial Wea" 
+			"Anu Ainiluin" "Badbaltrilas Boniokel" "Tosthuich Kion Angaur" "Ainn Deas" "Shemash Addan" "Khal Sercambelach" "Desta Eakion Chii" "Dieliet Cre" "Oiche'yan" 
+			"Tosthuich Thelios" "Ulia Kurom" "Tuisich'nova'kion Offig" "Shelwe Soa" "Sercam Eakion Kiamenad" "Kahli Uri" "Lameldannar Uial Tuelean" 
+			"Ceifulgaithann'belach" "Subast Rillisliddian" "Finnaidann Anu" "Lam Kion Ishulam" "Subeliast Addan" "Orion Gona" "Sin Kion Meantokath" 
+			"Fiallathan'Creagleram" "Wea Sierann" "Maugetar Eakion Istau" "Erath Ulam" "Ter'candsor Bad" "Neosfi Tossirial" "Xamanth Sema" 
+			"Tonn Eakion Mael" "Saim'hann Iann" "Till Taluclu" "Nikav Garoth" "Gonau Farath'mure" "Kerun Muan" "Parten Uial Rrith" "Mor Eaxim" 
+			"Eihk Kion Shelwe" "Leram Asha" "Baharr Kion Ehk" "Murekhalir Suithal" "Cre' Uial Gaithann" "Poiem Isturrath" "Tiel Eihk" 
+			"Credeas Kion Cre" "Oriosa Uial Cassion" "Suin Daellae Riga" "Yirrikshad Shelwe" "Ra Koruan" "Addinav Uial Dath" 
+			"Mironin Are" "Anaris Sercam" "Harakht Uial Murehk" "Jiokin Eakion Beithir" "Harakh Nikav" "Ifieth Riath" 
+			"Chom Uial Fhirinne" "Tossirian'rilli" "Ainulin Eakion Gceilfi" "Suda Uial Idain" "Shiasta Carrecenad" "Riath Eakion Naran" 
+			"Murekhalir Uial Qualistar" "Chom Gcheil" "Ishtikam Uial Arios" "Quas Uial Ishulem" "Khanel Dorchain" "Pikaard Kion Bruith" "Ainiluin Far" 
+			"Bratha Uial Ian" "Credeas Uial Kiest" "Bruith Ifeth" "Scuraith Eakion Esik" "Boniokel Bad" "Iytthalith Subarn" "Garoth Uial Catumen" 
+			"Elourge Eakion Kahli" "Yngir Kion Raiph" "Edi Uial Gonau" "Kuras'eliath" "Brylidassian Creliam" "Corim Arebennian" 
+			"Gaied Subarn" "Eihk Xias" "Cheapmai Eakion Bonnikel" "Ucan Kion Coriam" "Grech Dathedi" "Yass Rillie" "Lavai Uial Neosfai" "Poiem Uial Zar" 
+			"Liad'aiek" "Laim Kion Kiuom" "Harakht Tosthuich" "Margorach Chom" "Fhaisorr'ko Uial Surathin" "Metos Eihk" "Turten Dyann" "Quasnanar Kion Suther" 
+			"Mor Kion Tag" "Tossirial Yngir" "Iall Ceifulgaithann" "Rega Lavair" "Lonann Eakion Yngir" "Raibha Gyaran" "Baharr Eliath" "Urge Kion Ifiath" 
+			"Bratha Agai" "Istaur Eakion Credeas" "Ulieth Astherian" "Amuriel We" "Turta Mear'feothan" "Rrith Carrecenad" "Lirun Kion Xios" "Uri Kion Larrasurath" 
+			"Subast Eakion Baharr" "Ter'candsor Kion Laim" "Sha'eil Uial Xia" "Baharr Oriosa" "Esikcaman Uial Ifeth" "Hish Enarc" "Dieliet Kion Dathedi" "Rilli Kion Ika" 
+			"Isturrith" "Defeth Ceilann" "Darhathin Uial Saim" "Larrasurath Eakion Ceur" "Notak Defeth" "Ishsikam Uial B'fheidiren" "Ulem Kion Dyann" 
+			"Ishnive Uial Koesh" "Nikav Eakion Khanel" "Athair Cait" "Joisa Ut" "Ika Eakion Orkan" "Turt Eakion'eliath" "Distaur Uial Ainaarin" "Ian Lann" 
+			"Rois Uial Sun" "Mirrotuis Uial Dannan" "Esik Amon Harakht" "Lameldannar Uial Rrith" "Gorach Orkan" "Ard'ladanna Suin Daellae" "Ishar Offig" "Angau Uial Eaxamar" 
+			"Saim'hann Tial" "Anu Losse" "Illrun'ainn Kion Chiru" "Baruth Tosthuich" "Isturrath Illmureead" "Dyann Kion Creagleram" "Rrith Eakion Lantillifieth" 
+			"Torev Eakion Belar" "Disthir Eakion Mironin" "Ucan Eakion Ashfar" "Oris Eakion Leram" "Creagleram Zapat" "Cielar Uial Buanneth" "Suther Carrec" 
+			"Dannwye Eakion Felchu" "Asuryan Eakion Kienadda" "Pivam Eakion Rilli" "Ishjuketh Uial Ibb" "Tir Ulam" "Enarc Piost" "Elourge Iall" "Shieluin Orkead" 
+			"Dannan Sutherial" "Anu Mael Dannan" "Distaur Avti" "Seach Fhir" "Pikash Mear'feothan" "Ibb Seachran" "Uom Kion Kilithikadya" "Parteilath Uial Yngir" 
+			"Tagtha Bionnearan" "Dorcha Laim" "Sei Lir" "Iann Eakion Brylidassian" "Dieleir Chi" "Gyaran Uial Bratha" "Ishar Kion Sin" "Ishjukath Kion Foek" "Khalir Eakion Olithon" 
+			"Ag'subeliast" "Woris Kion Turt" "Creidann Uial Koruan" "Siolka Eakion Darhathin" "Nanar Cha'los" "Weand Uial I" "Qualistar Eshairr" "Iyallir Faolchu" "Xia Eakion Harakh" 
+			"Ra Eakion Ehka" "Choma Uom" "Yngir Eakion Elourge" "Vyyal Fiallathandirel" "Isturriath Liddian" "Eliath Lir" "Creagleram Ulerant" "Leanir Uial Notak" 
+			"Solerant' Kion Wea" "Useerant Amure" "Furto Kion Ibb" "Ishokas Nikav" "Shinsil Enadlam" "Ishpoiem Seachmall" "Uleran Eakion Rrith" "Ulthwe Athair" "Gona Subeliast" 
+			"Laim Kion Bal" "Scurath Jiorquas" "Men Uial Iytthalith" "Sai Amon Harakht" "Defeth Eakion Seria" "Esik Buanna" "Enadlam Kion Zaineth" "Cherakan Eshairr" 
+			"Defeth Kion Cassion" "Amur Arith" "Suinmure Lavai" "Sial Faolchu" "Druchii Bih" "Kharanis Asturrian" "Sikal Creliam" "Turta Ann" "Piost Fein" "Shenestra Uial Ifeth" 
+			"Cheapon Gorach" "Muan Uial Torev" "Ceifulgaithann Kion Xamath" "Cre' Uial Gorach" "Tokath Faolchu" "Kiam Ishsikam" "Uom Maugan Ra" "Garisam Asurya" "Scurathainn Torev" 
+			"Las Bionnearan" "Cormei Kion Gona" "Quan Menlia" "Farath'mure Losseainn" "Cassion Kiram" "Beithir Sier" "Mean Kion Jiorquas" "Cherakinan Astherian" "Pikal Uial Suin Daellae" 
+			"Atha'sain Shenestra" "Tava Asha" "Ainiluin Weand" "Fian Silsperiaigh Ishnikav" "Raibha Eakion Tial" "Salo'neosfail" "Tokath Uial Erath" "Menliadeng Rillietann" 
+			"Rage Kion Seachmall" "Shinsil Eakion Menlia" "Ulam Kion Isturrith" "Ard'ladanna Uial Chom" "Were Kion Kiamenad" "Camion Garoth" "Isturrath Cormer" "Cassion Uial Hesh" 
+			"Mon'keigh Uial Dielier" "Caihan Eaxamath" "Naran Uial Toill" "Shelwe Larill" "Till Amon" "Iyalith Disthir" "Khalir Uial Tiel" "Sha'eil Kion Enarc" "Bih Eakion Far" 
+			"Mon'keigh Riaway" "Reu Agai" "Chii Margorach" "Yass Sei" "Ika Uial Menlia" "Sutherial Gorash" "Tag Anastari" "Ann Lia" "Idann Kion Ika" "Badb Enadlam" "Fhaisorr'ko Deketh" 
+			"Yiss Xios" "Iadanna Tiel" "Buanna Kion Yngir" "Pikaart Uial Xamath" "Faolchu Suda" "Rilli Murehk" "Sier Uial Aiek" "Eihk Uial Poiem" "Bionnearan Iyallir" "Liran Uial Faras" 
+			"Suda' Kion Novine" "Gcheil Kion Hesh" "Sikal Eakion Margorach" "Lann Caihe Eakion Ucan" "Gaithann Kion Partecion" "Tossirian Chi" "Tageth Fare" "Shemas Kion Desta" 
+			"Iytthalith'eriaigh" "Riath Kion Badbaltrilas" "Athal'sain Cora" "Sial Sutherial" "Ca Salo" "Keran Defeth" "Tiell Were" "Gyaran Shenestra" "Nanar Uial Iytthalith" 
+			"Caurmenli Eakion Arios" "Novine Ulerant" "Dieliet Caihan" "Tokath Kion Ter" "Fari Rage" "Belar Elourge" "Gorash Murekhalir" "Tiel Kion Karun" "Mael Metos" "Fari Kion An" 
+			"Liad'bionnenan" "Ika Uial Dyass" "Isha Uial Boniokel" "Enarc Dieliet" "Yass Kianenad" "Elourge Uial Menshad Korum" "Ishulam Ifeth" "Badb Dielier" "Elourge Yngir" 
+			"Cre' Eakion Tain" "Ceur' Uial Gerona" "Marb Fare" "Isturrith Kion Scurath" "Istau Ortos" "Yval Eakion Offigascarath" "Losseainn Sis'emwa" "Quan Eakion Hish" 
+			"Deash Raiph" "I' Eakion Esdainn" "Ill' Eakion Mon'keigh" "Gaied Taluclu" "Fari Uial Salo" "Koruan Furte" "Arith Eakion Cait" "iok Kion Cheapmai" 
+			"Yirral Kion Dras" "Druchii Eakion Cassion" "Elourge Murekhalir" "Garoth Suithal" "Ortos Uial Ran" "Ishsoem Agaith" "Shlaereen Uial Hesh" 
+			"Ishnikav Eakion Caurmenli" "Ehk Keran" "Tossirial Quisach" "Arebennian Eaxamar" "Ifeth Cassion" "Ishtoam Eakion Sercam" "Iytthalith Kion Tiel" 
+			"Quas Quas" "Mon'keigh Eakion Novis" "Fian Dialcaman" "Tial Gillath" "Felchu Tuisich'novasmair" "Zapat Kiest" "Ainn Uial Ehk" "Dannar Kion Shem" 
+			"Yngir Ucat" "Ashfar Kion Deas" "Muan Kion Suithal" "Muan Lavai" "Kiar Theliol" "Oriosa Creagleram" "Neosfi Ceifulgaithann" "Athag B'fheidir" "Shair Kion Seachmall" 
+			"Creagleram Brylidassian" "Zenil Addin" "Cora Eakion Eakion" "Ish' Kion Zenil" "Murekhalir Nive" "Idann Fian Dialcaman" "Sha'eil Uial Brathu" "Cassion Eakion Iytthalith" 
+			"Choma Kion Menshad Korum" "Yirraith Asha" "Grech Ishokas" "Kan Kion Caihe" "Jain Kion Anastari" "Ika Kion Eihk" "Weand Asturrian" "Esik Olithos" "Laim Uial Bionnearan" 
+			"Scurath An" "Soa'ea" "Ceur' Uial Turt" "Quaarin Ceilann" "Marathag Elith" "Offig Fir Farillecassion" "Okas Eakion Lan" "Kerun Kion Ainn" "Eliath Kion Mon'keigh" 
+			"Gillal Ish" "Cre'laim" "Addol Kion Koem" "Tera Uial Hish" "Naran Vergreal" "Xamanth Mean" "Lir'illmureead" "Ishtoem Eakion Vergreal" "Marsgrech Eaxamath" "Atherakhia Diann" 
+			"Fein Uial Soam" "Fiallathandirel Uial Ucan" "Urge Istu'karun" "Furtafar Kion Taer" "Zar Uial Idann" "Subeliast Ucan" "Eaxamath Eakion Bratha" "Urgebelash Kion Dannan" 
+			"Ortos Partente" "Bruiith Uial Ainn" "Am'unan" "Pikaard Kion Carrecenad" "Furte Neosfai" "rea Uial Haranshemash" "Elourge Hish" "Dath Kion Ishtoem" "Dyann Eakion Gceilan" 
+			"Ishoris Eakion Riaway" "Addinav Kion Chom" "Kilithikadya Uial Naran" "Istrill Uial Addankiamenad" "Ishkioum Kion Tranglam" "Elourge Distau" "Iann Eakion Larrasurath" 
+			"Sai Slidd" "Iishill Riuway" "Yiss Eakion Ter" "Seria Avti" "Rhiantha Uial Olitho" "Seria Eakion Caur" "Desta Eakion Mael Dannan" "Ifeth Shem" "Angaur Ehk" "Sercam Kion Ishpikel" 
+			"Sercamarith Uri" "Seachmall Yirrik" "Furta Eakion Laim" "Amon Harakht Eakion Bratha" "Bruiith Eakion Marb'ailtor" "Arioth Menshad Korum" "Ann Eakion Xama" "Xamath Uial Coriam" 
+			"Coriam Tuisach" "Tranglam Uial Garoth" "Saim Eosik" "Ceilann Mon'keigh" "Novi Iytthalith" "Dorchain Ishkioum" "Dath Ishniva" "Carrecenad Carrecenad" "Iok Kurom" 
+			"Sha'eil Asturi" "Kerun Kion Defath" "Eshairr Rilli" "Chiru Poiem" "Suda Uial Urge" "Oriosa Istau" "Mirrotuis Uial Dathedi" "Kaelis Ra Uial Lann Caihe" "Useerant Kion Cora" 
+			"Kion Yngir" "Arten Eakion Mon'keigh" "Taer Offig" "Ter'candsor Foen" "Shenestra Eakion Useerant" "Tain'salo" "Ehka Athe'sier" "Tiel Iyalis" "Novi Illrun" 
+			"Eliath Cassion" "Zapat Addin" "Torev Camion" "Lavai Weand" "Lameldannar Tokath" "Ika Menshad Korum" "Jiokin Uial Kurnous" "Carrecenad Eakion Salo" "Lam Uial Xamath" 
+			"Lann Kion Shinsil" "Deash Quan" "Harakht Mor" "Atha'sain Losse" "Ashfar Amon" "Buanneth Scurath" "Ifieth Ishnive" "Ehk Uial Choma" "Garem Disthir" "eath Uial Raiph" 
+			"Seachran Kion Dieliet" "Carrecenad Uial Aiel" "Uliar Iadanna" "Ulieth Desta" "Buanneth Uliar" "Angau Suithal" "Elourge Tossirial" "Okas Darhathin" "Ainn Soa" "Feik Sercambelach" 
+			"Losseainn Eakion Avti" "Khal Uial Koem" "Suinmure Kion Lir" "Piethandirel" "Kilithikadya Av" "Kerun Aithben" "Disthir Offig" "Fir Kahli" 
+			"Ucat Ard'ladanna" "Ifeth Eakion Menlia" "Leram Kion Buanneth" "Chomh Suitheakion'eliath" "Elourge Eakion Dannar" "Shair Uial Salo" "Dieleir Novas" "Gaied Uial Ran" 
+			"Raiph Kion Otesdainn" "Defath Urgebelash" "Kiuom Kion Caihan" "Eaxamath Eakion Domanith" "Athistaur Shinsil" "Torev Addin" "Otesdainn Uial Hish" "Offigascarath Harakh" 
+			"Suith Uial Lan" "Mile'ionahd Lavair" "Finnail Uial Eaxim" "Breag Slidd" "Esik Eakion Quan" "Arten Eakion Olithos" "Ceifulgaithann'Uial" "Dark Kion Sikal" 
+			"Eihk Eakion Choma" "Rrith Leanir" "Ulerant Eakion Zenil" "Yiss Eakion Caurmenli" "Dael Uial Leram" "Sutherinan Kion Aithliam" "Angaur Kion'sub" "Baharr Suithe" 
+			"Suda Kion Sercam" "rea Druchii" "Liann Kion Ucat" "Bruith Kion Chiru" "Ehk Ehka" "Athag Ishsoem" "Joisa Ishpoiem" "Solerant' Uial Caurmenli" "Eliath Kion Lan" 
+			"Nan Sial" "Novar Urge" "Soa'notak" "Lirun Cour" "Belac Uial Weand" "Ishjukath Ya" "Elourge Uial Uleran" "Kerun Eakion Ulthwe" "Cassion Yngir" "Harakh Kion Otbuanna" 
+			"Ea' Kion Mael" "Ra Uial Deh" "Ofell Theliol" "Xia Ifiath" "Sercamarith Uial Cora" "Chi Lan" "Rega Cormer" "Ishnive Kion Silmordriel" "eath Kion Creidann" "Agaith Uial Sien" 
+			"Asturi Uial Ann" "Shelwe Ainn" "Cora Kaelis Ra" "Diallir Rith" "Dras Dyann" "Athain Rith" "Slaan Uial Amure" "Lam Eakion Suin Daellae" "Suith Eakion Cherakinan" "Fhir Kion Some" 
+			"Ibb Ishjuketh" "Buanneth Arebennian" "Aill'grech" "Failleanan Wea" "Addin Ishpivam" "Sha'eil Suitheakion'eliath" "Bal Eakion Ehka" "Eshairr Eakion Shenestra" "Ehk Iytthalith" 
+			"Fian Dialcaman Kion Quas" "salo Aarthia" "Tirtu Eakion I" "Bahn Uial Ag" "Eadar Eakion Arith" "Woris Kion Hela" "Eadar Eakion Mirrotuis" "Iad Muraddin" "Aithben Eakion Kiuom" 
+			"Ishulem Eakion Oiche" "Scuraith Amon Harakht" "Kan Nive" "Partecion Eakion Gaithall" "Soa' Eakion Istu'karun" "Karan Eakion Yngir" "We Lia" "Dieliet Eakion Asha" "Murehk Yngir" 
+			"Vyyal Fhirinne" "Sistau Thelios" "Ibb Cha'los" "Anu Baharr" "Menshad Korum Desta" "Ifiath An" "Ishulam Uial Novine" "Fainnaid Las" "Ishjiokin Xama" "Ishjuketh Fian" 
+			"Chom Eakion Estera" "Tuisich'Ifeth" "Ceilann An" "Buanna Uri" "Gaied Uial Iadanna" "Cassion Tannascurath" "Useerant Eakion Sikal" "Shinsil Athistaur" 
+			"Geir Tial" "Neosfi Uial Aithliam" "Aithben Kion Surathin" "Ishtoem Enaid" "Neosfail Ishtoem" "Urgebelash Ishpieth" "Failleanan Sercam" "Slidd Rage" "Kilithikadya An" 
+			"Margorach Yirrikshad" "Gaithall Elourge" "Bratha Uial Ulthwe" "Anastari Beithir" "Kharant Foek" "Ceiful Kion Dathedi" "Enad Uial Chi" "Belah Quan" "Mael Eakion Dannwye" 
+			"Koruan Uial Harat" "Koruan Quisach" "Suin Rois" "Theliol Kion Darhathin" "Brion Uial Toill" "Notak Uial Arathinos" "Zenil Kion Grech" "Nive Elehorn" "Mael Dannan Yass" 
+			"Murehk Kion Seach" "Aarthia Eakion Hasoi" "Yval Uial Yirrik" "Isha Tir" "Fian Silsperiaigh" "Darhathin Daras" "Buanial Woris" "Ishniva' Uial Gyaran" 
+			"Quaarin Eadar" "Vial Kion Iishill" "Arathinos Eakion Ika" "Mael Dannan Dannan" "Margorach Ishtikam" "Menshad Korum Uial Riga" "Ishpivam Kion Elourge" "Amuriel Ulieth" 
+			"Raibha Eakion Athe'sier" "Olitho Yass" "Fian Dialcaman Defath" "Aiel Uial We" "Tiel Offigascarath" "Sercam Ca" "Tiel Urgebelash" "Partente Lavair" "Suin Daellae Joisa" 
+			"Parten Mael Dannan" "Xia Bonnikel" "Saim Sha'eil" "Istaur Kion Biel'tan" "Margorach Uial Suinmure" "Rrith Ulieth" "Dearas Kion Daras" "Lan Uial Vergreal" "Larr Shad" 
+			"Koem Riga" "Ishar Kion Saim" "Defeth Uial Breaga" "Tuisich'liadeng" "Ag'sha'eil" "Athag Eakion Quass" "Ainulin Uialthiri" "Destra Elourge" 
+			"Xama Eakion Athain" "Ran' Kion Suda" "Koesh Eakion Cour" "Suin Daellae Amuriel" "Ifiath Uial Karun" "Eihk Scuraith" "Athal'sain Yirrik" "Kuron Siar" "Liann Novine" 
+			"Athal'sain Eakion Koruan" "Roisin Uial Ath" "Ra Kion Dras" "Sai Kion Ishpivam" "Feik Sista" "Ainiluin Kion Sierbann" "Bratha Lam" "Mean Xamanth" "Uliar Menshad Korum" 
+			"Biel'tan Uial Ulem" "Elith Eakion Eaxamath" "Zain Eakion Mean" "Orkan Beithir" "Koesh Ortos" "Eshairr Asturrian" "Atha'sain Kion Fell" "Eadar Ainiluin" 
+			"An Ceifulgaithann" "Gceilan Distau" "Badb Zenil" "Esdainn Kion Metos" "Asurya Asurya" "Kuron Eakion Ainiluin" "Khal Quisach" "Cora Cassion" "Lir' Kion Ifiath" 
+			"Tuisach Kion Oiche" "Orion Kion Ishsoem" "Ulieth Uial Marb" "I' Kion Iishill" "Tossirial Av" "Slavhreenur Ashafares" "Xamath Lantillifieth" "Till Eakion Gceilan" 
+			"Kion Orkead" "Ishjiokin Kion'iok" "Carrec Kion Garoth" "Desta Eakion Ainiluin" "Soam Eakion Bratha" "Addankiamenad Uial Disthir" "Ulem Eakion Leanir" 
+			"Siar Eakion Mile'ionahd" "Istaur Subeliast" "Ortos Kion Novar" "Breag Kion Elourge" "Ard'ladanna Wea" "Neosfi Eihk" "Lilon Unan" "Mirrotuis Kharant" 
+			"Tann Carrec" "Ishkioum Qualistar" "Kerun Khalir" "Felchu Bennan" "Maugetar Direl" "Avti Kuras" "Buanna Kion Failleanan" "Chiru Kion Asturi" "Sercam Suitheakion'eliath" 
+			"Deas Kion Dorcha" "Sutherinan Uial Suda" "Soam Kion Turta" "Ian Kion Nive" "Hara Kharant" "Ea' Eakion Shad" "Tranglam Desta" "Farath'mure Eakion Kal" "Arios Cassion" 
+			"Ran' Uial Partecion" "Lantillifieth Murekhalir" "Iyalis Uial Athag" "Shenestra Ishulam" "Rois Cora" "Shlaereen Soam" "Coriam Urge" "Ian Asturrian" "Olitho Uial Ulieth" 
+			"Ishulem Uial Bratha" "Chi Kion Ishnive" "Finnail Lam" "Ceifulgaithann Sercam" "Liad'iishill" "Ishulem Endobai" "Angau Bruith" "Iem Lann Caihe" "rea Gorash" "Yval Shelwe" 
+			"nash Partecion" "Rega Tosthuich" "Gyaran Cassion" "Ceiful Kion Cora" "Feik Faolchu" "Lavaillian Bonnikel" "Ann Cassion" "Hela Novis" "Credeas Uial Uken" "Mirrotuis Uial Gyaran" 
+			"Elehar Kerun" "Fiallathandirel Idain" "Carrecenad Yngir" "Mirrotuis Shenestra" "Desta Uial Ishjiokin" "Sei Pikarid" "Lavair Riuway" 
+			"Seria Gonau" "Haranshemash Eakion Novas" "Toill Soa" "Otbuanna Fhirinne" "Mironin Kion'eliath" "Amuriel Iad" "Useerant Ortos" "Dath Farture" "Eakion'cre" 
+			"Dial Ishpivam" "Tonesh Kion Are" "Subest Ill" "Sin'creliam" "Ath Pikarid" "Rith Ulam" "Soa' Uial Sier" "Baharr Ishpieth" "Kiam Tossirial" "Sei Uial Ofell" "Ainaarin Ceiful" 
+			"Subeliast Tuisach" "Fhaisorr'ko" "Murehk Sutherial" "Talu Uial Athain" "Keran Eakion Ika" "Iyalith Eakion Beithir" "Sin' Uial Jukath" "Gaied Toill" "Quass Saim" 
+			"Athe'sier Sis'emwa" "Chii Ishoris" "Dael Eakion Gillath" "Feis Uial Ofell" "Sai Eakion Lan" "Tuelean Eakion Murehk" "Enad Ishsoam" "Ashami Uial Buanneth" "Ishjukath Kion Elith" 
+			"Dyass Eakion Iall" "Avten Athal'sain" "Cour'garisam" "Mear Kharanis" "Addankiamenad Ishtoem" "Iadanna Kion'iok" "Are Mael Dannan" "Joisa Uial Esdainn" "Credeas Lir" "Gillath Kion Asuryan" 
+			"Deketh Orkan" "Sai Eakion Aiek" "Id Quisach" "Gaithall Fian" "Marathag Uial Olithon" "Seach Shieluin" "Mear'feothan Diann" "Las Parten" "Angau Siar" "Rois Eakion Ainn" "Mael Kion Weand" 
+			"Ishulam Creidann" "Finnaidann Uial Murekhalir" "Piat Garoth" "Offig Kion Xios" "Ifeth Buanna" "Lam Uial Far" "Carrecenad Ibb" "Tuisach Uial Harai" "Ishniva' Kion Yngir" "Dyann Quas" 
+			"Meantokath Eakion Tiel" "Cassion Suin Daellae" "Ishsikam Riga" "Eliath Amon Harakht" "Dekair Kion Furte" "Geir Ishtikam" "Badd Buanna" "Druchii Eakion Woris" "Ceiful Creliam" 
+			"Geir Ortos" "Iall Yngir" "Furtafar Uial Riath" "Asuryan Kion Ishpoiem" "Turt Shem" "Angaur Kion Koesh" "Ishniva' Kion Shenestra" "Tosthuich Ucan" "Agai Gceilfi" "Olithos Soa" 
+			"Esik Liran" "Rois Darhathin" "Cielar Eakion Tokath" "Corim Uial Kuron" "Vyyal Yngir" "Feik Uial Dyann" "Buanna Kion Offigascarath" "Sin' Eakion Athe'sier" "Chiru Lameldannar" 
+			"Larrasurath Eakion Bad" "nash Uial Cora" "Ulem Eakion Cormer" "Estu Eakion Brathai" "Suin Daellae Gyaran" "Garisam Chom" "Beithir Rith" "Uom Kerun" "Geir Uial Liann" "Xios Kion Iall" 
+			"Maugan Ra Iren" "We Kion Ofell" "Ulerant Defeth" "Larrasurath Kharanis" "Ea' Eakion Iyalith" "Gceilan Darhathin" "Liran Dieliet" "Rrith Uial Fari" "Kharanis Uial Larr" "Yirral Kion Urgebelash" 
+			"Sis'emwa Kion Dark" "Fari Eakion Garoth" "Avti Eihk" "Cait Kion Ortos" "Ann Eakion Kurom" "Dieleir Uial Arios" "Ishsoam Kion Lirun" "Harat Kion Arith" "Rillietann Kion Gaithall" "Gonau Elehorn" 
+			"Gcheil Cora" "Istrill Kion Murekhalir" "Olithon Urgebelash" "Fian Caur" "Dark Sercam" "Thelriann Atherakhia" "Sub Yngir" "Creagleram Kion Tiell" "Suitheakion'eliath Baruth" "Xamath Caihe" 
+			"Aill'ishpieth" "Murehk Eakion Rega" "Keran Kion Dark" "Domanith Kion Asha" "Subarn Riath" "Cherakinan Dyann" "Esikcaman Eakion Ulthwe" "Shad Eakion Quan" "Tageth Uial Zamorshemash" "Regaen Fian" 
+			"Iad Uial Gillal" "Gaithall Shinsil" "Pikarid Uial Kharant" "Margorach Eakion Yngir" "Rillisliddian Ainaarin" "Ishtikam Kion Tonesh" "Ishsikam Brathu" "Choma Mear'feothan" "Eshairr Koruan" 
+			"Asurya Uial Ucat" "Liann Marb" "Tagtha Uial Garoth" "Regaen Kion Enadlam" "Asha Ish" "Yngir Kion Dannwye" "Ishsoam Alai" "Muan Eakion Fhaisorr'ko" "Xios Uial Badbaltrilas" "Carreciann Kion Elourge" 
+			"Aiek Uial Farture" "Endobai Ashafares" "Chom Yval" "Arioth Kion Arten" "Choma Addinav" "Mon'keigh Ra" "Koruan Bionerath" "Ishulam Uial Muraddin" "Athag Fir Farillecassion" "Crelirun'sub" "Kion'belar" 
+			"Scurath Kion Tranglam" "Hish Eakion Ishpoiem" "Ishoras Kion Arith" "Ishnive Uial Slidd" "Felchu Kion Sema" "Deas Suin" "Xia Menliadeng" "Arebennian'eliath" "Addol Kion Yirral" 
+			"Istrill Uial Yngir" "Maugetar Ceifulgaithann" "Eakion' Kion Cora" "Xamath Cre" "Ishnive Ishpikel" "Ulerans Uial Sial" "Addolir Istaur" "Ann Uial Neosfai" "Kahli Uial Dras" "Marb Larill" 
+			"Elourge Uial Ashafares" "Roisha Kion Atha'sain" "eath Uial Shenestra" "Iyanden Domanith" "Sercam Eakion Harakht" "Enad Eakion Aithben" "Kerun Uial Felchu" "Jain Kion Ulthwe" "Eakion' Kion Sha'eil" 
+			"Subarn Failleanan" "Kharant Eakion Harai" "Haranllathandirel" "Addin Kion Slavhreenur" "Rrith Angau" "Isturriath Kion Dael" "Zenil Uial Athag" "Turta Kion Meantokath" 
+			"Carrecenad Uial Buanna" "Jukath Eakion Neosfi" "Furta Kion Dearas" "Eikal Lameldannar" "Ika Kion Liann" "Urgebelash Gorash" "Slavhreenur Tain" "Chom Eakion Parteilath" "Ibb Uial Maugan Ra" 
+			"Reu Uial Gona" "Ishjukath Uial Karun" "Sha'eil Tosthuich" "Rega Kerun" "Dieliet Eakion Partecion" "Xia Eakion Anaris" "Faras Creagleram" "Esik Belar" "Athistaur Gceilan" "Tuelean Eakion Boniokel" 
+			"Hesh Dark" "rea Ishtoam" "Choma Lam" "Lir' Eakion Suin Daellae" "Fian Uial Rith" "Caihe Seach" "Kurom Uial Felchu" "Corim Eakion Edi" "Pikarid Raiph" "Uleran Uial Ika" "Athain Uial Esdainn" 
+			"Brion Mael Dannan" "Kareag Kion Enadlam" "Maugetar Seachran" "Carreciann Uial Xia" "Ishpivam Carrecenad" "Sier Uial'eath" "Furta Ofell" "Kerun Uri" "Amur Kion Nive" "Cheapamir Kion Illrun'ainn" 
+			"Zhai Eakion Yass" "Pikarid Eakion Lann Caihe" "Xias Kion Yngir" "Brathu Kion Rrith" "Haranshemash Subest" "Dyann Roisha" "Menshad Korum Kion I" "Am' Kion Ashafares" "Dael Kion Turten" 
+			"Iishill Uial Chom" "Surathin B'fheidiren" "Kiam Khalir" "Marathag Mor" "Ortos Eakion Cait" "Xamath Eakion Boniokel" "Corim Ulerans" "Murekhalir Kion Cassion" "Kuras Enarc" "Ika Uial Bratha" 
+			"Bad Amuriel" "Ea' Uial Isturrith" "Tageth Ulieth" "Ard Kion Tial" "Novar Carrecenad" "Tokath Eakion Arioth" "Are Kion Fian" "Cora B'fheidiren" "Ulerans Kion Ulem" "Deash Direl" "Ann Kion Pivam" 
+			"Oriosa Uial'rea" "Dias Kion" "Yass Darhathin" "Cassion Soam" "Fari Sikal" "Ishpoiem Uial Bonnikel" "Liras Uial Aiel" "Wea Eakion Kiuom" "Murekhalir Kion Astherian" "Useerant Uial Ibb" 
+			"An Gillath" "Cour'sikal" "Ill'ceilann" "Sial Eakion Murekhalir" "Muraddin Kion Harakht" "Fian Fhaisorr'ko" "Iad Uial Yirraith" "Ulem Iann" "Tosthuich Quas" "Cre' Kion Turt" 
+			"Asha Kion Garoth" "Margorach Ulerant" "Ishpieth Uial Kaelis Ra" "Boniokel Ca" "Mael Dannan Ishokas" "Koruan Ika" "Sai Eakion Tosthuich" "Buanneth Orion" "Hish Kion Wea" "am Offigascarath" 
+			"Felchu Dras" "Kion Hela" "Hesh Yass" "Athain Wea" "Shieluin Eakion Are" "Ainn Kion Yngir" "Dieliet Dialcaman" "Gaied Uial B'fheidiren" "Tonn Cheapamir" "Xamath Suin Daellae" 
+			"Mironin Shemash" "Chom Distau" "Zaineth Carrecenad" "Jiokin Oris" "Turta Larrasurath" "rea Kion Las" "Fir Arith" "Ishulam Eakion Aika" "yan Uial Belar" "Ibb Shieluin" "B'fheidir Kion Siar" 
+			"Lantillifieth Mirrotuis" "Dieleir Uial Serciam" "Cherakan Eakion Eadar" "Kienadda Kion Esik" "Ishulam Fari" "Suith Roisha" "Gaied Kion Chomh" "Mael Istu" "Sercambelach Uial Ra" "An Iadanna" 
+			"Ashfar Kion Laim" "Quisach Uial Nikav" "Creidann Kion Cassion" "Dathedi Uial Rhiantha" "Fian Dialcaman Uial Chom" "Brion Quas" "Mean Uial Raiph" "Tokath Eihk" "Fare Gyaran" 
+			"Farath'mure'ionahd" "Athag Hasoi" "Carrecenad Eakion Scurath" "Garoth Eakion Tonn" "Karun Ann" "Ishjuketh Thara" "Arith Uial Riaway" "Khanel Kion Muraddin" "Agaith Eakion Garoth" 
+			"Defath Kianenad" "Rois Marsgrech" "Marb'ailtor Uial Kiest" "Murehk Uial Dannar" "Unan Fian Dialcaman" "Arioth Kion Carrecenad" "Furta Kion Chom" "Eihk Sierbann" "Kareag Karun" "Elehar Siar" 
+			"Vial Sercam" "Ainaarin Ishulam" "Cassion Eakion Iren" "Fir Caurifel Istau" "Hara Tag" "Tranglam Shem" "Bionnearan Ishjuketh" "Eaxamath Kion Dieliet" "Harakh Kion Fein" "Scuraith Kion Scuraith" 
+			"Estu Kion Farture" "Seachran Isturrith" "Piat Uial Addolir" "Biel'tan Uial Elohar" "Dielier Diann" "Gorash Eliath" "Laim Uial Anaris" "Bionerath Uial Pikal" "Chomh Kion A" "Harakh Cour" "Margorach Urgebelash" 
+			"Ishnikav Eakion Es" "Disthir Uial Koruan" "Felchu Dorchain" "Slavhreenur Uial Laim" "Ibb Tann" "Quaarin Ya" "Kianenad Tiel" "Fian Dialcaman Zain" "Ishtikam Addolir" "Tonn Eakion Scurath" 
+			"Furte Koem" "Furto Arten" "Diann Uial Buanneth" "Gcheil Istaur" "Weand Uial Surathin" "Furtafar Kion Lavair" "Defeth Kion Yngir" "Lavair Talu" "Domanith Rega" "Zain Quisach" "Dieliet Fari" 
+			"Sei Eakion Esdainn" "Kan Eakion Elourge" "Creliam Kion Sema" "Cassion Uial Fian" "Bonnikel Kion Furte" "Liad' Uial Riaway" "Hela Uial Mael" "Rith Eakion Kian" "Bratha Desta" 
+			"Cherakan Eakion Shelwe" "Losse Eakion Baharr" "Ishsikam Kilidea" "Dael Athal'sain" "Enadlam Uial Furta" "Esik Eakion Cour" "Enarc Ulthwe" "Yirrikshad Liad" "Lavaillian Yngir" 
+			"Saim Kion Lantillifieth" "Gillal Rillisliddian" "Ian Gonau" "Lir' Eakion Zain" "Erath Idain" "Mironin Eakion Yval" "Baruth Nive" "Iad Uial Buanna" "Amon Kion Are" "Mean Kion Ill" 
+			"Lia' Eakion Rega" "Till Eakion Cherakinan" "Iall Poiem" "Liran Uial Destra" "Jukath Kilithikadya" "Bal Kion Ashafares" "Tanna'Brathu'angau" "Chii Shenestra" "Men Subest" 
+			"Enadlam Atherakhia" "Iyallir Bahn" "Tial Kion Kareag" "Mael Haranshemash" "Athal'sain Uial Ceur" "Tuisich'novasmair Kion Sin" "Uri Lann" "Iall Hasoi" "Yngir Kion Fian" "Soa' Kion Amon" 
+			"Soa'wea" "Men Uial Uri" "Ainaarin Eakion Arioth" "Murekhalir Mon'keigh" "Shelwe Fari" "Urgebelash Uken" "Ashfar Eakion Arten" "Gorash Kion Rilli" "Larr Kion Tava" "Otesh Eakion Ishnikav" 
+			"Are Kion Lam" "Creidann Ishulam" "Athe'sier Iadanna" "Cielar Uial Hish" "Subarn Eakion Istaur" "Fhirinne Rage" "Ainn Kion Credeas" "Mon'keigh Kion Diallir" "Turta Partecion" "Iishill Eakion Ann" 
+			"Joisa Mear" "Ainulin'Daellae" "Tuelean Iyri" "Zenil Uial Ran" "Hela Sercam" "Ashfar Eakion Weand" "Novine Kion Wea" "Bennan Uial Dyann" "Uleran Sial" "Ann Eakion Bahn" "Eaxamar Ishtikam" 
+			"Chera'Tosthuich" "Erath'salo" "Athain Kion Yngir" "Larr Cait" "Leram Taluclu" "Dial Uial Ceur" "Rrith Bahn" "Eliath Eakion Kienadda" "Riaway Ath" "Oriosa Cormer" "Liann Muan" "Marsgrech Lia" 
+			"Kiest Ishulam" "Xamath Uial Urge" "Ishoras Felchu" "Ifeth Kion I" "Iren Tossirian" "Uliar Uial Ishpoiem" "Khalir Eakion Atha'sain" "Enad Eakion Parteilath" "Ishulam Uial Gilath" "Leram Faolchu" 
+			"Yirraith Tava" "Suithe'Kahli" "Wea Eakion Ulam" "Elith Arith" "Lam Eakion Chi" "Harakh Eihk" "Quas Uial Asurya" "Orthos Dyass" "Ulthwe Eaxim" "Ynnead Kion Dorcha" "Raiph Ashfar" 
+			"Riath Eakion Faolchu" "Elohar Uial Iadanna" "Bih Kion Gceilan" "Estera Urgebelash" "Bal Kion Ishjukath" "Rillie Uial Larr" "Suith Marb" "Ish'Meantokath" "Ainulin Gorash" "Urgebelash Gilath" 
+			"Cora Kion Sun" "Fiallathandirel Dark" "Metos Kion Deketh" "Menlia Kion Rilli" "Caurmenli Uial Sikal" "Agai'novasmair" "Estera An" "Choma Isha" "Uliar Yirral" "Rrith Kion Ishtoam" "Amon I" 
+			"Woris Uial Iren" "Distau Idann" "Chii Uial Kal" "Ulieth Kion Eaxim" "Ishjuketh Harat" "Yngir Eakion Disthir" "Urgebelash Eadar" "Brathai Ceifulgaithann" "Shlaereen Brathu" "Aiel Uial Ifiath" "Kal Kion Na'daan" 
+			"Xia Margorach" "Rrith Athistaur" "Anu Kiest" "Dyann Eakion Tossirian" "Cassion Mironin" "Carreciann Kion Vial" "Furte Sier" "Yiss Kion Notak" "Furtafar Khalir" "Novi Furte" "Slaan Uial Fhirinne" 
+			"Ot'lir" "Beithir Kion Kal" "Ulieth Wea" "Piat Eakion Yiss" "Kiar Kion Arioth" "Geir Kion Quas" "Brathai Iann" "Endobai Kion Ashami" "Cherakan Raibh" "Mear'feothan" 
+			"Partente Eakion Eihk" "Caihan Rega" "iok Kion Baharr" "Yngir Harakh" "Wea Kion Neosfi" "Suithal Eliath" "Muan Av" "Choma Ainulin" "Carreciann Ishsoam" "Fian Dialcaman Garem" "Cre'gillal" "Enaid An" 
+			"Lavai Eakion Seria" "Carreciann Dannwye" "Uial Furtafar" "Sin'ika" "Silmordriel Eakion Rith" "Beithir Cre" "Boniokel Kion Gonau" "Ashfar Suithimarith" "Sikam Uial Mironin" 
+			"Brathai Ulieth" "Gerona Zhai" "Ceur'cha'los" "Ishulam Biel'tan" "Ya' Eakion Gceilan" "Slaan Uial Mael Dannan" "Sierbann Ter" "Cheapamir Uial Ainulin" "Ter'candsor Tera" "Ran'vyyal" "Tir Caihan" 
+			"Ortos Tann" "Na'daan'cait" "Tiel Kion Turt" "Orkan Brathai" "Ra Kaelis Ra" "Angaur Eakion Tonesh" "Suin Daellae Eakion Sier" "Sutherinan Kion Sier" "Turt Fell" "Ishpivam Fhirinne" "Ish' Uial Ishkioum" 
+			"Jain Kion Creidann" "Quass Uial Liad" "Tiel Kion Orkead" "Useerant Cre" "Mon'keigh Uial Sun" "Yngir Tosthuich" "Quasnanar Eakion Tag" "Ishkioum Sha'eil" "Tri Furto" "Rrith Kion Roisha" "Chii Mael Dannan" 
+			"Ainiluin Arebennian" "Fian Dialcaman Uial A" "Murehk Shinsil" "Ishulam Uial Ishtikam" "Menlia We" "Ea' Uial Ainulin" "Bad Taluclu" "Ishnikav Tri" "Uleran Ehk" "Gonau Zhai" "Gorash Kion Mear" "Novas Dathedi" 
+			"Saim'hann Xia" "Vyyal Eakion Menshad Korum" "Aill'athair" "Esikcaman Kion Notak" "Gorach Kion Bionerath" "Zaineth Uial Chom" "Subeliast Cherakinan" "nash Kion Shair" "Amon Harakht Kion Arathi" 
+			"Esdainn Uial Grech" "Cheapmai Scurathainn" "Karun Woris" "Slaan Es" "Amon Eakion Yval" "Isturrith Ran" "Iyri Athain" "Scuraith Ran" "Nikav Eakion Ishtikam" "Subast Belar" "Fari Kion Liran" 
+			"Ishokas Kion Sha'eil" "Kuron Kion Ehk" "Elohar Ulem" "Eaxim Anaris" "Gillal Eakion Yirral" "Oiche Uial Bennan" "Sier Kion Ishtoem" "Thelriann Athain" "Riath Eakion Furtafar" "Istaur Rrith" 
+			"Cora Shelwe" "Bal Fir" "Suinmure Uial Geir" "Garisam Ca" "Brion Eliath" "Cielar Kion'salo" "Iall Kion Ulerans" "Anaris Suin Daellae" "Beithir Seach" "Tossirial Eakion Shieluin" "Yngir Quas" 
+			"Suin Parteilath" "Zapat Eakion Shelwe" "Tageth Druchii" "Buanna Eakion Salo" "Dyann Harakh" "Gyaran Uial Ishniva" "Poiem Metos" "Suda' Uial Sier" "Finna'novasmair" 
+			"Shlaereen Kion Muraddin" "Anu Eakion Darhathin" "Sha'eil Bad" "Subeliast Uial Urgebelash" "Roisin Uial Suda" "Ulieth Kion Xia" "Ca Eakion Ceur" "Fari Fiallathandire'rilli" "Cassion Uial Rage" 
+			"Dannar Uial Bih" "Athain Uial Idann" "Rage Kion Uial" "Xia Mironin" "am Kion Slaan" "Ishpikel Neosfai" "Fialla'Belar" "Dathedi Uial Tirtu" "B'fheidir Eakion Alai" "Mael Liras" 
+			"Quan Uial Finnaidann" "Iall Eakion Iall" "Offig Illmureead" "Laim Uial Mon'keigh" "Gceilfi Eakion Mironin" "Hish Ceur" "Isturrith Iad" "Cre'isha" "Ishpivam Uial Choma" "Boniokel Eakion Aill" 
+			"Urge'Dialcaman" "Amur Kion Piost" "Tossirian Eakion Yngir" "Regaen Angaur" "Offig Olithon" "Sha'eil Shieluin" "Murehk Gceilan" "Ishjuketh Kion Cassion" "Mear Distau" "Ra Menliadeng" 
+			"Lann Tageth" "Shelwe Druchii" "Ibb Theliol" "Theliol Uial Uial" "Iem Eakion Slaan" "Ashafares Losse" "Laim Quass" "Chii Iishill" "Iann Eakion Coriam" "Fir Ulam" "Orion Ika" "Iishill Menshad Korum" 
+			"sub Uial Bonnikel" "Dekair Soa" "Ter'esikcaman" "Tossirial Eakion Agai" "Enadlam Kharant" "Sier Eakion Cormei" "Uleran Uial Haranshemash" "Corim Torev" "Gaithann Uial Yirrik" "Rrith Eakion Suin Daellae" 
+			"Ran' Uial Subest" "Alean We" "Far Ulerans" "Dath Kion Sha'eil" "Cheapon Eakion Ca" "Ish' Kion Subest" "Arioth Uial Joisa" "Dyass Eakion Lan" "Deketh Uial Na'daan" "Ot'angau" "Asha Kion Dras" 
+			"Ut Eakion Xios" "Regaen Gorach" "Riaway Eakion Jukath" "Ulem Eakion Okas" "Breag Kion Lilon" "Scurathainn Larill" "Ofell Kion Mor" "Ishtoam Enad" "Shair Kion Slavhreenur" "rea Orion" 
+			"Asuryan Uial Tranglam" "Raibh Amon Harakht" "Harat Kion Sierann" "Siar Kion Asha" "Notak Lantillifieth" "Ishjuketh Deash" "Esikcaman Eakion Ehka" "Credeas Kion Iren" "Gceilan Kion Erath" 
+			"yan Eakion Bruith" "Mon'keigh Harakht" "Ceur'creagleram" "Mirrotuis Eakion Suda" "Unan Furte" "Sikam Uial Shemash" "I' Kion Amon Harakht" "Sercam Uial Muan" "Feik Shair" 
+			"nash Eakion Buanna" "Ard'ladanna Dannar" "Dannar Eakion Idann" "Ath Eakion Amuriel" "Kiam Eakion Arathi" "Elohar Badbaltrilas" "Menlia Kion Ter'candsor" "Shair Eakion Shemas" "Sin Eakion Some" 
+			"Tosthuich Uial Urgebelash" "Ifiath Shlaereen" "Tiell Atherakhia" "Enarc Uial Xamath" "Bionerath Erath" "Sierann Kion Sin" "Dyann Av" "Chom Eakion Elourge" "Sis'emwa Kion Lir" "Sis'emwa Uial Mael" 
+			"Quan Ishulem" "Tuise'Murekhalir" "Es Eakion Suin Daellae" "Some Uial Mear'feothan" "Tuisach Kion Gillal" "Tonesh Iadanna" "Erath Suithimarith" "Cour' Uial Distau" "Hela Ash" 
+			"Dannwye Lir" "Geir Dorcha" "Anu Uial Tann" "Ika Mor" "Angau Breaga" "Ishjuketh Kion Ainn" "Ian Eakion Ainulin" "Yngir Yngir" "Carrec Kion Istu'karun" "Ainulin Eakion Marb" "Druchii Kion Ishokas" 
+			"Are Belar" "Oris Kion Lann Caihe" "Sutherinan Addin" "Marathag Unan" "Kahli Kion Rois" "Druchii Kiuom" "Ainulin Kion Neosfail" "Ann Mear'feothan" "Bahn Fiallathandire'rilli" "Farture Edi" 
+			"Dielier Cheapamir" "Partente Sistau" "Isha Kion Breag" "Hara Istu'karun" "Brylidassian Kion Novas" "Kaelis Ra Kion Ainn" "Xia Uial Some" "Beithir Kion Karun" "Edi Amon Harakht" "Losse Ashami" 
+			"Raibh Harakh" "Novine Am" "Farillecassion" "Ynnead Quan" "Ulieth Shlaereen" "Ashami Iyalis" "Neosfi Carrecenad" "Mean Seachran" "Beithir Uial Ulthwe" "Dearas Losseainn" 
+			"Quasnanar Kion Boniokel" "Ya'gaithann" "Ika Haranshemash" "Kaela (adverb) Uial Leram" "Iytthalith Tava" "Kiest Elehorn" "Dieliet Esdainn" "Offigascarath Uial Fari" "Deash Elourge" 
+			"M'Addankiamenad" "Uliar Geir" "sub Suda" "Turt Shlaereen" "Ifiath Eakion Mor" "Ian Eakion Ortos" "Anastari Maugetar" "Shair Ca" "Arioth Fian" "Far Uial Ika" "Losseainn Kion Hish" 
+			"Elourge Uial Parten" "Slaan Endobai" "Bionnearan Uial Otbuanna" "Tiel Carrecenad" "Lonann Eakion Ishtikam" "Lonann Kion Ulerant" "Fainnaid Karan" "Rrith Fiallathandire'rilli" "Ishsoam Eakion'nash" 
+			"Suithal Kion Hesh" "Ran' Kion Badbaltrilas" "Are Uial Dieliet" "Iall Dial" "Dyann Uial Sercam" "Idain Ulia" "Uial Kion Tirtu" "Ifeth Kion Dael" "Gerona Elehar" "Shelwe Furto" "Chiru Eakion Ishpoiem" 
+			"Cherakan Kion Neosfai" "Rois Losseainn" "Ainiluin Fian Dialcaman" "Lia'shlaereen" "Ceifulgaithann Uial Ca" "Rhiantha Uial Mon'keigh" "Catumen Eakion Iyalith" "Ca Kion Ishtoem" "Jiokin Isturrith" 
+			"Corim Sha'eil" "Asturrian Uial Eihk" "Carrecenad Eakion Otbuanna" "Mor' Kion Choma" "Otesdainn Otesh" "Offigascarath Uial Amure" "Novas Creliam" "Ainiluin Ainiluin" "Cormer Uri" "Pikaart Eakion Sierann" 
+			"Isturrith Kion Harakh" "Failleanan Kion Ann" "Kiram Taluclu" "Otesdainn Cassion" "Mairnovis Uial Angaur" "Riaway Istaur" "Arathi Ceur" "Athair Kion Brylidassian" "Ceilann Kion Es" "Faolchu Eakion" 
+			"Dial Uial Suda" "Ishsoam Haranshemash" "Parteilath Eakion Cour" "Gorach Uial Eshairr" "Ulam Murekhalir" "Sikal Marb'ailtor" "Deh Kion Saim" "Lann Eakion Harakh" "Ishpivam Kion Riuway" "Gcheil Enadlam" 
+			"Amure Uial Suda" "Lam Kion Seachran" "Suith Lia" "Dekair Eakion Ceilann" "Eadar Estu" "Mear Uial Notak" "Fian Illmureead" "Seria Kion Athag" "Ehka Dark" "Joisa Ceifulgaithann" "Feik Uial Laim" 
+			"Ifeth Deash" "Gcheil Uial Lann Caihe" "Es Kiest" "Jain Eakion Ulieth" "Belar Asturi" "Sutherial Kion'mash" "Esdainn Seach" "Shemash Distau" "Ifiath Illmureead" "Baruth Kion Bal" "Thara Solerant" 
+			"Raibh Ishjuketh" "Baharroth Addolir" "Chom Tossirian" "Ash Eakion Gcheil" "Uom Uial Addolir" "Iyanden Kion Menshad Korum" "Xamath Uial Ishoras" "Ulam Men" "Unan Yirral" "Menliadeng'Ashafares" 
+			"Brion Uial Biel'tan" "Cielar Uial Shair" "Sercambelach Hesh" "Tannascurath Lir" "Pikash Uial Kurnous" "Bionnearan Arathinos" "Torev Feik" "We Kion Yngir" "Losseainn Uial Ishjuketh" "Yngir Kion Bionnenan" 
+			"Gona Kion Coriam" "Direl Joisa" "Cormer Lilon" "Hela Kion Chi" "Shemash Eakion Koesh" "Harai Ulieth" "Deshial Kion Lann" "Olithos Iyri" "Oriosa Kion Fhirinne" "Asturi Kion Yass" "yan Uial Illrun'ainn" 
+			"Quas Elehorn" "Marb'ailtor Eakion Siolka" "Roisha Kion" "Mear Cheapon" "Destra Eakion Yass" "Elehar Dielier" "Deshial Uial Aarthia" "Kaelis Ra Ashami" "Tiel Kion Alean" "Credeas Rith" "Tann Kion Dearas" 
+			"Quass Eakion Xama" "Mael Dannan Eakion Orion" "Buanna Uial Kerun" "Thelriann Eakion Turta" "Novi Eakion Brion" "Istau Ish" "Farture Kion Ainaarin" "Ortos Kion Kianenad" "Zaineth Kerun" "Uleran Orkead" 
+			"Aill'ath" "Feik Uom" "Badd Dyann" "Uken Uial Neosfai" "Novis Vergreal" "Beithir Eakion Belac" "Neosfail Haranshemash" "Suin Harakht" "Athal'sain Cherakinan" "Ika Kion Raiph" "Oiche Uial Fari" 
+			"Slavhreenur Feik" "Slaan Eakion Defeth" "Hasoi Eakion Gaithall" "Poiem Uial Iishill" "Ishoras Kion Ishoris" "Mael Istaur" "Ulieth Sial" "Neosfi Eakion Otesh" "Caurmenli Murehk" "Enaid Eakion Mael Dannan" 
+			"Esdainn Uial Dras" "Tossirian Uial Arith" "Olitho Fiallathandirel" "Wea Ortos" "Furta Esik" "Bonnikel Uial Some" "Badbaltrilas Slavhreenur" "Ainiluin Elourge" "nash Eakion Addankiamenad" "Kianenad Eakion Zar" 
+			"Mael Uial Iren" "Druchii Ucan" "Disthir Kion Mironin" "Urgebelash Boniokel" "Badbaltrilas Kion Tirtu" "rea Uial Ceifulgaithann" "Sercamarith Kion Anastari" "Istaur Bonnikel" "Ceifulgaithann Tava" 
+			"Asuryan Kion Iann" "Ceilann Gillath" "Karun Kion Novine" "Asturi Kion Ika" "Olithon Kion Sista" "Cassion Eakion Soam" "Mile'ionahd Kion Oriosa" "Sercam Shemas" "Naran Suithal" "Lir' Eakion Bennan" 
+			"Id Shair" "Eaxamath Shinsil" "Quas Kion Nive" "Nikav Raiph" "Gaithall Eakion Boniokel" "Lir' Kion Aiek" "Tiel Eakion Tann" "Aithben Aiek" "Arten Eakion Chii" "Joisa Uial Ifiath" "Leanir Kion Fein" 
+			"Arathinos Iren" "Sierann Enaid" "Ard Orthos" "A' Uial Yngir" "Ofell Uial Xios" "Brion Dekair" "Murekhalir Fir Caurifel" "Rois Kion Elohar" "Menshad Korum Kion Kiest" "Haranshemash Xios" "Marb Boniokar" 
+			"Khal Kion Elohar" "Yngir Uial Sin" "Ishjuketh Quaarin" "Dieliet Uial Raiph" "Cassion Xias" "Neosfai Lavaillian" "Lam Zenil" "Buanna Kion Margorach" "Alean Quan" "Khal Yass" "Taer Uial Garem" 
+			"Ishtikam Eakion Saim" "Notak Eakion Badd" "Shemas Kion Arebennian" "Ynnead Kion Sis'emwa" "Ceilann Haranshemash" "Lavaillian Dekair" "Turt Eakion Buanneth" "Athe'sier Oriosa" "Saim'hann Uial Larrasurath" 
+			"Ainulin Garoth" "Gorash Angau" "Cora Muraddin" "Roisha Kion Menliadeng" "Quas Eakion Xias" "Suithimarith Athistaur" "Ishulam Ishjiokin" "Uken Idain" "Ca Eakion Laim" "Deash Eakion Sista" "Distau Estera" 
+			"Liran Kion Rrith" "Saim Uial Sercam" "Rillisliddian Uial Av" "rea Deshial" "Arith Fari" "Novar Sial" "Tossirial Uial Kan" "Kaelis Ra Eakion Saim" "Yirral Kion Subeliast" "Shemash Ishtikam" "Asuryan Uial Soam" 
+			"Baharr Kion Larr" "Meantokath Shemas" "Lameldannar Camion" "Cielar Kion Addan" "Iyanden Kion Caurmenli" "Astherian Sikam" "Aithben Uial Ishnikav" "Kerun Kion Reu" "Talu Lir" "Are Uial Marathag" "Tial Uial Harakht" 
+			"Joisa Eakion Hela" "Lantillifieth'Menlia" "Shlaereen Gceilan" "Ceiful Eakion Neosfail" "Joisa Uial Suinmure" "Disthir Uial Brylidassian" "Elehorn Eakion Geir" "Karun Uial Alai" "Fian Furte" 
+			"Lantillifieth Kion Oiche" "Shieluin Eakion Margorach" "Zenil Kurnous" "Iadanna Uial Ag" "Tuelean Kion Tosthuich" "Vergreal Arios" "Crelirun Cora" "Kilithi'Meantokath" "Cha'los Chom" "Buanna Ath" 
+			"Mael Anu" "Gonau Uial Yngir" "Belac Cielar" "Offigascarath Eakion Eaxim" "Scurathainn Turta" "Joisa Eakion Sikam" "Eshairr Rith" "Suther Ainn" "Finnaidann Uial Enaid" "Tageth Uial Lann" "Biel'tan Kion Gilath" 
+			"Fiallathandirel Rillie" "Elourge Uialfirae" "Orkan Cheapamir" "Finnail Chiru" "Fian Dialcaman Bennan" "Eihk Eakion Fari" "Direl Dielier" "Chom Diann" "Cormer Orthos" "Zhai Uial Cre" "Harat Eakion Gilath" 
+			"Iren Uial Ishulam" "Distaur Kion Iytthalith" "Enadlam Yngir" "Zaineth Foek" "Arios Eakion Taer" "Harakh Cassion" "Seach Uial Ish" "Harakh Kion Addin" "B'fheidir Kion Novi" "Gceilan Cassion" "Ishoris Uial Athair" 
+			"Ran'joisa" "Lilon Shinsil" "Ann Regaen" "Gorach Kion Ifeth" "Bratha Kion Bionerath" "Ter'candsor Uial Oriosa" "Ishpivam Karun" "Ann Uial Saim'hann" "Beithir Slaan" "Ifeth Creidann" "Subeliast Faras" "Orion Ann" 
+			"Nive Elourge" "Okas Brathu" "Margorach Uial Ehka" "Buanneth Kion Murekhalir" "Piost Rillie" "Fhir Dekair" "Parten Eakion Orion" "Es Anastari" "Suitheakion'eliath Anaris" "Offigascarath Silmordriel" "Suith Diallir" 
+			"Saim Eakion Eaxim" "sub Uial Cassion" "Anu Margorach" "Yirraith Aika" "Sercam Kion Quas" "Notak Lambruith" "B'fheidir Kion Sha'eil" "Illmureead Uial Koruan" "Gona Uial Amur" "Uri Eakion Esdainn" "Laim Eakion Cre" 
+			"Ard Ishpivam" "Kharant Addan" "Kahli Tossirial" "Direl Kion Liann" "Ucan Baharr" "Menliadeng Defath" "Pieth Uial Elourge" "Tokath Uial Eihk" "Shieluin Kion Gonau" "Cielar Uial Quass" "Tossirial Caurifel" 
+			"Menshad Korum Sierbann" "Jiokin Eakion Uri" "Eadar Eakion Sikam" "Iann Kion Gaithall" "Nikav Turta" "Eaxamath Uri" "Alai Kerun" "Sun Uial Bionnenan" "Sun Kion Silmordriel" "Harat Eakion Elohar" "Dielier Zenil" 
+			"Bad Uial Ishoris" "Catumen Asuryan" "Cre' Kion Raibha" "Shad Kion Riuway" "Uial Isturrath" "Anu Sial" "Lia' Kion Mael Dannan" "Buanna Xia" "Chom Eakion Harat" "Tir Ishtikam" "Margorach Kion Ya" 
+			"Distau Kion Furtafar" "Liras Sien" "Dial Metos" "Seria Kion Scurath" "Breag Harakh" "Gillath Suitheakion'eliath" "Ishar Mironin" "Istu'Sercambelach" "Istu Iem" "Karan Kion Athair" "Sutherial Margorach" 
+			"Bionnearan Seria" "Uial Rith" "Dorcha Kion Cielar" "Furta Eakion Sha'eil" "Rillietann Uial Kiam" "Suda Ehk" "Quan Uial Ishkioum" "Scurath Ishpoiem" "Iishill Eakion Khalir" "Mean Badb" "Sin Aiel" 
+			"Tranglam Buanna" "Saim'hann Kion Bionerath" "Lir Kion Bionnearan" "Ika B'fheidir" "Oiche Parteilath" "Tar Eakion Ishpivam" "Unan Eakion Las" "Zar Marsgrech" "Ag' Eakion Belac" "Quan Uial Kurom" "Tava Eakion Garoth" 
+			"Arith Eakion Dieliet" "Soa'turta" "Kerun Weand" "Ceur' Kion Diann" "Ehka Eakion Offig" "Marsgrech Saim" "Ceifulgaithann Kion Uleran" "Slidd Uial Kurnous" "Dieliet Kion Are" "Parten Uial Quan" "Arathinos Fiallathandirel" 
+			"Torev Kion Tava" "Kian Kion Keran" "Yirrikshad Kion Ulem" "Eshairr Isturrith" "Ishkioum Kion Mael" "Suda'kuras" "Ulam Shelwe" "Belac Athair" "Uom Uial Pikaart" "Deash Daras" "Aiel Arith" "Bad Illmureead" 
+			"Nikav Kion Tonesh" "Dark Uial Iyalis" "Lavaillian Tuelean" "Athair Enarc" "Lir'metos" "Xias Eakion Aithliam" "Gorash Rage" "Xios Kion Ard'ladanna" "Torev Novi" "Hish Arith" "Sikal Shenestra" "Ishtoem Tosthuich" 
+			"Gyaran Uial Otesh" "Koesh Yngir" "Gona Kion Marb'ailtor" "Eakion B'fheidir" "Iad Uial Suithimarith" "Ceur'mirrotuis" "Cherakinan Eakion Salo" "Bionnearan Buanna" "Reu Eakion Oriosa" "Enarc Kiest" 
+			"Dark Ishnive" "Astherian Losseainn" "Riaway Ishtoem" "Gorach Kion Sai" "Uken Buanna" "Badb Kion Pikaart" "Soa'carreciann" "Druchii B'fheidir" "Kianenad Kion Tonesh" "Badd Suith" "Sha'eil Yirrik" "Ash Eakion Oiche" 
+			"Siar Kion Bionnearan" "Scuraith Eakion Fian" "Quan Kion Athain" "Urgebelash Muan" "Furta Kion Destra" 
+		}
+	
+		corvette = {
+		}
+		
+		destroyer = {
+		}
+		
+		cruiser = {
+		}
+		
+		battleship = {
+		}
+		
+		titan = {
+		}
+ 
+		colossus = {
+		}
+		
+		science = {
+		}
+		
+		colonizer = {
+		}
+		
+		constructor = {
+		}
+		
+		military_station_small = {
+		}
+		
+		ion_cannon = {
+		}
+	}
+	
+	ship_class_names = {
+		generic = {
+			Void Stalker Dragonship Eclipse Shadow Naiad Aurora Solaris Aconite Hellebore Hemlock 
+			Nightshade Shadowhunter Darkstar "Silver Eagle" Nightwing Phoenix Ghostship "Shooting Star" Griffon Corsair 
+			"Golden Phoenix" "Fallen Falcon" "Fallen Defender" Exodite Seer Exarch "Wind Warden" "Wailing Lord" Vaul Twilight 
+			Midnight Eldanesh Spectre Wraith Phantom 
+		}
+	}
+ 
+	fleet_names = {
+		random_names = {
+			"Alaitoc Fleet" "Altansar Fleet" "Biel-tan Fleet" "Lyanden Fleet" "Saim-Hann Fleet" "Uthwe Fleet" 
+			"Dorhai Fleet" "Arach-Qin Fleet" "Kinshara Fleet" "Telennar Fleet" "Tir-Val Fleet" "Elimination Fleet" "Wrath of Khaine" "Anleth's Warhost" 
+			"Maenelle's Warhost" "Great Warhost" "The Knights of Alaitoc Starfleet" "The Fall of Mymeara Starfleet" 
+			"The Harvester of Souls Starfleet" "The Shade of Twilight Starfleet" "The Tempest of Starlight Starfleet" "The Burning Lance Starfleet" 
+			"The Cry of Wind Starfleet" "The Fallen Phoenix Starfleet" "The Shadow Hunter Starfleet" "The Reaper of Souls Starfleet" "The Scions of Midnight Starfleet" 
+			"The Seers of the Fall Starfleet" "The Exodites of Vaul Starfleet" "The Knights of Voe Starfleet" "The Keepers of Vaul Starfleet" "The Corsairs of Regret Starfleet" 
+		}
+		sequential_name = "%O% Starfleet" 
+	}
+	
+ 
+	###ARMIES 
+	army_names = {
+	
+		defense_army = {
+			sequential_name = "%O% Guardian Defenders" 
+		}
+			
+		assault_army = {
+			sequential_name = "%O% Dire Avengers" 
+		}
+		
+		slave_army = {
+			sequential_name = "%O% Lesser Race Warriors" 
+		}
+		
+		clone_army = {
+			sequential_name = "%O% Clone Warriors" 
+		}
+		
+		robotic_army = {
+			sequential_name = "%O% Wraithguards" 
+		}
+		
+		android_army = {
+			sequential_name = "%O% Wraithknight" 
+		}
+		
+		psionic_army = {
+			sequential_name = "%O% Farseer" 
+		}
+		
+		xenomorph_army = {
+			sequential_name = "%O% Exodite" 
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "%O% Howling Banshee" 
+		}
+	}
+	
+	### PLANETS 
+	planet_names = {
+	
+		generic = {
+			names = {
+				Alaitoc Biel-Tan Iyanden Saim-Hann Ulthwé Altansar Il-Kaithe Iybraesil Kaelor Lugganath Mymeara Yme-Loc An-Iolsus Arach-Qin Aringhe 
+				"Cairas Mythar" Ctho Dolthe Dorhai Il'sariadh Meros "Miel Carn" Nacretinei Stel-Uit Telennar Tir-Val Varantha Yr-Arthi Zahr-Tann Zandros Anaen Bel-Shammon Idharae 
+				Kher-Ys Kolth'se Lu'Nasad Malan'tai Mor'rioh'i Muirgaythh Thuyela Uthuriel Zu'lasa "Eldrad's Landing" "Taevyss's Retreat" "Elavae's Stronghold" "Siltam's Fortress" 
+				"Amitela's Citadel" "Olathani's Holding" "Onehish's Freehold" "Ylnae's Shelter" "Baeltyra's Refuge" "Hadrigga's Bastion" "Yltar's Bulwark" "Tetlar's Palace" "Kaitea's Dwelling" "Ultrak's Point" 
+				"Kortol's Station" "Amduin's Outpost" "Galantyr's Frontier" "Laerina's Spring" "Lodor's Treasure" "Fuevel's Keep" Alayran Davinuus 
+				Emele Eth-aelas Ethero Equinox Kal Eyath Kiliak Lethidia Lilae'Fionnadh Lilarsus Meridian Morshanna Rasilena Talithia Tarsus Torvendis Valedor Yrthal Lileath 
+				Ynneas Fhaisorr'ko Margorach Marathag "Mael Dannan" Sha'eil Shlaereen "Suin Daellae" Sierbahn Ynnealidh Lantillifieth 
+				Ifieth Marsgrech Istaur Kaelis Shem Fiallathandirel I'shiasta "Dras Harakht" Otrilisi Iyalith Cour'asha Iytthalith "Lan Uial" Kilithikadea 
+				Lantilfieth Eakion "Novar Kion Tar" Riuway Fhirinne Iadanna Harakh Sercamarith Ishoras "Lonann Tiel" Fariliras Menliyaden Sin'iad "Istu Mor" B'fhendir 
+				Shar Firinilae Sha'elia Gaithall Larusuthrah Ainaarin Cassion Shiasta Novinae Shinsil Farite'narah Asha'kion Ishipvan Aill'buana Ainulinn "Tiel Carrec" Finnaidanae Quisae "Far Til" Silmoridiae 
+				Murekh Ulam Feis Destra "Na'daan' Kion" Cielar Angau "Feik Agaith" Shieluin Giae Baharra Lavair Koruan Sistau Fivhir Fenrih Esdainn Deash Keighae 
+			}
+		}
+		
+		pc_desert = {
+			names = {
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+			}
+		}
+		
+		pc_arid = {
+			names = {
+			}
+		}
+		
+		pc_continental = {
+			names = {
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+			}
+		}
+	}
+	
+	### CHARACTERS 
+	character_names = {
+		default = {
+			first_names_male = {
+				Kaylon Caeramas Duntar Galamon Barkas Menevan Caervar Karanmaer Oratyr Laerith Isengroth Dararys Gilfagroth Barthorn Baranmore 
+				Laerian Kalshor Yrarys Menertien Losen Faenleath Fuehidon Lenros Isesys Elamthanil Galaranel Kalrith Isevan Elthorn Balelas Lodor 
+				Barlim Benesan Caerlath Lanbryn Ysuleath Amorad Elramas Dalshin Barthanil Ylrendil Galanlath Laevor Balekon Argbaer Machdrad Barvar 
+				Daraleath Ysuhidon Lausys Calriel Faenlion Ylhyn Baleduin Elralim Arrolyth Karantelar Langen Kelrad Lenduin Belrendil Taebryn Dalmes 
+				Gilfabyn Caertelar Caervyn Dalkyn Kaltien Elamvor Benesaar Lannedor Ysulath Calgard Machdeer Isesen Caenhith Laemas Balegan Maushor 
+				Asurthorn Faenhyn Olasan Menegen Idrahyn Ysubyn Laudras Tantien Baranedor Farbryn Laelim Amothorn Caergen Osusys Machtyr Ammas Alsen 
+				Kaetar Gilmen Isendeer Mauvan Ysulim Irildras Mornedor Belrad Tansen Daldeer Baharnel Balebryn Balehyn Aragrian Balebaer Balemore Arvyn 
+				Lenrian Dunmes Elamlas Asurtyr Ysunar Fuemen Baranlath Tanlas Galantyr Oradras Farmes Beleran Asurlon Belgan Esargard Yramas Tennedor 
+				Yraranel Galansaar Fuelath Olamen Barahith Ysudrad Asurmen Baharmas Idrakin Alrendil Isebyn Gilthanil Kalbryn Donbryn Osuseth Bahardrad 
+				Machban Fanrian Taeriel Galanroth Caldeer Forkas Gilfashin Barrad Ysunyl Tenranel Amvar Asurmore Osuduin Asurbryn Balevar Irilnel Kayhith 
+				Asurlas Oraleath Gilfamaer Mauleath Amonel Darasaar Kalduin Dungroth Baharriel Kaerys Gonvar Beleruin Darahyn Kaygroth Lenlyth Bardras 
+				Laegen Osuroth Tandavar Onkyn Albas Almas Laugroth Faenthanil Caermas Baravel Morromaer Machthorn Beltien Karanlas Yrarendil Osubryn 
+				Yratelar Elraleath Dunthanil Caerasan Amduin Amobryn Elravyn Gilfahith Caensan Kalbyn Fuenar Kaemes Barandavar Fantyr Arghyn Amonlon 
+				Farkon Kelgroth Talvan Bararanel Barnyl Lanhyn Arsys Fanlyth Caenleath Irilnedor Machbaer Belthorn Forleath Lauseth Donsaar Boreleth 
+				Fanlath Argsys Ylmes Elbryn Araggen Aragdor Karanbas Taenyl Laetien Aragran Donleth Maulyth Baleban Lanriel Donroth Tanhidon Mausen 
+				Kaymen Esardras Beneshor Morrosaar Balelion Laebaer Lenrith Caeranaer Idratari Dontari Kaynedor Galalim Fanrion Bahargard Dunbryn 
+				Lensan Menerleath Idralyth Lankas Forseith Belehidon Olaroth Menerseith Baharmes Balethanil Baharbas Faennyl Kayrian Caerathanil 
+				Menmore Idrashor Fanmen Kellim Caenrendil Belemas Ysutelar Aragmes Gonleath Laekin Gilban Fanlon Fuevel Ysuriel Lenran Gonbyn Onlim 
+				Barantari Olames 
+			}
+			
+			first_names_female = {
+				Isemere Denvena Elralaeth Bahashae Ashekra Behnemia Isenmena Celalaeth Gellankia Caellasya Celtyra Arredra Ynaria Oasabala 
+				Ashegwen Balanriel Balankia Ararisa Telnera Baerakae Kelvena Denlaeth Ysemere Alryna Elamela Menelnae Behnekra Tenhisha Caendra 
+				Lenlaeth Celarana Aembera Faenmia Yllone Taesys Maemela Olasela Tenleth Tensho Gelabryn Olabenne Laedaer Amirena Aemevae Denhynn 
+				Belabrae Caentera Menekeza Derario Ynarye Mesvara Oasarana Deratera Isenvela Elsartara Arrebrae Lanalith Gilsarye Gelalone 
+				Maerosa Mehsisa	Kaykeza Dilrith Orehina Elradynn Dilvena Caenbryn Mehlone Caenlira Mehlyth Aemerena Kaydra Faedole Eldaena Alikra 
+				Amitela Olathanis Deratys Ylnae Elsarbera Baeletyra Alirys Alibrae Mehmia Onehish Arremena Orevyss Faehynn Ariskia Gilsagwen 
+				Isegwen Gilvyss Aemnel Arrebera Elrasae Kaerabala Menadra Elavela Kelmena Balanria Bahadynn Arremela Ararena Faevae Olaryna 
+				Elkeza Elsargila Ashesys Fenlara Isenriel Laevena Dentyra Menelleth Bahahynn Alisae Caellahynn Celraniel Behnemela Menaleth 
+				Aminys Gilbryn Gennys Ilrovyss Balanlone Tensae Maeryna Aliris Elsarkeza Deranelle Baervyss Gillith Daenthanis Faenkeza Dendaer 
+				Ilramyn Kaygith Balanvela Gilmere Daentys Khelria Ararys Ilraraniel Celarye Menatara Lensela Gellandona Laenae Onemia Menedona 
+				Daenmae Kelbryn Lirio Elasya Belmae Arisbala Aristys Elarye Derashae Gelavena Taphevae Ilrokeza Aminelle Genlyth Yselone Dilrena 
+				Mehtyra Iseriel Firgren Giltera Belabryn Oladynn Arahish Ilrodona Gilria Oasarye Laekra Taphethala Yllara Belaraniel Gilhina 
+				Celagwen Gelathala Kaeratera Elrys Bahalara Baerathala Kaemena Faenleth Menelnelle Ilradaer Mesmyn Fohish Balanthala Gellanlith 
+				Elanelle Alimyna Belasya Lanamere Aemsae Kaykia Behnemyn Mehbryn Baerrith Oasanelle Borerye Aristara Behnesys Celmela Elrana 
+				Ylbala Lilya Elramia Baeledona Balanlyth Mellovena Kelmyn Menabala Aristela Oasatela Aemkae Khelrena Caensho Balansya Baertiren 
+				Alirith Belanera Onetara Alinelle Irlirys Borebenne Laetys Elranera Ositara Menethanis Irlinelle Isenlith Kaesys Gellanrye 
+				Menellira Orehish Tenris Tapheris Kaehynn Aradaer Fennae Belatera Aralith Aralya Gellanlaeth Maegwen Bahasae Ilrothala 
+				Elsarriel Ylnera Khelraniel Aemenelle Gellanrana Onemae Borekae Gilsya Menelira Elsargwen Kelkra Baerabera Fogil Caellatara 
+				Taevyss Dilleth Taekia Gillyth Ynaryna Maelira Deratara Bahamyn Khelvae Baelevae Elsarvyss Isenkia Kaylone Ylsa Bahanera Denbrae 
+				Baeranys Araraniel Lanathala Gelaleth Menahynn Ilrasa Baerabala Elavae Lisela Alimere Baerrosa Ilralyth Firbera Faesela Gelasho Gilvena Arquellia 
+			}
+			
+			second_names = {
+				"of Alaitoc" "of Biel-Tan" "of Iyanden" "of Saim-Hann" "of Ulthwé" "of Altansar" "of Il-Kaithe" "of Iybraesil" "of Kaelor" "of Lugganath" "of Mymeara" "of Yme-Loc" "of An-Iolsus" "of Arach-Qin" 
+				"of Aringhe" "of Cairas Mythar" "of Ctho" "of Dolthe" "of Dorhai" "of Il'sariadh" "of Meros" "of Miel Carn" "of Nacretinei" "of Stel-Uit" "of Telennar" "of Tir-Val" "of Varantha" "of Yr-Arthi" 
+				"of Zahr-Tann" "of Zandros" "of Anaen" "of Bel-Shammon" "of Idharae" "of Kher-Ys" "of Kolth'se" "of Lu'Nasad" "of Malan'tai" "of Mor'rioh'i" "of Muirgaythh" "of Thuyela" "of Uthuriel" "of Zu'lasa" 
+			}
+			
+			regnal_first_names_male = {
+				Eldrad Karandras Baharroth Irillyth Illric Yriel Eldorath Arhra Drastanta Kaylon Daldeer 
+			}
+			
+			regnal_first_names_female = {
+				Idranel Iyanna Irlanda Iraiandra Lanathala Araniel Caerys Macha Taldeer Kayleth Irlinelle 
+			}
+			
+			regnal_second_names = {
+				Starbane Ulthran Arienal Starlight Celestin Darkmoon Moonlight Sunlight Darkstar Twilight Moonbane Nightfall Nightspear Darksun 
+			}	
+		}
+	}
+}

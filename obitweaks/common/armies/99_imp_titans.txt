@@ -1,0 +1,359 @@
+#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+
+# collateral_damage was not part of old file so set to vanilla values
+# war_exhaustion was not part of old file so set to 0.0, this is WARHAMMER 40K and losing a few milion souls don't matter ;)
+
+imperial_knight = {
+	damage = 4.0
+	health = 6.0
+	morale = 4.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 500
+	
+	icon_frame = 35
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 2000
+			energy = 100
+			minerals = 50
+		}
+
+		upkeep = {
+			energy = 4.5
+		}
+	}
+	
+	prerequisites = { "tech_collegia_titanica" }
+	
+	allow = {
+		has_building = building_machine_cult
+
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "imperial_knight_count" 
+					value = 20
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "imperial_knight_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "imperial_knight_count" 
+				value = -1
+			}
+		}
+	}
+
+	potential = {
+		planet = {
+			OR = {
+				is_planet_class = pc_mechanicus_forge
+				is_planet_class = pc_forgee
+				is_planet_class = pc_forgeee
+				is_planet_class = pc_forge_ring
+				is_planet_class = pc_forge_ring2
+				is_planet_class = pc_forge_ring3
+			}
+		}
+		owner = { has_country_flag = imperium }
+	}
+}
+
+warhound_titan = {
+	damage = 5.0
+	health = 7.0
+	morale = 5.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 600
+	
+	icon_frame = 35
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 2500
+			energy = 150
+			minerals = 50
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+	
+	prerequisites = { "tech_collegia_titanica" }
+	
+	allow = {
+		has_building = building_machine_cult
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "warhound_titan_count" 
+					value = 15
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "warhound_titan_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "warhound_titan_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		planet = {
+			OR = {
+				is_planet_class = pc_mechanicus_forge
+				is_planet_class = pc_forgee
+				is_planet_class = pc_forgeee
+				is_planet_class = pc_forge_ring
+				is_planet_class = pc_forge_ring2
+				is_planet_class = pc_forge_ring3
+			}
+		}
+		owner = { has_country_flag = imperium }
+	}
+}
+
+reaver_titan = {
+	damage = 6.0
+	health = 8.0
+	morale = 6.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 700
+	
+	icon_frame = 35
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 3000
+			energy = 150
+			minerals = 100
+		}
+
+		upkeep = {
+			energy = 5.5
+		}
+	}
+	
+	prerequisites = { "tech_collegia_titanica" }
+	
+	allow = {
+		has_building = building_machine_cult
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "reaver_titan_count" 
+					value = 10
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "reaver_titan_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "reaver_titan_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		planet = {
+			OR = {
+				is_planet_class = pc_mechanicus_forge
+				is_planet_class = pc_forgee
+				is_planet_class = pc_forgeee
+				is_planet_class = pc_forge_ring
+				is_planet_class = pc_forge_ring2
+				is_planet_class = pc_forge_ring3
+			}
+		}
+		owner = { has_country_flag = imperium }
+	}
+}
+
+warlord_titan = {
+	damage = 7.0
+	health = 10.0
+	morale = 7.0
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 800
+	
+	icon_frame = 35
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 3500
+			energy = 200
+			minerals = 150
+		}
+
+		upkeep = {
+			energy = 6
+		}
+	}
+	
+	prerequisites = { "tech_collegia_titanica" }
+	
+	allow = {
+		has_building = building_machine_cult
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "warlord_titan_count" 
+					value = 8
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "warlord_titan_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "warlord_titan_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		planet = {
+			OR = {
+				is_planet_class = pc_mechanicus_forge
+				is_planet_class = pc_forgee
+				is_planet_class = pc_forgeee
+				is_planet_class = pc_forge_ring
+				is_planet_class = pc_forge_ring2
+				is_planet_class = pc_forge_ring3
+			}
+		}
+		owner = { has_country_flag = imperium }
+	}
+}
+
+emperor_titan = {
+	damage = 9
+	health = 10
+	morale = 9
+	collateral_damage = 1.00
+	war_exhaustion = 0.0
+	time = 1000
+	
+	icon_frame = 35
+	
+	resources = {
+		category = armies
+		cost = {
+			alloys = 4000
+			energy = 300
+			minerals = 250
+		}
+
+		upkeep = {
+			energy = 8.1
+		}
+	}
+	
+	prerequisites = { "tech_collegia_titanica" }
+	
+	allow = {
+		has_building = building_machine_cult
+		
+		owner = {
+			NOT = { 
+				check_variable = {
+					which = "emperor_titan_count" 
+					value = 6
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "emperor_titan_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "emperor_titan_count" 
+				value = -1
+			}
+		}
+	}
+	
+	potential = {
+		planet = {
+			OR = {
+				is_planet_class = pc_mechanicus_forge
+				is_planet_class = pc_forgee
+				is_planet_class = pc_forgeee
+				is_planet_class = pc_forge_ring
+				is_planet_class = pc_forge_ring2
+				is_planet_class = pc_forge_ring3
+			}
+		}
+		owner = { has_country_flag = imperium }
+	}
+}
