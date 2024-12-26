@@ -127,7 +127,10 @@ decision_cringe_robots = {
 		count_owned_pop = {
 			count >= 1
 			limit = {
-				has_trait = trait_mechanical
+				OR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit					
+				}
 				NOT = {
 					has_trait = trait_robot_sentinel_ai
 				}
@@ -141,6 +144,7 @@ decision_cringe_robots = {
 				AND = {
 					OR = {
 						pop_has_trait = trait_mechanical
+						pop_has_trait = trait_machine_unit
 					}
 					NOT = {
 						pop_has_trait = trait_robot_sentinel_ai
