@@ -140,10 +140,16 @@ leader_trait_ascension_4 = {
 	}
 
 	leader_class = { commander scientist official }
-	requires_traits = { trait_ascension_4 }
+	requires_traits = {
+		OR = {
+			trait_ascension_4
+			trait_ascension_3
+		}
+	}
 	leader_potential_add = {
 		species = {
 			has_trait = trait_ascension_4
+			has_trait = trait_ascension_3
 		}
 	}
 	opposites = {

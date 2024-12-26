@@ -430,20 +430,6 @@ trait_dark_energon_dependence = {
 
 	infertile = yes
 	
-	species_potential_add = {
-		exists = from
-		from = {
-			OR = { 
-				has_trait = trait_cybertronian
-				has_trait = trait_bw_cybertronian
-				has_trait = trait_transtech_cybertronian
-				has_trait = trait_robot_insecticon
-				has_trait = trait_forerunner_species
-				has_trait = trait_robot_sentinel_ai
-			}
-		}
-	}
-	
 	icon = "gfx/interface/icons/traits/trait_dark_energon_dependence.dds"
 	
 	allowed_archetypes = { ROBOT MACHINE BIOLOGICAL CYBERTRONIAN }

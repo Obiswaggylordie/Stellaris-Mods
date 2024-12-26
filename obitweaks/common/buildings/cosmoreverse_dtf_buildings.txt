@@ -12,10 +12,14 @@ building_cr_dtf_factory = {
 	}
 
 	planet_modifier = {
-		job_dtf_foundry_per_pop = 1
-		job_dtf_technician_per_pop = 1
-		job_dtf_miner_per_pop = 1
-		planet_housing_mult = 10
+		job_dtf_foundry_per_pop = 0.1
+		job_dtf_technician_per_pop = 0.1
+		job_dtf_miner_per_pop = 0.1
+		job_crystal_miner_per_pop = 0.1
+		job_gas_extractor_per_pop = 0.1
+		job_mote_harvester_per_pop = 0.1
+		planet_housing_mult = 1
+		pop_housing_usage_mult = -1.0
 
 		building_cr_dtf_laboratory_max = -1
 		building_cr_dtf_breeder_max = -1
@@ -57,7 +61,7 @@ building_cr_dtf_factory = {
 
 building_cr_dtf_laboratory = {
 	base_buildtime = 180
-	category = manufacturing
+	category = research
 
 	icon = building_efg_biomineral_casting_facility
 	
@@ -69,9 +73,10 @@ building_cr_dtf_laboratory = {
 	}
 
 	planet_modifier = {
-		job_dtf_head_researcher_per_pop = 0.1
-		job_dtf_researcher_per_pop = 1
-		planet_housing_mult = 10
+		job_dtf_head_researcher_per_pop = 0.01
+		job_dtf_researcher_per_pop = 0.1
+		planet_housing_mult = 1
+		pop_housing_usage_mult = -1.0
 
 		building_cr_dtf_factory_max = -1
 		building_cr_dtf_breeder_max = -1
@@ -99,7 +104,7 @@ building_cr_dtf_laboratory = {
 
 building_cr_dtf_breeder = {
 	base_buildtime = 180
-	category = manufacturing
+	category = pop_assembly
 
 	icon = building_efg_defense_command
 	
@@ -111,10 +116,11 @@ building_cr_dtf_breeder = {
 	}
 
 	planet_modifier = {
-		pop_growth_speed = 10
+		pop_growth_speed = 1
 		planet_pop_assembly_add = 100
 		planet_pop_assembly_organic_add = 100
-		planet_housing_mult = 10
+		planet_housing_mult = 1
+		pop_housing_usage_mult = -1.0
 
 		building_cr_dtf_factory_max = -1
 		building_cr_dtf_laboratory_max = -1
@@ -143,7 +149,7 @@ building_cr_dtf_breeder = {
 
 building_cr_dtf_shipyard = {
 	base_buildtime = 180
-	category = manufacturing
+	category = army
 
 	icon = building_efg_weapon_factory
 	
@@ -159,6 +165,8 @@ building_cr_dtf_shipyard = {
 		building_cr_dtf_laboratory_max = -1
 		building_cr_dtf_breeder_max = -1
 		building_cr_dtf_bunker_max = -1
+		planet_housing_mult = 1
+		pop_housing_usage_mult = -1.0
 	}
 
 	resources = {
@@ -183,7 +191,7 @@ building_cr_dtf_shipyard = {
 
 building_cr_dtf_bunker = {
 	base_buildtime = 180
-	category = manufacturing
+	category = army
 
 	icon = building_efg_food_processing_facility
 	
@@ -196,12 +204,14 @@ building_cr_dtf_bunker = {
 	}
 
 	planet_modifier = {
-		ship_orbital_bombardment_pop_damage_mult = -10
-		planet_army_build_speed_mult = 10
-		army_defense_health_mult = 10
-		army_defense_morale_mult = 10
-		defense_armies_add = 10
-		job_soldier_add = 10
+		ship_orbital_bombardment_pop_damage_mult = -1
+		planet_army_build_speed_mult = 1
+		army_defense_health_mult = 1
+		army_defense_morale_mult = 1
+		defense_armies_add = 1
+		job_soldier_add = 1
+		planet_housing_mult = 1
+		pop_housing_usage_mult = -1.0
 
 		building_cr_dtf_factory_max = -1
 		building_cr_dtf_laboratory_max = -1
@@ -215,14 +225,14 @@ building_cr_dtf_bunker = {
 				has_technology = tech_forerunner_start
 			}
 		}
-		job_promethean_warrior_servant_per_pop = 0.1
-		job_warrior_servant_per_pop = 1
+		job_promethean_warrior_servant_per_pop = 0.01
+		job_warrior_servant_per_pop = 0.1
 	}
 
 	army_modifier = {
-		army_defense_damage_mult = 10
-		army_defense_health_mult = 10
-		army_defense_morale_mult = 10
+		army_defense_damage_mult = 1
+		army_defense_health_mult = 1
+		army_defense_morale_mult = 1
 	}
 
 	resources = {

@@ -1177,6 +1177,7 @@ district_cybertronian_energon_mining = {
 				}
 			}
 		}
+		always = no
 	}
 
 	potential = {
@@ -1189,6 +1190,7 @@ district_cybertronian_energon_mining = {
 				}
 			}
 		}
+		always = no
 	}
 
 	allow = {
@@ -1322,6 +1324,7 @@ district_cybertronian_dark_energon_mining = {
 				}
 			}
 		}
+		always = no
 	}
 
 	potential = {
@@ -1334,6 +1337,7 @@ district_cybertronian_dark_energon_mining = {
 				}
 			}
 		}
+		always = no
 	}
 
 	allow = {

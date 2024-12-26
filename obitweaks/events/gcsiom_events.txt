@@ -26,19 +26,17 @@ event = {
 	}
 }
 
-namespace = planets
 # Add modifiers by planet class
-planet_event = {
-    id = planets.1
+country_event = {
+    id = GCSE.2
     hide_window = yes
 
     trigger = { always = no }
 
     immediate = {
-           any_planet_within_border = {
-			limit = { exists = owner }
+		every_owned_planet = {
 			# Add modifiers by planet class
-			else_if = {
+			if = {
 				limit = { is_planet_class = pc_agri }
 				add_modifier = { modifier = "agri_planet" days = -1 }
 			}
@@ -93,38 +91,6 @@ planet_event = {
 			else_if = {
 				limit = { is_planet_class = pc_advancecity }
 				add_modifier = { modifier = "advancecity_planet" days = -1 }
-			}
-			else_if = {
-				limit = { is_planet_class = pc_daemon }
-				add_modifier = { modifier = "daemon_planet" days = -1 }
-			}
-			else_if = {
-				limit = { is_planet_class = pc_daemonn }
-				add_modifier = { modifier = "daemonn_planet" days = -1 }
-			}
-			else_if = {
-				limit = { is_planet_class = pc_daemont }
-				add_modifier = { modifier = "daemont_planet" days = -1 }
-			}
-			else_if = {
-				limit = { is_planet_class = pc_daemons }
-				add_modifier = { modifier = "daemons_planet" days = -1 }
-			}
-			else_if = {
-				limit = { is_planet_class = pc_advancexenocity }
-				add_modifier = { modifier = "advancexenocity_planet" days = -1 }
-			}
-			else_if = {
-				limit = { is_planet_class = pc_advancexenocityy }
-				add_modifier = { modifier = "advancexenocityy_planet" days = -1 }
-			}
-			else_if = {
-				limit = { is_planet_class = pc_advancexenocityyy }
-				add_modifier = { modifier = "advancexenocityyy_planet" days = -1 }
-			}
-			else_if = {
-				limit = { is_planet_class = pc_orkworld }
-				add_modifier = { modifier = "orkworld_planet" days = -1 }
 			}
 			else_if = {
 				limit = { is_planet_class = pc_armoury }

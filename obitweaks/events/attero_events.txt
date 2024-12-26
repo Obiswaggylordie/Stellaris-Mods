@@ -52,7 +52,7 @@ fleet_event = {
 
 	immediate = {
 		every_owned_ship = {
-			reduce_hp = 10000000
+			reduce_hp = 1000000
 		}
 	}
 }

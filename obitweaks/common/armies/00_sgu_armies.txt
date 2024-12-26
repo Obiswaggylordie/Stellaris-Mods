@@ -55,7 +55,7 @@ ascended_army = {
 	icon = GFX_army_type_psionic
 	has_species = yes
 
-	prerequisites = { "tech_ascension_3" }
+	prerequisites = { "tech_ascension_4" }
 
 	resources = {
 		category = armies
@@ -65,16 +65,13 @@ ascended_army = {
 		}
 
 		upkeep = {
-			energy = 3
+			psi_energy = 3
 		}
 	}
 
 	potential = {
 		from = {
-			OR = {
-				has_trait = "trait_ascension_3"
-				has_trait = "trait_ascension_4"
-			}
+			has_trait = "trait_ascension_4"
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"

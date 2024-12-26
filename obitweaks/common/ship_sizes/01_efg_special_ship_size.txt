@@ -19,9 +19,9 @@ efg_orbital_defense_system = {
 	fleet_slot_size = 1
 
 	section_slots = {
-		"bow" =			{ locator = "part1" }
-		"mid" =			{ locator = "part1" }
-		"stern" =			{ locator = "part1" }
+		"bow" =	{ locator = "part1" }
+		"mid" =	{ locator = "part1" }
+		"stern" = { locator = "part1" }
 	}
 
 	num_target_locators = 0
@@ -39,7 +39,7 @@ efg_orbital_defense_system = {
 	can_have_federation_design = no
 
 	auto_upgrade = no
-	can_disable = yes
+	can_disable = no
 	base_buildtime = 360
 	components_add_to_cost = no
 

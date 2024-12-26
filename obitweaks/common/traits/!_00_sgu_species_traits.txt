@@ -583,6 +583,9 @@ trait_ascension_1 = {
 		planet_jobs_produces_mult = 1.00
 		species_leader_exp_gain = 1.00
 		pop_environment_tolerance = 0.25
+		army_attack_damage_mult = 0.25
+		army_defense_damage_mult = 0.25
+		army_health = 0.25
 	}
 
 	opposites = {
@@ -624,6 +627,9 @@ trait_ascension_2 = {
 		planet_jobs_produces_mult = 2.0
 		species_leader_exp_gain = 2.0
 		pop_environment_tolerance = 0.50
+		army_attack_damage_mult = 0.50
+		army_defense_damage_mult = 0.50
+		army_health = 0.50
 	}
 
 	opposites = {
@@ -675,6 +681,9 @@ trait_ascension_3 = {
 		planet_jobs_produces_mult = 3.0
 		species_leader_exp_gain = 3.0
 		pop_environment_tolerance = 0.75
+		army_attack_damage_mult = 0.75
+		army_defense_damage_mult = 0.75
+		army_health = 0.75
 	}
 
 	slave_cost = {
@@ -716,6 +725,9 @@ trait_ascension_4 = {
 		planet_jobs_produces_mult = 4.0
 		species_leader_exp_gain = 4.0
 		pop_environment_tolerance = 1.0
+		army_attack_damage_mult = 1.0
+		army_defense_damage_mult = 10.0
+		army_health = 10.0
 	}
 
 	slave_cost = {

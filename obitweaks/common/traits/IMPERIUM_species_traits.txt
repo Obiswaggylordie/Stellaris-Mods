@@ -3,6 +3,8 @@ trait_hope_res_human = {
 	cost = 0
 	initial = no
 	randomized = no
+	modification = no
+	
 	species_possible_remove = {
 		always = no
 	}

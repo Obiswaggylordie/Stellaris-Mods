@@ -128,6 +128,8 @@ d_cybertronian_world_core = {
 	
 	planet_modifier = {
 		planet_jobs_upkeep_mult = -0.10
+		job_energon_miner_per_pop = 0.1
+		job_cybertronian_energon_refiner_per_pop = 0.1
 	}
 	
 	drop_weight = {
@@ -144,6 +146,8 @@ d_dark_energon_core = {
 	
 	planet_modifier = {
 		planet_jobs_upkeep_mult = -0.20
+		job_dark_energon_miner_per_pop = 0.1
+		job_cybertronian_dark_energon_refiner_per_pop = 0.1
 	}
 	
 	drop_weight = {
@@ -277,42 +281,91 @@ d_space_bridge = {
 		pop_purge_mult = 10
 	}
 
+	# Energon for regular empires
 	triggered_planet_modifier = {
 		potential = {
 			NOT = {
-				is_cybertronian_world = yes
+				has_deposit = d_cybertronian_world_core
 			}
 			owner = {
 				any_owned_planet = {
 					AND = {
 						has_deposit = d_space_bridge
-						is_cybertronian_world = yes
+						has_deposit = d_cybertronian_world_core
 					}
 				}
 				is_gestalt = no
 			}
 		}
 		modifier = {
-			job_energon_miner_add = 10
-			job_energon_refiner_add = 10
+			job_energon_miner_per_pop = 0.2
+			job_energon_refiner_per_pop = 0.2
 		}
 	}
 
+	# Energon for gestalt empires
 	triggered_planet_modifier = {
 		potential = {
+			NOT = {
+				has_deposit = d_cybertronian_world_core
+			}
 			owner = {
 				any_owned_planet = {
 					AND = {
 						has_deposit = d_space_bridge
-						is_cybertronian_world = yes
+						has_deposit = d_cybertronian_world_core
 					}
 				}
 				is_gestalt = yes
 			}
 		}
 		modifier = {
-			job_energon_miner_add = 10
-			job_energon_refiner_drone_add = 10
+			job_energon_mining_drone_per_pop = 0.2
+			job_energon_refiner_drone_per_pop = 0.2
+		}
+	}
+
+	# Dark Energon for regular empires
+	triggered_planet_modifier = {
+		potential = {
+			NOT = {
+				has_deposit = d_dark_energon_core
+			}
+			owner = {
+				any_owned_planet = {
+					AND = {
+						has_deposit = d_space_bridge
+						has_deposit = d_dark_energon_core
+					}
+				}
+				is_gestalt = no
+			}
+		}
+		modifier = {
+			job_dark_energon_miner_per_pop = 0.2
+			job_dark_energon_refiner_per_pop = 0.2
+		}
+	}
+
+	# Dark Energon for gestalt empires
+	triggered_planet_modifier = {
+		potential = {
+			NOT = {
+				has_deposit = d_dark_energon_core
+			}
+			owner = {
+				any_owned_planet = {
+					AND = {
+						has_deposit = d_space_bridge
+						has_deposit = d_dark_energon_core
+					}
+				}
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_dark_energon_mining_drone_per_pop = 0.2
+			job_dark_energon_refiner_drone_per_pop = 0.2
 		}
 	}
 

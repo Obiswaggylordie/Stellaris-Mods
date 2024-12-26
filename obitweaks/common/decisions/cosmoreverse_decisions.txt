@@ -169,6 +169,13 @@ decision_build_chair_outpost = {
 	enactment_time = 30
 
 	potential = {
+		owner = {
+			OR = {
+				has_trait = trait_ancient
+				has_trait = trait_forerunner_species
+				has_trait = trait_asuran
+			}
+		}
 		NOR = {
 			has_deposit = d_chair_outpost
 			has_deposit = d_chair_outpost_active
@@ -207,7 +214,7 @@ decision_activate_chair_outpost = {
 			95 = { # Chance where chair deals 1 million hull damage to every hostile ship in orbit of the planet.
 				every_fleet_in_orbit = {
 					every_owned_ship = {
-						reduce_hp = 1000000
+						reduce_hp = 500000
 					}
 				}
 			}
@@ -555,6 +562,13 @@ decision_build_city_ship = {
 	enactment_time = 365
 
 	potential = {
+		owner = {
+			OR = {
+				has_trait = trait_ancient
+				has_trait = trait_forerunner_species
+				has_trait = trait_asuran
+			}
+		}
 		NOT = {
 			has_deposit = d_city_ship
 		}
@@ -591,7 +605,7 @@ decision_drones_city_ship = {
 	effect = {
 		every_fleet_in_orbit = {
 			every_owned_ship = {
-				reduce_hp = 5000000
+				reduce_hp = 500000
 			}
 		}
 	}

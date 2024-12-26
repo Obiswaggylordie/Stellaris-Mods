@@ -144,20 +144,21 @@ country_event = {
 
 	immediate = {
 		set_country_flag = ascended_4
-		modify_species = {
-			species = this
-			#base = none
-			remove_trait = trait_ascension_3
-			add_trait = trait_ascension_4
-			add_traits_at_start_of_list = yes
-		}
-		change_dominant_species = { species = last_created_species change_all = yes }
+		#modify_species = {
+		#	species = this
+		#	#base = none
+		#	remove_trait = trait_ascension_3
+		#	add_trait = trait_ascension_4
+		#	add_traits_at_start_of_list = yes
+		#}
+		#change_dominant_species = { species = last_created_species change_all = yes }
 
 		every_owned_leader = {
 			limit = {
 				OR = {
 					has_trait = leader_trait_psionic
 					has_trait = leader_trait_chosen
+					has_trait = leader_trait_erudite
 				}
 			}
 			add_trait = leader_trait_ascension_4

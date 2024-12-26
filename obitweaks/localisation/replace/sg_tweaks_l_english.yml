@@ -41,3 +41,8 @@
 
  Inactive_Stargate_On_Planet: "Buried Stargate"
  Inactive_Stargate_On_Planet_desc: "In its current state, this Stargate cannot initiate or receive wormhole connections." 
+
+# Decisions
+
+decision_ascend_pop_to_4: "Ascend a pop"
+decision_ascend_pop_to_4_desc: "Ascend a pop from the third stage to the fourth stage, liberating their mind from their body and allowing them to reach untold power."

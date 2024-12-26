@@ -726,6 +726,7 @@ country_event = {
 	}
 }
 
+# Destroy Cybertronian World
 planet_event = {
 	id = cybertron_start.26
 	hide_window = yes

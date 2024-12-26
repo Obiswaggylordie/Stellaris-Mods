@@ -99,6 +99,12 @@ decision_ascension_cloud_form = {
 		owner = { has_technology = tech_ascended_cloud_form }
 		any_owned_pop = { has_trait = trait_ascension_4 }	
 	}
+
+	resources = {
+		cost = {
+			psi_energy = 100000
+		}
+	}
 	
 	effect = {
 		custom_tooltip = decision_ascension_cloud_form_effects
@@ -144,5 +150,44 @@ decision_ascension_cloud_form = {
 			add = 1000
 			num_unemployed >= 5
 		}
+	}
+}
+
+# Ascend pop to Ascension 4
+decision_ascend_pop_to_4 = {
+	owned_planets_only = yes
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_ascension_4 }
+		any_owned_pop = { has_trait = trait_ascension_3 }	
+	}
+
+	resources = {
+		cost = {
+			psi_energy = 10000
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_ascension_cloud_form_effects
+		hidden_effect = {
+			while = {
+				count = 1
+				random_owned_pop = {
+					limit = { has_trait = trait_ascension_3 }
+					modify_species = {
+						base = none
+						remove_trait = trait_ascension_3
+						add_trait = trait_ascension_4
+					}
+				}
+			}
+		}
+
+	}
+	
+	ai_weight = {
+		weight = 100
 	}
 }
