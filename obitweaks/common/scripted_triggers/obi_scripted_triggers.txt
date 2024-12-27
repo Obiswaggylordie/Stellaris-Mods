@@ -3,3 +3,75 @@ can_destroy_planet_with_obi_planet_killer_cosmoreverse = {
 		is_star = yes
 	}
 }
+
+has_void_relay = {
+	solar_system = {
+		OR = {
+			has_megastructure = forerunner_slipspace_portal_omega
+			has_megastructure = forerunner_slipspace_portal_omega_inactive
+			has_megastructure = forerunner_slipspace_portal_alpha
+			has_megastructure = forerunner_slipspace_portal_alpha_inactive
+			has_megastructure = forerunner_slipspace_portal_beta
+			has_megastructure = forerunner_slipspace_portal_beta_inactive
+			has_megastructure = forerunner_slipspace_portal_delta
+			has_megastructure = forerunner_slipspace_portal_delta_inactive
+			has_megastructure = forerunner_slipspace_portal_gamma
+			has_megastructure = forerunner_slipspace_portal_gamma_inactive
+			has_megastructure = forerunner_slipspace_portal_lambda
+			has_megastructure = forerunner_slipspace_portal_lambda_inactive
+			has_megastructure = forerunner_slipspace_portal_epsilon
+			has_megastructure = forerunner_slipspace_portal_epsilon_inactive
+			has_megastructure = forerunner_slipspace_portal_perdition
+			has_megastructure = forerunner_slipspace_portal_inactive
+		}
+	}
+}
+
+has_citadel_relay = {
+	solar_system = {
+		OR = {
+			has_megastructure = forerunner_citadel_inactive
+			has_megastructure = forerunner_citadel_omega
+			has_megastructure = forerunner_citadel_alpha
+			has_megastructure = forerunner_citadel_beta
+			has_megastructure = forerunner_citadel_delta
+			has_megastructure = forerunner_citadel_gamma
+			has_megastructure = forerunner_citadel_lambda
+			has_megastructure = forerunner_citadel_epsilon
+		}
+	}
+}
+
+is_void_relay = {
+	OR = {
+		has_megastructure = forerunner_slipspace_portal_omega
+		has_megastructure = forerunner_slipspace_portal_omega_inactive
+		has_megastructure = forerunner_slipspace_portal_alpha
+		has_megastructure = forerunner_slipspace_portal_alpha_inactive
+		has_megastructure = forerunner_slipspace_portal_beta
+		has_megastructure = forerunner_slipspace_portal_beta_inactive
+		has_megastructure = forerunner_slipspace_portal_delta
+		has_megastructure = forerunner_slipspace_portal_delta_inactive
+		has_megastructure = forerunner_slipspace_portal_gamma
+		has_megastructure = forerunner_slipspace_portal_gamma_inactive
+		has_megastructure = forerunner_slipspace_portal_lambda
+		has_megastructure = forerunner_slipspace_portal_lambda_inactive
+		has_megastructure = forerunner_slipspace_portal_epsilon
+		has_megastructure = forerunner_slipspace_portal_epsilon_inactive
+		has_megastructure = forerunner_slipspace_portal_perdition
+		has_megastructure = forerunner_slipspace_portal_inactive
+	}
+}
+
+is_citadel_relay = {
+	OR = {
+		has_megastructure = forerunner_citadel_inactive
+		has_megastructure = forerunner_citadel_omega
+		has_megastructure = forerunner_citadel_alpha
+		has_megastructure = forerunner_citadel_beta
+		has_megastructure = forerunner_citadel_delta
+		has_megastructure = forerunner_citadel_gamma
+		has_megastructure = forerunner_citadel_lambda
+		has_megastructure = forerunner_citadel_epsilon
+	}
+}

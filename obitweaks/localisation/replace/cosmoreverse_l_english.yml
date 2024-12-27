@@ -131,6 +131,13 @@
  cr_destroy_dtf: "Collapse Time Fault"
  cr_destroy_dtf_desc: "Collapse one of this planet's Dimensional Time Faults, rendering any benefits from its existence void." 
 
+## Citadel-Class Relays
+ decision_construct_citadel_relay: "Construct Citadel Relay"
+ decision_construct_citadel_relay_desc: "Construct the impressive Citadel-class Relay, granting this planet the ability to access the Void Relay network."
+
+ decision_dismantle_citadel_relay: "Dismantle Citadel Relay"
+ decision_dismantle_citadel_relay_desc: "Dismantle the Citadel Relay found in this system."
+
  ## Citadel
  decision_convert_obicitadel: "Create the Citadel Station"
  decision_convert_obicitadel_desc: "The project will be a lengthy one, however once it has been completed. It will allow us to inabit one of the greatest habitats in the galaxy, furthermore it will allow us to construct and manage the galactic Relay Network."

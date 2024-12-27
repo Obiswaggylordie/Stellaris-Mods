@@ -1014,7 +1014,56 @@ forerunner_crucible_construct = {
 	}
 }
 
-# Citadel Relay Active
+# Citadel Relay Inactive
+forerunner_citadel_inactive = {
+	entity = "forerunner_04_slipspace_portal_entity"
+	construction_entity = "forerunner_04_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+	resources = {
+		category = megastructures 
+		cost = {
+			alloys = 2500
+		}
+	}
+
+	potential = {
+		has_technology = tech_slipspace_field
+		is_ai = no
+	}
+
+	upgrade_from = {
+		forerunner_citadel_omega
+		forerunner_citadel_alpha
+		forerunner_citadel_beta
+		forerunner_citadel_delta
+		forerunner_citadel_gamma
+		forerunner_citadel_lambda
+		forerunner_citadel_epsilon
+	}
+	
+	country_modifier = {
+	}
+	
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {}
+}
+
+# Citadel Relay Active Omega
 forerunner_citadel_omega = {
 	entity = "forerunner_04_slipspace_portal_entity"
 	construction_entity = "forerunner_04_slipspace_portal_entity"
@@ -1060,8 +1109,8 @@ forerunner_citadel_omega = {
 	}
 }
 
-# Citadel Relay Inactive
-forerunner_citadel_inactive = {
+# Citadel Relay Active Alpha
+forerunner_citadel_alpha = {
 	entity = "forerunner_04_slipspace_portal_entity"
 	construction_entity = "forerunner_04_slipspace_portal_entity"
 	portrait = "GFX_forerunner_slipspace_portal"
@@ -1084,12 +1133,13 @@ forerunner_citadel_inactive = {
 	}
 
 	upgrade_from = {
-		forerunner_citadel_omega
+		forerunner_citadel_inactive
 	}
 	
 	country_modifier = {
 	}
 	
+	bypass_type = slipspace_alpha
 	
 	# root = system
 	# from = country
@@ -1100,7 +1150,239 @@ forerunner_citadel_inactive = {
 	
 	on_build_start = {}
 	on_build_cancel = {}
-	on_build_complete = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+	}
+}
+
+# Citadel Relay Active Beta
+forerunner_citadel_beta = {
+	entity = "forerunner_04_slipspace_portal_entity"
+	construction_entity = "forerunner_04_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+	resources = {
+		category = megastructures 
+		cost = {
+			alloys = 2500
+		}
+	}
+
+	potential = {
+		has_technology = tech_slipspace_field
+		is_ai = no
+	}
+
+	upgrade_from = {
+		forerunner_citadel_inactive
+	}
+	
+	country_modifier = {
+	}
+	
+	bypass_type = slipspace_beta
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+	}
+}
+
+# Citadel Relay Active Delta
+forerunner_citadel_delta = {
+	entity = "forerunner_04_slipspace_portal_entity"
+	construction_entity = "forerunner_04_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+	resources = {
+		category = megastructures 
+		cost = {
+			alloys = 2500
+		}
+	}
+
+	potential = {
+		has_technology = tech_slipspace_field
+		is_ai = no
+	}
+
+	upgrade_from = {
+		forerunner_citadel_inactive
+	}
+	
+	country_modifier = {
+	}
+	
+	bypass_type = slipspace_delta
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+	}
+}
+
+# Citadel Relay Active Gamma
+forerunner_citadel_gamma = {
+	entity = "forerunner_04_slipspace_portal_entity"
+	construction_entity = "forerunner_04_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+	resources = {
+		category = megastructures 
+		cost = {
+			alloys = 2500
+		}
+	}
+
+	potential = {
+		has_technology = tech_slipspace_field
+		is_ai = no
+	}
+
+	upgrade_from = {
+		forerunner_citadel_inactive
+	}
+	
+	country_modifier = {
+	}
+	
+	bypass_type = slipspace_gamma
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+	}
+}
+
+# Citadel Relay Active Lambda
+forerunner_citadel_lambda = {
+	entity = "forerunner_04_slipspace_portal_entity"
+	construction_entity = "forerunner_04_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+	resources = {
+		category = megastructures 
+		cost = {
+			alloys = 2500
+		}
+	}
+
+	potential = {
+		has_technology = tech_slipspace_field
+		is_ai = no
+	}
+
+	upgrade_from = {
+		forerunner_citadel_inactive
+	}
+	
+	country_modifier = {
+	}
+	
+	bypass_type = slipspace_lambda
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+	}
+}
+
+# Citadel Relay Active Epsilon
+forerunner_citadel_epsilon = {
+	entity = "forerunner_04_slipspace_portal_entity"
+	construction_entity = "forerunner_04_slipspace_portal_entity"
+	portrait = "GFX_forerunner_slipspace_portal"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	entity_offset = { x = 0 y = 0 }
+	
+	show_galactic_map_icon = no
+	build_time = 1
+	resources = {
+		category = megastructures 
+		cost = {
+			alloys = 2500
+		}
+	}
+
+	potential = {
+		has_technology = tech_slipspace_field
+		is_ai = no
+	}
+
+	upgrade_from = {
+		forerunner_citadel_inactive
+	}
+	
+	country_modifier = {
+	}
+	
+	bypass_type = slipspace_epsilon
+	
+	# root = system
+	# from = country
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		activate_gateway = fromfrom
+	}
 }
 
 

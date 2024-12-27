@@ -125,11 +125,29 @@
  forerunner_slipspace_portal_perdition: "Local Wave Relay"
  forerunner_slipspace_portal_perdition_desc: "This Void Relay isn't connected to any known network, yet it's receiving and radiating weird and unidentifiable energy.."
 
- forerunner_citadel_omega: "Citadel Relay"
- forerunner_citadel_omega_DESC: "The Citadel itself is one enormous Void Relay, it's connected to the Omega Network."
-
  forerunner_citadel_inactive: "Citadel Core"
- forerunner_citadel_inactive_DESC: "The Citadel Core is the heart of the Citadel Station, there seems to be an enormous amount of power conduits and control systems focused towards its location."
+ forerunner_citadel_inactive_DESC: "This appears to be a precursor Citadel Core, there's an enormous amount of power conduits and control systems concentrated around its location."
+
+ forerunner_citadel_omega: "Citadel Omega Relay"
+ forerunner_citadel_omega_DESC: "The Citadel-Class Void Relay has been engaged, it's connected to the Omega Network."
+
+ forerunner_citadel_alpha: "Citadel Alpha Relay"
+ forerunner_citadel_alpha_DESC: "The Citadel-Class Void Relay has been engaged, it's connected to the Alpha Network."
+
+ forerunner_citadel_beta: "Citadel Beta Relay"
+ forerunner_citadel_beta_DESC: "The Citadel-Class Void Relay has been engaged, it's connected to the Beta Network."
+
+ forerunner_citadel_delta: "Citadel Delta Relay"
+ forerunner_citadel_delta_DESC: "The Citadel-Class Void Relay has been engaged, it's connected to the Delta Network."
+
+ forerunner_citadel_gamma: "Citadel Gamma Relay"
+ forerunner_citadel_gamma_DESC: "The Citadel-Class Void Relay has been engaged, it's connected to the Gamma Network."
+
+ forerunner_citadel_lambda: "Citadel Lambda Relay"
+ forerunner_citadel_lambda_DESC: "The Citadel-Class Void Relay has been engaged, it's connected to the Lambda Network."
+
+ forerunner_citadel_epsilon: "Citadel Epsilon Relay"
+ forerunner_citadel_epsilon_DESC: "The Citadel-Class Void Relay has been engaged, it's connected to the Epsilon Network."
 
  forerunner_crucible: "Tarawa Installation"
  forerunner_crucible_DESC: "The Tarawa Installation is a tetradimensional void facility which hosts the Perdition and Genesis devices, the final endgame solution to the Scourge and against all other potential threats."
