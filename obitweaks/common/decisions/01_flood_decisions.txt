@@ -9,7 +9,7 @@ decision_grow_flood_keymind_fleet = {
 	owned_planets_only = yes
 	icon = decision_grow_flood_keymind_fleet
 	
-	enactment_time = 180
+	enactment_time = 10
 	
 	resources = {
 		category = decisions
@@ -34,7 +34,7 @@ decision_grow_flood_keymind_fleet = {
 		custom_tooltip = decision_grow_flood_keymind_fleet_effects
 		owner = {
 			create_fleet = {
-				name = "Flood Keymind"		
+				name = "Scourge Leviathan"		
 				effect = {
 					set_owner = PREV
 					while = {
@@ -47,7 +47,7 @@ decision_grow_flood_keymind_fleet = {
 							upgradable = no
 						}
 					}
-					set_location = FROM
+					set_location = root
 					set_fleet_stance = passive
 					save_event_target_as = flood_keymind_fleet
 				}
@@ -65,7 +65,7 @@ decision_grow_flood_keymind_fleet_ai = {
 	owned_planets_only = yes
 	icon = decision_grow_flood_keymind_fleet
 	
-	enactment_time = 180
+	enactment_time = 10
 	
 	resources = {
 		category = decisions
@@ -91,7 +91,7 @@ decision_grow_flood_keymind_fleet_ai = {
 	effect = {
 		owner = {
 			create_fleet = {
-				name = "Flood Keymind"		
+				name = "Scourge Leviathan"		
 				effect = {
 					set_owner = PREV
 					while = {
@@ -104,7 +104,7 @@ decision_grow_flood_keymind_fleet_ai = {
 							upgradable = no
 						}
 					}
-					set_location = FROM
+					set_location = root
 					set_fleet_stance = passive
 					save_event_target_as = flood_keymind_fleet
 				}
