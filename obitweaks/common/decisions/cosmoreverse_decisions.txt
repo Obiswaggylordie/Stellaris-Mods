@@ -309,8 +309,7 @@ decision_dismantle_attero = {
 	}
 
 	effect = {
-		remove_deposit = d_chair_outpost_active
-		add_deposit = d_chair_outpost
+		remove_deposit = d_attero_device_inactive
 	}
 }
 
