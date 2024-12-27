@@ -343,13 +343,13 @@
  
  #LESSER KEY MIND 
  NAME_FLOOD_LESSER_KEYMIND: "Proto-Scourge Coordinator"
- flood_lesser_keymind_warship: "Proto-Keymind Void Form"
- flood_lesser_keymind_warship_plural: "Proto-Keymind Void Forms"
+ flood_lesser_keymind_warship: "Scourge Leviathan Juvenile"
+ flood_lesser_keymind_warship_plural: "Scourge Leviathan Juveniles"
  flood_lesser_keymind_warship_key: "$flood_lesser_keymind_warship$" 
  
  NAME_Flood_Keymind: "Scourge Coordinator"
- flood_keymind_warship: "Keymind Void Form"
- flood_keymind_warship_plural: "Keymind Void Forms"
+ flood_keymind_warship: "Scourge Leviathan"
+ flood_keymind_warship_plural: "Scourge Leviathans"
  flood_keymind_warship_key: "$flood_keymind_warship$"
  
  
@@ -619,11 +619,11 @@
  flood_infestation_stage_3_desc: "This planet has been completely infested by the Scourge."
  
  ###FLOOD DECISIONS###
- decision_grow_flood_keymind_fleet: "Grow Keymind Voidform" 
+ decision_grow_flood_keymind_fleet: "Grow Scourge Leviathan" 
  decision_grow_flood_keymind_fleet_desc: "Grow a mobile Scourge Keymind to lead Scourge fleets. Will remove the current Keymind Nest on this world."
  decision_grow_flood_keymind_fleet_effects: "§GCreates a Scourge Keymind Voidform in this system.§! Requires a §YKeymind Nest.§! §RRemoval of §YKeymind Nest§! upon completion.§!"
  
- decision_grow_flood_keymind_fleet_ai: "Grow Keymind Voidform"
+ decision_grow_flood_keymind_fleet_ai: "Grow Scourge Leviathan"
  decision_grow_flood_keymind_fleet_ai_desc: "Grow a mobile Scourge Keymind to lead Scourge fleets. Will remove the current Keymind Nest on this world."
  decision_grow_flood_keymind_fleet_ai_effects: "§GCreates a Scourge Keymind Voidform in this system.§! Requires a §YKeymind Nest.§! §RRemoval of §YKeymind Nest§! upon completion.§!"
  
