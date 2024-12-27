@@ -9,24 +9,25 @@ remove_primordial_pillar = {
 	}
 
 	potential = {
-		AND = {
-			is_star = yes
-			space_owner = {
-				any_owned_megastructure = {
-					is_megastructure_type = ehof_pgate_gateway
-				}	
-			}
+		is_star = yes
+		solar_system = {
+			any_system_megastructure = {
+				is_megastructure_type = ehof_pgate_gateway
+				
+			}	
 		}
 	}
 
 	effect = {
-		every_megastructure = {
-			limit = {
-				OR = {
-					is_megastructure_type = ehof_pgate_gateway
+		solar_system = {
+			every_system_megastructure = {
+				limit = {
+					OR = {
+						is_megastructure_type = ehof_pgate_gateway
+					}
 				}
+				remove_megastructure = this
 			}
-			remove_megastructure = this
 		}
 	}
 }
