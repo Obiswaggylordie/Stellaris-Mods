@@ -156,6 +156,7 @@ leader_trait_ascension_4 = {
 		leader_trait_synthetic
 	}
 	immortal_leaders = yes
+	randomized = no
 	initial = no
 	prerequisites = { tech_ascension_4 }
 	ai_weight = { weight = 1000 }
