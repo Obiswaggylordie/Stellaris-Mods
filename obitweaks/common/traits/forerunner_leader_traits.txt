@@ -202,14 +202,13 @@ leader_trait_ruler_forerunner_didact = {
 		army_damage_mult = 0.5
 	}
 
-	leader_class = { scientist commander official }
+	leader_class = all
 	requires_traits = { trait_forerunner_species }
 	opposites = {
 		"leader_trait_ruler_forerunner_didact"
 	}
 
 	initial = no
-	immortal_leaders = no
 	ai_weight = { weight = 150 }
 }
 
@@ -318,7 +317,7 @@ leader_trait_sentinel_ai = {
 		edicts_upkeep_mult = -0.25
 		country_edict_fund_add = 50
 	}
-	leader_class = { scientist official commander }
+	leader_class = all
 	requires_traits = { trait_robot_sentinel_ai }
 	
 	initial = no 
@@ -453,7 +452,7 @@ leader_trait_contender_ai = {
 		intel_decryption_add = 5
 	}
 	
-	leader_class = { commander scientist official }
+	leader_class = all
 	requires_traits = { trait_robot_sentinel_ai }
 	initial = no
 	opposites = {
@@ -521,7 +520,7 @@ leader_trait_created_ai = {
 		edicts_upkeep_mult = -0.10
 		country_edict_fund_add = 20
 	}
-	leader_class = { scientist scientist envoy official }
+	leader_class = all
 	requires_traits = { trait_robot_created_ai }
 	
 	initial = no 

@@ -245,13 +245,14 @@ leader_trait_ruler_the_gravemind = {
 		edicts_upkeep_mult = -0.50
 		country_edict_fund_add = 100
 	}
-	leader_class = { commander scientist official }
+	leader_class = all
 	requires_traits = { trait_flood_species }
-	prerequisites = { tech_flood_star_roads }
+	prerequisites = { tech_flood_logic_plague }
 	opposites = {
 		"leader_trait_ruler_the_gravemind"
 	}
+	
 	initial = no 
-	notify_on_gained = no
+	notify_on_gained = yes
 	ai_weight = { weight = 150 } 
 }
