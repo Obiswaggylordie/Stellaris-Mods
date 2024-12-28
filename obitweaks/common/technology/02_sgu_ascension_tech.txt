@@ -49,7 +49,7 @@
 
 
 tech_eidetic_memory = {
-	cost = 10000
+	cost = 100000
 	area = society
 	tier = 1
 	is_rare = yes
@@ -82,7 +82,7 @@ tech_eidetic_memory = {
 }
 
 tech_bio_electrical_tuning = {
-	cost = 10000
+	cost = 100000
 	area = physics
 	tier = 2
 	is_rare = yes
@@ -114,7 +114,7 @@ tech_bio_electrical_tuning = {
 }
 
 tech_advanced_perception = {
-	cost = 10000
+	cost = 100000
 	area = society
 	tier = 3
 	is_rare = yes
@@ -147,7 +147,7 @@ tech_advanced_perception = {
 }
 
 tech_heightened_intellect = {
-	cost = 10000
+	cost = 100000
 	area = society
 	tier = 4
 	is_rare = yes
@@ -179,7 +179,7 @@ tech_heightened_intellect = {
 }
 
 tech_ascension_1 = {
-	cost = 10000
+	cost = 100000
 	area = society
 	tier = 2
 	is_rare = yes
@@ -212,7 +212,7 @@ tech_ascension_1 = {
 }
 
 tech_ascension_2 = {
-	cost = 50000
+	cost = 500000
 	area = society
 	tier = 3
 	is_rare = yes
@@ -249,7 +249,7 @@ tech_ascension_2 = {
 }
 
 tech_ascension_3 = {
-	cost = 100000
+	cost = 1000000
 	area = society
 	tier = 4
 	is_rare = yes
@@ -286,7 +286,7 @@ tech_ascension_3 = {
 }
 
 tech_ascension_4 = {
-	cost = 1000000
+	cost = 10000000
 	area = society
 	tier = 4
 	is_rare = yes
@@ -324,7 +324,7 @@ tech_ascension_4 = {
 }
 
 tech_ascension_psionic_mastery = {
-	cost = 1000000
+	cost = 10000000
 	area = society
 	tier = 5
 	is_rare = yes
@@ -350,7 +350,7 @@ tech_ascension_psionic_mastery = {
 }
 
 tech_ascended_state_of_mind = {
-	cost = 1000000
+	cost = 10000000
 	area = society
 	tier = 1
 	is_rare = yes
@@ -379,7 +379,7 @@ tech_ascended_state_of_mind = {
 }
 
 tech_ascended_psionic_link = {
-	cost = 1000000
+	cost = 10000000
 	area = society
 	tier = 2
 	is_rare = yes
@@ -409,7 +409,7 @@ tech_ascended_psionic_link = {
 }
 
 tech_ascended_gene_editing = {
-	cost = 1000000
+	cost = 10000000
 	area = society
 	tier = 3
 	is_rare = yes
@@ -438,7 +438,7 @@ tech_ascended_gene_editing = {
 }
 
 tech_ascended_understanding = {
-	cost = 1000000
+	cost = 10000000
 	area = society
 	tier = 4
 	is_rare = yes
@@ -476,7 +476,7 @@ tech_ascended_understanding = {
 }
 
 tech_ascended_cloud_form = {
-	cost = 1000000
+	cost = 10000000
 	area = society
 	tier = 4
 	is_rare = yes
@@ -511,7 +511,7 @@ tech_ascended_cloud_form = {
 }
 
 tech_sangraal = {
-	cost = 1000000
+	cost = 10000000
 	area = society
 	tier = 4
 	is_rare = yes
