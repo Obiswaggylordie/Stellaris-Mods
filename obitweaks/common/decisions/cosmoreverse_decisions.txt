@@ -410,6 +410,97 @@ decision_unseal_obicitadel = {
 	}
 }
 
+# Construct Citadel Relay
+decision_construct_citadel_relay = {
+	owned_planets_only = yes
+	icon = decision_shield_world_slipspace_bubble
+	
+	enactment_time = 180
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 5000
+			alloys = 5000
+			energy = 5000
+		}
+	}
+
+	allow = {
+		solar_system = {
+			has_citadel_relay = no
+		}
+	}
+	
+	effect = {
+		solar_system = {
+			spawn_megastructure = {
+				type = forerunner_citadel_inactive
+				owner = space_owner
+				coords_from = prev
+			}
+		}
+	}
+
+	prerequisites = {
+		tech_slipspace_field
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Dismantle Citadel Relay
+decision_dismantle_citadel_relay = {
+	owned_planets_only = yes
+	icon = decision_shield_world_slipspace_bubble
+	
+	enactment_time = 180
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 5000
+			alloys = 5000
+			energy = 5000
+		}
+	}
+
+	potential = {
+		solar_system = {
+			has_megastructure = forerunner_citadel_inactive
+		}
+	}
+
+	allow = {
+		solar_system = {
+			NOT = {
+				any_system_planet = {
+					is_planet_class = pc_obicitadel
+				}
+			}
+		}
+	}
+	
+	effect = {
+		solar_system = {
+			every_system_megastructure = {
+				limit = {
+					is_megastructure_type = forerunner_citadel_inactive
+				}
+				remove_megastructure = this
+			}
+		}
+	}
+
+	prerequisites = {
+		tech_slipspace_field
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
 # Activate Energy Controllers
 cr_activate_crs = {
 	owned_planets_only = no
