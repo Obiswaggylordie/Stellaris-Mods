@@ -4,12 +4,37 @@
 # Leader  Traits #
 ##################
 
+### Orici ###
+leader_trait_orici = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_chosen"
+		RARITY = common
+		COUNCIL = no
+		TIER = none
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.50
+	}
+	triggered_councilor_modifier = {
+		potential = { is_ruler = yes }
+		all_technology_research_speed = 0.02
+		country_unity_produces_mult = 0.02
+		pop_government_ethic_attraction = 0.10
+	}
+	immortal_leaders = yes
+	leader_class = all
+	initial = no
+	randomized = no
+}
+
 leader_trait_ascension_4 = {
 	#is_councilor_trait_for_ruler = yes
 	inline_script = {
 		script = trait/icon
 		CLASS = leader
-		ICON = "GFX_leader_trait_ascension_4"
+		ICON = "GFX_leader_trait_chosen"
 		RARITY = paragon
 		COUNCIL = triggered
 		TIER = none
@@ -139,25 +164,27 @@ leader_trait_ascension_4 = {
 		intel_decryption_add = 5
 	}
 
-	leader_class = { commander scientist official }
-	requires_traits = {
-		OR = {
-			trait_ascension_4
-			trait_ascension_3
-		}
-	}
-	leader_potential_add = {
-		species = {
-			has_trait = trait_ascension_4
-			has_trait = trait_ascension_3
-		}
-	}
-	opposites = {
-		leader_trait_synthetic
-	}
-	immortal_leaders = yes
-	randomized = no
+	leader_class = all
 	initial = no
-	prerequisites = { tech_ascension_4 }
-	ai_weight = { weight = 1000 }
+
+	leader_potential_add = {
+		root = {
+			species = {
+				has_trait = trait_ascension_3
+				has_trait = trait_ascension_4
+			}
+		}
+		from = {
+			has_technology = tech_ascension_4
+		}
+	}
+
+	opposites = {
+		"leader_trait_ascension_4"
+	}
+
+	immortal_leaders = yes
+	ftl_inhibitor = yes
+
+	ai_weight = { weight = 150 }
 }

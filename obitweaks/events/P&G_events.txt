@@ -74,3 +74,17 @@ country_event = {
 	name = "perdition_genesis.1.g"
 	}
 }
+
+# Perdition Shields nullify all bombardment lmao
+planet_event = {
+	id = perdition_genesis.2
+	is_triggered_only = yes 
+
+	trigger = {
+		planet_devastation > 0
+	}
+
+	immediate = {
+		add_planet_devastation = -100
+	}
+}

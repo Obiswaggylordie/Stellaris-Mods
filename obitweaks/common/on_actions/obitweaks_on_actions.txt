@@ -7,6 +7,7 @@ on_game_start_country = {
 on_planet_bombarded = {
 	events = {
 		omega_lock.100 # Makes cybertronian city states into ruins during bombardment while planetary devestation is at or above 50%
+		perdition_genesis.2 # Perdition Shields reset bombardment, making it ineffective.
 	}
 }
 
@@ -36,10 +37,24 @@ on_colony_10_year_pulse = {
 	}
 }
 
+on_monthly_pulse_country = {
+	events = {
+		sgu_ascension.43 # 10% chance of leaders with level 10 or more gaining Ascendant trait if their species is Ascension 3 or 4
+	}
+}
+
 on_leader_level_up = {
 	events = {
 		forerunner_start.699 # Refires add kvil'sha leader trait on leaders that level up
 		promethean_start.6999 # Refires add uviik leader trait on leaders that level up
+	}
+}
+
+# A leader is added to the leader pool, available for recruitment
+# scope: country, from: leader
+on_added_to_leader_pool = {
+	events = {
+		sgu_ascension.42 # Removes the Ascendant leader trait from leaders added to pool if they don't have ascension 4.
 	}
 }
 

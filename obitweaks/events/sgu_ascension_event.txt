@@ -180,23 +180,92 @@ country_event = {
 }
 
 # New Leaders Get Ascension 4 Trait
-#country_event = {
-#	id = sgu_ascension.41
-#	is_triggered_only = yes
-#	hide_window = yes
-#
-#	trigger = {
-#		from = {
-#			species = { has_trait = trait_ascension_4 }
-#		}
-#	}
-#
-#	immediate = {
-#		from = {
-#			add_trait_no_notify = leader_trait_ascension_4
-#		}
-#	}
-#}
+country_event = {
+	id = sgu_ascension.41
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_technology = tech_ascension_4
+		from = {
+			species = {
+				has_trait = trait_ascension_4
+				NOR = {
+					has_trait = trait_ascension_3
+					has_trait = trait_ascension_2
+					has_trait = trait_ascension_1
+				}
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			add_trait_no_notify = leader_trait_ascension_4
+		}
+	}
+}
+
+# Ensure leaders added to pool has ascension 4 to keep the trait. 
+country_event = {
+	id = sgu_ascension.42
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_technology = tech_ascension_4
+		from = {
+			species = {
+				NOT = {
+					has_trait = trait_ascension_4
+				}
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			remove_trait = leader_trait_ascension_4
+		}
+	}
+}
+
+# Give Ascension 3 leaders the Ascendant trait at level 10 or higher
+country_event = {
+	id = sgu_ascension.43
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		any_owned_species = {
+			OR = {
+				has_trait = trait_ascension_3
+				has_trait = trait_ascension_4
+			}
+		}
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				has_level >= 10
+				NOT = {
+					has_trait = leader_trait_ascension_4
+				}
+				species = {
+					OR = {
+						has_trait = trait_ascension_3
+						has_trait = trait_ascension_4
+					}
+				}	
+			}
+			random_list = {
+				90 = { log = no_ascension }
+				10 = { add_trait = leader_trait_ascension_4 }
+			}
+		}
+	}
+}
 
 # Notification for other empires #
 country_event = {
