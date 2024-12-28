@@ -96,7 +96,7 @@ zeia = {
 			}
 
 			second_names = {
-				"Kul" "Voq" "Stl" "Stz" "Pul" "Rch" "Chr" "Isl" "Btr" "Sch" "Sha" "Fme" "Gnk" "Tch" "Dhe" "Lir" "Lum" "Cis" "Dly" "Jrs" "Mos" "Qar" "Tan" "Sel" "Zen" "Psh" "Osl" "Sha" "Uux" "Urp" "Vak" "Obg" "Cil" "Lis" "Ret" "Ket" "Nah" "Kin" "Shi" "Tau" "Mru" "Ril" "Jor" "Nil" "Aar" "Jel" "Tin" "Efy" "Vel" "Uro"
+				"Kul" "Voq" "Stl" "Stz" "Pul" "Rch" "Chr" "Isl" "Btr" "Sch" "Sha" "Fme" "Gnk" "Tch" "Dhe" "Lir" "Lum" "Cis" "Dly" "Jrs" "Mos" "Qar" "Tan" "Sel" "Zen" "Psh" "Osl" "Sha" "Uux" "Urp" "Vak" "Obg" "Cil" "Lis" "Ret" "Ket" "Nah" "Kin" "Shi" "Tau" "Mru" "Ril" "Jor" "Nil" "Aar" "Jel" "Tin" "Efy" "Vel" "Uro" "Rex" "Vey" "Kor" "Ito" "Arx" "Nyo" "Vei" "Mit" "Lor" "Riu"
 			}
 
 			regnal_first_names = {
@@ -104,7 +104,7 @@ zeia = {
 			}
 
 			regnal_second_names = {
-				"Kul" "Voq" "Stl" "Stz" "Pul" "Rch" "Chr" "Isl" "Btr" "Sch" "Sha" "Fme" "Gnk" "Tch" "Dhe" "Lir" "Lum" "Cis" "Dly" "Jrs" "Mos" "Qar" "Tan" "Sel" "Zen" "Psh" "Osl" "Sha" "Uux" "Urp" "Vak" "Obg" "Cil" "Lis" "Ret" "Ket" "Nah" "Kin" "Shi" "Tau" "Mru" "Ril" "Jor" "Nil" "Aar" "Jel" "Tin" "Efy" "Vel" "Uro"
+				"Kul" "Voq" "Stl" "Stz" "Pul" "Rch" "Chr" "Isl" "Btr" "Sch" "Sha" "Fme" "Gnk" "Tch" "Dhe" "Lir" "Lum" "Cis" "Dly" "Jrs" "Mos" "Qar" "Tan" "Sel" "Zen" "Psh" "Osl" "Sha" "Uux" "Urp" "Vak" "Obg" "Cil" "Lis" "Ret" "Ket" "Nah" "Kin" "Shi" "Tau" "Mru" "Ril" "Jor" "Nil" "Aar" "Jel" "Tin" "Efy" "Vel" "Uro" "Rex" "Vey" "Kor" "Ito" "Arx" "Nyo" "Vei" "Mit" "Lor" "Riu"
 			}
 		}
 	}
