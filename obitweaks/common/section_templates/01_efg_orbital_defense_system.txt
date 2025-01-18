@@ -18,79 +18,79 @@ ship_section_template = {
 
 	component_slot = {
 		name = "EXTRA_LARGE_01"
-		template = "uncf_defense_platform_turret_01_slot"
+		template = "invisible_extra_large_turret"
 		locatorname = "xl_gun_01"
 	}
 	component_slot = {
 		name = "EXTRA_LARGE_02"
-		template = "uncf_defense_platform_turret_01_slot"
+		template = "invisible_extra_large_turret"
 		locatorname = "xl_gun_02"
 	}
 
 	component_slot = {
 		name = "EXTRA_LARGE_03"
-		template = "uncf_defense_platform_turret_01_slot"
+		template = "invisible_extra_large_turret"
 		locatorname = "gun_1"
 	}
-	#component_slot = {
-	#	name = "EXTRA_LARGE_04"
-	#	template = "uncf_defense_platform_turret_01_slot"
-	#	locatorname = "gun_2"
-	#}
-	#component_slot = {
-	#	name = "EXTRA_LARGE_05"
-	#	template = "uncf_defense_platform_turret_01_slot"
-	#	locatorname = "gun_3"
-	#}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_turret"
+		locatorname = "gun_2"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "invisible_extra_large_turret"
+		locatorname = "gun_3"
+	}
 	component_slot = {
 		name = "EXTRA_LARGE_06"
-		template = "uncf_defense_platform_turret_01_slot"
+		template = "invisible_extra_large_turret"
 		locatorname = "gun_4"
 	}
 	component_slot = {
 		name = "EXTRA_LARGE_07"
-		template = "uncf_defense_platform_turret_01_slot"
+		template = "invisible_extra_large_turret"
 		locatorname = "gun_5"
 	}
 	
 	component_slot = {
 		name = "EXTRA_LARGE_08"
-		template = "uncf_defense_platform_turret_01_slot"
+		template = "invisible_extra_large_turret"
 		locatorname = "turret_gun_1"
 	}
 	component_slot = {
 		name = "EXTRA_LARGE_09"
-		template = "uncf_defense_platform_turret_01_slot"
+		template = "invisible_extra_large_turret"
 		locatorname = "turret_gun_2"
 	}
 	component_slot = {
 		name = "EXTRA_LARGE_10"
-		template = "uncf_defense_platform_turret_01_slot"
+		template = "invisible_extra_large_turret"
 		locatorname = "turret_gun_3"
 	}
 	component_slot = {
 		name = "EXTRA_LARGE_11"
-		template = "uncf_defense_platform_turret_01_slot"
+		template = "invisible_extra_large_turret"
 		locatorname = "turret_gun_4"
 	}
 	component_slot = {
 		name = "EXTRA_LARGE_12"
-		template = "uncf_defense_platform_turret_01_slot"
+		template = "invisible_extra_large_turret"
 		locatorname = "turret_gun_5"
 	}
 	component_slot = {
 		name = "EXTRA_LARGE_13"
-		template = "uncf_defense_platform_turret_01_slot"
+		template = "invisible_extra_large_turret"
 		locatorname = "turret_gun_6"
 	}
 	component_slot = {
 		name = "EXTRA_LARGE_14"
-		template = "uncf_defense_platform_turret_01_slot"
+		template = "invisible_extra_large_turret"
 		locatorname = "turret_gun_7"
 	}
 	component_slot = {
 		name = "EXTRA_LARGE_15"
-		template = "uncf_defense_platform_turret_01_slot"
+		template = "invisible_extra_large_turret"
 		locatorname = "turret_gun_8"
 	}
 
