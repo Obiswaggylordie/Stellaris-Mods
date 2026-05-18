@@ -1,0 +1,3171 @@
+#Defensive armies can't transport of the planet
+#maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
+#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+
+#CYBERTRONIAN ARMIES
+cybertronian_army = {
+	damage = 2.0
+	health = 2.0
+	has_morale = yes
+	morale = 1.0
+	morale_damage = 1.0
+	collateral_damage = 1.2
+	war_exhaustion = 1.0
+	time = 10
+	has_species = yes
+
+	icon = GFX_army_type_cybertronian
+
+	resources = {
+		category = armies
+		cost = {
+			energon = 50
+		}
+
+		upkeep = {
+			energon = 2.5
+		}
+	}
+
+	allow = {
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+
+	potential = {
+		from = {
+			is_cybertronian = yes
+		}
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+}
+
+cybertronian_defense_army = {
+	defensive = yes
+	is_pop_spawned = yes
+	damage = 2.0
+	health = 2.0
+	has_morale = yes
+	morale = 1.0
+	morale_damage = 1.0
+	collateral_damage = 0.0
+	war_exhaustion = 0.0
+	icon = GFX_army_type_cybertronian_defensive
+	has_species = yes
+
+	potential = {
+		from = {
+			is_cybertronian = yes
+		}
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+}
+
+cybertronian_occupation_army = {
+	defensive = yes
+	occupation = yes
+	damage = 2.2
+	health = 2.2
+	has_morale = yes
+	morale = 1.3
+	morale_damage = 1.3
+	collateral_damage = 0.0
+	war_exhaustion = 0.0 # No WE from occupation armies
+	has_species = yes
+
+	icon = GFX_army_type_cybertronian_defensive
+
+	potential = {
+		from = {
+			is_cybertronian = yes
+		}
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+}
+
+cybertronian_seekers = {
+	damage = 2.8
+	health = 2.0
+	has_morale = yes
+	morale = 2.0
+	morale_damage = 2.0
+	collateral_damage = 1.2
+	war_exhaustion = 1.0
+	time = 20
+	has_species = yes
+	
+	icon = GFX_army_type_cybertronian_seeker
+	
+	resources = {
+		category = armies
+		cost = {
+			energon = 100
+		}
+		upkeep = {
+			energon = 5
+		}
+	}
+
+	allow = {
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+
+	potential = {
+		from = {
+			is_cybertronian = yes
+		}
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+}
+
+cybertronian_destroyer = {
+	damage = 3.5
+	health = 3.5
+	has_morale = yes
+	morale = 2.5
+	morale_damage = 1.5
+	collateral_damage = 2.0
+	war_exhaustion = 1.0
+	time = 25
+	has_species = yes
+	
+	icon = GFX_army_type_cybertronian_titan
+	
+	resources = {
+		category = armies
+		cost = {
+			energon = 200
+		}
+		upkeep = {
+			energon = 10
+		}
+	}
+
+	prerequisites = { "tech_cybertronian_destroyer" }
+
+	allow = {
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+
+	potential = {
+		from = {
+			is_cybertronian = yes
+		}
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+}
+
+cybertronian_marauder = {
+	damage = 2.5
+	health = 4.0
+	has_morale = no
+	morale_damage = 2.0
+	collateral_damage = 3.0
+	war_exhaustion = 1.0
+	time = 36
+	has_species = yes
+	
+	icon = GFX_army_type_maximal_vehicle
+	
+	resources = {
+		category = armies
+		cost = {
+			energon = 250
+		}
+		upkeep = {
+			energon = 25
+		}
+	}
+	prerequisites = { "tech_cybertronian_destroyer" }
+
+	allow = {
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+
+	potential = {
+		from = {
+			is_cybertronian = yes
+		}
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+}
+
+cybertronian_combiners = {
+	damage = 7.5
+	health = 7.5
+	has_morale = yes
+	morale = 5.0
+	morale_damage = 5.0
+	collateral_damage = 5.0
+	war_exhaustion = 1.0
+	time = 40
+	has_species = yes
+
+	icon = GFX_army_type_cybertronian_combiner
+
+	resources = {
+		category = armies
+		cost = {
+			energon = 350
+		}
+
+		upkeep = {
+			energon = 50
+		}
+	}
+	prerequisites = { "tech_cybertronian_combiner" }
+	
+	allow = {
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+
+	potential = {
+		from = {
+			is_cybertronian = yes
+		}
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+}
+
+cybertronian_guardian = {
+	damage = 10.0
+	health = 10.0
+	has_morale = no
+	morale_damage = 10.0
+	collateral_damage = 10.0
+	war_exhaustion = 1.0
+	time = 150
+	has_species = yes
+
+	icon = GFX_army_type_autobot_titan
+
+	resources = {
+		category = armies
+		cost = {
+			energon = 5000
+		}
+
+		upkeep = {
+			energon = 75
+		}
+	}
+
+	prerequisites = {
+		"tech_cybertronian_titans"
+	}
+
+	allow = {
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+
+	potential = {
+		from = {
+			is_cybertronian = yes
+		}
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+}
+
+cybertronian_titan = {
+	damage = 25.00
+	health = 25.00
+	has_morale = no
+	morale_damage = 25.00
+	collateral_damage = 25.00
+	war_exhaustion = 1.0
+	time = 250
+	has_species = yes
+	
+	icon = GFX_army_type_autobot_titan
+	
+	resources = {
+		category = armies
+		cost = {
+			energon = 10000
+		}
+		upkeep = {
+			energon = 100
+		}
+	}
+
+	prerequisites = {
+		"tech_cybertronian_titans"
+	}
+	
+	allow = {
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+
+	potential = {
+		from = {
+			is_cybertronian = yes
+		}
+		OR = {
+			has_deposit = d_all_spark
+			has_deposit = d_well_of_all_sparks_duplicate
+			has_deposit = d_active_well_of_all_sparks
+			has_deposit = d_corrupted_well_of_all_sparks_duplicate
+			has_deposit = d_corrupted_well_of_all_sparks
+		}
+	}
+}
+
+#AUTOBOT ARMIES
+autobot_army = {
+	damage = 2.4
+	health = 2.4
+	has_morale = yes
+	morale = 3.0
+	morale_damage = 1.2
+	collateral_damage = 1.0
+	war_exhaustion = 1.5
+	time = 120
+	has_species = yes
+
+	icon = GFX_army_type_autobot
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250
+			energon = 100
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+	potential = {
+		from = {
+			has_trait = "trait_robot_autobot"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_autobots"
+				has_civic = "civic_autobots"
+			}
+		}
+	}
+	
+	
+}
+autobot_defense_army = {
+	defensive = yes
+	damage = 2.5
+	health = 2.5
+	has_morale = yes
+	morale = 3.0
+	morale_damage = 1.0
+	collateral_damage = 0.0
+	war_exhaustion = 0.0
+	icon = GFX_army_type_autobot_defensive
+	has_species = yes
+	time = 120
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250
+			energon = 100
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+	
+	potential = {
+		from = {
+			has_trait = "trait_robot_autobot"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_autobots"
+				has_civic = "civic_autobots"
+			}
+		}
+	}
+	
+	
+}
+autobot_aerialbots = {
+	damage = 3.0
+	health = 2.0
+	has_morale = yes
+	morale = 3.0
+	morale_damage = 1.5
+	collateral_damage = 1.2
+	war_exhaustion = 1.5
+	time = 240
+	has_species = yes
+	
+	icon = GFX_army_type_autobot_aerialbot
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 275
+			energon = 100
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	prerequisites = { "tech_autobot_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_autobot"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_autobots"
+				has_civic = "civic_autobots"
+			}
+		}
+	}
+	
+	
+	
+}
+# The Wreckers
+autobot_wreckers = {
+	damage = 3.0
+	health = 3.5
+	has_morale = yes
+	morale = 3.5
+	morale_damage = 2.0
+	collateral_damage = 3.5
+	war_exhaustion = 3.5
+	time = 300
+	has_species = yes
+	
+	icon = GFX_army_type_autobot_wreckers
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 450
+			energon = 200
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	prerequisites = { "tech_autobot_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_autobot"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_autobots"
+				has_civic = "civic_autobots"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "autobot_wreckers_soldier_count"
+				value < 3
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "autobot_wreckers_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "autobot_wreckers_soldier_count" 
+				value = -1
+			}
+		}
+	}
+	
+	
+	
+}
+# Mega-Warform - Metroplex
+autobot_metroplex = {
+	damage = 12.0
+	health = 15.0
+	has_morale = no
+	morale_damage = 5.0
+	collateral_damage = 12.0
+	war_exhaustion = 10.0
+	time = 2500
+	has_species = yes
+	
+	icon = GFX_army_type_autobot_titan
+	
+	resources = {
+		category = armies
+		cost = {
+			energon = 500
+			minerals = 2500
+		}
+		upkeep = {
+			energy = 12
+		}
+	}
+	prerequisites = { "tech_autobot_titans" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_autobot"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_autobots"
+				has_civic = "civic_autobots"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "autobot_metroplex_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "autobot_metroplex_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "autobot_metroplex_soldier_count" 
+				value = -1
+			}
+		}
+	}	
+	
+	
+	
+}
+# Mega-Warform - Omega Supreme
+autobot_omega_sentinel = {
+	damage = 7.5
+	health = 7.5
+	has_morale = no
+	morale_damage = 3.0
+	collateral_damage = 8.0
+	war_exhaustion = 8.0
+	time = 1500
+	has_species = yes
+
+	icon = GFX_army_type_autobot_titan
+
+	resources = {
+		category = armies
+		cost = {
+			energon = 500
+			minerals = 2000
+		}
+
+		upkeep = {
+			energy = 8
+		}
+	}
+	prerequisites = { "tech_autobot_titans" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_autobot"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_autobots"
+				has_civic = "civic_autobots"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "autobot_omega_sentinel_soldier_count"
+				value < 12
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "autobot_omega_sentinel_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "autobot_omega_sentinel_soldier_count" 
+				value = -1
+			}
+		}
+	}	
+}
+
+autobot_fortress_maximus = {
+	damage = 10.0
+	health = 15.0
+	has_morale = yes
+	morale = 8.0
+	morale_damage = 5.0
+	collateral_damage = 2.0
+	war_exhaustion = 8.0
+	time = 2500
+	has_species = yes
+
+	icon = GFX_army_type_autobot_titan
+
+	resources = {
+		category = armies
+		cost = {
+			energon = 500
+			minerals = 2500
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+	prerequisites = { "tech_autobot_titans" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_autobot"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_autobots"
+				has_civic = "civic_autobots"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "autobot_fortress_maximus_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "autobot_fortress_maximus_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "autobot_fortress_maximus_soldier_count" 
+				value = -1
+			}
+		}
+	}	
+	
+	
+}
+
+autobot_dinobots = {
+	damage = 4.5
+	health = 4.5
+	has_morale = yes
+	morale = 3.0
+	morale_damage = 3.5
+	collateral_damage = 5.0
+	war_exhaustion = 5.0
+	time = 365
+	has_species = yes
+	
+	icon = GFX_army_type_autobot_dinobot
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 800
+			energon = 400
+		}
+		upkeep = {
+			energy = 6
+		}
+	}
+	potential = {
+		from = {
+			has_trait = "trait_robot_autobot"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_autobots"
+				has_civic = "civic_autobots"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "autobot_dinobots_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "autobot_dinobots_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "autobot_dinobots_soldier_count" 
+				value = -1
+			}
+		}
+	}
+	
+	prerequisites = { "tech_morphogenetic_field_mastery" }
+	
+	
+}
+
+
+#DECEPTICON ARMIES
+decepticon_army = {
+	damage = 2.5
+	health = 2.4
+	has_morale = yes
+	morale = 1.5
+	morale_damage = 1.5
+	collateral_damage = 1.5
+	war_exhaustion = 1.5
+	time = 120
+	has_species = yes
+
+	icon = GFX_army_type_decepticon
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250
+			energon = 100
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+	potential = {
+		from = {
+			has_trait = "trait_robot_decepticon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_decepticons"
+				has_civic = "civic_decepticons"
+			}
+		}
+	}
+	
+	
+}
+decepticon_defense_army = {
+	defensive = yes
+	damage = 2.5
+	health = 2.5
+	has_morale = yes
+	morale = 1.5
+	morale_damage = 1.0
+	collateral_damage = 0.0
+	war_exhaustion = 0.0
+	icon = GFX_army_type_decepticon_defensive
+	has_species = yes
+	time = 120
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250
+			energon = 100
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+	
+	potential = {
+		from = {
+			has_trait = "trait_robot_decepticon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_decepticons"
+				has_civic = "civic_decepticons"
+			}
+		}
+	}
+}
+
+decepticon_seekers = {
+	damage = 3.0
+	health = 2.2
+	has_morale = yes
+	morale = 2.0
+	morale_damage = 2.2
+	collateral_damage = 1.5
+	war_exhaustion = 1.5
+	time = 240
+	has_species = yes
+	
+	icon = GFX_army_type_decepticon_seeker
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 275
+			energon = 100
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	prerequisites = { "tech_decepticon_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_decepticon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_decepticons"
+				has_civic = "civic_decepticons"
+			}
+		}
+	}
+	
+	
+}
+decepticon_justice_division = {
+	damage = 4.0
+	health = 4.5
+	has_morale = yes
+	morale = 2.5
+	morale_damage = 3.5
+	collateral_damage = 3.0
+	war_exhaustion = 3.0
+	time = 350
+	has_species = yes
+	
+	icon = GFX_army_type_decepticon_specialist
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 650
+			energon = 250
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+	prerequisites = { "tech_decepticon_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_decepticon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_decepticons"
+				has_civic = "civic_decepticons"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "decepticon_justice_division_soldier_count"
+				value < 3
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "decepticon_justice_division_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "decepticon_justice_division_soldier_count" 
+				value = -1
+			}
+		}
+	}
+	
+	
+}
+	
+decepticon_leapers = {
+	damage = 2.8
+	health = 3.0
+	has_morale = yes
+	morale = 2.0
+	morale_damage = 1.5
+	collateral_damage = 4.0
+	war_exhaustion = 2.0
+	time = 250
+	has_species = yes
+	
+	icon = GFX_army_type_decepticon_specialist
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 350
+			energon = 150
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	prerequisites = { "tech_decepticon_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_decepticon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_decepticons"
+				has_civic = "civic_decepticons"
+			}
+		}
+	}
+	
+	
+}
+	
+
+decepticon_predacons = {
+	damage = 4.5
+	health = 4.2
+	has_morale = yes
+	morale_damage = 4.0
+	collateral_damage = 5.5
+	war_exhaustion = 5.0
+	time = 365
+	has_species = yes
+
+	icon = GFX_army_type_decepticon_predacon
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 800
+			energon = 400
+		}
+
+		upkeep = {
+			energy = 6
+		}
+	}
+	potential = {
+		from = {
+			has_trait = "trait_robot_decepticon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_decepticons"
+				has_civic = "civic_decepticons"
+			}
+		}
+	}
+	
+	prerequisites = { "tech_morphogenetic_field_mastery" }
+
+	allow = {
+		owner = {
+			check_variable = {
+				which = "decepticon_predacons_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "decepticon_predacons_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "decepticon_predacons_soldier_count" 
+				value = -1
+			}
+		}
+	}
+	
+}
+decepticon_trypticon = {
+	damage = 12.0
+	health = 15.0
+	has_morale = no
+	morale_damage = 5.0
+	collateral_damage = 12.0
+	war_exhaustion = 10.0
+	time = 2500
+	has_species = yes
+
+	icon = GFX_army_type_decepticon_titan
+
+	resources = {
+		category = armies
+		cost = {
+			#dark_energon = 500
+			minerals = 2500
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+	prerequisites = { "tech_dark_energon_mining" "tech_decepticon_titans" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_decepticon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_decepticons"
+				has_civic = "civic_decepticons"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "decepticon_trypticon_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "decepticon_trypticon_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "decepticon_trypticon_soldier_count" 
+				value = -1
+			}
+		}
+	}
+		
+}
+
+
+
+#DARK ENERGON ARMIES
+
+dark_energon_corruptors = {
+	damage = 3.5
+	health = 4.0
+	has_morale = no
+	morale_damage = 2.5
+	collateral_damage = 8.0
+	war_exhaustion = 3.0
+	time = 450
+	has_species = no
+	
+	icon = GFX_army_type_undead
+	
+	resources = {
+		category = armies
+		cost = {
+			dark_energon = 100
+			minerals = 500
+		}
+		upkeep = {
+			dark_energon = 2
+		}
+	}
+	prerequisites = { "tech_dark_energon_mining" "tech_dark_energon_armies" }
+	allow = {
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+}
+
+dark_energon_terrorcons = {
+	damage = 1.8
+	health = 1.4
+	has_morale = no
+	morale_damage = 2.0
+	collateral_damage = 1.5
+	war_exhaustion = 0.8
+	time = 75
+	has_species = yes
+	pop_limited = no
+	
+	icon = GFX_army_type_undead
+	
+	resources = {
+		category = armies
+		cost = {
+			dark_energon = 50
+			minerals = 50
+		}
+		upkeep = {
+			dark_energon = 0.75
+		}
+	}
+	prerequisites = { "tech_dark_energon_mining" "tech_dark_energon_armies" }
+	potential = {
+		from = { 
+			OR = {
+				is_cybertronian = yes
+				has_trait = trait_mechanical
+			}
+		}
+	}
+	allow = {
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+}
+
+#DARK SPARK ARMIES 
+dark_spark_terrorcons = {
+	damage = 3.5
+	health = 7.0
+	has_morale = no
+	morale_damage = 3
+	collateral_damage = 3.5
+	war_exhaustion = 0.50
+	time = 175
+	pop_limited = no
+	has_species = no
+	
+	icon = GFX_army_type_undead
+	
+	resources = {
+		category = armies
+		cost = {
+			#dark_energon = 500
+			minerals = 500
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	potential_country = {
+		has_relic = r_dark_spark
+	}
+	potential = {
+		custom_tooltip = {
+			planet = { is_capital = yes }
+		}
+		owner = {
+			has_modifier = dark_spark_energy
+		}
+	}
+	
+	
+}
+
+
+#CYBERTRONIAN HEROS
+
+autobot_optimus_prime = {
+	damage = 5.3
+	health = 5.2
+	has_morale = yes
+	morale = 8.0
+	morale_damage = 3.0
+	collateral_damage = 1.5
+	war_exhaustion = 8.0
+	time = 2000
+	has_species = yes
+
+	icon = GFX_army_type_autobot
+
+	resources = {
+		category = armies
+		cost = {
+			energon = 300
+			minerals = 1500
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+	prerequisites = { "tech_autobot_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_autobot"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_autobots"
+				has_civic = "civic_autobots"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "autobot_optimus_prime_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "autobot_optimus_prime_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "autobot_optimus_prime_soldier_count" 
+				value = -1
+			}
+		}
+	}
+	#ai_weight = {
+	#	base = 10
+	#	modifier = {
+	#		set = 0
+	#		check_variable = {
+	#			which = "autobot_optimus_prime_soldier_count"
+	#			value >= 1
+	#		}
+	#	}
+	#}		
+}	
+
+decepticon_megatron = {
+	damage = 5.5
+	health = 5.0
+	has_morale = yes
+	morale = 5.0
+	morale_damage = 5.0
+	collateral_damage = 5.0
+	war_exhaustion = 8.0
+	time = 2000
+	has_species = yes
+
+	icon = GFX_army_type_decepticon
+
+	resources = {
+		category = armies
+		cost = {
+			energon = 300
+			minerals = 1500
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+	prerequisites = { "tech_decepticon_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_decepticon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_decepticons"
+				has_civic = "civic_decepticons"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "decepticon_megatron_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "decepticon_megatron_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "decepticon_megatron_soldier_count" 
+				value = -1
+			}
+		}
+	}
+	#ai_weight = {
+	#	base = 10
+	#	modifier = {
+	#		set = 0
+	#		check_variable = {
+	#			which = "decepticon_megatron_soldier_count"
+	#			value >= 1
+	#		}
+	#	}
+	#}	
+}
+
+decepticon_galvatron = {
+	damage = 6.0
+	health = 5.5
+	has_morale = yes
+	morale = 5.0
+	morale_damage = 5.5
+	collateral_damage = 10.0
+	war_exhaustion = 8.0
+	time = 2000
+	has_species = yes
+
+	icon = GFX_army_type_decepticon
+
+	resources = {
+		category = armies
+		cost = {
+			#dark_energon = 300
+			minerals = 2000
+		}
+
+		upkeep = {
+			energy = 8
+		}
+	}
+	prerequisites = { "tech_dark_energon_mining" "tech_decepticon_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_decepticon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_decepticons"
+				has_civic = "civic_decepticons"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			OR = {
+				check_variable = {
+					which = "decepticon_galvatron_soldier_count"
+					value < 1
+				}
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "decepticon_galvatron_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "decepticon_galvatron_soldier_count" 
+				value = -1
+			}
+		}
+	}
+	#ai_weight = {
+	#	base = 10
+	#	modifier = {
+	#		set = 0
+	#		check_variable = {
+	#			which = "decepticon_galvatron_soldier_count"
+	#			value >= 1
+	#		}
+	#	}
+	#}	
+}		
+
+
+
+#MAXIMAL ARMIES
+maximal_army = {
+	damage = 2.4
+	health = 2.4
+	has_morale = yes
+	morale = 3.0
+	morale_damage = 1.2
+	collateral_damage = 1.0
+	war_exhaustion = 1.5
+	time = 120
+	has_species = yes
+
+	icon = GFX_army_type_maximal
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250
+			energon = 100
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+	potential = {
+		from = {
+			has_trait = "trait_robot_maximal"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_maximals"
+				has_civic = "civic_maximals"
+			}
+		}
+	}
+		
+}
+maximal_defense_army = {
+	defensive = yes
+	damage = 2.5
+	health = 2.5
+	has_morale = yes
+	morale = 3.0
+	morale_damage = 1.0
+	collateral_damage = 0.0
+	war_exhaustion = 0.0
+	icon = GFX_army_type_maximal_defensive
+	has_species = yes
+	time = 120
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250
+			energon = 100
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+	
+	potential = {
+		from = {
+			has_trait = "trait_robot_maximal"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_maximals"
+				has_civic = "civic_maximals"
+			}
+		}
+	}
+}
+maximal_aerialbots = {
+	damage = 2.6
+	health = 2.0
+	has_morale = yes
+	morale = 3.0
+	morale_damage = 1.5
+	collateral_damage = 1.2
+	war_exhaustion = 1.5
+	time = 240
+	has_species = yes
+	
+	icon = GFX_army_type_maximal_aerialbot
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 275
+			energon = 100
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	prerequisites = { "tech_maximal_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_maximal"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_maximals"
+				has_civic = "civic_maximals"
+			}
+		}
+	}
+	
+	
+}
+#Imperial Peace Marshall
+maximal_imperial_peace_marshall = {
+	damage = 3.0
+	health = 2.5
+	has_morale = yes
+	morale = 3.0
+	morale_damage = 2.0
+	collateral_damage = 0.5
+	war_exhaustion = 3.0
+	time = 300
+	has_species = yes
+	
+	icon = GFX_army_type_maximal_specialist
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 450
+			energon = 200
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	prerequisites = { "tech_maximal_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_maximal"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_maximals"
+				has_civic = "civic_maximals"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "maximal_imperial_peace_marshall_count"
+				value < 5
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "maximal_imperial_peace_marshall_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "maximal_imperial_peace_marshall_count" 
+				value = -1
+			}
+		}
+	}
+	
+	
+}
+
+maximal_depth_charge = {
+	damage = 4.0
+	health = 4.0
+	has_morale = yes
+	morale = 4.0
+	morale_damage = 2.0
+	collateral_damage = 3.0
+	war_exhaustion = 5.0
+	time = 360
+	has_species = yes
+	
+	icon = GFX_army_type_maximal_specialist
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 450
+			energon = 200
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	prerequisites = { "tech_maximal_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_maximal"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_maximals"
+				has_civic = "civic_maximals"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "maximal_depth_charge_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "maximal_depth_charge_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "maximal_depth_charge_soldier_count" 
+				value = -1
+			}
+		}
+	}	
+	
+	
+}
+
+
+maximal_dinobots = {
+	damage = 4.5
+	health = 4.0
+	has_morale = yes
+	morale = 3.0
+	morale_damage = 3.5
+	collateral_damage = 8.0
+	war_exhaustion = 5.0
+	time = 350
+	has_species = yes
+	
+	icon = GFX_army_type_maximal_dinobot
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 800
+			energon = 300
+		}
+		upkeep = {
+			energy = 6
+		}
+	}
+	potential = {
+		from = {
+			has_trait = "trait_robot_maximal"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_maximals"
+				has_civic = "civic_maximals"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "maximal_dinobots_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "maximal_dinobots_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "maximal_dinobots_soldier_count" 
+				value = -1
+			}
+		}
+	}	
+	#ai_weight = {
+	#	base = 125
+	#	modifier = {
+	#		factor = 2
+	#		has_civic = civic_maximals
+	#	}
+	#	modifier = {
+	#		factor = 2
+	#		has_civic = civic_machine_maximals
+	#	}
+	#}
+	
+	prerequisites = { "tech_morphogenetic_field_mastery" }
+	
+	
+}
+
+
+
+
+#PREDACON ARMIES
+predacon_army = {
+	damage = 2.5
+	health = 2.4
+	has_morale = yes
+	morale = 1.5
+	morale_damage = 1.5
+	collateral_damage = 1.5
+	war_exhaustion = 1.5
+	time = 120
+	has_species = yes
+
+	icon = GFX_army_type_predacon
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250
+			energon = 100
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+	potential = {
+		from = {
+			has_trait = "trait_robot_predacon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_predacons"
+				has_civic = "civic_predacons"
+			}
+		}
+	}
+	#ai_weight = {
+	#	base = 10
+	#	modifier = {
+	#		factor = 10
+	#		is_decepticon_empire = yes 
+	#	}
+	#}
+	
+}
+predacon_defense_army = {
+	defensive = yes
+	damage = 2.5
+	health = 2.5
+	has_morale = yes
+	morale = 1.5
+	morale_damage = 1.0
+	collateral_damage = 0.0
+	war_exhaustion = 0.0
+	icon = GFX_army_type_predacon_defensive
+	has_species = yes
+	time = 120
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250
+			energon = 100
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+	
+	potential = {
+		from = {
+			has_trait = "trait_robot_predacon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_predacons"
+				has_civic = "civic_predacons"
+			}
+		}
+	}
+}
+
+predacon_seekers = {
+	damage = 2.8
+	health = 2.2
+	has_morale = yes
+	morale = 2.0
+	morale_damage = 2.2
+	collateral_damage = 1.5
+	war_exhaustion = 1.5
+	time = 240
+	has_species = yes
+	
+	icon = GFX_army_type_predacon_seeker
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 275
+			energon = 100
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	prerequisites = { "tech_predacon_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_predacon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_predacons"
+				has_civic = "civic_predacons"
+			}
+		}
+	}
+	
+}
+
+#Predacon Secret Police
+predacon_secret_police = {
+	damage = 3.0
+	health = 2.5
+	has_morale = yes
+	morale = 3.0
+	morale_damage = 3.0
+	collateral_damage = 0.5
+	war_exhaustion = 3.0
+	time = 300
+	has_species = yes
+	
+	icon = GFX_army_type_predacon_specialist
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 450
+			energon = 200
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	prerequisites = { "tech_predacon_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_predacon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_predacons"
+				has_civic = "civic_predacons"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "predacon_secret_police_count"
+				value < 5
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "predacon_secret_police_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "predacon_secret_police_count" 
+				value = -1
+			}
+		}
+	}
+	
+	
+}
+
+
+predacon_bw_rampage = {
+	damage = 4.0
+	health = 8.0
+	has_morale = yes
+	morale = 5.0
+	morale_damage = 4.0
+	collateral_damage = 5.0
+	war_exhaustion = 10.0
+	time = 350
+	has_species = yes
+	
+	icon = GFX_army_type_predacon_specialist
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 800
+			energon = 400
+		}
+		upkeep = {
+			energy = 8
+		}
+	}
+	prerequisites = { "tech_predacon_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_predacon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_predacons"
+				has_civic = "civic_predacons"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "predacon_bw_rampage_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "predacon_bw_rampage_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "predacon_bw_rampage_soldier_count" 
+				value = -1
+			}
+		}
+	}	
+	
+	
+}
+	
+
+predacon_predaking = {
+	damage = 8.0
+	health = 8.0
+	has_morale = yes
+	morale = 5.0
+	morale_damage = 5.0
+	collateral_damage = 8.0
+	war_exhaustion = 5.0
+	time = 1500
+	has_species = yes
+
+	icon = GFX_army_type_predacon_predacon
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1500
+			energon = 500
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+	potential = {
+		from = {
+			has_trait = "trait_robot_predacon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_predacons"
+				has_civic = "civic_predacons"
+			}
+		}
+	}
+	
+	prerequisites = { "tech_morphogenetic_field_mastery" }
+
+	allow = {
+		owner = {
+			check_variable = {
+				which = "predacon_predacons_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "predacon_predacons_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "predacon_predacons_soldier_count" 
+				value = -1
+			}
+		}
+	}	
+	
+}
+
+
+#CYBERTRONIAN BW HEROS
+
+#MAXIMALS
+
+maximal_optimus_primal = {
+	damage = 4.8
+	health = 4.8
+	has_morale = yes
+	morale = 8.0
+	morale_damage = 3.0
+	collateral_damage = 1.5
+	war_exhaustion = 8.0
+	time = 2000
+	has_species = yes
+
+	icon = GFX_army_type_maximal
+
+	resources = {
+		category = armies
+		cost = {
+			energon = 300
+			minerals = 1500
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+	prerequisites = { "tech_maximal_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_maximal"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_maximals"
+				has_civic = "civic_maximals"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "maximal_optimus_primal_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "maximal_optimus_primal_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "maximal_optimus_primal_soldier_count" 
+				value = -1
+			}
+		}
+	}
+	
+	
+}	
+
+maximal_optimal_optimus = {
+	damage = 5.5
+	health = 5.0
+	has_morale = yes
+	morale = 5.0
+	morale_damage = 5.5
+	collateral_damage = 8.0
+	war_exhaustion = 8.0
+	time = 2000
+	has_species = yes
+
+	icon = GFX_army_type_maximal
+
+	resources = {
+		category = armies
+		cost = {
+			energon = 300
+			minerals = 2000
+		}
+
+		upkeep = {
+			energy = 8
+		}
+	}
+	prerequisites = { "tech_maximal_warriors" "tech_maximal_titans" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_maximal"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_maximals"
+				has_civic = "civic_maximals"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "maximal_optimal_optimus_soldier_count"
+				value < 1
+			}
+			check_variable = {
+				which = "maximal_optimus_primal_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "maximal_optimal_optimus_soldier_count" 
+				value = 1
+			}
+			change_variable = {
+				which = "maximal_optimus_primal_soldier_count"
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "maximal_optimal_optimus_soldier_count" 
+				value = -1
+			}
+			change_variable = {
+				which = "maximal_optimus_primal_soldier_count"
+				value = -1
+			}
+		}
+	}	
+	
+	
+}	
+
+# Mega-Warform - Tigerhawk
+maximal_tigerhawk = {
+	damage = 10.0
+	health = 10.0
+	has_morale = no
+	morale_damage = 5.0
+	collateral_damage = 10.0
+	war_exhaustion = 10.0
+	time = 2500
+	has_species = yes
+	
+	icon = GFX_army_type_maximal_titan
+	
+	resources = {
+		category = armies
+		cost = {
+			energon = 500
+			minerals = 2500
+		}
+		upkeep = {
+			energy = 12
+		}
+	}
+	prerequisites = { "tech_maximal_titans" "tech_maximal_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_maximal"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_maximals"
+				has_civic = "civic_maximals"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "maximal_tigerhawk_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "maximal_tigerhawk_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "maximal_tigerhawk_count" 
+				value = -1
+			}
+		}
+	}	
+	
+}
+
+maximal_magnaboss = {
+	damage = 8.5
+	health = 8.0
+	has_morale = no
+	morale_damage = 5.0
+	collateral_damage = 8.0
+	war_exhaustion = 10.0
+	time = 2000
+	has_species = yes
+
+	icon = GFX_army_type_maximal_titan
+
+	resources = {
+		category = armies
+		cost = {
+			energon = 500
+			minerals = 2000
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+	prerequisites = { "tech_maximal_titans" "tech_maximal_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_maximal"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_maximals"
+				has_civic = "civic_maximals"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "maximal_magnaboss_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "maximal_magnaboss_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "maximal_magnaboss_soldier_count" 
+				value = -1
+			}
+		}
+	}
+	
+	
+}
+
+#PREDACON HEROES 
+
+predacon_megatron = {
+	damage = 5.0
+	health = 4.8
+	has_morale = yes
+	morale = 5.0
+	morale_damage = 5.0
+	collateral_damage = 5.0
+	war_exhaustion = 8.0
+	time = 2000
+	has_species = yes
+
+	icon = GFX_army_type_predacon
+
+	resources = {
+		category = armies
+		cost = {
+			energon = 300
+			minerals = 1500
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+	prerequisites = { "tech_predacon_warriors" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_predacon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_predacons"
+				has_civic = "civic_predacons"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "predacon_megatron_soldier_count"
+				value < 1
+			}
+			check_variable = {
+				which = "predacon_transmetal_megatron_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "predacon_megatron_soldier_count" 
+				value = 1
+			}
+			change_variable = {
+				which = "predacon_transmetal_megatron_soldier_count"
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "predacon_megatron_soldier_count" 
+				value = -1
+			}
+			change_variable = {
+				which = "predacon_transmetal_megatron_soldier_count"
+				value = -1
+			}
+		}
+	}	
+	
+	
+}
+
+predacon_transmetal_megatron = {
+	damage = 5.5
+	health = 5.0
+	has_morale = yes
+	morale = 5.0
+	morale_damage = 5.5
+	collateral_damage = 8.0
+	war_exhaustion = 8.0
+	time = 2000
+	has_species = yes
+
+	icon = GFX_army_type_predacon
+
+	resources = {
+		category = armies
+		cost = {
+			energon = 300
+			minerals = 2000
+		}
+
+		upkeep = {
+			energy = 8
+		}
+	}
+	prerequisites = { "tech_predacon_warriors" "tech_predacon_titans" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_predacon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_predacons"
+				has_civic = "civic_predacons"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "predacon_transmetal_megatron_soldier_count"
+				value < 1
+			}
+			check_variable = {
+				which = "predacon_megatron_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "predacon_transmetal_megatron_soldier_count" 
+				value = 1
+			}
+			change_variable = {
+				which = "predacon_megatron_soldier_count"
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "predacon_transmetal_megatron_soldier_count" 
+				value = -1
+			}
+			change_variable = {
+				which = "predacon_megatron_soldier_count"
+				value = -1
+			}
+		}
+	}	
+	
+	
+}		
+
+predacon_tripredacus = {
+	damage = 8.5
+	health = 8.0
+	has_morale = yes
+	morale = 5.0
+	morale_damage = 5.0
+	collateral_damage = 8.0
+	war_exhaustion = 10.0
+	time = 2000
+	has_species = yes
+
+	icon = GFX_army_type_predacon_titan
+
+	resources = {
+		category = armies
+		cost = {
+			energon = 500
+			minerals = 2000
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+	prerequisites = { "tech_predacon_warriors" "tech_predacon_titans" }
+	potential = {
+		from = {
+			has_trait = "trait_robot_predacon"
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_machine_predacons"
+				has_civic = "civic_predacons"
+			}
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "predacon_tripredacus_soldier_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "predacon_tripredacus_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "predacon_tripredacus_soldier_count" 
+				value = -1
+			}
+		}
+	}
+		
+	
+}
+
+
+#VEHICON ARMIES
+
+vehicon_defense_army = {
+	defensive = yes
+	is_pop_spawned = yes
+	damage = 2.0
+	health = 2.0
+	has_morale = no
+	morale_damage = 1.2
+	collateral_damage = 0.0
+	war_exhaustion = 0.0
+	icon = GFX_army_type_vehicon
+	has_species = yes
+
+	potential = {
+		from = {
+			has_trait = "trait_robot_vehicon"
+		}
+	}
+	
+}
+vehicon_occupation_army = {
+	defensive = yes
+	occupation = yes
+	damage = 2.0
+	health = 2.0
+	has_morale = no
+	morale_damage = 1.5
+	collateral_damage = 0.0
+	war_exhaustion = 0.0 # No WE from occupation armies
+	has_species = yes
+
+	icon = GFX_army_type_vehicon
+
+	potential = {
+		from = {
+			has_trait = "trait_robot_vehicon"
+		}
+	}
+}
+
+vehicon_cycle_drones = {
+	damage = 1.5
+	health = 1.0
+	has_morale = no
+	morale_damage = 1.2
+	collateral_damage = 1.0
+	war_exhaustion = 0.5
+	time = 60
+	has_species = yes
+	pop_limited = no
+	
+	icon = GFX_army_type_vehicon
+	
+	resources = {
+		category = armies
+		cost = {
+			energon = 25
+			minerals = 50
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	#prerequisites = { "tech_vehicons" }
+	
+	potential = {
+		from = {
+			has_trait = "trait_robot_vehicon"
+		}
+	}
+	allow = {
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+	
+	
+}
+
+vehicon_tank_drones = {
+	damage = 2.0
+	health = 2.4
+	has_morale = no
+	morale_damage = 1.0
+	collateral_damage = 2.0
+	war_exhaustion = 0.75
+	time = 120
+	has_species = yes
+	pop_limited = no
+	
+	icon = GFX_army_type_vehicon
+	
+	resources = {
+		category = armies
+		cost = {
+			energon = 50
+			minerals = 150
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	prerequisites = { "tech_vehicons" }
+	
+	potential = {
+		from = {
+			has_trait = "trait_robot_vehicon"
+		}
+	}
+	allow = {
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+	
+	
+}
+
+vehicon_aero_drones = {
+	damage = 2.2
+	health = 1.5
+	has_morale = no
+	morale_damage = 1.5
+	collateral_damage = 1.5
+	war_exhaustion = 0.5
+	time = 90
+	has_species = yes
+	pop_limited = no
+	
+	icon = GFX_army_type_vehicon
+	
+	resources = {
+		category = armies
+		cost = {
+			energon = 50
+			minerals = 75
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	prerequisites = { "tech_vehicons" }
+	
+	potential = {
+		from = {
+			has_trait = "trait_robot_vehicon"
+		}
+	}
+	allow = {
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+	
+}
+
+vehicon_copter_drones = {
+	damage = 2.2
+	health = 1.8
+	has_morale = no
+	morale_damage = 1.5
+	collateral_damage = 1.0
+	war_exhaustion = 0.5
+	time = 90
+	has_species = yes
+	pop_limited = no
+	
+	icon = GFX_army_type_vehicon
+	
+	resources = {
+		category = armies
+		cost = {
+			energon = 50
+			minerals = 100
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	prerequisites = { "tech_vehicons" }
+	
+	potential = {
+		from = {
+			has_trait = "trait_robot_vehicon"
+		}
+	}
+	allow = {
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+	
+	
+}
+
+vehicon_artillery_drones = {
+	damage = 2.4
+	health = 2.0
+	has_morale = no
+	morale_damage = 1.5
+	collateral_damage = 3.0
+	war_exhaustion = 0.75
+	time = 120
+	has_species = yes
+	pop_limited = no
+	
+	icon = GFX_army_type_vehicon
+	
+	resources = {
+		category = armies
+		cost = {
+			energon = 50
+			minerals = 200
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	prerequisites = { "tech_vehicons" }
+	
+	potential = {
+		from = {
+			has_trait = "trait_robot_vehicon"
+		}
+	}
+	allow = {
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+	
+	
+}
+
+vehicon_grand_mal = {
+	defensive = yes
+	damage = 10.0
+	health = 15.0
+	has_morale = no
+	morale_damage = 5.0
+	collateral_damage = 4.0
+	war_exhaustion = 4.0
+	time = 2000
+	has_species = no
+
+	icon = GFX_army_type_vehicon
+
+	resources = {
+		category = armies
+		cost = {
+			energon = 1000
+			minerals = 2500
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+	prerequisites = { "tech_vehicons" }
+	potential = {
+		owner = {
+			has_civic = civic_machine_vehicons
+		}
+		planet = {
+			has_deposit = d_cybertron_citadel
+		}
+	}
+	allow = {
+		owner = {
+			check_variable = {
+				which = "vehicon_grand_mal_count"
+				value < 1
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "vehicon_grand_mal_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "vehicon_grand_mal_count" 
+				value = -1
+			}
+		}
+	}	
+	
+	
+}
+
+
+#INSECTICON ARMIES
+
+insecticon_swarmers = {
+	damage = 1.8
+	morale_damage = 1.2
+	collateral_damage = 3.5
+	war_exhaustion = 0.25
+	health = 0.8
+	has_morale = yes
+	morale = 1.0
+	time = 80
+	icon = GFX_army_type_decepticon_insecticon
+	has_species = yes
+	
+	resources = {
+		category = armies 
+		cost = {
+			minerals = 120
+			energon = 50
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	potential = {
+		from = {
+			OR = {
+				has_trait = "trait_robot_insecticon"
+				has_trait = "trait_cybertronian"
+			}
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_insecticon_hive"
+				has_civic = "civic_machine_decepticons"
+				has_civic = "civic_decepticons"
+			}
+		}
+	}
+	prerequisites = { "tech_insecticon_swarm" }
+	
+	
+	
+}
+insecticon_bruisers = {
+	damage = 2.8
+	morale_damage = 1.5
+	collateral_damage = 3.5
+	war_exhaustion = 0.75
+	health = 3.0
+	has_morale = no
+	time = 180
+	icon = GFX_army_type_decepticon_insecticon
+	has_species = yes
+	
+	resources = {
+		category = armies 
+		cost = {
+			minerals = 400
+			energon = 100
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	potential = {
+		from = {
+			OR = {
+				has_trait = "trait_robot_insecticon"
+				has_trait = "trait_cybertronian"
+			}
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_insecticon_hive"
+				has_civic = "civic_machine_decepticons"
+				has_civic = "civic_decepticons"
+			}
+		}
+	}
+	prerequisites = { "tech_insecticon_swarm" }
+	
+	
+	
+}
+
+insecticon_spitters = {
+	damage = 0.75
+	morale_damage = 1.0
+	collateral_damage = 2.5
+	war_exhaustion = 0.50
+	health = 0.50
+	has_morale = yes
+	morale = 0.75
+	time = 60
+	icon = GFX_army_type_decepticon_insecticon
+	has_species = yes
+	
+	resources = {
+		category = armies 
+		cost = {
+			minerals = 75
+			energon = 25
+		}
+		upkeep = {
+			energy = 0.5
+		}
+	}
+	potential = {
+		from = {
+			OR = {
+				has_trait = "trait_robot_insecticon"
+				has_trait = "trait_cybertronian"
+			}
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_insecticon_hive"
+				has_civic = "civic_machine_decepticons"
+				has_civic = "civic_decepticons"
+			}
+		}
+	}
+	prerequisites = { "tech_insecticon_swarm" }
+	
+	
+	
+}
+
+insecticon_bombshells = {
+	damage = 4.0
+	morale_damage = 1.5
+	collateral_damage = 5.0
+	war_exhaustion = 0.75
+	health = 4.0
+	has_morale = yes
+	morale = 1.2
+	time = 240
+	icon = GFX_army_type_decepticon_insecticon
+	has_species = yes
+	
+	resources = {
+		category = armies 
+		cost = {
+			minerals = 500
+			energon = 200
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	allow = {
+		has_building = building_insecticon_hive_cluster
+	}
+	potential = {
+		planet = {
+			has_active_building = building_insecticon_hive_cluster
+		}
+		from = {
+			OR = {
+				has_trait = "trait_robot_insecticon"
+				has_trait = "trait_cybertronian"
+			}
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_insecticon_hive"
+				has_civic = "civic_machine_decepticons"
+				has_civic = "civic_decepticons"
+			}
+		}
+	}
+	prerequisites = { "tech_insecticon_swarm" }
+	
+	
+	
+}
+
+insecticon_shrapnels = {
+	damage = 3.0
+	morale_damage = 4.0
+	collateral_damage = 1.0
+	war_exhaustion = 0.75
+	health = 2.0
+	has_morale = yes
+	morale = 1.2
+	time = 240
+	icon = GFX_army_type_decepticon_insecticon
+	has_species = yes
+	
+	resources = {
+		category = armies 
+		cost = {
+			minerals = 500
+			energon = 200
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	
+	allow = {
+		has_building = building_insecticon_hive_cluster
+	}
+	potential = {
+		planet = {
+			has_active_building = building_insecticon_hive_cluster
+		}
+		from = {
+			OR = {
+				has_trait = "trait_robot_insecticon"
+				has_trait = "trait_cybertronian"
+			}
+		}
+		owner = {
+			OR = {
+				has_civic = "civic_insecticon_hive"
+				has_civic = "civic_machine_decepticons"
+				has_civic = "civic_decepticons"
+			}
+		}
+	}
+	prerequisites = { "tech_insecticon_swarm" }
+	
+	
+}

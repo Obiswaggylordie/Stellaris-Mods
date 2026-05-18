@@ -1,0 +1,555 @@
+
+
+dtf_head_researcher = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_dtf_factory
+	clothes_texture_index = 1
+	icon = researcher
+
+	possible_precalc = can_fill_ruler_job
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	resources = {
+		category = planet_researchers
+		produces = {
+			physics_research = 1000
+			engineering_research = 1000
+			society_research = 1000
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = research_subsidies
+				}
+			}
+			energy = 2
+		}
+	}
+
+	planet_modifier = {
+		planet_amenities_add = 5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			planet_amenities_add = -1
+		}
+	}
+
+	weight = {
+		weight = @ruler_job_weight
+		mult = value:job_weights_research_modifier|JOB|dtf_head_researcher|
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 2
+			has_living_standard = { type = living_standard_academic_privilege }
+		}
+		modifier = {
+			factor = 5
+			has_job = dtf_head_researcher
+		}
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
+	}
+}
+
+
+############################################################################
+# Specialist Jobs
+############################################################################
+
+dtf_researcher = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_dtf_factory
+	clothes_texture_index = 3
+	icon = researcher
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_researchers
+		produces = {
+			physics_research = 100
+			engineering_research = 100
+			society_research = 100
+		}
+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_valid_civic = civic_technocracy }
+			}
+			unity = 1
+		}
+
+		upkeep = {
+			consumer_goods = 2
+			food = 2
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = research_subsidies
+				}
+			}
+			energy = 1
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:job_weights_research_modifier|JOB|dtf_researcher|
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 2
+			has_living_standard = { type = living_standard_academic_privilege }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_job = dtf_researcher
+		}
+		modifier = {
+			factor = 0.8
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
+	}
+}
+
+
+
+dtf_foundry = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_dtf_factory
+	clothes_texture_index = 3
+	icon = foundry
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_worker_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_metallurgists
+		produces = {
+			alloys = 100
+			nanites = 100
+			consumer_goods = 100
+			amenities = 100
+		}
+		produces = {
+			trigger = {
+				planet = {
+					has_planet_flag = has_material_requisitorium
+				}
+			}
+			alloys = @requisitorium_alloys_reduction
+		}
+
+		upkeep = {
+			minerals = @dtf_pop_cost_minerals_base
+		}
+	}
+
+	
+	weight = {
+		weight = @specialist_job_weight # Fairly important job
+		mult = value:job_weights_modifier|JOB|dtf_foundry|RESOURCE|alloys|
+		modifier = {
+			factor = 2
+			is_enslaved = yes
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 5
+			has_job = dtf_foundry
+		}
+	}
+}
+
+
+
+dtf_secret_biologist = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_clinic
+	clothes_texture_index = 3
+	icon = healthcare
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+	resources = {
+		category = planet_doctors
+		upkeep = {
+			consumer_goods = 1
+		}
+		upkeep = {
+			trigger = {
+				planet = { has_active_building = building_dtf_secret_laboratory_2 }
+			}
+			consumer_goods = 1
+		}
+		upkeep = {
+			trigger = {
+				planet = { has_active_building = building_dtf_secret_laboratory_3 }
+			}
+			consumer_goods = 2
+		}
+		upkeep = {
+			trigger = {
+				planet = { has_active_building = building_dtf_secret_laboratory_4 }
+			}
+			consumer_goods = 3
+		}
+	}
+
+
+
+
+	planet_modifier = {
+		pop_growth_speed = 0.25
+		planet_pop_assembly_organic_mult = 0.10
+		#pop_environment_tolerance = 0.010
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			planet = { has_active_building = building_dtf_secret_laboratory_2 }
+		}
+		pop_growth_speed = 0.10
+		planet_pop_assembly_organic_mult = 0.05
+		#pop_environment_tolerance = 0.005
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			planet = { has_active_building = building_dtf_secret_laboratory_3 }
+		}
+		pop_growth_speed = 0.25
+		planet_pop_assembly_organic_mult = 0.10
+		#pop_environment_tolerance = 0.010
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			planet = { has_active_building = building_dtf_secret_laboratory_4 }
+		}
+		pop_growth_speed = 0.50
+		planet_pop_assembly_organic_mult = 0.15
+		#pop_environment_tolerance = 0.015
+	}
+
+
+
+
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_amenities_add = 1
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+
+
+
+	weight = {
+		weight = @high_prio_specialist_job_weight
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_job = healthcare
+		}
+		modifier = {
+			factor = 0.5
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
+		modifier = {
+			factor = 10
+			NOT = { has_job = healthcare }
+			planet = {
+				free_amenities < 0
+				has_available_jobs = healthcare
+			}
+		}
+	}
+}
+
+
+
+############################################################################
+# Worker Jobs
+############################################################################
+
+
+dtf_technician = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_dtf_energy_plant
+	clothes_texture_index = 2
+	icon = technician
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_worker_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_technician
+		produces = {
+			energy = 100
+		}
+
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = capacity_subsidies
+				}
+			}
+			energy = 5
+		}
+	}
+
+	
+	weight = {
+		weight = @worker_job_weight
+		mult = value:job_weights_modifier|JOB|dtf_technician|RESOURCE|energy|
+		modifier = {
+			factor = 100
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			can_fill_specialist_job = no
+		}
+		modifier = {
+			factor = 8
+			is_enslaved = yes
+			can_take_servant_job = no
+			OR = {
+				has_trait = trait_syncretic_proles
+				has_trait = trait_robot_superconductive
+				has_trait = trait_ingenious
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}
+		# low income modifier
+		modifier = {
+			factor = 250
+			exists = planet
+			planet = {
+				has_available_jobs = "dtf_technician"
+			}
+			exists = owner
+			owner = {
+				is_ai = yes
+				has_monthly_income = {
+					resource = energy
+					value < 20
+				}
+			}
+		}
+	}
+}
+
+dtf_miner = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_dtf_mining_plant
+	clothes_texture_index = 2
+	icon = miner
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_worker_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_miners
+		produces = {
+			minerals = 100
+			rare_crystals = 100
+			exotic_gases = 100
+			volatile_motes = 100
+			sr_zro = 100
+			sr_dark_matter = 100
+		}
+
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = mining_subsidies
+				}
+			}
+			energy = 5
+		}
+	}
+
+	
+	weight = {
+		weight = @worker_job_weight
+		mult = value:job_weights_modifier|JOB|dtf_miner|RESOURCE|minerals|
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			can_take_servant_job = no
+			NOT = { has_slavery_type = { type = slavery_indentured } }
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
+		}
+		modifier = {
+			factor = 200
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}
+
+		# low income modifier
+		modifier = {
+			factor = 1.1
+			exists = planet
+			planet = {
+				has_available_jobs = "dtf_miner"
+			}
+			exists = owner
+			owner = {
+				is_ai = yes
+				has_monthly_income = {
+					resource = minerals
+					value < 0
+				}
+			}
+		}
+	}
+}

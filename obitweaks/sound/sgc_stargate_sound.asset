@@ -1,0 +1,15 @@
+#################
+# Ancient Drones
+#################
+
+sound =
+{
+	name = "ancient_drone_fire"
+	file = "weapons/ancient_drone_fire.wav"
+}
+
+sound =
+{
+	name = "ancient_drone_hit"
+	file = "weapons/ancient_drone_hit.wav"
+}

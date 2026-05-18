@@ -1,0 +1,24 @@
+objectTypes = {
+
+	#######  destroyer frame  #######
+	
+	pdxmesh = {
+		name = "lantean_01_destroyer_frame_mesh"
+		file = "gfx/models/ships/lantean_01/02_Destroyer_Assets/lantean_01_destroyer_frame.mesh"		
+		scale = 1.0
+	}
+	
+	#######  destroyer sections  #######	
+
+	pdxmesh = {
+		name = "lantean_01_destroyer_locators_bow_mesh"
+		file = "gfx/models/ships/lantean_01/02_Destroyer_Assets/lantean_01_destroyer_locators_bow.mesh"
+		scale = 1.0
+	}
+
+		pdxmesh = {
+		name = "lantean_01_destroyer_locators_stern_mesh"
+		file = "gfx/models/ships/lantean_01/02_Destroyer_Assets/lantean_01_destroyer_locators_stern.mesh"
+		scale = 1.0
+	}
+}

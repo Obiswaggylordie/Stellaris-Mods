@@ -1,0 +1,110 @@
+
+dimensional_time_fault = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 0
+
+	prerequisites = {
+		"tech_cr_access"
+	}
+	
+	allow = {
+		any_owned_planet = {
+			has_deposit = d_cr_dtf
+		}
+	}
+
+	resources = {
+		category = edicts
+		cost = {
+			influence = 1
+		}
+	}
+
+	modifier = {
+		num_tech_alternatives_add = 2
+
+		pop_growth_speed = 0.25
+		planet_pop_assembly_mult = 0.25
+
+		pop_demotion_time_mult = -0.25
+
+		starbase_upgrade_speed_mult = 10.0
+		starbase_module_build_speed_mult = 10.0
+		starbase_building_build_speed_mult = 10.0
+
+		planet_building_build_speed_mult = 10.00
+		megastructure_build_speed_mult = 10.0
+		
+		country_unity_produces_mult = 5.0
+		country_influence_produces_mult = 5.0
+		terraform_speed_mult = 10.0
+		
+		species_leader_exp_gain = 1.0
+	}
+
+	potential = {  
+		is_ai = no  
+	} 
+
+	ai_weight = {
+        	weight = 0
+    	}
+}
+
+
+dtf_defensive_war = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 0
+
+	prerequisites = {
+		"tech_cr_access"
+	}
+
+	allow = {
+		has_edict = dimensional_time_fault
+	}
+
+	resources = {
+		category = edicts
+		cost = {
+			influence = 1
+		}
+	}
+
+	modifier = {
+		country_energy_produces_mult	 = -0.95
+		country_minerals_produces_mult = -0.95
+		country_alloys_produces_mult	 = -0.95
+		country_war_exhaustion_mult = -100.0
+
+		pop_growth_speed = -10.0
+
+		planet_pop_assembly_mult = 10.0
+
+		leaders_unity_cost_mult = -0.95
+
+		starbase_shipyard_build_alloys_cost_mult = -0.99
+
+		shipsize_cr_corvette_build_speed_mult = 10
+		shipsize_cr_destroyer_build_speed_mult = 10
+		shipsize_cr_cruiser_build_speed_mult = 10
+		shipsize_cr_dreadnought_build_speed_mult = 10
+		shipsize_cr_battleship_build_speed_mult = 10
+		shipsize_cr_titan_build_speed_mult = 10
+		cr_ships_upkeep_mult = -10.0
+
+		ships_upkeep_mult = -1.0
+		ship_hull_mult  = -0.50
+		ship_armor_mult = -0.50
+	}
+
+	potential = {  
+		is_ai = no  
+	} 
+
+	ai_weight = {
+        	weight = 0
+    	}
+}

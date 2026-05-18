@@ -1,0 +1,143 @@
+objectTypes = {
+
+	#######  civilian frame  #######
+	
+	
+	####### stations #######	
+	
+	pdxmesh = {
+		name = "lantean_01_terraforming_station_mesh"
+		file = "gfx/models/ships/mammalian_01/mammalian_01_terraforming_station.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "lantean_01_orbital_station_mesh"
+		file = "gfx/models/ships/lantean_01/Civilian_Assets/starbase/lantean_01_outpost_frame.mesh"
+		scale = 1.0
+	}
+		
+	pdxmesh = {
+		name = "lantean_01_orbital_station_frame_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+		scale = 1.0
+	}		
+			
+	pdxmesh = {
+		name = "lantean_01_orbital_station_assemblyyard_section_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "lantean_01_orbital_station_hangarbay_section_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "lantean_01_orbital_station_refinery_section_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "lantean_01_orbital_station_science_section_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "lantean_01_science_station_mesh"
+		file = "gfx/models/ships/lantean_01/Civilian_Assets/research_station/lantean_01_research_frame.mesh"
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "lantean_01_science_station_frame_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"	
+	}
+	
+	pdxmesh = {
+		name = "lantean_01_military_station_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "lantean_01_military_station_large_mesh"
+		file = "gfx/models/ships/lantean_01/Civilian_Assets/starbase/lantean_01_starfort_frame.mesh"
+		scale = 1.0
+	}	
+	
+	pdxmesh = {
+		name = "lantean_01_military_station_medium_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+		scale = 1.0
+	}	
+	
+	pdxmesh = {
+		name = "lantean_01_military_station_small_mesh"
+		file = "gfx/models/ships/lantean_01/Civilian_Assets/starbase/lantean_01_defplatform_frame.mesh"
+		scale = 1.0
+	}	
+	
+	pdxmesh = {
+		name = "lantean_01_military_station_section_heavy_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "lantean_01_military_station_section_medium_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "lantean_01_military_station_section_light_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+		scale = 1.0
+	}
+	
+
+	
+	pdxmesh = {
+		name = "lantean_01_mining_station_mesh"
+		file = "gfx/models/ships/lantean_01/Civilian_Assets/mining_station/lantean_01_mining_frame.mesh"
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "lantean_01_mining_station_frame_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+		scale = 1.0
+	}
+	
+	####### civilian ships  #######	
+	
+	pdxmesh = {
+		name = "lantean_01_science_mesh"
+		file = "gfx/models/ships/lantean_01/Civilian_Assets/science_ship/lantean_01_science_ship_frame.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "lantean_01_construction_mesh"
+		file = "gfx/models/ships/lantean_01/Civilian_Assets/construction_ship/lantean_01_construction_frame.mesh"
+		scale = 1.0
+	}
+	
+	
+	pdxmesh = {
+		name = "lantean_01_transport_mesh"
+		file = "gfx/models/ships/lantean_01/Civilian_Assets/transport_ship/lantean_01_transport_frame.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "lantean_01_colony_mesh"
+		file = "gfx/models/ships/lantean_01/Civilian_Assets/colony_ship/lantean_01_colony_frame.mesh"
+		scale = 1.0
+	}	
+}

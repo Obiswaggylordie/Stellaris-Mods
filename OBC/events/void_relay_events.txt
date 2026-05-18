@@ -1,0 +1,702 @@
+###Events Activated On Start###
+
+namespace = void_relay
+
+
+# Test to see if I could make unconfigured relays default ownership to whoever has Maethrillia or the Ark, every month.
+#country_event = {
+#	id = void_relay.69
+#	hide_window = yes
+#	is_triggered_only = yes
+#
+#	trigger = {
+#		any_owned_planet = {
+#			OR = {
+#				has_deposit = d_ark_grid
+#				has_deposit = d_maethrillian_grid
+#			}
+#		}
+#	}
+#
+#	immediate = {
+#		this = {
+#			save_global_event_target_as = relay_master
+#		}
+#		every_megastructure = {
+#			limit = {
+#				is_megastructure_type = void_relay_deactivate				
+#			}
+#			set_owner = event_target:relay_master
+#		}
+#	}
+#}
+
+# Relay Management Menu
+country_event = {
+	id = void_relay.1
+	title = "void_relay.1.title"
+	desc = "void_relay.1.desc"
+	show_sound = event_default
+	
+	hide_window = no
+	is_triggered_only = yes
+	
+	option = { # Deactivate all Relays
+		name = "void_relay.1.a"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					OR = {
+						is_megastructure_type = void_relay
+						is_megastructure_type = void_relay_alpha
+						is_megastructure_type = void_relay_beta
+						is_megastructure_type = void_relay_delta
+						is_megastructure_type = void_relay_gamma
+						is_megastructure_type = void_relay_lambda
+						is_megastructure_type = void_relay_epsilon
+					}
+				}
+				if = {
+					limit = {
+						is_megastructure_type = void_relay
+					}
+					upgrade_megastructure_to = void_relay_omega_inactive
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = void_relay_alpha
+					}
+					upgrade_megastructure_to = void_relay_alpha_inactive
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = void_relay_beta
+					}
+					upgrade_megastructure_to = void_relay_beta_inactive
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = void_relay_delta
+					}
+					upgrade_megastructure_to = void_relay_delta_inactive
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = void_relay_gamma
+					}
+					upgrade_megastructure_to = void_relay_gamma_inactive
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = void_relay_lambda
+					}
+					upgrade_megastructure_to = void_relay_lambda_inactive
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = void_relay_epsilon
+					}
+					upgrade_megastructure_to = void_relay_epsilon_inactive
+				}
+			}
+		}
+	}
+
+	option = { # Activate all Relays
+		name = "void_relay.1.b"
+
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					OR = {
+						is_megastructure_type = void_relay_omega_inactive
+						is_megastructure_type = void_relay_alpha_inactive
+						is_megastructure_type = void_relay_beta_inactive
+						is_megastructure_type = void_relay_delta_inactive
+						is_megastructure_type = void_relay_gamma_inactive
+						is_megastructure_type = void_relay_lambda_inactive
+						is_megastructure_type = void_relay_epsilon_inactive
+					}
+				}
+				if = {
+					limit = {
+						is_megastructure_type = void_relay_omega_inactive
+					}
+					upgrade_megastructure_to = void_relay
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = void_relay_alpha_inactive
+					}
+					upgrade_megastructure_to = void_relay_alpha
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = void_relay_beta_inactive
+					}
+					upgrade_megastructure_to = void_relay_beta
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = void_relay_delta_inactive
+					}
+					upgrade_megastructure_to = void_relay_delta
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = void_relay_gamma_inactive
+					}
+					upgrade_megastructure_to = void_relay_gamma
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = void_relay_lambda_inactive
+					}
+					upgrade_megastructure_to = void_relay_lambda
+				}
+				else_if = {
+					limit = {
+						is_megastructure_type = void_relay_epsilon_inactive
+					}
+					upgrade_megastructure_to = void_relay_epsilon
+				}
+			}
+		}
+	}
+
+	option = { # Access Relay Management
+		name = "void_relay.1.c"
+		hidden_effect = {
+			country_event = { id = void_relay.2 }
+		}
+	}
+
+	option = { # Assume control of all Relays
+		name = "void_relay.1.d"
+		hidden_effect = {
+			this = {
+				save_global_event_target_as = relay_controller
+			}
+			every_megastructure = {
+				limit = {
+					OR = {
+						is_megastructure_type = void_relay
+						is_megastructure_type = void_relay_omega_inactive
+						is_megastructure_type = void_relay_alpha
+						is_megastructure_type = void_relay_alpha_inactive
+						is_megastructure_type = void_relay_beta
+						is_megastructure_type = void_relay_beta_inactive
+						is_megastructure_type = void_relay_delta
+						is_megastructure_type = void_relay_delta_inactive
+						is_megastructure_type = void_relay_gamma
+						is_megastructure_type = void_relay_gamma_inactive
+						is_megastructure_type = void_relay_lambda
+						is_megastructure_type = void_relay_lambda_inactive
+						is_megastructure_type = void_relay_epsilon
+						is_megastructure_type = void_relay_epsilon_inactive	
+						is_megastructure_type = void_relay_deactivate		
+					}
+				}
+				set_owner = event_target:relay_controller
+			}
+		}
+	}
+
+	option = { # Access Perdition & Genesis
+		name = "void_relay.1.x"
+
+		allow = {
+			any_owned_megastructure = {
+				is_megastructure_type = crucible
+			}
+		}
+
+		hidden_effect = {
+			country_event = { id = perdition_genesis.1 }
+		}
+	}
+	
+	option = { # Disable Relay Control
+		name = "void_relay.1.y"
+
+		allow = {
+			event_target:obicitadel = {
+				has_deposit = d_citadel_relay_control
+			} 
+		}
+		
+		hidden_effect = {
+			event_target:obicitadel = {
+				remove_deposit = d_citadel_relay_control
+				add_deposit = d_citadel_inactive_relay_control
+			}
+			
+			add_resource = {
+				sr_sdc = 1
+			}
+		}
+	}
+
+	option = { # Exit Menu
+		name = "void_relay.1.z"
+	}
+}
+
+# Relay Power Management
+country_event = {
+	id = void_relay.2
+	title = "void_relay.2.title"
+	desc = "void_relay.2.desc"
+	show_sound = event_default
+	
+	hide_window = no
+	is_triggered_only = yes
+
+	option = { # Deactivate Omega Relays
+		name = "void_relay.2.a"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = void_relay
+				}
+				upgrade_megastructure_to = void_relay_omega_inactive
+			}
+		}
+	}
+
+	option = { # Deactivate Alpha Relays
+		name = "void_relay.2.b"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = void_relay_alpha
+				}
+				upgrade_megastructure_to = void_relay_alpha_inactive
+			}
+		}
+	}
+
+	option = { # Deactivate Beta Relays
+		name = "void_relay.2.c"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = void_relay_beta
+				}
+				upgrade_megastructure_to = void_relay_beta_inactive
+			}
+		}
+	}
+
+	option = { # Deactivate Delta Relays
+		name = "void_relay.2.d"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = void_relay_delta
+				}
+				upgrade_megastructure_to = void_relay_delta_inactive
+			}
+		}
+	}
+
+	option = { # Deactivate Gamma Relays
+		name = "void_relay.2.e"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = void_relay_gamma
+				}
+				upgrade_megastructure_to = void_relay_gamma_inactive
+			}
+		}
+	}
+
+	option = { # Deactivate Lambda Relays
+		name = "void_relay.2.f"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = void_relay_lambda
+				}
+				upgrade_megastructure_to = void_relay_lambda_inactive
+			}
+		}
+	}
+
+	option = { # Activation Menu
+		name = "void_relay.2.y"
+		hidden_effect = {
+			country_event = { id = void_relay.3 }
+		}
+	}
+
+	option = { # Back to Menu
+		name = "void_relay.2.z"
+		hidden_effect = {
+			country_event = { id = void_relay.1 }
+		}
+	}
+}
+
+# Activation Menu
+country_event = {
+	id = void_relay.3
+	title = "void_relay.3.title"
+	desc = "void_relay.3.desc"
+	show_sound = event_default
+	
+	hide_window = no
+	is_triggered_only = yes
+
+	option = { # Activate Omega Relays
+		name = "void_relay.3.a"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = void_relay_omega_inactive
+
+				}
+				upgrade_megastructure_to = void_relay
+			}
+		}
+	}
+
+	option = { # Activate Alpha Relays
+		name = "void_relay.3.b"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = void_relay_alpha_inactive
+				}
+				upgrade_megastructure_to = void_relay_alpha
+			}
+		}
+	}
+
+	option = { # Activate Beta Relays
+		name = "void_relay.3.c"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = void_relay_beta_inactive
+				}
+				upgrade_megastructure_to = void_relay_beta
+			}
+		}
+	}
+
+	option = { # Activate Delta Relays
+		name = "void_relay.3.d"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = void_relay_delta_inactive
+				}
+				upgrade_megastructure_to = void_relay_delta
+			}
+		}
+	}
+
+	option = { # Activate Gamma Relays
+		name = "void_relay.3.e"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = void_relay_gamma_inactive
+				}
+				upgrade_megastructure_to = void_relay_gamma
+			}
+		}
+	}
+
+	option = { # Activate Lambda Relays
+		name = "void_relay.3.f"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					is_megastructure_type = void_relay_lambda_inactive
+				}
+				upgrade_megastructure_to = void_relay_lambda
+			}
+		}
+	}
+
+	option = { # Back to Menu
+		name = "void_relay.3.z"
+		hidden_effect = {
+			country_event = { id = void_relay.1 }
+		}
+	}
+}
+
+# Reconfiguration Menu
+country_event = {
+	id = void_relay.4
+	title = "void_relay.4.title"
+	desc = "void_relay.4.desc"
+	show_sound = event_default
+	
+	hide_window = no
+	is_triggered_only = yes
+
+	option = { # Omega to Alpha
+		name = "void_relay.4.a"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					AND = {
+						is_megastructure_type = void_relay_deactivate
+						has_megastructure_flag = relay_omega		
+					}
+
+				}
+				upgrade_megastructure_to = void_relay_alpha
+			}
+		}
+	}
+
+	option = { # Omega to Beta
+		name = "void_relay.4.b"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					AND = {
+						is_megastructure_type = void_relay_deactivate
+						has_megastructure_flag = relay_omega	
+					}
+
+				}
+				upgrade_megastructure_to = void_relay_beta
+			}
+		}
+	}
+
+	option = { # Omega to Delta
+		name = "void_relay.4.c"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					AND = {
+						is_megastructure_type = void_relay_deactivate
+						has_megastructure_flag = relay_omega
+					}
+
+				}
+				upgrade_megastructure_to = void_relay_delta
+			}
+		}
+	}
+
+	option = { # Omega to Gamma
+		name = "void_relay.4.d"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					AND = {
+						is_megastructure_type = void_relay_deactivate
+						has_megastructure_flag = relay_omega
+					}
+
+				}
+				upgrade_megastructure_to = void_relay_gamma
+			}
+		}
+	}
+
+	option = { # Omega to Lambda
+		name = "void_relay.4.e"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					AND = {
+						is_megastructure_type = void_relay_deactivate
+						has_megastructure_flag = relay_omega
+					}
+
+				}
+				upgrade_megastructure_to = void_relay_lambda
+			}
+		}
+	}
+
+	option = { # Alpha to Omega
+		name = "void_relay.4.f"
+		hidden_effect = {
+			every_megastructure = {
+				limit = {
+					AND = {
+						is_megastructure_type = void_relay_deactivate
+						has_megastructure_flag = relay_alpha
+					}
+
+				}
+				upgrade_megastructure_to = void_relay
+			}
+		}
+	}
+
+	option = { # Back to Menu
+		name = "void_relay.4.z"
+		hidden_effect = {
+			country_event = { id = void_relay.1 }
+		}
+	}
+}
+
+
+## Deactivate ALL Relays
+#country_event = {
+#	id = void_relay.2
+#	is_triggered_only = yes 
+#	hide_window = yes
+#
+#	immediate = {
+#		
+#		every_megastructure = {
+#			limit = {
+#				OR = {
+#					is_megastructure_type = void_relay
+#					is_megastructure_type = void_relay_alpha
+#					is_megastructure_type = void_relay_beta
+#					is_megastructure_type = void_relay_delta
+#					is_megastructure_type = void_relay_gamma
+#					is_megastructure_type = void_relay_lambda
+#				}
+#			}
+#			upgrade_megastructure_to = void_relay_deactivate
+#		}
+#	}
+#}
+#
+## Deactivate Omega Relays
+#country_event = {
+#	id = void_relay.1
+#	is_triggered_only = yes 
+#	hide_window = yes
+#
+#	immediate = {
+#		
+#		every_megastructure = {
+#			limit = {
+#				is_megastructure_type = void_relay
+#			}
+#			upgrade_megastructure_to = void_relay_deactivate
+#		}
+#	}
+#}
+#
+## Deactivate Alpha Relays
+#country_event = {
+#	id = void_relay.3
+#	is_triggered_only = yes 
+#	hide_window = yes
+#
+#	immediate = {
+#		
+#		every_megastructure = {
+#			limit = {
+#				is_megastructure_type = void_relay_alpha
+#			}
+#			upgrade_megastructure_to = void_relay_deactivate
+#		}
+#	}
+#}
+#
+## Deactivate Beta Relays
+#country_event = {
+#	id = void_relay.1
+#	is_triggered_only = yes 
+#	hide_window = yes
+#
+#	immediate = {
+#		
+#		every_megastructure = {
+#			limit = {
+#				OR = {
+#					is_megastructure_type = void_relay
+#					is_megastructure_type = void_relay_alpha
+#					is_megastructure_type = void_relay_beta
+#					is_megastructure_type = void_relay_delta
+#					is_megastructure_type = void_relay_gamma
+#					is_megastructure_type = void_relay_lambda
+#				}
+#			}
+#			upgrade_megastructure_to = void_relay_deactivate
+#		}
+#	}
+#}
+#
+## Deactivate ALL Relays
+#country_event = {
+#	id = void_relay.1
+#	is_triggered_only = yes 
+#	hide_window = yes
+#
+#	immediate = {
+#		
+#		every_megastructure = {
+#			limit = {
+#				OR = {
+#					is_megastructure_type = void_relay
+#					is_megastructure_type = void_relay_alpha
+#					is_megastructure_type = void_relay_beta
+#					is_megastructure_type = void_relay_delta
+#					is_megastructure_type = void_relay_gamma
+#					is_megastructure_type = void_relay_lambda
+#				}
+#			}
+#			upgrade_megastructure_to = void_relay_deactivate
+#		}
+#	}
+#}
+#
+## Deactivate ALL Relays
+#country_event = {
+#	id = void_relay.1
+#	is_triggered_only = yes 
+#	hide_window = yes
+#
+#	immediate = {
+#		
+#		every_megastructure = {
+#			limit = {
+#				OR = {
+#					is_megastructure_type = void_relay
+#					is_megastructure_type = void_relay_alpha
+#					is_megastructure_type = void_relay_beta
+#					is_megastructure_type = void_relay_delta
+#					is_megastructure_type = void_relay_gamma
+#					is_megastructure_type = void_relay_lambda
+#				}
+#			}
+#			upgrade_megastructure_to = void_relay_deactivate
+#		}
+#	}
+#}
+#
+## Deactivate ALL Relays
+#country_event = {
+#	id = void_relay.1
+#	is_triggered_only = yes 
+#	hide_window = yes
+#
+#	immediate = {
+#		
+#		every_megastructure = {
+#			limit = {
+#				OR = {
+#					is_megastructure_type = void_relay
+#					is_megastructure_type = void_relay_alpha
+#					is_megastructure_type = void_relay_beta
+#					is_megastructure_type = void_relay_delta
+#					is_megastructure_type = void_relay_gamma
+#					is_megastructure_type = void_relay_lambda
+#				}
+#			}
+#			upgrade_megastructure_to = void_relay_deactivate
+#		}
+#	}
+#}
+#
+#

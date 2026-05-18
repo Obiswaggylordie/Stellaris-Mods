@@ -1,0 +1,410 @@
+@homeworld_min_size = 18
+@homeworld_max_size = 21
+
+quarian_system = {
+	flags = { empire_home_system }
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		# has custom resources, so don't set up the defaults
+		# generate_home_system_resources = yes
+	}
+	class = sc_neutron_star
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 190
+	}
+	usage = custom_empire
+	planet = {
+		class = star
+		size = 90
+		orbit_distance = 0
+		flags = { starting_deposit starting_research_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_physics_3
+		}
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 160
+		orbit_angle = { min = 90 max = 270 }
+		size = 1
+		has_ring = no
+		flags = { starting_deposit }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_minerals_2
+		}
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 5
+		has_ring = no
+		flags = { starting_deposit starting_mining_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_minerals_3
+		}
+	}
+	planet = {
+		class = pc_crystal_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 3
+		has_ring = no
+		flags = { starting_deposit }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_rare_crystals_1
+		}
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 9
+		has_ring = no
+		flags = { starting_deposit starting_mining_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_minerals_4
+		}
+	}
+	planet = {
+		class = pc_ice_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 13
+		has_ring = no
+		flags = { starting_deposit starting_mining_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_energy_4
+		}
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 11
+		has_ring = no
+		flags = { starting_deposit starting_mining_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_alloys_2
+		}
+	}
+	planet = {
+		class = pc_ice_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 9
+		has_ring = no
+		flags = { starting_deposit }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_energy_3
+		}
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 5
+		has_ring = no
+		flags = { starting_deposit starting_mining_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_alloys_1
+		}
+	}
+	planet = {
+		class = pc_ice_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+		flags = { starting_deposit starting_mining_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_energy_5
+		}
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+		flags = { starting_deposit starting_mining_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_minerals_5
+		}
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 5
+		has_ring = no
+		flags = { starting_deposit starting_mining_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_trade_value_3
+		}
+	}
+	planet = {
+		class = ideal_planet_class
+		orbit_distance = 85
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = @homeworld_min_size max = @homeworld_max_size }
+		home_planet = yes
+		starting_planet = yes
+		has_ring = yes
+		deposit_blockers =  none
+		modifiers = none
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			generate_empire_home_planet = yes
+		}
+	}
+}
+
+void_dweller_quarian_system = {
+	flags = { empire_home_system }
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		# has custom resources, so don't set up the defaults
+		# generate_home_system_resources = yes
+	}
+	class = sc_neutron_star
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 190
+	}
+	#usage = custom_empire
+	usage = origin
+	planet = {
+		class = star
+		size = 90
+		orbit_distance = 0
+		flags = { starting_deposit starting_research_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_physics_3
+		}
+	}
+	planet = {
+		class = pc_molten
+		orbit_distance = 140
+		orbit_angle = { min = 90 max = 270 }
+		flags = { ignore_startup_effect habitat_3_planet has_megastructure }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			set_deposit = d_energy_4 # replaces the +4 energy deposit in the above initializer
+		}
+		moon = {
+			class = pc_habitat
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 6
+			flags = { void_dweller_habitat_3 megastructure habitat energy_habitat }
+			deposit_blockers = none
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+			}
+		}
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+		size = 1
+		has_ring = no
+		flags = { starting_deposit }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_minerals_2
+		}
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 5
+		has_ring = no
+		flags = { starting_deposit starting_mining_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_minerals_3
+		}
+	}
+	planet = {
+		class = pc_crystal_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 3
+		has_ring = no
+		flags = { starting_deposit }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_rare_crystals_1
+		}
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 10
+		orbit_angle = { min = 90 max = 270 }
+		size = 11
+		has_ring = no
+		flags = { starting_deposit starting_mining_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_alloys_2
+		}
+	}
+	planet = {
+		class = pc_ice_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 9
+		has_ring = no
+		flags = { starting_deposit }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_energy_3
+		}
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 5
+		has_ring = no
+		flags = { starting_deposit starting_mining_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_alloys_1
+		}
+	}
+	planet = {
+		class = pc_ice_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+		flags = { starting_deposit starting_mining_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_energy_5
+		}
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+		flags = { starting_deposit starting_mining_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_minerals_5
+		}
+	}
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 5
+		orbit_angle = { min = 90 max = 270 }
+		size = 5
+		has_ring = no
+		flags = { starting_deposit starting_mining_target }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			add_deposit = d_trade_value_3
+		}
+	}
+	planet = {
+		class = pc_barren_cold
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		flags = { ignore_startup_effect habitat_2_planet has_megastructure }
+		has_ring = yes
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			set_deposit = d_minerals_4 # replaces the +4 minerals deposit in the above initializer
+		}
+		moon = {
+			class = pc_habitat
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 6
+			flags = { void_dweller_habitat_2 megastructure habitat mining_habitat }
+			deposit_blockers = none
+			init_effect = {
+				clear_deposits = yes
+				prevent_anomaly = yes
+			}
+		}
+	}
+	planet = {
+		class = pc_frozen
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = @homeworld_min_size max = @homeworld_max_size }
+		has_ring = yes
+		flags = { ignore_startup_effect has_megastructure }
+		init_effect = {
+			clear_deposits = yes
+			prevent_anomaly = yes
+			set_deposit = d_engineering_3
+		}
+		moon = {
+			class = pc_habitat
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+			size = 6
+			starting_planet = yes
+			flags = { void_dweller_habitat_1 special_start_planet megastructure habitat research_habitat }
+			deposit_blockers = none
+		}
+	}
+}

@@ -14,10 +14,12 @@
  decision_remove_stargate: "Remove Stargate"
  
  WEED_CLOAK: "Ascended Cloaking"
- WEEd_CLOAK_SET: "Ascended Cloaking"
+ WEED_CLOAK_SET: "Ascended Cloaking"
 
  Zpm_Installed_On_Planet: "Super Dimension Core Installed"
  Zpm_Installed_On_Planet_desc: "Our planet's powergrid has been massively augmented through the installation of a Zei'a Super Dimension Core."
+
+ FLAG_CATEGORY_stargate_traits: "Stargate"
 
 # Traits
  trait_ancient: "§BPrecursor§!"
@@ -34,7 +36,7 @@
 
  trait_asuran: "§HUviik Replicator§!"
  trait_asuran_desc: "A special kind of replicators who decided to take on a human form. They possess all knowledge of their creators, the Ancients."
- asuran_trait_tooltip:1 "Robot resource production on §YMachine§! worlds increased by §G2%§! once §EMachine Ascension§! is unlocked."
+ asuran_trait_tooltip: "Robot resource production on §YMachine§! worlds increased by §G2%§! once §EMachine Ascension§! is unlocked."
 
  trait_nox: "§GDunmeri§!"
  trait_nox_desc: "The Nox are one of the oldest races in the galaxy. They have near-ascension powers and live on the planet Gaia"
@@ -43,6 +45,15 @@
  Inactive_Stargate_On_Planet_desc: "In its current state, this Stargate cannot initiate or receive wormhole connections." 
 
 # Decisions
+ decision_ascend_pop_to_4: "Ascend a pop"
+ decision_ascend_pop_to_4_desc: "Ascend a pop from the third stage to the fourth stage, liberating their mind from their body and allowing them to reach untold power."
 
-decision_ascend_pop_to_4: "Ascend a pop"
-decision_ascend_pop_to_4_desc: "Ascend a pop from the third stage to the fourth stage, liberating their mind from their body and allowing them to reach untold power."
+ decision_zpm_installation: "Install SDC into Planetary Powergrid"
+ decision_zpm_installation_desc: "Augment this planet's powergrid with a Zei'a Super Dimension Core, cutting down upkeep on virtually every energy sector and massively enhancing productivity."
+
+# Technology (I'M TWEAKING SO FUCKING HARD RIGHT NOW HOLY SHIT)
+ tech_zeia_sdc: "Zei'a Super Dimension Core"
+ tech_zeia_sdc_desc: "The unique and powerful final dimension core iteration, capable of supplying untold amounts of power."
+
+ tech_zeia_chair: "Zei'a Control Chair"
+ tech_zeia_chair_desc: "A bio-crystalline telepathic control interface chair, allowing its user in-depth to even absolute access and dominion over all systems integrated with it."

@@ -1,0 +1,127 @@
+##########################################################################
+# Icon Frames
+##########################################################################
+# 1 = Good (green)
+# 2 = Mixed (yellow)
+# 3 = Bad (red)
+# 4 = Neutral/flavor (White)
+# 5 = Precursor (Blue special)
+# 6 = Event (Purple)
+
+##########################################################################
+# Planet Modifiers
+##########################################################################
+
+stargate_trade_on_cooldown = {}
+
+sdc_installed = {
+	icon = "gfx/interface/icons/planet_modifiers/sdc_installed.dds"
+	icon_frame = 6
+
+	planet_jobs_produces_mult = 1
+	planet_jobs_robotic_produces_mult = 10
+	planet_pop_assembly_mult = 1
+	planet_pop_assembly_organic_mult = 1
+}
+
+uviik_monitor = {
+	planet_jobs_produces_mult = 0.5
+	planet_pop_assembly_add = 5.0
+	planet_army_build_speed_mult = 0.5
+	armies_upkeep_mult = -0.50
+	planet_building_build_speed_mult = 0.5
+	planet_decision_enact_speed_mult = 0.5
+	planet_stability_add = 5
+	planet_crime_mult = -0.5
+	pop_demotion_time_mult -0.5
+	planet_amenities_mult = 0.5
+	
+	icon = "gfx/interface/icons/planet_modifiers/uviik_monitor.dds"
+	icon_frame = 5
+}
+
+uviik_submonitor = {
+	planet_jobs_produces_mult = 0.3
+	planet_pop_assembly_add = 3.0
+	planet_army_build_speed_mult = 0.3
+	armies_upkeep_mult = -0.30
+	planet_building_build_speed_mult = 0.3
+	planet_decision_enact_speed_mult = 0.3
+	planet_stability_add = 3
+	planet_crime_mult = -0.3
+	pop_demotion_time_mult -0.3
+	planet_amenities_mult = 0.3
+	
+	icon = "gfx/interface/icons/planet_modifiers/uviik_submonitor.dds"
+	icon_frame = 5
+}
+
+dtf_pm_dimensional_time_fault = {
+
+	#planet_jobs_energy_produces_mult = 0.15
+	#planet_jobs_alloys_produces_mult = 0.15
+	planet_building_build_speed_mult = 1.00
+	#planet_districts_cost_mult = 1.00
+
+	planet_max_districts_add = 42
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_strong_magnetic_field.dds"
+	icon_frame = 5
+}
+
+dtf_pm_factory_full_operation = {
+
+	planet_jobs_energy_produces_mult = 10.00
+	planet_jobs_minerals_produces_mult = 10.00
+	planet_jobs_alloys_produces_mult = 10.00
+	planet_jobs_produces_mult = 10.00
+	planet_building_build_speed_mult = 10.00
+	planet_decision_enact_speed_mult = 10.00
+	planet_clear_blocker_speed_mult = 10.00
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_resources.dds"
+	icon_frame = 5
+}
+
+obi_citadel_sealed = {
+
+	planet_orbital_bombardment_damage = -2.50
+	planet_immigration_pull_mult = -10000
+	planet_emigration_push_mult = -10000
+	pop_resettlement_cost_mult = 99
+	pop_happiness = -0.50
+	planet_stability_add = -50
+	army_defense_morale_mult = 50
+	army_defense_damage_mult = 50
+	army_defense_health_mult = 50
+
+	icon = "gfx/interface/icons/planet_modifiers/citadel_sealed"
+	icon_frame = 6
+}
+
+
+Inactive_Stargate_On_Planet = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_inactive_stargate_on_planet.dds"
+	icon_frame = 6
+}
+
+Active_Stargate_On_Planet = {
+	pop_growth_from_immigration = 5.00
+	pop_resettlement_cost_mult = -5.00
+	trade_value_mult = 5.00
+	colony_start_num_pops_add = 5
+	planet_colony_development_speed_mult = 5.00
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_active_stargate_on_planet.dds"
+	icon_frame = 6
+}
+
+Protected_Stargate_On_Planet = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_protected_stargate_on_planet.dds"
+	icon_frame = 6
+}
+
+Destroyed_Stargate_On_Planet = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_destroyed_stargate_on_planet.dds"
+	icon_frame = 2
+}

@@ -1,0 +1,60 @@
+namespace = zeiastart
+
+country_event = {
+	id = zeiastart.01
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+        OR = {
+            has_origin = origin_obi_zeia
+            #has_trait = trait_forerunner_species
+        }
+	}
+
+	immediate = {
+        set_country_flag = obc_zeia
+        #set_country_flag = can_use_efg_tech
+        #give_technology = { tech = tech_efg_pretech message = no }
+        #give_technology = { tech = tech_forerunner_start message = no }
+
+		capital_scope = {
+			clear_blockers = yes
+			clear_deposits = yes
+            add_deposit = d_aether
+            add_deposit = d_naos_domain
+            add_deposit = d_naos_great_temple
+            add_deposit = d_naos_council_pavilion
+            add_deposit = d_naos_hall_of_records
+            add_deposit = d_naos_embassy_complex
+            add_deposit = d_naos_city_ship_hex_docks
+            add_deposit = d_agon_domain
+            add_deposit = d_agon_colosseum
+            add_deposit = d_agon_grand_factorum
+            add_deposit = d_torvus_domain
+            add_deposit = d_torvus_central_hydrodynamo
+            add_deposit = d_torvus_preserve
+            add_deposit = d_fanum_domain
+            add_deposit = d_fanum_hall_of_astronomy
+            add_deposit = d_fanum_sanctuary_fortress
+			#add_deposit = d_well_of_all_sparks_duplicate
+			#add_deposit = d_cybertronian_world_core
+			#add_deposit = d_cybertronian_city
+			#add_deposit = d_cybertronian_city
+			#add_deposit = d_space_bridge
+			#add_deposit = d_energon_bridge
+			#add_deposit = d_active_omega_lock
+			#add_deposit = d_crystal_city
+			#add_deposit = d_teletraan_one
+			#add_deposit = d_iacon_city
+			#add_deposit = d_kaon_city
+			#add_deposit = d_sanctuary_fortress
+			#add_deposit = d_inactive_trypticon
+			#add_deposit = d_depleted_all_spark
+			#set_planet_flag = omega_lock_5
+			#set_planet_flag = has_depleted_all_spark
+			#remove_building = building_research_lab_1
+			#remove_building = building_commercial_zone
+		}
+    }
+}

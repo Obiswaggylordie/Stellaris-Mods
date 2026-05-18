@@ -1,0 +1,79 @@
+#### Unification Wars of Terra #####
+unification_war_terra_planet_modifier = {	
+	icon = "gfx/interface/icons/planet_modifiers/icon_raptor_imperialis.dds"
+	job_soldier_add = 5
+	planet_stability_add = 10
+}
+
+# HIVE
+40khive_small_planet = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_hive.dds"
+	planet_jobs_produces_mult = 0.60
+	planet_max_buildings_add = 25
+	planet_crime_mult = 0.10
+	pop_environment_tolerance = 0.20 
+	pop_growth_speed = 0.4
+	trade_value_mult = 0.4 
+	planet_housing_mult = 0.4 
+	biological_pop_happiness = -0.30 
+	planet_army_build_speed_mult = 0.05
+}
+
+40khive_medium_planet = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_hive.dds"
+	planet_jobs_produces_mult = 1.60
+	planet_max_buildings_add = 50
+	planet_crime_mult = 0.15
+	pop_environment_tolerance = 0.20 
+	pop_growth_speed = 0.5
+	trade_value_mult = 0.75 
+	planet_housing_mult = 0.5 
+	biological_pop_happiness = -0.10 
+}
+
+40khive_industrial_planet = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_hive.dds"
+	planet_jobs_energy_produces_mult = 0.2
+	planet_pops_consumer_goods_upkeep_mult = -0.2
+	planet_job_artisan_produces_mult = 0.30
+	planet_max_buildings_add = 300
+	planet_crime_mult = 0.2
+	pop_environment_tolerance = -0.20 
+	pop_growth_speed = -0.30
+	planet_districts_cost_mult = 0.2
+	planet_crime_mult = 0.2
+}
+
+40ksuper_hive_planet = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_hive.dds"
+	planet_jobs_food_produces_mult = -0.3
+	planet_jobs_produces_mult = 3.20
+	planet_max_buildings_add = 100
+	planet_crime_mult = 0.3
+	pop_environment_tolerance = 0.40 
+	pop_growth_speed = 1.00 
+	trade_value_mult = 1.0 
+	planet_housing_mult = 0.5 
+	biological_pop_happiness = -0.30
+	planet_pops_consumer_goods_upkeep_mult = -0.4
+	planet_army_build_speed_mult = 0.15
+	planet_districts_cost_mult = 0.2
+}
+
+40kmega_hive_planet = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_hive.dds"
+	planet_jobs_energy_produces_mult = 0.4
+	planet_jobs_unity_produces_mult = 0.4
+	planet_jobs_food_produces_mult = -0.4
+	planet_jobs_produces_mult = 3.20
+	planet_max_buildings_add = 100
+	planet_crime_mult = 0.3
+	pop_environment_tolerance = 0.40 
+	pop_growth_speed = 1.00 
+	trade_value_mult = 1.0 
+	planet_housing_mult = 0.5 
+	biological_pop_happiness = -0.40
+	planet_pops_consumer_goods_upkeep_mult = -0.5
+	planet_army_build_speed_mult = 0.2
+	planet_districts_cost_mult = 0.3
+}

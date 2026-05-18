@@ -1,0 +1,188 @@
+#Flood Planets
+
+pc_flood_hive = {
+	entity = "flood_infected_planet"
+	preview_entity = "flood_infected_planet_01_entity"
+	picture = pc_flood_hive
+	entity_scale = @planet_standard_scale
+	
+	icon = GFX_planet_type_hive
+	
+	atmosphere_color 		= hsv { 0.75 0.2 0.7 }
+	atmosphere_intensity 	= 0.1
+	atmosphere_width 		= 1.2
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.dds"
+	
+	min_distance_from_sun = 40
+	max_distance_from_sun = 1000
+	
+	modifier = {
+		planet_orbital_bombardment_damage = -0.50
+		planet_jobs_produces_mult = 0.10
+		planet_max_buildings_add = 12
+		job_spawning_drone_add = 1
+		planet_resettlement_unemployed_destination_mult = 0.5
+	}
+	
+	spawn_odds = 0
+	extra_orbit_size = 1
+	extra_planet_count = 2
+	
+	can_be_moon = no
+	chance_of_ring = 0
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	can_be_invaded = no
+	show_health_bar_in_planet_view = yes
+	
+	colonizable = yes
+	district_set = hive_world
+	starting_planet = no
+	show_city = no
+	
+	carry_cap_per_free_district = @carry_cap_high
+}
+
+pc_flood_shield = {
+	entity = "flood_shield_world_planet"
+	preview_entity = "flood_shield_world_planet_01_entity"
+	entity_scale = @planet_standard_scale
+	picture = pc_flood_shield
+	icon = GFX_planet_type_hive
+	
+	climate = "wet"
+	
+	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.dds"
+	
+	
+	min_distance_from_sun = @habitable_min_distance
+	max_distance_from_sun = @habitable_max_distance
+	spawn_odds = 0
+	
+	show_city = no
+	
+	chance_of_ring = 0.0
+	
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	
+	can_be_invaded = no
+	
+	colonizable = yes
+	district_set = hive_world
+	starting_planet = no
+	orbit_lines = yes
+	uses_alternative_skies_for_moons = no
+	
+	is_artificial_planet = yes
+	
+	modifier = {
+		job_spawning_drone_add = 10
+		planet_max_buildings_add = 12
+		planet_orbital_bombardment_damage = -2.50
+		ship_orbital_bombardment_pop_damage_mult = -2.50
+		ship_orbital_bombardment_army_damage_mult = -2.50
+		army_collateral_damage_mult = -1.00
+		planet_jobs_produces_mult = 1.00
+		planet_housing_add = 20
+		pop_growth_speed = 1.00
+		planet_colony_development_speed_mult = 1.00
+	}
+	
+	carry_cap_per_free_district = @carry_cap_normal
+}
+
+pc_flood_city = {
+	entity = "flood_city_planet"
+	preview_entity = "flood_city_planet_01_entity"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_hive
+	picture = pc_flood_city
+
+	climate = "wet"
+
+	atmosphere_color		= hsv { 0.75 0.10 0.60 }		#DONE
+	atmosphere_intensity	= 1.0
+	atmosphere_width		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+
+	modifier = {
+		planet_jobs_produces_mult = 0.20
+		planet_orbital_bombardment_damage = -0.50
+		planet_max_buildings_add = 12
+		job_spawning_drone_add = 1
+		planet_resettlement_unemployed_destination_mult = 0.5
+	}
+
+	min_distance_from_sun = @habitable_min_distance
+	max_distance_from_sun = @habitable_max_distance
+	spawn_odds = 0
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+
+	fixed_city_level = 6
+
+	chance_of_ring = 0.2
+
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+
+	colonizable = yes
+	district_set = city_world
+	starting_planet = no
+	uses_alternative_skies_for_moons = yes
+
+	carry_cap_per_free_district = @carry_cap_high
+}
+
+
+pc_flood_ringworld_habitable = {
+	ringworld = yes
+	entity = "flood_01_ringworld_habitable_entity"
+	preview_entity = "flood_01_ringworld_habitable_entity_01_entity"
+	picture = pc_flood_halo_ring
+	icon = GFX_planet_type_ringworld
+	entity_scale = 1.0
+	enable_tilt = no
+	fixed_entity_scale = yes
+	atmosphere_color		= hsv { 0.0 0.0 1.0 }		#DONE
+	atmosphere_intensity	= 1.0
+	atmosphere_width		= 0.5
+	show_city = no
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	chance_of_ring = 0.0
+	planet_size = 10
+	moon_size = 1
+	colonizable = yes
+	district_set = ring_world
+	#ideal = yes
+	starting_planet = no
+	orbit_lines = no
+	has_colonization_influence_cost = no		# applies when within own borders
+
+	is_artificial_planet = yes
+	
+	can_be_invaded = no
+	show_health_bar_in_planet_view = yes
+
+	modifier = {
+		job_spawning_drone_add = 1
+		planet_max_buildings_add = 12
+		planet_orbital_bombardment_damage = -0.75
+		planet_jobs_produces_mult = 0.10
+		planet_housing_add = 20
+	}
+
+	carry_cap_per_free_district = @carry_cap_high
+}

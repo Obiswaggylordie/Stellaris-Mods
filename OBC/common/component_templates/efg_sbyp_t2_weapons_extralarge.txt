@@ -1,0 +1,237 @@
+
+
+
+############################################
+### XL Shock Cannon、現在は非表示
+############################################
+
+
+weapon_component_template = {
+	key = "EFG_SBYP_SHOCK_CANNON_XL_2"
+	size = extra_large
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_efg_ship_part_xl_cannon_2"
+	icon_frame = 1
+	prerequisites = { "tech_efg_weapons_7" }
+	component_set = "EFG_SBYP_SHOCK_CANNON_XL_CS_2"
+	projectile_gfx = "efg_blue_laser_sc_xl"
+	tags = { weapon_type_energy x_slot }
+	upgrades_to = "EFG_SBYP_SHOCK_CANNON_XL_3"
+	ai_tags = { weapon_role_artillery }
+
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_efg_t7_cost
+		}		
+		upkeep = {
+			energy = @l_efg_t7_uk_energy
+			alloys = @l_efg_t7_uk_alloys
+		}
+	}
+
+	power = -181.50
+	damage = { min = 497.00 max = 1350.00 }
+	shield_damage = 0.75
+	armor_damage = 1.50
+	hull_damage = 1.25
+	windup = { min = 20.0 max = 27.5 }
+	total_fire_time = 10.0
+	range = @efg_weapon_range_120
+	accuracy = 0.90
+	tracking = 0.15
+	
+	ai_weight = {
+		weight = 0
+	}
+	hidden = yes
+}
+
+
+
+
+
+
+############################################
+### Wave Motion Gun
+############################################
+
+weapon_component_template = {
+	key = "EFG_DISSEMINATION_WAVE_MOTION_GUN_2"
+	size = extra_large
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_efg_ship_part_dwm_gun_2"
+	icon_frame = 1
+	prerequisites = { "tech_efg_wave_motion_gun_2" }
+	component_set = "EFG_DISSEMINATION_WAVE_MOTION_GUN_CS_2"
+	projectile_gfx = "efg_dissemination_wave_motion_gun"
+	tags = { weapon_type_energy weapon_type_sby_wavemotion x_slot }
+	upgrades_to = "EFG_DISSEMINATION_WAVE_MOTION_GUN_3"
+	ai_tags = { weapon_role_artillery }
+
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_efg_t3_cost
+		}		
+		upkeep = {
+			energy = @xl_efg_t3_uk_energy
+			alloys = @xl_efg_t3_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_5_xl
+	#damage = { min = 8200.00 max = 16400.00 }
+	damage = { min = 2050.00 max = 4100.00 }
+	#shield_damage = 1.00
+	shield_penetration = 0.25
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 320.0 max = 320.0 }
+	#total_fire_time = 600
+	windup = { min = 160.0 max = 160.0 }
+	total_fire_time = 10
+	range = @efg_weapon_range_200
+	accuracy = 0.90
+	tracking = 0.90
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = 0
+	}
+
+	upgrades_to = "EFG_DISSEMINATION_WAVE_MOTION_GUN_3"
+}
+
+
+############################################
+###EXPANDED WAVE MOTION GUN
+############################################
+
+weapon_component_template = {
+	key = "EFG_EXPANDED_DISSEMINATION_WAVE_MOTION_GUN_2"
+	size = titanic
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_efg_ship_part_dwm_gun_2"
+	icon_frame = 1
+	prerequisites = { "tech_efg_wave_motion_gun_2" }
+	component_set = "EFG_EXPANDED_DISSEMINATION_WAVE_MOTION_GUN_CS_2"
+	projectile_gfx = "efg_expanded_dissemination_wave_motion_gun"
+	tags = { weapon_type_energy weapon_type_sby_wavemotion t_slot }
+	ai_tags = { weapon_role_artillery }
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @t_efg_t4_cost
+		}		
+		upkeep = {
+			energy = @t_efg_t4_uk_energy
+			alloys = @t_efg_t4_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_3_t
+	#damage = { min = 44500.00 max = 89000.00 }
+	damage = { min = 11129.00 max = 22250.00 }
+	shield_penetration = 0.25
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 360.0 max = 360.0 }
+	#total_fire_time = 720
+	windup = { min = 180.0 max = 180.0 }
+	total_fire_time = 10
+	range = @efg_weapon_range_250
+	
+	accuracy = 0.90
+	tracking = 0.90
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = 0
+	}
+
+	upgrades_to = "EFG_EXPANDED_DISSEMINATION_WAVE_MOTION_GUN_3"
+}
+
+
+############################################
+###SUPER SUPER_NOVA WAVE MOTION GUN 2
+############################################
+
+weapon_component_template = {
+	key = "EFG_SUPER_NOVA_DISSEMINATION_WAVE_MOTION_GUN_2"
+	size = titanic
+	#entity = "large_laser_gun_entity"
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_efg_ship_part_dwm_gun_2"
+	icon_frame = 1
+	prerequisites = { "tech_efg_wave_motion_gun_2" }
+	component_set = "EFG_SUPER_NOVA_DISSEMINATION_WAVE_MOTION_GUN_CS_2"
+	projectile_gfx = "efg_super_nova_dissemination_wave_motion_gun"
+	tags = { weapon_type_energy weapon_type_sby_wavemotion t_slot }
+	
+	ai_tags = { weapon_role_artillery }
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @t_efg_t4_cost
+		}		
+		upkeep = {
+			energy = @t_efg_t4_uk_energy
+			alloys = @t_efg_t4_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_2_f
+	#damage = { min = 2400000.00 max = 3000000.00 }
+	damage = { min = 600000.00 max = 750000.00 }
+	shield_penetration = 0.50
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	#windup = { min = 400.0 max = 400.0 }
+	#total_fire_time = 720
+	windup = { min = 200.0 max = 200.0 }
+	total_fire_time = 10
+	range = @efg_weapon_range_250
+	
+	accuracy = 0.90
+	tracking = 0.90
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = 0
+	}
+
+	upgrades_to = "EFG_SUPER_NOVA_DISSEMINATION_WAVE_MOTION_GUN_3"
+}

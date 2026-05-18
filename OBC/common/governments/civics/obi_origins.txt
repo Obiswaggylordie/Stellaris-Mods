@@ -1,0 +1,28 @@
+origin_obi_zeia = {
+
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_zeia_icon.dds"
+	picture = GFX_origin_zeia
+
+	starting_colony = pc_alpine
+	habitability_preference = pc_alpine
+
+	initializers = { obi_dasha_system_initializer }
+
+	possible = {
+		is_ai = no
+	}
+
+	description = "origin_tooltip_obi_zeia"
+
+	modifier = { 
+		all_technology_research_speed = 0.50
+		ship_shield_mult = 0.50
+	}
+
+	Advanced_start = no
+
+	ai_weight = {
+		weight = 0
+	}
+}

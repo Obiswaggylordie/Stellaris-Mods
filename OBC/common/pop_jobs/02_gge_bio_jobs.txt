@@ -1,0 +1,530 @@
+
+
+mce_head_researcher = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_mce_laboratory
+	clothes_texture_index = 1
+	icon = researcher
+
+	possible_precalc = can_fill_ruler_job
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	resources = {
+		category = planet_researchers
+		produces = {
+			physics_research = 300
+			engineering_research = 300
+			society_research = 300
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = research_subsidies
+				}
+			}
+			energy = 2
+		}
+	}
+
+	planet_modifier = {
+		planet_amenities_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			planet_amenities_add = -1
+		}
+	}
+
+	weight = {
+		weight = @ruler_job_weight
+		mult = value:job_weights_research_modifier|JOB|mce_head_researcher|
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 2
+			has_living_standard = { type = living_standard_academic_privilege }
+		}
+		modifier = {
+			factor = 5
+			has_job = mce_head_researcher
+		}
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
+	}
+}
+
+
+############################################################################
+# Specialist Jobs
+############################################################################
+
+mce_researcher = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_mce_laboratory
+	clothes_texture_index = 3
+	icon = researcher
+
+	possible_precalc = can_fill_specialist_job
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	resources = {
+		category = planet_researchers
+		produces = {
+			physics_research = 30
+			engineering_research = 30
+			society_research = 30
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mce_laboratory_2 }
+			}
+			physics_research = 60
+			engineering_research = 60
+			society_research = 60
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mce_laboratory_3 }
+			}
+			physics_research = 90
+			engineering_research = 90
+			society_research = 90
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mce_laboratory_4 }
+			}
+			physics_research = 120
+			engineering_research = 120
+			society_research = 120
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_valid_civic = civic_technocracy }
+			}
+			unity = 1
+		}
+
+		upkeep = {
+			consumer_goods = 2
+			food = 2
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = research_subsidies
+				}
+			}
+			energy = 1
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:job_weights_research_modifier|JOB|mce_researcher|
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 2
+			has_living_standard = { type = living_standard_academic_privilege }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_job = mce_researcher
+		}
+		modifier = {
+			factor = 0.8
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
+	}
+}
+
+
+
+mce_foundry = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_mce_laboratory
+	clothes_texture_index = 3
+	icon = foundry
+
+	possible_precalc = can_fill_worker_job
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_metallurgists
+		produces = {
+			alloys = 30
+			nanites = 30
+		}
+		produces = {
+			trigger = {
+				planet = {
+					has_planet_flag = has_material_requisitorium
+				}
+			}
+			alloys = @requisitorium_alloys_reduction
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mce_laboratory_2 }
+			}
+			alloys = 60
+			nanites = 60
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mce_laboratory_3 }
+			}
+			alloys = 90
+			nanites = 90
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mce_laboratory_4 }
+			}
+			alloys = 120
+			nanites = 120
+		}
+		upkeep = {
+			minerals = @mce_pop_cost_minerals_base
+		}
+		upkeep = {
+			trigger = {
+				planet = { has_active_building = building_mce_laboratory_2 }
+			}
+			minerals = @mce_pop_cost_minerals_add_1
+		}
+		upkeep = {
+			trigger = {
+				planet = { has_active_building = building_mce_laboratory_3 }
+			}
+			minerals = @mce_pop_cost_minerals_add_2
+		}
+		upkeep = {
+			trigger = {
+				planet = { has_active_building = building_mce_laboratory_4 }
+			}
+			minerals = @mce_pop_cost_minerals_add_3
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight # Fairly important job
+		mult = value:job_weights_modifier|JOB|mce_foundry|RESOURCE|alloys|
+		modifier = {
+			factor = 2
+			is_enslaved = yes
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 5
+			has_job = mce_foundry
+		}
+	}
+}
+
+
+############################################################################
+# Worker Jobs
+############################################################################
+
+
+mce_technician = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_mce_energy_plant
+	clothes_texture_index = 2
+	icon = technician
+
+	possible_precalc = can_fill_worker_job
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_technician
+		produces = {
+			energy = 30
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mce_energy_plant_2 }
+			}
+			energy = 60
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mce_energy_plant_3 }
+			}
+			energy = 90
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mce_energy_plant_4 }
+			}
+			energy = 120
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = capacity_subsidies
+				}
+			}
+			energy = 5
+		}
+	}
+
+	weight = {
+		weight = @worker_job_weight
+		mult = value:job_weights_modifier|JOB|mce_technician|RESOURCE|energy|
+		modifier = {
+			factor = 100
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			can_fill_specialist_job = no
+		}
+		modifier = {
+			factor = 8
+			is_enslaved = yes
+			can_take_servant_job = no
+			OR = {
+				has_trait = trait_syncretic_proles
+				has_trait = trait_robot_superconductive
+				has_trait = trait_ingenious
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}
+		# low income modifier
+		modifier = {
+			factor = 250
+			exists = planet
+			planet = {
+				has_available_jobs = "mce_technician"
+			}
+			exists = owner
+			owner = {
+				is_ai = yes
+				has_monthly_income = {
+					resource = energy
+					value < 20
+				}
+			}
+		}
+	}
+}
+
+mce_miner = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_mce_mining_plant
+	clothes_texture_index = 2
+	icon = miner
+
+
+	possible_precalc = can_fill_worker_job
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_miners
+		produces = {
+			minerals = 30
+			rare_crystals = 30
+			exotic_gases = 30
+			volatile_motes = 30
+			sr_zro = 30
+			sr_dark_matter = 30
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mce_mining_plant_2 }
+			}
+			minerals = 60
+			rare_crystals = 60
+			exotic_gases = 60
+			volatile_motes = 60
+			sr_zro = 60
+			sr_dark_matter = 60
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mce_mining_plant_3 }
+			}
+			minerals = 90
+			rare_crystals = 90
+			exotic_gases = 90
+			volatile_motes = 90
+			sr_zro = 90
+			sr_dark_matter = 90
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mce_mining_plant_4 }
+			}
+			minerals = 120
+			rare_crystals = 120
+			exotic_gases = 120
+			volatile_motes = 120
+			sr_zro = 120
+			sr_dark_matter = 120
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = mining_subsidies
+				}
+			}
+			energy = 5
+		}
+	}
+
+	weight = {
+		weight = @worker_job_weight
+		mult = value:job_weights_modifier|JOB|mce_miner|RESOURCE|minerals|
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			can_take_servant_job = no
+			NOT = { has_slavery_type = { type = slavery_indentured } }
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
+		}
+		modifier = {
+			factor = 200
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}
+
+		# low income modifier
+		modifier = {
+			factor = 1.1
+			exists = planet
+			planet = {
+				has_available_jobs = "mce_miner"
+			}
+			exists = owner
+			owner = {
+				is_ai = yes
+				has_monthly_income = {
+					resource = minerals
+					value < 0
+				}
+			}
+		}
+	}
+}

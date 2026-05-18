@@ -1,0 +1,25 @@
+objectTypes = {
+	pdxmesh = {
+		name = "lantean_01_titan_frame_mesh"
+		file = "gfx/models/ships/lantean_01/08_Titan_Assets/lantean_01_titan_frame.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "lantean_01_titan_locators_bow_mesh"
+		file = "gfx/models/ships/lantean_01/08_Titan_Assets/lantean_01_titan_locators_bow.mesh"
+		scale = 1.0
+	}
+
+		pdxmesh = {
+		name = "lantean_01_titan_locators_mid_mesh"
+		file = "gfx/models/ships/lantean_01/08_Titan_Assets/lantean_01_titan_locators_mid.mesh"
+		scale = 1.0
+	}
+
+		pdxmesh = {
+		name = "lantean_01_titan_locators_stern_mesh"
+		file = "gfx/models/ships/lantean_01/08_Titan_Assets/lantean_01_titan_locators_stern.mesh"
+		scale = 1.0
+	}
+}

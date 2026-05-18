@@ -1,0 +1,8 @@
+﻿l_english:
+####################################
+
+# Starbase Buildings
+
+# Starbase Modules
+ sm_obi_large_shipyard: "Large Shipyard"
+ sm_obi_large_shipyard_desc: "A much larger shipyard, with capacity to construct up to 10 vessels at a time.

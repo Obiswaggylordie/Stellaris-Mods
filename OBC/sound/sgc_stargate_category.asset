@@ -1,0 +1,33 @@
+
+
+
+#### Weapons #####
+
+category = {
+ name = "Weapon"
+ soundeffects = {
+		####### WEAPONS
+	
+	####### CLOSE
+	
+	ancient_drone_fire
+	ancient_drone_hit
+
+	
+	####### FAR
+
+	distance_ancient_drone_fire
+	distance_ancient_drone_hit
+	
+ }
+ 
+	compressor = {
+	enabled = yes
+	pregain = 0.0
+	postgain = -7.0
+	ratio = 1.0
+	threshold = -10.0
+	attacktime = 0.0
+	releasetime = 0.0
+	}
+}

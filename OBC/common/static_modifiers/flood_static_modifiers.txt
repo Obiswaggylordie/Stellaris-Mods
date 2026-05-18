@@ -1,0 +1,188 @@
+#HALO FLOOD MODIFIERS
+
+flood_unleash_logic_plague_cooldown = {
+}
+
+flood_infection_bombardment = {
+}
+
+flood_infected_habitat = {
+	#custom_tooltip = flooded_habitat_tooltip
+	pop_environment_tolerance = -0.10
+	biological_pop_happiness = -0.10
+	planet_jobs_society_research_produces_mult = 0.20
+	
+	icon = "gfx/interface/icons/planet_modifiers/flood_infestation.dds"
+	icon_frame = 1
+}
+
+flood_hive_cluster = {
+	army_defense_health_mult = 0.10
+	army_defense_damage_mult = 0.10
+	job_spawning_drone_add = 1
+
+	icon = "gfx/interface/icons/planet_modifiers/flood_hive_cluster.dds"
+	icon_frame = 1
+}
+
+#FLOOD INTELLIGENCE LEVELS
+
+flood_1 = {		# 1-5 - feral level / no cognition, cannot perform even basic tasks. Overriding directive to consume.
+	planet_jobs_food_produces_mult = 0.75
+	planet_jobs_physics_research_produces_mult = -1
+	planet_jobs_society_research_produces_mult = -1
+	planet_jobs_engineering_research_produces_mult = -1
+	planet_jobs_produces_mult = -0.50
+	
+}
+flood_2 = {		# from 5-12 - late feral level/ Beginning to coordinate better but still possessing animal intelligence.
+	planet_jobs_food_produces_mult = 0.25
+	planet_jobs_physics_research_produces_mult = -0.10
+	planet_jobs_society_research_produces_mult = -0.10
+	planet_jobs_engineering_research_produces_mult = -0.10
+	planet_jobs_produces_mult = -0.10
+	
+}
+flood_3 = {		# from 12-19 - early coordination level/ Enough biomass to form a proto-gravemind to improve coordination.
+	planet_jobs_food_produces_mult = 0.15
+	planet_jobs_physics_research_produces_mult = 0.05
+	planet_jobs_society_research_produces_mult = 0.05
+	planet_jobs_engineering_research_produces_mult = 0.05
+	planet_jobs_produces_mult = 0.10
+	
+}
+flood_4 = {		# >20 - late coordination level/ Fully formed Keymind is created and the Flood becomes a unified superorganism on the planet under the Gravemind's absolute control.
+	planet_jobs_food_produces_mult = 0.10
+	planet_jobs_physics_research_produces_mult = 0.10
+	planet_jobs_society_research_produces_mult = 0.10
+	planet_jobs_engineering_research_produces_mult = 0.10
+	planet_jobs_produces_mult = 0.25
+	
+}
+
+
+#FLOOD STAGES
+
+flood_infestation_stage_3 = {
+	planet_pop_assembly_organic_mult = 0.15
+	pop_amenities_usage_mult = -0.15
+	planet_buildings_cost_mult = -0.10
+	planet_districts_cost_mult = -0.10
+	planet_jobs_produces_mult = 0.05
+	
+	icon = "gfx/interface/icons/planet_modifiers/flood_infestation.dds"
+	icon_frame = 1
+}
+
+
+flood_infestation = {
+	pop_environment_tolerance = -0.10
+	biological_pop_happiness = -0.10
+	planet_jobs_society_research_produces_mult = 0.20
+	
+	icon = "gfx/interface/icons/planet_modifiers/flood_infestation.dds"
+	icon_frame = 2
+}
+
+flood_outbreak = {
+	pop_environment_tolerance = -0.10
+	biological_pop_happiness = -0.10
+	pop_growth_speed = -0.10
+	
+	icon = "gfx/interface/icons/planet_modifiers/flood_infestation.dds"
+	icon_frame = 3
+}
+
+large_flood_outbreak = {
+	pop_environment_tolerance = -0.20
+	biological_pop_happiness = -0.20
+	pop_growth_speed = -0.20
+	
+	icon = "gfx/interface/icons/planet_modifiers/flood_infestation.dds"
+	icon_frame = 3
+}
+	
+
+#FLOOD STAGES GALAXY MODIFIERS 
+
+# 1-9 planets <5% Galaxy Percentage
+flood_early_feral_stage = {
+ 	planet_jobs_produces_mult = -0.50
+	empire_size_colonies_mult = 1.0
+	empire_size_pops_mult = 1.0
+}
+
+# 10-19 planets >5% Galaxy Percentage
+flood_late_feral_stage = {
+	planet_jobs_produces_mult = -0.15
+	empire_size_colonies_mult = 0.15
+	empire_size_pops_mult = 0.15
+	owned_ship_evasion_mult = 0.15
+	owned_ship_fire_rate_mult = 0.15
+	owned_ship_accuracy_mult = 0.15
+	ship_weapon_damage = 0.15
+}
+
+# 20-29 planets >25% Galaxy Percentage
+flood_coordinated_stage = {
+	planet_jobs_produces_mult = 0.30
+	species_leader_exp_gain = 0.30
+	empire_size_colonies_mult = -0.30
+	empire_size_pops_mult = -0.30
+	army_starting_experience_add = 100
+	country_naval_cap_mult = 0.30
+	owned_ship_evasion_mult = 0.30
+	owned_ship_fire_rate_mult = 0.30
+	ship_weapon_damage = 0.30
+	owned_ship_accuracy_mult = 0.30
+}
+# 30-49 planets >50% Galaxy Percentage
+flood_interstellar_stage = {
+	planet_jobs_produces_mult = 0.60
+	species_leader_exp_gain = 0.60
+	empire_size_colonies_mult = -0.60
+	empire_size_pops_mult = -0.60
+	army_starting_experience_add = 500
+	country_naval_cap_mult = 0.60
+	owned_ship_evasion_mult = 0.60
+	owned_ship_fire_rate_mult = 0.60
+	owned_ship_accuracy_mult = 0.60
+	ship_weapon_damage = 0.60
+}
+# 50+ planets >75% Galaxy Percentage
+flood_transgalactic_stage = {
+	planet_jobs_produces_mult = 0.80
+	species_leader_exp_gain = 0.80
+	empire_size_colonies_mult = -0.80
+	empire_size_pops_mult = -0.80
+	army_starting_experience_add = 1000
+	country_naval_cap_mult = 1.80
+	owned_ship_evasion_mult = 1.80
+	owned_ship_fire_rate_mult = 1.80
+	owned_ship_accuracy_mult = 1.80
+	ship_weapon_damage = 1.80
+}
+
+# Flood Hive modifiers
+missing_flood_gravemind_modifier = { #Country Modifier
+	icon = "gfx/interface/icons/modifiers/mod_planet_jobs_simple_drone_reduced_mult.dds"
+	planet_jobs_simple_drone_produces_mult = -0.10
+	planet_stability_add = -10
+	ship_speed_mult = -0.30
+}
+
+missing_flood_keymind_modifier = {
+	planet_jobs_simple_drone_produces_mult = -0.5
+	icon = "gfx/interface/icons/planet_modifiers/pm_missing_flood_keymind.dds"
+	icon_frame = 3
+}
+
+
+#FLOOD INFECTED SYSTEM 
+
+flood_infected_system = {
+	ship_shield_reduction = 1.0
+	ship_disengage_chance_reduction = 0.5
+	ship_emergency_ftl_min_days_mult = 0.5
+}
+	

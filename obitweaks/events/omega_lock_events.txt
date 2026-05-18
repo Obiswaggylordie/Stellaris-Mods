@@ -762,7 +762,7 @@ planet_event = {
 	}
 }
 
-planet_event = { # Well of Allsparks & Energy Controller spawns Energon dependant pops
+planet_event = { # Omega Lock Depleted Notice
 	id = omega_lock.401
 	title = "omega_lock.401.name"
 	desc = "omega_lock.401.desc"
@@ -774,9 +774,42 @@ planet_event = { # Well of Allsparks & Energy Controller spawns Energon dependan
 	option = {
 		name = "omega_lock.401.a"
 	}
+
+	option = {
+		name = "omega_lock.401.b"
+
+		allow = {
+			owner = {
+				has_resource = {
+					type = energon
+					amount >= 10000
+				}
+				has_resource = {
+					type = sr_living_metal
+					amount >= 10000
+				}
+			}
+		}
+	 	hidden_effect = {
+			owner = {
+				add_resource = {
+					energon = -10000
+					sr_living_metal = -10000
+				}
+			}
+			add_deposit = d_active_omega_lock
+			remove_deposit = d_inactive_omega_lock
+			remove_planet_flag = omega_lock_0
+			remove_planet_flag = omega_lock_1
+			remove_planet_flag = omega_lock_2
+			remove_planet_flag = omega_lock_3
+			remove_planet_flag = omega_lock_4
+			set_planet_flag = omega_lock_5
+		}
+	}
 }
 
-planet_event = {
+planet_event = { # Well of Allsparks & Energy Controller spawns Energon dependant pops
 	id = omega_lock.135
 	hide_window = yes
 	is_triggered_only = yes

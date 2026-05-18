@@ -1,0 +1,19 @@
+objectTypes = {
+	pdxmesh = {
+		name = "lantean_01_bomber_mesh"
+		file = "gfx/models/ships/lantean_01/StrikeCraft_Assets/lantean_01_bomber_frame.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "lantean_01_launcher_mesh"
+		file = "gfx/models/ships/lantean_01/Civilian_Assets/transport_ship/lantean_01_transport_frame.mesh"
+		scale = 1.0
+	}
+	
+		pdxmesh = {
+		name = "lantean_01_fighter_mesh"
+		file = "gfx/models/ships/lantean_01/StrikeCraft_Assets/lantean_01_fighter_frame.mesh"
+		scale = 1.0
+	}
+}

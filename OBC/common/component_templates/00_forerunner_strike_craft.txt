@@ -1,0 +1,179 @@
+@attack_range = 100
+@engagement_range = 120
+@launch_time = 1.5
+@speed1 = 550
+@speed2 = 600
+@speed3 = 650
+@speed4 = 700
+@count = 8
+@regen = 1
+
+@power1 = -20
+@power2 = -34
+@power3 = -45
+@power4 = -59
+
+### Strike Craft
+
+# Sentinel Swarm Fighter
+strike_craft_component_template = {
+	key = "FORERUNNER_SENTINEL_STRIKE_CRAFT"
+	size = LARGE
+	entity = "forerunner_01_fighter_entity"
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 60
+		}
+	}
+
+	power = -60
+
+	count = 10
+	regeneration_per_day = @regen
+	launch_time = 1.0
+
+	damage = { min = 10 max = 10 }
+	cooldown = 2
+	range = 100
+	engagement_range = 120
+	accuracy = 1.0
+	tracking = 0.8
+
+	health = 20
+	armor = 20
+	shield = 20
+	evasion = 0.85
+
+	speed = 750
+	rotation_speed = 0.8
+	acceleration = 1.0
+
+	shield_damage = 2.0
+	shield_penetration = 1.0
+	armor_damage = 0.50
+
+	ship_behavior = "bombers_behavior"
+
+	weapon_type = instant # Not PD, unlike normal strike craft
+	projectile_gfx = "sentinel_beam_s"
+
+	prerequisites = { "tech_forerunner_sentinels" }
+	component_set = "FORERUNNER_SENTINEL_STRIKE_CRAFT"
+	icon = "GFX_ship_part_forerunner_sentinel_strike_craft"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft weapon_swarm }
+	ai_tags = { weapon_role_anti_shield weapon_role_point_defense }
+}
+
+
+
+strike_craft_component_template = {
+	key = "FORERUNNER_SUPER_SENTINEL_STRIKE_CRAFT"
+	size = LARGE
+	entity = "forerunner_01_bomber_entity"
+
+	weapon_type = point_defence
+	projectile_gfx = "sentinel_beam_s"
+
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 100
+		}
+	}
+	
+	power = -80
+
+	count = 20
+	regeneration_per_day = @regen
+	launch_time = 1.5
+
+	damage = { min = 20 max = 20 }
+	cooldown = 2.3
+	range = 100
+	engagement_range = 120
+	accuracy = 1.0
+	tracking = 1.0
+
+	health = 30
+	armor = 30
+	shield = 30
+	evasion = 0.60
+
+	speed = 550
+	rotation_speed = 0.2
+	acceleration = 0.5
+
+	shield_damage = 2.0
+	shield_penetration = 1.0
+	armor_damage = 1.5
+
+
+	ship_behavior = "fighters_behavior"
+
+	icon = "GFX_ship_part_forerunner_super_sentinel_strike_craft"
+	icon_frame = 1
+	component_set = "FORERUNNER_SUPER_SENTINEL_STRIKE_CRAFT"
+	prerequisites = { "tech_advanced_forerunner_sentinels" }
+
+	tags = { weapon_type_strike_craft weapon_swarm }
+	ai_tags = { weapon_role_point_defense }
+
+}
+
+
+strike_craft_component_template = {
+	key = "FORERUNNER_PHAETON_STRIKE_CRAFT"
+	size = LARGE
+	entity = "forerunner_01_phaeton_gunship_entity"
+
+	weapon_type = point_defence
+	projectile_gfx = "particle_cannon_pd"
+
+	resources = {
+		category = ship_components
+		cost = {
+			sr_living_metal = 150
+		}
+	}
+	
+	power = -100
+
+	count = 50
+	regeneration_per_day = @regen
+	launch_time = 1
+
+	damage = { min = 30 max = 30 }
+	cooldown = 2.4
+	range = 100
+	engagement_range = 120
+	accuracy = 1.0
+	tracking = 1.0
+
+	health = 40
+	armor = 40
+	shield = 40
+	evasion = 0.90
+
+	speed = 500
+	rotation_speed = 1
+	acceleration = 1
+
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 2.0
+	hull_damage = 1.75
+
+
+	ship_behavior = "fighters_behavior"
+
+	icon = "GFX_ship_part_forerunner_phaeton_strike_craft"
+	icon_frame = 1
+	component_set = "FORERUNNER_PHAETON_STRIKE_CRAFT"
+	prerequisites = { "tech_promethean_weapon_craft" }
+
+	tags = { weapon_type_strike_craft weapon_swarm }
+	ai_tags = { weapon_role_point_defense }
+
+}

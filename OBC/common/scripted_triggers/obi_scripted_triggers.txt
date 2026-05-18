@@ -1,0 +1,77 @@
+can_destroy_planet_with_obi_planet_killer_cosmoreverse = {
+	NOT = {
+		is_star = yes
+	}
+}
+
+has_void_relay = {
+	solar_system = {
+		OR = {
+			has_megastructure = void_relay_omega
+			has_megastructure = void_relay_omega_inactive
+			has_megastructure = void_relay_alpha
+			has_megastructure = void_relay_alpha_inactive
+			has_megastructure = void_relay_beta
+			has_megastructure = void_relay_beta_inactive
+			has_megastructure = void_relay_delta
+			has_megastructure = void_relay_delta_inactive
+			has_megastructure = void_relay_gamma
+			has_megastructure = void_relay_gamma_inactive
+			has_megastructure = void_relay_lambda
+			has_megastructure = void_relay_lambda_inactive
+			has_megastructure = void_relay_epsilon
+			has_megastructure = void_relay_epsilon_inactive
+			has_megastructure = void_relay_perdition
+			has_megastructure = void_relay_inactive
+		}
+	}
+}
+
+has_citadel_relay = {
+	solar_system = {
+		OR = {
+			has_megastructure = citadel_inactive
+			has_megastructure = citadel_omega
+			has_megastructure = citadel_alpha
+			has_megastructure = citadel_beta
+			has_megastructure = citadel_delta
+			has_megastructure = citadel_gamma
+			has_megastructure = citadel_lambda
+			has_megastructure = citadel_epsilon
+		}
+	}
+}
+
+is_void_relay = {
+	OR = {
+		has_megastructure = void_relay_omega
+		has_megastructure = void_relay_omega_inactive
+		has_megastructure = void_relay_alpha
+		has_megastructure = void_relay_alpha_inactive
+		has_megastructure = void_relay_beta
+		has_megastructure = void_relay_beta_inactive
+		has_megastructure = void_relay_delta
+		has_megastructure = void_relay_delta_inactive
+		has_megastructure = void_relay_gamma
+		has_megastructure = void_relay_gamma_inactive
+		has_megastructure = void_relay_lambda
+		has_megastructure = void_relay_lambda_inactive
+		has_megastructure = void_relay_epsilon
+		has_megastructure = void_relay_epsilon_inactive
+		has_megastructure = void_relay_perdition
+		has_megastructure = void_relay_inactive
+	}
+}
+
+is_citadel_relay = {
+	OR = {
+		has_megastructure = citadel_inactive
+		has_megastructure = citadel_omega
+		has_megastructure = citadel_alpha
+		has_megastructure = citadel_beta
+		has_megastructure = citadel_delta
+		has_megastructure = citadel_gamma
+		has_megastructure = citadel_lambda
+		has_megastructure = citadel_epsilon
+	}
+}

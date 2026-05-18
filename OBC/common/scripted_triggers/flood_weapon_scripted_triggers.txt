@@ -1,0 +1,63 @@
+can_destroy_planet_with_PLANET_KILLER_FLOOD_SPORE_WEAPON = {
+	custom_tooltip = {
+		fail_text = no_pops_to_infect
+		OR = {
+			num_pops > 0
+			is_under_colonization = yes
+			is_planet_class = pc_infested
+			is_planet_class = pc_flood_hive
+			is_planet_class = pc_flood_shield
+			is_planet_class = pc_ai
+		}
+	}
+	custom_tooltip = {
+		fail_text = is_not_a_habitable_planet_or_megastructure
+		is_a_habitable_planet_megastructure = yes
+	}
+	custom_tooltip = {
+		fail_text = is_shielded
+		NOR = {
+			is_planet_class = pc_shielded
+			is_planet_class = pc_ringworld_shielded
+			is_planet_class = pc_habitat_shielded
+		}
+	}
+	custom_tooltip = {
+		fail_text = is_not_hostile_or_primitive
+		AND = {
+			planet_is_hostile = yes
+		}
+	}
+	if = {
+		limit = {
+			exists = owner
+			owner = { is_country_type = primitive }
+		}
+		custom_tooltip = {
+			fail_text = primitives_not_in_borders
+			exists = space_owner
+			space_owner = { is_same_value = from.owner }
+		}
+	}
+	custom_tooltip = {
+		fail_text = no_assimilatable_pops
+		any_owned_pop = {
+			is_valid_pop_for_PLANET_KILLER_FLOOD_SPORE_WEAPON = yes
+		}
+	}
+	custom_tooltip = {
+		fail_text = has_perdition_shield
+		NOR = {
+			has_deposit = d_slipspace_bubble
+		}
+	}
+}
+
+is_valid_pop_for_PLANET_KILLER_FLOOD_SPORE_WEAPON = {
+	NOR = {
+		has_trait = trait_flood_species
+		has_trait = trait_flood_infected_species
+		has_trait = trait_ascension_4
+		has_trait = trait_robot_promethean_ai
+	}
+}

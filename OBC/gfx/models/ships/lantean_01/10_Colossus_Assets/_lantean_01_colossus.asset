@@ -1,0 +1,48 @@
+entity = {
+	name = "lantean_01_colossus_entity"
+	cull_radius = 500
+	
+	locator = { name = "frame_ship" position = { 0 0 0 } }
+
+	
+	default_state = "idle"
+
+	game_data = {
+		size = 3
+	}
+}
+
+entity = {
+	name = "lantean_01_colossus_ship_entity"
+	pdxmesh = "lantean_01_colossus_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+	}
+
+	state = { name = "moving" state_time = 5
+	}
+
+	state = { name = "working" looping = no next_state = "working_looping"
+		event = { time = 1000	id = "beam_start" }
+	}
+
+	state = { name = "working_looping"
+		event = { time = 0	id = "beam_start" }
+	}
+
+	state = { name = "death"
+		event = { trigger_once = yes sound = { soundeffect = "avian_colossus_death" stop_on_state_change = yes } }
+		
+		event = { time = 0.0 node = "explosion_locator_01" particle = "ship_explosion_particle" sound = { soundeffect = "ship_destroyed" } keep_particle = yes trigger_once = yes }
+		event = { time = 3.0 node = "explosion_locator_02" particle = "ship_explosion_particle" sound = { soundeffect = "ship_destroyed" } keep_particle = yes trigger_once = yes }
+		event = { time = 4.0 node = "explosion_locator_03" particle = "ship_explosion_particle" sound = { soundeffect = "ship_destroyed" } keep_particle = yes trigger_once = yes }
+		event = { time = 6.0 node = "explosion_locator_04" particle = "ship_explosion_particle" sound = { soundeffect = "ship_destroyed" } keep_particle = yes trigger_once = yes }
+		event = { time = 8.0 node = "explosion_locator_05" particle = "ship_explosion_particle" sound = { soundeffect = "ship_destroyed" } keep_particle = yes trigger_once = yes }
+		event = { time = 8.0 node = "explosion_locator_06" particle = "ship_explosion_particle" sound = { soundeffect = "ship_destroyed" } keep_particle = yes trigger_once = yes }
+		event = { time = 8.0 node = "explosion_locator_07" particle = "ship_explosion_particle" sound = { soundeffect = "ship_destroyed" } keep_particle = yes trigger_once = yes }
+		event = { time = 8.0 node = "explosion_locator_08" particle = "ship_explosion_particle" sound = { soundeffect = "ship_destroyed" } keep_particle = yes trigger_once = yes }
+		event = { time = 8.0 node = "explosion_locator_09" particle = "ship_explosion_particle" sound = { soundeffect = "ship_destroyed" } keep_particle = yes trigger_once = yes }
+		event = { time = 8.0 node = "explosion_locator_10" particle = "ship_explosion_particle" sound = { soundeffect = "ship_destroyed" } keep_particle = yes trigger_once = yes }
+	}
+}

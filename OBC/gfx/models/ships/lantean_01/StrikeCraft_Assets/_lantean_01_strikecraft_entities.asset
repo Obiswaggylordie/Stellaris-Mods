@@ -1,0 +1,29 @@
+entity = {
+	name = "lantean_01_bomber_entity"
+	pdxmesh = "lantean_01_fighter_mesh"
+	scale = 1.0
+
+	game_data = {
+		emissive_recolor_crunch = 3.0
+	}
+}
+
+entity = {
+	name = "lantean_01_droppod_entity"
+	pdxmesh = "lantean_01_transport_mesh"
+	scale = 1.0
+
+	game_data = {
+		emissive_recolor_crunch = 3.0
+	}
+}
+
+entity = {
+	name = "lantean_01_fighter_entity"
+	pdxmesh = "lantean_01_fighter_mesh"
+	scale = 1.0
+
+	game_data = {
+		emissive_recolor_crunch = 3.0
+	}
+}

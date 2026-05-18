@@ -1,0 +1,9 @@
+	NGameplay = {
+		LEADER_MAX_SKILL_CAP = 50
+		COMMAND_LIMIT_MAX = 100000	# Max value of Command Limit
+		NAVAL_CAPACITY_MAX = 100000	# Max value of Naval Capacity
+	}
+
+	NShip = {
+		JUMP_DRIVE_WINDUP = 1	# Jump drive windup in days
+	}

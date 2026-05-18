@@ -1,0 +1,554 @@
+﻿l_english:
+
+# General
+ name_list_zeia: "Zei'a"
+
+# Military Localisation
+ ZEIA_FLEET_ORD: "$ORD$ Fleet"
+ ZEIA_ARMY_DEFENSE_ORD: "$ORD$ Cadre"
+ ZEIA_ARMY_ASSAULT_ORD: "$ORD$ Cadre"
+ ZEIA_ARMY_SLAVE_ORD: "$ORD$ Servant Wave"
+ ZEIA_ARMY_CLONE_ORD: "$ORD$ Legion"
+ ZEIA_ARMY_ROBOTIC_ORD: "$ORD$ Uviik Pignus Swarm"
+ ZEIA_ARMY_ROBOTIC_DEFENSE_ORD: "$ORD$ Uviik Pignus Defenders"
+ ZEIA_ARMY_ANDROID_ORD: "$ORD$ Uviik Regulus Force"
+ ZEIA_ARMY_ANDROID_DEFENSE_ORD: "$ORD$ Uviik Regulus Defenders"
+ ZEIA_ARMY_PSIONIC_ORD: "$ORD$ Keybearer"
+ ZEIA_ARMY_UNDEAD_ORD: "$ORD$ Corrupted"
+ ZEIA_ARMY_XENOMORPH_ORD: "$ORD$ War Beast Horde"
+ ZEIA_ARMY_GENEWARRIOR_ORD: "$ORD$ Primearch"
+ ZEIA_ARMY_OCCUPATION_ORD: "$ORD$ Pacification Garrison"
+ ZEIA_ARMY_ROBOTIC_OCCUPATION_ORD: "$ORD$ Pacification Garrison"
+
+# Racial
+ zeia: "Zei'a"
+ zeia_desc: "The member races of Kas Zei'a, the founders of Sob'sha and rulers of Kvil'sha."
+ zeia_adj: "Zei'a"
+ zeia_plural: "Zei'a'zu"
+ zeia_insult_01: "meddler"
+ zeia_insult_plural_01: "meddlers" 
+ zeia_compliment_01: "Precursor"
+ zeia_compliment_plural_01: "Precursors"
+ zeia_spawn: "Hatchling"
+ zeia_spawn_plural: "Hatchlings"
+ zeia_sound_01: "clicking"
+ zeia_sound_02: "chatterings"
+ zeia_sound_03: "screeching"
+ zeia_sound_04: "chittering"
+ zeia_sound_05: "singing"
+ zeia_organ: "organ"
+ zeia_mouth: "mandible"
+ zeia_hand: "claw"
+
+ kvilsha: "Kvil'sha"
+ kvilsha_desc: "Kvil'sha are the aristocratic elite of Kas Zei'a, effectively being the ruling class and are considered to be nobles within the collective, originally having started out as genetically enhanced Sob'sha, their engineered evolution has long since had them outclass their naturally evolved siblings, being smarter, faster, stronger, and far more innately talented than a sob'sha. "
+ kvilsha_adj: "Kvil'sha"
+ kvilsha_plural: "Kvil'sha'zu"
+ kvilsha_insult_01: "meddler"
+ kvilsha_insult_plural_01: "meddlers" 
+ kvilsha_compliment_01: "Precursor"
+ kvilsha_compliment_plural_01: "Precursors"
+ kvilsha_spawn: "Hatchling"
+ kvilsha_spawn_plural: "Hatchlings"
+ kvilsha_sound_01: "clicking"
+ kvilsha_sound_02: "chatterings"
+ kvilsha_sound_03: "screeching"
+ kvilsha_sound_04: "chittering"
+ kvilsha_sound_05: "singing"
+ kvilsha_organ: "organ"
+ kvilsha_mouth: "mandible"
+ kvilsha_hand: "claw"
+
+ sobsha: "Sob'sha"
+ sobsha_desc: "Sob'sha are the original founders of Kas Zei'a, an insectoid races which evolved on Aether 54 million years before the activation of the Perdition Device."
+ sobsha_adj: "Sob'sha"
+ sobsha_plural: "Sob'sha'zu"
+ sobsha_insult_01: "meddler"
+ sobsha_insult_plural_01: "meddlers" 
+ sobsha_compliment_01: "Precursor"
+ sobsha_compliment_plural_01: "Precursors"
+ sobsha_spawn: "Hatchling"
+ sobsha_spawn_plural: "Hatchlings"
+ sobsha_sound_01: "clicking"
+ sobsha_sound_02: "chatterings"
+ sobsha_sound_03: "screeching"
+ sobsha_sound_04: "chittering"
+ sobsha_sound_05: "singing"
+ sobsha_organ: "organ"
+ sobsha_mouth: "mandible"
+ sobsha_hand: "claw"
+
+# Traits
+ trait_sobsha: "Sob'sha"
+ trait_sobsha_desc: "The original founders of Kas Zei'a, an insectoid races which evolved on Aether 54 million years before the activation of the Perdition Device."
+
+ trait_kvilsha: "Kvil'sha"
+ trait_kvilsha_desc: "The aristocratic elite of Kas Zei'a, effectively the ruling class. They are considered to be nobles within the collective, originally having started out as genetically enhanced Sob'sha, their engineered evolution has long since had them outclass their naturally evolved siblings, being smarter, faster, stronger, and far more innately talented than a sob'sha."
+
+ trait_uviik: "Uviik"
+ trait_uviik_desc: "The Synthetics, or Kas Uviik. Are the artificial bio-crystalline based machine intelligences of the Collective, their name is a broad term to specify practically all forms of mobile and autonomous machinery within the collective."
+
+# Shipset
+ lantean_01_shipset_desc: "The vessels of the Precursors."
+
+# Origin
+ origin_obi_zeia: "The First Race"
+ origin_obi_zeia_desc: "Kas Zei'a, the First Race, the Precursors, the Relay Builders. They have been known throughout history as the most advanced civilisation to ever roam the stars."
+ origin_tooltip_obi_zeia: ""
+
+ obi_dasha_system_initializer_NAME: "Dasha System"
+ obi_dasha_system_initializer_DESC: "The home of the Precursors."
+
+# Policies
+ 
+ policy_zeia_policy: "Collective Council Mandate"
+ policy_zeia_policy_desc: "Kas Zei'a has many goals, and hundreds of potential methods of reaching them. We must prioritise the means most effective for our present situation."
+ 
+ no_action: "No Action"
+ no_action_name: "No Action"
+ no_action_desc: "No action is necessary."
+ 
+ juridical_rate: "Naós Praetor Focus"
+ juridical_rate_name: "Naós Praetor Focus"
+ juridical_rate_desc: "Promote the Naós Guild's Praetor branch, greatly focusing our efforts on the Collective's Interior, managing and administrating internal matters."
+
+ diplomat_rate: "Naós Legatus Focus"
+ diplomat_rate_name: "Naós Legatus Focus"
+ diplomat_rate_desc: "Promote the Naós Guild's Legatus branch, greatly focusing our efforts on the Collective's Exterior, handling diplomatic affairs, properly representing ourselves in the Galactic Community, and actively working with our Federations and allies."
+
+ builder_rate: "Agon Aedifex Focus"
+ builder_rate_name: "Agon Aedifex Focus"
+ builder_rate_desc: "Promote the Agon Guild's Aedifex branch, greatly focusing our efforts on construction and development."
+ 
+ warrior_servant_rate: "Agon Bellator Focus"
+ warrior_servant_rate_name: "Agon Bellator Focus"
+ warrior_servant_rate_desc: "Promote the Agon Guild's Bellator branch, greatly focusing our efforts on the military and warfare."
+
+ lifeworker_rate: "Torvus Partus Focus"
+ lifeworker_rate_name: "Torvus Partus Focus"
+ lifeworker_rate_desc: "Promote the Torvus Guild's Partus branch, greatly focusing our efforts on biology, genetic manipulations, and our population."
+ 
+ miner_rate: "Torvus Figulus Focus"
+ miner_rate_name: "Torvus Figulus Focus"
+ miner_rate_desc: "Promote the Torvus Guild's Figulus branch, greatly focusing our efforts on planets, the life upon them, and general terraforming efforts."
+
+ engineer_rate: "Fanum Repertor Focus"
+ engineer_rate_name: "Fanum Repertor Focus"
+ engineer_rate_desc: "Promote the Fanum Guild's Repertor branch, greatly focusing our efforts on Research and Development, no science shall escape our grasp."
+
+ traveller_rate: "Fanum Indigator Focus"
+ traveller_rate_name: "Fanum Indigator Focus"
+ traveller_rate_desc: "Promote the Fanum Guild's Indigator branch, greatly focusing our efforts on star charting, system surveying, galactic exploration, the solving of anomalies, and excavation of archeological sites."
+
+# Static Modifiers
+
+ uviik_monitor: "Installation Monitor"
+ uviik_monitor_desc: "Various Zei'a installations typically possess an monitor intelligence, a general-purpose high-tier bio-crystalline synthetic that performs administrative roles including caretaking, maintenance, and security. They personally ensure that all aspects of their installation are operating at peak efficiency."
+  
+ uviik_submonitor: "Installation Sub-Monitor"
+ uviik_submonitor_desc: "The Sub-Monitor exists to supplement the primary monitor and acts as a further extension and assistant to their mission of administrating their installation."
+
+# Decisions
+
+ # Monitors
+ decision_install_monitor: "Install Monitor"
+ decision_install_monitor_desc: "Install an Uviik Monitor to oversee this colony and assist the Sector Governor."
+ decision_install_monitor_effects: "Applies the Monitor Modifier to the planet."
+ 
+ decision_install_submonitor: "Install Sub-Monitor"
+ decision_install_submonitor_desc: "Install a Sub-Monitor to assist the Installation Monitor."
+ decision_install_submonitor_effects: "Applies the Sub-Monitor Modifier to the planet."
+
+ # Time Faults
+ cr_destroy_dtf: "Collapse Time Fault"
+ cr_destroy_dtf_desc: "Collapse one of this planet's Dimensional Time Faults, rendering any benefits from its existence void." 
+
+ ## Citadel-Class Relays
+ decision_construct_citadel_relay: "Construct Citadel Relay"
+ decision_construct_citadel_relay_desc: "Construct the impressive Citadel-class Relay, granting this planet the ability to access the Void Relay network."
+
+ decision_dismantle_citadel_relay: "Dismantle Citadel Relay"
+ decision_dismantle_citadel_relay_desc: "Dismantle the Citadel Relay found in this system."
+
+ ## Citadel
+ decision_convert_obicitadel: "Create the Citadel Station"
+ decision_convert_obicitadel_desc: "The project will be a lengthy one, however once it has been completed. It will allow us to inabit one of the greatest habitats in the galaxy, furthermore it will allow us to construct and manage the galactic Relay Network."
+ decision_seal_obicitadel: "Citadel - Seal"
+ decision_seal_obicitadel_desc: "By closing the Citadel Wards, the entire megastructure becomes an enclosed capsule resistant to most forms of attack. Even allowing it to protect its inhabitants from the Halo Array."
+ decision_unseal_obicitadel: "Citadel - Unseal"
+ decision_unseal_obicitadel_desc: "Reopen the Wards of the Citadel, allowing pops to migrate and resettle, however also opening the station to attack."
+
+ ## Chair Outpost
+ decision_build_chair_outpost: "Chair Outpost - Build"
+ decision_build_chair_outpost_desc: "Build a Drone Weapons Chair Outpost."
+ decision_activate_chair_outpost: "Chair Outpost - Fire Drones"
+ decision_activate_chair_outpost_desc: "Activate the Chair and destroy any attacking fleets in orbit."
+ decision_deactivate_chair_outpost: "Chair Outpost - Deactivate"
+ decision_deactivate_chair_outpost_desc: "By unplugging the Zero Point Module from the Chair platform, we disable the entire system."
+
+ ## Attero
+ decision_build_attero: "Attero - Build"
+ decision_build_attero_desc: "Build an Attero Device, a powerful defensive system that will obliterate nearly anything entering this system."
+ decision_deactivate_attero: "Attero - Disable"
+ decision_deactivate_attero_desc: "Deactive this planet's Attero Device."
+ decision_dismantle_attero: "Attero - Dismantle"
+ decision_dismantle_attero_desc: "Dismantle this planet's Attero Device, have it destroyed, it's too dangerous."
+
+ ## City-Ship
+ decision_build_city_ship: "City-Ship - Build"
+ decision_build_city_ship_desc: "Construct a City-Ship, a monumental testament to our talent and technology."
+
+ decision_drones_city_ship: "City-Ship - Fire Drones"
+ decision_drones_city_ship_desc: "Blanket the skies and orbit of this planet with drone weapons, wiping out essentially anything."
+
+ decision_launch_city_ship: "City-Ship - Launch"
+ decision_launch_city_ship_desc: "Send this planet's City-Ship to the stars."
+
+ decision_land_city_ship: "City-Ship - Land"
+ decision_land_city_ship_desc: "Land a City-Ship currently in orbit of this planet."
+
+ decision_colonize_city_ship: "City-Ship - Colonize"
+ decision_colonize_city_ship_desc: "Land a City-Ship currently in orbit of this planet, and colonize it with it."
+
+ ## Energy Controller
+ decision_build_energy_controller: "Energy Controller - Build"
+ decision_build_energy_controller_desc: "Construct an Energy Controller, an incredibly advanced device capable of manipulation all forms of energy."
+
+ ## Cosmo Reverse System
+ decision_activate_energy_controller: "Activate the Energy Controllers"
+
+ cosmoreverse_events.1.title: "Activating the Energy Controllers"
+ cosmoreverse_events.1.desc: "The Energy Controllers have been activated and are operating at full efficiency, the system is ready to affect great change upon the targeted world."
+
+ cosmoreverse_events.1.a: "Create a Dimensional Time Fault"
+ cosmoreverse_events.1.b: "Initialize Cosmo-Reverse Subsystem"
+ cosmoreverse_events.1.c: "Remove a Dimensional Time Fault."
+ cosmoreverse_events.1.d: "Create 10 Dimensional Time Faults."
+ cosmoreverse_events.1.e: "Remove all Dimensional Time Faults."
+ cosmoreverse_events.1.y: "Deplete Energy Controllers"
+ cosmoreverse_events.1.z: "Abort, shut down the controllers."
+
+ cosmoreverse_events.10.title: "Cosmo Reverse Planet Class Selection"
+ cosmoreverse_events.10.desc: "The Comso Reverse Subsystem is capable of transforming any world into whatever class we may desire."
+ 
+ cosmoreverse_events.10.a: "Cosmo Reverse to Gaia"
+ cosmoreverse_events.10.b: "Cosmo Reverse to Continental"
+ cosmoreverse_events.10.c: "Cosmo Reverse to Tropical"
+ cosmoreverse_events.10.d: "Cosmo Reverse to Alpine"
+ cosmoreverse_events.10.e: "Cosmo Reverse to Tundra"
+ cosmoreverse_events.10.f: "Cosmo Reverse to Ocean"
+ cosmoreverse_events.10.g: "Cosmo Reverse to Arctic"
+ cosmoreverse_events.10.h: "Cosmo Reverse to Desert"
+ cosmoreverse_events.10.i: "Cosmo Reverse to Savannah"
+ cosmoreverse_events.10.j: "Cosmo Reverse to Barren"
+ cosmoreverse_events.10.k: "Cosmo Reverse to Fractured"
+ cosmoreverse_events.10.l: "Cosmo Reverse to Void Sphere"
+ cosmoreverse_events.10.m: "Cosmo Reverse to Soul Sphere"
+ cosmoreverse_events.10.n: "Cosmo Reverse to Asteroid"
+ cosmoreverse_events.10.o: "Cosmo Reverse to Gas Giant"
+ cosmoreverse_events.10.p: "Cosmo Reverse to Tomb"
+ cosmoreverse_events.10.y: "Cosmo Reverse to Shattered"
+ cosmoreverse_events.10.z: "Abort, shut down the CRS."
+
+# Deposits
+
+ # Aether
+ d_aether: "The Cradle of the Precursors"
+ d_aether_desc: "Planet Aether. Spoy'a k'lein (Homeworld), S-Mos, Kiinlein, Guide. An ancient world of many names which has persisted alongside countless stars and planets over the eons. The ancestral home of Kas Zei'a and the birthplace of Sob'sha, Aether has gotten to know a lot of history, and seen its fair share of battles."
+
+ d_naos_domain: "The Naos Domain"
+ d_naos_domain_desc: "The Naós Domain is home to the Naós Guilds of Kas Zei'a, housing several notable people, locations and monuments within its territory. The Naós Domain is perhaps the most developed part of Aether, being as close to an ecumenopolis as the planet can get, the entire domain having countless towers stretching high into the sky, levitating buildings, and layers of artificial terrain and ground floors built ontop one another for miles, the natural surface of the Domain having long since been forgotten in order to support the capital."
+
+ d_naos_great_temple: "The Great Temple"
+ d_naos_great_temple_desc: "The Great Temple is a large and sacred building composed of 3 floors and suspended in mid-air at an incredible altitude, held by three massive arms of sorts. The monumental structure reaches high up into the sky, and it's dedicated solely to Aether's Main Energy Controller, which is located at the zenith of the structure on the third floor. The second floor holds the ceremonial ascension chamber which is used to bathe a living being in Celestial Energy in order to artifically bestow upon them Ascension. The third floor is mainly an entry nexus linked to the three supporting arms that hold the temple itself suspended, the nexus chamber is surrounded by various stasis pods. The entire Great Temple was originally constructed to be the first ever UFC powered Zei'a spacecraft as early as 54,4 million years before Perdition, back when Aether was expected to perish alongside the planet's original star. "
+
+ d_naos_council_pavilion: "The Council Pavilion"
+ d_naos_council_pavilion_desc: "The Council Pavilion is the central administrative building of Kas Zei'a, the massive building being separated into three separate circular layers. The top of the Pavilion houses its namesake, a large domed roof which is also the ceiling of the council hall. The Council Pavilion houses the entirety of The Collective Council, and all representatives appear either in person or holographically within this hall. During the time of Kas Zei'a, S-Mos' avatar was always present in the Pavilion building and rarely left the council hall. Below the Council Pavilion, one would find the chamber of the first ever Core Network Unit, this one being Unit 01 \"Aurora Mother\". "
+
+ d_naos_hall_of_records: "Hall of Records"
+ d_naos_hall_of_records_desc: "The Hall of Records is an ancient and largely ceremonial building, a tall circular tower decorated with pillars and arches, it was mainly used as the central repository of all Zei'a knowledge, information, communication, and of course records, before the inception of The Library. Though after its creation, the Hall of Records became the home of the Librarian's Guild, the entire structure being remade to host the first ever Library Transference Gate, aswell as the living spaces and various religious halls for Librarian use. The Hall of Records contain many sacred artifacts extracted from the Library, and also contains various objects or even individuals who may never set foot in it again. "
+
+ d_naos_embassy_complex: "The Embassy Complex"
+ d_naos_embassy_complex_desc: "The Embassy Complex is the home of the Naós Guild's Legatus branch, an enormous facility filled with offices, diplomatic halls, conference rooms, recording studios, shuttle bays. Despite its name, the Embassy Complex was the heart of Kas Zei'as newsfeeds, being as much responsible for internal affairs as external affairs, the Legatii worked tirelessly within the complex to mediate the Guilds and spread necessary messages or words to even the outermost of colonies, all the while they'd work with non-Zei'a locally and offworld in terms of diplomacy and negotiations."
+
+ d_naos_city_ship_hex_docks: "City-Ship Hex Docks"
+ d_naos_city_ship_hex_docks_desc: "The City-Ship Hex Docks is an expanse of vast hexagonal landing sites, each 45km in radius. Designed so that the colossal City-Ships can comfortably land within them and allow for loading and unloading, aswell as technological interfacing. The Hex Docks are deep and can fully fit the City-Ship, outfitted with countless anti-gravity field emitters to balance and hold the cities at a constant altitude, allowing maintenance staff to easily reach the under-city to affect repairs or retrofits."
+
+ d_agon_domain: "The Agon Domain"
+ d_agon_domain_desc: "The Agon Domain is home to the Agon Guilds of Kas Zei'a, once an arid landscape, it's now become an endless factory. Smoke plooms up into the sky as far as the eye can see, with ships and Uviik transporting countless tonnes of cargo and resources in orderly skylanes, traffic on the surface is constant with the everpresent sound rumbling of feet and transports. Shipyards launch great vessels, and massive landing pads receive all kinds of ships bearing all forms of crew and cargo. And littered between, as if there's some order to the madness, are giant garrison buildings filled with soldiers and troops, military academies, and gladiatorial arenas."
+
+ d_agon_colosseum: "The Colosseum"
+ d_agon_colosseum_desc: "The Colosseum is the core of all Bellator activity, a massive circular tower that encapsulates an enormous portion of land. The main floor of the Colosseum in its centre, surrounded by its high walls, is a fully artificial environment capable of being adjusted in virtually every facet, from atmosphere, to gravity, to obstacles, terrain, fauna, flora. Its purpose is to simulate any potential situation in order to host grand tournaments and games. It's was also used as the proving grounds for the Grand Bellators, allowing them to engage in vicious duels, and brutal war games."
+
+ d_agon_grand_factorum: "The Grand Factorum"
+ d_agon_grand_factorum_desc: "The Grand Factorum is the central foundry and processing district on the entire planet. While large portions of the Agon Domain is already dedicated to production, The Factorum is the beating heart of the entire industry. Everything that the Agon Aedifex population does can be traced back to this sector of towering factories and manufacturers, the skyline between the giant processing plants and smoke plumes is completely swarmed by a storm of Uviik who relentlessly transport and maintain the structures." 
+
+ d_torvus_domain: "The Torvus Domain"
+ d_torvus_domain_desc: "The Torvus Domain is home to the Torvus Guilds of Kas Zei'a, a vast jungle that's being endlessly peppered by torriential downpour, a humid and vibrant place with bioluminescent life, both flora and fauna alike. Trees towering as tall as buildings, and vast powerful rivers formed by the constant rainfall crashing through the forest below, converging at the lowest points of the Domain. Together they form vast marshy swamps and bogs filled with even more diverse life. One can hardly even register the presence of Kas Zei'a itself within the Domain, as their technology, architecture, and infrastructure, are all readily overgrown by the bustling ecosystem, the otherwise polished white-grey metals of Zei'a design being muddied and covered with vines and plants, the nature around them interfacing and merging with the bio-crystalline technology in Zei'a installations."
+
+ d_torvus_central_hydrodynamo: "The Central Hydrodynamo"
+ d_torvus_central_hydrodynamo_desc: "The Central Hydrodynamo is a colossal underwater complex which generates vast amounts of power through hydro-energy, providing the Torvus Guilds with all the energy they need to perform their experiments, or generally cohabitate with the nature around them. The Hydrodynamo, much like all other areas of the Torvus Domain, is linked to the vast transport tube network, and acts as a form of hub due to its size, allowing travellers through the Domain to easily cross it or find their way elsewhere within it."
+
+ d_torvus_preserve: "The Preserve"
+ d_torvus_preserve_desc: "The Torvus Preserve is the largest building on the surface of the Domain, its walls darkened with roots, mud, and various plantlife. The Preserve holds the Torvus Guild's Partus laboratories, the home of all genetic experimentation and bio-engineering projects, where all potential designs are tested, developed, and perfected before being deployed to their designated worlds. The Preserve's central control is directly linked with The Library, specifically displaying and fetching all information about life present in the Library's reach, allowing the Torvus Guild to monitor and predict potential health concerns in civilisations before they may even know of it themselves, or avert ecological disasters on remote planets beyond anyone's jurisdiction."
+
+ d_fanum_domain: "The Fanum Domain"
+ d_fanum_domain_desc: "The Fanum Domain is the home to the Fanum Guilds of Kas Zei'a, nestled away in the height of Aether's mountains, bridged and strewn across the various peaks. Home to the most bleeding edge of Zei'a advancements, the Fanum Domain has always been the most sophisticated in design and architecture, streaks, lines, and conduits of neon energy flowing through the massive facilities, Uviik patrolling and swarming around the tall chambers and towers of the Domain, Hardlight infrastructure is frequently in play, with paths, bridges, platforms, vehicles, and equipment, all being materialised into existence at will and dispersed when necessary."
+
+ d_fanum_hall_of_astronomy: "Hall of Astronomy"
+ d_fanum_hall_of_astronomy_desc: "The Hall of Astronomy is hidden deep within the mountains of Fanum. Taking shape as an enormous spherical chamber comparable to a stadium, the Hall is visually dark and littered with holographic emitters, floating platforms roam the massive chamber to examine images and representations of celestial objects, vessels, or even people, the system is connected directly to The Library and is actively provided with a live feed from all Zei'a technology, giving the Hall absolute sight and telemetry on everything within the sphere of Kas Zei'as influence. The Hall of Astronomy holds special Void-based sensors, capable of calculating and affecting changes to the Void in order to allow the operators of the Hall to see through higher and lower dimensions, examine the universe on subatomic lengths or on gigaparsec terms, beyond what normal sensor resolutions can manage, while granting transparent view into other timelines and even universes."
+
+ d_fanum_sanctuary_fortress: "Sanctuary Fortress"
+ d_fanum_sanctuary_fortress_desc: "Sanctuary Fortress is the deep-vault of the Fanum Domain, home to the exceedingly dangerous scientific fields, or the top secret. Equipped with the most sophisticated and newest of Zei'a technology, even the ones that haven't been deployed yet, the facility lives up to its name as a Sanctuary, and a Fortress, being widely recognised as unbreachable, and unconquerable, should Aether fall then Sanctuary will remain to continue the fight. One may find many terrible things within its shielded depths, weapons of mass destruction, memory-foam of all things, artificial stars, a black hole or two, and the most deranged and inspired minds of Kas Zei'a, certifiably capable of blowing up a planet with a mouse trap, and landing a paper clip on the sun."
+
+
+ # Time Faults
+ d_cr_dtf: "Dimensional Time Fault"
+ d_cr_dtf_desc: "An esoteric void-based spatial pocket, its interior dimensions are far larger than what should logically be fit in the small area which the anomaly resides in. Time seems to be flowing drastically differently within it in comparison to the rest of the universe aswell, what could possibly make something like this?"
+
+
+ # The Citadel
+ d_citadel_wards: "Citadel Wards"
+ d_citadel_wards_desc: "The 'arms' of the Citadel, known as the Wards, constitute the residential and commercial sectors of the station. They are densely populated, housing millions of residents in the numerous skyscrapers which rise from the superstructure."
+ d_citadel_presidium: "Naós Presidium"
+ d_citadel_presidium_desc: "Located in the 10km wide central ring of the station, the Presidium is a massive, park-like complex containing the offices of the various branches of government. The Presidium also hosts the Pan-Galactic Assembly, a convention floor for all races in diplomatic contact to meet and engage diplomatically with eachother."
+ d_citadel_tower: "Citadel Tower"
+ d_citadel_tower_desc: "The Citadel Tower is at the epicentre of the massive Citadel. Rising parallel to the station's Wards, it houses the Council Chambers, the main traffic control for the station, and the galactic Relay network control center."
+ d_citadel_csec: "Agon Security Branch"
+ d_citadel_csec_desc: "The Citadel is policed by the Citadel Agon Security Branch (C-Sec), whose offices and custody suites are located in the Lower Wards."
+ d_citadel_keeper_workshops: "Huragok Workshops"
+ d_citadel_keeper_workshops_desc: "The Citadel Station is maintained by the bio-engineered Huragok, a mindless servant race that roams the station in search of problems to solve."
+ d_citadel_huerta_memorial_hospital: "Torvus Medical Sector"
+ d_citadel_huerta_memorial_hospital_desc: "Touted as a leader in premium medical care, The Torvus Medical Sector's staff and facilities can accommodate any known race. It has hundreds of full time menders and thousands of support staff, and many of its experts also specialize in xenobiology, xenomedicine, and genetics. Virtually any medicinal need or service can be found and met within the medical sector."
+ d_citadel_joint_research_division: "Citadel Fanum Research Division"
+ d_citadel_joint_research_division_desc: "The Citadel is home to a vast Fanum science and knowledge division, it employs scientist and researchers to carry out their work in order to provide independent scientific advice and support to the Citadel and its allies. Their responsibilities are to create, manage and make sense of any knowledge that may support the Citadel, anticipate emerging issues that need to be addressed at Council level, and to share know-how with Citadel allies, the scientific community, and newcomers to the Galactic Community."
+ d_citadel_relay_control: "Relay Network Control Center"
+ d_citadel_relay_control_desc: "This control center allows whoever holds the station to gain access to the knowledge and technology of the galactic relay network, aswell as allowing them to instantaneously assume control of and reconfigure any existing relay."
+ d_citadel_inactive_relay_control: "Inactive Control center"
+ d_citadel_ianctive_relay_control_desc: "This control center is inactive, no matter what our scientists and engineers try nothing will function, nor do we know what this place is supposed to do."
+
+
+ # Chair Outpost
+ d_chair_outpost: "Chair Outpost"
+ d_chair_outpost_desc: "An odd Outpost of some sort, there's a weird chair in the centre of the facility. It seems to be inactive."
+ d_chair_outpost_active: "Drone Weapons Chair Outpost"
+ d_chair_outpost_active_desc: "The weapons chair outpost is fully operational, ready to intercept and destroy any potential attackers."
+
+
+ # Attero
+ d_attero_device: "Attero Device"
+ d_attero_device_desc: "The Attero Device is a specialised disruptive field emitter that pollutes hyperspace and subspace with various destructive energies, specifically targeted at the frequencies of hostile FTL engines, the result is the instantaneous obliteration of enemy ships entering their range."
+ d_attero_device_inactive: "Inactive Attero Device"
+ d_attero_device_inactive_desc: "A slumbering defensive mechanism of unimaginable power and devastation."
+
+
+ # City-Ship
+ d_city_ship: "Zei'a City-Ship"
+ d_city_ship_desc: "City-Ships are colossal testaments of engineering produced by Kas Zei'a, they can comfortably host several million Kvil'sha and are entirely automated by Uviik. City-Ships were typically deployed to worlds to become colony capitals and strategic coordination centres for nearby battlegroups fighting against the Scourge."
+
+
+ # Energy Controller
+ d_energy_controller: "Zei'a Energy Controller Network"
+ d_energy_controller_desc: "Energy Controllers are powerful Zei'a devices capable of asserting control over all energy in any state, from siphoning thermal energy and heat from one object and transferring it to another, all the way to manipulating Celestial Energy itself."
+
+ d_energy_controller_empty: "Depleted Zei'a Energy Controller Network"
+ d_energy_controller_empty_desc: "Energy Controllers are powerful Zei'a devices capable of asserting control over all energy in any state, from siphoning thermal energy and heat from one object and transferring it to another, all the way to manipulating Celestial Energy itself."
+
+
+# Ship Sizes
+ obi_city: "Zei'a City-Ship"
+ obi_city_plural: "Zei'a City-Ships"
+
+# Void Relay garbage
+ 
+ tech_void_relay_activation: "Void Relay Activation"
+ tech_void_relay_activation_desc: "The ability to use Void Relays throughout the galaxy has the potential to dramatically shorten travel times."
+ 
+ BYPASS_VOID: "$VOID_GALACTIC$"
+ 
+ VOID_GALACTIC: "Omega Relay"
+ VOID_GALACTIC_DESC: "This system contains an §YOmega Void Relay§!"
+ VOID_GALACTIC_ALPHA: "Alpha Relay"
+ VOID_GALACTIC_ALPHA_DESC: "This system contains an §YAlpha Void Relay§!"
+ VOID_GALACTIC_BETA: "Beta Relay"
+ VOID_GALACTIC_BETA_DESC: "This system contains a §YBeta Void Relay§!"
+ VOID_GALACTIC_DELTA: "Delta Relay"
+ VOID_GALACTIC_DELTA_DESC: "This system contains a §YDelta Void Relay§!"
+ VOID_GALACTIC_GAMMA: "Gamma Relay"
+ VOID_GALACTIC_GAMMA_DESC: "This system contains a §YGamma Void Relay§!"
+ VOID_GALACTIC_LAMBDA: "Lambda Relay"
+ VOID_GALACTIC_LAMBDA_DESC: "This system contains a §YLambda Void Relay§!"
+ VOID_GALACTIC_EPSILON: "Epsilon Relay"
+ VOID_GALACTIC_EPSILON_DESC: "This system contains an §YEpsilon Void Relay§!"
+ VOID_COUNTRY_CANNOT_USE: "$TRIGGER_FAIL$ The §Y[From.GetName]§! has denied us access to their Relays."
+ 
+ ## Omega Relays
+ void_relay: "Omega Relay"
+ void_relay_DESC: "A Void Relay attuned to the Omega Network, this special Relay can only be used by those with advanced knowledge of its construction."
+ void_relay_omega_inactive: "Inactive Omega Relay"
+ void_relay_omega_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Omega Network."
+
+ ## Alpha Relays
+ void_relay_alpha: "Alpha Relay"
+ void_relay_alpha_DESC: "A Void Relay attuned to the Alpha Network, it can only access Relays on the same network."
+ void_relay_alpha_inactive: "Inactive Alpha Relay"
+ void_relay_alpha_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Alpha Network."
+
+ ## Beta Relays
+ void_relay_beta: "Beta Relay"
+ void_relay_beta_DESC: "A Void Relay attuned to the Beta Network, it can only access Relays on the same network."
+ void_relay_beta_inactive: "Inactive Beta Relay"
+ void_relay_beta_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Beta Network."
+
+ ## Delta Relays
+ void_relay_delta: "Delta Relay"
+ void_relay_delta_DESC: "A Void Relay attuned to the Delta Network, it can only access Relays on the same network."
+ void_relay_delta_inactive: "Inactive Delta Relay"
+ void_relay_delta_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Delta Network."
+
+ ## Gamma Relays
+ void_relay_gamma: "Gamma Relay"
+ void_relay_gamma_DESC: "A Void Relay attuned to the Gamma Network, it can only access Relays on the same network."
+ void_relay_gamma_inactive: "Inactive Gamma Relay"
+ void_relay_gamma_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Gamma Network."
+
+ ## Lambda Relays
+ void_relay_lambda: "Lambda Relay"
+ void_relay_lambda_DESC: "A Void Relay attuned to the Lambda Network, it can only access Relays on the same network."
+ void_relay_lambda_inactive: "Inactive Lambda Relay"
+ void_relay_lambda_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Lambda Network."
+
+ ## Epsilon Relays
+ void_relay_epsilon: "Epsilon Relay"
+ void_relay_epsilon_DESC: "A Void Relay attuned to the Epsilon Network, it can only access Relays on the same network."
+ void_relay_epsilon_inactive: "Inactive Epsilon Relay"
+ void_relay_epsilon_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Epsilon Network."
+
+ ## Relay misc
+ void_relay_inactive: "Relay Construction Site"
+ void_relay_inactive_DESC: "Construct a Void Relay"
+
+ void_relay_perdition: "Local Wave Relay"
+ void_relay_perdition_desc: "This Void Relay isn't connected to any known network, yet it's receiving and radiating weird and unidentifiable energy.."
+
+ citadel_inactive: "Citadel Core"
+ citadel_inactive_DESC: "This appears to be a precursor Citadel Core, there's an enormous amount of power conduits and control systems concentrated around its location."
+
+ citadel_omega: "Citadel Omega Relay"
+ citadel_omega_DESC: "The Citadel-Class Void Relay has been engaged, it's connected to the Omega Network."
+
+ citadel_alpha: "Citadel Alpha Relay"
+ citadel_alpha_DESC: "The Citadel-Class Void Relay has been engaged, it's connected to the Alpha Network."
+
+ citadel_beta: "Citadel Beta Relay"
+ citadel_beta_DESC: "The Citadel-Class Void Relay has been engaged, it's connected to the Beta Network."
+
+ citadel_delta: "Citadel Delta Relay"
+ citadel_delta_DESC: "The Citadel-Class Void Relay has been engaged, it's connected to the Delta Network."
+
+ citadel_gamma: "Citadel Gamma Relay"
+ citadel_gamma_DESC: "The Citadel-Class Void Relay has been engaged, it's connected to the Gamma Network."
+
+ citadel_lambda: "Citadel Lambda Relay"
+ citadel_lambda_DESC: "The Citadel-Class Void Relay has been engaged, it's connected to the Lambda Network."
+
+ citadel_epsilon: "Citadel Epsilon Relay"
+ citadel_epsilon_DESC: "The Citadel-Class Void Relay has been engaged, it's connected to the Epsilon Network."
+
+ crucible: "Tarawa Installation"
+ crucible_DESC: "The Tarawa Installation is a tetradimensional void facility which hosts the Perdition and Genesis devices, the final endgame solution to the Scourge and against all other potential threats."
+
+ crucible_dismantle: "Dismantle Tarawa Installation"
+ crucible_dismantle_desc: "The Tarawa Installation is a tetradimensional void facility which hosts the Perdition and Genesis devices, the final endgame solution to the Scourge and against all other potential threats."
+
+ crucible_construct: "Tarawa Installation"
+ crucible_construct_desc: "The Tarawa Installation is a tetradimensional void facility which hosts the Perdition and Genesis devices, the final endgame solution to the Scourge and against all other potential threats."
+
+ void_relay_deactivate: "Unconfigured Relay"
+ void_relay_deactivate_DESC: "This Void Relay is in a dormant and reset state, it does not have a network configuration."
+
+ void_relay_dismantle: "Dismantle Void Relay"
+ void_relay_dismantle_DESC: "Remove this Void Relay from the system."
+
+ void_relay_inactive_MEGASTRUCTURE_DETAILS: "Create a Void Relay capable of accessing locations within Void. Cannot build this megastructure too far beyond the gravity well of a system."
+ crucible_construct_MEGASTRUCTURE_DETAILS: "Construct the Zei'a Tarawa Installation, the home of the Perdition and Genesis devices."
+ 
+ requires_technology_slipspace_field: "$TRIGGER_FAIL$Requires technology £physics£ §Y$tech_void_relay$§!."
+
+ # Oh my fucking god there's so many buttons in the relay manager
+ decision_relay_control: "Citadel - Void Relay Control"
+ decision_relay_control_desc: "Access the Void Relay Network control system."
+
+ void_relay.1.title: "Void Relay Control Main Menu"
+ void_relay.1.desc: "Relay Control Main Menu, access all functions from this dialogue."
+
+ void_relay.1.a: "Deactivate all Relays."
+ void_relay.1.b: "Activate all Relays."
+ void_relay.1.c: "Access Relay Power Management."
+ void_relay.1.d: "Assume direct control of all Relays."
+ void_relay.1.x: "Access Perdition & Genesis.."
+ void_relay.1.y: "Disable Relay Control."
+ void_relay.1.z: "Exit Void Relay Control."
+
+ void_relay.2.title: "Void Relay Power Management"
+ void_relay.2.desc: "DEACTIVATION INDEX: These Options pertain to the deactivation of every relay within the chosen network."
+ void_relay.2.a: "Deactivate Omega Relays"
+ void_relay.2.b: "Deactivate Alpha Relays"
+ void_relay.2.c: "Deactivate Beta Relays"
+ void_relay.2.d: "Deactivate Delta Relays"
+ void_relay.2.e: "Deactivate Gamma Relays"
+ void_relay.2.f: "Deactivate Lambda Relays"
+ void_relay.2.y: "Activation Index"
+ void_relay.2.z: "Return to Main Menu"
+
+ void_relay.3.title: "Void Relay Power Management"
+ void_relay.3.desc: "ACTIVATION INDEX: These Options pertain to the activation of every relay within the chosen network."
+ void_relay.3.a: "Activate Omega Relays"
+ void_relay.3.b: "Activate Alpha Relays"
+ void_relay.3.c: "Activate Beta Relays"
+ void_relay.3.d: "Activate Delta Relays"
+ void_relay.3.e: "Activate Gamma Relays"
+ void_relay.3.f: "Activate Lambda Relays"
+ void_relay.3.z: "Return to Main Menu"
+
+ void_relay.4.title: "Void Relay Reconfiguration"
+ void_relay.4.desc: "RECONFIGURATION INDEX: These Options pertain to the transferal of all relays in one network to another. (WIP)"
+ void_relay.4.a: "Transfer Omega Relays to Alpha"
+ void_relay.4.b: "Transfer Omega Relays to Beta"
+ void_relay.4.c: "Transfer Omega Relays to Delta"
+ void_relay.4.d: "Transfer Omega Relays to Gamma"
+ void_relay.4.e: "Transfer Omega Relays to Lambda"
+ void_relay.4.f: "Transfer Alpha Relays to Omega"
+ void_relay.4.z: "Return to Main Menu"
+
+# Technology
+ tech_zeia_biocomputing: "Zei'a Biocomputing"
+ tech_zeia_biocomputing_desc: "The first ever computer invented by Kas Zei'a was biological in nature, it is a fundamental aspect of their technology."
+
+ tech_zeia_biocrystalline: "Zei'a Bio-Crystalline Technology"
+ tech_zeia_biocrystalline_desc: "The Bio-Crystalline technology of Kas Zei'a is a unique and versatile form of technology, crystals are programmed and grow their own internal components to fulfill their tasks. They are found in all Zei'a technology and architecture."
+
+ tech_zeia_energy_controller: "Zei'a Energy Controllers"
+ tech_zeia_energy_controller_desc: "The Energy Controllers are powerful Zei'a devices capable of asserting control over all energy in any state, from siphoning thermal energy and heat from one object and transferring it to another, all the way to manipulating Celestial Energy itself."
+
+ tech_void_science: "Void Science"
+ tech_void_science_desc: "Kas Ehwar, more commonly known as The Void. A mystical warping expanse of what can only be described as cosmic soup and nothingness, the Void continously shifts and transforms, like ink in water, or light through a diamond. Travel through the Void will see it take shapes reminiscent of dazzling nebulae and the surface of stars, to shadowed spaces of swirling darkness. Space and time seemingly refracting and bending infinitely in the distance of the Void, and more times than not you may encounter yourself passing by, be it your current self, future, or past. And in the midst of all this wonder, one may also encounter serenity, pockets of nothingness so absolute that they swallow up the light you shine at them."
+
+ tech_void_relay: "Void Relay Construction"
+ tech_void_relay_desc: "Void Relays are sophisticated Kas Zei'a kilostructures capable of opening rifts in real space which lead into The Void, these rifts can be focused into targetting virtually any location in the universe and even beyond."
+
+ tech_cr_cosmoreverse: "Energy Controllers"
+ tech_cr_cosmoreverse_desc: "Energy Controllers are powerful Zei'a devices capable of asserting control over all energy in any state, from siphoning thermal energy and heat from one object and transferring it to another, all the way to manipulating Celestial Energy itself."
+
+ #tech_cr_cosmoreverse: "The Cosmoreverse System"
+ #tech_cr_cosmoreverse_desc: "A supremely powerful celestial energy manipulation device, capable of creating abberations in time and space through the Void, or transforming entire planets into any number of alternatives."
+
+ tech_cr_access: "Time Fault Facilities"
+ tech_cr_access_desc: "After lengthy study of these 'Time Faults', we have found the method of entering them safely and even utilising their esoteric properties for our own benefit."
+
+ tech_obi_wormhole: "Spatial Magic Theory"
+ tech_obi_wormhole_desc: "Through our understanding of the Arcane, we've come to realise that we have the potential to fold subspace in any way we see fit, granting us many potential benefits."
+
+# Planet Classes
+ pc_obicitadel: "Citadel Station"
+ pc_obicitadel_desc: "This megastructure of a station acts as a capital in of itself, allowing empires to settle the heart of their vast civilisations within it. The station's primary purpose is to facilitate the control of the galactic relay network, to this end the station also functions as a nigh-impenetrable fortress and bastion against anyone who would attempt to seize control over the relays."

@@ -1,0 +1,997 @@
+###########################################################################
+## Forerunner/Promethean Decisions
+###########################################################################
+#
+decision_install_monitor = {
+	owned_planets_only = yes
+	icon = decision_install_monitor
+	
+	enactment_time = 10
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 100
+			energy = 100
+		}
+	}
+	
+	potential = {
+		owner = {
+			has_origin = origin_obi_zeia
+		}
+		NOT = {
+			has_modifier = uviik_monitor
+		}
+		#OR = {
+		#		has_active_building = building_sentinel_factory 
+		#		has_active_building = building_promethean_factory
+		#}
+	}
+	
+	effect = {
+		add_modifier = {
+			modifier = uviik_monitor
+			days = -1
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+decision_install_submonitor = {
+	owned_planets_only = yes
+	icon = decision_install_submonitor
+	
+	enactment_time = 10
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 100
+			energy = 100
+		}
+	}
+	
+	potential = {
+		AND = {
+			owner = {
+				has_origin = origin_obi_zeia
+			}
+			planet = {
+				NOT = {
+					has_modifier = uviik_submonitor
+				}
+				has_modifier = uviik_monitor
+			}
+		}
+	}
+	
+	effect = {
+		add_modifier = {
+			modifier = uviik_submonitor
+			days = -1
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+# Access Relay Control
+decision_relay_control = {
+	owned_planets_only = yes
+	icon = decision_shield_world_slipspace_bubble
+	
+	potential = {
+		AND = {
+			#owner = {
+			#	has_technology = tech_void_relay
+			#}
+
+			planet = {
+				has_deposit = d_citadel_relay_control
+			}
+		}
+	}
+	
+	effect = {
+		save_global_event_target_as = obicitadel
+		from = {
+			save_global_event_target_as = masterchief
+			country_event = { id = void_relay.1 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Seal Citadel
+decision_seal_obicitadel = {
+	owned_planets_only = yes
+	icon = decision_seal_citadel
+	
+	enactment_time = 180
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 5000
+			alloys = 5000
+			energy = 5000
+		}
+	}
+	
+	potential = {
+		AND = {
+			is_planet_class = pc_obicitadel
+			NOT = {
+				has_modifier = obi_citadel_sealed
+			}
+		}
+	}
+	
+	effect = {
+		add_modifier = {
+			modifier = obi_citadel_sealed
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Unseal Citadel
+decision_unseal_obicitadel = {
+	owned_planets_only = yes
+	icon = decision_seal_citadel
+	
+	enactment_time = 180
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 5000
+			alloys = 5000
+			energy = 5000
+		}
+	}
+	
+	potential = {
+		AND = {
+			is_planet_class = pc_obicitadel
+			has_modifier = obi_citadel_sealed
+		}
+	}
+	
+	effect = {
+		remove_modifier = obi_citadel_sealed
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Construct Citadel Relay
+decision_construct_citadel_relay = {
+	owned_planets_only = yes
+	icon = decision_shield_world_slipspace_bubble
+	
+	enactment_time = 180
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 5000
+			alloys = 5000
+			energy = 5000
+		}
+	}
+
+	potential = {
+		NOT = {
+			is_planet_class = pc_obicitadel
+		}
+	}
+
+	allow = {
+		solar_system = {
+			has_citadel_relay = no
+		}
+	}
+	
+	effect = {
+		solar_system = {
+			spawn_megastructure = {
+				type = citadel_inactive
+				owner = space_owner
+				coords_from = prev
+			}
+		}
+	}
+
+	prerequisites = {
+		tech_void_relay
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Dismantle Citadel Relay
+decision_dismantle_citadel_relay = {
+	owned_planets_only = yes
+	icon = decision_shield_world_slipspace_bubble
+	
+	enactment_time = 180
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 5000
+			alloys = 5000
+			energy = 5000
+		}
+	}
+
+	potential = {
+		solar_system = {
+			has_megastructure = citadel_inactive
+		}
+	}
+
+	allow = {
+		solar_system = {
+			NOT = {
+				any_system_planet = {
+					is_planet_class = pc_obicitadel
+				}
+			}
+		}
+	}
+	
+	effect = {
+		solar_system = {
+			every_system_megastructure = {
+				limit = {
+					is_megastructure_type = citadel_inactive
+				}
+				remove_megastructure = this
+			}
+		}
+	}
+
+	prerequisites = {
+		tech_void_relay
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+## Install SDC on a planet
+decision_sdc_installation = {
+	owned_planets_only = yes
+
+	enactment_time = 1
+	resources = {
+		category = decisions
+		cost = {
+			sr_sdc = 1
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = { 
+			has_technology = tech_zeia_sdc
+		}
+		NOT = { has_modifier = sdc_installed }
+	}
+
+	allow = {
+		has_fully_upgraded_capital = yes
+	}
+
+	effect = {
+		add_modifier = {
+			modifier = sdc_installed
+			days = 10950
+		}
+	}
+
+	ai_weight = {
+		weight = 10000
+	}
+}
+
+## Build Chair Outpost
+decision_build_chair_outpost = {
+	owned_planets_only = yes
+	icon = decision_build_chair_outpost
+
+	prerequisites = {
+		"tech_zeia_chair"
+	}
+
+	enactment_time = 30
+
+	potential = {
+		owner = {
+			OR = {
+				has_origin = origin_obi_zeia
+			}
+		}
+		NOR = {
+			has_deposit = d_chair_outpost
+			has_deposit = d_chair_outpost_active
+		}
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 1000
+		}
+	}
+
+	effect = {
+		add_deposit = d_chair_outpost
+	}
+}
+
+## Activate Chair Outpost
+decision_activate_chair_outpost = {
+	owned_planets_only = yes
+	icon = decision_build_chair_outpost
+
+	potential = {
+		has_deposit = d_chair_outpost_active
+	}
+
+	allow = {
+		any_fleet_in_orbit = {
+			exists = this
+		}
+	}
+	
+	effect = {
+		random_list = {
+			95 = { # Chance where chair deals 1 million hull damage to every hostile ship in orbit of the planet.
+				every_fleet_in_orbit = {
+					every_owned_ship = {
+						reduce_hp = 500000
+					}
+				}
+			}
+			5 = { # Chance where chair ZPM runs out of power
+				remove_deposit = d_chair_outpost_active
+				add_deposit = d_chair_outpost
+			}
+		}
+	}
+}
+
+# Unplug ZPM from the Control Chair
+decision_deactivate_chair_outpost = {
+	owned_planets_only = yes
+	icon = decision_build_chair_outpost
+
+	potential = {
+		has_deposit = d_chair_outpost_active
+	}
+
+	resources = {
+		category = decisions
+		produces = {
+			sr_sdc = 1
+		}
+	}
+
+	effect = {
+		remove_deposit = d_chair_outpost_active
+		add_deposit = d_chair_outpost
+	}
+}
+
+## Build Attero
+decision_build_attero = {
+	owned_planets_only = yes
+	icon = decision_attero
+
+	prerequisites = {
+		"tech_shield_worlds"
+	}
+
+	enactment_time = 30
+
+	potential = {
+		NOR = {
+			has_deposit = d_attero_device
+			has_deposit = d_attero_device_inactive
+		}
+		OR = {
+			is_planet_class = pc_forerunner_shield
+			is_planet_class = pc_forerunner_sharpened_shield
+			is_planet_class = pc_genesis
+			is_planet_class = pc_requiem
+		}
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			sr_living_metal = 1000
+		}
+	}
+
+	effect = {
+		add_deposit = d_attero_device_inactive
+	}
+}
+
+# Deactivate Attero
+decision_deactivate_attero = {
+	owned_planets_only = yes
+	icon = decision_attero
+
+	potential = {
+		has_deposit = d_attero_device
+	}
+
+	effect = {
+		remove_deposit = d_attero_device
+		add_deposit = d_attero_device_inactive
+	}
+}
+
+# Dismantle Attero
+decision_dismantle_attero = {
+	owned_planets_only = yes
+	icon = decision_attero
+
+	potential = {
+		has_deposit = d_attero_device_inactive
+	}
+
+	effect = {
+		remove_deposit = d_attero_device_inactive
+	}
+}
+
+# Activate Energy Controllers
+decision_activate_energy_controller = {
+	owned_planets_only = no
+	sound = event_administrative_work
+	icon = decision_energy_controller
+
+	potential = {
+		OR = {
+			has_deposit = d_energy_controller
+			AND = {
+				planet = {
+					has_deposit = d_space_bridge
+				}
+				space_owner = {
+					is_same_empire = solar_system.space_owner
+					any_owned_planet = {
+						has_deposit = d_space_bridge
+						has_deposit = d_energy_controller
+					}
+				}
+			}
+		}
+	}
+
+	allow = {
+		this = {
+			NOT = {
+				is_star = yes
+			}
+		}
+	}
+
+	effect = {
+		save_global_event_target_as = cr_planet
+		from = {
+			country_event = { id = cosmoreverse_events.1 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Build Energy Controller
+decision_build_energy_controller = {
+	owned_planets_only = yes
+	icon = decision_energy_controller
+
+	prerequisites = {
+		"tech_zeia_energy_controller"
+	}
+
+	enactment_time = 30
+
+	potential = {
+		NOT = {
+			has_deposit = d_energy_controller
+		}
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 350
+			energy = 200
+		}
+	}
+
+	effect = {
+		add_deposit = d_energy_controller
+	}
+}
+
+
+## Destroy cringe robots
+
+decision_cringe_robots = {
+	owned_planets_only = yes
+	icon = decision_shield_world_slipspace_bubble
+	
+	potential = {
+		owner = {
+			OR = {
+				has_origin = origin_obi_zeia
+			}
+		}
+		count_owned_pop_amount = {
+			count >= 1
+			limit = {
+				OR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit					
+				}
+				NOT = {
+					has_trait = trait_uviik
+				}
+			}
+		}
+	}
+	
+	effect = {
+		every_owned_pop_group = {
+			limit = {
+				AND = {
+					OR = {
+						has_trait = trait_mechanical
+						has_trait = trait_machine_unit
+					}
+					NOT = {
+						has_trait = trait_uviik
+					}
+				}
+			}
+			kill_all_pop = yes
+		}
+	}
+
+	ai_weight = 0
+}
+
+
+## Create Uviik
+decision_construct_uviik = {
+	owned_planets_only = yes 
+	icon = decision_construct_uviik
+	
+	enactment_time = 180
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 1500
+			energy = 1000
+		}
+	}
+	potential = {
+		owner = {
+			has_origin = origin_obi_zeia
+			NOR = { 
+				is_individual_machine = yes 
+				is_gestalt = yes 
+			}
+		}
+		#planet = {
+		#	OR = {
+		#		has_active_building = building_sentinel_factory 
+		#		has_active_building = building_promethean_factory
+		#		has_deposit = d_automated_sentinel_factory
+		#	}
+		#}
+	}
+	effect = {
+		custom_tooltip = decision_construct_uviik_tooltip
+		hidden_effect = {
+			create_species = {
+				name = "Uviik"
+				plural = "Uviik"
+				adjective = "Uviik"
+				name_list = "uviik"
+				class = ROBOT
+				portrait = "uviik"
+				traits = {
+					trait = trait_mechanical
+					trait = trait_uviik
+				}
+			}
+			create_pop_group =  {
+				size = 500
+				species = "Uviik"
+			}
+		}
+	}
+}
+
+#### Create Mechanical Prometheans
+##decision_construct_mechanical_prometheans = {
+#	owned_planets_only = yes
+#	icon = decision_construct_mechanical_prometheans
+#	
+#	enactment_time = 30
+#	resources = {
+#		category = decisions
+#		cost = {
+#			minerals = 2000
+#			energy = 1000
+#		}
+#	}
+#	
+#	potential = {
+#		exists = owner 
+#		AND = {
+#			owner = { NOT = { is_gestalt = yes }}
+#			owner = {
+#				has_technology = tech_pk_composer
+#			}		
+#		}
+#		planet = {
+#			is_planet_class = pc_requiem
+#		}
+#	}
+#	
+#	effect = {
+#		custom_tooltip = decision_construct_mechanical_prometheans_effects
+#		hidden_effect = {
+#			create_species = {
+#				name = "Twilight-Class Uviik"
+#				plural = "Twilight-Class Uviik'zu"
+#				class = "forerunner_promethean"
+#				portrait = "promethean"
+#				name_list = "promethean"
+#				traits = {
+#					trait = trait_mechanical
+#					trait = trait_robot_promethean_ai
+#				}
+#			}
+#			while = {
+#				count = 1
+#				create_pop = {
+#					species = "Twilight-Class Uviik"
+#				}
+#			}
+#		}
+#	}
+#}
+#
+#dtf_factory_full_operation = {
+#	owned_planets_only = yes
+#	sound = event_administrative_work
+#	icon = decision_resources
+#
+#	resources = {
+#		category = decisions
+#		cost = {
+#			influence = 200
+#			energy = 50000
+#		}
+#	}
+#
+#	prerequisites = {
+# 		"tech_cr_access"
+# 	}
+#
+#	potential = {
+#		exists = owner
+#		planet = { has_active_building = building_cr_dtf_factory }
+#	}
+#
+#	allow = {
+#		NOT = { has_modifier = dtf_pm_factory_full_operation }
+#	}
+#
+#	effect = {
+#		add_modifier = { modifier = "dtf_pm_factory_full_operation" days = 360 }
+#	}
+#
+#	ai_weight = {
+#		weight = 0
+#	}
+#}
+#
+#gge_create_sroka = {
+#	owned_planets_only = yes
+#	sound = event_administrative_work
+#	icon = decision_resources
+#
+#	resources = {
+#		category = decisions
+#		cost = {
+#			influence = 25
+#		}
+#	}
+#
+#	potential = {
+#		is_colony = yes
+#		is_artificial = no
+#		from = {
+#			has_origin = origin_garmillas
+#		}
+#		NOT = {
+#			is_planet_class = pc_garmillas
+#		}
+#	}
+#
+#	effect = {
+#		change_pc = pc_garmillas
+#	}
+#
+#	ai_weight = {
+#		weight = 1000
+#	}
+#}
+#
+###########################################################################
+## Shield World Decisions
+###########################################################################
+#
+## Create Slipspace Bubble
+#decision_shield_world_slipspace_bubble = {
+#	owned_planets_only = yes
+#	icon = decision_shield_world_slipspace_bubble
+#	
+#	enactment_time = 720
+#	resources = {
+#		category = decisions
+#		cost = {
+#			energy = 5000
+#			minerals = 5000
+#		}
+#	}
+#	
+#	potential = {
+#		NOT = {
+#			has_deposit = d_slipspace_bubble
+#		}
+#		owner = { has_technology = tech_void_relay }
+#		exists = owner
+#	}
+#	
+#	effect = {
+#		custom_tooltip = decision_shield_world_slipspace_bubble_effects
+#		add_deposit = d_slipspace_bubble
+#		owner = {
+#			country_event = { id = shield_world.1 }
+#		}
+#	}
+#	ai_weight = {
+#		weight = 100
+#	}
+#}
+#
+#decision_remove_shield_world_slipspace_bubble = {
+#	owned_planets_only = yes
+#	icon = decision_shield_world_slipspace_bubble
+#	
+#	enactment_time = 720
+#	resources = {
+#		category = decisions
+#		cost = {
+#			energy = 5000
+#			minerals = 5000
+#		}
+#	}
+#	
+#	potential = {
+#		has_deposit = d_slipspace_bubble
+#		owner = { has_technology = tech_void_relay }
+#		exists = owner
+#	}
+#	
+#	effect = {
+#		remove_deposit = d_slipspace_bubble
+#	}
+#	ai_weight = {
+#		weight = 0
+#	}
+#}
+#
+## Collapse Perdition Shield
+#
+#
+##BUILDER WORLD 
+#
+#decision_builder_world_create_huragok = {
+#	owned_planets_only = yes
+#	icon = decision_builder_world_create_huragok
+#	
+#	enactment_time = 5
+#	resources = {
+#		category = decisions
+#		cost = {
+#			minerals = 300
+#			energy = 150
+#		}
+#	}
+#	
+#	potential = {
+#		is_planet_class = pc_genesis
+#		exists = owner
+#		owner = {
+#			NOT = { 
+#				is_gestalt = yes 
+#			}
+#		}
+#	}
+#	
+#	allow = {
+#	}
+#	
+#	effect = {
+#		custom_tooltip = decision_builder_world_create_huragok_effects
+#		hidden_effect = {
+#			create_species = {
+#				name = "Huragok"
+#				plural = "Huragok"
+#				class = "huragok"
+#				portrait = "huragok"
+#				name_list = "sentinel"
+#				traits = {
+#					trait="trait_pc_habitat_preference"
+#					trait="trait_huragok_species"
+#				}
+#			}
+#			while = {
+#				count = 4
+#				create_pop = {
+#					species = "Huragok"
+#				}
+#			}
+#		}
+#	}
+#	ai_weight = {
+#		weight = 0
+#	}
+#}
+#
+#decision_builder_world_deploy_seed_worlds = {
+#	owned_planets_only = yes
+#	icon = decision_builder_world_deploy_seed_worlds
+#	
+#	enactment_time = 360
+#	resources = {
+#		category = decisions
+#		cost = {
+#			energy = 5000
+#			minerals = 5000
+#		}
+#	}
+#	
+#	potential = {
+#		OR = {
+#			is_planet_class = pc_genesis
+#		}
+#		exists = owner
+#	}
+#	
+#	allow = {
+#		NOT = {
+#			has_modifier = seed_world_activation_cooldown
+#		}
+#	}
+#	
+#	effect = {
+#		custom_tooltip = decision_builder_world_deploy_seed_worlds_effects
+#		add_modifier = {
+#			modifier = "seed_world_activation_cooldown"
+#			days = 1800
+#		}
+#		owner = {
+#			country_event = { id = shield_world.3 }
+#		}
+#	}
+#	ai_weight = {
+#		weight = 0
+#	}
+#}
+#
+## CREATE SHIELD WORLD DYSON SHELL
+#decision_build_sharpened_shield_world = {
+#	owned_planets_only = yes
+#	icon = decision_build_sharpened_shield_world
+#	
+#	enactment_time = 900
+#	resources = {
+#		category = decisions
+#		cost = {
+#			alloys = 50000
+#			unity = 7500
+#		}
+#	}
+#	
+#	potential = {
+#		OR = {
+#			is_planet_class = pc_genesis
+#		}
+#		exists = owner
+#		#owner = {
+#		#	NOT = {
+#		#		has_modifier = "sharpened_shield_world_completed"
+#		#	}
+#		#}
+#	}
+#	
+#	allow = {
+#		owner = { has_technology = tech_advanced_slipspace_field }
+#	}
+#	
+#	effect = {
+#		custom_tooltip = decision_build_sharpened_shield_world_effects
+#		owner = {
+#			country_event = { id = shield_world.98 }
+#		}
+#	}
+#}
+#
+#
+## CREATE ARK INSTALLATION
+#decision_build_ark_installation = {
+#	owned_planets_only = yes
+#	icon = decision_build_ark_installation
+#	
+#	enactment_time = 1800
+#	resources = {
+#		category = decisions
+#		cost = {
+#			alloys = 40000
+#			unity = 5000
+#		}
+#	}
+#	
+#	potential = {
+#		OR = {
+#			is_planet_class = pc_genesis
+#		}
+#		exists = owner
+#		owner = {
+#			NOT = {
+#				has_modifier = "ark_installation_completed"
+#			}
+#		}
+#	}
+#	
+#	allow = {
+#		owner = { has_technology = tech_shield_worlds }
+#		owner = { has_technology = tech_advanced_slipspace_field }
+#	}
+#	
+#	effect = {
+#		custom_tooltip = decision_build_ark_installation_effects
+#		owner = {
+#			country_event = { id = shield_world.99 }
+#		}
+#	}
+#}

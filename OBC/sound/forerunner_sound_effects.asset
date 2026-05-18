@@ -1,0 +1,467 @@
+
+########## WEAPONS SFX ############
+
+############ CLOSE WEAPONS SFX
+#SENTINEL BEAM 
+soundeffect = {
+	name = sentinel_beam
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = sentinel_beam
+	}
+	is3d = yes
+	max_audible = 4
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.8
+	fade_out = 0.2
+}
+soundeffect = {
+	name = sentinel_beam_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = sentinel_beam_hit
+	} 
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.1
+	fade_out = 0.2
+}
+
+soundeffect = {
+	name = distance_sentinel_beam
+	falloff = "falloff_weapons_distance"
+	sounds = {
+		sound = sentinel_beam
+	}
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { 0.0 -2.05 }
+	volume = 0.2
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_sentinel_beam_hit
+	falloff = "falloff_weapons_distance"
+	sounds = {
+		sound = sentinel_beam_hit
+	}
+	is3d = yes
+	max_audible = 1
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { 0.0 -2.05 }
+	volume = 0.15
+	fade_out = 0.2
+}
+
+############ OTHER FORERUNNER WEAPONS SFX
+#CONVERGING BEAM CANNON
+
+soundeffect = {
+	name = converging_beam
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = converging_beam_1
+		sound = converging_beam_2
+		sound = converging_beam_3
+	}
+	is3d = yes
+	max_audible = 4
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.8
+	fade_out = 0.2
+}
+soundeffect = {
+	name = converging_beam_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = converging_beam_hit
+	} 
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.1
+	fade_out = 0.2
+}
+
+#DESTRUCTOR BEAM 
+
+soundeffect = {
+	name = destructor_beam
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = destructor_beam_1
+		sound = destructor_beam_2
+		sound = destructor_beam_3
+		sound = destructor_beam_4
+	}
+	is3d = yes
+	max_audible = 4
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.8
+	fade_out = 0.2
+}
+soundeffect = {
+	name = destructor_beam_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = destructor_beam_hit
+	} 
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.1
+	fade_out = 0.2
+}
+
+#ION WEAPON LAUNCHER
+
+soundeffect = {
+	name = ion_weapon_launcher
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = ion_weapon_launcher_1
+		sound = ion_weapon_launcher_2
+	}
+	is3d = yes
+	max_audible = 4
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.8
+	fade_out = 0.2
+}
+soundeffect = {
+	name = distance_ion_weapon_launcher_fire
+	falloff = "falloff_weapons_distance"
+	sounds = {
+		sound = distance_ion_weapon_launcher_1
+		sound = distance_ion_weapon_launcher_2
+	} 
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { 0.0 -2.05 }
+	volume = 0.2
+	fade_out = 0.2
+}
+soundeffect = {
+	name = ion_weapon_launcher_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = ion_weapon_launcher_hit
+	} 
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.1
+	fade_out = 0.2
+}
+
+
+
+#PARTICLE CANNON 
+
+soundeffect = {
+	name = particle_cannon
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = particle_cannon_1
+		sound = particle_cannon_2
+	}
+	is3d = yes
+	max_audible = 4
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.8
+	fade_out = 0.2
+}
+soundeffect = {
+	name = particle_cannon_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = particle_cannon_hit
+	} 
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.1
+	fade_out = 0.2
+}
+
+#PARTICLE CANNON PD 
+
+soundeffect = {
+	name = particle_cannon_pd
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = particle_cannon_pd
+	}
+	is3d = yes
+	max_audible = 3
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.8
+	fade_out = 0.2
+}
+
+#LIGHT MASS FUSILLADE CANNON
+
+soundeffect = {
+	name = lmf_cannon
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = lmf_cannon_1
+		sound = lmf_cannon_2
+	}
+	is3d = yes
+	max_audible = 4
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.8
+	fade_out = 0.2
+}
+soundeffect = {
+	name = lmf_cannon_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = lmf_cannon_hit
+	} 
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.1
+	fade_out = 0.2
+}
+
+#PULSE MISSILE LAUNCHER
+soundeffect = {
+	name = pulse_missile_launcher
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = pulse_missile_launcher_1
+		sound = pulse_missile_launcher_2
+		sound = pulse_missile_launcher_3
+	}
+	is3d = yes
+	max_audible = 4
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.5
+	fade_out = 0.2
+}
+
+#TORSION DRIVER
+
+soundeffect = {
+	name = torsion_driver
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = torsion_driver
+	}
+	is3d = yes
+	max_audible = 4
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.8
+	fade_out = 0.2
+}
+soundeffect = {
+	name = torsion_driver_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = torsion_driver_hit
+	} 
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.1
+	fade_out = 0.2
+}
+
+########## PLANET VIEW AMBIENT #########
+
+category = {
+	name = "Effects"
+	soundeffects = {
+		pc_maethrillian
+		pc_forerunner_halo 
+		pc_forerunner_halo_activated
+		pc_forerunner_ark
+		pc_forerunner_shield
+		pc_forerunner_sharpened_shield
+		pc_requiem
+		pc_genesis
+		event_guardian_custode
+	}
+	compressor = {
+		enabled = yes
+		pregain = 2.0
+		postgain = 1.5
+		ratio = 10.0
+		threshold = -8.0
+		attacktime = 0.30
+		releasetime = 0.020
+	}
+ 
+}
+
+soundeffect = {
+	name = pc_maethrillian
+	volume = 0.3
+	loop = no
+	sounds = {
+		sound = ringworld_pc_amb_01
+		sound = ringworld_pc_amb_02
+		sound = ringworld_pc_amb_03
+	} 
+	fade_out = 0.3
+	max_audible = 1
+	max_audible_behaviour = fail	
+}
+
+soundeffect = {
+	name = pc_forerunner_halo
+	volume = 0.3
+	loop = no
+	sounds = {
+		sound = ringworld_pc_amb_01
+		sound = ringworld_pc_amb_02
+		sound = ringworld_pc_amb_03
+	} 
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0.3
+	max_audible = 1
+	max_audible_behaviour = fail	
+}
+
+soundeffect = {
+	name = pc_forerunner_halo_activated
+	volume = 0.3
+	loop = no
+	sounds = {
+		sound = ringworld_pc_amb_01
+		sound = ringworld_pc_amb_02
+		sound = ringworld_pc_amb_03
+	} 
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0.3
+	max_audible = 1
+	max_audible_behaviour = fail	
+}
+
+soundeffect = {
+	name = pc_forerunner_shield
+	volume = 0.2
+	loop = no
+	sounds = {
+		sound = sfx_world_relic_show_planet_01
+        sound = sfx_world_relic_show_planet_02
+        sound = sfx_world_relic_show_planet_03
+	} 
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0.3
+	max_audible = 1
+	max_audible_behaviour = fail	
+}
+
+soundeffect = {
+	name = pc_forerunner_sharpened_shield
+	volume = 0.2
+	loop = no
+	sounds = {
+		sound = sfx_world_relic_show_planet_01
+        sound = sfx_world_relic_show_planet_02
+        sound = sfx_world_relic_show_planet_03
+	} 
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0.3
+	max_audible = 1
+	max_audible_behaviour = fail	
+}
+
+soundeffect = {
+	name = pc_forerunner_ark
+	volume = 0.3
+	loop = no
+	sounds = {
+		sound = ringworld_pc_amb_01
+		sound = ringworld_pc_amb_02
+		sound = ringworld_pc_amb_03
+	} 
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0.3
+	max_audible = 1
+	max_audible_behaviour = fail	
+}
+
+soundeffect = {
+	name = pc_requiem
+	volume = 0.3
+	loop = no
+	sounds = {
+		sound = ringworld_pc_amb_01
+		sound = ringworld_pc_amb_02
+		sound = ringworld_pc_amb_03
+	} 
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0.3
+	max_audible = 1
+	max_audible_behaviour = fail	
+}
+
+soundeffect = {
+	name = pc_genesis
+	volume = 0.35
+	loop = no
+	sounds = {
+		sound = pc_gaia_planet_01
+		sound = pc_gaia_planet_02
+		sound = pc_gaia_planet_03
+	} 
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail		
+}
+
+
+#EVENTS 
+
+soundeffect = {
+	name = event_guardian_custode
+	volume = 1.0
+	loop = no
+	is3d = no
+	random_sound_when_looping = no
+	prevent_random_repetition = no
+	sounds = {
+		sound = guardian_arrival_01
+	}
+}

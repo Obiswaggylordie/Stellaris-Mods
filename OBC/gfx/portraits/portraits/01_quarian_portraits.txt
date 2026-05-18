@@ -1,0 +1,104 @@
+portraits = {
+	quarian_female_01 = { entity = "portrait_quarian_female_01_entity" clothes_selector = "quarian_female_clothes_01" attachment_selector = "quarian_female_hair_01" greeting_sound = "human_female_greetings_03"
+		character_textures = {
+			"gfx/models/portraits/quarian/quarian_female_body_01.dds"
+		}
+		custom_attachment_label = "MASK"
+	}
+	quarian_male_01 = { entity = "portrait_quarian_male_01_entity" clothes_selector = "quarian_male_clothes_01" attachment_selector = "quarian_male_hair_01" greeting_sound = "human_male_greetings_03"
+		character_textures = {
+			"gfx/models/portraits/quarian/quarian_male_body_01.dds"
+		}
+		custom_attachment_label = "MASK"
+	}
+}
+
+portrait_groups = {
+	quarian = {
+		default = quarian_female_01
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = { ruler = { NOT = { gender = female } } }
+				portraits = {
+					quarian_male_01
+				}
+			}
+			add = {
+				trigger = { ruler = { NOT = { gender = male } } }
+				portraits = {
+					quarian_female_01
+				}
+			}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = { NOT = { species_gender = male } }
+				portraits = {
+					quarian_female_01
+				}
+			}
+			add = {
+				trigger = { NOT = { species_gender = female } }
+				portraits = {
+					quarian_male_01
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					exists = species
+					species = { NOT = { species_gender = male } }
+				}
+				portraits = {
+					quarian_female_01
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					species = { NOT = { species_gender = female } }
+				}
+				portraits = {
+					quarian_male_01
+				}
+			}
+		}
+
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = { NOT = { gender = male } }
+				portraits = {
+					quarian_female_01
+				}
+			}
+			add = {
+				trigger = { NOT = { gender = female } }
+				portraits = {
+					quarian_male_01
+				}
+			}
+		}
+
+		#leader scope
+		ruler = {
+			add = {
+				trigger = { NOT = { gender = male } }
+				portraits = {
+					quarian_female_01
+				}
+			}
+			add = {
+				trigger = { NOT = { gender = female } }
+				portraits = {
+					quarian_male_01
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+on_game_start_country = {
+	events = {
+		zeiastart.01
+	}
+}
+
+on_planet_bombarded = {
+	events = {
+		perdition_genesis.2 # Perdition Shields reset bombardment, making it ineffective.
+		cosmoreverse_events.70 # Wave Motion Gun bombardment, ensure planetary annihilation.
+	}
+}
+
+on_monthly_pulse_country = {
+	events = {
+		
+	}
+}
+
+on_yearly_pulse_country = {
+	events = {
+		sgu_ascension.43 # 10% chance of leaders with level 10 or more gaining Ascendant trait if their species is Ascension 3 or 4
+	}
+}
+
+on_leader_level_up = {
+	events = {
+		#forerunner_start.699 # Refires add kvil'sha leader trait on leaders that level up
+		#promethean_start.6999 # Refires add uviik leader trait on leaders that level up
+	}
+}
+
+# A leader is added to the leader pool, available for recruitment
+# scope: country, from: leader
+on_added_to_leader_pool = {
+	events = {
+		#sgu_ascension.42 # Removes the Ascendant leader trait from leaders added to pool if they don't have ascension 4.
+	}
+}
+
+# A fleet has entered a system | See also: on_fleet_auto_move_arrival
+# Scope = Fleet
+# From = System
+on_entering_system_fleet = {
+	events = {
+		attero.1
+	}
+}
+
+on_destroy_planet_with_obi_planet_killer_cosmoreverse = {
+	events = {
+		cosmoreverse_events.69
+		#cosmoreverse_events.699
+	}
+}

@@ -1,0 +1,885 @@
+#Defensive armies can't transport of the planet
+#maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
+#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+
+###FORERUNNER/CONSTRUCT ARMIES###
+
+#SENTINELS
+forerunner_aggressor_sentinels = {
+	damage = 1.2
+	health = 0.5
+	morale_damage = 1.10
+	collateral_damage = 1.0
+	war_exhaustion = 0.25
+	has_morale = no
+	time = 1
+	icon = GFX_army_type_forerunner
+	has_species = yes
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 75
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	allow = {
+		owner = {
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}	
+		}
+		OR = {
+			has_active_building = building_sentinel_factory
+			has_active_building = building_promethean_factory
+			has_deposit = d_automated_sentinel_factory
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = trait_robot_sentinel_ai
+		}
+	}
+	
+	prerequisites = { "tech_forerunner_sentinels" }
+
+	ai_weight = {
+		base = 125
+		modifier = {
+			set = 0
+			OR = {
+				NOT = { has_policy_flag = robots_outlawed }
+				NAND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
+			}
+		}
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_materialist }
+		}
+	}
+}
+
+forerunner_super_sentinels = {
+	damage = 1.5
+	health = 1.0
+	morale_damage = 1.5
+	collateral_damage = 1.5
+	war_exhaustion = 0.50
+	has_morale = no
+	time = 3
+	icon = GFX_army_type_forerunner_offensive_bias
+	has_species = yes
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 275
+		}
+
+		upkeep = {
+			energy = 1.5
+		}
+	}
+
+	allow = {
+		owner = {
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}	
+		}
+		OR = {
+			has_active_building = building_sentinel_factory
+			has_active_building = building_promethean_factory
+			has_deposit = d_automated_sentinel_factory
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = trait_robot_sentinel_ai
+		}
+	}
+	
+	prerequisites = { "tech_forerunner_sentinels" }
+	
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 100
+			has_trait = trait_robot_sentinel_ai
+		}
+	}
+} 
+
+
+forerunner_onyx_sentinels = {
+	damage = 2.0
+	health = 2.0
+	morale_damage = 1.0
+	collateral_damage = 2.0
+	war_exhaustion = 0.75
+	has_morale = no
+	time = 5
+	icon = GFX_army_type_forerunner_offensive_bias
+	has_species = yes
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 400
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	allow = {
+		owner = {
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}	
+		}
+		OR = {
+			has_active_building = building_sentinel_factory
+			has_active_building = building_promethean_factory
+			has_deposit = d_automated_sentinel_factory
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = trait_robot_sentinel_ai
+		}
+	}
+	
+	prerequisites = { "tech_forerunner_sentinels" }
+
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 100
+			has_trait = trait_robot_sentinel_ai
+		}
+	}
+}
+
+forerunner_strato_sentinel = {
+	damage = 5.0
+	health = 5.0
+	morale_damage = 2.5
+	collateral_damage = 5.0
+	war_exhaustion = 1.0
+	has_morale = no
+	time = 10
+	icon = GFX_army_type_forerunner_offensive_bias
+	has_species = yes
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 700
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	allow = {
+		owner = {
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}	
+		}
+		OR = {
+			has_active_building = building_sentinel_factory
+			has_active_building = building_promethean_factory
+			has_deposit = d_automated_sentinel_factory
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = trait_robot_sentinel_ai
+		}
+	}
+	
+	prerequisites = { "tech_forerunner_sentinels" }
+
+	ai_weight = {
+		base = 200
+		modifier = {
+			set = 0
+			OR = {
+				NOT = { has_policy_flag = robots_outlawed }
+				NAND = {
+					has_ai_personality_behaviour = robot_liberator
+					has_technology = tech_droid_workers
+				}
+			}
+		}
+		modifier = {
+			set = 0
+			is_fallen_empire = yes
+			NOT = { has_ethic = ethic_fanatic_materialist }
+		}
+	}
+}
+#DEFENSIVE SENTINEL ARMIES
+forerunner_enforcer_sentinels = {
+	defensive = yes
+	damage = 5
+	health = 5
+	morale_damage = 2.5
+	collateral_damage = 0.0
+	war_exhaustion = 0.0
+	has_morale = no
+	time = 20
+	icon = GFX_army_type_forerunner_defense
+	has_species = yes
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 350
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	allow = {
+		owner = {
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}	
+		}
+		OR = {
+			has_active_building = building_sentinel_factory
+			has_active_building = building_promethean_factory
+			has_deposit = d_automated_sentinel_factory
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = trait_robot_sentinel_ai
+		}
+	}
+	
+	prerequisites = { "tech_forerunner_sentinels" }
+
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 100
+			has_trait = trait_robot_sentinel_ai
+		}
+	}
+} 
+
+forerunner_controller_sentinels = {
+	defensive = yes
+	damage = 7.5
+	health = 7.5
+	morale_damage = 5
+	collateral_damage = 0.0
+	war_exhaustion = 0.0
+	has_morale = no
+	time = 30
+	icon = GFX_army_type_forerunner_offensive_bias
+	has_species = yes
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 500
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	allow = {
+		owner = {
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}	
+		}
+		OR = {
+			has_active_building = building_sentinel_factory
+			has_active_building = building_promethean_factory
+			has_deposit = d_automated_sentinel_factory
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = trait_robot_sentinel_ai
+		}
+	}
+	
+	prerequisites = { "tech_forerunner_sentinels" }
+
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 100
+			has_trait = trait_robot_sentinel_ai
+		}
+	}
+}
+
+#FORERUNNER WARRIOR-SERVANTS
+forerunner_warrior_servant_army = {
+	damage = 2.5
+	health = 2.5
+	morale = 2.5
+	morale_damage = 1
+	collateral_damage = 1.0
+	war_exhaustion = 0.25
+	time = 25
+	icon = GFX_army_type_forerunner_isodidact
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 500
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	prerequisites = { "tech_forerunner_combat_suits" }
+
+	potential = {
+		from = { has_trait = "trait_forerunner_species" }
+	}
+	
+	ai_weight = {
+		base = 100
+		modifier = {
+			factor = 15
+			has_trait = trait_forerunner_species
+		}
+		modifier = {
+			set = 0
+			OR = {
+				has_technology = tech_promethean_combat_suits
+			}
+		}
+	}
+}
+
+forerunner_warrior_servant_defense_army = {
+	defensive = yes
+	health = 2.5
+	damage = 2.5
+	morale = 2.5
+	morale_damage = 1.0
+	collateral_damage = 0.0
+	war_exhaustion = 0.0 # No WE from defense armies
+	icon = GFX_army_type_forerunner_isodidact_defense
+	time = 25
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 3
+		}
+		produces = {
+			trigger = {
+				exists = owner 
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+	}
+
+	prerequisites = { "tech_forerunner_combat_suits" }
+
+	potential = {
+		from = { has_trait = "trait_forerunner_species" }
+	}
+
+	ai_weight = {
+		base = 100
+		modifier = {
+			factor = 15
+			has_trait = trait_forerunner_species
+		}
+		modifier = {
+			set = 0
+			OR = {
+				has_technology = tech_promethean_combat_suits
+			}
+		}
+	}
+}
+
+forerunner_war_sphinx = {
+	damage = 5.0
+	health = 5.0
+	morale_damage = 2.5
+	collateral_damage = 5.0
+	war_exhaustion = 0.50
+	has_morale = no
+	time = 50
+	icon = GFX_army_type_forerunner_isodidact
+	has_species = yes
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1000
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	potential = {
+		from = { has_trait = "trait_forerunner_species" }
+	}
+
+	allow = {
+		OR = {
+			has_active_building = building_sentinel_factory
+			has_active_building = building_promethean_factory
+		}
+	}
+	
+	prerequisites = { "tech_promethean_weapon_craft" }
+	
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 100
+			has_trait = trait_forerunner_species
+		}
+	}
+}
+#PROMETHEANS
+promethean_warrior_servant_army = {
+	damage = 5.0
+	health = 5.0
+	morale = 5.0
+	morale_damage = 5.0
+	collateral_damage = 2.5
+	war_exhaustion = 0.75
+	time = 25
+	icon = GFX_army_type_forerunner_promethean
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 750
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	prerequisites = { "tech_promethean_combat_suits" }
+
+	potential = {
+		from = { has_trait = "trait_forerunner_species" }
+	}
+	
+	allow = {
+		planet = {
+			has_active_building = building_promethean_factory
+		}
+	}
+
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 150
+			has_trait = trait_forerunner_species
+		}
+	}
+}
+
+promethean_warrior_servant_defense_army = {
+	defensive = yes
+	health = 5.0
+	damage = 5.0
+	morale = 5.0
+	collateral_damage = 0.0
+	war_exhaustion = 0.0 # No WE from defense armies
+	icon = GFX_army_type_forerunner_promethean_defense
+	time = 25
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 750
+		}
+		upkeep = {
+			energy = 5
+		}
+		produces = {
+			trigger = {
+				exists = owner 
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+	}
+
+	prerequisites = { "tech_promethean_combat_suits" }
+
+	potential = {
+		from = { has_trait = "trait_forerunner_species" }
+	}
+	
+	allow = {
+		planet = {
+			has_active_building = building_promethean_factory
+		}
+	}
+	
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 150
+			has_trait = trait_forerunner_species
+		}
+	}
+}
+
+promethean_seekers = {
+	damage = 7.5
+	health = 7.5
+	morale_damage = 7.5
+	collateral_damage = 5.0
+	war_exhaustion = 1.0
+	has_morale = no
+	time = 50
+	icon = GFX_army_type_forerunner_promethean
+	has_species = yes
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1200
+		}
+
+		upkeep = {
+			energy = 12
+		}
+	}
+
+	potential = {
+		from = { has_trait = "trait_forerunner_species" }
+	}
+	
+	allow = {
+		has_active_building = building_promethean_factory
+		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+	
+	prerequisites = { "tech_promethean_combat_suits" "tech_promethean_weapon_craft" }
+
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 200
+			has_trait = trait_forerunner_species
+		}
+	}
+}
+
+promethean_phaetons = {
+	damage = 7.5
+	health = 7.5
+	has_morale = no
+	morale_damage = 5.0
+	collateral_damage = 5.0
+	war_exhaustion = 1.25
+	time = 50
+	has_species = yes
+
+	icon = GFX_army_type_forerunner_promethean
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 550
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+	
+	prerequisites = { "tech_promethean_weapon_craft" }
+
+	allow = {
+		owner = {
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}	
+		}
+		has_active_building = building_promethean_factory
+	}
+
+	potential = {
+		from = {
+			has_trait = trait_robot_sentinel_ai
+		}
+	}
+	
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 100
+			has_trait = trait_robot_sentinel_ai
+		}
+		modifier = {
+			factor = 150
+			has_trait = trait_robot_promethean_ai
+		}
+	}
+}
+
+## Mechanical Prometheans
+promethean_knight_army = {
+	damage = 10.0
+	health = 10.0
+	has_morale = no
+	morale_damage = 7.5
+	collateral_damage = 2.5
+	war_exhaustion = 2.5
+	time = 50
+	has_species = yes
+
+	icon = GFX_army_type_forerunner_promethean
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 425
+		}
+
+		upkeep = {
+			energy = 4
+		}
+	}
+	
+	prerequisites = { "tech_composer" }
+	
+	allow = {
+		owner = {
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}	
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = trait_robot_promethean_ai
+		}
+	}
+	
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 100
+			has_trait = trait_robot_promethean_ai
+		}
+	}
+}
+
+promethean_lancer_army = {
+	damage = 25.0
+	health = 25.0
+	has_morale = no
+	morale_damage = 7.5.0
+	collateral_damage = 5.0
+	war_exhaustion = 5.0
+	time = 100
+	has_species = yes
+
+	icon = GFX_army_type_forerunner_promethean
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 450
+		}
+
+		upkeep = {
+			energy = 4
+		}
+	}
+	
+	prerequisites = { "tech_composer" }
+	
+	allow = {
+		owner = {
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}	
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = trait_robot_promethean_ai
+		}
+	}
+	
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 100
+			has_trait = trait_robot_promethean_ai
+		}
+	}
+}
+
+promethean_battlewagon_army = {
+	damage = 50.0
+	health = 50.0
+	has_morale = no
+	morale_damage = 10.0
+	collateral_damage = 10.0
+	war_exhaustion = 7.5
+	time = 200
+	has_species = yes
+
+	icon = GFX_army_type_forerunner_promethean
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 550
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+	
+	prerequisites = { "tech_composer" }
+	
+	allow = {
+		owner = {
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}	
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = trait_robot_promethean_ai
+		}
+	}
+
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 100
+			has_trait = trait_robot_promethean_ai
+		}
+	}
+}
+
+#MECHANICAL PROMETHEAN DEFENSIVE ARMIES
+promethean_watchers = {
+	defensive = yes
+	damage = 50.0
+	health = 50.0
+	has_morale = no
+	morale_damage = 7.5
+	collateral_damage = 0.0
+	war_exhaustion = 0.0
+	icon = GFX_army_type_forerunner_promethean
+	has_species = yes
+	time = 200
+	
+	prerequisites = { "tech_composer" }
+	
+	allow = {
+		owner = {
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}	
+		}
+	}
+
+	potential = {
+		from = {
+			has_trait = trait_robot_promethean_ai
+		}
+	}
+	
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 100
+			has_trait = trait_robot_sentinel_ai
+		}
+		modifier = {
+			factor = 150
+			has_trait = trait_robot_promethean_ai
+		}
+	}
+}
+
+#CREATED
+warden_eternal = {
+	damage = 100.0
+	health = 100.0
+	has_morale = no
+	morale_damage = 10.0
+	collateral_damage = 0.0
+	war_exhaustion = 0.0
+	has_species = no
+
+	icon = GFX_army_type_forerunner_warden_eternal
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1000
+		}
+	}
+	
+	potential = {
+		owner = {
+			NOT = {
+				has_policy_flag = robots_outlawed
+			} 
+		}
+		has_deposit = d_genesis_domain_gateway
+	}
+
+	ai_weight = {
+		weight = 50
+	}
+	
+}

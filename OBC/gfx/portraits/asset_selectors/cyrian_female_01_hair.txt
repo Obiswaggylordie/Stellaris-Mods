@@ -1,0 +1,143 @@
+# This is a template which multiple species can use. 
+  
+cyrian_female_01_hair = {
+	default = "gfx/models/portraits/cyrian/cyrian_female_hair_10.dds"
+	
+	game_setup = {#will run with a limited country scope. species and government is set but the country does not actually exist
+		default = "gfx/models/portraits/cyrian/cyrian_female_hair_10.dds"
+	}
+	
+	#species scope
+	species = { #generic portrait for a species
+		default = "gfx/models/portraits/cyrian/cyrian_female_hair_10.dds"
+	}
+	
+	#pop scope
+	pop = { #for a specific pop
+	
+		default = "gfx/models/portraits/cyrian/cyrian_female_hair_10.dds"
+
+		random = {
+			list = {
+				"gfx/models/portraits/cyrian/cyrian_female_hair_01.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_02.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_03.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_04.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_06.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_09.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_10.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_11.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_12.dds"
+			}
+		}	
+	}
+	
+	
+	
+	#leader scope
+	leader = { #scientists, generals, admirals, governor
+	
+	default = "gfx/models/portraits/cyrian/cyrian_female_hair_05.dds"
+
+		random = {
+			trigger = { leader_class = general }
+			list = {
+				"gfx/models/portraits/cyrian/cyrian_female_hair_02.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_04.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_05.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_09.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_10.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_11.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_12.dds"
+			}
+		}		
+		
+		random = {
+			trigger = { leader_class = admiral }
+			list = {
+				"gfx/models/portraits/cyrian/cyrian_female_hair_02.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_04.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_05.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_09.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_10.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_11.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_12.dds"
+			}
+		}	
+		
+		random = {
+			trigger = { leader_class = scientist }
+			list = {
+				"gfx/models/portraits/cyrian/cyrian_female_hair_01.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_02.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_03.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_04.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_05.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_06.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_09.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_10.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_11.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_12.dds"
+			}
+		}		
+		
+		random = {
+			trigger = { leader_class = governor }
+			list = {
+				"gfx/models/portraits/cyrian/cyrian_female_hair_01.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_02.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_03.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_04.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_05.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_06.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_09.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_10.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_11.dds"
+				"gfx/models/portraits/cyrian/cyrian_female_hair_12.dds"
+			}
+		}
+	}
+  
+	#leader scope 
+	ruler = {
+	
+		default = "gfx/models/portraits/cyrian/cyrian_female_hair_05.dds"
+		
+		random = {
+			trigger = { 
+				owner = { has_militarist_government = yes }
+			}
+				
+			list = {
+				"gfx/models/portraits/cyrian/cyrian_female_hair_05.dds"
+			}
+		}		
+		
+		random = {
+			trigger = { 
+				owner = { has_spiritualist_government = yes }
+			}	
+			
+			list = {
+				"gfx/models/portraits/cyrian/cyrian_female_hair_05.dds"
+			}
+		}		
+		
+		random = {
+			trigger = { 
+				owner = {
+					OR = {
+						has_government = gov_stagnant_ascendancy
+						has_primitive_government = yes
+						has_materialist_government = yes
+						has_pacifist_government = yes
+					}
+				}
+			}
+			
+			list = {
+				"gfx/models/portraits/cyrian/cyrian_female_hair_05.dds"
+			}
+		}
+	}
+}

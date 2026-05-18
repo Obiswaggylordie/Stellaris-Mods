@@ -1,0 +1,72 @@
+is_wh_planet_small_hive = {
+    OR = {
+        is_planet_class = pc_hive_arid
+        is_planet_class = pc_hive_continental_01
+        is_planet_class = pc_hive_continental_02
+        is_planet_class = pc_hive_ocean
+        is_planet_class = pc_hive_tundra
+    }
+}
+
+is_wh_planet_hive = {
+    OR = {
+        is_wh_planet_small_hive = yes
+        is_planet_class = pc_hive_medium
+        is_planet_class = pc_hive_industrial
+        is_planet_class = pc_mega_hive
+        is_planet_class = pc_super_hive
+    }
+}
+
+is_wh_planet_industrial = {
+    OR = {
+        is_planet_class = pc_industrial
+		is_planet_class = pc_forge
+		is_planet_class = pc_forgee
+		is_planet_class = pc_forgeee
+		is_planet_class = pc_forge_ring
+		is_planet_class = pc_forge_ring2
+		is_planet_class = pc_forge_ring3
+		is_planet_class = pc_refinery
+		is_planet_class = pc_armoury
+    }
+}
+
+is_wh_planet_iom = {
+    OR = {
+        is_planet_class = pc_city_iom
+        is_planet_class = pc_mechanicus_forge
+    }
+}
+
+is_wh_planet_imperium = {
+    OR = {
+        is_wh_planet_hive = yes
+        is_wh_planet_industrial = yes
+        is_planet_class = pc_penal
+        is_planet_class = pc_agri
+        is_planet_class = pc_fortress
+        is_planet_class = pc_shrine
+        is_wh_planet_iom = yes
+    }
+}
+
+is_wh_planet_xenos = {
+    OR = {
+        is_planet_class = pc_craftworld
+		is_planet_class = pc_advancecity
+		is_planet_class = pc_webway
+		is_planet_class = pc_daemon
+		is_planet_class = pc_daemonn
+		is_planet_class = pc_daemont
+		is_planet_class = pc_daemons
+		is_planet_class = pc_advancexenocityy
+    }
+}
+
+is_wh_planet_all = {
+    OR = {
+        is_wh_planet_imperium = yes
+        is_wh_planet_xenos = yes
+    }
+}

@@ -1,0 +1,2245 @@
+
+################################################################################################## CORVETTE ######
+
+ship_section_template = {
+	key = "CORVETTE_TREK_01_ENT_INTREPID"
+	ship_size = corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "trek_01_ent_intrepid_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_css_trek_01, tech_css_trek_22nd_cen }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}
+	
+	small_utility_slots = 3
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CORVETTE_TREK_01_DAEDELUS"
+	ship_size = corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "trek_01_daedelus_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}
+	
+	small_utility_slots = 3
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CORVETTE_TREK_01_BONAVENTURE"
+	ship_size = corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "trek_01_bonaventure_entity"
+	icon = "GFX_ship_part_core_mid"
+
+		prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}
+	
+	small_utility_slots = 3
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+
+
+
+ship_section_template = {
+	key = "CORVETTE_TREK_01_PEREGRINE"
+	ship_size = corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "trek_01_peregrine_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}
+	
+	small_utility_slots = 3
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CORVETTE_TREK_01_OLYMPIC"
+	ship_size = corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "trek_01_olympic_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}
+	
+	small_utility_slots = 3
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CORVETTE_TREK_01_SABER"
+	ship_size = corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "trek_01_saber_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}
+	
+	small_utility_slots = 3
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CORVETTE_TREK_01_STEAMRUNNER"
+	ship_size = corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "trek_01_steamrunner_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}
+	
+	small_utility_slots = 3
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+##################################################################################################################### FRIGATE #######
+
+ship_section_template = {
+	key = "FRIGATE_MID_FARRAGUT"
+	ship_size = frigate
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "frigate_mid_farragut"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { explosive }
+
+    # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+		prerequisites = { tech_css_trek_01_preftl }
+		
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	small_utility_slots = 4
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "FRIGATE_MID_CENTAUR"
+	ship_size = frigate
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "frigate_mid_centaur"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { explosive }
+
+    # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	prerequisites = { tech_css_trek_01_preftl }
+		
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	small_utility_slots = 4
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "FRIGATE_MID_DEFIANT"
+	ship_size = frigate
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "frigate_mid_defiant"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { explosive }
+
+	prerequisites = { tech_css_trek_01_preftl }
+		
+    # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	small_utility_slots = 4
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+########################################################################################################################### DESTROYER #######
+
+ship_section_template = {
+	key = "DESTROYER_TREK_BOW_NX"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "trek_01_destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship }
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "small_gun_03"
+	}
+
+	medium_utility_slots = 2
+	small_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 20
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_TREK_STERN_NX"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "trek_01_destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship }
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "small_gun_03"
+	}
+
+	small_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 10
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_TREK_BOW_RADIANT"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_radiant_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship }
+
+	prerequisites = { tech_css_trek_01_preftl }
+		
+    # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_TREK_BOW_MIRANDA"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_miranda_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship }
+
+	prerequisites = { tech_css_trek_01_preftl }
+		
+    # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_TREK_BOW_CONSTELLATION"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_constellation_entity"
+	icon = "GFX_ship_part_core_bow"
+	
+
+    # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	prerequisites = { tech_css_trek_01_preftl }
+		
+	ai_weight = {
+		modifier = {
+			factor = 0.1		
+			NOT = { has_technology = tech_battleships }
+		}
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}	
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	
+	small_utility_slots = 6
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_TREK_BOW_FREEDOM"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_freedom_entity"
+	icon = "GFX_ship_part_core_bow"
+	
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	prerequisites = { tech_css_trek_01_preftl }
+		
+	ai_weight = {
+		modifier = {
+			factor = 0.1		
+			NOT = { has_technology = tech_battleships }
+		}
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}	
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}	
+	
+	small_utility_slots = 6
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_TREK_BOW_INTREPID"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_intrepid_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship }
+
+	prerequisites = { tech_css_trek_01_preftl }
+		
+    # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_TREK_BOW_CALIFORNIA"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_california_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship }
+
+	prerequisites = { tech_css_trek_01_preftl }
+		
+    # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_TREK_BOW_NOVA"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_nova_entity"
+	icon = "GFX_ship_part_core_bow"
+	
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	prerequisites = { tech_css_trek_01_preftl }
+		
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}	
+	
+	
+	small_utility_slots = 6
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_TREK_STERN_RADIANT"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_radiant_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+		prerequisites = { tech_css_trek_01_preftl }
+	
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_TREK_STERN_HELIOS"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_helios_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+		prerequisites = { tech_css_trek_01_preftl }
+	
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+# ship_section_template = {
+	# key = "DESTROYER_TREK_STERN_ARCHER"
+	# ship_size = destroyer
+	# fits_on_slot = stern
+	# should_draw_components = yes
+	# entity = "destroyer_stern_archer_entity"
+	# icon = "GFX_ship_part_core_stern"
+	
+
+  	  # # Unused by AI
+  	  # ai_weight = {
+   	     # factor = 0
+  	  # }
+
+	# 	prerequisites = { tech_css_trek_01_preftl }
+	
+
+	# component_slot = {
+		# name = "SMALL_GUN_01"
+		# template = "point_defence_turret"
+		# locatorname = "small_gun_01"
+	# }
+
+	# component_slot = {
+		# name = "SMALL_GUN_02"
+		# template = "point_defence_turret"
+		# locatorname = "small_gun_02"
+	# }
+
+	
+	# aux_utility_slots = 1
+	
+	# resources = {
+		# category = ship_sections
+		# cost = {
+			# alloys = 30
+		# }
+	# }
+# }
+
+ship_section_template = {
+	key = "DESTROYER_TREK_STERN_HERMES"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_hermes_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	prerequisites = { tech_css_trek_01_preftl }
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_TREK_STERN_MIRANDA"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_miranda_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_TREK_STERN_CONSTELLATION"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_constellation_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_TREK_STERN_NOVA"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_nova_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	prerequisites = { tech_css_trek_01_preftl }
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+
+
+
+ship_section_template = {
+	key = "DESTROYER_TREK_STERN_INTREPID"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_intrepid_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	prerequisites = { tech_css_trek_01_preftl }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+
+ship_section_template = {
+	key = "DESTROYER_TREK_STERN_CALIFORNIA"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_california_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { screen }
+
+	prerequisites = { tech_css_trek_01_preftl }
+	
+    # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_TREK_STERN_FREEDOM"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_freedom_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	prerequisites = { tech_css_trek_01_preftl }
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 30
+		}
+	}
+}
+
+############################################################################################# CRUISER ######
+
+ship_section_template = {
+	key = "CRUISER_BOW_EXCELSIOR"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_excelsior_entity"
+	icon = "GFX_ship_part_core_bow"
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+		prerequisites = { tech_css_trek_01_preftl }
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	
+	medium_utility_slots = 4
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 40
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CRUISER_BOW_ENVOY"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_envoy_entity"
+	icon = "GFX_ship_part_core_bow"
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	medium_utility_slots = 4
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 40
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CRUISER_BOW_AMBASSADOR"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_S4_entity"
+	icon = "GFX_ship_part_core_bow"
+
+		prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	
+	medium_utility_slots = 4
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 40
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CRUISER_MID_ENVOY"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_envoy_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+	
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	
+	medium_utility_slots = 4
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 40
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CRUISER_MID_AMBASSADOR"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_ambassador_entity"
+	icon = "GFX_ship_part_core_mid"
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+		prerequisites = { tech_css_trek_01_preftl }
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	
+
+	
+	medium_utility_slots = 4
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 40
+		}
+	}
+}
+
+# ship_section_template = {
+	# key = "CRUISER_MID_NX_REFIT"
+	# ship_size = cruiser
+	# fits_on_slot = mid
+	# should_draw_components = yes
+	# entity = "cruiser_mid_nx_refit_entity"
+	# icon = "GFX_ship_part_core_mid"
+
+  	  # # Unused by AI
+  	  # ai_weight = {
+   	     # factor = 0
+  	  # }
+
+	# prerequisites = { tech_css_trek_01, tech_css_trek_22nd_cen }
+
+	
+	# component_slot = {
+		# name = "MEDIUM_GUN_01"
+		# template = "medium_turret"
+		# locatorname = "medium_gun_01"
+	# }
+
+	# component_slot = {
+		# name = "MEDIUM_GUN_02"
+		# template = "medium_turret"
+		# locatorname = "medium_gun_02"
+	# }
+
+	# component_slot = {
+		# name = "MEDIUM_GUN_03"
+		# template = "medium_turret"
+		# locatorname = "medium_gun_03"
+	# }
+
+	
+	# medium_utility_slots = 4
+	
+	# resources = {
+		# category = ship_sections
+		# cost = {
+			# alloys = 40
+		# }
+	# }
+# }
+
+# ship_section_template = {
+	# key = "CRUISER_MID_INQUIRY"
+	# ship_size = cruiser
+	# fits_on_slot = mid
+	# should_draw_components = yes
+	# entity = "cruiser_mid_inquiry_entity"
+	# icon = "GFX_ship_part_core_mid"
+
+  	  # # Unused by AI
+  	  # ai_weight = {
+   	     # factor = 0
+  	  # }
+
+	# prerequisites = { tech_css_trek_01, tech_css_trek_24th_b_cen }
+
+	
+	# component_slot = {
+		# name = "TORPEDO_01"
+		# template = "medium_missile_turret"
+		# locatorname = "medium_gun_01"
+	# }
+
+	# component_slot = {
+		# name = "TORPEDO_02"
+		# template = "medium_missile_turret"
+		# locatorname = "medium_gun_02"
+	# }
+
+	# component_slot = {
+		# name = "SMALL_GUN_01"
+		# template = "small_turret"
+		# locatorname = "small_gun_01"
+	# }
+
+	# component_slot = {
+		# name = "SMALL_GUN_02"
+		# template = "small_turret"
+		# locatorname = "small_gun_02"
+	# }
+
+	
+	# medium_utility_slots = 4
+	
+	# resources = {
+		# category = ship_sections
+		# cost = {
+			# alloys = 40
+		# }
+	# }
+# }
+
+# ship_section_template = {
+	# key = "CRUISER_MID_NEW_ORLEANS"
+	# ship_size = cruiser
+	# fits_on_slot = mid
+	# should_draw_components = yes
+	# entity = "cruiser_mid_new_orleans_entity"
+	# icon = "GFX_ship_part_core_mid"
+
+  	  # # Unused by AI
+  	  # ai_weight = {
+   	     # factor = 0
+  	  # }
+
+	# prerequisites = { tech_css_trek_01, tech_css_trek_24th_b_cen }
+
+	
+	# component_slot = {
+		# name = "PD_01"
+		# template = "point_defence_turret"
+		# locatorname = "small_gun_01"
+	# }
+	# component_slot = {
+		# name = "PD_02"
+		# template = "point_defence_turret"
+		# locatorname = "small_gun_02"
+	# }
+	# component_slot = {
+		# name = "STRIKE_CRAFT_01"
+		# template = "large_strike_craft"
+		# rotation = 90
+		# locatorname = "strike_craft_locator_01"
+	# }
+
+	
+	# medium_utility_slots = 4
+	
+	# resources = {
+		# category = ship_sections
+		# cost = {
+			# alloys = 40
+		# }
+	# }
+# }
+
+# ship_section_template = {
+	# key = "CRUISER_MID_PICARD"
+	# ship_size = cruiser
+	# fits_on_slot = mid
+	# should_draw_components = yes
+	# entity = "cruiser_mid_picard_entity"
+	# icon = "GFX_ship_part_core_mid"
+
+  	  # # Unused by AI
+  	  # ai_weight = {
+   	     # factor = 0
+  	  # }
+
+	# prerequisites = { tech_css_trek_01, tech_css_trek_24th_b_cen }
+
+	
+	# component_slot = {
+		# name = "MEDIUM_GUN_01"
+		# template = "medium_turret"
+		# locatorname = "medium_gun_01"
+	# }
+
+	# component_slot = {
+		# name = "MEDIUM_GUN_02"
+		# template = "medium_turret"
+		# locatorname = "medium_gun_02"
+	# }
+
+	# component_slot = {
+		# name = "MEDIUM_GUN_03"
+		# template = "medium_turret"
+		# locatorname = "medium_gun_03"
+	# }
+
+	
+	# medium_utility_slots = 4
+	
+	# resources = {
+		# category = ship_sections
+		# cost = {
+			# alloys = 40
+		# }
+	# }
+# }
+
+ship_section_template = {
+	key = "CRUISER_STERN_CONREFIT"
+	ship_size = cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_conrefit_entity"
+	icon = "GFX_ship_part_core_stern"
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+		prerequisites = { tech_css_trek_01_preftl }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+				
+	}
+
+	
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 40
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CRUISER_STERN_AMBASSADOR"
+	ship_size = cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_ambassador_entity"
+	icon = "GFX_ship_part_core_stern"
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	aux_utility_slots = 3
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 40
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CRUISER_STERN_EXCELSIOR"
+	ship_size = cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_excelsior_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+				
+	}
+	
+	aux_utility_slots = 2
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+		prerequisites = { tech_css_trek_01_preftl }
+	
+		
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 40
+		}
+	}
+}
+
+# ship_section_template = {
+	# key = "CRUISER_STERN_INQUIRY"
+	# ship_size = cruiser
+	# fits_on_slot = stern
+	# should_draw_components = yes
+	# entity = "cruiser_stern_inquiry_entity"
+	# icon = "GFX_ship_part_core_stern"
+
+  	  # # Unused by AI
+  	  # ai_weight = {
+   	     # factor = 0
+  	  # }
+
+	# prerequisites = { tech_css_trek_01, tech_css_trek_24th_b_cen }
+	
+	# component_slot = {
+		# name = "MEDIUM_GUN_01"
+		# template = "medium_turret"
+		# locatorname = "medium_gun_01"
+				
+	# }
+
+	
+	# aux_utility_slots = 2
+	
+	# resources = {
+		# category = ship_sections
+		# cost = {
+			# alloys = 40
+		# }
+	# }
+# }
+
+# ship_section_template = {
+	# key = "CRUISER_STERN_PICARD"
+	# ship_size = cruiser
+	# fits_on_slot = stern
+	# should_draw_components = yes
+	# entity = "cruiser_stern_picard_entity"
+	# icon = "GFX_ship_part_core_stern"
+
+	# prerequisites = { tech_css_trek_01, tech_css_trek_24th_b_cen }
+
+  	  # # Unused by AI
+  	  # ai_weight = {
+   	     # factor = 0
+  	  # }
+
+	# component_slot = {
+		# name = "SMALL_GUN_01"
+		# template = "small_turret"
+		# locatorname = "small_gun_01"
+	# }
+	
+	# component_slot = {
+		# name = "SMALL_GUN_02"
+		# template = "small_turret"
+		# locatorname = "small_gun_02"
+	# }
+	
+	# aux_utility_slots = 3
+	
+	# resources = {
+		# category = ship_sections
+		# cost = {
+			# alloys = 40
+		# }
+	# }
+# }
+
+# ship_section_template = {
+	# key = "CRUISER_STERN_NEW_ORLEANS"
+	# ship_size = cruiser
+	# fits_on_slot = stern
+	# should_draw_components = yes
+	# entity = "cruiser_stern_new_orleans_entity"
+	# icon = "GFX_ship_part_core_stern"
+	
+	# component_slot = {
+		# name = "MEDIUM_GUN_01"
+		# template = "medium_turret"
+		# locatorname = "medium_gun_01"
+				
+	# }
+	
+	# aux_utility_slots = 2
+
+  	  # # Unused by AI
+  	  # ai_weight = {
+   	     # factor = 0
+  	  # }
+
+	# prerequisites = { tech_css_trek_01, tech_css_trek_24th_b_cen }
+	
+		
+	# resources = {
+		# category = ship_sections
+		# cost = {
+			# alloys = 40
+		# }
+	# }
+# }
+
+#################################################################################### BATTLESHIP ######
+
+ship_section_template = {
+	key = "BATTLESHIP_BOW_GALAXY"
+	ship_size = battleship
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "battleship_bow_galaxy_entity"
+	icon = "GFX_ship_part_core_bow"
+	icon_frame = 1
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	large_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_BOW_X_GALAXY"
+	ship_size = battleship
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "battleship_bow_galaxy_entity"
+	icon = "GFX_ship_part_core_bow"
+	icon_frame = 1
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	
+	large_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_BOW_X_LAKOTA"
+	ship_size = battleship
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "battleship_bow_L2_entity"
+	icon = "GFX_ship_part_core_bow"
+	icon_frame = 1
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	
+	large_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_BOW_X_AKIRA"
+	ship_size = battleship
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "battleship_bow_M1S2SHB_entity"
+	icon = "GFX_ship_part_core_bow"
+	icon_frame = 1
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	
+	large_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_BOW_X_PROMETHEUS"
+	ship_size = battleship
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "battleship_bow_L1M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	icon_frame = 1
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	
+	large_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_MID_LAKOTA"
+	ship_size = battleship
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "battleship_mid_lakota_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	large_utility_slots = 3
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_STERN_LAKOTA"
+	ship_size = battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "trek_01_battleship_stern_M1S2_entity"
+	icon = "GFX_ship_part_core_stern"
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+				
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_STERN_CROSSFIELD"
+	ship_size = battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_crossfield_entity"
+	icon = "GFX_ship_part_core_stern"
+
+		prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+				
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_STERN_PROMETHEUS"
+	ship_size = battleship
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "battleship_stern_prometheus_entity"
+	icon = "GFX_ship_part_core_stern"
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+				
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 80
+		}
+	}
+}
+
+#################################################################################### TITAN ######
+
+#BOW
+
+ship_section_template = {
+	key = "TITAN_VENGEANCE_BOW"
+	ship_size = titan
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "vengeance_bow_entity"
+	icon = "GFX_ship_part_core_bow"
+
+	prerequisites = { tech_css_trek_01_preftl }
+
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+	
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "xl_gun_01"
+	}
+	
+	large_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 160
+		}
+	}
+}
+
+ship_section_template = {
+	key = "TITAN_VENGEANCE_MID"
+	ship_size = titan
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "vengeance_mid_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_css_trek_01 }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_04"
+	}
+	
+	large_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 160
+		}
+	}
+}
+
+#STERN
+
+ship_section_template = {
+	key = "TITAN_VENGEANCE_STERN"
+	ship_size = titan
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "vengeance_stern_entity"
+	icon = "GFX_ship_part_core_stern"
+
+		prerequisites = { tech_css_trek_01_preftl }
+
+  	  # Unused by AI
+  	  ai_weight = {
+   	     factor = 0
+  	  }
+		
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+	
+	aux_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 160
+		}
+	}
+}

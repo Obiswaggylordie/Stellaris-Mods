@@ -1,0 +1,98 @@
+#weapon_type_kinetic_weapon_damage_mult = 0.15
+#weapon_type_kinetic_weapon_fire_rate_mult = 0.15
+#weapon_type_energy_weapon_damage_mult = 0.15
+#weapon_type_energy_weapon_fire_rate_mult = 0.15
+#weapon_type_explosive_weapon_damage_mult = 0.15
+#weapon_type_explosive_weapon_fire_rate_mult = 0.15
+#weapon_type_strike_craft_weapon_damage_mult = 0.15
+#	spaceport_ship_build_speed_mult = 0.15
+# country_robot_build_speed_mult
+# set_timed_global_flag = { flag = feral_prethoryn_can_spawn days = 5400 }
+
+# stargate project menu
+stargate_project_menu = {
+	icon = "GFX_edict_type_policy"
+	length = 1
+	resources = {
+		category = edicts
+	}
+
+	potential = {
+		any_owned_planet = {
+			OR = {
+				has_modifier = Inactive_Stargate_On_Planet
+				has_modifier = Active_Stargate_On_Planet
+			}
+		}
+	}
+
+	allow = {
+		any_owned_planet = {
+			has_modifier = Active_Stargate_On_Planet
+		}
+	}
+
+	effect = {
+		custom_tooltip = edict_stargate_expedition_menu_effect
+		country_event = { id = sgu_stargate_event.100 }
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+
+	#prerequisites = {
+	#	"tech_"
+	#}	
+}
+
+# Dakara activation
+activate_dakara_superweapon = {
+	icon = "GFX_edict_type_policy"
+	length = 1
+	resources = {
+		category = edicts
+		cost = {
+			influence = 500
+		}
+	}
+
+	allow = {
+		resource_stockpile_compare = {
+			resource = energy
+			value >= 50000
+		}
+		NOT = { has_country_flag = activate_dakara_superweapon_on_cd }
+	}
+
+	potential = {
+		any_owned_planet = { 
+			has_modifier = Dakara_Superweapon
+			has_modifier = Active_Stargate_On_Planet
+		}
+	}
+
+	effect = {
+		custom_tooltip = edict_activate_dakara_superweapon_effect
+		hidden_effect = {
+			owner = {
+				add_resource = {
+					energy = -50000
+				}
+			}
+			#set_timed_country_flag = {
+			#	flag = activate_dakara_superweapon_on_cd
+			#	days = 1800 # 5 years
+			#}
+			country_event = { id = sgu_stargate_event.1000 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0		
+	}
+
+	#prerequisites = {
+	#	"tech_ascension_theory"
+	#}	
+}

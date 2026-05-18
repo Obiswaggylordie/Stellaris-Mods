@@ -1,0 +1,254 @@
+##########FORERUNNERS####################
+
+###########EVENTS########################
+
+sound =
+{
+	name = "guardian_arrival_01"
+	file = "weapons/guardian_arrival.wav"
+	volume = 0.6
+}
+
+##########WEAPONS FIRE & HIT & DEATH############
+
+####SENTINEL BEAM 
+
+sound =
+{
+	name = "sentinel_beam"
+	file = "weapons/sentinel_beam.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "sentinel_beam_hit"
+	file = "weapons/sentinel_beam_hit.wav"
+	volume = 0.8
+}
+
+#####CONVERGING BEAM 
+
+sound =
+{
+	name = "converging_beam"
+	file = "weapons/converging_beam.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "converging_beam_1"
+	file = "weapons/converging_beam_close_1.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "converging_beam_2"
+	file = "weapons/converging_beam_close_2.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "converging_beam_3"
+	file = "weapons/converging_beam_close_3.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "converging_beam_hit"
+	file = "weapons/torsion_driver_hit.wav"
+	volume = 0.8
+}
+
+####ION WEAPON LAUNCHER
+
+sound =
+{
+	name = "ion_weapon_launcher"
+	file = "weapons/ion_weapon_launcher.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "ion_weapon_launcher_1"
+	file = "weapons/ion_weapon_launcher_close_1.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "ion_weapon_launcher_2"
+	file = "weapons/ion_weapon_launcher_close_2.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ion_weapon_launcher_1"
+	file = "weapons/ion_weapon_launcher_distance_1.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "distance_ion_weapon_launcher_2"
+	file = "weapons/ion_weapon_launcher_distance_2.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "ion_weapon_launcher_hit"
+	file = "weapons/torsion_driver_hit.wav"
+	volume = 0.8
+}
+
+
+####PARTICLE CANNON
+
+sound =
+{
+	name = "particle_cannon"
+	file = "weapons/particle_cannon.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "particle_cannon_1"
+	file = "weapons/particle_cannon_close_1.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "particle_cannon_2"
+	file = "weapons/particle_cannon_close_2.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "particle_cannon_hit"
+	file = "weapons/torsion_driver_hit.wav"
+	volume = 0.8
+}
+
+####PARTICLE CANNON PD 
+sound =
+{
+	name = "particle_cannon_pd"
+	file = "weapons/particle_cannon_pd.wav"
+	volume = 0.8
+}
+
+sound =
+{
+	name = "particle_cannon_pd_1"
+	file = "weapons/particle_cannon_pd_close_1.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "particle_cannon_pd_2"
+	file = "weapons/particle_cannon_pd_close_2.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "particle_cannon_pd_3"
+	file = "weapons/particle_cannon_pd_close_3.wav"
+	volume = 0.8
+}
+
+####LMF CANNON 
+
+sound =
+{
+	name = "lmf_cannon"
+	file = "weapons/lmf_cannon.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "lmf_cannon_1"
+	file = "weapons/lmf_cannon_close_1.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "lmf_cannon_2"
+	file = "weapons/lmf_cannon_close_2.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "lmf_cannon_hit"
+	file = "weapons/destructor_beam_hit.wav"
+	volume = 0.8
+}
+
+####PULSE MISSILE LAUNCHER 
+sound =
+{
+	name = "pulse_missile_launcher_1"
+	file = "weapons/pulse_missile_launcher_close_1.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "pulse_missile_launcher_2"
+	file = "weapons/pulse_missile_launcher_close_2.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "pulse_missile_launcher_3"
+	file = "weapons/pulse_missile_launcher_close_3.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "pulse_missile_launcher_hit"
+	file = "weapons/torsion_driver_hit.wav"
+	volume = 0.8
+}
+
+####DESTRUCTOR BEAM 
+sound =
+{
+	name = "destructor_beam_1"
+	file = "weapons/destructor_beam_close_1.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "destructor_beam_2"
+	file = "weapons/destructor_beam_close_2.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "destructor_beam_3"
+	file = "weapons/destructor_beam_close_3.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "destructor_beam_4"
+	file = "weapons/destructor_beam_close_4.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "destructor_beam_hit"
+	file = "weapons/destructor_beam_hit.wav"
+	volume = 0.8
+}
+
+####TORSION DRIVER
+
+sound =
+{
+	name = "torsion_driver"
+	file = "weapons/torsion_driver.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "torsion_driver_hit"
+	file = "weapons/torsion_driver_hit.wav"
+	volume = 0.8
+}

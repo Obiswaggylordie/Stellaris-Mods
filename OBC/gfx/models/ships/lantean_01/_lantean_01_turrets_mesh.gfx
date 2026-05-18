@@ -1,0 +1,50 @@
+objectTypes = {
+
+
+#######  Turrets  #######
+
+	pdxmesh = {
+		name = "lantean_01_missile_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+	}
+	
+	pdxmesh = {
+		name = "lantean_01_turret_projectile_large_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+	}	
+	
+	pdxmesh = {
+		name = "lantean_01_turret_projectile_medium_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+	}	
+	
+	pdxmesh = {
+		name = "lantean_01_turret_projectile_small_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+	}	
+	
+	pdxmesh = {
+		name = "lantean_01_turret_missile_large_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+	}	
+	
+	pdxmesh = {
+		name = "lantean_01_turret_missile_medium_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+	}	
+	
+	pdxmesh = {
+		name = "lantean_01_turret_missile_small_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+	}	
+	
+	pdxmesh = {
+		name = "lantean_01_turret_point_defence_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+	}
+	
+	pdxmesh = {
+		name = "lantean_01_turret_xl_mesh"
+		file = "gfx/models/ships/lantean_01/lantean_01_invis.mesh"
+	}
+}

@@ -1,0 +1,130 @@
+civic_covenant_hegemony = {
+	modification = no	
+	icon = "gfx/interface/icons/governments/civics/civic_covenant_hegemony.dds"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_storm_covenant
+				value = civic_banished
+				value = civic_swords_of_sanghelios
+				value = civic_didact
+			}
+		}
+	}
+	random_weight = { base = -1 }
+	
+	modifier = {
+		pop_ethic_spiritualist_attraction_mult = 0.20
+		country_edict_fund_add = 100
+		ship_anomaly_generation_chance_mult = 0.10
+		ship_archaeological_site_excavation_speed_mult = 0.10
+		subject_integration_influence_cost_mult = -0.10
+		country_war_exhaustion_mult = -0.10
+		country_claim_influence_cost_mult = -0.10
+	}
+}
+civic_storm_covenant = {
+	modification = no
+	icon = "gfx/interface/icons/governments/civics/civic_storm_covenant.dds"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_covenant_hegemony
+				value = civic_banished
+				value = civic_swords_of_sanghelios
+			}
+		}
+	}
+	random_weight = { base = -1 }
+	
+	modifier = {
+		pop_ethic_spiritualist_attraction_mult = 0.50
+		country_edict_fund_add = 50
+		ship_anomaly_generation_chance_mult = 0.10
+		ship_archaeological_site_excavation_speed_mult = 0.10
+		country_war_exhaustion_mult = -0.10
+		country_claim_influence_cost_mult = -0.10
+		planet_priests_unity_produces_add = 1
+	}
+}
+civic_didact = {
+	modification = no
+	icon = "gfx/interface/icons/governments/civics/civic_didact.dds"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		#ethics = {
+		#	OR = {
+		#		text = civic_tooltip_militarist
+		#		value = ethic_militarist
+		#		value = ethic_fanatic_militarist
+		#	}
+		#}
+		#civics = {
+		#	value = civic_storm_covenant
+		#}
+		always = no
+	}
+	random_weight = { base = -1 }
+	
+	modifier = {
+		pop_ethic_militarist_attraction_mult = 0.20
+		ruler_skill_levels = 2
+		ship_fire_rate_mult = 0.25
+		army_damage_mult = 0.25
+	}
+}	
+
+civic_swords_of_sanghelios = {
+	modification = no
+	icon = "gfx/interface/icons/governments/civics/civic_swords_of_sanghelios.dds"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_covenant_hegemony
+				value = civic_banished
+				value = civic_storm_covenant
+				value = civic_didact
+			}
+		}
+	}
+	random_weight = { base = -1 }
+	
+	modifier = {
+		leader_skill_levels = 1
+		planet_jobs_specialist_produces_mult = 0.10
+		country_war_exhaustion_mult = -0.10
+		country_claim_influence_cost_mult = -0.10
+		planet_soldiers_unity_produces_add = 1
+	}
+}

@@ -1,0 +1,16 @@
+QRN = {
+	quarian1 = {
+		name = SPEC_QRN_quarian1
+		plural = SPEC_QRN_quarian1_plural
+		home_planet = SPEC_QRN_quarian1_planet
+		home_system = SPEC_QRN_quarian1_system
+		name_list = QRN1
+	}
+	quarian2 = {
+		name = SPEC_QRN_quarian2
+		plural = SPEC_QRN_quarian2_plural
+		home_planet = SPEC_QRN_quarian2_planet
+		home_system = SPEC_QRN_quarian2_system
+		name_list = QRN1
+	}
+}

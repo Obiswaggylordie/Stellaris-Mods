@@ -1,0 +1,31 @@
+
+utility_component_template = {
+	key = "FORERUNNER_SLIPSPACE_DRIVE"
+	size = small
+	icon = "GFX_forerunner_slipspace_drive"
+	icon_frame = 1
+	power = -3000
+	resources = {
+		category = ship_components
+
+		cost = {
+			sr_living_metal = 30
+			energon = 100
+		}
+	}
+	ftl = yes
+	jumpdrive = yes
+
+	ship_modifier = {
+		ship_disengage_opportunities_add = 100
+		ship_windup_mult = -1
+		ship_ftl_jumpdrive_range_mult = 10
+		ship_jumpdrive_cooldown_mult = -1
+		ship_interstellar_speed_mult = 10
+	}
+
+	prerequisites = { "tech_forerunner_slipspace_drive" }
+	component_set = "ftl_components"
+
+	ai_weight = 50000
+}

@@ -104,6 +104,10 @@
  edict_Ark_Of_Destruction: "Unleash the power of the Ark of Destruction"
  edict_Ark_Of_Destruction_desc: "The Ark of Destruction is the ultimate weapon, the final evolution of military technology. It's power is to be used for ultimate annihilation, its purpose is to exist as an absolute and undeniable force - those who wield it may not be stopped."
 
+# Bombardment Stances
+ bombardment_wave_motion_gun_bombardment: "Wave Motion Gun"
+ bombardment_wave_motion_gun_bombardment_desc: "Aim the power of the Wave Motion Gun towards this planet."
+
 # Tier 1
  WCE_ARMOR_PLATING_WHITECOMET_CS_1: "Ark of Destruction Armor Plating I"
  WCE_ARMOR_PLATING_WHITECOMET_CS_1_DESC: "Ark of Destruction Armor Plating I"
@@ -118,7 +122,6 @@
  wce_ship_aura_whitecomet: "Ark of Destruction Shroud I"
  
 # Tier 2 
-
  WCE_ARMOR_PLATING_WHITECOMET_CS_2: "Ark of Destruction Armor Plating II"
  WCE_ARMOR_PLATING_WHITECOMET_CS_2_DESC: "Ark of Destruction Armor Plating II"
  WCE_ARMOR_PLATING_2_WHITECOMET: "Ark of Destruction Armor Plating II"
@@ -132,26 +135,24 @@
  wce_ship_aura_whitecomet: "Ark of Destruction Shroud II"
 
 # Tier 1
- WCE_WHITECOMET_ENERGY_CANNON_CS_1:0 		"Ark of Destruction Beam I"
- WCE_WHITECOMET_ENERGY_CANNON_CS_1_DESC:0 	""
- WCE_WHITECOMET_ENERGY_CANNON_1:0 			"Ark of Destruction Beam I"
- WCE_WHITECOMET_MISSILE_CS_1:0 		"Ark of Destruction Missile I"
- WCE_WHITECOMET_MISSILE_CS_1_DESC:0 	""
- WCE_WHITECOMET_MISSILE_1:0 			"Ark of Destruction Missile I"
+ WCE_WHITECOMET_ENERGY_CANNON_CS_1: "Ark of Destruction Beam I"
+ WCE_WHITECOMET_ENERGY_CANNON_CS_1_DESC: ""
+ WCE_WHITECOMET_ENERGY_CANNON_1: "Ark of Destruction Beam I"
+ WCE_WHITECOMET_MISSILE_CS_1: "Ark of Destruction Missile I"
+ WCE_WHITECOMET_MISSILE_CS_1_DESC: ""
+ WCE_WHITECOMET_MISSILE_1: "Ark of Destruction Missile I"
  
 # Tier 2
- WCE_WHITECOMET_ENERGY_CANNON_CS_2:0 		"Ark of Destruction Beam II"
- WCE_WHITECOMET_ENERGY_CANNON_CS_2_DESC:0 	""
- WCE_WHITECOMET_ENERGY_CANNON_2:0 			"Ark of Destruction Beam II"
- WCE_WHITECOMET_MISSILE_CS_2:0 		"Ark of Destruction Missile II"
- WCE_WHITECOMET_MISSILE_CS_2_DESC:0 	""
- WCE_WHITECOMET_MISSILE_2:0 			"Ark of Destruction Missile II"
+ WCE_WHITECOMET_ENERGY_CANNON_CS_2: "Ark of Destruction Beam II"
+ WCE_WHITECOMET_ENERGY_CANNON_CS_2_DESC: ""
+ WCE_WHITECOMET_ENERGY_CANNON_2: "Ark of Destruction Beam II"
+ WCE_WHITECOMET_MISSILE_CS_2: "Ark of Destruction Missile II"
+ WCE_WHITECOMET_MISSILE_CS_2_DESC: ""
+ WCE_WHITECOMET_MISSILE_2: "Ark of Destruction Missile II"
  
-l_english:
-
- wce_white_comet:0 			 "Ark of Destruction"
- wce_white_comet_plural:0 		 ""
- WCE_WHITECOMET_BOW_SECTION:0	 "Core Section"
- WCE_WHITECOMET_MID_SECTION:0	 "Attack Section"
- WCE_WHITECOMET_STERN_SECTION:0	 "Defense Section"
- WCE_WHITECOMET_BOW_NSC_SECTION:0 "Core Section"
+ wce_white_comet: "Ark of Destruction"
+ wce_white_comet_plural: ""
+ WCE_WHITECOMET_BOW_SECTION: "Core Section"
+ WCE_WHITECOMET_MID_SECTION: "Attack Section"
+ WCE_WHITECOMET_STERN_SECTION: "Defense Section"
+ WCE_WHITECOMET_BOW_NSC_SECTION: "Core Section"

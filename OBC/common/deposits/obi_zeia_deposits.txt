@@ -1,0 +1,636 @@
+# Time Fault
+d_cr_dtf = {
+	is_for_colonizable = yes
+	icon = d_dtf_factory
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_building_build_speed_mult = 0.10
+		planet_decision_enact_speed_mult = 0.10
+		pop_housing_usage_mult = -0.1
+		planet_housing_mult = 0.1
+		planet_max_districts_add = 10
+		planet_max_buildings_add = 10
+		district_farming_max_add = 10
+		district_generator_max_add = 10
+		district_mining_max_add = 10
+		building_cr_dtf_factory_max = 1
+		building_cr_dtf_laboratory_max = 1
+		building_cr_dtf_breeder_max = 1
+		building_cr_dtf_shipyard_max = 1
+		building_cr_dtf_bunker_max = 1
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Aether
+d_aether = {
+	is_for_colonizable = yes
+	icon = d_aether
+	category = deposit_cat_rare
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Naõs Domain
+d_naos_domain = {
+	is_for_colonizable = yes
+	icon = d_naos_domain
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		district_city_max_add = 50
+		planet_stability_add = 10
+		planet_amenities_add = 1000
+		planet_housing_add = 2000
+	}
+
+	country_modifier = {
+		country_base_influence_produces_add = 5
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# The Great Temple
+d_naos_great_temple = {
+	is_for_colonizable = yes
+	icon = d_naos_great_temple
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		pop_happiness = 0.50
+		planet_stability_add = 10
+		planet_buildings_unity_produces_mult = 0.50
+	}
+
+	country_modifier = {
+		leaders_unity_cost_mult = -0.50
+		leaders_unity_upkeep_mult = -0.50
+	}
+
+	resources = {
+		produces = {
+			unity = 1000
+		}
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Council Pavilion
+d_naos_council_pavilion = {
+	is_for_colonizable = yes
+	icon = d_naos_council_pavilion
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_crime_mult = -0.50
+		planet_decision_enact_speed_mult = 0.50
+		job_politician_add = 20
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# The Hall of Records
+d_naos_hall_of_records = {
+	is_for_colonizable = yes
+	icon = d_naos_hall_of_records
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_crime_mult = -0.50
+		job_bureaucrat_add = 10
+		job_clerk_add = 10
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# The Embassy Complex
+d_naos_embassy_complex = {
+	is_for_colonizable = yes
+	icon = d_naos_embassy_complex
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_crime_mult = -0.50
+		job_entertainer_add = 20
+		job_trader_add = 20
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# The City-Ship Hex Docks
+d_naos_city_ship_hex_docks = {
+	is_for_colonizable = yes
+	icon = d_naos_city_ship_hex_docks
+	category = deposit_cat_rare
+
+	planet_modifier = {
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Agon Domain
+d_agon_domain = {
+	is_for_colonizable = yes
+	icon = d_agon_domain
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		district_mining_max_add = 50
+		district_generator_max_add = 50
+		planet_housing_add = 2000
+		planet_amenities_add = 1000
+		planet_metallurgists_produces_mult = 0.50
+		planet_miners_produces_mult = 0.50
+		army_defense_health_mult = 0.50
+		army_defense_damage_mult = 0.50
+		job_miner_add = 10
+		job_technician_add = 10
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# The Colosseum
+d_agon_colosseum = {
+	is_for_colonizable = yes
+	icon = d_agon_colosseum
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_army_build_speed_mult = 0.50
+		job_soldier_add = 10
+		job_enforcer_add = 10
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# The Grand Factorum
+d_agon_grand_factorum = {
+	is_for_colonizable = yes
+	icon = d_agon_grand_factorum
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_amenities_mult = 0.50
+		planet_buildings_cost_mult = -0.50
+		planet_districts_cost_mult = -0.50
+		building_time_mult = -0.50
+		planet_clear_blocker_time_mult = -0.50
+		planet_clear_blocker_speed_mult = 0.50
+		job_metallurgist_add = 10
+		job_artisan_add = 10
+		job_engineer_add = 20
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Torvus Domain
+d_torvus_domain = {
+	is_for_colonizable = yes
+	icon = d_torvus_domain
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_amenities_add = 1000
+		planet_housing_add = 2000
+		district_farming_max_add = 50
+		pop_growth_speed = 0.10
+	}
+
+	country_modifier = {
+		terraforming_speed_mult = 0.50
+		terraforming_cost_mult = -0.50
+	} 
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# The Central Hydrodynamo
+d_torvus_central_hydrodynamo = {
+	is_for_colonizable = yes
+	icon = d_torvus_central_hydrodynamo
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		pop_growth_speed = 0.10
+	}
+
+	country_modifier = {
+		terraforming_speed_mult = 0.50
+		terraforming_cost_mult = -0.50
+	} 
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# The Preserve
+d_torvus_preserve = {
+	is_for_colonizable = yes
+	icon = d_torvus_preserve
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		pop_growth_speed = 0.10
+		job_biologist_add = 20
+	}
+
+	country_modifier = {
+		terraforming_speed_mult = 0.50
+		terraforming_cost_mult = -0.50
+	} 
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Fanum Domain
+d_fanum_domain = {
+	is_for_colonizable = yes
+	icon = d_fanum_domain
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_amenities_add = 1000
+		planet_housing_add = 2000
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_technology = tech_robotic_workers
+			}
+		}
+		modifier = {
+			planet_pop_assembly_add = 50
+		}
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Hall of Astronomy
+d_fanum_hall_of_astronomy = {
+	is_for_colonizable = yes
+	icon = d_fanum_hall_of_astronomy
+	
+	category = deposit_cat_rare
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_researchers_produces_mult = 0.50
+		job_physicist_add = 10
+	}
+
+	country_modifier = {
+		all_technology_research_speed = 0.50
+	}
+
+	drop_weight = {
+		weight = -1
+	}
+}
+
+# Sanctuary Fortress
+d_fanum_sanctuary_fortress = {
+	is_for_colonizable = yes
+	icon = d_fanum_sanctuary_fortress
+	
+	category = deposit_cat_rare
+	
+	potential = { always = no }
+	
+	planet_modifier = {
+		planet_orbital_bombardment_damage = -0.50
+		planet_researchers_produces_mult = 0.50
+		job_physicist_add = 10
+	}
+
+	country_modifier = {
+		all_technology_research_speed = 0.50
+	}
+
+	drop_weight = {
+		weight = -1
+	}
+}
+
+
+# Chair Outpost
+d_chair_outpost = {
+	is_for_colonizable = yes
+	icon = d_chair_outpost
+	category = deposit_cat_rare_blocker
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+	can_be_cleared = {
+		owner = {
+			has_technology = tech_zeia_sdc
+		}
+	}
+
+	time = 1
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			sr_sdc = 1
+		}
+	}
+
+	blocker_swap_types = {
+		d_chair_outpost_active
+	}
+}
+
+# Active Chair Outpost
+d_chair_outpost_active = {
+	is_for_colonizable = yes
+	icon = d_chair_outpost_active
+	category = deposit_cat_rare
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Attero Device
+d_attero_device_inactive = {
+	is_for_colonizable = yes
+	icon = d_attero_device_inactive
+	category = deposit_cat_rare_blocker
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+	can_be_cleared = {
+		owner = {
+			has_technology = tech_shield_worlds
+		}
+	}
+
+	time = 1
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energon = 1000
+		}
+	}
+
+	blocker_swap_types = {
+		d_attero_device
+	}
+}
+
+# Active Attero Device
+d_attero_device = {
+	is_for_colonizable = yes
+	icon = d_attero_device
+	category = deposit_cat_rare
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# City-Ship
+d_city_ship = {
+	is_for_colonizable = yes
+	icon = d_city_ship
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		# ZPM Modifiers
+		planet_jobs_produces_mult = 3
+		planet_jobs_robotic_produces_mult = 30
+		planet_pop_assembly_mult = 3
+		planet_pop_assembly_organic_mult = 3
+
+		# CNU modifiers
+		planet_buildings_cost_mult = -0.50
+		planet_districts_cost_mult = -0.50
+		planet_building_build_speed_mult = 0.50
+		planet_jobs_produces_mult = 0.50
+		planet_stability_add = 25
+
+		# City Habitability Modifiers
+		habitability_ceil_mult = 100
+		habitability_floor_mult = 100
+		pop_environment_tolerance = 100
+
+		# City Colony modifiers
+		planet_housing_add = 116
+
+		# City Jobs
+		job_technician_add = 20
+		job_miner_add = 20
+		job_farmer_add = 20
+		job_foundry_add = 10
+		job_artisan_add = 10
+		job_clerk_add = 10
+		job_crystal_miner_add = 5
+		job_gas_extractor_add = 5
+		job_mote_harvester_add = 5
+
+		# Defensive Modifiers
+		planet_orbital_bombardment_damage = -1.00
+		army_defense_damage_mult = 1.00
+		army_defense_health_mult = 1.00
+		army_defense_morale_mult = 1.00
+		planet_army_build_speed_mult = 1.00
+	}
+
+	# Space Bridge Modifiers
+	triggered_planet_modifier = {
+		potential = {
+			NOT = {
+				has_deposit = d_space_bridge
+			}
+		}
+		modifier = {
+			planet_colony_development_speed_mult = 1000.0
+			pop_resettlement_cost_mult = -100.0
+			planet_hyperlane_range_add = 10
+			colony_start_num_pops_add = 10
+		}
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Energy Controller
+d_energy_controller = {
+	is_for_colonizable = yes
+	icon = d_energy_controller
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_jobs_energy_produces_mult = 10.00
+		planet_jobs_energy_upkeep_mult = -10.00
+		planet_districts_energy_upkeep_mult = -10.00
+		planet_stability_add = 10
+		terraform_speed_mult = 10.0
+		pop_environment_tolerance = 1.00
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Energy Controller Empty
+d_energy_controller_empty = {
+	is_for_colonizable = yes
+	icon = d_energy_controller_empty
+	category = deposit_cat_rare_blocker
+
+	potential = {
+		always = no
+	}
+
+	can_be_cleared = {
+		owner = {
+			has_technology = tech_zeia_energy_controller
+		}
+	}
+
+	time = 1
+
+	blocker_swap_types = {
+		d_energy_controller
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}

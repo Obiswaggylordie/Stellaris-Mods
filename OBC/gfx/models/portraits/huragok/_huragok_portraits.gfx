@@ -1,0 +1,20 @@
+objectTypes = {
+
+	#########################################################
+	#														#
+	#					Huragok Servant-Tools				#
+	#														#
+	#########################################################
+
+
+	pdxmesh = {
+		name = "huragok_01_mesh"
+		file = "gfx/models/portraits/huragok/huragok_01.mesh"
+		animation = { id = "idle"	type = "fungoid_03_happy_animation" }
+		animation = { id = "idle2"	type = "fungoid_03_happy_2_animation" }
+		animation = { id = "idle3"	type = "fungoid_03_happy_3_animation" }
+		animation = { id = "idle4"	type = "fungoid_03_happy_4_animation" }
+		#scale = 1.38
+	}
+	
+}

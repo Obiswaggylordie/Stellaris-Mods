@@ -1,0 +1,176 @@
+## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# planet_modifier - applied to planet only when deposit blocker has been cleared
+# constant_modifier - applied to planet always
+# station = station class in orbit to gather
+
+@blocker_high = 10
+@blocker_low = 5
+
+#FLOOD DEPOSITS
+
+d_flood_hive = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	
+	icon = d_flood_hive
+	
+	potential = {
+		always = no
+	}
+	
+	resources = {
+		category = planet_deposits
+		produces = {
+			food = 100
+			society_research = 100
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 20
+		army_defense_health_mult = 0.10
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+#FLOOD BLOCKERS
+d_flood_infestation = {
+	icon = d_flood_infestation
+
+	time = 270
+
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+
+	potential = {
+		always = no
+	}
+	
+	can_be_cleared = {
+		exists = owner
+		owner = {
+			NOR = {
+				has_origin = origin_the_flood
+				has_valid_civic = civic_flood_hivemind
+			}
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				OR = {
+					has_origin = origin_the_flood
+					has_civic = civic_flood_hivemind
+				}
+			}
+		}
+		modifier = {
+			planet_max_districts_add = 10
+			pop_environment_tolerance = 0.50
+			planet_jobs_upkeep_mult = -0.50
+			planet_jobs_produces_mult = 0.50
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner 
+			owner = {
+				NOR = {
+					has_origin = origin_the_flood
+					has_civic = civic_flood_hivemind
+				}
+			}
+		}
+		modifier = {
+			planet_max_districts_add = -10
+			pop_environment_tolerance = -0.50
+			biological_pop_happiness = -0.50
+			pop_growth_speed = -0.50
+		}
+	}
+	
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 2000
+		}
+	}
+}
+
+
+
+
+
+
+#FLOOD ORIGIN DEPOSITS BASED ON PROGENITOR HIVE
+
+#FLOOD GRAVEMIND
+d_flood_gravemind_lair = {
+	is_for_colonizable = yes
+	icon = "d_flood_gravemind_lair"
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_pop_assembly_organic_add = 10
+		planet_stability_add = 10
+		planet_amenities_mult = 1.00
+	}
+}
+
+#Killed Gravemind deposit
+d_flood_gravemind_lair_empty = {
+	is_for_colonizable = yes
+	icon = "d_flood_gravemind_lair_empty"
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_jobs_complex_drone_produces_mult = -0.75
+		planet_stability_add = -75
+		planet_amenities_mult = -0.75
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			unity = 5
+		}
+	}
+}
+
+#FLOOD SHIELD WORLD DEPOSITS 
+
+d_sw_flood_vents = {
+	is_for_colonizable = yes
+	icon = d_sw_flood_vents
+	
+	category = deposit_cat_rare_blocker
+
+	can_be_cleared = {
+		owner = {
+			NOT = {
+				has_origin = origin_the_flood
+			}
+		}
+	}
+
+	blocker_swap_types = {
+		d_sw_access_tunnels
+	}
+
+	potential = { always = no }
+
+	planet_modifier = {
+		army_defense_health_mult = 0.75
+		planet_jobs_upkeep_mult = -0.75
+		planet_structures_cost_mult = -0.75
+	}
+}

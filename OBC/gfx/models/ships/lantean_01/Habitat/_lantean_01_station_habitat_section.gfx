@@ -1,0 +1,32 @@
+objectTypes = {
+	
+	pdxmesh = {
+		name = "lantean_01_habitat_station_mesh"
+		file = "gfx/models/ships/lantean_01/Civilian_Assets/starbase/lantean_01_outpost_frame.mesh"
+		scale = 0.5
+	}
+		
+	pdxmesh = {
+		name = "lantean_01_habitat_station_frame_mesh"
+		file = "gfx/models/ships/lantean_01/Civilian_Assets/starbase/lantean_01_outpost_frame.mesh"
+		scale = 0.5
+	}		
+
+#	pdxmesh = {
+#		name = "lantean_01_orbital_station_habitat_section_mesh"
+#		file = "gfx/models/ships/lantean_01/Habitat/lantean_01_orbital_station_habitat_section.mesh"
+#		scale = 0.5
+#	}
+	
+	pdxmesh = {
+		name = "lantean_01_upgraded_orbital_habitat_mesh"
+		file = "gfx/models/ships/lantean_01/Civilian_Assets/starbase/lantean_01_outpost_frame.mesh"
+		scale = 0.5
+	}
+
+#	pdxmesh = {
+#		name = "lantean_01_station_habitat_section_mesh"
+#		file = "gfx/models/ships/lantean_01/Habitat/lantean_01_orbital_station_habitat_section.mesh"
+#		scale = 0.5
+#	}
+}

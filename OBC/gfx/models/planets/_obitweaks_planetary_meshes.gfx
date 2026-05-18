@@ -1,0 +1,14 @@
+##########################
+#FORERUNNER PLANET MESHES#
+##########################
+
+objectTypes = {
+	
+	#CITADEL STATION 
+	pdxmesh = {
+		name = "obicitadel_mesh"
+		file = "gfx/models/planets/mec_asari_01_habitat.mesh"
+		scale = 6.0
+		
+	}
+}

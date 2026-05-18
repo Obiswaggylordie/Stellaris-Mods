@@ -1,0 +1,184 @@
+############# DRONE SWARM #####################################################################
+
+###### DRONE SWARM 1 ############
+weapon_component_template = {
+	key = "EXTRA_LARGE_ANCIENT_DRONE_SWARM_1"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = missile
+
+	damage = { min = 10 max = 10 }
+	windup = { min = 10 max = 10 }
+	total_fire_time = 0.01
+	range = 200
+	missile_speed = 40
+	missile_retarget_range = 100
+	missile_evasion = 0.40
+	missile_health = 4
+	missile_shield = 40
+	icon = "GFX_ancient_drones_1"
+	icon_frame = 1
+
+	shield_penetration = 0.25
+	accuracy = 1
+	tracking = 0.25
+	power = -100
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 250
+		}	
+		upkeep = {
+			energy = 2.5
+			alloys = 0.25
+		}
+	}
+
+	component_set = "ANCIENT_DRONE_SWARM_XL_1"
+	prerequisites = { "tech_ancient_drones_1" }
+	projectile_gfx = "ancient_drones_m"
+	tags = { weapon_type_explosive }
+	upgrades_to = "EXTRA_LARGE_ANCIENT_DRONE_SWARM_2"
+	ai_tags = { weapon_role_artillery artillery artillery_stealth }
+
+	ai_weight = {
+		weight = 1500
+	}
+}
+
+###### DRONE SWARM 2 ############
+weapon_component_template = {
+	key = "EXTRA_LARGE_ANCIENT_DRONE_SWARM_2"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = missile
+
+	damage = { min = 20 max = 20 }
+	windup = { min = 10 max = 10 }
+	total_fire_time = 0.01
+	range = 200
+	missile_speed = 60
+	missile_retarget_range = 100
+	missile_evasion = 0.60
+	missile_health = 5
+	missile_shield = 60
+	icon = "GFX_ancient_drones_2"
+	icon_frame = 1
+
+	shield_penetration = 0.50
+	accuracy = 1
+	tracking = 0.5
+	power = -200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 375
+		}	
+		upkeep = {
+			energy = 3.75
+			alloys = 0.375
+		}
+	}
+
+	component_set = "ANCIENT_DRONE_SWARM_XL_2"
+	prerequisites = { "tech_ancient_drones_2" }
+	projectile_gfx = "ancient_drones_m"
+	tags = { weapon_type_explosive }
+	upgrades_to = "EXTRA_LARGE_ANCIENT_DRONE_SWARM_3"
+	ai_tags = { weapon_role_artillery artillery artillery_stealth }
+
+	ai_weight = {
+		weight = 2000
+	}
+}
+
+###### DRONE SWARM 3 ############
+weapon_component_template = {
+	key = "EXTRA_LARGE_ANCIENT_DRONE_SWARM_3"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = missile
+
+	damage = { min = 30 max = 30 }
+	windup = { min = 10 max = 10 }
+	total_fire_time = 0.01
+	range = 300
+	missile_speed = 40
+	missile_retarget_range = 100
+	missile_evasion = 0.80
+	missile_health = 10
+	missile_shield = 40
+	icon = "GFX_ancient_drones_3"
+	icon_frame = 1
+
+	shield_penetration = 0.75
+	accuracy = 1
+	tracking = 0.3
+	power = -300
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 375
+		}	
+		upkeep = {
+			energy = 3.75
+			alloys = 0.375
+		}
+	}
+
+	component_set = "ANCIENT_DRONE_SWARM_XL_3"
+	prerequisites = { "tech_ancient_drones_3" }
+	projectile_gfx = "ancient_drones_m"
+	tags = { weapon_type_explosive }
+	upgrades_to = "EXTRA_LARGE_ANCIENT_DRONE_SWARM_X"
+	ai_tags = { weapon_role_artillery artillery artillery_stealth }
+
+	ai_weight = {
+		weight = 2500
+	}
+}
+
+###### DRONE SWARM X ############
+weapon_component_template = {
+	key = "EXTRA_LARGE_ANCIENT_DRONE_SWARM_X"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = missile
+
+	damage = { min = 40 max = 40 }
+	windup = { min = 10 max = 10 }
+	total_fire_time = 0.01
+	range = 300
+	missile_speed = 50
+	missile_retarget_range = 200
+	missile_evasion = 1.0
+	missile_health = 20
+	missile_shield = 50
+	icon = "GFX_ancient_drones_x"
+	icon_frame = 1
+
+	shield_penetration = 1.0
+	accuracy = 1
+	tracking = 1.0
+	power = -400
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 375
+		}	
+		upkeep = {
+			energy = 3.75
+			alloys = 0.375
+		}
+	}
+
+	component_set = "ANCIENT_DRONE_SWARM_XL_X"
+	prerequisites = { "tech_ancient_drones_x" }
+	projectile_gfx = "ancient_drones_m"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery artillery artillery_stealth }
+
+	ai_weight = {
+		weight = 3500
+	}
+}

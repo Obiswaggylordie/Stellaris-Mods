@@ -1,0 +1,138 @@
+﻿uviik = {
+	category = "Machine"
+	should_name_home_system_planets = no
+	
+	ship_names = {
+
+		generic = {
+		"Keishma" "Eymaka" "Godiey" "Iadita" "Reizeey" "Grharo" "Keinogr" "Dadiha" "Dinlaem" "Emgaih" "Laeinu" "Ru'nkol" "Neshgo" "Ruiale" "Tahokol" "Hadiga" "Hoemdin" "Nedinho" "Emroze" "Lamarin" "Theseus" "Arcadia" "Shangri-La"
+		}
+	}
+
+	ship_class_names = {
+		generic = {
+			"Stiklestad" "Selvik" "Nidaros" "Jupiter" "Oscarborg" "Biter" "Harald" "Týr" "Solanae" "Narvik" "Ellisiv" "Zei'a" "Spoy'a"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = ZEIA_FLEET_ORD
+	}
+
+	army_names = {
+		defense_army = {
+			sequential_name = ZEIA_ARMY_DEFENSE_ORD
+		}
+
+		assault_army = {
+			sequential_name = ZEIA_ARMY_ASSAULT_ORD
+		}
+
+		slave_army = {
+			sequential_name = ZEIA_ARMY_SLAVE_ORD
+		}
+
+		clone_army = {
+			sequential_name = ZEIA_ARMY_CLONE_ORD
+		}
+
+		robotic_army = {
+			sequential_name = ZEIA_ARMY_ROBOTIC_ORD
+		}
+
+		robotic_defense_army = {
+			sequential_name = ZEIA_ARMY_ROBOTIC_DEFENSE_ORD
+		}
+
+		android_army = {
+			sequential_name = ZEIA_ARMY_ANDROID_ORD
+		}
+
+		android_defense_army = {
+			sequential_name = ZEIA_ARMY_ANDROID_DEFENSE_ORD
+		}
+
+		undead_army = {
+			sequential_name = ZEIA_ARMY_UNDEAD_ORD
+		}
+
+		psionic_army = {
+			sequential_name = ZEIA_ARMY_PSIONIC_ORD
+		}
+
+		xenomorph_army = {
+			sequential_name = ZEIA_ARMY_XENOMORPH_ORD
+		}
+
+		gene_warrior_army = {
+			sequential_name = ZEIA_ARMY_GENEWARRIOR_ORD
+		}
+
+		occupation_army = {
+			sequential_name = ZEIA_ARMY_OCCUPATION_ORD
+		}
+
+		robotic_occupation_army = {
+			sequential_name = ZEIA_ARMY_ROBOTIC_OCCUPATION_ORD
+		}
+	}	
+		
+
+	### PLANETS
+
+	planet_names = {
+		generic = {
+			names = {
+				"Aether" "Bryyo" "Norion" "Tallon" "Aeon" "Athosia" "Azure" "Entra" "Zebes" "Talvania" "Langara" "Laeitareimaga" "Nalareieyroma" "Pananemagrah" "Zereirukeiahno" "Grlananeharo" "Nareimagrlaah" "Nagaemem" "Rinkalaho" "Emshlaze" "Daarkaah'rha" "Grei'rinshne" "Ihshahzeroru" "Pakanueinokei" "'Nhokoldirinem"
+			}
+		}
+	}
+
+	character_names = {
+		default = {
+			# A complete name
+			full_names = { 
+				"ReU-446-47453" "PrE-129-28763" "IU-413-26580" "FU-403-31009" "BU-016-4638" "IU-455-33443" "AU-053-9979"
+				"BU-144-11741" "FU-356-4499" "AU-147-46312" "BU-318-28046" "ReU-048-19128" "PaU-350-20468" "ReU-108-26580"
+				"FU-032-39306" "FU-389-29722" "PaU-334-34894" "IU-178-25160" "ReU-381-4856" "PrE-305-32529" "PrE-111-25435"
+				"AU-282-33596" "BU-426-9069" "BU-067-3448" "IU-400-33430" "IU-391-17301" "PrE-300-32157" "AU-477-22639"
+				"FU-390-22976" "PrE-148-40908" "LU-221-5662" "PaU-187-19765" "IU-102-38641" "FU-186-24091" "AU-353-868"
+				"IU-117-34083" "ReU-224-19408" "ReU-065-6171" "IU-112-36769" "PrE-454-29555" "BU-431-23296" "ReU-417-11401"
+				"IU-048-19111" "PaU-030-49139" "PrE-349-23154" "PrE-031-32974" "BU-001-20026" "IU-146-33180" "BU-273-30503"
+				"ReU-033-34339" "LU-456-24771" "ReU-130-35705" "ReU-025-47510" "PrE-034-28104" "IU-141-23969" "PaU-033-33621"
+				"AU-027-15123" "IU-231-35774" "PrE-201-46585" "PaU-324-36381" "AU-143-7299" "FU-094-9546" "PrE-037-20154"
+				"PrE-351-24954" "AU-392-776" "FU-309-11922" "AU-484-18763" "PrE-460-11334" "ReU-152-19312" "ReU-416-23308"
+				"FU-394-9673" "LU-305-11605" "BU-472-44507" "PrE-072-25715" "LU-099-30190" "ReU-409-19616" "FU-428-29251"
+				"LU-333-33712" "ReU-339-20935" "AU-368-38922" "LU-122-34540" "LU-080-30402" "FU-210-38206" "PrE-397-34654"
+				"LU-412-5705" "PrE-392-19140" "IU-244-31242" "FU-425-19416" "PaU-002-49913" "BU-059-26340" "LU-136-6101"
+				"LU-422-2538" "FU-415-35108" "PrE-196-45694" "AU-113-44504" "IU-278-7269" "ReU-187-48345" "LU-290-13678"
+				"AU-355-38414" "IU-307-8133" "LU-203-49997" "BU-114-1204" "ReU-380-32899" "BU-463-7792" "PaU-088-436"
+				"IU-318-16329" "LU-460-26497" "LU-472-38089" "PrE-286-37263" "BU-463-25371" "BU-182-9617" "AU-291-9709"
+				"IU-059-32673" "ReU-222-13615" "LU-066-49675" "PaU-428-35747" "BU-364-36481" "PrE-393-11215" "AU-174-26241"
+				"BU-265-39370" "LU-400-33183" "IU-359-3360" "PrE-231-30319" "IU-111-47446" "ReU-025-35968" "IU-019-25848"
+				"BU-371-32979" "PrE-358-10491" "IU-010-6810" "PrE-054-31362" "PrE-176-46217" "BU-424-229" "AU-361-1343"
+				"FU-298-40966" "ReU-055-8598" "IU-101-22185" "PaU-340-37867" "PrE-053-38789" "IU-017-39333" "BU-324-2334"
+				"PrE-039-43963" "BU-151-3179" "PrE-452-26798" "ReU-385-16557" "ReU-269-40218" "LU-350-154" "IU-305-7789"
+				"FU-404-17052" "BU-202-14517" "AU-069-23327" "ReU-123-18607" "AU-472-11371" "IU-136-2344" "FU-187-1415"
+				"FU-154-5783" "IU-439-26382" "IU-026-2882" "ReU-322-48642" "AU-332-19637" "BU-229-23375" "IU-472-30504"
+				"ReU-003-44870" "ReU-359-14122" "ReU-028-29580" "AU-261-42139" "ReU-130-12333" "AU-039-2664" "ReU-176-19297"
+				"AU-094-1449" "ReU-282-16169" "PrE-257-19944" "FU-280-239" "PaU-059-45517" "PaU-126-42210" "FU-425-17144"
+				"FU-439-31189" "PrE-285-4729" "LU-140-7479" "AU-131-20143" "PaU-257-23771" "BU-098-35749" "IU-486-18124"
+			}
+			
+			# Always combined with a second name
+			first_names = {
+			}
+			
+			# Always combined with a first name
+			second_names = {
+			}
+			
+			regnal_first_names = {
+			}
+			
+			regnal_second_names = {
+			}
+		}
+	}
+}

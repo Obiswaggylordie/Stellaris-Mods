@@ -345,50 +345,6 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = cosmoreverse_events.2
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		create_country = {
-			name = "The Scourge"
-			adjective = "Scourge"
-			contact_rule = does_first_contact_sites
-			type = default
-			name_list = the_flood
-			ship_prefix = "DWS"
-			authority = auth_hive_mind
-			civics={
-				civic_hive_devouring_swarm
-				civic_flood_hivemind
-			}
-			species = {
-				class = "halo_flood"
-				portrait = "halo_flood"
-				species_name={
-					key="Scourge Entity"
-					literal=yes
-				}
-				species_plural={
-					key="Scourge Entities"
-					literal=yes
-				}
-				species_adjective={
-					key="Scourge"
-					literal=yes
-				}
-				name_list="the_flood"
-				gender=not_set
-				trait="trait_hive_mind"
-				trait="trait_flood_species"
-				trait="trait_repugnant"
-			}
-			flag = random
-		}
-	}
-}
-
 # Cosmoreverse System Planet Designation (Planet_Killer)
 planet_event = {
 	id = cosmoreverse_events.69
@@ -400,19 +356,67 @@ planet_event = {
 		from.owner = {
 			country_event = { id = cosmoreverse_events.1 }
 		}
-		
-		#event_target:crs_ship.owner = {
-		#	country_event = { id = cosmoreverse_events.1 }
-		#}
 	}
 }
 
-ship_event = {
-	id = cosmoreverse_events.699
+# Wave Motion Gun (Bombardment)
+planet_event = {
+	id = cosmoreverse_events.70
 	hide_window = yes
 	is_triggered_only = yes
 
+	trigger = {
+		has_orbital_bombardment_stance = wave_motion_gun_bombardment
+		planet_devastation > 99
+		is_artificial = no
+	}
+
 	immediate = {
-		save_global_event_target_as = crs_ship
+		destroy_colony = yes
+		change_pc = pc_shattered
 	}
 }
+
+#country_event = {
+#	id = cosmoreverse_events.2
+#	hide_window = yes
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		create_country = {
+#			name = "The Scourge"
+#			adjective = "Scourge"
+#			contact_rule = does_first_contact_sites
+#			type = default
+#			name_list = the_flood
+#			ship_prefix = "DWS"
+#			authority = auth_hive_mind
+#			civics={
+#				civic_hive_devouring_swarm
+#				civic_flood_hivemind
+#			}
+#			species = {
+#				class = "halo_flood"
+#				portrait = "halo_flood"
+#				species_name={
+#					key="Scourge Entity"
+#					literal=yes
+#				}
+#				species_plural={
+#					key="Scourge Entities"
+#					literal=yes
+#				}
+#				species_adjective={
+#					key="Scourge"
+#					literal=yes
+#				}
+#				name_list="the_flood"
+#				gender=not_set
+#				trait="trait_hive_mind"
+#				trait="trait_flood_species"
+#				trait="trait_repugnant"
+#			}
+#			flag = random
+#		}
+#	}
+#}

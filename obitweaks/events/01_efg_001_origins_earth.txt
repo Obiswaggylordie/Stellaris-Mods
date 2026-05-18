@@ -15,6 +15,8 @@ country_event = {
 
 	immediate = {
 		set_country_flag = all_spark_0
+		set_country_flag = flag_origin_earth_2200
+		set_global_flag = flag_access_tier10
 		capital_scope = {
 			
 			clear_blockers = yes
@@ -38,69 +40,28 @@ country_event = {
 			remove_building = building_research_lab_1
 			remove_building = building_commercial_zone
 
+			root = {
+				set_country_flag = flag_can_use_sby_tech
+				set_country_flag = flag_can_use_efg_tech
+				give_technology = { tech = tech_sbymod message = no }
+				give_technology = { tech = tech_efg_ship_components message = no }
+				give_technology = { tech = tech_efg_pretech message = no }
+				give_technology = { tech = tech_sby_weapons_1 message = no }
+				give_technology = { tech = tech_sby_armor_1 message = no }
+				give_technology = { tech = tech_sby_shield_1 message = no }
+				give_technology = { tech = tech_sby_reactor_1 message = no }
+				give_technology = { tech = tech_robotic_workers message = no }
+			}
 			if = {
-				limit = { root = { is_machine_empire = yes } }
-
-				root = {
-					set_country_flag = can_use_efg_tech
-					give_technology = { tech = tech_efg_pretech message = no }
-					give_technology = { tech = tech_efg_weapons_1 message = no }
-					give_technology = { tech = tech_efg_armor_1 message = no }
-					give_technology = { tech = tech_efg_shield_1 message = no }
-					give_technology = { tech = tech_efg_reactor_1 message = no }
-					give_technology = { tech = tech_robotic_workers message = no }
-					give_technology = { tech = tech_Wave_motion_gun_Fleet message = no }
-					give_technology = { tech = tech_slipspace_portal_activation message = no }
-					give_technology = { tech = tech_energon_mining message = no }
-					give_technology = { tech = tech_mine_living_metal message = no }
-					give_technology = { tech = tech_cybertronian_technology message = no }
-					give_technology = { tech = tech_psionic_theory message = no }
-					give_technology = { tech = tech_sbymod_check_esc_acot message = no }
-					give_technology = { tech = tech_sbymod_check_avm message = no }
-					
+				limit = {
+					owner = { is_eager_explorer_empire = no }
 				}
+				root = { give_technology = { tech = tech_sby_warpdrive_1 message = no } }
 			}
-			else_if = {
-				limit = { root = { is_hive_empire = yes } }
 
-				root = {
-					set_country_flag = can_use_efg_tech
-					give_technology = { tech = tech_efg_pretech message = no }
-					give_technology = { tech = tech_efg_weapons_1 message = no }
-					give_technology = { tech = tech_efg_armor_1 message = no }
-					give_technology = { tech = tech_efg_shield_1 message = no }
-					give_technology = { tech = tech_efg_reactor_1 message = no }
-					give_technology = { tech = tech_robotic_workers message = no }
-					give_technology = { tech = tech_Wave_motion_gun_Fleet message = no }
-					give_technology = { tech = tech_slipspace_portal_activation message = no }
-					give_technology = { tech = tech_energon_mining message = no }
-					give_technology = { tech = tech_mine_living_metal message = no }
-					give_technology = { tech = tech_cybertronian_technology message = no }
-					give_technology = { tech = tech_psionic_theory message = no }
-					give_technology = { tech = tech_sbymod_check_esc_acot message = no }
-					give_technology = { tech = tech_sbymod_check_avm message = no }
-				}
-			}
-			else = {
-				#limit = { root = { is_regular_empire = yes } }
-				
-				root = {
-					set_country_flag = can_use_efg_tech
-					give_technology = { tech = tech_efg_pretech message = no }
-					give_technology = { tech = tech_efg_weapons_1 message = no }
-					give_technology = { tech = tech_efg_armor_1 message = no }
-					give_technology = { tech = tech_efg_shield_1 message = no }
-					give_technology = { tech = tech_efg_reactor_1 message = no }
-					give_technology = { tech = tech_robotic_workers message = no }
-					give_technology = { tech = tech_Wave_motion_gun_Fleet message = no }
-					give_technology = { tech = tech_slipspace_portal_activation message = no }
-					give_technology = { tech = tech_energon_mining message = no }
-					give_technology = { tech = tech_mine_living_metal message = no }
-					give_technology = { tech = tech_cybertronian_technology message = no }
-					give_technology = { tech = tech_psionic_theory message = no }
-					give_technology = { tech = tech_sbymod_check_esc_acot message = no }
-					give_technology = { tech = tech_sbymod_check_avm message = no }
-				}
+			solar_system = {
+				sby_earth_2200_setup = yes
+				sby_earth_2200_mars_setup = yes
 			}
 		}
 	}

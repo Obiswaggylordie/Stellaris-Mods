@@ -1,0 +1,286 @@
+##############################################################
+###	PORTRAITS SETTINGS
+###
+### Which portraits are used is set in 
+### common\species_classes\00_species_classes.txt
+###
+###	This file configures how portraits and planet backgrounds are built.
+###	Default position orientation is lower left.
+##############################################################
+
+portraits = {
+
+	lyrian_female_012 = {	entity = "lyrian_female_02_entity"	clothes_selector = "lyrian_female_clothes_01" attachment_selector = "lyrian_female_01_hair"					greeting_sound = "humanoid_female_greeting_a" }
+	lyrian_female_01 = { entity = "lyrian_female_01_entity"	clothes_selector = "lyrian_female_clothes_01" attachment_selector = "lyrian_female_01_hair"					greeting_sound = "humanoid_female_greeting_a" }
+
+	lyrian_female_022 = {	entity = "lyrian_female_02_entity"	clothes_selector = "lyrian_female_clothes_01" attachment_selector = "lyrian_female_01_hair"						greeting_sound = "humanoid_female_greeting_a" 
+			character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_female_body_02.dds"
+			
+		}
+	}
+
+	lyrian_female_032 = {	entity = "lyrian_female_02_entity"	clothes_selector = "lyrian_female_clothes_01" attachment_selector = "lyrian_female_01_hair"						greeting_sound = "humanoid_female_greeting_a" 
+			character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_female_body_03.dds"
+			
+		}
+	}
+	
+
+	lyrian_female_02 = {	entity = "lyrian_female_01_entity"	clothes_selector = "lyrian_female_clothes_01" attachment_selector = "lyrian_female_01_hair"						greeting_sound = "humanoid_female_greeting_a" 
+			character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_female_body_02.dds"
+			
+		}
+	}
+	
+	lyrian_female_03 = {	entity = "lyrian_female_01_entity"	clothes_selector = "lyrian_female_clothes_01" attachment_selector = "lyrian_female_01_hair"						greeting_sound = "humanoid_female_greeting_a" 
+			character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_female_body_03.dds"
+			
+		}
+	}
+	lyrian_female_04 = {	entity = "lyrian_female_01_entity"	clothes_selector = "lyrian_female_clothes_01" attachment_selector = "lyrian_female_01_hair"						greeting_sound = "humanoid_female_greeting_a" 
+		
+	}
+
+
+	lyrian_male_01 = {	entity = "lyrian_male_01_entity"	clothes_selector = "lyrian_male_clothes_01" attachment_selector = "lyrian_male_01_hair"					greeting_sound = "humanoid_male_greeting_d" 
+		character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_male_body_01.dds"
+			
+		}
+	}
+
+	lyrian_male_02 = {	entity = "lyrian_male_01_entity"	clothes_selector = "lyrian_male_clothes_01" attachment_selector = "lyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_male_body_02.dds"
+			
+		}
+
+	}
+
+	lyrian_male_03 = {	entity = "lyrian_male_01_entity"	clothes_selector = "lyrian_male_clothes_01" attachment_selector = "lyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_male_body_03.dds"
+			
+		}
+	
+	}
+
+	lyrian_male_04 = {	entity = "lyrian_male_01_entity"	clothes_selector = "lyrian_male_clothes_01" attachment_selector = "lyrian_male_01_hair"					greeting_sound = "humanoid_male_greeting_d" 
+		character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_male_body_04.dds"
+			
+		}
+	}
+
+	lyrian_male_05 = {	entity = "lyrian_male_01_entity"	clothes_selector = "lyrian_male_clothes_01" attachment_selector = "lyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_male_body_05.dds"
+			
+		}
+
+	}
+
+	lyrian_male_06 = {	entity = "lyrian_male_01_entity"	clothes_selector = "lyrian_male_clothes_01" attachment_selector = "lyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_male_body_06.dds"
+			
+		}
+	
+	}
+	lyrian_male_07 = {	entity = "lyrian_male_01_entity"	clothes_selector = "lyrian_male_clothes_01" attachment_selector = "lyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_male_body_07.dds"
+			
+		}
+	
+	}
+
+	lyrian_male_012 = {	entity = "lyrian_male_02_entity"	clothes_selector = "lyrian_male_clothes_01" attachment_selector = "lyrian_male_01_hair"					greeting_sound = "humanoid_male_greeting_d" 
+		character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_male_body_01.dds"
+			
+		}
+	}
+
+
+	lyrian_male_022 = {	entity = "lyrian_male_02_entity"	clothes_selector = "lyrian_male_clothes_01" attachment_selector = "lyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_male_body_02.dds"
+			
+		}
+
+	}
+
+	lyrian_male_032 = {	entity = "lyrian_male_02_entity"	clothes_selector = "lyrian_male_clothes_01" attachment_selector = "lyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_male_body_03.dds"
+			
+		}
+	
+	}
+
+	lyrian_male_042 = {	entity = "lyrian_male_02_entity"	clothes_selector = "lyrian_male_clothes_01" attachment_selector = "lyrian_male_01_hair"					greeting_sound = "humanoid_male_greeting_d" 
+		character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_male_body_04.dds"
+			
+		}
+	}
+
+	lyrian_male_052 = {	entity = "lyrian_male_02_entity"	clothes_selector = "lyrian_male_clothes_01" attachment_selector = "lyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_male_body_05.dds"
+			
+		}
+
+	}
+
+	lyrian_male_062 = {	entity = "lyrian_male_02_entity"	clothes_selector = "lyrian_male_clothes_01" attachment_selector = "lyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_male_body_06.dds"
+			
+		}
+	
+	}
+	lyrian_male_072 = {	entity = "lyrian_male_02_entity"	clothes_selector = "lyrian_male_clothes_01" attachment_selector = "lyrian_male_01_hair"						greeting_sound = "humanoid_male_greeting_d" 
+			character_textures = {
+			"gfx/models/portraits/lyrian/lyrian_male_body_07.dds"
+			
+		}
+	
+	}	
+}
+
+portrait_groups = {
+	lyrian = {
+		default = lyrian_male_01
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = { gender = male }
+				}
+				portraits = {
+					lyrian_male_012
+					lyrian_male_022
+					lyrian_male_032
+					lyrian_male_042
+					lyrian_male_052
+					lyrian_male_062
+					lyrian_male_072
+				}
+			}
+			add = {
+				trigger = {
+					ruler = { gender = female }
+				}
+				portraits = {
+					lyrian_female_012
+					lyrian_female_022
+					lyrian_female_032
+					
+				}
+			}
+
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					lyrian_female_01
+					lyrian_female_02
+					lyrian_female_03
+					lyrian_female_04
+					lyrian_male_01
+					lyrian_male_02
+					lyrian_male_03
+					lyrian_male_04
+					lyrian_male_05
+					lyrian_male_06
+					lyrian_male_07
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					lyrian_female_01
+					lyrian_female_02
+					lyrian_female_03
+					lyrian_female_04
+					lyrian_male_01
+					lyrian_male_02
+					lyrian_male_03
+					lyrian_male_04
+					lyrian_male_05
+					lyrian_male_06
+					lyrian_male_07
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					lyrian_female_01
+					lyrian_female_02
+					lyrian_female_03
+					lyrian_female_04
+					
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					lyrian_male_01
+					lyrian_male_02
+					lyrian_male_03
+					lyrian_male_04
+					lyrian_male_05
+					lyrian_male_06
+					lyrian_male_07
+				}
+			}
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					lyrian_male_012
+					lyrian_male_022
+					lyrian_male_032
+					lyrian_male_042
+					lyrian_male_052
+					lyrian_male_062
+					lyrian_male_072
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					lyrian_female_012
+					lyrian_female_022
+					lyrian_female_032
+				}
+			}
+		}
+	}
+}

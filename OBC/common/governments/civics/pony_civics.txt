@@ -1,0 +1,44 @@
+#civic_cutie_mark = {
+#	potential = {
+#		ethics = {
+#			NOT = { value = ethic_gestalt_consciousness }		
+#		} 				
+#	}
+#	possible = {
+#		authority = {
+#			OR = {		
+#				value = auth_democratic
+#				value = auth_oligarchic
+#				value = auth_dictatorial			
+#				value = auth_imperial
+#			}
+#		}
+#	}
+#	random_weight = { base = 0 }
+#	modifier = {
+#		planet_jobs_produces_mult = 0.05
+#		pop_citizen_happiness = 0.05
+#	}
+#}
+#
+#civic_alicorn_monarchy = {
+#	potential = {
+#		ethics = {
+#			NOT = { value = ethic_gestalt_consciousness }
+#		} 
+#		authority = {
+#			OR = {
+#				value = auth_dictatorial			
+#				value = auth_imperial
+#			}
+#		}
+#	}	
+#	# possible = {
+#	# is_species_class = mod_Pony
+#	# }
+#	random_weight = { base = 0 }
+#	modifier = {
+#		country_unity_produces_mult  = 0.05
+#		planet_stability_add = 5
+#	}
+#}

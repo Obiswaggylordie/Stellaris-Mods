@@ -1,0 +1,555 @@
+##############################################################
+###	PORTRAITS SETTINGS
+###
+### Which portraits are used is set in 
+### common\species_classes\00_species_classes.txt
+###
+###	This file configures how portraits and planet backgrounds are built.
+###	Default position orientation is lower left.
+##############################################################
+
+portraits = {
+	uviik_sentinel_01 = { entity = "portrait_promethean_watcher_01_entity" clothes_selector = "no_texture"	attachment_selector = "no_texture" greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/uviik/uviik_sentinel_01.dds"
+			"gfx/models/portraits/uviik/uviik_sentinel_02.dds"
+			"gfx/models/portraits/uviik/uviik_sentinel_03.dds"
+			"gfx/models/portraits/uviik/uviik_sentinel_04.dds"
+		}
+	}
+	uviik_sentinel_regulator_01 = { entity = "portrait_promethean_watcher_01_entity" clothes_selector = "no_texture"	attachment_selector = "no_texture" greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/uviik/uviik_regulator_sentinel_01.dds"
+		}
+	}
+	
+	uviik_sentinel_major_01 = { entity = "portrait_promethean_watcher_01_entity" clothes_selector = "no_texture"	attachment_selector = "no_texture" greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/uviik/uviik_sentinel_major_01.dds"
+		}
+	}
+	uviik_constructor_01 = { entity = "portrait_promethean_watcher_01_entity" clothes_selector = "no_texture"	attachment_selector = "no_texture" greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/uviik/uviik_constructor_01.dds"
+			"gfx/models/portraits/uviik/uviik_constructor_02.dds"
+		}
+	}
+	uviik_sentinel_enforcer_01 = { entity = "portrait_floating_03_entity" clothes_selector = "no_texture"	attachment_selector = "no_texture" greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/uviik/uviik_enforcer_01.dds"
+		}
+	}
+	
+	mendicant_bias_01 = { entity = "portrait_floating_03_entity" clothes_selector = "no_texture"	attachment_selector = "no_texture" greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/uviik/uviik_mendicant_bias_02.dds"
+			"gfx/models/portraits/uviik/uviik_mendicant_bias_01.dds"
+		}
+	}
+	offensive_bias_01 = { entity = "portrait_uviik_03_entity" clothes_selector = "no_texture"	attachment_selector = "no_texture" greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/uviik/uviik_offensive_bias_02.dds"
+		}
+	}
+	invariant_bias_01 = { entity = "portrait_floating_03_entity" clothes_selector = "no_texture"	attachment_selector = "no_texture" greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/uviik/uviik_invariant_bias_01.dds"
+		}
+	}
+	#MONITORS
+	promethean_monitor_01 = { entity = "portrait_promethean_watcher_01_entity" clothes_selector = "no_texture"	attachment_selector = "no_texture" greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/uviik/uviik_monitor_orange_01.dds"
+		}
+	}
+	sentinel_monitor_01 = { entity = "portrait_promethean_watcher_01_entity" clothes_selector = "no_texture"	attachment_selector = "no_texture" greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/uviik/uviik_monitor_blue_01.dds"
+			"gfx/models/portraits/uviik/uviik_monitor_green_01.dds"
+			"gfx/models/portraits/uviik/uviik_monitor_light_green_01.dds"
+			"gfx/models/portraits/uviik/uviik_monitor_orange_01.dds"
+			"gfx/models/portraits/uviik/uviik_monitor_purple_01.dds"
+			"gfx/models/portraits/uviik/uviik_monitor_red_01.dds"
+			"gfx/models/portraits/uviik/uviik_monitor_yellow_01.dds"
+			"gfx/models/portraits/uviik/uviik_monitor_white_01.dds"
+		}
+	}
+	sentinel_monitor_02 = { 
+		entity = "portrait_promethean_watcher_01_entity" clothes_selector = "no_texture"	attachment_selector = "no_texture" greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/uviik/uviik_monitor_despondent_pyre_01.dds"
+			"gfx/models/portraits/uviik/uviik_monitor_adjutant_resolution_01.dds"
+			"gfx/models/portraits/uviik/uviik_sub_monitor_01.dds"
+			"gfx/models/portraits/uviik/uviik_sub_monitor_02.dds"
+			"gfx/models/portraits/uviik/uviik_sub_monitor_03.dds"
+			"gfx/models/portraits/uviik/uviik_sub_monitor_04.dds"
+		}
+	}
+
+	uviik_aurora_01 = {
+		greeting_sound = "robot_human_greetings"
+		texturefile = "gfx/models/portraits/uviik/uviik_aurora_01.dds"
+	}
+
+	uviik_aurora_02 = {
+		greeting_sound = "robot_human_greetings"
+		texturefile = "gfx/models/portraits/uviik/uviik_aurora_02.dds"
+	}
+
+	uviik_aurora_03 = {
+		greeting_sound = "robot_human_greetings"
+		texturefile = "gfx/models/portraits/uviik/uviik_aurora_03.dds"
+	}
+
+	uviik_aurora_04 = {
+		greeting_sound = "robot_human_greetings"
+		texturefile = "gfx/models/portraits/uviik/uviik_aurora_04.dds"
+	}
+
+	uviik_aurora_05 = {
+		greeting_sound = "robot_human_greetings"
+		texturefile = "gfx/models/portraits/uviik/uviik_aurora_05.dds"
+	}
+
+	uviik_aurora_06 = {
+		greeting_sound = "robot_human_greetings"
+		texturefile = "gfx/models/portraits/uviik/uviik_aurora_06.dds"
+	}
+
+	#WARDEN ETERNAL
+	warden_eternal_01 = { entity = "portrait_promethean_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture"  greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/created/created_warden_eternal_01.dds"
+			"gfx/models/portraits/created/created_warden_eternal_02.dds"
+			"gfx/models/portraits/created/created_warden_eternal_03.dds"
+		}
+	}
+	###MECHANICAL PROMETHEANS###
+	
+	#PROMETHEAN KNIGHTS
+	promethean_knight_01 = { entity = "portrait_promethean_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture"  greeting_sound = "robot_arthopoid_greetings"
+		character_textures = {
+			"gfx/models/portraits/promethean/promethean_knight_01.dds"
+		}
+	}
+	promethean_knight_battlewagon_01 = { entity = "portrait_promethean_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture"  greeting_sound = "robot_arthopoid_greetings"
+		character_textures = {
+			"gfx/models/portraits/promethean/promethean_knight_battlewagon_01.dds"
+		}
+	}
+	promethean_knight_commander_01 = { entity = "portrait_promethean_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture"  greeting_sound = "robot_arthopoid_greetings"
+		character_textures = {
+			"gfx/models/portraits/promethean/promethean_knight_commander_01.dds"
+			"gfx/models/portraits/promethean/promethean_knight_commander_02.dds"
+		}
+	}
+	promethean_knight_lancer_01 = { entity = "portrait_promethean_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture"  greeting_sound = "robot_arthopoid_greetings"
+		character_textures = {
+			"gfx/models/portraits/promethean/promethean_knight_lancer_01.dds"
+		}
+	}
+	promethean_knight_marshall_01 = { entity = "portrait_promethean_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture"  greeting_sound = "robot_arthopoid_greetings"
+		character_textures = {
+			"gfx/models/portraits/promethean/promethean_knight_marshall_01.dds"
+		}
+	}
+	#PROMETHEAN SOLDIERS
+	promethean_officer_01 = { entity = "portrait_promethean_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture"  greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/promethean/promethean_officer_01.dds"
+		}
+	}
+	promethean_enforcer_01 = { entity = "portrait_promethean_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture"  greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/promethean/promethean_enforcer_01.dds"
+		}
+	}
+	promethean_sniper_01 = { entity = "portrait_promethean_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture"  greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/promethean/promethean_sniper_01.dds"
+		}
+	}
+	promethean_soldier_01 = { entity = "portrait_promethean_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture"  greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/promethean/promethean_soldier_01.dds"
+		}
+	}
+	promethean_armiger_01 = { entity = "portrait_promethean_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture"  greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/promethean/promethean_armiger_01.dds"
+		}
+	}
+	promethean_construct_01 = { entity = "portrait_promethean_construct_01_entity" clothes_selector "no_texture" attachment_selector = "no_texture" greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/promethean/promethean_construct_01_blue.dds"
+		}
+	}
+	promethean_construct_02 = { entity = "portrait_promethean_construct_01_entity" clothes_selector "no_texture" attachment_selector = "no_texture" greeting_sound = "robot_human_greetings"
+		character_textures = {
+			"gfx/models/portraits/promethean/promethean_construct_01_orange.dds"
+		}
+	}
+	#PROMETHEAN WATCHERS
+	promethean_watcher_01 = { entity = "portrait_promethean_watcher_01_entity" clothes_selector = "no_texture"	attachment_selector = "no_texture" greeting_sound = "robot_arthopoid_greetings"
+		character_textures = { "gfx/models/portraits/promethean/promethean_watcher_01.dds" }
+	}
+	#PROMETHEAN CRAWLERS
+	promethean_crawler_01 = { entity = "portrait_promethean_03_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "robot_arthopoid_greetings"
+		character_textures = { 
+			"gfx/models/portraits/promethean/promethean_crawler_01.dds" 
+			"gfx/models/portraits/promethean/promethean_crawler_snipe_01.dds"
+			"gfx/models/portraits/promethean/promethean_alpha_crawler_01.dds"
+		}
+	}
+	
+	#ENGINEERS
+	
+	huragok_01 = {	entity = "huragok_01_entity"	clothes_selector = "no_texture" attachment_selector = "no_texture"	greeting_sound = "fungoid_01_greetings" 
+		character_textures = {
+			"gfx/models/portraits/huragok/huragok_01.dds"
+			"gfx/models/portraits/huragok/huragok_02.dds"
+			"gfx/models/portraits/huragok/huragok_03.dds"
+			"gfx/models/portraits/huragok/huragok_04.dds"
+			"gfx/models/portraits/huragok/huragok_05.dds"		
+		}
+	}
+	
+	
+}
+
+portrait_groups = {
+	uviik = {
+		default = uviik_sentinel_01
+		game_setup = { 
+			add = {
+				portraits = {
+					uviik_sentinel_01
+					uviik_sentinel_major_01
+					uviik_sentinel_regulator_01
+					uviik_constructor_01
+					sentinel_monitor_01
+					sentinel_monitor_02
+					uviik_aurora_01
+					uviik_aurora_02
+					uviik_aurora_03
+					uviik_aurora_04
+					uviik_aurora_05
+					uviik_aurora_06
+					mendicant_bias_01
+					offensive_bias_01
+					invariant_bias_01
+				}
+			}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					uviik_sentinel_01
+				}
+			}
+		}		
+		
+		#pop scope
+		pop_group = { #for a specific pop
+			add = {
+				trigger = {
+					OR = {
+						is_pop_category = worker
+						is_pop_category = slave
+						is_pop_category = simple_drone
+					}
+				}
+				portraits = {
+					uviik_sentinel_01
+					uviik_sentinel_regulator_01
+					uviik_constructor_01
+				}
+				
+			}
+			add = {
+				trigger = {
+					OR = {
+						is_pop_category = specialist
+						is_pop_category = complex_drone
+					}
+				}
+				portraits = {
+					uviik_sentinel_major_01
+					#sentinel_monitor_01
+					sentinel_monitor_02
+				}
+			}
+			add = {
+				trigger = {
+					is_pop_category = ruler
+				}
+				portraits = {
+					sentinel_monitor_01
+					sentinel_monitor_02
+					#mendicant_bias_01
+					#offensive_bias_01
+					#invariant_bias_01
+					#uviik_aurora_01
+					#uviik_aurora_02
+					#uviik_aurora_03
+					#uviik_aurora_04
+					#uviik_aurora_05
+					#uviik_aurora_06
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					leader_class = scientist
+					NOT = {
+						has_trait = leader_trait_aurora_uviik
+					}
+				}
+				portraits = {
+					sentinel_monitor_01
+					#sentinel_monitor_02
+				}
+			}
+			add = {
+				trigger = {
+					leader_class = scientist
+					has_trait = leader_trait_aurora_uviik
+				}
+				portraits = {
+					#offensive_bias_01
+					#mendicant_bias_01
+					#invariant_bias_01
+					uviik_aurora_01
+					uviik_aurora_02
+					uviik_aurora_03
+					uviik_aurora_04
+					uviik_aurora_05
+					uviik_aurora_06
+				}
+			}
+			add = {
+				trigger = {
+					leader_class = commander
+					NOT = {
+						has_trait = leader_trait_aurora_uviik
+					}
+				}
+				
+				portraits = {
+					sentinel_monitor_01
+					#sentinel_monitor_02
+				}
+			}
+			add = {
+				trigger = {
+					leader_class = commander
+					has_trait = leader_trait_aurora_uviik
+				}
+				portraits = {
+					#offensive_bias_01
+					#mendicant_bias_01
+					#invariant_bias_01
+					uviik_aurora_01
+					uviik_aurora_02
+					uviik_aurora_03
+					uviik_aurora_04
+					uviik_aurora_05
+					uviik_aurora_06
+				}
+			}
+			add = {
+				trigger = {
+					leader_class = official 
+					NOT = {
+						has_trait = leader_trait_aurora_uviik
+					}
+				}
+				portraits = {
+					sentinel_monitor_01
+					#sentinel_monitor_02
+				}
+			}
+			add = {
+				trigger = {
+					leader_class = official 
+					has_trait = leader_trait_aurora_uviik
+				}
+				portraits = {
+					#offensive_bias_01
+					#mendicant_bias_01
+					#invariant_bias_01
+					uviik_aurora_01
+					uviik_aurora_02
+					uviik_aurora_03
+					uviik_aurora_04
+					uviik_aurora_05
+					uviik_aurora_06
+				}
+			}
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				portraits = {
+					#sentinel_monitor_01
+					#sentinel_monitor_02
+					#offensive_bias_01
+					#mendicant_bias_01
+					#invariant_bias_01
+					uviik_aurora_01
+					uviik_aurora_02
+					uviik_aurora_03
+					uviik_aurora_04
+					uviik_aurora_05
+					uviik_aurora_06
+				}
+			}
+		}
+	}	
+}
+portrait_groups = {
+	promethean = {
+		default = promethean_knight_01
+		game_setup = { 
+			add = {
+				portraits = {
+					uviik_promethean_ur_didact_01
+					promethean_knight_01
+					promethean_knight_battlewagon_01
+					promethean_knight_commander_01
+					promethean_knight_lancer_01
+					promethean_knight_marshall_01
+					promethean_officer_01
+					promethean_enforcer_01
+					promethean_armiger_01
+					promethean_sniper_01
+					promethean_soldier_01
+					promethean_construct_02
+					promethean_watcher_01
+					promethean_crawler_01
+					promethean_monitor_01
+					
+				}
+			}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					promethean_knight_marshall_01
+				}
+			}
+		}		
+		
+		#pop scope
+		pop_group = { #for a specific pop
+			add = {
+				portraits = {
+					promethean_knight_01
+					promethean_officer_01
+					promethean_enforcer_01
+					promethean_armiger_01
+					promethean_sniper_01
+					promethean_soldier_01
+					promethean_watcher_01
+					promethean_crawler_01
+					promethean_monitor_01
+					promethean_construct_02
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					leader_class = scientist
+				}
+				portraits = {
+					promethean_construct_02
+					promethean_monitor_01
+				}
+			}
+			add = {
+				trigger = {
+					leader_class = commander
+				}
+				portraits = {
+					promethean_knight_01
+					promethean_knight_battlewagon_01
+					promethean_knight_commander_01
+					promethean_knight_lancer_01
+					promethean_knight_marshall_01
+					promethean_officer_01
+					promethean_enforcer_01
+					promethean_armiger_01
+					promethean_sniper_01
+					promethean_soldier_01
+				}
+			}
+			add = {
+				trigger = {
+					leader_class = official 
+				}
+				portraits = {
+					promethean_construct_02
+					promethean_monitor_01
+				}
+			}
+		}
+		#leader scope 
+		ruler = {
+			add = {
+				portraits = {
+					uviik_promethean_ur_didact_01
+				}
+			}
+		}
+	}	
+}
+
+portrait_groups = {
+	huragok = {
+	default = huragok_01
+		game_setup = { 
+			add = {
+				portraits = {
+					huragok_01
+				}
+			}
+		}
+
+		ruler = {
+			add = {
+				portraits = {
+					huragok_01
+				}
+			}
+		
+		}
+
+		species = {
+			set = {
+				portraits = {
+					huragok_01
+				}
+			}
+		}		
+
+		pop = {
+			add = {
+				portraits = {
+					huragok_01
+				}
+			}
+		}
+	}
+}

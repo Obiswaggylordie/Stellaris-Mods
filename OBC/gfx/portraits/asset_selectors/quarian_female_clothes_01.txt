@@ -1,0 +1,80 @@
+# This is a template which multiple species can use.
+
+# has 3 unique styles: ruler, scientist, admiral
+quarian_female_clothes_01 = {
+	default = "gfx/models/portraits/quarian/quarian_female_clothes_ruler.dds"
+	game_setup = {#will run with a limited country scope. species and government is set but the country does not actually exist
+		random = {
+			list = {
+				"gfx/models/portraits/quarian/quarian_female_clothes_ruler.dds"
+				"gfx/models/portraits/quarian/quarian_female_clothes_scientist.dds"
+				"gfx/models/portraits/quarian/quarian_female_clothes_admiral.dds"
+			}
+		}
+	}
+	#species scope
+	species = { #generic portrait for a species
+		random = {
+			list = {
+				"gfx/models/portraits/quarian/quarian_female_clothes_ruler.dds"
+				"gfx/models/portraits/quarian/quarian_female_clothes_scientist.dds"
+				"gfx/models/portraits/quarian/quarian_female_clothes_admiral.dds"
+			}
+		}
+	}
+	#pop scope
+	pop = { #for a specific pop
+		default = "gfx/models/portraits/quarian/quarian_female_clothes_ruler.dds"
+		"gfx/models/portraits/quarian/quarian_female_clothes_ruler.dds" = { cm_shared_pop_is_ruler_type = yes }
+		"gfx/models/portraits/quarian/quarian_female_clothes_admiral.dds" = { cm_shared_pop_is_military_type = yes }
+		"gfx/models/portraits/quarian/quarian_female_clothes_scientist.dds" = { cm_shared_pop_is_science_type = yes }
+		random = {
+			trigger = {
+				cm_shared_pop_is_ruler_type = no
+				cm_shared_pop_is_military_type = no
+				cm_shared_pop_is_science_type = no
+			}
+			list = {
+				"gfx/models/portraits/quarian/quarian_female_clothes_ruler.dds"
+				"gfx/models/portraits/quarian/quarian_female_clothes_admiral.dds"
+				"gfx/models/portraits/quarian/quarian_female_clothes_scientist.dds"
+			}
+		}
+	}
+	#leader scope
+	leader = { #scientists, generals, admirals, governor, envoys
+		"gfx/models/portraits/quarian/quarian_female_clothes_scientist.dds" = { leader_class = scientist }
+		"gfx/models/portraits/quarian/quarian_female_clothes_admiral.dds" = {
+			OR = {
+				leader_class = admiral
+				leader_class = general
+			}
+		}
+		"gfx/models/portraits/quarian/quarian_female_clothes_ruler.dds" = {
+			OR = {
+				leader_class = governor
+				leader_class = envoy
+			}
+		}
+	}
+	#leader scope
+	ruler = { #for rulers
+		default = "gfx/models/portraits/quarian/quarian_female_clothes_ruler.dds"
+		"gfx/models/portraits/quarian/quarian_female_clothes_admiral.dds" = {
+			owner = {
+				OR = {
+					has_militarist_government = yes
+					has_primitive_government = yes
+				}
+			}
+		}
+		"gfx/models/portraits/quarian/quarian_female_clothes_scientist.dds" = {
+			owner = {
+				OR = {
+					has_spiritualist_government = yes
+					has_materialist_government = yes
+				}
+			}
+		}
+	}
+}

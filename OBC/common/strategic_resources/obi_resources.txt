@@ -1,0 +1,26 @@
+# Psionic Energy for Ascension stuff
+psi_energy = {
+	deficit_modifier = energy_deficit
+	tradable = no
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+# Zei'a SDCs
+sr_sdc = {
+	tradable = yes
+	max = 15000
+	market_price = 5000000
+	market_amount = -1
+	fixed_max_amount = yes
+
+	ai_weight = {
+		weight = 1000
+	}
+
+	ai_wants = {
+		base = 1000
+	}
+}

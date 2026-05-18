@@ -1,0 +1,42 @@
+#####################################################
+#####											#####
+#####					zeia				#####
+#####											#####
+#####################################################
+
+
+entity = { # Active
+	name = "zeia_01_void_relay_entity"
+	#pdxmesh = "MEC_mass_relay_gateway_01"
+	
+	locator = { name = "relay_pos"	position = { 0 0 0 } rotation = { 0 0 0 } }
+		
+	attach = { relay_pos = "MEC_mass_relay_gateway_01_entity" }
+}
+
+entity = { # Inactive
+	name = "zeia_02_void_relay_entity"
+	#pdxmesh = "MEC_mass_relay_gateway_01"
+	
+	locator = { name = "relay_pos"	position = { 0 0 0 } rotation = { 0 0 0 } }
+		
+	attach = { relay_pos = "MEC_mass_relay_gateway_deactivated_01_entity" }
+}
+
+entity = { # Portal effect
+	name = "zeia_03_void_relay_entity"
+	#pdxmesh = "MEC_mass_relay_gateway_01"
+	
+	locator = { name = "relay_pos"	position = { 0 0 0 } rotation = { 0 0 0 } }
+		
+	attach = { relay_pos = "portal_entity" }
+}
+
+entity = { # Nothing
+	name = "zeia_04_void_relay_entity"
+	#pdxmesh = "MEC_mass_relay_gateway_01"
+	
+	locator = { name = "relay_pos"	position = { 0 0 0 } rotation = { 0 0 0 } }
+
+	attach = { relay_pos = "empty_section_entity" }
+}

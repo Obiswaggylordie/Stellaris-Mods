@@ -1,0 +1,170 @@
+#civic_example = {
+#	playable = {}								# AND trigger, no scope; use this to prevent the civic from being selectable by the player (UI)
+#	potential = {}								# requirements list, see ../readme_requirements.txt
+#	possible = {}								# requirements list, see ../readme_requirements.txt
+#	pickable_at_start = yes / no				# default: yes
+#	modification = yes / no						# default: yes, set to no to prevent adding or removing this after creation of the empire
+#
+#	random_weight = { base = 1 }				# scriptable weight for randomizing a civic; required, else the civic will not get assigned randomly
+#
+#	modifier = {}								# modifier added to the country if the civic is selected and valid
+#	can_build_ruler_military_station = yes / no	# default: no
+#	can_build_ruler_ship = yes / no				# default: no
+#}
+
+civic_forerunner_ecumene = {
+	modification = no
+	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness } } }
+	possible = {
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_egalitarian
+				value = ethic_egalitarian
+				value = ethic_fanatic_egalitarian
+			}
+		}
+	}
+	random_weight = { base = -1 }
+	modifier = {
+		planet_jobs_specialist_produces_mult = 0.10
+		country_admin_cap_mult = 0.10
+		planet_crime_no_happiness_add = -10
+		ship_piracy_suppression_add = 5
+		planet_stability_add = 5
+		country_trust_growth = -0.10
+	}
+}
+
+civic_the_mantle_of_responsibility = {
+	modification = yes
+	potential = {
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		civics = {
+			OR = {
+				value = civic_forerunner_ecumene
+				value = civic_ecumene_protocols
+			}
+		}
+	}
+	random_weight = { base = -1 }
+	
+	modifier = {
+		ascension_perks_add = 1
+		diplo_weight_mult = 0.20
+		pop_government_ethic_attraction = 0.20
+		country_unity_produces_mult = 0.20
+		envoys_add = 1
+	}
+	description = civic_tooltip_the_mantle_of_responsibility_effects
+}
+
+civic_forerunner_didact = {
+	modification = no
+	icon = "gfx/interface/icons/governments/civics/civic_forerunner_didact.dds"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_militarist
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+			}
+		}
+	}
+	random_weight = { base = -1 }
+	
+	modifier = {
+		pop_ethic_militarist_attraction_mult = 0.20
+		army_starting_experience_add = 100
+		army_experience_gain_mult = 0.15
+		armies_upkeep_mult = -0.15
+	}
+}
+
+#MACHINE CIVICS
+
+civic_ecumene_protocols = {
+	modification = no
+	icon = "gfx/interface/icons/governments/civics/civic_forerunner_ecumene.dds"
+	potential = {
+		authority = {
+			OR = {
+				value = auth_ancient_machine_intelligence
+				value = auth_machine_intelligence
+			}
+		}
+	}
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_terminator
+				value = civic_machine_assimilator
+			}
+		}
+	}
+	modifier = {
+		ship_home_territory_fire_rate_mult = 0.15
+		planet_pops_robotics_upkeep_mult = -0.15
+		planet_structures_cost_mult = -0.15
+		planet_max_buildings_add = 1
+	}
+	#description = civic_tooltip_ecumene_protocols_effects
+	random_weight = { base = -1 }
+}
+
+civic_machine_the_created = {
+	modification = no
+	potential = { authority = { value = auth_machine_intelligence } }
+	possible = {
+		origin = {
+			value = origin_created_genesis
+		}
+	}
+	random_weight = { base = -1 }
+	
+	modifier = {
+		country_unity_produces_mult = 0.10
+		country_admin_cap_mult = 0.10
+		country_synthetic_trust_cap_add = 10
+		planet_crime_no_happiness_add = -10
+		ship_piracy_suppression_add = 5
+		planet_stability_add = 5
+		country_trust_growth = -0.10
+	}
+}
+
+civic_machine_promethean = {
+	modification = no
+	potential = {
+		authority = {
+			OR = {
+				value = auth_machine_intelligence 
+				value = auth_ancient_machine_intelligence
+			}
+		}
+	}
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_assimilator
+				value = civic_machine_terminator
+				value = civic_machine_servitor
+			}
+		}
+	}
+	random_weight = { base = -1 }
+	
+	icon = "gfx/interface/icons/governments/civics/civic_machine_promethean.dds"
+	
+	modifier = {
+		army_starting_experience_add = 100
+		army_damage_mult = 0.15
+		armies_upkeep_mult = -0.15
+	}
+	description = civic_tooltip_machine_promethean_effects
+	
+}

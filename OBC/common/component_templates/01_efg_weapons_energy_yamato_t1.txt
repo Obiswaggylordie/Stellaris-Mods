@@ -1,0 +1,356 @@
+
+weapon_component_template = {
+	key = "EFG_SHOCK_CANNON_YAMATO_L_1"
+	size = large
+	#entity = "large_laser_gun_entity"
+	type = instant
+	icon = "GFX_efg_ship_part_super_positron_shockcannon_1"
+	icon_frame = 1
+	prerequisites = { "tech_efg_weapons_3" }
+	component_set = "EFG_SHOCK_CANNON_YAMATO_1_CS"
+	projectile_gfx = "efg_blue_laser_sc_l"
+	tags = { weapon_type_energy l_slot }
+	ai_tags = { weapon_role_artillery }
+	upgrades_to = "EFG_SHOCK_CANNON_YAMATO_L_2"
+
+	size_restriction = { efg_orbital_defense_system efg_yamato_class_ship efg_yamato_class_ship_nsc
+				flagship_yamato flagship_ginga cr_titan }
+
+	# target_weights script
+	inline_script = "targeting/sby_support_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_efg_t4_cost
+		}		
+		upkeep = {
+			energy = @m_efg_t4_uk_energy
+			alloys = @m_efg_t4_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_2_l
+	damage = { min = 115.50 max = 349.80 }
+	shield_damage = 0.75
+	armor_damage = 1.50
+	#hull_damage = 1.25
+	windup = { min = 40.0 max = 55.0 }
+	total_fire_time = 10.0
+	range = @efg_weapon_range_100
+	accuracy = 0.90
+	tracking = 0.10
+	
+	ai_weight = {
+		weight = @efg_ai_weight_5
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+
+}
+
+
+weapon_component_template = {
+	key = "EFG_SHOCK_CANNON_YAMATO_XL_1"
+	size = extra_large
+	#entity = "large_laser_gun_entity"
+	type = instant
+	icon = "GFX_efg_ship_part_super_positron_shockcannon_1"
+	icon_frame = 1
+	prerequisites = { "tech_efg_weapons_3" }
+	component_set = "EFG_SHOCK_CANNON_YAMATO_XL_1_CS"
+	projectile_gfx = "efg_blue_laser_sc_xl"
+	tags = { weapon_type_energy x_slot }
+	ai_tags = { weapon_role_artillery }
+	upgrades_to = "EFG_SHOCK_CANNON_YAMATO_XL_2"
+
+	size_restriction = { efg_orbital_defense_system efg_yamato_class_ship efg_yamato_class_ship_nsc
+				flagship_yamato flagship_ginga cr_titan }
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_efg_t4_cost
+		}		
+		upkeep = {
+			energy = @l_efg_t4_uk_energy
+			alloys = @l_efg_t4_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_2_xl
+	damage = { min = 234.30 max = 699.60 }
+	shield_damage = 0.75
+	armor_damage = 1.50
+	#hull_damage = 1.25
+	windup = { min = 40.0 max = 55.0 }
+	total_fire_time = 10.0
+	range = @efg_weapon_range_100
+	accuracy = 0.90
+	tracking = 0.10
+	
+	ai_weight = {
+		weight = @efg_ai_weight_5
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+
+}
+
+
+
+
+
+weapon_component_template = {
+	key = "EFG_SHOCK_CANNON_YAMATO_L_2"
+	size = large
+	#entity = "large_laser_gun_entity"
+	type = instant
+	icon = "GFX_efg_ship_part_super_positron_shockcannon_2"
+	icon_frame = 1
+	prerequisites = { "tech_efg_weapons_5" }
+	component_set = "EFG_SHOCK_CANNON_YAMATO_2_CS"
+	projectile_gfx = "efg_blue_laser_sc_l"
+	tags = { weapon_type_energy l_slot }
+	ai_tags = { weapon_role_artillery }
+	upgrades_to = "EFG_SHOCK_CANNON_YAMATO_L_3"
+
+	size_restriction = { efg_orbital_defense_system efg_yamato_class_ship efg_yamato_class_ship_nsc
+				flagship_yamato flagship_ginga cr_titan }
+
+	# target_weights script
+	inline_script = "targeting/sby_support_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_efg_t5_cost
+		}		
+		upkeep = {
+			energy = @m_efg_t5_uk_energy
+			alloys = @m_efg_t5_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_5_l
+	damage = { min = 391.40 max = 827.00 }
+	#shield_damage = 1.00
+	armor_damage = 1.75
+	hull_damage = 1.25
+	windup = { min = 40.0 max = 55.0 }
+	total_fire_time = 10.0
+	range = @efg_weapon_range_100
+	accuracy = 0.90
+	tracking = 0.10
+	
+	ai_weight = {
+		weight = @efg_ai_weight_6
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+
+}
+
+
+weapon_component_template = {
+	key = "EFG_SHOCK_CANNON_YAMATO_XL_2"
+	size = extra_large
+	#entity = "large_laser_gun_entity"
+	type = instant
+	icon = "GFX_efg_ship_part_super_positron_shockcannon_2"
+	icon_frame = 1
+	prerequisites = { "tech_efg_weapons_5" }
+	component_set = "EFG_SHOCK_CANNON_YAMATO_XL_2_CS"
+	projectile_gfx = "efg_blue_laser_sc_xl"
+	tags = { weapon_type_energy x_slot }
+	ai_tags = { weapon_role_artillery }
+	upgrades_to = "EFG_SHOCK_CANNON_YAMATO_XL_3"
+
+	size_restriction = { efg_orbital_defense_system efg_yamato_class_ship efg_yamato_class_ship_nsc
+				flagship_yamato flagship_ginga cr_titan }
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_efg_t5_cost
+		}		
+		upkeep = {
+			energy = @l_efg_t5_uk_energy
+			alloys = @l_efg_t5_uk_alloys
+		}
+	}
+
+	power = @sby_weapon_power_cost_3_xl
+	damage = { min = 778.50 max = 1655.00 }
+	#shield_damage = 1.00
+	armor_damage = 1.75
+	hull_damage = 1.25
+	windup = { min = 40.0 max = 55.0 }
+	total_fire_time = 10.0
+	range = @efg_weapon_range_100
+	accuracy = 0.90
+	tracking = 0.10
+	
+	ai_weight = {
+		weight = @efg_ai_weight_6
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+############################################
+### Wave Motion Gun
+############################################
+
+weapon_component_template = {
+	key = "EFG_WAVE_MOTION_GUN_YAMATO_1"
+	size = titanic
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_efg_ship_part_wm_gun_1"
+	icon_frame = 1
+	prerequisites = { "tech_efg_weapons_3" }
+	component_set = "EFG_WAVE_MOTION_GUN_YAMATO_1_CS"
+	projectile_gfx = "efg_wave_motion_gun"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy t_slot }
+	upgrades_to = "EFG_WAVE_MOTION_GUN_YAMATO_2"
+	ai_tags = { weapon_role_artillery }
+
+	size_restriction = { efg_yamato_class_ship efg_yamato_class_ship_nsc
+				flagship_yamato flagship_ginga cr_titan }
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}		
+		upkeep = {
+			energy = 0
+			alloys = 0
+		}
+	}
+
+	power = @sby_weapon_power_cost_1_t
+	#damage = { min = 6150.00 max = 12300.00 }
+	damage = { min = 9840.00 max = 19680.00 }
+	#shield_damage = 1.00
+	shield_penetration = 0.50
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	windup = { min = 180.0 max = 180.0 }
+	total_fire_time = 360
+
+	range = @efg_weapon_range_250
+	accuracy = 0.90
+	tracking = 0.10
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = @efg_ai_weight_4
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+
+	
+}
+
+weapon_component_template = {
+	key = "EFG_WAVE_MOTION_GUN_YAMATO_2"
+	size = titanic
+	#entity = "large_laser_gun_entity"
+	#entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_efg_ship_part_wm_gun_2"
+	icon_frame = 1
+	prerequisites = { "tech_efg_weapons_5" }
+	component_set = "EFG_WAVE_MOTION_GUN_YAMATO_2_CS"
+	projectile_gfx = "efg_wave_motion_gun"
+	tags = { weapon_type_sby_wavemotion weapon_type_energy t_slot }
+	upgrades_to = "EFG_WAVE_MOTION_GUN_YAMATO_3"
+	ai_tags = { weapon_role_artillery }
+
+	size_restriction = { efg_yamato_class_ship efg_yamato_class_ship_nsc
+				flagship_yamato flagship_ginga cr_titan }
+	
+	# target_weights script
+	inline_script = "targeting/sby_capital_ships"
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 0
+		}		
+		upkeep = {
+			energy = 0
+			alloys = 0
+		}
+	}
+
+	power = @sby_weapon_power_cost_2_t
+	#damage = { min = 6150.00 max = 12300.00 }
+	damage = { min = 12300.00 max = 24600.00 }
+	#shield_damage = 1.00
+	shield_penetration = 0.50
+	armor_damage = 3.00
+	armor_penetration = 0.50
+	hull_damage = 4.00
+
+	windup = { min = 180.0 max = 180.0 }
+	total_fire_time = 360
+
+	range = @efg_weapon_range_250
+	accuracy = 0.90
+	tracking = 0.10
+	
+	firing_arc = 25.0
+	
+	ai_weight = {
+		weight = @efg_ai_weight_6
+		modifier = {
+			factor = 0.0
+			NOT = { has_origin = origin_earth_2200 }
+		}
+	}
+
+	
+}
+
+
+
+
+
+

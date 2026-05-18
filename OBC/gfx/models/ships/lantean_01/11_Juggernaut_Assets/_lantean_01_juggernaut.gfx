@@ -1,0 +1,8 @@
+objectTypes = {
+	
+	pdxmesh = {
+		name = "lantean_01_juggernaut_mesh"
+		file = "gfx/models/ships/lantean_01/11_Juggernaut_Assets/lantean_01_juggernaut_frame.mesh"
+		scale = 1.0
+	}
+}

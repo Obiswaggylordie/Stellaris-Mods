@@ -1,0 +1,64 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+
+# this = empire that gets the modifier
+# from = empire that triggers the modifier
+
+#THE MANTLE OF RESPONSIBILITY
+
+triggered_opinion_the_mantle_of_responsibility = {
+	trigger = {
+		NOR = {
+			is_country_type = fallen_empire
+			is_gestalt = yes
+		}
+		FROM = {
+			has_civic = civic_the_mantle_of_responsibility
+		}
+	}
+
+	opinion = {
+		base = 1000
+	}
+}
+
+triggered_opinion_the_mantle_of_responsibility_other_owners = {
+	trigger = {
+		has_valid_civic = civic_the_mantle_of_responsibility
+		FROM = {
+			has_civic = civic_the_mantle_of_responsibility
+		}
+	}
+
+	opinion = {
+		base = -100 
+	}
+}
+
+triggered_opinion_the_mantle_of_responsibility_fallen_empires = {
+	trigger = {
+		is_country_type = fallen_empire
+		NOT = {
+			has_ethic = ethic_fanatic_xenophile
+		}
+		FROM = {
+			has_civic = civic_the_mantle_of_responsibility
+		}
+	}
+	opinion = {
+		base = -50
+	}
+}
+
+triggered_opinion_the_mantle_of_responsibility_awakened_fallen_empires = {
+	trigger = {
+		is_country_type = awakened_fallen_empire
+		FROM = {
+			has_civic = civic_the_mantle_of_responsibility
+		}
+	}
+	opinion = {
+		base = -100
+	}
+}

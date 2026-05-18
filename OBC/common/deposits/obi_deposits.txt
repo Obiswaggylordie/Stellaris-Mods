@@ -1,0 +1,72 @@
+# Magic Pocket
+d_magic_pocket = {
+	is_for_colonizable = yes
+	icon = d_magic_pocket
+	category = deposit_cat_rare
+
+	country_modifier = {
+		starbase_shipyard_capacity_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			NOT = {
+				is_planet_class = pc_gaia
+			}
+		}
+		modifier = {
+			planet_max_districts_add = 10
+			planet_max_buildings_add = 10
+			pop_housing_usage_mult = -0.10
+			planet_housing_mult = 0.10
+			district_farming_max_add = 10
+			district_generator_max_add = 10
+			district_mining_max_add = 10
+			planet_orbital_bombardment_damage = -0.10
+			army_defense_health_mult = 0.10
+			army_defense_damage_mult = 0.10
+			army_defense_morale_mult = 0.10
+			pop_environment_tolerance = 0.10
+			planet_jobs_produces_mult = 0.10
+			job_technician_per_pop = 0.1
+			job_miner_per_pop = 0.1
+			job_farmer_per_pop = 0.1
+			job_crystal_miner_per_pop = 0.1
+			job_gas_extractor_per_pop = 0.1
+			job_mote_harvester_per_pop = 0.1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			is_planet_class = pc_gaia
+		}
+		modifier = {
+			planet_max_districts_add = 20
+			planet_max_buildings_add = 20
+			district_farming_max_add = 20
+			district_generator_max_add = 20
+			district_mining_max_add = 20
+			planet_orbital_bombardment_damage = -0.20
+			army_defense_health_mult = 0.20
+			army_defense_damage_mult = 0.20
+			army_defense_morale_mult = 0.20
+			pop_environment_tolerance = 0.20
+			planet_jobs_produces_mult = 0.20
+			job_technician_per_pop = 0.2
+			job_miner_per_pop = 0.2
+			job_farmer_add = 0.2
+			job_crystal_miner_add = 0.2
+			job_gas_extractor_add = 0.2
+			job_mote_harvester_add = 0.2
+		}
+	}
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}

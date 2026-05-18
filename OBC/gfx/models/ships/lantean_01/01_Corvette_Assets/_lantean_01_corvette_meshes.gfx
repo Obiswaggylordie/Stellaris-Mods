@@ -1,0 +1,29 @@
+objectTypes = {
+#######  corvette frame  #######
+	
+	pdxmesh = {
+		name = "lantean_01_corvette_frame_mesh"
+		file = "gfx/models/ships/lantean_01/01_Corvette_Assets/lantean_01_corvette_frame.mesh"			
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "lantean_01_frigate_frame_mesh"
+		file = "gfx/models/ships/lantean_01/01_Corvette_Assets/lantean_01_frigate_frame.mesh"			
+		scale = 1.0
+	}
+
+	#######  corvette sections  #######	
+	
+	pdxmesh = {
+		name = "lantean_01_corvette_locator_mesh"
+		file = "gfx/models/ships/lantean_01/01_Corvette_Assets/lantean_01_corvette_locators.mesh"
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "lantean_01_frigate_locator_mesh"
+		file = "gfx/models/ships/lantean_01/01_Corvette_Assets/lantean_01_frigate_locators.mesh"
+		scale = 1.0
+	}
+}

@@ -1,0 +1,401 @@
+#CYBERTRONIAN GESTALT JOBS
+
+cybertronian_energon_refiner_drone = {	
+    category = complex_drone
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = building_cybertronian_energon_refinery
+		}
+	}
+	tags = { strategic_resource }
+	
+    possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+	
+	possible = { NOT = { has_trait = trait_nerve_stapled } }
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			energon = 12
+			#energy = 10
+		}
+		upkeep = {
+			energon_crystals = 10
+        }
+    }
+    
+    weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 0.9
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_trait = trait_cybertronian
+				has_trait = trait_bw_cybertronian
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+				has_trait = trait_energon_dependence
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
+		}
+	}
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = complex_drone
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}
+
+
+
+energon_refiner_drone = {
+	category = complex_drone
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = building_energon_refinery
+		}
+	}
+	tags = { strategic_resource }
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	
+	possible_precalc = can_fill_drone_job
+
+	possible = { NOT = { has_trait = trait_nerve_stapled } }
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			energon = 10
+			#energy = 5
+		}
+		upkeep = {
+			energon_crystals = 10
+		}
+	}
+	
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 0.9
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_trait = trait_cybertronian
+				has_trait = trait_bw_cybertronian
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+				has_trait = trait_energon_dependence
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
+		}
+	}
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = complex_drone
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}
+
+energon_mining_drone = {
+	category = simple_drone
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = building_energon_refinery
+		}
+	}
+	tags = { strategic_resource }
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+	
+	possible = { can_think = yes }
+	
+	resources = {
+		category = planet_sr_miners
+		produces = {
+			energon_crystals = 10
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	weight = {
+		weight = @simple_drone_job_weight
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = trait_cybertronian
+				has_trait = trait_bw_cybertronian
+				has_trait = trait_industrious
+				has_trait = trait_robot_power_drills
+				has_trait = trait_energon_dependence
+			}
+		}
+		# low income modifier
+		modifier = {
+			factor = 3
+			exists = planet
+			planet = {
+				has_available_jobs = energon_mining_drone
+			}
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = energon_crystals
+					value < 10
+				}
+			}
+		}
+	}
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = simple_drone
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}
+#DARK ENERGON
+cybertronian_dark_energon_refiner_drone = {	
+    category = complex_drone
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = building_cybertronian_dark_energon_refinery
+		}
+	}
+	tags = { strategic_resource }
+    
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	
+	possible_precalc = can_fill_drone_job
+
+	possible = { NOT = { has_trait = trait_nerve_stapled } }
+	
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			dark_energon = 12
+			#energy = 10
+		}
+		upkeep = {
+			dark_energon_crystals = 10
+        }
+    }
+
+    weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 0.9
+			exists = owner 
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+				has_trait = trait_dark_energon_dependence
+			}
+		}
+	}
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = complex_drone
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}
+
+dark_energon_refiner_drone = {
+	category = complex_drone
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = building_dark_energon_refinery
+		}
+	}
+	tags = { strategic_resource }
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	
+	possible_precalc = can_fill_drone_job
+
+	possible = { NOT = { has_trait = trait_nerve_stapled } }
+	
+	
+	resources = {
+		category = planet_jobs
+		produces = {
+			dark_energon = 10
+			#energy = 5
+		}
+		upkeep = {
+			dark_energon_crystals = 10
+		}
+	}
+	
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 0.9
+			exists = owner 
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+				has_trait = trait_dark_energon_dependence
+			}
+		}
+	}
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = complex_drone
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}
+
+dark_energon_mining_drone = {
+	category = simple_drone
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = building_dark_energon_refinery
+		}
+	}
+	tags = { strategic_resource dark_energon }
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+	
+	resources = {
+		category = planet_sr_miners
+		produces = {
+			dark_energon_crystals = 10
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	weight = {
+		weight = @simple_drone_job_weight
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = trait_cybertronian
+				has_trait = trait_bw_cybertronian
+				has_trait = trait_industrious
+				has_trait = trait_robot_power_drills
+				has_trait = trait_dark_energon_dependence
+			}
+		}
+		# low income modifier
+		modifier = {
+			factor = 3
+			exists = planet
+			planet = {
+				has_available_jobs = dark_energon_mining_drone
+			}
+			exists = owner
+			owner = {
+				has_monthly_income = {
+					resource = dark_energon_crystals
+					value < 10
+				}
+			}
+		}
+	}
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = simple_drone
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}

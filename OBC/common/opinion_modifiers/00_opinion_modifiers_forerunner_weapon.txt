@@ -1,0 +1,104 @@
+####################
+# FORERUNNER OPINION MODIFIERS
+####################
+
+# Composing a Planet 
+opinion_composed_a_world = {
+	opinion = {
+		base = -10
+	}
+
+	accumulative = yes
+
+	min = -300
+
+	decay = {
+		base = 1
+	}
+}
+
+opinion_composed_my_world = {
+	opinion = {
+		base = -50
+	}
+
+	accumulative = yes
+
+	min = -1000
+
+	decay = {
+		base = 1
+	}
+}
+
+opinion_composed_a_primitive_world = {
+	opinion = {
+		base = -25
+	}
+
+	accumulative = yes
+
+	min = -200
+
+	decay = {
+		base = 1
+	}
+}
+
+opinion_composed_a_primitive_world_phile = {
+	opinion = {
+		base = -50
+	}
+
+	accumulative = yes
+
+	min = -300
+
+	decay = {
+		base = 1
+	}
+}
+
+
+# Shutdown My Planet (victim Empire's opinion of the Forerunners)
+opinion_disabled_a_world = {
+	opinion = {
+		base = -10
+	}
+
+	accumulative = yes
+
+	min = -100
+
+	decay = {
+		base = 1
+	}
+}
+
+opinion_disabled_my_world = {
+	opinion = {
+		base = -50
+	}
+
+	accumulative = yes
+
+	min = -1000
+
+	decay = {
+		base = 1
+	}
+}
+
+opinion_disabled_a_primitive_world = {
+	opinion = {
+		base = -10
+	}
+
+	accumulative = yes
+
+	min = -50
+
+	decay = {
+		base = 1
+	}
+}

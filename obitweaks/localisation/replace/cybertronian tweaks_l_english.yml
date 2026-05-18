@@ -122,6 +122,7 @@
  omega_lock.401.name: "Omega Lock Depleted!"
  omega_lock.401.desc: "After running faithfully for many years, the Omega Lock on [Root.Planet.GetName] has finally been depleted of all its Energon and Cybermatter, rendering it inoperable."
  omega_lock.401.a: "It shall be reactivated."
+ omega_lock.401.b: "I don't care, fix it."
 
 # All Spark Funny
 

@@ -1,0 +1,127 @@
+@missile_scale = 1.0
+
+#############
+# Ancient
+#############
+
+# ANCIENT PULSE ##############################################################################
+### Ancient Pulse PD ###
+entity = {
+	name = "ancient_pulse_pd_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ancient_pulse_idle_particle" keep_particle = yes }
+	}
+	scale = 0.12
+}
+
+### Ancient Pulse S ###
+entity = {
+	name = "ancient_pulse_small_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ancient_pulse_idle_particle" keep_particle = yes }
+	}
+	scale = 0.2
+}
+
+### Ancient Pulse M ###
+entity = {
+	name = "ancient_pulse_medium_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ancient_pulse_idle_particle" keep_particle = yes }
+	}
+	scale = 0.3
+}
+
+### Ancient Pulse L ###
+entity = {
+	name = "ancient_pulse_large_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ancient_pulse_idle_particle" keep_particle = yes }
+	}
+	scale = 0.4
+}
+
+### Ancient Pulse XL ###
+entity = {
+	name = "ancient_pulse_extra_large_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ancient_pulse_idle_particle" keep_particle = yes }
+	}
+	scale = 0.4
+}
+
+# ANCIENT DRONES ##############################################################################
+### Ancient Drones PD ###
+entity = {
+	name = "ancient_drones_pd_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ancient_drones_idle_particle" keep_particle = yes }
+	}
+	scale = 0.03
+}
+### Ancient Drones M ###
+entity = {
+	name = "ancient_drones_medium_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "ancient_drones_idle_particle" keep_particle = yes }
+	}
+	scale = 0.08
+}
+
+### Ancient Drone Muzzle Flash ###
+entity = {
+	name = "ancient_drones_muzzle_flash_entity"
+	cull_radius = 0.05
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "ancient_drones_muzzle_flash_particle" keep_particle = yes sound = { soundeffect = "ancient_drone_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ancient_drone_fire" } }
+		
+	}
+}
+
+### Ancient Drone Hit Effect ###
+entity = {
+	name = "ancient_drones_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "ancient_drones_hit_effect_particle" sound = { soundeffect = ancient_drone_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ancient_drone_hit" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+### Ancient Drone Shield Hit Effect ###
+entity = {
+	name = "ancient_drones_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "ancient_drones_hit_effect_particle" sound = { soundeffect = ancient_drone_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ancient_drone_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}

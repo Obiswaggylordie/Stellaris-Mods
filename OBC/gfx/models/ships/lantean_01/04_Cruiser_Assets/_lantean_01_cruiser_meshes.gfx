@@ -1,0 +1,30 @@
+objectTypes = {	
+	
+	#######  cruiser frame  #######
+	
+	pdxmesh = {
+		name = "lantean_01_cruiser_frame_mesh"
+		file = "gfx/models/ships/lantean_01/04_Cruiser_Assets/lantean_01_cruiser_2_frame.mesh"			
+		scale = 1.0
+	}
+	
+	#######  cruiser sections  #######	
+	
+	pdxmesh = {
+		name = "lantean_01_cruiser_locators_bow"
+		file = "gfx/models/ships/lantean_01/04_Cruiser_Assets/lantean_01_cruiser_locators_bow.mesh"
+		scale = 1.0
+	}
+
+		pdxmesh = {
+		name = "lantean_01_cruiser_locators_mid"
+		file = "gfx/models/ships/lantean_01/04_Cruiser_Assets/lantean_01_cruiser_locators_mid.mesh"
+		scale = 1.0
+	}
+
+		pdxmesh = {
+		name = "lantean_01_cruiser_locators_stern"
+		file = "gfx/models/ships/lantean_01/04_Cruiser_Assets/lantean_01_cruiser_locators_stern.mesh"
+		scale = 1.0
+	}
+}

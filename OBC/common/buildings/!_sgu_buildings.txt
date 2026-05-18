@@ -1,0 +1,144 @@
+# unlocks zpm facility
+building_zpm_production_facility = {
+	base_buildtime = 360
+	position_priority = 1
+
+	category = resource
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			uses_habitat_capitals = yes
+		}
+		exists = owner
+		owner = { has_technology = tech_zeia_sdc }
+	}
+	
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+		}
+		produces = {
+			sr_sdc = 0.1
+		}
+		upkeep = {
+			rare_crystals = 10
+			exotic_gases = 5
+			volatile_motes = 5
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_technology = tech_zpm_production_efficiency
+				}
+			}
+			sr_sdc = 1
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					has_technology = tech_zpm_production_efficiency
+				}
+			}
+			rare_crystals = 5
+			exotic_gases = 2.5
+			volatile_motes = 2.5
+		}
+	}
+	
+	prerequisites = {
+		"tech_zpm_construction"
+	}
+
+	ai_weight = {
+		weight = 30000
+	}	
+}
+
+building_energy_matter_converter_1 = {
+	base_buildtime = 480
+	position_priority = 2
+	
+	category = manufacturing
+
+	potential = {
+		owner = { has_technology = tech_energy_matter_conversion }
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = { has_technology = tech_energy_matter_conversion }
+		}
+	}
+	
+	planet_modifier = {
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1500
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_edict = emc_alloys
+				}
+			}
+			alloys = 100
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_edict = emc_consumer_goods
+				}
+			}
+			consumer_goods = 150
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_edict = emc_mixed
+				}
+			}
+			alloys = 50
+			consumer_goods = 75
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					OR = {
+						has_edict = emc_alloys
+						has_edict = emc_consumer_goods
+						has_edict = emc_mixed
+					}
+				}
+			}
+			energy = 250
+		}
+	}
+
+	prerequisites = {
+		"tech_energy_matter_conversion"
+	}
+
+	ai_weight = {
+		weight = 3000
+		modifier = {
+			factor = 0
+			owner = { 
+				has_monthly_income = {
+					resource = energy
+					value < 300
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,308 @@
+###################
+## Species Traits #
+###################
+
+#trait_ascension_1 = {
+#	cost = 0
+#	potential_crossbreeding_chance = 1.0
+#	randomized = no
+#
+#	species_potential_add = {
+#		always = yes
+#	}
+#	species_possible_remove = {
+#		from = {
+#			has_technology = tech_ascended_gene_editing
+#		}
+#	}
+#	species_possible_merge_add = {
+#		always = yes
+#	}
+#	initial = no
+#
+#	allowed_archetypes = { BIOLOGICAL }
+#
+#	modifier = {
+#		planet_jobs_produces_mult = 1.00
+#		species_leader_exp_gain = 1.00
+#		pop_environment_tolerance = 0.25
+#		army_attack_damage_mult = 0.25
+#		army_defense_damage_mult = 0.25
+#		army_health = 0.25
+#	}
+#
+#	opposites = {
+#		"trait_ascension_2"
+#		"trait_ascension_3"
+#		"trait_ascension_4"
+#	}
+#
+#	slave_cost = {
+#		energy = 150
+#	}
+#
+#	prerequisites = {
+#		tech_ascended_gene_editing
+#	}
+#
+#}
+#
+#trait_ascension_2 = {
+#	cost = 0
+#	potential_crossbreeding_chance = 1.0
+#	randomized = no
+#	species_potential_add = {
+#		always = yes
+#	}
+#	species_possible_remove = {
+#		from = {
+#			has_technology = tech_ascended_gene_editing
+#		}
+#	}
+#	species_possible_merge_add = {
+#		always = yes
+#	}
+#	initial = no 
+#
+#	allowed_archetypes = { BIOLOGICAL }
+#
+#	modifier = {
+#		planet_jobs_produces_mult = 2.0
+#		species_leader_exp_gain = 2.0
+#		pop_environment_tolerance = 0.50
+#		army_attack_damage_mult = 0.50
+#		army_defense_damage_mult = 0.50
+#		army_health = 0.50
+#	}
+#
+#	opposites = {
+#		"trait_ascension_1"
+#		"trait_ascension_3"
+#		"trait_ascension_4"
+#	}
+#
+#	slave_cost = {
+#		energy = 250
+#	}
+#
+#	prerequisites = {
+#		tech_ascended_gene_editing
+#	}
+#
+#}
+#
+#trait_ascension_3 = {
+#	cost = 0
+#	potential_crossbreeding_chance = 1.0
+#	randomized = no
+#	species_potential_add = {
+#		always = yes
+#	}
+#	species_possible_remove = {
+#		from = {
+#			has_technology = tech_ascended_gene_editing
+#		}
+#	}
+#	species_possible_merge_add = {
+#		always = yes
+#	}
+#	initial = no 
+#
+#	allowed_archetypes = { BIOLOGICAL }
+#
+#	prerequisites = {
+#		tech_ascended_gene_editing
+#	}
+#
+#	opposites = {
+#		"trait_ascension_1"
+#		"trait_ascension_2"
+#		"trait_ascension_4"
+#	}
+#
+#	modifier = {
+#		planet_jobs_produces_mult = 3.0
+#		species_leader_exp_gain = 3.0
+#		pop_environment_tolerance = 0.75
+#		army_attack_damage_mult = 0.75
+#		army_defense_damage_mult = 0.75
+#		army_health = 0.75
+#	}
+#
+#	slave_cost = {
+#		energy = 400
+#	}
+#
+#}
+#
+#trait_ascension_4 = {
+#	cost = 0
+#	potential_crossbreeding_chance = 1.0
+#	randomized = no
+#	species_potential_add = {
+#		always = yes
+#	}
+#	species_possible_remove = {
+#		from = {
+#			has_technology = tech_ascended_gene_editing
+#		}
+#	}
+#	species_possible_merge_add = {
+#		always = yes
+#	}
+#	initial = no
+#
+#	allowed_archetypes = { BIOLOGICAL }
+#
+#	prerequisites = {
+#		tech_ascended_gene_editing
+#	}
+#
+#	opposites = {
+#		"trait_ascension_1"
+#		"trait_ascension_2"
+#		"trait_ascension_3"
+#	}
+#
+#	modifier = {
+#		planet_jobs_produces_mult = 4.0
+#		species_leader_exp_gain = 4.0
+#		pop_environment_tolerance = 1.0
+#		army_attack_damage_mult = 1.0
+#		army_defense_damage_mult = 10.0
+#		army_health = 10.0
+#	}
+#
+#	slave_cost = {
+#		energy = 10000
+#	}
+#
+#}
+
+# Kas Zei'a
+trait_sobsha = {
+	cost = 0
+	potential_crossbreeding_chance = 1.0
+	species_class = { zeia }
+	randomized = no
+	species_potential_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+
+	allowed_archetypes = { BIOLOGICAL }
+
+	modifier = {
+		army_attack_damage_mult = 0.50
+		army_defense_damage_mult = 0.50
+		army_health = 0.50
+		pop_environment_tolerance = 0.50
+		bonus_pop_growth = 0.50
+		pop_amenities_usage_mult = -0.50
+		worker_and_simple_drone_cat_bonus_workforce_mult = 0.50
+		soldier_jobs_bonus_workforce_mult = 0.50
+		researcher_jobs_bonus_workforce_mult = 0.50
+	}
+
+	slave_cost = {
+		energy = 500
+	}
+
+}
+
+trait_kvilsha = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	species_class = { zeia }
+	initial = yes
+	randomized = no
+	species_potential_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		from = {
+			has_technology = tech_magic_and_science
+		}
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	
+	leader_age_min = 18
+	leader_age_max = 300
+	
+	allowed_archetypes = { BIOLOGICAL }
+
+	prerequisites = {
+		tech_magic_and_science
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+	
+	icon = "gfx/interface/icons/traits/trait_kvilsha.dds"
+	
+	modifier = {
+		army_attack_damage_mult = 1.00
+		army_defense_damage_mult = 1.00
+		army_health = 1.00
+		pop_environment_tolerance = 1.00
+		bonus_pop_growth = 1.00
+		pop_amenities_usage_mult = -1.00
+		worker_and_simple_drone_cat_bonus_workforce_mult = 1.00
+		soldier_jobs_bonus_workforce_mult = 1.00
+		researcher_jobs_bonus_workforce_mult = 1.00
+		leader_lifespan_add = 200
+	}
+	
+	slave_cost = {
+		energy = 5000
+	}
+}
+
+trait_uviik = {
+	cost = 0
+	allowed_archetypes = { ROBOT MACHINE }
+	
+	modifier = {
+		planet_pop_assemblers_upkeep_mult = -0.5
+		planet_structures_cost_mult = -0.5
+		planet_structures_upkeep_mult = -0.50
+		planet_pop_assembly_mult = 0.5
+		planet_jobs_produces_mult = 0.5
+		pop_happiness = 100
+	}
+	
+	icon = "gfx/interface/icons/traits/trait_uviik.dds"
+
+	prerequisites = {
+		tech_zeia_biocrystalline
+	}
+	
+	randomized = no
+	species_potential_add = {
+		from = {
+			has_origin = origin_obi_zeia
+		}
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	improves_leaders = yes
+	forced_happiness = yes
+	
+	
+	ai_weight = {
+		weight = 0
+	}
+	
+}

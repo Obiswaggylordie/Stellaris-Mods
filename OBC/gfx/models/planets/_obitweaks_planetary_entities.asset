@@ -1,0 +1,21 @@
+#################################
+# FORERUNNER PLANETARY ENTITIES #
+#################################
+
+#MAETHRILLIAN STATION 
+
+entity = {
+	name = "obicitadel_01_entity"
+	pdxmesh = "obicitadel_mesh"
+	
+	scale = 0.5
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 100 time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_01" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_02" } }
+	}
+	state = { name = "construction"
+	start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+	}
+}

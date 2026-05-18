@@ -1,0 +1,77 @@
+#weapon_type_kinetic_weapon_damage_mult = 0.15
+#weapon_type_kinetic_weapon_fire_rate_mult = 0.15
+#weapon_type_energy_weapon_damage_mult = 0.15
+#weapon_type_energy_weapon_fire_rate_mult = 0.15
+#weapon_type_explosive_weapon_damage_mult = 0.15
+#weapon_type_explosive_weapon_fire_rate_mult = 0.15
+#weapon_type_strike_craft_weapon_damage_mult = 0.15
+#	spaceport_ship_build_speed_mult = 0.15
+# country_robot_build_speed_mult
+# set_timed_global_flag = { flag = feral_prethoryn_can_spawn days = 5400 }
+
+# access ascension powers
+ascended_powers = {
+	icon = "GFX_edict_type_policy"
+	length = 1
+	resources = {
+		category = edicts
+	}
+
+	allow = {
+		NOT = { has_country_flag = ascended_powers_on_cd }
+		NOT = { has_country_flag = ascended_powers_on_short_cd }
+	}
+
+	potential = {
+		has_technology = "tech_ascension_1"
+	}
+
+	effect = {
+		custom_tooltip = edict_ascended_powers_effect
+		set_timed_country_flag = {
+			flag = ascended_powers_on_cd
+			days = 1 # 1 years
+		}
+		country_event = { id = sgu_ascension.1000 }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+
+	#prerequisites = {
+	#	"tech_"
+	#}	
+}
+
+get_forerunner_tech_zeia = {
+	icon = "GFX_edict_type_policy"
+	length = 1
+	resources = {
+		category = edicts
+	}
+
+	potential = {
+		has_technology = "tech_ascension_4"
+		any_owned_species = {
+			OR = {
+				has_trait = "trait_forerunner_species"
+				has_trait = "trait_robot_sentinel_ai"
+				has_trait = "trait_robot_promethean_ai"
+			}
+		}
+		NOT = {
+			has_technology = tech_forerunner_start
+		}
+	}
+
+	effect = {
+		give_technology = {
+			tech = tech_forerunner_start
+		}
+	}
+
+	ai_weight = {
+		weight = 1000
+	}	
+}

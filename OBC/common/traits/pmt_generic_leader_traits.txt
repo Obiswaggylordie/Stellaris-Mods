@@ -1,0 +1,232 @@
+leader_trait_great_personality_changes = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_great_personality_changes"
+		COUNCIL = no
+		TIER = none
+	}
+	self_modifier = {
+		species_leader_exp_gain = -0.2
+		negative_traits_leader = 1
+	}
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+
+leader_trait_pmt_alicorn = {
+	cost = 0
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_pmt_alicorn"
+		RARITY = paragon
+		COUNCIL = triggered
+		TIER = none
+	}
+	self_modifier = {
+		leader_trait_selection_options_add = 1
+		negative_traits_leader = -10
+		leader_skill_levels = 10
+		species_leader_exp_gain = 1.0
+	}
+
+	immortal_leaders = yes
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+
+leader_trait_alicorn = {
+	cost = 0
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_pmt_alicorn"
+		RARITY = paragon
+		COUNCIL = triggered
+		TIER = none
+	}
+	self_modifier = {
+		leader_trait_selection_options_add = 1
+		negative_traits_leader = -10
+		leader_skill_levels = 10
+		species_leader_exp_gain = 1.0
+	}
+
+	immortal_leaders = yes
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+
+leader_trait_princess_celestia = {
+	cost = 0
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_princess_celestia"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.3
+		negative_traits_leader = -1
+	}
+	councilor_modifier = {
+		planet_stability_add = 2.5
+		country_councilor_influence_produces_add = 0.25
+	}
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+
+leader_trait_harmony_paragon_honest = {
+	cost = 0
+	inline_script = {
+		script = trait/icon_harmony_color
+		CLASS = leader
+		ICON = "GFX_leader_trait_elements_of_harmony"
+		RARITY = common
+		COUNCIL = yes
+		TIER = none
+		HARMONY_COLOR = honest
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.15
+		negative_traits_leader = -1
+	}
+	councilor_modifier = {
+		country_trust_growth = 0.10
+		country_trade_attractiveness = 0.05
+	}
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+
+leader_trait_harmony_paragon_kindness = {
+	cost = 0
+	inline_script = {
+		script = trait/icon_harmony_color
+		CLASS = leader
+		ICON = "GFX_leader_trait_elements_of_harmony"
+		RARITY = common
+		COUNCIL = yes
+		TIER = none
+		HARMONY_COLOR = kindness
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = unity
+		AMOUNT = 20
+	}
+	self_modifier = {
+		negative_traits_leader = -1
+	}
+	councilor_modifier = {
+		planet_crime_mult = -0.10
+		planet_jobs_unity_produces_mult = 0.10
+	}
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+
+leader_trait_harmony_paragon_laughter = {
+	cost = 0
+	inline_script = {
+		script = trait/icon_harmony_color
+		CLASS = leader
+		ICON = "GFX_leader_trait_elements_of_harmony"
+		RARITY = common
+		COUNCIL = yes
+		TIER = none
+		HARMONY_COLOR = laughter
+	}
+	self_modifier = {
+		leader_lifespan_add = 10
+		negative_traits_leader = -1
+	}
+	councilor_modifier = {
+		pop_happiness = 0.05
+		planet_amenities_mult = 0.1
+	}
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+
+leader_trait_harmony_paragon_generously = {
+	cost = 0
+	inline_script = {
+		script = trait/icon_harmony_color
+		CLASS = leader
+		ICON = "GFX_leader_trait_elements_of_harmony"
+		RARITY = common
+		COUNCIL = yes
+		TIER = none
+		HARMONY_COLOR = generously
+	}
+	self_modifier = {
+		negative_traits_leader = -1
+	}
+	councilor_modifier = {
+		planet_jobs_upkeep_mult = -0.05
+		planet_jobs_minerals_produces_mult = 0.05
+		planet_jobs_energy_produces_mult = 0.05
+	}
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+
+leader_trait_harmony_paragon_loyalty = {
+	cost = 0
+	inline_script = {
+		script = trait/icon_harmony_color
+		CLASS = leader
+		ICON = "GFX_leader_trait_elements_of_harmony"
+		RARITY = common
+		COUNCIL = yes
+		TIER = none
+		HARMONY_COLOR = loyalty
+	}
+	self_modifier = {
+		leaders_upkeep_mult = -0.25
+		negative_traits_leader = -1
+	}
+	councilor_modifier = {
+		pop_government_ethic_attraction = 0.10
+		army_morale = 0.10
+	}
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+
+leader_trait_harmony_paragon_magic = {
+	cost = 0
+	inline_script = {
+		script = trait/icon_harmony_color
+		CLASS = leader
+		ICON = "GFX_leader_trait_elements_of_harmony"
+		RARITY = common
+		COUNCIL = yes
+		TIER = none
+		HARMONY_COLOR = magic
+	}
+	self_modifier = {
+		negative_traits_leader = -1
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.10
+		category_magic_draw_chance_mult = 0.25
+	}
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
