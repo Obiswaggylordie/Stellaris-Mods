@@ -1,0 +1,394 @@
+### Shields
+utility_component_template = {
+	key = "SMALL_ZEIA_SHIELD"
+	size = small
+	icon = "GFX_forerunner_shield"
+	icon_frame = 1
+	power = -100
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			energy = 500
+		}	
+		upkeep = {
+			energy = 0.45
+			alloys = 0.045
+		}
+	}
+	modifier = {
+		ship_shield_add = 3000
+		ship_shield_hardening_add = 0.1
+		ship_shield_regen_add_static = 10.0 #Regeneration per day
+	}
+	prerequisites = { "tech_forerunner_shield" }
+	component_set = "ZEIA_SHIELD_SET"
+
+	ai_weight = {
+		weight = 50000
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_ZEIA_SHIELD"
+	size = medium
+	icon = "GFX_forerunner_shield"
+	icon_frame = 1
+	power = -300
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			energy = 500
+		}	
+		upkeep = {
+			energy = 0.9
+			alloys = 0.09
+		}
+	}
+	modifier = {
+		ship_shield_add = 6000
+		ship_shield_hardening_add = 0.2
+		ship_shield_regen_add_static = 50.0 #Regeneration per day
+	}
+	prerequisites = { "tech_zeia_shield" }
+	component_set = "ZEIA_SHIELD_SET"
+
+
+	ai_weight = {
+		weight = 50000
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_ZEIA_SHIELD"
+	size = large
+	icon = "GFX_forerunner_shield"
+	icon_frame = 1
+	power = -500
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			energy = 500
+		}	
+		upkeep = {
+			energy = 1.8
+			alloys = 0.18
+		}
+	}
+	modifier = {
+		ship_shield_add = 9000
+		ship_shield_hardening_add = 0.3
+		ship_shield_regen_add_static = 100.0 #Regeneration per day
+	}
+	prerequisites = { "tech_zeia_shield" }
+	component_set = "ZEIA_SHIELD_SET"
+
+	ai_weight = {
+		weight = 50000
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+	}
+}
+
+# Zei'a Omega Alloy Armour
+utility_component_template = {
+	key = "SMALL_ZEIA_ARMOR"
+	size = small
+	icon = "GFX_zeia_omega_alloy"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+		}	
+		upkeep = {
+			energy = 0.5
+		}
+	}
+	
+	modifier = {
+		ship_hull_add = 625
+		ship_hull_regen_add_static = 1.0
+		ship_armor_add = 3000
+		ship_armor_regen_add_static = 10.0 #Regeneration per day
+		ship_armor_hardening_add = 0.1
+	}
+
+	prerequisites = { "tech_omega_alloy" }
+	component_set = "ZEIA_ARMOR_SET"
+
+	ai_weight = {
+		weight = 50000
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_ZEIA_ARMOR"
+	size = medium
+	icon = "GFX_zeia_omega_alloy"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+		}	
+		upkeep = {
+			energy = 1.0
+		}
+	}
+	
+	modifier = {
+		ship_hull_add = 1250
+		ship_hull_regen_add_static = 2.0
+		ship_armor_add = 6000
+		ship_armor_regen_add_static = 50.0
+		ship_armor_hardening_add = 0.2
+	}
+	
+	prerequisites = { "tech_omega_alloy" }
+	component_set = "ZEIA_ARMOR_SET"
+
+	ai_weight = {
+		weight = 50000
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_ZEIA_ARMOR"
+	size = large
+	icon = "GFX_zeia_omega_alloy"
+	icon_frame = 1
+	power = 0
+		resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+		}	
+		upkeep = {
+			energy = 1.5
+		}
+	}
+	
+	modifier = {
+		ship_hull_add = 2500
+		ship_hull_regen_add_static = 3.0
+		ship_armor_add = 9000
+		ship_armor_regen_add_static = 100.0
+		ship_armor_hardening_add = 0.3
+	}
+	
+	prerequisites = { "tech_omega_alloy" }
+	component_set = "ZEIA_ARMOR_SET"
+
+	ai_weight = {
+		weight = 50000
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+# Dimension Engine
+utility_component_template = {
+	key = "ZEIA_DIMENG"
+	size = small
+	icon = "GFX_zeia_dimeng"
+	icon_frame = 1
+	power = 250000
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 48
+		}
+	}
+
+	ship_modifier = {
+		ship_shield_hardening_add = 1
+		ship_weapon_damage = 0.50
+		ship_fire_rate_mult = 0.50
+	}
+	
+	prerequisites = { "tech_zeia_dimeng" }
+	component_set = "power_core"
+	
+	ai_weight = {
+		weight = 50000
+	}
+}
+
+
+# SDC
+utility_component_template = {
+	key = "ZEIA_SDC"
+	size = aux
+	icon = "GFX_zeia_sdc"
+	icon_frame = 1
+	power = 100000
+	resources = {
+		category = ship_components
+
+		cost = {
+			sr_sdc = 1
+		}
+	}
+
+	ship_modifier = {
+		ship_shield_hardening_add = 1.00
+		ship_shield_reduction = -1.00
+		ship_shield_mult = 1.00
+		ship_weapon_damage = 1.00
+		ship_fire_rate_mult = 1.00
+		ship_speed_mult = 1.00
+		ship_windup_mult = -1.00
+		ship_ftl_jumpdrive_range_mult = 1.00
+		ship_jumpdrive_cooldown_mult = -1.00
+		ship_sensor_range_add = 10
+		ship_cloaking_detection_add = 10
+		ship_evasion_add = 10
+		ship_tracking_add = 10
+		ship_accuracy_add = 10
+	}
+
+	component_set = "ZEIA_SDC_SET"
+	
+	ai_weight = {
+		weight = 20000
+		modifier = {
+			factor = 0
+			resource_stockpile_compare = {
+				resource = sr_sdc
+				value < 5 
+				
+			}
+		}
+		modifier = {
+			factor = 10
+			resource_stockpile_compare = {
+				resource = sr_sdc
+				value >= 5 
+				
+			}
+		}
+	}
+}
+
+## Control Chair ##
+utility_component_template = {
+	key = "AUX_CONTROL_CHAIR"
+	size = aux
+	icon = "GFX_zeia_chair"
+	icon_frame = 1
+	power = -5000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 2000
+		}	
+		upkeep = {
+			energy = 20.0
+			minerals = 2.0
+		}
+	}
+
+	ship_limit = 1
+	
+	prerequisites = { "tech_zeia_chair" }
+	component_set = "CONTROL_CHAIR_AUX"
+
+	ship_modifier = {
+		ship_fire_rate_mult = 1.00
+		ship_tracking_add = 100
+	}
+}
+
+# Void Shroud Cloak
+utility_component_template = {
+	key = "ZEIA_CLOAK"
+	size = aux
+	icon = "GFX_ship_part_cloak_1"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			energy = 500
+		}
+		upkeep = {
+			energy = 0.1
+		}
+	}
+
+
+	modifier = {
+		ship_cloaking_strength_add = 5000
+	}
+
+
+	ship_limit = 1
+	component_set = "ZEIA_CLOAK_SET"
+	prerequisites = { "tech_void_shroud" }
+
+
+	ai_weight = {
+		weight = 10000
+	}
+}
+
+utility_component_template = {
+	key = "ZEIA_SCIENCE_CLOAK"
+	size = aux
+	icon = "GFX_ship_part_cloak_1"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			energy = 500
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.1
+		}
+	}
+
+	size_restriction = {science explorer_vessel observation_station }
+
+	modifier = {
+		ship_cloaking_strength_add = 5000
+	}
+
+
+	ship_limit = 1
+	component_set = "science_cloaking_components"
+	prerequisites = { "tech_void_shroud" }
+
+
+	ai_weight = {
+		weight = 10000
+	}
+}

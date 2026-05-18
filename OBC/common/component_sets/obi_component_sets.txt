@@ -13,13 +13,6 @@ component_set = {
 }
 
 component_set = {
-	key = "SDC_AUX"
-	
-	icon = "GFX_ancient_zpm"
-	icon_frame = 1	
-}
-
-component_set = {
 	key = "CONTROL_CHAIR_AUX"
 
 	icon = "GFX_ancient_chair"
@@ -67,6 +60,33 @@ component_set = {
 	key = "ZEIA_CLOAK_SET"
 
 	icon = "GFX_ship_part_cloak_1"
+	icon_frame = 1
+}
+component_set = {
+	key = "ZEIA_DIMENG_SET"
+
+	icon = "GFX_zeia_dimeng"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ZEIA_SDC_SET"
+
+	icon = "GFX_zeia_sdc"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ZEIA_SHIELD_SET"
+
+	icon = "GFX_zeia_shield"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ZEIA_ARMOR_SET"
+
+	icon = "GFX_zeia_omega_alloy"
 	icon_frame = 1
 }
 

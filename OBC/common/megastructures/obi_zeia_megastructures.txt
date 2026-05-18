@@ -805,8 +805,8 @@ void_relay_inactive = {
 		activate_gateway = fromfrom
 		set_star_flag = void_relay_built
 		from = { 
-			set_country_flag = built_void_relay
-			country_event = { id = ForerunnerShieldEvent.11 }
+			#set_country_flag = built_void_relay
+			country_event = { id = void_relay.1000 }
 		}
 		fromfrom = { 
 			save_global_event_target_as = void_relay

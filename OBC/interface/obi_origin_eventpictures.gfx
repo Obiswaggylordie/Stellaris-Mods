@@ -5,4 +5,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/origins/origin_zeia.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_evt_forerunner_slipspace_portal"
+		texturefile = "gfx/event_pictures/c_forerunner_slipspace_portal.dds"
+		alwaystransparent = yes
+	}
 }

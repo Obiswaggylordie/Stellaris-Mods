@@ -425,6 +425,9 @@
  void_relay_epsilon_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Epsilon Network."
 
  ## Relay misc
+ void_relay.1000_title: "Void Relay Complete"
+ void_relay.1000_desc: "Construction on a Void relay has been completed."
+
  void_relay_inactive: "Relay Construction Site"
  void_relay_inactive_DESC: "Construct a Void Relay"
 
@@ -471,6 +474,14 @@
  void_relay_dismantle_DESC: "Remove this Void Relay from the system."
 
  void_relay_inactive_MEGASTRUCTURE_DETAILS: "Create a Void Relay capable of accessing locations within Void. Cannot build this megastructure too far beyond the gravity well of a system."
+ void_relay_omega_inactive_MEGASTRUCTURE_DETAILS: "Create a Void Relay capable of accessing locations within Void. Cannot build this megastructure too far beyond the gravity well of a system."
+ void_relay_alpha_inactive_MEGASTRUCTURE_DETAILS: "Create a Void Relay capable of accessing locations within Void. Cannot build this megastructure too far beyond the gravity well of a system."
+ void_relay_beta_inactive_MEGASTRUCTURE_DETAILS: "Create a Void Relay capable of accessing locations within Void. Cannot build this megastructure too far beyond the gravity well of a system."
+ void_relay_delta_inactive_MEGASTRUCTURE_DETAILS: "Create a Void Relay capable of accessing locations within Void. Cannot build this megastructure too far beyond the gravity well of a system."
+ void_relay_gamma_inactive_MEGASTRUCTURE_DETAILS: "Create a Void Relay capable of accessing locations within Void. Cannot build this megastructure too far beyond the gravity well of a system."
+ void_relay_lambda_inactive_MEGASTRUCTURE_DETAILS: "Create a Void Relay capable of accessing locations within Void. Cannot build this megastructure too far beyond the gravity well of a system."
+ void_relay_epsilon_inactive_MEGASTRUCTURE_DETAILS: "Create a Void Relay capable of accessing locations within Void. Cannot build this megastructure too far beyond the gravity well of a system."
+
  crucible_construct_MEGASTRUCTURE_DETAILS: "Construct the Zei'a Tarawa Installation, the home of the Perdition and Genesis devices."
  
  requires_technology_slipspace_field: "$TRIGGER_FAIL$Requires technology £physics£ §Y$tech_void_relay$§!."
@@ -528,6 +539,12 @@
  tech_zeia_biocrystalline: "Zei'a Bio-Crystalline Technology"
  tech_zeia_biocrystalline_desc: "The Bio-Crystalline technology of Kas Zei'a is a unique and versatile form of technology, crystals are programmed and grow their own internal components to fulfill their tasks. They are found in all Zei'a technology and architecture."
 
+ tech_zeia_dimeng: "Zei'a Dimension Engine"
+ tech_zeia_dimeng_desc: "The Dimension Engine is an incredible machine capable of harnessing an infinite amount of dimensional energy from the universe itself, though in limited amounts as extracting too much with little control would provoke enormous repercussions."
+ 
+ tech_zeia_sdc: "Zei'a Super Dimension Core"
+ tech_zeia_sdc_desc: "The Super Dimension Core is an alternate take on the Dimension Engine concept, by taking the Dimension Core and utilising tetradimensional engineering to produce a pocket universe within the core."
+
  tech_zeia_energy_controller: "Zei'a Energy Controllers"
  tech_zeia_energy_controller_desc: "The Energy Controllers are powerful Zei'a devices capable of asserting control over all energy in any state, from siphoning thermal energy and heat from one object and transferring it to another, all the way to manipulating Celestial Energy itself."
 
@@ -537,18 +554,54 @@
  tech_void_relay: "Void Relay Construction"
  tech_void_relay_desc: "Void Relays are sophisticated Kas Zei'a kilostructures capable of opening rifts in real space which lead into The Void, these rifts can be focused into targetting virtually any location in the universe and even beyond."
 
+ tech_void_drive: "The Transplanar Distortion Engine"
+ tech_void_drive_desc: "The Hypertransplanar Distortion engine, more commonly known as the Void Drive. Is the most technologically advanced Faster-Than-Light engine in the universe, pioneered by Sentinels Min'dok'zu-Ahrk-Munin'zu and A'skao'zu-Ahrk-Min'dek'zu-Uko-Frul'zul following their successful development of its stationary counterpart, the void Relay."
+
+ tech_void_shroud: "Void Shroud"
+ tech_void_shroud_desc: "Void Shrouds function similarly to a phase-shifter, except that it phases its intended target partly into the Void. This functions to completely eliminate any trace of its existence in any discernable manner, where not even Ascended Beings can detect it. The shrouded may pass through any material and remain entirely undetected and unaffected by several noticeable physical laws such as mass, gravity, and even time. The only method of communicating or affecting anything through a Void Shroud is to utilise other Void based technologies, or harness metaphysical forces. This is how numerous shrouded Installations and vessels were still struck by the Perdition Wave."
+
+ tech_mcd: "Molecular Construction Device"
+ tech_mcd_desc: "The Molecular Construction Device is a powerful piece of Zei'a technology capable of manipulating matter on a molecular level, allowing it to construct or deconstruct any object, from the smallest of tools to entire planets, and even stars. The MCD is the core component of the City-Ships, allowing them to materialise and dematerialise their own structures at will, aswell as being used in various other applications such as the construction of megastructures, or even the creation of weapons of mass destruction"
+
+ tech_omega_alloy: "Zei'a Omega Alloy"
+ tech_omega_alloy_desc: "Omega Alloy can be called a form of refined Nuclear Pasta, easily being 10 billion (10,000,000,000) times more durable than steel. Kas Zei'a later found the means of utilising Matter-Energy Converters to produce Omega Alloy without the lengthy synthesization process, this in turn meant that Kas Zei'a could actively produce and maintain Omega Alloy far easier."
+
+ tech_zeia_shield: "Zei'a Shielding"
+ tech_zeia_shield_desc: "Zei'a Shielding has no internal capacity of its own and instead uses the power its given to form a shield. However due to this, Zei'a Shielding has no upper limit of capacity either. It can simply become exponentionally stronger based solely on the amount of power it's fed."
+
  tech_cr_cosmoreverse: "Energy Controllers"
  tech_cr_cosmoreverse_desc: "Energy Controllers are powerful Zei'a devices capable of asserting control over all energy in any state, from siphoning thermal energy and heat from one object and transferring it to another, all the way to manipulating Celestial Energy itself."
 
- #tech_cr_cosmoreverse: "The Cosmoreverse System"
- #tech_cr_cosmoreverse_desc: "A supremely powerful celestial energy manipulation device, capable of creating abberations in time and space through the Void, or transforming entire planets into any number of alternatives."
+ tech_dtf_cosmoreverse: "The Cosmoreverse System"
+ tech_dtf_cosmoreverse_desc: "A supremely powerful celestial energy manipulation device, capable of creating abberations in time and space through the Void, or transforming entire planets into any number of alternatives."
 
- tech_cr_access: "Time Fault Facilities"
- tech_cr_access_desc: "After lengthy study of these 'Time Faults', we have found the method of entering them safely and even utilising their esoteric properties for our own benefit."
+ tech_dtf_access: "Time Fault Facilities"
+ tech_dtf_access_desc: "After lengthy study of these 'Time Faults', we have found the method of entering them safely and even utilising their esoteric properties for our own benefit."
 
  tech_obi_wormhole: "Spatial Magic Theory"
  tech_obi_wormhole_desc: "Through our understanding of the Arcane, we've come to realise that we have the potential to fold subspace in any way we see fit, granting us many potential benefits."
 
+ tech_aurora_class: "Aurora-Class Uviik"
+ tech_aurora_class_desc: "The Aurora class Uviik, occasionally refered to as the 'CNU-Type', is the most sophisticated bio-crystalline neural network ever conceived by the Collective. The Aurora classification, as insinuated. Was made specifically for the Core Network Units; the synthetic stewards of the Collective's 'Core Network'. These units were so drastically superior to every other Uviik, designed to be a compound consciousness of countless parallel minds. By every measurable metric, Aurora class Uviik are the only organisms in existence capable of being remotely compared to an Ascended energy based consciousness."
+
 # Planet Classes
  pc_obicitadel: "Citadel Station"
  pc_obicitadel_desc: "This megastructure of a station acts as a capital in of itself, allowing empires to settle the heart of their vast civilisations within it. The station's primary purpose is to facilitate the control of the galactic relay network, to this end the station also functions as a nigh-impenetrable fortress and bastion against anyone who would attempt to seize control over the relays."
+
+# Components
+
+ ZEIA_CLOAK: "Zei'a Void Shroud"
+ ZEIA_SCIENCE_CLOAK: "Zei'a Void Shroud"
+ ZEIA_CLOAK_SET: "Zei'a Void Shroud"
+
+ ZEIA_ARMOR: "Zei'a Omega Alloy"
+ ZEIA_ARMOR_SET: "Zei'a Omega Alloy"
+
+ ZEIA_SHIELD: "Zei'a Void Shield"
+ ZEIA_SHIELD_SET: "Zei'a Shield"
+
+ ZEIA_DIMENG: "Zei'a Dimension Engine"
+ ZEIA_DIMENG_SET: "Zei'a Dimension Engine"
+
+ ZEIA_SDC: "Zei'a Super Dimension Core"
+ ZEIA_SDC_SET: "Zei'a Super Dimension Core"

@@ -25,12 +25,33 @@ tech_zeia_biocrystalline = {
 	tier = 1
 	is_rare = yes
 	category = { materials }
-	#prerequisites = { "tech_efg_wave_motion_gun_1" }
+	prerequisites = { "tech_zeia_biocomputing" }
 	weight = @tier1weight1
 
 	potential = {  
-		is_ai = no
 		#has_technology = tech_slipspace_field
+		has_origin = origin_obi_zeia
+	} 
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_aurora_class = {
+	cost = 1000
+	area = engineering
+	tier = 1
+	is_rare = yes
+	category = { materials }
+	prerequisites = { "tech_zeia_biocomputing" "giga_tech_tetradimensional_engineering" }
+	weight = @tier1weight1
+
+	potential = {  
 		has_origin = origin_obi_zeia
 	} 
 	
@@ -94,12 +115,118 @@ tech_void_relay = {
 	tier = 4
 	is_rare = yes
 	category = { particles }
-	#prerequisites = { "tech_efg_wave_motion_gun_1" }
+	prerequisites = { "tech_void_science" }
+	weight = @tier4weight3
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_void_drive = {
+	cost = 100000
+	area = physics
+	tier = 4
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_void_relay" }
+	weight = @tier4weight3
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_void_shroud = {
+	cost = 100000
+	area = physics
+	tier = 4
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_void_drive" }
+	weight = @tier4weight3
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_mcd = {
+	cost = 100000
+	area = physics
+	tier = 4
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_void_drive" }
+	weight = @tier4weight3
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_omega_alloy = {
+	cost = 100000
+	area = physics
+	tier = 4
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_mcd" "tech_ship_armor_5"}
+	weight = @tier4weight3
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_zeia_shield = {
+	cost = 100000
+	area = physics
+	tier = 4
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_shields_5" "tech_zeia_biocrystalline" }
+	weight = @tier4weight3
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_zeia_dimeng = {
+	cost = 100000
+	area = physics
+	tier = 4
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_zeia_biocrystalline" "tech_zero_point_power" }
 	weight = @tier4weight3
 
 	potential = {  
-		is_ai = no
-		#has_technology = tech_slipspace_field
 		has_origin = origin_obi_zeia
 	} 
 	
@@ -118,12 +245,10 @@ tech_zeia_sdc = {
 	tier = 4
 	is_rare = yes
 	category = { particles }
-	#prerequisites = { "tech_efg_wave_motion_gun_1" }
+	prerequisites = { "tech_zeia_dimeng" "giga_tech_tetradimensional_engineering" }
 	weight = @tier4weight3
 
 	potential = {  
-		is_ai = no
-		#has_technology = tech_slipspace_field
 		has_origin = origin_obi_zeia
 	} 
 	
@@ -146,8 +271,6 @@ tech_zeia_chair = {
 	weight = @tier1weight2
 
 	potential = {  
-		is_ai = no
-		#has_technology = tech_slipspace_field
 		has_origin = origin_obi_zeia
 	} 
 	

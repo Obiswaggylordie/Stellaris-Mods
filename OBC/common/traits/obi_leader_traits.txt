@@ -285,12 +285,11 @@ leader_trait_aurora_uviik = {
 	}
 	
 	leader_class = all
-	requires_traits = { trait_robot_sentinel_ai }
+	requires_traits = { trait_uviik }
 	initial = no
 	opposites = {
-		"leader_trait_created_ai"
 		"leader_trait_ascension_4"
 	}
-	prerequisites = { tech_contender_ancilla }
+	prerequisites = { tech_aurora_class }
 	ai_weight = { weight = 150 }
 }

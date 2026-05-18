@@ -203,6 +203,11 @@ decision_construct_citadel_relay = {
 	}
 	
 	effect = {
+		from = {
+			country_event = {
+				id = void_relay.1000
+			}
+		}
 		solar_system = {
 			spawn_megastructure = {
 				type = citadel_inactive
