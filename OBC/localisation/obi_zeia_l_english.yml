@@ -157,6 +157,13 @@
  # Kvil'sha Project
  decision_kvilsha_project: "The Kvil'sha Project"
  decision_kvilsha_project_desc: "Kas Zei'a seeks perfection in the impossible, forcing the laws of nature to submit to their will, continuing to draft up genes after genes, the shape of these Kvil'sha being a stark difference to their original Sob'sha visage. Their total psionic power had been evolved to greater heights, and their potential was projected to be leagues ahead of any Sob'sha."
+ decision_kvilsha_project_tooltip: "Creates Kvil'Sha pops."
+
+ # Uviik
+
+ decision_construct_uviik: "Construct Uviik"
+ decision_construct_uviik_desc: "Order the Fanum and Agon guilds to construct a new line of Uviik machines to serve our needs."
+ decision_construct_uviik_tooltip: "Creates Uviik pops."
 
  # Monitors
  decision_install_monitor: "Install Monitor"
@@ -309,10 +316,10 @@
  d_fanum_domain: "The Fanum Domain"
  d_fanum_domain_desc: "The Fanum Domain is the home to the Fanum Guilds of Kas Zei'a, nestled away in the height of Aether's mountains, bridged and strewn across the various peaks. Home to the most bleeding edge of Zei'a advancements, the Fanum Domain has always been the most sophisticated in design and architecture, streaks, lines, and conduits of neon energy flowing through the massive facilities, Uviik patrolling and swarming around the tall chambers and towers of the Domain, Hardlight infrastructure is frequently in play, with paths, bridges, platforms, vehicles, and equipment, all being materialised into existence at will and dispersed when necessary."
 
- d_fanum_hall_of_astronomy: "Hall of Astronomy"
+ d_fanum_hall_of_astronomy: "The Hall of Astronomy"
  d_fanum_hall_of_astronomy_desc: "The Hall of Astronomy is hidden deep within the mountains of Fanum. Taking shape as an enormous spherical chamber comparable to a stadium, the Hall is visually dark and littered with holographic emitters, floating platforms roam the massive chamber to examine images and representations of celestial objects, vessels, or even people, the system is connected directly to The Library and is actively provided with a live feed from all Zei'a technology, giving the Hall absolute sight and telemetry on everything within the sphere of Kas Zei'as influence. The Hall of Astronomy holds special Void-based sensors, capable of calculating and affecting changes to the Void in order to allow the operators of the Hall to see through higher and lower dimensions, examine the universe on subatomic lengths or on gigaparsec terms, beyond what normal sensor resolutions can manage, while granting transparent view into other timelines and even universes."
 
- d_fanum_sanctuary_fortress: "Sanctuary Fortress"
+ d_fanum_sanctuary_fortress: "The Sanctuary Fortress"
  d_fanum_sanctuary_fortress_desc: "Sanctuary Fortress is the deep-vault of the Fanum Domain, home to the exceedingly dangerous scientific fields, or the top secret. Equipped with the most sophisticated and newest of Zei'a technology, even the ones that haven't been deployed yet, the facility lives up to its name as a Sanctuary, and a Fortress, being widely recognised as unbreachable, and unconquerable, should Aether fall then Sanctuary will remain to continue the fight. One may find many terrible things within its shielded depths, weapons of mass destruction, memory-foam of all things, artificial stars, a black hole or two, and the most deranged and inspired minds of Kas Zei'a, certifiably capable of blowing up a planet with a mouse trap, and landing a paper clip on the sun."
 
 
@@ -619,15 +626,20 @@
  ZEIA_CLOAK: "Zei'a Void Shroud"
  ZEIA_SCIENCE_CLOAK: "Zei'a Void Shroud"
  ZEIA_CLOAK_SET: "Zei'a Void Shroud"
+ ZEIA_CLOAK_SET_DESC:""
 
  ZEIA_ARMOR: "Zei'a Omega Alloy"
  ZEIA_ARMOR_SET: "Zei'a Omega Alloy"
+ ZEIA_ARMOR_SET_DESC: ""
 
  ZEIA_SHIELD: "Zei'a Void Shield"
  ZEIA_SHIELD_SET: "Zei'a Shield"
+ ZEIA_SHIELD_SET_DESC: ""
 
  ZEIA_DIMENG: "Zei'a Dimension Engine"
  ZEIA_DIMENG_SET: "Zei'a Dimension Engine"
+ ZEIA_DIMENG_SET_DESC: ""
 
  ZEIA_SDC: "Zei'a Super Dimension Core"
  ZEIA_SDC_SET: "Zei'a Super Dimension Core"
+ ZEIA_SDC_SET_DESC: ""

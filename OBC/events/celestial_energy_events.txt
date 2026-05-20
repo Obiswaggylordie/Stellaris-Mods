@@ -12,7 +12,7 @@ country_event = { # Planetary Energy
 	hide_window = no
 	is_triggered_only = yes
 	
-    option = { # Fill Energy Controllers
+    option = { # Fill Energy 
         name = "celestial_energy_events.1.a"
 		
 		allow = {
@@ -163,7 +163,7 @@ country_event = { # Planetary Energy
         }
     }
 
-    option = { # Drain Energy Controllers
+    option = { # Drain Energy
         name = "celestial_energy_events.1.b"
 		
 		allow = {
@@ -175,6 +175,10 @@ country_event = { # Planetary Energy
 					is_planet_class = pc_barren
 					is_planet_class = pc_barren_cold
 					is_planet_class = pc_frozen
+					is_planet_class = pc_toxic
+					is_planet_class = pc_molten
+					is_planet_class = pc_shattered
+					is_planet_class = pc_shattered_2
 				}
 			}
 		}

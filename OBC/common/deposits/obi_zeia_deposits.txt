@@ -52,6 +52,7 @@ d_naos_domain = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
+		planet_max_districts_add = 50
 		district_city_max_add = 50
 		planet_stability_add = 10
 		planet_amenities_add = 1000
@@ -191,6 +192,7 @@ d_agon_domain = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
+		planet_max_districts_add = 50
 		district_mining_max_add = 50
 		district_generator_max_add = 50
 		planet_housing_add = 2000
@@ -266,6 +268,7 @@ d_torvus_domain = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
+		planet_max_districts_add = 50
 		planet_amenities_add = 1000
 		planet_housing_add = 2000
 		district_farming_max_add = 50
@@ -336,6 +339,7 @@ d_fanum_domain = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
+		planet_max_districts_add = 50
 		planet_amenities_add = 1000
 		planet_housing_add = 2000
 	}

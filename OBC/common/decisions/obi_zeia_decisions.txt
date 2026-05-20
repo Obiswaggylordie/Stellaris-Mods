@@ -491,7 +491,7 @@ decision_build_attero = {
 			is_planet_class = pc_forerunner_shield
 			is_planet_class = pc_forerunner_sharpened_shield
 			is_planet_class = pc_genesis
-			is_planet_class = pc_requiem
+			#is_planet_class = pc_requiem
 		}
 	}
 
@@ -536,6 +536,42 @@ decision_dismantle_attero = {
 	}
 }
 
+# The Kvil'sha Project
+decision_kvilsha_project = {
+	owned_planets_only = yes
+	icon = decision_kvilsha_project
+
+	potential = {
+		from = {
+			has_technology = tech_zeia_kvilsha_project
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_kvilsha_project_tooltip
+		hidden_effect = {
+			create_species = {
+				name = "Kvil'sha"
+				plural = "Kvil'sha'zu"
+				adjective = "Kvil'sha"
+				namelist = "zeia"
+				class = ROBOT
+				portrait = "kvilsha"
+				traits = {
+					trait = trait_pc_gaia_preference
+					trait = trait_organic
+					trait = trait_kvilsha
+					trait = trait_psionic
+				}
+			}
+			create_pop_group =  {
+				size = 500
+				species = "Kvil'sha"
+			}
+		}
+	}
+}
+
 # Activate Energy Controllers
 decision_activate_energy_controller = {
 	owned_planets_only = no
@@ -559,17 +595,21 @@ decision_activate_energy_controller = {
 			}
 			solar_system = {
 				starbase = {
-					has_starbase_building = sm_zeia_energy_controller
+					has_starbase_building = zeia_energy_controller
 				}
 			}
 		}
 	}
 
 	allow = {
-		this = {
-			NOT = {
-				is_star = yes
-			}
+		NOR = {
+			is_planet_class = pc_barren
+			is_planet_class = pc_barren_cold
+			is_planet_class = pc_frozen
+			is_planet_class = pc_toxic
+			is_planet_class = pc_molten
+			is_planet_class = pc_shattered
+			is_planet_class = pc_shattered_2
 		}
 	}
 
@@ -577,7 +617,7 @@ decision_activate_energy_controller = {
 		save_global_event_target_as = ce_target
 		if = {
 			limit = {
-				is_planet = yes
+				is_star = no
 				is_artificial = no
 			}
 			if = {
@@ -683,7 +723,9 @@ decision_cringe_robots = {
 		}
 	}
 
-	ai_weight = 0
+	ai_weight = {
+		weight = 0
+	}
 }
 
 
@@ -723,7 +765,7 @@ decision_construct_uviik = {
 				name = "Uviik"
 				plural = "Uviik"
 				adjective = "Uviik"
-				name_list = "uviik"
+				namelist = "uviik"
 				class = ROBOT
 				portrait = "uviik"
 				traits = {
@@ -774,7 +816,7 @@ decision_construct_uviik = {
 #				plural = "Twilight-Class Uviik'zu"
 #				class = "forerunner_promethean"
 #				portrait = "promethean"
-#				name_list = "promethean"
+#				namelist = "promethean"
 #				traits = {
 #					trait = trait_mechanical
 #					trait = trait_robot_promethean_ai
@@ -961,7 +1003,7 @@ decision_construct_uviik = {
 #				plural = "Huragok"
 #				class = "huragok"
 #				portrait = "huragok"
-#				name_list = "sentinel"
+#				namelist = "sentinel"
 #				traits = {
 #					trait="trait_pc_habitat_preference"
 #					trait="trait_huragok_species"

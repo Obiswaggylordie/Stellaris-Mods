@@ -5,5 +5,11 @@ spriteTypes = {
 		name = "GFX_sb_energy_controller"
 		texturefile = "gfx/interface/icons/modules/sb_energy_controller.dds"
 	}
+
+	# SDC
+	spriteType = {
+		name = "GFX_zeia_sdc"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_sdc.dds"
+	}
 	
 }

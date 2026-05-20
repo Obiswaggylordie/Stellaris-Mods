@@ -39,6 +39,8 @@ building_cr_dtf_factory = {
 		country_resource_max_add = 1000000
 	}
 
+	can_build = yes
+
 	on_built = {
 		set_planet_flag = dtf_factory_built_1
 	}
@@ -92,6 +94,8 @@ building_cr_dtf_laboratory = {
 		}
 	}
 
+	can_build = yes
+
 	prerequisites = { "tech_cr_access" }
 
 	ai_weight = {
@@ -137,6 +141,8 @@ building_cr_dtf_breeder = {
 		}
 	}
 
+	can_build = yes
+
 	prerequisites = { "tech_cr_access" }
 
 	ai_weight = {
@@ -178,6 +184,8 @@ building_cr_dtf_shipyard = {
 			alloys = 60
 		}
 	}
+
+	can_build = yes
 
 	prerequisites = { "tech_cr_access" }
 
@@ -242,6 +250,8 @@ building_cr_dtf_bunker = {
 			energy = 60
 		}
 	}
+
+	can_build = yes
 
 	prerequisites = { "tech_cr_access" }
 

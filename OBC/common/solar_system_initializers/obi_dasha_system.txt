@@ -50,7 +50,7 @@ obi_dasha_system_initializer = {
 
 	planet = {
 		name = "Zebes"
-		class = "pc_toxic"
+		class = "pc_desert"
 		orbit_distance = 20
 		orbit_angle = 220
 		size = 16
@@ -59,7 +59,7 @@ obi_dasha_system_initializer = {
 	
 	planet = {
 		name = "Bryyo"
-		class = "pc_arid"
+		class = "pc_savannah"
 		orbit_distance = 20
 		orbit_angle = 240
 		size = 25
@@ -245,7 +245,7 @@ obi_dasha_system_initializer = {
 		
 	planet = {
 		name = "Urtraghus"
-		class = "pc_frozen"
+		class = "pc_arctic"
 		orbit_distance = 20
 		orbit_angle = 200
 		size = 15

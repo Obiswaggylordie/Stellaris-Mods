@@ -4,8 +4,8 @@ origin_obi_zeia = {
 	icon = "gfx/interface/icons/origins/origin_zeia_icon.dds"
 	picture = GFX_origin_zeia
 
-	starting_colony = pc_alpine
-	habitability_preference = pc_alpine
+	starting_colony = pc_gaia
+	habitability_preference = pc_gaia
 
 	initializers = { obi_dasha_system_initializer }
 
