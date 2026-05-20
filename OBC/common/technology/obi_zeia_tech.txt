@@ -399,29 +399,6 @@ tech_zeia_chair = {
 	}
 }
 
-tech_cr_cosmoreverse = {
-	cost = 100000
-	area = physics
-	tier = 4
-	is_rare = yes
-	category = { particles }
-	prerequisites = { "tech_efg_wave_motion_gun_1" }
-	weight = @tier4weight3
-
-	potential = {  
-		is_ai = no
-		has_technology = tech_slipspace_field
-	} 
-	
-	weight_modifier = {
-		factor = 1
-	}
-
-	ai_weight = {
-  	    factor = 1
-  	}
-}
-
 tech_cr_access = {
 	cost = 10000
 	area = engineering

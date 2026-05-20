@@ -556,6 +556,9 @@
  tech_zeia_biocrystalline: "Zei'a Bio-Crystalline Technology"
  tech_zeia_biocrystalline_desc: "The Bio-Crystalline technology of Kas Zei'a is a unique and versatile form of technology, crystals are programmed and grow their own internal components to fulfill their tasks. They are found in all Zei'a technology and architecture."
 
+ tech_zeia_kvilsha_project: "The Kvil'sha Project"
+ tech_zeia_kvilsha_project_desc: "Kas Zei'a seeks perfection in the impossible, forcing the laws of nature to submit to their will, continuing to draft up genes after genes, the shape of these Kvil'sha being a stark difference to their original Sob'sha visage. Their total psionic power had been evolved to greater heights, and their potential was projected to be leagues ahead of any Sob'sha."
+
  tech_zeia_dimeng: "Zei'a Dimension Engine"
  tech_zeia_dimeng_desc: "The Dimension Engine is an incredible machine capable of harnessing an infinite amount of dimensional energy from the universe itself, though in limited amounts as extracting too much with little control would provoke enormous repercussions."
  
@@ -564,6 +567,12 @@
 
  tech_zeia_energy_controller: "Zei'a Energy Controllers"
  tech_zeia_energy_controller_desc: "The Energy Controllers are powerful Zei'a devices capable of asserting control over all energy in any state, from siphoning thermal energy and heat from one object and transferring it to another, all the way to manipulating Celestial Energy itself."
+
+ tech_zeia_energy_transfer_module: "Energy Transfer Module"
+ tech_zeia_energy_transfer_module_desc: "A specialized energy containment device, capable of transferring vast amounts of celestial energy between controllers."
+
+ tech_zeia_light_shaft: "Light Shafts"
+ tech_zeia_light_shaft_desc: "The Light Shafts are a transportation system designed by Kas Zei'a, by utilising the energy controller network. Objects and travellers can be transformed into energy momentarily and be instantaneously beamed to another energy controller in the network."
 
  tech_zeia_ufc: "The Reality Code"
  tech_zeia_ufc_desc: "Originally known as the Universal Force Constant Principle. The Reality Code is a scientific and causal theorem based around the concept of the universe being linked to an infinite web of other universes through a mystical force of reality itself."

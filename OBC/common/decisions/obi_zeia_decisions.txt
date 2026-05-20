@@ -559,7 +559,7 @@ decision_activate_energy_controller = {
 			}
 			solar_system = {
 				starbase = {
-					has_starbase_module = sm_zeia_energy_controller
+					has_starbase_building = sm_zeia_energy_controller
 				}
 			}
 		}

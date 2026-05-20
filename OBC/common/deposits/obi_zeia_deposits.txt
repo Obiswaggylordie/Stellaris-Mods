@@ -246,7 +246,6 @@ d_agon_grand_factorum = {
 		building_time_mult = -0.50
 		planet_clear_blocker_time_mult = -0.50
 		planet_clear_blocker_speed_mult = 0.50
-		job_metallurgist_add = 10
 		job_artisan_add = 10
 		job_engineer_add = 20
 	}
@@ -270,11 +269,9 @@ d_torvus_domain = {
 		planet_amenities_add = 1000
 		planet_housing_add = 2000
 		district_farming_max_add = 50
-		pop_growth_speed = 0.10
 	}
 
 	country_modifier = {
-		terraforming_speed_mult = 0.50
 		terraforming_cost_mult = -0.50
 	} 
 
@@ -294,11 +291,9 @@ d_torvus_central_hydrodynamo = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
-		pop_growth_speed = 0.10
 	}
 
 	country_modifier = {
-		terraforming_speed_mult = 0.50
 		terraforming_cost_mult = -0.50
 	} 
 
@@ -318,12 +313,10 @@ d_torvus_preserve = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
-		pop_growth_speed = 0.10
 		job_biologist_add = 20
 	}
 
 	country_modifier = {
-		terraforming_speed_mult = 0.50
 		terraforming_cost_mult = -0.50
 	} 
 
@@ -386,7 +379,7 @@ d_fanum_hall_of_astronomy = {
 	}
 
 	drop_weight = {
-		weight = -1
+		weight = 0
 	}
 }
 
@@ -410,7 +403,7 @@ d_fanum_sanctuary_fortress = {
 	}
 
 	drop_weight = {
-		weight = -1
+		weight = 0
 	}
 }
 
@@ -522,7 +515,6 @@ d_city_ship = {
 	planet_modifier = {
 		# ZPM Modifiers
 		planet_jobs_produces_mult = 3
-		planet_jobs_robotic_produces_mult = 30
 		planet_pop_assembly_mult = 3
 
 		# CNU modifiers
@@ -570,7 +562,6 @@ d_city_ship = {
 			planet_colony_development_speed_mult = 1000.0
 			pop_resettlement_cost_mult = -100.0
 			planet_hyperlane_range_add = 10
-			colony_start_num_pops_add = 10
 		}
 	}
 
@@ -639,9 +630,7 @@ d_light_shaft = {
 	}
 
 	planet_modifier = {
-		pop_growth_from_immigration = 0.50
 		pop_resettlement_cost_mult = -0.50
-		trade_value_mult = 0.5
 		planet_jobs_produces_mult = 0.5
 		planet_pops_upkeep_mult = -0.5
 		planet_stability_add = 5
