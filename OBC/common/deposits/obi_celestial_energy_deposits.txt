@@ -1,0 +1,66 @@
+# Darkling Storm
+d_darkling_storm = {
+	icon = d_darkling_storm
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker
+
+	planet_modifier = {
+		pop_resettlement_cost_mult = 100000
+	}
+
+	potential = { always = no }
+	can_be_cleared = { always = no }
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Darkling Sky Temple
+d_darkling_sky_temple = {
+	icon = d_darkling_sky_temple
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Darkling Rifts
+d_darkling_rifts = {
+	icon = d_darkling_rifts
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker
+
+	planet_modifier = {
+		planet_max_districts_add = -10
+	}
+
+	potential = { always = no }
+	can_be_cleared = { always = no }
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Darkling Horde
+d_darkling_horde = {
+	icon = d_darkling_horde
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker
+
+	planet_modifier = {
+		planet_max_districts_add = -10
+	}
+
+	potential = { always = no }
+	can_be_cleared = { always = no }
+
+	drop_weight = {
+		weight = 0
+	}
+}

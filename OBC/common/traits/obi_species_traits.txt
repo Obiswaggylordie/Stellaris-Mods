@@ -226,7 +226,7 @@ trait_kvilsha = {
 	}
 	species_possible_remove = {
 		from = {
-			has_technology = tech_magic_and_science
+			has_technology = tech_zeia_kvilsha_project
 		}
 	}
 	species_possible_merge_add = {
@@ -239,7 +239,7 @@ trait_kvilsha = {
 	allowed_archetypes = { BIOLOGICAL }
 
 	prerequisites = {
-		tech_magic_and_science
+		tech_zeia_kvilsha_project
 	}
 	
 	ai_weight = {
@@ -249,15 +249,15 @@ trait_kvilsha = {
 	icon = "gfx/interface/icons/traits/trait_kvilsha.dds"
 	
 	modifier = {
-		army_attack_damage_mult = 1.00
-		army_defense_damage_mult = 1.00
-		army_health = 1.00
-		pop_environment_tolerance = 1.00
-		bonus_pop_growth = 1.00
-		pop_amenities_usage_mult = -1.00
-		worker_and_simple_drone_cat_bonus_workforce_mult = 1.00
-		soldier_jobs_bonus_workforce_mult = 1.00
-		researcher_jobs_bonus_workforce_mult = 1.00
+		army_attack_damage_mult = 1.50
+		army_defense_damage_mult = 1.50
+		army_health = 1.50
+		pop_environment_tolerance = 1.50
+		bonus_pop_growth = 1.50
+		pop_amenities_usage_mult = -1.50
+		worker_and_simple_drone_cat_bonus_workforce_mult = 1.50
+		soldier_jobs_bonus_workforce_mult = 1.50
+		researcher_jobs_bonus_workforce_mult = 1.50
 		leader_lifespan_add = 200
 	}
 	

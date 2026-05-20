@@ -148,7 +148,15 @@
  uviik_submonitor: "Installation Sub-Monitor"
  uviik_submonitor_desc: "The Sub-Monitor exists to supplement the primary monitor and acts as a further extension and assistant to their mission of administrating their installation."
 
+# Starbase Modules
+ sm_zeia_energy_controller: "Energy Controller"
+ sm_zeia_energy_controller_desc: "Install an Energy Controller within this starbase, allowing it to connect to the greater network."
+
 # Decisions
+
+ # Kvil'sha Project
+ decision_kvilsha_project: "The Kvil'sha Project"
+ decision_kvilsha_project_desc: "Kas Zei'a seeks perfection in the impossible, forcing the laws of nature to submit to their will, continuing to draft up genes after genes, the shape of these Kvil'sha being a stark difference to their original Sob'sha visage. Their total psionic power had been evolved to greater heights, and their potential was projected to be leagues ahead of any Sob'sha."
 
  # Monitors
  decision_install_monitor: "Install Monitor"
@@ -160,8 +168,11 @@
  decision_install_submonitor_effects: "Applies the Sub-Monitor Modifier to the planet."
 
  # Time Faults
- cr_destroy_dtf: "Collapse Time Fault"
- cr_destroy_dtf_desc: "Collapse one of this planet's Dimensional Time Faults, rendering any benefits from its existence void." 
+ decision_create_time_fault: "Create Time Fault"
+ decision_create_time_fault_desc: "Create a Dimensional Time Fault on this planet, a strange void-based spatial anomaly that can be used for various purposes."
+
+ decision_destroy_time_fault: "Collapse Time Fault"
+ decision_destroy_time_fault_desc: "Collapse one of this planet's Dimensional Time Faults, rendering any benefits from its existence void." 
 
  ## Citadel-Class Relays
  decision_construct_citadel_relay: "Construct Citadel Relay"
@@ -217,38 +228,41 @@
  ## Cosmo Reverse System
  decision_activate_energy_controller: "Activate the Energy Controllers"
 
- cosmoreverse_events.1.title: "Activating the Energy Controllers"
- cosmoreverse_events.1.desc: "The Energy Controllers have been activated and are operating at full efficiency, the system is ready to affect great change upon the targeted world."
+ celestial_energy_events.1.title: "Energy Controller Management"
+ celestial_energy_events.1.desc: "The Energy Controllers have been activated and are operating at full efficiency, the system is ready to affect great change upon the targeted world."
 
- cosmoreverse_events.1.a: "Create a Dimensional Time Fault"
- cosmoreverse_events.1.b: "Initialize Cosmo-Reverse Subsystem"
- cosmoreverse_events.1.c: "Remove a Dimensional Time Fault."
- cosmoreverse_events.1.d: "Create 10 Dimensional Time Faults."
- cosmoreverse_events.1.e: "Remove all Dimensional Time Faults."
- cosmoreverse_events.1.y: "Deplete Energy Controllers"
- cosmoreverse_events.1.z: "Abort, shut down the controllers."
+ celestial_energy_events.1.a: "Fill Planetary Energy"
+ celestial_energy_events.1.b: "Drain Planetary Energy"
+ celestial_energy_events.1.c: "Establish Light Shafts"
+ celestial_energy_events.1.z: "Leave the controllers alone"
 
- cosmoreverse_events.10.title: "Cosmo Reverse Planet Class Selection"
- cosmoreverse_events.10.desc: "The Comso Reverse Subsystem is capable of transforming any world into whatever class we may desire."
+ celestial_energy_events.2.title: "Energy Controller Management"
+ celestial_energy_events.2.desc: "The Energy Controllers have been activated and are operating at full efficiency, the system is ready to affect great change upon the targeted star."
+ celestial_energy_events.2.a: "Fill Stellar Energy"
+ celestial_energy_events.2.b: "Drain Stellar Energy"
+ celestial_energy_events.2.z: "Leave the controllers alone"
+
+ celestial_energy_events.10.title: "Cosmo Reverse Planet Class Selection"
+ celestial_energy_events.10.desc: "The Comso Reverse Subsystem is capable of transforming any world into whatever class we may desire."
  
- cosmoreverse_events.10.a: "Cosmo Reverse to Gaia"
- cosmoreverse_events.10.b: "Cosmo Reverse to Continental"
- cosmoreverse_events.10.c: "Cosmo Reverse to Tropical"
- cosmoreverse_events.10.d: "Cosmo Reverse to Alpine"
- cosmoreverse_events.10.e: "Cosmo Reverse to Tundra"
- cosmoreverse_events.10.f: "Cosmo Reverse to Ocean"
- cosmoreverse_events.10.g: "Cosmo Reverse to Arctic"
- cosmoreverse_events.10.h: "Cosmo Reverse to Desert"
- cosmoreverse_events.10.i: "Cosmo Reverse to Savannah"
- cosmoreverse_events.10.j: "Cosmo Reverse to Barren"
- cosmoreverse_events.10.k: "Cosmo Reverse to Fractured"
- cosmoreverse_events.10.l: "Cosmo Reverse to Void Sphere"
- cosmoreverse_events.10.m: "Cosmo Reverse to Soul Sphere"
- cosmoreverse_events.10.n: "Cosmo Reverse to Asteroid"
- cosmoreverse_events.10.o: "Cosmo Reverse to Gas Giant"
- cosmoreverse_events.10.p: "Cosmo Reverse to Tomb"
- cosmoreverse_events.10.y: "Cosmo Reverse to Shattered"
- cosmoreverse_events.10.z: "Abort, shut down the CRS."
+ celestial_energy_events.10.a: "Cosmo Reverse to Gaia"
+ celestial_energy_events.10.b: "Cosmo Reverse to Continental"
+ celestial_energy_events.10.c: "Cosmo Reverse to Tropical"
+ celestial_energy_events.10.d: "Cosmo Reverse to Alpine"
+ celestial_energy_events.10.e: "Cosmo Reverse to Tundra"
+ celestial_energy_events.10.f: "Cosmo Reverse to Ocean"
+ celestial_energy_events.10.g: "Cosmo Reverse to Arctic"
+ celestial_energy_events.10.h: "Cosmo Reverse to Desert"
+ celestial_energy_events.10.i: "Cosmo Reverse to Savannah"
+ celestial_energy_events.10.j: "Cosmo Reverse to Barren"
+ celestial_energy_events.10.k: "Cosmo Reverse to Fractured"
+ celestial_energy_events.10.l: "Cosmo Reverse to Void Sphere"
+ celestial_energy_events.10.m: "Cosmo Reverse to Soul Sphere"
+ celestial_energy_events.10.n: "Cosmo Reverse to Asteroid"
+ celestial_energy_events.10.o: "Cosmo Reverse to Gas Giant"
+ celestial_energy_events.10.p: "Cosmo Reverse to Tomb"
+ celestial_energy_events.10.y: "Cosmo Reverse to Shattered"
+ celestial_energy_events.10.z: "Abort, shut down the CRS."
 
 # Deposits
 
@@ -350,6 +364,9 @@
  # Energy Controller
  d_energy_controller: "Zei'a Energy Controller Network"
  d_energy_controller_desc: "Energy Controllers are powerful Zei'a devices capable of asserting control over all energy in any state, from siphoning thermal energy and heat from one object and transferring it to another, all the way to manipulating Celestial Energy itself."
+
+ d_light_shaft: "Light Shafts"
+ d_light_shaft_desc: "The Light Shafts are a transportation system designed by Kas Zei'a, by utilising the energy controller network. Objects and travellers can be transformed into energy momentarily and be instantaneously beamed to another energy controller in the network."
 
  d_energy_controller_empty: "Depleted Zei'a Energy Controller Network"
  d_energy_controller_empty_desc: "Energy Controllers are powerful Zei'a devices capable of asserting control over all energy in any state, from siphoning thermal energy and heat from one object and transferring it to another, all the way to manipulating Celestial Energy itself."
@@ -548,8 +565,14 @@
  tech_zeia_energy_controller: "Zei'a Energy Controllers"
  tech_zeia_energy_controller_desc: "The Energy Controllers are powerful Zei'a devices capable of asserting control over all energy in any state, from siphoning thermal energy and heat from one object and transferring it to another, all the way to manipulating Celestial Energy itself."
 
+ tech_zeia_ufc: "The Reality Code"
+ tech_zeia_ufc_desc: "Originally known as the Universal Force Constant Principle. The Reality Code is a scientific and causal theorem based around the concept of the universe being linked to an infinite web of other universes through a mystical force of reality itself."
+
  tech_void_science: "Void Science"
  tech_void_science_desc: "Kas Ehwar, more commonly known as The Void. A mystical warping expanse of what can only be described as cosmic soup and nothingness, the Void continously shifts and transforms, like ink in water, or light through a diamond. Travel through the Void will see it take shapes reminiscent of dazzling nebulae and the surface of stars, to shadowed spaces of swirling darkness. Space and time seemingly refracting and bending infinitely in the distance of the Void, and more times than not you may encounter yourself passing by, be it your current self, future, or past. And in the midst of all this wonder, one may also encounter serenity, pockets of nothingness so absolute that they swallow up the light you shine at them."
+
+ tech_void_dtf: "Dimensional Time Faults"
+ tech_void_dtf_desc: "A Dimensional Time Fault, or simply a time fault, is a special dimensional pocket created by Kas Zei'a through Void manipulation. A Time Fault is a pocket of space-time that is both unrestricted by physical space and chronological time, a Time Fault can be several times larger than whatever houses it and as its name suggests, time can flow quite differently within it."
 
  tech_void_relay: "Void Relay Construction"
  tech_void_relay_desc: "Void Relays are sophisticated Kas Zei'a kilostructures capable of opening rifts in real space which lead into The Void, these rifts can be focused into targetting virtually any location in the universe and even beyond."
@@ -569,17 +592,11 @@
  tech_zeia_shield: "Zei'a Shielding"
  tech_zeia_shield_desc: "Zei'a Shielding has no internal capacity of its own and instead uses the power its given to form a shield. However due to this, Zei'a Shielding has no upper limit of capacity either. It can simply become exponentionally stronger based solely on the amount of power it's fed."
 
- tech_cr_cosmoreverse: "Energy Controllers"
- tech_cr_cosmoreverse_desc: "Energy Controllers are powerful Zei'a devices capable of asserting control over all energy in any state, from siphoning thermal energy and heat from one object and transferring it to another, all the way to manipulating Celestial Energy itself."
-
  tech_dtf_cosmoreverse: "The Cosmoreverse System"
  tech_dtf_cosmoreverse_desc: "A supremely powerful celestial energy manipulation device, capable of creating abberations in time and space through the Void, or transforming entire planets into any number of alternatives."
 
  tech_dtf_access: "Time Fault Facilities"
  tech_dtf_access_desc: "After lengthy study of these 'Time Faults', we have found the method of entering them safely and even utilising their esoteric properties for our own benefit."
-
- tech_obi_wormhole: "Spatial Magic Theory"
- tech_obi_wormhole_desc: "Through our understanding of the Arcane, we've come to realise that we have the potential to fold subspace in any way we see fit, granting us many potential benefits."
 
  tech_aurora_class: "Aurora-Class Uviik"
  tech_aurora_class_desc: "The Aurora class Uviik, occasionally refered to as the 'CNU-Type', is the most sophisticated bio-crystalline neural network ever conceived by the Collective. The Aurora classification, as insinuated. Was made specifically for the Core Network Units; the synthetic stewards of the Collective's 'Core Network'. These units were so drastically superior to every other Uviik, designed to be a compound consciousness of countless parallel minds. By every measurable metric, Aurora class Uviik are the only organisms in existence capable of being remotely compared to an Ascended energy based consciousness."

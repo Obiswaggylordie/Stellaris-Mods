@@ -524,7 +524,6 @@ d_city_ship = {
 		planet_jobs_produces_mult = 3
 		planet_jobs_robotic_produces_mult = 30
 		planet_pop_assembly_mult = 3
-		planet_pop_assembly_organic_mult = 3
 
 		# CNU modifiers
 		planet_buildings_cost_mult = -0.50
@@ -591,16 +590,65 @@ d_energy_controller = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
-		planet_jobs_energy_produces_mult = 10.00
-		planet_jobs_energy_upkeep_mult = -10.00
-		planet_districts_energy_upkeep_mult = -10.00
-		planet_stability_add = 10
-		terraform_speed_mult = 10.0
-		pop_environment_tolerance = 1.00
+		#planet_stability_add = 10
+		#terraform_speed_mult = 10.0
+		#pop_environment_tolerance = 1.00
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			is_planet_class = pc_gaia
+		}
+		modifier = {
+			planet_jobs_energy_produces_mult = 10.00
+			planet_jobs_energy_upkeep_mult = -10.00
+			planet_districts_energy_upkeep_mult = -10.00
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_technology = tech_zeia_ufc
+			}
+		}
+		modifier = {
+			planet_jobs_energy_produces_mult = 10.00
+			planet_jobs_energy_upkeep_mult = -10.00
+			planet_districts_energy_upkeep_mult = -10.00
+		}
 	}
 
 	potential = {
 		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Light Shafts
+d_light_shaft = {
+	is_for_colonizable = yes
+	icon = d_light_shaft
+	category = deposit_cat_rare
+
+	potential = {
+		always = no
+	}
+
+	planet_modifier = {
+		pop_growth_from_immigration = 0.50
+		pop_resettlement_cost_mult = -0.50
+		trade_value_mult = 0.5
+		planet_jobs_produces_mult = 0.5
+		planet_pops_upkeep_mult = -0.5
+		planet_stability_add = 5
+	}
+
+	country_modifier = {
+		empire_size_pops_mult = -0.05
 	}
 
 	drop_weight = {

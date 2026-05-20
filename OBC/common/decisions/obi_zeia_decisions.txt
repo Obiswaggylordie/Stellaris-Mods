@@ -1,7 +1,76 @@
-###########################################################################
-## Forerunner/Promethean Decisions
-###########################################################################
-#
+decision_create_time_fault = {
+	owned_planets_only = yes
+	icon = decision_time_fault
+	
+	enactment_time = 0
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 100
+			energy = 100
+		}
+	}
+	
+	potential = {
+		owner = {
+			has_origin = origin_obi_zeia
+			has_technology = tech_void_dtf
+		}
+	}
+
+	allow = {
+		count_deposits = {
+			count < 10
+			type = d_cr_dtf
+		}
+	}
+	
+	effect = {
+		add_deposit = d_cr_dtf
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+decision_destroy_time_fault = {
+	owned_planets_only = yes
+	icon = decision_time_fault
+	
+	enactment_time = 0
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 100
+			energy = 100
+		}
+	}
+	
+	potential = {
+		count_deposits = {
+			count >= 1
+			type = d_cr_dtf
+		}
+	}
+	
+	effect = {
+		while = {
+			limit = {
+				count_deposits = {
+					count >= 1
+					type = d_cr_dtf
+				}
+			}
+			remove_deposit = d_cr_dtf
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
 decision_install_monitor = {
 	owned_planets_only = yes
 	icon = decision_install_monitor
@@ -488,6 +557,11 @@ decision_activate_energy_controller = {
 					}
 				}
 			}
+			solar_system = {
+				starbase = {
+					has_starbase_module = sm_zeia_energy_controller
+				}
+			}
 		}
 	}
 
@@ -500,9 +574,33 @@ decision_activate_energy_controller = {
 	}
 
 	effect = {
-		save_global_event_target_as = cr_planet
-		from = {
-			country_event = { id = cosmoreverse_events.1 }
+		save_global_event_target_as = ce_target
+		if = {
+			limit = {
+				is_planet = yes
+				is_artificial = no
+			}
+			if = {
+				limit = {
+					NOR = {
+						has_planet_flag = ce_warm
+						has_planet_flag = ce_average
+						has_planet_flag = ce_cool
+					}
+				}
+				celestial_energy_type_effect = yes
+			}
+			from = {
+				country_event = { id = celestial_energy_events.1 }
+			}
+		}
+		else_if = {
+			limit = {
+				is_star = yes
+			}
+			from = {
+				country_event = { id = celestial_energy_events.2 }
+			}
 		}
 	}
 

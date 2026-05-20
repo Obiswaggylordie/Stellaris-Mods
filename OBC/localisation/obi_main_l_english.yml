@@ -6,3 +6,32 @@
 # Starbase Modules
  sm_obi_large_shipyard: "Large Shipyard"
  sm_obi_large_shipyard_desc: "A much larger shipyard, with capacity to construct up to 10 vessels at a time."
+
+# Strategic Resources
+
+ sr_sdc: "Zei'a Super Dimension Core"
+ sr_sdc_desc: "The Super Dimension Core is an alternate take on the Dimension Engine concept, by taking the Dimension Core and utilising tetradimensional engineering to produce a pocket universe within the core."
+
+ sr_psi_energy: "Psionic Energy"
+ sr_psi_energy_desc: "The fundamental psychic force of the universe, the same which composes ascended beings."
+
+ sr_celestial_energy: "Celestial Energy"
+ sr_celestial_energy_desc: "Celestial Energy is the true primordial life force of all things in the universe, anything living or animated holds Celestial Energy within themselves to some capacity. Anything from an ant, to robots, and entire stars. Celestial Energy is also commonly refered to as Life Energy, not to be confused with Nature Energy. The more or less saturated somehing is with Celestial Energy, the more or less life it is capable of holding."
+
+# Technology
+
+ tech_obi_wormhole: "Spatial Magic Theory"
+ tech_obi_wormhole_desc: "Through our understanding of the Arcane, we've come to realise that we have the potential to fold subspace in any way we see fit, granting us many potential benefits."
+
+# Celestial Energy stuff
+ d_darkling_storm: "Dark Storm"
+ d_darkling_storm: "A massive storm of inter-dimensional flux, encompassing the entire planet. Anything entering it is likely to be struck by pure energy and disabled, or vaporized."
+
+ d_darkling_sky_temple: "The Sky Temple"
+ d_darkling_sky_temple_desc: "The Dark Stronghold of the Ing, the residence of their Emperor and the largest share of planetary energy which they have stolen from the light."
+
+ d_darkling_rifts: "Dark Rifts"
+ d_darkling_rifts_desc: "Inter-dimensional tears in space appear randomly around the planet, from them emerge black smoke-like creatures which seek to possess and control anything near them, be it flesh or machine."
+
+ d_darkling_horde: "Darkling Horde"
+ d_darkling_horde_desc: "A horde of Darklings in their true form, able to manifest themselves on worlds that have been sufficiently supplanted by their dark counterpart."

@@ -42,6 +42,29 @@ tech_zeia_biocrystalline = {
   	}
 }
 
+tech_zeia_kvilsha_project = {
+	cost = 1000
+	area = society
+	tier = 1
+	is_rare = yes
+	category = { biology }
+	prerequisites = { "tech_zeia_biocomputing" }
+	weight = @tier1weight1
+
+	potential = {  
+		#has_technology = tech_slipspace_field
+		has_origin = origin_obi_zeia
+	} 
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
 tech_aurora_class = {
 	cost = 1000
 	area = engineering
@@ -86,6 +109,73 @@ tech_zeia_energy_controller = {
   	}
 }
 
+tech_zeia_energy_transfer_module = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { field_manipulation }
+	prerequisites = { "tech_zeia_energy_controller" }
+	weight = @tier1weight1
+
+	potential = {  
+		has_origin = origin_obi_zeia
+	} 
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_zeia_light_shaft = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { field_manipulation }
+	prerequisites = { "tech_zeia_energy_controller" }
+	weight = @tier1weight1
+
+	potential = {  
+		has_origin = origin_obi_zeia
+	} 
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_zeia_ufc = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	is_dangerous = yes
+	category = { field_manipulation }
+	prerequisites = { "tech_zeia_energy_controller" }
+	weight = @tier1weight1
+
+	potential = {  
+		has_origin = origin_obi_zeia
+	} 
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
 tech_void_science = {
 	cost = 100000
 	area = physics
@@ -93,6 +183,29 @@ tech_void_science = {
 	is_rare = yes
 	category = { field_manipulation }
 	#prerequisites = { "tech_efg_wave_motion_gun_1" }
+	weight = @tier4weight3
+
+	potential = {  
+		#has_technology = tech_slipspace_field
+		has_origin = origin_obi_zeia
+	} 
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_void_dtf = {
+	cost = 100000
+	area = physics
+	tier = 4
+	is_rare = yes
+	category = { field_manipulation }
+	prerequisites = { "tech_void_science" }
 	weight = @tier4weight3
 
 	potential = {  
@@ -223,7 +336,7 @@ tech_zeia_dimeng = {
 	tier = 4
 	is_rare = yes
 	category = { particles }
-	prerequisites = { "tech_zeia_biocrystalline" "tech_zero_point_power" }
+	prerequisites = { "tech_zeia_biocrystalline" "tech_zeia_ufc" }
 	weight = @tier4weight3
 
 	potential = {  

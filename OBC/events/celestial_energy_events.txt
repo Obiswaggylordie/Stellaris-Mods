@@ -1,0 +1,752 @@
+namespace = celestial_energy_events
+
+# Cosmoreverse Activation
+country_event = { # Planetary Energy
+	id = celestial_energy_events.1
+	title = "celestial_energy_events.1.title"
+	desc = "celestial_energy_events.1.desc"
+	picture = GFX_energy_controller
+	show_sound = event_default
+	location = event_target:ce_target
+	
+	hide_window = no
+	is_triggered_only = yes
+	
+    option = { # Fill Energy Controllers
+        name = "celestial_energy_events.1.a"
+		
+		allow = {
+			has_technology = tech_zeia_energy_transfer_module
+			has_country_resource = {
+				type = sr_celestial_energy
+				amount >= 100
+			}
+			event_target:ce_target = {
+				NOT = { is_planet_class = pc_gaia }
+			}
+		}
+
+		# Warm: 	Gaia - Tropical - Continental - Arid - 	Savanna - Desert - Barren (Dry)
+		# Average: 	Gaia - Tropical - Continental - Alpine - Tundra - Arctic - Barren (Cold)
+		# Cold: 	Gaia - Tropical - Ocean - 		Alpine - Tundra - Arctic - Frozen 
+
+        hidden_effect = {
+			add_resource = {
+				sr_celestial_energy = -100
+			}
+            event_target:ce_target = {
+				if = { # Warm
+					limit = {
+						has_planet_flag = ce_warm
+					}
+					if = {
+						limit = {
+							is_planet_class = pc_tropical
+						}
+						change_pc = pc_gaia
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_continental
+						}
+						change_pc = pc_tropical
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_arid
+						}
+						change_pc = pc_continental
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_savannah
+						}
+						change_pc = pc_arid
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_desert
+						}
+						change_pc = pc_savannah
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_barren
+						}
+						change_pc = pc_desert
+					}
+				}
+				else_if = { # Average
+					limit = {
+						has_planet_flag = ce_average
+					}
+					if = {
+						limit = {
+							is_planet_class = pc_tropical
+						}
+						change_pc = pc_gaia
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_continental
+						}
+						change_pc = pc_tropical
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_alpine
+						}
+						change_pc = pc_continental
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_tundra
+						}
+						change_pc = pc_alpine
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_arctic
+						}
+						change_pc = pc_tundra
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_barren_cold
+						}
+						change_pc = pc_arctic
+					}
+				}
+				else_if = { # Cold
+					limit = {
+						has_planet_flag = ce_cold
+					}
+					if = {
+						limit = {
+							is_planet_class = pc_tropical
+						}
+						change_pc = pc_gaia
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_ocean
+						}
+						change_pc = pc_tropical
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_alpine
+						}
+						change_pc = pc_ocean
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_tundra
+						}
+						change_pc = pc_alpine
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_arctic
+						}
+						change_pc = pc_tundra
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_frozen
+						}
+						change_pc = pc_arctic
+					}
+				}
+				
+            }
+        }
+    }
+
+    option = { # Drain Energy Controllers
+        name = "celestial_energy_events.1.b"
+		
+		allow = {
+			owner = {
+				has_technology = tech_zeia_energy_transfer_module
+			}
+			event_target:ce_target = {
+				NOR = {
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+					is_planet_class = pc_frozen
+				}
+			}
+		}
+
+        hidden_effect = {
+			add_resource = {
+				sr_celestial_energy = 100
+			}
+            event_target:ce_target = {
+				if = { # Warm
+					limit = {
+						has_planet_flag = ce_warm
+					}
+					if = {
+						limit = {
+							is_planet_class = pc_gaia
+						}
+						change_pc = pc_tropical
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_tropical
+						}
+						change_pc = pc_continental
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_continental
+						}
+						change_pc = pc_arid
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_arid
+						}
+						change_pc = pc_savannah
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_savannah
+						}
+						change_pc = pc_desert
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_desert
+						}
+						change_pc = pc_barren
+						destroy_colony = yes
+					}
+				}
+				else_if = { # Average
+					limit = {
+						has_planet_flag = ce_average
+					}
+					if = {
+						limit = {
+							is_planet_class = pc_gaia
+						}
+						change_pc = pc_tropical
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_tropical
+						}
+						change_pc = pc_continental
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_continental
+						}
+						change_pc = pc_alpine
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_alpine
+						}
+						change_pc = pc_tundra
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_tundra
+						}
+						change_pc = pc_arctic
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_arctic
+						}
+						change_pc = pc_barren_cold
+						destroy_colony = yes
+					}
+					
+				}
+				else_if = { # Cold
+					limit = {
+						has_planet_flag = ce_cold
+					}
+					if = {
+						limit = {
+							is_planet_class = pc_gaia
+						}
+						change_pc = pc_tropical
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_ocean
+						}
+						change_pc = pc_alpine
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_alpine
+						}
+						change_pc = pc_tundra
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_tundra
+						}
+						change_pc = pc_arctic
+					}
+					else_if = {
+						limit = {
+							is_planet_class = pc_arctic
+						}
+						change_pc = pc_frozen
+						destroy_colony = yes
+					}
+				}
+            }
+        }
+    }
+
+	option = { # Light Shafts
+		name = "celestial_energy_events.1.c"
+
+		allow = {
+			has_technology = tech_zeia_light_shaft
+		}
+
+		hidden_effect = {
+			event_target:ce_target = {
+				add_deposit = d_light_shaft
+			}
+		}
+	}
+
+	option = { # Cancel
+		name = "celestial_energy_events.1.z"
+	}
+}
+
+country_event = { # Stellar Energy
+	id = celestial_energy_events.2
+	title = "celestial_energy_events.2.title"
+	desc = "celestial_energy_events.2.desc"
+	picture = GFX_energy_controller
+	show_sound = event_default
+	location = event_target:ce_target
+	
+	hide_window = no
+	is_triggered_only = yes
+	
+    option = { # Fill Energy Controllers
+        name = "celestial_energy_events.2.a"
+		
+		allow = {
+			has_technology = tech_zeia_energy_transfer_module
+			has_country_resource = {
+				type = sr_celestial_energy
+				amount >= 1000
+			}
+			event_target:ce_target = {
+				NOT = { is_planet_class = pc_b_star }
+			}
+		}
+
+		# Class O - B - A - F - G - K - M - M Giant - T
+		# Dropping B for now.
+
+        hidden_effect = {
+			add_resource = {
+				sr_celestial_energy = -1000
+			}
+            event_target:ce_target = {
+				if = {
+					limit = {
+						is_planet_class = pc_a_star
+					}
+					change_pc = pc_b_star
+					solar_system = {
+						set_star_class = sc_b
+					}
+				}
+				else_if = {
+					limit = {
+						is_planet_class = pc_f_star
+					}
+					change_pc = pc_a_star
+					solar_system = {
+						set_star_class = sc_a
+					}
+				}
+				else_if = {
+					limit = {
+						is_planet_class = pc_g_star
+					}
+					change_pc = pc_f_star
+					solar_system = {
+						set_star_class = sc_f
+					}
+				}
+				else_if = {
+					limit = {
+						is_planet_class = pc_k_star
+					}
+					change_pc = pc_g_star
+					solar_system = {	
+						set_star_class = sc_g
+					}
+				}
+				else_if = {
+					limit = {
+						is_planet_class = pc_m_star
+					}
+					change_pc = pc_k_star
+					solar_system = {
+						set_star_class = sc_k
+					}
+				}
+				else_if = {
+					limit = {
+						is_planet_class = pc_m_giant_star
+					}
+					change_pc = pc_m_star
+					solar_system = {
+						set_star_class = sc_m
+					}
+				}
+				else_if = {
+					limit = {
+						is_planet_class = pc_t_star
+					}
+					change_pc = pc_m_giant_star
+					solar_system = {
+						set_star_class = sc_m_giant
+					}
+				}
+            }
+        }
+    }
+
+    option = { # Drain Energy Controllers
+        name = "celestial_energy_events.2.b"
+		
+		allow = {
+			owner = {
+				has_technology = tech_zeia_energy_transfer_module
+			}
+			event_target:ce_target = {
+				NOT = {
+					is_planet_class = pc_t_star
+				}
+			}
+		}
+
+        hidden_effect = {
+			add_resource = {
+				sr_celestial_energy = 1000
+			}
+            event_target:ce_target = {
+				if = {
+					limit = {
+						is_planet_class = pc_b_star
+					}
+					change_pc = pc_a_star
+					solar_system = {
+						set_star_class = sc_a
+					}
+				}
+				else_if = {
+					limit = {
+						is_planet_class = pc_a_star
+					}
+					change_pc = pc_f_star
+					solar_system = {
+						set_star_class = sc_f
+					}
+				}
+				else_if = {
+					limit = {
+						is_planet_class = pc_f_star
+					}
+					change_pc = pc_g_star
+					solar_system = {
+						set_star_class = sc_g
+					}
+				}
+				else_if = {
+					limit = {
+						is_planet_class = pc_g_star
+					}
+					change_pc = pc_k_star
+					solar_system = {	
+						set_star_class = sc_k
+					}
+				}
+				else_if = {
+					limit = {
+						is_planet_class = pc_k_star
+					}
+					change_pc = pc_m_star
+					solar_system = {
+						set_star_class = sc_m
+					}
+				}
+				else_if = {
+					limit = {
+						is_planet_class = pc_m_star
+					}
+					change_pc = pc_m_giant_star
+					solar_system = {
+						set_star_class = sc_m_giant
+					}
+				}
+				else_if = {
+					limit = {
+						is_planet_class = pc_m_giant_star
+					}
+					change_pc = pc_t_star
+					solar_system = {
+						set_star_class = sc_t
+					}
+				}
+            }
+        }
+    }
+
+	option = { # Cancel
+		name = "celestial_energy_events.2.z"
+	}
+}
+
+# Cosmoreverse Planet Menu
+country_event = {
+	id = celestial_energy_events.10
+	title = "celestial_energy_events.10.title"
+	desc = "celestial_energy_events.10.desc"
+	picture = GFX_efg_origin_earth_portrait
+	show_sound = event_default
+	location = event_target:cr_planet
+	
+	hide_window = no
+	is_triggered_only = yes
+	
+	option = { # Cosmoreverse to Gaia
+		name = "celestial_energy_events.10.a"
+		allow = {
+			owner = {
+				has_ascension_perk = ap_world_shaper
+			}
+		}
+		hidden_effect = {
+
+			event_target:cr_planet = {
+				change_pc = pc_gaia
+			}
+		}
+	}
+	
+	option = { # Cosmoreverse to Continental
+		name = "celestial_energy_events.10.b"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_continental
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Tropical
+		name = "celestial_energy_events.10.c"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_tropical
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Alpine
+		name = "celestial_energy_events.10.d"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_alpine
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Tundra
+		name = "celestial_energy_events.10.e"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_tundra
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Ocean
+		name = "celestial_energy_events.10.f"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_ocean
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Arctic
+		name = "celestial_energy_events.10.g"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_arctic
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Desert
+		name = "celestial_energy_events.10.h"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_desert
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Savannah
+		name = "celestial_energy_events.10.i"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_savannah
+			}
+		}
+	}
+	
+	option = { # Cosmoreverse to Barren
+		name = "celestial_energy_events.10.j"
+		hidden_effect = {
+			event_target:cr_planet = {
+				random_list = {
+					50 = { change_pc = pc_barren_cold }
+					50 = { change_pc = pc_barren }
+				}
+				destroy_colony = yes
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Fractured
+		name = "celestial_energy_events.10.k"
+		allow = {
+			owner = {
+				has_technology = tech_dark_matter_power_core
+			}
+		}
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_dark_fractured
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Void Sphere
+		name = "celestial_energy_events.10.l"
+		allow = {
+			owner = {
+				has_technology = tech_acot_create_enigmatic_world
+			}
+		}
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_acot_enigmopolis
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Soul Sphere
+		name = "celestial_energy_events.10.m"
+		allow = {
+			owner = {
+				has_technology = tech_precursor_theia_design
+			}
+		}
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_acot_soulsphere
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Asteroid
+		name = "celestial_energy_events.10.n"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_asteroid
+				set_planet_size = 1
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Gas Giant
+		name = "celestial_energy_events.10.o"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_gas_giant
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Tomb
+		name = "celestial_energy_events.10.p"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_nuked
+			}
+		}
+	}
+
+	option = { # Cosmoreverse to Shattered
+		name = "celestial_energy_events.10.y"
+		hidden_effect = {
+			event_target:cr_planet = {
+				change_pc = pc_shattered
+				destroy_colony = yes
+			}
+		}
+	}
+
+	option = { # Cancel
+		name = "celestial_energy_events.10.z"
+		hidden_effect = {
+			country_event = { id = celestial_energy_events.1 }
+		}
+	}
+}
+
+# Cosmoreverse System Planet Designation (Planet_Killer)
+planet_event = {
+	id = celestial_energy_events.69
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		save_global_event_target_as = cr_planet
+		from.owner = {
+			country_event = { id = celestial_energy_events.1 }
+		}
+	}
+}
+
+# Wave Motion Gun (Bombardment)
+planet_event = {
+	id = celestial_energy_events.70
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_orbital_bombardment_stance = wave_motion_gun_bombardment
+		planet_devastation > 99
+		is_artificial = no
+	}
+
+	immediate = {
+		destroy_colony = yes
+		change_pc = pc_shattered
+	}
+}

@@ -1,0 +1,106 @@
+# Warm: 	Gaia - Tropical - Continental - Arid - 	Savanna - Desert - Barren (Dry)
+# Average: 	Gaia - Tropical - Continental - Alpine - Tundra - Arctic - Barren (Cold)
+# Cold: 	Gaia - Tropical - Ocean - 		Alpine - Tundra - Arctic - Frozen 
+
+celestial_energy_type_effect = {
+	planet = {
+		if = {
+			limit = {
+				is_planet_class = pc_gaia
+			}
+			random_list = {
+				33 = { set_planet_flag = ce_warm }
+				33 = { set_planet_flag = ce_average }
+				33 = { set_planet_flag = ce_cold }
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_tropical
+			}
+			random_list = {
+				33 = { set_planet_flag = ce_warm }
+				33 = { set_planet_flag = ce_average }
+				33 = { set_planet_flag = ce_cold }
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_continental
+			}
+			random_list = {
+				50 = { set_planet_flag = ce_warm }
+				50 = { set_planet_flag = ce_average }
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_ocean
+			}
+			set_planet_flag = ce_cold
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_arid
+			}
+			set_planet_flag = ce_warm
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_alpine
+			}
+			random_list = {
+				50 = { set_planet_flag = ce_average }
+				50 = { set_planet_flag = ce_cold }
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_savannah
+			}
+			set_planet_flag = ce_warm
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_tundra
+			}
+			random_list = {
+				50 = { set_planet_flag = ce_average }
+				50 = { set_planet_flag = ce_cold }
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_desert
+			}
+			set_planet_flag = ce_warm
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_arctic
+			}
+			random_list = {
+				50 = { set_planet_flag = ce_average }
+				50 = { set_planet_flag = ce_cold }
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_barren
+			}
+			set_planet_flag = ce_warm
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_barren_cold
+			}
+			set_planet_flag = ce_average
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_frozen
+			}
+			set_planet_flag = ce_cold
+		}
+	}
+}

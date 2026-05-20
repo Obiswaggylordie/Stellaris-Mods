@@ -1,0 +1,9 @@
+spriteTypes = {	
+
+	# Energy Controller
+	spriteType = {
+		name = "GFX_sb_energy_controller"
+		texturefile = "gfx/interface/icons/modules/sb_energy_controller.dds"
+	}
+	
+}
