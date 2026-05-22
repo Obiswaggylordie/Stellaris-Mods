@@ -2,7 +2,7 @@
 utility_component_template = {
 	key = "SMALL_ZEIA_SHIELD"
 	size = small
-	icon = "GFX_forerunner_shield"
+	icon = "GFX_zeia_shield"
 	icon_frame = 1
 	power = -100
 	resources = {
@@ -21,7 +21,7 @@ utility_component_template = {
 		ship_shield_hardening_add = 0.1
 		ship_shield_regen_add_static = 10.0 #Regeneration per day
 	}
-	prerequisites = { "tech_forerunner_shield" }
+	prerequisites = { "tech_zeia_shield" }
 	component_set = "ZEIA_SHIELD_SET"
 
 	ai_weight = {
@@ -36,7 +36,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "MEDIUM_ZEIA_SHIELD"
 	size = medium
-	icon = "GFX_forerunner_shield"
+	icon = "GFX_zeia_shield"
 	icon_frame = 1
 	power = -300
 	resources = {
@@ -71,7 +71,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "LARGE_ZEIA_SHIELD"
 	size = large
-	icon = "GFX_forerunner_shield"
+	icon = "GFX_zeia_shield"
 	icon_frame = 1
 	power = -500
 	resources = {
@@ -325,11 +325,67 @@ utility_component_template = {
 	}
 }
 
+# Void Drive
+utility_component_template = {
+	key = "ZEIA_VOID_DRIVE"
+	size = small
+	icon = "GFX_zeia_void_drive"
+	icon_frame = 1
+	power = -3000
+	resources = {
+		category = ship_components
+
+		cost = {
+			sr_living_metal = 30
+			energon = 100
+		}
+	}
+	ftl = yes
+	jumpdrive = yes
+
+	ship_modifier = {
+		ship_disengage_opportunities_add = 100
+		ship_windup_mult = -1
+		ship_ftl_jumpdrive_range_mult = 10
+		ship_jumpdrive_cooldown_mult = -1
+		ship_interstellar_speed_mult = 10
+	}
+
+	prerequisites = { "tech_forerunner_slipspace_drive" }
+	component_set = "ftl_components"
+
+	ai_weight = 50000
+}
+
+utility_component_template = {
+	key = "ZEIA_THRUST"
+	size = small
+	icon = "GFX_zeia_thrust"
+	icon_frame = 1
+	power = -3000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 90
+			energy = 200
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 3.0
+		ship_evasion_add = 50
+	}
+
+	prerequisites = { "tech_zeia_thrust" }
+	component_set = "thruster_components"
+	
+	ai_weight = 50000
+}
+
 # Void Shroud Cloak
 utility_component_template = {
 	key = "ZEIA_CLOAK"
 	size = aux
-	icon = "GFX_ship_part_cloak_1"
+	icon = "GFX_zeia_cloak"
 	icon_frame = 1
 	power = -50
 	resources = {

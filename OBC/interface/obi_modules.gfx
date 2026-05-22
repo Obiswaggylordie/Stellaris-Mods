@@ -11,5 +11,42 @@ spriteTypes = {
 		name = "GFX_zeia_sdc"
 		texturefile = "gfx/interface/icons/ship_parts/zeia_sdc.dds"
 	}
+
+	# Zei'a Shields
+	spriteType = {
+		name = "GFX_zeia_shield"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_shield.dds"
+	}
+
+	# Omega Alloy Armour
+	spriteType = {
+		name = "GFX_zeia_omega_alloy"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_omega_alloy.dds"
+	}
+
+	# Zeia DimEng
+	spriteType = {
+		name = "GFX_zeia_dimeng"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_dimeng.dds"
+	}
+
+
+	# Zei'a Void Drive
+	spriteType = {
+		name = "GFX_zeia_void_drive"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_void_drive.dds"
+	}
+
+	# Zei'a Void Shroud
+	spriteType = {
+		name = "GFX_zeia_cloak"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_cloak.dds"
+	}
+
+	# Zei'a Inertia Manipulator
+	spriteType = {
+		name = "GFX_zeia_thrust"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_thrust.dds"
+	}
 	
 }

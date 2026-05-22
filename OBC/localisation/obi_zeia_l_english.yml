@@ -593,8 +593,11 @@
  tech_void_relay: "Void Relay Construction"
  tech_void_relay_desc: "Void Relays are sophisticated Kas Zei'a kilostructures capable of opening rifts in real space which lead into The Void, these rifts can be focused into targetting virtually any location in the universe and even beyond."
 
- tech_void_drive: "The Transplanar Distortion Engine"
+ tech_void_drive: "The Hypertransplanar Distortion Engine"
  tech_void_drive_desc: "The Hypertransplanar Distortion engine, more commonly known as the Void Drive. Is the most technologically advanced Faster-Than-Light engine in the universe, pioneered by Sentinels Min'dok'zu-Ahrk-Munin'zu and A'skao'zu-Ahrk-Min'dek'zu-Uko-Frul'zul following their successful development of its stationary counterpart, the void Relay."
+
+ tech_zeia_thrust: "Zei'a Inertia Manipulator"
+ tech_zeia_thrust_desc: "The Zei'a Inertia Manipulator, also known as the Main Thrust. Is an advanced form of propulsion which directly applies directional vectors upon its connected grid, allowing it omni-directional \"thrust\" through simply forcing physics to move the object. Main Thrust can move virtually anything with little effort, only limited by its power requirements."
 
  tech_void_shroud: "Void Shroud"
  tech_void_shroud_desc: "Void Shrouds function similarly to a phase-shifter, except that it phases its intended target partly into the Void. This functions to completely eliminate any trace of its existence in any discernable manner, where not even Ascended Beings can detect it. The shrouded may pass through any material and remain entirely undetected and unaffected by several noticeable physical laws such as mass, gravity, and even time. The only method of communicating or affecting anything through a Void Shroud is to utilise other Void based technologies, or harness metaphysical forces. This is how numerous shrouded Installations and vessels were still struck by the Perdition Wave."
@@ -639,6 +642,14 @@
  ZEIA_DIMENG: "Zei'a Dimension Engine"
  ZEIA_DIMENG_SET: "Zei'a Dimension Engine"
  ZEIA_DIMENG_SET_DESC: ""
+
+ ZEIA_VOID_DRIVE: "Zei'a Void Drive"
+ ZEIA_VOID_DRIVE_SET: "Zei'a Void Drive"
+ ZEIA_VOID_DRIVE_SET_DESC: ""
+
+ ZEIA_THRUST: "Zei'a Inertia Manipulator"
+ ZEIA_THRUST_SET: "Zei'a Inertia Manipulator"
+ ZEIA_THRUST_SET_DESC: ""
 
  ZEIA_SDC: "Zei'a Super Dimension Core"
  ZEIA_SDC_SET: "Zei'a Super Dimension Core"

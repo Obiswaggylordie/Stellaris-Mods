@@ -70,6 +70,20 @@ component_set = {
 }
 
 component_set = {
+	key = "ZEIA_VOID_DRIVE_SET"
+
+	icon = "GFX_zeia_dimeng"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ZEIA_THRUST_SET"
+
+	icon = "GFX_zeia_thrust"
+	icon_frame = 1
+}
+
+component_set = {
 	key = "ZEIA_SDC_SET"
 
 	icon = "GFX_zeia_sdc"
@@ -93,6 +107,6 @@ component_set = {
 component_set = {
 	key = "WEED_CLOAK_SET"
 
-	icon = "GFX_ship_part_cloak_1"
+	icon = "GFX_zeia_cloak"
 	icon_frame = 1
 }
