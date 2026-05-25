@@ -3,282 +3,14 @@
 ### Dimensional Time Fault Factory Connector
 #####################################################
 
-efg_factory_connect_1 = {
-	icon = "GFX_sb_efg_factory_connect"
-	construction_days = 90
 
-
-	potential = {
-		exists = owner
-		solar_system = { any_system_planet = { has_active_building = building_cr_dtf_shipyard }}
-	}
-
-	ship_modifier = { 
-		ship_starting_experience_add = 5000
-	}
-
-	destroy_trigger = {
-		NOT = {
-			solar_system = { any_system_planet = { has_active_building = building_cr_dtf_shipyard }}
-		}
-	}
-
-	triggered_station_modifier = {
-		potential = {
-			solar_system = {
-				any_system_planet = {
-					is_owned_by = space_owner
-					has_modifier = dtf_pm_factory_full_operation
-				}
-			}
-		}
-		starbase_shipyard_build_speed_mult = 10.00
-		starbase_shipyard_build_cost_mult = -10.00
-	}
-
-	triggered_station_modifier = {
-		potential = {
-			solar_system = {
-				any_system_planet = {
-					num_buildings = {
-						type = building_cr_dtf_shipyard
-						value = 1
-					}
-				}
-			}
-		}
-		starbase_shipyard_build_speed_mult = 1.0
-		starbase_module_build_time_mult = -1.0
-		starbase_module_build_speed_mult = 1.0
-		starbase_shipyard_build_time_mult = -1.0
-		starbase_building_build_speed_mult = 1.0
-		starbase_building_build_time_mult = -1.0
-		starbase_upgrade_speed_mult = 1.0
-		starbase_upgrade_time_mult = -1.0
-		starbase_defensive_war_ship_build_speed_mult = 1.0
-	}
-
-	triggered_station_modifier = {
-		potential = {
-			solar_system = {
-				any_system_planet = {
-					num_buildings = {
-						type = building_cr_dtf_shipyard
-						value = 2
-					}
-				}
-			}
-		}
-		starbase_shipyard_build_speed_mult = 2.0
-		starbase_shipyard_build_time_mult = -2.0
-		starbase_module_build_time_mult = -2.0
-		starbase_module_build_speed_mult = 2.0
-		starbase_building_build_speed_mult = 2.0
-		starbase_building_build_time_mult = -2.0
-		starbase_upgrade_speed_mult = 2.0
-		starbase_upgrade_time_mult = -2.0
-		starbase_defensive_war_ship_build_speed_mult = 2.0
-	}
-
-	triggered_station_modifier = {
-		potential = {
-			solar_system = {
-				any_system_planet = {
-					num_buildings = {
-						type = building_cr_dtf_shipyard
-						value = 3
-					}
-				}
-			}
-		}
-		starbase_shipyard_build_speed_mult = 3.0
-		starbase_module_build_time_mult = -3.0
-		starbase_module_build_speed_mult = 3.0
-		starbase_shipyard_build_time_mult = -3.0
-		starbase_building_build_speed_mult = 3.0
-		starbase_building_build_time_mult = -3.0
-		starbase_upgrade_speed_mult = 3.0
-		starbase_upgrade_time_mult = -3.0
-		starbase_defensive_war_ship_build_speed_mult = 3.0
-	}
-
-	triggered_station_modifier = {
-		potential = {
-			solar_system = {
-				any_system_planet = {
-					num_buildings = {
-						type = building_cr_dtf_shipyard
-						value = 4
-					}
-				}
-			}
-		}
-		starbase_module_build_time_mult = -4.0
-		starbase_module_build_speed_mult = 4.0
-		starbase_shipyard_build_speed_mult = 4.0
-		starbase_shipyard_build_time_mult = -4.0
-		starbase_building_build_speed_mult = 4.0
-		starbase_building_build_time_mult = -4.0
-		starbase_upgrade_speed_mult = 4.0
-		starbase_upgrade_time_mult = -4.0
-		starbase_defensive_war_ship_build_speed_mult = 4.0
-	}
-
-	triggered_station_modifier = {
-		potential = {
-			solar_system = {
-				any_system_planet = {
-					num_buildings = {
-						type = building_cr_dtf_shipyard
-						value = 5
-					}
-				}
-			}
-		}
-		starbase_module_build_time_mult = -5.0
-		starbase_module_build_speed_mult = 5.0
-		starbase_shipyard_build_speed_mult = 5.0
-		starbase_shipyard_build_time_mult = -5.0
-		starbase_building_build_speed_mult = 5.0
-		starbase_building_build_time_mult = -5.0
-		starbase_upgrade_speed_mult = 5.0
-		starbase_upgrade_time_mult = -5.0
-		starbase_defensive_war_ship_build_speed_mult = 5.0
-	}
-
-	triggered_station_modifier = {
-		potential = {
-			solar_system = {
-				any_system_planet = {
-					num_buildings = {
-						type = building_cr_dtf_shipyard
-						value = 6
-					}
-				}
-			}
-		}
-		starbase_module_build_time_mult = -6.0
-		starbase_module_build_speed_mult = 6.0
-		starbase_shipyard_build_speed_mult = 6.0
-		starbase_shipyard_build_time_mult = -6.0
-		starbase_building_build_speed_mult = 6.0
-		starbase_building_build_time_mult = -6.0
-		starbase_upgrade_speed_mult = 6.0
-		starbase_upgrade_time_mult = -6.0
-		starbase_defensive_war_ship_build_speed_mult = 6.0
-	}
-
-	triggered_station_modifier = {
-		potential = {
-			solar_system = {
-				any_system_planet = {
-					num_buildings = {
-						type = building_cr_dtf_shipyard
-						value = 7
-					}
-				}
-			}
-		}
-		starbase_module_build_time_mult = -7.0
-		starbase_module_build_speed_mult = 7.0
-		starbase_shipyard_build_speed_mult = 7.0
-		starbase_shipyard_build_time_mult = -7.0
-		starbase_building_build_speed_mult = 7.0
-		starbase_building_build_time_mult = -7.0
-		starbase_upgrade_speed_mult = 7.0
-		starbase_upgrade_time_mult = -7.0
-		starbase_defensive_war_ship_build_speed_mult = 7.0
-	}
-
-	triggered_station_modifier = {
-		potential = {
-			solar_system = {
-				any_system_planet = {
-					num_buildings = {
-						type = building_cr_dtf_shipyard
-						value = 8
-					}
-				}
-			}
-		}
-		starbase_module_build_time_mult = -8.0
-		starbase_module_build_speed_mult = 8.0
-		starbase_shipyard_build_speed_mult = 8.0
-		starbase_shipyard_build_time_mult = -8.0
-		starbase_building_build_speed_mult = 8.0
-		starbase_building_build_time_mult = -8.0
-		starbase_upgrade_speed_mult = 8.0
-		starbase_upgrade_time_mult = -8.0
-		starbase_defensive_war_ship_build_speed_mult = 8.0
-	}
-
-	triggered_station_modifier = {
-		potential = {
-			solar_system = {
-				any_system_planet = {
-					num_buildings = {
-						type = building_cr_dtf_shipyard
-						value = 9
-					}
-				}
-			}
-		}
-		starbase_module_build_time_mult = -9.0
-		starbase_module_build_speed_mult = 9.0
-		starbase_shipyard_build_speed_mult = 9.0
-		starbase_shipyard_build_time_mult = -9.0
-		starbase_building_build_speed_mult = 9.0
-		starbase_building_build_time_mult = -9.0
-		starbase_upgrade_speed_mult = 9.0
-		starbase_upgrade_time_mult = -9.0
-		starbase_defensive_war_ship_build_speed_mult = 9.0
-	}
-
-	triggered_station_modifier = {
-		potential = {
-			solar_system = {
-				any_system_planet = {
-					num_buildings = {
-						type = building_cr_dtf_shipyard
-						value = 10
-					}
-				}
-			}
-		}
-		starbase_module_build_time_mult = -10.0
-		starbase_module_build_speed_mult = 10.0
-		starbase_shipyard_build_speed_mult = 10.00
-		starbase_shipyard_build_time_mult = -10.00
-		starbase_building_build_speed_mult = 10.00
-		starbase_building_build_time_mult = -10.00
-		starbase_upgrade_speed_mult = 10.00
-		starbase_upgrade_time_mult = -10.00
-		starbase_defensive_war_ship_build_speed_mult = 10.00
-	}
-
-	resources = {
-		category = starbase_buildings
-		cost = {
-			alloys = 5000
-		}
-
-		upkeep = {
-			energy = 50
-			alloys = 20
-		}
-	}
-
-	ai_weight = {
-		weight = 0
-	}
-}
 
 
 #####################################################
 ### Station Reinforcement Module
 #####################################################
 
-efg_absolute_defense_grid = {
+dtf_absolute_defense_grid = {
 	icon = "GFX_starbase_defense_grid_supercomputer"
 	construction_days = 240
 
@@ -286,9 +18,9 @@ efg_absolute_defense_grid = {
 	potential = {
 		exists = owner
 		owner = {
-			has_technology = "tech_efg_technology_3"
+			has_technology = "tech_dtf_technology_3"
 		}
-		solar_system = { any_system_planet = { has_planet_flag = efg_factory_built_1 } }
+		solar_system = { any_system_planet = { has_planet_flag = dtf_factory_built_1 } }
 	}
 
 	possible = {
@@ -314,14 +46,14 @@ efg_absolute_defense_grid = {
 		}
 	}
 
-	equipped_component = "efg_STARBASE_AURA_ABSOLUTE_DEFENSE_ZONE"
+	equipped_component = "dtf_STARBASE_AURA_ABSOLUTE_DEFENSE_ZONE"
 
 	ai_weight = {
 		weight = 0
 	}
 }
 
-efg_absolute_defense_system_upgrade = {
+dtf_absolute_defense_system_upgrade = {
 	icon = "GFX_spaceport_synchronized_defenses"
 	construction_days = 240
 
@@ -329,9 +61,9 @@ efg_absolute_defense_system_upgrade = {
 	potential = {
 		exists = owner
 		owner = {
-			has_technology = "tech_efg_technology_3"
+			has_technology = "tech_dtf_technology_3"
 		}
-		solar_system = { any_system_planet = { has_planet_flag = efg_factory_built_1 } }
+		solar_system = { any_system_planet = { has_planet_flag = dtf_factory_built_1 } }
 	}
 
 	possible = {
@@ -376,16 +108,16 @@ efg_absolute_defense_system_upgrade = {
 # AURA BUILDINGS
 #################
 
-efg_earth_defense_supply_line = {
+dtf_earth_defense_supply_line = {
 	icon = "GFX_starbase_defense_grid_supercomputer"
 	construction_days = 180
 
 	potential = {
 		exists = owner
 		owner = {
-			has_technology = "tech_efg_technology_3"
+			has_technology = "tech_dtf_technology_3"
 		}
-		solar_system = { any_system_planet = { has_planet_flag = efg_factory_built_1 } }
+		solar_system = { any_system_planet = { has_planet_flag = dtf_factory_built_1 } }
 	}
 
 	resources = {
@@ -400,21 +132,21 @@ efg_earth_defense_supply_line = {
 		}
 	}
 
-	equipped_component = "efg_STARBASE_AURA_EARTH_DEFENSE_SUPPLY_LINE"
+	equipped_component = "dtf_STARBASE_AURA_EARTH_DEFENSE_SUPPLY_LINE"
 
 	ai_weight = {
 		weight = 0
 	}
 }
 
-efg_starbase_wave_motion_field = {
+dtf_starbase_wave_motion_field = {
 	icon = "GFX_starbase_defense_grid_supercomputer"
 	construction_days = 180
 
 	potential = {
 		exists = owner
 		owner = {
-			has_technology = "tech_efg_reactor_3"
+			has_technology = "tech_dtf_reactor_3"
 		}
 		is_orbital_ring = no
 	}
@@ -438,14 +170,14 @@ efg_starbase_wave_motion_field = {
 				solar_system = { NOT = { has_modifier = system_wave_motion_field } }
 			}
 			solar_system = {
-				system_event = { id = efg_starbase.9900 }
+				system_event = { id = dtf_starbase.9900 }
 			}
 		}
 	}
 
 	on_destroyed = {
 		solar_system = {
-			system_event = { id = efg_starbase.9905 }
+			system_event = { id = dtf_starbase.9905 }
 		}
 	}
 

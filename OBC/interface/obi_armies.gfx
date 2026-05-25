@@ -1,0 +1,56 @@
+spriteTypes = {	
+
+	# Zei'a Army
+	spriteType = {
+		name = "GFX_army_zeia"
+		texturefile = "gfx/interface/icons/armies/zeia_army.dds"
+	}
+
+	# Zei'a Defensive Army
+	spriteType = {
+		name = "GFX_army_zeia_defensive"
+		texturefile = "gfx/interface/icons/armies/zeia_army_defensive.dds"
+	}
+
+	# Zei'a Uviik Army
+	spriteType = {
+		name = "GFX_army_uviik"
+		texturefile = "gfx/interface/icons/armies/zeia_uviik_army.dds"
+	}
+
+	# Zei'a Uviik Defensive Army
+	spriteType = {
+		name = "GFX_army_uviik_defensive"
+		texturefile = "gfx/interface/icons/armies/zeia_uviik_army_defensive.dds"
+	}
+
+	# Zei'a Naós
+	spriteType = {
+		name = "GFX_army_zeia_naos"
+		texturefile = "gfx/interface/icons/armies/zeia_naos.dds"
+	}
+
+	# Zei'a Agon
+	spriteType = {
+		name = "GFX_army_zeia_agon"
+		texturefile = "gfx/interface/icons/armies/zeia_agon.dds"
+	}
+
+	# Zei'a Torvus
+	spriteType = {
+		name = "GFX_army_zeia_torvus"
+		texturefile = "gfx/interface/icons/armies/zeia_torvus.dds"
+	}
+
+	# Zei'a Fanum
+	spriteType = {
+		name = "GFX_army_zeia_fanum"
+		texturefile = "gfx/interface/icons/armies/zeia_fanum.dds"
+	}
+
+	# Zei'a Minai (Los Kvash)
+	spriteType = {
+		name = "GFX_army_zeia_minai"
+		texturefile = "gfx/interface/icons/armies/zeia_minai.dds"
+	}
+}

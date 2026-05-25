@@ -88,8 +88,86 @@
  trait_uviik: "Uviik"
  trait_uviik_desc: "The Synthetics, or Kas Uviik. Are the artificial bio-crystalline based machine intelligences of the Collective, their name is a broad term to specify practically all forms of mobile and autonomous machinery within the collective."
 
+# Leader Traits
+ leader_trait_kvilsha: "Kvil'sha"
+ leader_trait_kvilsha_desc: "Kvil'sha are the aristocratic elite of Kas Zei'a, effectively being the ruling class and are considered to be nobles within the collective, originally having started out as genetically enhanced Sob'sha, their engineered evolution has long since had them outclass their naturally evolved siblings, being smarter, faster, stronger, and far more innately talented than a sob'sha."
+
+ leader_trait_uviik: "Uviik"
+ leader_trait_uviik_desc: "The Synthetics, or Kas Uviik. Are the artificial bio-crystalline based machine intelligences of the Collective, their name is a broad term to specify practically all forms of mobile and autonomous machinery within the collective."
+
+ leader_trait_guild_arch: "Guild Arch"
+ leader_trait_guild_arch_desc: "The Guild Archs are the most talented and respected individual in the guilds of Kas Zei'a, second only to their leaders the Sentinels."
+ 
+
+ leader_trait_aurora_uviik: "Aurora-Class Uviik"
+ leader_trait_aurora_uviik_desc: "Core Network Unit. §YAurora-class Uviik also have the ability to backup their stored consciousness onto on a number of installations or core ships, increasing the chance for this leader to return if destroyed in battle.§!"
+
 # Shipset
  lantean_01_shipset_desc: "The vessels of the Precursors."
+
+# Armies
+ forerunner_aggressor_sentinels: "Aggressor Uviik"
+ forerunner_aggressor_sentinels_desc: "Swarms of autonomous constructs built to seek out and destroy hostiles."
+ 
+ forerunner_super_sentinels: "Super Uviik"
+ forerunner_super_sentinels_desc: "A larger variant of the Aggressor Uviik, these constructs use a high-powered beam to combat larger hostile targets."
+ 
+ forerunner_onyx_sentinels: "Rezbit Uviik"
+ forerunner_onyx_sentinels_desc: "A unique and powerful variant of the Uviik, Rezbits function as patrol enforcers. But they are incredibly dangerous, capable of releasing a highly potent electronic virus that fries the operating system of any digital equipment in its immediate area, used to quickly dispatch any corrupted Uviik enthralled by the Scourge. Beyond its powerful electronical warfare suite, it's defended by energy shields and it's capable of unleashing torrents of attacks using its advanced weaponry. In dire situations, the Rezbit can temporarily void-shroud and perform tactical retreats or strategic repositioning."
+ 
+ forerunner_strato_sentinel: "Quad Uviik"
+ forerunner_strato_sentinel_desc: "The strongest of the conventional combat Uviik'zu, the Quad is a quadrupedal walker armied with several weapons and defended by energy shields, its main body and head work separately from one another. If one is taken out of commission, the other will detach and continue fighting until the entire unit has been reduced to scrap."
+ 
+ forerunner_enforcer_sentinels: "Enforcer Uviik"
+ forerunner_enforcer_sentinels_desc: "A larger variant of combat Uviik used to defend key installations and armed with additional weaponry and a frontal shield to combat hostile targets."
+ 
+ forerunner_controller_sentinels: "Quadraxis Uviik"
+ forerunner_controller_sentinels_desc: "A colossal Uviik armed with mini-drone launchers, along with various psionic combat systems which attack targets both telepathically and telekinetically. It's heavily shielded, rendering it impervious to most conventional weaponry. The Quadraxis types are used to defend key locations and counter escalating threats." 
+ 
+ forerunner_armiger_army: "Armiger Soldiers"
+ forerunner_armiger_army_desc: "A bipedal Zei'a combat Uviik used in planetary operations to support Forerunner Warrior-Servants in battle."
+ 
+ forerunner_warrior_servant_army: "Lesser Bellator Cadre"
+ forerunner_warrior_servant_army_desc: "Warriors armed with varying types of exoforms tasked with the warfare and defense of Kas Zei'a. Although the Kvil'sha themselves prefered to see themselves as peaceful, the Agon Guild's Lesser Bellators were utterly ruthless and thorough in battle, believing that defiance of their rule was equal to showing contempt to the Mantle itself."
+ 
+ forerunner_warrior_servant_defense_army: "Lesser Bellator Garrison"
+ forerunner_warrior_servant_defense_army_desc: "Forerunner warriors tasked with planetary defense, each warrior-servant is psychologically resilient, willing to fight and die in service to the Collective."
+ 
+ forerunner_war_sphinx: "Bellator Warcaskets"
+ forerunner_war_sphinx_desc: "A Powerful and versatile bipedal war machine operated by Warrior-Servants to serve as acting as escorts, air-superiority fighters, or bombardment platforms used to decimate entire armies or cities."
+ 
+ promethean_warrior_servant_army: "Grand Bellator Cadre"
+ promethean_warrior_servant_army_desc: "The highest and most respected Cadre in Kas Zei'a. These soldiers utilize an assortment of advanced combat skins and are biologically augmented with increased muscle mass, sophisticated mental acuity, and sensory functions far surpassing Lesser Bellators."
+ 
+ promethean_warrior_servant_defense_army: "Grand Bellator Cadre Garrison"
+ promethean_warrior_servant_defense_army_desc: "Promethean-class Warrior-Servants represent the pinnacle of forerunner technology and military might. These genetically-enhanced supersoldiers will defend this world with unquestioning zeal in service to the Mantle."
+ 
+ promethean_phaetons: "Ingvala Uviik"
+ promethean_phaetons_desc: "The most sophisticated of combat Uviik, the Ingvala, or Scourge Crusher. Is a massive Kvil'sha sized Uviik which uses a combination of esoteric weapons technology, shielding, and zei'a hax to perform wild feats of devastation and warfare.""
+ 
+ promethean_seekers: "Grand Bellator Exoforms"
+ promethean_seekers_desc: "Advanced combat suits superior to the traditional warcaskets used by the Agon Bellators. Exoforms are more streamlined and equipped with even more powerful weapons, movement, and defensive capabilities."  
+ 
+ promethean_crawler_army: "Promethean Crawlers"
+ promethean_crawler_army_desc: "Aggressive autonomous Forerunner defense constructs in the form of small, quadrupedal machines capable of both ranged and close-quarters combat. They are used to overwhelm enemy positions."
+ 
+ promethean_watchers: "Promethan Watchers"
+ promethean_watchers_desc: "Promethean constructs that serve as a supporting role, assisting other Promethean ground units with aerial combat screening."
+ 
+ promethean_soldier_army: "Promethean Soldiers"
+ promethean_soldier_army_desc: "Promethean Armigers armed with a variety of weaponry. Their bipedal forms and agility allows them to raid and assault enemy targets with impunity."
+ 
+ promethean_knight_army: "Twilight Seekers"
+ promethean_knight_army_desc: "The Seeker Form was designed to focus on Ascended Perception, holding the ability to precisely scan their surroundings and even the entire planet they're on down to the sub-atomic level, much like an Ascended Being could. They were placed into service primarily as Scourge Detectors, while not being as powerful in combat as other Twilight classes, they were still quite formidable and were found to be efficient hunter-killers. "
+ 
+ promethean_lancer_army: "Twilight Reapers"
+ promethean_lancer_army_desc: "The Reaper Form was designed to replace virtually all battle Uviik and even the War Beasts themselves, programmed with the specifications for every practical and theoretical zei'a weapon and shielding. The Reaper could produce any armament for any opponent, and any defense from every threat. Defeating a Reaper would be effectively nigh impossible. "
+ 
+ promethean_battlewagon_army: "Twilight Wardens"
+ promethean_battlewagon_army_desc: "The Warden Form was designed with total access to Ascended Psionics and awareness, being on-par with a true Ascended Being in terms of intellect, memory, processing, and computational power. Serving mostly as administrative units, many CNUs were directly uploaded into Warden Constructs in order to circumvent the limitations of the Library. As Warden Constructs could psionically behave like an Ascended Kvil'sha and directly communicate infinite amounts of information with an intended target instead of publishing it onto the Library so that the un-ascended could process the information too. This created a form of ascended Network which was only accessible to beings of such stature."
+ 
+ warden_eternal: "Library Sentinel"
+ warden_eternal_desc: "The Library Sentinel is a psionic entity derived from the Library, the metaphysical Zei'a repository of knowledge. It exists for the purpose of chasing away potential threats to the Library, for it will not tolerate any of its knowledge being destroyed, nor will it accept its information to be abused.." 
 
 # Origin
  origin_obi_zeia: "The First Race"
@@ -99,8 +177,20 @@
  obi_dasha_system_initializer_NAME: "Dasha System"
  obi_dasha_system_initializer_DESC: "The home of the Precursors."
 
-# Policies
+# Ship Sections
+ CR_WMG_SINGLE: "Wave Motion Gun Single"
+ CR_WMG_TWIN: "Wave Motion Gun Double"
+ CR_WMG_TRIPLE: "Wave Motion Gun Triple"
+ CR_WMG_QUADRUPLE: "Wave Motion Gun Quadruple"
  
+ CR_ZEIA_HULL_CORVETTE: "Zei'a Hull Configuration"
+ CR_ZEIA_HULL_FRIGATE: "Zei'a Hull Configuration"
+ CR_ZEIA_HULL_DESTROYER: "Zei'a Hull Configuration"
+ CR_ZEIA_HULL_CRUISER: "Zei'a Hull Configuration"
+ CR_ZEIA_HULL_BATTLESHIP: "Zei'a Hull Configuration"
+ CR_ZEIA_HULL_TITAN: "Zei'a Hull Configuration"
+
+# Policies
  policy_zeia_policy: "Collective Council Mandate"
  policy_zeia_policy_desc: "Kas Zei'a has many goals, and hundreds of potential methods of reaching them. We must prioritise the means most effective for our present situation."
  
@@ -563,8 +653,28 @@
  tech_zeia_biocrystalline: "Zei'a Bio-Crystalline Technology"
  tech_zeia_biocrystalline_desc: "The Bio-Crystalline technology of Kas Zei'a is a unique and versatile form of technology, crystals are programmed and grow their own internal components to fulfill their tasks. They are found in all Zei'a technology and architecture."
 
+ tech_zeia_combat_equipment: "Zei'a Combat Equipment"
+ tech_zeia_combat_equipment_desc: "Generation 1 Zei'a equipment, featuring a wide range of weapons capable of wreaking untold havoc on the battlefield."
+
+ tech_zeia_exosuit: "Zei'a Sob'sha Combat Form Exosuit"
+ tech_zeia_exosuit: "The Exosuit is the next generation of sob'sha defensive technology, deployed to replace the Hazard Form suit. This lumbering mech can perform great feats of destruction, and a well organized squad can deliver critical strikes to enemy forces."
+
  tech_zeia_kvilsha_project: "The Kvil'sha Project"
  tech_zeia_kvilsha_project_desc: "Kas Zei'a seeks perfection in the impossible, forcing the laws of nature to submit to their will, continuing to draft up genes after genes, the shape of these Kvil'sha being a stark difference to their original Sob'sha visage. Their total psionic power had been evolved to greater heights, and their potential was projected to be leagues ahead of any Sob'sha."
+
+ tech_zeia_kvilsha_weapons: "Kvil'sha Loadouts"
+ tech_zeia_kvilsha_weapons_desc: "Kvil'sha are much larger and far more powerful than Sob'sha, with a greater level of agility and telepathic might. Kvil'sha can easily protect themselves from most simple threats, and prefer mobility in combat. Kvil'sha typically use blades and shields, with the Bellators of Agon performing elegant and arobatic fighting styles more reminiscent of dancing. Turning them into a lethal display of finesse on the battlefield."
+
+ tech_zeia_kvilsha_shields: "Kvil'sha Personal Shields"
+ tech_zeia_kvilsha_shields_desc: "When faced with threats even they can not deter with simple telekinetic feats or agility, Kvil'sha defend themselves with a personal shield device. The unit would be placed against the bare chest and it attaches itself seamlessly using a small array of mass locks. The shield unit is telepathically controlled and shrouds its user in a full body energy shield that completely isolates them within the body shape conforming field. Breathable atmosphere is allowed into the shield whilst it also incinerates any potential pathogens, toxic materials and letting waste products back out, radiation refracts off the field entirely, pressure and temperature are both nil against it."
+
+ tech_zeia_kvilsha_bladedance: "Kvil'sha Bladedances"
+ tech_zeia_kvilsha_bladedance_desc: "One of the highest titles held by the Grand Bellators of the Agon guilds, a bladedancer is a Kvil'sha who has mastered their craft and become a blur on the battlefield. Using their supernatural genetics to their highest potential combined with their psychic might, moving faster than most species can even register. A bladedancer can leap into battle and reduce an army before they can even organize."
+
+ tech_zeia_ingvala: "Kvil'sha Ingvala Warcasket"
+ tech_zeia_ingvala: "The Ingvala Warcasket is the most advanced of pre time fault zei'a armour, typically used by Kvil'sha, but it has been used autonomously by Uviik. By utilising molecular manipulation, the entire armour is sealed together through atomic binding which completely eliminates all paths through the armour. The outer shell completely isolating the interior of the armour, the Generation 7 Armour being referred to as \"The Warcasket\". Due to its design, all of its interior components had to be massively optimised and designed to handle the isolation, forcing the size of the armour to be upscaled, resulting in it being more of a mech suit than it is a regular armour. The user being biologically interfaced with the warcasket for maximum control and comfort. "
+
+ tech_zeia_exoform: "Offering its user nigh perfect protection, being composed entirely of molecularly assembled Omega Alloy. It's impossible to dent or pierce through the Exoform, and with its intertia dampeners it essentially means that no amount of force could harm or even daze its operator. And with its specialised layers of Tight Zei'a Shielding protecting the Exoform from hazardous energy and other particles, any methods of harm through radiation or beams become ineffective. The Exoform stands as the ultimate armour, and the most effective defense against the Scourge as a biological entity."
 
  tech_zeia_dimeng: "Zei'a Dimension Engine"
  tech_zeia_dimeng_desc: "The Dimension Engine is an incredible machine capable of harnessing an infinite amount of dimensional energy from the universe itself, though in limited amounts as extracting too much with little control would provoke enormous repercussions."
@@ -611,6 +721,15 @@
  tech_zeia_shield: "Zei'a Shielding"
  tech_zeia_shield_desc: "Zei'a Shielding has no internal capacity of its own and instead uses the power its given to form a shield. However due to this, Zei'a Shielding has no upper limit of capacity either. It can simply become exponentionally stronger based solely on the amount of power it's fed."
 
+ tech_zeia_sensors: "Zei'a Sensors"
+ tech_zeia_sensors_desc: ""
+
+ tech_zeia_drones: "Zei'a Drone Weapons"
+ tech_zeia_drones_desc: "One of the most powerful weapons in the universe, these projectiles bypass shields and melt through armour like butter."
+
+ tech_zeia_anti_electron_beam: "Zei'a Anti-Electron Beam Casters"
+ tech_zeia_anti_electron_beam_desc: "Perhaps the most esoteric particle weapons in all of recorded history, utilising Anti-Electrons or Positron Particles as it were. These particles are the antimatter of regular electrons and they will instantly annihilate both themselves and their counterpart upon interacting with the other. These are the primary particle weapons of Kas Zei'a"
+
  tech_dtf_cosmoreverse: "The Cosmoreverse System"
  tech_dtf_cosmoreverse_desc: "A supremely powerful celestial energy manipulation device, capable of creating abberations in time and space through the Void, or transforming entire planets into any number of alternatives."
 
@@ -623,6 +742,9 @@
 # Planet Classes
  pc_obicitadel: "Citadel Station"
  pc_obicitadel_desc: "This megastructure of a station acts as a capital in of itself, allowing empires to settle the heart of their vast civilisations within it. The station's primary purpose is to facilitate the control of the galactic relay network, to this end the station also functions as a nigh-impenetrable fortress and bastion against anyone who would attempt to seize control over the relays."
+
+# Buildings
+ building_sdc_factory: "SDC Production Facility"
 
 # Components
 
@@ -654,3 +776,16 @@
  ZEIA_SDC: "Zei'a Super Dimension Core"
  ZEIA_SDC_SET: "Zei'a Super Dimension Core"
  ZEIA_SDC_SET_DESC: ""
+
+ ZEIA_SENSORS: "Zei'a Sensors"
+ ZEIA_SENSORS_SET: "Zei'a Sensors"
+ ZEIA_SENSORS_SET_DESC: ""
+
+ ZEIA_DRONES: "Zei'a Drones I"
+ ZEIA_DRONES_SET: "Zei'a Drones I"
+ ZEIA_DRONES_SET_DESC: ""
+
+ ZEIA_ANTI_ELECTRON_BEAM_M: "Zei'a Anti-Electron Beam Caster"
+ ZEIA_ANTI_ELECTRON_BEAM_L: "Zei'a Anti-Electron Beam Caster"
+ ZEIA_ANTI_ELECTRON_BEAM_SET: "Zei'a Anti-Electron Beam Caster"
+ ZEIA_ANTI_ELECTRON_BEAM_SET_DESC: "Zei'a Anti-Electron Beam Caster"

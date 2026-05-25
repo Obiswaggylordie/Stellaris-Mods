@@ -1,3 +1,271 @@
+leader_trait_kvilsha = {
+	is_councilor_trait_for_ruler = yes 
+	icon = "gfx/interface/icons/traits/trait_kvilsha.dds"
+	
+	triggered_army_modifier = {
+		potential = {
+			is_ruler = no 
+			leader_class = commander 
+		}
+		army_experience_gain_mult = 0.50
+		army_damage_mult = 0.50
+		army_health = 0.50
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			is_ruler = no 
+			leader_class = commander 
+		}
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.50
+		ship_weapon_range_mult = 0.50
+		ship_weapon_damage = 0.50
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no 
+			leader_class = scientist 
+		}
+		science_ship_survey_speed = 0.5
+		ship_anomaly_generation_chance_mult = 0.5
+		all_technology_research_speed = 0.5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no 
+			leader_class = official 
+		}
+		planet_jobs_specialist_produces_mult = 0.5
+		planet_building_build_speed_mult = 0.5
+		planet_buildings_cost_mult = -0.5
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			is_ruler = yes 
+		}
+		country_ruler_influence_produces_add = 5
+		planet_jobs_ruler_produces_mult = 0.5
+		pop_government_ethic_attraction = 0.5
+	}
+	leader_class = { scientist commander official }
+	requires_traits = { trait_kvilsha }
+	
+	initial = no 
+	randomized = no 
+	notify_on_gained = no 
+}
+
+leader_trait_uviik = {
+	is_councilor_trait_for_ruler = yes
+	icon = "gfx/interface/icons/traits/trait_uviik.dds" 
+	
+	triggered_fleet_modifier = {
+		potential = {
+			is_ruler = no 
+			leader_class = commander 
+		}
+		ship_sensor_range_add = 5
+		ship_hyperlane_range_add = 5
+		ship_engagement_range_mult = 0.50
+		fleet_mia_time_mult = -0.50
+		ship_emergency_ftl_mult = -0.50
+		ship_weapon_range_mult = 0.50
+		ship_fire_rate_mult = 0.50
+		ship_speed_mult = 0.50
+		ship_evasion_mult = 0.50
+		ship_accuracy_mult = 0.50
+		ships_upkeep_mult = -0.25
+		ship_disengage_chance_mult = 0.50
+		command_limit_add = 500
+	}
+	triggered_army_modifier = {
+		potential = {
+			is_ruler = no 
+			leader_class = commander 
+		}
+		army_morale_damage_mult = 0.50
+		army_disengage_chance_mult = 0.50
+		army_damage_mult = 0.50
+		army_health = 0.50
+		army_defense_damage_mult = 0.50
+		army_defense_health_mult = 0.50
+		armies_upkeep_mult = -0.25
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no 
+			leader_class = scientist 
+		}
+		science_ship_survey_speed = 0.50
+		ship_anomaly_research_speed_mult = 0.50
+		ship_anomaly_fail_risk = -0.50
+		ship_archaeological_site_clues_add = 5
+		ship_archaeological_site_excavation_speed_mult = 0.50
+		ship_anomaly_generation_chance_mult = 0.50
+		all_technology_research_speed = 0.50
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no 
+			leader_class = official 
+		}
+		empire_size_penalty_mult = -0.50
+		planet_buildings_cost_mult = -0.50
+		planet_districts_cost_mult = -0.50
+		planet_building_build_speed_mult = 0.50
+		planet_jobs_produces_mult = 0.50
+		planet_stability_add = 25
+	}
+	triggered_sector_modifier = {
+		potential = {
+			is_ruler = no 
+			leader_class = official 
+		}
+		empire_size_penalty_mult = -0.25
+		starbase_shipyard_build_speed_mult = 0.25
+		starbase_shipyard_build_cost_mult = -0.25
+		planet_building_build_speed_mult = 0.25
+		planet_buildings_cost_mult = -0.25
+		planet_districts_cost_mult = -0.25
+		planet_jobs_produces_mult = 0.25
+		planet_stability_add = 5
+	}
+	triggered_planet_modifier = {
+		empire_size_penalty_mult = -0.25
+		planet_buildings_cost_mult = -0.25
+		planet_districts_cost_mult = -0.25
+		planet_building_build_speed_mult = 0.25
+		planet_jobs_produces_mult = 0.25
+		planet_stability_add = 10
+	}
+	triggered_sector_modifier = {
+		empire_size_penalty_mult = -0.10
+		starbase_shipyard_build_speed_mult = 0.10
+		starbase_shipyard_build_cost_mult = -0.10
+		planet_building_build_speed_mult = 0.10
+		planet_buildings_cost_mult = -0.10
+		planet_districts_cost_mult = -0.10
+		planet_jobs_produces_mult = 0.10
+		planet_stability_add = 5
+	}
+	triggered_councilor_modifier = {
+		country_influence_produces_mult = 5
+		planet_pop_assembly_add = 5
+		planet_jobs_upkeep_mult = -0.25
+		edicts_upkeep_mult = -0.25
+		country_edict_fund_add = 50
+	}
+	leader_class = all
+	requires_traits = { trait_robot_sentinel_ai }
+	
+	initial = no 
+	randomized = no 
+	notify_on_gained = no 
+}
+
+leader_trait_guild_arch = {
+	is_councilor_trait_for_ruler = yes
+	cost = 0
+	icon = "gfx/interface/icons/traits/leader_trait_guild_arch2.dds"
+
+	self_modifier = {
+		leader_skill_levels = 5
+		species_leader_exp_gain = 0.50
+		negative_traits_leader = -1
+	}
+	triggered_army_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = commander
+		}
+		army_experience_gain_mult = 0.5
+		army_morale = 0.5
+		army_damage_mult = 0.5
+		army_health = 0.5
+		army_collateral_damage_mult = -0.5
+		armies_upkeep_mult = -0.5
+		planet_combat_width_add = 5
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = commander
+		}
+		ship_fire_rate_mult = 0.5
+		ship_speed_mult = 0.5
+		ship_weapon_damage = 0.5
+		ship_evasion_mult = 0.5
+		ship_hull_mult = 0.5
+		ship_shield_regen_add_perc = 0.5
+		ship_weapon_range_mult = 0.5
+		ships_upkeep_mult = -0.5
+	}
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = scientist
+		}
+		science_ship_survey_speed = 0.5
+		ship_anomaly_research_speed_mult = 0.5
+		ship_anomaly_fail_risk = -0.5
+		ship_archaeological_site_clues_add = 5
+		ship_archaeological_site_excavation_speed_mult = 0.5
+		ship_anomaly_generation_chance_mult = 0.5
+		all_technology_research_speed = 0.5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = official
+		}
+		empire_size_penalty_mult = -0.5
+		pop_government_ethic_attraction = 0.50
+		planet_jobs_produces_mult = 0.5
+		planet_buildings_upkeep_mult = -0.5
+		planet_districts_upkeep_mult = -0.5
+		planet_stability_add = 5
+	}
+	triggered_galcom_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = official
+		}
+		diplo_weight_mult = 0.50
+	}
+	triggered_federation_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = official
+		}
+		cohesion_add = 5
+		cohesion_ethics_penalty_mult = -0.50
+		delegate_cohesion_effect_mult = 0.50
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			is_ruler = yes
+		}
+		command_limit_mult = 0.50
+		country_ruler_influence_produces_add = 5
+		damage_vs_country_type_swarm_mult = 0.50
+		damage_vs_country_type_ai_empire_mult = 0.50
+		pop_government_ethic_attraction = 0.50
+		ship_weapon_damage = 0.5
+		ship_fire_rate_mult = 0.5
+		army_experience_gain_mult = 0.5
+		army_morale = 0.5
+		army_damage_mult = 0.5
+	}
+
+	leader_class = all
+	requires_traits = { trait_kvilsha }
+	opposites = {
+		"leader_trait_ruler_forerunner_didact"
+	}
+
+	initial = no
+	randomized = no 
+	ai_weight = { weight = 150 }
+}
 #leader_trait_ascension_4 = {
 #	#is_councilor_trait_for_ruler = yes
 #	inline_script = {
@@ -158,7 +426,7 @@
 #	ai_weight = { weight = 150 }
 #}
 #
-#SENTINEL SPECIALIST LEADER TRAITS 
+
 leader_trait_aurora_uviik = {
 	icon = "gfx/interface/icons/traits/leader_trait_aurora_uviik.dds"
 	self_modifier = {
@@ -274,9 +542,8 @@ leader_trait_aurora_uviik = {
 		planet_stability_add = 10
 	}
 	triggered_councilor_modifier = {
-		country_influence_produces_add = 10
+		country_influence_produces_mult = 1
 		planet_pop_assembly_add = 10
-		planet_jobs_robotic_produces_mult = 1.0
 		planet_jobs_upkeep_mult = -0.50
 		edicts_upkeep_mult = -0.50
 		country_edict_fund_add = 100
@@ -287,6 +554,7 @@ leader_trait_aurora_uviik = {
 	leader_class = all
 	requires_traits = { trait_uviik }
 	initial = no
+	randomized = no 
 	opposites = {
 		"leader_trait_ascension_4"
 	}

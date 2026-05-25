@@ -2,13 +2,29 @@ building_cr_dtf_factory = {
 	base_buildtime = 180
 	category = manufacturing
 
-	icon = building_efg_factory
+	icon = building_dtf_factory
 	
 	is_capped_by_modifier = yes
 	can_be_ruined = no
 
+	building_sets = {
+		research
+	}
+
 	allow = { 
 		has_deposit = d_cr_dtf
+	}
+
+	potential = {
+		owner = { has_technology = tech_cr_access }
+	}
+
+	destroy_trigger = {
+		planet = {
+			NOT = {
+				has_deposit = d_cr_dtf
+			}
+		}
 	}
 
 	planet_modifier = {
@@ -62,13 +78,29 @@ building_cr_dtf_laboratory = {
 	base_buildtime = 180
 	category = research
 
-	icon = building_efg_biomineral_casting_facility
+	icon = building_dtf_laboratory
 	
 	is_capped_by_modifier = yes
 	can_be_ruined = no
 
+	building_sets = {
+		research
+	}
+
 	allow = { 
 		has_deposit = d_cr_dtf
+	}
+
+	potential = {
+		owner = { has_technology = tech_cr_access }
+	}
+
+	destroy_trigger = {
+		planet = {
+			NOT = {
+				has_deposit = d_cr_dtf
+			}
+		}
 	}
 
 	planet_modifier = {
@@ -107,19 +139,34 @@ building_cr_dtf_breeder = {
 	base_buildtime = 180
 	category = pop_assembly
 
-	icon = building_efg_defense_command
+	icon = building_dtf_breeder
 	
 	is_capped_by_modifier = yes
 	can_be_ruined = no
+
+	building_sets = {
+		research
+	}
 
 	allow = { 
 		has_deposit = d_cr_dtf
 	}
 
+	potential = {
+		owner = { has_technology = tech_cr_access }
+	}
+
+	destroy_trigger = {
+		planet = {
+			NOT = {
+				has_deposit = d_cr_dtf
+			}
+		}
+	}
+
 	planet_modifier = {
-		pop_growth_speed = 1
+		bonus_pop_growth = 1
 		planet_pop_assembly_add = 100
-		planet_pop_assembly_organic_add = 100
 		planet_housing_mult = 1
 		pop_housing_usage_mult = -1.0
 
@@ -154,13 +201,29 @@ building_cr_dtf_shipyard = {
 	base_buildtime = 180
 	category = army
 
-	icon = building_efg_weapon_factory
+	icon = building_dtf_shipyard
 	
 	is_capped_by_modifier = yes
 	can_be_ruined = no
 
+	building_sets = {
+		research
+	}
+
 	allow = { 
 		has_deposit = d_cr_dtf
+	}
+
+	potential = {
+		owner = { has_technology = tech_cr_access }
+	}
+
+	destroy_trigger = {
+		planet = {
+			NOT = {
+				has_deposit = d_cr_dtf
+			}
+		}
 	}
 
 	planet_modifier = {
@@ -198,14 +261,30 @@ building_cr_dtf_bunker = {
 	base_buildtime = 180
 	category = army
 
-	icon = building_efg_food_processing_facility
+	icon = building_dtf_bunker
 	
 	is_capped_by_modifier = yes
 	can_be_ruined = no
 	planetary_ftl_inhibitor = yes
 
+	building_sets = {
+		research
+	}
+
 	allow = { 
 		has_deposit = d_cr_dtf
+	}
+
+	potential = {
+		owner = { has_technology = tech_cr_access }
+	}
+
+	destroy_trigger = {
+		planet = {
+			NOT = {
+				has_deposit = d_cr_dtf
+			}
+		}
 	}
 
 	planet_modifier = {
@@ -213,7 +292,7 @@ building_cr_dtf_bunker = {
 		planet_army_build_speed_mult = 1
 		army_defense_health_mult = 1
 		army_defense_morale_mult = 1
-		defense_armies_add = 1
+		planet_defense_armies_add = 1
 		job_soldier_add = 1
 		planet_housing_mult = 1
 		pop_housing_usage_mult = -1.0
@@ -222,16 +301,6 @@ building_cr_dtf_bunker = {
 		building_cr_dtf_laboratory_max = -1
 		building_cr_dtf_breeder_max = -1
 		building_cr_dtf_shipyard_max = -1
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			owner = {
-				has_technology = tech_forerunner_start
-			}
-		}
-		job_promethean_warrior_servant_per_pop = 0.01
-		job_warrior_servant_per_pop = 0.1
 	}
 
 	army_modifier = {

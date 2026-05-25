@@ -1,3 +1,70 @@
+#####
+# Kas Zei'a
+####
+
+# Drones
+
+### PD ###
+entity = {
+	name = "zeia_drones_pd_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "zeia_drones_idle_particle" keep_particle = yes }
+	}
+	scale = 0.03
+}
+### Drones M ###
+entity = {
+	name = "zeia_drones_medium_entity"
+	cull_radius = 1.0
+	
+	default_state = idle
+	state = { name = "idle"
+		event = { time = 0 particle = "zeia_drones_idle_particle" keep_particle = yes }
+	}
+	scale = 0.08
+}
+
+### Drone Muzzle Flash ###
+entity = {
+	name = "zeia_drones_muzzle_flash_entity"
+	cull_radius = 0.05
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "zeia_drones_muzzle_flash_particle" keep_particle = yes sound = { soundeffect = "ancient_drone_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ancient_drone_fire" } }
+		
+	}
+}
+
+### Drone Hit Effect ###
+entity = {
+	name = "zeia_drones_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "zeia_drones_hit_effect_particle" sound = { soundeffect = ancient_drone_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ancient_drone_hit" } }
+	}
+	default_state = "explode_med_hp"
+}
+
+### Drone Shield Hit Effect ###
+entity = {
+	name = "zeia_drones_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 0.8 looping = no
+		event = { time = 0.0 node = "root" particle = "zeia_drones_hit_effect_particle" sound = { soundeffect = ancient_drone_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_ancient_drone_hit" } } 
+	}
+	default_state = "explode_med_hp"
+}
+
+
 
 #######
 # SENTINEL BEAM

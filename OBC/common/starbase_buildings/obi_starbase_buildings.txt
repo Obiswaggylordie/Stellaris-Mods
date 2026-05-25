@@ -116,6 +116,276 @@ zeia_energy_controller = {
 	}
 }
 
+dtf_factory_connect_1 = {
+	icon = "GFX_sb_dtf_factory_connect"
+	construction_days = 90
+
+
+	potential = {
+		exists = owner
+		solar_system = { any_system_planet = { has_active_building = building_cr_dtf_shipyard }}
+	}
+
+	ship_modifier = { 
+		ship_starting_experience_add = 5000
+	}
+
+	destroy_trigger = {
+		NOT = {
+			solar_system = { any_system_planet = { has_active_building = building_cr_dtf_shipyard }}
+		}
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				any_system_planet = {
+					is_owned_by = space_owner
+					has_modifier = dtf_pm_factory_full_operation
+				}
+			}
+		}
+		starbase_shipyard_build_speed_mult = 10.00
+		starbase_shipyard_build_cost_mult = -10.00
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				any_system_planet = {
+					num_buildings = {
+						type = building_cr_dtf_shipyard
+						value = 1
+					}
+				}
+			}
+		}
+		starbase_shipyard_build_speed_mult = 1.0
+		starbase_module_build_time_mult = -1.0
+		starbase_module_build_speed_mult = 1.0
+		starbase_shipyard_build_time_mult = -1.0
+		starbase_building_build_speed_mult = 1.0
+		starbase_building_build_time_mult = -1.0
+		starbase_upgrade_speed_mult = 1.0
+		starbase_upgrade_time_mult = -1.0
+		starbase_defensive_war_ship_build_speed_mult = 1.0
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				any_system_planet = {
+					num_buildings = {
+						type = building_cr_dtf_shipyard
+						value = 2
+					}
+				}
+			}
+		}
+		starbase_shipyard_build_speed_mult = 2.0
+		starbase_shipyard_build_time_mult = -2.0
+		starbase_module_build_time_mult = -2.0
+		starbase_module_build_speed_mult = 2.0
+		starbase_building_build_speed_mult = 2.0
+		starbase_building_build_time_mult = -2.0
+		starbase_upgrade_speed_mult = 2.0
+		starbase_upgrade_time_mult = -2.0
+		starbase_defensive_war_ship_build_speed_mult = 2.0
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				any_system_planet = {
+					num_buildings = {
+						type = building_cr_dtf_shipyard
+						value = 3
+					}
+				}
+			}
+		}
+		starbase_shipyard_build_speed_mult = 3.0
+		starbase_module_build_time_mult = -3.0
+		starbase_module_build_speed_mult = 3.0
+		starbase_shipyard_build_time_mult = -3.0
+		starbase_building_build_speed_mult = 3.0
+		starbase_building_build_time_mult = -3.0
+		starbase_upgrade_speed_mult = 3.0
+		starbase_upgrade_time_mult = -3.0
+		starbase_defensive_war_ship_build_speed_mult = 3.0
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				any_system_planet = {
+					num_buildings = {
+						type = building_cr_dtf_shipyard
+						value = 4
+					}
+				}
+			}
+		}
+		starbase_module_build_time_mult = -4.0
+		starbase_module_build_speed_mult = 4.0
+		starbase_shipyard_build_speed_mult = 4.0
+		starbase_shipyard_build_time_mult = -4.0
+		starbase_building_build_speed_mult = 4.0
+		starbase_building_build_time_mult = -4.0
+		starbase_upgrade_speed_mult = 4.0
+		starbase_upgrade_time_mult = -4.0
+		starbase_defensive_war_ship_build_speed_mult = 4.0
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				any_system_planet = {
+					num_buildings = {
+						type = building_cr_dtf_shipyard
+						value = 5
+					}
+				}
+			}
+		}
+		starbase_module_build_time_mult = -5.0
+		starbase_module_build_speed_mult = 5.0
+		starbase_shipyard_build_speed_mult = 5.0
+		starbase_shipyard_build_time_mult = -5.0
+		starbase_building_build_speed_mult = 5.0
+		starbase_building_build_time_mult = -5.0
+		starbase_upgrade_speed_mult = 5.0
+		starbase_upgrade_time_mult = -5.0
+		starbase_defensive_war_ship_build_speed_mult = 5.0
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				any_system_planet = {
+					num_buildings = {
+						type = building_cr_dtf_shipyard
+						value = 6
+					}
+				}
+			}
+		}
+		starbase_module_build_time_mult = -6.0
+		starbase_module_build_speed_mult = 6.0
+		starbase_shipyard_build_speed_mult = 6.0
+		starbase_shipyard_build_time_mult = -6.0
+		starbase_building_build_speed_mult = 6.0
+		starbase_building_build_time_mult = -6.0
+		starbase_upgrade_speed_mult = 6.0
+		starbase_upgrade_time_mult = -6.0
+		starbase_defensive_war_ship_build_speed_mult = 6.0
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				any_system_planet = {
+					num_buildings = {
+						type = building_cr_dtf_shipyard
+						value = 7
+					}
+				}
+			}
+		}
+		starbase_module_build_time_mult = -7.0
+		starbase_module_build_speed_mult = 7.0
+		starbase_shipyard_build_speed_mult = 7.0
+		starbase_shipyard_build_time_mult = -7.0
+		starbase_building_build_speed_mult = 7.0
+		starbase_building_build_time_mult = -7.0
+		starbase_upgrade_speed_mult = 7.0
+		starbase_upgrade_time_mult = -7.0
+		starbase_defensive_war_ship_build_speed_mult = 7.0
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				any_system_planet = {
+					num_buildings = {
+						type = building_cr_dtf_shipyard
+						value = 8
+					}
+				}
+			}
+		}
+		starbase_module_build_time_mult = -8.0
+		starbase_module_build_speed_mult = 8.0
+		starbase_shipyard_build_speed_mult = 8.0
+		starbase_shipyard_build_time_mult = -8.0
+		starbase_building_build_speed_mult = 8.0
+		starbase_building_build_time_mult = -8.0
+		starbase_upgrade_speed_mult = 8.0
+		starbase_upgrade_time_mult = -8.0
+		starbase_defensive_war_ship_build_speed_mult = 8.0
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				any_system_planet = {
+					num_buildings = {
+						type = building_cr_dtf_shipyard
+						value = 9
+					}
+				}
+			}
+		}
+		starbase_module_build_time_mult = -9.0
+		starbase_module_build_speed_mult = 9.0
+		starbase_shipyard_build_speed_mult = 9.0
+		starbase_shipyard_build_time_mult = -9.0
+		starbase_building_build_speed_mult = 9.0
+		starbase_building_build_time_mult = -9.0
+		starbase_upgrade_speed_mult = 9.0
+		starbase_upgrade_time_mult = -9.0
+		starbase_defensive_war_ship_build_speed_mult = 9.0
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				any_system_planet = {
+					num_buildings = {
+						type = building_cr_dtf_shipyard
+						value = 10
+					}
+				}
+			}
+		}
+		starbase_module_build_time_mult = -10.0
+		starbase_module_build_speed_mult = 10.0
+		starbase_shipyard_build_speed_mult = 10.00
+		starbase_shipyard_build_time_mult = -10.00
+		starbase_building_build_speed_mult = 10.00
+		starbase_building_build_time_mult = -10.00
+		starbase_upgrade_speed_mult = 10.00
+		starbase_upgrade_time_mult = -10.00
+		starbase_defensive_war_ship_build_speed_mult = 10.00
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 5000
+		}
+
+		upkeep = {
+			energy = 50
+			alloys = 20
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
 starbase_sdc = {
 	icon = "GFX_sdc"
 	construction_days = 30

@@ -41,3 +41,83 @@ country_event = {
 		}
     }
 }
+
+# Existing Kvil'sha Leaders get traits
+country_event = {
+	id = zeiastart.02
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		from = {
+			species = { has_trait = trait_kvilsha }
+			NOT = {
+				has_trait = leader_trait_kvilsha
+			}
+		}
+	}
+	
+	immediate = {
+		from = {
+			add_trait = {
+                trait = leader_trait_kvilsha
+                show_message = no
+            }
+		}
+	}
+}
+
+# Existing Uviik Leaders get traits
+country_event = {
+	id = zeiastart.03
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		from = {
+			species = { has_trait = trait_uviik }
+			NOT = {
+				has_trait = leader_trait_uviik
+			}
+		}
+	}
+	
+	immediate = {
+		from = {
+            add_trait = {
+                trait = leader_trait_uviik
+                show_message = no
+            }
+		}
+	}
+}
+
+# Guild Arch promotion
+country_event = {
+	id = zeiastart.04
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		from = {
+			species = { has_trait = trait_kvilsha }
+			NOT = {
+				has_trait = leader_trait_guild_arch
+			}
+		}
+	}
+	
+	immediate = {
+		from = {
+            if = {
+                limit = {
+                    has_total_skill > 5
+                }
+                add_trait = {
+                    trait = leader_trait_guild_arch
+                    show_message = yes
+                }
+            }
+		}
+	}
+}

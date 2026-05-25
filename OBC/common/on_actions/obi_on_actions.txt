@@ -13,20 +13,27 @@ on_planet_bombarded = {
 
 on_monthly_pulse_country = {
 	events = {
-		
 	}
 }
 
 on_yearly_pulse_country = {
 	events = {
-		sgu_ascension.43 # 10% chance of leaders with level 10 or more gaining Ascendant trait if their species is Ascension 3 or 4
+		#sgu_ascension.43 # 10% chance of leaders with level 10 or more gaining Ascendant trait if their species is Ascension 3 or 4
 	}
 }
 
 on_leader_level_up = {
 	events = {
-		#forerunner_start.699 # Refires add kvil'sha leader trait on leaders that level up
-		#promethean_start.6999 # Refires add uviik leader trait on leaders that level up
+		zeiastart.02 # Kvil'sha Traits
+		zeiastart.03 # Uviik Traits
+		zeiastart.04 # Guild Arch Promotion
+	}
+}
+
+on_leader_spawned = {
+	events = {
+		zeiastart.02 # Kvil'sha Traits
+		zeiastart.03 # Uviik Traits
 	}
 }
 

@@ -1,13 +1,14 @@
 ship_section_template = {
 	key = "CR_WMG_SINGLE"
-	ship_size = battleship
-	ship_size = cruiser
 	ship_size = destroyer
+	ship_size = cruiser
+	ship_size = battleship
+	ship_size = titan
 
 	fits_on_slot = bow
 	should_draw_components = yes
 
-	prerequisites = { tech_Wave_motion_gun_Fleet }
+	prerequisites = { tech_zeia_biocrystalline }
 
 	entity = "battleship_bow_XL1_entity"
 	icon = "GFX_ship_part_core_bow"
@@ -68,13 +69,14 @@ ship_section_template = {
 
 ship_section_template = {
 	key = "CR_WMG_TWIN"
-	ship_size = battleship
 	ship_size = cruiser
+	ship_size = battleship
+	ship_size = titan
 
 	fits_on_slot = bow
 	should_draw_components = yes
 
-	prerequisites = { tech_Wave_motion_gun_Fleet }
+	prerequisites = { tech_zeia_biocrystalline }
 
 	entity = "battleship_bow_XL1_entity"
 	icon = "GFX_ship_part_core_bow"
@@ -142,11 +144,12 @@ ship_section_template = {
 ship_section_template = {
 	key = "CR_WMG_TRIPLE"
 	ship_size = battleship
+	ship_size = titan
 
 	fits_on_slot = bow
 	should_draw_components = yes
 
-	prerequisites = { tech_Wave_motion_gun_Fleet }
+	prerequisites = { tech_zeia_biocrystalline }
 
 	entity = "battleship_bow_XL1_entity"
 	icon = "GFX_ship_part_core_bow"
@@ -219,12 +222,12 @@ ship_section_template = {
 
 ship_section_template = {
 	key = "CR_WMG_QUADRUPLE"
-	ship_size = battleship
+	ship_size = titan
 
 	fits_on_slot = bow
 	should_draw_components = yes
 
-	prerequisites = { tech_Wave_motion_gun_Fleet }
+	prerequisites = { tech_zeia_biocrystalline }
 
 	entity = "battleship_bow_XL1_entity"
 	icon = "GFX_ship_part_core_bow"
@@ -302,22 +305,18 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "CR_ZEIA_HULL"
+	key = "CR_ZEIA_HULL_CORVETTE"
 
 	ship_size = corvette
-	ship_size = destroyer
-	ship_size = cruiser
-	ship_size = battleship
-	ship_size = titan
 
 	fits_on_slot = bow
 	fits_on_slot = mid
 	fits_on_slot = stern
 	should_draw_components = yes
 
-	prerequisites = { tech_zeia_sdc }
+	prerequisites = { tech_zeia_biocrystalline }
 
-	entity = "battleship_bow_XL1_entity"
+	entity = "corvette_mesh_entity"
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { artillery }
 
@@ -337,6 +336,374 @@ ship_section_template = {
 		locatorname = "xl_gun_02"
 	}
 
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+
+	large_utility_slots = 12
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 1000
+		}
+	}
+}
+
+
+ship_section_template = {
+	key = "CR_ZEIA_HULL_FRIGATE"
+
+	ship_size = frigate
+
+	fits_on_slot = bow
+	fits_on_slot = mid
+	fits_on_slot = stern
+	should_draw_components = yes
+
+	prerequisites = { tech_zeia_biocrystalline }
+
+	entity = "frigate_frame_mesh_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery }
+
+	ai_weight = {
+		weight = 0
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+
+	large_utility_slots = 12
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 1000
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CR_ZEIA_HULL_DESTROYER"
+
+	ship_size = destroyer
+
+	fits_on_slot = bow
+	fits_on_slot = mid
+	fits_on_slot = stern
+	should_draw_components = yes
+
+	prerequisites = { tech_zeia_biocrystalline }
+
+	entity = "destroyer_mesh_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery }
+
+	ai_weight = {
+		weight = 0
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+
+	large_utility_slots = 12
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 1000
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CR_ZEIA_HULL_CRUISER"
+
+	ship_size = cruiser
+
+	fits_on_slot = bow
+	fits_on_slot = mid
+	fits_on_slot = stern
+	should_draw_components = yes
+
+	prerequisites = { tech_zeia_biocrystalline }
+
+	entity = "cruiser_mesh_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery }
+
+	ai_weight = {
+		weight = 0
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_02"
+	}
+
+	large_utility_slots = 12
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 1000
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CR_ZEIA_HULL_BATTLESHIP"
+
+	ship_size = battleship
+
+	fits_on_slot = bow
+	fits_on_slot = mid
+	fits_on_slot = stern
+	should_draw_components = yes
+
+	prerequisites = { tech_zeia_biocrystalline }
+
+	entity = "battleship_mesh_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery }
+
+	ai_weight = {
+		weight = 0
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
 
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -402,7 +769,7 @@ ship_section_template = {
 	key = "obi_city_key"
 	ship_size = obi_city
 	fits_on_slot = mid
-	entity = "lantean_01_titan_entity"
+	entity = "lantean_01_titan_mesh_entity"
 	icon = "GFX_ship_part_core_mid"
 	
 	component_slot = {

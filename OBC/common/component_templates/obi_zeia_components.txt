@@ -241,6 +241,37 @@ utility_component_template = {
 }
 
 
+
+
+utility_component_template = {
+	key = "ZEIA_SENSORS"
+	size = medium
+	icon = "GFX_zeia_sensors"
+	icon_frame = 1
+	power = -3000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 15
+			energy = 50
+		}
+	}
+	sensor_range = 10
+	hyperlane_range = 10
+	
+	ship_modifier = {
+		ship_tracking_add = 30
+	}
+	
+	prerequisites = { "tech_zeia_sensors" }
+	component_set = "sensor_components"
+	
+	ai_weight = {
+		weight = 1100
+	}
+}
+
+
 # SDC
 utility_component_template = {
 	key = "ZEIA_SDC"
@@ -336,8 +367,8 @@ utility_component_template = {
 		category = ship_components
 
 		cost = {
-			sr_living_metal = 30
-			energon = 100
+			alloys = 30
+			energy = 100
 		}
 	}
 	ftl = yes
@@ -351,10 +382,12 @@ utility_component_template = {
 		ship_interstellar_speed_mult = 10
 	}
 
-	prerequisites = { "tech_forerunner_slipspace_drive" }
+	prerequisites = { "tech_void_drive" }
 	component_set = "ftl_components"
 
-	ai_weight = 50000
+	ai_weight = {
+		weight = 50000
+	}
 }
 
 utility_component_template = {
@@ -378,7 +411,9 @@ utility_component_template = {
 	prerequisites = { "tech_zeia_thrust" }
 	component_set = "thruster_components"
 	
-	ai_weight = 50000
+	ai_weight = {
+		weight = 50000
+	}
 }
 
 # Void Shroud Cloak

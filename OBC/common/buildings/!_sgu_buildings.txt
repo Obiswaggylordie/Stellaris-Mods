@@ -1,5 +1,5 @@
 # unlocks zpm facility
-building_zpm_production_facility = {
+building_sdc_factory = {
 	base_buildtime = 360
 	position_priority = 1
 
@@ -13,6 +13,8 @@ building_zpm_production_facility = {
 		}
 		exists = owner
 		owner = { has_technology = tech_zeia_sdc }
+		owner = { has_technology = tech_mcd }
+		owner = { has_technology = tech_zeia_dimeng }
 	}
 	
 	allow = {
@@ -53,7 +55,7 @@ building_zpm_production_facility = {
 	}
 	
 	prerequisites = {
-		"tech_zpm_construction"
+		"tech_zeia_sdc"
 	}
 
 	ai_weight = {
@@ -68,13 +70,13 @@ building_energy_matter_converter_1 = {
 	category = manufacturing
 
 	potential = {
-		owner = { has_technology = tech_energy_matter_conversion }
+		owner = { has_technology = tech_mcd }
 	}
 
 	destroy_trigger = {
 		exists = owner
 		owner = {
-			NOT = { has_technology = tech_energy_matter_conversion }
+			NOT = { has_technology = tech_mcd }
 		}
 	}
 	
@@ -126,7 +128,7 @@ building_energy_matter_converter_1 = {
 	}
 
 	prerequisites = {
-		"tech_energy_matter_conversion"
+		"tech_mcd"
 	}
 
 	ai_weight = {

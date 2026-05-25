@@ -15,47 +15,28 @@ component_set = {
 component_set = {
 	key = "CONTROL_CHAIR_AUX"
 
-	icon = "GFX_ancient_chair"
+	icon = "GFX_zeia_chair"
 	icon_frame = 1
 }
 
 component_set = {
-	key = "ANCIENT_DRONE_SWARM_XL_1"
-	
-	icon = "GFX_ancient_drones_1"
-	icon_frame = 1	
-}
-component_set = {
-	key = "ANCIENT_DRONE_SWARM_XL_2"
-	
-	icon = "GFX_ancient_drones_2"
-	icon_frame = 1	
-}
-component_set = {
-	key = "ANCIENT_DRONE_SWARM_XL_3"
-	
-	icon = "GFX_ancient_drones_3"
-	icon_frame = 1	
-}
-component_set = {
-	key = "ANCIENT_DRONE_SWARM_XL_4"
-	
-	icon = "GFX_ancient_drones_4"
-	icon_frame = 1	
-}
-component_set = {
-	key = "ANCIENT_DRONE_SWARM_XL_5"
-	
-	icon = "GFX_ancient_drones_5"
-	icon_frame = 1	
-}
-component_set = {
-	key = "ANCIENT_DRONE_SWARM_XL_X"
-	
-	icon = "GFX_ancient_drones_x"
-	icon_frame = 1	
-}
+	key = "ZEIA_SENSORS_SET"
 
+	icon = "GFX_zeia_sensors"
+	icon_frame = 1
+}
+component_set = {
+	key = "ZEIA_DRONES_SET"
+	
+	icon = "GFX_zeia_drones"
+	icon_frame = 1	
+}
+component_set = {
+	key = "ZEIA_ANTI_ELECTRON_BEAM_SET"
+	
+	icon = "GFX_zeia_anti_electron_beam"
+	icon_frame = 1	
+}
 component_set = {
 	key = "ZEIA_CLOAK_SET"
 

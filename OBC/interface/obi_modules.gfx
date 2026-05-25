@@ -12,6 +12,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/ship_parts/zeia_sdc.dds"
 	}
 
+	# Control Chair
+	spriteType = {
+		name = "GFX_zeia_chair"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_chair.dds"
+	}
+
 	# Zei'a Shields
 	spriteType = {
 		name = "GFX_zeia_shield"
@@ -22,6 +28,24 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_zeia_omega_alloy"
 		texturefile = "gfx/interface/icons/ship_parts/zeia_omega_alloy.dds"
+	}
+
+	# Zei'a Sensors
+	spriteType = {
+		name = "GFX_zeia_sensors"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_sensors.dds"
+	}
+
+	# Zei'a Drones X
+	spriteType = {
+		name = "GFX_zeia_drones"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_drones_x.dds"
+	}
+
+	# Zei'a Anti-Electron Beam Casters
+	spriteType = {
+		name = "GFX_zeia_anti_electron_beam"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_anti_electron_beam.dds"
 	}
 
 	# Zeia DimEng

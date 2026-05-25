@@ -2,9 +2,313 @@
 #maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
 #morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
 
-###FORERUNNER/CONSTRUCT ARMIES###
+# Zei'a Armies
+zeia_sobsha_assault = {
+	damage = 2
+	health = 2
+	morale = 2
+	morale_damage = 1
+	collateral_damage = 1.0
+	war_exhaustion = 0.10
+	time = 25
+	icon = GFX_army_zeia
 
-#SENTINELS
+	resources = {
+		category = armies
+		cost = {
+			minerals = 500
+		}
+
+		upkeep = {
+			food = 3
+		}
+	}
+
+	prerequisites = { "tech_zeia_combat_equipment" }
+
+	potential = {
+		from = { has_trait = trait_sobsha }
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+zeia_sobsha_exosuit_assault = {
+	damage = 4
+	health = 4
+	morale = 4
+	morale_damage = 1
+	collateral_damage = 1.0
+	war_exhaustion = 0.20
+	time = 25
+	icon = GFX_army_zeia
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1000
+		}
+
+		upkeep = {
+			energy = 10
+			food = 3
+		}
+	}
+
+	prerequisites = { "tech_zeia_exosuit" }
+
+	potential = {
+		from = { has_trait = trait_sobsha }
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+zeia_lesser_bellator_cadre = {
+	damage = 3.0
+	health = 3.0
+	morale = 3.0
+	morale_damage = 1
+	collateral_damage = 1.0
+	war_exhaustion = 0.25
+	time = 25
+	icon = GFX_army_zeia_agon
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 500
+		}
+
+		upkeep = {
+			energy = 3
+			food = 3
+		}
+	}
+
+	prerequisites = { "tech_zeia_kvilsha_weapons" }
+
+	potential = {
+		from = { has_trait = "trait_kvilsha" }
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+zeia_bellator_cadre = {
+	damage = 5.0
+	health = 5.0
+	morale_damage = 3.0
+	collateral_damage = 5.0
+	war_exhaustion = 0.50
+	has_morale = no
+	time = 50
+	icon = GFX_army_zeia_agon
+	has_species = yes
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1000
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	prerequisites = { "tech_zeia_kvilsha_shields" }
+
+	potential = {
+		from = { has_trait = "trait_kvilsha" }
+	}
+
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+zeia_grand_bellator_cadre = {
+	damage = 7.0
+	health = 7.0
+	morale = 7.0
+	morale_damage = 7.0
+	collateral_damage = 2.5
+	war_exhaustion = 0.75
+	time = 25
+	icon = GFX_army_zeia_agon
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 750
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	prerequisites = { "tech_zeia_kvilsha_bladedance" }
+
+	potential = {
+		from = { has_trait = "trait_kvilsha" }
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+zeia_ingvala = {
+	damage = 6.0
+	health = 6.0
+	morale_damage = 6.0
+	collateral_damage = 5.0
+	war_exhaustion = 0.75
+	has_morale = no
+	time = 50
+	icon = GFX_army_zeia_agon
+	has_species = yes
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1200
+		}
+
+		upkeep = {
+			energy = 12
+		}
+	}
+
+	potential = {
+		from = {
+			OR = {
+				has_trait = "trait_kvilsha"
+				has_trait = "trait_uviik"
+			}
+		}
+	}
+	
+	prerequisites = { "tech_zeia_ingvala" }
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+zeia_exoform = {
+	damage = 7.5
+	health = 7.5
+	has_morale = no
+	morale_damage = 5.0
+	collateral_damage = 5.0
+	war_exhaustion = 1.25
+	time = 50
+	has_species = yes
+
+	icon = GFX_army_zeia_agon
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 550
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+	
+	prerequisites = { "tech_zeia_exoform" }
+
+	allow = {
+		owner = {
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}	
+		}
+		has_active_building = building_promethean_factory
+	}
+
+	potential = {
+		from = {
+			has_trait = trait_robot_sentinel_ai
+		}
+	}
+	
+	ai_weight = {
+		base = 10
+		modifier = {
+			factor = 100
+			has_trait = trait_robot_sentinel_ai
+		}
+		modifier = {
+			factor = 150
+			has_trait = trait_robot_promethean_ai
+		}
+	}
+}
+
+# Zei'a Defenisve Armies
+zeia_lesser_bellator_garrison = {
+	defensive = yes
+	health = 2.5
+	damage = 2.5
+	morale = 2.5
+	morale_damage = 1.0
+	collateral_damage = 0.0
+	war_exhaustion = 0.0 # No WE from defense armies
+	icon = GFX_army_type_forerunner_isodidact_defense
+	time = 25
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 3
+		}
+		produces = {
+			trigger = {
+				exists = owner 
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+	}
+
+	prerequisites = { "tech_forerunner_combat_suits" }
+
+	potential = {
+		from = { has_trait = "trait_forerunner_species" }
+	}
+
+	ai_weight = {
+		base = 100
+		modifier = {
+			factor = 15
+			has_trait = trait_forerunner_species
+		}
+		modifier = {
+			set = 0
+			OR = {
+				has_technology = tech_promethean_combat_suits
+			}
+		}
+	}
+}
+
+# Uviik Armies
 forerunner_aggressor_sentinels = {
 	damage = 1.2
 	health = 0.5
@@ -13,7 +317,7 @@ forerunner_aggressor_sentinels = {
 	war_exhaustion = 0.25
 	has_morale = no
 	time = 1
-	icon = GFX_army_type_forerunner
+	icon = GFX_army_uviik
 	has_species = yes
 
 	resources = {
@@ -119,7 +423,6 @@ forerunner_super_sentinels = {
 		}
 	}
 } 
-
 
 forerunner_onyx_sentinels = {
 	damage = 2.0
@@ -235,7 +538,8 @@ forerunner_strato_sentinel = {
 		}
 	}
 }
-#DEFENSIVE SENTINEL ARMIES
+
+# Uviik Defensive Armies
 forerunner_enforcer_sentinels = {
 	defensive = yes
 	damage = 5
@@ -342,183 +646,8 @@ forerunner_controller_sentinels = {
 	}
 }
 
-#FORERUNNER WARRIOR-SERVANTS
-forerunner_warrior_servant_army = {
-	damage = 2.5
-	health = 2.5
-	morale = 2.5
-	morale_damage = 1
-	collateral_damage = 1.0
-	war_exhaustion = 0.25
-	time = 25
-	icon = GFX_army_type_forerunner_isodidact
-
-	resources = {
-		category = armies
-		cost = {
-			minerals = 500
-		}
-
-		upkeep = {
-			energy = 3
-		}
-	}
-
-	prerequisites = { "tech_forerunner_combat_suits" }
-
-	potential = {
-		from = { has_trait = "trait_forerunner_species" }
-	}
-	
-	ai_weight = {
-		base = 100
-		modifier = {
-			factor = 15
-			has_trait = trait_forerunner_species
-		}
-		modifier = {
-			set = 0
-			OR = {
-				has_technology = tech_promethean_combat_suits
-			}
-		}
-	}
-}
-
-forerunner_warrior_servant_defense_army = {
-	defensive = yes
-	health = 2.5
-	damage = 2.5
-	morale = 2.5
-	morale_damage = 1.0
-	collateral_damage = 0.0
-	war_exhaustion = 0.0 # No WE from defense armies
-	icon = GFX_army_type_forerunner_isodidact_defense
-	time = 25
-
-	resources = {
-		category = armies
-		cost = {
-			minerals = 500
-		}
-		upkeep = {
-			energy = 3
-		}
-		produces = {
-			trigger = {
-				exists = owner 
-				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
-			}
-			unity = 0.5
-		}
-	}
-
-	prerequisites = { "tech_forerunner_combat_suits" }
-
-	potential = {
-		from = { has_trait = "trait_forerunner_species" }
-	}
-
-	ai_weight = {
-		base = 100
-		modifier = {
-			factor = 15
-			has_trait = trait_forerunner_species
-		}
-		modifier = {
-			set = 0
-			OR = {
-				has_technology = tech_promethean_combat_suits
-			}
-		}
-	}
-}
-
-forerunner_war_sphinx = {
-	damage = 5.0
-	health = 5.0
-	morale_damage = 2.5
-	collateral_damage = 5.0
-	war_exhaustion = 0.50
-	has_morale = no
-	time = 50
-	icon = GFX_army_type_forerunner_isodidact
-	has_species = yes
-
-	resources = {
-		category = armies
-		cost = {
-			minerals = 1000
-		}
-
-		upkeep = {
-			energy = 10
-		}
-	}
-
-	potential = {
-		from = { has_trait = "trait_forerunner_species" }
-	}
-
-	allow = {
-		OR = {
-			has_active_building = building_sentinel_factory
-			has_active_building = building_promethean_factory
-		}
-	}
-	
-	prerequisites = { "tech_promethean_weapon_craft" }
-	
-	ai_weight = {
-		base = 10
-		modifier = {
-			factor = 100
-			has_trait = trait_forerunner_species
-		}
-	}
-}
 #PROMETHEANS
-promethean_warrior_servant_army = {
-	damage = 5.0
-	health = 5.0
-	morale = 5.0
-	morale_damage = 5.0
-	collateral_damage = 2.5
-	war_exhaustion = 0.75
-	time = 25
-	icon = GFX_army_type_forerunner_promethean
 
-	resources = {
-		category = armies
-		cost = {
-			minerals = 750
-		}
-
-		upkeep = {
-			energy = 5
-		}
-	}
-
-	prerequisites = { "tech_promethean_combat_suits" }
-
-	potential = {
-		from = { has_trait = "trait_forerunner_species" }
-	}
-	
-	allow = {
-		planet = {
-			has_active_building = building_promethean_factory
-		}
-	}
-
-	ai_weight = {
-		base = 10
-		modifier = {
-			factor = 150
-			has_trait = trait_forerunner_species
-		}
-	}
-}
 
 promethean_warrior_servant_defense_army = {
 	defensive = yes
@@ -568,100 +697,9 @@ promethean_warrior_servant_defense_army = {
 	}
 }
 
-promethean_seekers = {
-	damage = 7.5
-	health = 7.5
-	morale_damage = 7.5
-	collateral_damage = 5.0
-	war_exhaustion = 1.0
-	has_morale = no
-	time = 50
-	icon = GFX_army_type_forerunner_promethean
-	has_species = yes
 
-	resources = {
-		category = armies
-		cost = {
-			minerals = 1200
-		}
 
-		upkeep = {
-			energy = 12
-		}
-	}
 
-	potential = {
-		from = { has_trait = "trait_forerunner_species" }
-	}
-	
-	allow = {
-		has_active_building = building_promethean_factory
-		owner = { NOT = { has_policy_flag = robots_outlawed } }
-	}
-	
-	prerequisites = { "tech_promethean_combat_suits" "tech_promethean_weapon_craft" }
-
-	ai_weight = {
-		base = 10
-		modifier = {
-			factor = 200
-			has_trait = trait_forerunner_species
-		}
-	}
-}
-
-promethean_phaetons = {
-	damage = 7.5
-	health = 7.5
-	has_morale = no
-	morale_damage = 5.0
-	collateral_damage = 5.0
-	war_exhaustion = 1.25
-	time = 50
-	has_species = yes
-
-	icon = GFX_army_type_forerunner_promethean
-
-	resources = {
-		category = armies
-		cost = {
-			minerals = 550
-		}
-
-		upkeep = {
-			energy = 5
-		}
-	}
-	
-	prerequisites = { "tech_promethean_weapon_craft" }
-
-	allow = {
-		owner = {
-			NOT = {
-				has_policy_flag = robots_outlawed
-			}	
-		}
-		has_active_building = building_promethean_factory
-	}
-
-	potential = {
-		from = {
-			has_trait = trait_robot_sentinel_ai
-		}
-	}
-	
-	ai_weight = {
-		base = 10
-		modifier = {
-			factor = 100
-			has_trait = trait_robot_sentinel_ai
-		}
-		modifier = {
-			factor = 150
-			has_trait = trait_robot_promethean_ai
-		}
-	}
-}
 
 ## Mechanical Prometheans
 promethean_knight_army = {

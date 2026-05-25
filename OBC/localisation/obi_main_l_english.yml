@@ -7,6 +7,60 @@
  sm_obi_large_shipyard: "Large Shipyard"
  sm_obi_large_shipyard_desc: "A much larger shipyard, with capacity to construct up to 10 vessels at a time."
 
+ sm_obi_hyper_shipyard: "Hyper Shipyard"
+ sm_obi_hyper_shipyard_desc: "A much larger shipyard, with capacity to construct up to 10 vessels at a time."
+
+# Buildings
+ building_cr_dtf_factory: "Dimensional Time Fault Factory"
+ building_cr_dtf_factory_desc: "A vast industrial complex housed within a Dimensional Time Fault, the factory allows for the uninterrupted and constant mass production of various resources."
+ building_cr_dtf_laboratory: "Dimensional Time Fault Laboratory"
+ building_cr_dtf_laboratory_desc: "An incredibly advanced research facility built within a Dimensional Time Fault, the laboratories housing hundreds of scientists who can make dozens of breakthroughs that would take decades in mere months for the outside universe."
+ building_cr_dtf_breeder: "Dimensional Time Fault Population Centre"
+ building_cr_dtf_breeder_desc: "An intricate complex of cloning facilities, living areas, and mechanical construction yards for robotic or synthetic units, kept within a Dimensional Time Fault. The Population Centre being ideal for growing and maintaining an enormous population, with time moving far quicker for those in the Centre."
+ building_cr_dtf_shipyard: "Dimensional Time Fault Shipyard"
+ building_cr_dtf_shipyard_desc: "An enormous shipyard facility held within the Dimensional Time Fault, operating entirely unmanned and controlled using the Time Fault Control Uplinks on Orbital Rings and Starbases."
+ building_cr_dtf_bunker: "Dimensional Time Fault Bunker"
+ building_cr_dtf_bunker_desc: "A bastion beyond bastions, a citadel greater than any before it, this enormous fortress is housed within a Dimensional Time Fault, allowing it to not only train and build armies far quicker than normal, but also making it incredibly difficult to assault or destroy."
+
+# Time Fault
+ sm_dtf_factory_connect_1: "Dimensional Time Fault Shipyard Control Uplink"
+ sm_dtf_factory_connect_1_desc: "Access a Dimensional Time Fault Shipyard's automated systems and direct the produced vessels to this starbase."
+ 
+ job_efg_head_researcher: "Time Fault Research Director"
+ job_efg_head_researcher_plural: "Time Fault Science Directors"
+ job_efg_head_researcher_desc: "Director of all research and development within a Time Fault"
+ mod_job_efg_head_researcher_add: "Occupational quota for science president within DTF"
+ 
+ job_efg_researcher: "Time Fault Scientist"
+ job_efg_researcher_plural: "Time Fault Scientist"
+ job_efg_researcher_desc: "Employees of the Institute within Time Faults"
+ mod_job_efg_researcher_add: "Occupational quota for researcher within DTF"
+ 
+ job_efg_brain_drone: "Brain Drone within DTF"
+ job_efg_brain_drone_plural: "Brain Drone within DTF"
+ job_efg_brain_drone_desc: "Drones belonging to the DTF factory."
+ mod_job_efg_brain_drone_add: "Occupational quota for brain drone within DTF"
+ 
+ job_efg_calculator: "Computational Drone within DTF"
+ job_efg_calculator_plural: "Computational Drone within DTF"
+ job_efg_calculator_desc: "Computational equipment of the Institute within Time Faults"
+ mod_job_efg_calculator_add: "Occupational quota for computational drone within DTF"
+ 
+ job_efg_foundry: "Casting Operator within DTF"
+ job_efg_foundry_plural: "Casting Operator within DTF"
+ job_efg_foundry_desc: "Time Fault Inner Plant Employees"
+ mod_job_efg_foundry_add: "Occupational quota for casting workers within DTF"
+ 
+ job_efg_alloy_drone: "DTF Casting Operation Drone within DTF"
+ job_efg_alloy_drone_plural: "DTF Casting Operation Drone within DTF"
+ job_efg_alloy_drone_desc: "Drones belonging to the Time Fault Factory"
+ mod_job_efg_alloy_drone_add: "Occupational quota for casting operation drones within DTF"
+ 
+ job_efg_fabricator: "Casting Operation Drone within DTF"
+ job_efg_fabricator_plural: "Casting Operation Drone within DTF"
+ job_efg_fabricator_desc: "Time Fault Plant Calculation Equipment"
+ mod_job_efg_fabricator_add: "Occupational quota for casting operation drones within DTF"
+
 # Strategic Resources
 
  sr_sdc: "Zei'a Super Dimension Core"
