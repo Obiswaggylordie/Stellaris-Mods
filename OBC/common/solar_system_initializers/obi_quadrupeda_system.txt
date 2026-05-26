@@ -1,0 +1,53 @@
+obi_quadrupeda_system_initializer = {
+    name = "Dasha"
+	class = "sc_g"
+	flags = { empire_home_system }
+	usage = origin
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 120
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 285
+	}
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+	planet = {
+		name = "Quadrupeda"
+		class = "pc_continental"
+		orbit_distance = 0
+		orbit_angle = 0
+		size = 50
+		has_ring = no
+		modifiers = none
+		starting_planet = yes
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		name = "Celestia"
+		class = star
+		orbit_distance = 50
+		orbit_angle = 90
+		size = 15
+		has_ring = no
+	}
+
+	planet = {
+		name = "Luna"
+		class = "pc_barren_cold"
+		orbit_distance = 50
+		orbit_angle = 270
+		size = 15
+		has_ring = no
+	}
+}

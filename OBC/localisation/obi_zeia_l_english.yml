@@ -167,15 +167,7 @@
  promethean_battlewagon_army_desc: "The Warden Form was designed with total access to Ascended Psionics and awareness, being on-par with a true Ascended Being in terms of intellect, memory, processing, and computational power. Serving mostly as administrative units, many CNUs were directly uploaded into Warden Constructs in order to circumvent the limitations of the Library. As Warden Constructs could psionically behave like an Ascended Kvil'sha and directly communicate infinite amounts of information with an intended target instead of publishing it onto the Library so that the un-ascended could process the information too. This created a form of ascended Network which was only accessible to beings of such stature."
  
  warden_eternal: "Library Sentinel"
- warden_eternal_desc: "The Library Sentinel is a psionic entity derived from the Library, the metaphysical Zei'a repository of knowledge. It exists for the purpose of chasing away potential threats to the Library, for it will not tolerate any of its knowledge being destroyed, nor will it accept its information to be abused.." 
-
-# Origin
- origin_obi_zeia: "The First Race"
- origin_obi_zeia_desc: "Kas Zei'a, the First Race, the Precursors, the Relay Builders. They have been known throughout history as the most advanced civilisation to ever roam the stars."
- origin_tooltip_obi_zeia: ""
-
- obi_dasha_system_initializer_NAME: "Dasha System"
- obi_dasha_system_initializer_DESC: "The home of the Precursors."
+ warden_eternal_desc: "The Library Sentinel is a psionic entity derived from the Library, the metaphysical Zei'a repository of knowledge. It exists for the purpose of chasing away potential threats to the Library, for it will not tolerate any of its knowledge being destroyed, nor will it accept its information to be abused." 
 
 # Ship Sections
  CR_WMG_SINGLE: "Wave Motion Gun Single"

@@ -248,6 +248,279 @@ tech_zeia_exoform = {
   	}
 }
 
+tech_dark_rifts = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { particles }
+	#prerequisites = {}
+	weight = @tier1weight1
+
+	potential = {  
+		any_owned_planet = {
+			has_deposit = d_darkling_rifts
+		}
+	} 
+
+	modifier = {
+	}
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_dark_hazard_suit = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_dark_rifts" }
+	weight = @tier1weight1
+
+	potential = {
+	} 
+
+	modifier = {
+		army_damage_taken_mult = -0.25
+	}
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_zeia_dark_beam = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_dark_rift" "tech_dark_hazard_suit" "tech_zeia_biocrystalline" }
+	weight = @tier1weight1
+
+	potential = {
+	} 
+
+	modifier = {
+		army_damage_mult = 1.00
+	}
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_light_rifts = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_dark_rifts" "tech_dark_hazard_suit" }
+	weight = @tier1weight1
+
+	potential = {
+	} 
+
+	modifier = {
+	}
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_zeia_dark_suit = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_dark_hazard_suit" "tech_light_rifts" "tech_zeia_biocrystalline"}
+	weight = @tier1weight1
+
+	potential = {
+	} 
+
+	modifier = {
+		army_damage_taken_mult = -0.50
+	}
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_light_beacon = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_light_rifts" "tech_dark_hazard_suit" }
+	weight = @tier1weight1
+
+	potential = {
+	} 
+
+	modifier = {
+	}
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_light_crystal = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_dark_rifts" "tech_zeia_dark_suit" "tech_zeia_biocrystalline" }
+	weight = @tier1weight1
+
+	potential = {
+	} 
+
+	modifier = {
+	}
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_zeia_portal = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_light_crystal" }
+	weight = @tier1weight1
+
+	potential = {
+	} 
+
+	modifier = {
+	}
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_zeia_light_beam = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_zeia_dark_beam" "tech_light_crystal" }
+	weight = @tier1weight1
+
+	potential = {
+	} 
+
+	modifier = {
+		army_damage_mult = 0.50
+	}
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_zeia_annihilator_beam = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_zeia_light_beam" }
+	weight = @tier1weight1
+
+	potential = {
+	} 
+
+	modifier = {
+		army_damage_mult = 2.00
+	}
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_zeia_light_suit = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_zeia_dark_suit" "tech_zeia_annihilator_beam" }
+	weight = @tier1weight1
+
+	potential = {
+	} 
+
+	modifier = {
+		army_damage_taken_mult = -1.00
+	}
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
 tech_aurora_class = {
 	cost = 1000
 	area = engineering
@@ -349,6 +622,42 @@ tech_zeia_ufc = {
 	potential = {  
 		has_origin = origin_obi_zeia
 	} 
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_zeia_stardrive = {
+	cost = 100000
+	area = physics
+	tier = 2
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_hyper_drive_3" "tech_zeia_biocrystalline" }
+	weight = @tier4weight3
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_zeia_wormhole_drive = {
+	cost = 100000
+	area = physics
+	tier = 3
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_zeia_stardrive" }
+	weight = @tier4weight3
 	
 	weight_modifier = {
 		factor = 1

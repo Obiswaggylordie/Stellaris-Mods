@@ -16,6 +16,25 @@ d_darkling_storm = {
 	}
 }
 
+# Ecological Disaster
+d_ecological_disaster = {
+	icon = d_darkling_storm
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker
+
+	planet_modifier = {
+		habitability_floor_mult = -0.5
+		habitability_ceil_mult = -0.5
+	}
+
+	potential = { always = no }
+	can_be_cleared = { always = no }
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
 # Darkling Sky Temple
 d_darkling_sky_temple = {
 	icon = d_darkling_sky_temple

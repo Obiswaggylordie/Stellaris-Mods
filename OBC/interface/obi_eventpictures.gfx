@@ -7,14 +7,20 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_evt_forerunner_slipspace_portal"
-		texturefile = "gfx/event_pictures/c_forerunner_slipspace_portal.dds"
+		name = "GFX_void_relay"
+		texturefile = "gfx/event_pictures/void_relay.dds"
 		alwaystransparent = yes
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_energy_controller"
 		texturefile = "gfx/event_pictures/energy_controller.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_dark_storm"
+		texturefile = "gfx/event_pictures/dark_storm.dds"
 		alwaystransparent = yes
 	}
 }

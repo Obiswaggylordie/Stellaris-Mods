@@ -69,7 +69,7 @@ obi_dasha_system_initializer = {
 	# Homeworld
 	change_orbit = 20 
 	planet = {
-		class = "pc_alpine"
+		class = "pc_gaia"
 		orbit_angle = 195
 		orbit_distance = 0
 		size = 30

@@ -16,6 +16,12 @@ on_monthly_pulse_country = {
 	}
 }
 
+on_colony_yearly_pulse = {
+	events = {
+		dark_world_events.01 # Dark World master event, maximum 18% chance of a gaia world getting it.
+	}
+}
+
 on_yearly_pulse_country = {
 	events = {
 		#sgu_ascension.43 # 10% chance of leaders with level 10 or more gaining Ascendant trait if their species is Ascension 3 or 4

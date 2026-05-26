@@ -1,0 +1,509 @@
+namespace = dark_world_events
+
+# Warm: 	Gaia - Tropical - Continental - Arid - 	Savanna - Desert - Barren (Dry)
+# Average: 	Gaia - Tropical - Continental - Alpine - Tundra - Arctic - Barren (Cold)
+# Cold: 	Gaia - Tropical - Ocean - 		Alpine - Tundra - Arctic - Frozen 
+
+# Dark World Master Event
+planet_event = {
+	id = dark_world_events.01
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				years_passed = 20
+				NOT = {
+					has_deposit = d_darkling_storm
+					has_planet_flag = dark_world_timeout
+					owner = {
+						is_fallen_empire = yes
+					}
+				}
+			}
+			switch = {
+				trigger = is_planet_class
+				# Max Energy (18 / 82)
+				pc_gaia = {
+					random_list = {
+						18 = {}
+						82 = { Dark_World_not_fired }
+					}
+				}
+				# High Energy (15 / 85)
+				pc_tropical = {
+					random_list = {
+						15 = {}
+						85 = { Dark_World_not_fired }
+					}
+				}
+				# Average Energy (12 / 88)
+				pc_continental = {
+					random_list = {
+						12 = {}
+						88 = { Dark_World_not_fired }
+					}
+				}
+				pc_ocean = {
+					random_list = {
+						12 = {}
+						88 = { Dark_World_not_fired }
+					}
+				}
+				# Below Average energy (9 / 91)
+				pc_arid = {
+					random_list = {
+						9 = {}
+						91 = { Dark_World_not_fired }
+					}
+				}
+				pc_alpine = {
+					random_list = {
+						9 = {}
+						91 = { Dark_World_not_fired }
+					}
+				}
+				# Low Energy (6 / 94)
+				pc_savanna = {
+					random_list = {
+						6 = {}
+						94 = { Dark_World_not_fired }
+					}
+				}
+				pc_tundra = {
+					random_list = {
+						6 = {}
+						94 = { Dark_World_not_fired }
+					}
+				}
+				# Critical Energy (3 / 97)
+				pc_desert = {
+					random_list = {
+						3 = {}
+						97 = { Dark_World_not_fired }
+					}
+				}
+				pc_arctic = {
+					random_list = {
+						3 = {}
+						97 = { Dark_World_not_fired }
+					}
+				}
+			}
+		}
+		else = {
+			log = { Dark_World_not_fired }
+		}
+	}
+}
+
+# Dark World creation 1: Deplete host world
+planet_event = {
+	id = dark_world_events.02
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		switch = {
+			trigger = is_planet_class
+			# Max Energy
+			pc_gaia = {
+				if = {
+					limit = {
+						has_planet_flag = ce_warm
+					}
+					change_pc = pc_arid
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_average
+					}
+					change_pc = pc_alpine
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_cold
+					}
+					change_pc = pc_alpine
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_planet_flag = ce_warm
+							has_planet_flag = ce_average
+							has_planet_flag = ce_cold
+						}
+					}
+					random_list = {
+						33 = { set_planet_flag = ce_warm }
+						33 = { set_planet_flag = ce_average }
+						33 = { set_planet_flag = ce_cold }
+					}
+					planet_event = dark_world_events.02
+				}
+			}
+			# High Energy (15 / 85)
+			pc_tropical = {
+				if = {
+					limit = {
+						has_planet_flag = ce_warm
+					}
+					change_pc = pc_savanna
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_average
+					}
+					change_pc = pc_tundra
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_cold
+					}
+					change_pc = pc_tundra
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_planet_flag = ce_warm
+							has_planet_flag = ce_average
+							has_planet_flag = ce_cold
+						}
+					}
+					random_list = {
+						33 = { set_planet_flag = ce_warm }
+						33 = { set_planet_flag = ce_average }
+						33 = { set_planet_flag = ce_cold }
+					}
+					planet_event = dark_world_events.02
+				}
+			}
+			# Average Energy (12 / 88)
+			pc_continental = {
+				if = {
+					limit = {
+						has_planet_flag = ce_warm
+					}
+					change_pc = pc_savanna
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_average
+					}
+					change_pc = pc_tundra
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_cold
+					}
+					change_pc = pc_tundra
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_planet_flag = ce_warm
+							has_planet_flag = ce_average
+							has_planet_flag = ce_cold
+						}
+					}
+					random_list = {
+						50 = { set_planet_flag = ce_warm }
+						50 = { set_planet_flag = ce_average }
+					}
+					planet_event = dark_world_events.02
+				}
+			}
+			pc_ocean = {
+				if = {
+					limit = {
+						has_planet_flag = ce_warm
+					}
+					change_pc = pc_savanna
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_average
+					}
+					change_pc = pc_tundra
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_cold
+					}
+					change_pc = pc_tundra
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_planet_flag = ce_warm
+							has_planet_flag = ce_average
+							has_planet_flag = ce_cold
+						}
+					}
+					random_list = {
+						100 = { set_planet_flag = ce_cold }
+					}
+					planet_event = dark_world_events.02
+				}
+			}
+			# Below Average energy (9 / 91)
+			pc_arid = {
+				if = {
+					limit = {
+						has_planet_flag = ce_warm
+					}
+					change_pc = pc_desert
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_average
+					}
+					change_pc = pc_arctic
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_cold
+					}
+					change_pc = pc_arctic
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_planet_flag = ce_warm
+							has_planet_flag = ce_average
+							has_planet_flag = ce_cold
+						}
+					}
+					random_list = {
+						100 = { set_planet_flag = ce_warm }
+					}
+					planet_event = dark_world_events.02
+				}
+			}
+			pc_alpine = {
+				if = {
+					limit = {
+						has_planet_flag = ce_warm
+					}
+					change_pc = pc_desert
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_average
+					}
+					change_pc = pc_arctic
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_cold
+					}
+					change_pc = pc_arctic
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_planet_flag = ce_warm
+							has_planet_flag = ce_average
+							has_planet_flag = ce_cold
+						}
+					}
+					random_list = {
+						50 = { set_planet_flag = ce_average }
+						50 = { set_planet_flag = ce_cold }
+					}
+					planet_event = dark_world_events.02
+				}
+			}
+			# Low Energy (6 / 94)
+			pc_savanna = {
+				if = {
+					limit = {
+						has_planet_flag = ce_warm
+					}
+					change_pc = pc_desert
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_average
+					}
+					change_pc = pc_arctic
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_cold
+					}
+					change_pc = pc_arctic
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_planet_flag = ce_warm
+							has_planet_flag = ce_average
+							has_planet_flag = ce_cold
+						}
+					}
+					random_list = {
+						100 = { set_planet_flag = ce_warm }
+					}
+					planet_event = dark_world_events.02
+				}
+			}
+			pc_tundra = {
+				if = {
+					limit = {
+						has_planet_flag = ce_warm
+					}
+					change_pc = pc_desert
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_average
+					}
+					change_pc = pc_arctic
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_cold
+					}
+					change_pc = pc_arctic
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_planet_flag = ce_warm
+							has_planet_flag = ce_average
+							has_planet_flag = ce_cold
+						}
+					}
+					random_list = {
+						50 = { set_planet_flag = ce_average }
+						50 = { set_planet_flag = ce_cold }
+					}
+					planet_event = dark_world_events.02
+				}
+			}
+			# Critical Energy (3 / 97)
+			pc_desert = {
+				if = {
+					limit = {
+						has_planet_flag = ce_warm
+					}
+					change_pc = pc_barren
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_average
+					}
+					change_pc = pc_barren_cold
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_cold
+					}
+					change_pc = pc_frozen
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_planet_flag = ce_warm
+							has_planet_flag = ce_average
+							has_planet_flag = ce_cold
+						}
+					}
+					random_list = {
+						100 = { set_planet_flag = ce_warm }
+					}
+					planet_event = dark_world_events.02
+				}
+			}
+			pc_arctic = {
+				if = {
+					limit = {
+						has_planet_flag = ce_warm
+					}
+					change_pc = pc_barren
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_average
+					}
+					change_pc = pc_barren_cold
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						has_planet_flag = ce_cold
+					}
+					change_pc = pc_frozen
+					planet_event = dark_world_events.03
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_planet_flag = ce_warm
+							has_planet_flag = ce_average
+							has_planet_flag = ce_cold
+						}
+					}
+					random_list = {
+						50 = { set_planet_flag = ce_average }
+						50 = { set_planet_flag = ce_cold }
+					}
+					planet_event = dark_world_events.02
+				}
+			}
+		}
+	}
+}
+
+# Dark World creation 2: GFX event and storm creation
+planet_event = {
+	id = dark_world_events.03
+	hide_window = no
+	is_triggered_only = yes
+	title = "dark_world_events.03.name"
+	desc = "dark_world_events.03.desc"
+	picture = GFX_dark_storm
+	show_sound = event_red_alert
+	location = this
+
+	immediate = {
+		add_deposit = d_darkling_storm
+		add_planet_devastation = 50
+		every_owned_pop_group = {
+			kill_pop_group = {
+				pop_group = this
+				percentage = 0.5
+			}
+		}
+	}
+}

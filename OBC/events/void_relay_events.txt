@@ -31,12 +31,11 @@ namespace = void_relay
 #	}
 #}
 
-#SLIPSPACE PORTAL
 country_event = {
 	id = "void_relay.1000"
 	title = "void_relay.1000_title"
 	desc = "void_relay.1000_desc"
-	picture = GFX_evt_forerunner_slipspace_portal
+	picture = GFX_void_relay
 	show_sound = event_ringworld_build_complete
 	location = FROM	
 	is_triggered_only = yes	

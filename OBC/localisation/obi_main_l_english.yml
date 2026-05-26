@@ -1,6 +1,21 @@
 ﻿l_english:
 ####################################
 
+# Origin
+ origin_obi_zeia: "The First Race"
+ origin_obi_zeia_desc: "Kas Zei'a, the First Race, the Precursors, the Relay Builders. They have been known throughout history as the most advanced civilisation to ever roam the stars."
+ origin_tooltip_obi_zeia: ""
+
+ obi_dasha_system_initializer_NAME: "Dasha System"
+ obi_dasha_system_initializer_DESC: "The home of the Precursors."
+
+ origin_obi_pony: "The Magical Bubble"
+ origin_obi_pony_desc: "Spawn in the cradle of the Quadrupedan Union, home to many nations such as Equestria, Griffonia, the Crystal Empire, and more."
+ origin_tooltip_obi_pony: ""
+
+ obi_quadrupeda_system_initializer_NAME: "Quadrupean Bubble"
+ obi_dasha_system_initializer_DESC: "The great magical bubble of Quadrupeda, formed and sustained by unknown means."
+
 # Starbase Buildings
 
 # Starbase Modules
@@ -77,6 +92,10 @@
  tech_obi_wormhole: "Spatial Magic Theory"
  tech_obi_wormhole_desc: "Through our understanding of the Arcane, we've come to realise that we have the potential to fold subspace in any way we see fit, granting us many potential benefits."
 
+# Bypass
+ MAGIC_WORMHOLE_GALACTIC: "Magic Wormhole"
+ MAGIC_WORMHOLE_GALACTIC_DESC: "An esoteric breach in space, sustained by supernatural means."
+
 # Celestial Energy stuff
  d_darkling_storm: "Dark Storm"
  d_darkling_storm: "A massive storm of inter-dimensional flux, encompassing the entire planet. Anything entering it is likely to be struck by pure energy and disabled, or vaporized."
@@ -89,3 +108,6 @@
 
  d_darkling_horde: "Darkling Horde"
  d_darkling_horde_desc: "A horde of Darklings in their true form, able to manifest themselves on worlds that have been sufficiently supplanted by their dark counterpart."
+
+ dark_world_events.03.title: "The Great Cataclysm"
+ dark_world_events.03.desc: "A disaster has come to [This.GetName], life has been supernaturally struck from the surface. The ecosystem has been warped and now struggles to continue in its present state, the environment has shifted drastically and has rendered the planet quite inhospitable to its native population. And finally, a dark energized storm has shrouded the planet, largely obscuring sunlight and disrupting air and space traffic."
