@@ -2,6 +2,9 @@
 # Average: 	Gaia - Tropical - Continental - Alpine - Tundra - Arctic - Barren (Cold)
 # Cold: 	Gaia - Tropical - Ocean - 		Alpine - Tundra - Arctic - Frozen 
 
+# Class O - B - A - F - G - K - M - M Giant - T
+# Dropping O for now.
+
 celestial_energy_type_effect = {
 	planet = {
 		if = {
@@ -101,6 +104,418 @@ celestial_energy_type_effect = {
 				is_planet_class = pc_frozen
 			}
 			set_planet_flag = ce_cold
+		}
+	}
+}
+
+celestial_energy_fill_planet_effect = {
+	planet = {
+		if = { # Warm
+			limit = {
+				has_planet_flag = ce_warm
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_tropical
+				}
+				change_pc = pc_gaia
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_continental
+				}
+				change_pc = pc_tropical
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_arid
+				}
+				change_pc = pc_continental
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_savannah
+				}
+				change_pc = pc_arid
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_desert
+				}
+				change_pc = pc_savannah
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_barren
+				}
+				change_pc = pc_desert
+			}
+		}
+		else_if = { # Average
+			limit = {
+				has_planet_flag = ce_average
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_tropical
+				}
+				change_pc = pc_gaia
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_continental
+				}
+				change_pc = pc_tropical
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_alpine
+				}
+				change_pc = pc_continental
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_tundra
+				}
+				change_pc = pc_alpine
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_arctic
+				}
+				change_pc = pc_tundra
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_barren_cold
+				}
+				change_pc = pc_arctic
+			}
+		}
+		else_if = { # Cold
+			limit = {
+				has_planet_flag = ce_cold
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_tropical
+				}
+				change_pc = pc_gaia
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_ocean
+				}
+				change_pc = pc_tropical
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_alpine
+				}
+				change_pc = pc_ocean
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_tundra
+				}
+				change_pc = pc_alpine
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_arctic
+				}
+				change_pc = pc_tundra
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_frozen
+				}
+				change_pc = pc_arctic
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_planet_flag = ce_warm
+					has_planet_flag = ce_average
+					has_planet_flag = ce_cold
+				}
+			}
+			celestial_energy_type_effect = yes
+			celestial_energy_fill_planet_effect = yes
+		}
+	}
+}
+
+celestial_energy_drain_planet_effect = {
+	planet = {
+		if = { # Warm
+			limit = {
+				has_planet_flag = ce_warm
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_gaia
+				}
+				change_pc = pc_tropical
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_tropical
+				}
+				change_pc = pc_continental
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_continental
+				}
+				change_pc = pc_arid
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_arid
+				}
+				change_pc = pc_savannah
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_savannah
+				}
+				change_pc = pc_desert
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_desert
+				}
+				change_pc = pc_barren
+				destroy_colony = yes
+			}
+		}
+		else_if = { # Average
+			limit = {
+				has_planet_flag = ce_average
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_gaia
+				}
+				change_pc = pc_tropical
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_tropical
+				}
+				change_pc = pc_continental
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_continental
+				}
+				change_pc = pc_alpine
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_alpine
+				}
+				change_pc = pc_tundra
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_tundra
+				}
+				change_pc = pc_arctic
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_arctic
+				}
+				change_pc = pc_barren_cold
+				destroy_colony = yes
+			}
+			
+		}
+		else_if = { # Cold
+			limit = {
+				has_planet_flag = ce_cold
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_gaia
+				}
+				change_pc = pc_tropical
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_ocean
+				}
+				change_pc = pc_alpine
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_alpine
+				}
+				change_pc = pc_tundra
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_tundra
+				}
+				change_pc = pc_arctic
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_arctic
+				}
+				change_pc = pc_frozen
+				destroy_colony = yes
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_planet_flag = ce_warm
+					has_planet_flag = ce_average
+					has_planet_flag = ce_cold
+				}
+			}
+			celestial_energy_type_effect = yes
+			celestial_energy_drain_planet_effect = yes
+		}
+	}
+}
+
+celestial_energy_fill_star_effect = {
+	planet = {
+		if = {
+			limit = {
+				is_planet_class = pc_a_star
+			}
+			change_pc = pc_b_star
+			solar_system = {
+				set_star_class = sc_b
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_f_star
+			}
+			change_pc = pc_a_star
+			solar_system = {
+				set_star_class = sc_a
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_g_star
+			}
+			change_pc = pc_f_star
+			solar_system = {
+				set_star_class = sc_f
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_k_star
+			}
+			change_pc = pc_g_star
+			solar_system = {	
+				set_star_class = sc_g
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_m_star
+			}
+			change_pc = pc_k_star
+			solar_system = {
+				set_star_class = sc_k
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_m_giant_star
+			}
+			change_pc = pc_m_star
+			solar_system = {
+				set_star_class = sc_m
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_t_star
+			}
+			change_pc = pc_m_giant_star
+			solar_system = {
+				set_star_class = sc_m_giant
+			}
+		}
+	}
+}
+
+celestial_energy_drain_star_effect = {
+	planet = {
+		if = {
+			limit = {
+				is_planet_class = pc_b_star
+			}
+			change_pc = pc_a_star
+			solar_system = {
+				set_star_class = sc_a
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_a_star
+			}
+			change_pc = pc_f_star
+			solar_system = {
+				set_star_class = sc_f
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_f_star
+			}
+			change_pc = pc_g_star
+			solar_system = {
+				set_star_class = sc_g
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_g_star
+			}
+			change_pc = pc_k_star
+			solar_system = {	
+				set_star_class = sc_k
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_k_star
+			}
+			change_pc = pc_m_star
+			solar_system = {
+				set_star_class = sc_m
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_m_star
+			}
+			change_pc = pc_m_giant_star
+			solar_system = {
+				set_star_class = sc_m_giant
+			}
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_m_giant_star
+			}
+			change_pc = pc_t_star
+			solar_system = {
+				set_star_class = sc_t
+			}
 		}
 	}
 }

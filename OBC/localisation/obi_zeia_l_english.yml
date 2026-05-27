@@ -95,8 +95,8 @@
  leader_trait_uviik: "Uviik"
  leader_trait_uviik_desc: "The Synthetics, or Kas Uviik. Are the artificial bio-crystalline based machine intelligences of the Collective, their name is a broad term to specify practically all forms of mobile and autonomous machinery within the collective."
 
- leader_trait_guild_arch: "Guild Arch"
- leader_trait_guild_arch_desc: "The Guild Archs are the most talented and respected individual in the guilds of Kas Zei'a, second only to their leaders the Sentinels."
+ leader_trait_guild_grand: "Guild Grand"
+ leader_trait_guild_grand_desc: "The Guild Grand are the most talented and respected individual in the guilds of Kas Zei'a, second only to their leaders the Sentinels."
  
 
  leader_trait_aurora_uviik: "Aurora-Class Uviik"
@@ -106,68 +106,77 @@
  lantean_01_shipset_desc: "The vessels of the Precursors."
 
 # Armies
- forerunner_aggressor_sentinels: "Aggressor Uviik"
- forerunner_aggressor_sentinels_desc: "Swarms of autonomous constructs built to seek out and destroy hostiles."
+ # Sob'sha
+ zeia_sobsha_assault: "Sob'sha Army"
+ zeia_sobsha_assault_desc: "An army of Sob'sha outfitted with basic zei'a weaponry and equipment."
+
+ zeia_sobsha_exosuit_assault: "Sob'sha Exosuit Division"
+ zeia_sobsha_exosuit_assault: "An combat group of Sob'sha piloting large mechanized exosuits, these mechs have a number of different weapons and utilities, making them quite effective in strike operations."
+
+ # Kvil'sha
+ zeia_lesser_bellator_cadre: "Lesser Bellator Cadre"
+ zeia_lesser_bellator_cadre_desc: "A battle group of Lesser Bellators, acting as a precise strike force. And doubling to act as simple majors to manage sob'sha."
  
- forerunner_super_sentinels: "Super Uviik"
- forerunner_super_sentinels_desc: "A larger variant of the Aggressor Uviik, these constructs use a high-powered beam to combat larger hostile targets."
+ zeia_lesser_bellator_garrison: "Lesser Bellator Garrison"
+ zeia_lesser_bellator_garrison_desc: "A battle group of Lesser Bellators, acting as a precise strike force. And doubling to act as simple majors to manage sob'sha."
  
- forerunner_onyx_sentinels: "Rezbit Uviik"
- forerunner_onyx_sentinels_desc: "A unique and powerful variant of the Uviik, Rezbits function as patrol enforcers. But they are incredibly dangerous, capable of releasing a highly potent electronic virus that fries the operating system of any digital equipment in its immediate area, used to quickly dispatch any corrupted Uviik enthralled by the Scourge. Beyond its powerful electronical warfare suite, it's defended by energy shields and it's capable of unleashing torrents of attacks using its advanced weaponry. In dire situations, the Rezbit can temporarily void-shroud and perform tactical retreats or strategic repositioning."
+ zeia_bellator_cadre: "Bellator Cadre"
+ zeia_bellator_cadre_desc: "A more experienced and refined battlegroup of Bellators, they form task forces capable of executing any number of tactical operations, they also command lesser bellator cadres."
  
- forerunner_strato_sentinel: "Quad Uviik"
- forerunner_strato_sentinel_desc: "The strongest of the conventional combat Uviik'zu, the Quad is a quadrupedal walker armied with several weapons and defended by energy shields, its main body and head work separately from one another. If one is taken out of commission, the other will detach and continue fighting until the entire unit has been reduced to scrap."
+ zeia_bellator_garrison: "Bellator Garrison"
+ zeia_bellator_garrison_desc: "A more experienced and refined battlegroup of Bellators, they form task forces capable of executing any number of tactical operations, they also command lesser bellator cadres."
+
+ zeia_ingvala: "Kvil'sha Ingvala Mech"
+ zeia_ingvala_desc: "The most sophisticated of Kvil'sha mechanised warfare, the Ingvala, or Scourge Crusher. Is a massive Kvil'sha exosuit which uses a combination of esoteric weapons technology, shielding, and zei'a hax to perform wild feats of devastation and warfare. The mech is also home to an Uviik intelligence, which usually assists the pilot, but can also autonomously control the mech instead of a Kvil'sha user."
+
+ zeia_grand_bellator_cadre: "Grand Bellator Cadre"
+ zeia_grand_bellator_cadre_desc: "The highest and most respected Cadre in Kas Zei'a. These soldiers utilize an assortment of advanced combat techniques, and have at their disposal the full arsenal of Kas Zei'a. They are highly experienced, dedicated, versatile, and hyperlethal. Virtually all of them are bladedancers of varying degrees of proficiency."
  
+ zeia_grand_bellator_garrison: "Grand Bellator Cadre Garrison"
+ zeia_grand_bellator_garrison_desc: "The highest and most respected Cadre in Kas Zei'a. These soldiers utilize an assortment of advanced combat techniques, and have at their disposal the full arsenal of Kas Zei'a. They are highly experienced, dedicated, versatile, and hyperlethal. Virtually all of them are bladedancers of varying degrees of proficiency."
+
+ zeia_exoform: "Kvil'sha Exoform"
+ zeia_exoform_desc: "The most advanced of Zei'a personal defense, a Kvil'sha equipped with an Exoform can create any tool, weapon, or device known to the Collective spontaneously through the use of matter-energy conversion."
+
+ # Uviik
+ uviik_lightflyer: "Lightflyer Uviik"
+ uviik_lightflyer_desc: "Lightflyers resemble shifting clusters of numerous yellow motes of light, they'll swarm their target and burrow through them in streams, resembling the much larger and more powerful Drone Weapons."
+ 
+ uviik_lightflyer_garrison: "Lightflyer Uviik Garrison"
+ uviik_lightflyer_garrison_desc: "Lightflyers resemble shifting clusters of numerous yellow motes of light, they'll swarm their target and burrow through them in streams, resembling the much larger and more powerful Drone Weapons."
+
+ uviik_invictus: "Invictus Uviik"
+ uviik_invictus: "The Invictus is a bipedal zei'a-noid type Uviik, vaguely resembling a sob'sha. Its limbs can transform between several types of tools, devices, and weapons on command."
+ 
+ uviik_rezbit: "Rezbit Uviik"
+ uviik_rezbit_desc: "A unique and powerful variant of the Uviik, Rezbits function as patrol enforcers. But they are incredibly dangerous, capable of releasing a highly potent electronic virus that fries the operating system of any digital equipment in its immediate area, used to quickly dispatch any corrupted Uviik enthralled by the Scourge. Beyond its powerful electronical warfare suite, it's defended by energy shields and it's capable of unleashing torrents of attacks using its advanced weaponry. In dire situations, the Rezbit can temporarily void-shroud and perform tactical retreats or strategic repositioning."
+ 
+ uviik_rezbit_garrison: "Rezbit Uviik"
+ uviik_rezbit_desc: "A unique and powerful variant of the Uviik, Rezbits function as patrol enforcers. But they are incredibly dangerous, capable of releasing a highly potent electronic virus that fries the operating system of any digital equipment in its immediate area, used to quickly dispatch any corrupted Uviik enthralled by the Scourge. Beyond its powerful electronical warfare suite, it's defended by energy shields and it's capable of unleashing torrents of attacks using its advanced weaponry. In dire situations, the Rezbit can temporarily void-shroud and perform tactical retreats or strategic repositioning."
+
+ uviik_quad: "Quad Uviik"
+ uviik_quad_desc: "The strongest of the conventional combat Uviik'zu, the Quad is a quadrupedal walker armed with several weapons and defended by energy shields, its main body and head work separately from one another. If one is taken out of commission, the other will detach and continue fighting until the entire unit has been reduced to scrap."
+ 
+ uviik_quad_garrison: "Quad Uviik"
+ uviik_quad_desc: "The strongest of the conventional combat Uviik'zu, the Quad is a quadrupedal walker armed with several weapons and defended by energy shields, its main body and head work separately from one another. If one is taken out of commission, the other will detach and continue fighting until the entire unit has been reduced to scrap."
+
  forerunner_enforcer_sentinels: "Enforcer Uviik"
  forerunner_enforcer_sentinels_desc: "A larger variant of combat Uviik used to defend key installations and armed with additional weaponry and a frontal shield to combat hostile targets."
  
- forerunner_controller_sentinels: "Quadraxis Uviik"
- forerunner_controller_sentinels_desc: "A colossal Uviik armed with mini-drone launchers, along with various psionic combat systems which attack targets both telepathically and telekinetically. It's heavily shielded, rendering it impervious to most conventional weaponry. The Quadraxis types are used to defend key locations and counter escalating threats." 
+ uviik_quadraxis: "Quadraxis Uviik"
+ uviik_quadraxis_desc: "A colossal Uviik armed with lightflyer fabricators, along with various psionic combat systems which attack targets both telepathically and telekinetically. It's heavily shielded, rendering it impervious to most conventional weaponry. The Quadraxis types are used as mobile enforcement platforms, capable of annihilating armies both defensively and offensively." 
+
+ uviik_twilight_seekers: "Twilight Seekers"
+ uviik_twilight_seekers_desc: "The Seeker Form was designed to focus on Ascended Perception, holding the ability to precisely scan their surroundings and even the entire planet they're on down to the sub-atomic level, much like an Ascended Being could. They were placed into service primarily as Scourge Detectors, while not being as powerful in combat as other Twilight classes, they were still quite formidable and were found to be efficient hunter-killers. "
  
- forerunner_armiger_army: "Armiger Soldiers"
- forerunner_armiger_army_desc: "A bipedal Zei'a combat Uviik used in planetary operations to support Forerunner Warrior-Servants in battle."
+ uviik_twilight_reapers: "Twilight Reapers"
+ uviik_twilight_reapers_desc: "The Reaper Form was designed to replace virtually all battle Uviik and even the War Beasts themselves, programmed with the specifications for every practical and theoretical zei'a weapon and shielding. The Reaper could produce any armament for any opponent, and any defense from every threat. Defeating a Reaper would be effectively nigh impossible. "
  
- forerunner_warrior_servant_army: "Lesser Bellator Cadre"
- forerunner_warrior_servant_army_desc: "Warriors armed with varying types of exoforms tasked with the warfare and defense of Kas Zei'a. Although the Kvil'sha themselves prefered to see themselves as peaceful, the Agon Guild's Lesser Bellators were utterly ruthless and thorough in battle, believing that defiance of their rule was equal to showing contempt to the Mantle itself."
+ uviik_twilight_wardens: "Twilight Wardens"
+ uviik_twilight_wardens_desc: "The Warden Form was designed with total access to Ascended Psionics and awareness, being on-par with a true Ascended Being in terms of intellect, memory, processing, and computational power. Serving mostly as administrative units, many CNUs were directly uploaded into Warden Constructs in order to circumvent the limitations of the Library. As Warden Constructs could psionically behave like an Ascended Kvil'sha and directly communicate infinite amounts of information with an intended target instead of publishing it onto the Library so that the un-ascended could process the information too. This created a form of ascended Network which was only accessible to beings of such stature."
  
- forerunner_warrior_servant_defense_army: "Lesser Bellator Garrison"
- forerunner_warrior_servant_defense_army_desc: "Forerunner warriors tasked with planetary defense, each warrior-servant is psychologically resilient, willing to fight and die in service to the Collective."
- 
- forerunner_war_sphinx: "Bellator Warcaskets"
- forerunner_war_sphinx_desc: "A Powerful and versatile bipedal war machine operated by Warrior-Servants to serve as acting as escorts, air-superiority fighters, or bombardment platforms used to decimate entire armies or cities."
- 
- promethean_warrior_servant_army: "Grand Bellator Cadre"
- promethean_warrior_servant_army_desc: "The highest and most respected Cadre in Kas Zei'a. These soldiers utilize an assortment of advanced combat skins and are biologically augmented with increased muscle mass, sophisticated mental acuity, and sensory functions far surpassing Lesser Bellators."
- 
- promethean_warrior_servant_defense_army: "Grand Bellator Cadre Garrison"
- promethean_warrior_servant_defense_army_desc: "Promethean-class Warrior-Servants represent the pinnacle of forerunner technology and military might. These genetically-enhanced supersoldiers will defend this world with unquestioning zeal in service to the Mantle."
- 
- promethean_phaetons: "Ingvala Uviik"
- promethean_phaetons_desc: "The most sophisticated of combat Uviik, the Ingvala, or Scourge Crusher. Is a massive Kvil'sha sized Uviik which uses a combination of esoteric weapons technology, shielding, and zei'a hax to perform wild feats of devastation and warfare.""
- 
- promethean_seekers: "Grand Bellator Exoforms"
- promethean_seekers_desc: "Advanced combat suits superior to the traditional warcaskets used by the Agon Bellators. Exoforms are more streamlined and equipped with even more powerful weapons, movement, and defensive capabilities."  
- 
- promethean_crawler_army: "Promethean Crawlers"
- promethean_crawler_army_desc: "Aggressive autonomous Forerunner defense constructs in the form of small, quadrupedal machines capable of both ranged and close-quarters combat. They are used to overwhelm enemy positions."
- 
- promethean_watchers: "Promethan Watchers"
- promethean_watchers_desc: "Promethean constructs that serve as a supporting role, assisting other Promethean ground units with aerial combat screening."
- 
- promethean_soldier_army: "Promethean Soldiers"
- promethean_soldier_army_desc: "Promethean Armigers armed with a variety of weaponry. Their bipedal forms and agility allows them to raid and assault enemy targets with impunity."
- 
- promethean_knight_army: "Twilight Seekers"
- promethean_knight_army_desc: "The Seeker Form was designed to focus on Ascended Perception, holding the ability to precisely scan their surroundings and even the entire planet they're on down to the sub-atomic level, much like an Ascended Being could. They were placed into service primarily as Scourge Detectors, while not being as powerful in combat as other Twilight classes, they were still quite formidable and were found to be efficient hunter-killers. "
- 
- promethean_lancer_army: "Twilight Reapers"
- promethean_lancer_army_desc: "The Reaper Form was designed to replace virtually all battle Uviik and even the War Beasts themselves, programmed with the specifications for every practical and theoretical zei'a weapon and shielding. The Reaper could produce any armament for any opponent, and any defense from every threat. Defeating a Reaper would be effectively nigh impossible. "
- 
- promethean_battlewagon_army: "Twilight Wardens"
- promethean_battlewagon_army_desc: "The Warden Form was designed with total access to Ascended Psionics and awareness, being on-par with a true Ascended Being in terms of intellect, memory, processing, and computational power. Serving mostly as administrative units, many CNUs were directly uploaded into Warden Constructs in order to circumvent the limitations of the Library. As Warden Constructs could psionically behave like an Ascended Kvil'sha and directly communicate infinite amounts of information with an intended target instead of publishing it onto the Library so that the un-ascended could process the information too. This created a form of ascended Network which was only accessible to beings of such stature."
- 
- warden_eternal: "Library Sentinel"
- warden_eternal_desc: "The Library Sentinel is a psionic entity derived from the Library, the metaphysical Zei'a repository of knowledge. It exists for the purpose of chasing away potential threats to the Library, for it will not tolerate any of its knowledge being destroyed, nor will it accept its information to be abused." 
+ library_sentinel: "Library Sentinel"
+ library_sentinel_desc: "The Library Sentinel is a psionic entity derived from the Library, the metaphysical Zei'a repository of knowledge. It exists for the purpose of chasing away potential threats to the Library, for it will not tolerate any of its knowledge being destroyed, nor will it accept its information to be abused." 
 
 # Ship Sections
  CR_WMG_SINGLE: "Wave Motion Gun Single"

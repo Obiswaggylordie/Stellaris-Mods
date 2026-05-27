@@ -968,6 +968,28 @@ tech_zeia_chair = {
 	}
 }
 
+tech_loskvash_project = {
+	cost = 1000
+	area = society
+	tier = 1
+	is_rare = yes
+	category = { biology }
+	prerequisites = { "tech_zeia_biocomputing" }
+	weight = @tier1weight1
+
+	potential = {  
+		has_origin = origin_obi_zeia
+	} 
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
 tech_cr_access = {
 	cost = 10000
 	area = engineering

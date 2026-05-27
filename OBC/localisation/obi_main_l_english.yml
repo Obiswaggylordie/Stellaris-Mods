@@ -111,3 +111,6 @@
 
  dark_world_events.03.title: "The Great Cataclysm"
  dark_world_events.03.desc: "A disaster has come to [This.GetName], life has been supernaturally struck from the surface. The ecosystem has been warped and now struggles to continue in its present state, the environment has shifted drastically and has rendered the planet quite inhospitable to its native population. And finally, a dark energized storm has shrouded the planet, largely obscuring sunlight and disrupting air and space traffic."
+
+ dark_world_events.04.title: "Terrible Rifts"
+ dark_world_events.04.desc: "As if the great storm shrouding [This.GetName] was not enough, mysterious purple rifts have opened all over the planet. These rifts cause electrical disturbances around them, and seem to radiate some kind of toxic energy."

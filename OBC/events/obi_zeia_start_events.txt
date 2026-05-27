@@ -102,7 +102,7 @@ country_event = {
 		from = {
 			species = { has_trait = trait_kvilsha }
 			NOT = {
-				has_trait = leader_trait_guild_arch
+				has_trait = leader_trait_guild_grand
 			}
 		}
 	}
@@ -114,7 +114,7 @@ country_event = {
                     has_total_skill > 5
                 }
                 add_trait = {
-                    trait = leader_trait_guild_arch
+                    trait = leader_trait_guild_grand
                     show_message = yes
                 }
             }

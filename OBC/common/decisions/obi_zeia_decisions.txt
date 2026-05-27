@@ -620,16 +620,16 @@ decision_activate_energy_controller = {
 				is_star = no
 				is_artificial = no
 			}
-			if = {
-				limit = {
-					NOR = {
-						has_planet_flag = ce_warm
-						has_planet_flag = ce_average
-						has_planet_flag = ce_cool
-					}
-				}
-				celestial_energy_type_effect = yes
-			}
+			#if = {
+			#	limit = {
+			#		NOR = {
+			#			has_planet_flag = ce_warm
+			#			has_planet_flag = ce_average
+			#			has_planet_flag = ce_cool
+			#		}
+			#	}
+			#	celestial_energy_type_effect = yes
+			#}
 			from = {
 				country_event = { id = celestial_energy_events.1 }
 			}

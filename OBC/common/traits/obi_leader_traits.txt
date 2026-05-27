@@ -162,10 +162,10 @@ leader_trait_uviik = {
 	notify_on_gained = no 
 }
 
-leader_trait_guild_arch = {
+leader_trait_guild_grand = {
 	is_councilor_trait_for_ruler = yes
 	cost = 0
-	icon = "gfx/interface/icons/traits/leader_trait_guild_arch2.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_guild_grand.dds"
 
 	self_modifier = {
 		leader_skill_levels = 5

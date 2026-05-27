@@ -485,7 +485,7 @@ planet_event = {
 	}
 }
 
-# Dark World creation 2: GFX event and storm creation
+# Dark World creation 2: GFX event - storm creation
 planet_event = {
 	id = dark_world_events.03
 	hide_window = no
@@ -505,5 +505,26 @@ planet_event = {
 				percentage = 0.5
 			}
 		}
+		planet_event = {
+			id = dark_world_events.04
+			days = 30
+		}
+	}
+}
+
+# Dark World creation 3: GFX event - Darkling Rifts
+planet_event = {
+	id = dark_world_events.04
+	hide_window = no
+	is_triggered_only = yes
+	title = "dark_world_events.04.name"
+	desc = "dark_world_events.04.desc"
+	picture = GFX_dark_storm
+	show_sound = event_red_alert
+	location = this
+
+	immediate = {
+		add_deposit = d_darkling_rifts
+		add_planet_devastation = 15
 	}
 }
