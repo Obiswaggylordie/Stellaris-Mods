@@ -1,6 +1,6 @@
 on_game_start_country = {
 	events = {
-		zeiastart.01
+		zeia_events.01 # Zei'a Startup
 	}
 }
 
@@ -35,16 +35,16 @@ on_yearly_pulse_country = {
 
 on_leader_level_up = {
 	events = {
-		zeiastart.02 # Kvil'sha Traits
-		zeiastart.03 # Uviik Traits
-		zeiastart.04 # Guild Arch Promotion
+		zeia_events.02 # Kvil'sha Traits
+		zeia_events.03 # Uviik Traits
+		zeia_events.04 # Guild Arch Promotion
 	}
 }
 
 on_leader_spawned = {
 	events = {
-		zeiastart.02 # Kvil'sha Traits
-		zeiastart.03 # Uviik Traits
+		zeia_events.02 # Kvil'sha Traits
+		zeia_events.03 # Uviik Traits
 	}
 }
 
@@ -61,7 +61,7 @@ on_added_to_leader_pool = {
 # From = System
 on_entering_system_fleet = {
 	events = {
-		attero.1
+		attero.1 # Attero master event, deals 1 mil damage to ships arriving to the system if they resolve to true.
 	}
 }
 

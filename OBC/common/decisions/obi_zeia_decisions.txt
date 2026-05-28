@@ -148,6 +148,89 @@ decision_install_submonitor = {
 	}
 }
 
+decision_aether_development = {
+	owned_planets_only = yes
+	icon = decision_kas_Zeia
+	
+	enactment_time = 365
+	resources = {
+		category = decisions 
+		cost = {
+			minerals = 5000
+			alloys = 5000
+			energy = 5000
+		}
+	}
+	
+	potential = {
+		has_deposit = d_aether
+		NOT = {
+			has_deposit = d_naos_great_temple
+			has_deposit = d_agon_colosseum
+			has_deposit = d_torvus_central_hydrodynamo
+			has_deposit = d_fanum_hall_of_astronomy
+		}
+	}
+	
+	effect = {
+		if = { # Naós Expansion
+			limit = {
+				NOT = {
+					has_deposit = d_naos_great_temple
+					has_deposit = d_agon_colosseum
+					has_deposit = d_torvus_central_hydrodynamo
+					has_deposit = d_fanum_hall_of_astronomy
+				}
+			}
+			add_deposit = d_naos_great_temple
+			add_deposit = d_naos_council_pavilion
+			add_deposit = d_naos_hall_of_records
+			add_deposit = d_naos_embassy_complex
+			add_deposit = d_naos_city_ship_hex_docks
+		}
+		else_if = { # Agon Expansion
+			limit = {
+				has_deposit = d_naos_great_temple
+				NOT = {
+					has_deposit = d_agon_colosseum
+					has_deposit = d_torvus_central_hydrodynamo
+					has_deposit = d_fanum_hall_of_astronomy
+				}
+			}
+			add_deposit = d_agon_colosseum
+			add_deposit = d_agon_grand_factorum
+		}
+		else_if = { # Torvus Expansion
+			limit = {
+				has_deposit = d_naos_great_temple
+				has_deposit = d_agon_colosseum
+				NOT = {
+					has_deposit = d_torvus_central_hydrodynamo
+					has_deposit = d_fanum_hall_of_astronomy
+				}
+			}
+			add_deposit = d_torvus_central_hydrodynamo
+			add_deposit = d_torvus_preserve
+		}
+		else_if = { # Fanum Expansion
+			limit = {
+				has_deposit = d_naos_great_temple
+				has_deposit = d_agon_colosseum
+				has_deposit = d_torvus_central_hydrodynamo
+				NOT = {
+					has_deposit = d_fanum_hall_of_astronomy
+				}
+			}
+			add_deposit = d_fanum_hall_of_astronomy
+			add_deposit = d_fanum_sanctuary_fortress
+		}
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
 # Access Relay Control
 decision_relay_control = {
 	owned_planets_only = yes
@@ -187,9 +270,7 @@ decision_seal_obicitadel = {
 	resources = {
 		category = decisions 
 		cost = {
-			minerals = 5000
-			alloys = 5000
-			energy = 5000
+			energy = 100
 		}
 	}
 	
@@ -222,9 +303,7 @@ decision_unseal_obicitadel = {
 	resources = {
 		category = decisions 
 		cost = {
-			minerals = 5000
-			alloys = 5000
-			energy = 5000
+			energy = 100
 		}
 	}
 	
@@ -434,10 +513,17 @@ decision_activate_chair_outpost = {
 	
 	effect = {
 		random_list = {
-			95 = { # Chance where chair deals 1 million hull damage to every hostile ship in orbit of the planet.
+			95 = { # Chance where chair deals 500k hull damage to unwoned ship in orbit of the planet.
 				every_fleet_in_orbit = {
-					every_owned_ship = {
-						reduce_hp = 500000
+					if = {
+						limit = {
+							NOT = {
+								is_owned_by = root
+							}
+						}
+						every_owned_ship = {
+							reduce_hp = 500000
+						}
 					}
 				}
 			}
@@ -601,24 +687,11 @@ decision_activate_energy_controller = {
 		}
 	}
 
-	allow = {
-		NOR = {
-			is_planet_class = pc_barren
-			is_planet_class = pc_barren_cold
-			is_planet_class = pc_frozen
-			is_planet_class = pc_toxic
-			is_planet_class = pc_molten
-			is_planet_class = pc_shattered
-			is_planet_class = pc_shattered_2
-		}
-	}
-
 	effect = {
 		save_global_event_target_as = ce_target
 		if = {
 			limit = {
-				is_star = no
-				is_artificial = no
+				planet_has_celestial_energy = yes
 			}
 			#if = {
 			#	limit = {
@@ -681,7 +754,6 @@ decision_build_energy_controller = {
 
 
 ## Destroy cringe robots
-
 decision_cringe_robots = {
 	owned_planets_only = yes
 	icon = decision_shield_world_slipspace_bubble
@@ -832,40 +904,40 @@ decision_construct_uviik = {
 #	}
 #}
 #
-#dtf_factory_full_operation = {
-#	owned_planets_only = yes
-#	sound = event_administrative_work
-#	icon = decision_resources
-#
-#	resources = {
-#		category = decisions
-#		cost = {
-#			influence = 200
-#			energy = 50000
-#		}
-#	}
-#
-#	prerequisites = {
-# 		"tech_cr_access"
-# 	}
-#
-#	potential = {
-#		exists = owner
-#		planet = { has_active_building = building_cr_dtf_factory }
-#	}
-#
-#	allow = {
-#		NOT = { has_modifier = dtf_pm_factory_full_operation }
-#	}
-#
-#	effect = {
-#		add_modifier = { modifier = "dtf_pm_factory_full_operation" days = 360 }
-#	}
-#
-#	ai_weight = {
-#		weight = 0
-#	}
-#}
+dtf_factory_full_operation = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_time_fault
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 200
+			energy = 50000
+		}
+	}
+
+	prerequisites = {
+ 		"tech_cr_access"
+ 	}
+
+	potential = {
+		exists = owner
+		planet = { has_active_building = building_cr_dtf_factory }
+	}
+
+	allow = {
+		NOT = { has_modifier = dtf_pm_factory_full_operation }
+	}
+
+	effect = {
+		add_modifier = { modifier = "dtf_pm_factory_full_operation" days = 360 }
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
 #
 #gge_create_sroka = {
 #	owned_planets_only = yes

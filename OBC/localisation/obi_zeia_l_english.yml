@@ -245,6 +245,10 @@
 
 # Decisions
 
+ # Aether
+ decision_aether_development: "Aether Development Initiative"
+ decision_aether_development_desc: "Our Homeworld is splendid, but it could be so much more. We will begin a grand project to further develop Aether, expanding our four domains so that they may truly provide us with all services we may require."
+
  # Kvil'sha Project
  decision_kvilsha_project: "The Kvil'sha Project"
  decision_kvilsha_project_desc: "Kas Zei'a seeks perfection in the impossible, forcing the laws of nature to submit to their will, continuing to draft up genes after genes, the shape of these Kvil'sha being a stark difference to their original Sob'sha visage. Their total psionic power had been evolved to greater heights, and their potential was projected to be leagues ahead of any Sob'sha."

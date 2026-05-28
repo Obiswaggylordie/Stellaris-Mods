@@ -1,7 +1,7 @@
-namespace = zeiastart
+namespace = zeia_events
 
 country_event = {
-	id = zeiastart.01
+	id = zeia_events.01
 	hide_window = yes
 	is_triggered_only = yes
 	
@@ -24,27 +24,27 @@ country_event = {
 			set_planet_flag = ce_average
             add_deposit = d_aether
             add_deposit = d_naos_domain
-            add_deposit = d_naos_great_temple
-            add_deposit = d_naos_council_pavilion
-            add_deposit = d_naos_hall_of_records
-            add_deposit = d_naos_embassy_complex
-            add_deposit = d_naos_city_ship_hex_docks
+            #add_deposit = d_naos_great_temple
+            #add_deposit = d_naos_council_pavilion
+            #add_deposit = d_naos_hall_of_records
+            #add_deposit = d_naos_embassy_complex
+            #add_deposit = d_naos_city_ship_hex_docks
             add_deposit = d_agon_domain
-            add_deposit = d_agon_colosseum
-            add_deposit = d_agon_grand_factorum
+           # add_deposit = d_agon_colosseum
+           # add_deposit = d_agon_grand_factorum
             add_deposit = d_torvus_domain
-            add_deposit = d_torvus_central_hydrodynamo
-            add_deposit = d_torvus_preserve
+            #add_deposit = d_torvus_central_hydrodynamo
+            #add_deposit = d_torvus_preserve
             add_deposit = d_fanum_domain
-            add_deposit = d_fanum_hall_of_astronomy
-            add_deposit = d_fanum_sanctuary_fortress
+            #add_deposit = d_fanum_hall_of_astronomy
+            #add_deposit = d_fanum_sanctuary_fortress
 		}
     }
 }
 
 # Existing Kvil'sha Leaders get traits
 country_event = {
-	id = zeiastart.02
+	id = zeia_events.02
 	is_triggered_only = yes
 	hide_window = yes
 	
@@ -69,7 +69,7 @@ country_event = {
 
 # Existing Uviik Leaders get traits
 country_event = {
-	id = zeiastart.03
+	id = zeia_events.03
 	is_triggered_only = yes
 	hide_window = yes
 	
@@ -94,7 +94,7 @@ country_event = {
 
 # Guild Arch promotion
 country_event = {
-	id = zeiastart.04
+	id = zeia_events.04
 	is_triggered_only = yes
 	hide_window = yes
 	

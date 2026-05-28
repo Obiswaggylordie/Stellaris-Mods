@@ -4,6 +4,26 @@ can_destroy_planet_with_obi_planet_killer_cosmoreverse = {
 	}
 }
 
+planet_has_celestial_energy = {
+	planet = {
+		OR = {
+			is_planet_class = pc_gaia
+			is_planet_class = pc_tropical
+			is_planet_class = pc_continental
+			is_planet_class = pc_ocean
+			is_planet_class = pc_arid
+			is_planet_class = pc_alpine
+			is_planet_class = pc_savanna
+			is_planet_class = pc_tundra
+			is_planet_class = pc_desert
+			is_planet_class = pc_arctic
+			is_planet_class = pc_barren
+			is_planet_class = pc_barren_cold
+			is_planet_class = pc_frozen
+		}
+	}
+}
+
 has_void_relay = {
 	solar_system = {
 		OR = {
