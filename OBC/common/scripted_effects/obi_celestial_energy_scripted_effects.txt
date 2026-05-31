@@ -3,7 +3,6 @@
 # Cold: 	Gaia - Tropical - Ocean - 		Alpine - Tundra - Arctic - Frozen 
 
 # Class O - B - A - F - G - K - M - M Giant - T
-# Dropping O for now.
 
 celestial_energy_type_effect = {
 	planet = {
@@ -235,14 +234,14 @@ celestial_energy_fill_planet_effect = {
 		}
 		else_if = {
 			limit = {
-				NOT = {
+				NAND = {
 					has_planet_flag = ce_warm
 					has_planet_flag = ce_average
 					has_planet_flag = ce_cold
 				}
 			}
 			celestial_energy_type_effect = yes
-			celestial_energy_fill_planet_effect = yes
+			#celestial_energy_fill_planet_effect = yes
 		}
 	}
 }
@@ -372,14 +371,14 @@ celestial_energy_drain_planet_effect = {
 		}
 		else_if = {
 			limit = {
-				NOT = {
+				NAND = {
 					has_planet_flag = ce_warm
 					has_planet_flag = ce_average
 					has_planet_flag = ce_cold
 				}
 			}
 			celestial_energy_type_effect = yes
-			celestial_energy_drain_planet_effect = yes
+			#celestial_energy_drain_planet_effect = yes
 		}
 	}
 }
@@ -387,6 +386,15 @@ celestial_energy_drain_planet_effect = {
 celestial_energy_fill_star_effect = {
 	planet = {
 		if = {
+			limit = {
+				is_planet_class = pc_b_star
+			}
+			change_pc = pc_giga_o_star
+			solar_system = {
+				set_star_class = sc_giga_o_star
+			}
+		}
+		else_if = {
 			limit = {
 				is_planet_class = pc_a_star
 			}
@@ -455,6 +463,15 @@ celestial_energy_fill_star_effect = {
 celestial_energy_drain_star_effect = {
 	planet = {
 		if = {
+			limit = {
+				is_planet_class = pc_giga_o_star
+			}
+			change_pc = pc_b_star
+			solar_system = {
+				set_star_class = sc_b
+			}
+		}
+		else_if = {
 			limit = {
 				is_planet_class = pc_b_star
 			}

@@ -1,16 +1,16 @@
-component_set = {
-	key = "obi_planet_killer_cosmoreverse_cs"
-	
-	icon = "GFX_obi_cosmoreverse"
-	icon_frame = 1	
-}
+#component_set = {
+#	key = "obi_planet_killer_cosmoreverse_cs"
+#	
+#	icon = "GFX_obi_cosmoreverse"
+#	icon_frame = 1	
+#}
 
-component_set = {
-	key = "ASCENDED_CLOUD_LIGHTNING_SET"
-	
-	icon = "GFX_ascended_cloud_lightning"
-	icon_frame = 1	
-}
+#component_set = {
+#	key = "ASCENDED_CLOUD_LIGHTNING_SET"
+#	
+#	icon = "GFX_ascended_cloud_lightning"
+#	icon_frame = 1	
+#}
 
 component_set = {
 	key = "CONTROL_CHAIR_AUX"

@@ -85,7 +85,7 @@ country_event = { # Planetary Energy
 	}
 }
 
-country_event = { # Stellar Energy
+country_event = { # Stellar Energy (Sub O-Class)
 	id = celestial_energy_events.2
 	title = "celestial_energy_events.2.title"
 	desc = "celestial_energy_events.2.desc"
@@ -106,17 +106,29 @@ country_event = { # Stellar Energy
 				amount >= 1000
 			}
 			event_target:ce_target = {
-				NOT = { is_planet_class = pc_b_star }
+				NOT = { is_planet_class = pc_giga_o_star }
 			}
 		}
 
         hidden_effect = {
-			add_resource = {
-				sr_celestial_energy = -1000
+			if = {
+				limit = {
+					event_target:ce_target = {
+						is_planet_class = pc_b_star
+					}
+				}
+				country_event = {
+					id = celestial_energy_events.3
+				}	
 			}
-            event_target:ce_target = {
-				celestial_energy_fill_star_effect = yes
-            }
+			else = {
+				add_resource = {
+					sr_celestial_energy = -1000
+				}
+				event_target:ce_target = {
+					celestial_energy_fill_star_effect = yes
+				}	
+			}
         }
     }
 
@@ -146,6 +158,70 @@ country_event = { # Stellar Energy
 
 	option = { # Cancel
 		name = "celestial_energy_events.2.z"
+	}
+}
+
+country_event = { # Stellar Energy (O-Class)
+	id = celestial_energy_events.3
+	title = "celestial_energy_events.3.title"
+	desc = "celestial_energy_events.3.desc"
+	picture = GFX_energy_controller
+	show_sound = event_default
+	location = event_target:ce_target
+	
+	hide_window = no
+	is_triggered_only = yes
+	
+    option = { # Fill Energy Controllers
+        name = "celestial_energy_events.3.a"
+		
+		allow = {
+			has_technology = tech_zeia_energy_transfer_module
+			has_country_resource = {
+				type = sr_celestial_energy
+				amount >= 10000
+			}
+			event_target:ce_target = {
+				NOT = { is_planet_class = pc_giga_o_star }
+			}
+		}
+
+        hidden_effect = {
+			add_resource = {
+				sr_celestial_energy = -10000
+			}
+            event_target:ce_target = {
+				celestial_energy_fill_star_effect = yes
+            }
+        }
+    }
+
+    option = { # Drain Energy Controllers
+        name = "celestial_energy_events.3.b"
+		
+		allow = {
+			owner = {
+				has_technology = tech_zeia_energy_transfer_module
+			}
+			event_target:ce_target = {
+				NOT = {
+					is_planet_class = pc_t_star
+				}
+			}
+		}
+
+        hidden_effect = {
+			add_resource = {
+				sr_celestial_energy = 10000
+			}
+            event_target:ce_target = {
+				celestial_energy_drain_star_effect = yes
+            }
+        }
+    }
+
+	option = { # Cancel
+		name = "celestial_energy_events.3.z"
 	}
 }
 

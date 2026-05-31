@@ -306,7 +306,7 @@ tech_zeia_dark_beam = {
 	tier = 1
 	is_rare = yes
 	category = { particles }
-	prerequisites = { "tech_dark_rift" "tech_dark_hazard_suit" "tech_zeia_biocrystalline" }
+	prerequisites = { "tech_dark_rifts" "tech_dark_hazard_suit" "tech_zeia_biocrystalline" }
 	weight = @tier1weight1
 
 	potential = {
@@ -732,11 +732,45 @@ tech_void_relay = {
   	}
 }
 
+tech_void_relay_activation = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { particles }
+	#prerequisites = { "tech_void_science" }
+	weight = @tier4weight3
+	
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0
+			NOR = {
+				has_void_relay = yes
+				any_relation = {
+					is_country_type = default
+					has_communications = ROOT
+					has_technology = tech_void_relay_activation
+				}
+			}
+		}
+		modifier = {
+			factor = 4.0
+			has_void_relay = yes
+		}
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
 tech_void_drive = {
 	cost = 100000
 	area = physics
 	tier = 4
 	is_rare = yes
+	ai_update_type = all
 	category = { particles }
 	prerequisites = { "tech_void_relay" }
 	weight = @tier4weight3
@@ -755,6 +789,7 @@ tech_void_shroud = {
 	area = physics
 	tier = 4
 	is_rare = yes
+	ai_update_type = all
 	category = { particles }
 	prerequisites = { "tech_void_drive" }
 	weight = @tier4weight3
@@ -827,6 +862,7 @@ tech_zeia_thrust = {
 	area = physics
 	tier = 4
 	is_rare = yes
+	ai_update_type = all
 	category = { particles }
 	prerequisites = { "tech_thrusters_4" "tech_zeia_biocrystalline" }
 	weight = @tier4weight3
@@ -968,17 +1004,66 @@ tech_zeia_chair = {
 	}
 }
 
+tech_aegis_sphere = {
+	cost = 7500
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	ai_update_type = all
+	prerequisites = { "tech_zeia_sdc" }
+	weight = @tier1weight2
+
+	potential = {  
+		has_origin = origin_obi_zeia
+	} 
+	
+	modifier = {
+	}
+
+	weight_modifier = {
+		factor = 2
+	}
+	
+	ai_weight = {
+		factor = 2
+	}
+}
+
+tech_twilight_uviik = {
+	cost = 1000
+	area = society
+	tier = 1
+	is_rare = yes
+	category = { biology }
+	#prerequisites = { "tech_zeia_biocomputing" }
+	weight = @tier1weight1
+
+	potential = {  
+		has_origin = origin_obi_zeia
+		always = no
+	} 
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
 tech_loskvash_project = {
 	cost = 1000
 	area = society
 	tier = 1
 	is_rare = yes
 	category = { biology }
-	prerequisites = { "tech_zeia_biocomputing" }
+	#prerequisites = { "tech_zeia_biocomputing" }
 	weight = @tier1weight1
 
 	potential = {  
 		has_origin = origin_obi_zeia
+		always = no
 	} 
 	
 	weight_modifier = {

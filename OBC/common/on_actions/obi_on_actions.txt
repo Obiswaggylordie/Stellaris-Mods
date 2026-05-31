@@ -23,7 +23,7 @@ on_colony_monthly_pulse = {
 
 on_colony_yearly_pulse = {
 	events = {
-		dark_world_events.01 # Dark World master event, maximum 18% chance of a gaia world getting it.
+		#dark_world_events.01 # Dark World master event, maximum 18% chance of a gaia world getting it.
 	}
 }
 

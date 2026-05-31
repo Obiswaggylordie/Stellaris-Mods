@@ -16,5 +16,7 @@ utility_component_template = {
 	prerequisites = { "tech_ascended_cloud_form" }
 
 
-	ai_weight = 100000
+	ai_weight = {
+		weight = 100000
+	}
 }

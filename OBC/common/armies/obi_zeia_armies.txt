@@ -672,7 +672,7 @@ uviik_twilight_seekers = {
 		}
 	}
 	
-	prerequisites = { "tech_composer" }
+	prerequisites = { "tech_twilight_uviik" }
 	
 	allow = {
 		owner = {
@@ -698,7 +698,7 @@ uviik_twilight_reapers = {
 	damage = 25.0
 	health = 25.0
 	has_morale = no
-	morale_damage = 7.5.0
+	morale_damage = 7.5
 	collateral_damage = 5.0
 	war_exhaustion = 5.0
 	time = 100
@@ -717,7 +717,7 @@ uviik_twilight_reapers = {
 		}
 	}
 	
-	#rerequisites = { "tech_composer" }
+	prerequisites = { "tech_twilight_uviik" }
 	
 	allow = {
 		owner = {
@@ -762,7 +762,7 @@ uviik_twilight_wardens = {
 		}
 	}
 	
-	#prerequisites = { "tech_composer" }
+	prerequisites = { "tech_twilight_uviik" }
 	
 	allow = {
 		owner = {
@@ -836,7 +836,7 @@ library_sentinel = {
 	war_exhaustion = 0.0
 	has_species = no
 
-	icon = GFX_army_type_forerunner_warden_eternal
+	icon = GFX_army_zeia_naos
 
 	resources = {
 		category = armies

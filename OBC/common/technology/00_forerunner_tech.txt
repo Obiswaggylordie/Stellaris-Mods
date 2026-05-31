@@ -256,7 +256,7 @@
 #
 ## Shield World Fuckery
 #
-#tech_shield_worlds = {
+#tech_aegis_sphere = {
 #	cost = @tier5cost3
 #	area = engineering
 #	category = { voidcraft }

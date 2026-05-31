@@ -23,4 +23,16 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/dark_storm.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_dark_rifts"
+		texturefile = "gfx/event_pictures/dark_rifts.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ecological_disaster"
+		texturefile = "gfx/event_pictures/ecological_disaster.dds"
+		alwaystransparent = yes
+	}
 }

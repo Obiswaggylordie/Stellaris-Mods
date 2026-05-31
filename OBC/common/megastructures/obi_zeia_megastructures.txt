@@ -8,7 +8,7 @@
 void_relay = {
 	entity = "zeia_01_void_relay_entity"
 	construction_entity = "zeia_01_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	entity_offset = { x = 0 y = 0 }
 	
 	show_galactic_map_icon = no
@@ -59,7 +59,7 @@ void_relay = {
 void_relay_omega_inactive = {
 	entity = "zeia_02_void_relay_entity"
 	construction_entity = "zeia_02_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	entity_offset = { x = 0 y = 0 }
 	
 	show_galactic_map_icon = yes
@@ -104,7 +104,7 @@ void_relay_omega_inactive = {
 void_relay_alpha = {
 	entity = "zeia_01_void_relay_entity"
 	construction_entity = "zeia_01_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	entity_offset = { x = 0 y = 0 }
 	
 	show_galactic_map_icon = no
@@ -156,7 +156,7 @@ void_relay_alpha = {
 void_relay_alpha_inactive = {
 	entity = "zeia_02_void_relay_entity"
 	construction_entity = "zeia_02_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	entity_offset = { x = 0 y = 0 }
 	
 	show_galactic_map_icon = yes
@@ -198,7 +198,7 @@ void_relay_alpha_inactive = {
 void_relay_beta = {
 	entity = "zeia_01_void_relay_entity"
 	construction_entity = "zeia_01_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	entity_offset = { x = 0 y = 0 }
 	
 	show_galactic_map_icon = no
@@ -250,7 +250,7 @@ void_relay_beta = {
 void_relay_beta_inactive = {
 	entity = "zeia_02_void_relay_entity"
 	construction_entity = "zeia_02_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	entity_offset = { x = 0 y = 0 }
 	
 	show_galactic_map_icon = yes
@@ -292,7 +292,7 @@ void_relay_beta_inactive = {
 void_relay_delta = {
 	entity = "zeia_01_void_relay_entity"
 	construction_entity = "zeia_01_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	entity_offset = { x = 0 y = 0 }
 	
 	show_galactic_map_icon = no
@@ -343,7 +343,7 @@ void_relay_delta = {
 void_relay_delta_inactive = {
 	entity = "zeia_02_void_relay_entity"
 	construction_entity = "zeia_02_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	entity_offset = { x = 0 y = 0 }
 	
 	show_galactic_map_icon = yes
@@ -385,7 +385,7 @@ void_relay_delta_inactive = {
 void_relay_gamma = {
 	entity = "zeia_01_void_relay_entity"
 	construction_entity = "zeia_01_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	entity_offset = { x = 0 y = 0 }
 	
 	show_galactic_map_icon = no
@@ -437,7 +437,7 @@ void_relay_gamma = {
 void_relay_gamma_inactive = {
 	entity = "zeia_02_void_relay_entity"
 	construction_entity = "zeia_02_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	entity_offset = { x = 0 y = 0 }
 	
 	show_galactic_map_icon = yes
@@ -479,7 +479,7 @@ void_relay_gamma_inactive = {
 void_relay_lambda = {
 	entity = "zeia_01_void_relay_entity"
 	construction_entity = "zeia_01_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	entity_offset = { x = 0 y = 0 }
 	
 	show_galactic_map_icon = no
@@ -531,7 +531,7 @@ void_relay_lambda = {
 void_relay_lambda_inactive = {
 	entity = "zeia_02_void_relay_entity"
 	construction_entity = "zeia_02_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	entity_offset = { x = 0 y = 0 }
 	
 	show_galactic_map_icon = yes
@@ -573,7 +573,7 @@ void_relay_lambda_inactive = {
 void_relay_epsilon = {
 	entity = "zeia_01_void_relay_entity"
 	construction_entity = "zeia_01_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	entity_offset = { x = 0 y = 0 }
 	
 	show_galactic_map_icon = no
@@ -625,7 +625,7 @@ void_relay_epsilon = {
 void_relay_epsilon_inactive = {
 	entity = "zeia_02_void_relay_entity"
 	construction_entity = "zeia_02_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	entity_offset = { x = 0 y = 0 }
 	
 	show_galactic_map_icon = yes
@@ -668,7 +668,7 @@ void_relay_epsilon_inactive = {
 void_relay_perdition = {
 	entity = "zeia_01_void_relay_entity"
 	construction_entity = "zeia_01_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	entity_offset = { x = 0 y = 0 }
 	
 	show_galactic_map_icon = no
@@ -717,7 +717,7 @@ void_relay_perdition = {
 void_relay_deactivate = {
 	entity = "zeia_02_void_relay_entity"
 	construction_entity = "zeia_02_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
 	entity_offset = { x = 0 y = 0 }
@@ -761,7 +761,7 @@ void_relay_deactivate = {
 void_relay_inactive = {
 	entity = "zeia_02_void_relay_entity"
 	construction_entity = "zeia_02_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
 	entity_offset = { x = 0 y = 0 }
@@ -824,7 +824,7 @@ void_relay_inactive = {
 void_relay_dismantle = {
 	entity = "zeia_02_void_relay_entity"
 	construction_entity = "zeia_02_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
 	entity_offset = { x = 0 y = 0 }
@@ -868,7 +868,7 @@ void_relay_dismantle = {
 crucible = {
 	entity = "btr_crucible_mid_1_entity"
 	construction_entity = "btr_crucible_mid_1_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
 	entity_offset = { x = 0 y = 0 }
@@ -911,7 +911,7 @@ crucible = {
 crucible_dismantle = {
 	entity = "btr_crucible_mid_1_entity"
 	construction_entity = "btr_crucible_mid_1_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
 	entity_offset = { x = 0 y = 0 }
@@ -949,7 +949,7 @@ crucible_dismantle = {
 crucible_construct = {
 	entity = "btr_crucible_mid_1_entity"
 	construction_entity = "btr_crucible_mid_1_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
 	entity_offset = { x = 0 y = 0 }
@@ -1018,7 +1018,7 @@ crucible_construct = {
 citadel_inactive = {
 	entity = "zeia_04_void_relay_entity"
 	construction_entity = "zeia_04_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
 	entity_offset = { x = 0 y = 0 }
@@ -1067,7 +1067,7 @@ citadel_inactive = {
 citadel_omega = {
 	entity = "zeia_04_void_relay_entity"
 	construction_entity = "zeia_04_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
 	entity_offset = { x = 0 y = 0 }
@@ -1113,7 +1113,7 @@ citadel_omega = {
 citadel_alpha = {
 	entity = "zeia_04_void_relay_entity"
 	construction_entity = "zeia_04_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
 	entity_offset = { x = 0 y = 0 }
@@ -1159,7 +1159,7 @@ citadel_alpha = {
 citadel_beta = {
 	entity = "zeia_04_void_relay_entity"
 	construction_entity = "zeia_04_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
 	entity_offset = { x = 0 y = 0 }
@@ -1205,7 +1205,7 @@ citadel_beta = {
 citadel_delta = {
 	entity = "zeia_04_void_relay_entity"
 	construction_entity = "zeia_04_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
 	entity_offset = { x = 0 y = 0 }
@@ -1251,7 +1251,7 @@ citadel_delta = {
 citadel_gamma = {
 	entity = "zeia_04_void_relay_entity"
 	construction_entity = "zeia_04_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
 	entity_offset = { x = 0 y = 0 }
@@ -1297,7 +1297,7 @@ citadel_gamma = {
 citadel_lambda = {
 	entity = "zeia_04_void_relay_entity"
 	construction_entity = "zeia_04_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
 	entity_offset = { x = 0 y = 0 }
@@ -1343,7 +1343,7 @@ citadel_lambda = {
 citadel_epsilon = {
 	entity = "zeia_04_void_relay_entity"
 	construction_entity = "zeia_04_void_relay_entity"
-	portrait = "GFX_zeia_void_relay"
+	portrait = "GFX_void_relay"
 	place_entity_on_planet_plane = no
 	build_outside_gravity_well = yes
 	entity_offset = { x = 0 y = 0 }
@@ -1403,7 +1403,7 @@ zeia_shield_world_0 = {
 		}
 	}
 	
-	prerequisites = { "tech_shield_worlds" }
+	prerequisites = { "tech_aegis_sphere" }
 	
 	possible = {
 		exists = starbase

@@ -387,7 +387,7 @@ dtf_factory_connect_1 = {
 }
 
 starbase_sdc = {
-	icon = "GFX_sdc"
+	icon = "GFX_sb_sdc"
 	construction_days = 30
 
 	potential = {

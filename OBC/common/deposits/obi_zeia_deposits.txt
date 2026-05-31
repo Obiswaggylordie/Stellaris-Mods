@@ -192,6 +192,11 @@ d_agon_domain = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
+		country_base_influence_produces_add = 100
+		command_limit_mult = 1.0
+		ship_home_territory_fire_rate_mult = 1.00
+		country_war_exhaustion_mult = -1.00
+		armies_upkeep_mult = -1.00
 		planet_max_districts_add = 50
 		district_mining_max_add = 50
 		district_generator_max_add = 50
@@ -477,7 +482,7 @@ d_attero_device_inactive = {
 
 	can_be_cleared = {
 		owner = {
-			has_technology = tech_shield_worlds
+			has_technology = tech_aegis_sphere
 		}
 	}
 

@@ -7,7 +7,7 @@ weapon_component_template = {
 	entity = "invisible_turret_entity"
 	type = missile
 
-	damage = { min = 40 max = 40 }
+	damage = { min = 80 max = 80 }
 	windup = { min = 10 max = 10 }
 	total_fire_time = 0.01
 	range = 300
@@ -55,7 +55,7 @@ weapon_component_template = {
 	
 	#entity = "medium_laser_gun_entity"
 
-	damage = { min = 400 max = 400 } 
+	damage = { min = 1000 max = 1000 } 
 	windup = { min = 10.0 max = 10.0 } 
 	total_fire_time = 10
 	range = 150
@@ -99,7 +99,7 @@ weapon_component_template = {
 	
 	#entity = "large_laser_gun_entity"
 	
-	damage = { min = 800 max = 800 } 
+	damage = { min = 2000 max = 2000 } 
 	windup = { min = 10.0 max = 10.0 } 
 	total_fire_time = 10
 	range = 150
@@ -125,7 +125,7 @@ weapon_component_template = {
 		}
 		upkeep = {
 			energy = @l_t5_upkeep_energy
-			alloys = @@m_t5_upkeep_alloys
+			alloys = @l_t5_upkeep_alloys
 		}
 	}
 	ai_weight = {

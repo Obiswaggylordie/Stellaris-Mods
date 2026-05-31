@@ -97,8 +97,12 @@
  MAGIC_WORMHOLE_GALACTIC_DESC: "An esoteric breach in space, sustained by supernatural means."
 
 # Celestial Energy stuff
+ # Deposits
  d_darkling_storm: "Dark Storm"
- d_darkling_storm: "A massive storm of inter-dimensional flux, encompassing the entire planet. Anything entering it is likely to be struck by pure energy and disabled, or vaporized."
+ d_darkling_storm_desc: "A massive storm of inter-dimensional flux, encompassing the entire planet. Anything entering it is likely to be struck by pure energy and disabled, or even vaporized."
+
+ d_ecological_disaster: "Ecological Disaster"
+ d_ecological_disaster_desc: "The massive shift of energies on this planet has caused a nigh apocalyptic transformation in biosphere, geology, and environment around the globe. Plains have turned to deserts, forests have devolved to shrubs, stone has crumbled to gravel. The chaos has broken the stability of the tectonic plates, causing harsh earthquakes and forcing new volcanoes to emerge from the crust, splitting lands and seas. The dark storm above forcing the weather to stay energetic, torriential downpour coming down to drown the surface in rain and snow, thunderstorms roll across the sky frying electronics and striking down anything meandering the ground, the winds tear small fliers asunder and ground avians, insects are steadily being annihilated by the millions every hour. As landmass grows unstable and sinks into the oceans, vast tsunamis crash into the seabanks and swallow up anything near them. Our time on this world is ending."
 
  d_darkling_sky_temple: "The Sky Temple"
  d_darkling_sky_temple_desc: "The Dark Stronghold of the Ing, the residence of their Emperor and the largest share of planetary energy which they have stolen from the light."
@@ -109,8 +113,12 @@
  d_darkling_horde: "Darkling Horde"
  d_darkling_horde_desc: "A horde of Darklings in their true form, able to manifest themselves on worlds that have been sufficiently supplanted by their dark counterpart."
 
- dark_world_events.03.title: "The Great Cataclysm"
- dark_world_events.03.desc: "A disaster has come to [This.GetName], life has been supernaturally struck from the surface. The ecosystem has been warped and now struggles to continue in its present state, the environment has shifted drastically and has rendered the planet quite inhospitable to its native population. And finally, a dark energized storm has shrouded the planet, largely obscuring sunlight and disrupting air and space traffic."
+ # Darkling Storyline
+ dark_world_events.3.name: "The Great Cataclysm"
+ dark_world_events.3.desc: "A disaster has come to [This.GetName], life has been supernaturally struck from the surface. The ecosystem has been warped and now struggles to continue in its present state, the environment has shifted drastically and has rendered the planet quite inhospitable to its native population. And finally, a dark energized storm has shrouded the planet, largely obscuring sunlight and disrupting air and space traffic."
 
- dark_world_events.04.title: "Terrible Rifts"
- dark_world_events.04.desc: "As if the great storm shrouding [This.GetName] was not enough, mysterious purple rifts have opened all over the planet. These rifts cause electrical disturbances around them, and seem to radiate some kind of toxic energy."
+ dark_world_events.4.name: "The World Shakes"
+ dark_world_events.4.desc: "The massive shift of energies on [This.GetName] has caused a nigh apocalyptic transformation in biosphere, geology, and environment around the globe. Plains have turned to deserts, forests have devolved to shrubs, stone has crumbled to gravel. The chaos has broken the stability of the tectonic plates, causing harsh earthquakes and forcing new volcanoes to emerge from the crust, splitting lands and seas. The dark storm above forcing the weather to stay energetic, torriential downpour coming down to drown the surface in rain and snow, thunderstorms roll across the sky frying electronics and striking down anything meandering the ground, the winds tear small fliers asunder and ground avians, insects are steadily being annihilated by the millions every hour. As landmass grows unstable and sinks into the oceans, vast tsunamis crash into the seabanks and swallow up anything near them."
+
+ dark_world_events.5.name: "Terrible Rifts"
+ dark_world_events.5.desc: "As if the great storm shrouding [This.GetName] was not enough, mysterious purple rifts have opened all over the planet. These rifts seem to cause electrical disturbances similar to the great storm around them, and they appear to radiate some kind of toxic energy which corrodes matter from our reality until it ceases to exist."

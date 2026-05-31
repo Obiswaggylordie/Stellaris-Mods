@@ -78,6 +78,13 @@
  sobsha_mouth: "mandible"
  sobsha_hand: "claw"
 
+# Edicts
+ edict_dimensional_time_fault: "Edict on Dimensional Time Fault"
+ edict_dimensional_time_fault_desc: "Utilising the power of the Dimensional Time Fault, we possess all the time in the world to improve. Our ascendancy is at hand!"
+ 
+ edict_efg_defensive_war: "Absolute Time Fault Militarisation"
+ edict_efg_defensive_war_desc: "We will survive, we will prevail! No matter what we lose, no matter what we do! Victory, victory above all else! We will not go gentle into that good night."
+
 # Traits
  trait_sobsha: "Sob'sha"
  trait_sobsha_desc: "The original founders of Kas Zei'a, an insectoid races which evolved on Aether 54 million years before the activation of the Perdition Device."
@@ -111,7 +118,7 @@
  zeia_sobsha_assault_desc: "An army of Sob'sha outfitted with basic zei'a weaponry and equipment."
 
  zeia_sobsha_exosuit_assault: "Sob'sha Exosuit Division"
- zeia_sobsha_exosuit_assault: "An combat group of Sob'sha piloting large mechanized exosuits, these mechs have a number of different weapons and utilities, making them quite effective in strike operations."
+ zeia_sobsha_exosuit_assault_desc: "A combat group of Sob'sha piloting large mechanized exosuits, these mechs have a number of different weapons and utilities, making them quite effective in strike operations."
 
  # Kvil'sha
  zeia_lesser_bellator_cadre: "Lesser Bellator Cadre"
@@ -139,11 +146,11 @@
  zeia_exoform_desc: "The most advanced of Zei'a personal defense, a Kvil'sha equipped with an Exoform can create any tool, weapon, or device known to the Collective spontaneously through the use of matter-energy conversion."
 
  # Uviik
- uviik_lightflyer: "Lightflyer Uviik"
- uviik_lightflyer_desc: "Lightflyers resemble shifting clusters of numerous yellow motes of light, they'll swarm their target and burrow through them in streams, resembling the much larger and more powerful Drone Weapons."
+ uviik_lightflier: "Lightflier Uviik"
+ uviik_lightflier_desc: "Lightfliers resemble shifting clusters of numerous yellow motes of light, they'll swarm their target and burrow through them in streams, resembling the much larger and more powerful Drone Weapons."
  
- uviik_lightflyer_garrison: "Lightflyer Uviik Garrison"
- uviik_lightflyer_garrison_desc: "Lightflyers resemble shifting clusters of numerous yellow motes of light, they'll swarm their target and burrow through them in streams, resembling the much larger and more powerful Drone Weapons."
+ uviik_lightflier_garrison: "Lightflier Uviik Garrison"
+ uviik_lightflier_garrison_desc: "Lightfliers resemble shifting clusters of numerous yellow motes of light, they'll swarm their target and burrow through them in streams, resembling the much larger and more powerful Drone Weapons."
 
  uviik_invictus: "Invictus Uviik"
  uviik_invictus: "The Invictus is a bipedal zei'a-noid type Uviik, vaguely resembling a sob'sha. Its limbs can transform between several types of tools, devices, and weapons on command."
@@ -151,20 +158,20 @@
  uviik_rezbit: "Rezbit Uviik"
  uviik_rezbit_desc: "A unique and powerful variant of the Uviik, Rezbits function as patrol enforcers. But they are incredibly dangerous, capable of releasing a highly potent electronic virus that fries the operating system of any digital equipment in its immediate area, used to quickly dispatch any corrupted Uviik enthralled by the Scourge. Beyond its powerful electronical warfare suite, it's defended by energy shields and it's capable of unleashing torrents of attacks using its advanced weaponry. In dire situations, the Rezbit can temporarily void-shroud and perform tactical retreats or strategic repositioning."
  
- uviik_rezbit_garrison: "Rezbit Uviik"
+ uviik_rezbit_garrison: "Rezbit Uviik Garrison"
  uviik_rezbit_desc: "A unique and powerful variant of the Uviik, Rezbits function as patrol enforcers. But they are incredibly dangerous, capable of releasing a highly potent electronic virus that fries the operating system of any digital equipment in its immediate area, used to quickly dispatch any corrupted Uviik enthralled by the Scourge. Beyond its powerful electronical warfare suite, it's defended by energy shields and it's capable of unleashing torrents of attacks using its advanced weaponry. In dire situations, the Rezbit can temporarily void-shroud and perform tactical retreats or strategic repositioning."
 
  uviik_quad: "Quad Uviik"
  uviik_quad_desc: "The strongest of the conventional combat Uviik'zu, the Quad is a quadrupedal walker armed with several weapons and defended by energy shields, its main body and head work separately from one another. If one is taken out of commission, the other will detach and continue fighting until the entire unit has been reduced to scrap."
  
- uviik_quad_garrison: "Quad Uviik"
+ uviik_quad_garrison: "Quad Uviik Garrison"
  uviik_quad_desc: "The strongest of the conventional combat Uviik'zu, the Quad is a quadrupedal walker armed with several weapons and defended by energy shields, its main body and head work separately from one another. If one is taken out of commission, the other will detach and continue fighting until the entire unit has been reduced to scrap."
 
  forerunner_enforcer_sentinels: "Enforcer Uviik"
  forerunner_enforcer_sentinels_desc: "A larger variant of combat Uviik used to defend key installations and armed with additional weaponry and a frontal shield to combat hostile targets."
  
  uviik_quadraxis: "Quadraxis Uviik"
- uviik_quadraxis_desc: "A colossal Uviik armed with lightflyer fabricators, along with various psionic combat systems which attack targets both telepathically and telekinetically. It's heavily shielded, rendering it impervious to most conventional weaponry. The Quadraxis types are used as mobile enforcement platforms, capable of annihilating armies both defensively and offensively." 
+ uviik_quadraxis_desc: "A colossal Uviik armed with Lightflier fabricators, along with various psionic combat systems which attack targets both telepathically and telekinetically. It's heavily shielded, rendering it impervious to most conventional weaponry. The Quadraxis types are used as mobile enforcement platforms, capable of annihilating armies both defensively and offensively." 
 
  uviik_twilight_seekers: "Twilight Seekers"
  uviik_twilight_seekers_desc: "The Seeker Form was designed to focus on Ascended Perception, holding the ability to precisely scan their surroundings and even the entire planet they're on down to the sub-atomic level, much like an Ascended Being could. They were placed into service primarily as Scourge Detectors, while not being as powerful in combat as other Twilight classes, they were still quite formidable and were found to be efficient hunter-killers. "
@@ -327,6 +334,10 @@
  decision_build_energy_controller: "Energy Controller - Build"
  decision_build_energy_controller_desc: "Construct an Energy Controller, an incredibly advanced device capable of manipulation all forms of energy."
 
+ # SDCs
+ decision_sdc_installation: "Install SDC"
+ decision_sdc_installation_desc: "Install an SDC into the global power grid, massively increasing output and performance."
+
  ## Cosmo Reverse System
  decision_activate_energy_controller: "Activate the Energy Controllers"
 
@@ -343,6 +354,12 @@
  celestial_energy_events.2.a: "Fill Stellar Energy"
  celestial_energy_events.2.b: "Drain Stellar Energy"
  celestial_energy_events.2.z: "Leave the controllers alone"
+
+ celestial_energy_events.3.title: "Energy Controller Management"
+ celestial_energy_events.3.desc: "The Energy Controllers have been activated and are operating at full efficiency, the system is ready to affect great change upon the targeted Class-O star."
+ celestial_energy_events.3.a: "Fill Stellar Energy (Class-O)"
+ celestial_energy_events.3.b: "Drain Stellar Energy (Class-O)"
+ celestial_energy_events.3.z: "Leave the controllers alone"
 
  celestial_energy_events.10.title: "Cosmo Reverse Planet Class Selection"
  celestial_energy_events.10.desc: "The Comso Reverse Subsystem is capable of transforming any world into whatever class we may desire."
@@ -662,7 +679,7 @@
  tech_zeia_combat_equipment_desc: "Generation 1 Zei'a equipment, featuring a wide range of weapons capable of wreaking untold havoc on the battlefield."
 
  tech_zeia_exosuit: "Zei'a Sob'sha Combat Form Exosuit"
- tech_zeia_exosuit: "The Exosuit is the next generation of sob'sha defensive technology, deployed to replace the Hazard Form suit. This lumbering mech can perform great feats of destruction, and a well organized squad can deliver critical strikes to enemy forces."
+ tech_zeia_exosuit_desc: "The Exosuit is the next generation of sob'sha defensive technology, deployed to replace the Hazard Form suit. This lumbering mech can perform great feats of destruction, and a well organized squad can deliver critical strikes to enemy forces."
 
  tech_zeia_kvilsha_project: "The Kvil'sha Project"
  tech_zeia_kvilsha_project_desc: "Kas Zei'a seeks perfection in the impossible, forcing the laws of nature to submit to their will, continuing to draft up genes after genes, the shape of these Kvil'sha being a stark difference to their original Sob'sha visage. Their total psionic power had been evolved to greater heights, and their potential was projected to be leagues ahead of any Sob'sha."
@@ -679,13 +696,17 @@
  tech_zeia_ingvala: "Kvil'sha Ingvala Warcasket"
  tech_zeia_ingvala: "The Ingvala Warcasket is the most advanced of pre time fault zei'a armour, typically used by Kvil'sha, but it has been used autonomously by Uviik. By utilising molecular manipulation, the entire armour is sealed together through atomic binding which completely eliminates all paths through the armour. The outer shell completely isolating the interior of the armour, the Generation 7 Armour being referred to as \"The Warcasket\". Due to its design, all of its interior components had to be massively optimised and designed to handle the isolation, forcing the size of the armour to be upscaled, resulting in it being more of a mech suit than it is a regular armour. The user being biologically interfaced with the warcasket for maximum control and comfort. "
 
- tech_zeia_exoform: "Offering its user nigh perfect protection, being composed entirely of molecularly assembled Omega Alloy. It's impossible to dent or pierce through the Exoform, and with its intertia dampeners it essentially means that no amount of force could harm or even daze its operator. And with its specialised layers of Tight Zei'a Shielding protecting the Exoform from hazardous energy and other particles, any methods of harm through radiation or beams become ineffective. The Exoform stands as the ultimate armour, and the most effective defense against the Scourge as a biological entity."
+ tech_zeia_exoform: "Zei'a Exoforms"
+ tech_zeia_exoform_desc: "Offering its user nigh perfect protection, being composed entirely of molecularly assembled Omega Alloy. It's impossible to dent or pierce through the Exoform, and with its intertia dampeners it essentially means that no amount of force could harm or even daze its operator. And with its specialised layers of Tight Zei'a Shielding protecting the Exoform from hazardous energy and other particles, any methods of harm through radiation or beams become ineffective. The Exoform stands as the ultimate armour, and the most effective defense against the Scourge as a biological entity."
 
  tech_zeia_dimeng: "Zei'a Dimension Engine"
  tech_zeia_dimeng_desc: "The Dimension Engine is an incredible machine capable of harnessing an infinite amount of dimensional energy from the universe itself, though in limited amounts as extracting too much with little control would provoke enormous repercussions."
  
  tech_zeia_sdc: "Zei'a Super Dimension Core"
  tech_zeia_sdc_desc: "The Super Dimension Core is an alternate take on the Dimension Engine concept, by taking the Dimension Core and utilising tetradimensional engineering to produce a pocket universe within the core."
+
+ tech_aegis_sphere: "The Aegis Initiative"
+ tech_aegis_sphere_desc: "Unlocks the Aegis Installations, allowing us to construct them."
 
  tech_zeia_energy_controller: "Zei'a Energy Controllers"
  tech_zeia_energy_controller_desc: "The Energy Controllers are powerful Zei'a devices capable of asserting control over all energy in any state, from siphoning thermal energy and heat from one object and transferring it to another, all the way to manipulating Celestial Energy itself."
@@ -786,8 +807,8 @@
  ZEIA_SENSORS_SET: "Zei'a Sensors"
  ZEIA_SENSORS_SET_DESC: ""
 
- ZEIA_DRONES: "Zei'a Drones I"
- ZEIA_DRONES_SET: "Zei'a Drones I"
+ ZEIA_DRONES_X: "Zei'a Drones"
+ ZEIA_DRONES_SET: "Zei'a Drones"
  ZEIA_DRONES_SET_DESC: ""
 
  ZEIA_ANTI_ELECTRON_BEAM_M: "Zei'a Anti-Electron Beam Caster"

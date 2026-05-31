@@ -2,7 +2,7 @@ building_cr_dtf_factory = {
 	base_buildtime = 180
 	category = manufacturing
 
-	icon = building_dtf_factory
+	icon = building_efg_dimensional_time_fault_weapon_factory
 	
 	is_capped_by_modifier = yes
 	can_be_ruined = no

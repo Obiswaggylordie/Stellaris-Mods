@@ -54,7 +54,7 @@ void = {
 	ftl_ship_effect = "gateway_ftl_ship_effect_entity"
 	ftl_bypass_effect = "gateway_ftl_bypass_effect_entity"
 	prerequisites = {
-		tech_void_field
+		tech_void_relay
 	}
 	country_can_use = {
 		always = yes

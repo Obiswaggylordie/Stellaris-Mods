@@ -150,7 +150,7 @@ decision_install_submonitor = {
 
 decision_aether_development = {
 	owned_planets_only = yes
-	icon = decision_kas_Zeia
+	icon = decision_kas_zeia
 	
 	enactment_time = 365
 	resources = {
@@ -556,14 +556,178 @@ decision_deactivate_chair_outpost = {
 		add_deposit = d_chair_outpost
 	}
 }
+## Build City-Ship
+decision_build_city_ship = {
+	owned_planets_only = yes
+	icon = decision_city_ship
 
-## Build Attero
+	prerequisites = {
+		"tech_zeia_chair"
+	}
+
+	enactment_time = 365
+
+	potential = {
+		owner = {
+			OR = {
+				has_trait = trait_kvilsha
+				has_trait = trait_uviik
+			}
+		}
+		NOT = {
+			has_deposit = d_city_ship
+		}
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 10000
+			energy = 10000
+		}
+	}
+
+	effect = {
+		add_deposit = d_city_ship
+	}
+}
+
+## City-Ship Drones
+decision_drones_city_ship = {
+	owned_planets_only = yes
+	icon = decision_city_ship
+
+	potential = {
+		has_deposit = d_city_ship
+	}
+
+	allow = {
+		any_fleet_in_orbit = {
+			exists = this
+		}
+	}
+	
+	effect = {
+		every_fleet_in_orbit = {
+			every_owned_ship = {
+				reduce_hp = 500000
+			}
+		}
+	}
+}
+
+## City-Ship Launch
+decision_launch_city_ship = {
+	owned_planets_only = yes
+	icon = decision_city_ship
+
+	resources = {
+		category = decisions
+		cost = {
+			sr_sdc = 3
+		}
+	}
+
+	potential = {
+		has_deposit = d_city_ship
+	}
+	
+	effect = {
+		remove_deposit = d_city_ship
+		create_fleet = {
+			name = "Zei'a City-Ship"
+			effect = {
+				set_owner = PREV
+				while = {
+					count = 1
+					create_ship = {
+						design = "City-Ship"
+						graphical_culture = lantean_01
+						prefix = no
+						upgradable = no
+					}
+				}
+				set_location = prev
+			}
+		}
+	}
+}
+
+## City-Ship Land
+decision_land_city_ship = {
+	owned_planets_only = yes
+	icon = decision_city_ship
+
+	potential = {
+		NOT = {
+			has_deposit = d_city_ship
+		}
+		any_fleet_in_orbit = {
+			is_ship_size = obi_city
+		}
+	}
+	
+	effect = {
+		every_fleet_in_orbit = {
+			limit = {
+				is_ship_size = obi_city
+			}
+			every_owned_ship = {
+				limit = {
+					is_ship_size = obi_city
+				}
+				unassign_leader = this
+				delete_ship = this
+			}
+		}
+		add_deposit = d_city_ship
+	}
+}
+
+## City-Ship Colonize
+decision_colonize_city_ship = {
+	owned_planets_only = no
+	icon = decision_city_ship
+
+	potential = {
+		is_colonizable = yes
+		is_colony = no
+		NOT = {
+			has_deposit = d_city_ship
+		}
+		any_fleet_in_orbit = {
+			is_ship_size = obi_city
+		}
+	}
+	
+	effect = {
+		every_fleet_in_orbit = {
+			limit = {
+				is_ship_size = obi_city
+			}
+			every_owned_ship = {
+				limit = {
+					is_ship_size = obi_city
+				}
+				unassign_leader = this
+				delete_ship = this
+			}
+		}
+		add_deposit = d_city_ship
+		start_colony = {
+			owner = space_owner
+			species = space_owenr
+			ethos = random
+		}
+	}
+}
+# Build Attero
 decision_build_attero = {
 	owned_planets_only = yes
 	icon = decision_attero
 
 	prerequisites = {
-		"tech_shield_worlds"
+		"tech_aegis_sphere"
 	}
 
 	enactment_time = 30
@@ -584,7 +748,7 @@ decision_build_attero = {
 	resources = {
 		category = decisions
 		cost = {
-			sr_living_metal = 1000
+			alloys = 1000
 		}
 	}
 
@@ -711,8 +875,18 @@ decision_activate_energy_controller = {
 			limit = {
 				is_star = yes
 			}
-			from = {
-				country_event = { id = celestial_energy_events.2 }
+			if = {
+				limit = {
+					is_planet_class = pc_giga_o_star
+				}
+				from = {
+					country_event = { id = celestial_energy_events.3 }
+				}
+			}
+			else = {
+				from = {
+					country_event = { id = celestial_energy_events.2 }
+				}
 			}
 		}
 	}
@@ -1201,7 +1375,7 @@ dtf_factory_full_operation = {
 #	}
 #	
 #	allow = {
-#		owner = { has_technology = tech_shield_worlds }
+#		owner = { has_technology = tech_aegis_sphere }
 #		owner = { has_technology = tech_advanced_slipspace_field }
 #	}
 #	

@@ -266,6 +266,54 @@ trait_kvilsha = {
 	}
 }
 
+trait_lotkaaz = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	#species_class = { lotkaaz }
+	initial = yes
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+
+	immortal_leaders = yes
+	
+	allowed_archetypes = { BIOLOGICAL }
+
+	prerequisites = {
+		tech_zeia_kvilsha_project
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+	
+	icon = "gfx/interface/icons/traits/trait_kvilsha.dds"
+	
+	modifier = {
+		army_attack_damage_mult = 1.50
+		army_defense_damage_mult = 1.50
+		army_health = 1.50
+		pop_environment_tolerance = 1.50
+		bonus_pop_growth = 1.50
+		pop_amenities_usage_mult = -1.50
+		worker_and_simple_drone_cat_bonus_workforce_mult = 1.50
+		soldier_jobs_bonus_workforce_mult = 1.50
+		researcher_jobs_bonus_workforce_mult = 1.50
+		leader_lifespan_add = 200
+	}
+	
+	slave_cost = {
+		energy = 5000
+	}
+}
+
 trait_uviik = {
 	cost = 0
 	allowed_archetypes = { ROBOT MACHINE }
@@ -304,5 +352,44 @@ trait_uviik = {
 	ai_weight = {
 		weight = 0
 	}
+}
+
+trait_twilight_uviik = {
+	cost = 0
+	allowed_archetypes = { ROBOT MACHINE }
 	
+	modifier = {
+		planet_pop_assemblers_upkeep_mult = -0.5
+		planet_structures_cost_mult = -0.5
+		planet_structures_upkeep_mult = -0.50
+		planet_pop_assembly_mult = 0.5
+		planet_jobs_produces_mult = 0.5
+		pop_happiness = 100
+	}
+	
+	icon = "gfx/interface/icons/traits/trait_uviik.dds"
+
+	prerequisites = {
+		tech_zeia_biocrystalline
+	}
+	
+	randomized = no
+	species_potential_add = {
+		from = {
+			has_origin = origin_obi_zeia
+		}
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	improves_leaders = yes
+	forced_happiness = yes
+	
+	
+	ai_weight = {
+		weight = 0
+	}
 }

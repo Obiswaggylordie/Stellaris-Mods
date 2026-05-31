@@ -6,15 +6,17 @@ namespace = dark_world_events
 
 # Dark World Master Event
 planet_event = {
-	id = dark_world_events.01
+	id = dark_world_events.1
+
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
 		if = {
 			limit = {
-				years_passed = 20
-				NOT = {
+				years_passed >= 20
+				planet_has_celestial_energy = yes
+				NAND = {
 					has_deposit = d_darkling_storm
 					has_planet_flag = dark_world_timeout
 					owner = {
@@ -27,80 +29,81 @@ planet_event = {
 				# Max Energy (18 / 82)
 				pc_gaia = {
 					random_list = {
-						18 = {}
-						82 = { Dark_World_not_fired }
+						18 = { planet_event = { id = dark_world_events.2 }}
+						82 = { log = Dark_World_not_fired }
 					}
 				}
 				# High Energy (15 / 85)
 				pc_tropical = {
 					random_list = {
-						15 = {}
-						85 = { Dark_World_not_fired }
+						15 = { planet_event = { id = dark_world_events.2 }}
+						85 = { log = Dark_World_not_fired }
 					}
 				}
 				# Average Energy (12 / 88)
 				pc_continental = {
 					random_list = {
-						12 = {}
-						88 = { Dark_World_not_fired }
+						12 = { planet_event = { id = dark_world_events.2 }}
+						88 = { log = Dark_World_not_fired }
 					}
 				}
 				pc_ocean = {
 					random_list = {
-						12 = {}
-						88 = { Dark_World_not_fired }
+						12 = { planet_event = { id = dark_world_events.2 }}
+						88 = { log = Dark_World_not_fired }
 					}
 				}
 				# Below Average energy (9 / 91)
 				pc_arid = {
 					random_list = {
-						9 = {}
-						91 = { Dark_World_not_fired }
+						9 = { planet_event = { id = dark_world_events.2 }}
+						91 = { log = Dark_World_not_fired }
 					}
 				}
 				pc_alpine = {
 					random_list = {
-						9 = {}
-						91 = { Dark_World_not_fired }
+						9 = { planet_event = { id = dark_world_events.2 }}
+						91 = { log = Dark_World_not_fired }
 					}
 				}
 				# Low Energy (6 / 94)
-				pc_savanna = {
+				pc_savannah = {
 					random_list = {
-						6 = {}
-						94 = { Dark_World_not_fired }
+						6 = { planet_event = { id = dark_world_events.2 }}
+						94 = { log = Dark_World_not_fired }
 					}
 				}
 				pc_tundra = {
 					random_list = {
-						6 = {}
-						94 = { Dark_World_not_fired }
+						6 = { planet_event = { id = dark_world_events.2 }}
+						94 = { log = Dark_World_not_fired }
 					}
 				}
 				# Critical Energy (3 / 97)
 				pc_desert = {
 					random_list = {
-						3 = {}
-						97 = { Dark_World_not_fired }
+						3 = { planet_event = { id = dark_world_events.2 }}
+						97 = { log = Dark_World_not_fired }
 					}
 				}
 				pc_arctic = {
 					random_list = {
-						3 = {}
-						97 = { Dark_World_not_fired }
+						3 = { planet_event = { id = dark_world_events.2 }}
+						97 = { log = Dark_World_not_fired }
 					}
 				}
 			}
 		}
 		else = {
-			log = { Dark_World_not_fired }
+			log = Dark_World_not_fired
 		}
 	}
 }
 
 # Dark World creation 1: Deplete host world
 planet_event = {
-	id = dark_world_events.02
+	id = dark_world_events.2
+
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -114,25 +117,31 @@ planet_event = {
 						has_planet_flag = ce_warm
 					}
 					change_pc = pc_arid
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_average
 					}
 					change_pc = pc_alpine
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_cold
 					}
 					change_pc = pc_alpine
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
-						NOT = {
+						NAND = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -143,7 +152,9 @@ planet_event = {
 						33 = { set_planet_flag = ce_average }
 						33 = { set_planet_flag = ce_cold }
 					}
-					planet_event = dark_world_events.02
+					planet_event = {
+						id = dark_world_events.2
+					}
 				}
 			}
 			# High Energy (15 / 85)
@@ -152,26 +163,32 @@ planet_event = {
 					limit = {
 						has_planet_flag = ce_warm
 					}
-					change_pc = pc_savanna
-					planet_event = dark_world_events.03
+					change_pc = pc_savannah
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_average
 					}
 					change_pc = pc_tundra
-					planet_event = dark_world_events.03
+						planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_cold
 					}
 					change_pc = pc_tundra
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
-						NOT = {
+						NAND = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -182,7 +199,9 @@ planet_event = {
 						33 = { set_planet_flag = ce_average }
 						33 = { set_planet_flag = ce_cold }
 					}
-					planet_event = dark_world_events.02
+					planet_event = {
+						id = dark_world_events.2
+					}
 				}
 			}
 			# Average Energy (12 / 88)
@@ -191,26 +210,32 @@ planet_event = {
 					limit = {
 						has_planet_flag = ce_warm
 					}
-					change_pc = pc_savanna
-					planet_event = dark_world_events.03
+					change_pc = pc_savannah
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_average
 					}
 					change_pc = pc_tundra
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_cold
 					}
 					change_pc = pc_tundra
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
-						NOT = {
+						NAND = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -220,7 +245,9 @@ planet_event = {
 						50 = { set_planet_flag = ce_warm }
 						50 = { set_planet_flag = ce_average }
 					}
-					planet_event = dark_world_events.02
+					planet_event = {
+						id = dark_world_events.2
+					}
 				}
 			}
 			pc_ocean = {
@@ -228,26 +255,32 @@ planet_event = {
 					limit = {
 						has_planet_flag = ce_warm
 					}
-					change_pc = pc_savanna
-					planet_event = dark_world_events.03
+					change_pc = pc_savannah
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_average
 					}
 					change_pc = pc_tundra
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_cold
 					}
 					change_pc = pc_tundra
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
-						NOT = {
+						NAND = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -256,7 +289,9 @@ planet_event = {
 					random_list = {
 						100 = { set_planet_flag = ce_cold }
 					}
-					planet_event = dark_world_events.02
+						planet_event = {
+						id = dark_world_events.2
+					}
 				}
 			}
 			# Below Average energy (9 / 91)
@@ -266,25 +301,31 @@ planet_event = {
 						has_planet_flag = ce_warm
 					}
 					change_pc = pc_desert
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_average
 					}
 					change_pc = pc_arctic
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_cold
 					}
 					change_pc = pc_arctic
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
-						NOT = {
+						NAND = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -293,7 +334,9 @@ planet_event = {
 					random_list = {
 						100 = { set_planet_flag = ce_warm }
 					}
-					planet_event = dark_world_events.02
+					planet_event = {
+						id = dark_world_events.2
+					}
 				}
 			}
 			pc_alpine = {
@@ -302,25 +345,31 @@ planet_event = {
 						has_planet_flag = ce_warm
 					}
 					change_pc = pc_desert
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_average
 					}
 					change_pc = pc_arctic
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_cold
 					}
 					change_pc = pc_arctic
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
-						NOT = {
+						NAND = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -330,35 +379,43 @@ planet_event = {
 						50 = { set_planet_flag = ce_average }
 						50 = { set_planet_flag = ce_cold }
 					}
-					planet_event = dark_world_events.02
+					planet_event = {
+						id = dark_world_events.2
+					}
 				}
 			}
 			# Low Energy (6 / 94)
-			pc_savanna = {
+			pc_savannah = {
 				if = {
 					limit = {
 						has_planet_flag = ce_warm
 					}
 					change_pc = pc_desert
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_average
 					}
 					change_pc = pc_arctic
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_cold
 					}
 					change_pc = pc_arctic
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
-						NOT = {
+						NAND = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -367,7 +424,9 @@ planet_event = {
 					random_list = {
 						100 = { set_planet_flag = ce_warm }
 					}
-					planet_event = dark_world_events.02
+					planet_event = {
+						id = dark_world_events.2
+					}
 				}
 			}
 			pc_tundra = {
@@ -376,25 +435,31 @@ planet_event = {
 						has_planet_flag = ce_warm
 					}
 					change_pc = pc_desert
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_average
 					}
 					change_pc = pc_arctic
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_cold
 					}
 					change_pc = pc_arctic
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
-						NOT = {
+						NAND = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -404,7 +469,9 @@ planet_event = {
 						50 = { set_planet_flag = ce_average }
 						50 = { set_planet_flag = ce_cold }
 					}
-					planet_event = dark_world_events.02
+					planet_event = {
+						id = dark_world_events.2
+					}
 				}
 			}
 			# Critical Energy (3 / 97)
@@ -414,25 +481,31 @@ planet_event = {
 						has_planet_flag = ce_warm
 					}
 					change_pc = pc_barren
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_average
 					}
 					change_pc = pc_barren_cold
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_cold
 					}
 					change_pc = pc_frozen
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
-						NOT = {
+						NAND = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -441,7 +514,9 @@ planet_event = {
 					random_list = {
 						100 = { set_planet_flag = ce_warm }
 					}
-					planet_event = dark_world_events.02
+					planet_event = {
+						id = dark_world_events.2
+					}
 				}
 			}
 			pc_arctic = {
@@ -450,25 +525,31 @@ planet_event = {
 						has_planet_flag = ce_warm
 					}
 					change_pc = pc_barren
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_average
 					}
 					change_pc = pc_barren_cold
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
 						has_planet_flag = ce_cold
 					}
 					change_pc = pc_frozen
-					planet_event = dark_world_events.03
+					planet_event = {
+						id = dark_world_events.3
+					}
 				}
 				else_if = {
 					limit = {
-						NOT = {
+						NAND = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -478,7 +559,9 @@ planet_event = {
 						50 = { set_planet_flag = ce_average }
 						50 = { set_planet_flag = ce_cold }
 					}
-					planet_event = dark_world_events.02
+					planet_event = {
+						id = dark_world_events.2
+					}
 				}
 			}
 		}
@@ -487,44 +570,93 @@ planet_event = {
 
 # Dark World creation 2: GFX event - storm creation
 planet_event = {
-	id = dark_world_events.03
-	hide_window = no
-	is_triggered_only = yes
-	title = "dark_world_events.03.name"
-	desc = "dark_world_events.03.desc"
+	id = dark_world_events.3
+	title = "dark_world_events.3.name"
+	desc = "dark_world_events.3.desc"
 	picture = GFX_dark_storm
 	show_sound = event_red_alert
 	location = this
 
+	hide_window = no
+	is_triggered_only = yes
+
 	immediate = {
 		add_deposit = d_darkling_storm
-		add_planet_devastation = 50
+		add_planet_devastation = 20
 		every_owned_pop_group = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+				}
+			}
 			kill_pop_group = {
 				pop_group = this
 				percentage = 0.5
 			}
 		}
 		planet_event = {
-			id = dark_world_events.04
-			days = 30
+			id = dark_world_events.4
+			days = 10
 		}
 	}
+
+    option = {
+        name = "We will recover."
+    }
 }
 
-# Dark World creation 3: GFX event - Darkling Rifts
+# Dark World creation 3: GFX event - Ecological disaster!
 planet_event = {
-	id = dark_world_events.04
-	hide_window = no
-	is_triggered_only = yes
-	title = "dark_world_events.04.name"
-	desc = "dark_world_events.04.desc"
-	picture = GFX_dark_storm
+	id = dark_world_events.4
+	title = "dark_world_events.4.name"
+	desc = "dark_world_events.4.desc"
+	picture = GFX_ecological_disaster
 	show_sound = event_red_alert
 	location = this
+
+	hide_window = no
+	is_triggered_only = yes
+
+	immediate = {
+		add_deposit = d_ecological_disaster
+		add_planet_devastation = 50
+		if = {
+			limit = {
+				NOT = {
+					has_deposit = d_darkling_rifts
+				}
+			}
+			planet_event = { # Create Darkling Rifts if there aren't any, assumes first run.
+				id = dark_world_events.5
+				days = 10
+			}
+		}
+	}
+
+    option = {
+        name = "Our time on this world is ending."
+    }
+}
+
+# Dark World creation 4: GFX event - Darkling Rifts
+planet_event = {
+	id = dark_world_events.5
+	title = "dark_world_events.5.name"
+	desc = "dark_world_events.5.desc"
+	picture = GFX_dark_rifts
+	show_sound = event_red_alert
+	location = this
+
+	hide_window = no
+	is_triggered_only = yes
 
 	immediate = {
 		add_deposit = d_darkling_rifts
 		add_planet_devastation = 15
 	}
+
+    option = {
+        name = "Disasterous!"
+    }
 }
