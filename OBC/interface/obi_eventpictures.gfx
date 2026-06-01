@@ -35,4 +35,16 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/ecological_disaster.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_darklings"
+		texturefile = "gfx/event_pictures/darklings.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_dark_fog"
+		texturefile = "gfx/event_pictures/dark_fog.dds"
+		alwaystransparent = yes
+	}
 }

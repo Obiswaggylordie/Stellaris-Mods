@@ -855,18 +855,10 @@ decision_activate_energy_controller = {
 		save_global_event_target_as = ce_target
 		if = {
 			limit = {
-				planet_has_celestial_energy = yes
+				NOT = {
+					is_star = yes
+				}
 			}
-			#if = {
-			#	limit = {
-			#		NOR = {
-			#			has_planet_flag = ce_warm
-			#			has_planet_flag = ce_average
-			#			has_planet_flag = ce_cool
-			#		}
-			#	}
-			#	celestial_energy_type_effect = yes
-			#}
 			from = {
 				country_event = { id = celestial_energy_events.1 }
 			}

@@ -4,6 +4,9 @@ namespace = dark_world_events
 # Average: 	Gaia - Tropical - Continental - Alpine - Tundra - Arctic - Barren (Cold)
 # Cold: 	Gaia - Tropical - Ocean - 		Alpine - Tundra - Arctic - Frozen 
 
+# Country Flags
+# darkworld_first_expedition, darkworld_hazard_expedition
+
 # Dark World Master Event
 planet_event = {
 	id = dark_world_events.1
@@ -14,7 +17,7 @@ planet_event = {
 	immediate = {
 		if = {
 			limit = {
-				years_passed >= 20
+				years_passed >= 50
 				planet_has_celestial_energy = yes
 				NAND = {
 					has_deposit = d_darkling_storm
@@ -612,7 +615,7 @@ planet_event = {
 	title = "dark_world_events.4.name"
 	desc = "dark_world_events.4.desc"
 	picture = GFX_ecological_disaster
-	show_sound = event_red_alert
+	show_sound = event_plasma_trails
 	location = this
 
 	hide_window = no
@@ -645,7 +648,7 @@ planet_event = {
 	title = "dark_world_events.5.name"
 	desc = "dark_world_events.5.desc"
 	picture = GFX_dark_rifts
-	show_sound = event_red_alert
+	show_sound = event_air_raid_siren
 	location = this
 
 	hide_window = no
@@ -659,4 +662,50 @@ planet_event = {
     option = {
         name = "Disasterous!"
     }
+}
+
+# Dark World creation 5: GFX event - Ecological stabilization
+planet_event = {
+	id = dark_world_events.6
+	title = "dark_world_events.6.name"
+	desc = "dark_world_events.6.desc"
+	picture = GFX_evt_relic_world
+	show_sound = event_alien_nature
+	location = this
+
+	hide_window = no
+	is_triggered_only = yes
+
+	immediate = {
+		add_deposit = d_darkling_rifts
+		add_planet_devastation = 15
+	}
+
+    option = {
+        name = "Disasterous!"
+    }
+}
+
+# Dark World: Darkling invasion monthly
+planet_event = {
+	id = dark_world_events.7
+	title = "dark_world_events.7.name"
+	desc = "dark_world_events.7.desc"
+	picture = GFX_dark_fog
+	location = this
+	show_sound = event_burning_city
+
+	hide_window = no
+	is_triggered_only = yes
+
+	trigger = {
+		has_deposit = d_darkling_rifts
+	}
+
+	immediate = {
+		
+	}
+	option = {
+		name = "This is our world!"
+	}
 }

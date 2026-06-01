@@ -23,6 +23,7 @@ country_event = { # Planetary Energy
 			}
 			event_target:ce_target = {
 				NOT = { is_planet_class = pc_gaia }
+				planet_has_celestial_energy = yes
 			}
 		}
 
@@ -44,6 +45,7 @@ country_event = { # Planetary Energy
 				has_technology = tech_zeia_energy_transfer_module
 			}
 			event_target:ce_target = {
+				planet_has_celestial_energy = yes
 				NOR = {
 					is_planet_class = pc_barren
 					is_planet_class = pc_barren_cold

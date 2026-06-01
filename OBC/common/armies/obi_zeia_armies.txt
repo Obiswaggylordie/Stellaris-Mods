@@ -529,7 +529,7 @@ uviik_quad = {
 	has_morale = no
 
 	time = 25
-	icon = GFX_army_zeia_agon
+	icon = GFX_army_zeia_fanum
 
 	resources = {
 		category = armies
@@ -573,7 +573,7 @@ uviik_quad_garrison = {
 	has_morale = no
 
 	time = 25
-	icon = GFX_army_zeia_agon
+	icon = GFX_army_zeia_fanum
 
 	resources = {
 		category = armies

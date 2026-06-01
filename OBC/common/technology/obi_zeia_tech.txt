@@ -285,6 +285,7 @@ tech_dark_hazard_suit = {
 	weight = @tier1weight1
 
 	potential = {
+		has_country_flag = darkworld_first_expedition
 	} 
 
 	modifier = {
