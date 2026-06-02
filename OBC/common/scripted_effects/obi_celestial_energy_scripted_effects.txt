@@ -6,7 +6,7 @@
 
 celestial_energy_type_effect = {
 	planet = {
-		if = {
+		if = { # Gaia
 			limit = {
 				is_planet_class = pc_gaia
 			}
@@ -15,8 +15,22 @@ celestial_energy_type_effect = {
 				33 = { set_planet_flag = ce_average }
 				33 = { set_planet_flag = ce_cold }
 			}
+			if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_fill
+				}
+				remove_planet_flag = celestial_energy_tried_fill
+				celestial_energy_fill_planet_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_drain
+				}
+				remove_planet_flag = celestial_energy_tried_drain
+				celestial_energy_drain_planet_effect = yes
+			}
 		}
-		else_if = {
+		else_if = { # Tropical
 			limit = {
 				is_planet_class = pc_tropical
 			}
@@ -25,8 +39,22 @@ celestial_energy_type_effect = {
 				33 = { set_planet_flag = ce_average }
 				33 = { set_planet_flag = ce_cold }
 			}
+			if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_fill
+				}
+				remove_planet_flag = celestial_energy_tried_fill
+				celestial_energy_fill_planet_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_drain
+				}
+				remove_planet_flag = celestial_energy_tried_drain
+				celestial_energy_drain_planet_effect = yes
+			}
 		}
-		else_if = {
+		else_if = { # Continental
 			limit = {
 				is_planet_class = pc_continental
 			}
@@ -34,20 +62,62 @@ celestial_energy_type_effect = {
 				50 = { set_planet_flag = ce_warm }
 				50 = { set_planet_flag = ce_average }
 			}
+			if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_fill
+				}
+				remove_planet_flag = celestial_energy_tried_fill
+				celestial_energy_fill_planet_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_drain
+				}
+				remove_planet_flag = celestial_energy_tried_drain
+				celestial_energy_drain_planet_effect = yes
+			}
 		}
-		else_if = {
+		else_if = { # Ocean
 			limit = {
 				is_planet_class = pc_ocean
 			}
 			set_planet_flag = ce_cold
+			if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_fill
+				}
+				remove_planet_flag = celestial_energy_tried_fill
+				celestial_energy_fill_planet_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_drain
+				}
+				remove_planet_flag = celestial_energy_tried_drain
+				celestial_energy_drain_planet_effect = yes
+			}
 		}
-		else_if = {
+		else_if = { # Arid
 			limit = {
 				is_planet_class = pc_arid
 			}
 			set_planet_flag = ce_warm
+			if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_fill
+				}
+				remove_planet_flag = celestial_energy_tried_fill
+				celestial_energy_fill_planet_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_drain
+				}
+				remove_planet_flag = celestial_energy_tried_drain
+				celestial_energy_drain_planet_effect = yes
+			}
 		}
-		else_if = {
+		else_if = { # Alpine
 			limit = {
 				is_planet_class = pc_alpine
 			}
@@ -55,14 +125,42 @@ celestial_energy_type_effect = {
 				50 = { set_planet_flag = ce_average }
 				50 = { set_planet_flag = ce_cold }
 			}
+			if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_fill
+				}
+				remove_planet_flag = celestial_energy_tried_fill
+				celestial_energy_fill_planet_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_drain
+				}
+				remove_planet_flag = celestial_energy_tried_drain
+				celestial_energy_drain_planet_effect = yes
+			}
 		}
-		else_if = {
+		else_if = { # Savannah
 			limit = {
 				is_planet_class = pc_savannah
 			}
 			set_planet_flag = ce_warm
+			if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_fill
+				}
+				remove_planet_flag = celestial_energy_tried_fill
+				celestial_energy_fill_planet_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_drain
+				}
+				remove_planet_flag = celestial_energy_tried_drain
+				celestial_energy_drain_planet_effect = yes
+			}
 		}
-		else_if = {
+		else_if = { # Tundra
 			limit = {
 				is_planet_class = pc_tundra
 			}
@@ -70,14 +168,42 @@ celestial_energy_type_effect = {
 				50 = { set_planet_flag = ce_average }
 				50 = { set_planet_flag = ce_cold }
 			}
+			if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_fill
+				}
+				remove_planet_flag = celestial_energy_tried_fill
+				celestial_energy_fill_planet_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_drain
+				}
+				remove_planet_flag = celestial_energy_tried_drain
+				celestial_energy_drain_planet_effect = yes
+			}
 		}
-		else_if = {
+		else_if = { # Desert
 			limit = {
 				is_planet_class = pc_desert
 			}
 			set_planet_flag = ce_warm
+			if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_fill
+				}
+				remove_planet_flag = celestial_energy_tried_fill
+				celestial_energy_fill_planet_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_drain
+				}
+				remove_planet_flag = celestial_energy_tried_drain
+				celestial_energy_drain_planet_effect = yes
+			}
 		}
-		else_if = {
+		else_if = { # Arctic
 			limit = {
 				is_planet_class = pc_arctic
 			}
@@ -85,24 +211,80 @@ celestial_energy_type_effect = {
 				50 = { set_planet_flag = ce_average }
 				50 = { set_planet_flag = ce_cold }
 			}
+			if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_fill
+				}
+				remove_planet_flag = celestial_energy_tried_fill
+				celestial_energy_fill_planet_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_drain
+				}
+				remove_planet_flag = celestial_energy_tried_drain
+				celestial_energy_drain_planet_effect = yes
+			}
 		}
-		else_if = {
+		else_if = { # Barren
 			limit = {
 				is_planet_class = pc_barren
 			}
 			set_planet_flag = ce_warm
+			if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_fill
+				}
+				remove_planet_flag = celestial_energy_tried_fill
+				celestial_energy_fill_planet_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_drain
+				}
+				remove_planet_flag = celestial_energy_tried_drain
+				celestial_energy_drain_planet_effect = yes
+			}
 		}
-		else_if = {
+		else_if = { # Barren Cold
 			limit = {
 				is_planet_class = pc_barren_cold
 			}
 			set_planet_flag = ce_average
+			if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_fill
+				}
+				remove_planet_flag = celestial_energy_tried_fill
+				celestial_energy_fill_planet_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_drain
+				}
+				remove_planet_flag = celestial_energy_tried_drain
+				celestial_energy_drain_planet_effect = yes
+			}
 		}
-		else_if = {
+		else_if = { # Frozen
 			limit = {
 				is_planet_class = pc_frozen
 			}
 			set_planet_flag = ce_cold
+			if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_fill
+				}
+				remove_planet_flag = celestial_energy_tried_fill
+				celestial_energy_fill_planet_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = celestial_energy_tried_drain
+				}
+				remove_planet_flag = celestial_energy_tried_drain
+				celestial_energy_drain_planet_effect = yes
+			}
 		}
 	}
 }
@@ -232,16 +414,16 @@ celestial_energy_fill_planet_effect = {
 				change_pc = pc_arctic
 			}
 		}
-		else_if = {
+		else_if = { # Flag
 			limit = {
-				NAND = {
+				NOR = {
 					has_planet_flag = ce_warm
 					has_planet_flag = ce_average
 					has_planet_flag = ce_cold
 				}
 			}
+			set_planet_flag = celestial_energy_tried_fill
 			celestial_energy_type_effect = yes
-			#celestial_energy_fill_planet_effect = yes
 		}
 	}
 }
@@ -369,16 +551,16 @@ celestial_energy_drain_planet_effect = {
 				destroy_colony = yes
 			}
 		}
-		else_if = {
+		else_if = { # Flag
 			limit = {
-				NAND = {
+				NOR = {
 					has_planet_flag = ce_warm
 					has_planet_flag = ce_average
 					has_planet_flag = ce_cold
 				}
 			}
+			set_planet_flag = celestial_energy_tried_drain
 			celestial_energy_type_effect = yes
-			#celestial_energy_drain_planet_effect = yes
 		}
 	}
 }
@@ -532,6 +714,228 @@ celestial_energy_drain_star_effect = {
 			change_pc = pc_t_star
 			solar_system = {
 				set_star_class = sc_t
+			}
+		}
+	}
+}
+
+celestial_energy_darkworld_damage_effect = {
+	planet = {# Check for defenses, then check for weapons
+		if = { # Dark Hazard suit reduces possessions and possible damage by 50%
+			limit = {
+				owner = {
+					has_technology = tech_dark_hazard_suit
+					NOT = { has_technology = tech_zeia_dark_suit }
+					NOT = { has_technology = tech_zeia_light_suit }
+				}
+			}
+			random_list = { # Critical invasion
+				10 = {
+					add_planet_devastation = 40
+					every_owned_pop_group = {
+						kill_pop_group = {
+							pop_group = this
+							percentage = 0.40
+						}
+					}
+				}
+				40 = { # Large Invasion
+					add_planet_devastation = 25
+					every_owned_pop_group = {
+						kill_pop_group = {
+							pop_group = this
+							percentage = 0.25
+						}
+					}
+				}
+				50 = { # Average Invasion
+					add_planet_devastation = 15
+					every_owned_pop_group = {
+						kill_pop_group = {
+							pop_group = this
+							percentage = 0.15
+						}
+					}
+				}
+			}
+		}
+		else_if = { # Dark suit reduces possessions and possible damage by 75%
+			limit = {
+				owner = {
+					has_technology = tech_dark_hazard_suit
+					has_technology = tech_zeia_dark_suit
+					NOT = { has_technology = tech_zeia_light_suit }
+				}
+			}
+			if = { # Light Beam gives smaller damage results
+				limit = {
+					has_technology = tech_zeia_light_beam
+					NOT = { has_technology = tech_zeia_annihilator_beam }
+				}
+				random_list = { # Critical invasion
+					10 = {
+						add_planet_devastation = 15
+						every_owned_pop_group = {
+							kill_pop_group = {
+								pop_group = this
+								percentage = 0.15
+							}
+						}
+					}
+					40 = { # Large Invasion
+						add_planet_devastation = 8
+						every_owned_pop_group = {
+							kill_pop_group = {
+								pop_group = this
+								percentage = 0.05
+							}
+						}
+					}
+					50 = { # Average Invasion
+						add_planet_devastation = 5
+						every_owned_pop_group = {
+							kill_pop_group = {
+								pop_group = this
+								percentage = 0.05
+							}
+						}
+					}
+				}
+			}
+			else_if = { # Annihilator Beam gives negligible damage results
+				limit = {
+					has_technology = tech_zeia_light_beam
+					has_technology = tech_zeia_annihilator_beam
+				}
+				random_list = { # Critical invasion
+					10 = {
+						add_planet_devastation = 10
+						every_owned_pop_group = {
+							kill_pop_group = {
+								pop_group = this
+								percentage = 0.10
+							}
+						}
+					}
+					40 = { # Large Invasion
+						add_planet_devastation = 5
+						every_owned_pop_group = {
+							kill_pop_group = {
+								pop_group = this
+								percentage = 0.05
+							}
+						}
+					}
+					50 = { # Average Invasion
+						add_planet_devastation = 1
+						every_owned_pop_group = {
+							kill_pop_group = {
+								pop_group = this
+								percentage = 0.01
+							}
+						}
+					}
+				}
+			}
+			else = { # No special technology gives normal invasion results
+				random_list = { # Critical invasion
+					10 = {
+						add_planet_devastation = 20
+						every_owned_pop_group = {
+							kill_pop_group = {
+								pop_group = this
+								percentage = 0.20
+							}
+						}
+					}
+					40 = { # Large Invasion
+						add_planet_devastation = 10
+						every_owned_pop_group = {
+							kill_pop_group = {
+								pop_group = this
+								percentage = 0.10
+							}
+						}
+					}
+					50 = { # Average Invasion
+						add_planet_devastation = 5
+						every_owned_pop_group = {
+							kill_pop_group = {
+								pop_group = this
+								percentage = 0.05
+							}
+						}
+					}
+				}
+			}
+		}
+		else_if = { # Light suit reduces possessions and possible damage by 100%
+			limit = {
+				owner = {
+					has_technology = tech_dark_hazard_suit
+					has_technology = tech_zeia_dark_suit
+					has_technology = tech_zeia_light_suit
+				}
+			}
+			random_list = { # Critical invasion
+				10 = {
+					add_planet_devastation = 10
+					every_owned_pop_group = {
+						kill_pop_group = {
+							pop_group = this
+							percentage = 0.03
+						}
+					}
+				}
+				40 = { # Large Invasion
+					add_planet_devastation = 5
+					every_owned_pop_group = {
+						kill_pop_group = {
+							pop_group = this
+							percentage = 0.02
+						}
+					}
+				}
+				50 = { # Average Invasion
+					add_planet_devastation = 1
+					every_owned_pop_group = {
+						kill_pop_group = {
+							pop_group = this
+							percentage = 0.01
+						}
+					}
+				}
+			}
+		}
+		else = { # No protection? *vine boom* WHAAAOOOOWWWW get darknant get darknant get darknant get darknant get darknant
+			random_list = { # Critical invasion
+				10 = {
+					add_planet_devastation = 80
+					every_owned_pop_group = {
+						kill_pop_group = {
+							pop_group = this
+							percentage = 0.80
+						}
+					}
+				}
+				40 = { # Large Invasion
+					add_planet_devastation = 50
+					every_owned_pop_group = {
+						kill_pop_group = {
+							pop_group = this
+							percentage = 0.50
+						}
+					}
+				}
+				50 = { # Average Invasion
+					add_planet_devastation = 40
+					every_owned_pop_group = {
+						kill_pop_group = {
+							pop_group = this
+							percentage = 0.40
+						}
+					}
+				}
 			}
 		}
 	}

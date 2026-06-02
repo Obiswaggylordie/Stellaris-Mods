@@ -96,6 +96,11 @@
  MAGIC_WORMHOLE_GALACTIC: "Magic Wormhole"
  MAGIC_WORMHOLE_GALACTIC_DESC: "An esoteric breach in space, sustained by supernatural means."
 
+# Decisions
+ # Dark Stuff
+ decision_dark_world_expedition: "Dark World Expedition"
+ decision_dark_world_expedition_desc: "Gather our best and brightest, arm them with our most advanced of technology, and send them to battle our foe for the sake of our world."
+
 # Celestial Energy stuff
  # Deposits
  d_darkling_storm: "Dark Storm"
@@ -124,7 +129,19 @@
  dark_world_events.5.desc: "As if the great storm shrouding [This.GetName] was not enough, mysterious purple rifts have opened all over the planet. These rifts seem to cause electrical disturbances similar to the great storm around them, and they appear to radiate some kind of toxic energy which corrodes matter from our reality until it ceases to exist."
 
  dark_world_events.6.name: "Ecological Stabilisation"
- dark_world_events.6.desc: ""
+ dark_world_events.6.desc: "The worst of the storms have settled, the seas are calmer, and recovery efforts are helping the biosphere adapt to the drastic changes in environment. [This.GetName] is our world, and we not allow it to succumb to darkness."
 
- dark_world_events.7.name: "Dark Fog"
- dark_world_events.7.desc: ""
+ dark_world_events.8.name: "Black Fog"
+ dark_world_events.8.desc: "Blackness has emerged from the rifts, swirling through the air, morphing and stretching. It moves with uncanny will in defiance of winds or walls, it seeks out life and drowns it with itself. The darkness consuming the living and warping them into soldiers of our enemy, the thralls of the Darklings lay siege to [This.GetName]."
+
+ dark_world_events.9.name: "Bravery or Stupidity"
+ dark_world_events.9.desc: "Our scientists have closely studied the dark rifts of our enemy for some time, and have found ways of transferring probes intact to the other side. And what they found was a shadowed mirror of [This.GetName] itself! The science team eventually lost contact with the probe, its replacement confirmed that the first had simply deteriorated, and by the time the second probe lost contact, the first had been reduced to a pile of withered metal and dust. Clearly the corrosive energy of the rifts must be originating from this dark world. We have the technology, should we decide to send §Ymanned expeditions§! through the rifts we've found."
+
+ dark_world_events.10.name: "Expedition Control"
+ dark_world_events.10.desc: "We will pierce into the Dark World and vanquish our enemy, we will not lose our planet to these devouring parasites from the shadows."
+
+ dark_world_events.10.name: "The Dark World"
+ dark_world_events.10.desc: "Our first expedition has arrived, sensor telemetry from their equipment shows that the atmosphere has already begun to corrode their EVA suits, clearly even our most modern of protective gear can withstand this terrible environment. This place is hellish, a twisted copy of our world, the light cast from the expedition's spotters are all swallowed up quickly, giving them no true sight. The sky is shrouded in a storm far worse than anything we've seen produced elsewhere, clearly the final form of the dark storm shrouding the true planet outside this purgatory. The dark rift returns to its inactive state and we lose connection with the expedition."
+
+ dark_world_events.11.name: "The face of our enemy"
+ dark_world_events.11.desc: "Our telemetry is reconnected with the expedition, they are under attack from towering dark entities. The datastream from their suits quickly inform us that no possessions were at play, they were simply overwhelmed, by the true form of our invaders. A fleeing member from the expedition managed to leap through the rift before it closed once more, writhing in agony as their armour had fused with their body. The Dark World is beyond toxic, and now its creatures know that we can reach them."

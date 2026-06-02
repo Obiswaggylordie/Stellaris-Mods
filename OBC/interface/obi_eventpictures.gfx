@@ -47,4 +47,22 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/dark_fog.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_dark_world"
+		texturefile = "gfx/event_pictures/dark_world.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_dark_sky_temple"
+		texturefile = "gfx/event_pictures/dark_sky_temple.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_darkling_guardian"
+		texturefile = "gfx/event_pictures/darkling_guardian.dds"
+		alwaystransparent = yes
+	}
 }

@@ -822,6 +822,31 @@ decision_kvilsha_project = {
 	}
 }
 
+# Dark World Expedition
+decision_dark_world_expedition = {
+	owned_planets_only = no
+	sound = event_administrative_work
+	icon = decision_dark_rifts
+
+	potential = {
+		has_deposit = d_darkling_rifts
+		owner = {
+			has_technology = tech_dark_rifts
+		}
+	}
+
+	effect = {
+		save_global_event_target_as = dw_exp_target
+		country_event = {
+			id = dark_world_events.10
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
 # Activate Energy Controllers
 decision_activate_energy_controller = {
 	owned_planets_only = no

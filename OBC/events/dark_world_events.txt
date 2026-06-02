@@ -19,7 +19,7 @@ planet_event = {
 			limit = {
 				years_passed >= 50
 				planet_has_celestial_energy = yes
-				NAND = {
+				NOR = {
 					has_deposit = d_darkling_storm
 					has_planet_flag = dark_world_timeout
 					owner = {
@@ -144,7 +144,7 @@ planet_event = {
 				}
 				else_if = {
 					limit = {
-						NAND = {
+						NOR = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -191,7 +191,7 @@ planet_event = {
 				}
 				else_if = {
 					limit = {
-						NAND = {
+						NOR = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -238,7 +238,7 @@ planet_event = {
 				}
 				else_if = {
 					limit = {
-						NAND = {
+						NOR = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -283,7 +283,7 @@ planet_event = {
 				}
 				else_if = {
 					limit = {
-						NAND = {
+						NOR = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -328,7 +328,7 @@ planet_event = {
 				}
 				else_if = {
 					limit = {
-						NAND = {
+						NOR = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -372,7 +372,7 @@ planet_event = {
 				}
 				else_if = {
 					limit = {
-						NAND = {
+						NOR = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -418,7 +418,7 @@ planet_event = {
 				}
 				else_if = {
 					limit = {
-						NAND = {
+						NOR = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -462,7 +462,7 @@ planet_event = {
 				}
 				else_if = {
 					limit = {
-						NAND = {
+						NOR = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -508,7 +508,7 @@ planet_event = {
 				}
 				else_if = {
 					limit = {
-						NAND = {
+						NOR = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -552,7 +552,7 @@ planet_event = {
 				}
 				else_if = {
 					limit = {
-						NAND = {
+						NOR = {
 							has_planet_flag = ce_warm
 							has_planet_flag = ce_average
 							has_planet_flag = ce_cold
@@ -624,13 +624,17 @@ planet_event = {
 	immediate = {
 		add_deposit = d_ecological_disaster
 		add_planet_devastation = 50
-		if = {
+		planet_event = { # Ecological stabilisation after a year
+			id = dark_world_events.6
+			days = 365
+		}
+		if = { # Create Darkling Rifts if there aren't any, assumes first run.
 			limit = {
 				NOT = {
 					has_deposit = d_darkling_rifts
 				}
 			}
-			planet_event = { # Create Darkling Rifts if there aren't any, assumes first run.
+			planet_event = {
 				id = dark_world_events.5
 				days = 10
 			}
@@ -677,20 +681,38 @@ planet_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		add_deposit = d_darkling_rifts
-		add_planet_devastation = 15
+		remove_deposit = d_ecological_disaster
 	}
 
     option = {
-        name = "Disasterous!"
+        name = "Hope."
     }
 }
 
-# Dark World: Darkling invasion monthly
+# Dark World: Invasion Master
 planet_event = {
 	id = dark_world_events.7
-	title = "dark_world_events.7.name"
-	desc = "dark_world_events.7.desc"
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_deposit = d_darkling_rifts
+	}
+
+	immediate = {
+		random_list = {
+			20 = { planet_event = { id = dark_world_events.8 }}
+			80 = { log = Dark_World_no_invasion }
+		}
+	}
+}
+
+# Dark World: GFX Invasion Monthly
+planet_event = {
+	id = dark_world_events.8
+	title = "dark_world_events.8.name"
+	desc = "dark_world_events.8.desc"
 	picture = GFX_dark_fog
 	location = this
 	show_sound = event_burning_city
@@ -703,9 +725,219 @@ planet_event = {
 	}
 
 	immediate = {
-		
+		celestial_energy_darkworld_damage_effect = yes
+		if = {
+			limit = {
+				NOR = {
+					has_planet_flag = Dark_World_Drain_1
+					has_planet_flag = Dark_World_Drain_2
+					has_planet_flag = Dark_World_Drain_3
+					has_planet_flag = Dark_World_Drain_4
+				}
+			}
+			set_planet_flag = Dark_World_Drain_1
+		}
+		else_if = {
+			limit = {
+				has_planet_flag = Dark_World_Drain_1
+				NOR = {
+					has_planet_flag = Dark_World_Drain_2
+					has_planet_flag = Dark_World_Drain_3
+					has_planet_flag = Dark_World_Drain_4
+				}
+			}
+			set_planet_flag = Dark_World_Drain_2
+		}
+		else_if = {
+			limit = {
+				has_planet_flag = Dark_World_Drain_1
+				has_planet_flag = Dark_World_Drain_2
+				NOR = {
+					has_planet_flag = Dark_World_Drain_3
+					has_planet_flag = Dark_World_Drain_4
+				}
+			}
+			set_planet_flag = Dark_World_Drain_3
+		}
+		else_if = {
+			limit = {
+				has_planet_flag = Dark_World_Drain_1
+				has_planet_flag = Dark_World_Drain_2
+				has_planet_flag = Dark_World_Drain_3
+				NOR = {
+					has_planet_flag = Dark_World_Drain_4
+				}
+			}
+			set_planet_flag = Dark_World_Drain_4
+		}
+		else_if = {
+			limit = {
+				has_planet_flag = Dark_World_Drain_1
+				has_planet_flag = Dark_World_Drain_2
+				has_planet_flag = Dark_World_Drain_3
+				has_planet_flag = Dark_World_Drain_4
+			}
+			celestial_energy_drain_planet_effect = yes
+			if = { # Refire Ecological Disaster if it's missing :trol:
+				limit = {
+					NOT = { has_deposit = d_ecological_disaster }
+				}
+				planet_event = {
+					id = dark_world_events.4
+				}
+			}
+			remove_planet_flag = Dark_World_Drain_4
+			set_planet_flag = Dark_World_Drain_1
+		}
 	}
 	option = {
 		name = "This is our world!"
+	}
+}
+
+country_event = { # Dark World 6: GFX event - Dark Rifts Researched
+	id = dark_world_events.9
+	title = "dark_world_events.9.name"
+	desc = "dark_world_events.9.desc"
+	picture = GFX_dark_rifts
+	show_sound = event_missing_mass
+
+	is_triggered_only = yes 
+
+	trigger = {
+		last_increased_tech = tech_dark_rifts
+	}
+
+	option = {
+		name = "We will take the fight to them."
+	}
+}
+
+country_event = { # Dark World Expeditions
+	id = dark_world_events.10
+	title = "dark_world_events.10.name"
+	desc = "dark_world_events.10.desc"
+	picture = GFX_evt_sentry_guns
+	show_sound = event_salute
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "Launch Expedition"
+
+		hidden_effect = {
+			#event_target:dw_exp_target = {
+			#}
+			if = { # First Expedition
+				limit = {
+					NOT = { has_country_flag = darkworld_first_expedition }
+				}
+				country_event = {
+					id = dark_world_events.12
+				}
+				set_country_flag = darkworld_first_expedition
+			}
+			else_if = { # Missing Hazard Suit
+				limit = {
+					has_country_flag = darkworld_first_expedition
+					NOT = { has_technology = tech_dark_hazard_suit }
+				}
+				country_event = {
+					id = dark_world_events.13
+				}
+			}
+			else_if = { # Hazard Expedition
+				limit = {
+					has_country_flag = darkworld_first_expedition
+					has_technology = tech_dark_hazard_suit
+				}
+				country_event = {
+					id = dark_world_events.15
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "Abort expedition"
+	}
+}
+
+country_event = { # Dark World 7: GFX event - First Expedition Arrival
+	id = dark_world_events.11
+	title = dark_world_events.11.name
+	desc = dark_world_events.11.desc
+	picture = GFX_dark_world
+	show_sound = event_life_in_darkness
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "Reopen the rift!"
+		hidden_effect = {
+			country_event = {
+				id = dark_world_events.12
+			}
+		}
+	}
+}
+
+country_event = { # Dark World 8: GFX event - First Expedition wiped out
+	id = dark_world_events.12
+	title = dark_world_events.12.name
+	desc = dark_world_events.12.desc
+	picture = GFX_darkling_guardian
+	show_sound = event_dangerous_animals
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "We will not surrender"
+	}
+}
+
+country_event = { # Dark World 9: GFX event - Non hazard expeditions struggle.
+	id = dark_world_events.13
+	title = dark_world_events.13.name
+	desc = dark_world_events.13.desc
+	picture = GFX_darklings
+	show_sound = event_dangerous_animals
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "We cannot give up!"
+	}
+}
+
+country_event = { # Dark World 10: GFX event - Hazard Suit Researched
+	id = dark_world_events.14
+	title = "dark_world_events.9.name"
+	desc = "dark_world_events.9.desc"
+	picture = GFX_dark_rifts
+	show_sound = event_missing_mass
+
+	is_triggered_only = yes 
+
+	trigger = {
+		last_increased_tech = tech_dark_hazard_suit
+	}
+
+	option = {
+		name = "We do not fear the dark."
+	}
+}
+
+country_event = { # Dark World 11: GFX event - Hazard Expedition
+	id = dark_world_events.15
+	title = dark_world_events.15.name
+	desc = dark_world_events.15.desc
+	picture = GFX_dark_world
+	show_sound = event_dangerous_animals
+
+	is_triggered_only = yes 
+
+	option = {
+		name = "We cannot give up!"
 	}
 }
