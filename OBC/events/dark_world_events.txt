@@ -680,6 +680,10 @@ planet_event = {
 	hide_window = no
 	is_triggered_only = yes
 
+	trigger = {
+		has_deposit = d_ecological_disaster
+	}
+
 	immediate = {
 		remove_deposit = d_ecological_disaster
 	}

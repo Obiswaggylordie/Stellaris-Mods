@@ -753,6 +753,9 @@
  tech_zeia_drones: "Zei'a Drone Weapons"
  tech_zeia_drones_desc: "One of the most powerful weapons in the universe, these projectiles bypass shields and melt through armour like butter."
 
+ tech_tetradimensional_engineering: "Tetradimensional Engineering"
+ tech_tetradimensional_engineering_desc: "An advanced form of dimensional manipulation."
+
  tech_zeia_anti_electron_beam: "Zei'a Anti-Electron Beam Casters"
  tech_zeia_anti_electron_beam_desc: "Perhaps the most esoteric particle weapons in all of recorded history, utilising Anti-Electrons or Positron Particles as it were. These particles are the antimatter of regular electrons and they will instantly annihilate both themselves and their counterpart upon interacting with the other. These are the primary particle weapons of Kas Zei'a"
 

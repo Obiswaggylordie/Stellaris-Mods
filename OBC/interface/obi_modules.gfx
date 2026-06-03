@@ -9,13 +9,13 @@ spriteTypes = {
 	# Stardrive
 	spriteType = {
 		name = "GFX_zeia_stardrive"
-		texturefile = "gfx/interface/icons/modules/zeia_stardrive.dds"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_stardrive.dds"
 	}
 
 	# Wormhole Drive
 	spriteType = {
 		name = "GFX_zeia_wormhole_drive"
-		texturefile = "gfx/interface/icons/modules/zeia_wormhole_drive.dds"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_wormhole_drive.dds"
 	}
 
 	# Zei'a Void Drive

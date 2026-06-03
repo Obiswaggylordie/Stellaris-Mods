@@ -191,7 +191,7 @@ weapon_component_template = {
 	
 	#entity = "large_laser_gun_entity"
 	
-	damage = { min = 2000 max = 2000 } 
+	damage = { min = 4000 max = 4000 } 
 	windup = { min = 10.0 max = 10.0 } 
 	total_fire_time = 100
 	range = 300

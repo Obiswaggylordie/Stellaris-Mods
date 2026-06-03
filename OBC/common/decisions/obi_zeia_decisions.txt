@@ -474,9 +474,8 @@ decision_build_chair_outpost = {
 
 	potential = {
 		owner = {
-			OR = {
-				has_origin = origin_obi_zeia
-			}
+			has_origin = origin_obi_zeia
+			has_technology = tech_zeia_sdc
 		}
 		NOR = {
 			has_deposit = d_chair_outpost
@@ -556,23 +555,18 @@ decision_deactivate_chair_outpost = {
 		add_deposit = d_chair_outpost
 	}
 }
-## Build City-Ship
+
+# Build City-Ship
 decision_build_city_ship = {
 	owned_planets_only = yes
 	icon = decision_city_ship
-
-	prerequisites = {
-		"tech_zeia_chair"
-	}
 
 	enactment_time = 365
 
 	potential = {
 		owner = {
-			OR = {
-				has_trait = trait_kvilsha
-				has_trait = trait_uviik
-			}
+			has_origin = origin_obi_zeia
+			has_technology = tech_zeia_chair
 		}
 		NOT = {
 			has_deposit = d_city_ship
@@ -592,7 +586,7 @@ decision_build_city_ship = {
 	}
 }
 
-## City-Ship Drones
+# City-Ship Drones
 decision_drones_city_ship = {
 	owned_planets_only = yes
 	icon = decision_city_ship
@@ -616,7 +610,7 @@ decision_drones_city_ship = {
 	}
 }
 
-## City-Ship Launch
+# City-Ship Launch
 decision_launch_city_ship = {
 	owned_planets_only = yes
 	icon = decision_city_ship
@@ -637,7 +631,7 @@ decision_launch_city_ship = {
 		create_fleet = {
 			name = "Zei'a City-Ship"
 			effect = {
-				set_owner = PREV
+				set_owner = FROM
 				while = {
 					count = 1
 					create_ship = {
@@ -653,10 +647,17 @@ decision_launch_city_ship = {
 	}
 }
 
-## City-Ship Land
+# City-Ship Land
 decision_land_city_ship = {
 	owned_planets_only = yes
 	icon = decision_city_ship
+
+	resources = {
+		category = decisions
+		cost = {
+			sr_sdc = -3
+		}
+	}
 
 	potential = {
 		NOT = {
@@ -684,7 +685,7 @@ decision_land_city_ship = {
 	}
 }
 
-## City-Ship Colonize
+# City-Ship Colonize
 decision_colonize_city_ship = {
 	owned_planets_only = no
 	icon = decision_city_ship
@@ -715,76 +716,75 @@ decision_colonize_city_ship = {
 		}
 		add_deposit = d_city_ship
 		start_colony = {
-			owner = space_owner
-			species = space_owenr
-			ethos = random
+			owner = FROM
 		}
 	}
 }
-# Build Attero
-decision_build_attero = {
-	owned_planets_only = yes
-	icon = decision_attero
 
-	prerequisites = {
-		"tech_aegis_sphere"
-	}
+## Build Attero
+#decision_build_attero = {
+#	owned_planets_only = yes
+#	icon = decision_attero
+#
+#	prerequisites = {
+#		"tech_aegis_sphere"
+#	}
+#
+#	enactment_time = 30
+#
+#	potential = {
+#		NOR = {
+#			has_deposit = d_attero_device
+#			has_deposit = d_attero_device_inactive
+#		}
+#		OR = {
+#			is_planet_class = pc_forerunner_shield
+#			is_planet_class = pc_forerunner_sharpened_shield
+#			is_planet_class = pc_genesis
+#			#is_planet_class = pc_requiem
+#		}
+#	}
+#
+#	resources = {
+#		category = decisions
+#		cost = {
+#			alloys = 1000
+#		}
+#	}
+#
+#	effect = {
+#		add_deposit = d_attero_device_inactive
+#	}
+#}
 
-	enactment_time = 30
+## Deactivate Attero
+#decision_deactivate_attero = {
+#	owned_planets_only = yes
+#	icon = decision_attero
+#
+#	potential = {
+#		has_deposit = d_attero_device
+#	}
+#
+#	effect = {
+#		remove_deposit = d_attero_device
+#		add_deposit = d_attero_device_inactive
+#	}
+#}
 
-	potential = {
-		NOR = {
-			has_deposit = d_attero_device
-			has_deposit = d_attero_device_inactive
-		}
-		OR = {
-			is_planet_class = pc_forerunner_shield
-			is_planet_class = pc_forerunner_sharpened_shield
-			is_planet_class = pc_genesis
-			#is_planet_class = pc_requiem
-		}
-	}
-
-	resources = {
-		category = decisions
-		cost = {
-			alloys = 1000
-		}
-	}
-
-	effect = {
-		add_deposit = d_attero_device_inactive
-	}
-}
-
-# Deactivate Attero
-decision_deactivate_attero = {
-	owned_planets_only = yes
-	icon = decision_attero
-
-	potential = {
-		has_deposit = d_attero_device
-	}
-
-	effect = {
-		remove_deposit = d_attero_device
-		add_deposit = d_attero_device_inactive
-	}
-}
-
-# Dismantle Attero
-decision_dismantle_attero = {
-	owned_planets_only = yes
-	icon = decision_attero
-
-	potential = {
-		has_deposit = d_attero_device_inactive
-	}
-
-	effect = {
-		remove_deposit = d_attero_device_inactive
-	}
-}
+## Dismantle Attero
+#decision_dismantle_attero = {
+#	owned_planets_only = yes
+#	icon = decision_attero
+#
+#	potential = {
+#		has_deposit = d_attero_device_inactive
+#	}
+#
+#	effect = {
+#		remove_deposit = d_attero_device_inactive
+#	}
+#}
 
 # The Kvil'sha Project
 decision_kvilsha_project = {
@@ -815,36 +815,11 @@ decision_kvilsha_project = {
 					trait = trait_psionic
 				}
 			}
-			create_pop_group =  {
+			create_pop_group = {
 				size = 500
 				species = "Kvil'sha"
 			}
 		}
-	}
-}
-
-# Dark World Expedition
-decision_dark_world_expedition = {
-	owned_planets_only = no
-	sound = event_administrative_work
-	icon = decision_dark_rifts
-
-	potential = {
-		has_deposit = d_darkling_rifts
-		owner = {
-			has_technology = tech_dark_rifts
-		}
-	}
-
-	effect = {
-		save_global_event_target_as = dw_exp_target
-		country_event = {
-			id = dark_world_events.10
-		}
-	}
-
-	ai_weight = {
-		weight = 0
 	}
 }
 
@@ -857,18 +832,6 @@ decision_activate_energy_controller = {
 	potential = {
 		OR = {
 			has_deposit = d_energy_controller
-			AND = {
-				planet = {
-					has_deposit = d_space_bridge
-				}
-				space_owner = {
-					is_same_empire = solar_system.space_owner
-					any_owned_planet = {
-						has_deposit = d_space_bridge
-						has_deposit = d_energy_controller
-					}
-				}
-			}
 			solar_system = {
 				starbase = {
 					has_starbase_building = zeia_energy_controller
@@ -901,7 +864,10 @@ decision_activate_energy_controller = {
 					country_event = { id = celestial_energy_events.3 }
 				}
 			}
-			else = {
+			else_if = {
+				limit = {
+					NOT = { is_planet_class = pc_giga_o_star }
+				}
 				from = {
 					country_event = { id = celestial_energy_events.2 }
 				}
@@ -1031,7 +997,7 @@ decision_construct_uviik = {
 					trait = trait_uviik
 				}
 			}
-			create_pop_group =  {
+			create_pop_group = {
 				size = 500
 				species = "Uviik"
 			}
@@ -1067,6 +1033,33 @@ dtf_factory_full_operation = {
 
 	effect = {
 		add_modifier = { modifier = "dtf_pm_factory_full_operation" days = 360 }
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Dark World Expedition
+decision_dark_world_expedition = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_dark_rifts
+
+	potential = {
+		has_deposit = d_darkling_rifts
+		owner = {
+			has_technology = tech_dark_rifts
+		}
+	}
+
+	effect = {
+		save_global_event_target_as = dw_exp_target
+		owner = {
+			country_event = {
+				id = dark_world_events.10
+			}
+		}
 	}
 
 	ai_weight = {

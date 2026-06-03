@@ -72,6 +72,9 @@ country_event = { # Planetary Energy
 		name = "celestial_energy_events.1.c"
 
 		allow = {
+			event_target:ce_target = {
+				NOT = { has_deposit = d_light_shaft }
+			}
 			has_technology = tech_zeia_light_shaft
 		}
 

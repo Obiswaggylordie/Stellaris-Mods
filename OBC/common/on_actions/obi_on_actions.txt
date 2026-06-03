@@ -18,7 +18,7 @@ on_monthly_pulse_country = {
 
 on_colony_monthly_pulse = {
 	events = {
-		dark_world_events.6 # Darkling fog invasion master
+		dark_world_events.7 # Darkling fog invasion master
 	}
 }
 

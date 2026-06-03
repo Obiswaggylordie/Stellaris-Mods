@@ -101,6 +101,10 @@
  decision_dark_world_expedition: "Dark World Expedition"
  decision_dark_world_expedition_desc: "Gather our best and brightest, arm them with our most advanced of technology, and send them to battle our foe for the sake of our world."
 
+# Time Fault
+ dtf_factory_full_operation: "Time Fault Factory Overdrive"
+ dtf_factory_full_operation_desc: "Run the Time Fault Factories at overdrive."
+ 
 # Celestial Energy stuff
  # Deposits
  d_darkling_storm: "Dark Storm"

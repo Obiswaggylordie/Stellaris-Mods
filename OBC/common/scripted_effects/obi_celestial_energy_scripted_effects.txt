@@ -15,20 +15,6 @@ celestial_energy_type_effect = {
 				33 = { set_planet_flag = ce_average }
 				33 = { set_planet_flag = ce_cold }
 			}
-			if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_fill
-				}
-				remove_planet_flag = celestial_energy_tried_fill
-				celestial_energy_fill_planet_effect = yes
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_drain
-				}
-				remove_planet_flag = celestial_energy_tried_drain
-				celestial_energy_drain_planet_effect = yes
-			}
 		}
 		else_if = { # Tropical
 			limit = {
@@ -39,20 +25,6 @@ celestial_energy_type_effect = {
 				33 = { set_planet_flag = ce_average }
 				33 = { set_planet_flag = ce_cold }
 			}
-			if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_fill
-				}
-				remove_planet_flag = celestial_energy_tried_fill
-				celestial_energy_fill_planet_effect = yes
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_drain
-				}
-				remove_planet_flag = celestial_energy_tried_drain
-				celestial_energy_drain_planet_effect = yes
-			}
 		}
 		else_if = { # Continental
 			limit = {
@@ -62,60 +34,18 @@ celestial_energy_type_effect = {
 				50 = { set_planet_flag = ce_warm }
 				50 = { set_planet_flag = ce_average }
 			}
-			if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_fill
-				}
-				remove_planet_flag = celestial_energy_tried_fill
-				celestial_energy_fill_planet_effect = yes
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_drain
-				}
-				remove_planet_flag = celestial_energy_tried_drain
-				celestial_energy_drain_planet_effect = yes
-			}
 		}
 		else_if = { # Ocean
 			limit = {
 				is_planet_class = pc_ocean
 			}
 			set_planet_flag = ce_cold
-			if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_fill
-				}
-				remove_planet_flag = celestial_energy_tried_fill
-				celestial_energy_fill_planet_effect = yes
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_drain
-				}
-				remove_planet_flag = celestial_energy_tried_drain
-				celestial_energy_drain_planet_effect = yes
-			}
 		}
 		else_if = { # Arid
 			limit = {
 				is_planet_class = pc_arid
 			}
 			set_planet_flag = ce_warm
-			if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_fill
-				}
-				remove_planet_flag = celestial_energy_tried_fill
-				celestial_energy_fill_planet_effect = yes
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_drain
-				}
-				remove_planet_flag = celestial_energy_tried_drain
-				celestial_energy_drain_planet_effect = yes
-			}
 		}
 		else_if = { # Alpine
 			limit = {
@@ -125,40 +55,12 @@ celestial_energy_type_effect = {
 				50 = { set_planet_flag = ce_average }
 				50 = { set_planet_flag = ce_cold }
 			}
-			if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_fill
-				}
-				remove_planet_flag = celestial_energy_tried_fill
-				celestial_energy_fill_planet_effect = yes
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_drain
-				}
-				remove_planet_flag = celestial_energy_tried_drain
-				celestial_energy_drain_planet_effect = yes
-			}
 		}
 		else_if = { # Savannah
 			limit = {
 				is_planet_class = pc_savannah
 			}
 			set_planet_flag = ce_warm
-			if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_fill
-				}
-				remove_planet_flag = celestial_energy_tried_fill
-				celestial_energy_fill_planet_effect = yes
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_drain
-				}
-				remove_planet_flag = celestial_energy_tried_drain
-				celestial_energy_drain_planet_effect = yes
-			}
 		}
 		else_if = { # Tundra
 			limit = {
@@ -168,40 +70,12 @@ celestial_energy_type_effect = {
 				50 = { set_planet_flag = ce_average }
 				50 = { set_planet_flag = ce_cold }
 			}
-			if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_fill
-				}
-				remove_planet_flag = celestial_energy_tried_fill
-				celestial_energy_fill_planet_effect = yes
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_drain
-				}
-				remove_planet_flag = celestial_energy_tried_drain
-				celestial_energy_drain_planet_effect = yes
-			}
 		}
 		else_if = { # Desert
 			limit = {
 				is_planet_class = pc_desert
 			}
 			set_planet_flag = ce_warm
-			if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_fill
-				}
-				remove_planet_flag = celestial_energy_tried_fill
-				celestial_energy_fill_planet_effect = yes
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_drain
-				}
-				remove_planet_flag = celestial_energy_tried_drain
-				celestial_energy_drain_planet_effect = yes
-			}
 		}
 		else_if = { # Arctic
 			limit = {
@@ -211,80 +85,24 @@ celestial_energy_type_effect = {
 				50 = { set_planet_flag = ce_average }
 				50 = { set_planet_flag = ce_cold }
 			}
-			if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_fill
-				}
-				remove_planet_flag = celestial_energy_tried_fill
-				celestial_energy_fill_planet_effect = yes
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_drain
-				}
-				remove_planet_flag = celestial_energy_tried_drain
-				celestial_energy_drain_planet_effect = yes
-			}
 		}
 		else_if = { # Barren
 			limit = {
 				is_planet_class = pc_barren
 			}
 			set_planet_flag = ce_warm
-			if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_fill
-				}
-				remove_planet_flag = celestial_energy_tried_fill
-				celestial_energy_fill_planet_effect = yes
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_drain
-				}
-				remove_planet_flag = celestial_energy_tried_drain
-				celestial_energy_drain_planet_effect = yes
-			}
 		}
 		else_if = { # Barren Cold
 			limit = {
 				is_planet_class = pc_barren_cold
 			}
 			set_planet_flag = ce_average
-			if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_fill
-				}
-				remove_planet_flag = celestial_energy_tried_fill
-				celestial_energy_fill_planet_effect = yes
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_drain
-				}
-				remove_planet_flag = celestial_energy_tried_drain
-				celestial_energy_drain_planet_effect = yes
-			}
 		}
 		else_if = { # Frozen
 			limit = {
 				is_planet_class = pc_frozen
 			}
 			set_planet_flag = ce_cold
-			if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_fill
-				}
-				remove_planet_flag = celestial_energy_tried_fill
-				celestial_energy_fill_planet_effect = yes
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = celestial_energy_tried_drain
-				}
-				remove_planet_flag = celestial_energy_tried_drain
-				celestial_energy_drain_planet_effect = yes
-			}
 		}
 	}
 }
@@ -769,8 +587,10 @@ celestial_energy_darkworld_damage_effect = {
 			}
 			if = { # Light Beam gives smaller damage results
 				limit = {
-					has_technology = tech_zeia_light_beam
-					NOT = { has_technology = tech_zeia_annihilator_beam }
+					owner = {
+						has_technology = tech_zeia_light_beam
+						NOT = { has_technology = tech_zeia_annihilator_beam }
+					}
 				}
 				random_list = { # Critical invasion
 					10 = {
@@ -804,8 +624,10 @@ celestial_energy_darkworld_damage_effect = {
 			}
 			else_if = { # Annihilator Beam gives negligible damage results
 				limit = {
-					has_technology = tech_zeia_light_beam
-					has_technology = tech_zeia_annihilator_beam
+					owner = {
+						has_technology = tech_zeia_light_beam
+						has_technology = tech_zeia_annihilator_beam
+					}
 				}
 				random_list = { # Critical invasion
 					10 = {
