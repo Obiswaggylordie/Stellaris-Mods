@@ -1,6 +1,6 @@
-############# DRONE SWARM #####################################################################
+# Zei'a Weapons
 
-###### DRONE SWARM X ############
+# Drones
 weapon_component_template = {
 	key = "ZEIA_DRONES_X"
 	size = extra_large
@@ -45,6 +45,52 @@ weapon_component_template = {
 	}
 }
 
+# Anti Electron S
+weapon_component_template = {
+	key = "ZEIA_ANTI_ELECTRON_BEAM_S"
+	size = small
+	type = instant
+	
+	icon = "GFX_zeia_anti_electron_beam"
+	icon_frame = 1
+	
+	#entity = "medium_laser_gun_entity"
+
+	damage = { min = 500 max = 500 } 
+	windup = { min = 10.0 max = 10.0 } 
+	total_fire_time = 10
+	range = 150
+	accuracy = 0.8
+	tracking = 0.4
+	
+	armor_penetration = 0.5
+	armor_damage = 2.0
+	hull_damage = 1.5
+	
+	power = -200
+	
+	prerequisites = { "tech_zeia_anti_electron_beam" }
+	component_set = "ZEIA_ANTI_ELECTRON_BEAM_SET"
+	projectile_gfx = "converging_beam_m" #"gamma_laser_l" 
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	#upgrades_to = "MEDIUM_BLUE_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+		}
+		upkeep = {
+			energy = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+	ai_weight = {
+		weight = 100000
+	}
+}
+
+# Anti Electron M
 weapon_component_template = {
 	key = "ZEIA_ANTI_ELECTRON_BEAM_M"
 	size = medium
@@ -89,6 +135,7 @@ weapon_component_template = {
 	}
 }
 
+# Anti Electron L
 weapon_component_template = {
 	key = "ZEIA_ANTI_ELECTRON_BEAM_L"
 	size = large
@@ -111,6 +158,52 @@ weapon_component_template = {
 	hull_damage = 1.5
 	
 	power = -800
+	
+	prerequisites = { "tech_zeia_anti_electron_beam" }
+	component_set = "ZEIA_ANTI_ELECTRON_BEAM_SET"
+	projectile_gfx = "converging_beam_m" 
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	#upgrades_to = "LARGE_UV_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+		}
+		upkeep = {
+			energy = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+	ai_weight = {
+		weight = 100000
+	}
+}
+
+# Anti Electron T
+weapon_component_template = {
+	key = "ZEIA_ANTI_ELECTRON_BEAM_T"
+	size = titanic
+	type = instant
+	
+	icon = "GFX_zeia_anti_electron_beam"
+	icon_frame = 1
+	
+	#entity = "large_laser_gun_entity"
+	
+	damage = { min = 2000 max = 2000 } 
+	windup = { min = 10.0 max = 10.0 } 
+	total_fire_time = 100
+	range = 300
+	accuracy = 1.0
+	tracking = 1.0
+	
+	shield_penetration = 1.0
+	armor_penetration = 1.0
+	armor_damage = 5.0
+	hull_damage = 5.0
+	
+	power = -1200
 	
 	prerequisites = { "tech_zeia_anti_electron_beam" }
 	component_set = "ZEIA_ANTI_ELECTRON_BEAM_SET"

@@ -121,3 +121,33 @@ country_event = {
 		}
 	}
 }
+
+# CNU Promotion
+country_event = {
+	id = zeia_events.05
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		from = {
+			species = { has_trait = trait_uviik }
+			NOT = {
+				has_trait = leader_trait_aurora_uviik
+			}
+		}
+	}
+	
+	immediate = {
+		from = {
+            if = {
+                limit = {
+                    has_total_skill > 9
+                }
+                add_trait = {
+                    trait = leader_trait_aurora_uviik
+                    show_message = yes
+                }
+            }
+		}
+	}
+}

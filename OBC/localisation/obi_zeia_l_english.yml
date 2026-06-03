@@ -777,7 +777,7 @@
  ZEIA_CLOAK: "Zei'a Void Shroud"
  ZEIA_SCIENCE_CLOAK: "Zei'a Void Shroud"
  ZEIA_CLOAK_SET: "Zei'a Void Shroud"
- ZEIA_CLOAK_SET_DESC:""
+ ZEIA_CLOAK_SET_DESC: ""
 
  ZEIA_ARMOR: "Zei'a Omega Alloy"
  ZEIA_ARMOR_SET: "Zei'a Omega Alloy"
@@ -790,6 +790,14 @@
  ZEIA_DIMENG: "Zei'a Dimension Engine"
  ZEIA_DIMENG_SET: "Zei'a Dimension Engine"
  ZEIA_DIMENG_SET_DESC: ""
+
+ ZEIA_STARDRIVE: "Zei'a Stardrive"
+ ZEIA_STARDRIVE_SET: "Zei'a Stardrive"
+ ZEIA_STARDRIVE_SET_DESC: ""
+
+ ZEIA_WORMHOLE_DRIVE: "Zei'a Wormhole Drive"
+ ZEIA_WORMHOLE_DRIVE_SET: "Zei'a Wormhole Drive"
+ ZEIA_WORMHOLE_DRIVE_SET_DESC: ""
 
  ZEIA_VOID_DRIVE: "Zei'a Void Drive"
  ZEIA_VOID_DRIVE_SET: "Zei'a Void Drive"
@@ -811,7 +819,9 @@
  ZEIA_DRONES_SET: "Zei'a Drones"
  ZEIA_DRONES_SET_DESC: ""
 
+ ZEIA_ANTI_ELECTRON_BEAM_S: "Zei'a Anti-Electron Beam Caster"
  ZEIA_ANTI_ELECTRON_BEAM_M: "Zei'a Anti-Electron Beam Caster"
  ZEIA_ANTI_ELECTRON_BEAM_L: "Zei'a Anti-Electron Beam Caster"
+ ZEIA_ANTI_ELECTRON_BEAM_T: "Zei'a Anti-Electron Beam Caster"
  ZEIA_ANTI_ELECTRON_BEAM_SET: "Zei'a Anti-Electron Beam Caster"
  ZEIA_ANTI_ELECTRON_BEAM_SET_DESC: "Zei'a Anti-Electron Beam Caster"

@@ -5,12 +5,12 @@
 #	icon_frame = 1	
 #}
 
-#component_set = {
-#	key = "ASCENDED_CLOUD_LIGHTNING_SET"
-#	
-#	icon = "GFX_ascended_cloud_lightning"
-#	icon_frame = 1	
-#}
+component_set = {
+	key = "ASCENDED_CLOUD_LIGHTNING_SET"
+	
+	icon = "GFX_ship_part_space_cloud_weapon_1"
+	icon_frame = 1	
+}
 
 component_set = {
 	key = "CONTROL_CHAIR_AUX"
@@ -51,9 +51,23 @@ component_set = {
 }
 
 component_set = {
+	key = "ZEIA_STARDRIVE_SET"
+
+	icon = "GFX_zeia_stardrive"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ZEIA_WORMHOLE_DRIVE"
+
+	icon = "GFX_zeia_wormhole_drive"
+	icon_frame = 1
+}
+
+component_set = {
 	key = "ZEIA_VOID_DRIVE_SET"
 
-	icon = "GFX_zeia_dimeng"
+	icon = "GFX_zeia_void_drive"
 	icon_frame = 1
 }
 

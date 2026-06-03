@@ -522,13 +522,39 @@ tech_zeia_light_suit = {
   	}
 }
 
+tech_tetradimensional_engineering = {
+	cost = 1000
+	area = physics
+	tier = 1
+	is_rare = yes
+	category = { particles }
+	prerequisites = { "tech_zeia_dimeng" }
+	weight = @tier1weight1
+
+	potential = {
+	} 
+
+	modifier = {
+		megastructure_build_speed_mult = 1.00
+		country_physics_research_produces_mult = 1.00
+	}
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
 tech_aurora_class = {
 	cost = 1000
 	area = engineering
 	tier = 1
 	is_rare = yes
 	category = { materials }
-	prerequisites = { "tech_zeia_biocomputing" "giga_tech_tetradimensional_engineering" }
+	prerequisites = { "tech_zeia_biocomputing" "tech_tetradimensional_engineering" }
 	weight = @tier1weight1
 
 	potential = {  
@@ -964,7 +990,7 @@ tech_zeia_sdc = {
 	tier = 4
 	is_rare = yes
 	category = { particles }
-	prerequisites = { "tech_zeia_dimeng" "giga_tech_tetradimensional_engineering" }
+	prerequisites = { "tech_zeia_dimeng" "tech_tetradimensional_engineering" }
 	weight = @tier4weight3
 
 	potential = {  

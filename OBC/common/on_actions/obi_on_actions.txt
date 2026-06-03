@@ -46,6 +46,7 @@ on_leader_level_up = {
 		zeia_events.02 # Kvil'sha Traits
 		zeia_events.03 # Uviik Traits
 		zeia_events.04 # Guild Arch Promotion
+		zeia_events.05 # CNU promotion
 	}
 }
 

@@ -1,0 +1,20 @@
+tech_obi_placeholder = {
+	cost = 1000
+	area = engineering
+	tier = 1
+	is_rare = yes
+	category = { materials }
+	weight = @tier1weight1
+
+	potential = {  
+		always = no
+	} 
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}

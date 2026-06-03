@@ -356,6 +356,74 @@ utility_component_template = {
 	}
 }
 
+# Stardrive
+utility_component_template = {
+	key = "ZEIA_STARDRIVE"
+	size = small
+	icon = "GFX_zeia_stardrive"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 30
+			energy = 100
+		}
+	}
+	ftl = yes
+	jumpdrive = yes
+
+	ship_modifier = {
+		ship_disengage_opportunities_add = 10
+		ship_windup_mult = -0.25
+		ship_ftl_jumpdrive_range_mult = 0.50
+		ship_jumpdrive_cooldown_mult = -0.25
+		ship_interstellar_speed_mult = 2
+	}
+
+	prerequisites = { "tech_zeia_stardrive" }
+	component_set = "ftl_components"
+
+	ai_weight = {
+		weight = 50000
+	}
+}
+
+# Wormhole Drive
+utility_component_template = {
+	key = "ZEIA_WORMHOLE_DRIVE"
+	size = small
+	icon = "GFX_zeia_wormhole_drive"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+
+		cost = {
+			alloys = 30
+			energy = 100
+		}
+	}
+	ftl = yes
+	jumpdrive = yes
+
+	ship_modifier = {
+		ship_disengage_opportunities_add = 50
+		ship_windup_mult = -0.50
+		ship_ftl_jumpdrive_range_mult = 0.50
+		ship_jumpdrive_cooldown_mult = -0.50
+		ship_interstellar_speed_mult = 5
+	}
+
+	prerequisites = { "tech_zeia_wormhole_drive" }
+	component_set = "ftl_components"
+
+	ai_weight = {
+		weight = 50000
+	}
+}
+
 # Void Drive
 utility_component_template = {
 	key = "ZEIA_VOID_DRIVE"

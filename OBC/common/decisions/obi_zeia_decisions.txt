@@ -795,6 +795,7 @@ decision_kvilsha_project = {
 		from = {
 			has_technology = tech_zeia_kvilsha_project
 		}
+		has_deposit = d_fanum_domain
 	}
 
 	effect = {
@@ -1006,20 +1007,14 @@ decision_construct_uviik = {
 		}
 	}
 	potential = {
+		has_deposit = d_fanum_domain
 		owner = {
-			has_origin = origin_obi_zeia
+			has_technology = tech_zeia_biocrystalline
 			NOR = { 
 				is_individual_machine = yes 
 				is_gestalt = yes 
 			}
 		}
-		#planet = {
-		#	OR = {
-		#		has_active_building = building_sentinel_factory 
-		#		has_active_building = building_promethean_factory
-		#		has_deposit = d_automated_sentinel_factory
-		#	}
-		#}
 	}
 	effect = {
 		custom_tooltip = decision_construct_uviik_tooltip
@@ -1044,57 +1039,6 @@ decision_construct_uviik = {
 	}
 }
 
-#### Create Mechanical Prometheans
-##decision_construct_mechanical_prometheans = {
-#	owned_planets_only = yes
-#	icon = decision_construct_mechanical_prometheans
-#	
-#	enactment_time = 30
-#	resources = {
-#		category = decisions
-#		cost = {
-#			minerals = 2000
-#			energy = 1000
-#		}
-#	}
-#	
-#	potential = {
-#		exists = owner 
-#		AND = {
-#			owner = { NOT = { is_gestalt = yes }}
-#			owner = {
-#				has_technology = tech_pk_composer
-#			}		
-#		}
-#		planet = {
-#			is_planet_class = pc_requiem
-#		}
-#	}
-#	
-#	effect = {
-#		custom_tooltip = decision_construct_mechanical_prometheans_effects
-#		hidden_effect = {
-#			create_species = {
-#				name = "Twilight-Class Uviik"
-#				plural = "Twilight-Class Uviik'zu"
-#				class = "forerunner_promethean"
-#				portrait = "promethean"
-#				namelist = "promethean"
-#				traits = {
-#					trait = trait_mechanical
-#					trait = trait_robot_promethean_ai
-#				}
-#			}
-#			while = {
-#				count = 1
-#				create_pop = {
-#					species = "Twilight-Class Uviik"
-#				}
-#			}
-#		}
-#	}
-#}
-#
 dtf_factory_full_operation = {
 	owned_planets_only = yes
 	sound = event_administrative_work
@@ -1129,39 +1073,7 @@ dtf_factory_full_operation = {
 		weight = 0
 	}
 }
-#
-#gge_create_sroka = {
-#	owned_planets_only = yes
-#	sound = event_administrative_work
-#	icon = decision_resources
-#
-#	resources = {
-#		category = decisions
-#		cost = {
-#			influence = 25
-#		}
-#	}
-#
-#	potential = {
-#		is_colony = yes
-#		is_artificial = no
-#		from = {
-#			has_origin = origin_garmillas
-#		}
-#		NOT = {
-#			is_planet_class = pc_garmillas
-#		}
-#	}
-#
-#	effect = {
-#		change_pc = pc_garmillas
-#	}
-#
-#	ai_weight = {
-#		weight = 1000
-#	}
-#}
-#
+
 ###########################################################################
 ## Shield World Decisions
 ###########################################################################

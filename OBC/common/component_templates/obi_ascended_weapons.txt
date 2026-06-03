@@ -24,16 +24,12 @@ weapon_component_template = {
 
 	accuracy = 1.0
 	tracking = 1.0
-	power = -17
+	power = 0
 
 	resources = {
 		category = ship_components
 		cost = {
 			psi_energy = 5000000
-		}
-		upkeep = {
-			energy = @s_t3_upkeep_energy
-			alloys = @s_t3_upkeep_alloys
 		}
 	}
 

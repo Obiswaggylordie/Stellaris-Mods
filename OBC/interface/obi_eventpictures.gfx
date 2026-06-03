@@ -7,6 +7,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_origin_pony"
+		texturefile = "gfx/event_pictures/origins/origin_pony.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
 		name = "GFX_void_relay"
 		texturefile = "gfx/event_pictures/void_relay.dds"
 		alwaystransparent = yes

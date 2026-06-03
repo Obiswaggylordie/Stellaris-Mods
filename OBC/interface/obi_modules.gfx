@@ -6,6 +6,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/modules/sb_energy_controller.dds"
 	}
 
+	# Stardrive
+	spriteType = {
+		name = "GFX_zeia_stardrive"
+		texturefile = "gfx/interface/icons/modules/zeia_stardrive.dds"
+	}
+
+	# Wormhole Drive
+	spriteType = {
+		name = "GFX_zeia_wormhole_drive"
+		texturefile = "gfx/interface/icons/modules/zeia_wormhole_drive.dds"
+	}
+
+	# Zei'a Void Drive
+	spriteType = {
+		name = "GFX_zeia_void_drive"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_void_drive.dds"
+	}
+
 	# Station SDCs
 	spriteType = {
 		name = "GFX_sb_sdc"
@@ -58,13 +76,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_zeia_dimeng"
 		texturefile = "gfx/interface/icons/ship_parts/zeia_dimeng.dds"
-	}
-
-
-	# Zei'a Void Drive
-	spriteType = {
-		name = "GFX_zeia_void_drive"
-		texturefile = "gfx/interface/icons/ship_parts/zeia_void_drive.dds"
 	}
 
 	# Zei'a Void Shroud

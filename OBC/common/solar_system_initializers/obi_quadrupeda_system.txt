@@ -20,9 +20,18 @@ obi_quadrupeda_system_initializer = {
 		}
 	}
 	planet = {
+		name = "Celestia"
+		class = star
+		orbit_distance = 50
+		orbit_angle = 90
+		size = 15
+		has_ring = no
+	}
+
+	planet = {
 		name = "Quadrupeda"
 		class = "pc_continental"
-		orbit_distance = 1
+		orbit_distance = 0
 		orbit_angle = 0
 		size = 50
 		has_ring = no
@@ -31,15 +40,6 @@ obi_quadrupeda_system_initializer = {
 		init_effect = {
 			prevent_anomaly = yes
 		}
-	}
-
-	planet = {
-		name = "Celestia"
-		class = star
-		orbit_distance = 50
-		orbit_angle = 90
-		size = 15
-		has_ring = no
 	}
 
 	planet = {
