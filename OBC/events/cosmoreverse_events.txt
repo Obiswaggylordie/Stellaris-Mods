@@ -372,14 +372,36 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_orbital_bombardment_stance = wave_motion_gun_bombardment
+		has_orbital_bombardment_stance = zeia_dimgun_bombardment
 		planet_devastation > 99
-		is_artificial = no
 	}
 
 	immediate = {
 		destroy_colony = yes
-		change_pc = pc_shattered
+		if = {
+			limit = {
+				is_artificial = no
+			}
+			change_pc = pc_shattered
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_ringworld_habitable
+			}
+			change_pc = pc_ringworld_habitable_damaged 
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_ringworld_tech
+			}
+			change_pc = pc_ringworld_tech_damaged
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_ringworld_seam
+			}
+			change_pc = pc_ringworld_seam_damaged
+		}
 	}
 }
 

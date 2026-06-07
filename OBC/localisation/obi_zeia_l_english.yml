@@ -78,12 +78,16 @@
  sobsha_mouth: "mandible"
  sobsha_hand: "claw"
 
+# Ascension Perks
+ ap_ascension: "Ascension"
+ ap_ascension_desc: "Spiritual Ascension in the truest form, allowing sufficiently psychically gifted races to shed their physical form and begin the journey to enlightenment"
+
 # Edicts
  edict_dimensional_time_fault: "Edict on Dimensional Time Fault"
  edict_dimensional_time_fault_desc: "Utilising the power of the Dimensional Time Fault, we possess all the time in the world to improve. Our ascendancy is at hand!"
  
- edict_efg_defensive_war: "Absolute Time Fault Militarisation"
- edict_efg_defensive_war_desc: "We will survive, we will prevail! No matter what we lose, no matter what we do! Victory, victory above all else! We will not go gentle into that good night."
+ edict_dtf_defensive_war: "Absolute Time Fault Militarisation"
+ edict_dtf_defensive_war_desc: "We will survive, we will prevail! No matter what we lose, no matter what we do! Victory, victory above all else! We will not go gentle into that good night."
 
 # Traits
  trait_sobsha: "Sob'sha"
@@ -95,6 +99,9 @@
  trait_uviik: "Uviik"
  trait_uviik_desc: "The Synthetics, or Kas Uviik. Are the artificial bio-crystalline based machine intelligences of the Collective, their name is a broad term to specify practically all forms of mobile and autonomous machinery within the collective."
 
+ trait_ascended_beings: "Ascended Beings"
+ trait_ascended_beings_desc: ""
+
 # Leader Traits
  leader_trait_kvilsha: "Kvil'sha"
  leader_trait_kvilsha_desc: "Kvil'sha are the aristocratic elite of Kas Zei'a, effectively being the ruling class and are considered to be nobles within the collective, originally having started out as genetically enhanced Sob'sha, their engineered evolution has long since had them outclass their naturally evolved siblings, being smarter, faster, stronger, and far more innately talented than a sob'sha."
@@ -105,6 +112,8 @@
  leader_trait_guild_grand: "Guild Grand"
  leader_trait_guild_grand_desc: "The Guild Grand are the most talented and respected individual in the guilds of Kas Zei'a, second only to their leaders the Sentinels."
  
+ leader_trait_ascended_being: "Ascended Being"
+ leader_trait_ascended_being_desc: ""
 
  leader_trait_aurora_uviik: "Aurora-Class Uviik"
  leader_trait_aurora_uviik_desc: "Core Network Unit. §YAurora-class Uviik also have the ability to backup their stored consciousness onto on a number of installations or core ships, increasing the chance for this leader to return if destroyed in battle.§!"
@@ -193,9 +202,14 @@
  
  CR_ZEIA_HULL_CORVETTE: "Zei'a Hull Configuration"
  CR_ZEIA_HULL_FRIGATE: "Zei'a Hull Configuration"
- CR_ZEIA_HULL_DESTROYER: "Zei'a Hull Configuration"
- CR_ZEIA_HULL_CRUISER: "Zei'a Hull Configuration"
- CR_ZEIA_HULL_BATTLESHIP: "Zei'a Hull Configuration"
+ CR_ZEIA_HULL_DESTROYER_BOW: "Zei'a Hull Configuration"
+ CR_ZEIA_HULL_DESTROYER_STERN: "Zei'a Hull Configuration"
+ CR_ZEIA_HULL_CRUISER_BOW: "Zei'a Hull Configuration"
+ CR_ZEIA_HULL_CRUISER_MID: "Zei'a Hull Configuration"
+ CR_ZEIA_HULL_CRUISER_STERN: "Zei'a Hull Configuration"
+ CR_ZEIA_HULL_BATTLESHIP_BOW: "Zei'a Hull Configuration"
+ CR_ZEIA_HULL_BATTLESHIP_MID: "Zei'a Hull Configuration"
+ CR_ZEIA_HULL_BATTLESHIP_STERN: "Zei'a Hull Configuration"
  CR_ZEIA_HULL_TITAN: "Zei'a Hull Configuration"
 
 # Policies
@@ -249,6 +263,9 @@
 # Starbase Modules
  sm_zeia_energy_controller: "Energy Controller"
  sm_zeia_energy_controller_desc: "Install an Energy Controller within this starbase, allowing it to connect to the greater network."
+
+ sm_starbase_sdc: "Zei'a Super Dimension Core"
+ sm_starbase_sdc_desc: ""
 
 # Decisions
 
@@ -337,6 +354,7 @@
  # SDCs
  decision_sdc_installation: "Install SDC"
  decision_sdc_installation_desc: "Install an SDC into the global power grid, massively increasing output and performance."
+ sdc_installed: "SDC Installed"
 
  ## Cosmo Reverse System
  decision_activate_energy_controller: "Activate the Energy Controllers"
@@ -434,8 +452,9 @@
  d_fanum_sanctuary_fortress: "The Sanctuary Fortress"
  d_fanum_sanctuary_fortress_desc: "Sanctuary Fortress is the deep-vault of the Fanum Domain, home to the exceedingly dangerous scientific fields, or the top secret. Equipped with the most sophisticated and newest of Zei'a technology, even the ones that haven't been deployed yet, the facility lives up to its name as a Sanctuary, and a Fortress, being widely recognised as unbreachable, and unconquerable, should Aether fall then Sanctuary will remain to continue the fight. One may find many terrible things within its shielded depths, weapons of mass destruction, memory-foam of all things, artificial stars, a black hole or two, and the most deranged and inspired minds of Kas Zei'a, certifiably capable of blowing up a planet with a mouse trap, and landing a paper clip on the sun."
 
-
- # Time Faults
+ d_perdition_shield: "Perdition Shield"
+ d_perdition_shield_desc: "An esoteric defensive system which shrouds the entire planet in a void phase barrier that massively decreases the efficiency of orbital bombardment, and entirely protects the planet from the Perdition Device."
+ 
  d_cr_dtf: "Dimensional Time Fault"
  d_cr_dtf_desc: "An esoteric void-based spatial pocket, its interior dimensions are far larger than what should logically be fit in the small area which the anomaly resides in. Time seems to be flowing drastically differently within it in comparison to the rest of the universe aswell, what could possibly make something like this?"
 
@@ -561,6 +580,7 @@
  void_relay_epsilon_inactive_DESC: "This Relay is in a dormant state, it seems to be configured to the Epsilon Network."
 
  ## Relay misc
+
  void_relay.1000_title: "Void Relay Complete"
  void_relay.1000_desc: "Construction on a Void relay has been completed."
 
@@ -623,6 +643,12 @@
  requires_technology_slipspace_field: "$TRIGGER_FAIL$Requires technology £physics£ §Y$tech_void_relay$§!."
 
  # Oh my fucking god there's so many buttons in the relay manager
+ decision_perdition_shield: "Perdition Shield"
+ decision_perdition_shield_desc: "Shroud this world in an esoteric void bubble, protecting it from the effects of Perdition and Genesis."
+
+ decision_remove_perdition_shield: "Break Perdition Shield"
+ decision_remove_perdition_shield_desc: ""
+
  decision_relay_control: "Citadel - Void Relay Control"
  decision_relay_control_desc: "Access the Void Relay Network control system."
 
@@ -699,11 +725,17 @@
  tech_zeia_exoform: "Zei'a Exoforms"
  tech_zeia_exoform_desc: "Offering its user nigh perfect protection, being composed entirely of molecularly assembled Omega Alloy. It's impossible to dent or pierce through the Exoform, and with its intertia dampeners it essentially means that no amount of force could harm or even daze its operator. And with its specialised layers of Tight Zei'a Shielding protecting the Exoform from hazardous energy and other particles, any methods of harm through radiation or beams become ineffective. The Exoform stands as the ultimate armour, and the most effective defense against the Scourge as a biological entity."
 
+ tech_zeia_stardrive: "Zei'a Stardrive"
+ tech_zeia_stardrive_desc: ""
+
  tech_zeia_dimeng: "Zei'a Dimension Engine"
  tech_zeia_dimeng_desc: "The Dimension Engine is an incredible machine capable of harnessing an infinite amount of dimensional energy from the universe itself, though in limited amounts as extracting too much with little control would provoke enormous repercussions."
  
  tech_zeia_sdc: "Zei'a Super Dimension Core"
  tech_zeia_sdc_desc: "The Super Dimension Core is an alternate take on the Dimension Engine concept, by taking the Dimension Core and utilising tetradimensional engineering to produce a pocket universe within the core."
+
+ tech_zeia_chair: "Zei'a Control Chair"
+ tech_zeia_chair_desc: ""
 
  tech_aegis_sphere: "The Aegis Initiative"
  tech_aegis_sphere_desc: "Unlocks the Aegis Installations, allowing us to construct them."
@@ -728,6 +760,9 @@
 
  tech_void_relay: "Void Relay Construction"
  tech_void_relay_desc: "Void Relays are sophisticated Kas Zei'a kilostructures capable of opening rifts in real space which lead into The Void, these rifts can be focused into targetting virtually any location in the universe and even beyond."
+
+ tech_zeia_tarawa: "A weapon beyond reason"
+ tech_zeia_tarawa: "Perdition and Genesis, the greatest matter-energy conversion system ever invented."
 
  tech_void_drive: "The Hypertransplanar Distortion Engine"
  tech_void_drive_desc: "The Hypertransplanar Distortion engine, more commonly known as the Void Drive. Is the most technologically advanced Faster-Than-Light engine in the universe, pioneered by Sentinels Min'dok'zu-Ahrk-Munin'zu and A'skao'zu-Ahrk-Min'dek'zu-Uko-Frul'zul following their successful development of its stationary counterpart, the void Relay."
@@ -775,8 +810,11 @@
 # Buildings
  building_sdc_factory: "SDC Production Facility"
 
-# Components
+# Bombardment
+ bombardment_zeia_dimgun_bombardment: "Dimension Gun Bombardment"
+ bombardment_zeia_dimgun_bombardment_desc: "Obliterate this planet with the power of dimension guns."
 
+# Components
  ZEIA_CLOAK: "Zei'a Void Shroud"
  ZEIA_SCIENCE_CLOAK: "Zei'a Void Shroud"
  ZEIA_CLOAK_SET: "Zei'a Void Shroud"
@@ -814,6 +852,14 @@
  ZEIA_SDC_SET: "Zei'a Super Dimension Core"
  ZEIA_SDC_SET_DESC: ""
 
+ ZEIA_CHAIR: "Zei'a Control Chair"
+ ZEIA_CHAIR_SET: "Zei'a Control Chair"
+ ZEIA_CHAIR_SET_DESC: ""
+
+ ZEIA_REGEN: "Zei'a Molecular Reconstruction"
+ ZEIA_REGEN_SET: "Zei'a Molecular Reconstruction"
+ ZEIA_REGEN_SET_DESC: ""
+
  ZEIA_SENSORS: "Zei'a Sensors"
  ZEIA_SENSORS_SET: "Zei'a Sensors"
  ZEIA_SENSORS_SET_DESC: ""
@@ -828,3 +874,7 @@
  ZEIA_ANTI_ELECTRON_BEAM_T: "Zei'a Anti-Electron Beam Caster"
  ZEIA_ANTI_ELECTRON_BEAM_SET: "Zei'a Anti-Electron Beam Caster"
  ZEIA_ANTI_ELECTRON_BEAM_SET_DESC: "Zei'a Anti-Electron Beam Caster"
+
+ ZEIA_DIMGUN: "Zei'a Dimension Gun"
+ ZEIA_DIMGUN_SET: "Zei'a Dimension Gun"
+ ZEIA_DIMGUN_SET_DESC: ""

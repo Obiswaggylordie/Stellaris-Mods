@@ -113,7 +113,7 @@ d_naos_council_pavilion = {
 	planet_modifier = {
 		planet_crime_mult = -0.50
 		planet_decision_enact_speed_mult = 0.50
-		job_politician_add = 20
+		job_politician_per_pop = 0.05
 	}
 
 	potential = {
@@ -133,8 +133,8 @@ d_naos_hall_of_records = {
 
 	planet_modifier = {
 		planet_crime_mult = -0.50
-		job_bureaucrat_add = 10
-		job_clerk_add = 10
+		job_bureaucrat_per_pop = 0.05
+		job_clerk_per_pop = 0.05
 	}
 
 	potential = {
@@ -154,8 +154,8 @@ d_naos_embassy_complex = {
 
 	planet_modifier = {
 		planet_crime_mult = -0.50
-		job_entertainer_add = 20
-		job_trader_add = 20
+		job_entertainer_per_pop = 0.05
+		job_trader_per_pop = 0.05
 	}
 
 	potential = {
@@ -206,8 +206,8 @@ d_agon_domain = {
 		planet_miners_produces_mult = 0.50
 		army_defense_health_mult = 0.50
 		army_defense_damage_mult = 0.50
-		job_miner_add = 10
-		job_technician_add = 10
+		job_miner_per_pop = 0.05
+		job_technician_per_pop = 0.05
 	}
 
 	potential = {
@@ -227,8 +227,8 @@ d_agon_colosseum = {
 
 	planet_modifier = {
 		planet_army_build_speed_mult = 0.50
-		job_soldier_add = 10
-		job_enforcer_add = 10
+		job_soldier_per_pop = 0.05
+		job_enforcer_per_pop = 0.05
 	}
 
 	potential = {
@@ -253,8 +253,8 @@ d_agon_grand_factorum = {
 		building_time_mult = -0.50
 		planet_clear_blocker_time_mult = -0.50
 		planet_clear_blocker_speed_mult = 0.50
-		job_artisan_add = 10
-		job_engineer_add = 20
+		job_engineer_per_pop = 0.05
+		job_artisan_per_pop = 0.05
 	}
 
 	potential = {
@@ -277,6 +277,7 @@ d_torvus_domain = {
 		planet_amenities_add = 1000
 		planet_housing_add = 2000
 		district_farming_max_add = 50
+		job_farmer_per_pop = 0.05
 	}
 
 	country_modifier = {
@@ -321,7 +322,7 @@ d_torvus_preserve = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
-		job_biologist_add = 20
+		job_biologist_per_pop = 0.05
 	}
 
 	country_modifier = {
@@ -347,6 +348,7 @@ d_fanum_domain = {
 		planet_max_districts_add = 50
 		planet_amenities_add = 1000
 		planet_housing_add = 2000
+		job_physicist_per_pop = 0.05
 	}
 
 	triggered_planet_modifier = {
@@ -357,6 +359,7 @@ d_fanum_domain = {
 		}
 		modifier = {
 			planet_pop_assembly_add = 50
+			job_roboticist_per_pop = 0.05
 		}
 	}
 
@@ -380,7 +383,7 @@ d_fanum_hall_of_astronomy = {
 	
 	planet_modifier = {
 		planet_researchers_produces_mult = 0.50
-		job_physicist_add = 10
+		job_physicist_per_pop = 0.05
 	}
 
 	country_modifier = {
@@ -404,7 +407,7 @@ d_fanum_sanctuary_fortress = {
 	planet_modifier = {
 		planet_orbital_bombardment_damage = -0.50
 		planet_researchers_produces_mult = 0.50
-		job_physicist_add = 10
+		job_physicist_per_pop = 0.05
 	}
 
 	country_modifier = {
@@ -676,6 +679,23 @@ d_energy_controller_empty = {
 		d_energy_controller
 	}
 
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_perdition_shield = {
+	is_for_colonizable = yes
+	icon = d_perdition_shield
+	
+	category = deposit_cat_rare
+	
+	planet_modifier = {
+		planet_orbital_bombardment_damage = -100.00
+		pop_happiness = 1.00
+		planet_jobs_unity_produces_mult = 1.00
+	}
+	
 	drop_weight = {
 		weight = 0
 	}

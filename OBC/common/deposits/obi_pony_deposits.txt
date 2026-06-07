@@ -4,7 +4,107 @@ d_quadrupeda = {
 	icon = d_quadrupeda
 	category = deposit_cat_rare
 
+	planet_modifier = {
+		district_farming_max_add = 30
+		district_generator_max_add = 30
+		district_mining_max_add = 30
+	}
+
 	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Canterlot
+d_canterlot = {
+	is_for_colonizable = yes
+	icon = d_canterlot
+	category = deposit_cat_rare
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Crystal Empire
+d_crystal_empire = {
+	is_for_colonizable = yes
+	icon = d_crystal_empire
+	category = deposit_cat_rare
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Ponyville
+d_ponyville = {
+	is_for_colonizable = yes
+	icon = d_ponyville
+	category = deposit_cat_rare
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Cloudsdale
+d_cloudsdale = {
+	is_for_colonizable = yes
+	icon = d_cloudsdale
+	category = deposit_cat_rare
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Castle Everfree
+d_castle_everfree = {
+	is_for_colonizable = yes
+	icon = d_castle_everfree
+	category = deposit_cat_rare
+
+	potential = {
+		always = no
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Everfree Forest Blocker
+d_obi_everfree_forest = {
+	is_for_colonizable = yes
+	icon = d_everfree_forest
+	category = deposit_cat_rare_blocker
+
+	potential = {
+		always = no
+	}
+
+	can_be_cleared = {
 		always = no
 	}
 

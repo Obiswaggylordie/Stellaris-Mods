@@ -22,6 +22,7 @@ efg_ms_orbital_defense_system_1 = {
 	build_time = 360
 
 	potential = {
+		always = no
 		host_has_dlc = "Apocalypse"
 	}
 

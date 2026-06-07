@@ -11,7 +11,7 @@ perdition_organic_effect = {
 				is_star = no
 				is_asteroid = no
 				NOR = {
-					has_deposit = d_slipspace_bubble
+					has_deposit = d_perdition_shield
 					is_planet_class = pc_gas_giant
 				}
 			}
@@ -41,11 +41,11 @@ perdition_organic_effect = {
 									has_trait = trait_mechanical #Beep Boopbs
 									has_trait = trait_machine_unit #Beep Boop redundancy
 									has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
-									has_trait = trait_ascension_4 #Fully Ascended Pops
+									has_trait = trait_ascended_beings #Fully Ascended Pops
 								}
 							}
 							NOT = {
-								has_trait = leader_trait_ascension_4
+								has_trait = leader_trait_ascended_being
 							}
 						}
 					}
@@ -65,11 +65,11 @@ perdition_organic_effect = {
 										has_trait = trait_mechanical #Beep Boopbs
 										has_trait = trait_machine_unit #Beep Boop redundancy
 										has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
-										has_trait = trait_ascension_4 #Fully Ascended Pops
+										has_trait = trait_ascended_beings #Fully Ascended Pops
 									}
 								}
 								NOT = {
-									has_trait = leader_trait_ascension_4
+									has_trait = leader_trait_ascended_being
 								}
 							}
 						}
@@ -82,16 +82,19 @@ perdition_organic_effect = {
 						}
 					}
 				}
-				every_owned_pop = { # Target pops
+				every_owned_pop_group = { # Target pops
 					limit = {
 						NOR = {
 							has_trait = trait_mechanical #Beep Boopbs
 							has_trait = trait_machine_unit #Beep Boop redundancy
 							has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
-							has_trait = trait_ascension_4 #Fully Ascended Pops
+							has_trait = trait_ascended_beings #Fully Ascended Pops
 						}
 					}
-					kill_pop = yes 
+					kill_pop_group = {
+						pop_group = this
+						percentage = 1.00
+					}
 				}
 			}
 		}
@@ -99,11 +102,14 @@ perdition_organic_effect = {
 		# Clean Planets
 		every_system_planet = {
 			limit = {
+				NOR = {
+					has_deposit = d_perdition_shield
+					is_planet_class = pc_gas_giant
+				}
 				AND = {
 					is_asteroid = no
 					is_star = no
 					is_artificial = no
-					is_cybertronian_world = no
 				}
 				OR = {
 					is_colonizable = yes
@@ -129,7 +135,7 @@ perdition_organic_effect = {
 							has_trait = trait_mechanical #Beep Boopbs
 							has_trait = trait_machine_unit #Beep Boop redundancy
 							has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
-							has_trait = trait_ascension_4 #Fully Ascended Pops
+							has_trait = trait_ascended_beings #Fully Ascended Pops
 						}
 					}
 				}
@@ -148,11 +154,11 @@ perdition_organic_effect = {
 								has_trait = trait_mechanical #Beep Boopbs
 								has_trait = trait_machine_unit #Beep Boop redundancy
 								has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
-								has_trait = trait_ascension_4 #Fully Ascended Pops
+								has_trait = trait_ascended_beings #Fully Ascended Pops
 							}
 						}
 						NOT = {
-							has_trait = leader_trait_ascension_4
+							has_trait = leader_trait_ascended_being
 						}
 					}
 				}
@@ -183,7 +189,7 @@ perdition_mechanical_effect = {
 				is_star = no
 				is_asteroid = no
 				NOR = {
-					has_deposit = d_slipspace_bubble
+					has_deposit = d_perdition_shield
 					is_planet_class = pc_gas_giant
 				}
 			}
@@ -246,7 +252,7 @@ perdition_mechanical_effect = {
 						}
 					}
 				}
-				every_owned_pop = { # Target pops
+				every_owned_pop_group = { # Target pops
 					limit = {
 						OR = {
 							has_trait = trait_mechanical #Beep Boopbs
@@ -254,7 +260,10 @@ perdition_mechanical_effect = {
 							has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
 						}
 					}
-					kill_pop = yes 
+					kill_pop_group = {
+						pop_group = this
+						percentage = 1.00
+					}
 				}
 			}
 		}
@@ -321,7 +330,7 @@ perdition_unascended_effect = {
 				is_star = no
 				is_asteroid = no
 				NOR = {
-					has_deposit = d_slipspace_bubble
+					has_deposit = d_perdition_shield
 					is_planet_class = pc_gas_giant
 				}
 			}
@@ -349,11 +358,11 @@ perdition_unascended_effect = {
 							OR = {
 								species = {
 									NOT = {
-										has_trait = trait_ascension_4 #Fully Ascended Pops
+										has_trait = trait_ascended_beings #Fully Ascended Pops
 									}
 								}
 								NOT = {
-									has_trait = leader_trait_ascension_4
+									has_trait = leader_trait_ascended_being
 								}
 							}
 						}
@@ -371,11 +380,11 @@ perdition_unascended_effect = {
 							ruler = {
 								species = {
 									NOT = {
-										has_trait = trait_ascension_4 #Fully Ascended Pops
+										has_trait = trait_ascended_beings #Fully Ascended Pops
 									}
 								}
 								NOT = {
-									has_trait = leader_trait_ascension_4
+									has_trait = leader_trait_ascended_being
 								}
 							}
 						}
@@ -388,13 +397,16 @@ perdition_unascended_effect = {
 						}
 					}
 				}
-				every_owned_pop = { # Target pops
+				every_owned_pop_group = { # Target pops
 					limit = {
 						NOT = {
-							has_trait = trait_ascension_4 #Fully Ascended Pops
+							has_trait = trait_ascended_beings #Fully Ascended Pops
 						}
 					}
-					kill_pop = yes 
+					kill_pop_group = {
+						pop_group = this
+						percentage = 1.00
+					}
 				}
 			}
 		}
@@ -406,7 +418,7 @@ perdition_unascended_effect = {
 				space_owner = {
 					owner_main_species = {
 						NOT = {
-							has_trait = trait_ascension_4 #Fully Ascended Pops
+							has_trait = trait_ascended_beings #Fully Ascended Pops
 						}
 					}
 				}
@@ -422,11 +434,11 @@ perdition_unascended_effect = {
 						exists = leader
 						species = {
 							NOT = {
-								has_trait = trait_ascension_4 #Fully Ascended Pops
+								has_trait = trait_ascended_beings #Fully Ascended Pops
 							}
 						}
 						NOT = {
-							has_trait = leader_trait_ascension_4
+							has_trait = leader_trait_ascended_being
 						}
 					}
 				}
@@ -457,7 +469,7 @@ perdition_sangraal_effect = {
 				is_star = no
 				is_asteroid = no
 				NOR = {
-					has_deposit = d_slipspace_bubble
+					has_deposit = d_perdition_shield
 					is_planet_class = pc_gas_giant
 				}
 			}
@@ -484,9 +496,9 @@ perdition_sangraal_effect = {
 						leader = {
 							OR = {
 								species = {
-									has_trait = trait_ascension_4 #Fully Ascended Pops
+									has_trait = trait_ascended_beings #Fully Ascended Pops
 								}
-								has_trait = leader_trait_ascension_4
+								has_trait = leader_trait_ascended_being
 							}
 
 						}
@@ -504,9 +516,9 @@ perdition_sangraal_effect = {
 							ruler = {
 								OR = {
 									species = {
-										has_trait = trait_ascension_4 #Fully Ascended Pops
+										has_trait = trait_ascended_beings #Fully Ascended Pops
 									}
-									has_trait = leader_trait_ascension_4
+									has_trait = leader_trait_ascended_being
 								}
 							}
 						}
@@ -519,11 +531,14 @@ perdition_sangraal_effect = {
 						}
 					}
 				}
-				every_owned_pop = { # Target pops
+				every_owned_pop_group = { # Target pops
 					limit = {
-						has_trait = trait_ascension_4 #Fully Ascended Pops
+						has_trait = trait_ascended_beings #Fully Ascended Pops
 					}
-					kill_pop = yes 
+					kill_pop_group = {
+						pop_group = this
+						percentage = 1.00
+					}
 				}
 			}
 		}
@@ -534,7 +549,7 @@ perdition_sangraal_effect = {
 				is_under_colonization = yes
 				space_owner = {
 					owner_main_species = {
-						has_trait = trait_ascension_4 #Fully Ascended Pops
+						has_trait = trait_ascended_beings #Fully Ascended Pops
 					}
 				}
 			}
@@ -549,9 +564,9 @@ perdition_sangraal_effect = {
 						exists = leader
 						OR = {
 							species = {
-								has_trait = trait_ascension_4 #Fully Ascended Pops
+								has_trait = trait_ascended_beings #Fully Ascended Pops
 							}
-							has_trait = leader_trait_ascension_4
+							has_trait = leader_trait_ascended_being
 						}
 					}
 				}
@@ -582,7 +597,7 @@ perdition_dakara_effect = {
 				is_star = no
 				is_asteroid = no
 				NOR = {
-					has_deposit = d_slipspace_bubble
+					has_deposit = d_perdition_shield
 					is_planet_class = pc_gas_giant
 				}
 			}
@@ -604,7 +619,7 @@ perdition_dakara_effect = {
 				limit = {
 					is_colony = yes
 				}
-				every_owned_pop = {
+				every_owned_pop_group = {
 					limit = {
 						NOR = {
 							has_citizenship_type = { country = event_target:masterchief type = citizenship_full }
@@ -612,7 +627,10 @@ perdition_dakara_effect = {
 							has_citizenship_type = { country = event_target:masterchief type = citizenship_limited }
 						}
 					}
-					kill_pop = yes 
+					kill_pop_group = {
+						pop_group = this
+						percentage = 1.00
+					}
 				}
 			}
 		}
@@ -691,7 +709,7 @@ genesis_effect = {
 				is_star = no
 				is_asteroid = no
 				NOR = {
-					has_deposit = d_slipspace_bubble
+					has_deposit = d_perdition_shield
 					is_planet_class = pc_gas_giant
 				}
 				OR = {
@@ -727,7 +745,7 @@ kill_scourge_effect = {
 				is_planet_class = pc_infested
 			}
 			NOT = {
-				has_deposit = d_slipspace_bubble
+				has_deposit = d_perdition_shield
 			}
 		}
 		random_list = {
@@ -757,7 +775,7 @@ kill_scourge_effect = {
 	every_system_planet = {
 		limit = {
 			NOT = {
-				has_deposit = d_slipspace_bubble
+				has_deposit = d_perdition_shield
 			}
 		}
 		remove_deposit = d_flood_hive
@@ -791,7 +809,7 @@ kill_scourge_effect = {
 		limit = {
 			is_planet_class = pc_flood_ringworld_habitable
 			NOT = {
-				has_deposit = d_slipspace_bubble
+				has_deposit = d_perdition_shield
 			}	
 		}
 		change_pc = pc_ringworld_habitable
@@ -816,6 +834,6 @@ kill_scourge_effect = {
 			has_modifier = flood_infected_habitat
 		}
 		spawn_habitat_neutron_effect = yes 
-		remove_planet = this
+		remove_planet = yes
 	}
 }

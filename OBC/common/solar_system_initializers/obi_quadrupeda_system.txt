@@ -24,14 +24,14 @@ obi_quadrupeda_system_initializer = {
 		class = star
 		orbit_distance = 50
 		orbit_angle = 90
-		size = 15
+		size = 10
 		has_ring = no
 	}
 
 	planet = {
 		name = "Quadrupeda"
 		class = "pc_continental"
-		orbit_distance = 0
+		orbit_distance = -49
 		orbit_angle = 0
 		size = 50
 		has_ring = no
@@ -46,8 +46,8 @@ obi_quadrupeda_system_initializer = {
 		name = "Luna"
 		class = "pc_barren_cold"
 		orbit_distance = 50
-		orbit_angle = 270
-		size = 15
+		orbit_angle = 180
+		size = 20
 		has_ring = no
 	}
 }

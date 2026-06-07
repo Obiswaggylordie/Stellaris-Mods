@@ -1,0 +1,48 @@
+# See traditions/README.txt for format
+
+
+### Technological Ascension ##############################################################################
+ap_ascension = {
+	on_enabled = {
+		custom_tooltip = "ascension_tooltip"
+		every_owned_species = {
+			limit = {
+				has_trait = trait_psionic
+				NOT = { has_trait = trait_sobsha }
+			}
+			change_species_characteristics = {
+				add_trait = trait_ascended_beings
+			}
+		}
+		every_owned_leader = {
+			limit = {
+				species = {
+					has_trait = trait_psionic
+					NOT = { has_trait = trait_sobsha }
+				}
+			}
+			add_trait = leader_trait_ascended_being
+		}
+	}
+
+	modifier = {
+	}
+
+	possible = {
+		custom_tooltip = {
+			has_active_tradition = tr_psionics_psionic_assimilation
+		}	
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_4"
+			num_ascension_perks > 3
+		}
+	}
+
+	potential = {
+		is_mechanical_empire = no
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

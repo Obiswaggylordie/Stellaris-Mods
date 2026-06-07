@@ -329,7 +329,7 @@ utility_component_template = {
 
 ## Control Chair ##
 utility_component_template = {
-	key = "AUX_CONTROL_CHAIR"
+	key = "ZEIA_CHAIR"
 	size = aux
 	icon = "GFX_zeia_chair"
 	icon_frame = 1
@@ -348,11 +348,37 @@ utility_component_template = {
 	ship_limit = 1
 	
 	prerequisites = { "tech_zeia_chair" }
-	component_set = "CONTROL_CHAIR_AUX"
+	component_set = "ZEIA_CHAIR_SET"
 
 	ship_modifier = {
 		ship_fire_rate_mult = 1.00
 		ship_tracking_add = 100
+	}
+}
+
+utility_component_template = {
+	key = "ZEIA_REGEN"
+	size = aux
+	icon = "GFX_ship_part_auto_repair"
+	icon_frame = 1
+	power = -100
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+		}
+	}
+
+	modifier = {
+		ship_hull_regen_add_perc = 0.5
+		ship_armor_regen_add_perc = 0.5
+	}
+
+	prerequisites = { tech_mcd }
+	component_set = "ZEIA_REGEN_SET"
+
+	ai_weight = {
+		weight = 10
 	}
 }
 
@@ -374,6 +400,12 @@ utility_component_template = {
 	ftl = yes
 	jumpdrive = yes
 
+	potential = {
+		from = {
+			has_technology = tech_zeia_stardrive
+		}
+	}
+
 	ship_modifier = {
 		ship_disengage_opportunities_add = 10
 		ship_windup_mult = -0.25
@@ -384,6 +416,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_zeia_stardrive" }
 	component_set = "ftl_components"
+	upgrades_to = "ZEIA_WORMHOLE_DRIVE"
 
 	ai_weight = {
 		weight = 50000
@@ -408,6 +441,12 @@ utility_component_template = {
 	ftl = yes
 	jumpdrive = yes
 
+	potential = {
+		from = {
+			has_technology = tech_zeia_wormhole_drive
+		}
+	}
+
 	ship_modifier = {
 		ship_disengage_opportunities_add = 50
 		ship_windup_mult = -0.50
@@ -418,6 +457,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_zeia_wormhole_drive" }
 	component_set = "ftl_components"
+	upgrades_to = "ZEIA_VOID_DRIVE"
 
 	ai_weight = {
 		weight = 50000
@@ -441,6 +481,14 @@ utility_component_template = {
 	}
 	ftl = yes
 	jumpdrive = yes
+
+	should_ai_use = yes
+
+	potential = {
+		from = {
+			has_technology = tech_void_drive
+		}
+	}
 
 	ship_modifier = {
 		ship_disengage_opportunities_add = 100
@@ -475,6 +523,14 @@ utility_component_template = {
 		ship_base_speed_mult = 3.0
 		ship_evasion_add = 50
 	}
+
+	potential = {
+		from = {
+			has_technology = tech_zeia_thrust
+		}
+	}
+
+	should_ai_use = yes
 
 	prerequisites = { "tech_zeia_thrust" }
 	component_set = "thruster_components"
@@ -522,20 +578,19 @@ utility_component_template = {
 	size = aux
 	icon = "GFX_ship_part_cloak_1"
 	icon_frame = 1
-	power = -50
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = 50
-			energy = 500
+	power = 0
+
+	should_ai_use = yes
+
+	potential = {
+		from = {
+			has_technology = tech_void_shroud
 		}
-		upkeep = {
-			energy = 0.1
-			alloys = 0.1
+		OR = {
+			is_ship_class = shipclass_observation_station
+			is_ship_class = shipclass_science_ship
 		}
 	}
-
-	size_restriction = {science explorer_vessel observation_station }
 
 	modifier = {
 		ship_cloaking_strength_add = 5000

@@ -8,15 +8,11 @@ country_event = {
 	trigger = {
         OR = {
             has_origin = origin_obi_zeia
-            #has_trait = trait_forerunner_species
         }
 	}
 
 	immediate = {
         set_country_flag = obc_zeia
-        #set_country_flag = can_use_efg_tech
-        #give_technology = { tech = tech_efg_pretech message = no }
-        #give_technology = { tech = tech_forerunner_start message = no }
 
 		capital_scope = {
 			clear_blockers = yes
@@ -149,5 +145,64 @@ country_event = {
                 }
             }
 		}
+	}
+}
+
+# Ascension Promotion
+country_event = {
+	id = zeia_events.06
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		from = {
+			species = { has_trait = trait_ascended_beings }
+			NOT = {
+				has_trait = leader_trait_ascended_being
+			}
+		}
+	}
+	
+	immediate = {
+		from = {
+            if = {
+                limit = {
+                    has_total_skill > 9
+                }
+                add_trait = {
+                    trait = leader_trait_ascended_being
+                    show_message = yes
+                }
+            }
+		}
+	}
+}
+
+# Auroras and Ascended Beings can't be killed
+country_event = {
+	id = zeia_events.07
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		fromfrom = {
+			exists = leader
+			fleet = { num_ships = 0 }
+			leader = {
+				OR = {
+					has_trait = leader_trait_ascended_being
+					has_trait = leader_trait_aurora_uviik
+				}
+			}
+		}
+	}
+
+	immediate = {
+		fromfrom = {
+			leader = {
+				exile_leader_as = obi_immortal_leader
+			}
+		}
+		return_leader_from_exile = obi_immortal_leader
 	}
 }

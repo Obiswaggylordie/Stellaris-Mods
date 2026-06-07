@@ -1,0 +1,93 @@
+###Events Activated On Start###
+
+namespace = obi_war
+
+
+country_event = {
+	id = obi_war.1
+	title = "obi_war.1.name"
+	desc = "obi_war.1.desc"
+	picture = GFX_evt_obi_war
+	show_sound = event_space_battle
+	is_triggered_only = yes
+	
+	option = {
+		name = "obi_war.1.a"
+		custom_tooltip = "obi_war.1.a.tooltip"
+		hidden_effect = {
+			event_target:obi_war_loser = {
+				set_country_flag = silence_destroy_event
+				every_owned_planet = {
+					add_threat = {
+						who = root
+						amount = 1.0
+					}
+					regress_empire_into_primitives = yes 
+				}
+			}
+			every_playable_country = {
+				country_event = {
+					id = obi_war.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "obi_war.1.b"
+		custom_tooltip = "obi_war.1.b.tooltip"
+		hidden_effect = {
+			event_target:obi_war_loser = {
+				set_country_flag = silence_destroy_event
+				add_modifier = { modifier = humiliated days = 3600 }
+				every_owned_planet = {
+					add_threat = {
+						who = root
+						amount = 0.5
+					}
+					mantle_quarantine_empire = yes 
+				}
+			}
+			every_playable_country = {
+				country_event = {
+					id = obi_war.2
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = obi_war.2
+	title = "obi_war.2.name"
+	desc = { 
+		trigger = {
+			success_text = {
+				text = "obi_war.2.success.desc"
+				is_country = from
+			}
+			fail_text = {
+				text = "obi_war.2.fail.desc"
+				is_country = from
+			}
+		}
+	}
+	picture = GFX_evt_obi_war
+	show_sound = event_space_battle
+	is_triggered_only = yes 
+	
+	option = {
+		name = "obi_war.2.a"
+		trigger = {
+			is_country = from
+		}
+	}
+	option = {
+		name = "obi_war.2.b"
+		trigger = {
+			NOT = {
+				is_country = from
+			}
+		}
+	}
+}

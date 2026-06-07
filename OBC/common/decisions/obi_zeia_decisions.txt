@@ -164,7 +164,7 @@ decision_aether_development = {
 	
 	potential = {
 		has_deposit = d_aether
-		NOT = {
+		NAND = {
 			has_deposit = d_naos_great_temple
 			has_deposit = d_agon_colosseum
 			has_deposit = d_torvus_central_hydrodynamo
@@ -175,7 +175,7 @@ decision_aether_development = {
 	effect = {
 		if = { # Naós Expansion
 			limit = {
-				NOT = {
+				NOR = {
 					has_deposit = d_naos_great_temple
 					has_deposit = d_agon_colosseum
 					has_deposit = d_torvus_central_hydrodynamo
@@ -191,7 +191,7 @@ decision_aether_development = {
 		else_if = { # Agon Expansion
 			limit = {
 				has_deposit = d_naos_great_temple
-				NOT = {
+				NOR = {
 					has_deposit = d_agon_colosseum
 					has_deposit = d_torvus_central_hydrodynamo
 					has_deposit = d_fanum_hall_of_astronomy
@@ -204,7 +204,7 @@ decision_aether_development = {
 			limit = {
 				has_deposit = d_naos_great_temple
 				has_deposit = d_agon_colosseum
-				NOT = {
+				NOR = {
 					has_deposit = d_torvus_central_hydrodynamo
 					has_deposit = d_fanum_hall_of_astronomy
 				}
@@ -568,8 +568,11 @@ decision_build_city_ship = {
 			has_origin = origin_obi_zeia
 			has_technology = tech_zeia_chair
 		}
-		NOT = {
-			has_deposit = d_city_ship
+		OR = { # Aether's Hex Docks allow for multiple city-ships to be built :trol:
+			has_deposit = d_naos_city_ship_hex_docks
+			NOT = {
+				has_deposit = d_city_ship
+			}
 		}
 	}
 
@@ -660,8 +663,11 @@ decision_land_city_ship = {
 	}
 
 	potential = {
-		NOT = {
-			has_deposit = d_city_ship
+		OR = { # Aether's Hex Docks allow for multiple city-ships to be on the planet :trol:
+			has_deposit = d_naos_city_ship_hex_docks
+			NOT = {
+				has_deposit = d_city_ship
+			}
 		}
 		any_fleet_in_orbit = {
 			is_ship_size = obi_city
@@ -790,12 +796,14 @@ decision_colonize_city_ship = {
 decision_kvilsha_project = {
 	owned_planets_only = yes
 	icon = decision_kvilsha_project
+	enactment_time = 100
+
+	prerequisites = {
+		"tech_zeia_kvilsha_project"
+	}
 
 	potential = {
-		from = {
-			has_technology = tech_zeia_kvilsha_project
-		}
-		has_deposit = d_fanum_domain
+		has_deposit = d_torvus_domain
 	}
 
 	effect = {
@@ -1067,75 +1075,63 @@ decision_dark_world_expedition = {
 	}
 }
 
-###########################################################################
-## Shield World Decisions
-###########################################################################
-#
-## Create Slipspace Bubble
-#decision_shield_world_slipspace_bubble = {
-#	owned_planets_only = yes
-#	icon = decision_shield_world_slipspace_bubble
-#	
-#	enactment_time = 720
-#	resources = {
-#		category = decisions
-#		cost = {
-#			energy = 5000
-#			minerals = 5000
-#		}
-#	}
-#	
-#	potential = {
-#		NOT = {
-#			has_deposit = d_slipspace_bubble
-#		}
-#		owner = { has_technology = tech_void_relay }
-#		exists = owner
-#	}
-#	
-#	effect = {
-#		custom_tooltip = decision_shield_world_slipspace_bubble_effects
-#		add_deposit = d_slipspace_bubble
-#		owner = {
-#			country_event = { id = shield_world.1 }
-#		}
-#	}
-#	ai_weight = {
-#		weight = 100
-#	}
-#}
-#
-#decision_remove_shield_world_slipspace_bubble = {
-#	owned_planets_only = yes
-#	icon = decision_shield_world_slipspace_bubble
-#	
-#	enactment_time = 720
-#	resources = {
-#		category = decisions
-#		cost = {
-#			energy = 5000
-#			minerals = 5000
-#		}
-#	}
-#	
-#	potential = {
-#		has_deposit = d_slipspace_bubble
-#		owner = { has_technology = tech_void_relay }
-#		exists = owner
-#	}
-#	
-#	effect = {
-#		remove_deposit = d_slipspace_bubble
-#	}
-#	ai_weight = {
-#		weight = 0
-#	}
-#}
-#
-## Collapse Perdition Shield
-#
-#
-##BUILDER WORLD 
+# Create Slipspace Bubble
+decision_perdition_shield = {
+	owned_planets_only = yes
+	icon = decision_shield_world_slipspace_bubble
+	
+	enactment_time = 10
+	resources = {
+		category = decisions
+		cost = {
+			energy = 5000
+		}
+	}
+
+	prerequisites = {
+		tech_zeia_tarawa
+	}
+	
+	potential = {
+		NOT = {
+			has_deposit = d_perdition_shield
+		}
+		owner = { has_technology = tech_zeia_tarawa }
+		exists = owner
+	}
+	
+	effect = {
+		add_deposit = d_perdition_shield
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+
+# Collapse Perdition Shield
+decision_remove_perdition_shield = {
+	owned_planets_only = yes
+	icon = decision_shield_world_slipspace_bubble
+	
+	enactment_time = 10
+	
+	prerequisites = {
+		tech_zeia_tarawa
+	}
+
+	potential = {
+		has_deposit = d_perdition_shield
+		owner = { has_technology = tech_zeia_tarawa }
+		exists = owner
+	}
+	
+	effect = {
+		remove_deposit = d_perdition_shield
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
 #
 #decision_builder_world_create_huragok = {
 #	owned_planets_only = yes

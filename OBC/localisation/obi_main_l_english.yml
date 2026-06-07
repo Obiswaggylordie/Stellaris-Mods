@@ -16,6 +16,10 @@
  obi_quadrupeda_system_initializer_NAME: "Quadrupean Bubble"
  obi_dasha_system_initializer_DESC: "The great magical bubble of Quadrupeda, formed and sustained by unknown means."
 
+# Armies
+ ascended_army: "Ascended Army"
+ ascended_army_desc: "An army of Ascended Beings, the most powerful of soldier in the universe."
+
 # Starbase Buildings
 
 # Starbase Modules

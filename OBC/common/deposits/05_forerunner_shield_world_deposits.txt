@@ -82,21 +82,3 @@ d_sw_outer_surface = {
 		weight = 0
 	}
 }
-
-
-d_slipspace_bubble = {
-	is_for_colonizable = yes
-	icon = d_slipspace_bubble
-	
-	category = deposit_cat_rare
-	
-	planet_modifier = {
-		planet_orbital_bombardment_damage = -100.00
-		pop_happiness = 1.00
-		planet_jobs_unity_produces_mult = 1.00
-	}
-	
-	drop_weight = {
-		weight = 0
-	}
-}

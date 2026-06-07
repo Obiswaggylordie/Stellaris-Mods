@@ -50,6 +50,7 @@ weapon_component_template = {
 	key = "ZEIA_ANTI_ELECTRON_BEAM_S"
 	size = small
 	type = instant
+	tags = { weapon_type_energy s_slot }
 	
 	icon = "GFX_zeia_anti_electron_beam"
 	icon_frame = 1
@@ -95,6 +96,7 @@ weapon_component_template = {
 	key = "ZEIA_ANTI_ELECTRON_BEAM_M"
 	size = medium
 	type = instant
+	tags = { weapon_type_energy m_slot }
 	
 	icon = "GFX_zeia_anti_electron_beam"
 	icon_frame = 1
@@ -140,6 +142,7 @@ weapon_component_template = {
 	key = "ZEIA_ANTI_ELECTRON_BEAM_L"
 	size = large
 	type = instant
+	tags = { weapon_type_energy l_slot }
 	
 	icon = "GFX_zeia_anti_electron_beam"
 	icon_frame = 1
@@ -185,6 +188,7 @@ weapon_component_template = {
 	key = "ZEIA_ANTI_ELECTRON_BEAM_T"
 	size = titanic
 	type = instant
+	tags = { weapon_type_energy t_slot }
 	
 	icon = "GFX_zeia_anti_electron_beam"
 	icon_frame = 1
@@ -223,5 +227,64 @@ weapon_component_template = {
 	}
 	ai_weight = {
 		weight = 100000
+	}
+}
+# Dimension Gun
+weapon_component_template = {
+	key = "ZEIA_DIMGUN"
+	size = titanic
+	type = instant
+	icon = "GFX_zeia_dimgun"
+	icon_frame = 1
+	prerequisites = { "tech_zeia_biocrystalline" "tech_zeia_dimeng" }
+	component_set = "ZEIA_DIMGUN_SET"
+	projectile_gfx = "efg_wave_motion_gun"
+	tags = { weapon_type_energy t_slot }
+	#upgrades_to = "EFG_WAVE_MOTION_GUN_2"
+	ai_tags = { weapon_role_artillery }
+	prio_projectile = yes
+
+	#size_restriction = { corvette frigate battleship titan obi_city }
+	
+	# target_weights script
+	#inline_script = "targeting/sby_capital_ships"
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+		}		
+		upkeep = {
+			energy = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+
+	power = -10000
+	damage = { min = 100000 max = 100000 } 
+	armor_penetration = 1.0
+	armor_damage = 5.0
+	hull_damage = 5.0
+
+	#windup = { min = 320.0 max = 320.0 }
+	#total_fire_time = 600
+	windup = { min = 160.0 max = 160.0 }
+	total_fire_time = 300
+	range = 300
+	accuracy = 1.00
+	tracking = 1.00
+	
+	#firing_arc = 25.0
+	
+	ai_weight = {
+		weight = 10000
+	}
+
+	on_hit = {
+		inline_script = {
+			script = ship_components/collateral_damage
+			RANGE = 20
+			DAMAGE = 50000
+		}
 	}
 }

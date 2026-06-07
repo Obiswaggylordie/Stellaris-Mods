@@ -411,23 +411,23 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "AUX_CONTROL_CHAIR"
+			template = "ZEIA_REGEN"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "LARGE_ZEIA_ARMOR"
+			template = "ZEIA_REGEN"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "LARGE_ZEIA_ARMOR"
+			template = "ZEIA_REGEN"
 		}
 		component = {
 			slot = "AUX_UTILITY_4"
-			template = "LARGE_ZEIA_ARMOR"
+			template = "ZEIA_REGEN"
 		}
 		component = {
 			slot = "AUX_UTILITY_5"
-			template = "LARGE_ZEIA_ARMOR"
+			template = "ZEIA_REGEN"
 		}
 		component = {
 			slot = "AUX_UTILITY_6"
@@ -499,7 +499,6 @@ ship_design = {
 			slot = "LARGE_GUN_08"
 			template = "ASCENDED_CLOUD_LIGHTNING"
 		}
-
 		component = {
 			slot = "AUX_UTILITY_1"
 			template = "WEED_CLOAK"
@@ -507,5 +506,5 @@ ship_design = {
 	}
 	
 	required_component="ZEIA_VOID_DRIVE"
-	required_component="COMBAT_COMPUTER_ARTILLERY_SAPIENT"
+	required_component="COMBAT_COMPUTER_ARTILLERY_PRECOG"
 }

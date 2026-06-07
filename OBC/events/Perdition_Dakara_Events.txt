@@ -17,13 +17,13 @@ country_event = {
 			every_megastructure = {
 				limit = {
 					OR = {
-						is_megastructure_type = forerunner_slipspace_portal
-						is_megastructure_type = forerunner_slipspace_portal_alpha
-						is_megastructure_type = forerunner_slipspace_portal_beta
-						is_megastructure_type = forerunner_slipspace_portal_delta
-						is_megastructure_type = forerunner_slipspace_portal_gamma
-						is_megastructure_type = forerunner_slipspace_portal_lambda
-						is_megastructure_type = forerunner_slipspace_portal_epsilon
+						is_megastructure_type = void_relay
+						is_megastructure_type = void_relay_alpha
+						is_megastructure_type = void_relay_beta
+						is_megastructure_type = void_relay_delta
+						is_megastructure_type = void_relay_gamma
+						is_megastructure_type = void_relay_lambda
+						is_megastructure_type = void_relay_epsilon
 					}
 				}
 				save_global_event_target_as = perdition_relay
@@ -46,6 +46,11 @@ country_event = {
 				}
 				clear_global_event_target = perdition_relay
 			}
+			every_country = {
+				country_event = {
+					id = perdition_genesis.3
+				}
+			}
 		}
 	}
 
@@ -56,7 +61,7 @@ country_event = {
 		hidden_effect = {
 			every_megastructure = {
 				limit = {
-					is_megastructure_type = forerunner_slipspace_portal
+					is_megastructure_type = void_relay
 				}
 				save_global_event_target_as = perdition_relay
 				every_system = {
@@ -87,7 +92,7 @@ country_event = {
 		hidden_effect = {
 			every_megastructure = {
 				limit = {
-					is_megastructure_type = forerunner_slipspace_portal_alpha
+					is_megastructure_type = void_relay_alpha
 				}
 				save_global_event_target_as = perdition_relay
 				every_system = {
@@ -118,7 +123,7 @@ country_event = {
 		hidden_effect = {
 			every_megastructure = {
 				limit = {
-					is_megastructure_type = forerunner_slipspace_portal_beta
+					is_megastructure_type = void_relay_beta
 				}
 				save_global_event_target_as = perdition_relay
 				every_system = {
@@ -149,7 +154,7 @@ country_event = {
 		hidden_effect = {
 			every_megastructure = {
 				limit = {
-					is_megastructure_type = forerunner_slipspace_portal_delta
+					is_megastructure_type = void_relay_delta
 				}
 				save_global_event_target_as = perdition_relay
 				every_system = {
@@ -180,7 +185,7 @@ country_event = {
 		hidden_effect = {
 			every_megastructure = {
 				limit = {
-					is_megastructure_type = forerunner_slipspace_portal_gamma
+					is_megastructure_type = void_relay_gamma
 				}
 				save_global_event_target_as = perdition_relay
 				every_system = {
@@ -211,7 +216,7 @@ country_event = {
 		hidden_effect = {
 			every_megastructure = {
 				limit = {
-					is_megastructure_type = forerunner_slipspace_portal_lambda
+					is_megastructure_type = void_relay_lambda
 				}
 				save_global_event_target_as = perdition_relay
 				every_system = {
@@ -242,7 +247,7 @@ country_event = {
 		hidden_effect = {
 			every_megastructure = {
 				limit = {
-					is_megastructure_type = forerunner_slipspace_portal_epsilon
+					is_megastructure_type = void_relay_epsilon
 				}
 				save_global_event_target_as = perdition_relay
 				every_system = {
@@ -273,7 +278,7 @@ country_event = {
 		hidden_effect = {
 			every_megastructure = {
 				limit = {
-					is_megastructure_type = forerunner_slipspace_portal_perdition
+					is_megastructure_type = void_relay_perdition
 				}
 				save_global_event_target_as = perdition_relay
 				every_system = {

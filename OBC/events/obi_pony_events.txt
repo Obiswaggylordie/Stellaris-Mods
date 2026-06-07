@@ -1,0 +1,30 @@
+namespace = pony_events
+
+country_event = {
+	id = pony_events.01
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+        OR = {
+            has_origin = origin_obi_pony
+        }
+	}
+
+	immediate = {
+        set_country_flag = obc_pony
+
+		capital_scope = {
+			clear_blockers = yes
+			clear_deposits = yes
+			set_planet_flag = ce_average
+            add_deposit = d_quadrupeda
+			add_deposit = d_canterlot
+			add_deposit = d_crystal_empire
+			add_deposit = d_ponyville
+			add_deposit = d_cloudsdale
+			add_deposit = d_castle_everfree
+			add_deposit = d_obi_everfree_forest
+		}
+    }
+}

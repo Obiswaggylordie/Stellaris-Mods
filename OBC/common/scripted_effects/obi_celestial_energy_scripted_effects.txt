@@ -1,6 +1,7 @@
 # Warm: 	Gaia - Tropical - Continental - Arid - 	Savanna - Desert - Barren (Dry)
 # Average: 	Gaia - Tropical - Continental - Alpine - Tundra - Arctic - Barren (Cold)
 # Cold: 	Gaia - Tropical - Ocean - 		Alpine - Tundra - Arctic - Frozen 
+# Specials: Molten to Barren (Dry)
 
 # Class O - B - A - F - G - K - M - M Giant - T
 
@@ -148,6 +149,12 @@ celestial_energy_fill_planet_effect = {
 					is_planet_class = pc_barren
 				}
 				change_pc = pc_desert
+			}
+			else_if = {
+				limit = {
+					is_planet_class = pc_molten
+				}
+				change_pc = pc_barren
 			}
 		}
 		else_if = { # Average
@@ -389,6 +396,7 @@ celestial_energy_fill_star_effect = {
 			limit = {
 				is_planet_class = pc_b_star
 			}
+			add_modifier = giga_o_star_modifier
 			change_pc = pc_giga_o_star
 			solar_system = {
 				set_star_class = sc_giga_o_star
@@ -466,6 +474,7 @@ celestial_energy_drain_star_effect = {
 			limit = {
 				is_planet_class = pc_giga_o_star
 			}
+			remove_modifier = giga_o_star_modifier
 			change_pc = pc_b_star
 			solar_system = {
 				set_star_class = sc_b

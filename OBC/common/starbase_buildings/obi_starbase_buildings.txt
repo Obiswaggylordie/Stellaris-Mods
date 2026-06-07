@@ -52,7 +52,7 @@ obi_omega_lock_starbase = {
 
 zeia_energy_controller = {
 	icon = "GFX_sb_energy_controller"
-	construction_days = 90
+	construction_days = 20
 
 
 	potential = {
@@ -102,12 +102,8 @@ zeia_energy_controller = {
 	resources = {
 		category = starbase_buildings
 		cost = {
-			alloys = 5000
-		}
-
-		upkeep = {
-			energy = 50
-			alloys = 20
+			energy = 200
+			minerals = 350
 		}
 	}
 

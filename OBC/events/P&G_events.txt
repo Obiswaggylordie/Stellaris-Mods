@@ -82,10 +82,38 @@ planet_event = {
 
 	trigger = {
 		planet_devastation > 0
-		has_deposit = d_slipspace_bubble
+		has_deposit = d_perdition_shield
 	}
 
 	immediate = {
 		add_planet_devastation = -100
+	}
+}
+
+# The Despicable Crime
+country_event = {
+	id = perdition_genesis.3
+	title = perdition_genesis.3.name
+	desc = perdition_genesis.3.desc
+	picture = GFX_perdition
+	show_sound = event_red_alert
+	is_triggered_only = yes
+
+	option = {
+		name = "The universe weeps."
+	}
+}
+
+# Life everlasting
+country_event = {
+	id = perdition_genesis.4
+	title = perdition_genesis.4.name
+	desc = perdition_genesis.4.desc
+	picture = GFX_genesis
+	show_sound = event_new_bratulla
+	is_triggered_only = yes
+
+	option = {
+		name = "Hope."
 	}
 }

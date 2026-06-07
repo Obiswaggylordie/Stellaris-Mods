@@ -23,7 +23,10 @@ country_event = { # Planetary Energy
 			}
 			event_target:ce_target = {
 				NOT = { is_planet_class = pc_gaia }
-				planet_has_celestial_energy = yes
+				OR = {
+					planet_has_celestial_energy = yes
+					is_planet_class = pc_molten
+				}
 			}
 		}
 

@@ -27,30 +27,16 @@ building_sdc_factory = {
 			minerals = 1000
 		}
 		produces = {
-			sr_sdc = 0.1
-		}
-		upkeep = {
-			rare_crystals = 10
-			exotic_gases = 5
-			volatile_motes = 5
-		}
-		produces = {
 			trigger = {
-				owner = {
-					has_technology = tech_zpm_production_efficiency
-				}
+				is_capital = no
 			}
 			sr_sdc = 1
 		}
-		upkeep = {
+		produces = {
 			trigger = {
-				owner = {
-					has_technology = tech_zpm_production_efficiency
-				}
+				is_capital = yes
 			}
-			rare_crystals = 5
-			exotic_gases = 2.5
-			volatile_motes = 2.5
+			sr_sdc = 10
 		}
 	}
 	

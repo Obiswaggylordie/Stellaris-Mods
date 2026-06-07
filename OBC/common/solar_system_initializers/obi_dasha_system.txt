@@ -1,6 +1,6 @@
 obi_dasha_system_initializer = {
     name = "Dasha"
-	class = "sc_k"
+	class = "sc_m_giant"
 	flags = { empire_home_system }
 	usage = origin
 	asteroid_belt = {
@@ -69,14 +69,13 @@ obi_dasha_system_initializer = {
 	# Homeworld
 	change_orbit = 20 
 	planet = {
-		class = "pc_gaia"
+		class = "pc_alpine"
 		orbit_angle = 195
 		orbit_distance = 0
 		size = 30
 		has_ring = no
 		modifiers = none
 		starting_planet = yes
-		flags = { planet_earth_2200 }
 		init_effect = {
 			prevent_anomaly = yes
 		}
@@ -88,7 +87,6 @@ obi_dasha_system_initializer = {
 			orbit_distance = 16
 			orbit_angle = 90
 			has_ring = no
-			flags = { planet_moon_2200 }
 		}
 
 		moon = {
@@ -98,7 +96,6 @@ obi_dasha_system_initializer = {
 			orbit_distance = 0
 			orbit_angle = 180
 			has_ring = no
-			flags = { planet_moon_2200 }
 		}
 	}
 
@@ -217,9 +214,6 @@ obi_dasha_system_initializer = {
 		size = 16
 		has_ring = no
 		change_orbit = 4
-		init_effect = {
-			set_planet_flag = planet_flag_efg_iscandar_tech_site
-		}
 	}
 		
 	planet = {

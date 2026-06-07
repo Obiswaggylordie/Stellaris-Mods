@@ -964,8 +964,7 @@ crucible_construct = {
 	}
 	potential = {
 		AND = {
-			has_technology = tech_void_relay
-			has_technology = giga_tech_tetradimensional_engineering
+			has_technology = tech_zeia_tarawa
 			is_ai = no
 		}
 
@@ -1008,6 +1007,7 @@ crucible_construct = {
 	on_build_complete = {
 		spawn_megastructure = {
 			type = crucible
+			owner = space_owner
 			coords_from = fromfrom
 		}
 		remove_megastructure = fromfrom
@@ -1074,12 +1074,6 @@ citadel_omega = {
 	
 	show_galactic_map_icon = no
 	build_time = 1
-	resources = {
-		category = megastructures 
-		cost = {
-			alloys = 2500
-		}
-	}
 
 	potential = {
 		has_technology = tech_void_relay
@@ -1120,12 +1114,6 @@ citadel_alpha = {
 	
 	show_galactic_map_icon = no
 	build_time = 1
-	resources = {
-		category = megastructures 
-		cost = {
-			alloys = 2500
-		}
-	}
 
 	potential = {
 		has_technology = tech_void_relay
@@ -1166,12 +1154,6 @@ citadel_beta = {
 	
 	show_galactic_map_icon = no
 	build_time = 1
-	resources = {
-		category = megastructures 
-		cost = {
-			alloys = 2500
-		}
-	}
 
 	potential = {
 		has_technology = tech_void_relay
@@ -1212,12 +1194,6 @@ citadel_delta = {
 	
 	show_galactic_map_icon = no
 	build_time = 1
-	resources = {
-		category = megastructures 
-		cost = {
-			alloys = 2500
-		}
-	}
 
 	potential = {
 		has_technology = tech_void_relay
@@ -1258,12 +1234,6 @@ citadel_gamma = {
 	
 	show_galactic_map_icon = no
 	build_time = 1
-	resources = {
-		category = megastructures 
-		cost = {
-			alloys = 2500
-		}
-	}
 
 	potential = {
 		has_technology = tech_void_relay
@@ -1304,12 +1274,6 @@ citadel_lambda = {
 	
 	show_galactic_map_icon = no
 	build_time = 1
-	resources = {
-		category = megastructures 
-		cost = {
-			alloys = 2500
-		}
-	}
 
 	potential = {
 		has_technology = tech_void_relay
@@ -1350,12 +1314,6 @@ citadel_epsilon = {
 	
 	show_galactic_map_icon = no
 	build_time = 1
-	resources = {
-		category = megastructures 
-		cost = {
-			alloys = 2500
-		}
-	}
 
 	potential = {
 		has_technology = tech_void_relay

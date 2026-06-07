@@ -248,6 +248,39 @@ tech_zeia_exoform = {
   	}
 }
 
+tech_zeia_library = {
+	cost = 1000
+	area = society
+	tier = 1
+	is_rare = yes
+	category = { psionics }
+	#prerequisites = { "tech_zeia_ingvala"}
+	weight = @tier1weight1
+
+	potential = {  
+		has_origin = origin_obi_zeia
+		OR = {
+			has_trait = trait_latent_psionic
+			has_trait = trait_psionic
+		}
+	} 
+
+	modifier = {
+		all_technology_research_speed = 0.50
+		country_admin_cap_add = 100000
+		country_naval_cap_add = 100000
+		country_leader_cap_add = 30
+	}
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
 tech_dark_rifts = {
 	cost = 1000
 	area = physics
@@ -660,7 +693,7 @@ tech_zeia_ufc = {
 }
 
 tech_zeia_stardrive = {
-	cost = 100000
+	cost = 1000
 	area = physics
 	tier = 2
 	is_rare = yes
@@ -678,7 +711,7 @@ tech_zeia_stardrive = {
 }
 
 tech_zeia_wormhole_drive = {
-	cost = 100000
+	cost = 5000
 	area = physics
 	tier = 3
 	is_rare = yes
@@ -701,7 +734,7 @@ tech_void_science = {
 	tier = 4
 	is_rare = yes
 	category = { field_manipulation }
-	#prerequisites = { "tech_efg_wave_motion_gun_1" }
+	prerequisites = { "tech_ascended_understanding" }
 	weight = @tier4weight3
 
 	potential = {  
@@ -748,6 +781,25 @@ tech_void_relay = {
 	is_rare = yes
 	category = { particles }
 	prerequisites = { "tech_void_science" }
+	weight = @tier4weight3
+	
+	weight_modifier = {
+		factor = 1
+	}
+
+	ai_weight = {
+  	    factor = 1
+  	}
+}
+
+tech_zeia_tarawa = {
+	cost = 100000
+	area = physics
+	tier = 4
+	is_rare = yes
+	is_dangerous = yes
+	category = { particles }
+	prerequisites = { "tech_void_relay" }
 	weight = @tier4weight3
 	
 	weight_modifier = {
@@ -836,7 +888,7 @@ tech_mcd = {
 	tier = 4
 	is_rare = yes
 	category = { particles }
-	prerequisites = { "tech_void_drive" }
+	prerequisites = { "tech_zeia_ufc" }
 	weight = @tier4weight3
 	
 	weight_modifier = {
@@ -1056,18 +1108,17 @@ tech_aegis_sphere = {
 	}
 }
 
-tech_twilight_uviik = {
+tech_loskvash_project = {
 	cost = 1000
 	area = society
 	tier = 1
 	is_rare = yes
-	category = { biology }
-	#prerequisites = { "tech_zeia_biocomputing" }
+	category = { psionics }
+	prerequisites = { "tech_ascended_understanding" }
 	weight = @tier1weight1
 
 	potential = {  
 		has_origin = origin_obi_zeia
-		always = no
 	} 
 	
 	weight_modifier = {
@@ -1079,18 +1130,17 @@ tech_twilight_uviik = {
   	}
 }
 
-tech_loskvash_project = {
+tech_twilight_uviik = {
 	cost = 1000
 	area = society
 	tier = 1
 	is_rare = yes
-	category = { biology }
-	#prerequisites = { "tech_zeia_biocomputing" }
+	category = { psionics }
+	prerequisites = { "tech_loskvash_project" }
 	weight = @tier1weight1
 
 	potential = {  
 		has_origin = origin_obi_zeia
-		always = no
 	} 
 	
 	weight_modifier = {

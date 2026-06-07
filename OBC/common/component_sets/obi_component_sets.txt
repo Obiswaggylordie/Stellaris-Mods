@@ -11,14 +11,18 @@ component_set = {
 	icon = "GFX_ship_part_space_cloud_weapon_1"
 	icon_frame = 1	
 }
-
 component_set = {
-	key = "CONTROL_CHAIR_AUX"
+	key = "ZEIA_CHAIR_SET"
 
 	icon = "GFX_zeia_chair"
 	icon_frame = 1
 }
+component_set = {
+	key = "ZEIA_REGEN_SET"
 
+	icon = "GFX_ship_part_auto_repair"
+	icon_frame = 1
+}
 component_set = {
 	key = "ZEIA_SENSORS_SET"
 
@@ -35,6 +39,12 @@ component_set = {
 	key = "ZEIA_ANTI_ELECTRON_BEAM_SET"
 	
 	icon = "GFX_zeia_anti_electron_beam"
+	icon_frame = 1	
+}
+component_set = {
+	key = "ZEIA_DIMGUN_SET"
+	
+	icon = "GFX_zeia_dimgun"
 	icon_frame = 1	
 }
 component_set = {

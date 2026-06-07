@@ -72,6 +72,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/ship_parts/zeia_anti_electron_beam.dds"
 	}
 
+	# Zei'a DimGun
+	spriteType = {
+		name = "GFX_zeia_dimgun"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_dimgun.dds"
+	}
+
+	# Zei'a DimGun Dispersion
+	spriteType = {
+		name = "GFX_zeia_dimgun_dispersion"
+		texturefile = "gfx/interface/icons/ship_parts/zeia_dimgun_dispersion.dds"
+	}
+
 	# Zeia DimEng
 	spriteType = {
 		name = "GFX_zeia_dimeng"
