@@ -10,7 +10,6 @@ origin_obi_zeia = {
 	initializers = { obi_dasha_system_initializer }
 
 	possible = {
-		is_ai = no
 	}
 
 	description = "origin_tooltip_obi_zeia"
@@ -39,12 +38,39 @@ origin_obi_pony = {
 	initializers = { obi_quadrupeda_system_initializer }
 
 	possible = {
-		is_ai = no
 	}
 
 	description = "origin_tooltip_obi_pony"
 
 	modifier = { 
+	}
+
+	Advanced_start = no
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+origin_obi_sroka = {
+
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_sroka_icon.dds"
+	picture = GFX_origin_sroka
+
+	starting_colony = pc_tropical
+	habitability_preference = pc_tropical
+
+	initializers = { obi_ash_system_initializer }
+
+	possible = {
+	}
+
+	description = "origin_tooltip_obi_sroka"
+
+	modifier = { 
+		all_technology_research_speed = 0.50
+		ship_shield_mult = 0.50
 	}
 
 	Advanced_start = no

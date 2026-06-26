@@ -503,7 +503,7 @@
 #}
 #
 obi_city = {
-	graphical_culture = { "lantean_01" }
+	#graphical_culture = { "lantean_01" }
 	formation_priority = 6
 	max_speed = @speed_slow
 	acceleration = 0.25

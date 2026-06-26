@@ -1,6 +1,6 @@
 
 dimensional_time_fault = {
-	length = @EdictPerpetual
+	length = -1
 	icon = "GFX_edict_type_policy"
 	edict_cap_usage = 0
 
@@ -24,7 +24,7 @@ dimensional_time_fault = {
 	modifier = {
 		num_tech_alternatives_add = 2
 
-		pop_growth_speed = 0.25
+		bonus_pop_growth_mult = 0.25
 		planet_pop_assembly_mult = 0.25
 
 		pop_demotion_time_mult = -0.25
@@ -54,7 +54,7 @@ dimensional_time_fault = {
 
 
 dtf_defensive_war = {
-	length = @EdictPerpetual
+	length = -1
 	icon = "GFX_edict_type_policy"
 	edict_cap_usage = 0
 

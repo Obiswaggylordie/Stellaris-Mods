@@ -1,0 +1,73 @@
+objectTypes = {
+
+	
+#####
+# ORANGE
+#####	
+	pdxmesh = {
+		name = "cyrian_background_01_mesh"
+		file = "gfx/models/portraits/extradimensional/extradimensional_01_background_01.mesh"
+		animation = { id = "idle"	type = "extradimensional_01_background_04_happy_animation" }
+		scale = 1.0
+		
+		meshsettings = {
+			texture_diffuse = "cyrian_background.dds"
+			texture_normal = "cyrian_background_normal.dds"
+		}
+	}
+	pdxmesh = {
+		name = "cyrian_background_02_mesh"
+		file = "gfx/models/portraits/extradimensional/extradimensional_01_background_02.mesh"
+		animation = { id = "idle"	type = "extradimensional_01_background_04_happy_animation" }
+		scale = 1.0
+		
+		meshsettings = {
+			texture_diffuse = "cyrian_background.dds"
+			texture_normal = "cyrian_background_normal.dds"
+		}
+	}
+	pdxmesh = {
+		name = "cyrian_background_03_mesh"
+		file = "gfx/models/portraits/extradimensional/extradimensional_01_background_03.mesh"
+		animation = { id = "idle"	type = "extradimensional_01_background_04_happy_animation" }
+		scale = 1.0
+		
+		meshsettings = {
+			texture_diffuse = "cyrian_background.dds"
+				texture_normal = "cyrian_background_normal.dds"
+		}
+	}
+	pdxmesh = {
+		name = "cyrian_background_04_mesh"
+		file = "gfx/models/portraits/extradimensional/extradimensional_01_background_04.mesh"
+		animation = { id = "idle"	type = "extradimensional_01_background_04_happy_animation" }
+		scale = 1.0
+		
+		meshsettings = {
+			texture_diffuse = "cyrian_background.dds"
+			texture_normal = "cyrian_background_normal.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "cyrian_room_details_mesh"
+		file = "gfx/models/portraits/extradimensional/extradimensional_room_details.mesh"
+		scale = 1.0
+		animation = { id = "idle"	type = "extradimensional_01_background_04_happy_animation" }		
+		meshsettings = {
+			texture_diffuse = "cyrian_background_details.dds"
+				texture_normal = "cyrian_background_normal.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "cyrian_room_details_test_mesh"
+		file = "gfx/models/portraits/extradimensional/extradimensional_room_details.mesh"
+		scale = 1.0
+		
+		meshsettings = {
+			texture_diffuse = "cyrian_background_test_details.dds"
+				texture_normal = "cyrian_background_normal.dds"
+		}
+	}
+}	

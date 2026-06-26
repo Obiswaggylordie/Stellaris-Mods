@@ -1169,14 +1169,6 @@ tech_cr_access = {
 	ai_weight = {
   	    factor = 0
 		modifier = {
-			factor = 0.0
-			NOT = {
-				any_owned_planet = {
-					has_deposit = d_cr_dtf
-				}
-			}
-		}
-		modifier = {
 			factor = 100.0
 			any_owned_planet = {
 				has_deposit = d_cr_dtf

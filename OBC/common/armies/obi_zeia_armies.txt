@@ -844,7 +844,7 @@ library_sentinel = {
 		}
 		OR = {
 			has_deposit = d_naos_hall_of_records
-			has_deposit = d_library_transference_gate
+			#has_deposit = d_library_transference_gate
 		}
 	}
 

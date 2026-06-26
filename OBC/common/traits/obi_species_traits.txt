@@ -5,7 +5,7 @@
 # Ascension
 trait_ascended_beings = {
 	cost = 0
-	potential_crossbreeding_chance = 1.0
+	#potential_crossbreeding_chance = 1.0
 	randomized = no
 	species_potential_add = {
 		always = yes
@@ -41,10 +41,68 @@ trait_ascended_beings = {
 
 }
 
+# Srokans
+trait_srokan = {
+	cost = 0
+	#potential_crossbreeding_chance = 0.1
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	advanced_trait = yes
+	species_class = { srokan }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		researcher_jobs_bonus_workforce_mult = 3.00
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_srokan_immunodeficiency = {
+	cost = -5
+	#potential_crossbreeding_chance = 0.1
+	sorting_priority = 20
+	initial = yes
+	randomized = no
+	advanced_trait = yes
+	species_class = { srokan }
+	species_possible_remove = {
+		from = {
+			has_technology = tech_ascended_gene_editing
+		}
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_add = {
+		from = {
+			has_technology = tech_ascended_gene_editing
+		}
+	}
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		bonus_pop_growth_mult = -0.50
+		pop_environment_tolerance = -1.0
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
 # Kas Zei'a
 trait_sobsha = {
 	cost = 0
-	potential_crossbreeding_chance = 1.0
+	#potential_crossbreeding_chance = 1.0
 	species_class = { zeia }
 	randomized = no
 	species_potential_add = {
@@ -80,18 +138,18 @@ trait_sobsha = {
 # Kvil'sha
 trait_kvilsha = {
 	cost = 0
-	potential_crossbreeding_chance = 0
+	#potential_crossbreeding_chance = 0
 	species_class = { zeia }
 	initial = no
 	randomized = no
 	species_potential_add = {
-		always = yes
+		always = no
 	}
 	species_possible_remove = {
 		always = no
 	}
 	species_possible_merge_add = {
-		always = yes
+		always = no
 	}
 	
 	leader_age_min = 18
@@ -128,7 +186,7 @@ trait_kvilsha = {
 # Lotkaaz
 trait_lotkaaz = {
 	cost = 0
-	potential_crossbreeding_chance = 0
+	#potential_crossbreeding_chance = 0
 	#species_class = { lotkaaz }
 	initial = yes
 	randomized = no

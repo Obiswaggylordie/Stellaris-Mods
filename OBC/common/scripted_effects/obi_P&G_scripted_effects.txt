@@ -40,7 +40,6 @@ perdition_organic_effect = {
 								NOR = {
 									has_trait = trait_mechanical #Beep Boopbs
 									has_trait = trait_machine_unit #Beep Boop redundancy
-									has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
 									has_trait = trait_ascended_beings #Fully Ascended Pops
 								}
 							}
@@ -64,7 +63,6 @@ perdition_organic_effect = {
 									NOR = {
 										has_trait = trait_mechanical #Beep Boopbs
 										has_trait = trait_machine_unit #Beep Boop redundancy
-										has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
 										has_trait = trait_ascended_beings #Fully Ascended Pops
 									}
 								}
@@ -87,7 +85,6 @@ perdition_organic_effect = {
 						NOR = {
 							has_trait = trait_mechanical #Beep Boopbs
 							has_trait = trait_machine_unit #Beep Boop redundancy
-							has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
 							has_trait = trait_ascended_beings #Fully Ascended Pops
 						}
 					}
@@ -134,7 +131,6 @@ perdition_organic_effect = {
 						NOR = {
 							has_trait = trait_mechanical #Beep Boopbs
 							has_trait = trait_machine_unit #Beep Boop redundancy
-							has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
 							has_trait = trait_ascended_beings #Fully Ascended Pops
 						}
 					}
@@ -153,7 +149,6 @@ perdition_organic_effect = {
 							NOR = {
 								has_trait = trait_mechanical #Beep Boopbs
 								has_trait = trait_machine_unit #Beep Boop redundancy
-								has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
 								has_trait = trait_ascended_beings #Fully Ascended Pops
 							}
 						}
@@ -218,7 +213,6 @@ perdition_mechanical_effect = {
 								OR = {
 									has_trait = trait_mechanical #Beep Boopbs
 									has_trait = trait_machine_unit #Beep Boop redundancy
-									has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
 								}
 							}
 						}
@@ -238,7 +232,6 @@ perdition_mechanical_effect = {
 									OR = {
 										has_trait = trait_mechanical #Beep Boopbs
 										has_trait = trait_machine_unit #Beep Boop redundancy
-										has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
 									}
 								}
 							}
@@ -257,7 +250,6 @@ perdition_mechanical_effect = {
 						OR = {
 							has_trait = trait_mechanical #Beep Boopbs
 							has_trait = trait_machine_unit #Beep Boop redundancy
-							has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
 						}
 					}
 					kill_pop_group = {
@@ -277,7 +269,6 @@ perdition_mechanical_effect = {
 						OR = {
 							has_trait = trait_mechanical #Beep Boopbs
 							has_trait = trait_machine_unit #Beep Boop redundancy
-							has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
 						}
 					}
 				}
@@ -295,7 +286,6 @@ perdition_mechanical_effect = {
 							OR = {
 								has_trait = trait_mechanical #Beep Boopbs
 								has_trait = trait_machine_unit #Beep Boop redundancy
-								has_trait = trait_huragok_species # Bio-Mechanical Huragok are considered machines
 							}
 						}
 					}

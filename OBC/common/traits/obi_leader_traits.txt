@@ -1,5 +1,5 @@
 leader_trait_kvilsha = {
-	is_councilor_trait_for_ruler = yes 
+	#is_councilor_trait_for_ruler = yes 
 	icon = "gfx/interface/icons/traits/trait_kvilsha.dds"
 	
 	triggered_army_modifier = {
@@ -55,7 +55,7 @@ leader_trait_kvilsha = {
 }
 
 leader_trait_uviik = {
-	is_councilor_trait_for_ruler = yes
+	#is_councilor_trait_for_ruler = yes
 	icon = "gfx/interface/icons/traits/trait_uviik.dds" 
 	
 	triggered_fleet_modifier = {
@@ -163,7 +163,7 @@ leader_trait_uviik = {
 }
 
 leader_trait_guild_grand = {
-	is_councilor_trait_for_ruler = yes
+	#is_councilor_trait_for_ruler = yes
 	cost = 0
 	icon = "gfx/interface/icons/traits/leader_trait_guild_grand.dds"
 

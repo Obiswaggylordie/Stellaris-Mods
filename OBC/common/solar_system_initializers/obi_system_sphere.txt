@@ -1,12 +1,12 @@
 ### Sharpened Shield World System
 forerunner_sharpened_shield_init = {
 	name = "Slipspace Bubble"		#Name of the system.
-	class = sc_forerunner			#system's star class. [random] picks a random class from all available system classes. ["name_of_class"] picks a specific class. ["name_of_random_list"] picks a random class from the specified random_list ( random_list are found in the same files as the star classes )
+	class = sc_k			#system's star class. [random] picks a random class from all available system classes. ["name_of_class"] picks a specific class. ["name_of_random_list"] picks a random class from the specified random_list ( random_list are found in the same files as the star classes )
 	
 	
 	init_effect = {
 		spawn_megastructure = {
-			type = "obi_void_relay"
+			type = "void_relay"
 			orbit_distance = 250
 			orbit_angle = 315
 		}
@@ -51,10 +51,10 @@ forerunner_sharpened_shield_init = {
 			add_deposit = d_automated_sentinel_factory
 		}
 		init_effect = {
-			add_modifier = {
-				modifier = "forerunner_artificial_star"
-				days = -1
-			}
+			#add_modifier = {
+			#	modifier = "forerunner_artificial_star"
+			#	days = -1
+			#}
 			add_modifier = {
 				modifier = uviik_monitor
 				days = -1
@@ -89,10 +89,10 @@ forerunner_sharpened_shield_init = {
 			add_deposit = d_automated_sentinel_factory
 		}
 		init_effect = {
-			add_modifier = {
-				modifier = "forerunner_artificial_star"
-				days = -1
-			}
+			#add_modifier = {
+			#	modifier = "forerunner_artificial_star"
+			#	days = -1
+			#}
 			add_modifier = {
 				modifier = uviik_monitor
 				days = -1
@@ -127,10 +127,10 @@ forerunner_sharpened_shield_init = {
 			add_deposit = d_automated_sentinel_factory
 		}
 		init_effect = {
-			add_modifier = {
-				modifier = "forerunner_artificial_star"
-				days = -1
-			}
+			#add_modifier = {
+			#	modifier = "forerunner_artificial_star"
+			#	days = -1
+			#}
 			add_modifier = {
 				modifier = uviik_monitor
 				days = -1
@@ -165,10 +165,10 @@ forerunner_sharpened_shield_init = {
 			add_deposit = d_automated_sentinel_factory
 		}
 		init_effect = {
-			add_modifier = {
-				modifier = "forerunner_artificial_star"
-				days = -1
-			}
+			#add_modifier = {
+			#	modifier = "forerunner_artificial_star"
+			#	days = -1
+			#}
 			add_modifier = {
 				modifier = uviik_monitor
 				days = -1
@@ -203,10 +203,10 @@ forerunner_sharpened_shield_init = {
 			add_deposit = d_automated_sentinel_factory
 		}
 		init_effect = {
-			add_modifier = {
-				modifier = "forerunner_artificial_star"
-				days = -1
-			}
+			#add_modifier = {
+			#	modifier = "forerunner_artificial_star"
+			#	days = -1
+			#}
 			add_modifier = {
 				modifier = uviik_monitor
 				days = -1
@@ -241,10 +241,10 @@ forerunner_sharpened_shield_init = {
 			add_deposit = d_automated_sentinel_factory
 		}
 		init_effect = {
-			add_modifier = {
-				modifier = "forerunner_artificial_star"
-				days = -1
-			}
+			#add_modifier = {
+			#	modifier = "forerunner_artificial_star"
+			#	days = -1
+			#}
 			add_modifier = {
 				modifier = uviik_monitor
 				days = -1
@@ -279,10 +279,10 @@ forerunner_sharpened_shield_init = {
 			add_deposit = d_automated_sentinel_factory
 		}
 		init_effect = {
-			add_modifier = {
-				modifier = "forerunner_artificial_star"
-				days = -1
-			}
+			#add_modifier = {
+			#	modifier = "forerunner_artificial_star"
+			#	days = -1
+			#}
 			add_modifier = {
 				modifier = uviik_monitor
 				days = -1
@@ -317,10 +317,10 @@ forerunner_sharpened_shield_init = {
 			add_deposit = d_automated_sentinel_factory
 		}
 		init_effect = {
-			add_modifier = {
-				modifier = "forerunner_artificial_star"
-				days = -1
-			}
+			#add_modifier = {
+			#	modifier = "forerunner_artificial_star"
+			#	days = -1
+			#}
 			add_modifier = {
 				modifier = uviik_monitor
 				days = -1

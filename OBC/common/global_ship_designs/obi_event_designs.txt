@@ -431,7 +431,7 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_6"
-			template = "AUX_CONTROL_CHAIR"
+			template = "ZEIA_CHAIR"
 		}
 		component = {
 			slot = "AUX_UTILITY_7"

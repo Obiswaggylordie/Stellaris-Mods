@@ -201,20 +201,6 @@ portraits = {
 			"gfx/models/portraits/promethean/promethean_alpha_crawler_01.dds"
 		}
 	}
-	
-	#ENGINEERS
-	
-	huragok_01 = {	entity = "huragok_01_entity"	clothes_selector = "no_texture" attachment_selector = "no_texture"	greeting_sound = "fungoid_01_greetings" 
-		character_textures = {
-			"gfx/models/portraits/huragok/huragok_01.dds"
-			"gfx/models/portraits/huragok/huragok_02.dds"
-			"gfx/models/portraits/huragok/huragok_03.dds"
-			"gfx/models/portraits/huragok/huragok_04.dds"
-			"gfx/models/portraits/huragok/huragok_05.dds"		
-		}
-	}
-	
-	
 }
 
 portrait_groups = {
@@ -514,42 +500,4 @@ portrait_groups = {
 			}
 		}
 	}	
-}
-
-portrait_groups = {
-	huragok = {
-	default = huragok_01
-		game_setup = { 
-			add = {
-				portraits = {
-					huragok_01
-				}
-			}
-		}
-
-		ruler = {
-			add = {
-				portraits = {
-					huragok_01
-				}
-			}
-		
-		}
-
-		species = {
-			set = {
-				portraits = {
-					huragok_01
-				}
-			}
-		}		
-
-		pop = {
-			add = {
-				portraits = {
-					huragok_01
-				}
-			}
-		}
-	}
 }

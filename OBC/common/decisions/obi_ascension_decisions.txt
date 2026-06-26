@@ -10,7 +10,7 @@
 #	resources = {
 #		category = decisions
 #		cost = {
-#			psi_energy = 500
+#			sr_psi_energy = 500
 #		}
 #	}
 #	
@@ -55,7 +55,7 @@
 #	resources = {
 #		category = decisions
 #		cost = {
-#			psi_energy = 1000
+#			sr_psi_energy = 1000
 #		}
 #	}
 #	
@@ -103,7 +103,7 @@ decision_ascension_cloud_form = {
 
 	#resources = {
 	#	cost = {
-	#		psi_energy = 100000
+	#		sr_psi_energy = 100000
 	#	}
 	#}
 	
@@ -158,7 +158,7 @@ decision_ascend_pop_to_4 = {
 
 	#resources = {
 	#	cost = {
-	#		psi_energy = 10000
+	#		sr_psi_energy = 10000
 	#	}
 	#}
 	

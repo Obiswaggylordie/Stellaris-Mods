@@ -6,6 +6,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/modules/sb_energy_controller.dds"
 	}
 
+	# Energy Controller
+	spriteType = {
+		name = "GFX_sb_dtf_factory_connect"
+		texturefile = "gfx/interface/icons/modules/sb_dtf_factory_connect.dds"
+	}
+
+	# Station SDCs
+	spriteType = {
+		name = "GFX_sb_sdc"
+		texturefile = "gfx/interface/icons/modules/sb_sdc.dds"
+	}
+
 	# Stardrive
 	spriteType = {
 		name = "GFX_zeia_stardrive"
@@ -22,12 +34,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_zeia_void_drive"
 		texturefile = "gfx/interface/icons/ship_parts/zeia_void_drive.dds"
-	}
-
-	# Station SDCs
-	spriteType = {
-		name = "GFX_sb_sdc"
-		texturefile = "gfx/interface/icons/modules/sb_sdc.dds"
 	}
 
 	# SDC

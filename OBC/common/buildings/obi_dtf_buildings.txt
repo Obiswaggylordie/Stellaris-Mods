@@ -58,13 +58,19 @@ building_cr_dtf_factory = {
 	can_build = yes
 
 	on_built = {
-		set_planet_flag = dtf_factory_built_1
+		planet = {
+			set_planet_flag = dtf_factory_built
+		}
 	}
 	on_unqueued = {
-		remove_planet_flag = dtf_factory_built_1
+		planet = {
+			remove_planet_flag = dtf_factory_built
+		}
 	}
 	on_destroy = {
-		remove_planet_flag = dtf_factory_built_1
+		planet = {
+			remove_planet_flag = dtf_factory_built
+		}
 	}
 
 	prerequisites = { "tech_cr_access" }

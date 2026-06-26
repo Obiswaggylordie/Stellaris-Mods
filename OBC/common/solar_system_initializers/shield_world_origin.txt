@@ -61,10 +61,10 @@ uni_origin_init = {
 		}
 
 		init_effect = {
-			add_modifier = {
-				modifier = forerunner_artificial_star
-				days = -1
-			}
+			#add_modifier = {
+			#	modifier = forerunner_artificial_star
+			#	days = -1
+			#}
 		}
 
 		init_effect = {

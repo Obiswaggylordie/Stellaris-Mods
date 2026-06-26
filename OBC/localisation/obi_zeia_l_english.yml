@@ -379,28 +379,6 @@
  celestial_energy_events.3.b: "Drain Stellar Energy (Class-O)"
  celestial_energy_events.3.z: "Leave the controllers alone"
 
- celestial_energy_events.10.title: "Cosmo Reverse Planet Class Selection"
- celestial_energy_events.10.desc: "The Comso Reverse Subsystem is capable of transforming any world into whatever class we may desire."
- 
- celestial_energy_events.10.a: "Cosmo Reverse to Gaia"
- celestial_energy_events.10.b: "Cosmo Reverse to Continental"
- celestial_energy_events.10.c: "Cosmo Reverse to Tropical"
- celestial_energy_events.10.d: "Cosmo Reverse to Alpine"
- celestial_energy_events.10.e: "Cosmo Reverse to Tundra"
- celestial_energy_events.10.f: "Cosmo Reverse to Ocean"
- celestial_energy_events.10.g: "Cosmo Reverse to Arctic"
- celestial_energy_events.10.h: "Cosmo Reverse to Desert"
- celestial_energy_events.10.i: "Cosmo Reverse to Savannah"
- celestial_energy_events.10.j: "Cosmo Reverse to Barren"
- celestial_energy_events.10.k: "Cosmo Reverse to Fractured"
- celestial_energy_events.10.l: "Cosmo Reverse to Void Sphere"
- celestial_energy_events.10.m: "Cosmo Reverse to Soul Sphere"
- celestial_energy_events.10.n: "Cosmo Reverse to Asteroid"
- celestial_energy_events.10.o: "Cosmo Reverse to Gas Giant"
- celestial_energy_events.10.p: "Cosmo Reverse to Tomb"
- celestial_energy_events.10.y: "Cosmo Reverse to Shattered"
- celestial_energy_events.10.z: "Abort, shut down the CRS."
-
 # Deposits
 
  # Aether
